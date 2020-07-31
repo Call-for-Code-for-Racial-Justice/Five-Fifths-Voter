@@ -190,13 +190,13 @@
     <cv-modal :visible="visible" @modal-hidden="modalClosed">
       <template slot="title">{{firstName}}, Thank you for using embRACE The Vote</template>
       <template slot="content">
-        <p v-if="firstName === 'David'" >Congratulations! You are Registerd as an <b>ACTIVE</b> voter!</p>
+        <p v-if="firstName === 'David'" >Congratulations! You are <u>Registered</u> as an <b>ACTIVE</b> voter!</p>
         <div v-if="firstName !== 'David'">
           <p v-if="firstName === 'Steve'">
-            The good news is that you are registerd to vote. But, you have been marked <b>INACTIVE</b>
+            The good news is that you are <u>Registered</u> to vote. But, you have been marked <b>INACTIVE</b>
           </p>
           <p v-if="firstName !== 'Steve'">
-            You are not registerd to vote but it may not be too late. Let's get you registered for the next election.
+            You are <b><u>not registered</u></b> to vote, but it may not be too late. Let's get you registered for the next election.
           </p>
         </div>
       </template>
