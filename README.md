@@ -9,13 +9,13 @@ yarn install
 ```
 yarn serve
 ```
-Build for production not working with Openshift (or docker image) so currently we use `--mode=dev` param.
 
 ### Compiles and minifies for production
 ```
 yarn build
 ```
-
+Build for production not working with Openshift (or docker image) so currently we use `--mode=dev` param.
+Pushing a change to the `stable` branch will automatically kickoff a build for the app in the OpenShift cluster.
 ### Lints and fixes files
 ```
 yarn lint
