@@ -9,6 +9,7 @@ yarn install
 ```
 yarn serve
 ```
+Build for production not working with Openshift (or docker image) so currently we use `--mode=dev` param.
 
 ### Compiles and minifies for production
 ```
