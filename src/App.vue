@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="EmbRACE The Vote" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to EmbRACE The Vote"/>
+    <app-header />
+    <cv-content id="#main-content">
+      <div class="bx--grid bx--grid--full-width">
+        <div class="bx--row landing-page__banner">
+          <div class="bx--col-lg-16">
+            <img alt="EmbRACE The Vote" src="./assets/logo.png" />
+          </div>
+        </div>
+      </div>
+      <router-view />
+    </cv-content>
   </div>
 </template>
 
+<style lang="scss">
+@import './styles/carbon';
+</style>
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppHeader from './components/AppHeader';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AppHeader
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
