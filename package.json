@@ -16,6 +16,7 @@
     "@carbon/grid": "^10.13.0",
     "@carbon/icons-vue": "^10.14.0",
     "@carbon/vue": "^2.30.1",
+    "axios": "^0.19.2",
     "carbon-components": "^10.16.0",
     "core-js": "^2.6.5",
     "iframe-resizer": "^4.2.11",

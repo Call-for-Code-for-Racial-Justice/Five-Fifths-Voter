@@ -29,10 +29,10 @@ export default {
       router.go(-1);
     },
     showtool() {
-    	Vue.loadScript("https://tool.votinginfoproject.org/app.js")
-    		.then(() => {
-        	// Script is loaded, show the tool
-	        eval(`
+      Vue.loadScript('https://tool.votinginfoproject.org/app.js')
+        .then(() => {
+          // Script is loaded, show the tool
+          eval(`
 	        		console.log("loading");
 							vit.load({
 							    modal: true,
@@ -46,10 +46,10 @@ export default {
 							    language: 'en',
 							});    			
 	    			`);
-    		})
-    		.catch(() => {
-      		// Failed to fetch script
-    		});    
+        })
+        .catch(() => {
+          // Failed to fetch script
+        });
     }
   },
   mounted() {
