@@ -1,0 +1,19 @@
+{
+  "name": "services",
+  "version": "1.0.0",
+  "description": "API services for EmbRACE The Vote",
+  "main": "index.js",
+  "repository": "https://github.com/embrace-call-for-code/embrace-the-vote",
+  "author": "IBM",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "serve": "node services.js",
+    "ci-check": "yarn format:diff",
+    "ci-format": "prettier --write \"**/*.js\"",
+    "format:diff": "prettier --list-different \"**/*.js\""
+  }
+}
