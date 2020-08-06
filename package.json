@@ -18,7 +18,9 @@
     "@carbon/vue": "^2.30.1",
     "carbon-components": "^10.16.0",
     "core-js": "^2.6.5",
+    "iframe-resizer": "^4.2.11",
     "vue": "^2.6.10",
+    "vue-plugin-load-script": "^1.3.0",
     "vue-router": "^3.0.3",
     "webpack": "^4"
   },

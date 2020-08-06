@@ -12,13 +12,31 @@ export default new Router({
       component: LandingPage
     },
     {
-      path: '/reg:regData',
+      path: '/reg',
       name: 'reg-page',
       // route level code-splitting
       // this generates a separate chunk (reg-page.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "reg-page" */ './views/RegPage')
+    },
+    {
+      path: '/absentee',
+      name: 'absentee-page',
+      // route level code-splitting
+      // this generates a separate chunk (reg-page.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+        import(/* webpackChunkName: "reg-page" */ './views/AbsenteePage')
+    },
+    {
+      path: '/pollinfo',
+      name: 'pollinfo-page',
+      // route level code-splitting
+      // this generates a separate chunk (reg-page.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () =>
+        import(/* webpackChunkName: "reg-page" */ './views/PollInfoPage')
     }
   ]
 });

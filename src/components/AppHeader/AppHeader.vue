@@ -5,6 +5,15 @@
     >
 
     <cv-header-name to="/">EmbRACE The Vote</cv-header-name>
+    <cv-header-menu-item :to="{ name: 'reg-page' }"
+      >Register</cv-header-menu-item
+    >
+    <cv-header-menu-item :to="{ name: 'absentee-page' }"
+      >Absentee Ballot</cv-header-menu-item
+    >
+    <cv-header-menu-item :to="{ name: 'pollinfo-page' }"
+      >Go Vote</cv-header-menu-item
+    >
 
     <cv-header-nav> </cv-header-nav>
 
