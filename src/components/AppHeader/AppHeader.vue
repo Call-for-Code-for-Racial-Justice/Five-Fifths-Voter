@@ -17,6 +17,9 @@
     <cv-header-menu-item :to="{ name: 'earlyinfo-page' }"
       >Early Voting</cv-header-menu-item
     >
+      <cv-header-menu-item :to="{ name: 'ballotreturn-page' }"
+      >Ballot Drop Box Locations</cv-header-menu-item
+    >
     <cv-header-nav> </cv-header-nav>
 
     <template slot="header-global">
