@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const querystring = require('querystring');
+const lodash = require('lodash');
+
 const port = 8080;
 const app = express();
 app.use(bodyParser.json());
@@ -28,6 +30,8 @@ const states2 = require('./data/ballotreturn/states');
 const regions2 = require('./data/ballotreturn/GA/regions');
 
 const locations2 = require('./data/ballotreturn/GA/mocklocations');
+
+const postcodes = require('./data/postcodes/US.json');
 
 app.use((req, res, next) => {
   res.append('Access-Control-Allow-Origin', ['*']);
@@ -61,7 +65,7 @@ app.get('/earlyvoting/regions/', (req, res) => {
 app.get('/earlyvoting/locations/', (req, res) => {
   // console.log('Returning locations', req.query);
   let stateid = req.query.stateid;
-  let locid = req.query.locid;
+  let locid = req.query.locid.toUpperCase();
   const foundLocation = locations.list.find((loc) => loc.place === locid);
   if (foundLocation) {
     res.send(foundLocation);
@@ -95,6 +99,23 @@ app.get('/ballotreturn/locations/', (req, res) => {
   const foundLocation = locations2.list.find((loc) => loc.place === locid);
   if (foundLocation) {
     res.send(foundLocation);
+  }
+});
+
+app.get('/postcode/', (req, res) => {
+  // console.log('Returning locations', req.query);
+  let postcode = req.query.id;
+  const foundData = lodash.find(postcodes, { postal_code: postcode });
+  if (foundData) {
+    let counties = [foundData.admin_name2];
+    if (foundData.admin_name3 !== '') counties.push(foundData.admin_name3);
+    const resp_data = {
+      country_code: foundData.country_code,
+      place_name: foundData.place_name,
+      state: foundData.admin_code1,
+      county: counties,
+    };
+    res.send(resp_data);
   } else {
     console.log(`location not found.`);
     res.status(404).send();
