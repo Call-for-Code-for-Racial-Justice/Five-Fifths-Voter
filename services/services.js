@@ -95,7 +95,7 @@ app.get('/ballotreturn/regions/', (req, res) => {
 app.get('/ballotreturn/locations/', (req, res) => {
   // console.log('Returning locations', req.query);
   let stateid = req.query.stateid;
-  let locid = req.query.locid;
+  let locid = req.query.locid.toUpperCase();
   const foundLocation = locations2.list.find((loc) => loc.place === locid);
   if (foundLocation) {
     res.send(foundLocation);
