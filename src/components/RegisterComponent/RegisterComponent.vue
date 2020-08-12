@@ -1,13 +1,15 @@
 <template>
-  <iframe
-    v-resize="{ log: true }"
-    src="https://register.vote.org/?partner=111111&campaign=free-tools"
-    width="100%"
-    marginheight="0"
-    frameborder="0"
-    id="frame1"
-    scrollable="no"
-  ></iframe>
+  <cv-content id="#main-content">
+    <iframe
+      v-resize="{ log: true }"
+      src="https://register.vote.org/?partner=111111&campaign=free-tools"
+      width="100%"
+      marginheight="0"
+      frameborder="0"
+      id="frame1"
+      scrollable="no"
+    ></iframe>
+  </cv-content>
 </template>
 
 <script>
