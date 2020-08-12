@@ -3,6 +3,10 @@
 @import 'carbon-components/scss/globals/scss/typography.scss';
 @import 'carbon-components/scss/globals/scss/vars.scss';
 
+//partials
+@import '../components/Hero/hero';
+@import '../views/LandingPage/landingpage';
+
 .smalllink {
   font-size: 25%;
   margin-top: 8em;

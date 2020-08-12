@@ -1,0 +1,28 @@
+.hero {
+  width: 100vw;
+  min-height: 600px;
+  background-color: #000;
+  display: flex;
+}
+
+.hero__image {
+  height: 400px;
+  position: absolute;
+  left: 250px;
+  top: 125px;
+
+  opacity: 0.5;
+}
+
+.hero__heading {
+  @include carbon--type-style('productive-heading-07');
+  font: {
+    weight: 600;
+    style: italic;
+  }
+  position: absolute;
+  max-width: 500px;
+  color: white;
+  left: 650px;
+  top: 275px;
+}

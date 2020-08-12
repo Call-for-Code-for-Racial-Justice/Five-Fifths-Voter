@@ -1,0 +1,42 @@
+.main {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.article {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 200px;
+  padding: 40px 0;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.article__heading {
+  @include carbon--type-style('productive-heading-05');
+  line-height: 4rem;
+}
+
+.article__paragraph {
+  @include carbon--type-style('body-long-02');
+  color: #7b8898;
+  margin-bottom: 20px;
+}
+
+.article__img {
+  //   display: flex;
+  //   align-self: center;
+  max-height: 150px;
+}
+
+.article__content > .button {
+  //override
+  margin-right: 10px;
+}
