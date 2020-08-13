@@ -2,7 +2,7 @@
   <cv-header aria-label="Carbon tutorial">
     <cv-skip-to-content href="#main-content">Skip to content</cv-skip-to-content>
 
-    <cv-header-name to="/">EmbRACE The Vote</cv-header-name>
+    <cv-header-name to="/">embRACEtheVOTE</cv-header-name>
     <cv-header-menu-item :to="{ name: 'reg-page' }">Register</cv-header-menu-item>
     <cv-header-menu-item :to="{ name: 'absentee-page' }">Absentee Ballot</cv-header-menu-item>
     <cv-header-menu-item :to="{ name: 'pollinfo-page' }">Go Vote</cv-header-menu-item>
