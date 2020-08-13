@@ -1,0 +1,17 @@
+.main--early-voting {
+  padding-top: 100px;
+  grid-template-columns: 400px 1fr;
+}
+
+.map {
+  max-height: 550px;
+}
+
+.locations > .heading--lg {
+  margin-bottom: 20px;
+}
+
+.locations__table {
+  max-height: 500px;
+  overflow: scroll;
+}

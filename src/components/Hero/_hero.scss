@@ -8,7 +8,7 @@
 .hero__image {
   height: 400px;
   position: absolute;
-  left: 250px;
+  left: 20%;
   top: 125px;
 
   opacity: 0.5;
@@ -23,6 +23,6 @@
   position: absolute;
   max-width: 500px;
   color: white;
-  left: 650px;
+  left: calc(50% - 175px);
   top: 275px;
 }

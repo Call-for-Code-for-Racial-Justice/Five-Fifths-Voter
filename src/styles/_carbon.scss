@@ -5,3 +5,24 @@ $feature-flags: (
 @import 'carbon-components/scss/globals/scss/styles';
 
 //global styles
+.heading {
+}
+
+.heading--lg {
+  @include carbon--type-style('productive-heading-06');
+}
+
+.heading--sm {
+  @include carbon--type-style('productive-heading-04');
+}
+
+.main {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+//resets
+table {
+  width: auto;
+}

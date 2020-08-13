@@ -3,21 +3,28 @@
     <div class="bx--grid bx--grid--full-width landing-page">
       <div class="bx--row landing-page__r2">
         <div class="bx--col-lg-16">
-          <cv-text-input
-            v-model.trim="postal_code"
-            label="Zip Code?"
-            placeholder="99999"
-            :invalid-message="invalid_zip"
-            @input="zipChange"
-          ></cv-text-input>
-          <div
-            v-if="state !== 'GA' && state !== ''"
-          >{{ counties[0] }}, {{ state }} is not supported at this time</div>
-          <div v-html="locationTable"></div>
-          <div v-if="state !== ''" class="smalllink">
-            Zip Code data powered by
-            <cv-link href="https://www.geonames.org" target="_blank">geonames.org</cv-link>
-          </div>
+          <section class="main main--early-voting">
+            <aside class="locations">
+              <h1 class="heading--lg">find your local ballot dropbox.</h1>
+              <cv-text-input
+                v-model.trim="postal_code"
+                label="enter a 5 digit zip code below."
+                placeholder="99999"
+                :invalid-message="invalid_zip"
+                @input="zipChange"
+              ></cv-text-input>
+              <div
+                v-if="state !== 'GA' && state !== ''"
+              >{{ counties[0] }}, {{ state }} is not supported at this time</div>
+              <div class="locations__table" v-html="locationTable"></div>
+              <div v-if="state !== ''" class="smalllink">
+                Zip Code data powered by
+                <cv-link href="https://www.geonames.org" target="_blank">geonames.org</cv-link>
+              </div>
+            </aside>
+            <!-- placeholder for iframe -->
+            <img class="map" src="../../assets/holder-atlanta-map.png" alt="google map img" />
+          </section>
         </div>
       </div>
     </div>
