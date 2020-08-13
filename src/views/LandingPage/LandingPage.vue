@@ -52,12 +52,6 @@
                 </section>
               </div>
               <aside class="sidebar">
-                <iframe
-                  v-resize="{ log: true }"
-                  src="https://verify.vote.org/?partner=111111&campaign=free-tools"
-                  width="100%"
-                  scrollable="no"
-                ></iframe>
               </aside>
             </div>
           </div>
