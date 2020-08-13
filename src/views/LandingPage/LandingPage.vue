@@ -6,14 +6,13 @@
         <div class="bx--row">
           <div class="bx--col-lg-16">
             <div class="main">
-              <div>
+              <div class="article-feed">
                 <section class="article">
                   <div class="article__content">
                     <h2 class="article__heading">embrace.</h2>
                     <p
                       class="article__paragraph"
                     >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <a class="button bx--btn bx--btn--primary" href="#">Link</a>
                     <a class="button bx--btn bx--btn--primary" href="#">Link</a>
                     <a class="button bx--btn bx--btn--primary" href="#">Link</a>
                   </div>

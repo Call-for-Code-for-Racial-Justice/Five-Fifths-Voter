@@ -18,8 +18,13 @@ $feature-flags: (
 
 .main {
   display: grid;
-  grid-gap: 50px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 1056px) {
+    grid-template-columns: 400px 1fr;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 //resets

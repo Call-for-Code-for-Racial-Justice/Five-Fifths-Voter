@@ -1,7 +1,7 @@
 .article {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 200px;
+  //   grid-gap: 20px;
+  grid-template-columns: 1fr;
   padding: 40px 0;
 
   &:first-child {
@@ -10,6 +10,19 @@
 
   &:last-child {
     padding-bottom: 0;
+  }
+
+  @media (min-width: 1056px) {
+    grid-gap: 20px;
+    grid-template-columns: 1fr 200px;
+  }
+}
+
+.article-feed {
+  margin-bottom: 60px;
+
+  @media (min-width: 1056px) {
+    margin-bottom: 60px;
   }
 }
 
@@ -28,6 +41,11 @@
   display: flex;
   align-self: center;
   max-height: 150px;
+  margin-top: 20px;
+
+  @media (min-width: 1056px) {
+    margin-top: 0;
+  }
 }
 
 .article__content > .button {

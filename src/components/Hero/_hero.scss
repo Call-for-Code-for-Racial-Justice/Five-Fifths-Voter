@@ -1,17 +1,27 @@
 .hero {
   width: 100vw;
-  min-height: 600px;
+  min-height: 400px;
   background-color: #000;
   display: flex;
+
+  @media (min-width: 1056px) {
+    min-height: 600px;
+  }
 }
 
 .hero__image {
-  height: 400px;
+  height: 250px;
   position: absolute;
-  left: 20%;
-  top: 125px;
+  left: 10%;
+  top: 75px;
 
   opacity: 0.5;
+
+  @media (min-width: 1056px) {
+    height: 400px;
+    left: 20%;
+    top: 125px;
+  }
 }
 
 .hero__heading {
@@ -24,5 +34,9 @@
   max-width: 500px;
   color: white;
   left: calc(50% - 175px);
-  top: 275px;
+  top: 150px;
+
+  @media (min-width: 1056px) {
+    top: 275px;
+  }
 }
