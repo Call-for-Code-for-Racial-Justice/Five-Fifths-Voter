@@ -55,51 +55,6 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "reg-page" */ './views/RatePage')
-    },
-    {
-      path: '/reg',
-      name: 'reg-page',
-      // route level code-splitting
-      // this generates a separate chunk (reg-page.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "reg-page" */ './views/RegPage')
-    },
-    {
-      path: '/absentee',
-      name: 'absentee-page',
-      // route level code-splitting
-      // this generates a separate chunk (reg-page.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "reg-page" */ './views/AbsenteePage')
-    },
-    {
-      path: '/pollinfo',
-      name: 'pollinfo-page',
-      // route level code-splitting
-      // this generates a separate chunk (reg-page.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "reg-page" */ './views/PollInfoPage')
-    },
-    {
-      path: '/earlyinfo',
-      name: 'earlyinfo-page',
-      // route level code-splitting
-      // this generates a separate chunk (reg-page.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "reg-page" */ './views/EarlyPage')
-    },
-    {
-      path: '/ballotreturn',
-      name: 'ballotreturn-page',
-      // route level code-splitting
-      // this generates a separate chunk (reg-page.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "reg-page" */ './views/BallotReturnPage')
     }
   ]
 });

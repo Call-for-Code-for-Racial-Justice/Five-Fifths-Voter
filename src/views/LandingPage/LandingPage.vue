@@ -71,25 +71,6 @@
         </div>
       </div>
     </cv-content>
-    <!-- <div class="bx--grid bx--grid--full-width landing-page">
-      <div class="bx--row">
-        <div class="bx--col-lg-16">
-          <iframe
-            v-resize="{ log: true }"
-            src="https://verify.vote.org/?partner=111111&campaign=free-tools"
-            width="100%"
-            scrollable="no"
-          ></iframe>
-        </div>
-      </div>
-      <div class="bx--row landing-page__r3">
-        <div class="bx--col-md-4 bx--col-lg-4">
-          <router-link :to="{ name: 'reg-page' }">
-            <cv-button>Need to register?</cv-button>
-          </router-link>
-        </div>
-      </div>
-    </div>-->
   </div>
 </template>
 
