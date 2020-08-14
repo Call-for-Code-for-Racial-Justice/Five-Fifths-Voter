@@ -7,26 +7,22 @@
       <h4 class="heading--sm">
         absentee voting is as easy as signing up before your state's deadline.
       </h4>
-      <p>
       <img
         class="article__img"
         src="../../assets/vote-absentee-1.jpg"
         alt="stock image of voters at a voting poll"
       />
-      <p class="article__description">
-        why is it important?
-        <br />
-        <br />three things you need to know.
-        <br />
-        <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.orem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. orem ipsum dolor sit
-        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      <h6 class="article__quote">lorem ipsum dolor sit amet.</h6>
+      <p class="article__paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.orem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat. orem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
       <img

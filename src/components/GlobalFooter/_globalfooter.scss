@@ -1,0 +1,14 @@
+.footer {
+  position: absolute;
+  height: 200px;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.footer__copy {
+  @include carbon--type-style('body-short-01');
+}

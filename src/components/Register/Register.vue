@@ -13,7 +13,7 @@
         alt="5 women of color at polling booths next to each other"
       />
       <br />
-      <p class="article__description">
+      <p class="article__paragraph">
         It is through blood, sweat and tears that black people earned the right
         to vote.
         <br /><br />

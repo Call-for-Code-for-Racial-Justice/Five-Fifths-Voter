@@ -1,3 +1,10 @@
+.img--lg {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px 0;
+}
+
 .main--landing-page {
   display: grid;
   grid-template-columns: 1fr;
@@ -69,4 +76,9 @@
 
 .article__content > .article__paragraph {
   margin-top: $spacing-05;
+}
+
+.article-paragraph--alt {
+  font-size: 18px;
+  max-width: 800px;
 }

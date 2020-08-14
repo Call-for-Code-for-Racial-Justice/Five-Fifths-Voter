@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="tweets">
     <cv-combo-box
       ref="r_combo"
       v-model.trim="screenname"
@@ -23,7 +23,7 @@ export default {
   name: 'twitterchatter',
   data() {
     return {
-      twitter_chatter: 'What are candidates saying',
+      twitter_chatter: "here's what they're saying.",
       options: [
         {
           value: 'BarackObama',
