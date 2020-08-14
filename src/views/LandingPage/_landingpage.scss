@@ -1,3 +1,8 @@
+.main--landing-page {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .article {
   display: grid;
   //   grid-gap: 20px;
@@ -14,8 +19,15 @@
 
   @media (min-width: 1056px) {
     grid-gap: 20px;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 1fr;
   }
+}
+
+.article__quote {
+  @include carbon--type-style('quotation-01');
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 .article-feed {
@@ -40,15 +52,21 @@
 .article__img {
   display: flex;
   align-self: center;
-  max-height: 150px;
+  max-height: 225px;
   margin-top: 20px;
 
   @media (min-width: 1056px) {
     margin-top: 0;
+    max-height: 300px;
+    max-width: 430px;
   }
 }
 
 .article__content > .button {
   //override
   margin-right: 10px;
+}
+
+.article__content > .article__paragraph {
+  margin-top: $spacing-05;
 }

@@ -7,9 +7,14 @@
   }
 }
 
-.content--register {
+.content--register > .article__img--register {
+  margin-top: 20px;
 }
 
-.content--register > * {
+.content--register > .heading--lg .heading--sm .article__quote {
   margin-bottom: 20px;
+}
+
+.article__img--register {
+  margin-top: $spacing-05;
 }

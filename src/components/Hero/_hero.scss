@@ -25,7 +25,7 @@
 }
 
 .hero__heading {
-  @include carbon--type-style('productive-heading-07');
+  @include carbon--type-style('productive-heading-06');
   font: {
     weight: 600;
     style: italic;
@@ -37,6 +37,11 @@
   top: 150px;
 
   @media (min-width: 1056px) {
+    @include carbon--type-style('productive-heading-07');
+    font: {
+      weight: 600;
+      style: italic;
+    }
     top: 275px;
   }
 }

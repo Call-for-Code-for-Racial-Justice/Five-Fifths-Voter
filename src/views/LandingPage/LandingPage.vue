@@ -5,7 +5,7 @@
       <div class="bx--grid bx--grid--full-width landing-page">
         <div class="bx--row">
           <div class="bx--col-lg-16">
-            <div class="main">
+            <div class="main--landing-page">
               <div class="article-feed">
                 <h3>Pick Your President</h3>
                 <Countdown deadline="November 3, 2020"></Countdown>

@@ -6,21 +6,31 @@
         voting is the future for your neighbors, your friends, your family, and
         yourself.
       </h4>
-      <p>
-        why is it important?
-        <br />
-        <br />three things you need to know.
-        <br />
-        <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.orem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. orem ipsum dolor sit
-        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <br />
+      <img
+        class="article__img article__img--register"
+        src="../../assets/vote-register.jpg"
+        alt="5 women of color at polling booths next to each other"
+      />
+      <br />
+      <p class="article__description">
+        It is through blood, sweat and tears that black people earned the right
+        to vote.
+        <br /><br />
+        Many black people protested, marched, were arrested and even died as
+        they fought the battle for voting equality. We implore you to not let
+        these sacrifices be in vain but to cease the opportunity that your
+        ancestors provided, that your voice can be heard in America.
+        <br /><br />
+        In 1868, the 14th Amendment gave black people the rights of citizenship
+        but it would be over 97 years before they could successfully execute
+        their right to vote. During this time span poll taxes, literacy tests,
+        and other tactics were used to undermine black people’s right to vote.
+        It was not until 1965 when Voting Rights Act was executed that provided
+        a successful pathway for black people to vote.
+        <br /><br />
+        Please exercise your right to vote. It was hard earned by your
+        ancestors.
       </p>
     </aside>
     <iframe
