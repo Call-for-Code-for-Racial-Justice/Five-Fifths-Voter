@@ -1,12 +1,20 @@
 .main--polls {
-  padding-top: 100px;
+  padding-top: 50px;
   grid-template-columns: 1fr;
 
-  @media (min-width: 1056px) {
-    grid-template-columns: 500px 1fr;
+  @media (min-width: 1056) {
+    padding-top: 100px;
   }
 }
 
 .poll-info > * {
   margin-bottom: 20px;
+}
+
+.list {
+  max-width: 800px;
+}
+
+.list-item {
+  padding-bottom: $spacing-03;
 }

@@ -2,6 +2,7 @@
   <div id="app">
     <app-header />
     <router-view />
+    <GlobalFooter />
   </div>
 </template>
 
@@ -11,11 +12,13 @@
 
 <script>
 import AppHeader from './components/AppHeader';
+import GlobalFooter from './components/GlobalFooter';
 
 export default {
   name: 'App',
   components: {
-    AppHeader
+    AppHeader,
+    GlobalFooter
   }
 };
 </script>

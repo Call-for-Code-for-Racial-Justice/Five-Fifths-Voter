@@ -5,3 +5,7 @@
 .bx--grid--full-width {
   max-width: 1500px;
 }
+
+.bx--content {
+  min-height: calc(100vh - 200px);
+}
