@@ -15,8 +15,8 @@
                 <cv-link href="https://twitter.com/search?q=%23election&src=typed_query">Twitter #Election</cv-link><br />
                 <br />
                
-                <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
+              <TwitterChatter />
             </aside>
           </section>
         </div>
@@ -26,22 +26,19 @@
 </template>
 
 <script>
-import router from '../../router';
+import TwitterChatter from '../../components/TwitterChatter';
 
 export default {
-  name: 'reg',
+  name: 'connect',
+  components: { TwitterChatter },
   data() {
     return {
-      regData: {},
+      
     };
   },
   created() {
-    this.regData = this.$route.params.regData;
   },
   methods: {
-    navigate() {
-      router.go(-1);
-    },
   },
 };
 </script>

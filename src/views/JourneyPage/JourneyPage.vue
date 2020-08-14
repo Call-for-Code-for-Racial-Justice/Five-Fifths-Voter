@@ -30,7 +30,7 @@
 						  >
             <Register />
 						  </cv-tab>
-						  <cv-tab id="tab-3" label="Get a Ballot" aria-label="request an absentee ballot">
+						  <cv-tab id="tab-3" label="Mail in Ballot" aria-label="request an absentee ballot">
             <Absentee />
 						  </cv-tab>
 						  <cv-tab id="tab-4" label="Vote Now" aria-label="find your polling place"
@@ -62,14 +62,16 @@ export default {
   components: { Register, Absentee, EarlyVoting, BallotReturn, VoteNow },
   data() {
     return {
-      
+      complete: [false, false, false, false, false],
     };
   },
   created() {
     
   },
   methods: {
-    
+    showStep() {
+    	this.complete = [true, false, false, false, false];
+    }
   },
 };
 </script>

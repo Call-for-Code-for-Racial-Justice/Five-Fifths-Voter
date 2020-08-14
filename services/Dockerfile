@@ -1,7 +1,12 @@
 FROM node:14
-#RUN npm install -g yarn
+RUN git --version
+RUN apt update
+RUN apt install -y python3-pip
+RUN apt-get clean
+RUN pip3 install tweepy
 WORKDIR /usr/src/app
 COPY package.json ./
+COPY yarn.lock ./
 ENV NODE_ENV=production
 RUN yarn
 COPY . .
