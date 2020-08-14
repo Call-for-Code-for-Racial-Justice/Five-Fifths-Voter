@@ -16,6 +16,7 @@ const about = {
     'ballotreturn/states/',
     'ballotreturn/regions/',
     'ballotreturn/locations/',
+    'twitter/chatter',
   ],
 };
 
@@ -102,6 +103,7 @@ app.get('/ballotreturn/locations/', (req, res) => {
   }
 });
 
+// non-public API
 app.get('/postcode/', (req, res) => {
   // console.log('Returning locations', req.query);
   let postcode = req.query.id;
@@ -120,6 +122,38 @@ app.get('/postcode/', (req, res) => {
     console.log(`location not found.`);
     res.status(404).send();
   }
+});
+
+app.get('/twitter/chatter/', (req, res) => {
+  // console.log('Returning locations', req.query);
+  let screenname = req.query.screenname;
+  console.log(screenname)
+
+  const { spawn } = require('child_process');
+  const chatter = spawn('python3', [
+    'twitter/Embrace_Challenge.py',
+    screenname,
+  ]);
+  chatter.on('close', (code) => {
+    console.log(`child process exited with code ${code}`);
+    if (code !== 0) {
+      res.status(404).send();
+    }
+  });
+
+	const chunks = [];
+
+  chatter.stdout.on("data", function (chunk) {
+    chunks.push(chunk);
+  });
+    
+  chatter.stdout.on('data', (data) => {
+  	const resp_data = {
+      screenname: screenname,
+      dom: Buffer.concat(chunks).toString(),
+    };
+    res.send(resp_data);
+  });
 });
 
 console.log(`Service listening on port ${port}`);
