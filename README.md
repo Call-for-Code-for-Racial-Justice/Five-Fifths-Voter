@@ -1,9 +1,10 @@
 # embrace-the-vote
 
 ## Dependencies
-- install yarn
-- install python3
-- install tweepy - `pip3 install --user tweepy1
+- [install yarn](https://yarnpkg.com/lang/en/docs/cli/install/)
+- [install python3](https://realpython.com/installing-python/)
+- install tweepy - `pip3 install --user tweepy`
+- **OPTIONAL** [install docker](https://docs.docker.com/get-docker/) (You only need Docker if you are debuging/testing the deploy process.)
 
 ## Project setup
 ```
