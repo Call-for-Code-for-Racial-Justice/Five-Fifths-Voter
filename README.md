@@ -1,5 +1,10 @@
 # embrace-the-vote
 
+## Dependencies
+- install yarn
+- install python3
+- install tweepy - `pip3 install --user tweepy1
+
 ## Project setup
 ```
 yarn install

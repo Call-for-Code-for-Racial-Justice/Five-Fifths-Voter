@@ -8,13 +8,13 @@
               <h1 class="heading--lg">vote social</h1>
               <h4
                 class="heading--sm"
-              >take a friend voting</h4>
+              >take a friend to vote</h4>
               <p>
                 <cv-link href="https://www.facebook.com/gpa/best-practices/local-government">Facebook</cv-link><br />
                 <cv-link href="https://www.instagram.com/explore/tags/election/?hl=en">Instagram #Election</cv-link><br />
                 <cv-link href="https://twitter.com/search?q=%23election&src=typed_query">Twitter #Election</cv-link><br />
                 <br />
-               
+
               </p>
               <TwitterChatter />
             </aside>
@@ -33,7 +33,7 @@ export default {
   components: { TwitterChatter },
   data() {
     return {
-      
+
     };
   },
   created() {
