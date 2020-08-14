@@ -6,10 +6,8 @@
           <section class="main main--register">
             <aside class="content--register">
               <h1 class="heading--lg">rate your polling place</h1>
-              <h4
-                class="heading--sm"
-              >how was your experience</h4>
-              <img src="../../assets/Rate.png">
+              <h4 class="heading--sm">how was your experience</h4>
+              <img src="../../assets/Rate.png" />
             </aside>
           </section>
         </div>
@@ -25,7 +23,7 @@ export default {
   name: 'reg',
   data() {
     return {
-      regData: {},
+      regData: {}
     };
   },
   created() {
@@ -34,7 +32,7 @@ export default {
   methods: {
     navigate() {
       router.go(-1);
-    },
-  },
+    }
+  }
 };
 </script>

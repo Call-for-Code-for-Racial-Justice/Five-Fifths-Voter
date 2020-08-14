@@ -5,14 +5,29 @@
         <div class="bx--col-lg-16">
           <section class="main main--polls">
             <aside class="poll-info">
-              <h1 class="heading--lg">candidates, and deadlines and signups, oh my!</h1>
-              <h4 class="heading--sm">we understand, voting isn't always cut and dry.</h4>
+              <h1 class="heading--lg">
+                candidates, and deadlines and signups, oh my!
+              </h1>
+              <h4 class="heading--sm">
+                we understand, voting isn't always cut and dry.
+              </h4>
               <p>
                 First things first:
                 <br />
                 <br />three things you need to know.
                 <br />
-                <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.orem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. orem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
               </p>
             </aside>
             <div id="_vit"></div>
@@ -33,7 +48,7 @@ export default {
   name: 'reg',
   data() {
     return {
-      regData: {},
+      regData: {}
     };
   },
   created() {
@@ -65,13 +80,13 @@ export default {
         .catch(() => {
           // Failed to fetch script
         });
-    },
+    }
   },
   mounted() {
     this.showtool();
   },
   updated() {
     this.showtool();
-  },
+  }
 };
 </script>

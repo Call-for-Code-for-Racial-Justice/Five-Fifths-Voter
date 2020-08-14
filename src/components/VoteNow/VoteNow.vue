@@ -1,42 +1,51 @@
 <template>
   <div class="bx--row">
-  <div class="bx--col-lg-6">
-	<section class="main main--polls">
-	  <aside class="poll-info">
-	    <h1 class="heading--lg">candidates, and deadlines and signups, oh my!</h1>
-	    <h4 class="heading--sm">What IDs are Acceptable in Georgia</h4>
-	    <p>	      
-<cv-list>
-  <cv-list-item>Any valid state or federal government issued photo ID, including a free ID Card issued by your county registrar's office or the Georgia Department of Driver Services (DDS)
-  </cv-list-item>
-  <cv-list-item>A Georgia Driver's License, even if expired
-  </cv-list-item>
-  <cv-list-item>Valid employee photo ID from any branch, department, agency, or entity of the U.S. Government, Georgia, or any county, municipality, board, authority or other entity of this state
-	</cv-list-item>
-	<cv-list-item>Valid U.S. passport ID
-	</cv-list-item>
-	<cv-list-item>Valid U.S. military photo ID
-	</cv-list-item>
-	<cv-list-item>Valid tribal photo ID
-	</cv-list-item>
-	<cv-list-item>Many student IDs are also acceptable. (visit the GA Secretary of State site for details)
-	</cv-list-item>
-</cv-list>
-	<cv-link
-  href="https://sos.ga.gov/index.php/elections/georgia_voter_identification_requirements2">
-  GA Secretary of State site
-	</cv-link>
-	    </p>
-	  </aside>
-		</section>
-  	</div>
-  	<div class="bx--col-lg-10">
-	  <div id="_vit"></div>
-	  <cv-button v-if="showButton" @click="showtool">
-  	Show Polling Location
-		</cv-button>
-		</div>
-	</div>
+    <div class="bx--col-lg-6">
+      <section class="main main--polls">
+        <aside class="poll-info">
+          <h1 class="heading--lg">
+            candidates, and deadlines and signups, oh my!
+          </h1>
+          <h4 class="heading--sm">What IDs are Acceptable in Georgia</h4>
+          <p>
+            <cv-list>
+              <cv-list-item
+                >Any valid state or federal government issued photo ID,
+                including a free ID Card issued by your county registrar's
+                office or the Georgia Department of Driver Services (DDS)
+              </cv-list-item>
+              <cv-list-item
+                >A Georgia Driver's License, even if expired
+              </cv-list-item>
+              <cv-list-item
+                >Valid employee photo ID from any branch, department, agency, or
+                entity of the U.S. Government, Georgia, or any county,
+                municipality, board, authority or other entity of this state
+              </cv-list-item>
+              <cv-list-item>Valid U.S. passport ID </cv-list-item>
+              <cv-list-item>Valid U.S. military photo ID </cv-list-item>
+              <cv-list-item>Valid tribal photo ID </cv-list-item>
+              <cv-list-item
+                >Many student IDs are also acceptable. (visit the GA Secretary
+                of State site for details)
+              </cv-list-item>
+            </cv-list>
+            <cv-link
+              href="https://sos.ga.gov/index.php/elections/georgia_voter_identification_requirements2"
+            >
+              GA Secretary of State site
+            </cv-link>
+          </p>
+        </aside>
+      </section>
+    </div>
+    <div class="bx--col-lg-10">
+      <div id="_vit"></div>
+      <cv-button v-if="showButton" @click="showtool">
+        Show Polling Location
+      </cv-button>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -82,13 +91,13 @@ export default {
         .catch(() => {
           // Failed to fetch script
         });
-    },
+    }
   },
   mounted() {
     //this.showtool();
   },
   updated() {
     //this.showtool();
-  },
+  }
 };
 </script>
