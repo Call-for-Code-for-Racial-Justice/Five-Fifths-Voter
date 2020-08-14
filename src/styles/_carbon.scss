@@ -12,8 +12,15 @@ $feature-flags: (
   @include carbon--type-style('productive-heading-06');
 }
 
+.heading--xl {
+  @include carbon--type-style('expressive-heading-06');
+  font-size: 54px;
+  margin-bottom: $spacing-06;
+}
+
 .heading--sm {
   @include carbon--type-style('productive-heading-04');
+  margin-bottom: $spacing-05;
 }
 
 .main {

@@ -3,12 +3,7 @@
     <div class="bx--grid bx--grid--full-width landing-page">
       <div class="bx--row landing-page__r2">
         <div class="bx--col-lg-16">
-          <section class="main main--register">
-            <aside class="content--register">
-              <h1 class="heading--lg">your voting journey</h1>
-              <h4 class="heading--sm">make your voice heard</h4>
-            </aside>
-          </section>
+          <h1 class="heading--xl">your voting journey.</h1>
         </div>
       </div>
       <div class="bx--row ">
@@ -19,12 +14,14 @@
               label="Check Your Status"
               aria-label="check if you are registered to vote"
             >
-              <iframe
-                v-resize="{ log: true }"
-                src="https://verify.vote.org/?partner=111111&campaign=free-tools"
-                width="100%"
-                scrollable="no"
-              ></iframe>
+              <div class="check-status">
+                <iframe
+                  v-resize="{ log: true }"
+                  src="https://verify.vote.org/?partner=111111&campaign=free-tools"
+                  width="100%"
+                  scrollable="no"
+                ></iframe>
+              </div>
             </cv-tab>
             <cv-tab
               id="tab-2"
