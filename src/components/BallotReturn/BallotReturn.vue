@@ -14,7 +14,11 @@
       </div>
       <div v-if="state === ''" v-html="locationTable"></div>
       {{ /* todo: only GA is supported but this should really be a check against the available states */ }}
-      <div v-if="state === 'GA'" class="locations__table" v-html="locationTable"></div>      
+      <div
+        v-if="state === 'GA'"
+        class="locations__table"
+        v-html="locationTable"
+      ></div>
       <div v-if="state !== ''" class="smalllink">
         Zip Code data powered by
         <cv-link href="https://www.geonames.org" target="_blank"
