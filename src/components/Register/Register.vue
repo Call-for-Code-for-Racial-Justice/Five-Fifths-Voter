@@ -14,23 +14,25 @@
       />
       <br />
       <p class="article__paragraph">
-        It is through blood, sweat and tears that black people earned the right
-        to vote.
-        <br /><br />
-        Many black people protested, marched, were arrested and even died as
-        they fought the battle for voting equality. We implore you to not let
-        these sacrifices be in vain but to cease the opportunity that your
-        ancestors provided, that your voice can be heard in America.
-        <br /><br />
-        In 1868, the 14th Amendment gave black people the rights of citizenship
-        but it would be over 97 years before they could successfully execute
-        their right to vote. During this time span poll taxes, literacy tests,
-        and other tactics were used to undermine black people’s right to vote.
-        It was not until 1965 when Voting Rights Act was executed that provided
-        a successful pathway for black people to vote.
-        <br /><br />
-        Please exercise your right to vote. It was hard earned by your
-        ancestors.
+        Vestibulum tincidunt pulvinar augue sit amet rhoncus. Suspendisse in
+        turpis vulputate, auctor libero et, fringilla magna. Duis semper lacus
+        nibh, in pellentesque felis mollis non. Vestibulum sodales dui eros, vel
+        blandit tortor consequat non. Etiam hendrerit tempus tristique. Cras
+        tincidunt bibendum odio. Etiam elit nibh, mattis sed maximus in, semper
+        nec nisi. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Nam gravida posuere ante, et faucibus
+        lectus molestie et. Aenean feugiat eu nunc vel vehicula. Maecenas at
+        imperdiet erat. In id ullamcorper mi. Maecenas sollicitudin aliquam
+        nisi, ut gravida tellus faucibus nec.
+        <br />
+        <br />
+        Integer bibendum augue eget sollicitudin malesuada. Etiam a quam ac
+        nulla consectetur consectetur quis non felis. Etiam sed auctor dui.
+        Etiam accumsan lectus sed nibh dignissim placerat. In sed ultrices
+        neque. Suspendisse ac accumsan lorem. Sed at tempus justo. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos. Praesent ullamcorper semper scelerisque. Suspendisse quis
+        molestie neque.
       </p>
     </aside>
     <iframe
