@@ -1,50 +1,36 @@
 # embrace-the-vote
 
-## Dependencies
-- [install yarn](https://yarnpkg.com/lang/en/docs/cli/install/)
-- [install python3](https://realpython.com/installing-python/)
-- install tweepy - `pip3 install --user tweepy`
-- **OPTIONAL** [install docker](https://docs.docker.com/get-docker/) (You only need Docker if you are debuging/testing the deploy process.)
+# The Problem
+Black voters in Georgia (and elsewhere) need get to the correct polling station, quickly and affordably according to their own schedule and are able to equip themselves with the necessary information and to vote according to the most up​ to date, local requirements.​
 
-## Project setup
-```
-yarn install
-cd services
-yarn install
-cd ..
-```
+Let's use web technology on the IBM cloud to help!
 
-### Compiles and hot-reloads for development
-Start services (see [services README](services/README.md) for details)
-```
-cd services
-yarn serve
-```
+# Solution
+A virtual ONE-STOP-SHOP  for Black voters to assist  them with all their voting  needs. Our mission statement is described in the 3 E’s:
+- EDUCATE 
+- EMPOWER
+- ENABLE
 
-Start web app (open another terminal in root project directory `embrace-the-vote`)
-```
-yarn serve
-```
+# Skills
+All developers can assist with this solution. Currently it is built with Vue JS for the UI and Node/Express for the API layer.
 
-### Compiles and minifies for production
-```
-yarn build
-```
-Build for production not working with Openshift (or docker image) so currently we use `--mode=dev` param.
-Pushing a change to the `stable` branch will automatically kickoff a build for the app in the OpenShift cluster.
-### Lints and fixes files
-```
-yarn lint
-```
+# Reference and Data
+- [vote.org](https://www.vote.org/) - This site has a wealth of services and can provide APIs to build out our own solution.
+- [votinginfoproject.org](https://www.votinginfoproject.org/)
+- [Google Civic Information API](https://developers.google.com/civic-information) The votinginfoproject site uses these API to deliver information.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Architecture
+![System Context](doc/SystemContext.png)
 
-### Clean up code before pushing
-```
-yarn ci-format
-```
+![Components](doc/Components.png)
 
-### Deployment
-This repo is setup for automatic deployment to Open Shift cluster. Pushing changes to the `stable` branch will kick off an automatic build and deploy. So do not push to `stable` unless you really mean it. See the webhooks for this repo and the Open Shift build config for details.
+# For devlopers 
+See the [Getting Started](doc/GETSTARTED.md) document
+
+# Suggestions
+See the [issues list](issues) for a full list. Anything marked as a ["top priority"](issues?q=is%3Aissue+is%3Aopen+label%3A%22top+priority%22) should be considered first. 
+
+# Solution Fortifcation
+See [Solution Fortifcation](doc/SolutionFortification.md)
+
 
