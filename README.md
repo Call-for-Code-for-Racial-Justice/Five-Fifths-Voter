@@ -28,7 +28,7 @@ All developers can assist with this solution. Currently it is built with Vue JS 
 See the [Getting Started](doc/GETSTARTED.md) document
 
 # Suggestions
-See the [issues list](issues) for a full list. Anything marked as a ["top priority"](issues?q=is%3Aissue+is%3Aopen+label%3A%22top+priority%22) should be considered first. 
+See the [issues list](https://github.com/embrace-call-for-code/embrace-the-vote/issues) for a full list. Anything marked as a ["top priority"](https://github.com/embrace-call-for-code/embrace-the-vote/issues?q=is%3Aissue+is%3Aopen+label%3A%22top+priority%22) should be considered first. 
 
 # Solution Fortifcation
 See [Solution Fortifcation](doc/SolutionFortification.md)
