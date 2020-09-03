@@ -6,10 +6,10 @@ import time
 import os.path
 import sys
 
-ckey='q93BIFM00HTShp1HlwzdRtK0e'
-csecret='RbANDPFCzbBuOCLB0F4AStxBBnGs3xeopTKj7SiUVpqP6zblhn'
-atoken='363546023-X897MAtGnBEq7vJjLtEgUyQtVMCxMDdw6hhQNnDl'
-asecret='3PAQg91fmCIBP4SdSMg2cEe7lKc1VozS6Dg35NZy3Gjbq'
+ckey='YOUR_KEY_HERE'
+csecret='YOUR_SECRET_HERE'
+atoken='YOUR_TOKEN_HERE'
+asecret='YOUR_TOKEN_SECRET_HERE'
 
 auth = OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
