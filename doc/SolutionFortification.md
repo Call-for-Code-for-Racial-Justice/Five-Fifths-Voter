@@ -9,11 +9,20 @@
   - **Benefits**: OpenShift is based on Kubernetes which is a container orchestration platform for scheduling and automating the deployment, management, and scaling of containerized applications.
 
 - Web Application Framework
-  - VueJS (UI/UX)
+  - VueJS (UI/UX) (In MVP)
   - **Benefits**: Open source JavaScript framework that is small in size; easy to understand and develop applications; known for its flexibility; good detailed documentation
-  - ExpressJS (API Framework)
+  - ExpressJS (API Framework) (In MVP)
   - **Benefits**: Lets you structure a web application to handle multiple different http requests at a specific url. Express is a minimal, open source and flexible Node. js web app framework designed to make developing websites, web apps, & API’s much easier.
 
+ - Artificial Intelligence
+   - Watson Discovery (Not in MVP)
+   - **Benefits**: This capability is available as a service in IBM Cloud. It is AI-powered search technology that uses text analytics and natural language processing to break open data silos and retrieves specific answers to your questions, while also data mining to analyze and relationships buried in enterprise data.
+    - **Some Potential Use Cases**
+      - Aggregate in-state data sources to create a body of knowledge for each state to determine actionable insights and to improve tailoring of responses to user based on their location 
+      - Aggregate date sources across states into a United States body of knowledge to determine actionable insights across states. 
+      - Aggregate data sources regarding candidates to provide the voter with data points as they assess which candidates they will support and vote for
+      -  Aggregate data for rating of polling locations
+      - NOTE: Implementation of these use cases would improve the overall user experience but especially for the “SME” role
 
 - User Experience Expertise
   - Design experience with improving the usability and accessibility, for users with special needs to include Elderly and Disabled
