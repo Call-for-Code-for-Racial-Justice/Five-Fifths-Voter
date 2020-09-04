@@ -1,15 +1,16 @@
 # embrace-the-vote
 
-# The Problem
-Black voters in Georgia (and elsewhere) need get to the correct polling station, quickly and affordably according to their own schedule and are able to equip themselves with the necessary information and to vote according to the most up​ to date, local requirements.​
+# Team
 
-Let's use web technology on the IBM cloud to help!
+Alexandria Leggett, Yolanda Rabun, Alexandra Devine, Syd Bailey, Gerald Mitchell, Andrea Lucas, David Nixon, Chris Stefano, Dylan Zucker, Kristen Ray, Roosevelt Faulkner
 
-# Solution
-A virtual ONE-STOP-SHOP  for Black voters to assist  them with all their voting  needs. Our mission statement is described in the 3 E’s:
-- EDUCATE 
-- EMPOWER
-- ENABLE
+# Problem & Solution
+Black Voters have for years experienced roadblocks. The process may be impossible or challenging due to burdensome local processes, changing requirements, regulations, and lack of information.
+
+Our solution will ensure that Black voters are able to get to the correct polling station, quickly and affordably according to their own schedule and are able to equip themselves with the necessary information to vote according to the most up to date, and local requirements.
+
+# Pitch
+The embRACEtheVOTE app creates a truly fair and equal opportunity voting process by providing knowledge and accessibility to all required elements. embRACEtheVOTE will leverage our technology to both identify and strive to eliminate bias/prejudice embedded in the voting system.
 
 # Skills
 All developers can assist with this solution. Currently it is built with Vue JS for the UI and Node/Express for the API layer.
