@@ -27,7 +27,7 @@
 - User Experience Expertise
   - Design experience with improving the usability and accessibility, for users with special needs to include Elderly and Disabled
   - Responsive website design
-
+  - If Artificial Intelligence is integrated with this solution, it has the potential to provide this role with actionable insights and trends on both voters and candidates
 
 
 ## User Experience Goals
