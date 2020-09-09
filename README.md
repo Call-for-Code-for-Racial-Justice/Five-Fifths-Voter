@@ -2,7 +2,7 @@
 
 # Team
 
-Alexandria Leggett, Yolanda Rabun, Alexandra Devine, Syd Bailey, Gerald Mitchell, Andrea Lucas, David Nixon, Chris Stefano, Dylan Zucker, Kristen Ray, Roosevelt Faulkner
+Alexandria Leggett, Yolanda Rabun, Alexandra Devine, Syd Bailey, Gerald Mitchell, Denise Knorr, Andrea Lucas, David Nixon, Chris Stefano, Dylan Zucker, Kristen Ray, Roosevelt Faulkner
 
 # Problem & Solution
 Black Voters have for years experienced roadblocks. The process may be impossible or challenging due to burdensome local processes, changing requirements, regulations, and lack of information.
