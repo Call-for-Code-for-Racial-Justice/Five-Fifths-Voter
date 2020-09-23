@@ -16,9 +16,6 @@
     <cv-header-menu-item :to="{ name: 'support-page' }"
       >Voter Support</cv-header-menu-item
     >
-    <cv-header-menu-item :to="{ name: 'rate-page' }"
-      >Rate The Vote</cv-header-menu-item
-    >
   </cv-header>
 </template>
 
