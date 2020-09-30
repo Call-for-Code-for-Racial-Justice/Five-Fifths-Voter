@@ -45,6 +45,13 @@
 
 <script>
 export default {
-  name: 'AppHeader'
+  name: 'AppHeader',
+  data() {
+    return {
+      areLeftPanels() {
+        return false;
+      }
+    };
+  }
 };
 </script>
