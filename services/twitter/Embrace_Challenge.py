@@ -5,15 +5,15 @@ from tweepy.streaming import StreamListener
 from textblob import TextBlob
 import re
 import time
-import os.path
+import os
 import sys
 
-## Enter your twitter credentials here
+## Enter your twitter credentials here in .env file or set them as environment variables
 ## To be fixed, see https://github.com/embrace-call-for-code/embrace-the-vote/issues/22
-ckey='YOUR_KEY_HERE'
-csecret='YOUR_SECRET_HERE'
-atoken='YOUR_TOKEN_HERE'
-asecret='YOUR_TOKEN_SECRET_HERE'
+ckey=os.environ.get('NODE_TWITTER_API_KEY')
+csecret=os.environ.get('NODE_TWITTER_API_SECRET_KEY')
+atoken=os.environ.get('NODE_TWITTER_ACCESS_TOKEN')
+asecret=os.environ.get('NODE_TWITTER_ACCESS_TOKEN_SECRET')
 
 ## Connect to twitter API
 auth = OAuthHandler(ckey, csecret)
