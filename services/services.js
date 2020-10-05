@@ -21,11 +21,7 @@ const about = {
   ],
 };
 
-const states = require('./data/earlyvoting/states');
-
-const regions = require('./data/earlyvoting/GA/regions');
-
-const locations = require('./data/earlyvoting/GA/mocklocations');
+const states = require('./data/earlyVoting/states');
 
 const states2 = require('./data/ballotreturn/states');
 
@@ -34,6 +30,8 @@ const regions2 = require('./data/ballotreturn/GA/regions');
 const locations2 = require('./data/ballotreturn/GA/mocklocations');
 
 const postcodes = require('./data/postcodes/US.json');
+
+const earlyVotingGa = require('./routes/earlyvoting/ga');
 
 app.use((req, res, next) => {
   res.append('Access-Control-Allow-Origin', ['*']);
@@ -57,7 +55,7 @@ app.get('/earlyvoting/regions/', (req, res) => {
   let stateid = req.query.stateid;
   const foundRegions = stateid === 'GA';
   if (foundRegions) {
-    res.send(regions);
+    return earlyVotingGa.regions(req, res);
   } else {
     console.log(`State not found.`);
     res.status(404).send();
@@ -68,13 +66,8 @@ app.get('/earlyvoting/locations/', (req, res) => {
   // console.log('Returning locations', req.query);
   let stateid = req.query.stateid;
   let locid = req.query.locid.toUpperCase();
-  const foundLocation = locations.list.find((loc) => loc.place === locid);
-  if (foundLocation) {
-    res.send(foundLocation);
-  } else {
-    console.log(`location not found.`);
-    res.status(404).send();
-  }
+  if (stateid == 'GA') return earlyVotingGa.locations(req, res);
+  else return res.status(404).send();
 });
 
 app.get('/ballotreturn/states/', (req, res) => {
