@@ -1,6 +1,6 @@
 # Emulate deployed Mongo db for local development
 
-The deployed version of this app use an ephemeral Mongo db to store cache data but normally you should not care about that. If however you are working on the scaping code that stores results in the Mongo db then, you do/should care.
+The deployed version of this app use an ephemeral Mongo db to store cache data but this Docker image does not get deployed. Instead it emulates the deployed version of the db so that you can develop code locally. If you are working on the early voting locations or absentee drop off locations, you will want to follow these instructions.
 
 To do development work locally then you need a Mongo db that is configured similarly to the deployed db. You might be tempted to work directly with the deployed db but that does not seem like a good idea. If you find a use case for that, document it here but for now lets use a docker image for our local Mongo db.
 

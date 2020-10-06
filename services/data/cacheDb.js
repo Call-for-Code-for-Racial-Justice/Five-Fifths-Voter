@@ -23,12 +23,15 @@ connection
   })
   .catch((reason) => {
     console.error(`Not connected to Cache DB: ${reason}`);
-    throw 'Not connected to Cache DB';
   });
 
 exports.connect = function () {
-  if (!client.isConnected()) connection = client.connect();
-  return connection;
+  try {
+    if (!client.isConnected()) connection = client.connect();
+    return connection;
+  } catch (error) {
+    console.error('No Cache DB connection');
+  }
 };
 
 exports.db = function () {
