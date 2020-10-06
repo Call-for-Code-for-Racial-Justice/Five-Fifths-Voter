@@ -2,7 +2,6 @@ import tweepy
 from tweepy import Stream
 from tweepy import OAuthHandler
 from tweepy.streaming import StreamListener
-from textblob import TextBlob
 import re
 import time
 import os
