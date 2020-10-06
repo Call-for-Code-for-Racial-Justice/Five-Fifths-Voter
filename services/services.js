@@ -3,6 +3,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const querystring = require('querystring');
 const lodash = require('lodash');
+require('dotenv').config();
 
 const port = 8080;
 const app = express();
@@ -125,9 +126,8 @@ app.get('/postcode/', (req, res) => {
 });
 
 app.get('/twitter/chatter/', (req, res) => {
-  // console.log('Returning locations', req.query);
   let screenname = req.query.screenname;
-  console.log(screenname)
+  //console.log('screenname', screenname);
 
   const { spawn } = require('child_process');
   const chatter = spawn('python3', [
@@ -141,14 +141,14 @@ app.get('/twitter/chatter/', (req, res) => {
     }
   });
 
-	const chunks = [];
+  const chunks = [];
 
-  chatter.stdout.on("data", function (chunk) {
+  chatter.stdout.on('data', function (chunk) {
     chunks.push(chunk);
   });
-    
+
   chatter.stdout.on('data', (data) => {
-  	const resp_data = {
+    const resp_data = {
       screenname: screenname,
       dom: Buffer.concat(chunks).toString(),
     };
