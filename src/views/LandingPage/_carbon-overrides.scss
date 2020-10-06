@@ -19,3 +19,7 @@
   text-decoration: none;
   // cursor: none;
 }
+
+.vuejs-countdown .digit {
+  font-size: 16vw !important; // had to override npm package styling
+}
