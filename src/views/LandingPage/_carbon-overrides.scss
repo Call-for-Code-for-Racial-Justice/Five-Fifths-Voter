@@ -2,10 +2,20 @@
   right: 0;
 }
 
-.bx--grid--full-width {
-  max-width: 1500px;
-}
+// .bx--grid--full-width {
+//   max-width: 1500px;
+// }
 
 .bx--content {
   min-height: calc(100vh - 200px);
+}
+
+.bx--header {
+  position: relative;
+}
+
+.global-nav__link.bx--link:hover {
+  color: #fff; //carbon token $text-03
+  text-decoration: none;
+  // cursor: none;
 }
