@@ -2,7 +2,11 @@
   width: 100vw;
   min-height: 400px;
   background-color: #000;
+  color: #323232;
   display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: $spacing-06 48px;
 
   @media (min-width: 1056px) {
     min-height: 600px;
@@ -10,38 +14,44 @@
 }
 
 .hero__image {
-  height: 250px;
+  width: 100%;
   position: absolute;
-  left: 10%;
-  top: 75px;
-
   opacity: 0.5;
 
   @media (min-width: 1056px) {
-    height: 400px;
-    left: 20%;
-    top: 125px;
   }
 }
 
 .hero__heading {
-  @include carbon--type-style('productive-heading-05');
-  font: {
-    weight: 600;
-    style: italic;
-  }
-  position: absolute;
-  max-width: 500px;
-  color: white;
-  left: calc(50% - 175px);
-  top: 175px;
+  @include carbon--type-style('productive-heading-07');
+  margin-bottom: $spacing-05;
+}
 
-  @media (min-width: 1056px) {
-    @include carbon--type-style('productive-heading-07');
-    font: {
-      weight: 600;
-      style: italic;
-    }
-    top: 275px;
-  }
+.hero__description {
+  @include carbon--type-style('productive-heading-03');
+  max-width: 630px;
+  margin-bottom: $spacing-05;
+}
+
+.hero__quote {
+  @include carbon--type-style('quotation-01');
+}
+
+.hero__author {
+  font-style: italic;
+}
+
+.button--cta {
+  position: absolute;
+  bottom: 0;
+  right: $spacing-04;
+  min-height: 184px;
+  min-width: 400px;
+}
+
+.button--cta-text {
+  @include carbon--type-style('productive-heading-03');
+  position: absolute;
+  top: calc(#{$spacing-06} + #{$spacing-02});
+  left: $spacing-06;
 }

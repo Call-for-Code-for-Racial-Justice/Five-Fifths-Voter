@@ -1,0 +1,35 @@
+.global-nav {
+  background: {
+    color: #171717;
+  }
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  padding: 0 $spacing-06;
+}
+
+.global-nav__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.global-nav__list-item {
+  min-width: 350px;
+  padding: 0 $spacing-06;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: #252525;
+  }
+}
+
+.global-nav__link {
+  @include carbon--type-style('productive-heading-02');
+  display: block;
+  color: $text-04;
+  height: 100%;
+  line-height: 82px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

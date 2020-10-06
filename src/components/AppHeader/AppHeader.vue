@@ -1,5 +1,21 @@
 <template>
-  <cv-header aria-label="Carbon header">
+  <nav class="global-nav">
+    <cv-list :ordered="ordered" class="global-nav__list">
+      <cv-list-item class="global-nav__list-item">
+        <cv-link class="global-nav__link">Why Vote</cv-link>
+      </cv-list-item>
+      <cv-list-item class="global-nav__list-item">
+        <cv-link class="global-nav__link">Voter Journey</cv-link>
+      </cv-list-item>
+      <cv-list-item class="global-nav__list-item">
+        <cv-link class="global-nav__link">Get Connected</cv-link>
+      </cv-list-item>
+      <cv-list-item class="global-nav__list-item">
+        <cv-link class="global-nav__link">Voter Support</cv-link>
+      </cv-list-item>
+    </cv-list>
+  </nav>
+  <!-- <cv-header aria-label="Carbon header">
     <cv-header-menu-button aria-label="Header menu" aria-controls="side-nav" />
     <cv-skip-to-content href="#main-content">
       Skip to content
@@ -40,7 +56,7 @@
       </cv-side-nav>
     </template>
     <template v-slot:right-panels v-if="areRightPanels"> </template>
-  </cv-header>
+  </cv-header> -->
 </template>
 
 <script>
@@ -55,3 +71,8 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+@import '../../styles/carbon-utils';
+@import './appheader.scss';
+</style>
