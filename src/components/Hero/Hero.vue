@@ -12,9 +12,10 @@
       process.
     </h2>
     <h3 class="hero__quote">
-      "Knowledge is power."
+      "My dear friends: Your vote is precious, almost sacred. It is the most
+      powerful nonviolent tool we have to create a more perfect union."
       <br />
-      <span class="hero__author"> - Thomas Jefferson</span>
+      <span class="hero__author"> - John Lewis, 2012</span>
     </h3>
     <cv-button class="button--cta">
       <span class="button--cta-text">Call to Action</span>

@@ -12,12 +12,16 @@
 
 .article__quote {
   @include carbon--type-style('quotation-01');
-  font-size: 28px; //designer override
-  margin-bottom: 16px;
+  display: block;
+  margin-bottom: $spacing-07;
 }
 
 .quote--author {
   font-style: italic;
+}
+
+.article__content {
+  max-width: 400px;
 }
 
 .article-feed {
@@ -31,25 +35,32 @@
 .article__heading {
   @include carbon--type-style('productive-heading-05');
   line-height: 4rem;
+  margin-bottom: calc(#{$spacing-05} + #{$spacing-02});
 }
 
 .article__paragraph {
   @include carbon--type-style('body-long-02');
   color: #7b8898;
-  margin-bottom: 20px;
+  margin-bottom: calc(#{$spacing-05} + #{$spacing-02});
 }
 
 .article__img {
-  display: flex;
-  align-self: center;
-  max-height: 225px;
-  margin-top: 20px;
+  display: block;
+  max-width: 100%;
+  width: auto;
 
-  @media (min-width: 1056px) {
-    margin-top: 0;
-    max-height: 300px;
-    max-width: 430px;
-  }
+  // @media (min-width: 1056px) {
+  //   margin-top: 0;
+  //   max-height: 300px;
+  //   max-width: 430px;
+  // }
+}
+
+.article__img-container {
+  margin-left: -1rem;
+  margin-right: -2rem;
+  max-height: 479px;
+  overflow: hidden;
 }
 
 .article__content > .button {

@@ -1,7 +1,7 @@
 {
   "name": "services",
   "version": "1.0.0",
-  "description": "API services for EmbRACE The Vote",
+  "description": "API services for five/fifths voter",
   "main": "index.js",
   "repository": "https://github.com/embrace-call-for-code/embrace-the-vote",
   "author": "IBM",
