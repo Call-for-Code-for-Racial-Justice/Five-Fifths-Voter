@@ -5,7 +5,7 @@
 - [install yarn](https://yarnpkg.com/lang/en/docs/cli/install/)
 - [install python3](https://realpython.com/installing-python/)
 - install python dependencies - `pip3 install --user tweepy WordCloud ibm_watson`
-- **OPTIONAL** [install docker](https://docs.docker.com/get-docker/) (You only need Docker if you are debugging/testing the deploy process.)
+- [install docker](https://docs.docker.com/get-docker/)
 
 ## Project setup
 
@@ -22,7 +22,7 @@ Start services (see [services README](services/README.md) for details)
 
 ```
 cd services
-yarn serve
+yarn test
 ```
 
 Start web app (open another terminal in root project directory `embrace-the-vote`)
