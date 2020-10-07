@@ -6,30 +6,18 @@
 }
 
 .article {
-  display: grid;
-  //   grid-gap: 20px;
-  grid-template-columns: 1fr;
-  padding: 40px 0;
-
-  &:first-child {
-    padding-top: 0;
-  }
-
-  &:last-child {
-    padding-bottom: 0;
-  }
-
-  @media (min-width: 1056px) {
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr;
-  }
+  color: #fff;
+  padding: $spacing-08 0;
 }
 
 .article__quote {
   @include carbon--type-style('quotation-01');
-  font-style: italic;
-  font-weight: 500;
+  font-size: 28px; //designer override
   margin-bottom: 16px;
+}
+
+.quote--author {
+  font-style: italic;
 }
 
 .article-feed {

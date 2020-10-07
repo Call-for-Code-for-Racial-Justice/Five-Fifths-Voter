@@ -2,7 +2,7 @@
   <div>
     <Hero img="mother-daughter-hero.jpeg" />
     <AppHeader />
-    <cv-content id="#main-content">
+    <cv-content class="main-content" id="#main-content">
       <slot />
     </cv-content>
     <GlobalFooter />
@@ -25,3 +25,7 @@ export default {
   //pagelayout needs prop for backgroundImg
 };
 </script>
+
+<style lang="scss">
+@import './pagelayout';
+</style>
