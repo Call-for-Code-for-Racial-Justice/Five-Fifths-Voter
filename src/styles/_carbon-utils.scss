@@ -11,11 +11,4 @@
 @import '../components/VoteNow/votenow';
 @import '../views/JourneyPage/journeypage';
 @import '../components/GlobalFooter/globalfooter';
-
-.smalllink {
-  font-size: 25%;
-  margin-top: 8em;
-}
-.smalllink a {
-  font-size: 25%;
-}
+@import '../components/Countdown/countdown';

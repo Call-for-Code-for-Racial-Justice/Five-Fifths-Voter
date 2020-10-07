@@ -8,6 +8,7 @@
 
 .bx--content {
   min-height: calc(100vh - 200px);
+  padding: 0;
 }
 
 .bx--header {
@@ -18,8 +19,4 @@
   color: #fff; //carbon token $text-03
   text-decoration: none;
   // cursor: none;
-}
-
-.vuejs-countdown .digit {
-  font-size: 16vw !important; // had to override npm package styling
 }

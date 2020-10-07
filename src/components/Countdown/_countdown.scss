@@ -1,0 +1,32 @@
+.container--countdown {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 94px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(112, 112, 112, 1) 100%
+  );
+}
+
+.vuejs-countdown .text {
+  // not bringing in carbon styles -- need to fix.
+  // @include carbon--type-style('productive-heading-06');
+  text-transform: capitalize !important;
+  font-size: 48px !important;
+}
+
+.vuejs-countdown .digit {
+  font-size: 16vw !important; // had to override npm package styling
+}
+
+.vuejs-countdown li:after {
+  top: 5% !important;
+  right: -15% !important;
+  font-size: 16vw !important;
+}
+
+.vuejs-countdown {
+  padding: 0;
+  margin: 0 auto !important;
+}
