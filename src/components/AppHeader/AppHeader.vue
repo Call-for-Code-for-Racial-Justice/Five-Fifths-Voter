@@ -1,5 +1,11 @@
 <template>
-  <nav class="global-nav" aria-label="Global navigation">
+  <nav
+    v-bind:class="{
+      'global-nav': true
+      // 'global-nav--alt': logic to check the page and render the correct navigation class goes here.
+    }"
+    aria-label="Global navigation"
+  >
     <cv-list :ordered="ordered" class="global-nav__list">
       <cv-list-item class="global-nav__list-item">
         <cv-link :to="{ name: 'why-page' }" class="global-nav__link"
