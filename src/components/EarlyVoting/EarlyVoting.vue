@@ -64,6 +64,7 @@ export default {
         if (m === null) {
           this.invalid_zip =
             'Enter valid zip code (' + zipregex.exec(this.postal_code) + ')';
+          this.locationTable = 'No Data Available';
         } else {
           this.invalid_zip = '';
           axios
