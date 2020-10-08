@@ -1,48 +1,61 @@
 <template>
-  <cv-content id="#main-content">
-    <div class="bx--grid bx--grid--full-width landing-page">
-      <div class="bx--row landing-page__r2">
-        <div class="bx--col-lg-16">
-          <section class="main main--register">
-            <aside class="content--register">
-              <h1 class="heading--lg">get voter support</h1>
-              <h4 class="heading--sm">resources are available to help you</h4>
-              <p>
-                <cv-link
-                  href="https://www.empowerline.org/services/transportation-options/"
-                  >Seniors, find a ride to the polls</cv-link
-                ><br />
-                <cv-link
-                  href="https://ymcaofcoastalga.org/news/2018/10/17/ymca-news/ymca-works-to-help-make-it-easier-for-parents-to-vote/"
-                  >Free election day childcare</cv-link
-                ><br />
-
-                <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.orem
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. orem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
-              </p>
-            </aside>
-          </section>
-        </div>
-      </div>
+  <PageLayout childData="mother-daughter-hero.jpeg">
+    <div class="page__details">
+      <h2 class="page__title">Support when you need it</h2>
     </div>
-  </cv-content>
+    <MainContent>
+      <template v-slot:content>
+        <aside class="aside">
+          <div class="aside__container--text">
+            <h2 class="aside__header">Resources are available to help you</h2>
+            <div class="aside__container--links">
+              <cv-link
+                href="https://www.empowerline.org/services/transportation-options/"
+                >Seniors, find a ride to the polls</cv-link
+              ><br />
+              <cv-link
+                href="https://ymcaofcoastalga.org/news/2018/10/17/ymca-news/ymca-works-to-help-make-it-easier-for-parents-to-vote/"
+                >Free election day childcare</cv-link
+              >
+              <br />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.orem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. orem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </aside>
+      </template>
+      <template v-slot:image>
+        <aside class="aside__container--img">
+          <img
+            class="aside__image"
+            src="../../assets/support-page-father-baby-image-1.jpg"
+            alt="Man lounges on beanbag chair while browsing on his laptop"
+          />
+        </aside>
+      </template>
+    </MainContent>
+  </PageLayout>
 </template>
 
 <script>
 import router from '../../router';
+import PageLayout from '../../components/PageLayout';
+import MainContent from '../../components/MainContent';
 
 export default {
   name: 'reg',
+  components: { PageLayout, MainContent },
   data() {
     return {
       regData: {}
@@ -58,3 +71,5 @@ export default {
   }
 };
 </script>
+
+//

@@ -8,6 +8,10 @@
   padding: 0 $spacing-06;
 }
 
+.global-nav--alt {
+  background-color: #f2f4f8;
+}
+
 .global-nav__list {
   display: flex;
   flex-direction: row;
@@ -23,6 +27,20 @@
   &:hover {
     background-color: #252525;
   }
+
+  &:active {
+    background-color: #252525;
+  }
+}
+
+.global-nav__list-item--alt {
+  &:hover {
+    background-color: #e0e4ea;
+  }
+
+  &:active {
+    background-color: #e0e4ea;
+  }
 }
 
 .global-nav__link {
@@ -35,6 +53,10 @@
   &:hover {
     cursor: pointer;
   }
+}
+
+.global-nav__link--alt {
+  color: #282828;
 }
 
 .global-nav__link.bx--link:visited {
