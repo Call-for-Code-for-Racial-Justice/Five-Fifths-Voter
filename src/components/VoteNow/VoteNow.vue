@@ -82,7 +82,7 @@ export default {
 							vit.load({
 							    modal: true,
 							    officialOnly: false,
-							    title: 'EmbRACE The Vote - Go Vote',						
+							    title: 'five/fifths voter - Go Vote',						
 							    logo: 'https://vit-logos.votinginfoproject.org/seals/ga.png',
 							    colors: {
 							      'header': '#9ccc66',

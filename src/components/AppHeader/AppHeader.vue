@@ -2,16 +2,24 @@
   <nav class="global-nav" aria-label="Global navigation">
     <cv-list :ordered="ordered" class="global-nav__list">
       <cv-list-item class="global-nav__list-item">
-        <cv-link class="global-nav__link">Why Vote</cv-link>
+        <cv-link :to="{ name: 'why-page' }" class="global-nav__link"
+          >Why Vote</cv-link
+        >
       </cv-list-item>
       <cv-list-item class="global-nav__list-item">
-        <cv-link class="global-nav__link">Voter Journey</cv-link>
+        <cv-link :to="{ name: 'journey-page' }" class="global-nav__link"
+          >Voter Journey</cv-link
+        >
       </cv-list-item>
       <cv-list-item class="global-nav__list-item">
-        <cv-link class="global-nav__link">Get Connected</cv-link>
+        <cv-link :to="{ name: 'connect-page' }" class="global-nav__link"
+          >Get Connected</cv-link
+        >
       </cv-list-item>
       <cv-list-item class="global-nav__list-item">
-        <cv-link class="global-nav__link">Voter Support</cv-link>
+        <cv-link :to="{ name: 'support-page' }" class="global-nav__link"
+          >Voter Support</cv-link
+        >
       </cv-list-item>
     </cv-list>
   </nav>

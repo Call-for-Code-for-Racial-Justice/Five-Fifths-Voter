@@ -24,17 +24,18 @@
 
 .hero__heading {
   @include carbon--type-style('productive-heading-07');
-  margin-bottom: $spacing-05;
+  margin-bottom: $spacing-06;
 }
 
 .hero__description {
   @include carbon--type-style('productive-heading-03');
   max-width: 630px;
-  margin-bottom: $spacing-05;
+  margin-bottom: $spacing-06;
 }
 
 .hero__quote {
   @include carbon--type-style('quotation-01');
+  max-width: 400px;
 }
 
 .hero__author {
