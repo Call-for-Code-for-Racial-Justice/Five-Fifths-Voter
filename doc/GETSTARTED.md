@@ -54,6 +54,11 @@ Signed-off-by: Example Person <person@example.com>
 
 The DCO text can either be manually added to your commit body, or you can add either -s or --signoff to your usual Git commit commands. If you forget to add the sign-off you can also amend a previous commit with the sign-off by running git commit --amend -s. If you’ve pushed your changes to GitHub already you’ll need to force push your branch after this with git push -f.
 
+### DCO needs your email address to match your github account
+
+- `git config user.email` make sure your email is configured
+- If it is not configured `git config --global user.email "person@example.com"`
+
 ## Project setup
 
 ```
