@@ -44,6 +44,7 @@
 }
 
 .aside__image {
+  object-fit: cover;
   display: block;
   min-height: 700px;
   width: -webkit-fill-available;
