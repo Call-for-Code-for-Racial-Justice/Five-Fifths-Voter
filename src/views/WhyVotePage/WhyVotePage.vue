@@ -1,52 +1,62 @@
 <template>
-  <cv-content id="#main-content">
-    <div class="bx--grid bx--grid--full-width landing-page">
-      <div class="bx--row landing-page__r2">
-        <div class="bx--col-lg-16">
-          <h1 class="heading--xl">why vote?</h1>
-          <h3 class="heading--md">there's so much at stake.</h3>
-          <img
-            class="img--lg"
-            src="../../assets/child-school.jpg"
-            alt="Black child, smiling at camera."
-          />
-          <p class="article__paragraph article-paragraph--alt">
-            It is through blood, sweat and tears that Black people earned the
-            right to vote. Many Black people protested, marched, were arrested
-            and even died as they fought the battle for voting equality. We
-            implore you to not let these sacrifices be in vain but to cease the
-            opportunity that your ancestors provided, that your voice can be
-            heard in America.
-          </p>
-          <p class="article__paragraph article-paragraph--alt">
-            In 1868, the 14th Amendment gave Black people the rights of
-            citizenship but it would be over 97 years before they could
-            successfully execute their right to vote. During this time span poll
-            taxes, literacy tests, and other tactics were used to undermine
-            Black people&#x27;s right to vote.
-          </p>
-          <br /><br />
-          <p class="article__paragraph article-paragraph--alt">
-            It was not until 1965 when Voting Rights Act was executed that
-            provided a successful pathway for Black people to vote. Please
-            exercise your right to vote. It was hard earned by your ancestors
-          </p>
-          <br /><br />
-          For my information on Black people’s journey to vote check out
-          <cv-link
-            href="https://www.loc.gov/teachers/classroommaterials/presentationsandactivities/presentations/elections/voting-rights-african-americans.html"
-          >
-            Library of Congress - Voting Rights for African Americans
-          </cv-link>
-        </div>
-      </div>
+  <PageLayout childData="mother-daughter-hero.jpeg">
+    <div class="page__details">
+      <h2 class="page__title">why vote?</h2>
     </div>
-  </cv-content>
+    <MainContent>
+      <template v-slot:content>
+        <aside class="aside">
+          <div class="aside__container--text">
+            <h2 class="aside__header">So what's the big deal?</h2>
+            <p>
+              It is through blood, sweat and tears that Black people earned the
+              right to vote. Many Black people protested, marched, were arrested
+              and even died as they fought the battle for voting equality. We
+              implore you to not let these sacrifices be in vain but to cease
+              the opportunity that your ancestors provided, that your voice can
+              be heard in America.
+              <br /><br />
+              In 1868, the 14th Amendment gave Black people the rights of
+              citizenship but it would be over 97 years before they could
+              successfully execute their right to vote. During this time span
+              poll taxes, literacy tests, and other tactics were used to
+              undermine Black people&#x27;s right to vote.
+              <br /><br />
+              It was not until 1965 when Voting Rights Act was executed that
+              provided a successful pathway for Black people to vote. Please
+              exercise your right to vote. It was hard earned by your ancestors
+              <br />
+              <br />
+              For my information on Black people’s journey to vote check out
+              <cv-link
+                href="https://www.loc.gov/teachers/classroommaterials/presentationsandactivities/presentations/elections/voting-rights-african-americans.html"
+              >
+                Library of Congress - Voting Rights for African Americans
+              </cv-link>
+            </p>
+          </div>
+        </aside>
+      </template>
+      <template v-slot:image>
+        <aside class="aside__container--img">
+          <img
+            class="aside__image"
+            src="../../assets/child-school.jpg"
+            alt="A young child in school uniform smiles directly at camera"
+          />
+        </aside>
+      </template>
+    </MainContent>
+  </PageLayout>
 </template>
 
 <script>
+import PageLayout from '../../components/PageLayout';
+import MainContent from '../../components/MainContent';
+
 export default {
   name: 'connect',
+  components: { PageLayout, MainContent },
   data() {
     return {};
   },
