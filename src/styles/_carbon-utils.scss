@@ -14,3 +14,8 @@
 @import '../components/Countdown/countdown';
 @import '../views/SupportPage/supportpage';
 @import './carbon-overrides';
+
+//theme
+@import '~@carbon/themes/scss/themes';
+$carbon--theme: $carbon--theme--g10;
+@include carbon--theme();
