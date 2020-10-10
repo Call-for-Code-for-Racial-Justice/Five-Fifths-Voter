@@ -17,7 +17,7 @@
         <img
           class="aside__image"
           src="../../assets/support-page-father-baby-image-1.jpg"
-          alt="Man holds newborn baby"
+          alt="Black man holds newborn baby"
         />
       </aside>
     </template>
