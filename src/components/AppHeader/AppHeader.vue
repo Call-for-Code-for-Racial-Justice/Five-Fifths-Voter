@@ -1,34 +1,47 @@
 <template>
-  <nav
-    v-bind:class="{
-      'global-nav': true
-      // 'global-nav--alt': logic to check the page and render the correct navigation class goes here.
-    }"
-    aria-label="Global navigation"
-  >
-    <cv-list :ordered="ordered" class="global-nav__list">
-      <cv-list-item class="global-nav__list-item">
-        <cv-link :to="{ name: 'why-page' }" class="global-nav__link"
-          >Why Vote</cv-link
-        >
-      </cv-list-item>
-      <cv-list-item class="global-nav__list-item">
-        <cv-link :to="{ name: 'journey-page' }" class="global-nav__link"
-          >Voter Journey</cv-link
-        >
-      </cv-list-item>
-      <cv-list-item class="global-nav__list-item">
-        <cv-link :to="{ name: 'connect-page' }" class="global-nav__link"
-          >Get Connected</cv-link
-        >
-      </cv-list-item>
-      <cv-list-item class="global-nav__list-item">
-        <cv-link :to="{ name: 'support-page' }" class="global-nav__link"
-          >Voter Support</cv-link
-        >
-      </cv-list-item>
-    </cv-list>
-  </nav>
+  <cv-header aria-label="Carbon header">
+    <cv-header-menu-button aria-label="Header menu" aria-controls="side-nav" />
+    <cv-skip-to-content href="#main-content">
+      Skip to content
+    </cv-skip-to-content>
+    <cv-header-name href="javascript:void(0)" prefix="">
+      five/fifths voter.
+    </cv-header-name>
+    <cv-header-nav aria-label="Carbon nav">
+      <cv-header-menu-item :to="{ name: 'why-page' }">
+        Why Vote
+      </cv-header-menu-item>
+      <cv-header-menu-item :to="{ name: 'journey-page' }">
+        Voter Journey
+      </cv-header-menu-item>
+      <cv-header-menu-item :to="{ name: 'connect-page' }">
+        Get Connected
+      </cv-header-menu-item>
+      <cv-header-menu-item :to="{ name: 'support-page' }">
+        Voter Support
+      </cv-header-menu-item>
+    </cv-header-nav>
+    <template v-slot:left-panels v-if="areLeftPanels">
+      <cv-side-nav id="side-nav" fixed>
+        <cv-side-nav-items>
+          <cv-header-side-nav-items>
+            <cv-header-menu-item :to="{ name: 'why-page' }">
+              Why Vote
+            </cv-header-menu-item>
+            <cv-header-menu-item :to="{ name: 'journey-page' }">
+              Voter Journey
+            </cv-header-menu-item>
+            <cv-header-menu-item :to="{ name: 'connect-page' }">
+              Get Connected
+            </cv-header-menu-item>
+            <cv-header-menu-item :to="{ name: 'support-page' }">
+              Voter Support
+            </cv-header-menu-item>
+          </cv-header-side-nav-items>
+        </cv-side-nav-items>
+      </cv-side-nav>
+    </template>
+  </cv-header>
 </template>
 
 <script>

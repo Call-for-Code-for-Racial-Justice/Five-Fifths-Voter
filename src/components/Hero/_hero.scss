@@ -1,16 +1,6 @@
 .hero {
-  width: 100vw;
-  min-height: 400px;
-  background-color: #000;
-  color: #323232;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: $spacing-06 48px;
-
-  @media (min-width: 1056px) {
-    min-height: 600px;
-  }
+  height: auto;
+  width: 100%;
 }
 
 .hero__image {

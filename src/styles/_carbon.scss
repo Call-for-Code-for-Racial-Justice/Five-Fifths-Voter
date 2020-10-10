@@ -3,6 +3,9 @@
 // );
 
 @import 'carbon-components/scss/globals/scss/styles';
+@import 'carbon-components/scss/globals/scss/vars.scss';
+$carbon--theme: $carbon--theme--g100;
+@include carbon--theme($carbon--theme);
 
 //global styles
 .heading {
@@ -72,6 +75,10 @@
   margin-bottom: $spacing-08;
 }
 
+.aside__paragraph {
+  margin-bottom: $spacing-08;
+}
+
 .page__details {
   display: flex;
   flex-direction: row;
@@ -83,7 +90,11 @@
 .page__title {
   @include carbon--type-style('productive-heading-03');
   color: #fff;
-  padding: 0 $spacing-06;
+  padding: 0;
+
+  @media (min-width: 1056px) {
+    padding: 0 $spacing-06;
+  }
 }
 
 //resets
