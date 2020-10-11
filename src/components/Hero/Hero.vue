@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <div class="hero__content">
+      <!-- <div class="hero__content">
         <h1 class="hero__heading">five fifths voter.</h1>
         <h2 class="hero__description">
           We will educate Black voters by providing them with guidance and
@@ -29,8 +29,8 @@
           <br />
           <span class="hero__author"> - John Lewis, 2012</span>
         </h3>
-      </div>
-      <div class="bx--row bx--feature-card__row">
+      </div> -->
+      <div class="bx--row  bx--feature-card__row">
         <div
           class="bx--no-gutter-md--left bx--offset-md-4 bx--offset-lg-8 bx--col-md-4 bx--col-lg-4 bx--feature-card__column"
         >
@@ -42,7 +42,7 @@
             <div class="bx--aspect-ratio bx--aspect-ratio--2x1">
               <div class="bx--aspect-ratio--object">
                 <router-link class="bx--feature-card__link" to="/whyvote">
-                  <div class="hero__cta bx--tile">
+                  <div class="bx--tile">
                     <h4 class="bx--resource-card__title">
                       Why Vote
                     </h4>
@@ -176,3 +176,7 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+@import './hero';
+</style>

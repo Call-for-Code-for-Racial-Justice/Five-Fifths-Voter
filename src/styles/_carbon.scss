@@ -10,39 +10,17 @@
 $carbon--theme: $carbon--theme--g10;
 @include carbon--theme();
 
-// .heading--lg {
-//   @include carbon--type-style('productive-heading-06');
-// }
-
-// .heading--xl {
-//   @include carbon--type-style('expressive-heading-06');
-//   font-size: 54px;
-//   margin-bottom: $spacing-06;
-// }
-
-// .heading--sm {
-//   @include carbon--type-style('productive-heading-04');
-//   margin-bottom: $spacing-05;
-// }
-
-// .main {
-//   display: grid;
-//   grid-template-columns: 1fr;
-
-//   @media (min-width: 1056px) {
-//     grid-template-columns: 400px 1fr;
-//     grid-gap: 50px;
-//     grid-template-columns: 1fr 1fr;
-//   }
-// }
-
 .aside {
   background-color: #252525;
   color: #fff;
-  margin-right: -1rem;
+  margin-right: 0;
   height: 100%;
   display: flex;
   align-items: center;
+
+  @media (min-width: 672px) {
+    margin-right: -1rem;
+  }
 }
 
 .aside__image {

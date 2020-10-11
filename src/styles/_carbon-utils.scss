@@ -4,13 +4,12 @@
 @import 'carbon-components/scss/globals/scss/vars.scss';
 
 //partials
-@import '../components/Hero/hero';
+// @import '../components/Hero/hero';
 @import '../views/LandingPage/landingpage';
 @import '../components/EarlyVoting/earlyvoting';
 @import '../components/Register/register';
 @import '../components/VoteNow/votenow';
 @import '../views/JourneyPage/journeypage';
-@import '../components/GlobalFooter/globalfooter';
 @import '../components/Countdown/countdown';
 @import '../views/SupportPage/supportpage';
 @import './carbon-overrides';
