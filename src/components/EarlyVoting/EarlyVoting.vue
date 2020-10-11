@@ -1,5 +1,28 @@
 <template>
-  <section class="main main--early-voting">
+  <MainContent>
+    <template v-slot:content>
+      <aside class="aside">
+        <div class="aside__container--text">
+          <h2 class="aside__header">Vote like it's hot</h2>
+          <p class="aside__paragraph">
+            voting is the future for your neighbors, your friends, your family,
+            and yourself.
+          </p>
+          <cv-button>Register to vote now</cv-button>
+        </div>
+      </aside>
+    </template>
+    <template v-slot:image>
+      <aside class="aside__container--img">
+        <img
+          class="aside__image"
+          src="../../assets/support-page-father-baby-image-1.jpg"
+          alt="Man lounges on beanbag chair while browsing on his laptop"
+        />
+      </aside>
+    </template>
+  </MainContent>
+  <!-- <section class="main main--early-voting">
     <aside class="locations">
       <h1 class="heading--lg">find your early voting location.</h1>
       <cv-text-input
@@ -26,13 +49,12 @@
         >
       </div>
     </aside>
-    <!-- placeholder for iframe -->
     <img
       class="map"
       src="../../assets/holder-atlanta-map.png"
       alt="google map img"
     />
-  </section>
+  </section> -->
 </template>
 
 <script>

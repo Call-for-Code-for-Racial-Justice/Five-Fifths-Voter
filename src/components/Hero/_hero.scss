@@ -1,24 +1,99 @@
+.impactFeatureCard {
+  background-color: #000;
+
+  @media (min-width: 42rem) {
+    margin-right: 0;
+  }
+}
+
+.impactFeatureCard .bx--row {
+  margin-right: 0;
+}
+
+.impactFeatureCard .bx--feature-card {
+  overflow: hidden;
+}
+.bx--feature-card {
+  position: relative;
+}
+
+.bx--feature-card__row {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: calc(100% + 2rem);
+}
+
+.impactFeatureCard .bx--resource-card .bx--tile {
+  background-color: #0f62fe;
+  color: #fff;
+}
+
+.bx--resource-card .bx--tile {
+  background: var(--cds-ui-background, #fff);
+  height: 100%;
+  padding: var(--cds-spacing-05, 1rem) 25% var(--cds-spacing-05, 1rem)
+    var(--cds-spacing-05, 1rem);
+  position: relative;
+  transition: background 70ms;
+  text-decoration: none;
+}
+
+.bx--resource-card__icon--img {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  min-width: 32px;
+  min-height: 32px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bx--resource-card__icon--action {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 20px;
+  height: 20px;
+}
+
+.impactFeatureCard .bx--resource-card h4 {
+  @include carbon--type-style('productive-heading-03');
+}
+
 .hero {
-  height: auto;
-  width: 100%;
+  max-height: 738px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: $spacing-05;
+
+  @media (min-width: 1056px) {
+    padding: $spacing-08;
+  }
 }
 
 .hero__image {
-  width: 100%;
-  position: absolute;
-  opacity: 0.5;
-
-  @media (min-width: 1056px) {
-  }
+  height: inherit;
+  object-fit: contain;
+  opacity: 0.2;
 }
 
 .hero__heading {
   @include carbon--type-style('productive-heading-07');
+  font-weight: 400;
   margin-bottom: $spacing-06;
 }
 
 .hero__description {
   @include carbon--type-style('productive-heading-03');
+  font-size: 16px;
   max-width: 630px;
   margin-bottom: $spacing-06;
 }

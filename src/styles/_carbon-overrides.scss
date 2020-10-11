@@ -1,15 +1,24 @@
 @import 'carbon-components/scss/globals/scss/styles';
+@import '~@carbon/themes/scss/themes';
+$carbon--theme: $carbon--theme--g10;
+@include carbon--theme();
 
-.landing-page__r2 .bx--tabs__nav {
-  right: 0;
-}
+// .landing-page__r2 .bx--tabs__nav {
+//   right: 0;
+// }
 
 // .bx--grid--full-width {
 //   max-width: 1500px;
 // }
 
+.bx--row {
+  @media (min-width: 1056px) {
+    margin-right: 0;
+  }
+}
+
 .bx--content {
-  min-height: calc(100vh - 200px);
+  min-height: 100vh;
   padding: 0;
 }
 
