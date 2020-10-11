@@ -156,8 +156,73 @@
   padding-right: 0;
 }
 
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding: $spacing-05;
+
+  @media (min-width: 672px) {
+    padding: calc(#{$spacing-05} + 48px); //48px is size of nav bar
+  }
+
+  @media (min-width: 1056px) {
+    padding: $spacing-08;
+    top: 0;
+  }
+}
+
 .hero__image {
   height: max-content;
   object-fit: cover;
   opacity: 0.2;
+}
+
+.hero__heading {
+  @include carbon--type-style('productive-heading-05');
+  font-weight: 400;
+  margin-bottom: $spacing-04;
+
+  @media (min-width: 1056px) {
+    @include carbon--type-style('productive-heading-07');
+    font-weight: 400;
+    margin-bottom: $spacing-06;
+  }
+}
+
+.hero__description {
+  display: none;
+
+  @media (min-width: 1056px) {
+    @include carbon--type-style('productive-heading-03');
+    font-size: 16px;
+    max-width: 630px;
+    margin-bottom: $spacing-06;
+  }
+}
+
+.hero__quote {
+  @include carbon--type-style('quotation-01');
+  font-size: 16px;
+  max-width: 400px;
+
+  @media (min-width: 1056px) {
+    @include carbon--type-style('quotation-01');
+    max-width: 400px;
+  }
+}
+
+.hero__author {
+  font-style: italic;
+}
+
+.button--cta {
+  position: absolute;
+  bottom: 0;
+  right: $spacing-06;
+  min-height: 184px;
+  min-width: 400px;
 }

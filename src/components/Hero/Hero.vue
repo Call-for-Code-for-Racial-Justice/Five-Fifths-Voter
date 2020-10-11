@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <!-- <div class="hero__content">
+      <div class="hero__content">
         <h1 class="hero__heading">five fifths voter.</h1>
         <h2 class="hero__description">
           We will educate Black voters by providing them with guidance and
@@ -29,7 +29,7 @@
           <br />
           <span class="hero__author"> - John Lewis, 2012</span>
         </h3>
-      </div> -->
+      </div>
       <div class="bx--row  bx--feature-card__row">
         <div
           class="bx--no-gutter-md--left bx--offset-md-4 bx--offset-lg-8 bx--col-md-4 bx--col-lg-4 bx--feature-card__column"
