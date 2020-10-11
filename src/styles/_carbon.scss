@@ -47,6 +47,10 @@ $carbon--theme: $carbon--theme--g10;
   margin-bottom: $spacing-08;
 }
 
+.aside__link.aside__container--links {
+  flex-direction: column;
+}
+
 .aside__container--text {
   padding: 16px;
 
