@@ -1,4 +1,5 @@
-.main--early-voting {
+.main--ballot-return
+ {
   padding-top: 50px;
   grid-template-columns: 1fr;
 
@@ -7,18 +8,20 @@
   }
 }
 
-.content--early-voting > .article__img--register {
+.content--ballot-return
+ > .article__img--register {
   margin-top: 20px;
 }
 
-.content--early-voting > .heading--lg .heading--sm .article__quote {
+.content--ballot-return
+ > .heading--lg .heading--sm .article__quote {
   margin-bottom: 20px;
 }
 
-.article__img--early-voting {
+.article__img--ballot-return
+ {
   margin-top: $spacing-05;
 }
-
 
 .map {
   height: auto;

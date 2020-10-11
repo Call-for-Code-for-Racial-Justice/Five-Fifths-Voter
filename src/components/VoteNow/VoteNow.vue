@@ -1,12 +1,12 @@
 <template>
-  <div class="bx--row">
-    <div class="bx--col-lg-16">
-      <section class="main main--polls">
-        <aside class="poll-info">
-          <h1 class="heading--lg">
-            candidates, and deadlines and signups, oh my!
-          </h1>
-          <h4 class="heading--sm">What IDs are Acceptable in Georgia</h4>
+  <MainContent>
+    <template v-slot:content>
+      <aside class="aside">
+        <div class="aside__container--text">
+          <h2 class="aside__header">
+            Candidates, deadlines and signups, oh my!
+          </h2>
+          <h4>What IDs are Acceptable in Georgia</h4>
           <cv-list class="list">
             <cv-list-item class="list-item"
               >Any valid state or federal government issued photo ID, including
@@ -40,29 +40,37 @@
           >
             GA Secretary of State site
           </cv-link>
-        </aside>
-      </section>
-    </div>
-    <!-- <div class="bx--col-lg-10"> -->
-    <div id="_vit"></div>
-    <cv-button v-if="showButton" @click="showtool">
-      Show Polling Location
-    </cv-button>
-    <!-- </div> -->
-  </div>
+          <cv-button v-if="showButton" @click="showtool">
+            Show Polling Location
+          </cv-button>
+        </div>
+      </aside>
+    </template>
+    <template v-slot:image>
+      <aside class="aside__container--img">
+        <img
+          class="aside__image"
+          src="../../assets/vote-absentee-2.jpg"
+          alt="stock image of voters at a voting poll"
+        />
+      </aside>
+    </template>
+  </MainContent>
 </template>
 
 <script>
+import MainContent from '../../components/MainContent';
 import Vue from 'vue';
 import router from '../../router';
 import LoadScript from 'vue-plugin-load-script';
 Vue.use(LoadScript);
 
 export default {
-  name: 'reg',
+  name: 'votenow',
+  components: { MainContent },
   data() {
     return {
-      showButton: true
+      showButton: true,
     };
   },
   created() {
@@ -95,13 +103,15 @@ export default {
         .catch(() => {
           // Failed to fetch script
         });
-    }
+    },
   },
   mounted() {
     //this.showtool();
   },
   updated() {
     //this.showtool();
-  }
+  },
 };
 </script>
+
+
