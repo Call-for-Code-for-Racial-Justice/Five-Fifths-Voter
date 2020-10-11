@@ -41,8 +41,8 @@
         <aside class="aside__container--img">
           <img
             class="aside__image"
-            src="../../assets/child-school.jpg"
-            alt="A young child in school uniform smiles directly at camera"
+            src="../../assets/why-vote-page-father-daughter-image-1.jpg"
+            alt="A young father holds his infant daughter on his shoulders"
           />
         </aside>
       </template>
