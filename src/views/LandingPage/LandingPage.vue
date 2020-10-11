@@ -5,13 +5,13 @@
       <template v-slot:content>
         <article class="article">
           <div class="article__content">
-            <h2 class="article__heading">Why vote</h2>
+            <h2 class="article__heading">Our Mission</h2>
             <div class="bx--offset-lg-1">
               <p>
-                It is through blood, sweat and tears that Black people earned
-                the right to vote. Many Black people protested, marched, were
-                arrested and even died as they fought the battle for voting
-                equality.
+                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum
                 <br /><br />
                 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
                 lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum

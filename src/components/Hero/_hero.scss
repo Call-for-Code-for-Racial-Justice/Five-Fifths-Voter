@@ -1,13 +1,15 @@
+@import 'carbon-components/scss/globals/scss/vars.scss';
+@import 'carbon-components/scss/globals/scss/styles';
+
 .impactFeatureCard {
   background-color: #000;
+  margin: 0;
+  margin-top: $spacing-09;
 
   @media (min-width: 42rem) {
-    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
-}
-
-.impactFeatureCard .bx--row {
-  margin-right: 0;
 }
 
 .impactFeatureCard .bx--feature-card {
@@ -17,11 +19,61 @@
   position: relative;
 }
 
-.bx--feature-card__row {
+.bx--aspect-ratio {
+  position: relative;
+}
+.bx--feature-card__img {
+  position: relative;
+}
+
+.bx--aspect-ratio--16x9::before {
+  padding-top: 56.25%;
+  @media (min-width: 42rem) {
+    padding-top: 0 !important;
+  }
+}
+.bx--aspect-ratio:before {
+  content: '';
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
+}
+
+.bx--aspect-ratio--object {
   position: absolute;
+  top: 0;
   left: 0;
-  bottom: 0;
-  width: calc(100% + 2rem);
+  width: 100%;
+  height: 100%;
+}
+
+.impactFeatureCard .bx--feature-card img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.bx--aspect-ratio:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.bx--aspect-ratio {
+  position: relative;
+}
+
+.bx--aspect-ratio--2x1:before {
+  padding-top: 50%;
+}
+.bx--aspect-ratio:before {
+  content: '';
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
 }
 
 .impactFeatureCard .bx--resource-card .bx--tile {
@@ -37,6 +89,34 @@
   position: relative;
   transition: background 70ms;
   text-decoration: none;
+}
+
+.bx--tile {
+  display: block;
+  min-width: 8rem;
+  min-height: 4rem;
+  background-color: #f4f4f4;
+  position: relative;
+  padding: 1rem;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  height: -webkit-fill-available;
+}
+
+.bx--resource-card__title {
+  font-size: var(--cds-productive-heading-03-font-size, 1.25rem);
+  font-weight: var(--cds-productive-heading-03-font-weight, 400);
+  line-height: var(--cds-productive-heading-03-line-height, 1.625rem);
+  letter-spacing: var(--cds-productive-heading-03-letter-spacing, 0);
+  text-decoration: none;
+  color: #fff;
+}
+
+.impactFeatureCard .bx--resource-card h4 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: 0;
 }
 
 .bx--resource-card__icon--img {
@@ -57,12 +137,23 @@
   height: 20px;
 }
 
-.impactFeatureCard .bx--resource-card h4 {
-  @include carbon--type-style('productive-heading-03');
+.bx--feature-card__img .bx--aspect-ratio--object {
+  @media (min-width: 42rem) {
+    position: static;
+  }
 }
 
-.hero {
-  max-height: 738px;
+.bx--feature-card__row {
+  @media (min-width: 42rem) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc(100% + 2rem);
+  }
+}
+
+.hero.bx--col-lg-12 {
+  padding-right: 0;
 }
 
 .hero__content {
@@ -74,33 +165,54 @@
   color: #fff;
   padding: $spacing-05;
 
+  @media (min-width: 672px) {
+    padding: calc(#{$spacing-05} + 48px); //48px is size of nav bar
+  }
+
   @media (min-width: 1056px) {
     padding: $spacing-08;
+    top: 0;
   }
 }
 
 .hero__image {
-  height: inherit;
-  object-fit: contain;
+  height: max-content;
+  object-fit: cover;
   opacity: 0.2;
 }
 
 .hero__heading {
-  @include carbon--type-style('productive-heading-07');
+  @include carbon--type-style('productive-heading-05');
   font-weight: 400;
-  margin-bottom: $spacing-06;
+  margin-bottom: $spacing-04;
+
+  @media (min-width: 1056px) {
+    @include carbon--type-style('productive-heading-07');
+    font-weight: 400;
+    margin-bottom: $spacing-06;
+  }
 }
 
 .hero__description {
-  @include carbon--type-style('productive-heading-03');
-  font-size: 16px;
-  max-width: 630px;
-  margin-bottom: $spacing-06;
+  display: none;
+
+  @media (min-width: 1056px) {
+    @include carbon--type-style('productive-heading-03');
+    font-size: 16px;
+    max-width: 630px;
+    margin-bottom: $spacing-06;
+  }
 }
 
 .hero__quote {
   @include carbon--type-style('quotation-01');
+  font-size: 16px;
   max-width: 400px;
+
+  @media (min-width: 1056px) {
+    @include carbon--type-style('quotation-01');
+    max-width: 400px;
+  }
 }
 
 .hero__author {
@@ -113,11 +225,4 @@
   right: $spacing-06;
   min-height: 184px;
   min-width: 400px;
-}
-
-.button--cta-text {
-  @include carbon--type-style('productive-heading-03');
-  position: absolute;
-  top: calc(#{$spacing-06} + #{$spacing-02});
-  left: $spacing-06;
 }
