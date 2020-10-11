@@ -1,10 +1,22 @@
-.main--polls {
-  padding-top: 50px;
+.main--votenow {
+  padding-top: 100px;
   grid-template-columns: 1fr;
 
-  @media (min-width: 1056) {
-    padding-top: 100px;
+  @media (min-width: 1056px) {
+    grid-template-columns: 500px 1fr;
   }
+}
+
+.content--votenow > .article__img--votenow {
+  margin-top: 20px;
+}
+
+.content--votenow > .heading--lg .heading--sm .article__quote {
+  margin-bottom: 20px;
+}
+
+.article__img--votenow {
+  margin-top: $spacing-05;
 }
 
 .poll-info > * {
@@ -17,4 +29,5 @@
 
 .list-item {
   padding-bottom: $spacing-03;
+  color: white;
 }

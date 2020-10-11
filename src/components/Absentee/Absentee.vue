@@ -1,55 +1,46 @@
 <template>
-  <section class="main main--register">
-    <aside class="content--register">
-      <h1 class="heading--lg">
-        can't be there? you don't have to be a square.
-      </h1>
-      <h4 class="heading--sm">
-        absentee voting is as easy as signing up before your state's deadline.
-      </h4>
-      <img
-        class="article__img"
+  <MainContent>
+    <template v-slot:content>
+      <aside class="aside">
+        <div class="aside__container--text">
+          <h2 class="aside__header">Can't be there? you don't have to be a square.</h2>
+          <p class="aside__paragraph">
+            absentee voting is as easy as signing up before your state's deadline.
+          </p>
+          <cv-button v-on:click="absentee()">Request an absentee ballot</cv-button>
+        </div>
+      </aside>
+    </template>
+    <template v-slot:image>
+      <aside class="aside__container--img">
+        <img
+        class="aside__img"
         src="../../assets/vote-absentee-1.jpg"
         alt="stock image of voters at a voting poll"
-      />
-      <h6 class="article__quote">lorem ipsum dolor sit amet.</h6>
-      <p class="article__paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.orem ipsum dolor sit amet, consectetur adipiscing
-        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. orem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <img
-        class="article__img"
-        src="../../assets/vote-absentee-2.jpg"
-        alt="stock image of voters at a voting poll"
-      />
-    </aside>
-    <iframe
-      v-resize="{ log: true }"
-      src="https://absentee.vote.org/?partner=111111&campaign=free-tools"
-      width="100%"
-      marginheight="0"
-      frameborder="0"
-      id="frame2"
-      scrollable="no"
-    ></iframe>
-  </section>
+        />
+      </aside>
+    </template>
+  </MainContent>
 </template>
 
 <script>
+import MainContent from '../../components/MainContent';
+
 export default {
   name: 'absentee',
+  components: { MainContent },
   data() {
     return {};
   },
   created() {},
-  methods: {}
+  methods: {
+      absentee: function () {
+      window.open(
+        'https://absentee.vote.org/?partner=111111&campaign=free-tools',
+        '_blank'
+      );
+    },
+  }
 };
 </script>
+

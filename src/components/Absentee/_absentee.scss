@@ -1,0 +1,20 @@
+.main--absentee {
+  padding-top: 100px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 1056px) {
+    grid-template-columns: 500px 1fr;
+  }
+}
+
+.content--absentee > .article__img--absentee {
+  margin-top: 20px;
+}
+
+.content--absentee > .heading--lg .heading--sm .article__quote {
+  margin-bottom: 20px;
+}
+
+.article__img--absentee {
+  margin-top: $spacing-05;
+}
