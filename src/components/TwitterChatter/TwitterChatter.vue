@@ -4,7 +4,7 @@
       ref="r_combo"
       v-model.trim="screenname"
       label="Enter candidate Twitter screen name"
-      auto-filter="false"
+      :auto-filter="autoFilter"
       filterable="false"
       :options="options"
       @filter="actionFilter"
@@ -12,7 +12,15 @@
     </cv-combo-box>
 
     <cv-button @click="checkChatter">Check</cv-button>
-    <div class="tweet__list" v-html="twitter_chatter"></div>
+    <cv-loading :active="loadingChatter" :overlay="loadingOverlay"></cv-loading>
+    <cv-list v-if="haveTweets">
+      <cv-list-item v-for="item in twitter_chatter.items" :key="item.tweet">
+        <span class="tweet-sentiment"> {{ item.sentiment }} </span>
+        <p>{{ item.tweet }}</p>
+      </cv-list-item>
+    </cv-list>
+    <p v-else-if="tweetError">No tweets available</p>
+    <p v-else>here's what they're saying.</p>
   </div>
 </template>
 
@@ -23,7 +31,13 @@ export default {
   name: 'twitterchatter',
   data() {
     return {
-      twitter_chatter: "here's what they're saying.",
+      twitter_chatter: {},
+      loadingChatter: false,
+      loadingOverlay: true,
+      haveTweets: false,
+      tweetError: false,
+      autoFilter: false,
+      screenname: '',
       options: [
         {
           value: 'BarackObama',
@@ -62,6 +76,7 @@ export default {
   methods: {
     checkChatter: function() {
       eval('console.log(this.$refs.r_combo)');
+      this.loadingChatter = true;
       axios
         .get('/twitter/chatter', {
           baseURL: process.env.VUE_APP_SERVICE_API_HOST,
@@ -70,18 +85,21 @@ export default {
           }
         })
         .then(response => {
-          this.twitter_chatter = '<ul>' + response.data.dom + '</ul>';
+          this.loadingChatter = false;
+          this.twitter_chatter = response.data;
+          this.haveTweets = this.twitter_chatter.items.length > 0;
         })
         .catch(error => {
           error;
-          this.twitter_chatter = 'No tweets available';
+          this.loadingChatter = false;
+          this.tweetError = true;
         });
     },
     actionFilter: function(evt) {
       this.options.pop();
-      this.options.push({ value: evt, label: evt });
-      evt;
-      eval('console.log(evt)');
+      this.options.push({ name: evt, value: evt, label: evt });
+      //evt;
+      //eval('console.log(evt)');
     }
   }
 };
