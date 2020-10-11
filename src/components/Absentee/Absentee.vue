@@ -3,20 +3,25 @@
     <template v-slot:content>
       <aside class="aside">
         <div class="aside__container--text">
-          <h2 class="aside__header">Can't be there? you don't have to be a square.</h2>
+          <h2 class="aside__header">
+            Can't be there? you don't have to be a square.
+          </h2>
           <p class="aside__paragraph">
-            absentee voting is as easy as signing up before your state's deadline.
+            absentee voting is as easy as signing up before your state's
+            deadline.
           </p>
-          <cv-button v-on:click="absentee()">Request an absentee ballot</cv-button>
+          <cv-button v-on:click="absentee()"
+            >Request an absentee ballot</cv-button
+          >
         </div>
       </aside>
     </template>
     <template v-slot:image>
       <aside class="aside__container--img">
         <img
-        class="aside__img"
-        src="../../assets/vote-absentee-1.jpg"
-        alt="stock image of voters at a voting poll"
+          class="aside__image"
+          src="../../assets/absentee-page-group-friends-laptop-image-1.jpg"
+          alt="3 friends all huddle around a laptop screen"
         />
       </aside>
     </template>
@@ -34,13 +39,12 @@ export default {
   },
   created() {},
   methods: {
-      absentee: function () {
+    absentee: function() {
       window.open(
         'https://absentee.vote.org/?partner=111111&campaign=free-tools',
         '_blank'
       );
-    },
+    }
   }
 };
 </script>
-

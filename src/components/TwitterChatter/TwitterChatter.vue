@@ -3,7 +3,7 @@
     <cv-combo-box
       ref="r_combo"
       v-model.trim="screenname"
-      label="Enter candidate Twitter screen name"
+      label="Enter candidate's Twitter"
       :auto-filter="autoFilter"
       filterable="false"
       :options="options"
