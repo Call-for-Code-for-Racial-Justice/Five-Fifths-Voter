@@ -20,6 +20,21 @@
                 >Free election day childcare</cv-link
               >
               <br />
+              <cv-link
+                class="aside__link"
+                href="https://www.npr.org/2020/08/07/900210406/the-most-important-mail-youll-ever-send-a-ballot"
+                >Mail-in Voting Instructions</cv-link
+              ><br />
+              <cv-link
+                class="aside__link"
+                href="https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx"
+                >Voting for Felons </cv-link
+              ><br />
+              <cv-link
+                class="aside__link"
+                href="https://sos.ga.gov/index.php/elections/voters_with_disabilities"
+                >Voter Tips for The Disabled</cv-link
+              ><br />
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
