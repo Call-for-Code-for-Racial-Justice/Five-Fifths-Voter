@@ -1,12 +1,3 @@
-.main--votenow {
-  padding-top: 100px;
-  grid-template-columns: 1fr;
-
-  @media (min-width: 1056px) {
-    grid-template-columns: 500px 1fr;
-  }
-}
-
 .content--votenow > .article__img--votenow {
   margin-top: 20px;
 }
