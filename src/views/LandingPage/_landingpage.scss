@@ -1,14 +1,11 @@
-.img--lg {
-  display: block;
-  width: 100%;
-  max-width: 700px;
-  margin: 20px 0;
-}
-
 .article {
   color: #fff;
-  padding: $spacing-08 0;
+  padding: $spacing-05;
   display: flex;
+
+  @media (min-width: 672px) {
+    padding: $spacing-08 0;
+  }
 }
 
 .article__quote {
@@ -49,19 +46,18 @@
   display: block;
   max-width: 100%;
   width: auto;
-
-  // @media (min-width: 1056px) {
-  //   margin-top: 0;
-  //   max-height: 300px;
-  //   max-width: 430px;
-  // }
 }
 
 .article__img-container {
-  margin-left: -1rem;
-  margin-right: -2rem;
+  margin-left: 0;
+  margin-right: 0;
   max-height: 479px;
   overflow: hidden;
+
+  @media (min-width: 672px) {
+    margin-left: -1rem;
+    margin-right: -2rem;
+  }
 }
 
 .article__content > .button {

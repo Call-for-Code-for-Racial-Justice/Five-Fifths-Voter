@@ -59,12 +59,12 @@ export default {
       postal_code: '',
       invalid_zip: '',
       state: '',
-      counties: '',
+      counties: ''
     };
   },
   mounted() {},
   methods: {
-    zipChange: function () {
+    zipChange: function() {
       this.counties = '';
       this.state = '';
 
@@ -79,10 +79,10 @@ export default {
             .get('/postcode', {
               baseURL: process.env.VUE_APP_SERVICE_API_HOST,
               params: {
-                id: this.postal_code,
-              },
+                id: this.postal_code
+              }
             })
-            .then((response) => {
+            .then(response => {
               this.counties = response.data.county;
               this.state = response.data.state;
               axios
@@ -90,16 +90,16 @@ export default {
                   baseURL: process.env.VUE_APP_SERVICE_API_HOST,
                   params: {
                     stateid: this.state,
-                    locid: this.counties[0],
-                  },
+                    locid: this.counties[0]
+                  }
                 })
-                .then((response) => (this.locationTable = response.data.dom))
-                .catch((error) => {
+                .then(response => (this.locationTable = response.data.dom))
+                .catch(error => {
                   error;
                   this.locationTable = 'No Data Available';
                 });
             })
-            .catch((error) => {
+            .catch(error => {
               error;
               this.invalid_zip = 'Enter valid zip code';
             });
@@ -107,7 +107,7 @@ export default {
       } else {
         this.invalid_zip = '';
       }
-    },
-  },
+    }
+  }
 };
 </script>

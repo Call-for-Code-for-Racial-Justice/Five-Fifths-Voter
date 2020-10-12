@@ -5,13 +5,13 @@
       <template v-slot:content>
         <article class="article">
           <div class="article__content">
-            <h2 class="article__heading">Why vote</h2>
+            <h2 class="article__heading">Our Mission</h2>
             <div class="bx--offset-lg-1">
               <p>
-                It is through blood, sweat and tears that Black people earned
-                the right to vote. Many Black people protested, marched, were
-                arrested and even died as they fought the battle for voting
-                equality.
+                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum
                 <br /><br />
                 Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
                 lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
@@ -29,9 +29,6 @@
             src="../../assets/landing-page-man-on-laptop-image-1.jpg"
             alt="Man lounges on beanbag chair while browsing on his laptop"
           />
-          <cv-button class="button--cta">
-            <span class="button--cta-text">Call to Action</span>
-          </cv-button>
         </div>
       </template>
     </MainContent>

@@ -141,10 +141,7 @@ app.get('/twitter/chatter/', (req, res) => {
   });
 
   chatter.stdout.on('data', (data) => {
-    const resp_data = {
-      screenname: screenname,
-      dom: Buffer.concat(chunks).toString(),
-    };
+    const resp_data = Buffer.concat(chunks);
     res.send(resp_data);
   });
 });

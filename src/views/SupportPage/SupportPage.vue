@@ -8,12 +8,14 @@
         <aside class="aside">
           <div class="aside__container--text">
             <h2 class="aside__header">Resources are available to help you</h2>
-            <div class="aside__container--links">
+            <div class="aside__link aside__container--links">
               <cv-link
+                class="aside__link"
                 href="https://www.empowerline.org/services/transportation-options/"
                 >Seniors, find a ride to the polls</cv-link
               ><br />
               <cv-link
+                class="aside__link"
                 href="https://ymcaofcoastalga.org/news/2018/10/17/ymca-news/ymca-works-to-help-make-it-easier-for-parents-to-vote/"
                 >Free election day childcare</cv-link
               >

@@ -89,8 +89,8 @@
       <aside class="aside__container--img">
         <img
           class="aside__image"
-          src="../../assets/vote-absentee-2.jpg"
-          alt="stock image of voters at a voting poll"
+          src="../../assets/vote-now-page-man-stoic-image-1.jpeg"
+          alt="Man looking stoicly away from the camera"
         />
       </aside>
     </template>
@@ -111,6 +111,7 @@ export default {
     return {
       showPanel: '',
       sofsUrl: ''
+      showButton: true
     };
   },
   created() {
@@ -169,15 +170,13 @@ export default {
         .catch(() => {
           // Failed to fetch script
         });
-    },
+    }
   },
   mounted() {
     //this.showtool();
   },
   updated() {
     //this.showtool();
-  },
+  }
 };
 </script>
-
-

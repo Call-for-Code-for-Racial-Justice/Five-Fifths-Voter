@@ -27,8 +27,8 @@
       <aside class="aside__container--img">
         <img
           class="aside__image"
-          src="../../assets/support-page-father-baby-image-1.jpg"
-          alt="Black man holds newborn baby"
+          src="../../assets/register-page-woman-in-sun-image-1.jpeg"
+          alt="Black woman with large afro smiles and looks off camera with the sun on her."
         />
       </aside>
     </template>
