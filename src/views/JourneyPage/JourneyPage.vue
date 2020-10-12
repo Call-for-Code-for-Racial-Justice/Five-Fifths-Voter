@@ -3,7 +3,7 @@
     <div class="page__details">
       <h2 class="page__title">Your voting journey</h2>
     </div>
-    <cv-tabs container="true" aria-label="voter journey">
+    <cv-tabs :container="container" aria-label="voter journey">
       <cv-tab
         id="tab-1"
         label="Are you registered to vote?"
@@ -103,7 +103,8 @@ export default {
   },
   data() {
     return {
-      complete: [false, false, false, false, false]
+      complete: [false, false, false, false, false],
+      container: true
     };
   },
   created() {},

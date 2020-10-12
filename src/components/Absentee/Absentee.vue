@@ -44,3 +44,8 @@ export default {
   methods: {}
 };
 </script>
+<style lang="scss">
+.aside__img {
+  max-width: 100%;
+}
+</style>

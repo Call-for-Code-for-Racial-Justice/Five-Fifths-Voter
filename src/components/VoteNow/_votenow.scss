@@ -1,3 +1,13 @@
+@import 'carbon-components/scss/globals/scss/vars';
+.main--votenow {
+  padding-top: 100px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 1056px) {
+    grid-template-columns: 500px 1fr;
+  }
+}
+
 .content--votenow > .article__img--votenow {
   margin-top: 20px;
 }
@@ -21,4 +31,19 @@
 .list-item {
   padding-bottom: $spacing-03;
   color: white;
+}
+
+.polling-name {
+  font-weight: bold;
+}
+.address-line {
+  display: block;
+}
+
+.polling-hours {
+  display: block;
+  font-weight: bold;
+}
+.aside__img {
+  max-width: 100%;
 }

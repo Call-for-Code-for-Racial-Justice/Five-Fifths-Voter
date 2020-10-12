@@ -32,6 +32,7 @@ const locations2 = require('./data/ballotreturn/GA/mocklocations');
 const postcodes = require('./data/postcodes/US.json');
 
 const earlyVotingGa = require('./routes/earlyvoting/ga');
+const civic = require('./routes/civic');
 
 app.use((req, res, next) => {
   res.append('Access-Control-Allow-Origin', ['*']);
@@ -96,6 +97,8 @@ app.get('/ballotreturn/locations/', (req, res) => {
     res.send(foundLocation);
   }
 });
+
+app.post('/pollingplace/', civic.pollingPlace);
 
 // non-public API
 app.get('/postcode/', (req, res) => {
