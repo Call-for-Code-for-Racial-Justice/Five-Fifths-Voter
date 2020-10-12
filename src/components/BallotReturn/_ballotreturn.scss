@@ -1,25 +1,12 @@
-.main--ballot-return
- {
-  padding-top: 50px;
-  grid-template-columns: 1fr;
-
-  @media (min-width: 1056px) {
-    grid-template-columns: 500px 1fr;
-  }
-}
-
-.content--ballot-return
- > .article__img--register {
+.content--ballot-return > .article__img--register {
   margin-top: 20px;
 }
 
-.content--ballot-return
- > .heading--lg .heading--sm .article__quote {
+.content--ballot-return > .heading--lg .heading--sm .article__quote {
   margin-bottom: 20px;
 }
 
-.article__img--ballot-return
- {
+.article__img--ballot-return {
   margin-top: $spacing-05;
 }
 

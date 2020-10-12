@@ -29,6 +29,7 @@ $carbon--theme: $carbon--theme--g10;
   object-fit: cover;
   display: block;
   min-height: 400px;
+  max-height: 700px;
   width: -webkit-fill-available;
 
   @media (min-width: 672px) {
@@ -38,6 +39,15 @@ $carbon--theme: $carbon--theme--g10;
 
 .aside__container--img {
   margin-left: -1rem;
+
+  @media (min-width: 672px) {
+    margin-right: -1rem;
+    margin-left: -1rem;
+  }
+
+  @media (min-width: 1056px) {
+    margin-left: 0;
+  }
 }
 
 .aside__container--links {
