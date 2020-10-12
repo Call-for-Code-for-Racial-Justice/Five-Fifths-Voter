@@ -5,6 +5,9 @@ const querystring = require('querystring');
 const lodash = require('lodash');
 require('dotenv').config();
 
+var isDevelopment =
+  process.env.NODE_ENV === 'development' || process.env.NODE_ENV === undefined;
+
 const port = 8080;
 const app = express();
 app.use(bodyParser.json());
@@ -30,6 +33,8 @@ const regions2 = require('./data/ballotreturn/GA/regions');
 const locations2 = require('./data/ballotreturn/GA/mocklocations');
 
 const postcodes = require('./data/postcodes/US.json');
+
+const mock_twitter = require('./data/mock/mock_twitter');
 
 const earlyVotingGa = require('./routes/earlyvoting/ga');
 const civic = require('./routes/civic');
@@ -122,31 +127,35 @@ app.get('/postcode/', (req, res) => {
 });
 
 app.get('/twitter/chatter/', (req, res) => {
-  let screenname = req.query.screenname;
-  //console.log('screenname', screenname);
+  if (isDevelopment && !process.env.NODE_TWITTER_API_KEY) {
+    res.send(mock_twitter);
+  } else {
+    let screenname = req.query.screenname;
+    //console.log('screenname', screenname);
 
-  const { spawn } = require('child_process');
-  const chatter = spawn('python3', [
-    'twitter/Embrace_Challenge.py',
-    screenname,
-  ]);
-  chatter.on('close', (code) => {
-    console.log(`child process exited with code ${code}`);
-    if (code !== 0) {
-      res.status(404).send();
-    }
-  });
+    const { spawn } = require('child_process');
+    const chatter = spawn('python3', [
+      'twitter/Embrace_Challenge.py',
+      screenname,
+    ]);
+    chatter.on('close', (code) => {
+      console.log(`child process exited with code ${code}`);
+      if (code !== 0) {
+        res.status(404).send();
+      }
+    });
 
-  const chunks = [];
+    const chunks = [];
 
-  chatter.stdout.on('data', function (chunk) {
-    chunks.push(chunk);
-  });
+    chatter.stdout.on('data', function (chunk) {
+      chunks.push(chunk);
+    });
 
-  chatter.stdout.on('data', (data) => {
-    const resp_data = Buffer.concat(chunks);
-    res.send(resp_data);
-  });
+    chatter.stdout.on('data', (data) => {
+      const resp_data = Buffer.concat(chunks);
+      res.send(resp_data);
+    });
+  }
 });
 
 console.log(`Service listening on port ${port}`);

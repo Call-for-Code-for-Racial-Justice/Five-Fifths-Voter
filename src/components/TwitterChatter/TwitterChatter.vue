@@ -40,7 +40,7 @@ export default {
       loadingOverlay: false,
       haveTweets: false,
       tweetError: false,
-      autoFilter: false,
+      autoFilter: true,
       screenname: '',
       options: [
         {
@@ -103,9 +103,14 @@ export default {
     },
     actionFilter: function(evt) {
       this.options.pop();
-      this.options.push({ name: evt, value: evt, label: evt });
-      //evt;
-      //eval('console.log(evt)');
+      if (evt.length === 0)
+        this.options.push({
+          name: 'Someone',
+          value: 'Someone',
+          label: 'Choose another name'
+        });
+      else this.options.push({ name: evt, value: evt, label: evt });
+      this.screenname = evt;
     }
   }
 };
