@@ -23,6 +23,10 @@ connection
   })
   .catch((reason) => {
     console.error(`Not connected to Cache DB: ${reason}`);
+    console.log('If you are working locally read the services/README.md file');
+    console.log(
+      'probably you need to: docker run --detach --rm -p 27017:27017 --name embrace-db embrace-the-vote/db'
+    );
   });
 
 exports.connect = function () {

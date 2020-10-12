@@ -1,5 +1,5 @@
 {
-  "name": "carbon-tutorial-vue",
+  "name": "five-fifths-voter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -18,17 +18,22 @@
     "@carbon/icons-vue": "^10.14.0",
     "@carbon/themes": "^10.20.0",
     "@carbon/vue": "^2.30.1",
-    "axios": "^0.19.2",
-    "carbon-components": "^10.16.0",
+    "axios": "^0.20.0",
+    "carbon-components": "^10.21.0",
     "core-js": "^2.6.5",
     "iframe-resizer": "^4.2.11",
     "lit-element": "^2.4.0",
     "lit-html": "^1.3.0",
-    "vue": "^2.6.10",
-    "vue-plugin-load-script": "^1.3.0",
-    "vue-router": "^3.0.3",
+    "vue": "^2.6.12",
+    "vue-plugin-load-script": "^1.3.2",
+    "vue-router": "^3.4.6",
     "vuejs-countdown": "^0.2.1",
     "webpack": "^4"
+  },
+  "resolutions": {
+    "serialize-javascript": "^3",
+    "node-forge": "^0.10",
+    "yargs-parser": "^18"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",
@@ -44,7 +49,7 @@
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^9",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.12"
   },
   "prettier": {
     "singleQuote": true
