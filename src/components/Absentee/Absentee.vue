@@ -23,7 +23,7 @@
       <aside class="aside__container--img">
         <img
           class="aside__img"
-          src="../../assets/vote-absentee-1.jpg"
+          src="../../assets/absentee-page-group-friends-laptop-image-1.jpg"
           alt="stock image of voters at a voting poll"
         />
       </aside>

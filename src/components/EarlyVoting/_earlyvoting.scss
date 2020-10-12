@@ -1,12 +1,3 @@
-.main--early-voting {
-  padding-top: 50px;
-  grid-template-columns: 1fr;
-
-  @media (min-width: 1056px) {
-    grid-template-columns: 500px 1fr;
-  }
-}
-
 .content--early-voting > .article__img--register {
   margin-top: 20px;
 }
@@ -18,7 +9,6 @@
 .article__img--early-voting {
   margin-top: $spacing-05;
 }
-
 
 .map {
   height: auto;
