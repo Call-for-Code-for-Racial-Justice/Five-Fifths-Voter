@@ -12,7 +12,11 @@
     </cv-combo-box>
 
     <cv-button @click="checkChatter">Check</cv-button>
-    <cv-loading :active="loadingChatter" :overlay="loadingOverlay"></cv-loading>
+    <cv-loading
+      v-if="loadingChatter"
+      :active="loadingChatter"
+      :overlay="loadingOverlay"
+    ></cv-loading>
     <cv-list v-if="haveTweets">
       <cv-list-item v-for="item in twitter_chatter.items" :key="item.tweet">
         <span class="tweet-sentiment"> {{ item.sentiment }} </span>
@@ -33,7 +37,7 @@ export default {
     return {
       twitter_chatter: {},
       loadingChatter: false,
-      loadingOverlay: true,
+      loadingOverlay: false,
       haveTweets: false,
       tweetError: false,
       autoFilter: false,
@@ -76,6 +80,7 @@ export default {
   methods: {
     checkChatter: function() {
       eval('console.log(this.$refs.r_combo)');
+      this.twitter_chatter = { items: [] };
       this.loadingChatter = true;
       axios
         .get('/twitter/chatter', {
@@ -93,6 +98,7 @@ export default {
           error;
           this.loadingChatter = false;
           this.tweetError = true;
+          this.haveTweets = false;
         });
     },
     actionFilter: function(evt) {
@@ -104,3 +110,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.tweets ul.cv-list.bx--list--unordered li.cv-list-item.bx--list__item {
+  color: white;
+}
+</style>

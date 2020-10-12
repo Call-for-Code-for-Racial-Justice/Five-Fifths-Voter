@@ -6,82 +6,103 @@
           <h2 class="aside__header">
             Candidates, deadlines and signups, oh my!
           </h2>
-          <cv-dropdown
-            class="cv-dropdown"
-            placeholder="Choose your state"
-            @change="onChange($event)"
+          <p class="aside__paragraph">
+            Vote early if you can but if today is election day get to the polls
+            now!
+          </p>
+          <cv-text-input
+            :label="addressLabel"
+            v-model="addressValue"
+            :placeholder="placeholder"
+            @input="updatedAddress"
           >
-            <cv-dropdown-item value="California">California</cv-dropdown-item>
-            <cv-dropdown-item value="Georgia">Georgia</cv-dropdown-item>
-            <cv-dropdown-item value="NorthCarolina"
-              >North Carolina</cv-dropdown-item
-            >
-            <cv-dropdown-item value="Texas">Texas</cv-dropdown-item>
-          </cv-dropdown>
-          <div v-if="showPanel === 'GA'">
-            <h4>What IDs are Acceptable in Georgia</h4>
-            <cv-list class="list">
-              <cv-list-item class="list-item"
-                >Any valid state or federal government issued photo ID,
-                including a free ID Card issued by your county registrar's
-                office or the Georgia Department of Driver Services (DDS)
-              </cv-list-item>
-              <cv-list-item class="list-item"
-                >A Georgia Driver's License, even if expired
-              </cv-list-item>
-              <cv-list-item class="list-item"
-                >Valid employee photo ID from any branch, department, agency, or
-                entity of the U.S. Government, Georgia, or any county,
-                municipality, board, authority or other entity of this state
-              </cv-list-item>
-              <cv-list-item class="list-item"
-                >Valid U.S. passport ID
-              </cv-list-item>
-              <cv-list-item class="list-item"
-                >Valid U.S. military photo ID
-              </cv-list-item>
-              <cv-list-item class="list-item"
-                >Valid tribal photo ID
-              </cv-list-item>
-              <cv-list-item class="list-item"
-                >Many student IDs are also acceptable. (visit the GA Secretary
-                of State site for details)
-              </cv-list-item>
-            </cv-list>
+          </cv-text-input>
+          <cv-button
+            kind="primary"
+            @click="showPollingLocation"
+            :disabled="buttonDisabled"
+          >
+            Show Polling Location
+          </cv-button>
+          <p>{{ message }}</p>
+
+          <p v-if="voterData.election">
+            {{ voterData.election.name }}
+          </p>
+          <div v-if="voterData.state">
+            <p>
+              {{ voterData.state[0].name }}
+              <span v-if="voterData.state[0].electionAdministrationBody.name">
+                -
+                {{ voterData.state[0].electionAdministrationBody.name }}
+              </span>
+            </p>
+            <span v-if="electionInfoUrl">
+              <cv-link :href="electionInfoUrl"> Election Info</cv-link><br />
+            </span>
+            <span v-if="electionRegistrationUrl">
+              <cv-link :href="electionRegistrationUrl">
+                Register To Vote</cv-link
+              ><br />
+            </span>
+            <span v-if="electionRegistrationConfirmationUrl">
+              <cv-link :href="electionRegistrationConfirmationUrl">
+                Confirm you are Registered To Vote</cv-link
+              ><br />
+            </span>
+            <span v-if="absenteeVotingInfoUrl">
+              <cv-link :href="absenteeVotingInfoUrl">
+                Get Absentee Ballot</cv-link
+              ><br />
+            </span>
+            <span v-if="votingLocationFinderUrl">
+              <cv-link :href="votingLocationFinderUrl">
+                Confirm Your Polling Location</cv-link
+              ><br />
+            </span>
+            <span v-if="ballotInfoUrl">
+              <cv-link :href="ballotInfoUrl"> What's On The Ballot</cv-link
+              ><br />
+            </span>
+            <div>
+              <p v-for="item in voterData.pollingLocations" :key="item.index">
+                <span class="polling-hours">
+                  {{ item.pollingHours }}
+                </span>
+                <span class="polling-name">
+                  {{ item.address.locationName }}
+                </span>
+                <span class="address-line" v-if="item.address.line1">
+                  {{ item.address.line1 }}
+                </span>
+                <span class="address-line" v-if="item.address.line2">
+                  {{ item.address.line2 }}
+                </span>
+                <span class="address-line" v-if="item.address.line3">
+                  {{ item.address.line3 }}
+                </span>
+                <span class="address-city" v-if="item.address.city">
+                  {{ item.address.city }}
+                </span>
+                <span class="address-state" v-if="item.address.city">
+                  {{ item.address.state }}
+                </span>
+                <span class="address-zip" v-if="item.address.city">
+                  {{ item.address.zip }}
+                </span>
+              </p>
+              <iframe
+                v-if="mapAddress"
+                width="100%"
+                height="350"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                :src="mapAddress"
+              ></iframe>
+            </div>
           </div>
-          <div v-if="showPanel === 'TX'">
-            <h4>What IDs are Acceptable in Texas</h4>
-            <cv-list class="list">
-              <cv-list-item class="list-item"
-                >Any valid state or federal government issued photo ID,
-                including a free ID Card issued by your county registrar's
-                office or the Georgia Department of Driver Services (DDS)
-              </cv-list-item>
-              <cv-list-item class="list-item"
-                >A Texas Driver's License, even if expired
-              </cv-list-item>
-              <cv-list-item class="list-item"
-                >Valid employee photo ID from any branch, department, agency, or
-                entity of the U.S. Government, Texas, or any county,
-                municipality, board, authority or other entity of this state
-              </cv-list-item>
-              <cv-list-item class="list-item"
-                >Valid U.S. passport ID
-              </cv-list-item>
-              <cv-list-item class="list-item"
-                >Valid U.S. military photo ID
-              </cv-list-item>
-              <cv-list-item class="list-item"
-                >Valid tribal photo ID
-              </cv-list-item>
-              <cv-list-item class="list-item">
-                Many student IDs are also acceptable. (visit the Secretary of
-                State site for details)
-              </cv-list-item>
-            </cv-list>
-          </div>
-          <cv-button @click="showsofssite">Secretary of State Site</cv-button>
-          <cv-button @click="showtool">Show Polling Location</cv-button>
         </div>
       </aside>
     </template>
@@ -89,8 +110,8 @@
       <aside class="aside__container--img">
         <img
           class="aside__image"
-          src="../../assets/vote-now-page-man-stoic-image-1.jpeg"
-          alt="Man looking stoicly away from the camera"
+          src="../../assets/vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg"
+          alt="Black man ready to vote"
         />
       </aside>
     </template>
@@ -99,84 +120,125 @@
 
 <script>
 import MainContent from '../../components/MainContent';
-import Vue from 'vue';
-import router from '../../router';
-import LoadScript from 'vue-plugin-load-script';
-Vue.use(LoadScript);
+import axios from 'axios';
 
 export default {
-  name: 'votenow',
+  name: 'voteNow',
   components: { MainContent },
   data() {
     return {
-      showPanel: '',
-      sofsUrl: ''
-      showButton: true
+      addressLabel: 'Adress where you are registered to vote',
+      addressValue: '',
+      placeholder: '123 Main St GA 30076',
+      buttonDisabled: true,
+      voterData: {},
+      message: ''
     };
   },
   created() {
     this.regData = this.$route.params.regData;
   },
-  methods: {
-    navigate() {
-      router.go(-1);
-    },
-    onChange(event) {
-      switch (event) {
-        case 'California': {
-          this.showPanel = 'CA';
-          break;
-        }
-        case 'Georgia': {
-          this.showPanel = 'GA';
-          this.sofsUrl = 'https://sos.ga.gov/index.php/elections/georgia_voter_identification_requirements2'
-          break;
-        }
-        case 'Texas': {
-          this.showPanel = 'TX';
-          break;
-        }
-        case 'NorthCarolina': {
-          this.showPanel = 'NC';
-          break;
-        }
+  computed: {
+    electionInfoUrl() {
+      try {
+        return this.voterData.state[0].electionAdministrationBody
+          .electionInfoUrl;
+      } catch (error) {
+        return '';
       }
     },
-    showsofssite() {
-      window.open(
-        'https://sos.ga.gov/index.php/elections/georgia_voter_identification_requirements2',
-        '_blank'
-      );
+    electionRegistrationUrl() {
+      try {
+        return this.voterData.state[0].electionAdministrationBody
+          .electionRegistrationUrl;
+      } catch (error) {
+        return '';
+      }
     },
-    showtool() {
-      Vue.loadScript('https://tool.votinginfoproject.org/app.js')
-        .then(() => {
-          // Script is loaded, show the tool
-          eval(`
-	        		console.log("loading");
-							vit.load({
-							    modal: true,
-							    officialOnly: false,
-							    title: 'five/fifths voter - Go Vote',						
-							    logo: 'https://vit-logos.votinginfoproject.org/seals/ga.png',
-							    colors: {
-							      'header': '#9ccc66',
-							      'landscapeBackgroundHeader': '#7caa66'
-							    },
-							    language: 'en',
-							});    			
-	    			`);
+    electionRegistrationConfirmationUrl() {
+      try {
+        return this.voterData.state[0].electionAdministrationBody
+          .electionRegistrationConfirmationUrl;
+      } catch (error) {
+        return '';
+      }
+    },
+    absenteeVotingInfoUrl() {
+      try {
+        return this.voterData.state[0].electionAdministrationBody
+          .absenteeVotingInfoUrl;
+      } catch (error) {
+        return '';
+      }
+    },
+    votingLocationFinderUrl() {
+      try {
+        return this.voterData.state[0].electionAdministrationBody
+          .votingLocationFinderUrl;
+      } catch (error) {
+        return '';
+      }
+    },
+    ballotInfoUrl() {
+      try {
+        return this.voterData.state[0].electionAdministrationBody.ballotInfoUrl;
+      } catch (error) {
+        return '';
+      }
+    },
+    mapAddress() {
+      try {
+        var querystring = require('querystring');
+        var address = this.voterData.pollingLocations[0].address.locationName;
+        if (this.voterData.pollingLocations[0].address.line1)
+          address =
+            address + ' ' + this.voterData.pollingLocations[0].address.line1;
+        if (this.voterData.pollingLocations[0].address.line2)
+          address =
+            address + ' ' + this.voterData.pollingLocations[0].address.line2;
+        if (this.voterData.pollingLocations[0].address.line3)
+          address =
+            address + ' ' + this.voterData.pollingLocations[0].address.line3;
+        if (this.voterData.pollingLocations[0].address.city)
+          address =
+            address + ' ' + this.voterData.pollingLocations[0].address.city;
+        if (this.voterData.pollingLocations[0].address.state)
+          address =
+            address + ' ' + this.voterData.pollingLocations[0].address.state;
+        var result = querystring.stringify({ q: address, output: 'embed' });
+        return 'https://maps.google.com/maps?' + result;
+      } catch (error) {
+        return '';
+      }
+    }
+  },
+  methods: {
+    navigate() {},
+    showPollingLocation() {
+      axios
+        .post(process.env.VUE_APP_SERVICE_API_HOST + '/pollingplace', {
+          data: {
+            address: this.addressValue
+          }
         })
-        .catch(() => {
-          // Failed to fetch script
+        .then(response => {
+          this.voterData = response.data;
+        })
+        .catch(error => {
+          error;
+          this.voterData = { error: true };
         });
+    },
+    updatedAddress() {
+      this.buttonDisabled = this.addressValue.length < 10;
     }
   },
   mounted() {
     //this.showtool();
-  },
-  updated() {
-    //this.showtool();
   }
 };
 </script>
+
+<style lang="scss">
+@import './votenow';
+</style>

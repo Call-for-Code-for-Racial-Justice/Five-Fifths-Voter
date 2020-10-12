@@ -1,3 +1,4 @@
+@import 'carbon-components/scss/globals/scss/vars';
 .main--votenow {
   padding-top: 100px;
   grid-template-columns: 1fr;
@@ -30,4 +31,16 @@
 .list-item {
   padding-bottom: $spacing-03;
   color: white;
+}
+
+.polling-name {
+  font-weight: bold;
+}
+.address-line {
+  display: block;
+}
+
+.polling-hours {
+  display: block;
+  font-weight: bold;
 }
