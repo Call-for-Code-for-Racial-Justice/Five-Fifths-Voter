@@ -111,7 +111,6 @@ export default {
     return {
       showPanel: '',
       sofsUrl: ''
-      showButton: true
     };
   },
   created() {
