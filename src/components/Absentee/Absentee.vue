@@ -10,18 +10,21 @@
             absentee voting is as easy as signing up before your state's
             deadline.
           </p>
-          <cv-button v-on:click="absentee()"
-            >Request an absentee ballot</cv-button
+          <cv-link
+            href="https://absentee.vote.org/?partner=111111&campaign=free-tools"
+            target="_blank"
           >
+            Request an absentee ballot ->
+          </cv-link>
         </div>
       </aside>
     </template>
     <template v-slot:image>
       <aside class="aside__container--img">
         <img
-          class="aside__image"
-          src="../../assets/absentee-page-group-friends-laptop-image-1.jpg"
-          alt="3 friends all huddle around a laptop screen"
+          class="aside__img"
+          src="../../assets/vote-absentee-1.jpg"
+          alt="stock image of voters at a voting poll"
         />
       </aside>
     </template>
@@ -38,13 +41,6 @@ export default {
     return {};
   },
   created() {},
-  methods: {
-    absentee: function() {
-      window.open(
-        'https://absentee.vote.org/?partner=111111&campaign=free-tools',
-        '_blank'
-      );
-    }
-  }
+  methods: {}
 };
 </script>

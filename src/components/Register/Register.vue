@@ -8,7 +8,18 @@
             voting is the future for your neighbors, your friends, your family,
             and yourself.
           </p>
-          <cv-button>Register to vote now</cv-button>
+          <cv-link
+            href="https://verify.vote.org/?partner=111111&campaign=free-tools"
+            target="_blank"
+          >
+            Check voting status -> </cv-link
+          ><br />
+          <cv-link
+            href="https://register.vote.org/?partner=111111&campaign=free-tools"
+            target="_blank"
+          >
+            Register to vote ->
+          </cv-link>
         </div>
       </aside>
     </template>
@@ -34,6 +45,6 @@ export default {
     return {};
   },
   created() {},
-  methods: {}
+  methods: {},
 };
 </script>
