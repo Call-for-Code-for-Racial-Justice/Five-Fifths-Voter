@@ -79,6 +79,10 @@
 .impactFeatureCard .bx--resource-card .bx--tile {
   background-color: #0f62fe;
   color: #fff;
+
+  @media (min-width: 672px) {
+    margin-right: $spacing-05;
+  }
 }
 
 .bx--resource-card .bx--tile {
@@ -194,13 +198,13 @@
 }
 
 .hero__description {
+  @include carbon--type-style('productive-heading-03');
   display: none;
+  max-width: 630px;
+  margin-bottom: $spacing-06;
 
   @media (min-width: 1056px) {
-    @include carbon--type-style('productive-heading-03');
-    font-size: 16px;
-    max-width: 630px;
-    margin-bottom: $spacing-06;
+    display: block;
   }
 }
 
@@ -208,11 +212,6 @@
   @include carbon--type-style('quotation-01');
   font-size: 16px;
   max-width: 400px;
-
-  @media (min-width: 1056px) {
-    @include carbon--type-style('quotation-01');
-    max-width: 400px;
-  }
 }
 
 .hero__author {

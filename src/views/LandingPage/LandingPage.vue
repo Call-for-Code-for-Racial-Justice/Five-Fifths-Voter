@@ -29,9 +29,6 @@
             src="../../assets/landing-page-man-on-laptop-image-1.jpg"
             alt="Man lounges on beanbag chair while browsing on his laptop"
           />
-          <cv-button class="button--cta">
-            <span class="button--cta-text">Call to Action</span>
-          </cv-button>
         </div>
       </template>
     </MainContent>
