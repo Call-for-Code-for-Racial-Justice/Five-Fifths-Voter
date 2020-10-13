@@ -3,8 +3,10 @@
 # Team
 
 * Alexandria Leggett
-* Yolanda Rabun, Alexandra Devine
-* Syd Bailey, Gerald Mitchell
+* Yolanda Rabun
+* Alexandra Devine
+* Syd Bailey
+* Gerald Mitchell
 * Denise Knorr
 * Andrea Lucas
 * David Nixon
