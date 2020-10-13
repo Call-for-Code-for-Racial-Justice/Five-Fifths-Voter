@@ -45,10 +45,12 @@ export default {
     return {};
   },
   created() {},
-  methods: {}
+  methods: {},
 };
 </script>
 
 <style lang="scss">
-@import './register.scss';
+.aside__image {
+  max-width: 100%;
+}
 </style>

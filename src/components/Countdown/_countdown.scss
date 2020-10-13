@@ -1,4 +1,3 @@
-@import 'carbon-components/scss/globals/scss/typography.scss';
 //please note -- all !important are set to override vue-countdown npm package styling.
 //custom breakpoints needed for timer
 
@@ -17,7 +16,8 @@
 }
 
 .vuejs-countdown .text {
-  @include carbon--type-style('productive-heading-06');
+  // not bringing in carbon styles -- need to fix.
+  // @include carbon--type-style('productive-heading-06');
   text-transform: capitalize !important;
   font-size: 28px !important;
 
