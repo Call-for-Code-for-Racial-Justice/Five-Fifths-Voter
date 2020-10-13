@@ -1,7 +1,4 @@
 @import 'carbon-components/scss/globals/scss/styles';
-@import '~@carbon/themes/scss/themes';
-$carbon--theme: $carbon--theme--g10;
-@include carbon--theme();
 
 .bx--row {
   @media (min-width: 1056px) {
@@ -25,7 +22,7 @@ $carbon--theme: $carbon--theme--g10;
 }
 
 .bx--header ~ .bx--content {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 
 .global-nav__link.bx--link:hover {
