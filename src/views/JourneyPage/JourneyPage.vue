@@ -52,7 +52,6 @@ export default {
     BallotReturn,
     VoteNow,
     PageLayout
-    // MainContent
   },
   data() {
     return {

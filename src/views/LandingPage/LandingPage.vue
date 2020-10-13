@@ -126,7 +126,6 @@
 </template>
 
 <script>
-// import Hero from '../../components/Hero';
 import Countdown from '../../components/Countdown';
 import PageLayout from '../../components/PageLayout';
 import MainContent from '../../components/MainContent';
