@@ -11,12 +11,12 @@
             placeholder="Choose your state"
             @change="onChange($event)"
           >
+	    <cv-dropdown-item value="Georgia">Georgia</cv-dropdown-item>
+	    <!--
             <cv-dropdown-item value="California">California</cv-dropdown-item>
-            <cv-dropdown-item value="Georgia">Georgia</cv-dropdown-item>
-            <cv-dropdown-item value="NorthCarolina"
-              >North Carolina</cv-dropdown-item
-            >
+            <cv-dropdown-item value="NorthCarolina">North Carolina</cv-dropdown-item>
             <cv-dropdown-item value="Texas">Texas</cv-dropdown-item>
+	    -->
           </cv-dropdown>
           <div
             v-if="displayDialog"
