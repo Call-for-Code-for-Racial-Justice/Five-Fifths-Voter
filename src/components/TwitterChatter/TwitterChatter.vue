@@ -1,30 +1,33 @@
 <template>
-  <div class="tweets">
-    <cv-combo-box
-      ref="r_combo"
-      v-model.trim="screenname"
-      label="Enter candidate's Twitter"
-      :auto-filter="autoFilter"
-      filterable="false"
-      :options="options"
-      @filter="actionFilter"
-    >
-    </cv-combo-box>
-
-    <cv-button @click="checkChatter">Check</cv-button>
-    <cv-loading
-      v-if="loadingChatter"
-      :active="loadingChatter"
-      :overlay="loadingOverlay"
-    ></cv-loading>
-    <cv-list v-if="haveTweets">
-      <cv-list-item v-for="item in twitter_chatter.items" :key="item.tweet">
-        <span class="tweet-sentiment"> {{ item.sentiment }} </span>
-        <p>{{ item.tweet }}</p>
-      </cv-list-item>
-    </cv-list>
-    <p v-else-if="tweetError">No tweets available</p>
-    <p v-else>here's what they're saying.</p>
+  <div class="wrapper wrapper--address">
+    <div class="tweets">
+      <cv-combo-box
+        ref="r_combo"
+        v-model.trim="screenname"
+        label="Enter candidate's Twitter"
+        :auto-filter="autoFilter"
+        filterable="false"
+        :options="options"
+        @filter="actionFilter"
+      >
+      </cv-combo-box>
+      <div class="wrapper wrapper--button">
+        <cv-button @click="checkChatter">Check</cv-button>
+      </div>
+      <cv-loading
+        v-if="loadingChatter"
+        :active="loadingChatter"
+        :overlay="loadingOverlay"
+      ></cv-loading>
+      <cv-list v-if="haveTweets">
+        <cv-list-item v-for="item in twitter_chatter.items" :key="item.tweet">
+          <span class="tweet-sentiment"> {{ item.sentiment }} </span>
+          <p>{{ item.tweet }}</p>
+        </cv-list-item>
+      </cv-list>
+      <p v-else-if="tweetError">No tweets available</p>
+      <p v-else>here's what they're saying.</p>
+    </div>
   </div>
 </template>
 
