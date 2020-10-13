@@ -4,41 +4,45 @@
       <aside class="aside">
         <div class="aside__container--text">
           <h2 class="aside__header">Find your local ballot dropbox.</h2>
-          <cv-text-input
-            :label="addressLabel"
-            v-model="addressValue"
-            :placeholder="placeholder"
-            @input="updatedAddress"
-          >
-          </cv-text-input>
-          <cv-button
-            kind="primary"
-            @click="showPollingLocation"
-            :disabled="buttonDisabled"
-          >
-            Show Ballot Drop Off Locations
-          </cv-button>
-          <div v-if="voterData.state">
-            <p>
-              {{ voterData.state[0].name }}
-              <span v-if="voterData.state[0].electionAdministrationBody.name">
-                -
-                {{ voterData.state[0].electionAdministrationBody.name }}
+          <div class="wrapper wrapper--address">
+            <cv-text-input
+              :label="addressLabel"
+              v-model="addressValue"
+              :placeholder="placeholder"
+              @input="updatedAddress"
+            >
+            </cv-text-input>
+            <div class="wrapper wrapper--button">
+              <cv-button
+                kind="primary"
+                @click="showPollingLocation"
+                :disabled="buttonDisabled"
+              >
+                Show Ballot Drop Off Locations
+              </cv-button>
+            </div>
+            <div v-if="voterData.state">
+              <p>
+                {{ voterData.state[0].name }}
+                <span v-if="voterData.state[0].electionAdministrationBody.name">
+                  -
+                  {{ voterData.state[0].electionAdministrationBody.name }}
+                </span>
+              </p>
+              <span v-if="electionInfoUrl">
+                <cv-link :href="electionInfoUrl"> Election Info</cv-link><br />
               </span>
-            </p>
-            <span v-if="electionInfoUrl">
-              <cv-link :href="electionInfoUrl"> Election Info</cv-link><br />
-            </span>
-            <span v-if="absenteeVotingInfoUrl">
-              <cv-link :href="absenteeVotingInfoUrl">
-                Get Absentee Ballot</cv-link
-              ><br />
-            </span>
-            <span v-if="placeholderMap"
-              >No known drop off locations. Check with your local election
-              officials.
-            </span>
-            <span><br />Powered by the Civic Information API</span>
+              <span v-if="absenteeVotingInfoUrl">
+                <cv-link :href="absenteeVotingInfoUrl">
+                  Get Absentee Ballot</cv-link
+                ><br />
+              </span>
+              <span v-if="placeholderMap"
+                >No known drop off locations. Check with your local election
+                officials.
+              </span>
+              <span><br />Powered by the Civic Information API</span>
+            </div>
           </div>
         </div>
       </aside>

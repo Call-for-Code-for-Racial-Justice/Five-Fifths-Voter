@@ -36,7 +36,7 @@
       <template v-slot:content>
         <article class="article">
           <div class="article__content">
-            <h2 class="article__heading">educate</h2>
+            <h2 class="article__heading">educate.</h2>
             <span class="article__quote"
               >&quot;Knowledge is power.&quot; - Thomas Jefferson</span
             ><br /><br />

@@ -1,7 +1,7 @@
 <template>
   <PageLayout childData="mother-daughter-hero.jpeg">
     <div class="page__details">
-      <h2 class="page__title">why vote?</h2>
+      <h2 class="page__title">Why vote?</h2>
     </div>
     <MainContent>
       <template v-slot:content>
@@ -46,7 +46,6 @@
               Join us to Get <strong><em>registered</em></strong>, <strong><em>Get educated</em></strong>, <strong><em>Get
               social</em></strong>, and <strong><em>Get vocal</em></strong>.
               <br /><br />
-        
             </p>
           </div>
         </aside>

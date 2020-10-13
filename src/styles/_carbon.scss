@@ -76,6 +76,7 @@ $carbon--theme: $carbon--theme--g10;
     weight: 300;
     size: 30px;
   }
+  max-width: 16ch;
   margin-bottom: $spacing-08;
 }
 
@@ -105,6 +106,24 @@ $carbon--theme: $carbon--theme--g10;
   fill: #fff;
   height: 60px;
   width: 60px;
+}
+
+.wrapper {
+  display: flex;
+  margin-top: $spacing-09;
+}
+
+.wrapper--address {
+  flex-direction: column;
+}
+
+.wrapper--button {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button--early-voting {
+  margin: 0;
 }
 
 //resets

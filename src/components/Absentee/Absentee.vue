@@ -7,14 +7,14 @@
             Can't be there? you don't have to be a square.
           </h2>
           <p class="aside__paragraph">
-            absentee voting is as easy as signing up before your state's
+            Absentee voting is as easy as signing up before your state's
             deadline.
           </p>
           <cv-link
-            href="https://absentee.vote.org/?partner=111111&campaign=free-tools"
+            href="https://www.vote.org/absentee-ballot/"
             target="_blank"
           >
-            Request an absentee ballot ->
+            Request an absentee ballot
           </cv-link>
         </div>
       </aside>
