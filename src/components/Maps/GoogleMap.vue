@@ -27,7 +27,8 @@ export default {
     markers: Array
   },
   data() {
-    return { apiKey: process.env.VUE_APP_GOOGLE_MAP_API_KEY };
+    //return { apiKey: process.env.VUE_APP_GOOGLE_MAP_API_KEY };
+    return { apiKey: 'AIzaSyCv4YnvgzgyoPUf0kI9JuUxrG928fR5XdY' };
   },
 
   computed: {
