@@ -21,7 +21,6 @@
 
 .global-nav__list-item {
   width: calc(100% / 4);
-  //   min-width: 350px;
   padding: 0 $spacing-06;
   transition: all 0.5s ease-in-out;
   &:hover {
