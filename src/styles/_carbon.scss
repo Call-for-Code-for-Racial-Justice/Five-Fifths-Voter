@@ -11,9 +11,10 @@ $carbon--theme: $carbon--theme--g10;
   background-color: #252525;
   color: #fff;
   margin-left: 0;
+  padding-top: $spacing-08;
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   @media (min-width: 672px) {
     margin-right: -1rem;
     margin-left: -1rem;
@@ -120,10 +121,15 @@ $carbon--theme: $carbon--theme--g10;
 .wrapper--button {
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: $spacing-05;
 }
 
 .button--early-voting {
   margin: 0;
+}
+
+.bx--tabs__nav-item .bx--tabs__nav-link {
+  color: #525252; //override
 }
 
 //resets

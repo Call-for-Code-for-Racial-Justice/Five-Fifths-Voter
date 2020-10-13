@@ -1,11 +1,4 @@
-.main--register {
-  padding-top: 100px;
-  grid-template-columns: 1fr;
-
-  @media (min-width: 1056px) {
-    grid-template-columns: 500px 1fr;
-  }
-}
+@import 'carbon-components/scss/globals/scss/vars.scss';
 
 .content--register > .article__img--register {
   margin-top: 20px;

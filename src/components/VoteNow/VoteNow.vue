@@ -11,23 +11,17 @@
             placeholder="Choose your state"
             @change="onChange($event)"
           >
-	    <cv-dropdown-item value="Georgia">Georgia</cv-dropdown-item>
-	    <!--
             <cv-dropdown-item value="California">California</cv-dropdown-item>
-            <cv-dropdown-item value="NorthCarolina">North Carolina</cv-dropdown-item>
+            <cv-dropdown-item value="Georgia">Georgia</cv-dropdown-item>
+            <cv-dropdown-item value="NorthCarolina"
+              >North Carolina</cv-dropdown-item
+            >
             <cv-dropdown-item value="Texas">Texas</cv-dropdown-item>
-	    -->
           </cv-dropdown>
-          <div
-            v-if="displayDialog"
-            style="margin-top: 40px; width: 100%"
-            class="bx--modal-container"
-          >
-            <div tabindex="0" class="cv-modal__before-content"></div>
-            <div class="bx--modal-header"></div>
+          <div v-if="displayDialog" class="bx--modal-container">
             <div class="bx--modal-content">
               <p style>
-                <cv-list style="padding: 30px" class="list">
+                <cv-list style="padding-left: 30px" class="list">
                   <cv-list-item class="list-item"
                     >Any valid state or federal government issued photo ID,
                     including a free ID Card issued by your county registrar's
@@ -77,11 +71,7 @@
                 Show Polling Location
               </button>
             </div>
-            <div
-              tabindex="0"
-              class="cv-modal__after-content"
-              style="position: absolute; height: 1px; width: 1px; left: -9999px"
-            ></div>
+            <div tabindex="0" class="cv-modal__after-content"></div>
           </div>
         </div>
       </aside>
