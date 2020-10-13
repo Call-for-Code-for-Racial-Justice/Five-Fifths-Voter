@@ -8,15 +8,15 @@
             <h2 class="article__heading">Our Mission</h2>
             <div class="bx--offset-lg-1">
               <p>
-                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum
+                Five-Fifths equals a whole. A whole person, a whole community, a
+                whole nation.
                 <br /><br />
-                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum
+                Our Mission for users who visit our site is to provide those
+                individuals with a whole experience that can open up a whole new
+                perspective on life. A major means to creating a new reality is
+                harnessing one’s power by elevating his/her voice; this
+                independence is particularly achieved through exercising one’s
+                right to vote.                
               </p>
             </div>
           </div>
