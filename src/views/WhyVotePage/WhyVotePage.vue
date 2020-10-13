@@ -27,7 +27,7 @@
               exercise your right to vote. It was hard earned by your ancestors
               <br />
               <br />
-              For my information on Black people’s journey to vote check out
+              For more information on Black people’s journey to vote check out
               <cv-link
                 href="https://www.loc.gov/teachers/classroommaterials/presentationsandactivities/presentations/elections/voting-rights-african-americans.html" target="_blank"
               >
