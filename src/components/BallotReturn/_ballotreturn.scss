@@ -1,26 +1,16 @@
-.content--ballot-return > .article__img--register {
-  margin-top: 20px;
+@import 'carbon-components/scss/globals/scss/vars';
+.cv-tabs__panels {
+  width: 100%; /* why!!?? */
 }
-
-.content--ballot-return > .heading--lg .heading--sm .article__quote {
-  margin-bottom: 20px;
-}
-
-.article__img--ballot-return {
-  margin-top: $spacing-05;
-}
-
-.map {
-  height: auto;
+.aside__image {
   width: 100%;
-  max-width: 850px;
+  min-height: unset;
 }
-
-.locations > .heading--lg {
-  margin-bottom: 20px;
+.map__container {
+  min-height: 700px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
 }
-
-.locations__table {
-  max-height: 500px;
-  overflow: scroll;
+.google-map {
+  min-height: 700px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
 }

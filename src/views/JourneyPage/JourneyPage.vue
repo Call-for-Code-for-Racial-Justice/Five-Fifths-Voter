@@ -21,11 +21,7 @@
       <cv-tab id="tab-3" label="Vote Now" aria-label="find your polling place">
         <VoteNow />
       </cv-tab>
-      <cv-tab
-        id="tab-4"
-        label="Vote Early"
-        aria-label="find early voting locations"
-      >
+      <cv-tab id="tab-4" label="Vote" aria-label="find voting locations">
         <EarlyVoting />
       </cv-tab>
       <cv-tab
