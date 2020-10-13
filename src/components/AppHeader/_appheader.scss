@@ -1,18 +1,11 @@
-// .bx--header {
-//   @include carbon--breakpoint-down('sm') {
-//     position: fixed;
-//     top: 0;
-//   }
-// }
+@import 'carbon-components/scss/globals/scss/vars';
+@import 'carbon-components/scss/globals/scss/typography.scss';
 
 .global-nav {
   background: {
     color: #171717;
   }
   min-height: 82px;
-  //   display: flex;
-  //   align-items: center;
-  //   padding: 0 $spacing-06;
 }
 
 .global-nav--alt {
@@ -28,7 +21,6 @@
 
 .global-nav__list-item {
   width: calc(100% / 4);
-  //   min-width: 350px;
   padding: 0 $spacing-06;
   transition: all 0.5s ease-in-out;
   &:hover {
