@@ -12,27 +12,32 @@
               <cv-link
                 class="aside__link"
                 href="https://www.empowerline.org/services/transportation-options/"
+                target="_blank"
                 >Seniors, find a ride to the polls</cv-link
               ><br />
               <cv-link
                 class="aside__link"
                 href="https://ymcaofcoastalga.org/news/2018/10/17/ymca-news/ymca-works-to-help-make-it-easier-for-parents-to-vote/"
+                target="_blank"
                 >Free election day childcare</cv-link
               >
               <br />
               <cv-link
                 class="aside__link"
                 href="https://www.npr.org/2020/08/07/900210406/the-most-important-mail-youll-ever-send-a-ballot"
+                target="_blank"
                 >Mail-in Voting Instructions</cv-link
               ><br />
               <cv-link
                 class="aside__link"
                 href="https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx"
+                target="_blank"
                 >Voting for Felons </cv-link
               ><br />
               <cv-link
                 class="aside__link"
                 href="https://sos.ga.gov/index.php/elections/voters_with_disabilities"
+                target="_blank"
                 >Voter Tips for The Disabled</cv-link
               ><br />
             </div>
