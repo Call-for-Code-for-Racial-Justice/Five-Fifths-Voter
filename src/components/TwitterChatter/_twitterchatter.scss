@@ -1,6 +1,11 @@
 .tweet__list.bx--list--unordered {
-  max-height: 225px;
-  overflow: scroll;
+  height: auto;
+  overflow: auto;
+
+  @media (min-width: 672px) {
+    max-height: 216px;
+    overflow: scroll;
+  }
 }
 
 .tweet__list > ul:nth-child(1) {
