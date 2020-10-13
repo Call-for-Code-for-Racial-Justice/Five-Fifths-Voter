@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="hero__content">
-        <h1 class="hero__heading">five fifths voter.</h1>
+        <h1 class="hero__heading">Five/Fifths Voter</h1>
         <h2 class="hero__description">
           We will educate Black voters by providing them with guidance and
           directing them to the most up-to-date tools necessary to complete the

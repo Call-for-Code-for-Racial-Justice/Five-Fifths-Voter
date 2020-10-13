@@ -5,7 +5,7 @@
       Skip to content
     </cv-skip-to-content>
     <cv-header-name :to="{ name: 'landing-page' }" prefix="">
-      five/fifths voter.
+      Five/Fifths Voter
     </cv-header-name>
     <cv-header-nav aria-label="Carbon nav">
       <cv-header-menu-item :to="{ name: 'why-page' }">

@@ -1,4 +1,4 @@
-# five/fifths voter
+# Five/Fifths Voter
 
 # Team
 
