@@ -128,7 +128,7 @@ export default {
   data() {
     return {
       stateName: '',
-      displayDialog: false,
+      displayDialog: false
     };
   },
   created() {
@@ -172,13 +172,13 @@ export default {
           // Failed to fetch script
         });
       */
-    },
+    }
   },
   mounted() {
     //this.showtool();
   },
   updated() {
     //this.showtool();
-  },
+  }
 };
 </script>

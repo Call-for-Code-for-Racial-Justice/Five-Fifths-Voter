@@ -3,39 +3,96 @@
     <template v-slot:content>
       <aside class="aside">
         <div class="aside__container--text">
-          <h2 class="aside__header">Find your early voting location.</h2>
+          <h2 class="aside__header">
+            Find where you can vote early or find your election day voting
+            location.
+          </h2>
           <cv-text-input
-            v-model.trim="postal_code"
-            label="enter a 5 digit zip code below."
-            placeholder="99999"
-            :invalid-message="invalid_zip"
-            @input="zipChange"
-          ></cv-text-input>
-          <div v-if="state !== 'GA' && state !== ''">
-            {{ counties[0] }}, {{ state }} is not supported at this time
-          </div>
-          <div v-if="state === ''" v-html="locationTable"></div>
-          {{ /* todo: only GA is supported but this should really be a check against the available states */ }}
-          <div
-            v-if="state === 'GA'"
-            class="locations__table"
-            v-html="locationTable"
-          ></div>
-          <div v-if="state !== ''" class="smalllink">
-            Zip Code data powered by
-            <cv-link href="https://www.geonames.org" target="_blank"
-              >geonames.org</cv-link
-            >
+            :label="addressLabel"
+            v-model="addressValue"
+            :placeholder="placeholder"
+            @input="updatedAddress"
+          >
+          </cv-text-input>
+          <cv-button
+            kind="secondary"
+            @click="showEarlyPollingLocation"
+            :disabled="buttonDisabled"
+          >
+            Show Early Polling Location
+          </cv-button>
+          <cv-button
+            kind="primary"
+            @click="showNowPollingLocation"
+            :disabled="buttonDisabled"
+          >
+            Show Polling Location
+          </cv-button>
+          <div v-if="voterData.state">
+            <p>
+              {{ voterData.state[0].name }}
+              <span v-if="voterData.state[0].electionAdministrationBody.name">
+                -
+                {{ voterData.state[0].electionAdministrationBody.name }}
+              </span>
+            </p>
+            <span v-if="electionInfoUrl">
+              <cv-link :href="electionInfoUrl"> Election Info</cv-link><br />
+            </span>
+            <span v-if="absenteeVotingInfoUrl">
+              <cv-link :href="absenteeVotingInfoUrl">
+                Get Absentee Ballot</cv-link
+              ><br />
+            </span>
+            <span v-if="placeholderMap"
+              >No known locations. Check with your local election officials.
+            </span>
+            <cv-list v-if="locationList">
+              <cv-list-item
+                v-for="item in locationList"
+                :key="item.address.locationName"
+              >
+                <span class="loc-name">{{ item.address.locationName }}</span>
+                <span v-if="!early && item.pollingHours" class="loc-name">{{
+                  item.pollingHours
+                }}</span>
+
+                <span v-if="item.address.line1" class="loc-line">{{
+                  item.address.line1
+                }}</span>
+                <span v-if="item.address.line2" class="loc-line">{{
+                  item.address.line2
+                }}</span>
+                <span v-if="item.address.line3" class="loc-line">{{
+                  item.address.line3
+                }}</span>
+                <span v-if="item.address.city" class="loc-city">{{
+                  item.address.city
+                }}</span>
+                <span v-if="item.address.state" class="loc-state">{{
+                  item.address.state
+                }}</span>
+              </cv-list-item>
+            </cv-list>
+
+            <span><br />Powered by the Civic Information API</span>
           </div>
         </div>
       </aside>
     </template>
     <template v-slot:image>
-      <aside class="aside__container--img">
+      <aside v-if="placeholderMap" class="aside__container--img">
         <img
           class="aside__image"
           src="../../assets/holder-atlanta-map.png"
           alt="google map img"
+        />
+      </aside>
+      <aside v-else>
+        <GoogleMap
+          v-if="!placeholderMap"
+          class="side-map"
+          :markers="mapMarkers"
         />
       </aside>
     </template>
@@ -43,72 +100,138 @@
 </template>
 
 <script>
-//todo: The zip lookup and the templates parts that use it should be its own component.
-// This component should be able to just include, for example, <ZipToData service='/earlyvoting/locations'/>
-
 import axios from 'axios';
-const zipregex = /^[0-9]{5}$/;
 import MainContent from '../../components/MainContent';
+import GoogleMap from '../../components/Maps/GoogleMap';
 
 export default {
   name: 'earlyvoting',
-  components: { MainContent },
+  components: { MainContent, GoogleMap },
   data() {
     return {
-      locationTable: 'Search by Zip Code',
-      postal_code: '',
-      invalid_zip: '',
-      state: '',
-      counties: ''
+      addressLabel: 'Adress where you are registered to vote',
+      addressValue: '',
+      placeholder: '123 Main St GA 30076',
+      buttonDisabled: true,
+      early: false,
+      voterData: {}
     };
+  },
+  computed: {
+    electionInfoUrl() {
+      try {
+        return this.voterData.state[0].electionAdministrationBody
+          .electionInfoUrl;
+      } catch (error) {
+        return '';
+      }
+    },
+    electionRegistrationUrl() {
+      try {
+        return this.voterData.state[0].electionAdministrationBody
+          .electionRegistrationUrl;
+      } catch (error) {
+        return '';
+      }
+    },
+    electionRegistrationConfirmationUrl() {
+      try {
+        return this.voterData.state[0].electionAdministrationBody
+          .electionRegistrationConfirmationUrl;
+      } catch (error) {
+        return '';
+      }
+    },
+    absenteeVotingInfoUrl() {
+      try {
+        return this.voterData.state[0].electionAdministrationBody
+          .absenteeVotingInfoUrl;
+      } catch (error) {
+        return '';
+      }
+    },
+    votingLocationFinderUrl() {
+      try {
+        return this.voterData.state[0].electionAdministrationBody
+          .votingLocationFinderUrl;
+      } catch (error) {
+        return '';
+      }
+    },
+    ballotInfoUrl() {
+      try {
+        return this.voterData.state[0].electionAdministrationBody.ballotInfoUrl;
+      } catch (error) {
+        return '';
+      }
+    },
+    placeholderMap() {
+      return this.mapMarkers.length === 0;
+    },
+    mapMarkers() {
+      var list = [];
+      try {
+        var index = 0;
+        var locations = [];
+        if (this.early) locations = this.voterData.earlyVoteSites;
+        else locations = this.voterData.pollingLocations;
+        while (index < locations.length) {
+          var item = locations[index];
+          list.push({
+            id: item.address.locationName,
+            position: { lat: item.latitude, lng: item.longitude }
+          });
+          index++;
+        }
+        return list;
+      } catch (error) {
+        return list;
+      }
+    },
+    locationList() {
+      try {
+        var locations = [];
+        if (this.early) locations = this.voterData.earlyVoteSites;
+        else locations = this.voterData.pollingLocations;
+
+        return locations;
+      } catch (error) {
+        return null;
+      }
+    }
   },
   mounted() {},
   methods: {
-    zipChange: function() {
-      this.counties = '';
-      this.state = '';
-
-      if (this.postal_code !== '') {
-        let m = zipregex.exec(this.postal_code);
-        if (m === null) {
-          this.invalid_zip =
-            'Enter valid zip code (' + zipregex.exec(this.postal_code) + ')';
-          this.locationTable = 'No Data Available';
-        } else {
-          this.invalid_zip = '';
-          axios
-            .get('/postcode', {
-              baseURL: process.env.VUE_APP_SERVICE_API_HOST,
-              params: {
-                id: this.postal_code
-              }
-            })
-            .then(response => {
-              this.counties = response.data.county;
-              this.state = response.data.state;
-              axios
-                .get('/earlyvoting/locations', {
-                  baseURL: process.env.VUE_APP_SERVICE_API_HOST,
-                  params: {
-                    stateid: this.state,
-                    locid: this.counties[0]
-                  }
-                })
-                .then(response => (this.locationTable = response.data.dom))
-                .catch(error => {
-                  error;
-                  this.locationTable = 'No Data Available';
-                });
-            })
-            .catch(error => {
-              error;
-              this.invalid_zip = 'Enter valid zip code';
-            });
-        }
-      } else {
-        this.invalid_zip = '';
-      }
+    showPollingLocation() {
+      axios
+        .post(process.env.VUE_APP_SERVICE_API_HOST + '/pollingplace', {
+          data: {
+            address: this.addressValue
+          }
+        })
+        .then(response => {
+          this.voterData = response.data;
+        })
+        .catch(error => {
+          error;
+          this.voterData = { error: true };
+        });
+    },
+    showEarlyPollingLocation() {
+      this.early = true;
+      this.showPollingLocation();
+    },
+    showNowPollingLocation() {
+      this.early = false;
+      this.showPollingLocation();
+    },
+    updatedAddress() {
+      this.buttonDisabled = this.addressValue.length < 10;
     }
   }
 };
 </script>
+
+<style lang="scss">
+@import './earlyvoting';
+</style>

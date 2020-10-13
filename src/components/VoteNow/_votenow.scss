@@ -7,7 +7,9 @@
     grid-template-columns: 500px 1fr;
   }
 }
-
+.cv-tabs__panels {
+  width: 100%; /* why!!?? */
+}
 .content--votenow > .article__img--votenow {
   margin-top: 20px;
 }
@@ -44,6 +46,7 @@
   display: block;
   font-weight: bold;
 }
-.aside__img {
-  max-width: 100%;
+.aside__image {
+  width: 100%;
+  min-height: unset;
 }

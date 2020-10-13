@@ -50,12 +50,47 @@ exports.locations = async (req, res) => {
               const dom = new JSDOM(response.data);
               const document = dom.window.document;
               var pollTable = document.querySelector('#Table1');
+
+              var addresses = [];
+
+              // try to parse out the addresses fom the table - danger
+              try {
+                var inner = document.querySelector(
+                  '#Table1 >  tbody > tr > td > table'
+                );
+                if (inner) {
+                  var rows = inner.rows;
+                  var addressStart = false;
+                  var address = '';
+                  for (var r = 0; r < rows.length; r++) {
+                    cells = rows[r].cells;
+                    if (cells && cells.length == 2) {
+                      var label = cells[0].textContent.trim();
+                      if (addressStart && label === '') {
+                        address = address + ' ' + cells[1].textContent.trim();
+                        console.log('address:', address);
+                      } else if (addressStart && label !== '') {
+                        addressStart = false;
+                        addresses.push({ address: address });
+                      } else if (label == 'Address:') {
+                        addressStart = true;
+                        address = cells[1].textContent.trim();
+                        console.log('address:', address);
+                      }
+                    }
+                  }
+                }
+              } catch (error) {
+                console.error('could not get addresses from table');
+              }
+
               var str = pollTable.outerHTML.replace(/[\n\r]+|[\s]{2,}/g, '');
               pollingLocs = {
                 state: stateid,
                 place: locid,
                 scrapeURL: scrapeURL,
                 dom: str,
+                addresses: addresses,
                 retrieved: retrieved,
               };
 
@@ -75,6 +110,7 @@ exports.locations = async (req, res) => {
             })
             .catch((reason) => {
               console.log('Error connecting to scrape URL');
+              res.status(503).send();
             });
         } else {
           res.status(200).send(pollingLocs);
