@@ -1,7 +1,7 @@
 <template>
   <PageLayout childData="mother-daughter-hero.jpeg">
     <div class="page__details">
-      <h2 class="page__title">why vote?</h2>
+      <h2 class="page__title">Why vote?</h2>
     </div>
     <MainContent>
       <template v-slot:content>
@@ -29,7 +29,7 @@
               <br />
               For my information on Black people’s journey to vote check out
               <cv-link
-                href="https://www.loc.gov/teachers/classroommaterials/presentationsandactivities/presentations/elections/voting-rights-african-americans.html"
+                href="https://www.loc.gov/teachers/classroommaterials/presentationsandactivities/presentations/elections/voting-rights-african-americans.html" target="_blank"
               >
                 Library of Congress - Voting Rights for African Americans
               </cv-link>

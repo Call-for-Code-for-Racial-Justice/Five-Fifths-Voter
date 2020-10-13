@@ -128,7 +128,7 @@ export default {
   data() {
     return {
       stateName: '',
-      displayDialog: false,
+      displayDialog: false
     };
   },
   created() {
