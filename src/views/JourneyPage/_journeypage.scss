@@ -1,4 +1,15 @@
-@import 'carbon-components/scss/globals/scss/vars.scss';
+.main--register {
+  padding-top: 50px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 1056px) {
+    grid-template-columns: 500px 1fr;
+    padding-top: 100px;
+  }
+}
+
+.content--register {
+}
 
 .content--register > * {
   margin-bottom: 20px;

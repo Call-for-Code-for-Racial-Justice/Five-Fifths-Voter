@@ -54,8 +54,8 @@
         <div class="article__img-container">
           <img
             class="article__img"
-            src="../../assets/landing-page-grandpa-grandson-image-2.jpeg"
-            alt="A smiling grandfather dotes on his baby grandson that he's holding"
+            src="../../assets/landing-page-man-silhouette-image-2.jpeg"
+            alt="Black man against black background, looking off into distance"
           />
         </div>
       </template>
@@ -116,8 +116,8 @@
         <div class="article__img-container">
           <img
             class="article__img"
-            src="../../assets/landing-page-disabled-triathlete-image-4.jpeg"
-            alt="A young teenaged paraplegic is racing in a wheelchair"
+            src="../../assets/landing-page-black-college-student-image-4.jpg"
+            alt="Black college student looks straight into the camera"
           />
         </div>
       </template>
@@ -126,6 +126,7 @@
 </template>
 
 <script>
+// import Hero from '../../components/Hero';
 import Countdown from '../../components/Countdown';
 import PageLayout from '../../components/PageLayout';
 import MainContent from '../../components/MainContent';
@@ -157,5 +158,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './landingpage.scss';
+@import '../../styles/carbon-overrides';
+@import '../../styles/carbon-utils';
 </style>
