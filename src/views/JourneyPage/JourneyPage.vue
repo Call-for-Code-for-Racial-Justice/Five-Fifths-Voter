@@ -28,7 +28,7 @@
       <cv-tab
         id="tab-4"
         label="Vote"
-        aria-label="find early voting and day-off voting locations"
+        aria-label="find early voting and day-of voting locations"
       >
         <EarlyVoting />
       </cv-tab>
