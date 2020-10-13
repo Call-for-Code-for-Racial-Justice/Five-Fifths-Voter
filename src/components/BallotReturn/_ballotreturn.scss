@@ -6,11 +6,7 @@
   width: 100%;
   min-height: unset;
 }
-.map__container {
-  min-height: 700px; /* The height is 400 pixels */
-  width: 100%; /* The width is the width of the web page */
-}
-.google-map {
+.map__container .google-map {
   min-height: 700px; /* The height is 400 pixels */
   width: 100%; /* The width is the width of the web page */
 }
