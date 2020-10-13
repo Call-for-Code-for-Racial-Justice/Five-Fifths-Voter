@@ -19,7 +19,7 @@
         :active="loadingChatter"
         :overlay="loadingOverlay"
       ></cv-loading>
-      <cv-list v-if="haveTweets">
+      <cv-list class="tweet__list" v-if="haveTweets">
         <cv-list-item v-for="item in twitter_chatter.items" :key="item.tweet">
           <span class="tweet-sentiment"> {{ item.sentiment }} </span>
           <p>{{ item.tweet }}</p>
@@ -120,7 +120,5 @@ export default {
 </script>
 
 <style lang="scss">
-.tweets ul.cv-list.bx--list--unordered li.cv-list-item.bx--list__item {
-  color: white;
-}
+@import './twitterchatter.scss';
 </style>
