@@ -18,13 +18,13 @@
 
 # Problem and solution
 
-Black voters have experienced obstacles in casting their votes for long. The process of casting a vote is challenging due to restrcitive local processes, changing requirements, regulations, and lack of information.
+Black voters have experienced obstacles in casting their votes for a long while. The process of casting a vote is challenging due to restrcitive local processes, changing requirements, regulations, and lack of information.
 
-The solution offered by the **Five Fifths Voter** application will ensure that Black voters reach the correct polling station, quickly and affordably, according to their own schedule. The project also equips the voters with the necessary information to vote according to the most up to date and local requirements.
+The solution offered by the **Five Fifths Voter** solutioon will help ensure that Black voters can identify the correct polling station, quickly and affordably, according to their own schedule. The project also equips voters with the necessary information to vote according up to date and local requirements.
 
 # Pitch
 
-The **Five Fifths Voter** application creates a fair and equal opportunity voting process by providing knowledge and accessibility to the required elements. **Five Fifths Voter** will leverage our technology to help identify and eliminate bias and prejudice that is embedded in the voting system.
+The **Five Fifths Voter** application is designed to create a fair and equal opportunity voting process for marginalized voters by providing knowledge and accessibility to required voting elements. **Five Fifths Voter** will leverage technology to help voters identify and aim to eliminate bias and prejudice that is embedded in the voting system.
 
 # Skills
 
