@@ -6,9 +6,6 @@
     color: #171717;
   }
   min-height: 82px;
-  //   display: flex;
-  //   align-items: center;
-  //   padding: 0 $spacing-06;
 }
 
 .global-nav--alt {
@@ -24,7 +21,6 @@
 
 .global-nav__list-item {
   width: calc(100% / 4);
-  //   min-width: 350px;
   padding: 0 $spacing-06;
   transition: all 0.5s ease-in-out;
   &:hover {

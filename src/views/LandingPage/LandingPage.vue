@@ -8,15 +8,15 @@
             <h2 class="article__heading">Our Mission</h2>
             <div class="bx--offset-lg-1">
               <p>
-                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum
+                Five-Fifths equals a whole. A whole person, a whole community, a
+                whole nation.
                 <br /><br />
-                Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-                lorem ipsum lorem ipsum
+                Our Mission for users who visit our site is to provide those
+                individuals with a whole experience that can open up a whole new
+                perspective on life. A major means to creating a new reality is
+                harnessing one’s power by elevating his/her voice; this
+                independence is particularly achieved through exercising one’s
+                right to vote.                
               </p>
             </div>
           </div>
@@ -54,8 +54,8 @@
         <div class="article__img-container">
           <img
             class="article__img"
-            src="../../assets/landing-page-man-silhouette-image-2.jpeg"
-            alt="Black man against black background, looking off into distance"
+            src="../../assets/landing-page-grandpa-grandson-image-2.jpeg"
+            alt="A smiling grandfather dotes on his baby grandson that he's holding"
           />
         </div>
       </template>
@@ -116,8 +116,8 @@
         <div class="article__img-container">
           <img
             class="article__img"
-            src="../../assets/landing-page-black-college-student-image-4.jpg"
-            alt="Black college student looks straight into the camera"
+            src="../../assets/landing-page-disabled-triathlete-image-4.jpeg"
+            alt="A young teenaged paraplegic is racing in a wheelchair"
           />
         </div>
       </template>
@@ -126,7 +126,6 @@
 </template>
 
 <script>
-// import Hero from '../../components/Hero';
 import Countdown from '../../components/Countdown';
 import PageLayout from '../../components/PageLayout';
 import MainContent from '../../components/MainContent';
@@ -158,6 +157,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../styles/carbon-overrides';
-@import '../../styles/carbon-utils';
+@import './landingpage.scss';
 </style>

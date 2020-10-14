@@ -4,14 +4,4 @@
 @import 'carbon-components/scss/globals/scss/vars.scss';
 
 //partials
-@import '../views/LandingPage/landingpage';
-@import '../components/Register/register';
-@import '../views/JourneyPage/journeypage';
-@import '../components/Countdown/countdown';
-@import '../views/SupportPage/supportpage';
-@import './carbon-overrides';
-
-//theme
-@import '~@carbon/themes/scss/themes';
-$carbon--theme: $carbon--theme--g10;
-@include carbon--theme();
+@import './carbon-overrides.scss';

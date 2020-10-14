@@ -3,7 +3,7 @@
     <div class="bx--grid bx--grid--full-width landing-page">
       <div class="bx--row landing-page__r2">
         <div class="bx--col-lg-16">
-          <section class="main main--register">
+          <section>
             <aside class="content--register">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
