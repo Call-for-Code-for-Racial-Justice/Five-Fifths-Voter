@@ -24,7 +24,7 @@
             <div class="bx--modal-header" style="color:black">Acceptable IDs</div>
             <div class="bx--modal-content">
               <p style>
-                <cv-list style="padding: 30px" class="list">
+                <cv-list style="padding-left: 30px" class="list">
                   <cv-list-item class="list-item"
                     >Any valid state or federal government issued photo ID,
                     including a free ID Card issued by your county registrar's
@@ -74,11 +74,7 @@
                 Show Polling Location
               </button>
             </div>
-            <div
-              tabindex="0"
-              class="cv-modal__after-content"
-              style="position: absolute; height: 1px; width: 1px; left: -9999px"
-            ></div>
+            <div tabindex="0" class="cv-modal__after-content"></div>
           </div>
         </div>
       </aside>
