@@ -1,4 +1,4 @@
-# five/fifths voter
+# Five Fifths Voter
 
 # Team
 
@@ -20,11 +20,11 @@
 
 Black voters have experienced obstacles in casting their votes for long. The process of casting a vote is challenging due to restrcitive local processes, changing requirements, regulations, and lack of information.
 
-The solution offered by the **five/fifth voter** application will ensure that Black voters reach the correct polling station, quickly and affordably, according to their own schedule. The project also equips the voters with the necessary information to vote according to the most up to date and local requirements.
+The solution offered by the **Five Fifths Voter** application will ensure that Black voters reach the correct polling station, quickly and affordably, according to their own schedule. The project also equips the voters with the necessary information to vote according to the most up to date and local requirements.
 
 # Pitch
 
-The **five/fifths voter** application creates a fair and equal opportunity voting process by providing knowledge and accessibility to the required elements. **five/fifths voter** will leverage our technology to identify and eliminate bias and prejudice that is embedded in the voting system.
+The **Five Fifths Voter** application creates a fair and equal opportunity voting process by providing knowledge and accessibility to the required elements. **Five Fifths Voter** will leverage our technology to help identify and eliminate bias and prejudice that is embedded in the voting system.
 
 # Skills
 
@@ -48,7 +48,7 @@ See the [Getting Started](doc/GETSTARTED.md) document.
 
 # Suggestions
 
-See the [issues list](https://github.com/embrace-call-for-code/embrace-the-vote/issues) for a full list of issues in the **five/fifths voter** project. Issues marked as ["top priority"](https://github.com/embrace-call-for-code/embrace-the-vote/issues?q=is%3Aissue+is%3Aopen+label%3A%22top+priority%22) must be considered first.
+See the [issues list](https://github.com/embrace-call-for-code/embrace-the-vote/issues) for a full list of issues in the **Five Fifths Voter** project. Issues marked as ["top priority"](https://github.com/embrace-call-for-code/embrace-the-vote/issues?q=is%3Aissue+is%3Aopen+label%3A%22top+priority%22) must be considered first.
 
 # Solution fortification
 
