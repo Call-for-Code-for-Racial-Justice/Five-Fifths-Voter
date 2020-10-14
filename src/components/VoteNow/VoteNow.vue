@@ -17,11 +17,11 @@
           </cv-dropdown>
           <div
             v-if="displayDialog"
-            style="margin-top: 40px; width: 100%"
+            style="margin-top: 25px; width: 100%"
             class="bx--modal-container"
           >
             <div tabindex="0" class="cv-modal__before-content"></div>
-            <div class="bx--modal-header">Acceptable IDs</div>
+            <div class="bx--modal-header" style="color:black">Acceptable IDs</div>
             <div class="bx--modal-content">
               <p style>
                 <cv-list style="padding: 30px" class="list">
