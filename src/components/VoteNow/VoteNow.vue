@@ -11,12 +11,9 @@
             placeholder="Choose your state"
             @change="onChange($event)"
           >
-	    <cv-dropdown-item value="Georgia">Georgia</cv-dropdown-item>
-	    <!--
             <cv-dropdown-item value="California">California</cv-dropdown-item>
-            <cv-dropdown-item value="NorthCarolina">North Carolina</cv-dropdown-item>
+            <cv-dropdown-item value="Georgia">Georgia</cv-dropdown-item>
             <cv-dropdown-item value="Texas">Texas</cv-dropdown-item>
-	    -->
           </cv-dropdown>
           <div
             v-if="displayDialog"
@@ -24,7 +21,7 @@
             class="bx--modal-container"
           >
             <div tabindex="0" class="cv-modal__before-content"></div>
-            <div class="bx--modal-header"></div>
+            <div class="bx--modal-header">Acceptable IDs</div>
             <div class="bx--modal-content">
               <p style>
                 <cv-list style="padding: 30px" class="list">
@@ -67,7 +64,7 @@
                 type="button"
                 @click="showSofSSite"
               >
-                Secretary of State</button
+                Secretary of State Site</button
               ><button
                 role="button"
                 class="cv-button bx--btn bx--btn--primary"
@@ -103,6 +100,15 @@ import MainContent from '../../components/MainContent';
 import Vue from 'vue';
 import router from '../../router';
 import LoadScript from 'vue-plugin-load-script';
+
+var links = {
+  Georgia:
+    'https://sos.ga.gov/index.php/elections/georgia_voter_identification_requirements2',
+  Texas:
+    'https://www.sos.state.tx.us/elections/forms/id/poster-11x17-aw-voter.pdf',
+  California:
+    'https://www.sos.ca.gov/elections/voting-resources/voting-california/what-bring',
+};
 Vue.use(LoadScript);
 export default {
   name: 'votenow',
@@ -110,9 +116,11 @@ export default {
   data() {
     return {
       stateName: '',
-      displayDialog: false
+      links: links,
+      displayDialog: false,
     };
   },
+  
   created() {
     this.regData = this.$route.params.regData;
   },
@@ -125,10 +133,7 @@ export default {
       this.displayDialog = true;
     },
     showSofSSite() {
-      window.open(
-        'https://sos.ga.gov/index.php/elections/georgia_voter_identification_requirements2',
-        '_blank'
-      );
+      window.open(this.links[this.stateName], '_blank');
     },
     showTool() {
       window.open('https://tool.votinginfoproject.org', '_blank');
@@ -154,13 +159,13 @@ export default {
           // Failed to fetch script
         });
       */
-    }
+    },
   },
   mounted() {
     //this.showtool();
   },
   updated() {
     //this.showtool();
-  }
+  },
 };
 </script>

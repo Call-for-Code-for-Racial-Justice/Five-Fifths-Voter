@@ -1,9 +1,5 @@
-// .bx--header {
-//   @include carbon--breakpoint-down('sm') {
-//     position: fixed;
-//     top: 0;
-//   }
-// }
+@import 'carbon-components/scss/globals/scss/vars';
+@import 'carbon-components/scss/globals/scss/typography.scss';
 
 .global-nav {
   background: {
