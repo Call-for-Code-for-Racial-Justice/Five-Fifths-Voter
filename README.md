@@ -10,6 +10,7 @@
 * Denise Knorr
 * Andrea Lucas
 * David Nixon
+* Evelyn R. Anderson
 * Chris Stefano
 * Dylan Zucker
 * Kristen Ray
