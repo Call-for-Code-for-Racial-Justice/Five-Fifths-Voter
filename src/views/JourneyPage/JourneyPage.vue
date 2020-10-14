@@ -6,22 +6,30 @@
     <cv-tabs :container="container" aria-label="voter journey">
       <cv-tab
         id="tab-1"
-        label="Are you registered to vote?"
+        label="Are You Registered To Vote?"
         aria-label="check if you are registered to vote"
       >
         <Register />
       </cv-tab>
       <cv-tab
         id="tab-2"
-        label="Mail in Ballot"
+        label="Mail In Ballot"
         aria-label="request an absentee ballot"
       >
         <Absentee />
       </cv-tab>
-      <cv-tab id="tab-3" label="Vote Now" aria-label="find your polling place">
+      <cv-tab
+        id="tab-3"
+        label="Get Informed"
+        aria-label="find information regarding your state's voting credentials"
+      >
         <VoteNow />
       </cv-tab>
-      <cv-tab id="tab-4" label="Vote" aria-label="find voting locations">
+      <cv-tab
+        id="tab-4"
+        label="Vote"
+        aria-label="find early voting and day-of voting locations"
+      >
         <EarlyVoting />
       </cv-tab>
       <cv-tab
