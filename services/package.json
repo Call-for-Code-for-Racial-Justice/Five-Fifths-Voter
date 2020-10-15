@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "API services for five/fifths voter",
   "main": "index.js",
-  "repository": "https://github.com/embrace-call-for-code/embrace-the-vote",
+  "repository": "https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter/issues",
   "author": "IBM",
   "license": "MIT",
   "dependencies": {
