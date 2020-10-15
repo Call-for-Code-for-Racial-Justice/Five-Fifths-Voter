@@ -24,17 +24,11 @@ connection
   })
   .catch((reason) => {
     console.error('\x1b[31m%s\x1b[0m', `Not connected to Cache DB: ${reason}`);
-    console.log(
-      '\x1b[31m%s\x1b[0m',
-      'Early Voting in GA will not be available'
-    );
+    console.log('\x1b[31m%s\x1b[0m', 'Early Voting in GA will not be available');
+    console.log('\x1b[33m%s\x1b[0m', 'If you are working locally read the services/README.md file');
     console.log(
       '\x1b[33m%s\x1b[0m',
-      'If you are working locally read the services/README.md file'
-    );
-    console.log(
-      '\x1b[33m%s\x1b[0m',
-      'If you need Early Voting in GA to work, probably you need to: docker run --detach --rm -p 27017:27017 --name embrace-db embrace-the-vote/db'
+      "For Early Voting to work, run the following command: 'docker run --detach --rm -p 27012:27017 --name embrace-db embrace-the-vote/db'"
     );
     console.log('\x1b[32m%s\x1b[0m', 'The server is still listening.');
   });

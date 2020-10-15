@@ -13,11 +13,7 @@
             >
             </cv-text-input>
             <div class="wrapper wrapper--button">
-              <cv-button
-                kind="primary"
-                @click="showPollingLocation"
-                :disabled="buttonDisabled"
-              >
+              <cv-button kind="primary" @click="showPollingLocation" :disabled="buttonDisabled">
                 Show Ballot Drop Off Locations
               </cv-button>
             </div>
@@ -33,39 +29,21 @@
                 <cv-link :href="electionInfoUrl"> Election Info</cv-link><br />
               </span>
               <span v-if="absenteeVotingInfoUrl">
-                <cv-link :href="absenteeVotingInfoUrl">
-                  Get Absentee Ballot</cv-link
-                ><br />
+                <cv-link :href="absenteeVotingInfoUrl"> Get Absentee Ballot</cv-link><br />
               </span>
               <span v-if="placeholderMap"
-                >No known drop off locations. Check with your local election
-                officials.
+                >No known drop off locations. Check with your local election officials.
               </span>
               <cv-list v-if="locationList">
-                <cv-list-item
-                  v-for="item in locationList"
-                  :key="item.address.locationName"
-                >
+                <cv-list-item v-for="item in locationList" :key="item.address.locationName">
                   <span class="loc-name">{{ item.address.locationName }}</span>
-                  <span v-if="item.notes" class="loc-name">{{
-                    item.notes
-                  }}</span>
+                  <span v-if="item.notes" class="loc-name">{{ item.notes }}</span>
 
-                  <span v-if="item.address.line1" class="loc-line">{{
-                    item.address.line1
-                  }}</span>
-                  <span v-if="item.address.line2" class="loc-line">{{
-                    item.address.line2
-                  }}</span>
-                  <span v-if="item.address.line3" class="loc-line">{{
-                    item.address.line3
-                  }}</span>
-                  <span v-if="item.address.city" class="loc-city">{{
-                    item.address.city
-                  }}</span>
-                  <span v-if="item.address.state" class="loc-state">
-                    {{ item.address.state }}</span
-                  >
+                  <span v-if="item.address.line1" class="loc-line">{{ item.address.line1 }}</span>
+                  <span v-if="item.address.line2" class="loc-line">{{ item.address.line2 }}</span>
+                  <span v-if="item.address.line3" class="loc-line">{{ item.address.line3 }}</span>
+                  <span v-if="item.address.city" class="loc-city">{{ item.address.city }}</span>
+                  <span v-if="item.address.state" class="loc-state"> {{ item.address.state }}</span>
                 </cv-list-item>
               </cv-list>
 
@@ -77,18 +55,10 @@
     </template>
     <template v-slot:image>
       <aside v-if="placeholderMap" class="aside__container--img">
-        <img
-          class="aside__image"
-          src="../../assets/holder-atlanta-map.png"
-          alt="google map img"
-        />
+        <img class="aside__image" src="../../assets/holder-atlanta-map.png" alt="google map img" />
       </aside>
       <aside v-else>
-        <GoogleMap
-          class="map__container"
-          :markers="mapMarkers"
-          ref="dropoffMap"
-        />
+        <GoogleMap class="map__container" :markers="mapMarkers" ref="dropoffMap" />
       </aside>
     </template>
   </MainContent>
@@ -117,16 +87,14 @@ export default {
   computed: {
     electionInfoUrl() {
       try {
-        return this.voterData.state[0].electionAdministrationBody
-          .electionInfoUrl;
+        return this.voterData.state[0].electionAdministrationBody.electionInfoUrl;
       } catch (error) {
         return '';
       }
     },
     electionRegistrationUrl() {
       try {
-        return this.voterData.state[0].electionAdministrationBody
-          .electionRegistrationUrl;
+        return this.voterData.state[0].electionAdministrationBody.electionRegistrationUrl;
       } catch (error) {
         return '';
       }
@@ -141,16 +109,14 @@ export default {
     },
     absenteeVotingInfoUrl() {
       try {
-        return this.voterData.state[0].electionAdministrationBody
-          .absenteeVotingInfoUrl;
+        return this.voterData.state[0].electionAdministrationBody.absenteeVotingInfoUrl;
       } catch (error) {
         return '';
       }
     },
     votingLocationFinderUrl() {
       try {
-        return this.voterData.state[0].electionAdministrationBody
-          .votingLocationFinderUrl;
+        return this.voterData.state[0].electionAdministrationBody.votingLocationFinderUrl;
       } catch (error) {
         return '';
       }
@@ -231,8 +197,7 @@ export default {
       if (item.address.line2) info += '<div>' + item.address.line2 + '</div>';
       if (item.address.line3) info += '<div>' + item.address.line3 + '</div>';
       if (item.address.city) info += '<span>' + item.address.city + '</span>';
-      if (item.address.state)
-        info += '<span> ' + item.address.state + '</span>';
+      if (item.address.state) info += '<span> ' + item.address.state + '</span>';
       return info;
     }
   }

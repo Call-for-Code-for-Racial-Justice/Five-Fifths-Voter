@@ -54,7 +54,8 @@
     "vue-template-compiler": "^2.6.12"
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "printWidth": 100
   },
   "eslintConfig": {
     "root": true,
