@@ -63,9 +63,9 @@
                   <span v-if="item.address.city" class="loc-city">{{
                     item.address.city
                   }}</span>
-                  <span v-if="item.address.state" class="loc-state">{{
-                    item.address.state
-                  }}</span>
+                  <span v-if="item.address.state" class="loc-state">
+                    {{ item.address.state }}</span
+                  >
                 </cv-list-item>
               </cv-list>
 
