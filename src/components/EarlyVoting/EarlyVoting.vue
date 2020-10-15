@@ -7,9 +7,10 @@
             Vote early or find your polling location
           </h2>
           <p class="aside__description">
-            Need help knowing where to go on voting day? Want to know what
-            location in your precinct allows for early voting? Five Fifths Voter can help you
-            figure it out. Input your address below, and select either "Early Voting" or "Polling Location". We'll do the rest.
+            Need help knowing where to go on voting day? Want to know what location in your precinct
+            allows for early voting? Five Fifths Voter can help you figure it out. Input your
+            address below, and select either "Early Voting" or "Polling Location". We'll do the
+            rest.
           </p>
           <div class="wrapper wrapper--address">
             <cv-text-input
@@ -49,38 +50,23 @@
                 <cv-link :href="electionInfoUrl"> Election Info</cv-link><br />
               </span>
               <span v-if="absenteeVotingInfoUrl">
-                <cv-link :href="absenteeVotingInfoUrl">
-                  Get Absentee Ballot</cv-link
-                ><br />
+                <cv-link :href="absenteeVotingInfoUrl"> Get Absentee Ballot</cv-link><br />
               </span>
               <span v-if="placeholderMap"
                 >No known locations. Check with your local election officials.
               </span>
               <cv-list v-if="locationList">
-                <cv-list-item
-                  v-for="item in locationList"
-                  :key="item.address.locationName"
-                >
+                <cv-list-item v-for="item in locationList" :key="item.address.locationName">
                   <span class="loc-name">{{ item.address.locationName }}</span>
                   <span v-if="!early && item.pollingHours" class="loc-name">{{
                     item.pollingHours
                   }}</span>
 
-                  <span v-if="item.address.line1" class="loc-line">{{
-                    item.address.line1
-                  }}</span>
-                  <span v-if="item.address.line2" class="loc-line">{{
-                    item.address.line2
-                  }}</span>
-                  <span v-if="item.address.line3" class="loc-line">{{
-                    item.address.line3
-                  }}</span>
-                  <span v-if="item.address.city" class="loc-city">{{
-                    item.address.city
-                  }}</span>
-                  <span v-if="item.address.state" class="loc-state">
-                    {{ item.address.state }}</span
-                  >
+                  <span v-if="item.address.line1" class="loc-line">{{ item.address.line1 }}</span>
+                  <span v-if="item.address.line2" class="loc-line">{{ item.address.line2 }}</span>
+                  <span v-if="item.address.line3" class="loc-line">{{ item.address.line3 }}</span>
+                  <span v-if="item.address.city" class="loc-city">{{ item.address.city }}</span>
+                  <span v-if="item.address.state" class="loc-state"> {{ item.address.state }}</span>
                 </cv-list-item>
               </cv-list>
 
@@ -92,11 +78,7 @@
     </template>
     <template v-slot:image>
       <aside v-if="placeholderMap" class="aside__container--img">
-        <img
-          class="aside__image"
-          src="../../assets/holder-atlanta-map.png"
-          alt="google map img"
-        />
+        <img class="aside__image" src="../../assets/holder-atlanta-map.png" alt="google map img" />
       </aside>
       <aside v-else>
         <GoogleMap class="side-map" :markers="mapMarkers" ref="earlyMap" />
@@ -120,22 +102,20 @@ export default {
       placeholder: '123 Main St GA 30076',
       buttonDisabled: true,
       early: false,
-      voterData: {},
+      voterData: {}
     };
   },
   computed: {
     electionInfoUrl() {
       try {
-        return this.voterData.state[0].electionAdministrationBody
-          .electionInfoUrl;
+        return this.voterData.state[0].electionAdministrationBody.electionInfoUrl;
       } catch (error) {
         return '';
       }
     },
     electionRegistrationUrl() {
       try {
-        return this.voterData.state[0].electionAdministrationBody
-          .electionRegistrationUrl;
+        return this.voterData.state[0].electionAdministrationBody.electionRegistrationUrl;
       } catch (error) {
         return '';
       }
@@ -150,16 +130,14 @@ export default {
     },
     absenteeVotingInfoUrl() {
       try {
-        return this.voterData.state[0].electionAdministrationBody
-          .absenteeVotingInfoUrl;
+        return this.voterData.state[0].electionAdministrationBody.absenteeVotingInfoUrl;
       } catch (error) {
         return '';
       }
     },
     votingLocationFinderUrl() {
       try {
-        return this.voterData.state[0].electionAdministrationBody
-          .votingLocationFinderUrl;
+        return this.voterData.state[0].electionAdministrationBody.votingLocationFinderUrl;
       } catch (error) {
         return '';
       }
@@ -187,7 +165,7 @@ export default {
             id: item.address.locationName,
             position: { lat: item.latitude, lng: item.longitude },
             info: this.locationInfo(item),
-            title: item.address.locationName,
+            title: item.address.locationName
           });
           index++;
         }
@@ -206,7 +184,7 @@ export default {
       } catch (error) {
         return null;
       }
-    },
+    }
   },
   mounted() {},
   methods: {
@@ -215,13 +193,13 @@ export default {
       axios
         .post(process.env.VUE_APP_SERVICE_API_HOST + '/pollingplace', {
           data: {
-            address: this.addressValue,
-          },
+            address: this.addressValue
+          }
         })
-        .then((response) => {
+        .then(response => {
           this.voterData = response.data;
         })
-        .catch((error) => {
+        .catch(error => {
           error;
           this.voterData = { error: true };
         });
@@ -244,17 +222,15 @@ export default {
      */
     locationInfo(item) {
       var info = '<div><b>' + item.address.locationName + '</b></div>';
-      if (!this.early && item.pollingHours)
-        info += '<div><b>' + item.pollingHours + '</b></div>';
+      if (!this.early && item.pollingHours) info += '<div><b>' + item.pollingHours + '</b></div>';
       if (item.address.line1) info += '<div>' + item.address.line1 + '</div>';
       if (item.address.line2) info += '<div>' + item.address.line2 + '</div>';
       if (item.address.line3) info += '<div>' + item.address.line3 + '</div>';
       if (item.address.city) info += '<span>' + item.address.city + '</span>';
-      if (item.address.state)
-        info += '<span> ' + item.address.state + '</span>';
+      if (item.address.state) info += '<span> ' + item.address.state + '</span>';
       return info;
-    },
-  },
+    }
+  }
 };
 </script>
 
