@@ -127,8 +127,36 @@ app.post('/pollingplace/', civic.pollingPlace);
 //   }
 // });
 
+// Warn about not getting Twitter results
+const useTwitterMock =
+  isDevelopment &&
+  (!process.env.NODE_TWITTER_API_KEY ||
+    !process.env.NODE_TWITTER_API_SECRET_KEY ||
+    !process.env.NODE_TWITTER_ACCESS_TOKEN ||
+    !process.env.NODE_TWITTER_ACCESS_TOKEN_SECRET ||
+    !process.env.NODE_TA_API_KEY ||
+    !process.env.NODE_TA_API_URL ||
+    !process.env.NODE_NLU_API_KEY ||
+    !process.env.NODE_NLU_API_URL);
+
+if (useTwitterMock) {
+  console.error('\x1b[31m%s\x1b[0m', 'Twitter Access not configured');
+  console.log(
+    '\x1b[31m%s\x1b[0m',
+    'All Twitter requests from the social page will return mock data from BrackObama'
+  );
+  console.log(
+    '\x1b[33m%s\x1b[0m',
+    'If you are working locally read the services/README.md file'
+  );
+  console.log(
+    '\x1b[33m%s\x1b[0m',
+    'If you need live Twitter data, you need to create twitter and IBM cloud access keys but both are free'
+  );
+}
+
 app.get('/twitter/chatter/', (req, res) => {
-  if (isDevelopment && !process.env.NODE_TWITTER_API_KEY) {
+  if (useTwitterMock) {
     res.send(mock_twitter);
   } else {
     let screenname = req.query.screenname;
