@@ -31,8 +31,7 @@ exports.locations = async (req, res) => {
         var retrieved = Date.now();
         var pollingLocs = result;
         var cacheHit = result ? true : false;
-        var cacheIsStale =
-          !pollingLocs || retrieved - pollingLocs.retrieved > cache.staleTime;
+        var cacheIsStale = !pollingLocs || retrieved - pollingLocs.retrieved > cache.staleTime;
         if (pollingLocs) {
           console.log(
             `${locid} cache is ${
@@ -42,8 +41,7 @@ exports.locations = async (req, res) => {
         }
 
         if (cacheIsStale) {
-          const scrapeURL =
-            'https://elections.sos.ga.gov/Elections/advancedVotingInfoResult.do';
+          const scrapeURL = 'https://elections.sos.ga.gov/Elections/advancedVotingInfoResult.do';
           axios
             .get(scrapeURL, { params: getParams })
             .then((response) => {
@@ -55,9 +53,7 @@ exports.locations = async (req, res) => {
 
               // try to parse out the addresses fom the table - danger
               try {
-                var inner = document.querySelector(
-                  '#Table1 >  tbody > tr > td > table'
-                );
+                var inner = document.querySelector('#Table1 >  tbody > tr > td > table');
                 if (inner) {
                   var rows = inner.rows;
                   var addressStart = false;
@@ -95,12 +91,10 @@ exports.locations = async (req, res) => {
               };
 
               if (cacheHit) {
-                collection
-                  .findOneAndReplace({ place: locid }, pollingLocs)
-                  .then((result) => {
-                    console.log(`${locid} cache update`);
-                    res.status(200).send(pollingLocs);
-                  });
+                collection.findOneAndReplace({ place: locid }, pollingLocs).then((result) => {
+                  console.log(`${locid} cache update`);
+                  res.status(200).send(pollingLocs);
+                });
               } else {
                 collection.insertOne(pollingLocs).then((result) => {
                   console.log(`${locid} added to cache`);

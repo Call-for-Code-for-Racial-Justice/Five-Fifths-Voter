@@ -17,9 +17,7 @@
             <cv-dropdown-item value="colorado">Colorado</cv-dropdown-item>
             <cv-dropdown-item value="connecticut">Connecticut</cv-dropdown-item>
             <cv-dropdown-item value="delaware">Delaware</cv-dropdown-item>
-            <cv-dropdown-item value="district-of-columbia"
-              >District of Columbia</cv-dropdown-item
-            >
+            <cv-dropdown-item value="district-of-columbia">District of Columbia</cv-dropdown-item>
             <cv-dropdown-item value="florida">Florida</cv-dropdown-item>
             <cv-dropdown-item value="georgia">Georgia</cv-dropdown-item>
             <cv-dropdown-item value="hawaii">Hawaii</cv-dropdown-item>
@@ -32,9 +30,7 @@
             <cv-dropdown-item value="louisiana">Louisiana</cv-dropdown-item>
             <cv-dropdown-item value="maine">Maine</cv-dropdown-item>
             <cv-dropdown-item value="maryland">Maryland</cv-dropdown-item>
-            <cv-dropdown-item value="massachusetts"
-              >Massachusetts</cv-dropdown-item
-            >
+            <cv-dropdown-item value="massachusetts">Massachusetts</cv-dropdown-item>
             <cv-dropdown-item value="michigan">Michigan</cv-dropdown-item>
             <cv-dropdown-item value="minnesota">Minnesota</cv-dropdown-item>
             <cv-dropdown-item value="mississippi">Mississippi</cv-dropdown-item>
@@ -42,33 +38,19 @@
             <cv-dropdown-item value="montana">Montana</cv-dropdown-item>
             <cv-dropdown-item value="nebraska">Nebraska</cv-dropdown-item>
             <cv-dropdown-item value="nevada">Nevada</cv-dropdown-item>
-            <cv-dropdown-item value="new-hampshire"
-              >New Hampshire</cv-dropdown-item
-            >
+            <cv-dropdown-item value="new-hampshire">New Hampshire</cv-dropdown-item>
             <cv-dropdown-item value="new-jersey">New Jersey</cv-dropdown-item>
             <cv-dropdown-item value="new-mexico">New Mexico</cv-dropdown-item>
             <cv-dropdown-item value="new-york">New York</cv-dropdown-item>
-            <cv-dropdown-item value="north-carolina"
-              >North Carolina</cv-dropdown-item
-            >
-            <cv-dropdown-item value="north-dakota"
-              >North Dakota</cv-dropdown-item
-            >
+            <cv-dropdown-item value="north-carolina">North Carolina</cv-dropdown-item>
+            <cv-dropdown-item value="north-dakota">North Dakota</cv-dropdown-item>
             <cv-dropdown-item value="ohio">Ohio</cv-dropdown-item>
             <cv-dropdown-item value="oklahoma">Oklahoma</cv-dropdown-item>
             <cv-dropdown-item value="oregon">Oregon</cv-dropdown-item>
-            <cv-dropdown-item value="pennsylvania"
-              >Pennsylvania</cv-dropdown-item
-            >
-            <cv-dropdown-item value="rhode-island"
-              >Rhode Island</cv-dropdown-item
-            >
-            <cv-dropdown-item value="south-carolina"
-              >South Carolina</cv-dropdown-item
-            >
-            <cv-dropdown-item value="south-dakota"
-              >South Dekota</cv-dropdown-item
-            >
+            <cv-dropdown-item value="pennsylvania">Pennsylvania</cv-dropdown-item>
+            <cv-dropdown-item value="rhode-island">Rhode Island</cv-dropdown-item>
+            <cv-dropdown-item value="south-carolina">South Carolina</cv-dropdown-item>
+            <cv-dropdown-item value="south-dakota">South Dekota</cv-dropdown-item>
             <cv-dropdown-item value="tennessee">Tennessee</cv-dropdown-item>
             <cv-dropdown-item value="texas">Texas</cv-dropdown-item>
             <cv-dropdown-item value="utah">Utah</cv-dropdown-item>
@@ -76,9 +58,7 @@
             <cv-dropdown-item value="virginia">Virginia</cv-dropdown-item>
             <cv-dropdown-item value="washington">Washington</cv-dropdown-item>
             >
-            <cv-dropdown-item value="west-virginia"
-              >West Virginia</cv-dropdown-item
-            >
+            <cv-dropdown-item value="west-virginia">West Virginia</cv-dropdown-item>
             <cv-dropdown-item value="wisconsin">Wisconsin</cv-dropdown-item>
             <cv-dropdown-item value="wyoming">Wyoming</cv-dropdown-item>
           </cv-dropdown>
@@ -91,28 +71,21 @@
               <p style>
                 <cv-list style="padding-left: 30px" class="list">
                   <cv-list-item class="list-item"
-                    >Any valid state or federal government issued photo ID,
-                    including a free ID Card issued by your county registrar's
-                    office or the Department of Driver Services (DDS)
+                    >Any valid state or federal government issued photo ID, including a free ID Card
+                    issued by your county registrar's office or the Department of Driver Services
+                    (DDS)
                   </cv-list-item>
                   <cv-list-item class="list-item"
                     >A state issued driver's license, even if expired
                   </cv-list-item>
                   <cv-list-item class="list-item"
-                    >Valid employee photo ID from any branch, department,
-                    agency, or entity of the U.S. Government, state, or any
-                    county, municipality, board, authority or other entity of
-                    this state
+                    >Valid employee photo ID from any branch, department, agency, or entity of the
+                    U.S. Government, state, or any county, municipality, board, authority or other
+                    entity of this state
                   </cv-list-item>
-                  <cv-list-item class="list-item"
-                    >Valid U.S. passport ID
-                  </cv-list-item>
-                  <cv-list-item class="list-item"
-                    >Valid U.S. military photo ID
-                  </cv-list-item>
-                  <cv-list-item class="list-item"
-                    >Valid tribal photo ID
-                  </cv-list-item>
+                  <cv-list-item class="list-item">Valid U.S. passport ID </cv-list-item>
+                  <cv-list-item class="list-item">Valid U.S. military photo ID </cv-list-item>
+                  <cv-list-item class="list-item">Valid tribal photo ID </cv-list-item>
                   <cv-list-item class="list-item"
                     >Many student IDs are also acceptable
                   </cv-list-item>
@@ -125,7 +98,9 @@
                 class="cv-button bx--btn bx--btn--primary"
                 type="button"
                 @click="showSofSSite"
-              >State Voting Info</button>
+              >
+                State Voting Info
+              </button>
             </div>
             <div tabindex="0" class="cv-modal__after-content"></div>
           </div>

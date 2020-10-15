@@ -42,7 +42,8 @@
               ><br />
             </div>
             <p>
-              Each voter’s journey is different. Five Fifths Voter can put you on the right path to reclaiming voter confidence. Please visit our support channels to help guide you.
+              Each voter’s journey is different. Five Fifths Voter can put you on the right path to
+              reclaiming voter confidence. Please visit our support channels to help guide you.
             </p>
           </div>
         </aside>

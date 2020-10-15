@@ -102,8 +102,7 @@ module.exports = Object.freeze({
         'Michelle and I hope that the President, First Lady, and all those affected by the coronavirus around the country are getting the care they need and are on the path to a speedy recovery.',
       sentiment: 'positive',
       emotion: 'joy',
-      concepts:
-        'First Lady of the United States, President of the United States',
+      concepts: 'First Lady of the United States, President of the United States',
       tones: '',
     },
     {
