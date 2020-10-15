@@ -18,18 +18,18 @@
       </div>
       <div class="hero__content">
         <h1 class="hero__heading">Five Fifths Voter</h1>
-        <h3 class="hero__quote">
+        <h2 class="hero__quote">
           "My dear friends: Your vote is precious, almost sacred. It is the most
           powerful nonviolent tool we have to create a more perfect union."
           <br />
           <span class="hero__author"> - John Lewis</span>
           <br />
           <br />
-        </h3>
-        <h3 class="hero__quote">
-          5/5 equals a whole. A whole person, a whole community, a whole nation.
+        </h2>
+        <p class="hero__description">
+          5/5 equals a whole.<br />A whole person, a whole community, a whole nation.
           <br />
-        </h3>
+        </p>
       </div>
       <div class="bx--row bx--feature-card__row">
         <div
