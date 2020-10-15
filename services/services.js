@@ -107,25 +107,25 @@ app.get('/ballotreturn/locations/', (req, res) => {
 app.post('/pollingplace/', civic.pollingPlace);
 
 // non-public API
-app.get('/postcode/', (req, res) => {
-  // console.log('Returning locations', req.query);
-  let postcode = req.query.id;
-  const foundData = lodash.find(postcodes, { postal_code: postcode });
-  if (foundData) {
-    let counties = [foundData.admin_name2];
-    if (foundData.admin_name3 !== '') counties.push(foundData.admin_name3);
-    const resp_data = {
-      country_code: foundData.country_code,
-      place_name: foundData.place_name,
-      state: foundData.admin_code1,
-      county: counties,
-    };
-    res.send(resp_data);
-  } else {
-    console.log(`location not found.`);
-    res.status(404).send();
-  }
-});
+// app.get('/postcode/', (req, res) => {
+//   // console.log('Returning locations', req.query);
+//   let postcode = req.query.id;
+//   const foundData = lodash.find(postcodes, { postal_code: postcode });
+//   if (foundData) {
+//     let counties = [foundData.admin_name2];
+//     if (foundData.admin_name3 !== '') counties.push(foundData.admin_name3);
+//     const resp_data = {
+//       country_code: foundData.country_code,
+//       place_name: foundData.place_name,
+//       state: foundData.admin_code1,
+//       county: counties,
+//     };
+//     res.send(resp_data);
+//   } else {
+//     console.log(`location not found.`);
+//     res.status(404).send();
+//   }
+// });
 
 app.get('/twitter/chatter/', (req, res) => {
   if (isDevelopment && !process.env.NODE_TWITTER_API_KEY) {
