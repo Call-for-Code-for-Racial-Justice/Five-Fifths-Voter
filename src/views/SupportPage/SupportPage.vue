@@ -26,19 +26,19 @@
                 class="aside__link"
                 href="https://www.npr.org/2020/08/07/900210406/the-most-important-mail-youll-ever-send-a-ballot"
                 target="_blank"
-                >Mail-in Voting Instructions &rarr;</cv-link
+                >Mail-in voting instructions &rarr;</cv-link
               ><br />
               <cv-link
                 class="aside__link"
                 href="https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx"
                 target="_blank"
-                >Voting for Felons &rarr;</cv-link
+                >Voting for felons &rarr;</cv-link
               ><br />
               <cv-link
                 class="aside__link"
                 href="https://sos.ga.gov/index.php/elections/voters_with_disabilities"
                 target="_blank"
-                >Voter Tips for The Disabled &rarr;</cv-link
+                >Voter tips for the disabled &rarr;</cv-link
               ><br />
             </div>
             <p>
