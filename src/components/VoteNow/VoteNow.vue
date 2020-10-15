@@ -7,7 +7,6 @@
           <cv-dropdown
             class="cv-dropdown"
             placeholder="Choose your state for information"
-            style="font-size:large"
             @change="onChange($event)"
           >
             <cv-dropdown-item value="alabama">Alabama</cv-dropdown-item>
