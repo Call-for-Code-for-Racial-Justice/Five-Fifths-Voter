@@ -3,7 +3,7 @@
     <template v-slot:content>
       <aside class="aside">
         <div class="aside__container--text">
-          <h2 class="aside__header">Voting is the Future</h2>
+          <h2 class="aside__header">Voting is the future</h2>
           <p class="aside__paragraph">
             Voting is the perfect way for you to unite and implement change in
             your communities, state-wide and nationally.

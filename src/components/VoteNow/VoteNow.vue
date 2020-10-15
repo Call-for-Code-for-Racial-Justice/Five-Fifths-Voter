@@ -125,18 +125,15 @@
                 class="cv-button bx--btn bx--btn--primary"
                 type="button"
                 @click="showSofSSite"
-              >
-                State Voting Info
-              </button>
+              >State Voting Info</button>
               <!--
               <button
                 role="button"
                 class="cv-button bx--btn bx--btn--secondary"
                 type="button"
                 @click="showTool"
-              >
-                Show Polling Location
-              </button>-->
+              >Show Polling Location</button>
+              -->
             </div>
             <div tabindex="0" class="cv-modal__after-content"></div>
           </div>
@@ -165,7 +162,6 @@ export default {
   data() {
     return {
       stateName: '',
-      //links: links,
       displayDialog: false
     };
   },
