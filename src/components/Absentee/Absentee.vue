@@ -9,7 +9,7 @@
             deadline.
           </p>
           <cv-link href="https://www.vote.org/absentee-ballot/" target="_blank">
-            Request an absentee ballot
+            Request an absentee ballot &rarr;
           </cv-link>
         </div>
       </aside>
