@@ -15,6 +15,7 @@
 * Dylan Zucker
 * Kristen Ray
 * Roosevelt Faulkner
+* Ricky Ellison
 
 # Problem and solution
 
