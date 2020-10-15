@@ -5,8 +5,7 @@
         <div class="aside__container--text">
           <h2 class="aside__header">Can't be there? Let us Help You Connect</h2>
           <p class="aside__paragraph">
-            Absentee voting is as easy as signing up before your state's
-            deadline.
+            Absentee voting is as easy as signing up before your state's deadline.
           </p>
           <cv-link href="https://www.vote.org/absentee-ballot/" target="_blank">
             Request an absentee ballot &rarr;

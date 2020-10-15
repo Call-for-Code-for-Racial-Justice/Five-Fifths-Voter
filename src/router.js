@@ -17,8 +17,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (reg-page.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "reg-page" */ './views/JourneyPage')
+      component: () => import(/* webpackChunkName: "reg-page" */ './views/JourneyPage')
     },
     {
       path: '/connect',
@@ -26,8 +25,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (reg-page.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "reg-page" */ './views/ConnectPage')
+      component: () => import(/* webpackChunkName: "reg-page" */ './views/ConnectPage')
     },
     {
       path: '/votersupport',
@@ -35,8 +33,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (reg-page.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "reg-page" */ './views/SupportPage')
+      component: () => import(/* webpackChunkName: "reg-page" */ './views/SupportPage')
     },
     {
       path: '/whyvote',
@@ -44,8 +41,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (reg-page.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "reg-page" */ './views/WhyVotePage')
+      component: () => import(/* webpackChunkName: "reg-page" */ './views/WhyVotePage')
     }
   ]
 });
