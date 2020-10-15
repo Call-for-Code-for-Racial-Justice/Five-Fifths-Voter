@@ -32,8 +32,6 @@ const regions2 = require('./data/ballotreturn/GA/regions');
 
 const locations2 = require('./data/ballotreturn/GA/mocklocations');
 
-const postcodes = require('./data/postcodes/US.json');
-
 const mock_twitter = require('./data/mock/mock_twitter');
 
 const earlyVotingGa = require('./routes/earlyvoting/ga');
