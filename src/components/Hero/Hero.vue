@@ -17,15 +17,21 @@
         </div>
       </div>
       <div class="hero__content">
-        <h1 class="hero__heading">five fifths voter.</h1>
+        <h1 class="hero__heading">Five Fifths Voter</h1>
         <h3 class="hero__quote">
           "My dear friends: Your vote is precious, almost sacred. It is the most
           powerful nonviolent tool we have to create a more perfect union."
           <br />
           <span class="hero__author"> - John Lewis</span>
+          <br />
+          <br />
+        </h3>
+        <h3 class="hero__quote">
+          5/5 equals a whole. A whole person, a whole community, a whole nation.
+          <br />
         </h3>
       </div>
-      <div class="bx--row  bx--feature-card__row">
+      <div class="bx--row bx--feature-card__row">
         <div
           class="bx--no-gutter-md--left bx--offset-md-4 bx--offset-lg-8 bx--col-md-4 bx--col-lg-4 bx--feature-card__column"
         >
@@ -38,9 +44,7 @@
               <div class="bx--aspect-ratio--object">
                 <router-link class="bx--feature-card__link" to="/whyvote">
                   <div class="bx--tile">
-                    <h4 class="bx--resource-card__title">
-                      Why Vote
-                    </h4>
+                    <h4 class="bx--resource-card__title">Why Vote</h4>
                     <div class="bx--resource-card__icon--img"></div>
                     <div class="bx--resource-card__icon--action">
                       <svg

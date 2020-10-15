@@ -47,6 +47,26 @@ export default {
       screenname: '',
       options: [
         {
+          value: 'DonaldTrump',
+          label: 'Donald Trump',
+          name: 'DonaldTrump'
+        },
+        {
+          value: 'JoeBiden',
+          label: 'Joe Biden',
+          name: 'JoeBiden'
+        },
+        {
+          value: 'Mike_Pense',
+          label: 'Mike Pense',
+          name: 'Mik_Pense'
+        },
+        {
+          value: 'KamalaHarris',
+          label: 'Kamala Harris',
+          name: 'KamalaHarris'
+        },
+        {
           value: 'BarackObama',
           label: 'Barack Obama',
           name: 'BarackObama'

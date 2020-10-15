@@ -28,6 +28,7 @@
 
 .list {
   max-width: 800px;
+  padding-left: 30px;
 }
 
 .list-item {
@@ -49,4 +50,8 @@
 .aside__image {
   width: 100%;
   min-height: unset;
+}
+
+.bx--list-box__field {
+  font-size: large;
 }

@@ -1,16 +1,16 @@
 <template>
   <PageLayout childData="mother-daughter-hero.jpeg">
     <div class="page__details">
-      <h2 class="page__title">Vote social</h2>
+      <h2 class="page__title">Get social</h2>
     </div>
     <MainContent>
       <template v-slot:content>
         <aside class="aside">
           <div class="aside__container--text">
-            <h2 class="aside__header">Take a friend to vote</h2>
+            <h2 class="aside__header">Get educated, Get social, and Get vocal</h2>
             <div class="aside__container--links">
               <a
-                href="https://www.facebook.com/gpa/best-practices/local-government"
+                href="https://www.facebook.com/gpa/best-practices/local-government" target="_blank"
                 ><svg
                   class="icon--social"
                   focusable="false"
@@ -29,7 +29,7 @@
                     d="M0 0h32v32H0z"
                   /></svg></a
               ><br />
-              <a href="https://www.instagram.com/explore/tags/election/?hl=en"
+              <a href="https://www.instagram.com/explore/tags/election/?hl=en" target="_blank"
                 ><svg
                   class="icon--social"
                   focusable="false"
@@ -52,7 +52,7 @@
                     d="M0 0h32v32H0z"
                   /></svg></a
               ><br />
-              <a href="https://twitter.com/search?q=%23election&src=typed_query"
+              <a href="https://twitter.com/search?q=%23election&src=typed_query" target="_blank"
                 ><svg
                   class="icon--social"
                   focusable="false"

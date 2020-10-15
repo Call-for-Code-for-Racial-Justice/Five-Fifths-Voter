@@ -4,13 +4,12 @@
       <aside class="aside">
         <div class="aside__container--text">
           <h2 class="aside__header">
-            Vote early or find your polling location.
+            Vote early or find your polling location
           </h2>
           <p class="aside__description">
             Need help knowing where to go on voting day? Want to know what
-            location in your precinct allows for early voting? We can help you
-            figure it out. Input your address below, and select either "Vote
-            Now" or "Vote Early". We'll do the rest.
+            location in your precinct allows for early voting? Five Fifths Voter can help you
+            figure it out. Input your address below, and select either "Early Voting" or "Polling Location". We'll do the rest.
           </p>
           <div class="wrapper wrapper--address">
             <cv-text-input
