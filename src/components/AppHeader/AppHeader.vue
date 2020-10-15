@@ -62,9 +62,9 @@ export default {
     return {
       areLeftPanels() {
         return false;
-      },
+      }
     };
-  },
+  }
 };
 </script>
 

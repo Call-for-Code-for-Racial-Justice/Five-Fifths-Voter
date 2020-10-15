@@ -120,7 +120,7 @@ export default {
       placeholder: '123 Main St GA 30076',
       buttonDisabled: false,
       early: false,
-      voterData: {},
+      voterData: {}
     };
   },
   computed: {
@@ -187,7 +187,7 @@ export default {
             id: item.address.locationName,
             position: { lat: item.latitude, lng: item.longitude },
             info: this.locationInfo(item),
-            title: item.address.locationName,
+            title: item.address.locationName
           });
           index++;
         }
@@ -206,7 +206,7 @@ export default {
       } catch (error) {
         return null;
       }
-    },
+    }
   },
   mounted() {},
   methods: {
@@ -215,13 +215,13 @@ export default {
       axios
         .post(process.env.VUE_APP_SERVICE_API_HOST + '/pollingplace', {
           data: {
-            address: this.addressValue,
-          },
+            address: this.addressValue
+          }
         })
-        .then((response) => {
+        .then(response => {
           this.voterData = response.data;
         })
-        .catch((error) => {
+        .catch(error => {
           error;
           this.voterData = { error: true };
         });
@@ -253,8 +253,8 @@ export default {
       if (item.address.state)
         info += '<span> ' + item.address.state + '</span>';
       return info;
-    },
-  },
+    }
+  }
 };
 </script>
 

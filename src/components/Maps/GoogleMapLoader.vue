@@ -14,19 +14,19 @@ export default {
   props: {
     mapConfig: Object,
     apiKey: { type: String, required: true },
-    center: { type: Object, required: true },
+    center: { type: Object, required: true }
   },
 
   data() {
     return {
       google: null,
-      map: null,
+      map: null
     };
   },
 
   async mounted() {
     const googleMapApi = await GoogleMapsApiLoader({
-      apiKey: this.apiKey,
+      apiKey: this.apiKey
     });
     this.google = googleMapApi;
     this.initializeMap();
@@ -35,7 +35,7 @@ export default {
     center() {
       // Recenter / re-zoom the map whe the center changes
       this.reCenter();
-    },
+    }
   },
   methods: {
     initializeMap() {
@@ -51,8 +51,8 @@ export default {
         /* eslint no-console: 0 */
         console.error(error);
       }
-    },
-  },
+    }
+  }
 };
 </script>
 

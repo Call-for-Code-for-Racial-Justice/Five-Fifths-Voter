@@ -3,24 +3,24 @@ export default {
   props: {
     google: {
       type: Object,
-      required: true,
+      required: true
     },
     map: {
       type: Object,
-      required: true,
+      required: true
     },
     marker: {
       type: Object,
-      required: true,
+      required: true
     },
     collection: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   },
   data() {
     return {
-      theinfo: null,
+      theinfo: null
     };
   },
   mounted() {
@@ -30,13 +30,13 @@ export default {
       position: this.marker.position,
       title: this.marker.title,
       marker: this.marker,
-      map: this.map,
+      map: this.map
     });
 
     // Attached an info window to the marker and open it on click
     if (this.marker.info) {
       this.theinfo = new InfoWindow({
-        content: this.marker.info,
+        content: this.marker.info
       });
       this.theinfo.set('map', this.map);
       this.theinfo.set('marker', mapMarker);
@@ -50,10 +50,10 @@ export default {
       const map = this.theinfo.get('map');
       const mrk = this.theinfo.get('marker');
       this.theinfo.open(map, mrk);
-    },
+    }
   },
   render() {
     return null;
-  },
+  }
 };
 </script>
