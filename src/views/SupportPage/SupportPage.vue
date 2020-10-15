@@ -13,46 +13,36 @@
                 class="aside__link"
                 href="https://www.empowerline.org/services/transportation-options/"
                 target="_blank"
-                >Seniors, find a ride to the polls</cv-link
+                >Seniors, find a ride to the polls &rarr;</cv-link
               ><br />
               <cv-link
                 class="aside__link"
                 href="https://ymcaofcoastalga.org/news/2018/10/17/ymca-news/ymca-works-to-help-make-it-easier-for-parents-to-vote/"
                 target="_blank"
-                >Free election day childcare</cv-link
+                >Free election day childcare &rarr;</cv-link
               >
               <br />
               <cv-link
                 class="aside__link"
                 href="https://www.npr.org/2020/08/07/900210406/the-most-important-mail-youll-ever-send-a-ballot"
                 target="_blank"
-                >Mail-in Voting Instructions</cv-link
+                >Mail-in voting instructions &rarr;</cv-link
               ><br />
               <cv-link
                 class="aside__link"
                 href="https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx"
                 target="_blank"
-                >Voting for Felons </cv-link
+                >Voting for felons &rarr;</cv-link
               ><br />
               <cv-link
                 class="aside__link"
                 href="https://sos.ga.gov/index.php/elections/voters_with_disabilities"
                 target="_blank"
-                >Voter Tips for The Disabled</cv-link
+                >Voter tips for the disabled &rarr;</cv-link
               ><br />
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.orem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. orem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Each voter’s journey is different. Five Fifths Voter can put you on the right path to reclaiming voter confidence. Please visit our support channels to help guide you.
             </p>
           </div>
         </aside>

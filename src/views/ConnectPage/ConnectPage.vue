@@ -1,7 +1,7 @@
 <template>
   <PageLayout childData="mother-daughter-hero.jpeg">
     <div class="page__details">
-      <h2 class="page__title">Get Social</h2>
+      <h2 class="page__title">Get social</h2>
     </div>
     <MainContent>
       <template v-slot:content>

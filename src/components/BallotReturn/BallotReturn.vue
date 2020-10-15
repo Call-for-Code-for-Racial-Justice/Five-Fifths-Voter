@@ -3,7 +3,7 @@
     <template v-slot:content>
       <aside class="aside">
         <div class="aside__container--text">
-          <h2 class="aside__header">Find your local ballot dropbox.</h2>
+          <h2 class="aside__header">Find your local ballot dropbox</h2>
           <div class="wrapper wrapper--address">
             <cv-text-input
               :label="addressLabel"

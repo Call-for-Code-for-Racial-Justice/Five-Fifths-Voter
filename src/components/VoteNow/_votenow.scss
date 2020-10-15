@@ -28,11 +28,11 @@
 
 .list {
   max-width: 800px;
+  padding-left: 30px;
 }
 
 .list-item {
   padding-bottom: $spacing-03;
-  color: white;
 }
 
 .polling-name {
@@ -50,3 +50,4 @@
   width: 100%;
   min-height: unset;
 }
+

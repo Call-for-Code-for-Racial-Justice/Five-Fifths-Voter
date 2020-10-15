@@ -7,45 +7,33 @@
       <template v-slot:content>
         <aside class="aside">
           <div class="aside__container--text">
-            <h2 class="aside__header">Why Vote?</h2>
+            <h2 class="aside__header">So what's the big deal?</h2>
             <p>
-              <strong><em>Your vote = Your voice</em></strong>
+              In 1868, the 14th Amendment gave Black people full citizenship in
+              America but it would be over 97 years before they could
+              successfully execute their right to vote. During this time span
+              poll taxes, literacy tests, and other tactics were used to
+              undermine Black people's right to vote.
               <br /><br />
-              Voter Suppression in the United States has
-              left many discouraged and wondering if there is a purpose to
-              voting at all. Five-Fifths was created as a reminder that if our
-              votes didn’t matter, voter suppression wouldn’t exist. In fact,
-              voting is a key component in reclaiming power by determining your
-              future reality as well as that of future generations. 
+              In 1965, the Voting Rights Act provided a successful pathway for
+              Black and many disenfranchised people to vote. It is through
+              blood, sweat and tears that Black people earned the right to vote.
+              Many Black people protested, marched, were arrested and even died
+              as they fought the battle for voting equality.
               <br /><br />
-              <strong><em>Don’t like certain laws in your community? Voting can change that.</em></strong> 
+              Voting is the perfect way to implement change for disenfranchised
+              voters. As American citizens, regardless of race, sex, background
+              or nationality we can stand in solidarity to stand as a whole and
+              exercise the right to be heard. Your future and that of your
+              community depends on YOU. Five Fifths Voter is tailored to help
+              Black and other disenfranchised voters to seize the opportunity to
+              be heard in America.
               <br /><br />
-              By taking the time to vote, you have the power to affect change in areas
-              that directly matter to and impact you and your loved ones. 
-              <!-- <br /><br />
-              Such topics include: <strong>Your Money</strong>- how much you will pay in taxes and
-              determining what those areas will be, <strong>Employment</strong> (i.e. raising
-              minimum wage), <strong>Public Transportation</strong>, <strong>Housing</strong>, <strong>Education</strong>, and
-              <strong>Healthcare</strong>. Voting gives you an option to decide who is elected in
-              office that makes these decisions. It is our “civic duty”, yes,
-              but most importantly, it is your soul opportunity to stand up for
-              the issues YOU care about. By choosing not to vote, you place that
-              decision in the hands of someone else.  -->
-              <br /><br />
-              <strong><em>You are the captain of your own ship. </em></strong>
-              <br /><br />
-              Voting is the perfect time to implement change. It is
-              also a time to unite together regardless of race, background or
-              creed and stand in solidarity to implement our God-given rights,
-              otherwise remain siloed in a predefined shell. Some may never
-              fully comprehend the importance of voting, while some may never
-              have the privilege. Your future and that of your community depend
-              on YOU. At Five-Fifths, we make sure that your vote will be yours
-              and yours alone. 
-              <br /><br />
-              Join us to Get <strong><em>registered</em></strong>, <strong><em>Get educated</em></strong>, <strong><em>Get
-              social</em></strong>, and <strong><em>Get vocal</em></strong>.
-              <br /><br />
+              Join us to <strong><em>Get registered</em></strong
+              >, <strong><em>Get educated</em></strong
+              >, <strong><em>Get social</em></strong
+              >, and <strong><em>Get vocal</em></strong
+              >. <br /><br />
             </p>
           </div>
         </aside>
