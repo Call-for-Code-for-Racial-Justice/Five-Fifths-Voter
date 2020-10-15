@@ -85,7 +85,7 @@
           </cv-dropdown>
           <div v-if="displayDialog" class="bx--modal-container">
             <div tabindex="0" class="cv-modal__before-content"></div>
-            <div class="bx--modal-header" style="color: black">
+            <div class="bx--modal-header">
               Acceptable IDs
             </div>
             <div class="bx--modal-content">
