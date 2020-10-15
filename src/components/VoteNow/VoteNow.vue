@@ -126,7 +126,7 @@
                 type="button"
                 @click="showSofSSite"
               >
-                State Specific Voting Info
+                State Voting Info
               </button>
               <!--
               <button
