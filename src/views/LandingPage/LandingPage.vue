@@ -16,7 +16,7 @@
                 Empowering, and Enabling material and resources. Five Fifths
                 Voter takes into account various voting journeys, such as
                 first-time voters, veterans, minorities, legally disabled,
-                elderly citizens, or have a felony conviction. Together, we can
+                the elderly, or those with felony convictions. Together, we can
                 change the narrative of historically disenfranchised people in
                 our democratic process.
               </p>
