@@ -1,3 +1,5 @@
+# THIS DATA IS NOT BEING USED
+
 https://www.geonames.org/about.html
 https://download.geonames.org/export/zip/readme.txt
 This work is licensed under a Creative Commons Attribution 3.0 License.

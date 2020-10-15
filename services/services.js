@@ -32,8 +32,6 @@ const regions2 = require('./data/ballotreturn/GA/regions');
 
 const locations2 = require('./data/ballotreturn/GA/mocklocations');
 
-const postcodes = require('./data/postcodes/US.json');
-
 const mock_twitter = require('./data/mock/mock_twitter');
 
 const earlyVotingGa = require('./routes/earlyvoting/ga');
@@ -43,6 +41,7 @@ app.use((req, res, next) => {
   res.append('Access-Control-Allow-Origin', ['*']);
   res.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
   res.append('Access-Control-Allow-Headers', 'Content-Type');
+  res.append('Content-Type', 'application/json');
   next();
 });
 
@@ -105,29 +104,38 @@ app.get('/ballotreturn/locations/', (req, res) => {
 
 app.post('/pollingplace/', civic.pollingPlace);
 
-// non-public API
-app.get('/postcode/', (req, res) => {
-  // console.log('Returning locations', req.query);
-  let postcode = req.query.id;
-  const foundData = lodash.find(postcodes, { postal_code: postcode });
-  if (foundData) {
-    let counties = [foundData.admin_name2];
-    if (foundData.admin_name3 !== '') counties.push(foundData.admin_name3);
-    const resp_data = {
-      country_code: foundData.country_code,
-      place_name: foundData.place_name,
-      state: foundData.admin_code1,
-      county: counties,
-    };
-    res.send(resp_data);
-  } else {
-    console.log(`location not found.`);
-    res.status(404).send();
-  }
-});
+// Reoved zip code lookup - see 7147571738298eab5f5ff840c7cb7f674445b24c for old code
+
+// Warn about not getting Twitter results
+const useTwitterMock =
+  isDevelopment &&
+  (!process.env.NODE_TWITTER_API_KEY ||
+    !process.env.NODE_TWITTER_API_SECRET_KEY ||
+    !process.env.NODE_TWITTER_ACCESS_TOKEN ||
+    !process.env.NODE_TWITTER_ACCESS_TOKEN_SECRET ||
+    !process.env.NODE_TA_API_KEY ||
+    !process.env.NODE_TA_API_URL ||
+    !process.env.NODE_NLU_API_KEY ||
+    !process.env.NODE_NLU_API_URL);
+
+if (useTwitterMock) {
+  console.error('\x1b[31m%s\x1b[0m', 'Twitter Access not configured');
+  console.log(
+    '\x1b[31m%s\x1b[0m',
+    'All Twitter requests from the social page will return mock data from BrackObama'
+  );
+  console.log(
+    '\x1b[33m%s\x1b[0m',
+    'If you are working locally read the services/README.md file'
+  );
+  console.log(
+    '\x1b[33m%s\x1b[0m',
+    'If you need live Twitter data, you need to create twitter and IBM cloud access keys but both are free'
+  );
+}
 
 app.get('/twitter/chatter/', (req, res) => {
-  if (isDevelopment && !process.env.NODE_TWITTER_API_KEY) {
+  if (useTwitterMock) {
     res.send(mock_twitter);
   } else {
     let screenname = req.query.screenname;

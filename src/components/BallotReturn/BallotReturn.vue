@@ -13,11 +13,7 @@
             >
             </cv-text-input>
             <div class="wrapper wrapper--button">
-              <cv-button
-                kind="primary"
-                @click="showPollingLocation"
-                :disabled="buttonDisabled"
-              >
+              <cv-button kind="primary" @click="showPollingLocation" :disabled="buttonDisabled">
                 Show Ballot Drop Off Locations
               </cv-button>
             </div>
@@ -33,14 +29,24 @@
                 <cv-link :href="electionInfoUrl"> Election Info</cv-link><br />
               </span>
               <span v-if="absenteeVotingInfoUrl">
-                <cv-link :href="absenteeVotingInfoUrl">
-                  Get Absentee Ballot</cv-link
-                ><br />
+                <cv-link :href="absenteeVotingInfoUrl"> Get Absentee Ballot</cv-link><br />
               </span>
               <span v-if="placeholderMap"
-                >No known drop off locations. Check with your local election
-                officials.
+                >No known drop off locations. Check with your local election officials.
               </span>
+              <cv-list v-if="locationList">
+                <cv-list-item v-for="item in locationList" :key="item.address.locationName">
+                  <span class="loc-name">{{ item.address.locationName }}</span>
+                  <span v-if="item.notes" class="loc-name">{{ item.notes }}</span>
+
+                  <span v-if="item.address.line1" class="loc-line">{{ item.address.line1 }}</span>
+                  <span v-if="item.address.line2" class="loc-line">{{ item.address.line2 }}</span>
+                  <span v-if="item.address.line3" class="loc-line">{{ item.address.line3 }}</span>
+                  <span v-if="item.address.city" class="loc-city">{{ item.address.city }}</span>
+                  <span v-if="item.address.state" class="loc-state"> {{ item.address.state }}</span>
+                </cv-list-item>
+              </cv-list>
+
               <span><br />Powered by the Civic Information API</span>
             </div>
           </div>
@@ -49,14 +55,10 @@
     </template>
     <template v-slot:image>
       <aside v-if="placeholderMap" class="aside__container--img">
-        <img
-          class="aside__image"
-          src="../../assets/holder-atlanta-map.png"
-          alt="google map img"
-        />
+        <img class="aside__image" src="../../assets/holder-atlanta-map.png" alt="google map img" />
       </aside>
       <aside v-else>
-        <GoogleMap class="map__container" :markers="mapMarkers" />
+        <GoogleMap class="map__container" :markers="mapMarkers" ref="dropoffMap" />
       </aside>
     </template>
   </MainContent>
@@ -85,16 +87,14 @@ export default {
   computed: {
     electionInfoUrl() {
       try {
-        return this.voterData.state[0].electionAdministrationBody
-          .electionInfoUrl;
+        return this.voterData.state[0].electionAdministrationBody.electionInfoUrl;
       } catch (error) {
         return '';
       }
     },
     electionRegistrationUrl() {
       try {
-        return this.voterData.state[0].electionAdministrationBody
-          .electionRegistrationUrl;
+        return this.voterData.state[0].electionAdministrationBody.electionRegistrationUrl;
       } catch (error) {
         return '';
       }
@@ -109,16 +109,14 @@ export default {
     },
     absenteeVotingInfoUrl() {
       try {
-        return this.voterData.state[0].electionAdministrationBody
-          .absenteeVotingInfoUrl;
+        return this.voterData.state[0].electionAdministrationBody.absenteeVotingInfoUrl;
       } catch (error) {
         return '';
       }
     },
     votingLocationFinderUrl() {
       try {
-        return this.voterData.state[0].electionAdministrationBody
-          .votingLocationFinderUrl;
+        return this.voterData.state[0].electionAdministrationBody.votingLocationFinderUrl;
       } catch (error) {
         return '';
       }
@@ -141,7 +139,9 @@ export default {
           var item = this.voterData.dropOffLocations[index];
           list.push({
             id: item.address.locationName,
-            position: { lat: item.latitude, lng: item.longitude }
+            position: { lat: item.latitude, lng: item.longitude },
+            info: this.locationInfo(item),
+            title: item.address.locationName
           });
           index++;
         }
@@ -149,11 +149,25 @@ export default {
       } catch (error) {
         return list;
       }
+    },
+
+    /**
+     * To turn off the list of location just return null from this function. Or maybe show the first N
+     * locations.
+     */
+    locationList() {
+      try {
+        var locations = this.voterData.dropOffLocations;
+        return locations;
+      } catch (error) {
+        return null;
+      }
     }
   },
   mounted() {},
   methods: {
     showPollingLocation() {
+      if (this.$refs.dropoffMap) this.$refs.dropoffMap.clearMarkers();
       axios
         .post(process.env.VUE_APP_SERVICE_API_HOST + '/pollingplace', {
           data: {
@@ -170,6 +184,21 @@ export default {
     },
     updatedAddress() {
       this.buttonDisabled = this.addressValue.length < 10;
+    },
+
+    /**
+     * This is used by the map to contruct an info window for each marker. Styling is mostly
+     * controlled by the map api but simple things should work ok.
+     */
+    locationInfo(item) {
+      var info = '<div><b>' + item.address.locationName + '</b></div>';
+      if (item.notes) info += '<div>' + item.notes + '</div>';
+      if (item.address.line1) info += '<div>' + item.address.line1 + '</div>';
+      if (item.address.line2) info += '<div>' + item.address.line2 + '</div>';
+      if (item.address.line3) info += '<div>' + item.address.line3 + '</div>';
+      if (item.address.city) info += '<span>' + item.address.city + '</span>';
+      if (item.address.state) info += '<span> ' + item.address.state + '</span>';
+      return info;
     }
   }
 };
