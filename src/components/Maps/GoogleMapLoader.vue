@@ -13,30 +13,46 @@ import GoogleMapsApiLoader from 'google-maps-api-loader';
 export default {
   props: {
     mapConfig: Object,
-    apiKey: String
+    apiKey: { type: String, required: true },
+    center: { type: Object, required: true },
   },
 
   data() {
     return {
       google: null,
-      map: null
+      map: null,
     };
   },
 
   async mounted() {
     const googleMapApi = await GoogleMapsApiLoader({
-      apiKey: this.apiKey
+      apiKey: this.apiKey,
     });
     this.google = googleMapApi;
     this.initializeMap();
   },
-
+  watch: {
+    center() {
+      // Recenter / re-zoom the map whe the center changes
+      this.reCenter();
+    },
+  },
   methods: {
     initializeMap() {
       const mapContainer = this.$refs.googleMap;
       this.map = new this.google.maps.Map(mapContainer, this.mapConfig);
-    }
-  }
+    },
+    reCenter() {
+      // reset the center and zoom level
+      try {
+        this.map.panTo(this.center);
+        this.map.setZoom(this.mapConfig.zoom);
+      } catch (error) {
+        /* eslint no-console: 0 */
+        console.error(error);
+      }
+    },
+  },
 };
 </script>
 

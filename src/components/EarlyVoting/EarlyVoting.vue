@@ -99,11 +99,7 @@
         />
       </aside>
       <aside v-else>
-        <GoogleMap
-          v-if="!placeholderMap"
-          class="side-map"
-          :markers="mapMarkers"
-        />
+        <GoogleMap class="side-map" :markers="mapMarkers" ref="earlyMap" />
       </aside>
     </template>
   </MainContent>
@@ -122,9 +118,9 @@ export default {
       addressLabel: 'Adress where you are registered to vote',
       addressValue: '',
       placeholder: '123 Main St GA 30076',
-      buttonDisabled: true,
+      buttonDisabled: false,
       early: false,
-      voterData: {}
+      voterData: {},
     };
   },
   computed: {
@@ -189,7 +185,9 @@ export default {
           var item = locations[index];
           list.push({
             id: item.address.locationName,
-            position: { lat: item.latitude, lng: item.longitude }
+            position: { lat: item.latitude, lng: item.longitude },
+            info: this.locationInfo(item),
+            title: item.address.locationName,
           });
           index++;
         }
@@ -208,21 +206,22 @@ export default {
       } catch (error) {
         return null;
       }
-    }
+    },
   },
   mounted() {},
   methods: {
     showPollingLocation() {
+      if (this.$refs.earlyMap) this.$refs.earlyMap.clearMarkers();
       axios
         .post(process.env.VUE_APP_SERVICE_API_HOST + '/pollingplace', {
           data: {
-            address: this.addressValue
-          }
+            address: this.addressValue,
+          },
         })
-        .then(response => {
+        .then((response) => {
           this.voterData = response.data;
         })
-        .catch(error => {
+        .catch((error) => {
           error;
           this.voterData = { error: true };
         });
@@ -237,8 +236,25 @@ export default {
     },
     updatedAddress() {
       this.buttonDisabled = this.addressValue.length < 10;
-    }
-  }
+    },
+
+    /**
+     * This is used by the map to contruct an info window for each marker. Styling is mostly
+     * controlled by the map api but simple things should work ok.
+     */
+    locationInfo(item) {
+      var info = '<div><b>' + item.address.locationName + '</b></div>';
+      if (!this.early && item.pollingHours)
+        info += '<div><b>' + item.pollingHours + '</b></div>';
+      if (item.address.line1) info += '<div>' + item.address.line1 + '</div>';
+      if (item.address.line2) info += '<div>' + item.address.line2 + '</div>';
+      if (item.address.line3) info += '<div>' + item.address.line3 + '</div>';
+      if (item.address.city) info += '<span>' + item.address.city + '</span>';
+      if (item.address.state)
+        info += '<span> ' + item.address.state + '</span>';
+      return info;
+    },
+  },
 };
 </script>
 

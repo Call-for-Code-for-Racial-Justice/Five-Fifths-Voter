@@ -24,7 +24,6 @@
     <template v-slot:header-global>
       <cv-header-global-action
         aria-label="User avatar"
-        @click="actionUserAvatar"
         aria-controls="user-panel"
       >
         <UserAvatar20 />
@@ -63,9 +62,9 @@ export default {
     return {
       areLeftPanels() {
         return false;
-      }
+      },
     };
-  }
+  },
 };
 </script>
 
