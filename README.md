@@ -49,7 +49,7 @@ See the [Getting Started](doc/GETSTARTED.md) document.
 
 # Suggestions
 
-See the [issues list](issues) for a full list of issues in the **Five Fifths Voter** project. Issues marked as ["top priority"](issues?q=is%3Aissue+is%3Aopen+label%3A%22top+priority%22) must be considered first.
+See the [issues list](https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter/issues) for a full list of issues in the **Five Fifths Voter** project. Issues marked as ["top priority"](https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter/issues?q=is%3Aissue+is%3Aopen+label%3A%22top+priority%22) must be considered first.
 
 # Solution fortification
 
