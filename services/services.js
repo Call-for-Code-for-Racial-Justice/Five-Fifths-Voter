@@ -5,8 +5,7 @@ const querystring = require('querystring');
 const lodash = require('lodash');
 require('dotenv').config();
 
-var isDevelopment =
-  process.env.NODE_ENV === 'development' || process.env.NODE_ENV === undefined;
+var isDevelopment = process.env.NODE_ENV === 'development' || process.env.NODE_ENV === undefined;
 
 const port = 8080;
 const app = express();
@@ -124,10 +123,7 @@ if (useTwitterMock) {
     '\x1b[31m%s\x1b[0m',
     'All Twitter requests from the social page will return mock data from BrackObama'
   );
-  console.log(
-    '\x1b[33m%s\x1b[0m',
-    'If you are working locally read the services/README.md file'
-  );
+  console.log('\x1b[33m%s\x1b[0m', 'If you are working locally read the services/README.md file');
   console.log(
     '\x1b[33m%s\x1b[0m',
     'If you need live Twitter data, you need to create twitter and IBM cloud access keys but both are free'
@@ -142,16 +138,7 @@ app.get('/twitter/chatter/', (req, res) => {
     //console.log('screenname', screenname);
 
     const { spawn } = require('child_process');
-    const chatter = spawn('python3', [
-      'twitter/Embrace_Challenge.py',
-      screenname,
-    ]);
-    chatter.on('close', (code) => {
-      console.log(`child process exited with code ${code}`);
-      if (code !== 0) {
-        res.status(404).send();
-      }
-    });
+    const chatter = spawn('python3', ['twitter/Chatter.py', screenname]);
 
     const chunks = [];
 
@@ -159,9 +146,19 @@ app.get('/twitter/chatter/', (req, res) => {
       chunks.push(chunk);
     });
 
-    chatter.stdout.on('data', (data) => {
-      const resp_data = Buffer.concat(chunks);
-      res.send(resp_data);
+    chatter.on('close', (code) => {
+      console.log(`child process exited with code ${code}`);
+      try {
+        if (code !== 0) {
+          res.status(404).send();
+        } else {
+          const resp_data = Buffer.concat(chunks);
+          const jdata = JSON.parse(resp_data);
+          res.send(jdata);
+        }
+      } catch (error) {
+        res.status(500).send();
+      }
     });
   }
 });

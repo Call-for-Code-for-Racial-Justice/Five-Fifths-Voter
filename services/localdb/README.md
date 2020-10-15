@@ -15,7 +15,7 @@ This only needs to be done once.
 
 ```sh
 cd services/localdb
-docker build -t embrace-the-vote/db .
+docker build -t five-fifths-voter/db .
 ```
 
 ## Start the DB Docker image
@@ -23,7 +23,7 @@ docker build -t embrace-the-vote/db .
 ```sh
 # assuming that your localhost port 27017 is not taken. If it is then change the first number to something else. Maybe
 # -p 3333:27017
-docker run --detach --rm -p 27017:27017 --name embrace-db embrace-the-vote/db
+docker run --detach --rm -p 27017:27017 --name five-fifths-voter-db five-fifths-voter/db
 ```
 
 ## Test if your database is available
@@ -60,6 +60,6 @@ curl: (7) Failed to connect to localhost port 27017: Connection refused
 ## Stop the Mongo db/Docker image
 
 ```sh
-docker stop embrace-db
-docker rm embrace-db
+docker stop five-fifths-voter-db
+docker rm five-fifths-voter-db
 ```
