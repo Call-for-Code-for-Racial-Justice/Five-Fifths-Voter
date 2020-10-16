@@ -22,10 +22,7 @@
       </cv-header-menu-item>
     </cv-header-nav>
     <template v-slot:header-global>
-      <cv-header-global-action
-        aria-label="User avatar"
-        aria-controls="user-panel"
-      >
+      <cv-header-global-action aria-label="User avatar" aria-controls="user-panel">
         <UserAvatar20 />
       </cv-header-global-action>
     </template>

@@ -88,8 +88,7 @@
 .bx--resource-card .bx--tile {
   background: var(--cds-ui-background, #fff);
   height: 100%;
-  padding: var(--cds-spacing-05, 1rem) 25% var(--cds-spacing-05, 1rem)
-    var(--cds-spacing-05, 1rem);
+  padding: var(--cds-spacing-05, 1rem) 25% var(--cds-spacing-05, 1rem) var(--cds-spacing-05, 1rem);
   position: relative;
   transition: background 70ms;
   text-decoration: none;

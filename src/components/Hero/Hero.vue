@@ -3,15 +3,9 @@
     <div class="bx--feature-card">
       <div class="bx--row">
         <div class="hero bx--no-gutter-md--left bx--col-lg-12">
-          <div
-            class="bx--aspect-ratio bx--feature-card__img bx--aspect-ratio--16x9"
-          >
+          <div class="bx--aspect-ratio bx--feature-card__img bx--aspect-ratio--16x9">
             <div class="bx--aspect-ratio--object bx--feature-background">
-              <img
-                class="hero__image"
-                alt=""
-                src="../../assets/ebrace-vote-gif.gif"
-              />
+              <img class="hero__image" alt="" src="../../assets/ebrace-vote-gif.gif" />
             </div>
           </div>
         </div>
@@ -19,8 +13,8 @@
       <div class="hero__content">
         <h1 class="hero__heading">Five Fifths Voter</h1>
         <h2 class="hero__quote">
-          "My dear friends: Your vote is precious, almost sacred. It is the most
-          powerful nonviolent tool we have to create a more perfect union."
+          "My dear friends: Your vote is precious, almost sacred. It is the most powerful nonviolent
+          tool we have to create a more perfect union."
           <br />
           <span class="hero__author"> - John Lewis</span>
           <br />
@@ -35,11 +29,7 @@
         <div
           class="bx--no-gutter-md--left bx--offset-md-4 bx--offset-lg-8 bx--col-md-4 bx--col-lg-4 bx--feature-card__column"
         >
-          <div
-            target="_blank"
-            rel="noopener noreferrer"
-            class="bx--resource-card"
-          >
+          <div target="_blank" rel="noopener noreferrer" class="bx--resource-card">
             <div class="bx--aspect-ratio bx--aspect-ratio--2x1">
               <div class="bx--aspect-ratio--object">
                 <router-link class="bx--feature-card__link" to="/whyvote">

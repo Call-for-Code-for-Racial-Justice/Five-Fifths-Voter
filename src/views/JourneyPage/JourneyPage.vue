@@ -11,11 +11,7 @@
       >
         <Register />
       </cv-tab>
-      <cv-tab
-        id="tab-2"
-        label="Mail In Ballot"
-        aria-label="request an absentee ballot"
-      >
+      <cv-tab id="tab-2" label="Mail In Ballot" aria-label="request an absentee ballot">
         <Absentee />
       </cv-tab>
       <cv-tab
@@ -25,11 +21,7 @@
       >
         <VoteNow />
       </cv-tab>
-      <cv-tab
-        id="tab-4"
-        label="Vote"
-        aria-label="find early voting and day-of voting locations"
-      >
+      <cv-tab id="tab-4" label="Vote" aria-label="find early voting and day-of voting locations">
         <EarlyVoting />
       </cv-tab>
       <cv-tab

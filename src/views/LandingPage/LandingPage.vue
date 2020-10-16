@@ -6,19 +6,16 @@
         <article class="article">
           <div class="article__content">
             <h2 class="article__heading">Our Mission</h2>
-            <div class="bx--offset-lg-1" >
+            <div class="bx--offset-lg-1">
               <p class="article__paragraph">
-                With Five Fifths Voter, we help put the power back in your
-                hands. Our platform informs voters of the various steps to vote
-                and make that vote count; it provides a personalized experience
-                with useful tools to help marginalized voters overcome voting
-                process roadblocks. This platform provides Educating,
-                Empowering, and Enabling material and resources. Five Fifths
-                Voter takes into account various voting journeys, such as
-                first-time voters, veterans, minorities, legally disabled,
-                the elderly, or those with felony convictions. Together, we can
-                change the narrative of historically disenfranchised people in
-                our democratic process.
+                With Five Fifths Voter, we help put the power back in your hands. Our platform
+                informs voters of the various steps to vote and make that vote count; it provides a
+                personalized experience with useful tools to help marginalized voters overcome
+                voting process roadblocks. This platform provides Educating, Empowering, and
+                Enabling material and resources. Five Fifths Voter takes into account various voting
+                journeys, such as first-time voters, veterans, minorities, legally disabled, the
+                elderly, or those with felony convictions. Together, we can change the narrative of
+                historically disenfranchised people in our democratic process.
               </p>
             </div>
           </div>
@@ -46,9 +43,8 @@
             ><br /><br />
             <div class="bx--offset-lg-1">
               <p class="article__paragraph">
-                Five Fifths Voter will educate disenfranchised voters with
-                voting guidance and connection to up-to-date tools necessary to
-                complete the voting process.
+                Five Fifths Voter will educate disenfranchised voters with voting guidance and
+                connection to up-to-date tools necessary to complete the voting process.
               </p>
             </div>
           </div>
@@ -70,15 +66,14 @@
           <div class="article__content">
             <h2 class="article__heading">Empower.</h2>
             <span class="article__quote"
-              >&quot;I am no bird; and no net ensnares me: I am a free human
-              being with an independent will. &quot;
-              <span class="quote--author">- Charlotte Brontë</span></span
+              >&quot;I am no bird; and no net ensnares me: I am a free human being with an
+              independent will. &quot; <span class="quote--author">- Charlotte Brontë</span></span
             ><br /><br />
             <div class="bx--offset-lg-1">
               <p class="article__paragraph">
-                Five Fifths Voter will help generate solidarity for
-                disenfranchised voting communities and leverage social media
-                platforms for easy access to candidate information.
+                Five Fifths Voter will help generate solidarity for disenfranchised voting
+                communities and leverage social media platforms for easy access to candidate
+                information.
               </p>
             </div>
           </div>
@@ -100,16 +95,14 @@
           <div class="article__content">
             <h2 class="article__heading">Enable.</h2>
             <span class="article__quote"
-              >&quot;Enablement is the key to closing the gap between intention
-              and action. &quot;
+              >&quot;Enablement is the key to closing the gap between intention and action. &quot;
               <span class="quote--author">- Paul Repetto</span></span
             ><br /><br />
             <div class="bx--offset-lg-1">
               <p class="article__paragraph">
-                Five Fifths Voter enables users with information to get to
-                polling stations in safe and efficient ways and will strive to
-                help remove roadblocks disenfranchised voters encounter when
-                voting.
+                Five Fifths Voter enables users with information to get to polling stations in safe
+                and efficient ways and will strive to help remove roadblocks disenfranchised voters
+                encounter when voting.
               </p>
             </div>
           </div>
@@ -147,7 +140,7 @@ export default {
       dob: '',
       visible: false
     };
-  }, 
+  },
   methods: {
     onClick() {
       this.visible = true;

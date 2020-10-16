@@ -6,11 +6,7 @@
   display: flex;
   flex-direction: column;
   padding: 36px 16px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(112, 112, 112, 1) 100%
-  );
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(112, 112, 112, 1) 100%);
   @media (min-width: 1063px) {
     padding: 36px 94px;
   }
