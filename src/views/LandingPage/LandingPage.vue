@@ -38,7 +38,7 @@
             <h2 class="article__heading">Educate.</h2>
             <span class="article__quote"
               >&quot;Knowledge is power.&quot;<span class="quote--author"
-                >- Frances Bacon</span
+                >- Francis Bacon</span
               ></span
             ><br /><br />
             <div class="bx--offset-lg-1">
