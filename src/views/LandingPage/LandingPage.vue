@@ -12,7 +12,7 @@
                 informs voters of the various steps to vote and make that vote count; it provides a
                 personalized experience with useful tools to help marginalized voters overcome
                 voting process roadblocks. This platform provides Educating, Empowering, and
-                Enabling material and resources. Five Fifths Voter takes into account various voting
+                Enabling resources. Five Fifths Voter takes into account various voting
                 journeys, such as first-time voters, veterans, minorities, legally disabled, the
                 elderly, or those with felony convictions. Together, we can change the narrative of
                 historically disenfranchised people in our democratic process.

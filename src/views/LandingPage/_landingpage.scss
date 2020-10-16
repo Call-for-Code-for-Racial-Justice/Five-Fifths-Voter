@@ -25,6 +25,10 @@
 .article__content {
   max-width: 550px;
   margin-left: $spacing-05;
+
+  @media (min-width: 1056px) {
+    padding-right: $layout-05;
+  }
 }
 
 .article-feed {
