@@ -50,7 +50,6 @@ $carbon--theme: $carbon--theme--g10;
     margin-left: 0;
   }
 }
-
 .aside__container--links {
   display: flex;
   flex-direction: row;
@@ -77,12 +76,13 @@ $carbon--theme: $carbon--theme--g10;
     weight: 300;
     size: 30px;
   }
-  max-width: 16ch;
+  max-width: 32ch;
   margin-bottom: $spacing-08;
 }
 
 .aside__paragraph {
   margin-bottom: $spacing-08;
+  font-size: 16px;
 }
 
 .page__details {

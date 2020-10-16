@@ -44,11 +44,13 @@
 
 .cv-tabs-button.bx--tabs__nav-item {
   background-color: inherit;
+  max-width: -webkit-fill-available;
 }
 
 a.bx--tabs__nav-link {
   @include carbon--type-style('body-short-02');
   color: #f3f3f3;
+  font-size: 16px;
 }
 
 .bx--tabs {
@@ -61,7 +63,7 @@ a.bx--tabs__nav-link {
     position: absolute;
     top: 32px;
     left: calc(#{$layout-06} + #{$layout-07});
-    max-width: 850px;
+    max-width: 1000px;
   }
 }
 

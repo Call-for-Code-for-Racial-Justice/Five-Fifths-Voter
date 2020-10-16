@@ -6,8 +6,8 @@
         <article class="article">
           <div class="article__content">
             <h2 class="article__heading">Our Mission</h2>
-            <div class="bx--offset-lg-1">
-              <p>
+            <div class="bx--offset-lg-1" >
+              <p class="article__paragraph">
                 With Five Fifths Voter, we help put the power back in your
                 hands. Our platform informs voters of the various steps to vote
                 and make that vote count; it provides a personalized experience
@@ -45,7 +45,7 @@
               ></span
             ><br /><br />
             <div class="bx--offset-lg-1">
-              <p>
+              <p class="article__paragraph">
                 Five Fifths Voter will educate disenfranchised voters with
                 voting guidance and connection to up-to-date tools necessary to
                 complete the voting process.
@@ -75,7 +75,7 @@
               <span class="quote--author">- Charlotte Brontë</span></span
             ><br /><br />
             <div class="bx--offset-lg-1">
-              <p>
+              <p class="article__paragraph">
                 Five Fifths Voter will help generate solidarity for
                 disenfranchised voting communities and leverage social media
                 platforms for easy access to candidate information.
@@ -105,7 +105,7 @@
               <span class="quote--author">- Paul Repetto</span></span
             ><br /><br />
             <div class="bx--offset-lg-1">
-              <p>
+              <p class="article__paragraph">
                 Five Fifths Voter enables users with information to get to
                 polling stations in safe and efficient ways and will strive to
                 help remove roadblocks disenfranchised voters encounter when
@@ -147,7 +147,7 @@ export default {
       dob: '',
       visible: false
     };
-  },
+  }, 
   methods: {
     onClick() {
       this.visible = true;
