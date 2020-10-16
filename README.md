@@ -3,13 +3,15 @@
 # Team
 
 * Alexandria Leggett
+* Andrea Lucas 
+* Sebastian Hunyh
+* David Nixon* 
 * Yolanda Rabun
 * Alexandra Devine
 * Syd Bailey
 * Gerald Mitchell
 * Denise Knorr
-* Andrea Lucas
-* David Nixon
+
 * Evelyn R. Anderson
 * Chris Stefano
 * Dylan Zucker
@@ -19,6 +21,8 @@
 * Ann Umberhocker
 * Mike Boone
 
+* Shrey Anand
+
 # Problem and solution
 
 Black voters have experienced obstacles in casting their votes for a long while. The process of casting a vote is challenging due to restrcitive local processes, changing requirements, regulations, and lack of information.
@@ -27,7 +31,7 @@ The solution offered by the **Five Fifths Voter** solutioon will help ensure tha
 
 # Pitch
 
-The **Five Fifths Voter** application is designed to create a fair and equal opportunity voting process for marginalized voters by providing knowledge and accessibility to required voting elements. **Five Fifths Voter** will leverage technology to help voters identify and aim to eliminate bias and prejudice that is embedded in the voting system.
+The Voting Rights Act of 1965 was enacted to prohibit racial discrimination in voting. Yet, history has shown the inequalities such as voter suppression have led to corruption and a weak democracy that does not reflect the will of the people. The IBM Call for Code for Policy & Legislation Reform has developed a solution to support the voter experience that focuses on addressing key areas of voter suppression such as voter registration, voter ID laws, voter registration restrictions, voter purging, felony disenfranchisement, and gerrymandering, all of which are contributors to disenfranchising minorities and people with disabilities. The Five/Fifths Voter solution is a cognitive solution designed to determine optimal voting strategies for each individual voter while limiting the impact of previous suppression issues.
 
 # Skills
 
