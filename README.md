@@ -4,14 +4,14 @@
 
 * Alexandria Leggett
 * Andrea Lucas 
+* Yolanda Rabun
+* Evelyn R. Anderson
 * Sebastian Hunyh
 * David Nixon 
-* Yolanda Rabun
 * Alexandra Devine
 * Syd Bailey
 * Gerald Mitchell
 * Denise Knorr
-* Evelyn R. Anderson
 * Chris Stefano
 * Dylan Zucker
 * Kristen Ray
@@ -19,7 +19,6 @@
 * Ricky Ellison
 * Ann Umberhocker
 * Mike Boone
-
 * Shrey Anand
 
 # Problem and solution
