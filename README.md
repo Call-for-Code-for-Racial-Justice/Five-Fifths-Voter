@@ -37,7 +37,7 @@ The Voting Rights Act of 1965 was enacted to prohibit racial discrimination in v
 
 The IBM Call for Code for Policy & Legislation Reform has developed a solution to support the voter experience that focuses on addressing key areas of voter suppression such as voter registration, voter ID laws, voter registration restrictions, voter purging, felony disenfranchisement, and gerrymandering, all of which are contributors to disenfranchising minorities and people with disabilities. 
 
-The **Five Fifths Voter solution is a cognitive solution designed to determine optimal voting strategies for each individual voter while limiting the impact of previous suppression issues.
+**Five Fifths Voter** is a cognitive solution designed to determine optimal voting strategies for each individual voter while limiting the impact of previous suppression issues.
 
 # How it works
 # Architecture
