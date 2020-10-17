@@ -6,10 +6,10 @@
 * Andrea Lucas 
 * Yolanda Rabun
 * Evelyn R. Anderson
-* Sebastian Hunyh
 * David Nixon 
-* Alexandra Devine
+* Sebastian Hunyh
 * Syd Bailey
+* Alexandra Devine
 * Gerald Mitchell
 * Denise Knorr
 * Chris Stefano
