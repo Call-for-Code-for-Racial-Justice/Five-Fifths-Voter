@@ -11,9 +11,9 @@
 
 - Web Application Framework
 
-  - VueJS (UI/UX) (In MVP)
+  - VueJS (UI/UX)
   - **Benefits**: Open source JavaScript framework that is small in size; easy to understand and develop applications; known for its flexibility; good detailed documentation
-  - ExpressJS (API Framework) (In MVP)
+  - ExpressJS (API Framework)
   - **Benefits**: Lets you structure a web application to handle multiple different http requests at a specific url. Express is a minimal, open source and flexible Node. js web app framework designed to make developing websites, web apps, & API’s much easier.
 
 - Artificial Intelligence
@@ -59,7 +59,6 @@
   - Provide location for early voting (Advance Voting Location) and instructions
   - Provide instructions for absentee voting/voting by mail
   - Provide transportation options for travel to polling locations
-  - Provide capability to rate polling locations
 
 - User Roles
   - Elderly
@@ -72,7 +71,7 @@
 
 ## Data Sources Overview and Needs
 
-The following data sources were used for the MVP of this solution.
+The following data sources were used for the initial release of this solution.
 However, for fortification of this solution, alternative sources need to
 be determined with a goal to identify partners that can assist with
 creating new APIs to meet the requirement of the solution.
