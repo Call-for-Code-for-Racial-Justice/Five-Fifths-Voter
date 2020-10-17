@@ -26,7 +26,7 @@
 
 Black voters have experienced obstacles in casting their votes for a long while. The process of casting a vote is challenging due to restrictive local processes, changing requirements, regulations, and lack of information.
 
-The solution offered by the **Five Fifths Voter** solution will help ensure that Black voters can identify the correct polling station, quickly and affordably, according to their own schedule. The project also equips voters with the necessary information to vote according up to date and local requirements.
+The **Five Fifths Voter** solution will help ensure that Black voters can identify the correct polling station, quickly and affordably, according to their own schedule. The project also equips voters with the necessary information to vote according up to date and local requirements.
 
 # Video
 
