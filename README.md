@@ -40,11 +40,11 @@ The Voting Rights Act of 1965 was enacted to prohibit racial discrimination in v
 ![Components](doc/Components.png)
 
 # Datasets
-- [Google Civic Information API] (https://developers.google.com/civic-information/)
-- [Google Maps API] (https://developers.google.com/maps/documentation)
-- [Twitter API] (https://developer.twitter.com/en/docs/twitter-api)
-- [Vote.org Civic engagement tools] (https://www.vote.org/technology/)
-- [The Voting Information Project] (https://www.votinginfoproject.org/)
+- Google Civic Information API (https://developers.google.com/civic-information/)
+- Google Maps API (https://developers.google.com/maps/documentation)
+- Twitter API (https://developer.twitter.com/en/docs/twitter-api)
+- Vote.org Civic engagement tools (https://www.vote.org/technology/)
+- The Voting Information Project (https://www.votinginfoproject.org/)
 
 # For developers
 
