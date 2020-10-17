@@ -33,7 +33,11 @@ The **Five Fifths Voter** solution will help ensure that Black voters can identi
 
 # Pitch
 
-The Voting Rights Act of 1965 was enacted to prohibit racial discrimination in voting. Yet, history has shown the inequalities such as voter suppression have led to corruption and a weak democracy that does not reflect the will of the people. The IBM Call for Code for Policy & Legislation Reform has developed a solution to support the voter experience that focuses on addressing key areas of voter suppression such as voter registration, voter ID laws, voter registration restrictions, voter purging, felony disenfranchisement, and gerrymandering, all of which are contributors to disenfranchising minorities and people with disabilities. The *Five Fifths Voter* solution is a cognitive solution designed to determine optimal voting strategies for each individual voter while limiting the impact of previous suppression issues.
+The Voting Rights Act of 1965 was enacted to prohibit racial discrimination in voting. Yet, history has shown the inequalities such as voter suppression have led to corruption and a weak democracy that does not reflect the will of the people. 
+
+The IBM Call for Code for Policy & Legislation Reform has developed a solution to support the voter experience that focuses on addressing key areas of voter suppression such as voter registration, voter ID laws, voter registration restrictions, voter purging, felony disenfranchisement, and gerrymandering, all of which are contributors to disenfranchising minorities and people with disabilities. 
+
+The *Five Fifths Voter* solution is a cognitive solution designed to determine optimal voting strategies for each individual voter while limiting the impact of previous suppression issues.
 
 # How it works
 # Architecture
