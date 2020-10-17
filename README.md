@@ -46,6 +46,11 @@ The Voting Rights Act of 1965 was enacted to prohibit racial discrimination in v
 - Vote.org Civic engagement tools (https://www.vote.org/technology/)
 - The Voting Information Project (https://www.votinginfoproject.org/)
 
+# Technology
+## IBM technology
+- [Watson Tone Analyzer] (https://www.ibm.com/watson/services/tone-analyzer/)
+- [Watson Natural Language Understanding] (https://www.ibm.com/cloud/watson-natural-language-understanding)
+
 # For developers
 
 See the [Getting Started](doc/GETSTARTED.md) document.
