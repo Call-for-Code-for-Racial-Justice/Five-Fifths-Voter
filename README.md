@@ -1,4 +1,5 @@
 # Five Fifths Voter
+![Vision](doc/5-fifths-image.png)
 
 # Team
 
