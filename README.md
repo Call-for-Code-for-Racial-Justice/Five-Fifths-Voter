@@ -1,4 +1,4 @@
-![Vision](doc/5-fifths-image.png)
+![Vision](doc/5-fifths-banner.png)
 
 # Team
 
