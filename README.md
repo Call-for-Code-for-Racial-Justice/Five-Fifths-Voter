@@ -1,6 +1,6 @@
 ![Vision](doc/5-fifths-banner-1.png)
 
-# Problem and solution
+# What is the problem?
 
 For centuries, voters in disparate communities, particularly Black voters, have experienced obstacles in casting their votes be it situational or intentionally constructed. Voting has been perceived an intangible and unfair process based on restrictive local processes, changing requirements, regulations, inability to access the correct voting location, and lack of information. As a result millions of minority votes go uncounted, purged, or simply not submitted do to lack of faith and trust in the system.
 
