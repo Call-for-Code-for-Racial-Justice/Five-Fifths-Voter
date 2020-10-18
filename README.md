@@ -6,11 +6,11 @@
 * **Andrea Lucas:** _Technical Director|_Product Offering Co-Manager_
 * **Yolanda Rabun:** _Generalist_
 * **Denise Knorr:** _Externalization Operations_ 
-* **Evelyn R. Anderson:** _Master Inventor| Product Patent Lead_
+* **Evelyn R. Anderson:** _Master Inventor_
 * **David Nixon:** _Lead Back-End Developer_
 * **Syd Bailey:** _Lead Full-Stack Developer_
 * **Sebastian Huynh:** _Lead Product Designer_
-* **Alexandra Devine:** _Data Scientist|Patent Co-Lead_
+* **Alexandra Devine:** _Data Scientist| Developer_
 * **Gerald Mitchell:** _Engineer| Back-End Developer_ 
 * **Chris Stefano:** _Key Researcher| Administrative Focal_  
 * **Dylan Zucker:** _Data Scientist_ 
