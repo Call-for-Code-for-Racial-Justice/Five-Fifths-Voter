@@ -55,7 +55,7 @@ See the [issues list](https://github.com/Call-for-Code-for-Racial-Justice/Five-F
 
 For details, see [Solution Fortification](doc/SolutionFortification.md).
 
-# Team
+# Authors
 
 * **Alexandria Leggett** 
 * **Andrea Lucas** 
