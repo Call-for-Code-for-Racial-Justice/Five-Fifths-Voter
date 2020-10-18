@@ -3,28 +3,28 @@
 # Team
 
 * Alexandria Leggett: Product Offering Manager-Team Leader 
-* Andrea Lucas: Technical Director/Architecture & Development Lead 
+* Andrea Lucas: Technical Director-Architecture & Development Lead 
 * Yolanda Rabun: Legal & Logistics Lead
-* Evelyn R. Anderson: Master Inventor
+* Denise Knorr Externalization Operations Lead
+* Evelyn R. Anderson: Master Inventor - Product Patent Lead
 * David Nixon: Lead Back-End Developer
 * Syd Bailey: Lead Full Stack Developer
-* Sebastian Huynh: Lead Designer
-* Alexandra Devine: Data Scientist/Tech Generalist
+* Sebastian Huynh: Lead Product Designer
+* Alexandra Devine: Data Scientist/Patent Co-Lead
 * Gerald Mitchel: Engineer/Back-End Developer 
-* Denise Knorr Oeraations Lead
-* Chris Stefano-Lead Generalist 
+* Chris Stefano- Key Researcher/Administrative Focal  
 * Dylan Zucker: Data Scientist 
 * Kristen Ray: Data Scientist/ UI Designer
-* Ricky Ellison:
+* Ricky Ellison: Tech Generalist
 * Ann Umberhocker: Engineer: Full-Stack Developer
 * Mike Boone: Security Lead
-* Shrey Anand: Developer
+* Shrey Anand: Development Generalist
 
 # Problem and solution
 
-Black voters have experienced obstacles in casting their votes for a long while. The process of casting a vote is challenging due to restrictive local processes, changing requirements, regulations, and lack of information.
+For centuries, voters in disparate communities, particularly Black voters, have experienced obstacles in casting their votes be it situational or intentionally constructed. Voting has been perceived an intangible and unfair process based on restrictive local processes, changing requirements, regulations, inability to access the correct voting location, and lack of information. As a result millions of minority votes go uncounted, purged, or simply not submitted do to lack of faith and trust in the system.
 
-The **Five Fifths Voter** solution will help ensure that Black voters can identify the correct polling station, quickly and affordably, according to their own schedule. The project also equips voters with the necessary information to vote according up to date and local requirements.
+The **Five Fifths Voter** solution will help ensure that disenfranchised minority voters can are Educated, Empowered, and Enabled to overcome setbacks incurred by voter suppresion through achieving the follwoing; clearly identifying the correct polling station, notifying users of all requirements needed for their state and personal data as it pertains to different types of voting, deadlines, and quick/ affordable access. This solution helps to rewrite the narrative by placing control back in the voters' hands and generating a voter journey that prioritizes their individual lifestyles and needs. Furthermore, **Five Fifths Voter** strives to evolve the culture of voting and enable users to build a relationship with us through having the ability to select personalized features that enhance their experience and interact with other users to become a part of a community. This platform is designed to keep users coming back for many elections to come.
 
 # Video
 
