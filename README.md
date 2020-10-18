@@ -2,23 +2,23 @@
 
 # Team
 
-* **Alexandria Leggett:** *Product Offering Manager| Team Leader 
-* **Andrea Lucas:** *Technical Director| Externalization Co-Lead
-* **Yolanda Rabun:** *Legal & Logistics Lead
-* **Denise Knorr:** *Externalization Operations 
-* **Evelyn R. Anderson:** *Master Inventor| Product Patent Lead
-* **David Nixon:** *Lead Back-End Developer
-* **Syd Bailey:** *Lead Full-Stack Developer
-* **Sebastian Huynh:** *Lead Product Designer
-* **Alexandra Devine:** *Data Scientist|Patent Co-Lead
-* **Gerald Mitchell:** *Engineer| Back-End Developer 
-* **Chris Stefano:** *Key Researcher| Administrative Focal  
-* **Dylan Zucker:** *Data Scientist 
-* **Kristen Ray:** *Data Scientist| UI Designer
-* **Ricky Ellison:** *Tech Generalist
-* **Ann Umberhocker:** *Engineer| Full-Stack Developer
-* **Mike Boone:** *Security Lead
-* **Shrey Anand:** *Development Generalist
+* **Alexandria Leggett:** _Product Offering Manager| Team Leader_ 
+* **Andrea Lucas:** _Technical Director| Externalization Co-Lead_
+* **Yolanda Rabun:** _Legal & Logistics Lead_
+* **Denise Knorr:** _Externalization Operations_ 
+* **Evelyn R. Anderson:** _Master Inventor| Product Patent Lead_
+* **David Nixon:** _Lead Back-End Developer_
+* **Syd Bailey:** _Lead Full-Stack Developer_
+* **Sebastian Huynh:** _Lead Product Designer_
+* **Alexandra Devine:** _Data Scientist|Patent Co-Lead_
+* **Gerald Mitchell:** _Engineer| Back-End Developer_ 
+* **Chris Stefano:** _Key Researcher| Administrative Focal_  
+* **Dylan Zucker:** _Data Scientist_ 
+* **Kristen Ray:** _Data Scientist| UI Designer_
+* **Ricky Ellison:** _Tech Generalist_
+* **Ann Umberhocker:** _Engineer| Full-Stack Developer_
+* **Mike Boone:** _Security Lead_
+* **Shrey Anand:** _Development Generalist_
 
 # Problem and solution
 
