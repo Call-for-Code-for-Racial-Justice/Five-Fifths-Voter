@@ -23,7 +23,12 @@
 }
 
 .article__content {
-  max-width: 400px;
+  max-width: 550px;
+  margin-left: $spacing-05;
+
+  @media (min-width: 1056px) {
+    padding-right: $layout-05;
+  }
 }
 
 .article-feed {
@@ -41,9 +46,7 @@
 }
 
 .article__paragraph {
-  @include carbon--type-style('body-long-02');
-  color: #7b8898;
-  margin-bottom: calc(#{$spacing-05} + #{$spacing-02});
+  font-size: 16px;
 }
 
 .article__img {
@@ -74,6 +77,6 @@
 }
 
 .article-paragraph--alt {
-  font-size: 18px;
+  font-size: 16px;
   max-width: 800px;
 }

@@ -7,12 +7,12 @@
           <div class="article__content">
             <h2 class="article__heading">Our Mission</h2>
             <div class="bx--offset-lg-1">
-              <p>
+              <p class="article__paragraph">
                 With Five Fifths Voter, we help put the power back in your hands. Our platform
                 informs voters of the various steps to vote and make that vote count; it provides a
                 personalized experience with useful tools to help marginalized voters overcome
                 voting process roadblocks. This platform provides Educating, Empowering, and
-                Enabling material and resources. Five Fifths Voter takes into account various voting
+                Enabling resources. Five Fifths Voter takes into account various voting
                 journeys, such as first-time voters, veterans, minorities, legally disabled, the
                 elderly, or those with felony convictions. Together, we can change the narrative of
                 historically disenfranchised people in our democratic process.
@@ -38,11 +38,11 @@
             <h2 class="article__heading">Educate.</h2>
             <span class="article__quote"
               >&quot;Knowledge is power.&quot;<span class="quote--author"
-                >- Frances Bacon</span
+                >- Francis Bacon</span
               ></span
             ><br /><br />
             <div class="bx--offset-lg-1">
-              <p>
+              <p class="article__paragraph">
                 Five Fifths Voter will educate disenfranchised voters with voting guidance and
                 connection to up-to-date tools necessary to complete the voting process.
               </p>
@@ -70,7 +70,7 @@
               independent will. &quot; <span class="quote--author">- Charlotte Brontë</span></span
             ><br /><br />
             <div class="bx--offset-lg-1">
-              <p>
+              <p class="article__paragraph">
                 Five Fifths Voter will help generate solidarity for disenfranchised voting
                 communities and leverage social media platforms for easy access to candidate
                 information.
@@ -99,7 +99,7 @@
               <span class="quote--author">- Paul Repetto</span></span
             ><br /><br />
             <div class="bx--offset-lg-1">
-              <p>
+              <p class="article__paragraph">
                 Five Fifths Voter enables users with information to get to polling stations in safe
                 and efficient ways and will strive to help remove roadblocks disenfranchised voters
                 encounter when voting.

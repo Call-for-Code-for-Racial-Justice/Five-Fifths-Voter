@@ -8,7 +8,7 @@
         <aside class="aside">
           <div class="aside__container--text">
             <h2 class="aside__header">So what's the big deal?</h2>
-            <p>
+            <p class="aside__paragraph">
               In 1868, the 14th Amendment gave Black people full citizenship in America but it would
               be over 97 years before they could successfully execute their right to vote. During
               this time span poll taxes, literacy tests, and other tactics were used to undermine
@@ -16,12 +16,12 @@
               <br /><br />
               In 1965, the Voting Rights Act provided a successful pathway for Black and many
               disenfranchised people to vote. It is through blood, sweat and tears that Black people
-              earned the right to vote. Many Black people protested, marched, were arrested and even
+              earned the right to vote. Many protested, marched, were arrested and even
               died as they fought the battle for voting equality.
               <br /><br />
-              Voting is the perfect way to implement change for disenfranchised voters. As American
+              Voting is the perfect way to implement change. As American
               citizens, regardless of race, sex, background or nationality we can stand in
-              solidarity to stand as a whole and exercise the right to be heard. Your future and
+              solidarity as a whole and exercise the right to be heard. Your future and
               that of your community depends on YOU. Five Fifths Voter is tailored to help Black and
               other disenfranchised voters to seize the opportunity to be heard in America.
               <br /><br />
@@ -29,7 +29,7 @@
               >, <strong><em>Get educated</em></strong
               >, <strong><em>Get social</em></strong
               >, and <strong><em>Get vocal</em></strong
-              >. <br /><br />
+              >. 
             </p>
           </div>
         </aside>
