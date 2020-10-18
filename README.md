@@ -2,24 +2,23 @@
 
 # Team
 
-* Alexandria Leggett
-* Andrea Lucas 
-* Yolanda Rabun
-* Evelyn R. Anderson
-* David Nixon 
-* Sebastian Hunyh
-* Syd Bailey
-* Alexandra Devine
-* Gerald Mitchell
-* Denise Knorr
-* Chris Stefano
-* Dylan Zucker
-* Kristen Ray
-* Roosevelt Faulkner
-* Ricky Ellison
-* Ann Umberhocker
-* Mike Boone
-* Shrey Anand
+* Alexandria Leggett: Product Offering Manager-Team Leader 
+* Andrea Lucas: Technical Director/Architecture & Development Lead 
+* Yolanda Rabun: Legal & Logistics Lead
+* Evelyn R. Anderson: Master Inventor
+* David Nixon: Lead Back-End Developer
+* Syd Bailey: Lead Full Stack Developer
+* Sebastian Huynh: Lead Designer
+* Alexandra Devine: Data Scientist/Tech Generalist
+* Gerald Mitchel: Engineer/Back-End Developer 
+* Denise Knorr Oeraations Lead
+* Chris Stefano-Lead Generalist 
+* Dylan Zucker: Data Scientist 
+* Kristen Ray: Data Scientist/ UI Designer
+* Ricky Ellison:
+* Ann Umberhocker: Engineer: Full-Stack Developer
+* Mike Boone: Security Lead
+* Shrey Anand: Developer
 
 # Problem and solution
 
