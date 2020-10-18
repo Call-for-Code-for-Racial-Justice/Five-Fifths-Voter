@@ -198,7 +198,6 @@
 
 .hero__description {
   @include carbon--type-style('productive-heading-03');
-  display: none;
   max-width: 630px;
   margin-bottom: $spacing-06;
 
