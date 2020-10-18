@@ -73,7 +73,7 @@ cd services
 yarn test
 ```
 
-Start web app (open another terminal in root project directory `embrace-the-vote`)
+Start web app (open another terminal in root project directory `Five-Fifths-Voter`)
 
 ```
 yarn serve
@@ -114,11 +114,11 @@ This repo is setup for automatic deployment to Open Shift cluster. Pushing chang
 
 ```sh
 cd services
-docker build -t embrace-the-vote/services .
+docker build -t five-fifths-voter/services .
 ```
 
 - run services image
 
 ```sh
-docker run -it --rm -P --name test-service embrace-the-vote/services
+docker run -it --rm -P --name test-service five-fifths-voter/services
 ```

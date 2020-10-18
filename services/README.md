@@ -30,7 +30,7 @@
 - Start the services - will reload automatically when changes are mode
 
   ```sh
-  docker run --detach --rm -p 27017:27017 --name embrace-db embrace-the-vote/db
+  docker run --detach --rm -p 27017:27017 --name five-fifths-voter-db five-fifths-voter/db
   cd services
   yarn
   yarn test
