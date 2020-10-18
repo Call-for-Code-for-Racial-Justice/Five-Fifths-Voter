@@ -27,7 +27,7 @@ For centuries, voters in disparate communities, particularly Black voters, have 
 The **Five Fifths Voter** solution will help ensure that disenfranchised minority voters can are Educated, Empowered, and Enabled to overcome setbacks incurred by voter suppresion through achieving the follwoing; clearly identifying the correct polling station, notifying users of all requirements needed for their state and personal data as it pertains to different types of voting, deadlines, and quick/ affordable access. This solution helps to rewrite the narrative by placing control back in the voters' hands and generating a voter journey that prioritizes their individual lifestyles and needs. Furthermore, **Five Fifths Voter** strives to evolve the culture of voting and enable users to build a relationship with us through having the ability to select personalized features that enhance their experience and interact with other users to become a part of a community. This platform is designed to keep users coming back for many elections to come.
 
 # Video
-
+[![Watch the video]( /doc/5-fifths-banner-1.png)]( https://youtu.be/ItB2r9onTKw )
 
 # Pitch
 
