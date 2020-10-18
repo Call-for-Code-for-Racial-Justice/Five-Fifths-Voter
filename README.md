@@ -1,25 +1,5 @@
 ![Vision](doc/5-fifths-banner-1.png)
 
-# Team
-
-* **Alexandria Leggett:** Team Leader| _Product Offering Co-Manager_
-* **Andrea Lucas:** Technical Director|_Product Offering Co-Manager_
-* **Yolanda Rabun:** _Generalist_
-* **Denise Knorr:** _Externalization Operations_ 
-* **Evelyn R. Anderson:** _Master Inventor_
-* **David Nixon:** _Lead Back-End Developer_
-* **Syd Bailey:** _Lead Full-Stack Developer_
-* **Sebastian Huynh:** _Lead Product Designer_
-* **Alexandra Devine:** _Data Scientist| Developer_
-* **Gerald Mitchell:** _Engineer| Back-End Developer_ 
-* **Chris Stefano:** _Key Researcher| Administrative Focal_  
-* **Dylan Zucker:** _Data Scientist_ 
-* **Kristen Ray:** _Data Scientist| UI Designer_
-* **Ricky Ellison:** _Tech Generalist_
-* **Ann Umberhocker:** _Engineer| Full-Stack Developer_
-* **Mike Boone:** _Security Lead_
-* **Shrey Anand:** _Development Generalist_
-
 # Problem and solution
 
 For centuries, voters in disparate communities, particularly Black voters, have experienced obstacles in casting their votes be it situational or intentionally constructed. Voting has been perceived an intangible and unfair process based on restrictive local processes, changing requirements, regulations, inability to access the correct voting location, and lack of information. As a result millions of minority votes go uncounted, purged, or simply not submitted do to lack of faith and trust in the system.
@@ -74,3 +54,23 @@ See the [issues list](https://github.com/Call-for-Code-for-Racial-Justice/Five-F
 # Solution fortification
 
 For details, see [Solution Fortification](doc/SolutionFortification.md).
+
+# Team
+
+* **Alexandria Leggett:** 
+* **Andrea Lucas:** 
+* **Yolanda Rabun:**
+* **Denise Knorr:** 
+* **Evelyn R. Anderson:** 
+* **David Nixon:** 
+* **Syd Bailey:** 
+* **Sebastian Huynh:** 
+* **Alexandra Devine:** 
+* **Gerald Mitchell:**  
+* **Chris Stefano:** 
+* **Dylan Zucker:** 
+* **Kristen Ray:**
+* **Ricky Ellison:** 
+* **Ann Umberhocker:** 
+* **Mike Boone:** 
+* **Shrey Anand:** 
