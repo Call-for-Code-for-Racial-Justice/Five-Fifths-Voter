@@ -2,23 +2,23 @@
 
 # Team
 
-* Alexandria Leggett: Product Offering Manager-Team Leader 
-* Andrea Lucas: Technical Director-Architecture & Development Lead 
-* Yolanda Rabun: Legal & Logistics Lead
-* Denise Knorr Externalization Operations Lead
-* Evelyn R. Anderson: Master Inventor - Product Patent Lead
-* David Nixon: Lead Back-End Developer
-* Syd Bailey: Lead Full Stack Developer
-* Sebastian Huynh: Lead Product Designer
-* Alexandra Devine: Data Scientist/Patent Co-Lead
-* Gerald Mitchel: Engineer/Back-End Developer 
-* Chris Stefano- Key Researcher/Administrative Focal  
-* Dylan Zucker: Data Scientist 
-* Kristen Ray: Data Scientist/ UI Designer
-* Ricky Ellison: Tech Generalist
-* Ann Umberhocker: Engineer: Full-Stack Developer
-* Mike Boone: Security Lead
-* Shrey Anand: Development Generalist
+* **Alexandria Leggett:** *Product Offering Manager| Team Leader 
+* **Andrea Lucas:** *Technical Director| Externalization Co-Lead
+* **Yolanda Rabun:** *Legal & Logistics Lead
+* **Denise Knorr:** *Externalization Operations 
+* **Evelyn R. Anderson:** *Master Inventor| Product Patent Lead
+* **David Nixon:** *Lead Back-End Developer
+* **Syd Bailey:** *Lead Full-Stack Developer
+* **Sebastian Huynh:** *Lead Product Designer
+* **Alexandra Devine:** *Data Scientist|Patent Co-Lead
+* **Gerald Mitchell:** *Engineer| Back-End Developer 
+* **Chris Stefano:** *Key Researcher| Administrative Focal  
+* **Dylan Zucker:** *Data Scientist 
+* **Kristen Ray:** *Data Scientist| UI Designer
+* **Ricky Ellison:** *Tech Generalist
+* **Ann Umberhocker:** *Engineer| Full-Stack Developer
+* **Mike Boone:** *Security Lead
+* **Shrey Anand:** *Development Generalist
 
 # Problem and solution
 
