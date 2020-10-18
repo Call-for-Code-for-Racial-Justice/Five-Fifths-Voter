@@ -2,9 +2,9 @@
 
 # Team
 
-* **Alexandria Leggett:** _Team Leader| _Product Offering Manager_
+* **Alexandria Leggett:** _Team Leader| _Product Offering Co-Manager_
 * **Andrea Lucas:** _Technical Director|_Product Offering Co-Manager_
-* **Yolanda Rabun:** _Legal & Logistics Lead_
+* **Yolanda Rabun:** _Generalist_
 * **Denise Knorr:** _Externalization Operations_ 
 * **Evelyn R. Anderson:** _Master Inventor| Product Patent Lead_
 * **David Nixon:** _Lead Back-End Developer_
