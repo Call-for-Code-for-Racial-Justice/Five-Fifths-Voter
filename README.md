@@ -57,20 +57,20 @@ For details, see [Solution Fortification](doc/SolutionFortification.md).
 
 # Team
 
-* **Alexandria Leggett:** 
-* **Andrea Lucas:** 
-* **Yolanda Rabun:**
-* **Denise Knorr:** 
-* **Evelyn R. Anderson:** 
-* **David Nixon:** 
-* **Syd Bailey:** 
-* **Sebastian Huynh:** 
-* **Alexandra Devine:** 
-* **Gerald Mitchell:**  
-* **Chris Stefano:** 
-* **Dylan Zucker:** 
-* **Kristen Ray:**
-* **Ricky Ellison:** 
-* **Ann Umberhocker:** 
-* **Mike Boone:** 
-* **Shrey Anand:** 
+* **Alexandria Leggett** 
+* **Andrea Lucas** 
+* **Yolanda Rabun**
+* **Denise Knorr** 
+* **Evelyn R. Anderson** 
+* **David Nixon** 
+* **Syd Bailey** 
+* **Sebastian Huynh** 
+* **Alexandra Devine** 
+* **Gerald Mitchell**  
+* **Chris Stefano** 
+* **Dylan Zucker** 
+* **Kristen Ray**
+* **Ricky Ellison** 
+* **Ann Umberhocker** 
+* **Mike Boone** 
+* **Shrey Anand** 
