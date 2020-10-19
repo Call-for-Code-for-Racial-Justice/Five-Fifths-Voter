@@ -46,7 +46,13 @@
   display: block;
   font-weight: bold;
 }
-.aside__image {
+
+.dropdown {
   width: 100%;
-  min-height: unset;
+  max-width: 225px;
+
+  @media (min-width: 672px) {
+    max-width: 100%;
+    width: auto;
+  }
 }

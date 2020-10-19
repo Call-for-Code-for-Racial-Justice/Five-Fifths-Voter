@@ -12,6 +12,10 @@
       </div>
       <div class="hero__content">
         <h1 class="hero__heading">Five Fifths Voter</h1>
+        <p class="hero__description">
+          5/5 equals a whole.<br />A whole person, a whole community, a whole nation.
+          <br />
+        </p>
         <h2 class="hero__quote">
           "My dear friends: Your vote is precious, almost sacred. It is the most powerful nonviolent
           tool we have to create a more perfect union."
@@ -20,10 +24,6 @@
           <br />
           <br />
         </h2>
-        <p class="hero__description">
-          5/5 equals a whole.<br />A whole person, a whole community, a whole nation.
-          <br />
-        </p>
       </div>
       <div class="bx--row bx--feature-card__row">
         <div
@@ -68,8 +68,8 @@
 export default {
   name: 'Hero',
   props: {
-    img: String
-  }
+    img: String,
+  },
 };
 </script>
 

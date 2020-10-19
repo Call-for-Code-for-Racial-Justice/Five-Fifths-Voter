@@ -7,7 +7,7 @@
       <template v-slot:content>
         <aside class="aside">
           <div class="aside__container--text">
-            <h2 class="aside__header">So what's the big deal?</h2>
+            <h2 class="aside__header">So what's the deal?</h2>
             <p class="aside__paragraph">
               In 1868, the 14th Amendment gave Black people citizenship in America, but it would be
               over 97 years before they could successfully vote. During this time span poll taxes,
