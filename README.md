@@ -1,6 +1,6 @@
 ![Vision](doc/5-fifths-banner-1.png)
 
-# Five Fifths Voter Starter Kit
+# Five Fifths Voter Solution Starter
 
 This solution starter was created by technologists from IBM.
 
