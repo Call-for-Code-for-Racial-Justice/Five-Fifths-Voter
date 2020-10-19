@@ -15,7 +15,7 @@
 .article__quote {
   @include carbon--type-style('quotation-01');
   display: block;
-  margin-bottom: $spacing-07;
+  margin-bottom: $spacing-05;
 }
 
 .quote--author {
@@ -44,9 +44,7 @@
 }
 
 .article__paragraph {
-  @include carbon--type-style('body-long-02');
-  color: #7b8898;
-  margin-bottom: calc(#{$spacing-05} + #{$spacing-02});
+  font-size: 16px;
 }
 
 .article__img {
@@ -77,6 +75,6 @@
 }
 
 .article-paragraph--alt {
-  font-size: 18px;
+  font-size: 16px;
   max-width: 800px;
 }

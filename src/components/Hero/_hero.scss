@@ -89,6 +89,8 @@
   color: #fff;
 
   @media (min-width: 672px) {
+    max-height: 100%;
+    max-width: 100%;
     margin-right: $spacing-05;
   }
 }
@@ -174,10 +176,11 @@
   top: 0;
   left: 0;
   color: #fff;
-  padding: $spacing-05;
+  padding: 0 $spacing-05 0 0;
 
-  @media (min-width: 672px) {
-    padding: calc(#{$spacing-05} + 48px); //48px is size of nav bar
+  @media (min-width: 400px) {
+    // custom breakpoint -- not changing at 672 like the default behavior suggests.
+    padding: calc(#{$spacing-05} + 48px) $spacing-05; //48px is size of nav bar
   }
 
   @media (min-width: 1056px) {
@@ -217,8 +220,16 @@
 
 .hero__quote {
   @include carbon--type-style('quotation-01');
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: 14px;
+>>>>>>> b58ec19eae9a3403c1dc4cb9ce9b383e510b5bce
   max-width: 400px;
+
+  @media (min-width: 672px) {
+    font-size: 16px;
+  }
 }
 
 .hero__author {
