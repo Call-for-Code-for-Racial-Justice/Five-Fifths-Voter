@@ -9,13 +9,11 @@
             <div class="bx--offset-lg-1">
               <p>
                 With Five Fifths Voter, we help put the power back in your hands. Our platform
-                informs voters of the various steps to vote and make that vote count; it provides a
-                personalized experience with useful tools to help marginalized voters overcome
-                voting process roadblocks. This platform provides Educating, Empowering, and
-                Enabling material and resources. Five Fifths Voter takes into account various voting
-                journeys, such as first-time voters, veterans, minorities, legally disabled, the
-                elderly, or those with felony convictions. Together, we can change the narrative of
-                historically disenfranchised people in our democratic process.
+                provides a personalized experience with useful tools to help marginalized voters
+                overcome voting process roadblocks. Five Fifths Voter takes into account various
+                voting journeys, such as first-time voters, veterans, minorities, legally disabled,
+                the elderly, or those with felony convictions. Together, we can change the narrative
+                of historically disenfranchised people in our democratic process.
               </p>
             </div>
           </div>
@@ -129,7 +127,7 @@ import MainContent from '../../components/MainContent';
 export default {
   name: 'LandingPage',
   props: {
-    heroImage: String
+    heroImage: String,
   },
   components: { Countdown, PageLayout, MainContent },
   data() {
@@ -138,7 +136,7 @@ export default {
       firstName: '',
       lastName: '',
       dob: '',
-      visible: false
+      visible: false,
     };
   },
   methods: {
@@ -147,8 +145,8 @@ export default {
     },
     modalClosed() {
       this.visible = false;
-    }
-  }
+    },
+  },
 };
 </script>
 
