@@ -1,24 +1,28 @@
 ![Vision](doc/5-fifths-banner-1.png)
 
+#**Five Fifths Voters Starter Kit**
+
+This solution starter was created by technologists from IBM.
+
 # Authors
 
-* **Alexandria Leggett** 
-* **Andrea Lucas** 
-* **Yolanda Rabun**
-* **Denise Knorr** 
-* **Evelyn R. Anderson** 
-* **David Nixon** 
-* **Syd Bailey** 
-* **Sebastian Huynh** 
-* **Alexandra Devine** 
-* **Gerald Mitchell**  
-* **Chris Stefano** 
-* **Dylan Zucker** 
-* **Kristen Ray**
-* **Ricky Ellison** 
-* **Ann Umberhocker** 
-* **Mike Boone** 
-* **Shrey Anand** 
+* Alexandria Leggett 
+* Andrea Lucas 
+* Yolanda Rabun
+* Denise Knorr 
+* Evelyn R. Anderson 
+* David Nixon 
+* Syd Bailey 
+* Sebastian Huynh 
+* Alexandra Devine 
+* Gerald Mitchell  
+* Chris Stefano 
+* Dylan Zucker 
+* Kristen Ray
+* Ricky Ellison 
+* Ann Umberhocker 
+* Mike Boone 
+* Shrey Anand 
 
 # What is the problem?
 
@@ -71,7 +75,7 @@ See the [Getting Started](doc/GETSTARTED.md) document.
 
 See the [issues list](https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter/issues) for a full list of items that are currently being worked in the **Five Fifths Voter** project. Issues marked as ["top priority"](https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter/issues?q=is%3Aissue+is%3Aopen+label%3A%22top+priority%22) must be considered first.
 
-# Solution fortification
+# Solution Summary
 
 For details, see [Solution Fortification](doc/SolutionFortification.md).
 
