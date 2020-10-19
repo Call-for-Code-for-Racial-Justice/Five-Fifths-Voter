@@ -15,7 +15,7 @@
 .article__quote {
   @include carbon--type-style('quotation-01');
   display: block;
-  margin-bottom: $spacing-07;
+  margin-bottom: $spacing-05;
 }
 
 .quote--author {
