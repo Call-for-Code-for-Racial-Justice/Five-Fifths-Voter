@@ -53,6 +53,10 @@
   left: 0;
   width: 100%;
   max-width: 100%;
+
+  @media (min-width: 672px) {
+    max-height: 500px;
+  }
 }
 
 .bx--aspect-ratio:after {
@@ -77,10 +81,14 @@
 }
 
 .impactFeatureCard .bx--resource-card .bx--tile {
+  max-height: 75px;
+  max-width: 75px;
   background-color: #0f62fe;
   color: #fff;
 
   @media (min-width: 672px) {
+    max-height: 100%;
+    max-width: 100%;
     margin-right: $spacing-05;
   }
 }
@@ -209,6 +217,7 @@
 
 .hero__quote {
   @include carbon--type-style('quotation-01');
+  font-size: 16px;
   max-width: 400px;
 }
 
