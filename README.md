@@ -33,7 +33,7 @@ The **Five Fifths Voter** solution starter will provide a capability to help ens
 Furthermore, **Five Fifths Voter** strives to evolve the culture of voting and enable users to build a relationship with us through having the ability to select personalized features that enhance their experience and interact with other users to become a part of a community.
 
 # Video
-[![Watch the video]( /doc/5-fifths-vid-front.jpg)]( https://youtu.be/ItB2r9onTKw )
+[![Watch the video]( /doc/5-fifths-vid-front.jpg)]( https://youtu.be/0-omvwU7zXg )
 
 # Pitch
 
