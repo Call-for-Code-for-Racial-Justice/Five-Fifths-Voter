@@ -3,7 +3,7 @@
     <template v-slot:content>
       <aside class="aside">
         <div class="aside__container--text">
-          <h2 class="aside__header">Can't be there? Let us Help You Connect</h2>
+          <h2 class="aside__header">Can't be there? Let us help you connect</h2>
           <p class="aside__paragraph">
             Absentee voting is as easy as signing up before your state's deadline.
           </p>
@@ -35,7 +35,7 @@ export default {
     return {};
   },
   created() {},
-  methods: {}
+  methods: {},
 };
 </script>
 <style lang="scss">

@@ -2,10 +2,6 @@
 @import 'carbon-components/scss/globals/scss/vars.scss';
 @import '~@carbon/layout/scss/breakpoint';
 
-@import '~@carbon/themes/scss/themes';
-$carbon--theme: $carbon--theme--g10;
-@include carbon--theme();
-
 //global styles
 .aside {
   background-color: #252525;
@@ -128,8 +124,8 @@ $carbon--theme: $carbon--theme--g10;
   margin: 0;
 }
 
-.bx--tabs__nav-item .bx--tabs__nav-link {
-  color: #525252; //override
+.main-content {
+  background-color: #171717;
 }
 
 //resets

@@ -53,6 +53,10 @@
   left: 0;
   width: 100%;
   max-width: 100%;
+
+  @media (min-width: 672px) {
+    max-height: 500px;
+  }
 }
 
 .bx--aspect-ratio:after {
@@ -77,6 +81,10 @@
 }
 
 .impactFeatureCard .bx--resource-card .bx--tile {
+  max-height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   background-color: #0f62fe;
   color: #fff;
 
@@ -198,6 +206,7 @@
 
 .hero__description {
   @include carbon--type-style('productive-heading-03');
+  display: none;
   max-width: 630px;
   margin-bottom: $spacing-06;
 
@@ -208,6 +217,7 @@
 
 .hero__quote {
   @include carbon--type-style('quotation-01');
+  font-size: 16px;
   max-width: 400px;
 }
 
@@ -221,4 +231,10 @@
   right: $spacing-06;
   min-height: 184px;
   min-width: 400px;
+}
+
+.bx--resource-card__icon--action {
+  //carbon override
+  top: 1rem;
+  bottom: 0;
 }
