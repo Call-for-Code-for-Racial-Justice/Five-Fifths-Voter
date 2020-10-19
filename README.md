@@ -71,6 +71,8 @@ The IBM Call for Code for Policy & Legislation Reform has developed a solution t
 
 See the [Getting Started](doc/GETSTARTED.md) document.
 
+See the [User Guide](doc/5-fifths-user-guide.pdf) document.
+
 # Suggestions
 
 See the [issues list](https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter/issues) for a full list of items that are currently being worked in the **Five Fifths Voter** project. Issues marked as ["top priority"](https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter/issues?q=is%3Aissue+is%3Aopen+label%3A%22top+priority%22) must be considered first.
