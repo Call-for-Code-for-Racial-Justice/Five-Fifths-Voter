@@ -220,11 +220,7 @@
 
 .hero__quote {
   @include carbon--type-style('quotation-01');
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> b58ec19eae9a3403c1dc4cb9ce9b383e510b5bce
   max-width: 400px;
 
   @media (min-width: 672px) {
