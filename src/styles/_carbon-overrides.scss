@@ -1,15 +1,4 @@
 @import 'carbon-components/scss/globals/scss/styles';
-@import '~@carbon/themes/scss/themes';
-$carbon--theme: $carbon--theme--g10;
-@include carbon--theme();
-
-// .landing-page__r2 .bx--tabs__nav {
-//   right: 0;
-// }
-
-// .bx--grid--full-width {
-//   max-width: 1500px;
-// }
 
 .bx--row {
   @media (min-width: 1056px) {
@@ -34,13 +23,11 @@ $carbon--theme: $carbon--theme--g10;
 
 .bx--header ~ .bx--content {
   margin-top: 0;
-  /* margin-top: 3rem; */
 }
 
 .global-nav__link.bx--link:hover {
   color: #fff; //carbon token $text-03
   text-decoration: none;
-  // cursor: none;
 }
 
 .bx--col-lg-6 {
@@ -53,7 +40,6 @@ $carbon--theme: $carbon--theme--g10;
   left: 0;
   max-width: -webkit-fill-available;
   margin-top: $spacing-07;
-  // left: 16px;
 }
 
 .cv-tabs-button.bx--tabs__nav-item {
@@ -77,4 +63,10 @@ a.bx--tabs__nav-link {
     left: calc(#{$layout-06} + #{$layout-07});
     max-width: 850px;
   }
+}
+
+.aside .bx--modal-container {
+  width: 100%;
+  position: relative;
+  top: 20px;
 }

@@ -4,78 +4,89 @@
       <aside class="aside">
         <div class="aside__container--text">
           <h2 class="aside__header">
-            Find where you can vote early or find your election day voting
-            location.
+            Vote early or find your polling location.
           </h2>
-          <cv-text-input
-            :label="addressLabel"
-            v-model="addressValue"
-            :placeholder="placeholder"
-            @input="updatedAddress"
-          >
-          </cv-text-input>
-          <cv-button
-            kind="secondary"
-            @click="showEarlyPollingLocation"
-            :disabled="buttonDisabled"
-          >
-            Show Early Polling Location
-          </cv-button>
-          <cv-button
-            kind="primary"
-            @click="showNowPollingLocation"
-            :disabled="buttonDisabled"
-          >
-            Show Polling Location
-          </cv-button>
-          <div v-if="voterData.state">
-            <p>
-              {{ voterData.state[0].name }}
-              <span v-if="voterData.state[0].electionAdministrationBody.name">
-                -
-                {{ voterData.state[0].electionAdministrationBody.name }}
-              </span>
-            </p>
-            <span v-if="electionInfoUrl">
-              <cv-link :href="electionInfoUrl"> Election Info</cv-link><br />
-            </span>
-            <span v-if="absenteeVotingInfoUrl">
-              <cv-link :href="absenteeVotingInfoUrl">
-                Get Absentee Ballot</cv-link
-              ><br />
-            </span>
-            <span v-if="placeholderMap"
-              >No known locations. Check with your local election officials.
-            </span>
-            <cv-list v-if="locationList">
-              <cv-list-item
-                v-for="item in locationList"
-                :key="item.address.locationName"
+          <p class="aside__description">
+            Need help knowing where to go on voting day? Want to know what
+            location in your precinct allows for early voting? We can help you
+            figure it out. Input your address below, and select either "Vote
+            Now" or "Vote Early". We'll do the rest.
+          </p>
+          <div class="wrapper wrapper--address">
+            <cv-text-input
+              :label="addressLabel"
+              v-model="addressValue"
+              :placeholder="placeholder"
+              @input="updatedAddress"
+            >
+            </cv-text-input>
+            <div class="wrapper wrapper--button">
+              <cv-button
+                class="button--early-voting"
+                kind="secondary"
+                @click="showEarlyPollingLocation"
+                :disabled="buttonDisabled"
               >
-                <span class="loc-name">{{ item.address.locationName }}</span>
-                <span v-if="!early && item.pollingHours" class="loc-name">{{
-                  item.pollingHours
-                }}</span>
+                Early Voting
+              </cv-button>
+              <cv-button
+                class="button--early-voting"
+                kind="primary"
+                @click="showNowPollingLocation"
+                :disabled="buttonDisabled"
+              >
+                Polling Location
+              </cv-button>
+            </div>
+            <div v-if="voterData.state">
+              <p>
+                {{ voterData.state[0].name }}
+                <span v-if="voterData.state[0].electionAdministrationBody.name">
+                  -
+                  {{ voterData.state[0].electionAdministrationBody.name }}
+                </span>
+              </p>
+              <span v-if="electionInfoUrl">
+                <cv-link :href="electionInfoUrl"> Election Info</cv-link><br />
+              </span>
+              <span v-if="absenteeVotingInfoUrl">
+                <cv-link :href="absenteeVotingInfoUrl">
+                  Get Absentee Ballot</cv-link
+                ><br />
+              </span>
+              <span v-if="placeholderMap"
+                >No known locations. Check with your local election officials.
+              </span>
+              <cv-list v-if="locationList">
+                <cv-list-item
+                  v-for="item in locationList"
+                  :key="item.address.locationName"
+                >
+                  <span class="loc-name">{{ item.address.locationName }}</span>
+                  <span v-if="!early && item.pollingHours" class="loc-name">{{
+                    item.pollingHours
+                  }}</span>
 
-                <span v-if="item.address.line1" class="loc-line">{{
-                  item.address.line1
-                }}</span>
-                <span v-if="item.address.line2" class="loc-line">{{
-                  item.address.line2
-                }}</span>
-                <span v-if="item.address.line3" class="loc-line">{{
-                  item.address.line3
-                }}</span>
-                <span v-if="item.address.city" class="loc-city">{{
-                  item.address.city
-                }}</span>
-                <span v-if="item.address.state" class="loc-state">{{
-                  item.address.state
-                }}</span>
-              </cv-list-item>
-            </cv-list>
+                  <span v-if="item.address.line1" class="loc-line">{{
+                    item.address.line1
+                  }}</span>
+                  <span v-if="item.address.line2" class="loc-line">{{
+                    item.address.line2
+                  }}</span>
+                  <span v-if="item.address.line3" class="loc-line">{{
+                    item.address.line3
+                  }}</span>
+                  <span v-if="item.address.city" class="loc-city">{{
+                    item.address.city
+                  }}</span>
+                  <span v-if="item.address.state" class="loc-state">{{
+                    item.address.state
+                  }}</span>
+                </cv-list-item>
+              </cv-list>
 
-            <span><br />Powered by the Civic Information API</span>
+              <span><br />Powered by the Civic Information API</span>
+            </div>
           </div>
         </div>
       </aside>

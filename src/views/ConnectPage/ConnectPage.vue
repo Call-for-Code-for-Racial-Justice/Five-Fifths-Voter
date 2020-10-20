@@ -68,6 +68,12 @@
               ><br />
               <br />
             </div>
+            <cv-link
+              href="https://m.youtube.com/results?search_query=Election+debates+2020"
+              target="_blank"
+            >
+              Watch the 2020 elections.
+            </cv-link>
             <TwitterChatter />
           </div>
         </aside>

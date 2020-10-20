@@ -21,6 +21,15 @@
         Voter Support
       </cv-header-menu-item>
     </cv-header-nav>
+    <template v-slot:header-global>
+      <cv-header-global-action
+        aria-label="User avatar"
+        @click="actionUserAvatar"
+        aria-controls="user-panel"
+      >
+        <UserAvatar20 />
+      </cv-header-global-action>
+    </template>
     <template v-slot:left-panels v-if="areLeftPanels">
       <cv-side-nav id="side-nav" fixed>
         <cv-side-nav-items>
@@ -45,8 +54,11 @@
 </template>
 
 <script>
+import UserAvatar20 from '@carbon/icons-vue/lib/user--avatar/20';
+
 export default {
   name: 'AppHeader',
+  components: { UserAvatar20 },
   data() {
     return {
       areLeftPanels() {
@@ -58,6 +70,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../styles/carbon-utils';
 @import './appheader.scss';
 </style>

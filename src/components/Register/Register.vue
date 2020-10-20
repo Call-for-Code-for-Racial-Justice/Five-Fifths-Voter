@@ -5,21 +5,21 @@
         <div class="aside__container--text">
           <h2 class="aside__header">Vote like it's hot</h2>
           <p class="aside__paragraph">
-            voting is the future for your neighbors, your friends, your family,
+            Voting is the future for your neighbors, your friends, your family,
             and yourself.
           </p>
           <cv-link
-            href="https://verify.vote.org/?partner=111111&campaign=free-tools"
+            href="https://www.vote.org/am-i-registered-to-vote/"
             target="_blank"
           >
-            Check voting status -> </cv-link
-          ><br />
+            Check voting status</cv-link
+          ><br /><br />
           <cv-link
-            href="https://register.vote.org/?partner=111111&campaign=free-tools"
+            href="https://www.vote.org/register-to-vote/"
             target="_blank"
           >
-            Register to vote ->
-          </cv-link>
+            Register to vote</cv-link
+          ><br />
         </div>
       </aside>
     </template>
@@ -50,7 +50,5 @@ export default {
 </script>
 
 <style lang="scss">
-.aside__image {
-  max-width: 100%;
-}
+@import './register.scss';
 </style>
