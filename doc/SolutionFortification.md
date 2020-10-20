@@ -50,8 +50,6 @@
 
 The following datasets were used for the initial release of this solution starter kit. Future data integration goals include: Create an API that brings in data for individual states. Explore partnerships with Google, Vote.org, and the Voting Information Project for custom APIs to further enhance the capability of the Five Fifths solution starter kit. 
 
-- Data Sources
-
 - [Google Civic Information API](https://developers.google.com/civic-information/)
 - [Google Maps API](https://developers.google.com/maps/documentation)
 - [Twitter API](https://developer.twitter.com/en/docs/twitter-api)
