@@ -71,7 +71,7 @@ export default {
   components: { MainContent, GoogleMap },
   data() {
     return {
-      addressLabel: 'Adress where you are registered to vote',
+      addressLabel: 'Address where you are registered to vote',
       addressValue: '',
       placeholder: '123 Main St GA 30076',
       buttonDisabled: true,
