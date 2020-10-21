@@ -10,7 +10,7 @@ This solution starter was created by technologists from IBM.
 * **Andrea Lucas**  _Technical Architect| Product Offering Manager_
 * **Yolanda Rabun**- _Lead Generalist_
 * **Denise Knorr** _Operations Director_
-* **Evelyn R. Anderson** _Master Inventor_
+* **Evelyn R. Anderson** _Sr. Security & IP Advisor_
 * **Sebastian Huynh** _Lead Designer_
 * **David Nixon** _Developer_ 
 * **Gerald Mitchell** _Developer_
@@ -22,7 +22,7 @@ This solution starter was created by technologists from IBM.
 * **Kristen Ray** _Data Scientist_ 
 * **Chris Stefano** _Generalist_
 * **Ricky Ellison** _Generalist_
-* **Mike Boone** _Security Lead_
+* **Mike Boone** _Sr. Security & IP Advisor_
 
 
 # What is the problem?
