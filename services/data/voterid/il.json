@@ -1,0 +1,15 @@
+{
+  "info": "https://www.elections.il.gov/DocDisplay.aspx?Doc=Downloads/ElectionOperations/PDF/ILVoterInformation.pdf",
+  "list": [
+    "Utility bill",
+    "Bank statement",
+    "Government check",
+    "Paycheck",
+    "Lease or contract for residence",
+    "Student ID & mail addressed to voter’s residence",
+    "Government document "
+  ],
+  "notes": "If you register by mail, you must vote in person the first time, either at the polling place, or by early voting, unless you submit with your mail-in registration form your driver license number or state ID number, the last four digits of your social security number, or one of the forms of ID listed below. Voters voting under the provisions of UOCAVA and the Voting Accessibility for the Elderly and Handicapped Act do not have to vote in person for the first time after having registered by mail. (HAVA 303[b][2][c]). ",
+  "more_info": "https://www.elections.il.gov/Default.aspx",
+  "date_gathered": "2020-10-25"
+}

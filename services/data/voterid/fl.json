@@ -1,0 +1,20 @@
+{
+  "info": "https://dos.myflorida.com/elections/for-voters/voting/election-day-voting/",
+  "list": [
+    "Florida driver’s license",
+    "Florida identification card issued by the Department of Highway Safety and Motor Vehicles",
+    "United States passport",
+    "Debit or credit card",
+    "Military identification",
+    "Student identification",
+    "Retirement center identification",
+    "Neighborhood association identification",
+    "Public assistance identification",
+    "Veteran health identification card issued by the United States Department of Veterans Affairs",
+    "License to carry a concealed weapon or firearm issued pursuant to s. 790.06",
+    "Employee identification card issued by any branch, department, agency, or entity of the Federal Government, the state, a county, or a municipality."
+  ],
+  "notes": "Whether voting during early voting or on Election Day, you must bring a current and valid photo ID with signature.",
+  "more_info": "https://dos.myflorida.com/elections/",
+  "date_gathered": "2020-10-25"
+}

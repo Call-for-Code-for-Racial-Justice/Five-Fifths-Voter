@@ -1,0 +1,660 @@
+{
+  "election": {
+    "id": "7000",
+    "name": "US 2020 General Election",
+    "electionDay": "2020-11-03",
+    "ocdDivisionId": "ocd-division/country:us"
+  },
+  "normalizedInput": {
+    "line1": "4025 Crabapple Lake Court",
+    "city": "Roswell",
+    "state": "GA",
+    "zip": "30076"
+  },
+  "contests": [
+    {
+      "type": "General",
+      "office": "PRESIDENT OF THE UNITED STATES",
+      "district": {
+        "name": "STATE",
+        "scope": "statewide"
+      },
+      "ballotPlacement": "1",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "DONALD J. TRUMP",
+          "party": "Republican"
+        },
+        {
+          "name": "JOSEPH R. BIDEN",
+          "party": "Democratic"
+        },
+        {
+          "name": "JO JORGENSEN",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "BARBARA BELLAR",
+          "party": "Write-In"
+        },
+        {
+          "name": "DON BLANKENSHIP",
+          "party": "Write-In"
+        },
+        {
+          "name": "R19 BODDIE",
+          "party": "Write-In"
+        },
+        {
+          "name": "PRESIDENT R19 BODDIE",
+          "party": "Write-In"
+        },
+        {
+          "name": "DAVID C. BYRNE",
+          "party": "Write-In"
+        },
+        {
+          "name": "BRIAN CARROLL",
+          "party": "Write-In"
+        },
+        {
+          "name": "MARK CHARLES",
+          "party": "Write-In"
+        },
+        {
+          "name": "LOREN COLLINS",
+          "party": "Write-In"
+        },
+        {
+          "name": "KATHRYN GIBSON",
+          "party": "Write-In"
+        },
+        {
+          "name": "HOWIE HAWKINS",
+          "party": "Write-In"
+        },
+        {
+          "name": "SHAWN HOWARD",
+          "party": "Write-In"
+        },
+        {
+          "name": "PRINCESS JACOB - FAMBRO",
+          "party": "Write-In"
+        },
+        {
+          "name": "GLORIA LA RIVA",
+          "party": "Write-In"
+        },
+        {
+          "name": "DEBORAH ROUSE",
+          "party": "Write-In"
+        },
+        {
+          "name": "PETER SHERRILL",
+          "party": "Write-In"
+        },
+        {
+          "name": "JADE SIMMONS",
+          "party": "Write-In"
+        },
+        {
+          "name": "KASEY WELLS",
+          "party": "Write-In"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "UNITED STATES SENATOR, PERDUE",
+      "district": {
+        "name": "STATE",
+        "scope": "statewide"
+      },
+      "ballotPlacement": "2",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "DAVID A. PERDUE",
+          "party": "Republican"
+        },
+        {
+          "name": "JON OSSOFF",
+          "party": "Democratic"
+        },
+        {
+          "name": "SHANE HAZEL",
+          "party": "LIBERTARIAN"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "UNITED STATES SENATOR, LOEFFLER",
+      "district": {
+        "name": "STATE",
+        "scope": "statewide"
+      },
+      "ballotPlacement": "3",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "DOUG COLLINS",
+          "party": "Republican"
+        },
+        {
+          "name": "DERRICK E. GRAYSON",
+          "party": "Republican"
+        },
+        {
+          "name": "ANNETTE DAVIS JACKSON",
+          "party": "Republican"
+        },
+        {
+          "name": "A. WAYNE JOHNSON",
+          "party": "Republican"
+        },
+        {
+          "name": "KELLY LOEFFLER",
+          "party": "Republican"
+        },
+        {
+          "name": "KANDISS TAYLOR",
+          "party": "Republican"
+        },
+        {
+          "name": "DEBORAH JACKSON",
+          "party": "Democratic"
+        },
+        {
+          "name": "JAMESIA JAMES",
+          "party": "Democratic"
+        },
+        {
+          "name": "TAMARA JOHNSON-SHEALEY",
+          "party": "Democratic"
+        },
+        {
+          "name": "MATT LIEBERMAN",
+          "party": "Democratic"
+        },
+        {
+          "name": "JOY FELICIA SLADE",
+          "party": "Democratic"
+        },
+        {
+          "name": "ED TARVER",
+          "party": "Democratic"
+        },
+        {
+          "name": "RAPHAEL WARNOCK",
+          "party": "Democratic"
+        },
+        {
+          "name": "RICHARD DIEN WINFIELD",
+          "party": "Democratic"
+        },
+        {
+          "name": "BRIAN SLOWINSKI",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "AL BARTELL",
+          "party": "INDEPENDENT"
+        },
+        {
+          "name": "ALLEN BUCKLEY",
+          "party": "INDEPENDENT"
+        },
+        {
+          "name": "MICHAEL TODD GREENE",
+          "party": "INDEPENDENT"
+        },
+        {
+          "name": "VALENCIA STOVALL",
+          "party": "INDEPENDENT"
+        },
+        {
+          "name": "JOHN \"GREEN\" FORTUIN",
+          "party": "Green"
+        },
+        {
+          "name": "ROD MACK",
+          "party": "Write-In"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "PUBLIC SERVICE COMMISSION, DISTRICT 4 - NORTHERN, DISTRICT 4",
+      "district": {
+        "name": "STATE",
+        "scope": "statewide"
+      },
+      "ballotPlacement": "4",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "LAUREN BUBBA MCDONALD JR",
+          "party": "Republican"
+        },
+        {
+          "name": "DANIEL BLACKMAN",
+          "party": "Democratic"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "PUBLIC SERVICE COMMISSION, DISTRICT 1 - SOUTHERN, DISTRICT1",
+      "district": {
+        "name": "STATE",
+        "scope": "statewide"
+      },
+      "ballotPlacement": "5",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "JASON SHAW",
+          "party": "Republican"
+        },
+        {
+          "name": "ROBERT G BRYANT",
+          "party": "Democratic"
+        },
+        {
+          "name": "ELIZABETH MELTON",
+          "party": "LIBERTARIAN"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "UNITED STATES REPRESENTATIVE, DISTRICT 6",
+      "level": ["country"],
+      "district": {
+        "name": "006",
+        "scope": "congressional",
+        "id": "6"
+      },
+      "ballotPlacement": "11",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "KAREN HANDEL",
+          "party": "Republican"
+        },
+        {
+          "name": "LUCY MCBATH",
+          "party": "Democratic"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "STATE SENATOR, DISTRICT 56",
+      "level": ["administrativeArea1"],
+      "district": {
+        "name": "056",
+        "scope": "stateUpper",
+        "id": "56"
+      },
+      "ballotPlacement": "75",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "JOHN ALBERS",
+          "party": "Republican"
+        },
+        {
+          "name": "SARAH BEESON",
+          "party": "Democratic"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "STATE REPRESENTATIVE, DISTRICT 47",
+      "level": ["administrativeArea1"],
+      "district": {
+        "name": "047",
+        "scope": "stateLower",
+        "id": "47"
+      },
+      "ballotPlacement": "122",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "JAN JONES",
+          "party": "Republican"
+        },
+        {
+          "name": "ANTHIA OWENS CARTER",
+          "party": "Democratic"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "DISTRICT ATTORNEY, ATLANTA",
+      "district": {
+        "name": "ATLANTA",
+        "scope": "judicial"
+      },
+      "ballotPlacement": "259",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "FANI WILLIS",
+          "party": "Democratic"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "PRESIDENTIAL ELECTOR",
+      "district": {
+        "name": "STATE",
+        "scope": "statewide"
+      },
+      "ballotPlacement": "296",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "JOSEPH BRANNAN",
+          "party": "Republican"
+        },
+        {
+          "name": "JAMES CARROLL",
+          "party": "Republican"
+        },
+        {
+          "name": "VIKKI TOWNSEND CONSIGLIO",
+          "party": "Republican"
+        },
+        {
+          "name": "CAROLYN HALL FISHER",
+          "party": "Republican"
+        },
+        {
+          "name": "PATRICK M. GARTLAND",
+          "party": "Republican"
+        },
+        {
+          "name": "GLORIA GODWIN",
+          "party": "Republican"
+        },
+        {
+          "name": "DAVID G HANNA",
+          "party": "Republican"
+        },
+        {
+          "name": "MARK W. HENNESSY",
+          "party": "Republican"
+        },
+        {
+          "name": "JOHN A. ISAKSON",
+          "party": "Republican"
+        },
+        {
+          "name": "CATHLEEN ALSTON LATHAM",
+          "party": "Republican"
+        },
+        {
+          "name": "DARYL MOODY",
+          "party": "Republican"
+        },
+        {
+          "name": "CORECO PEARSON",
+          "party": "Republican"
+        },
+        {
+          "name": "DAVID SHAFER",
+          "party": "Republican"
+        },
+        {
+          "name": "SHAWN STILL",
+          "party": "Republican"
+        },
+        {
+          "name": "C B YADAV",
+          "party": "Republican"
+        },
+        {
+          "name": "STACEY ABRAMS",
+          "party": "Democratic"
+        },
+        {
+          "name": "WENDY DAVIS",
+          "party": "Democratic"
+        },
+        {
+          "name": "BOBBY FUSE",
+          "party": "Democratic"
+        },
+        {
+          "name": "STEVE HENSON",
+          "party": "Democratic"
+        },
+        {
+          "name": "VAN JOHNSON",
+          "party": "Democratic"
+        },
+        {
+          "name": "FENIKA MILLER",
+          "party": "Democratic"
+        },
+        {
+          "name": "BEN MYERS",
+          "party": "Democratic"
+        },
+        {
+          "name": "RACHEL PAULE",
+          "party": "Democratic"
+        },
+        {
+          "name": "SACHIN VARGHESE",
+          "party": "Democratic"
+        },
+        {
+          "name": "CATHEREN WOOLARD",
+          "party": "Democratic"
+        },
+        {
+          "name": "CHRISTINE AUSTIN",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "STEPHANIE SAGE AYLWORTH",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "NELSON M. BARNHOUSE",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "ROBERT CORTEZ",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "DANNY DOLAN",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "ERIC FONTAINE",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "RYAN GRAHAM",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "GRETCHEN MANGAN",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "TED METZ",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "MARK MOSLEY",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "CHASE OLIVER",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "ROBERT ROUSE",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "DAVID R. SHOCK",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "JOHN TURPISH",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "LAURA WILLIAMS",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "NATHAN WILSON",
+          "party": "LIBERTARIAN"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "COUNTY COMMISSIONER, DISTRICT 2",
+      "district": {
+        "name": "2",
+        "id": "2"
+      },
+      "ballotPlacement": "1200",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "BOB ELLIS",
+          "party": "Republican"
+        },
+        {
+          "name": "JUSTIN HOLSOMBACK",
+          "party": "Democratic"
+        }
+      ]
+    }
+  ],
+  "state": [
+    {
+      "name": "Georgia",
+      "electionAdministrationBody": {
+        "name": "STATE Board of Elections",
+        "electionInfoUrl": "http://sos.ga.gov/index.php/elections",
+        "electionRegistrationUrl": "https://registertovote.sos.ga.gov/GAOLVR/",
+        "electionRegistrationConfirmationUrl": "https://www.mvp.sos.ga.gov/MVP/",
+        "absenteeVotingInfoUrl": "http://sos.ga.gov/index.php/Elections/absentee_voting_in_georgia",
+        "votingLocationFinderUrl": "https://www.mvp.sos.ga.gov/MVP/",
+        "ballotInfoUrl": "https://www.mvp.sos.ga.gov/MVP/",
+        "electionRulesUrl": "http://sos.ga.gov/index.php/Elections/register_to_vote",
+        "physicalAddress": {
+          "locationName": "STATE Board of Elections",
+          "line1": "2 MLK JR. DRIVE SUITE 802",
+          "line2": "FLOYD",
+          "line3": "WEST TOWER",
+          "city": "Atlanta",
+          "state": "GA",
+          "zip": "30334"
+        }
+      },
+      "local_jurisdiction": {
+        "name": "Fulton County",
+        "electionAdministrationBody": {
+          "electionInfoUrl": "http://www.fultoncountyga.gov/rae-home",
+          "physicalAddress": {
+            "line1": "130 PEACHTREE ST SW 2186",
+            "city": "ATLANTA",
+            "state": "GA",
+            "zip": "30303-3460"
+          },
+          "electionOfficials": [
+            {
+              "officePhoneNumber": "(404) 612-3816",
+              "emailAddress": "elections.voterregistration@fultoncountyga.gov"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "name": "DemocracyWorks",
+            "official": false
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "kind": "civicinfo#voterInfoResponse"
+}

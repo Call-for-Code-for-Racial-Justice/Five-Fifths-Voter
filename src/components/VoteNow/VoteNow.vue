@@ -66,7 +66,25 @@
             <div tabindex="0" class="cv-modal__before-content"></div>
             <div class="bx--modal-header">Acceptable IDs</div>
             <div class="bx--modal-content">
-              <p style>
+              <p v-if="stateVoterIdData.info">
+                <cv-link :href="stateVoterIdData.info" target="_blank">
+                  State voter ID information
+                </cv-link>
+                <span class="voter-id-validated">
+                  (Validated on
+                  {{ new Date(stateVoterIdData.date_gathered).toLocaleDateString() }} )
+                </span>
+                <span class="voter-id-notes"> {{ stateVoterIdData.notes }} </span>
+                <cv-list style="padding-left: 30px" class="list">
+                  <cv-list-item v-for="item in stateVoterIdData.list" :key="item">
+                    {{ item }}
+                  </cv-list-item>
+                </cv-list>
+                <cv-link :href="stateVoterIdData.more_info" target="_blank">
+                  More Information from your State
+                </cv-link>
+              </p>
+              <p v-else>
                 <cv-list style="padding-left: 30px" class="list">
                   <cv-list-item class="list-item"
                     >Any valid state or federal government issued photo ID, including a free ID Card
@@ -118,6 +136,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import MainContent from '../../components/MainContent';
 import router from '../../router';
 
@@ -128,9 +147,21 @@ export default {
     return {
       stateName: '',
       displayDialog: false,
+      allVoterIdData: {},
+      stateVoterIdData: {}
     };
   },
-
+  mounted() {
+    axios
+      .get(process.env.VUE_APP_SERVICE_API_HOST + '/voterids')
+      .then(response => {
+        this.allVoterIdData = response.data;
+      })
+      .catch(error => {
+        error;
+        this.allVoterIdData = {};
+      });
+  },
   created() {
     this.regData = this.$route.params.regData;
   },
@@ -140,6 +171,7 @@ export default {
     },
     onChange(event) {
       this.stateName = event;
+      this.stateVoterIdData = this.allVoterIdData[this.stateName];
       this.displayDialog = true;
     },
     showSofSSite() {
@@ -147,13 +179,12 @@ export default {
     },
     showTool() {
       window.open('https://tool.votinginfoproject.org', '_blank');
-    },
+    }
   },
-  mounted() {},
-  updated() {},
+  updated() {}
 };
 </script>
 
- <style lang="scss">
+<style lang="scss">
 @import './votenow.scss';
 </style>

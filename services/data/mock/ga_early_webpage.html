@@ -1,0 +1,2676 @@
+
+
+
+
+<!doctype html>
+<html>
+<head>
+	<script src="/Elections/js/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/Elections/js/jquery-1.7.2.min.js"><\/script>')</script>
+	<script type="text/javascript">
+		before = (new Date()).getTime();
+	</script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Advanced Voting Location Information</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="/Elections/css/base.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic" rel="stylesheet" type="text/css">
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" type="text/css" href="/Elections/css/ie8-and-down.css" />
+	<![endif]-->
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" type="text/css" href="/Elections/css/ie7-and-down.css" />
+	<![endif]-->	
+	<!-- <script src="/Elections/js/modernizr-2.5.3.min.js"></script> -->
+	<link rel="stylesheet" href="/Elections/css/googlefont.css">
+	<script type="text/javascript">
+	function goToGmap(pollPlaceAddr) {
+	 window.open(pollPlaceAddr,'_blank');
+	}
+	
+	 function getToPrevious() {
+	    document.form1.action="advancedVotingInfo.do";
+		document.form1.submit();
+	}
+	
+</script>
+<style type="text/css">
+.gmapbtn {padding: 5px 0px;}
+.btnLabel{font-weight:bold}
+</style>
+<script async src='/cdn-cgi/bm/cv/2172558837/api.js'></script></head>
+<body class="sub">
+	<!-- IconBar -->
+<div class="wrapper iconBar">
+		<div class="container iconBar">
+		<div id="icons" class="clearfix">
+			<ul>
+			    <li class="icon home active"><a href="http://sos.ga.gov/"><div class="iconInner"></div><div class="iconText">Home</div></a></li>
+				<li class="icon corp active "><a href="http://sos.ga.gov//?section=corporations"><div class="iconInner"></div><div class="iconText">Corporations</div></a></li>
+				<li class="icon elec active active"><a href="http://sos.ga.gov//?section=elections"><div class="iconInner"></div><div class="iconText">Elections</div></a></li>
+				<li class="icon lic active "><a href="http://sos.ga.gov//?section=licensing"><div class="iconInner"></div><div class="iconText">Licensing</div></a></li>
+				<li class="icon sec active "><a href="http://sos.ga.gov//?section=securities"><div class="iconInner"></div><div class="iconText">Securities</div></a></li>
+				<li class="icon char active "><a href="http://sos.ga.gov//?section=charities"><div class="iconInner"></div><div class="iconText">Charities</div></a></li>
+			</ul>
+		</div>
+		</div>	
+</div>	
+	<!-- end Icon Bar --> 
+	
+	<!-- Main Header -->
+	<div class="subHeaderOuter">
+		<div class="wrapper mainHeader sticky">
+			<div class="wrapper mainInner">
+				<div class="container mainHeader">
+		
+				</div>	
+			</div>
+		</div>
+	</div>		
+	
+	<!-- end Main Header -->
+	<!-- Main Navbar -->
+	<div class="navOuter mainOuter">
+		<div class="wrapper subNavBar elecNavBar ">
+			<div class="container mainNav clearfix">
+				<ul class="dropdown">
+  <li class="dd-item 497 " data-id="497">Voter Info. 
+    <ul class="dd-list">
+	  <li class="dd-item" data-id="2396">
+	    <a href="https://elections.sos.ga.gov/Elections/advancedVotingInfo.do"><div class="dd-handle">Advanced Voting Locations</div></a>
+	  </li>
+	  <li class="dd-item" data-id="2077">
+	    <a href="https://elections.sos.ga.gov/Elections/countyelectionoffices.do"><div class="dd-handle">Contact: Elections Supervisor</div></a>
+	  </li>
+	  <li class="dd-item" data-id="2078">
+	    <a href="https://elections.sos.ga.gov/Elections/countyregistrars.do"><div class="dd-handle">Contact: Registrar</div></a>
+	  </li>
+	  <li class="dd-item" data-id="1579">
+	    <a href="http://sos.ga.gov/index.php/elections/voters_with_disabilities"><div class="dd-handle">Voters with Disabilities</div></a>
+	  </li>
+	  <li class="dd-item" data-id="1052">
+	    <a href="http://sos.ga.gov/index.php/Elections/register_to_vote"><div class="dd-handle">Voter Registration</div></a>
+	  </li>
+	  <li class="dd-item" data-id="1111">
+	    <a href="http://sos.ga.gov/index.php/Elections/absentee_voting_in_georgia"><div class="dd-handle">Absentee Voting</div></a>
+	  </li>
+	  <li class="dd-item" data-id="1942">
+	    <a href="http://www.mvp.sos.ga.gov"><div class="dd-handle">My Voter Page</div></a>
+	  </li>
+	</ul>
+  </li>
+  <li class="dd-item 41 " data-id="41">Results & Stats 
+    <ul class="dd-list">
+	  <li class="dd-item" data-id="2395">
+	    <a href="http://sos.ga.gov/index.php/elections/2014-2016_county_1_sales_tax_results"><div class="dd-handle">2014-2016 County 1% Sales Tax Election Results</div></a>
+	  </li>
+	  <li class="dd-item" data-id="1126">
+	    <a href="http://sos.ga.gov/cgi-bin/salestaxelectionsindex.asp"><div class="dd-handle">1998-2013 County 1% Sales Tax Election Results</div></a>
+	  </li>
+	  <li class="dd-item" data-id="1920">
+	    <a href="http://sos.ga.gov/index.php/elections/order_voter_registration_lists_and_files"><div class="dd-handle">Order Voter Registration List & Files</div></a>
+	  </li>
+	  <li class="dd-item" data-id="120">
+	    <a href="http://sos.ga.gov/index.php/Elections/voter_turn_out_by_demographics"><div class="dd-handle">Turn Out by Demographics</div></a>
+	  </li>
+	  <li class="dd-item" data-id="119">
+	    <a href="http://sos.ga.gov/index.php/Elections/voter_registration_statistics"><div class="dd-handle">Registration Statistics</div></a>
+	  </li>
+	  <li class="dd-item" data-id="2382">
+	    <a href="http://sos.ga.gov/index.php/elections/voter_history_files"><div class="dd-handle">Voter History Files</div></a>
+	  </li>
+	  <li class="dd-item" data-id="118">
+	    <a href="http://sos.ga.gov/index.php/Elections/current_and_past_elections_results"><div class="dd-handle">Election Results</div></a>
+	  </li>
+	  <li class="dd-item" data-id="2063">
+	    <a href="http://sos.ga.gov/index.php/Elections/intent_to_tabulate_early"><div class="dd-handle">Intent to Tabulate Early</div></a>
+	  </li>
+	  <li class="dd-item" data-id="2218">
+	    <a href="https://elections.sos.ga.gov/Elections/voterabsenteefile.do"><div class="dd-handle">Voter Absentee Files</div></a>
+	  </li>
+	</ul>
+  </li>
+  <li class="dd-item 1135 " data-id="1135">Candidate Info. 
+    <ul class="dd-list">
+	  <li class="dd-item" data-id="1931">
+	    <a href="https://sos.ga.gov/index.php/elections/2020_Qualifying_Information_Packet"><div class="dd-handle">2020 Qualifying Packet</div></a>
+	  </li>
+	  <li class="dd-item" data-id="2160">
+	    <a href="https://elections.sos.ga.gov/GAElection/CandidateDetails"><div class="dd-handle">Qualified Candidate Information</div></a>
+	  </li>
+	  <li class="dd-item" data-id="1576">
+	    <a href="http://sos.ga.gov/index.php/Elections/information_for_candidates"><div class="dd-handle">Information for Candidates</div></a>
+	  </li>
+	  <li class="dd-item" data-id="1919">
+	    <a href="http://sos.ga.gov/index.php/elections/georgia_code_-_lexisnexis"><div class="dd-handle">Georgia Election Code</div></a>
+	  </li>
+	</ul>
+  </li>
+  <li class="dd-item 1132 " data-id="1132">County & Agency 
+    <ul class="dd-list">
+	  <li class="dd-item" data-id="1577">
+	    <a href="http://sos.ga.gov/Elections/CountyContacts/CountyLiaisonDisplay.aspx"><div class="dd-handle">County Liaison Directory</div></a>
+	  </li>
+	  <li class="dd-item" data-id="1134">
+	    <a href="http://sos.ga.gov/index.php/Elections/election_connection"><div class="dd-handle">Election Connection</div></a>
+	  </li>
+	  <li class="dd-item" data-id="1133">
+	    <a href="http://sos.ga.gov/index.php/Elections/county_connect"><div class="dd-handle">County Connect</div></a>
+	  </li>
+	</ul>
+  </li>				
+</ul>
+				
+			</div>
+		</div>
+	</div>
+	<!-- end Main Navbar -->
+
+	<!-- Sub Body -->
+	<br class="clear"/>
+	<br class="clear"/>
+<form id="advancePollForm" name="form1" action="/Elections/advancedVotingInfo.do" method="post">
+<div class="wrapper">
+<div class="elecWrapper ">
+<div class="container">
+<div class="subBody  elections">
+<h2>
+<table>
+<tr>
+	<td><div class="headIcon"></div></td>
+	<td><div class="headText">Elections Division</div></td>
+</tr>
+</table>
+</h2>
+</H2>
+
+    <table align="center" border="0" width="800" cellpadding="4" cellspacing="2" id="Table1">
+      <tbody>
+        <tr>
+	      <td>
+            <p align="center">&nbsp;</p>
+            <h3>Advanced Voting Location Information</h3>
+            <hr>
+            <strong>FULTON County</strong><br/>
+             <table align="left" cellspacing="1" cellpadding="1">
+           
+            
+             
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>- AA- MOBILE VOTING BUS 1</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/13/2020 - 10/30/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>000 WEBSITE FOR LOCATIONS</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>CHECK FULTON COUNTY, GA 30303 - 3030</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/000+WEBSITE+FOR+LOCATIONS+CHECK+FULTON+COUNTY,+GA,+30303+-+3030');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>-AA- MOBILE VOTING BUS 2</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/30/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>00 CHECK FULTON COUNTY</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>WEBSITE FOR LOCATION, GA 30303</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/00+CHECK+FULTON+COUNTY+WEBSITE+FOR+LOCATION,+GA,+30303');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - ALPHARETTA BRANCH LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/26/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>10 PARK PLAZA</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ALPHARETTA, GA 30009</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/10+PARK+PLAZA+ALPHARETTA,+GA,+30009');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - ATLANTA METROPOLITAN STATE COLLEGE</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/16/2020 - 10/17/2020 08:30 AM - 06:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>1630 METROPOLITAN PARKWAY SW</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30310</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/1630+METROPOLITAN+PARKWAY+SW+ATLANTA,+GA,+30310');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - BUCKHEAD LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>269 BUCKHEAD AVENUE NE</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30305</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/269+BUCKHEAD+AVENUE+NE+ATLANTA,+GA,+30305');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - C.T MARTIN NATATORIUM AND RECREATION CENTER</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>3201 MARTIN LUTHER KING JR. DR., S.W.</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30311</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/3201+MARTIN+LUTHER+KING+JR.+DR.,+S.W.+ATLANTA,+GA,+30311');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - CHASTAIN PARK GYMNASIUM</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>140 WEST WIEUCA ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30342</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/140+WEST+WIEUCA+ROAD+ATLANTA,+GA,+30342');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - CRABAPPLE NEIGHBORHOOD SENIOR CENTER</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/15/2020 - 10/16/2020 08:30 AM - 06:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>12624 BROADWELL ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ALPHARETTA, GA 30004</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/12624+BROADWELL+ROAD+ALPHARETTA,+GA,+30004');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - DOROTHY BENSON SENIOR MULTIPURPOSE</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>6500 VERNON WOODS DRIVE NE</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>SANDY SPRINGS, GA 30328</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/6500+VERNON+WOODS+DRIVE+NE+SANDY+SPRINGS,+GA,+30328');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - EAST ROSWELL LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>2301 HOLCOMB BRIDGE ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ROSWELL, GA 30076</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/2301+HOLCOMB+BRIDGE+ROAD+ROSWELL,+GA,+30076');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - EASTPOINT LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>2757 MAIN</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>EAST POINT, GA 30344</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/2757+MAIN+EAST+POINT,+GA,+30344');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - ETRIS COMMUNITY RECREATION CENER</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>5285 LAKESIDE DR</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>UNION CITY, GA 30291</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/5285+LAKESIDE+DR+UNION+CITY,+GA,+30291');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - GEORGIA INSTITIUTE OF TECHNOLOGY   MCCAMISH PAVILLION</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/21/2020 - 10/23/2020 08:30 AM - 06:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>965 FOWLER STREET, NW</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30318</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/965+FOWLER+STREET,+NW+ATLANTA,+GA,+30318');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - GLADYS S. DENNARD LIBRARY AT SOUTH FULTON</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>4055 FLAT SHOALS ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>UNION, GA 30291</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/4055+FLAT+SHOALS+ROAD+UNION,+GA,+30291');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - H.J.C. BOWDEN SENIOR MULTI-PURPOSE FACILITY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/13/2020 - 10/30/2020 09:00 AM - 05:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>2885 CHURCH STREET</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>EAST POINT, GA 30344</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/2885+CHURCH+STREET+EAST+POINT,+GA,+30344');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - JOHNS CREEK ENVIRONMENTAL CAMPUS</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>8100 HOLCOMB BRIDGE ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ALPHARETTA, GA 30022</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/8100+HOLCOMB+BRIDGE+ROAD+ALPHARETTA,+GA,+30022');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - METROPOLITAN LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>1332 METROPOLITAN PARKWAY</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30310</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/1332+METROPOLITAN+PARKWAY+ATLANTA,+GA,+30310');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - MILTON LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>855 MAYFIELD ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>MILTON, GA 30009</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/855+MAYFIELD+ROAD+MILTON,+GA,+30009');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - NEW BEFINNINGS SENIOR CENTER</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>66 BROOKS DRIVE</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>FAIRBUEN, GA 30213</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/66+BROOKS+DRIVE+FAIRBUEN,+GA,+30213');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - NORTH FULTON ANNEX</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>7741 ROSWELL RD NE</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>SANDY SPRINGS, GA 30350</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/7741+ROSWELL+RD+NE+SANDY+SPRINGS,+GA,+30350');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - NORTH/EAST SPRUILL OAKS LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>9500 SPRUILL ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>JOHNS CREEK, GA 30022</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/9500+SPRUILL+ROAD+JOHNS+CREEK,+GA,+30022');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - NORTHSIDE BRANCH LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 09:08 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>3295 NORTHSIDE PARKWAY</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30327</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/3295+NORTHSIDE+PARKWAY+ATLANTA,+GA,+30327');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - NORTHWEST BRANCH AT SCOTTS CROSSING</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 07:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>2489 PERRY BOULEVARD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30318</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/2489+PERRY+BOULEVARD+ATLANTA,+GA,+30318');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - OCEE LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>5090 ABBOTTS BRIDGE ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ALPHARETTA, GA 30005</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/5090+ABBOTTS+BRIDGE+ROAD+ALPHARETTA,+GA,+30005');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - PALMETTO LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>9111 CASCADE PALMETTO HWY.</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>PALMETTO, GA 30268</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/9111+CASCADE+PALMETTO+HWY.+PALMETTO,+GA,+30268');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - PARK PLACE AT NEWTOWN SCHOOL</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 07:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>3125 OLD ALABAMA ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>JOHNS CREEK, GA 30022</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/3125+OLD+ALABAMA+ROAD+JOHNS+CREEK,+GA,+30022');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - PONCE DE LEON LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>980 PONCE DE LEON AVE., NE</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>, GA 30306</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/980+PONCE+DE+LEON+AVE.,+NE,+GA,+30306');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - QUALITY LIVING SERVICES SENIOR FACILITY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/23/2020 - 10/24/2020 08:30 AM - 06:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>4001 DANFORTH ROAD SW</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30331</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/4001+DANFORTH+ROAD+SW+ATLANTA,+GA,+30331');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - ROSWELL BRANCH LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>115 NORCROSS STREET</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ROSWELL, GA 30075</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/115+NORCROSS+STREET+ROSWELL,+GA,+30075');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - SANDY SPRINGS BRANCH LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/30/2020 09:00 AM - 05:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>395 MOUNT VERNON HIGHWAY, NE</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>SANDY SPRINGS, GA 30328</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/395+MOUNT+VERNON+HIGHWAY,+NE+SANDY+SPRINGS,+GA,+30328');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - SOUTH FULTON ANNEX</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 09:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>5600 STONEWALL TELL ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>COLLEGE PARK, GA 30349</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/5600+STONEWALL+TELL+ROAD+COLLEGE+PARK,+GA,+30349');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - SOUTHWEST ARTS CENTER</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>915 NEW HOPE ROAD, SW</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30331</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/915+NEW+HOPE+ROAD,+SW+ATLANTA,+GA,+30331');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - STATE FARM ARENA</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>1 STATE FARM</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30303</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/1+STATE+FARM+ATLANTA,+GA,+30303');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - WELCOME ALL PARK RECREATION CENTER</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>4255 WILL LEE ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>COLLEGE PARK, GA 30349</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/4255+WILL+LEE+ROAD+COLLEGE+PARK,+GA,+30349');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA - WOLF CREEK LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>3100 ENON ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30331</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/3100+ENON+ROAD+ATLANTA,+GA,+30331');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA- ADAMS PARK LIBRARY</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>2231 CAMPBELLTON ROAD</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30331</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/2231+CAMPBELLTON+ROAD+ATLANTA,+GA,+30331');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA- GEORGIA INTERNATIONAL CONVENTION  CENTER</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>2000 CONVENTION CENTER</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>COLLEGE PARK, GA 30337</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/2000+CONVENTION+CENTER+COLLEGE+PARK,+GA,+30337');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA- GEORGIA STATE UNIVERSITY   STUDENT CENTER EAST </td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/27/2020 - 10/29/2020 09:00 AM - 05:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>55 GILMER STREET SE</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30303</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/55+GILMER+STREET+SE+ATLANTA,+GA,+30303');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+             
+             <tr>
+               <td>
+                 <label class="btnLabel">Election:&nbsp;&nbsp;</label>
+               </td>
+                 <td><strong>NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION</strong> </td>
+             </tr>
+             
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Poll Place Name:&nbsp;&nbsp;</label>
+                </td>
+                <td>AA- HIGH MUSEUM OF ART</td>
+             </tr>
+             
+              <tr>
+                <td>
+                  <label class="btnLabel">Timings:&nbsp;&nbsp;</label> 
+                </td>
+                <td>
+                  <table align="left">
+                  
+                    <tr><td><label>10/12/2020 - 10/16/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/17/2020 - 10/17/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/18/2020 - 10/18/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/19/2020 - 10/23/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/24/2020 - 10/24/2020 08:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/25/2020 - 10/25/2020 10:00 AM - 06:00 PM</label></td></tr>
+                  
+                    <tr><td><label>10/26/2020 - 10/30/2020 07:00 AM - 07:00 PM</label></td></tr>
+                  
+                  </table>
+                </td>
+             </tr>
+             
+               <tr>
+                 <td>
+                   <label class="btnLabel">Address:&nbsp;&nbsp;</label>
+                 </td>
+                 <td>1280 PEACHTREE STREET NE</td>
+               </tr>
+             
+             
+             
+             <tr>
+             <td>&nbsp;</td>
+             <td>
+             <label>ATLANTA, GA 30309</label>
+             </td></tr>
+             
+             <tr>
+             <td class="gmapbtn" colspan="2" align="center">
+             <input type="button" value="Directions to Polling Place" class="btnLabel" name="pollPlaceDir" id="pollPlaceDir" onclick="goToGmap('https://www.google.com/maps/search/1280+PEACHTREE+STREET+NE+ATLANTA,+GA,+30309');">
+             </td>
+             </tr>
+             <tr>
+             <td colspan="2"></td>
+             </tr>
+            
+            
+            
+           
+             </table>
+          </td>
+        </tr>
+        <tr>
+         <td align="center">
+         <input type="button" value="Back" name="backBtn" id="backBtn" onclick="getToPrevious();">
+          <br/>
+         <p>&nbsp;</p>
+           &nbsp;
+         </td>
+        </tr>
+       
+      </tbody>
+    </table>
+</div>
+
+<div class="container subFooter">
+	<div class="footerInner">
+		<div class="footLinks left">
+			<div style="margin-bottom:12px"><a href="http://sos.ga.gov/index.php/general/secretary_brad_raffensperger" style="">OFFICE OF BRAD RAFFENSPERGER</a><br/></div>
+			<div style="margin-bottom:12px"><a href="http://sos.ga.gov/index.php/general/news">NEWS & ANNOUNCEMENTS</a><br/></div>
+			<div style="margin-bottom:12px"><a href="http://sos.ga.gov/index.php/general/download_print_and_press_materials2">PRESS & MEDIA KIT</a><br/></div>
+			<a href="http://sos.ga.gov/index.php/general/privacy_policy">PRIVACY POLICY</a><br/>
+		</div>
+		
+		<div class="footLogo left">
+			
+		</div>
+		
+		<div class="footContact left">
+			<h3>Contact</h3>
+			 214 State Capitol<br/>
+			Atlanta, Georgia 30334<br/>
+			844.753.7825<br/>
+			<a href="http://sos.ga.gov/cgi-bin/email.asp">E-Mail</a>
+			<br/>
+			© 2018  Georgia Secretary of State
+		</div>
+		<br class="clear" />
+</div>
+
+</div></div></div>
+</form>
+<script src="/Elections/js/plugins.js"></script>
+<script src="/Elections/js/jquery.pageslide.min.js"></script>
+<script src="/Elections/js/sub.js"></script>
+<script src="/Elections/js/groups.js"></script>
+<script src="/Elections/js/functions.js"></script>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'5e78d18dcf081833',m:'272c8b13f7a90eaa9006949cd531234bb56d5074-1603596203-1800-AVjW8IHgNZHbjl6rQ/epGiGIW1DBjpLp1RFWdt/jglhLVszLSFHQ07o7fqsOIGwcMjNPtIj/cQFrRyRMJi4SXWF6whntSZmLT379yVDOQwB8Fxq1pOPRCsEPKegt0clzeJnVz+KvcCUSbWWq4zA4F5rluCkJ9/H7VdOKwrdrgoUncpR2TFQbihi90Sf0yPd0+pRCmhJONPfuoNyUV/WrPAgN+U+zratPkVtK5KYxB0FB',s:[0x4132eec092,0xbbb98e72b5],}})();</script></body>
+</html>

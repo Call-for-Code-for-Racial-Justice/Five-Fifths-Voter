@@ -1,0 +1,14 @@
+{
+  "info": "https://sos.ga.gov/index.php/elections/georgia_voter_identification_requirements2",
+  "list": [
+    "Any valid state or federal government issued photo ID, including a free ID Card issued by your county registrar's office or the Georgia Department of Driver Services (DDS)",
+    "A Georgia Driver's License, even if expired",
+    "Valid employee photo ID from any branch, department, agency, or entity of the U.S. Government, Georgia, or any county, municipality, board, authority or other entity of this state",
+    "Valid U.S. passport ID",
+    "Valid U.S. military photo ID",
+    "Valid tribal photo ID"
+  ],
+  "notes": "If you do not have one of the six acceptable forms of photo ID, the State of Georgia offers a free ID Card. An ID card can be issued at any county registrar's office or Department of Driver Services Office free of charge.",
+  "more_info": "https://sos.ga.gov/admin/files/GAID_Req_Brochure.pdf",
+  "date_gathered": "2020-10-25"
+}
