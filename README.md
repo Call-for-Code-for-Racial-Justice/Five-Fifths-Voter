@@ -47,6 +47,8 @@ The IBM Call for Code for Policy & Legislation Reform has developed a solution t
 # How it works
 # Architecture
 
+![Architecture](doc/five-fifths-voter-flow.png)
+
 ![System Context](doc/SystemContext.png)
 
 ![Components](doc/Components.png)
