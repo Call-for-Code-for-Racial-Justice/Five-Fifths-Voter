@@ -3,9 +3,9 @@
     <template v-slot:content>
       <aside class="aside">
         <div class="aside__container--text">
-          <h2 class="aside__header">Candidates, Deadlines and Resources</h2>
+          <h2 class="aside__header">Candidates, deadlines and resources</h2>
           <cv-dropdown
-            class="cv-dropdown"
+            class="dropdown"
             placeholder="Choose your state for information"
             @change="onChange($event)"
           >
@@ -64,9 +64,7 @@
           </cv-dropdown>
           <div v-if="displayDialog" class="bx--modal-container">
             <div tabindex="0" class="cv-modal__before-content"></div>
-            <div class="bx--modal-header">
-              Acceptable IDs
-            </div>
+            <div class="bx--modal-header">Acceptable IDs</div>
             <div class="bx--modal-content">
               <p style>
                 <cv-list style="padding-left: 30px" class="list">
@@ -129,7 +127,7 @@ export default {
   data() {
     return {
       stateName: '',
-      displayDialog: false
+      displayDialog: false,
     };
   },
 
@@ -149,9 +147,13 @@ export default {
     },
     showTool() {
       window.open('https://tool.votinginfoproject.org', '_blank');
-    }
+    },
   },
   mounted() {},
-  updated() {}
+  updated() {},
 };
 </script>
+
+ <style lang="scss">
+@import './votenow.scss';
+</style>

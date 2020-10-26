@@ -15,7 +15,7 @@
 .article__quote {
   @include carbon--type-style('quotation-01');
   display: block;
-  margin-bottom: $spacing-07;
+  margin-bottom: $spacing-05;
 }
 
 .quote--author {
@@ -23,11 +23,10 @@
 }
 
 .article__content {
-  max-width: 550px;
-  margin-left: $spacing-05;
+  max-width: 700px;
 
   @media (min-width: 1056px) {
-    padding-right: $layout-05;
+    max-width: 400px;
   }
 }
 
@@ -42,7 +41,6 @@
 .article__heading {
   @include carbon--type-style('productive-heading-05');
   line-height: 4rem;
-  margin-bottom: calc(#{$spacing-05} + #{$spacing-02});
 }
 
 .article__paragraph {

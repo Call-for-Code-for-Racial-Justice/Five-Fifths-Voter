@@ -53,6 +53,10 @@
   left: 0;
   width: 100%;
   max-width: 100%;
+
+  @media (min-width: 672px) {
+    max-height: 500px;
+  }
 }
 
 .bx--aspect-ratio:after {
@@ -77,10 +81,15 @@
 }
 
 .impactFeatureCard .bx--resource-card .bx--tile {
+  max-height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   background-color: #0f62fe;
   color: #fff;
 
   @media (min-width: 672px) {
+    max-width: 100%;
     margin-right: $spacing-05;
   }
 }
@@ -166,10 +175,11 @@
   top: 0;
   left: 0;
   color: #fff;
-  padding: $spacing-05;
+  padding: 0 $spacing-05 0 0;
 
-  @media (min-width: 672px) {
-    padding: calc(#{$spacing-05} + 48px); //48px is size of nav bar
+  @media (min-width: 400px) {
+    // custom breakpoint -- not changing at 672 like the default behavior suggests.
+    padding: calc(#{$spacing-05} + 48px) $spacing-05; //48px is size of nav bar
   }
 
   @media (min-width: 1056px) {
@@ -209,7 +219,12 @@
 
 .hero__quote {
   @include carbon--type-style('quotation-01');
+  font-size: 14px;
   max-width: 400px;
+
+  @media (min-width: 672px) {
+    font-size: 16px;
+  }
 }
 
 .hero__author {
@@ -222,4 +237,10 @@
   right: $spacing-06;
   min-height: 184px;
   min-width: 400px;
+}
+
+.bx--resource-card__icon--action {
+  //carbon override
+  top: 1rem;
+  bottom: 0;
 }

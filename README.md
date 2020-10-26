@@ -1,28 +1,28 @@
 ![Vision](doc/5-fifths-banner-1.png)
 
-# Five Fifths Voter Starter Kit
+# Five Fifths Voter Solution Starter
 
 This solution starter was created by technologists from IBM.
 
 # Authors
 
-* **Alexandria Leggett**  _Team Leader| Product Offering Manager_ 
-* **Andrea Lucas**  _Technical Architect| Product Offering Manager_
-* **Yolanda Rabun**- _Lead Generalist_
+* **Alexandria Leggett**  Product Offering Manager & Creative Director
+* **Andrea Lucas**  Product Offering Manager & Technical Director
+* **Yolanda Rabun** _Lead Generalist_
 * **Denise Knorr** _Operations Director_
-* **Evelyn R. Anderson** _Master Inventor_
+* **Evelyn R. Anderson** _Sr. Security & IP Advisor_
 * **Sebastian Huynh** _Lead Designer_
 * **David Nixon** _Developer_ 
 * **Gerald Mitchell** _Developer_
 * **Syd Bailey** _Developer_
 * **Ann Umberhocker** _Developer_
 * **Shrey Anand** _Developer_
-* **Alexandra Devine** _Data Scientist_ 
+* **Alexandra Devine** Designer & IP Strategist 
 * **Dylan Zucker** _Data Scientist_
 * **Kristen Ray** _Data Scientist_ 
 * **Chris Stefano** _Generalist_
 * **Ricky Ellison** _Generalist_
-* **Mike Boone** _Security Lead_
+* **Mike Boone** _Sr. Security & IP Advisor_
 
 
 # What is the problem?
@@ -59,6 +59,7 @@ The IBM Call for Code for Policy & Legislation Reform has developed a solution t
 - [Twitter API](https://developer.twitter.com/en/docs/twitter-api)
 - [Vote.org Civic engagement tools](https://www.vote.org/technology/)
 - [The Voting Information Project](https://www.votinginfoproject.org/)
+- [Vote 411 Election Information](https://www.vote411.org/)
 
 # Technology
 ## IBM technology
