@@ -1,0 +1,15 @@
+{
+  "info": "https://idahovotes.gov/identification-requirements/",
+  "list": [
+    "An Idaho driver’s license or Idaho photo identification card.",
+    "A U.S. passport or Federal photo identification card.",
+    "A tribal photo identification card.",
+    "A current student photo ID, issued by an Idaho high school or post secondary education institution.",
+    "A license to carry a concealed weapon issued by a county sheriff in Idaho."
+  ],
+  "notes": [
+    "As outlined in Idaho Statute §34-1113, a registered voter must present a photo ID. (A voter without photo ID may sign a Personal Identification Affidavit instead."
+  ],
+  "more_info": ["https://idahovotes.gov/voting/"],
+  "date_gathered": "2020-10-25"
+}

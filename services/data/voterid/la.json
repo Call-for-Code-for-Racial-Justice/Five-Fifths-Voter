@@ -1,0 +1,15 @@
+{
+  "info": "https://www.sos.la.gov/ElectionsAndVoting/Vote/VoteOnElectionDay/Pages/default.aspx",
+  "list": [
+    "a driver's license",
+    "a Louisiana Special ID",
+    "LA Wallet digital driver's license",
+    "a United States military identification card that contains the applicant's name and picture",
+    "some other generally recognized picture ID that contains your name and signature"
+  ],
+  "notes": [
+    "If you do not have one of the acceptable forms of ID, you may still cast your vote by signature on a voter affidavit. You may get a free Louisiana Special ID at the Office of Motor Vehicles by showing your voter information card. If you have misplaced your voter information card, contact your registrar of voters for a new one or print your own by logging into the Louisiana Voter Portal as a voter. Click the 'Voter Registration' tab at the top then click the 'Print Voter Information' link located on the ribbon on the left-hand side."
+  ],
+  "more_info": ["https://voterportal.sos.la.gov/", "https://voterportal.sos.la.gov/registrar"],
+  "date_gathered": "2020-10-30"
+}

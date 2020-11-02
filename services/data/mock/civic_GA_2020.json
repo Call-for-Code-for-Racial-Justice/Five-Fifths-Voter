@@ -1,0 +1,1308 @@
+{
+  "election": {
+    "id": "7000",
+    "name": "US 2020 General Election",
+    "electionDay": "2020-11-03",
+    "ocdDivisionId": "ocd-division/country:us"
+  },
+  "normalizedInput": {
+    "line1": "4025 Crabapple Lake Court",
+    "city": "Roswell",
+    "state": "GA",
+    "zip": "30076"
+  },
+  "earlyVoteSites": [
+    {
+      "address": {
+        "locationName": "AA - MILTON LIBRARY",
+        "line1": "855 Mayfield Road",
+        "city": "Milton",
+        "state": "GA",
+        "zip": "30009"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.0901142,
+      "longitude": -84.3362718,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - ROSWELL BRANCH LIBRARY",
+        "line1": "115 Norcross Street",
+        "city": "Roswell",
+        "state": "GA",
+        "zip": "30075"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 8 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.0249952,
+      "longitude": -84.3579018,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - ALPHARETTA BRANCH LIBRARY",
+        "line1": "10 Park Plaza",
+        "city": "Alpharetta",
+        "state": "GA",
+        "zip": "30009"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm",
+      "latitude": 34.0739169,
+      "longitude": -84.2922893,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-26",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - NORTH FULTON ANNEX",
+        "line1": "7741 Roswell Road Northeast",
+        "city": "Sandy Springs",
+        "state": "GA",
+        "zip": "30350"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.9658857,
+      "longitude": -84.3626524,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - EAST ROSWELL LIBRARY",
+        "line1": "2301 Holcomb Bridge Road",
+        "city": "Roswell",
+        "state": "GA",
+        "zip": "30076"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.0029406,
+      "longitude": -84.2944889,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - PARK PLACE AT NEWTOWN SCHOOL",
+        "line1": "3125 Old Alabama Road",
+        "city": "Johns Creek",
+        "state": "GA",
+        "zip": "30022"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.0208269,
+      "longitude": -84.2685781,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - OCEE LIBRARY",
+        "line1": "5090 Abbotts Bridge Road",
+        "city": "Alpharetta",
+        "state": "GA",
+        "zip": "30005"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.0646462,
+      "longitude": -84.2096406,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - DOROTHY BENSON SENIOR MULTIPURPOSE",
+        "line1": "6500 Vernon Woods Drive Northeast",
+        "city": "Sandy Springs",
+        "state": "GA",
+        "zip": "30328"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.9293263,
+      "longitude": -84.3779565,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - SANDY SPRINGS BRANCH LIBRARY",
+        "line1": "395 Mount Vernon Highway Northeast",
+        "city": "Sandy Springs",
+        "state": "GA",
+        "zip": "30328"
+      },
+      "pollingHours": "Thu, Oct 22: 9 am - 5 pm\nFri, Oct 23: 9 am - 5 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 9 am - 5 pm\nMon, Oct 26: 9 am - 5 pm\nTue, Oct 27: 9 am - 5 pm\nWed, Oct 28: 9 am - 5 pm\nThu, Oct 29: 9 am - 5 pm\nFri, Oct 30: 9 am - 5 pm",
+      "latitude": 33.924002,
+      "longitude": -84.37442,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - NORTH/EAST SPRUILL OAKS LIBRARY",
+        "line1": "9500 Spruill Road",
+        "city": "Johns Creek",
+        "state": "GA",
+        "zip": "30022"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.0133186,
+      "longitude": -84.2232089,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - JOHNS CREEK ENVIRONMENTAL CAMPUS",
+        "line1": "8100 Holcomb Bridge Road",
+        "city": "Alpharetta",
+        "state": "GA",
+        "zip": "30022"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.9769675,
+      "longitude": -84.2668915,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - CHASTAIN PARK GYMNASIUM",
+        "line1": "140 West Wieuca Road Northeast",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30342"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.8786735,
+      "longitude": -84.3815891,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - BUCKHEAD LIBRARY",
+        "line1": "269 Buckhead Avenue Northeast",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30305"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 8 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.8376168,
+      "longitude": -84.3793961,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - NORTHSIDE BRANCH LIBRARY",
+        "line1": "3295 Northside Parkway Northwest",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30327"
+      },
+      "pollingHours": "Thu, Oct 22: 9:08 am - 6:00 pm\nFri, Oct 23: 9:08 am - 6:00 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.845106,
+      "longitude": -84.4253497,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - PONCE DE LEON LIBRARY",
+        "line1": "980 Ponce De Leon Avenue Northeast",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30306"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.7740557,
+      "longitude": -84.3551871,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA- HIGH MUSEUM OF ART",
+        "line1": "1280 Peachtree Street Northeast",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30309"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.7895499,
+      "longitude": -84.3844148,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA- GEORGIA STATE UNIVERSITY   STUDENT CENTER EAST ",
+        "line1": "55 Gilmer Street Southeast",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30303"
+      },
+      "pollingHours": "Tue, Oct 27: 9 am - 5 pm\nWed, Oct 28: 9 am - 5 pm\nThu, Oct 29: 9 am - 5 pm",
+      "latitude": 33.7527333,
+      "longitude": -84.384904,
+      "startDate": "2020-10-27",
+      "endDate": "2020-10-29",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - STATE FARM ARENA",
+        "line1": "1 State Farm Drive",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30303"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.7572331,
+      "longitude": -84.3963403,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - NORTHWEST BRANCH AT SCOTTS CROSSING",
+        "line1": "2489 Perry Boulevard Northwest",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30318"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 7 pm\nFri, Oct 23: 8 am - 7 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.8052817,
+      "longitude": -84.4699555,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - METROPOLITAN LIBRARY",
+        "line1": "1332 Metropolitan Parkway Southwest",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30310"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.718882,
+      "longitude": -84.4073356,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - C.T MARTIN NATATORIUM AND RECREATION CENTER",
+        "line1": "3201 Martin Luther King Junior Drive Southwest",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30311"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.7541215,
+      "longitude": -84.4918471,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA- ADAMS PARK LIBRARY",
+        "line1": "2231 Campbellton Road Southwest",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30331"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.7056988,
+      "longitude": -84.4616893,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - EASTPOINT LIBRARY",
+        "line1": "2757 Main Street",
+        "city": "East Point",
+        "state": "GA",
+        "zip": "30344"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.6803507,
+      "longitude": -84.4406947,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - SOUTHWEST ARTS CENTER",
+        "line1": "915 New Hope Road Southwest",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30331"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.7296843,
+      "longitude": -84.5415544,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA- GEORGIA INTERNATIONAL CONVENTION  CENTER",
+        "line1": "AA- GEORGIA INTERNATIONAL CONVENTION CENTER 2000 CONVENTION CENTER",
+        "city": "College Park",
+        "state": "GA",
+        "zip": "30337"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.6451701,
+      "longitude": -84.4578224,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - WOLF CREEK LIBRARY",
+        "line1": "3100 Enon Road",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30331"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 8 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.6725152,
+      "longitude": -84.5741367,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - WELCOME ALL PARK RECREATION CENTER",
+        "line1": "4255 Will Lee Road",
+        "city": "College Park",
+        "state": "GA",
+        "zip": "30349"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.632005,
+      "longitude": -84.5262976,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - GLADYS S. DENNARD LIBRARY AT SOUTH FULTON",
+        "line1": "4055 Flat Shoals Road",
+        "city": "Union City",
+        "state": "GA",
+        "zip": "30291"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.5878106,
+      "longitude": -84.5195155,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - SOUTH FULTON ANNEX",
+        "line1": "5600 Stonewall Tell Road",
+        "city": "College Park",
+        "state": "GA",
+        "zip": "30349"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 9 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.6014156,
+      "longitude": -84.5498808,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - ETRIS COMMUNITY RECREATION CENER",
+        "line1": "5285 Lakeside Drive",
+        "city": "Union City",
+        "state": "GA",
+        "zip": "30291"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.587524,
+      "longitude": -84.5572347,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - NEW BEFINNINGS SENIOR CENTER",
+        "line1": "66 Brooks Drive",
+        "city": "Fairburn",
+        "state": "GA",
+        "zip": "30213"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 10 am - 6 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.5609157,
+      "longitude": -84.5871864,
+      "startDate": "2020-10-12",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "AA - PALMETTO LIBRARY",
+        "line1": "9111 Cascade Palmetto Highway",
+        "city": "Palmetto",
+        "state": "GA",
+        "zip": "30268"
+      },
+      "pollingHours": "Thu, Oct 22: 8 am - 6 pm\nFri, Oct 23: 8 am - 6 pm\nSat, Oct 24: 8 am - 6 pm\nSun, Oct 25: 8 am - 6 pm\nMon, Oct 26: 8 am - 6 pm\nTue, Oct 27: 8 am - 6 pm\nWed, Oct 28: 8 am - 6 pm\nThu, Oct 29: 8 am - 6 pm\nFri, Oct 30: 8 am - 6 pm",
+      "latitude": 33.5305862,
+      "longitude": -84.6643812,
+      "startDate": "2020-10-19",
+      "endDate": "2020-10-30",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "contests": [
+    {
+      "type": "General",
+      "office": "PRESIDENT OF THE UNITED STATES",
+      "district": {
+        "name": "STATE",
+        "scope": "statewide"
+      },
+      "ballotPlacement": "1",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "DONALD J. TRUMP",
+          "party": "Republican"
+        },
+        {
+          "name": "JOSEPH R. BIDEN",
+          "party": "Democratic"
+        },
+        {
+          "name": "JO JORGENSEN",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "BARBARA BELLAR",
+          "party": "Write-In"
+        },
+        {
+          "name": "DON BLANKENSHIP",
+          "party": "Write-In"
+        },
+        {
+          "name": "R19 BODDIE",
+          "party": "Write-In"
+        },
+        {
+          "name": "PRESIDENT R19 BODDIE",
+          "party": "Write-In"
+        },
+        {
+          "name": "DAVID C. BYRNE",
+          "party": "Write-In"
+        },
+        {
+          "name": "BRIAN CARROLL",
+          "party": "Write-In"
+        },
+        {
+          "name": "MARK CHARLES",
+          "party": "Write-In"
+        },
+        {
+          "name": "LOREN COLLINS",
+          "party": "Write-In"
+        },
+        {
+          "name": "KATHRYN GIBSON",
+          "party": "Write-In"
+        },
+        {
+          "name": "HOWIE HAWKINS",
+          "party": "Write-In"
+        },
+        {
+          "name": "SHAWN HOWARD",
+          "party": "Write-In"
+        },
+        {
+          "name": "PRINCESS JACOB - FAMBRO",
+          "party": "Write-In"
+        },
+        {
+          "name": "GLORIA LA RIVA",
+          "party": "Write-In"
+        },
+        {
+          "name": "DEBORAH ROUSE",
+          "party": "Write-In"
+        },
+        {
+          "name": "PETER SHERRILL",
+          "party": "Write-In"
+        },
+        {
+          "name": "JADE SIMMONS",
+          "party": "Write-In"
+        },
+        {
+          "name": "KASEY WELLS",
+          "party": "Write-In"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "UNITED STATES SENATOR, PERDUE",
+      "district": {
+        "name": "STATE",
+        "scope": "statewide"
+      },
+      "ballotPlacement": "2",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "DAVID A. PERDUE",
+          "party": "Republican"
+        },
+        {
+          "name": "JON OSSOFF",
+          "party": "Democratic"
+        },
+        {
+          "name": "SHANE HAZEL",
+          "party": "LIBERTARIAN"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "UNITED STATES SENATOR, LOEFFLER",
+      "district": {
+        "name": "STATE",
+        "scope": "statewide"
+      },
+      "ballotPlacement": "3",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "DOUG COLLINS",
+          "party": "Republican"
+        },
+        {
+          "name": "DERRICK E. GRAYSON",
+          "party": "Republican"
+        },
+        {
+          "name": "ANNETTE DAVIS JACKSON",
+          "party": "Republican"
+        },
+        {
+          "name": "A. WAYNE JOHNSON",
+          "party": "Republican"
+        },
+        {
+          "name": "KELLY LOEFFLER",
+          "party": "Republican"
+        },
+        {
+          "name": "KANDISS TAYLOR",
+          "party": "Republican"
+        },
+        {
+          "name": "DEBORAH JACKSON",
+          "party": "Democratic"
+        },
+        {
+          "name": "JAMESIA JAMES",
+          "party": "Democratic"
+        },
+        {
+          "name": "TAMARA JOHNSON-SHEALEY",
+          "party": "Democratic"
+        },
+        {
+          "name": "MATT LIEBERMAN",
+          "party": "Democratic"
+        },
+        {
+          "name": "JOY FELICIA SLADE",
+          "party": "Democratic"
+        },
+        {
+          "name": "ED TARVER",
+          "party": "Democratic"
+        },
+        {
+          "name": "RAPHAEL WARNOCK",
+          "party": "Democratic"
+        },
+        {
+          "name": "RICHARD DIEN WINFIELD",
+          "party": "Democratic"
+        },
+        {
+          "name": "BRIAN SLOWINSKI",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "AL BARTELL",
+          "party": "INDEPENDENT"
+        },
+        {
+          "name": "ALLEN BUCKLEY",
+          "party": "INDEPENDENT"
+        },
+        {
+          "name": "MICHAEL TODD GREENE",
+          "party": "INDEPENDENT"
+        },
+        {
+          "name": "VALENCIA STOVALL",
+          "party": "INDEPENDENT"
+        },
+        {
+          "name": "JOHN \"GREEN\" FORTUIN",
+          "party": "Green"
+        },
+        {
+          "name": "ROD MACK",
+          "party": "Write-In"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "PUBLIC SERVICE COMMISSION, DISTRICT 4 - NORTHERN, DISTRICT 4",
+      "district": {
+        "name": "STATE",
+        "scope": "statewide"
+      },
+      "ballotPlacement": "4",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "LAUREN BUBBA MCDONALD JR",
+          "party": "Republican"
+        },
+        {
+          "name": "DANIEL BLACKMAN",
+          "party": "Democratic"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "PUBLIC SERVICE COMMISSION, DISTRICT 1 - SOUTHERN, DISTRICT1",
+      "district": {
+        "name": "STATE",
+        "scope": "statewide"
+      },
+      "ballotPlacement": "5",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "JASON SHAW",
+          "party": "Republican"
+        },
+        {
+          "name": "ROBERT G BRYANT",
+          "party": "Democratic"
+        },
+        {
+          "name": "ELIZABETH MELTON",
+          "party": "LIBERTARIAN"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "UNITED STATES REPRESENTATIVE, DISTRICT 6",
+      "level": [
+        "country"
+      ],
+      "district": {
+        "name": "006",
+        "scope": "congressional",
+        "id": "6"
+      },
+      "ballotPlacement": "11",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "KAREN HANDEL",
+          "party": "Republican"
+        },
+        {
+          "name": "LUCY MCBATH",
+          "party": "Democratic"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "STATE SENATOR, DISTRICT 56",
+      "level": [
+        "administrativeArea1"
+      ],
+      "district": {
+        "name": "056",
+        "scope": "stateUpper",
+        "id": "56"
+      },
+      "ballotPlacement": "75",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "JOHN ALBERS",
+          "party": "Republican"
+        },
+        {
+          "name": "SARAH BEESON",
+          "party": "Democratic"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "STATE REPRESENTATIVE, DISTRICT 47",
+      "level": [
+        "administrativeArea1"
+      ],
+      "district": {
+        "name": "047",
+        "scope": "stateLower",
+        "id": "47"
+      },
+      "ballotPlacement": "122",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "JAN JONES",
+          "party": "Republican"
+        },
+        {
+          "name": "ANTHIA OWENS CARTER",
+          "party": "Democratic"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "DISTRICT ATTORNEY, ATLANTA",
+      "district": {
+        "name": "ATLANTA",
+        "scope": "judicial"
+      },
+      "ballotPlacement": "259",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "FANI WILLIS",
+          "party": "Democratic"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "PRESIDENTIAL ELECTOR",
+      "district": {
+        "name": "STATE",
+        "scope": "statewide"
+      },
+      "ballotPlacement": "296",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "JOSEPH BRANNAN",
+          "party": "Republican"
+        },
+        {
+          "name": "JAMES CARROLL",
+          "party": "Republican"
+        },
+        {
+          "name": "VIKKI TOWNSEND CONSIGLIO",
+          "party": "Republican"
+        },
+        {
+          "name": "CAROLYN HALL FISHER",
+          "party": "Republican"
+        },
+        {
+          "name": "PATRICK M. GARTLAND",
+          "party": "Republican"
+        },
+        {
+          "name": "GLORIA GODWIN",
+          "party": "Republican"
+        },
+        {
+          "name": "DAVID G HANNA",
+          "party": "Republican"
+        },
+        {
+          "name": "MARK W. HENNESSY",
+          "party": "Republican"
+        },
+        {
+          "name": "JOHN A. ISAKSON",
+          "party": "Republican"
+        },
+        {
+          "name": "CATHLEEN ALSTON LATHAM",
+          "party": "Republican"
+        },
+        {
+          "name": "DARYL MOODY",
+          "party": "Republican"
+        },
+        {
+          "name": "CORECO PEARSON",
+          "party": "Republican"
+        },
+        {
+          "name": "DAVID SHAFER",
+          "party": "Republican"
+        },
+        {
+          "name": "SHAWN STILL",
+          "party": "Republican"
+        },
+        {
+          "name": "C B YADAV",
+          "party": "Republican"
+        },
+        {
+          "name": "STACEY ABRAMS",
+          "party": "Democratic"
+        },
+        {
+          "name": "WENDY DAVIS",
+          "party": "Democratic"
+        },
+        {
+          "name": "BOBBY FUSE",
+          "party": "Democratic"
+        },
+        {
+          "name": "STEVE HENSON",
+          "party": "Democratic"
+        },
+        {
+          "name": "VAN JOHNSON",
+          "party": "Democratic"
+        },
+        {
+          "name": "FENIKA MILLER",
+          "party": "Democratic"
+        },
+        {
+          "name": "BEN MYERS",
+          "party": "Democratic"
+        },
+        {
+          "name": "RACHEL PAULE",
+          "party": "Democratic"
+        },
+        {
+          "name": "SACHIN VARGHESE",
+          "party": "Democratic"
+        },
+        {
+          "name": "CATHEREN WOOLARD",
+          "party": "Democratic"
+        },
+        {
+          "name": "CHRISTINE AUSTIN",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "STEPHANIE SAGE AYLWORTH",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "NELSON M. BARNHOUSE",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "ROBERT CORTEZ",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "DANNY DOLAN",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "ERIC FONTAINE",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "RYAN GRAHAM",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "GRETCHEN MANGAN",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "TED METZ",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "MARK MOSLEY",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "CHASE OLIVER",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "ROBERT ROUSE",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "DAVID R. SHOCK",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "JOHN TURPISH",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "LAURA WILLIAMS",
+          "party": "LIBERTARIAN"
+        },
+        {
+          "name": "NATHAN WILSON",
+          "party": "LIBERTARIAN"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "COUNTY COMMISSIONER, DISTRICT 2",
+      "district": {
+        "name": "2",
+        "id": "2"
+      },
+      "ballotPlacement": "1200",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ],
+      "candidates": [
+        {
+          "name": "BOB ELLIS",
+          "party": "Republican"
+        },
+        {
+          "name": "JUSTIN HOLSOMBACK",
+          "party": "Democratic"
+        }
+      ]
+    }
+  ],
+  "state": [
+    {
+      "name": "Georgia",
+      "electionAdministrationBody": {
+        "name": "STATE Board of Elections",
+        "electionInfoUrl": "http://sos.ga.gov/index.php/elections",
+        "electionRegistrationUrl": "https://registertovote.sos.ga.gov/GAOLVR/",
+        "electionRegistrationConfirmationUrl": "https://www.mvp.sos.ga.gov/MVP/",
+        "absenteeVotingInfoUrl": "http://sos.ga.gov/index.php/Elections/absentee_voting_in_georgia",
+        "votingLocationFinderUrl": "https://www.mvp.sos.ga.gov/MVP/",
+        "ballotInfoUrl": "https://www.mvp.sos.ga.gov/MVP/",
+        "electionRulesUrl": "http://sos.ga.gov/index.php/Elections/register_to_vote",
+        "physicalAddress": {
+          "locationName": "STATE Board of Elections",
+          "line1": "2 MLK JR. DRIVE SUITE 802",
+          "line2": "FLOYD",
+          "line3": "WEST TOWER",
+          "city": "Atlanta",
+          "state": "GA",
+          "zip": "30334"
+        }
+      },
+      "local_jurisdiction": {
+        "name": "Fulton County",
+        "electionAdministrationBody": {
+          "electionInfoUrl": "http://www.fultoncountyga.gov/rae-home",
+          "physicalAddress": {
+            "line1": "130 PEACHTREE ST SW 2186",
+            "city": "ATLANTA",
+            "state": "GA",
+            "zip": "30303-3460"
+          },
+          "electionOfficials": [
+            {
+              "officePhoneNumber": "(404) 612-3816",
+              "emailAddress": "elections.voterregistration@fultoncountyga.gov"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "name": "DemocracyWorks",
+            "official": false
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "kind": "civicinfo#voterInfoResponse"
+}

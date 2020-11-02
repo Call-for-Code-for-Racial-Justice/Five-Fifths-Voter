@@ -1,0 +1,19 @@
+{
+  "info": "https://www.votespa.com/Register-to-Vote/Pages/Voter-ID-for-First-Time-Voters.aspx",
+  "list": [
+    "Only voters who are voting for the first time in their election district need to show ID. The ID does not need to include a photograph but must include name and address.",
+    "Driver’s license or PennDOT ID card",
+    "U.S. passport",
+    "Military, student, or employee ID",
+    "Voter registration card",
+    "Firearm permit",
+    "Current utility bill, bank statement, paycheck or government check",
+    "Any ID issued by the commonwealth or federal government",
+    "Confirmation issued by the County Voter Registration Office"
+  ],
+  "notes": [
+    "If you have voted at your polling location before, you do not need to bring an ID to vote."
+  ],
+  "more_info": ["https://www.pa.gov/guides/voting-and-elections/"],
+  "date_gathered": "2020-11-01"
+}

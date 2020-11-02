@@ -1,0 +1,23 @@
+{
+  "info": "https://www.nvsos.gov/sos/elections/voters",
+  "list": [
+    "Nevada Driver's License",
+    "Nevada Identification Card",
+    "Armed Forces Identification Card",
+    "Sheriff’s Work Identification Card",
+    "Identification Card issued by an Agency of the State of Nevada or other political subdivision",
+    "Student Identification Card",
+    "United States Passport",
+    "Tribal Identification Card",
+    "Other forms of identification may be used, please check with your County Clerk/Registrar of Voters for other acceptable forms of identification.",
+    "Provide proof of residency showing namee and physical address such as A utility bill, bank or credit union statement, paycheck Income tax return, Mortgage statement, rental or lease agreement, Motor vehicle registration, Property tax statement, or any document issued by a governmental agency."
+  ],
+  "notes": [
+    "I.D. Requirements at the Polls",
+    "If you are registering for the first time or updating your existing voter registration after October 15, 2020, you must appear in person at a polling location to participate in the 2020 General Election. Per NRS 293.5837 at the polling location you must also provide your current Nevada driver’s license or ID card which shows your physical address as proof of your identity and residency. If your driver’s license or ID card does not show your current residential address you will also need to provide proof of residency."
+  ],
+  "more_info": [
+    "https://www.nvsos.gov/sos/sos-information/office-facts/faqs-all-division/elections"
+  ],
+  "date_gathered": "2020-10-30"
+}

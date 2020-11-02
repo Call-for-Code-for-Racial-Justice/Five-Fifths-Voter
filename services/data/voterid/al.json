@@ -1,0 +1,25 @@
+{
+  "info": "https://www.sos.alabama.gov/alabama-votes/photo-voter-id",
+  "list": [
+    "Valid Alabama Driver’s License (not expired or has been expired less than 60 days)",
+    "Alabama Law Enforcement Agency Digital Driver’s License",
+    "Valid Alabama Nondriver ID (not expired or has been expired less than 60 days)",
+    "Alabama Law Enforcement Agency Digital Nondriver ID",
+    "Valid Alabama Photo Voter ID Card",
+    "Valid State-Issued ID (Alabama or any other state). Examples: Valid AL Department of Corrections Release - Temporary ID (Photo Required), Valid AL Movement/Booking Sheet from Prison/Jail System (Photo Required), Valid Pistol Permit (Photo Required)",
+    "Valid Federal-Issued ID",
+    "Valid US passport",
+    "Valid Employee ID from Federal Government, State of Alabama, County, Municipality, Board, or other entity of this state",
+    "Valid student or employee ID from a public or private college or university in the State of Alabama (including postgraduate technical or professional schools)",
+    "Digital student ID from a public or private college or university in the State of Alabama (including postgraduate technical or professional schools)",
+    "Valid student or employee ID issued by a state institution of higher learning in any other state",
+    "Digital student ID issued by a state institution of higher learning in any other state",
+    "Valid Military ID",
+    "Valid Tribal ID"
+  ],
+  "notes": [
+    "If a voter does not have one of the approved forms of photo ID as stated in the law, then he or she may receive a free Alabama photo voter ID from various locations."
+  ],
+  "more_info": ["https://www.sos.alabama.gov/alabama-votes"],
+  "date_gathered": "2020-10-25"
+}

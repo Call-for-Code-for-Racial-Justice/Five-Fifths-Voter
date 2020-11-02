@@ -1,0 +1,14 @@
+{
+  "info": "https://www.in.gov/sos/elections/2401.htm",
+  "list": [
+    "1. Display your photo",
+    "2. Display your name, and the name must conform to your voter registration record. Conform does not mean identical.",
+    "3. Display an expiration date and either be current or have expired sometime after the date of the last General Election (November 6, 2018)",
+    "4. Be issued by the State of Indiana or the U.S. government."
+  ],
+  "notes": [
+    "Public Law 109-2005 requires Indiana residents to present a government-issued photo ID before casting a ballot at the polls on Election Day. Under Indiana Code 3-5-2-40.5, which defines \"proof of identification\", your photo ID must meet 4 criteria to be acceptable for voting purposes."
+  ],
+  "more_info": ["https://indianavoters.in.gov/"],
+  "date_gathered": "2020-10-25"
+}

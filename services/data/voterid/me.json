@@ -1,0 +1,12 @@
+{
+  "info": "https://www.maine.gov/sos/cec/elec/voter-info/right.html",
+  "list": ["There is no voter ID requirement in Maine."],
+  "notes": [
+    "If you register to vote on election day, show ID and proof of residence. See Voter Registration information for details."
+  ],
+  "more_info": [
+    "https://www.maine.gov/sos/cec/elec/voter-info/voterguide.html",
+    "https://www.maine.gov/sos/cec/elec/voter-info/votreg.html"
+  ],
+  "date_gathered": "2020-10-30"
+}

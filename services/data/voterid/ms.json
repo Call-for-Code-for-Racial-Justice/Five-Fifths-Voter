@@ -1,0 +1,31 @@
+{
+  "info": "https://msvoterid.ms.gov/Pages/VoterIDHowtoGetID.htm",
+  "list": [
+    "A driver's license",
+    "A photo ID card issued by a branch, department, or entity of the State of Mississippi",
+    "A United States passport",
+    "A government employee ID card",
+    "A firearms license",
+    "A student photo ID issued by an accredited Mississippi university, college, or community/junior college",
+    "A United States military ID",
+    "A tribal photo ID",
+    "Any other photo ID issued by any branch, department, agency or entity of the United States government or any State government",
+    "A Mississippi Voter Identification Card"
+  ],
+  "notes": [
+    "Individuals voting in person by absentee ballot in person in the Circuit Clerk's office are also required to show a photo ID.",
+    "Eligible voters casting an absentee ballot by mail do NOT have to show a photo ID. Also, overseas and uniformed military voting by absentee ballot by mail, email or fax do not have to show a photo ID.",
+    "If you are an eligible Mississippi voter and need transportation assistance, we will provide a FREE ride to your Circuit Clerk's Office to get a Mississippi Voter ID Card"
+  ],
+  "more_info": [
+    "https://www.msegov.com/sos/voter_registration/amiregistered/Search",
+    "https://www.ms.gov/sos/voter_registration/documents/voter_registration_application.pdf",
+    "https://www.sos.ms.gov/PollingPlace/Pages/default.aspx",
+    "https://www.sos.ms.gov/elections-voting/Pages/default.aspx",
+    "https://www.sos.ms.gov/Vote/Pages/default.aspx",
+    "https://www.sos.ms.gov/content/documents/elections/VoterInformationGuide.pdf",
+    "https://msvoterid.ms.gov/Pages/VoterIDRide.htm",
+    "https://www.sos.ms.gov/Elections-Voting/Pages/Military-Overseas-Voter.aspx"
+  ],
+  "date_gathered": "2020-11-01"
+}

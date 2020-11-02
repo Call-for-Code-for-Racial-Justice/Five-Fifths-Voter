@@ -103,7 +103,7 @@ app.get('/ballotreturn/locations/', (req, res) => {
 
 app.post('/pollingplace/', civic.pollingPlace);
 
-// Reoved zip code lookup - see 7147571738298eab5f5ff840c7cb7f674445b24c for old code
+// Removed zip code lookup - see 7147571738298eab5f5ff840c7cb7f674445b24c for old code
 
 // Warn about not getting Twitter results
 const useTwitterMock =
@@ -161,6 +161,11 @@ app.get('/twitter/chatter/', (req, res) => {
       }
     });
   }
+});
+
+const voterids = require('./data/voterid');
+app.get('/voterids/', (req, res) => {
+  res.send(voterids);
 });
 
 console.log(`Service listening on port ${port}`);

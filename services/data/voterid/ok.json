@@ -1,0 +1,17 @@
+{
+  "info": "https://www.ok.gov/elections/Voter_Info/Proof_of_Identity/",
+  "list": [
+    "Photo ID: This must have been issued by the United States government, the State of Oklahoma, or a federally recognized tribal government. It must contain (1) The name of the person to whom it was issued (2) A photograph of the person to whom it was issued (3) An expiration date that is after the date of the election, unless the identification is valid indefinitely",
+    "County Election Board Voter ID Card: This ID free and is received by mail from the County Election Board after voter registration. This can be used even though it does not include a photograph.",
+    "Affidavit: If you do not have or if you refuse to show proof of identity, you may vote by provisional ballot and prove your identity by signing a sworn affidavit."
+  ],
+  "notes": [
+    "The law requires the voter's name on the proof of identity document to \"substantially conform\" to the voter's name in the Precinct Registry. In other words, your name on your proof of identity must match your name in the Precinct Registry. Provisional ballots are sealed inside special envelopes and are not put through the voting device. After election day, County Election Board officials will investigate the information provided by the voter on the affidavit and either will approve the provisional ballot for counting or will reject it based on the outcome of that investigation.",
+    "A provisional ballot cast by a voter who declines or is unable to produce proof of identity shall only be considered verified and approved for counting if: (1) The voter's name on the affidavit substantially conforms to the voter's name in the voter registration database. (2) The voter's residence address on the affidavit substantially conforms to the voter's residence address in the voter registration database. (3) The voter's date of birth matches the information in the voter registration database. (4) The voter's Oklahoma driver license number or the last four digits of the voter's Social Security number on the affidavit matches the information in the voter registration database. (This provision does not apply if the voter was not required to provide a driver license number or the last four digits of the voter's Social Security number at the time of registration.) (5) The provisional ballot meets the eligibility requirements set forth in Section 7-116.1 of Title 26 of the Oklahoma Statues."
+  ],
+  "more_info": [
+    "https://www.ok.gov/elections/index.html",
+    "https://www.ok.gov/elections/faqs.html#q1369"
+  ],
+  "date_gathered": "2020-11-01"
+}

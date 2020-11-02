@@ -1,0 +1,12 @@
+{
+  "info": "https://www.state.nj.us/state/elections/vote-by-mail.shtml",
+  "list": [
+    "New Jersey driver's license",
+    "identification issued or recognized as official by the federal government, the State, or any of its subdivisions, providing the identification carries the full address and signature of the person. "
+  ],
+  "notes": [
+    "Voters do not need to provide a copy of their ID in order to cast a vote by mail ballot except under certain circumstances for first time voters. These voters will receive a notice with their vote by mail ballot. While the November 3, 2020 election is being conducted primarily with vote by mail ballots, with each active registered New Jersey voter receiving a vote by mail ballot, there will still be at least one polling location available in every municipality in the state and each county will operate at least 50% of its normal polling location capacity. Voters who do not receive a vote by mail ballot or who prefer to vote in person will cast a paper ballot at their designated polling location. Voters with disabilities that prevent them from voting by paper ballot will have access to a voting assistance device. "
+  ],
+  "more_info": ["https://www.state.nj.us/state/elections/vote-polling-location.shtml"],
+  "date_gathered": "2020-10-30"
+}

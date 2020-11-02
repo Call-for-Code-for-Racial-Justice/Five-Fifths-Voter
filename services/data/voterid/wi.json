@@ -1,0 +1,19 @@
+{
+  "info": "https://myvote.wi.gov/en-us/PhotoIDRequired",
+  "list": [
+    "A Wisconsin DOT-issued driver license, even if driving privileges are revoked or suspended - Can be unexpired or expired after Nov 18, 2018",
+    "• A Wisconsin DOT-issued identification card - Can be unexpired or expired after Nov 18, 2018",
+    "• A Military ID card issued by the U.S. Uniformed Services (including retired and dependent uniformed service IDs) - Can be unexpired or expired after Nov 18, 2018",
+    "• A U.S. passport book or card - Can be unexpired or expired after Nov 18, 2018",
+    "• A certificate of naturalization (that was issued no earlier than two years before the date of the election)",
+    "• An identification card issued by a federally recognized Indian tribe in Wisconsin (can be expired or unexpired)",
+    "• A driver license receipt issued by Wisconsin DOT (valid for 45 days from date issued)",
+    "• An identification card receipt issued by Wisconsin DOT (valid for 45 days from date issued)",
+    "• A Wisconsin DMV ID Petition Process Photo Receipt (valid for 60 days from date issued)",
+    "• A Veteran Affairs ID card (must be unexpired or have no expiration date)",
+    "• A photo identification card issued by a Wisconsin accredited university or college, or technical college that contains the following: Date the card was issued, Signature of student, Expiration date no later than two years after date of issuance (card may be expired). The university or college ID must be accompanied by a separate document that proves enrollment, such as a tuition fee receipt, enrollment verification letter, or class schedule. Enrollment verification document can be shown electronically."
+  ],
+  "notes": "You can get a free Wisconsin State ID card at the Division of Motor Vehicles. Poll workers look at the following: The photograph must reasonably resemble the elector. The elector’s name must conform to the name on their voter registration; conform does not mean that the name must be identical to the name on the voter registration. If the ID has an expiration date, it must meet the expiration requirements listed. An acceptable Photo ID for voting does not have to include a current address. You only prove your address when registering.",
+  "more_info": ["https://bringit.wi.gov/", "https://myvote.wi.gov/en-us/"],
+  "date_gathered": "2020-10-30"
+}

@@ -1,0 +1,25 @@
+{
+  "info": "https://www.sos.state.mn.us/elections-voting/register-to-vote/register-on-election-day/",
+  "list": [
+    "ID with current name and address",
+    "Photo ID and a document with current name and address",
+    "Registered voter who can confirm your address",
+    "College student ID with housing list",
+    "Valid registration in the same precinct",
+    "Notice of Late Registration",
+    "Staff person of a residential facility"
+  ],
+  "notes": [
+    "If your voter registration is current and active, you do not need to bring identification. This means you were successfully registered at least 21 days before Election Day and you have not moved or changed names since then.",
+    "If you need to register or update your registration, or you have not voted in four years or more, you will need to show proof of residence before you vote. To register at your polling place on Election Day, bring one proof of residence"
+  ],
+  "more_info": [
+    "https://www.sos.state.mn.us/elections-voting/register-to-vote/",
+    "https://mnvotes.sos.state.mn.us/VoterStatus.aspx",
+    "https://pollfinder.sos.state.mn.us",
+    "https://www.sos.state.mn.us/elections-voting/election-day-voting/do-i-need-to-bring-id/",
+    "https://www.sos.state.mn.us/media/3946/election-day-registration-2020.pdf",
+    "https://www.sos.state.mn.us/elections-voting/other-ways-to-vote/"
+  ],
+  "date_gathered": "2020-11-01"
+}

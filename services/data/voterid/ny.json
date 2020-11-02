@@ -1,0 +1,20 @@
+{
+  "info": "https://www.elections.ny.gov/INDEX.html",
+  "list": [
+    "Driver's license number",
+    "Non-driver's ID number",
+    "Last four digits of your social security number",
+    "Current and Valid Photo ID",
+    "Current Utility Bill",
+    "Bank Statement",
+    "Government Check or Paycheck",
+    "Government Document that shows Name and Address"
+  ],
+  "notes": [
+    "Registered voters do not need to show ID to vote, unless they did not provide identification with their registration. First time voters must provide identification either on or with their voter registration application."
+  ],
+  "more_info": [
+    "https://www.nysenate.gov/legislation/laws/ELN/8-302 https://ag.ny.gov/civil-rights/voting-rights https://vote.nyc/page/voter-id"
+  ],
+  "date_gathered": "2020-10-30"
+}

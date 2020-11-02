@@ -1,0 +1,24 @@
+{
+  "info": "https://sos.tn.gov/products/elections/what-id-required-when-voting",
+  "list": [
+    "Any of the following IDs may be used, even if expired.",
+    "Tennessee driver license with your photo",
+    "United States Passport (book or card)",
+    "Photo ID issued by the Tennessee Department of Safety and Homeland Security",
+    "Photo ID issued by the federal or Tennessee state government",
+    "United States Military photo ID",
+    "Tennessee handgun carry permit with your photo"
+  ],
+  "notes": [
+    "If you are voting in your first Federal election and you registered by mail, you must present a current photo identification with voter’s name and photo. If the photo identification is expired, the voter must also present one of the following: a copy of a current utility bill, bank statement, government check, paycheck or other government document that shows the voter’s name and address.",
+    "The following IDs are not acceptable: College student IDs and photo IDs not issued by the federal or Tennessee state government. This includes county or city issued photo IDs, such as library cards, and photo IDs issued by other states.",
+    "These voters are exempt from the ID requirement: Voters with a religious objection to being photographed; Voters who are indigent and unable to obtain a photo ID without paying a fee.",
+    "If you don’t bring a photo ID, you will vote a provisional ballot. You will then have two (2) business days after Election Day to return to the election commission office to show a valid photo ID. Upon returning to the election commission office, the voter will sign an affidavit and a copy of the voter’s photo ID will be made to be reviewed by the counting board.",
+    "You may obtain a free photo ID to vote from the Department of Safety and Homeland Security at any participating driver service center across the state. You may use the “express service” line at the driver service center to obtain your photo ID to minimize wait times. Visit the Department of Safety and Homeland Security's Voter Photo ID page for more information."
+  ],
+  "more_info": [
+    "https://sos.tn.gov/products/elections-executive/nov-3-election-information",
+    "https://www.tn.gov/safety/driver-services/photoids.html"
+  ],
+  "date_gathered": "2020-11-01"
+}

@@ -1,0 +1,17 @@
+{
+  "info": "https://sos.iowa.gov/elections/voterinformation/voterIDfaq.html",
+  "list": [
+    "Iowa driver’s license or non-operator ID",
+    "U.S. passport",
+    "U.S. military ID or veteran’s ID",
+    "tribal ID/document",
+    "Iowa voter ID card",
+    "A voter without one of the listed forms of ID may have the voter’s identity attested to by another registered voter in the precinct or may prove identity and residence using Election Day Registration documents.",
+    "Voters without the necessary ID or an attester will be offered a provisional ballot and can provide ID up until the time of the county canvass of votes (Monday after election day for Primary and General Elections)."
+  ],
+  "notes": [
+    "Any registered voter who does not have a valid driver's license or non-operator's ID issued by the Iowa Department of Transportation will be issued a Voter ID Card for free, automatically, in the mail. This also applies to anyone who registers to vote in the future. Upon receipt of the Voter ID Card, it should be immediately signed. Obtaining the Voter ID Card does not require any further documentation or action by the voter; voters simply need to be registered to vote in the county where they live."
+  ],
+  "more_info": ["https://sos.iowa.gov/"],
+  "date_gathered": "2020-10-25"
+}

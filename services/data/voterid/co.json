@@ -1,0 +1,23 @@
+{
+  "info": "https://www.sos.state.co.us/pubs/elections/vote/acceptableFormsOfID.html",
+  "list": [
+    "A valid Colorado driver’s license or valid identification card issued by the Colorado Department of Revenue. (Note:  documents issued to not lawfully present and temporarily lawfully present individuals under Part 5 of Article 2 of Title 42, C.R.S. are not acceptable forms of identification.)",
+    "A valid U.S. passport.",
+    "A valid employee identification card with a photograph of the eligible elector issued by any branch, department, agency, or entity of the U.S. government or of Colorado, or by any county, municipality, board, authority, or other political subdivision of Colorado.",
+    "A valid pilot’s license issued by the federal aviation administration or other authorized agency of the U.S.",
+    "A valid U.S. military identification card with a photograph of the eligible elector.",
+    "A copy of a current (within the last 60 days) utility bill, bank statement, government check, paycheck, or other government document that shows the name and address of the elector.",
+    "A Certificate of Degree of Indian or Alaskan Native Blood.",
+    "A valid Medicare or Medicaid card issued by the Centers for Medicare and Medicaid Services.",
+    "A certified copy of a U.S. birth certificate for the elector.",
+    "Certified documentation of naturalization.",
+    "A valid student identification card with a photograph of the eligible elector issued by an institute of higher education in Colorado, as defined in section 23-3.1-102(5), C.R.S..",
+    "A valid veteran identification card issued by the U.S. department of veterans affairs veterans health administration with a photograph of the eligible elector.",
+    "A valid identification card issued by a federally recognized tribal government certifying tribal membership."
+  ],
+  "notes": [
+    "All voters who vote at the polls must provide identification. If you are voting by mail for the first time, you may also need to provide a photocopy of your identification when you return your mail ballot."
+  ],
+  "more_info": ["https://www.sos.state.co.us/pubs/elections/main.html"],
+  "date_gathered": "2020-10-25"
+}
