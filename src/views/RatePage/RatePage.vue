@@ -69,7 +69,7 @@ export default {
     };
   },
   created() {
-    this.regData = this.$route.params.regData;
+    this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Rating Page' });
   },
   methods: {
     navigate() {

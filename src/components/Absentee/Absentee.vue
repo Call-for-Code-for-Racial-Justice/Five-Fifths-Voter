@@ -34,8 +34,11 @@ export default {
   data() {
     return {};
   },
-  created() {},
-  methods: {},
+  created() {
+    this.$amplitude
+      .getInstance()
+      .logEvent('Page Visit', { page: 'Journey Page', component: 'Absentee' });
+  }
 };
 </script>
 <style lang="scss">

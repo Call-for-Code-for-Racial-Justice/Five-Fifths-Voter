@@ -168,7 +168,7 @@ export default {
       });
   },
   created() {
-    this.regData = this.$route.params.regData;
+    this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Vote Now' });
   },
   methods: {
     navigate() {
