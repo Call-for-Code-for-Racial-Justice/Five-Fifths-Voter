@@ -1,7 +1,29 @@
 {
-  "info": "",
-  "list": [],
-  "notes": "",
-  "more_info": "",
-  "date_gathered": "2020-10-25"
+  "info": "https://www.elections.virginia.gov/registration/photo-ids-required-to-vote/",
+  "list": [
+    "Voter confirmation documents",
+    "Virginia driver’s license*",
+    "Virginia DMV-issued photo ID",
+    "United States passport",
+    "Employer-issued photo ID",
+    "Student ID issued by any community college or university located in the United States",
+    "Other U.S. or Virginia government-issued photo ID",
+    "Tribal enrollment or other tribal photo ID",
+    "Virginia Voter Photo ID card",
+    "A copy of a current utility bill, bank statement, government check, paycheck, or other government document containing the name and address of the voter"
+  ],
+  "notes": [
+    "Voters may provide either an acceptable form of ID or sign an ID Confirmation Statement at the polls.",
+    "Can I vote if I forget my ID? Yes! If you get to your polling place without acceptable ID, you can sign an ID statement affirming your identity, you will be able to vote a regular ballot.",
+    "If you do not sign an ID statement to affirm your identity you may vote a provisional ballot. You will be provided instructions to ensure your vote will count."
+  ],
+  "more_info": [
+    "https://vote.elections.virginia.gov/VoterInformation/Lookup/status",
+    "https://vote.elections.virginia.gov/Registration/DmvLookup",
+    "https://vote.elections.virginia.gov/VoterInformation/Lookup/polling",
+    "https://vote.elections.virginia.gov/VoterInformation/PublicContactLookup",
+    "https://www.elections.virginia.gov/citizen-portal/",
+    "https://www.elections.virginia.gov/registration/election-voter-faq/"
+  ],
+  "date_gathered": "2020-11-01"
 }

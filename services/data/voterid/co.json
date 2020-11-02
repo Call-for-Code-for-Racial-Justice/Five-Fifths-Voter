@@ -15,7 +15,9 @@
     "A valid veteran identification card issued by the U.S. department of veterans affairs veterans health administration with a photograph of the eligible elector.",
     "A valid identification card issued by a federally recognized tribal government certifying tribal membership."
   ],
-  "notes": "All voters who vote at the polls must provide identification. If you are voting by mail for the first time, you may also need to provide a photocopy of your identification when you return your mail ballot.",
-  "more_info": "https://www.sos.state.co.us/pubs/elections/main.html",
+  "notes": [
+    "All voters who vote at the polls must provide identification. If you are voting by mail for the first time, you may also need to provide a photocopy of your identification when you return your mail ballot."
+  ],
+  "more_info": ["https://www.sos.state.co.us/pubs/elections/main.html"],
   "date_gathered": "2020-10-25"
 }

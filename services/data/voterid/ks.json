@@ -11,7 +11,9 @@
     "Public assistance ID card issued by a government office",
     "Exemptions from photo ID requirements exist for: permanent advance voters (voters with illness or disabilities); military and overseas voters and their spouses and dependents; and voter with religious objections who sign a Declaration of Religious Objection (Form DRO (Español)). Voters age 65 or older may use an expired photo ID."
   ],
-  "notes": "State law requires Kansas voters to show photographic identification when casting a vote in person. The following documents may be used to meet photo ID requirements for voting:",
-  "more_info": "https://www.kssos.org/elections/elections-faq.html#Photo-ID",
+  "notes": [
+    "State law requires Kansas voters to show photographic identification when casting a vote in person. The following documents may be used to meet photo ID requirements for voting:"
+  ],
+  "more_info": ["https://www.kssos.org/elections/elections-faq.html#Photo-ID"],
   "date_gathered": "2020-10-25"
 }

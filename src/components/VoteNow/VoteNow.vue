@@ -74,15 +74,20 @@
                   (Validated on
                   {{ new Date(stateVoterIdData.date_gathered).toLocaleDateString() }} )
                 </span>
-                <span class="voter-id-notes"> {{ stateVoterIdData.notes }} </span>
+                <span v-for="note in stateVoterIdData.notes" :key="note">
+                  <span class="voter-id-notes">{{ note }}</span>
+                </span>
                 <cv-list style="padding-left: 30px" class="list">
                   <cv-list-item v-for="item in stateVoterIdData.list" :key="item">
                     {{ item }}
                   </cv-list-item>
                 </cv-list>
-                <cv-link :href="stateVoterIdData.more_info" target="_blank">
-                  More Information from your State
-                </cv-link>
+                <span v-for="more in stateVoterIdData.more_info" :key="more">
+                  <cv-link :href="more" target="_blank">
+                    More Information from your State
+                  </cv-link>
+                  <br />
+                </span>
               </p>
               <p v-else>
                 <cv-list style="padding-left: 30px" class="list">

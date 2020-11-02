@@ -1,7 +1,18 @@
 {
-  "info": "",
-  "list": [],
-  "notes": "",
-  "more_info": "",
-  "date_gathered": "2020-10-25"
+  "info": "https://elections.delaware.gov/information/faq/voting.shtml",
+  "list": [
+    "A driver's license issued by any state or the federal government.",
+    "An identification card issued under RSA 260:21, RSA 260:21-a, or RSA 260:21-b or a nondriver's identification card issued by the motor vehicles division, department, agency, or office of any other state.",
+    "A United States armed services identification card.",
+    "A United States passport or passcard.",
+    "A valid student identification card that has either an expiration date or an issuance date that has not been exceeded by a period of more than 5 years issued by a college, university, or career school in New Hampshire and approved to operate or licensed to operate in New Hampshire.",
+    "A valid student identification card that has either an expiration date or an issuance date that has not been exceeded by a period of more than 5 years issued by a public high school in New Hampshire. ",
+    "A valid student identification card that has either an expiration date or an issuance date that has not been exceeded by a period of more than 5 years issued by a nonpublic high school in New Hampshire accredited by a private school accrediting agency that is recognized by the department of education. ",
+    "A valid student identification card issued by Dartmouth College.",
+    "A valid student identification card issued by a college or university operated by the university system of New Hampshire or the community college system of New Hampshire.",
+    "A challenged voter affidavit"
+  ],
+  "notes": ["Do I have to show ID to vote? Yes."],
+  "more_info": ["https://sos.nh.gov/elections/information/election-laws/voter-identification-law/"],
+  "date_gathered": "2020-10-30"
 }

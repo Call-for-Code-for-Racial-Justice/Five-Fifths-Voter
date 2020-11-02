@@ -1,7 +1,25 @@
 {
-  "info": "",
-  "list": [],
-  "notes": "",
-  "more_info": "",
-  "date_gathered": "2020-10-25"
+  "info": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote",
+  "list": [
+    "Identification issued by the state of Missouri, an agency of the state, or a local election authority of the state;",
+    "Identification issued by the United States government or agency thereof;",
+    "Identification issued by an institution of higher education, including a university, college, vocational and technical school, located within the state of Missouri; or",
+    "A copy of a current utility bill, bank statement, paycheck, government check or other government document that contains the name and address of the voter."
+  ],
+  "notes": [
+    "If you do not possess any of these forms of identification, but are a registered voter, you may cast a provisional ballot. Your ballot will count if: (1) you return to your polling place on Election Day with a photo ID; or (2) the signature on your provisional ballot envelope is determined by your local election authority to match the signature on your voter registration record.",
+    "If you cast a provisional ballot, you will receive a stub from your provisional ballot envelope with instructions on how to verify that your provisional ballot is counted."
+  ],
+  "more_info": [
+    "https://s1.sos.mo.gov/elections/voterlookup",
+    "https://s1.sos.mo.gov/elections/voterregistration/",
+    "https://voteroutreach.sos.mo.gov/PRD/VoterOutreach/VOSearch.aspx",
+    "https://s1.sos.mo.gov/Elections/VoterRegistration/Home/Print",
+    "https://www.sos.mo.gov/elections/goVoteMissouri/pickupmail",
+    "https://www.sos.mo.gov/CMSImages/ElectionGoVoteMissouri/AcceptableIDstoVote--01.17.2020.pdf",
+    "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote#absentee",
+    "https://www.sos.mo.gov/elections/goVoteMissouri/registeroverseas",
+    "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote#accessible"
+  ],
+  "date_gathered": "2020-11-01"
 }

@@ -1,7 +1,17 @@
 {
-  "info": "",
-  "list": [],
-  "notes": "",
-  "more_info": "",
-  "date_gathered": "2020-10-25"
+  "info": "https://www.ncsbe.gov/registering/how-registerhttps://www.ncsbe.gov/registering/how-register",
+  "list": [
+    "NC driver license",
+    "NC DMV ID card",
+    "social security number",
+    "copy of a current utility bill, bank statement, government check, paycheck, or other government document that shows your name and address"
+  ],
+  "notes": [
+    "Current Status: Photo ID Not Required Voters will not be required to show photo ID for elections held in 2020. Federal and state courts have temporarily blocked North Carolina’s voter photo ID requirement from taking effect until further order of the courts. Do I need to include a copy of a photo ID with my absentee request form/ballot? No. North Carolina voters are not required to provide or show ID until further order of the courts."
+  ],
+  "more_info": [
+    "https://www.ncsbe.gov/voting/voter-id",
+    "https://www.ncsbe.gov/voting/vote-mail/faqs-voting-mail-north-carolina-2020#do-i-need-to-include-a-copy-of-a-photo-id-with-my-absentee-request-formballot"
+  ],
+  "date_gathered": "2020-10-30"
 }

@@ -11,7 +11,9 @@
     "Other government document with your name and address",
     "* The issue, bill, or statement date must be within 90 days of Election Day"
   ],
-  "notes": "If you are not registered to vote, you may do so at any vote center providing that you show acceptable proof of residence.",
-  "more_info": "https://dcboe.org/dcboe/media/PDFFiles/Voter-Guide-GE-10-02_ADA.pdf",
+  "notes": [
+    "If you are not registered to vote, you may do so at any vote center providing that you show acceptable proof of residence."
+  ],
+  "more_info": ["https://dcboe.org/dcboe/media/PDFFiles/Voter-Guide-GE-10-02_ADA.pdf"],
   "date_gathered": "2020-10-25"
 }

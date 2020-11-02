@@ -1,7 +1,12 @@
 {
-  "info": "",
-  "list": [],
-  "notes": "",
-  "more_info": "",
-  "date_gathered": "2020-10-25"
+  "info": "https://www.sos.state.nm.us/voting-and-elections/voter-information-portal/voter-registration-information/",
+  "list": [
+    "a current and valid photo identification",
+    "a current utility bill, bank statement, government check, paycheck, student identification card or other government document, including identification issued by an Indian nation, tribe or pueblo that shows your name and current address."
+  ],
+  "notes": [
+    "You do not have to present a photo ID to vote in a state election. Only if you are registering for the first time in New Mexico, and you submit the registration form by mail, then you must submit with the form a copy [of identification...] If you do not submit one of these forms of identification with your mailed-in, first time registration, then you would be required to present one of the forms of identification when voting in person or absentee.Please note that some municipal jurisdictions in New Mexico do have voter id ordinances in place that require voter id be presented to vote in city elections. This includes the City of Albuquerque and the City of Rio Rancho."
+  ],
+  "more_info": ["https://www.sos.state.nm.us/voting-and-elections/voting-faqs/voting/"],
+  "date_gathered": "2020-10-30"
 }

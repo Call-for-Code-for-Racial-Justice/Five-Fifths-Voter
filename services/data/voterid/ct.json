@@ -3,7 +3,9 @@
   "list": [
     "When you arrive at the polling place the poll worker will request that you present ID but if you do not have any then in most cases, you may sign an affidavit in lieu of presenting ID.  There are several options for identification and they do not need to be a driver's license or have a photo."
   ],
-  "notes": "Do I need to show photo identification in order to vote? The short answer is no.",
-  "more_info": "https://portal.ct.gov/SOTS/Election-Services/V5-Side-Navigation/ELE---Voter-Information",
+  "notes": ["Do I need to show photo identification in order to vote? The short answer is no."],
+  "more_info": [
+    "https://portal.ct.gov/SOTS/Election-Services/V5-Side-Navigation/ELE---Voter-Information"
+  ],
   "date_gathered": "2020-10-25"
 }

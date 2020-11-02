@@ -8,7 +8,9 @@
     "paycheck",
     "other government document that shows your name and address."
   ],
-  "notes": "If you are registering to vote for the first time in the State of Hawaii and are mailing in your application, federal law requires that your provide proof of identification. If you do not provide the required proof of identification with the application, you will be required to do so at you polling place, or with your mail ballot.",
-  "more_info": "https://elections.hawaii.gov/voters/",
+  "notes": [
+    "If you are registering to vote for the first time in the State of Hawaii and are mailing in your application, federal law requires that your provide proof of identification. If you do not provide the required proof of identification with the application, you will be required to do so at you polling place, or with your mail ballot."
+  ],
+  "more_info": ["https://elections.hawaii.gov/voters/"],
   "date_gathered": "2020-10-25"
 }

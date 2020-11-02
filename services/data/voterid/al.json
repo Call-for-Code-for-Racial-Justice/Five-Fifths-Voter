@@ -17,6 +17,9 @@
     "Valid Military ID",
     "Valid Tribal ID"
   ],
-  "notes": "If a voter does not have one of the approved forms of photo ID as stated in the law, then he or she may receive a free Alabama photo voter ID from various locations.",
+  "notes": [
+    "If a voter does not have one of the approved forms of photo ID as stated in the law, then he or she may receive a free Alabama photo voter ID from various locations."
+  ],
+  "more_info": ["https://www.sos.alabama.gov/alabama-votes"],
   "date_gathered": "2020-10-25"
 }

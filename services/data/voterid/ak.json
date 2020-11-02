@@ -9,7 +9,9 @@
     "hunting or fishing license",
     "other current or valid photo ID"
   ],
-  "notes": "If you do not have the one of the identifications listed above, you may present a current utility bill or paycheck, government check or bank statement or other government issued document.",
-  "more_info": "https://www.elections.alaska.gov/",
+  "notes": [
+    "If you do not have the one of the identifications listed above, you may present a current utility bill or paycheck, government check or bank statement or other government issued document."
+  ],
+  "more_info": ["https://www.elections.alaska.gov/"],
   "date_gathered": "2020-10-25"
 }

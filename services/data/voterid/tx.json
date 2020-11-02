@@ -1,7 +1,20 @@
 {
-  "info": "",
-  "list": [],
-  "notes": "",
-  "more_info": "",
-  "date_gathered": "2020-10-25"
+  "info": "https://www.votetexas.gov/mobile/id-faqs.htm",
+  "list": [
+    "Texas Driver License issued by the Texas Department of Public Safety (DPS)",
+    "Texas Election Identification Certificate issued by DPS",
+    "Texas Personal Identification Card issued by DPS",
+    "Texas Handgun License issued by DPS",
+    "United States Military Identification Card containing the person’s photograph",
+    "United States Citizenship Certificate containing the person’s photograph",
+    "United States Passport (book or card)"
+  ],
+  "notes": [
+    "For voters aged 18 – 69 years, photo ID can be expired for up to four years. For voters aged 70 and older, photo ID can be expired for any length of time if otherwise valid.",
+    "If you do not possess and cannot reasonably obtain one of the acceptable forms of ID, you may qualify for a Reasonable Impediment Declaration by showing a copy or original of one of the following approved IDs: Certified Domestic Birth Certificate or Court Admissible Birth Document, Paycheck, Government document with your name and address including your Voter Registration Certificate, Current Utility Bill, Bank Statement, Government Check",
+    "Voters with a disability may apply with the county voter registrar for a permanent exemption to presenting an acceptable photo identification or following the Reasonable Impediment Declaration procedure in the county.",
+    "Voters who have a consistent religious objection to being photographed or who do not present an acceptable form of photo identification listed above or follow the Reasonable Impediment Declaration procedure because of certain natural disasters as declared by the President of the United States or the Texas Governor, may vote a provisional ballot, appear at the voter registrar’s office within six (6) calendar days after election day, and sign an affidavit swearing to the religious objection or natural disaster, in order for the voter’s ballot to be counted. Please contact your county voter registrar for more details."
+  ],
+  "more_info": ["https://www.votetexas.gov/docs/sos-voter-ed-8-5x14-poster-eng.pdf"],
+  "date_gathered": "2020-11-01"
 }

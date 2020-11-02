@@ -1,7 +1,7 @@
 {
-  "info": "",
-  "list": [],
-  "notes": "",
-  "more_info": "",
-  "date_gathered": "2020-10-25"
+  "info": "https://sos.oregon.gov/voting/Pages/voteinor.aspx",
+  "list": ["Oregon has no voter ID requirement."],
+  "notes": ["All voting in Oregon is by mail"],
+  "more_info": ["https://secure.sos.state.or.us/orestar/vr/register.do"],
+  "date_gathered": "2020-11-01"
 }

@@ -8,7 +8,9 @@
     "Valid U.S. military photo ID",
     "Valid tribal photo ID"
   ],
-  "notes": "If you do not have one of the six acceptable forms of photo ID, the State of Georgia offers a free ID Card. An ID card can be issued at any county registrar's office or Department of Driver Services Office free of charge.",
-  "more_info": "https://sos.ga.gov/admin/files/GAID_Req_Brochure.pdf",
+  "notes": [
+    "If you do not have one of the six acceptable forms of photo ID, the State of Georgia offers a free ID Card. An ID card can be issued at any county registrar's office or Department of Driver Services Office free of charge."
+  ],
+  "more_info": ["https://sos.ga.gov/admin/files/GAID_Req_Brochure.pdf"],
   "date_gathered": "2020-10-25"
 }
