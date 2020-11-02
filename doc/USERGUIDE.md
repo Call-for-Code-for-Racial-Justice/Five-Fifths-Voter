@@ -48,7 +48,7 @@ The Five Fifths solution starter application is located at: https://www.fivefift
 
 ## Voter Journey
 
-The Voter Journey Tab is where you begin your journey to vote in an election. On this page you can:
+The **Voter Journey** page is where you begin your journey to vote in an election. On this page you can:
 
 - Obtain information about voter status
 - Register to vote
