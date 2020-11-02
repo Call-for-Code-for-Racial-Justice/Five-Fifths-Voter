@@ -75,7 +75,7 @@ The IBM Call for Code for Policy & Legislation Reform has developed a solution t
 
 See the [Getting Started](doc/GETSTARTED.md) document.
 
-See the [User Guide](doc/5-fifths-user-guide.pdf) document.
+See the [User Guide](doc/USERGUIDE.md) document.
 
 Please read the [CONTRIBUTING guidelines](/CONTRIBUTING.md)
 
