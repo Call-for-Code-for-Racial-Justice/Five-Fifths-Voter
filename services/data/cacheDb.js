@@ -28,7 +28,7 @@ connection
     console.log('\x1b[33m%s\x1b[0m', 'If you are working locally read the services/README.md file');
     console.log(
       '\x1b[33m%s\x1b[0m',
-      "For Early Voting to work, run the following command: 'docker run --detach --rm -p 27012:27017 --name five-fifths-voter-db 5fiths-the-vote/db'"
+      "For Early Voting to work, run the following command: 'docker run --detach --rm -p 27017:27017 --name five-fifths-voter-db five-fifths-voter/db'"
     );
     console.log('\x1b[32m%s\x1b[0m', 'The server is still listening.');
   });
