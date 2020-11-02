@@ -132,7 +132,9 @@ export default {
   data() {
     return {};
   },
-  created() {},
+  created() {
+    this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Connect Page' });
+  },
   methods: {}
 };
 </script>

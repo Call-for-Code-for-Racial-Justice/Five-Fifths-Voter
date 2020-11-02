@@ -54,7 +54,9 @@ export default {
   data() {
     return {};
   },
-  created() {},
-  methods: {},
+  created() {
+    this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Why Vote Page' });
+  },
+  methods: {}
 };
 </script>

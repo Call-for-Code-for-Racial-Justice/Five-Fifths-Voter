@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@amplitude/ua-parser-js@0.7.11":
+  version "0.7.11"
+  resolved "https://registry.yarnpkg.com/@amplitude/ua-parser-js/-/ua-parser-js-0.7.11.tgz#e3e411912aa88b1832ce3fb4dd4996839bd39243"
+  integrity sha512-uBYLbl5dRh0w7yWATTiKwfzae4EU6B/jHK6xsY8vRgbNEfwJZLG44Z18B1sBGjeaUYCk2nP8lWNehKGeQf3jgw==
+
+"@amplitude/ua-parser-js@0.7.24":
+  version "0.7.24"
+  resolved "https://registry.yarnpkg.com/@amplitude/ua-parser-js/-/ua-parser-js-0.7.24.tgz#2ce605af7d2c38d4a01313fb2385df55fbbd69aa"
+  integrity sha512-VbQuJymJ20WEw0HtI2np7EdC3NJGUWi8+Xdbc7uk8WfMIF308T0howpzkQ3JFMN7ejnrcSM/OyNGveeE3TP3TA==
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"
@@ -1904,6 +1914,25 @@ amdefine@>=0.0.4:
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
 
+amplitude-js@^4.4.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/amplitude-js/-/amplitude-js-4.7.0.tgz#82a3f23d0dbe0e7ad3e319a974bd102389713fbb"
+  integrity sha512-4ZlJjZafznb6TDh/Bwr2DYWDDmivsrayqXoCK5p/1T59eqNHuEea41QwWde4S7kKz+CEeq4piaCS3sTQT1jJRg==
+  dependencies:
+    "@amplitude/ua-parser-js" "0.7.11"
+    blueimp-md5 "^2.10.0"
+    json3 "^3.3.2"
+    query-string "5"
+
+amplitude-js@^7.3.1:
+  version "7.3.1"
+  resolved "https://registry.yarnpkg.com/amplitude-js/-/amplitude-js-7.3.1.tgz#f49628ca919f3298e3fa8286d2310227d0270b17"
+  integrity sha512-dsJU9MdtDDAOtKnbHrJuVBgsL5UGxD1P2B7doGdAQ1hxxT/5mFrmJTFzi1tKe+2ir3QtcRa9B0qvH8TMsGw22A==
+  dependencies:
+    "@amplitude/ua-parser-js" "0.7.24"
+    blueimp-md5 "^2.10.0"
+    query-string "5"
+
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
@@ -2482,6 +2511,11 @@ bluebird@^3.1.1, bluebird@^3.5.5:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
+
+blueimp-md5@^2.10.0:
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/blueimp-md5/-/blueimp-md5-2.18.0.tgz#1152be1335f0c6b3911ed9e36db54f3e6ac52935"
+  integrity sha512-vE52okJvzsVWhcgUHOv+69OG3Mdg151xyn41aVQN/5W5S+S43qZhxECtYLAEHMSFWX6Mv5IZrzj3T5+JqXfj5Q==
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.4.0:
   version "4.11.9"
@@ -8797,6 +8831,15 @@ qs@~6.5.2:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
+query-string@5:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-5.1.1.tgz#a78c012b71c17e05f2e3fa2319dd330682efb3cb"
+  integrity sha512-gjWOsm2SoGlgLEdAGt7a6slVOk9mGiXmPFMqrEhLQ68rhQuBnpfs3+EmlvqKyxnCo9/PPlF+9MtY02S1aFg+Jw==
+  dependencies:
+    decode-uri-component "^0.2.0"
+    object-assign "^4.1.0"
+    strict-uri-encode "^1.0.0"
+
 query-string@^4.1.0:
   version "4.3.4"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-4.3.4.tgz#bbb693b9ca915c232515b228b1a02b609043dbeb"
@@ -10653,6 +10696,13 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
+
+vue-amplitude@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-amplitude/-/vue-amplitude-1.0.3.tgz#d6fc12ee3d5d4e022b080083031586a40195c5f2"
+  integrity sha512-ncSK74S5IDJgiqvVN8PMwmH6LtUQ7ICdxoSD8jaSvyZEFVVuRfJHawB3+XIU5nPvp9dq3Z223uH+Bi4/kqOY1Q==
+  dependencies:
+    amplitude-js "^4.4.0"
 
 vue-eslint-parser@^5.0.0:
   version "5.0.0"

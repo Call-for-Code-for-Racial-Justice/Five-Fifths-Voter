@@ -108,6 +108,12 @@ export default {
       voterData: {}
     };
   },
+  created() {
+    this.$amplitude
+      .getInstance()
+      .logEvent('Page Visit', { page: 'Journey Page', component: 'Early Voting' });
+  },
+
   computed: {
     electionInfoUrl() {
       try {
