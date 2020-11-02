@@ -1,5 +1,5 @@
 
-# **Five Fifths Voter How To Guide**
+# **Five Fifths Voter How-To Guide**
 
 # Contents
 
@@ -57,9 +57,9 @@ The Voter Journey Tab is where you begin your journey to vote in an election. On
 ### Are You Registered
 ![](Registered.png)
 
-#### Check Your Status
+#### Check Voting Status
 
-Use the &quot;**Check your Status**&quot; link to leverage verified and secure [vote.org](https://www.vote.org/) resources to check your voter registration status. Just complete all required fields (shown with a red **\*** ) and click submit to receive your current and verified registration status information.
+Use the &quot;**Check Voting Status**&quot; link to leverage verified and secure [vote.org](https://www.vote.org/) resources to check your voter registration status. Just complete all required fields (shown with a red **\*** ) and click submit to receive your current and verified registration status information.
 
 ![](Registered2.png)
 
