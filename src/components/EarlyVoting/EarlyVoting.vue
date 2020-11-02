@@ -67,6 +67,9 @@
                   <span v-if="item.address.line3" class="loc-line">{{ item.address.line3 }}</span>
                   <span v-if="item.address.city" class="loc-city">{{ item.address.city }}</span>
                   <span v-if="item.address.state" class="loc-state"> {{ item.address.state }}</span>
+                  <cv-link :href="directionsLink(item)" target="_blank">
+                    Directions
+                  </cv-link>
                 </cv-list-item>
               </cv-list>
 
@@ -217,6 +220,21 @@ export default {
     },
 
     /**
+     * Create a google link to directions
+     */
+    directionsLink(item) {
+      var dir_address = '';
+      if (item.address.line1) dir_address += item.address.line1;
+      if (item.address.line2) dir_address += ' ' + item.address.line2;
+      if (item.address.line3) dir_address += ' ' + item.address.line3;
+      if (item.address.city) dir_address += ' ' + item.address.city;
+      if (item.address.state) dir_address += ' ' + item.address.state;
+      const escapedValue = encodeURIComponent(dir_address).replaceAll('%20', '+');
+      var dir_link = 'https://www.google.com/maps/search/?api=1&query=' + escapedValue;
+      return dir_link;
+    },
+
+    /**
      * This is used by the map to contruct an info window for each marker. Styling is mostly
      * controlled by the map api but simple things should work ok.
      */
@@ -228,6 +246,11 @@ export default {
       if (item.address.line3) info += '<div>' + item.address.line3 + '</div>';
       if (item.address.city) info += '<span>' + item.address.city + '</span>';
       if (item.address.state) info += '<span> ' + item.address.state + '</span>';
+
+      var dir_link = this.directionsLink(item);
+
+      info +=
+        '<div><a target="_blank" alt="directions" href="' + dir_link + '">Directions</a></div>';
       return info;
     }
   }
