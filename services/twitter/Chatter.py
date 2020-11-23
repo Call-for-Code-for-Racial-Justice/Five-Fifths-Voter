@@ -15,10 +15,11 @@ SentimentOptions, EmotionOptions, ConceptsOptions
 from ibm_watson import ToneAnalyzerV3
 from wordcloud import WordCloud, STOPWORDS
 
+debug = False
 
 def get_tweets(search_name, topk):
     """
-    This function first finds screen_name (~twitter ID) that mathces best with the search_name.
+    This function first finds screen_name (~twitter ID) that matches best with the search_name.
     Then it returns topk recent tweets (excluding retweets and replies) from that user timeline.
     """
     ## Get screen name
@@ -45,27 +46,39 @@ def get_nlu_tone_analysis(tweet):
     ## Remove URLs
     tweet_cleaned = re.sub(r'http\S+', '', tweet)
     if tweet_cleaned:
-        
-        ## Call NLU API
-        nlu_analysis = natural_language_understanding.analyze(
-            text=tweet_cleaned, language='en',
-                  features=Features(
-                  concepts=ConceptsOptions(limit=2),
-                  sentiment=SentimentOptions(),
-                  emotion=EmotionOptions())).get_result()
+        try:
+            ## Call NLU API
+            nlu_analysis = natural_language_understanding.analyze(
+                text=tweet_cleaned, language='en',
+                    features=Features(
+                    concepts=ConceptsOptions(limit=2),
+                    sentiment=SentimentOptions(),
+                    emotion=EmotionOptions())).get_result()
 
-        concepts = ', '.join([concept['text'] for concept in nlu_analysis['concepts']])
-        sentiment = nlu_analysis['sentiment']['document']['label']
-        emotions = nlu_analysis['emotion']['document']['emotion']
-        dominant_emotion = max(emotions, key=emotions.get)
+            concepts = ', '.join([concept['text'] for concept in nlu_analysis['concepts']])
+            sentiment = nlu_analysis['sentiment']['document']['label']
+            emotions = nlu_analysis['emotion']['document']['emotion']
+            dominant_emotion = max(emotions, key=emotions.get)
+        except Exception as nluErr:
+            if debug:
+                print("Error from Watson NLU %s", nluErr.message, file=sys.stderr)
+            concepts = 'concepts could not be found'
+            sentiment = ''
+            emotions = ''
+            dominant_emotion = ''
         
-        ## Call tone analyzer API
-        tone_analysis = tone_analyzer.tone(
-                {'text': tweet_cleaned},
-                content_type='text'
-        ).get_result()
+        try:
+            ## Call tone analyzer API
+            tone_analysis = tone_analyzer.tone(
+                    {'text': tweet_cleaned},
+                    content_type='text'
+            ).get_result()
 
-        tones = ', '.join([tone['tone_name'] for tone in tone_analysis['document_tone']['tones']])
+            tones = ', '.join([tone['tone_name'] for tone in tone_analysis['document_tone']['tones']])
+        except Exception as taErr:
+            if debug:
+                print("Error from Watson Tone Analyzer: %s", taErr.message, file=sys.stderr)
+            tones = 'message tone could not be found'
         
         ## Create result table
         result = {'tweet':tweet, 'sentiment':sentiment, "emotion":dominant_emotion,
@@ -101,54 +114,65 @@ if __name__ == "__main__":
     csecret=os.environ.get('NODE_TWITTER_API_SECRET_KEY')
     atoken=os.environ.get('NODE_TWITTER_ACCESS_TOKEN')
     asecret=os.environ.get('NODE_TWITTER_ACCESS_TOKEN_SECRET')
+    if debug:
+        print("Twitter access details: key: %s, secret: %s, token: %s, secret: %s" %(ckey, csecret, atoken, asecret), file=sys.stderr)
 
     ## Enter your IBM Watson NLU api and tone analyzer credentials here in .env file or set them as environment variables
     nlu_api_key = os.environ.get('NODE_NLU_API_KEY')
     nlu_api_url = os.environ.get('NODE_NLU_API_URL')
+    if debug:
+        print("NLU access details: key: %s, url: %s" %(nlu_api_key, nlu_api_url), file=sys.stderr)
+
 
     tone_analyzer_api_key = os.environ.get('NODE_TA_API_KEY')
     tone_analyzer_api_url = os.environ.get('NODE_TA_API_URL')
+    if debug:
+        print("Tone access details: key: %s, url: %s" %(tone_analyzer_api_key, tone_analyzer_api_url), file=sys.stderr)
 
     ## Connect to twitter API
-    auth = OAuthHandler(ckey, csecret)
-    auth.set_access_token(atoken, asecret)
-    api = tweepy.API(auth)
+    try:
+        auth = OAuthHandler(ckey, csecret)
+        auth.set_access_token(atoken, asecret)
+        api = tweepy.API(auth)
 
-    ## Connect to IBM Watson NLU API
-    nlu_authenticator = IAMAuthenticator(nlu_api_key)
-    natural_language_understanding = NaturalLanguageUnderstandingV1(
-		    version='2020-08-01',
-		    authenticator=nlu_authenticator
-    )
-    natural_language_understanding.set_service_url(nlu_api_url)
+        ## Connect to IBM Watson NLU API
+        nlu_authenticator = IAMAuthenticator(nlu_api_key)
+        natural_language_understanding = NaturalLanguageUnderstandingV1(
+                version='2020-08-01',
+                authenticator=nlu_authenticator
+        )
+        natural_language_understanding.set_service_url(nlu_api_url)
 
-    ## Connect to IBM Watson tone analyzer API
-    ta_authenticator = IAMAuthenticator(tone_analyzer_api_key)
-    tone_analyzer = ToneAnalyzerV3(
-		    version='2017-09-21',
-		    authenticator=ta_authenticator
-    )
-    tone_analyzer.set_service_url(tone_analyzer_api_url)
+        ## Connect to IBM Watson tone analyzer API
+        ta_authenticator = IAMAuthenticator(tone_analyzer_api_key)
+        tone_analyzer = ToneAnalyzerV3(
+                version='2017-09-21',
+                authenticator=ta_authenticator
+        )
+        tone_analyzer.set_service_url(tone_analyzer_api_url)
 
 
-    ## Retrieve query search name
-    ## and set number of tweets to be shown
-    search_name = sys.argv[1]
-    count = 25
-		
-    screen_name, tweets = get_tweets(search_name, topk=count)
+        ## Retrieve query search name
+        ## and set number of tweets to be shown
+        search_name = sys.argv[1]
+        count = 5
+            
+        screen_name, tweets = get_tweets(search_name, topk=count)
 
-    ## Run multiple threads to call NLU and tone analyzer API
-    with concurrent.futures.ThreadPoolExecutor(max_workers=count) as executor:
-		    futures = [executor.submit(get_nlu_tone_analysis, tweet) for tweet in tweets]
-		    concurrent.futures.wait(futures)
+        ## Run multiple threads to call NLU and tone analyzer API
+        with concurrent.futures.ThreadPoolExecutor(max_workers=count) as executor:
+                futures = [executor.submit(get_nlu_tone_analysis, tweet) for tweet in tweets]
+                concurrent.futures.wait(futures)
 
-    ## Fetch the results in the ouptut dictionary
-    items = [res.result() for res in futures]
-    output_dict = {"screen_name":screen_name, "items":items}
+        ## Fetch the results in the ouptut dictionary
+        items = [res.result() for res in futures]
+        output_dict = {"screen_name":screen_name, "items":items}
 
-    ## Print the output json
-    print(json.dumps(output_dict))
-    sys.stdout.flush()
+        ## Print the output json
+        print(json.dumps(output_dict))
+        sys.stdout.flush()
+
+    except Exception as err:
+        print(err.message, file=sys.stderr)
 
     exit(0)

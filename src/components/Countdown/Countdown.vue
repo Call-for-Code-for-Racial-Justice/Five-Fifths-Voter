@@ -1,7 +1,7 @@
 <template>
   <div class="container--countdown">
-    <h3>presidential election.</h3>
-    <countdown deadline="November 3, 2020" />
+    <h3>Georgia senate runoff.</h3>
+    <countdown deadline="January 5, 2021" />
   </div>
 </template>
 
