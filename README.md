@@ -6,8 +6,8 @@ This solution starter was created by technologists from IBM.
 
 # Authors
 
-- **Alexandria Leggett** Product Offering Manager & Creative Director
-- **Andrea Lucas** Product Offering Manager & Technical Director
+- **Alexandria Leggett** _Product Offering Manager & Creative Director_
+- **Andrea Lucas** _Product Offering Manager & Technical Director_
 - **Yolanda Rabun** _Lead Generalist_
 - **Denise Knorr** _Operations Director_
 - **Evelyn R. Anderson** _Sr. Security & IP Advisor_
@@ -17,7 +17,7 @@ This solution starter was created by technologists from IBM.
 - **Syd Bailey** _Developer_
 - **Ann Umberhocker** _Developer_
 - **Shrey Anand** _Developer_
-- **Alexandra Devine** Designer & IP Strategist
+- **Alexandra Devine** _Designer & IP Strategist_
 - **Dylan Zucker** _Data Scientist_
 - **Kristen Ray** _Data Scientist_
 - **Chris Stefano** _Generalist_
@@ -26,9 +26,9 @@ This solution starter was created by technologists from IBM.
 
 # What is the problem?
 
-American History has shown that voter suppression has led to corruption and a weak democracy that does not reflect the will of the people.Voting has been perceived an intangible and unfair process based on restrictive local processes, changing requirements, regulations, an inability to access the correct voting location, and a lackof information. As a result, millions of minorities, especially Black people, have had their votes go uncounted, purged, or simply not submitted due to lack of faith and trust in the system.
+American History has shown that voter suppression has led to corruption and a weak democracy that does not reflect the will of the people. Voting has been perceived an intangible and unfair process based on restrictive local processes, changing requirements, regulations, an inability to access the correct voting location, and a lack of information. As a result, millions of minorities, especially Black people, have had their votes go uncounted, purged, or simply not submitted due to lack of faith and trust in the system.
 
-The **Five Fifths Voter** solution starter focuses on addressing thekey areas of voter suppression such as voter registration, voter ID laws, voter registration restrictions, voter purging, felony disenfranchisement, and gerrymandering all of which are contributors to disenfranchising minorities and people with disabilities.The solutionhelps with these challenges by providing a capability to help ensure disenfranchised minority voters are educated, empowered, and enabled to overcome setbacks incurred by voter suppression. Five Fifths Voter helps to identify the correct polling stations, notifies users of requirements needed for their state, and personal circumstances as it pertains to different types of voting, deadlines, and quick accessto information.
+The **Five Fifths Voter** solution starter focuses on addressing the key areas of voter suppression such as voter registration, voter ID laws, voter registration restrictions, voter purging, felony disenfranchisement, and gerrymandering all of which are contributors to disenfranchising minorities and people with disabilities. The solution helps with these challenges by providing a capability to help ensure disenfranchised minority voters are educated, empowered, and enabled to overcome setbacks incurred by voter suppression. Five Fifths Voter helps to identify the correct polling stations, notifies users of requirements needed for their state, and personal circumstances as it pertains to different types of voting, deadlines, and quick access to information.
 
 The solution starter is provided as a web-based application that’s hosted on IBM Cloud and is available for both desktop and mobile browsers.
 
