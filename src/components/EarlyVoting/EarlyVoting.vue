@@ -101,6 +101,7 @@
           class="side-map"
           :markers="mapMarkers"
           :home="normalizedAddressValue"
+          :key="normalizedAddressValue"
           ref="earlyMap"
         />
       </aside>
