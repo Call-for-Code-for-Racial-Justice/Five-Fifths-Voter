@@ -35,7 +35,7 @@ export default {
   },
   watch: {
     center() {
-      console.log('center changed', this.center);
+      //console.log('center changed', this.center);
 
       // Recenter / re-zoom the map whe the center changes
       this.reCenter();
@@ -61,13 +61,13 @@ export default {
         // If there is already a lat/lng then we are done
         if (this.center.lat && this.center.lng) {
           this.codedCenter = this.center; // center is already geocoded
-          console.log('center is already geocoded', this.center);
+          //console.log('center is already geocoded', this.center);
           return resolve(this.codedCenter);
         }
 
         // Maybe we already coded this address?
         if (this.codedAddress === this.center.address) {
-          console.log('center previously geocoded', this.center, this.codedCenter);
+          //console.log('center previously geocoded', this.center, this.codedCenter);
           return resolve(this.codedCenter);
         } else {
           this.codedCenter = {};
@@ -75,7 +75,7 @@ export default {
         }
 
         // otherwise the address has to be geocoded
-        console.log('geocoding', this.center.address);
+        //console.log('geocoding', this.center.address);
         var geocoder = new Geocoder();
         geocoder.geocode(
           { address: this.center.address },

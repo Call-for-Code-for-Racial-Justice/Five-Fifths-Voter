@@ -209,7 +209,7 @@ export default {
         if (!locations) locations = [];
 
         var filteredLocation = locations.filter(function(item) {
-          return item.address.electionName === this.electionName;
+          return !item.address.electionName || item.address.electionName === this.electionName;
         }, this);
 
         return filteredLocation;
@@ -245,6 +245,7 @@ export default {
         }
         return list;
       } catch (error) {
+        console.error(error);
         return list;
       }
     }
@@ -259,20 +260,26 @@ export default {
           }
         })
         .then(response => {
-          this.voterData = response.data;
-          this.normalizedAddressValue = '';
-          Object.values(this.voterData.normalizedInput).forEach(element => {
-            this.normalizedAddressValue = this.normalizedAddressValue + ' ' + element;
-          });
-          this.normalizedAddressValue = this.normalizedAddressValue.trim();
+          try {
+            this.voterData = response.data;
+            this.normalizedAddressValue = '';
+            Object.values(this.voterData.normalizedInput).forEach(element => {
+              this.normalizedAddressValue = this.normalizedAddressValue + ' ' + element;
+            });
+            this.normalizedAddressValue = this.normalizedAddressValue.trim();
 
-          if (this.voterData.fivefifthsdata && this.voterData.fivefifthsdata.elections) {
-            var elections = this.voterData.fivefifthsdata.elections;
-            this.electionName = elections[elections.length - 1];
+            if (this.voterData.fivefifthsdata && this.voterData.fivefifthsdata.elections) {
+              var elections = this.voterData.fivefifthsdata.elections;
+              this.electionName = elections[elections.length - 1];
+            }
+          } catch (error) {
+            console.error(error);
           }
         })
         .catch(error => {
           error;
+          /* eslint no-console: 0 */
+          console.error(error);
           this.voterData = { error: true };
         });
     },

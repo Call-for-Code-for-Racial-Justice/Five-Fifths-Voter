@@ -6,7 +6,7 @@
     "ocdDivisionId": "ocd-division/country:us"
   },
   "normalizedInput": {
-    "line1": "4025 Crabapple Lake Court",
+    "line1": "123 Main St",
     "city": "Roswell",
     "state": "GA",
     "zip": "30076"
@@ -938,9 +938,7 @@
     {
       "type": "General",
       "office": "UNITED STATES REPRESENTATIVE, DISTRICT 6",
-      "level": [
-        "country"
-      ],
+      "level": ["country"],
       "district": {
         "name": "006",
         "scope": "congressional",
@@ -967,9 +965,7 @@
     {
       "type": "General",
       "office": "STATE SENATOR, DISTRICT 56",
-      "level": [
-        "administrativeArea1"
-      ],
+      "level": ["administrativeArea1"],
       "district": {
         "name": "056",
         "scope": "stateUpper",
@@ -996,9 +992,7 @@
     {
       "type": "General",
       "office": "STATE REPRESENTATIVE, DISTRICT 47",
-      "level": [
-        "administrativeArea1"
-      ],
+      "level": ["administrativeArea1"],
       "district": {
         "name": "047",
         "scope": "stateLower",

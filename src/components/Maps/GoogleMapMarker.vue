@@ -43,14 +43,11 @@ export default {
   mounted() {
     const { Geocoder, GeocoderStatus, Marker, InfoWindow } = this.google.maps;
 
-    if (this.icon) {
-      console.log(this.icon, this.marker, this.geocode);
-    }
     new Promise((resolve, reject) => {
       // If there is already a lat/lng then we are done
       if (this.marker.position.lat && this.marker.position.lng) {
         /* eslint no-console: 0 */
-        console.log('already geocoded');
+        //console.log('already geocoded');
         return resolve(this.marker);
       }
 
