@@ -1,0 +1,18 @@
+{
+    "100 RIDLEY AVE LAGRANGE GA 30240": {
+        "location_name": "GOVERNMENT CENTER",
+        "original_address": "100 RIDLEY AVE LAGRANGE, GA 30240",
+        "location_type": "GEOMETRIC_CENTER",
+        "formatted_address": "100 Ridley Ave, LaGrange, GA 30240, USA",
+        "lat": 33.0403048,
+        "lng": -85.03016679999999
+    },
+    "600 E MAIN STREET HOGANSVILLE GA 30230": {
+        "location_name": "HOGANSVILLE ANNEX",
+        "original_address": "600 E MAIN STREET HOGANSVILLE, GA 30230",
+        "location_type": "ROOFTOP",
+        "formatted_address": "600 E Main St, Hogansville, GA 30230, USA",
+        "lat": 33.1720917,
+        "lng": -84.9099109
+    }
+}

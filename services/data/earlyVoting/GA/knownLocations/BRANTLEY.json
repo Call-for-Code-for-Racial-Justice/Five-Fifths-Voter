@@ -1,0 +1,11 @@
+{
+    "10305 N MAIN ST NAHUNTA GA 31553": {
+        "location_name": "BRANTLEY CO. ELECTIONS",
+        "location_type": "RANGE_INTERPOLATED/ROOFTOP",
+        "corrected": true,
+        "original_address": "10305 N. MAIN ST. NAHUNTA, GA 31553",
+        "formatted_address": "10305 N Main St, Nahunta, GA 31553, USA",
+        "lat": 31.209419,
+    "lng": -81.979961
+    }
+}

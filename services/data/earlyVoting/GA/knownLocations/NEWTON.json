@@ -1,0 +1,35 @@
+{
+	"1113 USHER ST COVINGTON GA 30014": {
+		"location_name": "NEWTON COUNTY ADMIN BUILDING",
+		"original_address": "1113 USHER ST COVINGTON, GA 30014",
+		"location_type": "ROOFTOP",
+		"formatted_address": "ADMINISTRATION BUILDING, 1113 Usher St NW, Covington, GA 30014, USA",
+		"lat": 33.5978834,
+		"lng": -83.8589655
+	},
+	"7116 FLOYD ST COVINGTON GA 30014": {
+		"location_name": "NEWTON COUNTY LIBRARY",
+		"original_address": "7116 FLOYD ST COVINGTON, GA 30014",
+		"location_type": "ROOFTOP",
+		"formatted_address": "7116 Floyd St NE, Covington, GA 30014, USA",
+		"lat": 33.599275,
+		"lng": -83.8392981
+	},
+	"11524 HWY 278 E COVINGTON GA 30014": {
+		"location_name": "ST AUGUSTINE CATHOLIC CHURCH",
+		"original_address": "11524 HWY 278, E COVINGTON, GA 30014",
+		"location_type": "GEOMETRIC_CENTER/ROOFTOP",
+		"formatted_address": "11524 US-278, Covington, GA 30014, USA",
+		"lat": 33.592741,
+		"lng": -83.787722,
+		"corrected": true
+	},
+	"7037 HIGHWAY 212 N COVINGTON GA 30016": {
+		"location_name": "ZION BAPTIST CHURCH",
+		"original_address": "7037 HIGHWAY 212, N COVINGTON, GA 30016",
+		"location_type": "ROOFTOP",
+		"formatted_address": "7037 GA-212, Covington, GA 30016, USA",
+		"lat": 33.5456633,
+		"lng": -84.0162879
+	}
+}

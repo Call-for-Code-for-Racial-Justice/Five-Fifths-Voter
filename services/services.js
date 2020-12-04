@@ -102,6 +102,7 @@ app.get('/ballotreturn/locations/', (req, res) => {
 });
 
 app.post('/pollingplace/', civic.pollingPlace);
+app.get('/elections/', civic.elections);
 
 // Removed zip code lookup - see 7147571738298eab5f5ff840c7cb7f674445b24c for old code
 

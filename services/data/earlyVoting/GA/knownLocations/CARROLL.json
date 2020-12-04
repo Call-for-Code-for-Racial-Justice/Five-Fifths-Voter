@@ -1,0 +1,18 @@
+{
+    "423 COLLEGE STREET CARROLLTON GA 30117": {
+        "location_name": "COUNTY ADMINISTRATION BUILDING",
+        "location_type": "ROOFTOP",
+        "original_address": "423 COLLEGE STREET CARROLLTON GA 30117",
+        "formatted_address": "423 College St, Carrollton, GA 30117, USA",
+        "lat": 33.5841753,
+        "lng": -85.0718445
+    },
+    "524 LESLIE DR VILLA RICA GA 30180": {
+        "location_name": "POWELL PARK ART CENTER",
+        "location_type": "ROOFTOP",
+        "original_address": "524 LESLIE DR VILLA RICA GA 30180",
+        "formatted_address": "524 Leslie Dr, Villa Rica, GA 30180, USA",
+        "lat": 33.7275559,
+        "lng": -84.92886659999999
+    }
+}

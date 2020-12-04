@@ -52,11 +52,24 @@
               <span v-if="absenteeVotingInfoUrl">
                 <cv-link :href="absenteeVotingInfoUrl"> Get Absentee Ballot</cv-link><br />
               </span>
-              <span v-if="placeholderMap"
+              <span v-if="!locationAvailable"
                 >No known locations. Check with your local election officials.
               </span>
+              <cv-select
+                v-if="electionList.length"
+                label="Select Your Election"
+                v-model.trim="electionName"
+              >
+                <cv-select-option disabled selected hidden>Choose an election</cv-select-option>
+                <cv-select-option
+                  v-for="(item, index) in electionList"
+                  :key="index"
+                  :selected="index == 0 ? 'selected' : ''"
+                  >{{ item }}</cv-select-option
+                >
+              </cv-select>
               <cv-list v-if="locationList">
-                <cv-list-item v-for="item in locationList" :key="item.address.locationName">
+                <cv-list-item v-for="(item, index) in locationList" :key="index">
                   <span class="loc-name">{{ item.address.locationName }}</span>
                   <span v-if="!early && item.pollingHours" class="loc-name">{{
                     item.pollingHours
@@ -84,7 +97,12 @@
         <img class="aside__image" src="../../assets/holder-atlanta-map.png" alt="google map img" />
       </aside>
       <aside v-else>
-        <GoogleMap class="side-map" :markers="mapMarkers" ref="earlyMap" />
+        <GoogleMap
+          class="side-map"
+          :markers="mapMarkers"
+          :home="normalizedAddressValue"
+          ref="earlyMap"
+        />
       </aside>
     </template>
   </MainContent>
@@ -102,9 +120,11 @@ export default {
     return {
       addressLabel: 'Adress where you are registered to vote',
       addressValue: '',
+      normalizedAddressValue: '',
       placeholder: '123 Main St GA 30076',
       buttonDisabled: true,
       early: false,
+      electionName: '',
       voterData: {}
     };
   },
@@ -161,18 +181,63 @@ export default {
     placeholderMap() {
       return this.mapMarkers.length === 0;
     },
+    electionList() {
+      try {
+        if (!this.voterData.fivefifthsdata || !this.voterData.fivefifthsdata.elections) return [];
+
+        var elections = this.voterData.fivefifthsdata.elections;
+
+        if (elections.length > 1) return elections;
+        else return [];
+      } catch (error) {
+        return [];
+      }
+    },
+    locationAvailable() {
+      var locations;
+      if (this.early) locations = this.voterData.earlyVoteSites;
+      else locations = this.voterData.pollingLocations;
+
+      var good = locations && locations.length > 0;
+      return good;
+    },
+    locationList() {
+      try {
+        var locations = [];
+        if (this.early) locations = this.voterData.earlyVoteSites;
+        else locations = this.voterData.pollingLocations;
+        if (!locations) locations = [];
+
+        var filteredLocation = locations.filter(function(item) {
+          return item.address.electionName === this.electionName;
+        }, this);
+
+        return filteredLocation;
+      } catch (error) {
+        //console.error(error);
+        return null;
+      }
+    },
     mapMarkers() {
       var list = [];
       try {
         var index = 0;
-        var locations = [];
-        if (this.early) locations = this.voterData.earlyVoteSites;
-        else locations = this.voterData.pollingLocations;
+        var locations = this.locationList;
+
         while (index < locations.length) {
           var item = locations[index];
+          if (!item.latitude || !item.longitude) {
+            var dir_address = '';
+            if (item.address.line1) dir_address += item.address.line1;
+            if (item.address.line2) dir_address += ' ' + item.address.line2;
+            if (item.address.line3) dir_address += ' ' + item.address.line3;
+            if (item.address.city) dir_address += ' ' + item.address.city;
+            if (item.address.state) dir_address += ' ' + item.address.state;
+          }
+
           list.push({
-            id: item.address.locationName,
-            position: { lat: item.latitude, lng: item.longitude },
+            id: item.address.locationName + index,
+            position: { lat: item.latitude, lng: item.longitude, address: dir_address },
             info: this.locationInfo(item),
             title: item.address.locationName
           });
@@ -182,23 +247,11 @@ export default {
       } catch (error) {
         return list;
       }
-    },
-    locationList() {
-      try {
-        var locations = [];
-        if (this.early) locations = this.voterData.earlyVoteSites;
-        else locations = this.voterData.pollingLocations;
-
-        return locations;
-      } catch (error) {
-        return null;
-      }
     }
   },
   mounted() {},
   methods: {
     showPollingLocation() {
-      if (this.$refs.earlyMap) this.$refs.earlyMap.clearMarkers();
       axios
         .post(process.env.VUE_APP_SERVICE_API_HOST + '/pollingplace', {
           data: {
@@ -207,6 +260,16 @@ export default {
         })
         .then(response => {
           this.voterData = response.data;
+          this.normalizedAddressValue = '';
+          Object.values(this.voterData.normalizedInput).forEach(element => {
+            this.normalizedAddressValue = this.normalizedAddressValue + ' ' + element;
+          });
+          this.normalizedAddressValue = this.normalizedAddressValue.trim();
+
+          if (this.voterData.fivefifthsdata && this.voterData.fivefifthsdata.elections) {
+            var elections = this.voterData.fivefifthsdata.elections;
+            this.electionName = elections[elections.length - 1];
+          }
         })
         .catch(error => {
           error;

@@ -1,0 +1,42 @@
+{
+    "736 WHITLOCK AVE NW MARIETTA GA 30064 - 4663": {
+        "location_name": "1 MAIN OFFICE",
+        "location_type": "ROOFTOP",
+        "original_address": "736 WHITLOCK AVE NW MARIETTA, GA 30064 - 4663",
+        "formatted_address": "736 Whitlock Ave NW, Marietta, GA 30064, USA",
+        "lat": 33.9536152,
+        "lng": -84.5738877
+    },
+    "135 RIVERSIDE PARKWAY AUSTELL GA 30168": {
+        "location_name": "4 SOUTH- RIVERSIDE EPICENTER",
+        "location_type": "ROOFTOP",
+        "original_address": "135 RIVERSIDE PARKWAY AUSTELL, GA 30168",
+        "formatted_address": "135 Riverside Pkwy, Austell, GA 30168, USA",
+        "lat": 33.7717145,
+        "lng": -84.55731890000001
+    },
+    "4400 LOWER ROSWELL RD MARIETTA GA 30068 - 4233": {
+        "location_name": "6 EAST- EAST COBB GOVT SVC CENTER",
+        "location_type": "ROOFTOP",
+        "original_address": "4400 LOWER ROSWELL RD MARIETTA, GA 30068 - 4233",
+        "formatted_address": "4400 Lower Roswell Rd, Marietta, GA 30067, USA",
+        "lat": 33.962865,
+        "lng": -84.4230931
+    },
+    "4845 DALLAS HWY POWDER SPRINGS GA 30127 - 4486": {
+        "location_name": "7 WEST- WARD RECREATION CENTER",
+        "location_type": "ROOFTOP",
+        "original_address": "4845 DALLAS HWY POWDER SPRINGS, GA 30127 - 4486",
+        "formatted_address": "4845 Dallas Hwy, Powder Springs, GA 30127, USA",
+        "lat": 33.9422063,
+        "lng": -84.695093
+    },
+    "3535 OLD HWY 41 NW KENNESAW GA 30144": {
+        "location_name": "9 NORTH - NORTH COBB REGIONAL LIBRARY",
+        "location_type": "ROOFTOP",
+        "original_address": "3535 OLD HWY 41 NW KENNESAW, GA 30144",
+        "formatted_address": "3535 Old 41 Hwy NW, Kennesaw, GA 30144, USA",
+        "lat": 34.0386566,
+        "lng": -84.6519363
+    }
+}

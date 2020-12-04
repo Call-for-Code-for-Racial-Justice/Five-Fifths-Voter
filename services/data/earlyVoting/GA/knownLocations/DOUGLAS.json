@@ -1,0 +1,43 @@
+{
+	"6754 CHURCH STREET DOUGLASVILLE GA 30134": {
+		"location_name": "0730-OLD COURTHOUSE",
+		"location_type": "ROOFTOP",
+		"original_address": "6754 CHURCH STREET DOUGLASVILLE, GA 30134",
+		"formatted_address": "6754 Church St, Douglasville, GA 30134, USA",
+		"lat": 33.749083,
+		"lng": -84.750507
+	},
+	"5000 GEORGIA HIGHWAY 92 DOUGLASVILLE GA 30135": {
+		"location_name": "0785-BOUNDARY WATERS AQUATIC CENTER",
+		"location_type": "GEOMETRIC_CENTER/ROOFTOP",
+		"original_address": "5000 GEORGIA HIGHWAY 92 DOUGLASVILLE, GA 30135",
+		"formatted_address": "5000 GA-92, Douglasville, GA 30135, USA",
+		"lat": 33.666993,
+		"lng": -84.66482,
+		"corrected": true
+	},
+	"6100 GA HIGHWAY 5 DOUGLASVILLE GA 30135": {
+		"location_name": "1260- DOG RIVER LIBRARY",
+		"location_type": "ROOFTOP",
+		"original_address": "6100 GA. HIGHWAY 5 DOUGLASVILLE, GA 30135",
+		"formatted_address": "6100 GA-5, Douglasville, GA 30135, USA",
+		"lat": 33.6379688,
+		"lng": -84.8275846
+	},
+	"2105 MACK RD DOUGLASVILLE GA 30135": {
+		"location_name": "1276-DEER LICK PARK REC. CTR.",
+		"location_type": "ROOFTOP",
+		"original_address": "2105 MACK RD DOUGLASVILLE, GA 30135",
+		"formatted_address": "2105 Mack Rd, Douglasville, GA 30135, USA",
+		"lat": 33.7492442,
+		"lng": -84.68525679999999
+	},
+	"8700 HOSPITAL DR DOUGLASVILLE GA 30134": {
+		"location_name": "DOUGLAS COUNTY COURTHOUSE",
+		"location_type": "ROOFTOP",
+		"original_address": "8700 HOSPITAL DR DOUGLASVILLE, GA 30134",
+		"formatted_address": "8700 Hospital Dr, Douglasville, GA 30134, USA",
+		"lat": 33.7433513,
+		"lng": -84.7306584
+	}
+}

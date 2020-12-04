@@ -1,0 +1,18 @@
+{
+    "435 WEST MAIN STREET CARTERSVILLE GA 30120": {
+        "location_name": "CARTERSVILLE CIVIC CENTER",
+        "location_type": "ROOFTOP",
+        "original_address": "435 WEST MAIN STREET CARTERSVILLE, GA 30120",
+        "formatted_address": "435 W Main St, Cartersville, GA 30120, USA",
+        "lat": 34.16354949999999,
+        "lng": -84.8064654
+    },
+    "1300 JOE FRANK HARRIS PWY CARTERSVILLE GA 30120": {
+        "location_name": "REGISTRATION OFFICE",
+        "location_type": "ROOFTOP",
+        "original_address": "1300 JOE FRANK HARRIS PWY CARTERSVILLE, GA 30120",
+        "formatted_address": "1300 Joe Frank Harris Pkwy SE, Cartersville, GA 30120, USA",
+        "lat": 34.2062407,
+        "lng": -84.8141196
+    }
+}

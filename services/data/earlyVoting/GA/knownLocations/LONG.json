@@ -1,0 +1,11 @@
+{
+	"75 WEST ACADEMY STREET LUDOWICI GA 31316": {
+		"location_name": "MARY ANN ODUM ANNEX",
+		"original_address": "75 WEST ACADEMY STREET LUDOWICI, GA 31316",
+		"location_type": "RANGE_INTERPOLATED/ROOFTOP",
+		"formatted_address": "75 WEST E Academy St, Ludowici, GA 31316, USA",
+		"lat": 31.709433,
+		"lng": -81.739244,
+		"corrected": true
+	}
+}

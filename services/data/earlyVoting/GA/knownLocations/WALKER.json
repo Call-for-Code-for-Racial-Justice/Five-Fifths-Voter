@@ -1,0 +1,42 @@
+{
+    "1817 LEE CLARKSON RD CHICKAMAUGA GA 30707": {
+        "location_name": "CHICKAMAUGA CIVIC CENTER",
+        "original_address": "1817 LEE CLARKSON RD CHICKAMAUGA, GA 30707",
+        "location_type": "ROOFTOP",
+        "formatted_address": "1817 Lee Clarkson Rd, Chickamauga, GA 30707, USA",
+        "lat": 34.8689976,
+        "lng": -85.29322119999999
+    },
+    "265 BICENTENNIAL TRAIL ROCK SPRING GA 30739": {
+        "location_name": "GEORGIA NORTHWESTERN TECHNICAL COLLEGE",
+        "original_address": "265 BICENTENNIAL TRAIL ROCK SPRING, GA 30739",
+        "location_type": "GEOMETRIC_CENTER",
+        "formatted_address": "265 Bicentennial Trail, Rock Spring, GA 30739, USA",
+        "lat": 34.8091131,
+        "lng": -85.24572520000001
+    },
+    "1300 LULA LAKE ROAD LOOKOUT MOUNTAIN GA 30750": {
+        "location_name": "LOOKOUT MOUNTAIN UNITED METHODIST CHURCH",
+        "original_address": "1300 LULA LAKE ROAD LOOKOUT MOUNTAIN, GA 30750",
+        "location_type": "ROOFTOP",
+        "formatted_address": "1300 Lula Lake Rd, Lookout Mountain, GA 30750, USA",
+        "lat": 34.9762613,
+        "lng": -85.3585436
+    },
+    "400 MCFARLAND AVE ROSSVILLE GA 30741": {
+        "location_name": "ROSSVILLE MUNICIPAL CIVIC CENTER",
+        "original_address": "400 MCFARLAND AVE ROSSVILLE, GA 30741",
+        "location_type": "ROOFTOP",
+        "formatted_address": "400 McFarland Ave, Rossville, GA 30741, USA",
+        "lat": 34.9805604,
+        "lng": -85.2882108
+    },
+    "103 S DUKE STREET LAFAYETTE GA 30728": {
+        "location_name": "WALKER COUNTY COURTHOUSE",
+        "original_address": "103 S. DUKE STREET LAFAYETTE, GA 30728",
+        "location_type": "ROOFTOP",
+        "formatted_address": "103 S Duke St, LaFayette, GA 30728, USA",
+        "lat": 34.7043906,
+        "lng": -85.28053270000001
+    }
+}

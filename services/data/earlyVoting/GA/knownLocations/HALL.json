@@ -1,0 +1,34 @@
+{
+    "100 BRENAU GAINESVILLE GA 30501": {
+        "location_name": "CITY OF GAINESVILLE DOWNTOWN BUILDING",
+        "original_address": "100 BRENAU GAINESVILLE, GA 30501",
+        "location_type": "ROOFTOP",
+        "formatted_address": "100 Brenau Ave NW, Gainesville, GA 30501, USA",
+        "lat": 34.3007874,
+        "lng": -83.8281006
+    },
+    "3911 P DAVISON ROAD GAINESVILLE GA 30507": {
+        "location_name": "EAST HALL COMMUNITY BUILDING",
+        "original_address": "3911 P DAVISON ROAD GAINESVILLE, GA 30507",
+        "location_type": "ROOFTOP",
+        "formatted_address": "3911 P Davidson Rd, Gainesville, GA 30507, USA",
+        "lat": 34.3185624,
+        "lng": -83.7364324
+    },
+    "4175 NOPONE RD GAINESVILLE GA 30506": {
+        "location_name": "NORTH HALL COMMUNITY CENTER",
+        "original_address": "4175 NOPONE RD GAINESVILLE, GA 30506",
+        "location_type": "ROOFTOP",
+        "formatted_address": "4175 Nopone Rd, Gainesville, GA 30506, USA",
+        "lat": 34.4056889,
+        "lng": -83.7980159
+    },
+    "6488 SPOUT SPRINGS RD FLOWERY BRANCH GA 30542": {
+        "location_name": "SPOUT SPRINGS LIBRARY",
+        "original_address": "6488 SPOUT SPRINGS RD FLOWERY BRANCH, GA 30542",
+        "location_type": "ROOFTOP",
+        "formatted_address": "6488 Spout Springs Rd, Flowery Branch, GA 30542, USA",
+        "lat": 34.1522456,
+        "lng": -83.894341
+    }
+}

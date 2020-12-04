@@ -1,0 +1,11 @@
+{
+    "232 WEST 12TH STREET ALMA GA 31510": {
+        "location_name": "BACON COUNTY ELECTIONS OFFICE",
+        "location_type": "RANGE_INTERPOLATED/ROOFTOP",
+        "original_address": "232 WEST 12TH STREET ALMA, GA 31510",
+        "formatted_address": "232 W 12th St, Alma, GA 31510, USA",
+        "lat": 31.5413592,
+        "lng": -82.464885,
+        "corrected": true
+    }
+}

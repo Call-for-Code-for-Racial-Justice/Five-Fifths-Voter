@@ -9,6 +9,17 @@
         :map="map"
         :collection="markerRefs"
       />
+
+      <!-- home / center marker -->
+      <GoogleMapMarker
+        :key="voterAddress.id"
+        :marker="voterAddress"
+        :google="google"
+        :map="map"
+        :geocode="true"
+        :icon="require('@/assets/icons/user.png')"
+        :collection="centerRef"
+      />
     </template>
   </GoogleMapLoader>
 </template>
@@ -25,16 +36,25 @@ export default {
     GoogleMapMarker
   },
   props: {
-    markers: Array
+    markers: Array,
+    home: String
   },
   data() {
     return {
       apiKey: process.env.VUE_APP_GOOGLE_MAP_API_KEY,
-      markerRefs: []
+      markerRefs: [],
+      centerRef: []
     };
   },
   watch: {},
   computed: {
+    voterAddress() {
+      return {
+        id: this.home,
+        position: { address: this.home },
+        title: 'Voter Address'
+      };
+    },
     mapConfig() {
       return {
         ...mapSettings,
@@ -42,25 +62,18 @@ export default {
       };
     },
     mapCenter() {
+      // Use the center ref or the first map marker as the center
       var cntr;
-      if (this.markers && this.markers.length) cntr = this.markers[0].position;
-      else cntr = { lat: 38.889805, lng: -77.009056 };
+      if (this.centerRef && this.centerRef.length) {
+        var posHome = this.centerRef[0].getPosition();
+        cntr = posHome;
+      } else if (this.markerRefs && this.markerRefs.length) {
+        var pos = this.markerRefs[0].getPosition();
+        cntr = pos;
+      } else cntr = { lat: 38.889805, lng: -77.009056 };
       return cntr;
     }
   },
-  methods: {
-    clearMarkers() {
-      // Remove all the existing markers. This should be called when the polling place request is updated
-      try {
-        this.markerRefs.forEach(element => {
-          if (element.setMap) element.setMap(null);
-        });
-        this.markerRefs = [];
-      } catch (error) {
-        /* eslint no-console: 0 */
-        console.error(error);
-      }
-    }
-  }
+  methods: {}
 };
 </script>

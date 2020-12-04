@@ -1,0 +1,42 @@
+{
+    "275 CLEVELAND ROAD BOGART GA 30622": {
+        "location_name": "ACC COORPERATIVE EXTENSION OFFICE",
+        "location_type": "ROOFTOP",
+        "original_address": "275 CLEVELAND ROAD BOGART, GA 30622",
+        "formatted_address": "275 Cleveland Rd, Bogart, GA 30622, USA",
+        "lat": 33.9452336,
+        "lng": -83.4738057
+    },
+    "2025 BAXTER STREET ATNENS GA 30606": {
+        "location_name": "ATHENS REGIONAL  LIBRARY",
+        "location_type": "ROOFTOP",
+        "original_address": "2025 BAXTER STREET ATNENS, GA 30606",
+        "formatted_address": "2025 Baxter St, Athens, GA 30606, USA",
+        "lat": 33.9449534,
+        "lng": -83.40355790000001
+    },
+    "4460 LEXINGTON ROAD ATHENS GA 30605": {
+        "location_name": "ATHENS-CLARKE COUNTY TENNIS CENTER",
+        "location_type": "ROOFTOP",
+        "original_address": "4460 LEXINGTON ROAD ATHENS, GA 30605",
+        "formatted_address": "4460 Lexington Rd, Athens, GA 30605, USA",
+        "lat": 33.9253471,
+        "lng": -83.3030615
+    },
+    "155 E WASHINGTON STREET ATHENS GA 30601": {
+        "location_name": "BOARD OF ELECTIONS OFFICE",
+        "location_type": "ROOFTOP",
+        "original_address": "155 E. WASHINGTON STREET ATHENS, GA 30601",
+        "formatted_address": "155 E Washington St, Athens, GA 30601, USA",
+        "lat": 33.9594279,
+        "lng": -83.3767269
+    },
+    "410 MCKINLEY DRIVE ATHENS GA 30605": {
+        "location_name": "MIRIAM MOORE COMMUNITY CENTER",
+        "location_type": "ROOFTOP",
+        "original_address": "410 MCKINLEY DRIVE ATHENS, GA 30605",
+        "formatted_address": "410 McKinley Dr, Athens, GA 30601, USA",
+        "lat": 33.959218,
+        "lng": -83.35511199999999
+    }
+}

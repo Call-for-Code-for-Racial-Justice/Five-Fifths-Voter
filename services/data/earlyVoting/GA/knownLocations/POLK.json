@@ -1,0 +1,18 @@
+{
+    "144 WEST AVE CEDARTOWN GA 30125": {
+        "location_name": "CEDARTOWN ELECTIONS OFFICE",
+        "original_address": "144 WEST AVE CEDARTOWN, GA 30125",
+        "location_type": "ROOFTOP",
+        "formatted_address": "144 West Ave, Cedartown, GA 30125, USA",
+        "lat": 34.0114711,
+        "lng": -85.2564811
+    },
+    "604 GOODYEAR AVE ROCKMART GA 30153": {
+        "location_name": "ROCKMART COMMUNITY CENTER",
+        "original_address": "604 GOODYEAR AVE ROCKMART, GA 30153",
+        "location_type": "ROOFTOP",
+        "formatted_address": "604 Goodyear Ave, Rockmart, GA 30153, USA",
+        "lat": 34.0030733,
+        "lng": -85.04248659999999
+    }
+}

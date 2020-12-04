@@ -1,0 +1,11 @@
+{
+	"23 COURT STREET ROOM 113 WASHINGTON GA 30673": {
+		"location_name": "BOARD OF REGISTRARS",
+		"original_address": "23 COURT STREET ROOM 113 WASHINGTON, GA 30673",
+		"location_type": "APPROXIMATE/ROOFTOP",
+		"formatted_address": "23 E Court St #222, Washington, GA 30673, USA",
+		"lat": 33.738177,
+		"lng": -82.739013,
+		"corrected": true
+	}
+}
