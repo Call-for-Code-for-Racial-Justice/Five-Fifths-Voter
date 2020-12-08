@@ -46,8 +46,6 @@ export default {
     new Promise((resolve, reject) => {
       // If there is already a lat/lng then we are done
       if (this.marker.position.lat && this.marker.position.lng) {
-        /* eslint no-console: 0 */
-        //console.log('already geocoded');
         return resolve(this.marker);
       }
 
