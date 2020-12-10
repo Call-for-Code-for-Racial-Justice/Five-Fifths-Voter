@@ -93,8 +93,9 @@ export default {
         return null;
       })
       .catch(reason => {
-        console.error(reason);
         // do no create a marker for this address
+        /* eslint no-console: 0 */
+        console.error(reason);
       });
   },
   methods: {
