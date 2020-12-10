@@ -1,0 +1,12 @@
+{
+	"400 WEST MAIN ST SUITE 301 BLUE RIDGE GA 30513": {
+		"location_name": "ELECTION OFFICE",
+		"location_type": "ROOFTOP",
+		"original_address": "400 WEST MAIN ST. SUITE 301 BLUE RIDGE, GA 30513",
+		"formatted_address": "400 W Main St, Blue Ridge, GA 30513",
+		"status": "ZERO_RESULTS",
+		"lat": 34.8642773,
+		"lng": -84.3263728,
+		"corrected": true
+	}
+}

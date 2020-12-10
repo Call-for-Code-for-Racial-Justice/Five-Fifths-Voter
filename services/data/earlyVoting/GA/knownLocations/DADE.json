@@ -1,0 +1,10 @@
+{
+    "71 CASE AVE TRENTON GA 30752": {
+        "location_name": "ADMIN.BLDG CMM/ROOM",
+        "location_type": "ROOFTOP",
+        "original_address": "71 CASE AVE TRENTON, GA 30752",
+        "formatted_address": "Dade County Administrative Building, 71 Case Ave, Trenton, GA 30752, USA",
+        "lat": 34.8720856,
+        "lng": -85.5107689
+    }
+}

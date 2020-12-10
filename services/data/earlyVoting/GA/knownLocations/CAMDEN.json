@@ -1,0 +1,26 @@
+{
+    "107 N GROSS RD KINGSLAND GA 31548": {
+        "location_name": "CAMDEN COUNTY ANNEX",
+        "location_type": "ROOFTOP",
+        "original_address": "107 N GROSS RD KINGSLAND, GA 31548",
+        "formatted_address": "107 N Gross Rd, Kingsland, GA 31548, USA",
+        "lat": 30.7868151,
+        "lng": -81.6450838
+    },
+    "406 OSBORNE STREET ST MARYS GA 31558": {
+        "location_name": "ST. MARYS SATURDAY EARLY VOTING",
+        "location_type": "ROOFTOP",
+        "original_address": "406 OSBORNE STREET ST. MARYS, GA 31558",
+        "formatted_address": "406 Osborne St, St Marys, GA 31558, USA",
+        "lat": 30.7251169,
+        "lng": -81.547411
+    },
+    "400 OSBORNE ST SAINT MARYS GA 31558": {
+        "location_name": "ST. MARYS WELCOME CENTER",
+        "location_type": "ROOFTOP",
+        "original_address": "400 OSBORNE ST SAINT MARYS, GA 31558",
+        "formatted_address": "400 Osborne St, St Marys, GA 31558, USA",
+        "lat": 30.7248211,
+        "lng": -81.54723709999999
+    }
+}

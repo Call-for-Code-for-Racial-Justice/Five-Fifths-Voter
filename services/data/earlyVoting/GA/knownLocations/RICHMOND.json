@@ -1,0 +1,34 @@
+{
+    "712 TELFAIR STREET AUGUSTA GA 30901": {
+        "location_name": "BELL AUDITORIUM",
+        "original_address": "712 TELFAIR STREET AUGUSTA, GA 30901",
+        "location_type": "ROOFTOP",
+        "formatted_address": "712 Telfair St, Augusta, GA 30901, USA",
+        "lat": 33.4712927,
+        "lng": -81.96601059999999
+    },
+    "2463 GOLDEN CAMP ROAD AUGUSTA GA 30906": {
+        "location_name": "HENRY H BRIGHAM COMM.CENTER",
+        "original_address": "2463 GOLDEN CAMP ROAD AUGUSTA, GA 30906",
+        "location_type": "ROOFTOP",
+        "formatted_address": "2463 Golden Camp Rd, Augusta, GA 30906, USA",
+        "lat": 33.4296848,
+        "lng": -82.05203589999999
+    },
+    "103 DIAMOND LAKES WAY HEPHZIBAH GA 30815": {
+        "location_name": "ROBERT HOWARD CC/DIAMOND LAKES",
+        "original_address": "103 DIAMOND LAKES WAY HEPHZIBAH, GA 30815",
+        "location_type": "ROOFTOP",
+        "formatted_address": "103 Diamond Lakes Way, Hephzibah, GA 30815, USA",
+        "lat": 33.3548292,
+        "lng": -82.088453
+    },
+    "300 WARREN ROAD AUGUSTA GA 30907": {
+        "location_name": "WARREN RD RECREATION CENTER",
+        "original_address": "300 WARREN ROAD AUGUSTA, GA 30907",
+        "location_type": "ROOFTOP",
+        "formatted_address": "300 Warren Rd, Augusta, GA 30907, USA",
+        "lat": 33.5062214,
+        "lng": -82.05769629999999
+    }
+}

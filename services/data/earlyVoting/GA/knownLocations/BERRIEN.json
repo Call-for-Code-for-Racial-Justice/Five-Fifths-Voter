@@ -1,0 +1,10 @@
+{
+    "201 N DAVIS ST NASHVILLE GA 31639": {
+        "location_name": "COUNTY ADMIN BUILDING",
+        "location_type": "ROOFTOP",
+        "original_address": "201 N. DAVIS ST. NASHVILLE, GA 31639",
+        "formatted_address": "201 N Davis St, Nashville, GA 31639, USA",
+        "lat": 31.2084994,
+        "lng": -83.2494298
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "100 STARKSVILLE AVE N LEESBURG GA 31763": {
+        "location_name": "ELECTIONS OFFICE",
+        "original_address": "100 STARKSVILLE AVE., N LEESBURG, GA 31763",
+        "location_type": "ROOFTOP",
+        "formatted_address": "100 Starksville Ave N, Leesburg, GA 31763, USA",
+        "lat": 31.7317509,
+        "lng": -84.16760909999999
+    },
+    "1286 GRAVES SPRINGS ROAD LEESBURG GA 31763": {
+        "location_name": "REDBONE FIRE STATION #5",
+        "original_address": "1286 GRAVES SPRINGS ROAD LEESBURG, GA 31763",
+        "location_type": "ROOFTOP",
+        "formatted_address": "1286 Graves Springs Rd, Leesburg, GA 31763, USA",
+        "lat": 31.6527921,
+        "lng": -84.0959231
+    },
+    "445 OAKLAND PARKWAY WEST LEESBURG GA 31763": {
+        "location_name": "THE BINDERY @ OAKLAND LIBRARY",
+        "original_address": "445 OAKLAND PARKWAY WEST LEESBURG, GA 31763",
+        "location_type": "ROOFTOP",
+        "formatted_address": "445 Oakland Pkwy, Leesburg, GA 31763, USA",
+        "lat": 31.6478229,
+        "lng": -84.2579342
+    }
+}

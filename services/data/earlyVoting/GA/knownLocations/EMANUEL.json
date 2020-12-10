@@ -1,0 +1,10 @@
+{
+    "105 SOUTH MAIN STREET SWAINSBORO GA 30401": {
+        "location_name": "OFFICE",
+        "location_type": "ROOFTOP",
+        "original_address": "105 SOUTH MAIN STREET SWAINSBORO, GA 30401",
+        "formatted_address": "105 S Main St, Swainsboro, GA 30401, USA",
+        "lat": 32.5971822,
+        "lng": -82.3338182
+    }
+}

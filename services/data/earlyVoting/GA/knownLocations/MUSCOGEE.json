@@ -1,0 +1,34 @@
+{
+    "3111 CITIZENS WAY COLUMBUS GA 31906": {
+        "location_name": "CITIZENS SERVICE CENTER",
+        "original_address": "3111 CITIZENS WAY COLUMBUS, GA 31906",
+        "location_type": "ROOFTOP",
+        "formatted_address": "3111 Citizens Way, Columbus, GA 31906, USA",
+        "lat": 32.4764568,
+        "lng": -84.94551229999999
+    },
+    "801 FRONT AVENUE COLUMBUS GA 31901": {
+        "location_name": "COLUMBUS CONVENTION & TRADE CENTER",
+        "original_address": "801 FRONT AVENUE COLUMBUS, GA 31901",
+        "location_type": "ROOFTOP",
+        "formatted_address": "801 Front Ave, Columbus, GA 31901, USA",
+        "lat": 32.4619536,
+        "lng": -84.99556729999999
+    },
+    "6550 PSALMOND ROAD MIDLAND GA 31820": {
+        "location_name": "EARLY VOTING PSALMOND",
+        "original_address": "6550 PSALMOND ROAD MIDLAND, GA 31820",
+        "location_type": "ROOFTOP",
+        "formatted_address": "6550 Psalmond Rd, Midland, GA 31820, USA",
+        "lat": 32.5418828,
+        "lng": -84.8539425
+    },
+    "5025 STEAM MILL ROAD COLUMBUS GA 31907": {
+        "location_name": "SHIRLEY B WINSTON RECREATION CENTER",
+        "original_address": "5025 STEAM MILL ROAD COLUMBUS, GA 31907",
+        "location_type": "ROOFTOP",
+        "formatted_address": "5025 Steam Mill Rd, Columbus, GA 31907, USA",
+        "lat": 32.457984,
+        "lng": -84.9072769
+    }
+}

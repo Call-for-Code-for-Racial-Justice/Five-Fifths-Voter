@@ -1,0 +1,18 @@
+{
+    "9397 E OGLETHORPE HWY MIDWAY GA 31320": {
+        "location_name": "LIBERTY COUNTY COMPLEX",
+        "original_address": "9397 E. OGLETHORPE HWY. MIDWAY, GA 31320",
+        "location_type": "ROOFTOP",
+        "formatted_address": "9397 E Oglethorpe Hwy, Midway, GA 31320, USA",
+        "lat": 31.7981074,
+        "lng": -81.4545899
+    },
+    "100 N MAIN ST SUITE 1600 HINESVILLE GA 31313": {
+        "location_name": "MAIN OFFICE",
+        "original_address": "100 N. MAIN ST .SUITE 1600 HINESVILLE, GA 31313",
+        "location_type": "ROOFTOP",
+        "formatted_address": "100 N Main St #1600, Hinesville, GA 31313, USA",
+        "lat": 31.847577,
+        "lng": -81.5958405
+    }
+}

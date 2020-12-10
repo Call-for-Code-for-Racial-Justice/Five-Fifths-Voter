@@ -1,0 +1,10 @@
+{
+    "101 CIVIC CENTER DRIVE THOMASTON GA 30286": {
+        "location_name": "CIVIC CENTER",
+        "original_address": "101 CIVIC CENTER DRIVE THOMASTON, GA 30286",
+        "location_type": "ROOFTOP",
+        "formatted_address": "101 Civic Center Dr, Thomaston, GA 30286, USA",
+        "lat": 32.8855878,
+        "lng": -84.3095326
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "140 STONEWALL AVENUE WEST STE 209 FAYETTEVILLE GA 30214": {
+        "location_name": "FAYETTE COUNTY ELECTIONS OFFICE",
+        "original_address": "140 STONEWALL AVENUE WEST, STE 209 FAYETTEVILLE, GA 30214",
+        "location_type": "ROOFTOP",
+        "formatted_address": "140 Stonewall Ave W #209, Fayetteville, GA 30214, USA",
+        "lat": 33.4470043,
+        "lng": -84.45705579999999
+    },
+    "201 WILLOWBEND RD PEACHTREE CITY GA 30269": {
+        "location_name": "PEACHTREE CITY LIBRARY",
+        "original_address": "201 WILLOWBEND RD PEACHTREE CITY, GA 30269",
+        "location_type": "ROOFTOP",
+        "formatted_address": "201 Willowbend Rd, Peachtree City, GA 30269, USA",
+        "lat": 33.400401,
+        "lng": -84.580643
+    },
+    "881 SENOIA RD TYRONE GA 30290": {
+        "location_name": "TYRONE TOWN HALL",
+        "original_address": "881 SENOIA RD. TYRONE, GA 30290",
+        "location_type": "ROOFTOP",
+        "formatted_address": "881 Senoia Rd, Tyrone, GA 30290, USA",
+        "lat": 33.4751851,
+        "lng": -84.59626870000001
+    }
+}

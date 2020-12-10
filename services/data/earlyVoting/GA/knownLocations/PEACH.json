@@ -1,0 +1,18 @@
+{
+    "401 MAIN ST BYRON GA 31008": {
+        "location_name": "BYRON MUNICIPAL COMPLEX",
+        "original_address": "401 MAIN ST BYRON, GA 31008",
+        "location_type": "ROOFTOP",
+        "formatted_address": "401 Main St, Byron, GA 31008, USA",
+        "lat": 32.6541746,
+        "lng": -83.76203199999999
+    },
+    "205 W CHURCH ST FORT VALLEY GA 31030": {
+        "location_name": "PEACH COUNTY BOARD OF ELECTIONS & REGISTRATION OFFICE",
+        "original_address": "205 W CHURCH ST FORT VALLEY, GA 31030",
+        "location_type": "ROOFTOP",
+        "formatted_address": "205 W Church St, Fort Valley, GA 31030, USA",
+        "lat": 32.5533714,
+        "lng": -83.88809119999999
+    }
+}

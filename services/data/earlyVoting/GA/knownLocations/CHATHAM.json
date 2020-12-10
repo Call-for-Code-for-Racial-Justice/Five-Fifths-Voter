@@ -1,0 +1,42 @@
+{
+    "301 W OGLETHORPE AVE SAVANNAH GA 31401": {
+        "location_name": "CIVIC CENTER",
+        "location_type": "ROOFTOP",
+        "original_address": "301 W OGLETHORPE AVE SAVANNAH, GA 31401",
+        "formatted_address": "301 W Oglethorpe Ave, Savannah, GA 31401, USA",
+        "lat": 32.0765792,
+        "lng": -81.0970224
+    },
+    "50 JOHNNY MERCER BLVD SAVANNAH GA 31410": {
+        "location_name": "ISLANDS LIBRARY",
+        "location_type": "ROOFTOP",
+        "original_address": "50 JOHNNY MERCER BLVD SAVANNAH, GA 31410",
+        "formatted_address": "50 Johnny Mercer Blvd, Savannah, GA 31410, USA",
+        "lat": 32.0360724,
+        "lng": -81.008451
+    },
+    "1117 EISENHOWER DR STE E SAVANNAH GA 31406": {
+        "location_name": "MAIN OFFICE",
+        "location_type": "ROOFTOP",
+        "original_address": "1117 EISENHOWER DR, STE E SAVANNAH, GA 31406",
+        "formatted_address": "1117 Eisenhower Dr STE E, Savannah, GA 31406, USA",
+        "lat": 32.0055093,
+        "lng": -81.09969509999999
+    },
+    "65 BILLY B HAIR DR SAVANNAH GA 31407": {
+        "location_name": "MOSQUITO CONTROL",
+        "location_type": "ROOFTOP",
+        "original_address": "65 BILLY B HAIR DR SAVANNAH, GA 31407",
+        "formatted_address": "65 Billy B. Hair Dr, Savannah, GA 31408, USA",
+        "lat": 32.1180197,
+        "lng": -81.1918194
+    },
+    "14097 ABERCORN ST SAVANNAH GA 31419": {
+        "location_name": "SOUTHWEST LIBRARY",
+        "location_type": "ROOFTOP",
+        "original_address": "14097 ABERCORN ST SAVANNAH, GA 31419",
+        "formatted_address": "14097 Abercorn St, Savannah, GA 31419, USA",
+        "lat": 31.9857137,
+        "lng": -81.1758708
+    }
+}

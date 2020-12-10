@@ -1,0 +1,18 @@
+{
+    "325 OAK STREET CORNELIA GA 30531": {
+        "location_name": "FIRST BAPTIST CHURCH OF CORNELIA",
+        "original_address": "325 OAK STREET CORNELIA, GA 30531",
+        "location_type": "ROOFTOP",
+        "formatted_address": "325 Oak St, Cornelia, GA 30531, USA",
+        "lat": 34.5105089,
+        "lng": -83.52471949999999
+    },
+    "120 PAUL FRANKLIN RD CLARKESVILLE GA 30523": {
+        "location_name": "RUBY FULBRIGHT AQUATIC CENTER",
+        "original_address": "120 PAUL FRANKLIN RD CLARKESVILLE, GA 30523",
+        "location_type": "ROOFTOP",
+        "formatted_address": "120 Paul Franklin Rd, Clarkesville, GA 30523, USA",
+        "lat": 34.603976,
+        "lng": -83.5032992
+    }
+}

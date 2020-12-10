@@ -1,0 +1,12 @@
+{
+	"81 JACKSON ST ZEBULON GA 30295": {
+		"location_name": "ADVANCE/EARLY VOTING/REGISTRAR OFFICE",
+		"location_type": "ROOFTOP",
+		"original_address": "81 JACKSON ST ZEBULON, GA 30295",
+		"formatted_address": "81 Jackson St, Zebulon, GA 30295, USA",
+		"status": "ZERO_RESULTS",
+		"lat": 33.103071,
+		"lng": -84.342514,
+		"corrected": true
+	}
+}
