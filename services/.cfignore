@@ -1,0 +1,9 @@
+localdb
+README.md
+Dockerfile
+node_modules
+manifest.yml
+requirements.txt
+yarn.lock
+samples
+vendor

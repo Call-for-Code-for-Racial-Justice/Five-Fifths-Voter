@@ -1,0 +1,5830 @@
+{
+  "election": {
+    "id": "7000",
+    "name": "US 2020 General Election",
+    "electionDay": "2020-11-03",
+    "ocdDivisionId": "ocd-division/country:us"
+  },
+  "normalizedInput": {
+    "line1": "8620 Southeast Main Street",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97216"
+  },
+  "dropOffLocations": [
+    {
+      "address": {
+        "locationName": "Holgate Library Drop Box",
+        "line1": "7905 Southeast Holgate Boulevard",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97206"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box (use book return)",
+      "latitude": 45.490529,
+      "longitude": -122.5822722,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Midland Library Drop Box",
+        "line1": "805 Southeast 122nd Avenue",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97233"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in parking lot",
+      "latitude": 45.5167135,
+      "longitude": -122.5385024,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Belmont Library Drop Box",
+        "line1": "1038 César E. Chávez Boulevard",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97214"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drive-up drop box (use book return)",
+      "latitude": 45.515281,
+      "longitude": -122.6226736,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Gregory Heights Library Drop Box",
+        "line1": "7921 Northeast Sandy Boulevard",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97213"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drive-up drop box (use book return)",
+      "latitude": 45.5516622,
+      "longitude": -122.5813728,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Parkrose Neighborhood",
+        "line1": "4390 Northeast 102nd Avenue",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97220"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located in the east parking lot across the St from MHCC Maywood Park Center on NE 102nd and NE Prescott",
+      "latitude": 45.5548102,
+      "longitude": -122.5577311,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hollywood Library Drop Box",
+        "line1": "4040 Northeast Tillamook Street",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97212"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box (use book return)",
+      "latitude": 45.5375441,
+      "longitude": -122.6212373,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "McDonald's Restaurant",
+        "line1": "2010 Northeast Cesar E Chavez Boulevard",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97212"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located on the west side of NE 40th Ave between NE Tillamook and NE Hancock and near the Hollywood Library",
+      "latitude": 45.5372595,
+      "longitude": -122.6223707,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Multnomah County Duniway-Lovejoy Elections Building",
+        "line1": "1040 Southeast Morrison Street",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97214"
+      },
+      "notes": "Monday-Friday 8am-5pm; Saturday 10am-2pm; Election Day 7am-8pm - Inside County Clerk's office drop box and voting booths during voting period | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24-hour ballot drop slot available to pedestrians on the north side of the building as well as a drive-up boxes located on both SE 11th and SE Belmont",
+      "latitude": 45.5168807,
+      "longitude": -122.6549593,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Woodstock Library Drop Box",
+        "line1": "6008 Southeast 49th Avenue",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97206"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box (use book return)",
+      "latitude": 45.4789574,
+      "longitude": -122.6120503,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Regal Cinemas Movie Theater / M & M Car Wash",
+        "line1": "16603 Southeast Division Street",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97236"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located in the Regal Cinemas parking lot behind M & M Car Wash at SE Division St and SE 165th Ave",
+      "latitude": 45.5057002,
+      "longitude": -122.4921173,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Rockwood Library Drop Box",
+        "line1": "17917 Southeast Stark Street",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97233"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box (use book return)",
+      "latitude": 45.5195226,
+      "longitude": -122.4789874,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Pioneer Courthouse Square Walk up Drop Box",
+        "line1": "701 Southwest 6th Avenue",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97205"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour walk up drop box on the 700 block of SW Broadway next to Starbucks and across from Nordstrom's",
+      "latitude": 45.5190919,
+      "longitude": -122.6794909,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Central Library Drop Box",
+        "line1": "801 Southwest 10th Avenue",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97205"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drive-up drop box located on the east side of SW 11th between Yamhill and Taylor (use book return)",
+      "latitude": 45.5191246,
+      "longitude": -122.6830841,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Clackamas CC - Harmony",
+        "line1": "7738 Southeast Harmony Road",
+        "city": "Milwaukie",
+        "state": "OR",
+        "zip": "97222"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.4319387,
+      "longitude": -122.5825787,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Albina Library Drop Box",
+        "line1": "216 Northeast Knott Street",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97212"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drive-up drop box (use book return)",
+      "latitude": 45.5416469,
+      "longitude": -122.6630755,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sellwood-Moreland Library Drop Box",
+        "line1": "7860 Southeast 13th Avenue",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97202"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box (use book return)",
+      "latitude": 45.4677028,
+      "longitude": -122.652639,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Milwaukie Public Safety Building",
+        "line1": "3200 Southeast Harrison Street",
+        "city": "Milwaukie",
+        "state": "OR",
+        "zip": "97222"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.446158,
+      "longitude": -122.6286449,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Northwest Library Drop Box",
+        "line1": "2300 Northwest Thurman Street",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97210"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box (use book return)",
+      "latitude": 45.5353293,
+      "longitude": -122.6992034,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Gresham Library Drop Box",
+        "line1": "385 Northwest Miller Avenue",
+        "city": "Gresham",
+        "state": "OR",
+        "zip": "97030"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in parking lot",
+      "latitude": 45.5001517,
+      "longitude": -122.4329496,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Fairview-Columbia Library Drop Box",
+        "line1": "1520 Northeast Village Street",
+        "city": "Fairview",
+        "state": "OR",
+        "zip": "97024"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drive-up drop box (use book return)",
+      "latitude": 45.5322825,
+      "longitude": -122.4393359,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Milwaukie City Hall",
+        "line1": "10722 Southeast Main Street",
+        "city": "Milwaukie",
+        "state": "OR",
+        "zip": "97222"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.4452461,
+      "longitude": -122.6411662,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Gresham Voting Center Express - Multnomah County East Building",
+        "line1": "600 Northeast 8th Street",
+        "city": "Gresham",
+        "state": "OR",
+        "zip": "97030"
+      },
+      "notes": "Monday-Friday 8am-5pm; 10/13 Tuesday  8-7pm; 10/28 Wednesday-10/30 Friday 8am-7pm; 10/31 Saturday 10am-2pm; 11/2 Monday 8am-7pm; Election Day 7am-8pm - Inside first floor of the Multnomah East County Building (only available during Voting Center Express open hours); starting 10/12",
+      "latitude": 45.5026424,
+      "longitude": -122.4251079,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "North Portland Library Drop Box",
+        "line1": "512 North Killingsworth Street",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97217"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box (use book return)",
+      "latitude": 45.5624979,
+      "longitude": -122.6714937,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hillsdale Library Drop Box",
+        "line1": "1525 Southwest Sunset Boulevard",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97239"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box (use book return)",
+      "latitude": 45.4798082,
+      "longitude": -122.6940985,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "A-Boy Supply",
+        "line1": "7365 Southwest Barbur Boulevard",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97219"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at the southwest corner of the parking lot, enter from SW Terwilliger Blvd",
+      "latitude": 45.4718328,
+      "longitude": -122.6841446,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Troutdale Branch Library Drop Box",
+        "line1": "2451 Southwest Cherry Park Road",
+        "city": "Troutdale",
+        "state": "OR",
+        "zip": "97060"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box (use book return)",
+      "latitude": 45.5295939,
+      "longitude": -122.4095948,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Happy Valley Library",
+        "line1": "13793 Southeast Sieben Park Way",
+        "city": "Happy Valley",
+        "state": "OR",
+        "zip": "97015"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.422616,
+      "longitude": -122.5129855,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Happy Valley City Hall",
+        "line1": "16000 Southeast Misty Drive",
+        "city": "Happy Valley",
+        "state": "OR",
+        "zip": "97086"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside drive-up 24 hour drop box",
+      "latitude": 45.4293831,
+      "longitude": -122.4975936,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Oak Lodge Library",
+        "line1": "16201 Southeast McLoughlin Boulevard",
+        "city": "Oak Grove",
+        "state": "OR",
+        "zip": "97267"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.4057599,
+      "longitude": -122.6248655,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Gladstone Civic Center",
+        "line1": "18505 Portland Avenue",
+        "city": "Gladstone",
+        "state": "OR",
+        "zip": "97027"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.388347,
+      "longitude": -122.6001991,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Kenton Library Drop Box",
+        "line1": "8226 North Denver Avenue",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97217"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box (use book return)",
+      "latitude": 45.5828486,
+      "longitude": -122.6864923,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "West Slope Community Library Drop Box",
+        "line1": "3678 Southwest 78th Avenue",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97225"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.4934235,
+      "longitude": -122.7572158,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Green Zebra Grocery",
+        "line1": "3011 North Lombard Street",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97217"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box, entrance for the Green Zebra Grocery rear parking lot is on N Curtis Avenue",
+      "latitude": 45.5773743,
+      "longitude": -122.6976545,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lake Oswego City Hall",
+        "line1": "380 A Avenue",
+        "city": "Lake Oswego",
+        "state": "OR",
+        "zip": "97034"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside drive-up 24 hour drop box",
+      "latitude": 45.4193963,
+      "longitude": -122.6676371,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Capitol Hill Library Drop Box",
+        "line1": "10723 Southwest Capitol Highway",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97219"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drive-up drop box (use book return)",
+      "latitude": 45.4480452,
+      "longitude": -122.7253809,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Garden Home Community Library",
+        "line1": "7475 Southwest Oleson Road",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97223"
+      },
+      "notes": "Election Day until 8pm - Dates and hours at www.wccls.org/vote",
+      "latitude": 45.4661889,
+      "longitude": -122.753792,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "West Linn Public Library",
+        "line1": "1595 Burns Street",
+        "city": "West Linn",
+        "state": "OR",
+        "zip": "97068"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.3676309,
+      "longitude": -122.6141418,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "McCoy Park - Walk Up Drop Box",
+        "line1": "4677 North Trenton Street",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97203"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour walk up drop box, located on the northwest corner of N Trenton St and N Newman Ave",
+      "latitude": 45.5886662,
+      "longitude": -122.7156205,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Cedar Mill Community Library",
+        "line1": "12505 Northwest Cornell Road",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97229"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.5273898,
+      "longitude": -122.8058744,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Damascus Square",
+        "line1": "19850 Southeast Highway 212",
+        "city": "Damascus",
+        "state": "OR",
+        "zip": "97089"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside drive-up 24 hour drop box",
+      "latitude": 45.417252,
+      "longitude": -122.4577939,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Beaverton Library Drop Box",
+        "line1": "12375 Southwest 5th Street",
+        "city": "Beaverton",
+        "state": "OR",
+        "zip": "97005"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.4841084,
+      "longitude": -122.8040228,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Oregon City - City Hall",
+        "line1": "625 South Center Street",
+        "city": "Oregon City",
+        "state": "OR",
+        "zip": "97045"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside drive-up 24 hour drop box",
+      "latitude": 45.347357,
+      "longitude": -122.6153764,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lake Oswego - Westlake Park",
+        "line1": "14165 Bunick Drive",
+        "city": "Lake Oswego",
+        "state": "OR",
+        "zip": "97035"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside drive-up 24 hour drop box",
+      "latitude": 45.4251785,
+      "longitude": -122.7268143,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Washington County Service Center East",
+        "line1": "3700 Southwest Murray Boulevard",
+        "city": "Beaverton",
+        "state": "OR",
+        "zip": "97005"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box, please note: can get congested with traffic on Election Day",
+      "latitude": 45.4933806,
+      "longitude": -122.8255057,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Clackamas County Elections Drop Box",
+        "line1": "1710 Red Soils Court",
+        "city": "Oregon City",
+        "state": "OR",
+        "zip": "97045"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside drive-up 24 hour drop box",
+      "latitude": 45.3319527,
+      "longitude": -122.5959765,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "St Johns Library Drop Box",
+        "line1": "7510 North Charleston Avenue",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97203"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box (use book return)",
+      "latitude": 45.590031,
+      "longitude": -122.7510418,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "West Linn City Hall",
+        "line1": "22500 Salamo Road",
+        "city": "West Linn",
+        "state": "OR",
+        "zip": "97068"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.3625537,
+      "longitude": -122.6473957,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Tigard City Hall",
+        "line1": "13125 Southwest Hall Boulevard",
+        "city": "Tigard",
+        "state": "OR",
+        "zip": "97223"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.4251662,
+      "longitude": -122.7670533,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Bethany Library",
+        "line1": "15325 Northwest Central Drive",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97229"
+      },
+      "notes": "Election Day until 8pm - Dates and hours at www.wccls.org/vote",
+      "latitude": 45.554699,
+      "longitude": -122.8349158,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Boring - Clackamas County Bank",
+        "line1": "28500 Southeast Highway 212",
+        "city": "Boring",
+        "state": "OR",
+        "zip": "97009"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Drive-up 24 hour drop box",
+      "latitude": 45.4321154,
+      "longitude": -122.369901,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Aloha Community Library",
+        "line1": "17455 Southwest Farmington Road",
+        "city": "Aloha",
+        "state": "OR",
+        "zip": "97078"
+      },
+      "notes": "Election Day until 8pm - Farmington Marketplace Shopping Center, dates and hours at www.wccls.org/vote",
+      "latitude": 45.480079,
+      "longitude": -122.8574095,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Washington County Elections Office Drop Box",
+        "line1": "2925 Northeast Aloclek Drive",
+        "city": "Hillsboro",
+        "state": "OR",
+        "zip": "97124"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop boxes: directly outside entrance and in southwest corner of lot",
+      "latitude": 45.5413704,
+      "longitude": -122.8944173,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Beaverton Library - Murry Scholls ",
+        "line1": "11200 Southwest Murray Scholls Place",
+        "city": "Beaverton",
+        "state": "OR",
+        "zip": "97007"
+      },
+      "notes": "Election Day until 8pm - Dates and hours at www.wccls.org/vote",
+      "latitude": 45.4387867,
+      "longitude": -122.827739,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Tualatin City Offices",
+        "line1": "18880 Southwest Martinazzi Avenue",
+        "city": "Tualatin",
+        "state": "OR",
+        "zip": "97062"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.3843097,
+      "longitude": -122.7583852,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "King City - City Hall",
+        "line1": "15300 Southwest 116th Avenue",
+        "city": "King City",
+        "state": "OR",
+        "zip": "97224"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.4089416,
+      "longitude": -122.7951392,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Westside Commons",
+        "line1": "801 Northeast 34th Avenue",
+        "city": "Hillsboro",
+        "state": "OR",
+        "zip": "97124"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.5294317,
+      "longitude": -122.9472615,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hillsboro Public Library -  Shute Park",
+        "line1": "775 Southeast 10th Avenue",
+        "city": "Hillsboro",
+        "state": "OR",
+        "zip": "97123"
+      },
+      "notes": "Election Day until 8pm - Dates and hours at www.wccls.org/vote",
+      "latitude": 45.5145305,
+      "longitude": -122.9750085,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hillsboro Main Library",
+        "line1": "2850 Northeast Brookwood Parkway",
+        "city": "Hillsboro",
+        "state": "OR",
+        "zip": "97124"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box, please note: most-used box in the county, can get congested with traffic on Election Day",
+      "latitude": 45.5429861,
+      "longitude": -122.9360104,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Washington County Sheriff's Office - Headquarters & Jail",
+        "line1": "236 Southwest Dennis Avenue",
+        "city": "Hillsboro",
+        "state": "OR",
+        "zip": "97124"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located in the parking lot near corner of SW Dennis Ave and SW Washington St",
+      "latitude": 45.5208235,
+      "longitude": -122.9932633,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Canby - Arneson Garden",
+        "line1": "249 Sequoia Parkway",
+        "city": "Canby",
+        "state": "OR",
+        "zip": "97013"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.2651292,
+      "longitude": -122.6747903,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Canby Civic Building",
+        "line1": "222 Northeast 2nd Avenue",
+        "city": "Canby",
+        "state": "OR",
+        "zip": "97013"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.2643544,
+      "longitude": -122.6916747,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sandy Public Library",
+        "line1": "38980 Proctor Boulevard",
+        "city": "Sandy",
+        "state": "OR",
+        "zip": "97055"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside drive-up 24 hour drop box",
+      "latitude": 45.3969796,
+      "longitude": -122.2619356,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sandy City Hall",
+        "line1": "39250 Pioneer Boulevard",
+        "city": "Sandy",
+        "state": "OR",
+        "zip": "97055"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.3962479,
+      "longitude": -122.2587591,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Wilsonville City Hall",
+        "line1": "29799 Town Center Loop East",
+        "city": "Wilsonville",
+        "state": "OR",
+        "zip": "97070"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside drive-up 24 hour drop box",
+      "latitude": 45.3046959,
+      "longitude": -122.7600047,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sherwood City Hall",
+        "line1": "22560 Southwest Pine Street",
+        "city": "Sherwood",
+        "state": "OR",
+        "zip": "97140"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.3567779,
+      "longitude": -122.8401462,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Cornelius City Hall",
+        "line1": "1355 North Barlow Street",
+        "city": "Cornelius",
+        "state": "OR",
+        "zip": "97113"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.5216297,
+      "longitude": -123.0549929,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Molalla Public Library",
+        "line1": "201 East 5th Street",
+        "city": "Molalla",
+        "state": "OR",
+        "zip": "97038"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside drive-up 24 hour drop box",
+      "latitude": 45.1441348,
+      "longitude": -122.5771711,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Forest Grove City Library - Curbside",
+        "line1": "2114 Pacific Avenue",
+        "city": "Forest Grove",
+        "state": "OR",
+        "zip": "97116"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located on Pacific Ave just down from Birch St curbside to library",
+      "latitude": 45.5194453,
+      "longitude": -123.1094161,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "North Plains City Hall",
+        "line1": "31360 Northwest Commercial Street",
+        "city": "North Plains",
+        "state": "OR",
+        "zip": "97133"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.5973784,
+      "longitude": -122.9996194,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Estacada Public Library",
+        "line1": "825 Northwest Wade Street",
+        "city": "Estacada",
+        "state": "OR",
+        "zip": "97023"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside drive-up 24 hour drop box",
+      "latitude": 45.2969482,
+      "longitude": -122.3386518,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Estacada City Hall",
+        "line1": "475 Southeast Main Street",
+        "city": "Estacada",
+        "state": "OR",
+        "zip": "97023"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.2862264,
+      "longitude": -122.3345709,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "ColtonTel",
+        "line1": "20983 S",
+        "line2": "Oregon 211",
+        "city": "Colton",
+        "state": "OR",
+        "zip": "97017"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside drive-up 24 hour drop box",
+      "latitude": 45.1723117,
+      "longitude": -122.4351057,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Scappoose City Hall Drop Box",
+        "line1": "33568 East Columbia Avenue",
+        "city": "Scappoose",
+        "state": "OR",
+        "zip": "97056"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.7574541,
+      "longitude": -122.876777,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Newberg - PCC Center",
+        "line1": "135 Werth Boulevard",
+        "city": "Newberg",
+        "state": "OR",
+        "zip": "97132"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in parking lot",
+      "latitude": 45.3001778,
+      "longitude": -122.940064,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Donald City Hall",
+        "line1": "10710 Main Street Northeast",
+        "city": "Donald",
+        "state": "OR",
+        "zip": "97020"
+      },
+      "notes": "Monday-Thursday 8am-4pm; Friday 8am-12pm; Election Day until 8pm - Inside; starting 10/16",
+      "latitude": 45.2227859,
+      "longitude": -122.8413509,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Banks City Hall and Library",
+        "line1": "42461 NW",
+        "line2": "Market Street",
+        "city": "Banks",
+        "state": "OR",
+        "zip": "97106"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.61983,
+      "longitude": -123.113838,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Newberg - Jaquith Park - West",
+        "line1": "1215 North Main Street",
+        "city": "Newberg",
+        "state": "OR",
+        "zip": "97132"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in parking lot",
+      "latitude": 45.3097,
+      "longitude": -122.9775289,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hubbard City Hall",
+        "line1": "3720 2nd Street",
+        "city": "Hubbard",
+        "state": "OR",
+        "zip": "97032"
+      },
+      "notes": "Monday-Thursday 7am-5:30pm; Closed Friday; Election Day until 8pm - Inside; starting 10/16 | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; starting 10/16",
+      "latitude": 45.1825859,
+      "longitude": -122.8050548,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Newberg - Public Safety Building",
+        "line1": "401 East 3rd Street",
+        "city": "Newberg",
+        "state": "OR",
+        "zip": "97132"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box parking lot by Thrift Store",
+      "latitude": 45.298913,
+      "longitude": -122.9755368,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Columbia County Courthouse - Elections",
+        "line1": "230 Strand Street",
+        "city": "St. Helens",
+        "state": "OR",
+        "zip": "97051"
+      },
+      "notes": "Monday-Thursday 9:00am-5pm; Election Day 7am-8pm - Inside Elections office by appointment only call 503-397-7214 or email Elections@columbiacountyor.gov | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.8635952,
+      "longitude": -122.7970007,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Dundee City Hall",
+        "line1": "620 Southwest 5th Street",
+        "city": "Dundee",
+        "state": "OR",
+        "zip": "97115"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.282138,
+      "longitude": -123.0137661,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Woodburn Public Library Drop Box",
+        "line1": "280 Garfield Street",
+        "city": "Woodburn",
+        "state": "OR",
+        "zip": "97071"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; starting 10/16",
+      "latitude": 45.1428334,
+      "longitude": -122.8584289,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hoodland Library",
+        "line1": "24525 East Welches Road",
+        "city": "Welches",
+        "state": "OR",
+        "zip": "97067"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.3461368,
+      "longitude": -121.9639328,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Mt Angel Public Library Drop Box",
+        "line1": "290 East Charles Street",
+        "city": "Mount Angel",
+        "state": "OR",
+        "zip": "97362"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - 24 hour drop box; starting 10/16",
+      "latitude": 45.0680625,
+      "longitude": -122.7978369,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Yamhill City Hall",
+        "line1": "205 South Maple Street",
+        "city": "Yamhill",
+        "state": "OR",
+        "zip": "97148"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.3406288,
+      "longitude": -123.1876817,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Gervais City Hall",
+        "line1": "592 4th Street",
+        "city": "Gervais",
+        "state": "OR",
+        "zip": "97026"
+      },
+      "notes": "Monday-Friday 8am-1pm and 2pm-5pm; Election Day until 8pm - Inside; starting 10/16",
+      "latitude": 45.108448,
+      "longitude": -122.8974959,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Cascade Locks City Hall Drop Box",
+        "line1": "140 Wa Na Pa Street",
+        "city": "Cascade Locks",
+        "state": "OR",
+        "zip": "97014"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.6696431,
+      "longitude": -121.8894322,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Carlton City Hall",
+        "line1": "191 East Main Street",
+        "city": "Carlton",
+        "state": "OR",
+        "zip": "97111"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.2944121,
+      "longitude": -123.1758387,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Dayton City Hall",
+        "line1": "416 Ferry Street",
+        "city": "Dayton",
+        "state": "OR",
+        "zip": "97114"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.2195566,
+      "longitude": -123.0773937,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lafayette City Hall",
+        "line1": "486 3rd Street",
+        "city": "Lafayette",
+        "state": "OR",
+        "zip": "97127"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.2439811,
+      "longitude": -123.113246,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Silverton Lewis St parking lot",
+        "line1": "Lewis St and",
+        "line2": "South 1st Street",
+        "city": "Silverton",
+        "state": "OR",
+        "zip": "97381"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; starting 10/16",
+      "latitude": 45.0046193,
+      "longitude": -122.7817636,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "McMinnville - Chemeketa Campus",
+        "line1": "288 Northeast Norton Lane",
+        "city": "McMinnville",
+        "state": "OR",
+        "zip": "97128"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.2015058,
+      "longitude": -123.1639906,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "McMinnville - Courthouse Drop Box",
+        "line1": "535 Northeast 5th Street",
+        "city": "McMinnville",
+        "state": "OR",
+        "zip": "97128"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box East end of Courthouse parking lot | Monday-Friday 9am-5pm; Election Day 7am-8pm - Inside Lobby",
+      "latitude": 45.2118625,
+      "longitude": -123.1934594,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "McMinnville - Yamhill County Clerk's Office Drop Box",
+        "line1": "414 Northeast Evans Street",
+        "city": "McMinnville",
+        "state": "OR",
+        "zip": "97128"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box | Monday-Friday 9am-5pm; Election Day 7am-8pm - Inside County Clerk's office by appointment only call 503-434-7518",
+      "latitude": 45.2109348,
+      "longitude": -123.1941658,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "McMinnville - Public Library Dive-up Drop Box",
+        "line1": "225 Northeast Adams Street",
+        "city": "McMinnville",
+        "state": "OR",
+        "zip": "97128"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drive-up drop box",
+      "latitude": 45.2097515,
+      "longitude": -123.1996917,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lyons City Hall",
+        "line1": "449 5th Street",
+        "city": "Lyons",
+        "state": "OR",
+        "zip": "97358"
+      },
+      "notes": "Monday-Friday 8:30am-5pm; Election Day 7am-8pm - Inside",
+      "latitude": 44.7773564,
+      "longitude": -122.616575,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Vernonia Public Library Drop Box",
+        "line1": "701 Weed Avenue",
+        "city": "Vernonia",
+        "state": "OR",
+        "zip": "97064"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.8579855,
+      "longitude": -123.1969782,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Marion County Public Works",
+        "line1": "5155 Silverton Road Northeast",
+        "city": "Salem",
+        "state": "OR",
+        "zip": "97305"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day until 8am-8pm - Outside curbside drop box; starting 10/16",
+      "latitude": 44.9738004,
+      "longitude": -122.9568144,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Roth's Fresh Hayesville",
+        "line1": "4746 Portland Road Northeast",
+        "city": "Salem",
+        "state": "OR",
+        "zip": "97305"
+      },
+      "notes": "Sunday-Saturday 6am-9pm; Election Day until 8pm - Inside; starting 10/16",
+      "latitude": 44.990321,
+      "longitude": -122.9854309,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Rainier City Hall Drop Box",
+        "line1": "106 West B Street",
+        "city": "Rainier",
+        "state": "OR",
+        "zip": "97048"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 46.0889657,
+      "longitude": -122.9363377,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Keizer City Hall",
+        "line1": "930 Chemawa Road Northeast",
+        "city": "Keizer",
+        "state": "OR",
+        "zip": "97303"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; starting 10/16",
+      "latitude": 44.996396,
+      "longitude": -123.0203884,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Mill City - City Hall",
+        "line1": "444 South 1st Avenue",
+        "city": "Mill City",
+        "state": "OR",
+        "zip": "97360"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day 7am-8pm - Inside | Monday-Friday 8am-5pm; Election Day until 8pm - Inside; starting 10/16",
+      "latitude": 44.7516144,
+      "longitude": -122.4772144,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sublimity City Hall",
+        "line1": "245 Northwest Johnson Street",
+        "city": "Sublimity",
+        "state": "OR",
+        "zip": "97385"
+      },
+      "notes": "Monday-Friday 8am-12:30pm and 1pm-4:30pm; Election Day until 8pm - Inside; starting 10/16",
+      "latitude": 44.8303546,
+      "longitude": -122.7957625,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Amity City Library",
+        "line1": "307 South Trade Street",
+        "city": "Amity",
+        "state": "OR",
+        "zip": "97101"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.117197,
+      "longitude": -123.2058751,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Stayton Public Library",
+        "line1": "515 North First Avenue",
+        "city": "Stayton",
+        "state": "OR",
+        "zip": "97383"
+      },
+      "notes": "Monday-Thursday 10am-7pm; Friday 10am-5:30pm; Saturday 10am-4pm; Election Day until 8pm - Inside; starting 10/16 | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; starting 10/16",
+      "latitude": 44.7986021,
+      "longitude": -122.7952408,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Marion County Health Building",
+        "line1": "3180 Center Street Northeast",
+        "city": "Salem",
+        "state": "OR",
+        "zip": "97301"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box curbside; starting 10/16",
+      "latitude": 44.9385065,
+      "longitude": -122.9962427,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Aumsville City Hall",
+        "line1": "595 Main Street",
+        "city": "Aumsville",
+        "state": "OR",
+        "zip": "97325"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day until 8pm - Inside; starting 10/16",
+      "latitude": 44.8412413,
+      "longitude": -122.8705717,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "West Salem - Roth's Fresh Market",
+        "line1": "1130 Wallace Road Northwest",
+        "city": "Salem",
+        "state": "OR",
+        "zip": "97304"
+      },
+      "notes": "Sunday-Saturday 6am-9pm; Election Day 6am-8pm - Inside",
+      "latitude": 44.9506924,
+      "longitude": -123.0497732,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Marion County Elections Office - Courthouse Square Building",
+        "line1": "555 Court Street Northeast",
+        "city": "Salem",
+        "state": "OR",
+        "zip": "97301"
+      },
+      "notes": "Monday-Friday 8:30am-5pm, Sat Oct 31st 9am-3pm; Election Day until 7am-8pm - Inside County Clerk's office",
+      "latitude": 44.9407723,
+      "longitude": -123.0357403,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Marion County Courthouse Curbside",
+        "line1": "555 Court Street Northeast",
+        "city": "Salem",
+        "state": "OR",
+        "zip": "97301"
+      },
+      "notes": "Monday 11/2: 6am-8pm; Election Day 11/3: 6am-8pm - Outside curbside service North side of the Courthouse, 500 block Court St NE; starting  11/2",
+      "latitude": 44.9407723,
+      "longitude": -123.0357403,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Roth's Fresh Market Vista",
+        "line1": "3045 Commercial Street Southeast",
+        "city": "Salem",
+        "state": "OR",
+        "zip": "97302"
+      },
+      "notes": "Sunday-Saturday 6am-9pm; Election Day until 8pm - Inside; starting 10/16",
+      "latitude": 44.91071,
+      "longitude": -123.0456484,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hood River County Administration Building",
+        "line1": "601 State Street",
+        "city": "Hood River",
+        "state": "OR",
+        "zip": "97031"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.7078984,
+      "longitude": -121.5167558,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hood River County Business Administration Building - Elections",
+        "line1": "601 State Street",
+        "city": "Hood River",
+        "state": "OR",
+        "zip": "97031"
+      },
+      "notes": "Monday-Friday 9am-12pm and 1pm-4pm; Election Day 7am-8pm - Inside the Records & Assessment Department on 3rd floor",
+      "latitude": 45.7078984,
+      "longitude": -121.5167558,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Bay City - City Hall Drop Box",
+        "line1": "5525 B Street",
+        "city": "Bay City",
+        "state": "OR",
+        "zip": "97107"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.5244455,
+      "longitude": -123.8909298,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Turner City Hall",
+        "line1": "5255 Chicago Street Southeast",
+        "city": "Turner",
+        "state": "OR",
+        "zip": "97392"
+      },
+      "notes": "Monday-Thursday 8:30am-5pm; Friday 8:30am-12:30pm; Election Day until 8pm - Inside; starting 10/16 | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; starting 10/16",
+      "latitude": 44.842572,
+      "longitude": -122.9522677,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Tillamook County Clerk's Office",
+        "line1": "201 Laurel Avenue",
+        "city": "Tillamook",
+        "state": "OR",
+        "zip": "97141"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day 7am-8pm - Inside County Clerk's office | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located at NW corner of 3rd and Laurel; starting 9/18 | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at north stairs",
+      "latitude": 45.456975,
+      "longitude": -123.8415756,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Tillamook Library Main Branch",
+        "line1": "1716 3rd Street",
+        "city": "Tillamook",
+        "state": "OR",
+        "zip": "97141"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.4566251,
+      "longitude": -123.846324,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Walmart on Commercial Park and Drop",
+        "line1": "5250 Commercial Street Southeast",
+        "city": "Salem",
+        "state": "OR",
+        "zip": "97306"
+      },
+      "notes": "Monday 11/2: 6am-8pm; Election Day 11/3: 6am-8pm - Outside park and drop service; starting 10/16",
+      "latitude": 44.8787726,
+      "longitude": -123.0256418,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Roth's Fresh Market - Sunnyslope Shopping Center",
+        "line1": "4555 Liberty Road South",
+        "city": "Salem",
+        "state": "OR",
+        "zip": "97302"
+      },
+      "notes": "Sunday-Saturday 6am-9pm; Election Day until 8pm - Inside; starting 10/16",
+      "latitude": 44.8920474,
+      "longitude": -123.0605749,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Garibaldi - City Hall Drop Box",
+        "line1": "107 6th Street",
+        "city": "Garibaldi",
+        "state": "OR",
+        "zip": "97118"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.559845,
+      "longitude": -123.9142421,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sheridan City Hall",
+        "line1": "120 Southwest Mill Street",
+        "city": "Sheridan",
+        "state": "OR",
+        "zip": "97378"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.0967162,
+      "longitude": -123.3958392,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Scio City Hall",
+        "line1": "38957 Northwest 1st Avenue",
+        "city": "Scio",
+        "state": "OR",
+        "zip": "97374"
+      },
+      "notes": "Monday-Thursday 7:30am-5pm; Friday 7:30am-12pm; Election Day 7am-8pm - Inside",
+      "latitude": 44.7049332,
+      "longitude": -122.849776,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Mist-Birkenfeld RFPD Main Station",
+        "line1": "12525 Oregon 202",
+        "city": "Clatskanie",
+        "state": "OR",
+        "zip": "97016"
+      },
+      "notes": "Monday-Friday 9am-5pm; Election Day 9am-8pm - Inside",
+      "latitude": 46.0130823,
+      "longitude": -123.3096926,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Clatskanie Library Drop Box",
+        "line1": "11 Lillich Street",
+        "city": "Clatskanie",
+        "state": "OR",
+        "zip": "97016"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 46.1050146,
+      "longitude": -123.2017262,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Rockaway Beach - City Hall Drop Box",
+        "line1": "276 U.S. 101",
+        "city": "Rockaway Beach",
+        "state": "OR",
+        "zip": "97136"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.6100094,
+      "longitude": -123.9441762,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Jewell School",
+        "line1": "83874 Oregon 103",
+        "city": "Seaside",
+        "state": "OR",
+        "zip": "97138"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Located outside of school",
+      "latitude": 45.9291511,
+      "longitude": -123.4980134,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Wasco County Elections Drop Box",
+        "line1": "511 Washington Street",
+        "city": "The Dalles",
+        "state": "OR",
+        "zip": "97058"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - 24 hour drop box at the 5th Street entrance",
+      "latitude": 45.5997999,
+      "longitude": -121.1839576,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Wasco County Courthouse - Clerk's Office",
+        "line1": "511 Washington Street",
+        "city": "The Dalles",
+        "state": "OR",
+        "zip": "97058"
+      },
+      "notes": "Monday-Friday 9am-12pm, 1pm-5pm; Election Day 7am-8pm - Use the mail slot in the door of the Clerk's office, Suite 201",
+      "latitude": 45.5997999,
+      "longitude": -121.1839576,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Willamina City Hall",
+        "line1": "411 Northeast C Street",
+        "city": "Willamina",
+        "state": "OR",
+        "zip": "97396"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.0797913,
+      "longitude": -123.4852846,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Independence - City Hall",
+        "line1": "555 South Main Street",
+        "city": "Independence",
+        "state": "OR",
+        "zip": "97351"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Inside 24 hour drop box in the lobby",
+      "latitude": 44.8488157,
+      "longitude": -123.1842089,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Jefferson City Hall Drop Box",
+        "line1": "150 North 2nd Street",
+        "city": "Jefferson",
+        "state": "OR",
+        "zip": "97352"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; starting 10/16",
+      "latitude": 44.7179801,
+      "longitude": -123.0107235,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Jefferson Fire Department",
+        "line1": "189 North Main Street",
+        "city": "Jefferson",
+        "state": "OR",
+        "zip": "97352"
+      },
+      "notes": "Monday-Friday 8am-4:30pm; Election Day until 8pm - Inside; starting 10/16",
+      "latitude": 44.7181687,
+      "longitude": -123.0113889,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Polk County Courthouse - Clerk's Office",
+        "line1": "850 Main Street",
+        "city": "Dallas",
+        "state": "OR",
+        "zip": "97338"
+      },
+      "notes": "Monday-Friday 8am-12pm and 1pm-5pm; Election Day 7am-8pm - Inside County Clerk's office on 2nd floor",
+      "latitude": 44.9212491,
+      "longitude": -123.3157821,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Polk County Courhouse Drop Box",
+        "line1": "850 Main Street",
+        "city": "Dallas",
+        "state": "OR",
+        "zip": "97338"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in the parking lot on the east side of Courthouse",
+      "latitude": 44.9212491,
+      "longitude": -123.3157821,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Monmouth - Roth's Fresh Markets",
+        "line1": "1517 Monmouth Independence Highway",
+        "city": "Monmouth",
+        "state": "OR",
+        "zip": "97361"
+      },
+      "notes": "Sunday-Saturday 6am-9pm; Election Day 6am-8pm - Inside",
+      "latitude": 44.8500993,
+      "longitude": -123.2185016,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Manzanita - City Hall Drop Box",
+        "line1": "543 Laneda Avenue",
+        "city": "Manzanita",
+        "state": "OR",
+        "zip": "97130"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.7193298,
+      "longitude": -123.9325466,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Millersburg City Hall",
+        "line1": "4222 Old Salem Road Northeast",
+        "city": "Albany",
+        "state": "OR",
+        "zip": "97321"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day 7am-8pm - Inside",
+      "latitude": 44.6814956,
+      "longitude": -123.0610498,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sweet Home City Hall",
+        "line1": "3225 Main Street",
+        "city": "Sweet Home",
+        "state": "OR",
+        "zip": "97386"
+      },
+      "notes": "Monday-Friday 7am-5pm; Election Day 7am-8pm - Inside",
+      "latitude": 44.4021797,
+      "longitude": -122.6999816,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lebanon Public Library",
+        "line1": "55 Academy Street",
+        "city": "Lebanon",
+        "state": "OR",
+        "zip": "97355"
+      },
+      "notes": "Monday-Thursday 12am-6pm; Saturday 12am-5pm; Election Day 7am-8pm - Inside",
+      "latitude": 44.5449421,
+      "longitude": -122.908888,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lebanon Police Department Drop Box",
+        "line1": "40 North 2nd Street",
+        "city": "Lebanon",
+        "state": "OR",
+        "zip": "97355"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - 24 hour drop box",
+      "latitude": 44.5455773,
+      "longitude": -122.9103139,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sweet Home Police Department Drop Box",
+        "line1": "1950 Main Street",
+        "city": "Sweet Home",
+        "state": "OR",
+        "zip": "97386"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - 24 hour drop box",
+      "latitude": 44.3999953,
+      "longitude": -122.7210708,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Linn County Sheriff Lebanon Substation",
+        "line1": "2590 South Main Road",
+        "city": "Lebanon",
+        "state": "OR",
+        "zip": "97355"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - 24 hour drop box",
+      "latitude": 44.5216303,
+      "longitude": -122.9075999,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Cloverdale Chamber of Commerce",
+        "line1": "34370 U.S. 101 South",
+        "city": "Cloverdale",
+        "state": "OR",
+        "zip": "97112"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.2068824,
+      "longitude": -123.8891346,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Albany Public Library",
+        "line1": "2450 14th Avenue Southeast",
+        "city": "Albany",
+        "state": "OR",
+        "zip": "97322"
+      },
+      "notes": "Monday-Friday 10am-5pm; Election Day 7am-8pm - Inside",
+      "latitude": 44.6281872,
+      "longitude": -123.075023,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "North Albany Shopping Center",
+        "line1": "621 Northwest Hickory Street",
+        "city": "Albany",
+        "state": "OR",
+        "zip": "97321"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in front of IGA Supermarket",
+      "latitude": 44.6461597,
+      "longitude": -123.1125235,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Falls City - Frink's General Store",
+        "line1": "319 North Main Street",
+        "city": "Falls City",
+        "state": "OR",
+        "zip": "97344"
+      },
+      "notes": "Sunday-Saturday 7am-8pm - Inside",
+      "latitude": 44.8657546,
+      "longitude": -123.4338748,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Linn County Courthouse Drop Box",
+        "line1": "300 Southwest 4th Avenue",
+        "city": "Albany",
+        "state": "OR",
+        "zip": "97321"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drive-thru drop box on 5th Ave",
+      "latitude": 44.6343096,
+      "longitude": -123.1070341,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Linn County Courthouse - Elections",
+        "line1": " 300 4th Ave SW Rm 205",
+        "city": "Albany",
+        "state": "OR",
+        "zip": "97321"
+      },
+      "notes": "Monday-Friday 8:30am-5pm; Election Day 7am-8pm - Inside County Clerk's office",
+      "latitude": 44.6343099,
+      "longitude": -123.1070346,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Pacific City Drop Box - Kiawanda Community Center",
+        "line1": "34600 Cape Kiwanda Drive",
+        "city": "Pacific City",
+        "state": "OR",
+        "zip": "97135"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.2048476,
+      "longitude": -123.9670463,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Adair Village City Hall",
+        "line1": "6030 Northeast William R Carr Avenue",
+        "city": "Adair Village",
+        "state": "OR",
+        "zip": "97330"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box next to the City Hall parking lot access",
+      "latitude": 44.6701421,
+      "longitude": -123.222192,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sherman County Courthouse - Clerk's Office",
+        "line1": "500 Court Street",
+        "city": "Moro",
+        "state": "OR",
+        "zip": "97039"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day 7am-8pm - Inside County Clerk's office - drop slot in counter | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour red, white & blue drop box located at the corner of Court and 5th Sts near the front of the courthouse; starting 10/15",
+      "latitude": 45.4872321,
+      "longitude": -120.7312759,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Cannon Beach City Hall",
+        "line1": "163 East Gower Avenue",
+        "city": "Cannon Beach",
+        "state": "OR",
+        "zip": "97110"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Located outside of City Hall",
+      "latitude": 45.8897837,
+      "longitude": -123.9607731,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Maupin Civic Center - Payments Drop Box",
+        "line1": "507 Grant Avenue",
+        "city": "Maupin",
+        "state": "OR",
+        "zip": "97037"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour payments drop box on Grant Avenue",
+      "latitude": 45.1755506,
+      "longitude": -121.0819567,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Maupin City Hall",
+        "line1": "408 Deschutes Avenue",
+        "city": "Maupin",
+        "state": "OR",
+        "zip": "97037"
+      },
+      "notes": "Monday-Friday 9am-12pm and 1-4pm; Election Day until 8pm - Inside the City Hall office",
+      "latitude": 45.1757299,
+      "longitude": -121.0801277,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Wasco City Hall",
+        "line1": "1017 Clark Street",
+        "city": "Wasco",
+        "state": "OR",
+        "zip": "97065"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; located just uphill from the stop sign at the corner of Fulton St and Clark St and south of the City Hall sidewalk; starting 10/15",
+      "latitude": 45.5911209,
+      "longitude": -120.6974065,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Brownsville City Hall",
+        "line1": "255 North Main Street",
+        "city": "Brownsville",
+        "state": "OR",
+        "zip": "97327"
+      },
+      "notes": "Monday-Friday 8:30am-4:30pm; Election Day 7am-8pm - Inside",
+      "latitude": 44.3933956,
+      "longitude": -122.9842098,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Grass Valley City Hall",
+        "line1": "109 Mill Street",
+        "city": "Grass Valley",
+        "state": "OR",
+        "zip": "97029"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour white drop box in front of City Hall, to the left of the city payment box; starting 10/15",
+      "latitude": 45.3605762,
+      "longitude": -120.7840895,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Wells Fargo Bank - Timberhill Shopping Center",
+        "line1": "2543 Northwest Kings Boulevard",
+        "city": "Corvallis",
+        "state": "OR",
+        "zip": "97330"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in the outside drive up banking lane",
+      "latitude": 44.5920656,
+      "longitude": -123.2749251,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Seaside City Hall - 24 Hour Drive-up Drop Box",
+        "line1": "989 Broadway Street",
+        "city": "Seaside",
+        "state": "OR",
+        "zip": "97138"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Located outside of City Hall",
+      "latitude": 45.9927846,
+      "longitude": -123.9203936,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "LBCC Benton Center",
+        "line1": "757 Northwest Polk Avenue",
+        "city": "Corvallis",
+        "state": "OR",
+        "zip": "97330"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour Drop box near main entrance",
+      "latitude": 44.5709557,
+      "longitude": -123.2628096,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Benton County Courthouse",
+        "line1": "120 Northwest 4th Street",
+        "city": "Corvallis",
+        "state": "OR",
+        "zip": "97330"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box on Courthouse lawn on Fourth St | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at accessible entrance to the building on Fifth St",
+      "latitude": 44.5652867,
+      "longitude": -123.2623226,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Benton County Elections Office",
+        "line1": "120 Northwest 4th Street",
+        "city": "Corvallis",
+        "state": "OR",
+        "zip": "97330"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day 7am-8pm - Inside basement room 13 of County Courthouse",
+      "latitude": 44.5652867,
+      "longitude": -123.2623226,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Benton County Law Enforcement Building",
+        "line1": "180 Northwest 5th Street",
+        "city": "Corvallis",
+        "state": "OR",
+        "zip": "97330"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box across the street from the Courthouse",
+      "latitude": 44.565763,
+      "longitude": -123.2630878,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Corvallis Public Library",
+        "line1": "645 Northwest Monroe Avenue",
+        "city": "Corvallis",
+        "state": "OR",
+        "zip": "97330"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour Drop box next to bike rack at corner of 6th and Monroe",
+      "latitude": 44.5656552,
+      "longitude": -123.2642788,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Corvallis Community Center (C3)",
+        "line1": "2601 Northwest Tyler Avenue",
+        "city": "Corvallis",
+        "state": "OR",
+        "zip": "97330"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour Drop box near main entrance",
+      "latitude": 44.5730888,
+      "longitude": -123.2804185,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Gearhart City Hall",
+        "line1": "698 Pacific Way",
+        "city": "Gearhart",
+        "state": "OR",
+        "zip": "97138"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Located outside of City Hall",
+      "latitude": 46.0243599,
+      "longitude": -123.9189409,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "OSU Gill Coliseum",
+        "line1": "660 Southwest 26th Street",
+        "city": "Corvallis",
+        "state": "OR",
+        "zip": "97331"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box Corner of Ralph Miller Ln and 26th St",
+      "latitude": 44.5612847,
+      "longitude": -123.2805689,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lincoln Health Center",
+        "line1": "121 Southeast Viewmont Avenue",
+        "city": "Corvallis",
+        "state": "OR",
+        "zip": "97333"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box next to bike rack at the parking lot entrance",
+      "latitude": 44.5439148,
+      "longitude": -123.265232,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Rufus City Maintenance Building",
+        "line1": "400 Main Street",
+        "city": "Rufus",
+        "state": "OR",
+        "zip": "97050"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour white drop box slot slot located to the right of the city payment slot; starting 10/15",
+      "latitude": 45.6932581,
+      "longitude": -120.7351161,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Benton County Sunset Building",
+        "line1": "4077 Southwest Research Way",
+        "city": "Corvallis",
+        "state": "OR",
+        "zip": "97333"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in parking lot",
+      "latitude": 44.5520726,
+      "longitude": -123.2958211,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Halsey City Hall",
+        "line1": "100 Halsey Street",
+        "city": "Harrisburg",
+        "state": "OR",
+        "zip": "97348"
+      },
+      "notes": "Monday-Friday 8am-12pm and 1pm-5pm; Election Day until 8pm - Inside",
+      "latitude": 44.3895289,
+      "longitude": -123.1102478,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Knappa High School",
+        "line1": "41535 Old US Highway 30",
+        "city": "Knappa",
+        "state": "OR",
+        "zip": "97103"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Located outside of High School",
+      "latitude": 46.1958356,
+      "longitude": -123.7653274,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Philomath Public Library",
+        "line1": "1050 Applegate Street",
+        "city": "Philomath",
+        "state": "OR",
+        "zip": "97370"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box near main entrance",
+      "latitude": 44.5386202,
+      "longitude": -123.3712607,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Astoria - 24 Hour Drive-up Drop Box",
+        "line1": "820 Exchange Street",
+        "city": "Astoria",
+        "state": "OR",
+        "zip": "97103"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside of 820 Exchange St., Astoria",
+      "latitude": 46.1879296,
+      "longitude": -123.8341575,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Clatsop County Clerk & Elections Office",
+        "line1": "820 Exchange Street",
+        "city": "Astoria",
+        "state": "OR",
+        "zip": "97103"
+      },
+      "notes": "Monday-Friday 8:30am-5pm; Election Day 7am-8pm - Inside County Clerk's office",
+      "latitude": 46.1879296,
+      "longitude": -123.8341575,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lincoln City - City Hall",
+        "line1": "801 Southwest Highway 101",
+        "city": "Lincoln City",
+        "state": "OR",
+        "zip": "97367"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in lower parking lot",
+      "latitude": 44.960999,
+      "longitude": -124.015814,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Warrenton City Hall",
+        "line1": "225 South Main Avenue",
+        "city": "Warrenton",
+        "state": "OR",
+        "zip": "97146"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Located outside of City Hall",
+      "latitude": 46.1636626,
+      "longitude": -123.9258397,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Warm Springs",
+        "line1": "2112 Wasco Street",
+        "city": "Warm Springs",
+        "state": "OR",
+        "zip": "97761"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.7649236,
+      "longitude": -121.2744257,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Harrisburg City Hall",
+        "line1": "120 Smith Street",
+        "city": "Harrisburg",
+        "state": "OR",
+        "zip": "97446"
+      },
+      "notes": "Monday-Friday 8:30am-12pm and 1pm-5pm; Election Day 7am-8pm - Inside",
+      "latitude": 44.2720887,
+      "longitude": -123.1735018,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Splash! At Lively Park",
+        "line1": "6100 Thurston Road",
+        "city": "Springfield",
+        "state": "OR",
+        "zip": "97478"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.0556854,
+      "longitude": -122.9198149,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Monroe Community Library",
+        "line1": "380 North 5th Street",
+        "city": "Monroe",
+        "state": "OR",
+        "zip": "97456"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in parking lot",
+      "latitude": 44.3193823,
+      "longitude": -123.2985046,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Coburg City Hall",
+        "line1": "91136 North Willamette Street",
+        "city": "Coburg",
+        "state": "OR",
+        "zip": "97408"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.1391579,
+      "longitude": -123.0675594,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Eddyville Community Church",
+        "line1": "6890 Crystal Creek Loop",
+        "city": "Eddyville",
+        "state": "OR",
+        "zip": "97343"
+      },
+      "notes": "Election Day 10am-8pm - Inside lobby",
+      "latitude": 44.6350714,
+      "longitude": -123.7768844,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Junction City Library",
+        "line1": "726 Greenwood Street",
+        "city": "Junction City",
+        "state": "OR",
+        "zip": "97448"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.2203225,
+      "longitude": -123.2023723,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Siletz City Hall Drop Box",
+        "line1": "215 West Buford Avenue",
+        "city": "Siletz",
+        "state": "OR",
+        "zip": "97380"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in parking lot",
+      "latitude": 44.7217422,
+      "longitude": -123.9195649,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lowell City Hall",
+        "line1": "107 East 3rd Street",
+        "city": "Lowell",
+        "state": "OR",
+        "zip": "97452"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 43.9220666,
+      "longitude": -122.7816448,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Depoe Bay City Hall Drop Box",
+        "line1": "570 SE Shell Avenue",
+        "city": "Depoe Bay",
+        "state": "OR",
+        "zip": "97341"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in parking lot",
+      "latitude": 44.8050087,
+      "longitude": -124.060016,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Springfield City Hall",
+        "line1": "550 A Street",
+        "city": "Springfield",
+        "state": "OR",
+        "zip": "97477"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in drive-through under building",
+      "latitude": 44.0473179,
+      "longitude": -123.0187491,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lane County Public Works",
+        "line1": "3050 North Delta Highway",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97408"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at parking lot in front of the Customer Service Center",
+      "latitude": 44.0987762,
+      "longitude": -123.0949158,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sheldon Library",
+        "line1": "1566 Coburg Road",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97401"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.0793321,
+      "longitude": -123.0693767,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Juvenile Justice Center",
+        "line1": "2727 Martin Luther King Junior Boulevard",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97401"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.0613597,
+      "longitude": -123.06769,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "University of Oregon - Erb Memorial Union",
+        "line1": "1222 East 13th Avenue",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97403"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box on South side of circular plaza",
+      "latitude": 44.0446082,
+      "longitude": -123.0741068,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Pearl Street",
+        "line1": "777 Pearl Street",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97401"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box on Pearl St between 7th & 8th Ave",
+      "latitude": 44.0518215,
+      "longitude": -123.0886634,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "River Road Park & Recreation Center",
+        "line1": "1400 Lake Drive",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97404"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box on south island in parking lot off Lake Dr",
+      "latitude": 44.084318,
+      "longitude": -123.138149,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lane County Elections Drop Box",
+        "line1": "275 West 10th Avenue",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97401"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box enter from Lincoln St",
+      "latitude": 44.0490393,
+      "longitude": -123.0968389,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Amazon Pool",
+        "line1": "2600 Hilyard Street",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97405"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.0292243,
+      "longitude": -123.0821225,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Toledo Police Station Drop Box",
+        "line1": "250 Northeast Highway 20",
+        "city": "Toledo",
+        "state": "OR",
+        "zip": "97391"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.6244318,
+      "longitude": -123.9398714,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Bethel Library",
+        "line1": "1990 Echo Hollow Road",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97402"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.0842083,
+      "longitude": -123.1696242,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Oakridge Police Department",
+        "line1": "76435 Ash Street",
+        "city": "Oakridge",
+        "state": "OR",
+        "zip": "97463"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 43.7472813,
+      "longitude": -122.4570894,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "John Boy's Alsea Mercantile Store",
+        "line1": "186 East Main Street",
+        "city": "Alsea",
+        "state": "OR",
+        "zip": "97324"
+      },
+      "notes": "Monday-Sunday 8am-7pm; Election Day until 8pm - Inside",
+      "latitude": 44.3816718,
+      "longitude": -123.5973248,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Arlington Municipal Building",
+        "line1": "500 West 1st Street",
+        "city": "Arlington",
+        "state": "OR",
+        "zip": "97812"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.717259,
+      "longitude": -120.2033039,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Walmart",
+        "line1": "4550 West 11th Avenue",
+        "city": "Eugene",
+        "state": "OR",
+        "zip": "97402"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box North side of parking lot",
+      "latitude": 44.0460066,
+      "longitude": -123.1693492,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Jefferson County Annex - Elections",
+        "line1": "66 Southeast D Street",
+        "city": "Madras",
+        "state": "OR",
+        "zip": "97741"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day until 8pm  - Inside County Clerk's office | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.6337438,
+      "longitude": -121.1283245,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Metolius City Hall",
+        "line1": "636 Jefferson Avenue",
+        "city": "Metolius",
+        "state": "OR",
+        "zip": "97741"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.586543,
+      "longitude": -121.177512,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "City of Creswell",
+        "line1": "50 South 1st Street",
+        "city": "Creswell",
+        "state": "OR",
+        "zip": "97426"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at North side of parking lot at corner of South 1st St and C St",
+      "latitude": 43.9174747,
+      "longitude": -123.019792,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lincoln County Courthouse - Elections",
+        "line1": "225 West Olive Street",
+        "city": "Newport",
+        "state": "OR",
+        "zip": "97365"
+      },
+      "notes": "Monday-Friday 8:30am-5pm; Election Day 7am-8pm - Inside",
+      "latitude": 44.6362333,
+      "longitude": -124.0548475,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lincoln County Courthouse Drive Up",
+        "line1": "225 West Olive Street",
+        "city": "Newport",
+        "state": "OR",
+        "zip": "97365"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.6362333,
+      "longitude": -124.0548475,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Newport City Hall Drop Box",
+        "line1": "169 Southwest Coast Highway",
+        "city": "Newport",
+        "state": "OR",
+        "zip": "97365"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box use water payment box - Turn between bus stop and Chevron",
+      "latitude": 44.6343249,
+      "longitude": -124.0534437,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Ione Curbside",
+        "line1": "260 Spring Street",
+        "city": "Ione",
+        "state": "OR",
+        "zip": "97843"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.4999834,
+      "longitude": -119.8291709,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Culver City Hall",
+        "line1": "200 W 1st St",
+        "city": "Culver",
+        "state": "OR",
+        "zip": "97734"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.5270424,
+      "longitude": -121.2096204,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sisters City Hall",
+        "line1": "520 East Cascade Avenue",
+        "city": "Sisters",
+        "state": "OR",
+        "zip": "97759"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; starting 10/16",
+      "latitude": 44.2917366,
+      "longitude": -121.5441771,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Gilliam County Courthouse Drop Box",
+        "line1": "221 South Oregon Street",
+        "city": "Condon",
+        "state": "OR",
+        "zip": "97823"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.2382963,
+      "longitude": -120.1862198,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Veneta City Hall",
+        "line1": "88184 8th Street",
+        "city": "Veneta",
+        "state": "OR",
+        "zip": "97487"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box on island in parking lot",
+      "latitude": 44.0512973,
+      "longitude": -123.3607749,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Crooked River Ranch Administration Area",
+        "line1": "5195 SW",
+        "line2": "Club House Road",
+        "city": "Terrebonne",
+        "state": "OR",
+        "zip": "97760"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box near tennis courts",
+      "latitude": 44.4243829,
+      "longitude": -121.2408203,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Cottage Grove Community Center",
+        "line1": "700 East Gibbs Avenue",
+        "city": "Cottage Grove",
+        "state": "OR",
+        "zip": "97424"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 43.7991399,
+      "longitude": -123.0609185,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Waldport City Hall",
+        "line1": "125 Alsea Highway",
+        "city": "Waldport",
+        "state": "OR",
+        "zip": "97394"
+      },
+      "notes": "Monday-Friday 8am-12:30pm, 1:30-5pm; Election Day 7am-8pm - Inside | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.4270547,
+      "longitude": -124.0629462,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Fossil - Wheeler County Courthouse Drop Box",
+        "line1": "701 Adams Street",
+        "city": "Fossil",
+        "state": "OR",
+        "zip": "97830"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box | Monday-Friday 8 am-12pm and 1pm-4pm; Election Day until 8pm - Inside County Clerk's office",
+      "latitude": 44.9982532,
+      "longitude": -120.2170192,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Redmond Public Library",
+        "line1": "827 Southwest Deschutes Avenue",
+        "city": "Redmond",
+        "state": "OR",
+        "zip": "97756"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; starting 10/16",
+      "latitude": 44.274137,
+      "longitude": -121.176966,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Yachats City Hall Drop Box",
+        "line1": "276 West 6th Street",
+        "city": "Yachats",
+        "state": "OR",
+        "zip": "97498"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box (old bank building) in drive-though lane",
+      "latitude": 44.3127145,
+      "longitude": -124.1050069,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Morrow County Bartholomew Building - Clerk's Office",
+        "line1": "100 South Court Street",
+        "city": "Heppner",
+        "state": "OR",
+        "zip": "97836"
+      },
+      "notes": "Monday-Friday 8am-12pm and 1pm-5pm; Election Day 7am-8pm - Inside County Clerk's office, room 102",
+      "latitude": 45.353496,
+      "longitude": -119.5503081,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Morrow County Bartholomew Building Drop Box",
+        "line1": "100 South Court Street",
+        "city": "Heppner",
+        "state": "OR",
+        "zip": "97836"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in parking lot, follow the arrows",
+      "latitude": 45.353496,
+      "longitude": -119.5503081,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Morrow County Boardman Building",
+        "line1": "101 Boardman Avenue Northwest",
+        "city": "Boardman",
+        "state": "OR",
+        "zip": "97818"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.8396405,
+      "longitude": -119.7028286,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Deschutes County Services Building",
+        "line1": "1300 Northwest Wall Street",
+        "city": "Bend",
+        "state": "OR",
+        "zip": "97703"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drive-by Drop Box located on west side of\nbuilding; starting 10/16",
+      "latitude": 44.0624162,
+      "longitude": -121.3082471,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Deschutes County Elections in the Services Building",
+        "line1": "1300 Northwest Wall Street",
+        "city": "Bend",
+        "state": "OR",
+        "zip": "97703"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day 7am-8pm - Inside in the Elections office on Second floor - Privacy Booths Available",
+      "latitude": 44.0624162,
+      "longitude": -121.3082471,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Pine Nursery Park",
+        "line1": "3750 Northeast Purcell Boulevard",
+        "city": "Bend",
+        "state": "OR",
+        "zip": "97701"
+      },
+      "notes": "Park hours of operation, dates and hours at www.bendparksandrec.org/park/pine-nursery-park; Election Day until 8pm - Outside 24 hour drop box located East end of parking lot; starting 10/16",
+      "latitude": 44.0907555,
+      "longitude": -121.2660403,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Bradbury Park & Ride",
+        "line1": "1000 Southwest Bradbury Drive",
+        "city": "Bend",
+        "state": "OR",
+        "zip": "97702"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located West of Pavillion at Simpson and Columbia; starting 10/16",
+      "latitude": 44.0488657,
+      "longitude": -121.3254647,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Old Mill District: Hilton Garden Inn south parking lot",
+        "line1": "459 Southwest Bluff Drive",
+        "city": "Bend",
+        "state": "OR",
+        "zip": "97703"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; starting 10/16",
+      "latitude": 44.0450919,
+      "longitude": -121.313385,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Powell Butte Charter School",
+        "line1": "13650 Oregon 126",
+        "city": "Powell Butte",
+        "state": "OR",
+        "zip": "97753"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located by the front door",
+      "latitude": 44.247107,
+      "longitude": -121.0172651,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Drain City Hall",
+        "line1": "515 South Cedar Street",
+        "city": "Drain",
+        "state": "OR",
+        "zip": "97435"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day until 8pm - Inside",
+      "latitude": 43.6588253,
+      "longitude": -123.3186525,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Yoncalla City Hall",
+        "line1": "2640 Eagle Valley Road",
+        "city": "Yoncalla",
+        "state": "OR",
+        "zip": "97499"
+      },
+      "notes": "Monday-Friday 8am-12:30 and 1:30pm-5pm; Election Day until 8pm - Inside | Monday-Friday 8am-12:30 and 1:30pm-5pm; Election Day until 8pm - Outside 24 hour drop box: use utility payment slot",
+      "latitude": 43.5991273,
+      "longitude": -123.2825353,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Deschutes County Road Department",
+        "line1": "61150 Southeast 27th Street",
+        "city": "Bend",
+        "state": "OR",
+        "zip": "97702"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; starting 10/16",
+      "latitude": 44.0200524,
+      "longitude": -121.2613117,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Crook County Library",
+        "line1": "175 Northwest Meadow Lakes Drive",
+        "city": "Prineville",
+        "state": "OR",
+        "zip": "97754"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at south end of parking lot",
+      "latitude": 44.3016629,
+      "longitude": -120.8575156,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Crook County Courthouse Drop Box",
+        "line1": "300 Northeast 3rd Street",
+        "city": "Prineville",
+        "state": "OR",
+        "zip": "97754"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located at rear entrance of the Courthouse",
+      "latitude": 44.3023777,
+      "longitude": -120.8440129,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Crook County Courthouse - Clerk's Office",
+        "line1": "300 Northeast 3rd Street",
+        "city": "Prineville",
+        "state": "OR",
+        "zip": "97754"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day 7am-8pm - County Clerk's office drop box beside the door",
+      "latitude": 44.3023777,
+      "longitude": -120.8440129,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sunriver Public Library",
+        "line1": "56855 Venture Lane",
+        "city": "Sunriver",
+        "state": "OR",
+        "zip": "97707"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box; starting 10/16",
+      "latitude": 43.8658425,
+      "longitude": -121.4353245,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Morrow County Planning Department - Irrigon Annex",
+        "line1": "205 NE 3rd Street Northeast",
+        "city": "Irrigon",
+        "state": "OR",
+        "zip": "97844"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.8958988,
+      "longitude": -119.4980082,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Echo City Hall Drop Box",
+        "line1": "20 S Bonanza Street",
+        "city": "Echo",
+        "state": "OR",
+        "zip": "97826"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.7418183,
+      "longitude": -119.1954403,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "La Pine Public Library",
+        "line1": "16425 1st Street",
+        "city": "La Pine",
+        "state": "OR",
+        "zip": "97739"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at 1st St and Huntington Rd; starting 10/16 | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at 1st St and Huntington Rd",
+      "latitude": 43.6742336,
+      "longitude": -121.5049224,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Stanfield City Hall",
+        "line1": "160 South Main Street",
+        "city": "Stanfield",
+        "state": "OR",
+        "zip": "97875"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located at the front entrance",
+      "latitude": 45.7800196,
+      "longitude": -119.2173879,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Florence Police Department",
+        "line1": "900 Greenwood Street",
+        "city": "Florence",
+        "state": "OR",
+        "zip": "97439"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 43.9750207,
+      "longitude": -124.1132747,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hermiston City Hall",
+        "line1": "180 Northeast 2nd Street",
+        "city": "Hermiston",
+        "state": "OR",
+        "zip": "97838"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at curbside island",
+      "latitude": 45.8412126,
+      "longitude": -119.2884713,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Spray - Grange Hall Drop Box",
+        "line1": "807 Winlock Street",
+        "city": "Spray",
+        "state": "OR",
+        "zip": "97874"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.8353899,
+      "longitude": -119.791728,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sutherlin City Hall",
+        "line1": "126 East Central Avenue",
+        "city": "Sutherlin",
+        "state": "OR",
+        "zip": "97479"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 43.3900396,
+      "longitude": -123.3120228,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Umatilla City Hall",
+        "line1": "700 6th Street",
+        "city": "Umatilla",
+        "state": "OR",
+        "zip": "97882"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located at the back alleyway entrance",
+      "latitude": 45.9170176,
+      "longitude": -119.3441326,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Pilot Rock City Hall",
+        "line1": "144 North Alder Place",
+        "city": "Pilot Rock",
+        "state": "OR",
+        "zip": "97868"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located at the front entrance",
+      "latitude": 45.4830839,
+      "longitude": -118.8335719,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Walker Range FPA",
+        "line1": "135393 U.S. 97",
+        "city": "Crescent",
+        "state": "OR",
+        "zip": "97733"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 43.4509479,
+      "longitude": -121.7037599,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Umpqua Community College - Del Blanchard Administration Building",
+        "line1": "1140 Umpqua College Road",
+        "city": "Roseburg",
+        "state": "OR",
+        "zip": "97470"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside administrative building (behind water fountain) 24 hour drop slot on side of building towards library",
+      "latitude": 43.2910295,
+      "longitude": -123.3345596,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Umatilla County Courthouse Drop Box",
+        "line1": "216 Southeast 4th Street",
+        "city": "Pendleton",
+        "state": "OR",
+        "zip": "97801"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located in rear parking lot accessed from SE Court or Dorion Ave",
+      "latitude": 45.6734406,
+      "longitude": -118.7830916,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Umatilla County Courthouse - Clerk's Office",
+        "line1": "216 Southeast 4th Street",
+        "city": "Pendleton",
+        "state": "OR",
+        "zip": "97801"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day 7am-8pm - Inside County Clerk's office, room 18",
+      "latitude": 45.6734406,
+      "longitude": -118.7830916,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Roseburg Public Library East Parking Lot",
+        "line1": "1409 Northeast Diamond Lake Boulevard",
+        "city": "Roseburg",
+        "state": "OR",
+        "zip": "97471"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in the east parking lot at the corner Fowler St and Diamond Lk Blvd",
+      "latitude": 43.2126974,
+      "longitude": -123.3405825,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Douglas County Courthouse - Clerk's Office",
+        "line1": "1036 Southeast Douglas Avenue",
+        "city": "Roseburg",
+        "state": "OR",
+        "zip": "97470"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day 7am-8pm - Inside County Clerk's office CH124 & hallway slot | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box on front lawn",
+      "latitude": 43.2107609,
+      "longitude": -123.3412993,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Confederate Tribes Nixyaawii Governance Center",
+        "line1": "46411 Ti'mine Way",
+        "city": "Pendleton",
+        "state": "OR",
+        "zip": "97801"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.6653922,
+      "longitude": -118.6862812,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Douglas County Annex",
+        "line1": "680 Fir Avenue",
+        "city": "Reedsport",
+        "state": "OR",
+        "zip": "97467"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 43.7011742,
+      "longitude": -124.1005189,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Winston City Hall",
+        "line1": "201 Northwest Douglas Boulevard",
+        "city": "Winston",
+        "state": "OR",
+        "zip": "97496"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 43.1217006,
+      "longitude": -123.4159971,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Myrtle Creek City Hall",
+        "line1": "207 Northwest Pleasant Street",
+        "city": "Myrtle Creek",
+        "state": "OR",
+        "zip": "97457"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 43.0265781,
+      "longitude": -123.288473,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lakeside City Hall Drop Box",
+        "line1": "915 North Lake Road",
+        "city": "Lakeside",
+        "state": "OR",
+        "zip": "97449"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Use mail slot; starting 10/15",
+      "latitude": 43.5759512,
+      "longitude": -124.1729103,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Canyonville City - Library Book Drop ",
+        "line1": "250 North Main Street",
+        "city": "Canyonville",
+        "state": "OR",
+        "zip": "97417"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box: use library book drop",
+      "latitude": 42.9300048,
+      "longitude": -123.281436,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Riddle City Hall",
+        "line1": "647 1st Avenue",
+        "city": "Riddle",
+        "state": "OR",
+        "zip": "97469"
+      },
+      "notes": "Monday-Friday 9am-5pm; Election Day until 8am-8pm - Inside",
+      "latitude": 42.9521552,
+      "longitude": -123.3573135,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Athena City Hall",
+        "line1": "302 East Currant Street",
+        "city": "Athena",
+        "state": "OR",
+        "zip": "97813"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.8105837,
+      "longitude": -118.4902875,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Eagle Point Library",
+        "line1": "239 West Main Street",
+        "city": "Eagle Point",
+        "state": "OR",
+        "zip": "97524"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at library main branch entrance; starting 10/19",
+      "latitude": 42.4733075,
+      "longitude": -122.8049077,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "North Bend Fire Department Station 1",
+        "line1": "1880 McPherson Avenue",
+        "city": "North Bend",
+        "state": "OR",
+        "zip": "97459"
+      },
+      "notes": "Sunday-Saturday, 7 days a week 8am-8pm; Election Day 8am-8pm - Inside; starting 10/15",
+      "latitude": 43.4082362,
+      "longitude": -124.2266628,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Imbler City Hall",
+        "line1": "180 Ruckman Avenue",
+        "city": "Imbler",
+        "state": "OR",
+        "zip": "97841"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.4575738,
+      "longitude": -117.9629467,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Coos Bay City Hall - Drive Up Drop Box",
+        "line1": "500 Central Avenue",
+        "city": "Coos Bay",
+        "state": "OR",
+        "zip": "97420"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box - ADA Accessible; starting 10/15",
+      "latitude": 43.3679947,
+      "longitude": -124.2175905,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Elgin City Hall",
+        "line1": "790 South 8th Avenue",
+        "city": "Elgin",
+        "state": "OR",
+        "zip": "97827"
+      },
+      "notes": "Election Day until 8pm - Details at https://union-county.org/county-clerk/",
+      "latitude": 45.560024,
+      "longitude": -117.9174212,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Milton-Freewater City Hall and Police Station",
+        "line1": "722 South Main Street",
+        "city": "Milton-Freewater",
+        "state": "OR",
+        "zip": "97862"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at curbside island",
+      "latitude": 45.9281161,
+      "longitude": -118.3857612,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Union County Offices Drop Box",
+        "line1": "1001 Fourth Street",
+        "city": "La Grande",
+        "state": "OR",
+        "zip": "97850"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.3206586,
+      "longitude": -118.0960394,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Union County Clerk's Office",
+        "line1": "1001 Fourth Street",
+        "city": "La Grande",
+        "state": "OR",
+        "zip": "97850"
+      },
+      "notes": "Monday-Thursday 8:30 am-12pm and 1pm-5pm; Friday 9 am-12pm and 1pm-4pm; Election Day until 8pm - Inside County Clerk's office",
+      "latitude": 45.3206586,
+      "longitude": -118.0960394,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Island City - City Hall",
+        "line1": "10605 Island Avenue",
+        "city": "Island City",
+        "state": "OR",
+        "zip": "97850"
+      },
+      "notes": "Election Day until 8pm; Election Day until 8pm - Details at https://union-county.org/county-clerk/",
+      "latitude": 45.3398586,
+      "longitude": -118.0513213,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Glendale City Hall",
+        "line1": "124 3rd Street",
+        "city": "Glendale",
+        "state": "OR",
+        "zip": "97442"
+      },
+      "notes": "Monday-Friday 8:30am-1pm and 2pm-5pm, Election Day 8:30am-1pm and 2pm-8pm - Inside",
+      "latitude": 42.736627,
+      "longitude": -123.4274428,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Central Point Library",
+        "line1": "116 South 3rd Street",
+        "city": "Central Point",
+        "state": "OR",
+        "zip": "97502"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at south side of library building, main entrance; starting 10/19",
+      "latitude": 42.3739677,
+      "longitude": -122.9146476,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Medford Library",
+        "line1": "205 South Central Avenue",
+        "city": "Medford",
+        "state": "OR",
+        "zip": "97501"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at library parking lot off 10th; starting 10/19",
+      "latitude": 42.3248698,
+      "longitude": -122.8700936,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Jackson County Elections Drop Box",
+        "line1": "1101 West Main Street",
+        "city": "Medford",
+        "state": "OR",
+        "zip": "97501"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop boxes curbside from left lane of W Main and walk up; starting 10/19",
+      "latitude": 42.3233176,
+      "longitude": -122.8844217,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Jackson County Elections Office",
+        "line1": "1101 West Main Street",
+        "city": "Medford",
+        "state": "OR",
+        "zip": "97501"
+      },
+      "notes": "Monday-Friday 8am-4pm; Election Day 7am-8pm - Inside the Jackson County Elections office",
+      "latitude": 42.3233176,
+      "longitude": -122.8844217,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Phoenix Library",
+        "line1": "510 West 1st Street",
+        "city": "Phoenix",
+        "state": "OR",
+        "zip": "97535"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at library main branch entrance; starting 10/19",
+      "latitude": 42.2716858,
+      "longitude": -122.8200113,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Ashland Library",
+        "line1": "410 Siskiyou Boulevard",
+        "city": "Ashland",
+        "state": "OR",
+        "zip": "97520"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box curbside from alley off Gresham St by book drop; starting 10/19",
+      "latitude": 42.1939636,
+      "longitude": -122.7096505,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Chiloquin Community Center",
+        "line1": "140 South 1st Avenue",
+        "city": "Chiloquin",
+        "state": "OR",
+        "zip": "97624"
+      },
+      "notes": "Monday-Friday 10am-3pm; Election Day until 8pm - Inside",
+      "latitude": 42.575629,
+      "longitude": -121.863678,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Coquille Courthouse - Walk Up Drop Box",
+        "line1": "250 North Baxter Street",
+        "city": "Coquille",
+        "state": "OR",
+        "zip": "97423"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box - ADA Accessible; starting 10/15",
+      "latitude": 43.1764201,
+      "longitude": -124.1864507,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Rogue River Library",
+        "line1": "412 East Main Street",
+        "city": "Rogue River",
+        "state": "OR",
+        "zip": "97537"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box at library main branch entrance; starting 10/19",
+      "latitude": 42.4323323,
+      "longitude": -123.1655847,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Myrtle Point City Hall",
+        "line1": "424 5th Street",
+        "city": "Myrtle Point",
+        "state": "OR",
+        "zip": "97458"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day 8am-8pm - Inside; starting 10/15",
+      "latitude": 43.0646669,
+      "longitude": -124.1426707,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Cove City Hall",
+        "line1": "504 Alder Street",
+        "city": "Cove",
+        "state": "OR",
+        "zip": "97824"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.3008561,
+      "longitude": -117.8131198,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Umpqua Bank",
+        "line1": "3600 Merlin Road",
+        "city": "Grants Pass",
+        "state": "OR",
+        "zip": "97526"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 42.4966917,
+      "longitude": -123.3682243,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Wallowa City Hall",
+        "line1": "211 East 2nd Street",
+        "city": "Wallowa",
+        "state": "OR",
+        "zip": "97885"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.5712071,
+      "longitude": -117.5270423,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Josephine County Courthouse - Clerk's Office",
+        "line1": "500 Northwest 6th Street",
+        "city": "Grants Pass",
+        "state": "OR",
+        "zip": "97528"
+      },
+      "notes": "Monday-Friday 7:50am-5pm; Election Day 7am-8pm - Inside in hall outside County Clerk's office (room 170)",
+      "latitude": 42.4428959,
+      "longitude": -123.3255264,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Josephine County Courthouse Drop Box 1",
+        "line1": "500 Northwest 6th Street",
+        "city": "Grants Pass",
+        "state": "OR",
+        "zip": "97528"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box - North Entrance | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box - south entrance",
+      "latitude": 42.4428959,
+      "longitude": -123.3255264,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Josephine Community Library",
+        "line1": "200 Northwest C Street",
+        "city": "Grants Pass",
+        "state": "OR",
+        "zip": "97526"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box in rear parking lot",
+      "latitude": 42.4429735,
+      "longitude": -123.3266967,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Christmas Valley Annex Building",
+        "line1": "87541 Christmas Valley Highway",
+        "city": "Christmas Valley",
+        "state": "OR",
+        "zip": "97641"
+      },
+      "notes": "Election Day until 8pm - Inside",
+      "latitude": 43.2381207,
+      "longitude": -120.6787641,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Union City Hall",
+        "line1": "342 South Main Street",
+        "city": "Union",
+        "state": "OR",
+        "zip": "97883"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.207377,
+      "longitude": -117.8657832,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Washington Federal Bank",
+        "line1": "290 Union Avenue",
+        "city": "Grants Pass",
+        "state": "OR",
+        "zip": "97526"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 42.4227759,
+      "longitude": -123.3347913,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Grant County Courthouse 24 Hour Drive-Up",
+        "line1": "205 South Humbolt Street",
+        "city": "Canyon City",
+        "state": "OR",
+        "zip": "97820"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.3870589,
+      "longitude": -118.9505159,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Powers Market",
+        "line1": "409 2nd Avenue",
+        "city": "Powers",
+        "state": "OR",
+        "zip": "97466"
+      },
+      "notes": "Sunday-Saturday 8am-7pm; Election Day 8am-8pm - Inside; starting 10/15",
+      "latitude": 42.8806519,
+      "longitude": -124.072126,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Bandon City Hall",
+        "line1": "555 Oregon Coast Highway",
+        "city": "Bandon",
+        "state": "OR",
+        "zip": "97411"
+      },
+      "notes": "Monday-Thursday 7:30am-5pm; Closed Fridays: Election Day 8am-8pm - Inside; starting 10/15",
+      "latitude": 43.1169467,
+      "longitude": -124.4143417,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hidden Valley Market",
+        "line1": "7200 Williams Highway",
+        "city": "Grants Pass",
+        "state": "OR",
+        "zip": "97527"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 42.3377377,
+      "longitude": -123.3327689,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "North Powder City Hall",
+        "line1": "635 3rd Street",
+        "city": "North Powder",
+        "state": "OR",
+        "zip": "97867"
+      },
+      "notes": "Election Day until 8pm - Details at https://union-county.org/county-clerk/",
+      "latitude": 45.0292467,
+      "longitude": -117.9204722,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Wallowa County Courthouse Dropsite",
+        "line1": "101 South River Street",
+        "city": "Enterprise",
+        "state": "OR",
+        "zip": "97828"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box southside of Courthouse | Monday-Friday 8:30-5pm; Election Day until 8pm - Inside County Clerk's office",
+      "latitude": 45.4250593,
+      "longitude": -117.2768826,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Oregon Institute of Technology - College Union Info Desk",
+        "line1": "3201 Campus Drive",
+        "city": "Klamath Falls",
+        "state": "OR",
+        "zip": "97601"
+      },
+      "notes": "Monday-Friday 10am-3pm; Election Day until 8pm - Inside",
+      "latitude": 42.2539585,
+      "longitude": -121.7854792,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Klamath County Government Center - Clerk's Office",
+        "line1": "305 Main Street",
+        "city": "Klamath Falls",
+        "state": "OR",
+        "zip": "97601"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day until 8pm - Inside County Clerk's office | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - 24 hour drop box in parking lot behind building",
+      "latitude": 42.2232441,
+      "longitude": -121.7847407,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Klamath Basin Senior Center",
+        "line1": "2045 Arthur Street",
+        "city": "Klamath Falls",
+        "state": "OR",
+        "zip": "97603"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 42.2094728,
+      "longitude": -121.7482985,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Joseph City Hall",
+        "line1": "201 North Main Street",
+        "city": "Joseph",
+        "state": "OR",
+        "zip": "97846"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 45.3535514,
+      "longitude": -117.2303594,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Klamath Community College - Founder's Hall (Building 9)",
+        "line1": "7390 South 6th Street",
+        "city": "Klamath Falls",
+        "state": "OR",
+        "zip": "97603"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 42.197682,
+      "longitude": -121.701136,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Baker County Drive Up Drop Box",
+        "line1": "1995 3rd Street",
+        "city": "Baker City",
+        "state": "OR",
+        "zip": "97814"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.7766354,
+      "longitude": -117.8339833,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Baker County Clerk's Office",
+        "line1": "1995 3rd Street",
+        "city": "Baker City",
+        "state": "OR",
+        "zip": "97814"
+      },
+      "notes": "Monday-Friday 8am-5pm; Election Day 7am-8pm - Inside County Clerk's office",
+      "latitude": 44.7616607,
+      "longitude": -117.8329252,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Cave Junction City Building",
+        "line1": "222 Lister Street",
+        "city": "Cave Junction",
+        "state": "OR",
+        "zip": "97523"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 42.16778,
+      "longitude": -123.6484394,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Port Orford City Hall",
+        "line1": "555 W 20th Street",
+        "city": "Port Orford",
+        "state": "OR",
+        "zip": "97465"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 42.7540188,
+      "longitude": -124.4985003,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Bonanza Town Hall",
+        "line1": "2900 4th Avenue",
+        "city": "Bonanza",
+        "state": "OR",
+        "zip": "97623"
+      },
+      "notes": "Tuesday and Thursday 10am-1pm; Election Day until 8pm - Inside",
+      "latitude": 42.1986807,
+      "longitude": -121.4053072,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Merrill City Hall",
+        "line1": "300 East 1st Street",
+        "city": "Merrill",
+        "state": "OR",
+        "zip": "97632"
+      },
+      "notes": "Monday-Friday 8am-4pm; Election Day until 8pm - Inside",
+      "latitude": 42.0255197,
+      "longitude": -121.5977376,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Paisley Community Center",
+        "line1": "723 Chewaucan Street",
+        "city": "Paisley",
+        "state": "OR",
+        "zip": "97636"
+      },
+      "notes": "Election Day until 8pm - Inside",
+      "latitude": 42.6950358,
+      "longitude": -120.545199,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Malin City Hall",
+        "line1": "2432 4th Street",
+        "city": "Malin",
+        "state": "OR",
+        "zip": "97632"
+      },
+      "notes": "Monday-Friday 9am-12pm, 1pm-4pm; Election Day until 8pm - Inside",
+      "latitude": 42.0137578,
+      "longitude": -121.4093764,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Harney County Courthouse Drop Box",
+        "line1": "450 North Buena Vista Avenue",
+        "city": "Burns",
+        "state": "OR",
+        "zip": "97720"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box | Monday-Friday 8am-5pm; Election Day 7am-8pm - Inside County Clerk's office",
+      "latitude": 43.5894952,
+      "longitude": -119.0570432,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Curry County Courthouse Drop Box",
+        "line1": "29821 Ellensburg Avenue",
+        "city": "Gold Beach",
+        "state": "OR",
+        "zip": "97444"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box located at E Moore St parking lot",
+      "latitude": 42.4167481,
+      "longitude": -124.4190151,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Curry County Courthouse - Clerk's Office",
+        "line1": "29821 Ellensburg Avenue",
+        "city": "Gold Beach",
+        "state": "OR",
+        "zip": "97444"
+      },
+      "notes": "Monday-Friday 8:30am-12pm and 1pm-5pm; Election Day until 8pm - Inside in the County Clerk's office on the 2nd floor",
+      "latitude": 42.4167481,
+      "longitude": -124.4190151,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hines City Hall - Drive-Thru",
+        "line1": "101",
+        "line2": "E Barnes",
+        "city": "Hines",
+        "state": "OR",
+        "zip": "97738"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drive-thru drop box",
+      "latitude": 43.5610693,
+      "longitude": -119.0829195,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Halfway City Hall",
+        "line1": "155-B East Record Street",
+        "city": "Halfway",
+        "state": "OR",
+        "zip": "97834"
+      },
+      "notes": "Monday-Thursday 8am-4pm; Election Day 8am-12pm and 1pm-8pm - Inside",
+      "latitude": 44.8770426,
+      "longitude": -117.1080759,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Richland City Hall",
+        "line1": "89 Main Street",
+        "city": "Richland",
+        "state": "OR",
+        "zip": "97870"
+      },
+      "notes": "Monday-Friday 8am-12pm and 1pm-4pm; Election Day 9am-8pm - Inside",
+      "latitude": 44.7694029,
+      "longitude": -117.167713,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Brookings City Hall",
+        "line1": "898 Elk Drive",
+        "city": "Brookings",
+        "state": "OR",
+        "zip": "97415"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 42.0553838,
+      "longitude": -124.2874821,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Huntington City Hall",
+        "line1": "50 E Adams",
+        "city": "Huntington",
+        "state": "OR",
+        "zip": "97907"
+      },
+      "notes": "Monday-Friday 9am-12pm and 1pm-4pm; Election Day 9am-8pm - Inside",
+      "latitude": 44.3504113,
+      "longitude": -117.267356,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lake County Elections",
+        "line1": "513 Center Street",
+        "city": "Lakeview",
+        "state": "OR",
+        "zip": "97630"
+      },
+      "notes": "Monday-Friday 8:30-5pm; Election Day until 8pm - Inside | October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 42.1890412,
+      "longitude": -120.3451756,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "County Road Dept Yard in Crane - Drive-Thru",
+        "line1": "64319 Main Avenue",
+        "city": "Crane",
+        "state": "OR",
+        "zip": "97732"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drive-thru drop box",
+      "latitude": 43.4146029,
+      "longitude": -118.5778869,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Malheur County Courthouse Drop Box",
+        "line1": "251 B Street West",
+        "city": "Vale",
+        "state": "OR",
+        "zip": "97918"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box corner of \"B\" St and Bryant St",
+      "latitude": 43.9809001,
+      "longitude": -117.2411025,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Ontario Community Library",
+        "line1": "388 Southwest 2nd Avenue",
+        "city": "Ontario",
+        "state": "OR",
+        "zip": "97914"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 44.0252726,
+      "longitude": -116.968304,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Nyssa Public Library",
+        "line1": "319 Main Street",
+        "city": "Nyssa",
+        "state": "OR",
+        "zip": "97913"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box",
+      "latitude": 43.8766202,
+      "longitude": -116.997252,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Jordan Valley Drive Up",
+        "line1": "501 Yturri Boulevard",
+        "city": "Jordan Valley",
+        "state": "OR",
+        "zip": "97910"
+      },
+      "notes": "October 14 - November 2: 24 hours 7 days a week; November 3: Election Day until 8pm - Outside 24 hour drop box across from Post Office at county right of way",
+      "latitude": 42.9736591,
+      "longitude": -117.052665,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "state": [
+    {
+      "name": "Oregon",
+      "electionAdministrationBody": {
+        "electionInfoUrl": "http://www.oregonvotes.gov",
+        "electionRegistrationUrl": "http://oregonvotes.gov/register",
+        "ballotInfoUrl": "http://oregonvotes.gov/myballot",
+        "electionRulesUrl": "http://sos.oregon.gov/elections/Pages/laws-rules-publications.aspx"
+      },
+      "local_jurisdiction": {
+        "name": "Multnomah",
+        "electionAdministrationBody": {
+          "electionInfoUrl": "https://multco.us/elections"
+        },
+        "sources": [
+          {
+            "name": "Voting Information Project",
+            "official": true
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "mailOnly": true,
+  "kind": "civicinfo#voterInfoResponse"
+}
