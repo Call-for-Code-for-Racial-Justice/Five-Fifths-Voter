@@ -158,7 +158,7 @@ export default {
   },
   mounted() {
     axios
-      .get(process.env.VUE_APP_SERVICE_API_HOST + '/voterids')
+      .get('/services/voterids')
       .then(response => {
         this.allVoterIdData = response.data;
       })

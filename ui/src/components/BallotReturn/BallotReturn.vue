@@ -174,7 +174,7 @@ export default {
     showPollingLocation() {
       if (this.$refs.dropoffMap) this.$refs.dropoffMap.clearMarkers();
       axios
-        .post(process.env.VUE_APP_SERVICE_API_HOST + '/pollingplace', {
+        .post('/services/pollingplace', {
           data: {
             address: this.addressValue
           }

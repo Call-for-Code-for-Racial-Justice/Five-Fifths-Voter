@@ -106,8 +106,7 @@ export default {
       this.twitter_chatter = { items: [] };
       this.loadingChatter = true;
       axios
-        .get('/twitter/chatter', {
-          baseURL: process.env.VUE_APP_SERVICE_API_HOST,
+        .get('/services/twitter/chatter', {
           params: {
             screenname: this.screenname
           }

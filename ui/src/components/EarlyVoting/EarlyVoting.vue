@@ -255,7 +255,7 @@ export default {
   methods: {
     showPollingLocation() {
       axios
-        .post(process.env.VUE_APP_SERVICE_API_HOST + '/pollingplace', {
+        .post('/services/pollingplace', {
           data: {
             address: this.addressValue
           }

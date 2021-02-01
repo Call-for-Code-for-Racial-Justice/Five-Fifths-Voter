@@ -1,0 +1,7 @@
+---
+applications:
+  - name: fivefifthsvoter
+    memory: 1024M
+    random-route: true
+    buildpacks:
+      - https://github.com/cloudfoundry/nginx-buildpack

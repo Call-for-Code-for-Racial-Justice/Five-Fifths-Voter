@@ -1,0 +1,8 @@
+---
+applications:
+  - name: fivefifthsvoter-services
+    random-route: true
+    memory: 256M
+    buildpacks:
+      - https://github.com/cloudfoundry/python-buildpack.git
+      - https://github.com/cloudfoundry/nodejs-buildpack.git
