@@ -4,6 +4,5 @@ Dockerfile
 node_modules
 manifest.yml
 requirements.txt
-yarn.lock
 samples
 vendor

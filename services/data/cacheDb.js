@@ -24,7 +24,7 @@ if (process.env.VCAP_SERVICES) {
   var vcap_services = JSON.parse(process.env.VCAP_SERVICES);
   var Cloudant = require("@cloudant/cloudant");
   var cloudant = Cloudant({
-    vcapInstanceName: "gcc-journey-Cloudant",
+    vcapInstanceName: "five-fifth-voters-cloudant-prod",
     vcapServices: vcap_services,
   });
 
