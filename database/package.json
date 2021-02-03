@@ -1,0 +1,11 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "Local database - optional. Not needed for most UI development.",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "serve": "docker stop localdev-db; docker rm localdev-db; docker run --detach --rm -p 8888:5984 --name localdev-db five-fifths-voter/db",
+    "build": "docker build -t five-fifths-voter/db ."
+  }
+}
