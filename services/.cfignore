@@ -1,8 +1,9 @@
 localdb
 README.md
 Dockerfile
+.dockerignore
 node_modules
 manifest.yml
-requirements.txt
 samples
 vendor
+.env*
