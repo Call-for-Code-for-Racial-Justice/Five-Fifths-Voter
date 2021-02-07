@@ -137,10 +137,12 @@ if (useTwitterMock) {
 
 app.get("/twitter/chatter/", (req, res) => {
   if (useTwitterMock) {
+    console.log("twitter mock");
     res.send(mock_twitter);
   } else {
+    console.log("twitter real");
     let screenname = req.query.screenname;
-    //console.log('screenname', screenname);
+    console.log('screenname', screenname);
 
     const { spawn } = require("child_process");
     const chatter = spawn("python3", ["twitter/Chatter.py", screenname]);
@@ -158,6 +160,7 @@ app.get("/twitter/chatter/", (req, res) => {
           res.status(404).send();
         } else {
           const resp_data = Buffer.concat(chunks);
+          console.log("response", resp_data);
           const jdata = JSON.parse(resp_data);
           res.send(jdata);
         }

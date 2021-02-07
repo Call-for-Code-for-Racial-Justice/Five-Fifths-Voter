@@ -1,0 +1,9 @@
+{
+  "_id": "_design/earlyVotingView",
+  "views": {
+    "early-voting-view": {
+      "map": "function (doc) {\n  if (doc.collection === 'early') emit(doc.state+'/'+doc.place, 1);\n}"
+    }
+  },
+  "language": "javascript"
+}

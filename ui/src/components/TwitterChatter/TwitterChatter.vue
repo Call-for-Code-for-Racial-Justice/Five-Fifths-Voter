@@ -47,9 +47,9 @@ export default {
       screenname: '',
       options: [
         {
-          value: 'realDonaldTrump',
-          label: 'Donald Trump',
-          name: 'realDonaldTrump'
+          value: 'POTUS',
+          label: 'United States President',
+          name: 'POTUS'
         },
         {
           value: 'JoeBiden',
@@ -57,9 +57,9 @@ export default {
           name: 'JoeBiden'
         },
         {
-          value: 'VP',
+          value: 'Mike_Pence',
           label: 'Mike Pence',
-          name: 'VP'
+          name: 'Mike_Pence'
         },
         {
           value: 'KamalaHarris',

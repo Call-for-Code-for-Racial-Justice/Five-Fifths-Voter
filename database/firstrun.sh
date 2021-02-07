@@ -8,7 +8,7 @@ curl --user @NODE_DB_USER@:@NODE_DB_PASSWORD@ -X PUT http://127.0.0.1:5984/_user
 curl --user @NODE_DB_USER@:@NODE_DB_PASSWORD@ -X PUT http://127.0.0.1:5984/_replicator
 
 # set the timeout for clients to be
-curl --request PUT --header "Content-Type:application/json" --data '"28800"' http://NGUxYWMw:MmM2OTIxNzRkNTk3MWRi@localhost:5984/_node/nonode@nohost/_config/couch_httpd_auth/timeout
+curl --user @NODE_DB_USER@:@NODE_DB_PASSWORD@ --request PUT --header "Content-Type:application/json" --data '"28800"' http://127.0.0.1:5984/_node/nonode@nohost/_config/couch_httpd_auth/timeout
 
 # load the mock data
 for dbdir in `find mock/* -maxdepth 0 -type d `; do

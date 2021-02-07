@@ -1,7 +1,7 @@
 <template>
   <div class="container--countdown">
-    <h3>Georgia senate runoff.</h3>
-    <countdown deadline="January 5, 2021" />
+    <h3>Midterm Congressional Elections</h3>
+    <countdown deadline="November 8, 2022" />
   </div>
 </template>
 

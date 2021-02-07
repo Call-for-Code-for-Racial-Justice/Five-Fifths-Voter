@@ -51,10 +51,17 @@ locationData = exports.locationData = (stateid, locid, amend) => {
     var locationData = {};
 
     // find this info in the cache
-    const db = cache.db();
-    const collection = db.collection("ga_early");
-    return collection
-      .findOne({ place: locid })
+    var database = cache.db.use('webscrapecache')
+
+    return database.view("earlyVotingView", "early-voting-view", {
+      key: "GA/" + locid,
+      include_docs: true,
+    })
+      .then((response) => {
+        if (response.rows.length != 1)
+          console.error("database error. Data not in expected format.", response.rows.length)
+        return response.rows[0].doc
+      })
       .then((result) => {
         /**
          * Step 1. Get data for this location from the DB
@@ -89,12 +96,8 @@ locationData = exports.locationData = (stateid, locid, amend) => {
 
         const scrapeURL =
           "https://elections.sos.ga.gov/Elections/advancedVotingInfoResult.do";
-        locationData.cacheData.pollingLocs = {
-          state: stateid,
-          place: locid,
-          retrieved: Date.now(),
-          earlyVoteSites: [],
-        };
+        locationData.cacheData.pollingLocs.retrieved = Date.now()
+        locationData.cacheData.pollingLocs.earlyVoteSites = []
 
         return axios.get(scrapeURL, { params: getParams });
       })
@@ -205,9 +208,7 @@ locationData = exports.locationData = (stateid, locid, amend) => {
         var dbDoc = locationData.cacheData.pollingLocs;
 
         console.log(`${locid} cache update`);
-        if (cacheData.cacheHit)
-          return collection.findOneAndReplace(dbKey, dbDoc);
-        else return collection.insertOne(dbDoc);
+        return database.insert(dbDoc)
       })
       .then((cacheDbUpdate) => {
         /**
