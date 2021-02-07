@@ -1,0 +1,47 @@
+@import 'carbon-components/scss/globals/scss/typography.scss';
+//please note -- all !important are set to override vue-countdown npm package styling.
+//custom breakpoints needed for timer
+
+.container--countdown {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 16px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(112, 112, 112, 1) 100%);
+  @media (min-width: 1063px) {
+    padding: 36px 94px;
+  }
+}
+
+.vuejs-countdown .text {
+  @include carbon--type-style('productive-heading-06');
+  text-transform: capitalize !important;
+  font-size: 28px !important;
+
+  @media (min-width: 1063px) {
+    font-size: 48px !important;
+  }
+}
+
+.vuejs-countdown .digit {
+  font-size: 12vw !important;
+
+  @media (min-width: 1063px) {
+    font-size: 14vw !important;
+  }
+}
+
+.vuejs-countdown li:after {
+  top: 5% !important;
+  right: -20% !important;
+  font-size: 12vw !important;
+
+  @media (min-width: 1063px) {
+    right: -15% !important;
+    font-size: 16vw !important;
+  }
+}
+
+.vuejs-countdown {
+  padding: 0;
+  margin: 0 auto !important;
+}

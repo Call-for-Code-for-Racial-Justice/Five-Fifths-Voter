@@ -6,24 +6,30 @@
   "repository": "https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter/issues",
   "author": "IBM",
   "license": "MIT",
-  "dependencies": {
-    "axios": "^0.20.0",
-    "body-parser": "^1.19.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "jsdom": "^16.4.0",
-    "lodash": "^4.17.19",
-    "mongodb": "^3.6.2",
-    "prettier": "^2.0.5"
-  },
   "scripts": {
-    "serve": "node services.js",
-    "test": "nodemon services.js",
+    "start": "node services.js",
+    "serve": "nodemon services.js",
+    "deploy": "ibmcloud cf push",
     "ci-check": "yarn format:diff",
     "ci-format": "prettier --write \"**/*.js\"",
     "format:diff": "prettier --list-different \"**/*.js\""
   },
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "@cloudant/cloudant": "^4.3.0",
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "dotenv-flow": "^3.2.0",
+    "express": "^4.17.1",
+    "jsdom": "^16.4.0",
+    "lodash": "^4.17.19",
+    "prettier": "^2.0.5"
+  },
   "devDependencies": {
+    "nano": "^9.0.3",
     "nodemon": "^2.0.4"
   }
 }

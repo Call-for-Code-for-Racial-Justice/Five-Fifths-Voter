@@ -1,0 +1,294 @@
+{
+  "election": {
+    "id": "7000",
+    "name": "US 2020 General Election",
+    "electionDay": "2020-11-03",
+    "ocdDivisionId": "ocd-division/country:us"
+  },
+  "normalizedInput": {
+    "line1": "1602 West Smith Street",
+    "city": "Peoria",
+    "state": "IL",
+    "zip": "61605"
+  },
+  "pollingLocations": [
+    {
+      "address": {
+        "locationName": "Proctor Center",
+        "line1": "309 South DuSable Street",
+        "city": "Peoria",
+        "state": "IL",
+        "zip": "61605"
+      },
+      "notes": "Community Center",
+      "pollingHours": "Tue, Nov 3: 6 am - 7 pm",
+      "latitude": 40.6855084,
+      "longitude": -89.6161152,
+      "startDate": "2020-11-03",
+      "endDate": "2020-11-03",
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "earlyVoteSites": [
+    {
+      "address": {
+        "locationName": "Peoria Public Downtown Library",
+        "line1": "107 NE Monroe St",
+        "city": "Peoria",
+        "state": "IL",
+        "zip": "61602"
+      },
+      "pollingHours": "Wed, Oct 28: 10 am - 6 pm\nThu, Oct 29: 10 am - 6 pm\nFri, Oct 30: 10 am - 6 pm\nSat, Oct 31: 10 am - 1 pm\nSun, Nov 1: 12 pm - 3 pm",
+      "latitude": 40.6951054,
+      "longitude": -89.5927495,
+      "startDate": "2020-10-28",
+      "endDate": "2020-11-01",
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Peoria County Election Commission Office",
+        "line1": "4422 N Brandywine Dr",
+        "city": "Peoria",
+        "state": "IL",
+        "zip": "61614"
+      },
+      "pollingHours": "Wed, Oct 7: 8:30 am - 4:30 pm\nThu, Oct 8: 8:30 am - 4:30 pm\nFri, Oct 9: 8:30 am - 4:30 pm\nMon, Oct 12: 8:30 am - 4:30 pm\nTue, Oct 13: 8:30 am - 4:30 pm\nWed, Oct 14: 8:30 am - 4:30 pm\nThu, Oct 15: 8:30 am - 4:30 pm\nFri, Oct 16: 8:30 am - 4:30 pm\nMon, Oct 19: 8:30 am - 7:00 pm\nTue, Oct 20: 8:30 am - 7:00 pm\nWed, Oct 21: 8:30 am - 7:00 pm\nThu, Oct 22: 8:30 am - 7:00 pm\nFri, Oct 23: 8:30 am - 7:00 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 9 am - 5 pm\nMon, Oct 26: 8:30 am - 7:00 pm\nTue, Oct 27: 8:30 am - 7:00 pm\nWed, Oct 28: 8:30 am - 7:00 pm\nThu, Oct 29: 8:30 am - 7:00 pm\nFri, Oct 30: 8:30 am - 7:00 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 9 am - 5 pm\nMon, Nov 2: 8:30 am - 7:00 pm",
+      "latitude": 40.7423773,
+      "longitude": -89.6258634,
+      "startDate": "2020-09-24",
+      "endDate": "2020-11-02",
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Peoria Heights Public Library",
+        "line1": "816 E Glen Ave",
+        "city": "Peoria Heights",
+        "state": "IL",
+        "zip": "61616"
+      },
+      "pollingHours": "Fri, Oct 23: 10 am - 6 pm",
+      "latitude": 40.7459045,
+      "longitude": -89.5807806,
+      "startDate": "2020-10-23",
+      "endDate": "2020-10-23",
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Alpha Park Public Library",
+        "line1": "3527 S Airport Rd",
+        "city": "Bartonville",
+        "state": "IL",
+        "zip": "61607"
+      },
+      "pollingHours": "Sat, Oct 24: 10 am - 1 pm\nFri, Oct 30: 10 am - 6 pm\nSat, Oct 31: 10 am - 1 pm",
+      "latitude": 40.6458606,
+      "longitude": -89.6809065,
+      "startDate": "2020-10-24",
+      "endDate": "2020-10-31",
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hanna City Methodist Church",
+        "line1": "12208 W Farmington Rd",
+        "city": "Hanna City",
+        "state": "IL",
+        "zip": "61536"
+      },
+      "pollingHours": "Tue, Oct 20: 10 am - 6 pm",
+      "latitude": 40.6911807,
+      "longitude": -89.7879163,
+      "startDate": "2020-10-20",
+      "endDate": "2020-10-20",
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lake Camelot Clubhouse",
+        "line1": "9278 W Lake Camelot Dr",
+        "city": "Mapleton",
+        "state": "IL",
+        "zip": "61547"
+      },
+      "pollingHours": "Thu, Oct 22: 10 am - 6 pm",
+      "latitude": 40.6306697,
+      "longitude": -89.7420299,
+      "startDate": "2020-10-22",
+      "endDate": "2020-10-22",
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Kickapoo Town Hall",
+        "line1": "10025 US-150",
+        "city": "Edwards",
+        "state": "IL",
+        "zip": "61528"
+      },
+      "pollingHours": "Tue, Oct 27: 10 am - 6 pm",
+      "latitude": 40.7908363,
+      "longitude": -89.7525534,
+      "startDate": "2020-10-27",
+      "endDate": "2020-10-27",
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Dunlap Public Library",
+        "line1": "203 W 1st St",
+        "city": "Dunlap",
+        "state": "IL",
+        "zip": "61525"
+      },
+      "pollingHours": "Sat, Oct 24: 10 am - 1 pm\nFri, Oct 30: 10 am - 6 pm\nSat, Oct 31: 10 am - 1 pm",
+      "latitude": 40.8620306,
+      "longitude": -89.6747957,
+      "startDate": "2020-10-24",
+      "endDate": "2020-10-31",
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Chillicothe Public Library District",
+        "line1": "430 N Bradley Ave",
+        "city": "Chillicothe",
+        "state": "IL",
+        "zip": "61523"
+      },
+      "pollingHours": "Wed, Oct 28: 10 am - 6 pm\nThu, Oct 29: 10 am - 6 pm",
+      "latitude": 40.9144444,
+      "longitude": -89.4998337,
+      "startDate": "2020-10-28",
+      "endDate": "2020-10-29",
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lillie M Evans Library",
+        "line1": "207 N Walnut St",
+        "city": "Princeville",
+        "state": "IL",
+        "zip": "61559"
+      },
+      "pollingHours": "Mon, Oct 19: 10 am - 6 pm",
+      "latitude": 40.9312122,
+      "longitude": -89.7565494,
+      "startDate": "2020-10-19",
+      "endDate": "2020-10-19",
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Brimfield Public Library",
+        "line1": "111 S Galena Ave",
+        "city": "Brimfield",
+        "state": "IL",
+        "zip": "61517"
+      },
+      "pollingHours": "Wed, Oct 21: 10 am - 6 pm",
+      "latitude": 40.8385296,
+      "longitude": -89.8849345,
+      "startDate": "2020-10-21",
+      "endDate": "2020-10-21",
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "United Methodist Chuch",
+        "line1": "821 W Main St",
+        "city": "Elmwood",
+        "state": "IL",
+        "zip": "61529"
+      },
+      "pollingHours": "Mon, Oct 26: 10 am - 6 pm",
+      "latitude": 40.7784792,
+      "longitude": -89.9793764,
+      "startDate": "2020-10-26",
+      "endDate": "2020-10-26",
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    }
+  ],
+  "state": [
+    {
+      "name": "Illinois",
+      "electionAdministrationBody": {
+        "electionInfoUrl": "http://www.elections.il.gov/"
+      },
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "kind": "civicinfo#voterInfoResponse"
+}

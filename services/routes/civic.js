@@ -1,11 +1,20 @@
-const https = require('https');
-const axios = require('axios');
-const apiKey = process.env.NODE_GOOGLE_CIVIC_API_KEY;
+const https = require("https");
+const axios = require("axios");
+var apiKey
+if (process.env.VCAP_SERVICES) {
+  var vcap_services = JSON.parse(process.env.VCAP_SERVICES);
+  const srvc = vcap_services["user-provided"].find(element => element["instance_name"] == "Five Fifths Google Civic API");
+  apiKey = srvc.credentials.apikey
+}
+else {
+  apiKey = process.env.NODE_GOOGLE_CIVIC_API_KEY;
+}
+
 //const currentElectionId = 7000; // 2020 US Presidential Election
 //const currentElectionId = 2000; // VIP Test Election
 //const currentElectionId = 5029; // Louisiana General Congressional Election
 const currentElectionId = process.env.NODE_CIVIC_ELECTION_ID || 2000;
-const earlyVotingGa = require('./earlyvoting/ga');
+const earlyVotingGa = require("./earlyvoting/ga");
 
 exports.pollingPlace = function (req, res) {
   try {
@@ -16,48 +25,55 @@ exports.pollingPlace = function (req, res) {
       address: voterAddress,
     };
     axios
-      .get('https://www.googleapis.com/civicinfo/v2/voterinfo', {
+      .get("https://www.googleapis.com/civicinfo/v2/voterinfo", {
         params: getParams,
         headers: {
-          'Accept-Encoding': 'gzip',
-          'User-Agent': 'node (gzip)',
+          "Accept-Encoding": "gzip",
+          "User-Agent": "node (gzip)",
         },
       })
       .then((response) => {
         try {
-          if (response.data.normalizedInput.state === 'GA') {
-            console.log('Georgia data');
+          if (response.data.normalizedInput.state === "GA") {
+            console.log("Georgia data");
             if (!response.data.state) {
-              console.log('no state', response.data);
+              console.log("no state", response.data);
               return response.data;
             }
             if (!response.data.state[0]) {
-              console.log('no state[0]', response.data.state);
+              console.log("no state[0]", response.data.state);
               return response.data;
             }
             if (!response.data.state[0].local_jurisdiction) {
-              console.log('no state[0].local_jurisdiction', response.data.state[0]);
+              console.log(
+                "no state[0].local_jurisdiction",
+                response.data.state[0]
+              );
               return response.data;
             }
             if (!response.data.state[0].local_jurisdiction.name) {
               console.log(
-                'no state[0].local_jurisdiction.name',
+                "no state[0].local_jurisdiction.name",
                 response.data.state[0].local_jurisdiction
               );
               return response.data;
             }
 
             var county = response.data.state[0].local_jurisdiction.name;
-            county = county.toUpperCase().replace('COUNTY', '').trim();
+            county = county.toUpperCase().replace("COUNTY", "").trim();
             console.log(county);
             if (!response.data.earlyVoteSites) {
-              console.log('no early voting data from google');
-              var more = earlyVotingGa.locationData('GA', county, response.data);
+              console.log("no early voting data from google");
+              var more = earlyVotingGa.locationData(
+                "GA",
+                county,
+                response.data
+              );
               return more;
             }
           }
         } catch (error) {
-          console.error('error parsing civic API response', error);
+          console.error("error parsing civic API response", error);
         }
         return response.data;
       })
@@ -65,7 +81,7 @@ exports.pollingPlace = function (req, res) {
         res.send(data);
       })
       .catch((reason) => {
-        console.error('Civic error', reason);
+        console.error("Civic error", reason);
         return res.status(503).send({
           election: {
             id: currentElectionId,
@@ -86,18 +102,18 @@ exports.elections = function (req, res) {
       key: apiKey,
     };
     axios
-      .get('https://www.googleapis.com/civicinfo/v2/elections', {
+      .get("https://www.googleapis.com/civicinfo/v2/elections", {
         params: getParams,
         headers: {
-          'Accept-Encoding': 'gzip',
-          'User-Agent': 'node (gzip)',
+          "Accept-Encoding": "gzip",
+          "User-Agent": "node (gzip)",
         },
       })
       .then((response) => {
         res.send(response.data);
       })
       .catch((reason) => {
-        console.error('Civic error', reason);
+        console.error("Civic error", reason);
         return res.status(503).send({ message: reason.message });
       });
   } catch (error) {

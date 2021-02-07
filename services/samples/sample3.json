@@ -1,0 +1,32 @@
+{
+  "election": {
+    "id": "7000",
+    "name": "US 2020 General Election",
+    "electionDay": "2020-11-03",
+    "ocdDivisionId": "ocd-division/country:us"
+  },
+  "normalizedInput": {
+    "line1": "700 Northwest Bond Street",
+    "city": "Bend",
+    "state": "OR",
+    "zip": "97703"
+  },
+  "state": [
+    {
+      "name": "Oregon",
+      "electionAdministrationBody": {
+        "electionInfoUrl": "http://www.oregonvotes.gov",
+        "electionRegistrationUrl": "http://oregonvotes.gov/register",
+        "ballotInfoUrl": "http://oregonvotes.gov/myballot",
+        "electionRulesUrl": "http://sos.oregon.gov/elections/Pages/laws-rules-publications.aspx"
+      },
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "kind": "civicinfo#voterInfoResponse"
+}

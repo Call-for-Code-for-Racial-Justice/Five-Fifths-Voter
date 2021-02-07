@@ -1,0 +1,9 @@
+localdb
+README.md
+Dockerfile
+.dockerignore
+node_modules
+manifest.yml
+samples
+vendor
+.env*

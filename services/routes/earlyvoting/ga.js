@@ -1,7 +1,7 @@
-const { JSDOM } = require('jsdom');
-const axios = require('axios');
-const params = require('../../data/earlyVoting/GA/scrapeParams');
-const cache = require('../../data/cacheDb');
+const { JSDOM } = require("jsdom");
+const axios = require("axios");
+const params = require("../../data/earlyVoting/GA/scrapeParams");
+const cache = require("../../data/cacheDb");
 
 exports.regions = function (req, res) {
   res.status(200).send({ list: Object.keys(params) });
@@ -9,16 +9,18 @@ exports.regions = function (req, res) {
 
 function geocodeAddress(county, address) {
   try {
-    const knownLocations = require('../../data/earlyVoting/GA/knownLocations/' + county + '.json');
+    const knownLocations = require("../../data/earlyVoting/GA/knownLocations/" +
+      county +
+      ".json");
     var place = address
       .trim()
       .toUpperCase()
-      .replace(/[.,]*/gm, '')
-      .replace(/[ ]{2,}/gm, ' ');
+      .replace(/[.,]*/gm, "")
+      .replace(/[ ]{2,}/gm, " ");
     var loc = knownLocations[place];
     if (loc) return loc;
     else {
-      console.error('Unknown location in', county, 'county GA:', address);
+      console.error("Unknown location in", county, "county GA:", address);
       return { lat: undefined, lng: undefined };
     }
   } catch (error) {
@@ -41,18 +43,25 @@ locationData = exports.locationData = (stateid, locid, amend) => {
 
     // Only GA in the module. If its not GA then probably there is an error in
     // earlier logic.
-    if (stateid !== 'GA') throw { ok: false, message: 'Only GA is supported' };
+    if (stateid !== "GA") throw { ok: false, message: "Only GA is supported" };
 
     // Every county should be in the list
-    if (!getParams) throw { ok: false, message: 'County not found: ' + locid };
+    if (!getParams) throw { ok: false, message: "County not found: " + locid };
 
     var locationData = {};
 
     // find this info in the cache
-    const db = cache.db();
-    const collection = db.collection('ga_early');
-    return collection
-      .findOne({ place: locid })
+    var database = cache.db.use('webscrapecache')
+
+    return database.view("earlyVotingView", "early-voting-view", {
+      key: "GA/" + locid,
+      include_docs: true,
+    })
+      .then((response) => {
+        if (response.rows.length != 1)
+          console.error("database error. Data not in expected format.", response.rows.length)
+        return response.rows[0].doc
+      })
       .then((result) => {
         /**
          * Step 1. Get data for this location from the DB
@@ -60,7 +69,8 @@ locationData = exports.locationData = (stateid, locid, amend) => {
         var retrieved = Date.now();
         var pollingLocs = result;
         var cacheHit = result ? true : false;
-        var cacheIsStale = !pollingLocs || retrieved - pollingLocs.retrieved > cache.staleTime;
+        var cacheIsStale =
+          !pollingLocs || retrieved - pollingLocs.retrieved > cache.staleTime;
         //var cacheIsStale = true;
         if (pollingLocs) {
           console.log(
@@ -71,7 +81,7 @@ locationData = exports.locationData = (stateid, locid, amend) => {
         }
 
         locationData.cacheData = {
-          type: 'cache',
+          type: "cache",
           cacheHit: cacheHit,
           cacheIsStale: cacheIsStale,
           pollingLocs: pollingLocs,
@@ -84,13 +94,10 @@ locationData = exports.locationData = (stateid, locid, amend) => {
          */
         if (!cacheData.cacheIsStale) return cacheData;
 
-        const scrapeURL = 'https://elections.sos.ga.gov/Elections/advancedVotingInfoResult.do';
-        locationData.cacheData.pollingLocs = {
-          state: stateid,
-          place: locid,
-          retrieved: Date.now(),
-          earlyVoteSites: [],
-        };
+        const scrapeURL =
+          "https://elections.sos.ga.gov/Elections/advancedVotingInfoResult.do";
+        locationData.cacheData.pollingLocs.retrieved = Date.now()
+        locationData.cacheData.pollingLocs.earlyVoteSites = []
 
         return axios.get(scrapeURL, { params: getParams });
       })
@@ -98,7 +105,7 @@ locationData = exports.locationData = (stateid, locid, amend) => {
         /**
          * Step 3. This is either cache data if the cache is not stale or its html data from the scrape url
          */
-        if (data.type === 'cache') return data; // this is fresh (not stale) cache data so use it
+        if (data.type === "cache") return data; // this is fresh (not stale) cache data so use it
 
         // Otherwise, process the HTML response from the source
         var response = data;
@@ -111,40 +118,42 @@ locationData = exports.locationData = (stateid, locid, amend) => {
 
         // try to parse out the addresses fom the table - danger
         try {
-          var inner = document.querySelector('#Table1 >  tbody > tr > td > table');
+          var inner = document.querySelector(
+            "#Table1 >  tbody > tr > td > table"
+          );
           if (inner) {
             var rows = inner.rows;
             var addressStart = false;
             var finishAddress = false;
-            var address = '';
-            var locationName = '';
-            var electionName = '';
+            var address = "";
+            var locationName = "";
+            var electionName = "";
             for (var r = 0; r < rows.length; r++) {
               cells = rows[r].cells;
               finishAddress = r + 1 === rows.length;
               if (cells && cells.length == 2) {
                 var label = cells[0].textContent.trim();
 
-                if (label === 'Election:') {
+                if (label === "Election:") {
                   finishAddress = true;
                   electionName = cells[1].textContent.trim();
                   electionSet.add(electionName);
-                } else if (label == 'Poll Place Name:') {
+                } else if (label == "Poll Place Name:") {
                   finishAddress = true;
                   locationName = cells[1].textContent.trim();
-                  if (locationName.startsWith('AA- ')) {
+                  if (locationName.startsWith("AA- ")) {
                     locationName = locationName.slice(4);
                   }
-                  if (locationName.startsWith('AA - ')) {
+                  if (locationName.startsWith("AA - ")) {
                     locationName = locationName.slice(5);
                   }
-                } else if (label == 'Address:') {
+                } else if (label == "Address:") {
                   finishAddress = false;
                   addressStart = true;
                   address = cells[1].textContent.trim();
-                } else if (addressStart && label === '') {
-                  address = address + ' ' + cells[1].textContent.trim();
-                } else if (addressStart && label !== '') {
+                } else if (addressStart && label === "") {
+                  address = address + " " + cells[1].textContent.trim();
+                } else if (addressStart && label !== "") {
                   finishAddress = true;
                 }
               }
@@ -162,14 +171,14 @@ locationData = exports.locationData = (stateid, locid, amend) => {
                   longitude: latLng.lng,
                   sources: [
                     {
-                      name: 'Five Fifths Voter',
+                      name: "Five Fifths Voter",
                       official: true,
                     },
                   ],
                 });
-                address = '';
-                locationName = '';
-                electionName = '';
+                address = "";
+                locationName = "";
+                electionName = "";
               }
             }
             var elections = [];
@@ -181,7 +190,7 @@ locationData = exports.locationData = (stateid, locid, amend) => {
             return locationData.cacheData;
           }
         } catch (error) {
-          console.error('could not get addresses from table');
+          console.error("could not get addresses from table");
         }
       })
       .then((cacheData) => {
@@ -191,7 +200,7 @@ locationData = exports.locationData = (stateid, locid, amend) => {
         if (!cacheData.cacheIsStale) return cacheData; // If the data is fresh (not stale) use it
 
         // Otherwise
-        console.log('updating cache db', {
+        console.log("updating cache db", {
           state: locationData.cacheData.pollingLocs.state,
           place: locationData.cacheData.pollingLocs.place,
         });
@@ -199,8 +208,7 @@ locationData = exports.locationData = (stateid, locid, amend) => {
         var dbDoc = locationData.cacheData.pollingLocs;
 
         console.log(`${locid} cache update`);
-        if (cacheData.cacheHit) return collection.findOneAndReplace(dbKey, dbDoc);
-        else return collection.insertOne(dbDoc);
+        return database.insert(dbDoc)
       })
       .then((cacheDbUpdate) => {
         /**
@@ -221,7 +229,7 @@ locationData = exports.locationData = (stateid, locid, amend) => {
         return { ...amend, ...fixup };
       })
       .catch((reason) => {
-        console.error('Cache DB error', reason);
+        console.error("Cache DB error", reason);
         throw { ok: false, message: reason };
       });
   } catch (error) {
@@ -239,7 +247,7 @@ exports.locations = (req, res) => {
 
     // Only GA in the module. If its not GA then probably there is an error in
     // earlier logic.
-    if (stateid !== 'GA') return res.status(404).send();
+    if (stateid !== "GA") return res.status(404).send();
 
     // Every county should be in the list
     if (!getParams) return res.status(404).send();
@@ -249,11 +257,11 @@ exports.locations = (req, res) => {
         res.status(200).send(data);
       })
       .catch((reason) => {
-        console.error('error', reason);
+        console.error("error", reason);
         return res.status(404).send({ ok: false, reason });
       });
   } catch (error) {
-    console.error('error', error);
+    console.error("error", error);
     return res.status(404).send({ ok: false, error });
   }
 };

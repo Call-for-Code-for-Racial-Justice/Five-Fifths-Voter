@@ -1,0 +1,25 @@
+{
+  "_id": "211e2448815df720ab9645fb7700004c",
+  "collection": "early",
+  "state": "GA",
+  "place": "FULTON",
+  "retrieved": 1611144000000,
+  "earlyVoteSites": [
+    {
+      "address": {
+        "locationName": "ALPHARETTA BRANCH LIBRARY",
+        "line1": "10 PARK PLAZA ALPHARETTA, GA 30009",
+        "electionName": "NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION"
+      },
+      "latitude": 34.0742279,
+      "longitude": -84.2919567,
+      "sources": [
+        {
+          "name": "Five Fifths Voter",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "elections": ["NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION"]
+}
