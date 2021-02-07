@@ -1,7 +1,9 @@
 ---
 applications:
   - name: fivefifthsvoter
-    memory: 1024M
-    random-route: true
+    memory: 512M
+    routes:
+      - route: fivefifthsvoter-tired-leopard-im.mybluemix.net
+      - route: www.joelledlugozima.com
     buildpacks:
       - https://github.com/cloudfoundry/nginx-buildpack

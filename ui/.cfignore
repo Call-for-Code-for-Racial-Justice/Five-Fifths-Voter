@@ -6,7 +6,7 @@ node_modules
 logs
 *.log
 .env*
-test/
+/tests
 src
 public
 secrets*
@@ -21,3 +21,4 @@ package.json
 buildpack.yml
 staging.yml
 /*.js
+Dockerfile.local
