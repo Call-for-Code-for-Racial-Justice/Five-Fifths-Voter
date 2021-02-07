@@ -37,13 +37,13 @@ const mock_twitter = require("./data/mock/mock_twitter");
 const earlyVotingGa = require("./routes/earlyvoting/ga");
 const civic = require("./routes/civic");
 
-app.use((req, res, next) => {
-  res.append("Access-Control-Allow-Origin", ["*"]);
-  res.append("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
-  res.append("Access-Control-Allow-Headers", "Content-Type");
-  res.append("Content-Type", "application/json");
-  next();
-});
+// app.use((req, res, next) => {
+//   res.append("Access-Control-Allow-Origin", ["*"]);
+//   res.append("Access-Control-Allow-Methods", "GET,PUT,POST,DELETE");
+//   res.append("Access-Control-Allow-Headers", "Content-Type");
+//   res.append("Content-Type", "application/json");
+//   next();
+// });
 
 app.get("/services", (req, res) => {
   // console.log('Returning version');
@@ -62,7 +62,7 @@ app.get("/earlyvoting/regions/", (req, res) => {
   if (foundRegions) {
     return earlyVotingGa.regions(req, res);
   } else {
-    console.log(`State not found.`);
+    console.error(`State not found.`);
     res.status(404).send();
   }
 });
@@ -87,7 +87,7 @@ app.get("/ballotreturn/regions/", (req, res) => {
   if (foundRegions) {
     res.send(regions2);
   } else {
-    console.log(`State not found.`);
+    console.error(`State not found.`);
     res.status(404).send();
   }
 });
@@ -137,12 +137,9 @@ if (useTwitterMock) {
 
 app.get("/twitter/chatter/", (req, res) => {
   if (useTwitterMock) {
-    console.log("twitter mock");
     res.send(mock_twitter);
   } else {
-    console.log("twitter real");
     let screenname = req.query.screenname;
-    console.log('screenname', screenname);
 
     const { spawn } = require("child_process");
     const chatter = spawn("python3", ["twitter/Chatter.py", screenname]);
@@ -160,7 +157,6 @@ app.get("/twitter/chatter/", (req, res) => {
           res.status(404).send();
         } else {
           const resp_data = Buffer.concat(chunks);
-          console.log("response", resp_data);
           const jdata = JSON.parse(resp_data);
           res.send(jdata);
         }

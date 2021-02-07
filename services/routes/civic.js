@@ -1,6 +1,15 @@
 const https = require("https");
 const axios = require("axios");
-const apiKey = process.env.NODE_GOOGLE_CIVIC_API_KEY;
+var apiKey
+if (process.env.VCAP_SERVICES) {
+  var vcap_services = JSON.parse(process.env.VCAP_SERVICES);
+  const srvc = vcap_services["user-provided"].find(element => element["instance_name"] == "Five Fifths Google Civic API");
+  apiKey = srvc.credentials.apikey
+}
+else {
+  apiKey = process.env.NODE_GOOGLE_CIVIC_API_KEY;
+}
+
 //const currentElectionId = 7000; // 2020 US Presidential Election
 //const currentElectionId = 2000; // VIP Test Election
 //const currentElectionId = 5029; // Louisiana General Congressional Election
