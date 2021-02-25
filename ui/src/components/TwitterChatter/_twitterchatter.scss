@@ -32,8 +32,22 @@
 
 .tweets ul.cv-list.bx--list--unordered li.cv-list-item.bx--list__item {
   color: white;
+  margin-bottom: 15px;
+  padding: 10px;
 }
 
 .tweets > * {
   margin-bottom: 20px;
+}
+
+.tweet-border-positive {
+  border: 2px solid #42be65;
+}
+
+.tweet-border-neutral {
+  border: 2px solid #0f62fe;
+}
+
+.tweet-border-negative {
+  border: 2px solid #f1c21b;
 }
