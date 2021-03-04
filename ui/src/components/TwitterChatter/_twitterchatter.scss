@@ -52,3 +52,24 @@
 .tweet-border-negative {
   border: 2px solid #f1c21b;
 }
+
+.tweet-legend-positive {
+  background: #42be65;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.tweet-legend-neutral {
+  background: #0f62fe;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.tweet-legend-negative {
+  background: #f1c21b;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
