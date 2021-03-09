@@ -42,34 +42,31 @@
 }
 
 .tweet-border-positive {
-  border: 2px solid #42be65;
+  border: 2px solid $inverse-support-02;
 }
 
 .tweet-border-neutral {
-  border: 2px solid #0f62fe;
+  border: 2px solid $interactive-01;
 }
 
 .tweet-border-negative {
-  border: 2px solid #f1c21b;
+  border: 2px solid $support-03;
 }
 
-.tweet-legend-positive {
-  background: #42be65;
+.tweet-legend-sentiment {
+  border-radius: 50%;
   height: 20px;
   width: 20px;
-  border-radius: 50%;
 }
 
-.tweet-legend-neutral {
-  background: #0f62fe;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
+.tweet-legend-sentiment--positive {
+  background: $inverse-support-02;
 }
 
-.tweet-legend-negative {
-  background: #f1c21b;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
+.tweet-legend-sentiment--neutral {
+  background: $interactive-01;
+}
+
+.tweet-legend-sentiment--negative {
+  background: $support-03;
 }
