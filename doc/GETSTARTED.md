@@ -97,7 +97,7 @@ yarn ci-format
 
 ### Deployment
 
-This repo is setup for automatic deployment to Clud Foundry. (see [services DEPLOYMENT](DEPLOYMENT.md) for details)
+This repo is setup for automatic deployment to Cloud Foundry. (see [services DEPLOYMENT](DEPLOYMENT.md) for details)
 
 ### Docker - You can skip this if you are not debugging deployment
 
