@@ -1,1 +1,39 @@
+@import 'carbon-components/scss/globals/scss/vars.scss';
 
+.tweet__list.bx--list--unordered {
+  height: auto;
+  overflow: auto;
+
+  @media (min-width: 672px) {
+    max-height: 216px;
+  }
+
+  &.tweet__list::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  &.tweet__list::-webkit-scrollbar-thumb {
+    background: $inverse-02;
+    border-radius: 5px;
+  }
+
+  &.tweet__list::-webkit-scrollbar-thumb:hover {
+    background: $inverse-hover-ui;
+  }
+}
+
+.tweet__list > ul:nth-child(1) {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: 0.16px;
+  list-style: none;
+}
+
+.tweets ul.cv-list.bx--list--unordered li.cv-list-item.bx--list__item {
+  color: white;
+}
+
+.tweets > * {
+  margin-bottom: 20px;
+}
