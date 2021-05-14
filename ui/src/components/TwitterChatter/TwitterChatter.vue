@@ -11,16 +11,32 @@
         @filter="actionFilter"
       >
       </cv-combo-box>
+
       <div class="wrapper wrapper--button">
         <cv-button @click="checkChatter">Check</cv-button>
+        <template v-if="haveTweets">
+          <div class="tweet-legend-sentiment tweet-legend-sentiment--positive"></div>
+          <p>positive</p>
+
+          <div class="tweet-legend-sentiment tweet-legend-sentiment--neutral"></div>
+          <p>neutral</p>
+
+          <div class="tweet-legend-sentiment tweet-legend-sentiment--negative"></div>
+          <p>negative</p>
+        </template>
       </div>
+
       <cv-loading
         v-if="loadingChatter"
         :active="loadingChatter"
         :overlay="loadingOverlay"
       ></cv-loading>
       <cv-list class="tweet__list" v-if="haveTweets">
-        <cv-list-item v-for="item in twitter_chatter.items" :key="item.tweet">
+        <cv-list-item
+          v-for="item in twitter_chatter.items"
+          :key="item.tweet"
+          :class="'tweet-border-' + item.sentiment"
+        >
           <span class="tweet-sentiment"> {{ item.sentiment }} </span>
           <p>{{ item.tweet }}</p>
         </cv-list-item>
@@ -47,9 +63,9 @@ export default {
       screenname: '',
       options: [
         {
-          value: 'POTUS',
-          label: 'United States President',
-          name: 'POTUS'
+          value: 'realDonaldTrump',
+          label: 'Donald Trump',
+          name: 'realDonaldTrump'
         },
         {
           value: 'JoeBiden',
@@ -57,9 +73,9 @@ export default {
           name: 'JoeBiden'
         },
         {
-          value: 'Mike_Pence',
+          value: 'VP',
           label: 'Mike Pence',
-          name: 'Mike_Pence'
+          name: 'VP'
         },
         {
           value: 'KamalaHarris',
@@ -106,7 +122,8 @@ export default {
       this.twitter_chatter = { items: [] };
       this.loadingChatter = true;
       axios
-        .get('/services/twitter/chatter', {
+        .get('/twitter/chatter', {
+          baseURL: process.env.VUE_APP_SERVICE_API_HOST,
           params: {
             screenname: this.screenname
           }
