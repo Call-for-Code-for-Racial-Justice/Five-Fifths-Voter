@@ -1,0 +1,450 @@
+{
+  "id": "358ec27b-e595-44c8-b62b-778c298d703b",
+  "version": "2.0",
+  "name": "FiveFifthsVoter",
+  "url": "https://www.fivefifthsvoter.com",
+  "tests": [{
+    "id": "ac401018-c1c6-437e-8481-5a768d29275d",
+    "name": "Initial playthrough",
+    "commands": [{
+      "id": "fcc8b430-5fcd-40b3-ac4d-6fb14533fb1f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c7d09fb-9c0a-4c6c-acee-5bd392102607",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2791121c-9fef-439a-84a9-03bc3c02a9b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cv-header-menu-button > svg",
+      "targets": [
+        ["css=.cv-header-menu-button > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb886d89-cb65-4b18-a606-f46aaa2e1198",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx--side-nav__header-navigation > .cv-header-menu-item:nth-child(1) .bx--text-truncate--end",
+      "targets": [
+        ["css=.bx--side-nav__header-navigation > .cv-header-menu-item:nth-child(1) .bx--text-truncate--end", "css:finder"],
+        ["xpath=//nav[@id='side-nav']/ul/div/li/a/span", "xpath:idRelative"],
+        ["xpath=//div/li/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e9f67b3-303f-4b6d-8747-01bec1eecd28",
+      "comment": "",
+      "command": "click",
+      "target": "css=rect:nth-child(3)",
+      "targets": [
+        ["css=rect:nth-child(3)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "25a02baa-a0df-43ba-bfc9-845e80c133b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx--side-nav__header-navigation > .cv-header-menu-item:nth-child(2) .bx--text-truncate--end",
+      "targets": [
+        ["css=.bx--side-nav__header-navigation > .cv-header-menu-item:nth-child(2) .bx--text-truncate--end", "css:finder"],
+        ["xpath=//nav[@id='side-nav']/ul/div/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7568ee0a-64f0-4435-a5f8-71ae3aba9b05",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Check voting status →",
+      "targets": [
+        ["linkText=Check voting status →", "linkText"],
+        ["css=#tab-1 .cv-link:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Check voting status →')]", "xpath:link"],
+        ["xpath=//div[@id='tab-1']/div/div/div/aside/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.vote.org/am-i-registered-to-vote/')]", "xpath:href"],
+        ["xpath=//aside/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Check voting status →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ab03ff2-9090-493c-bf2a-5f359f481e65",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register to vote →",
+      "targets": [
+        ["linkText=Register to vote →", "linkText"],
+        ["css=.cv-link:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Register to vote →')]", "xpath:link"],
+        ["xpath=//div[@id='tab-1']/div/div/div/aside/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.vote.org/register-to-vote/')]", "xpath:href"],
+        ["xpath=//div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Register to vote →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6761f73d-6bcb-4e17-bddc-6917455f65b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx--resource-card__icon--img",
+      "targets": [
+        ["css=.bx--resource-card__icon--img", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div[3]/div/div/div/div/a/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39544226-16eb-4398-ab8a-615fd3b84a63",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cv-header-menu-button > svg",
+      "targets": [
+        ["css=.cv-header-menu-button > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "94f97a8d-5400-4e5c-9a05-bb501cba2030",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Get Connected",
+      "targets": [
+        ["linkText=Get Connected", "linkText"],
+        ["css=.bx--side-nav__header-navigation > .cv-header-menu-item:nth-child(3) > .bx--header__menu-item", "css:finder"],
+        ["xpath=//nav[@id='side-nav']/ul/div/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#/connect')])[2]", "xpath:href"],
+        ["xpath=//div/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46b96013-3d3c-41d7-9e4e-83fdd33767e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx--list-box__menu-icon > svg",
+      "targets": [
+        ["css=.bx--list-box__menu-icon > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b032545-3e54-4892-a2d5-aaf0b495d98d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx--list-box__menu-item--highlighted > .bx--list-box__menu-item__option",
+      "targets": [
+        ["css=.bx--list-box__menu-item--highlighted > .bx--list-box__menu-item__option", "css:finder"],
+        ["xpath=//div[@id='uid-3e036e38-178a-4e32-9c32-6ca81c931888']/div[7]/div", "xpath:idRelative"],
+        ["xpath=//div[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81e150f7-f5ff-44fa-936c-bdab4a386c8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cv-button",
+      "targets": [
+        ["css=.cv-button", "css:finder"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/div/aside/div/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Check')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30d585e0-dca0-45fd-b6a7-aea1c5affd2c",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(1) path:nth-child(1)",
+      "targets": [
+        ["css=a:nth-child(1) path:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "24c89c1c-837e-4395-b136-ee95f5fce5ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) > .icon--social",
+      "targets": [
+        ["css=a:nth-child(3) > .icon--social", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "28de960d-0b53-4042-85cb-c7423d36bcc8",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(5) > .icon--social",
+      "targets": [
+        ["css=a:nth-child(5) > .icon--social", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "45cecba0-c449-4e1e-b122-aeba181bf535",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(7) path",
+      "targets": [
+        ["css=a:nth-child(7) path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "69b04860-3c67-4c03-a7c9-ed6e43788006",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx--tile",
+      "targets": [
+        ["css=.bx--tile", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/div/div[3]/div/div/div/div/a/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f2c5443-5fb9-4a0a-aad9-1ec2b856d2ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cv-header-menu-button > svg",
+      "targets": [
+        ["css=.cv-header-menu-button > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a814add-d9b4-46dc-94a9-9ccc4e8ef840",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx--side-nav__header-navigation > .cv-header-menu-item:nth-child(4) .bx--text-truncate--end",
+      "targets": [
+        ["css=.bx--side-nav__header-navigation > .cv-header-menu-item:nth-child(4) .bx--text-truncate--end", "css:finder"],
+        ["xpath=//nav[@id='side-nav']/ul/div/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//div/li[4]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fbe620b-9e27-4ebf-86d3-ef711d07a0fe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Seniors, find a ride to the polls →",
+      "targets": [
+        ["linkText=Seniors, find a ride to the polls →", "linkText"],
+        ["css=.cv-link:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Seniors, find a ride to the polls →')]", "xpath:link"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/div/aside/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.empowerline.org/services/transportation-options/')]", "xpath:href"],
+        ["xpath=//aside/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Seniors, find a ride to the polls →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "807455e4-a5c5-4eae-8be4-afc2f087c0dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Free election day childcare →",
+      "targets": [
+        ["linkText=Free election day childcare →", "linkText"],
+        ["css=.cv-link:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Free election day childcare →')]", "xpath:link"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/div/aside/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ymcaofcoastalga.org/news/2018/10/17/ymca-news/ymca-works-to-help-make-it-easier-for-parents-to-vote/')]", "xpath:href"],
+        ["xpath=//div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Free election day childcare →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eca45e14-38d1-4844-aca5-cda728943fc6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mail-in voting instructions →",
+      "targets": [
+        ["linkText=Mail-in voting instructions →", "linkText"],
+        ["css=.cv-link:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Mail-in voting instructions →')]", "xpath:link"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/div/aside/div/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.npr.org/2020/08/07/900210406/the-most-important-mail-youll-ever-send-a-ballot')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mail-in voting instructions →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99dbf932-9396-40f8-8951-f8133d192df2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Voting for felons →",
+      "targets": [
+        ["linkText=Voting for felons →", "linkText"],
+        ["css=.cv-link:nth-child(7)", "css:finder"],
+        ["xpath=//a[contains(text(),'Voting for felons →')]", "xpath:link"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/div/aside/div/div/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Voting for felons →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57c732db-868b-48d9-80fb-6279fba4c0ea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Voter tips for the disabled →",
+      "targets": [
+        ["linkText=Voter tips for the disabled →", "linkText"],
+        ["css=.cv-link:nth-child(9)", "css:finder"],
+        ["xpath=//a[contains(text(),'Voter tips for the disabled →')]", "xpath:link"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/div/aside/div/div/a[5]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sos.ga.gov/index.php/elections/voters_with_disabilities')]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"],
+        ["xpath=//a[contains(.,'Voter tips for the disabled →')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4dd07de-0a48-40c0-abb7-9904a63114cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cv-header-menu-button",
+      "targets": [
+        ["css=.cv-header-menu-button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/header/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99cf6210-4011-4f4f-b665-b985eb99c109",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx--side-nav__header-navigation > .cv-header-menu-item:nth-child(2) .bx--text-truncate--end",
+      "targets": [
+        ["css=.bx--side-nav__header-navigation > .cv-header-menu-item:nth-child(2) .bx--text-truncate--end", "css:finder"],
+        ["xpath=//nav[@id='side-nav']/ul/div/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "908421d7-5a9a-4704-9857-1f5b72491c56",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx--tabs-trigger",
+      "targets": [
+        ["css=.bx--tabs-trigger", "css:finder"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bfe6114-e2b4-4dcf-959b-c7af18d28065",
+      "comment": "",
+      "command": "click",
+      "target": "id=tab-2-link",
+      "targets": [
+        ["id=tab-2-link", "id"],
+        ["linkText=Mail In Ballot", "linkText"],
+        ["css=#tab-2-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Mail In Ballot')]", "xpath:link"],
+        ["xpath=//a[@id='tab-2-link']", "xpath:attributes"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[3]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mail In Ballot')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8b7f04c-a993-4205-898e-fd6a26724c53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx--tabs-trigger",
+      "targets": [
+        ["css=.bx--tabs-trigger", "css:finder"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0962fb3c-8a78-4b65-b7c3-fd46a6d36efc",
+      "comment": "",
+      "command": "click",
+      "target": "id=tab-3-link",
+      "targets": [
+        ["id=tab-3-link", "id"],
+        ["linkText=Get Informed", "linkText"],
+        ["css=#tab-3-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Get Informed')]", "xpath:link"],
+        ["xpath=//a[@id='tab-3-link']", "xpath:attributes"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Get Informed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fadb46b0-01cd-4cb3-aa16-fdc184e01ef8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Get Informed",
+      "targets": [
+        ["linkText=Get Informed", "linkText"],
+        ["css=.bx--tabs-trigger-text", "css:finder"],
+        ["xpath=//a[contains(text(),'Get Informed')]", "xpath:link"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Get Informed')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8738034c-5a44-42c0-8080-51acadf677a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=tab-4-link",
+      "targets": [
+        ["id=tab-4-link", "id"],
+        ["linkText=Vote", "linkText"],
+        ["css=#tab-4-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Vote')])[3]", "xpath:link"],
+        ["xpath=//a[@id='tab-4-link']", "xpath:attributes"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[5]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a1b0d9b-ed02-40d6-8556-72c4d02220d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bx--tabs-trigger",
+      "targets": [
+        ["css=.bx--tabs-trigger", "css:finder"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2660659-8d90-4063-afdd-97548e892f31",
+      "comment": "",
+      "command": "click",
+      "target": "id=tab-5-link",
+      "targets": [
+        ["id=tab-5-link", "id"],
+        ["linkText=Deliver Your Ballot", "linkText"],
+        ["css=#tab-5-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Deliver Your Ballot')]", "xpath:link"],
+        ["xpath=//a[@id='tab-5-link']", "xpath:attributes"],
+        ["xpath=//main[@id='#main-content']/div[2]/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[6]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Deliver Your Ballot')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2c6ff020-266c-4ea3-a315-7f654274bbeb",
+    "name": "FirefoxSmall",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ac401018-c1c6-437e-8481-5a768d29275d"]
+  }],
+  "urls": ["https://www.fivefifthsvoter.com/"],
+  "plugins": []
+}
