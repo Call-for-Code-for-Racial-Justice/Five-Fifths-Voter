@@ -17,10 +17,12 @@
   NODE_CACHE_DB_USER=userXYZ
   NODE_CACHE_DB_PASSWORD=cacheDataIsNotPrivate
   NODE_CACHE_DB_URL=localhost:27017
+  NODE_GOOGLE_CIVIC_API_KEY=YOUR_GOOGLE_CIVIC_API_KEY
   ```
 
   - To get the twitter results locally you will need to create your own twitter account and follow the Twitter developer instructions for creating and API key etc. https://developer.twitter.com/en/apps
   - For the tone analyzer and NLU use your own IBM Cloud account to create these services and get the API keys and URLs
+  - Develoeprs should request and maintain their own personal Google Civics API key to work with those services.
   - If you skip these steps Twitter information will not be available locally.
   - The `NODE_CACHE_DB*` parameters do not need to be changed. They will allow connection to a local Mongo DB
   - The DEPLOYED version of all of the above are secrets maintained in Open Shift. You should **NEVER** add your .env file (or any other file with secrets) to git.
