@@ -51,16 +51,20 @@ locationData = exports.locationData = (stateid, locid, amend) => {
     var locationData = {};
 
     // find this info in the cache
-    var database = cache.db.use('webscrapecache')
+    var database = cache.db.use("webscrapecache");
 
-    return database.view("earlyVotingView", "early-voting-view", {
-      key: "GA/" + locid,
-      include_docs: true,
-    })
+    return database
+      .view("earlyVotingView", "early-voting-view", {
+        key: "GA/" + locid,
+        include_docs: true,
+      })
       .then((response) => {
         if (response.rows.length != 1)
-          console.error("database error. Data not in expected format.", response.rows.length)
-        return response.rows[0].doc
+          console.error(
+            "database error. Data not in expected format.",
+            response.rows.length
+          );
+        return response.rows[0].doc;
       })
       .then((result) => {
         /**
@@ -96,8 +100,8 @@ locationData = exports.locationData = (stateid, locid, amend) => {
 
         const scrapeURL =
           "https://elections.sos.ga.gov/Elections/advancedVotingInfoResult.do";
-        locationData.cacheData.pollingLocs.retrieved = Date.now()
-        locationData.cacheData.pollingLocs.earlyVoteSites = []
+        locationData.cacheData.pollingLocs.retrieved = Date.now();
+        locationData.cacheData.pollingLocs.earlyVoteSites = [];
 
         return axios.get(scrapeURL, { params: getParams });
       })
@@ -208,7 +212,7 @@ locationData = exports.locationData = (stateid, locid, amend) => {
         var dbDoc = locationData.cacheData.pollingLocs;
 
         console.log(`${locid} cache update`);
-        return database.insert(dbDoc)
+        return database.insert(dbDoc);
       })
       .then((cacheDbUpdate) => {
         /**

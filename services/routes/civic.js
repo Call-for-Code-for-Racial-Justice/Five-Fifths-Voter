@@ -1,12 +1,13 @@
 const https = require("https");
 const axios = require("axios");
-var apiKey
+var apiKey;
 if (process.env.VCAP_SERVICES) {
   var vcap_services = JSON.parse(process.env.VCAP_SERVICES);
-  const srvc = vcap_services["user-provided"].find(element => element["instance_name"] == "Five Fifths Google Civic API");
-  apiKey = srvc.credentials.apikey
-}
-else {
+  const srvc = vcap_services["user-provided"].find(
+    (element) => element["instance_name"] == "Five Fifths Google Civic API"
+  );
+  apiKey = srvc.credentials.apikey;
+} else {
   apiKey = process.env.NODE_GOOGLE_CIVIC_API_KEY;
 }
 
