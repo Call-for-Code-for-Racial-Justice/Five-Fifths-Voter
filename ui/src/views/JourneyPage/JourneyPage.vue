@@ -1,5 +1,5 @@
 <template>
-  <PageLayout childData="mother-daughter-hero.jpeg">
+  <PageLayout childData="mother-daughter-hero.jpeg" class="journey-page">
     <div class="page__details">
       <h2 class="page__title">Your voting journey</h2>
     </div>

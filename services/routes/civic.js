@@ -1,12 +1,13 @@
 const https = require("https");
 const axios = require("axios");
-var apiKey
+var apiKey;
 if (process.env.VCAP_SERVICES) {
   var vcap_services = JSON.parse(process.env.VCAP_SERVICES);
-  const srvc = vcap_services["user-provided"].find(element => element["instance_name"] == "Five Fifths Google Civic API");
-  apiKey = srvc.credentials.apikey
-}
-else {
+  const srvc = vcap_services["user-provided"].find(
+    (element) => element["instance_name"] == "Five Fifths Google Civic API"
+  );
+  apiKey = srvc.credentials.apikey;
+} else {
   apiKey = process.env.NODE_GOOGLE_CIVIC_API_KEY;
 }
 
@@ -17,13 +18,23 @@ const currentElectionId = process.env.NODE_CIVIC_ELECTION_ID || 2000;
 const earlyVotingGa = require("./earlyvoting/ga");
 
 exports.pollingPlace = function (req, res) {
+  // console.log("exports.pollingPlace", req.body.address);
   try {
-    let voterAddress = req.body.data.address;
+    let voterAddress = null;
+    if (req.body.address) voterAddress = req.body.address;
+    else voterAddress = req.body.data.address;
+
+    let voterElectionId = null;
+    if (req.body.electionId) voterElectionId = req.body.electionId;
+    else voterElectionId = req.body.data.electionId;
+    if (!voterElectionId) voterElectionId = currentElectionId;
+
     getParams = {
       key: apiKey,
-      electionId: currentElectionId,
+      electionId: voterElectionId,
       address: voterAddress,
     };
+
     axios
       .get("https://www.googleapis.com/civicinfo/v2/voterinfo", {
         params: getParams,
@@ -33,37 +44,38 @@ exports.pollingPlace = function (req, res) {
         },
       })
       .then((response) => {
+        // console.log("got civic response", response.data);
         try {
           if (response.data.normalizedInput.state === "GA") {
-            console.log("Georgia data");
+            // console.log("Georgia data");
             if (!response.data.state) {
-              console.log("no state", response.data);
+              // console.log("no state", response.data);
               return response.data;
             }
             if (!response.data.state[0]) {
-              console.log("no state[0]", response.data.state);
+              // console.log("no state[0]", response.data.state);
               return response.data;
             }
             if (!response.data.state[0].local_jurisdiction) {
-              console.log(
-                "no state[0].local_jurisdiction",
-                response.data.state[0]
-              );
+              // console.log(
+              //   "no state[0].local_jurisdiction",
+              //   response.data.state[0]
+              // );
               return response.data;
             }
             if (!response.data.state[0].local_jurisdiction.name) {
-              console.log(
-                "no state[0].local_jurisdiction.name",
-                response.data.state[0].local_jurisdiction
-              );
+              // console.log(
+              //   "no state[0].local_jurisdiction.name",
+              //   response.data.state[0].local_jurisdiction
+              // );
               return response.data;
             }
 
             var county = response.data.state[0].local_jurisdiction.name;
             county = county.toUpperCase().replace("COUNTY", "").trim();
-            console.log(county);
+            // console.log(county);
             if (!response.data.earlyVoteSites) {
-              console.log("no early voting data from google");
+              // console.log("no early voting data from google");
               var more = earlyVotingGa.locationData(
                 "GA",
                 county,
@@ -90,7 +102,7 @@ exports.pollingPlace = function (req, res) {
         });
       });
   } catch (error) {
-    //console.log(error);
+    console.error(error);
 
     res.status(400).send(error);
   }
