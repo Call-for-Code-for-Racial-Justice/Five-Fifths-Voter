@@ -1,5 +1,26 @@
 @import 'carbon-components/scss/globals/scss/vars.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
+@keyframes shrinker {
+  from {
+    height: 502px;
+  }
+  to {
+    height: 10rem;
+  }
+}
 
+.journey-page {
+  .impactFeatureCard {
+    @include carbon--breakpoint-up(lg) {
+      animation-name: shrinker;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    @include carbon--breakpoint-down(lg) {
+      height: 0;
+    }
+  }
+}
 .content--register > * {
   margin-bottom: 20px;
 }
