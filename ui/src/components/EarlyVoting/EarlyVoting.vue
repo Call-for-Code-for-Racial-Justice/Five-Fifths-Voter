@@ -13,11 +13,18 @@
             rest.
           </p>
           <div class="wrapper wrapper--address">
+            <cv-select label="Select election" v-model="electionId">
+              <cv-select-option disabled selected hidden>Choose an election</cv-select-option>
+              <cv-select-option v-for="elec in fileredElections" :value="elec.id" :key="elec.id">
+                {{ elec.name }} {{ elec.electionDay }}
+              </cv-select-option>
+            </cv-select>
             <cv-text-input
               :label="addressLabel"
               v-model="addressValue"
               :placeholder="placeholder"
               @input="updatedAddress"
+              :disabled="disabledAddress"
             >
             </cv-text-input>
             <div class="wrapper wrapper--button">
@@ -55,11 +62,7 @@
               <span v-if="!locationAvailable"
                 >No known locations. Check with your local election officials.
               </span>
-              <cv-select
-                v-if="electionList.length"
-                label="Select Your Election"
-                v-model.trim="electionName"
-              >
+              <cv-select v-if="electionList.length" label="Select Your Election">
                 <cv-select-option disabled selected hidden>Choose an election</cv-select-option>
                 <cv-select-option
                   v-for="(item, index) in electionList"
@@ -126,13 +129,30 @@ export default {
       buttonDisabled: true,
       early: false,
       electionName: '',
-      voterData: {}
+      voterData: {},
+      elections: [],
+      electionId: ''
     };
   },
   created() {
-    this.$amplitude
-      .getInstance()
-      .logEvent('Page Visit', { page: 'Journey Page', component: 'Early Voting' });
+    try {
+      this.$amplitude
+        .getInstance()
+        .logEvent('Page Visit', { page: 'Journey Page', component: 'Early Voting' });
+    } catch (e) {
+      /* eslint no-console: 0 */
+      console.error(e);
+    }
+
+    axios
+      .get('/services/elections')
+      .then(response => {
+        this.elections = response.data.elections;
+      })
+      .catch(error => {
+        /* eslint no-console: 0 */
+        console.error(error);
+      });
   },
 
   computed: {
@@ -249,6 +269,12 @@ export default {
         console.error(error);
         return list;
       }
+    },
+    fileredElections() {
+      return this.elections.filter(item => item.id != '2000');
+    },
+    disabledAddress() {
+      return !this.electionId;
     }
   },
   mounted() {},
@@ -257,7 +283,8 @@ export default {
       axios
         .post('/services/pollingplace', {
           data: {
-            address: this.addressValue
+            address: this.addressValue,
+            electionId: this.electionId
           }
         })
         .then(response => {
