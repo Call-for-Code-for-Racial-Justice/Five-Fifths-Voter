@@ -52,9 +52,17 @@ The IBM Call for Code for Policy & Legislation Reform has developed a solution t
 
 ![Architecture](doc/five-fifths-voter-flow.png)
 
-![System Context](doc/SystemContext.png)
+### System Context
 
-![Components](doc/Components.png)
+![System Context](doc/five-fifths-system-context-c4.png)
+
+### Components
+
+![Components](doc/five-fifths-components-c4.png)
+
+### Deployment
+
+![Deployment](doc/five-fifths-deployment-c4.png)
 
 # Datasets
 
