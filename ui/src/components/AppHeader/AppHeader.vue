@@ -9,16 +9,16 @@
     </cv-header-name>
     <cv-header-nav aria-label="Carbon nav">
       <cv-header-menu-item :to="{ name: 'why-page' }">
-        Why Vote
+        {{ $t('appHeaderWhyVote') }}
       </cv-header-menu-item>
       <cv-header-menu-item :to="{ name: 'journey-page' }">
-        Voter Journey
+        {{ $t('appHeaderVoterJourney') }}
       </cv-header-menu-item>
       <cv-header-menu-item :to="{ name: 'connect-page' }">
-        Get Connected
+        {{ $t('appHeaderGetConnected') }}
       </cv-header-menu-item>
       <cv-header-menu-item :to="{ name: 'support-page' }">
-        Voter Support
+        {{ $t('appHeaderVoterSupport') }}
       </cv-header-menu-item>
     </cv-header-nav>
     <template v-slot:header-global>

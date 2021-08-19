@@ -2,6 +2,11 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 import CarbonComponentsVue from '@carbon/vue';
+import i18n from '@/plugins/i18n';
+import FlagIcon from 'vue-flag-icon';
+
+Vue.use(FlagIcon);
+
 Vue.use(CarbonComponentsVue);
 
 import VueAmplitude from 'vue-amplitude';
@@ -15,6 +20,7 @@ else Vue.use(VueAmplitude, { apiKey: 'ce77e3704c5ecc2461e846f3061022c2' });
 Vue.config.productionTip = false;
 
 new Vue({
+  i18n,
   router,
   render: h => h(App)
 }).$mount('#app');
