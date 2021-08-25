@@ -9,10 +9,10 @@
             state-wide and nationally.
           </p>
           <cv-link href="https://www.vote.org/am-i-registered-to-vote/" target="_blank">
-            Check voting status &rarr;</cv-link
+            {{ $t('registerCheckVotingStatus') }} &rarr;</cv-link
           ><br /><br />
           <cv-link href="https://www.vote.org/register-to-vote/" target="_blank">
-            Register to vote &rarr;</cv-link
+            {{ $t('registerRegisterToVote') }} &rarr;</cv-link
           ><br />
         </div>
       </aside>

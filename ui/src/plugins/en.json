@@ -1,5 +1,5 @@
 {
-  "welcomeMsg": "Five Fifths Voter",
+  "welcomeMsg": "{0}",
   "tagline": "5/5 equals a whole.",
   "subtagline": "A whole person, a whole community, a whole nation.",
   "appHeaderWhyVote": "Why Vote",
@@ -8,14 +8,50 @@
   "appHeaderVoterSupport": "Voter Support",
   "countdownHeader": "Midterm Congressional Elections",
   "landingPageMain": "Our Mission",
-  "landingPageDesc": "With Five Fifths Voter, we help put the power back in your hands. Our platform provides a personalized experience with useful tools to help marginalized voters overcome voting process roadblocks. Five Fifths Voter takes into account various voting journeys, such as first-time voters, veterans, minorities, legally disabled, the elderly, or those with felony convictions. Together, we can change the narrative of historically disenfranchised people in our democratic process.",
+  "landingPageDesc": "With {0}, we help put the power back in your hands. Our platform provides a personalized experience with useful tools to help marginalized voters overcome voting process roadblocks. {1} takes into account various voting journeys, such as first-time voters, veterans, minorities, legally disabled, the elderly, or those with felony convictions. Together, we can change the narrative of historically disenfranchised people in our democratic process.",
   "landingPageEdu": "Educate.",
   "landingPageQuote": "\"Knowledge is power.\"- Francis Bacon",
-  "landingPageEduDesc": "Five Fifths Voter will educate disenfranchised voters with voting guidance and connection to up-to-date tools necessary to complete the voting process.",
+  "landingPageEduDesc": "{0} will educate disenfranchised voters with voting guidance and connection to up-to-date tools necessary to complete the voting process.",
   "landingPageEmpower": "Empower.",
   "landingPageEmpowerQuote": "\"I am no bird; and no net ensnares me: I am a free human being with an independent will. \" - Charlotte Brontë",
-  "landingPageEmpowerDesc": "Five Fifths Voter will help generate solidarity for disenfranchised voting communities and leverage social media platforms for easy access to candidate information.",
+  "landingPageEmpowerDesc": "{0} will help generate solidarity for disenfranchised voting communities and leverage social media platforms for easy access to candidate information.",
   "landingPageEnable": "Enable.",
   "landingPageEnableQuote": "\"Enablement is the key to closing the gap between intention and action. \" - Paul Repetto",
-  "landingPageEnableDesc": "Five Fifths Voter enables users with information to get to polling stations in safe and efficient ways and will strive to help remove roadblocks disenfranchised voters encounter when voting."
+  "landingPageEnableDesc": "{0} enables users with information to get to polling stations in safe and efficient ways and will strive to help remove roadblocks disenfranchised voters encounter when voting.",
+  
+  "connectedPageTitle": "Get social",
+  "connectedPageMain": "Get educated, get social, and get vocal",
+  "connectedPageFbLabel": "Facebook on local government",
+  "connectedPageInstaLabel": "Explore election tags on Instagram",
+  "connectedPageTwitterLabel": "Search Twitter for election",
+  "connectedPageYoutubeLabel": "Search for election debates on YouTube",
+
+  "twitterChatterSectionTitle": "here's what they're saying.",
+  "twitterChatterCheckButton": "Check",
+  "twitterChatterLabel": "Enter candidate's Twitter",
+
+  "whyVotePageTitle": "Why vote?",
+  "whyVotePageSubTitle": "So what's the deal?",
+  "whyVotePageParagraph.1": "In 1868, the 14th Amendment gave Black people citizenship in America, but it would be over 97 years before they could successfully vote. During this time span poll taxes, literacy tests, and other tactics were used to undermine Black people's right to vote.",
+  "whyVotePageParagraph.2": "In 1965, the Voting Rights Act provided a successful pathway for Black and many disenfranchised people to vote. Many Black people protested, marched, were arrested and even died as they fought the battle for voting equality.",
+  "whyVotePageParagraph.3": "Voting is the perfect way to implement change. As American citizens, regardless of race, sex, background or nationality, we can stand in solidarity as a whole and exercise the right to be heard. Five Fifths Voter is tailored to help Black and other disenfranchised voters to seize the opportunity to be heard in America.",
+
+  "journeyPageTitle": "Your voting journey",
+  "journeyPageRegisteredLabel": "Are You Registered To Vote?",
+  "journeyPageRegisteredAriaLabel": "check if you are registered to vote",
+  "journeyPageBallotLabel":"Mail In Ballot",
+  "journeyPageBallotAriaLabel":"request an absentee ballot",
+  "journeyPageGetInformedLabel":"Get Informed",
+  "journeyPageGetInformedAriaLabel":"find information regarding your state's voting credentials",
+  "journeyPageVoteNowLabel":"Vote",
+  "journeyPageVoteNowAriaLabel":"find early voting and day-of voting locations",
+  "journeyPageDeliverLabel":"Deliver Your Ballot",
+  "journeyPageDeliverAriaLabel":"find a drop box for your absentee ballot",
+
+  "registerTitle": "Voting is the future",
+  "registerDesc":"Voting is the perfect way for you to unite and implement change in your communities, state-wide and nationally.",
+  "registerCheckVotingStatus": "Check voting status",
+  "registerRegisterToVote": " Register to vote"
+
+
 }
