@@ -1,33 +1,41 @@
 <template>
   <PageLayout childData="mother-daughter-hero.jpeg" class="journey-page">
     <div class="page__details">
-      <h2 class="page__title">Your voting journey</h2>
+      <h2 class="page__title">{{ $t('journeyPageTitle') }}</h2>
     </div>
     <cv-tabs :container="container" aria-label="voter journey">
       <cv-tab
         id="tab-1"
-        label="Are You Registered To Vote?"
-        aria-label="check if you are registered to vote"
+        :title="$t('connectedPageFbLabel')"
+        :aria-label="$t('journeyPageRegisteredAriaLabel')"
       >
         <Register />
       </cv-tab>
-      <cv-tab id="tab-2" label="Mail In Ballot" aria-label="request an absentee ballot">
+      <cv-tab
+        id="tab-2"
+        :label="$t('journeyPageBallotLabel')"
+        :aria-label="$t('journeyPageBallotAriaLabel')"
+      >
         <Absentee />
       </cv-tab>
       <cv-tab
         id="tab-3"
-        label="Get Informed"
-        aria-label="find information regarding your state's voting credentials"
+        :label="$t('journeyPageGetInformedLabel')"
+        :aria-label="$t('journeyPageGetInformedAriaLabel')"
       >
         <VoteNow />
       </cv-tab>
-      <cv-tab id="tab-4" label="Vote" aria-label="find early voting and day-of voting locations">
+      <cv-tab
+        id="tab-4"
+        :label="$t('journeyPageVoteNowLabel')"
+        :aria-label="$t('journeyPageVoteNowAriaLabel')"
+      >
         <EarlyVoting />
       </cv-tab>
       <cv-tab
         id="tab-5"
-        label="Deliver Your Ballot"
-        aria-label="find a drop box for your absentee ballot"
+        :label="$t('journeyPageDeliverLabel')"
+        :aria-label="$t('journeyPageDeliverAriaLabel')"
       >
         <BallotReturn />
       </cv-tab>

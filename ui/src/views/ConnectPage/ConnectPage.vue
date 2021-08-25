@@ -1,20 +1,20 @@
 <template>
   <PageLayout childData="mother-daughter-hero.jpeg">
     <div class="page__details">
-      <h2 class="page__title">Get social</h2>
+      <h2 class="page__title">{{ $t('connectedPageTitle') }}</h2>
     </div>
     <MainContent>
       <template v-slot:content>
         <aside class="aside">
           <div class="aside__container--text">
             <h2 class="aside__header">
-              Get educated, get social, and get vocal
+              {{ $t('connectedPageMain') }}
             </h2>
             <div class="aside__container--links">
               <a
                 href="https://www.facebook.com/gpa/best-practices/local-government"
                 target="_blank"
-                title="Facebook on local government"
+                :title="$t('connectedPageFbLabel')"
               >
                 <svg
                   class="icon--social"
@@ -35,7 +35,7 @@
               <a
                 href="https://www.instagram.com/explore/tags/election/?hl=en"
                 target="_blank"
-                title="Explore election tags on Instagram"
+                :title="$t('connectedPageInstaLabel')"
               >
                 <svg
                   class="icon--social"
@@ -60,7 +60,7 @@
               <a
                 href="https://twitter.com/search?q=%23election&src=typed_query"
                 target="_blank"
-                title="Search Twitter for election"
+                :title="$t('connectedPageTwitterLabel')"
               >
                 <svg
                   class="icon--social"
@@ -80,7 +80,7 @@
               <a
                 href="https://m.youtube.com/results?search_query=election+debates"
                 target="_blank"
-                title="Search for election debates on YouTube"
+                :title="$t('connectedPageYoutubeLabel')"
               >
                 <svg
                   class="icon--social"

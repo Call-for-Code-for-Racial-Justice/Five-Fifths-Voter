@@ -8,7 +8,7 @@
             <h2 class="article__heading">{{ $t('landingPageMain') }}</h2>
             <div class="bx--offset-lg-1">
               <p class="article__paragraph">
-                {{ $t('landingPageDesc') }}
+                {{ $t('landingPageDesc', ['Five Fifths Voter', 'Five Fifths Voter']) }}
               </p>
             </div>
           </div>
@@ -36,7 +36,7 @@
             ><br /><br />
             <div class="bx--offset-lg-1">
               <p class="article__paragraph">
-                {{ $t('landingPageEduDesc') }}
+                {{ $t('landingPageEduDesc', ['Five Fifths Voter']) }}
               </p>
             </div>
           </div>
@@ -63,7 +63,7 @@
             ><br /><br />
             <div class="bx--offset-lg-1">
               <p class="article__paragraph">
-                {{ $t('landingPageEmpowerDesc') }}
+                {{ $t('landingPageEmpowerDesc', ['Five Fifths Voter']) }}
               </p>
             </div>
           </div>
@@ -90,7 +90,7 @@
             ><br /><br />
             <div class="bx--offset-lg-1">
               <p class="article__paragraph">
-                {{ $t('landingPageEnableDesc') }}
+                {{ $t('landingPageEnableDesc', ['Five Fifths Voter']) }}
               </p>
             </div>
           </div>

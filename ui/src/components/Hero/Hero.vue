@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="hero__content">
-        <h1 class="hero__heading">{{ $t('welcomeMsg') }}</h1>
+        <h1 class="hero__heading">{{ $t('welcomeMsg', ['Five Fifths Voter']) }}</h1>
         <p class="hero__description">
           {{ $t('tagline') }}<br />{{ $t('subtagline') }}
           <br />

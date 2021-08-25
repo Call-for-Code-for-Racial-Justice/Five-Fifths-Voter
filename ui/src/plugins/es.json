@@ -1,21 +1,4 @@
 {
-  "welcomeMsg": "Five Fifths Voter",
-  "tagline": "5/5 es igual a un todo.",
-  "subtagline": "Toda una persona, toda una comunidad, toda una nación.",
-  "appHeaderWhyVote": "Por qué votar",
-  "appHeaderVoterJourney": "Viaje de votantes",
-  "appHeaderGetConnected": "Cómo conectarse",
-  "appHeaderVoterSupport": "Apoyo electoral",
-  "countdownHeader": "Elecciones legislativas intermedias",
-  "landingPageMain": "Nuestra Misión",
-  "landingPageDesc": "Con cinco quintos de votante, ayudamos a poner el poder en sus manos. Nuestra plataforma proporciona una experiencia personalizada con herramientas útiles para ayudar a los votantes marginados a superar los bloqueos de proceso de votación. Cinco quintos de votante tiene en cuenta varios viajes de votación, como los votantes por primera vez, los veteranos, las minorías, los discapacitados legales, los ancianos, o aquellos con condenas graves. Juntos, podemos cambiar la narrativa de las personas históricamente marginadas en nuestro proceso democrático.",
-  "landingPageEdu": "Educar.",
-  "landingPageQuote": "\"El conocimiento es poder.\"- Francis Bacon",
-  "landingPageEduDesc": "Cinco quintos de los votantes educarán a los votantes en derechos de voto con la guía de votación y la conexión a las herramientas actualizadas necesarias para completar el proceso de votación.",
-  "landingPageEmpower": "Potenciador.",
-  "landingPageEmpowerQuote": "\"No soy pájaro, y ninguna red me ensanza: soy un ser humano libre con una voluntad independiente. \" - Charlotte Brontë",
-  "landingPageEmpowerDesc": "Cinco quintos de votante ayudarán a generar solidaridad para las comunidades de votantes sin derecho a voto y a aprovechar las plataformas de redes sociales para facilitar el acceso a la información de los candidatos.",
-  "landingPageEnable": "Habilitar.",
-  "landingPageEnableQuote": "\"La habilitación es la clave para cerrar la brecha entre la intención y la acción. \" - Paul Repetto",
-  "landingPageEnableDesc": "Cinco quintos de votante permite a los usuarios obtener información para llegar a los centros de votación de manera segura y eficiente, y se esforzará por ayudar a eliminar los bloqueos de carreteras con los que se encuentran los votantes al votar."
+  "welcomeMsg": "{0}",
+  "tagline": "5/5 es igual a un todo."
 }

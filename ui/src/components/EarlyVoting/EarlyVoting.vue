@@ -4,17 +4,16 @@
       <aside class="aside">
         <div class="aside__container--text">
           <h2 class="aside__header">
-            Vote early or find your polling location
+            {{ $t('voteTitle') }}
           </h2>
           <p class="aside__description">
-            Need help knowing where to go on voting day? Want to know what location in your precinct
-            allows for early voting? Five Fifths Voter can help you figure it out. Input your
-            address below, and select either "Early Voting" or "Polling Location". We'll do the
-            rest.
+            {{ $t('voteTitleDesc') }}
           </p>
           <div class="wrapper wrapper--address">
-            <cv-select label="Select election" v-model="electionId">
-              <cv-select-option disabled selected hidden>Choose an election</cv-select-option>
+            <cv-select :label="$t('voteSelectElection')" v-model="electionId">
+              <cv-select-option disabled selected hidden>{{
+                $t('voteChooseElection')
+              }}</cv-select-option>
               <cv-select-option v-for="elec in fileredElections" :value="elec.id" :key="elec.id">
                 {{ elec.name }} {{ elec.electionDay }}
               </cv-select-option>
@@ -34,7 +33,7 @@
                 @click="showEarlyPollingLocation"
                 :disabled="buttonDisabled"
               >
-                Early Voting
+                {{ $t('voteEarlyVotingBtn') }}
               </cv-button>
               <cv-button
                 class="button--early-voting"
@@ -42,7 +41,7 @@
                 @click="showNowPollingLocation"
                 :disabled="buttonDisabled"
               >
-                Polling Location
+                {{ $t('votePollingLocationBtn') }}
               </cv-button>
             </div>
             <div v-if="voterData.state">
@@ -122,7 +121,7 @@ export default {
   components: { MainContent, GoogleMap },
   data() {
     return {
-      addressLabel: 'Adress where you are registered to vote',
+      addressLabel: 'Address where you are registered to vote',
       addressValue: '',
       normalizedAddressValue: '',
       placeholder: '123 Main St GA 30076',
