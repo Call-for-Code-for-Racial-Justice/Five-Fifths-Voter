@@ -13,7 +13,7 @@
               <br /><br />
               {{ $t('whyVotePageParagraph.2') }}
               <br /><br />
-              {{ $t('whyVotePageParagraph.3') }}
+              {{ $t('whyVotePageParagraph.3', ['Five Fifths Voter']) }}
               <br /><br />
               Join us to <strong><em>get registered</em></strong
               >, <strong><em>get educated</em></strong

@@ -46,7 +46,7 @@
               ><br />
             </div>
             <p>
-              {{ $t('supportDesc') }}
+              {{ $t('supportDesc', ['Five Fifths Voter']) }}
             </p>
           </div>
         </aside>

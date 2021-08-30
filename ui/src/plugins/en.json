@@ -34,7 +34,7 @@
   "whyVotePageSubTitle": "So what's the deal?",
   "whyVotePageParagraph.1": "In 1868, the 14th Amendment gave Black people citizenship in America, but it would be over 97 years before they could successfully vote. During this time span poll taxes, literacy tests, and other tactics were used to undermine Black people's right to vote.",
   "whyVotePageParagraph.2": "In 1965, the Voting Rights Act provided a successful pathway for Black and many disenfranchised people to vote. Many Black people protested, marched, were arrested and even died as they fought the battle for voting equality.",
-  "whyVotePageParagraph.3": "Voting is the perfect way to implement change. As American citizens, regardless of race, sex, background or nationality, we can stand in solidarity as a whole and exercise the right to be heard. Five Fifths Voter is tailored to help Black and other disenfranchised voters to seize the opportunity to be heard in America.",
+  "whyVotePageParagraph.3": "Voting is the perfect way to implement change. As American citizens, regardless of race, sex, background or nationality, we can stand in solidarity as a whole and exercise the right to be heard. {0} is tailored to help Black and other disenfranchised voters to seize the opportunity to be heard in America.",
 
   "journeyPageTitle": "Your voting journey",
   "journeyPageRegisteredLabel": "Are You Registered To Vote?",
@@ -67,7 +67,7 @@
   "getInformedDisplay.4": "State Voting Info",
 
   "voteTitle": "Vote early or find your polling location",
-  "voteTitleDesc":"Need help knowing where to go on voting day? Want to know what location in your precinct allows for early voting? Five Fifths Voter can help you figure it out. Input your address below, and select either \"Early Voting\" or \"Polling Location\". We'll do the rest.",
+  "voteTitleDesc":"Need help knowing where to go on voting day? Want to know what location in your precinct allows for early voting? {0} can help you figure it out. Input your address below, and select either \"Early Voting\" or \"Polling Location\". We'll do the rest.",
   "voteChooseElection": "Choose an election",
   "voteSelectElection":"Select election",
   "voteEarlyVotingBtn":"Early Voting",
@@ -89,6 +89,6 @@
   "supportMailVoting": "Mail-in voting instructions",
   "supportFelons": "Voting for felons",
   "supportDisabled": "Voter tips for the disabled",
-  "supportDesc": "Each voter’s journey is different. Five Fifths Voter can put you on the right path to reclaiming voter confidence. Please visit our support channels to help guide you.",
+  "supportDesc": "Each voter’s journey is different. {0} can put you on the right path to reclaiming voter confidence. Please visit our support channels to help guide you.",
   "supportImgAlt": "Man lounges on beanbag chair while browsing on his laptop"
 }

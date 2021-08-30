@@ -6,6 +6,7 @@
     <cv-tabs :container="container" aria-label="voter journey">
       <cv-tab
         id="tab-1"
+        :label="$t('journeyPageRegisteredLabel')"
         :title="$t('connectedPageFbLabel')"
         :aria-label="$t('journeyPageRegisteredAriaLabel')"
       >

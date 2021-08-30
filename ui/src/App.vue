@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <div>
+    <!-- <div>
       <button v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)">
         <flag :iso="entry.flag" v-bind:squared="false" /> {{ entry.title }}
       </button>
-    </div>
+    </div> -->
     <router-view />
   </div>
 </template>
@@ -20,9 +20,15 @@ export default {
   data() {
     return {
       languages: [
-        { flag: 'us', language: 'en', title: 'English' },
-        { flag: 'es', language: 'es', title: 'Español' },
-        { flag: 'in', language: 'hi', title: 'हिंदी' }
+        { flag: '', language: 'en', title: 'English' },
+        { flag: '', language: 'es', title: 'Español' },
+        { flag: '', language: 'hi', title: 'हिंदी' },
+        { flag: '', language: 'kr', title: 'Korean' },
+        { flag: '', language: 'sc', title: 'Simplified' },
+        { flag: '', language: 'zh', title: 'Traditional' },
+        { flag: '', language: 'ru', title: 'Russian' },
+        { flag: '', language: 'ar', title: 'Arabic' },
+        { flag: '', language: 'vn', title: 'Vietnamese' }
       ]
     };
   },

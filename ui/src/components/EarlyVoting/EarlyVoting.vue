@@ -7,7 +7,7 @@
             {{ $t('voteTitle') }}
           </h2>
           <p class="aside__description">
-            {{ $t('voteTitleDesc') }}
+            {{ $t('voteTitleDesc', ['Five Fifths Voter']) }}
           </p>
           <div class="wrapper wrapper--address">
             <cv-select :label="$t('voteSelectElection')" v-model="electionId">
