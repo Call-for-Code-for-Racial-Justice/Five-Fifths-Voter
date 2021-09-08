@@ -1,26 +1,19 @@
 <template>
   <PageLayout childData="mother-daughter-hero.jpeg">
     <div class="page__details">
-      <h2 class="page__title">Why vote?</h2>
+      <h2 class="page__title">{{ $t('whyVotePageTitle') }}</h2>
     </div>
     <MainContent>
       <template v-slot:content>
         <aside class="aside">
           <div class="aside__container--text">
-            <h2 class="aside__header">So what's the deal?</h2>
+            <h2 class="aside__header">{{ $t('whyVotePageSubTitle') }}</h2>
             <p class="aside__paragraph">
-              In 1868, the 14th Amendment gave Black people citizenship in America, but it would be
-              over 97 years before they could successfully vote. During this time span poll taxes,
-              literacy tests, and other tactics were used to undermine Black people's right to vote.
+              {{ $t('whyVotePageParagraph.1') }}
               <br /><br />
-              In 1965, the Voting Rights Act provided a successful pathway for Black and many
-              disenfranchised people to vote. Many Black people protested, marched, were arrested
-              and even died as they fought the battle for voting equality.
+              {{ $t('whyVotePageParagraph.2') }}
               <br /><br />
-              Voting is the perfect way to implement change. As American citizens, regardless of
-              race, sex, background or nationality, we can stand in solidarity as a whole and
-              exercise the right to be heard. Five Fifths Voter is tailored to help Black and other
-              disenfranchised voters to seize the opportunity to be heard in America.
+              {{ $t('whyVotePageParagraph.3', ['Five Fifths Voter']) }}
               <br /><br />
               Join us to <strong><em>get registered</em></strong
               >, <strong><em>get educated</em></strong

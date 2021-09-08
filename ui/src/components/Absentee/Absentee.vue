@@ -3,12 +3,12 @@
     <template v-slot:content>
       <aside class="aside">
         <div class="aside__container--text">
-          <h2 class="aside__header">Can't be there? Let us help you connect</h2>
+          <h2 class="aside__header">{{ $t('absenteeTitle') }}</h2>
           <p class="aside__paragraph">
-            Absentee voting is as easy as signing up before your state's deadline.
+            {{ $t('absenteeDesc') }}
           </p>
           <cv-link href="https://www.vote.org/absentee-ballot/" target="_blank">
-            Request an absentee ballot &rarr;
+            {{ $t('absenteeRequest') }} &rarr;
           </cv-link>
         </div>
       </aside>
@@ -18,7 +18,7 @@
         <img
           class="aside__img"
           src="../../assets/absentee-page-group-friends-laptop-image-1.jpg"
-          alt="stock image of voters at a voting poll"
+          :alt="$t('absenteeImageAlt')"
         />
       </aside>
     </template>
