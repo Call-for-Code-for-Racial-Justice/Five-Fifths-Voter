@@ -45,10 +45,7 @@
                 </cv-list-item>
               </cv-list>
 
-              <span
-                ><br />
-                {{ $t('ballotAPI') }}
-              </span>
+              <span><br />Powered by the Civic Information API</span>
             </div>
           </div>
         </div>
