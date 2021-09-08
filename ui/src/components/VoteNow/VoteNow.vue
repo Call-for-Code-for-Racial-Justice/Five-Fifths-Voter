@@ -3,10 +3,10 @@
     <template v-slot:content>
       <aside class="aside">
         <div class="aside__container--text">
-          <h2 class="aside__header">Candidates, deadlines and resources</h2>
+          <h2 class="aside__header">{{ $t('getInformedTitle') }}</h2>
           <cv-dropdown
             class="dropdown"
-            placeholder="Choose your state for information"
+            :placeholder="$t('getInformedDropDown')"
             @change="onChange($event)"
           >
             <cv-dropdown-item value="alabama">Alabama</cv-dropdown-item>
@@ -64,11 +64,11 @@
           </cv-dropdown>
           <div v-if="displayDialog" class="bx--modal-container">
             <div tabindex="0" class="cv-modal__before-content"></div>
-            <div class="bx--modal-header">Acceptable IDs</div>
+            <div class="bx--modal-header">{{ $t('getInformedDisplay.1') }}</div>
             <div class="bx--modal-content">
               <p v-if="stateVoterIdData.info">
                 <cv-link :href="stateVoterIdData.info" target="_blank">
-                  State voter ID information
+                  {{ $t('getInformedDisplay.2') }}
                 </cv-link>
                 <span class="voter-id-validated">
                   (Validated on
@@ -84,7 +84,7 @@
                 </cv-list>
                 <span v-for="more in stateVoterIdData.more_info" :key="more">
                   <cv-link :href="more" target="_blank">
-                    More Information from your State
+                    {{ $t('getInformedDisplay.3') }}
                   </cv-link>
                   <br />
                 </span>
@@ -120,7 +120,7 @@
                 type="button"
                 @click="showSofSSite"
               >
-                State Voting Info
+                {{ $t('getInformedDisplay.4') }}
               </button>
             </div>
             <div tabindex="0" class="cv-modal__after-content"></div>

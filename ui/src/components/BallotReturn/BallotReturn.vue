@@ -3,7 +3,7 @@
     <template v-slot:content>
       <aside class="aside">
         <div class="aside__container--text">
-          <h2 class="aside__header">Find your local ballot dropbox</h2>
+          <h2 class="aside__header">{{ $t('ballotTitle') }}</h2>
           <div class="wrapper wrapper--address">
             <cv-text-input
               :label="addressLabel"
@@ -14,7 +14,7 @@
             </cv-text-input>
             <div class="wrapper wrapper--button">
               <cv-button kind="primary" @click="showPollingLocation" :disabled="buttonDisabled">
-                Show Ballot Drop Off Locations
+                {{ $t('ballotDropBtn') }}
               </cv-button>
             </div>
             <div v-if="voterData.state">
@@ -26,14 +26,12 @@
                 </span>
               </p>
               <span v-if="electionInfoUrl">
-                <cv-link :href="electionInfoUrl"> Election Info</cv-link><br />
+                <cv-link :href="electionInfoUrl"> {{ $t('ballotElectionInfo') }} </cv-link><br />
               </span>
               <span v-if="absenteeVotingInfoUrl">
-                <cv-link :href="absenteeVotingInfoUrl"> Get Absentee Ballot</cv-link><br />
+                <cv-link :href="absenteeVotingInfoUrl"> {{ $t('ballotAbsentee') }} </cv-link><br />
               </span>
-              <span v-if="placeholderMap"
-                >No known drop off locations. Check with your local election officials.
-              </span>
+              <span v-if="placeholderMap"> {{ $t('ballotNoLocation') }} </span>
               <cv-list v-if="locationList">
                 <cv-list-item v-for="item in locationList" :key="item.address.locationName">
                   <span class="loc-name">{{ item.address.locationName }}</span>

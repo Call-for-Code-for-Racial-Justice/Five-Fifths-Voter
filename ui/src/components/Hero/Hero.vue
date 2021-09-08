@@ -11,9 +11,9 @@
         </div>
       </div>
       <div class="hero__content">
-        <h1 class="hero__heading">Five Fifths Voter</h1>
+        <h1 class="hero__heading">{{ $t('welcomeMsg', ['Five Fifths Voter']) }}</h1>
         <p class="hero__description">
-          5/5 equals a whole.<br />A whole person, a whole community, a whole nation.
+          {{ $t('tagline') }}<br />{{ $t('subtagline') }}
           <br />
         </p>
         <h2 class="hero__quote">
