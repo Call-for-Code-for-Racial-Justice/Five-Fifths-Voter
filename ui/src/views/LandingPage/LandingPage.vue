@@ -30,7 +30,7 @@
           <div class="article__content">
             <h2 class="article__heading">{{ $t('landingPageEdu') }}</h2>
             <span class="article__quote"
-              >&quot;Knowledge is power.&quot;<span class="quote--author"
+              >&quot;{{ $t(quoteFrancisBacon) }}&quot;<span class="quote--author"
                 >- Francis Bacon</span
               ></span
             ><br /><br />
@@ -58,8 +58,8 @@
           <div class="article__content">
             <h2 class="article__heading">{{ $t('landingPageEmpower') }}</h2>
             <span class="article__quote"
-              >&quot;I am no bird; and no net ensnares me: I am a free human being with an
-              independent will. &quot; <span class="quote--author">- Charlotte Brontë</span></span
+              >&quot;{{ $t('quoteCharlotteBronte') }}&quot;
+              <span class="quote--author">- Charlotte Brontë</span></span
             ><br /><br />
             <div class="bx--offset-lg-1">
               <p class="article__paragraph">
@@ -85,7 +85,7 @@
           <div class="article__content">
             <h2 class="article__heading">{{ $t('landingPageEnable') }}</h2>
             <span class="article__quote"
-              >&quot;Enablement is the key to closing the gap between intention and action. &quot;
+              >&quot;{{ $t('quotePaulRepetto') }}&quot;
               <span class="quote--author">- Paul Repetto</span></span
             ><br /><br />
             <div class="bx--offset-lg-1">
