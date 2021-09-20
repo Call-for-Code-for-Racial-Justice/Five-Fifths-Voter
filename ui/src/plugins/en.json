@@ -2,11 +2,10 @@
   "welcomeMsg": "{0}",
   "tagline": "5/5 equals a whole.",
   "subtagline": "A whole person, a whole community, a whole nation.",
-  "quoteJohnLewis":"My dear friends: Your vote is precious, almost sacred. It is the most powerful nonviolent tool we have to create a more perfect union.",
-  "quoteFrancisBacon":"Knowledge is power.",
-  "quoteCharlotteBronte":"I am no bird; and no net ensnares me: I am a free human being with an independent will.",
-  "quotePaulRepetto":"Enablement is the key to closing the gap between intention and action.",
-
+  "quoteJohnLewis": "My dear friends: Your vote is precious, almost sacred. It is the most powerful nonviolent tool we have to create a more perfect union.",
+  "quoteFrancisBacon": "Knowledge is power.",
+  "quoteCharlotteBronte": "I am no bird; and no net ensnares me: I am a free human being with an independent will.",
+  "quotePaulRepetto": "Enablement is the key to closing the gap between intention and action.",
 
   "whyVoteBtn": "Why Vote",
   "appHeaderWhyVote": "Why Vote",
@@ -42,7 +41,7 @@
   "whyVotePageParagraph.1": "In 1868, the 14th Amendment gave Black people citizenship in America, but it would be over 97 years before they could successfully vote. During this time span poll taxes, literacy tests, and other tactics were used to undermine Black people's right to vote.",
   "whyVotePageParagraph.2": "In 1965, the Voting Rights Act provided a successful pathway for Black and many disenfranchised people to vote. Many Black people protested, marched, were arrested and even died as they fought the battle for voting equality.",
   "whyVotePageParagraph.3": "Voting is the perfect way to implement change. As American citizens, regardless of race, sex, background or nationality, we can stand in solidarity as a whole and exercise the right to be heard. {0} is tailored to help Black and other disenfranchised voters to seize the opportunity to be heard in America.",
-  "whyVotePageQuote": "Join us to get registered get educated, get social, and get vocal",
+  "whyVotePageQuote": "Join us to **get registered**, **get educated**, **get social**, and **get vocal**.",
 
   "journeyPageTitle": "Your voting journey",
   "journeyPageRegisteredLabel": "Are You Registered To Vote?",
