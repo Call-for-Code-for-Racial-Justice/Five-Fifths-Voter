@@ -17,8 +17,7 @@
           <br />
         </p>
         <h2 class="hero__quote">
-          "My dear friends: Your vote is precious, almost sacred. It is the most powerful nonviolent
-          tool we have to create a more perfect union."
+          {{ $t('quoteJohnLewis') }}
           <br />
           <span class="hero__author"> - John Lewis</span>
           <br />
@@ -34,7 +33,7 @@
               <div class="bx--aspect-ratio--object">
                 <router-link class="bx--feature-card__link" to="/whyvote">
                   <div class="bx--tile">
-                    <h4 class="bx--resource-card__title">Why Vote</h4>
+                    <h4 class="bx--resource-card__title">{{ $t('whyVoteBtn') }}</h4>
                     <div class="bx--resource-card__icon--img"></div>
                     <div class="bx--resource-card__icon--action">
                       <svg

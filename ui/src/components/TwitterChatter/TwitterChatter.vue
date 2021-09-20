@@ -13,7 +13,7 @@
       </cv-combo-box>
 
       <div class="wrapper wrapper--button">
-        <cv-button @click="checkChatter">Check</cv-button>
+        <cv-button @click="checkChatter">{{ $t('twitterChatterCheckButton') }}</cv-button>
         <template v-if="haveTweets">
           <div class="tweet-legend-sentiment tweet-legend-sentiment--positive"></div>
           <p>positive</p>
