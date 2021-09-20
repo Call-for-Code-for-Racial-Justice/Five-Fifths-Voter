@@ -111,19 +111,6 @@
       ],
       "value": ""
     }, {
-      "id": "94f97a8d-5400-4e5c-9a05-bb501cba2030",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Get Connected",
-      "targets": [
-        ["linkText=Get Connected", "linkText"],
-        ["css=.bx--side-nav__header-navigation > .cv-header-menu-item:nth-child(3) > .bx--header__menu-item", "css:finder"],
-        ["xpath=//nav[@id='side-nav']/ul/div/li[3]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#/connect')])[2]", "xpath:href"],
-        ["xpath=//div/li[3]/a", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "46b96013-3d3c-41d7-9e4e-83fdd33767e2",
       "comment": "",
       "command": "click",
