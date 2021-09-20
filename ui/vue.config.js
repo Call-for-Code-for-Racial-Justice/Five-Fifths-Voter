@@ -6,8 +6,8 @@ module.exports = {
         xfwd: true,
         pathRewrite: { '^/services/': '' },
         autoRewrite: true,
-        hostRewrite: true,
-      },
-    },
-  },
-}
+        hostRewrite: true
+      }
+    }
+  }
+};
