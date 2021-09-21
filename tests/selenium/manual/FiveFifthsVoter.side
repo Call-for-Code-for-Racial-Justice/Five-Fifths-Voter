@@ -247,7 +247,7 @@
         ["css=.cv-link:nth-child(3)", "css:finder"],
         ["xpath=//a[contains(text(),'Free election day childcare →')]", "xpath:link"],
         ["xpath=//main[@id='#main-content']/div[2]/div/div/aside/div/div/a[2]", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://ymcaofcoastalga.org/news/2018/10/17/ymca-news/ymca-works-to-help-make-it-easier-for-parents-to-vote/')]", "xpath:href"],
+        ["xpath=//a[contains(@href, 'https://www.ymca.org/find-your-y?distance=175&lat=26.0517448&lng=-80.13727569999999&geolocation_geocoder_address=33004&type=branch')]", "xpath:href"],
         ["xpath=//div/a[2]", "xpath:position"],
         ["xpath=//a[contains(.,'Free election day childcare →')]", "xpath:innerText"]
       ],
