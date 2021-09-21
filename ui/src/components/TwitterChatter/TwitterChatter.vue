@@ -2,6 +2,7 @@
   <div class="wrapper wrapper--address">
     <div class="tweets">
       <cv-combo-box
+        :aria-label="$t('connectedPageTwitterLabel')"
         ref="r_combo"
         v-model.trim="screenname"
         :label="$t('twitterChatterLabel')"
