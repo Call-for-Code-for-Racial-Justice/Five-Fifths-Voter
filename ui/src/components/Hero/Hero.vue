@@ -3,20 +3,15 @@
     <div class="bx--feature-card">
       <div class="bx--row">
         <div class="hero bx--no-gutter-md--left bx--col-lg-12">
-          <div class="bx--aspect-ratio bx--feature-card__img bx--aspect-ratio--16x9" role="contentinfo">
+          <div class="bx--aspect-ratio bx--feature-card__img bx--aspect-ratio--16x9" role="content info">
             <div class="bx--aspect-ratio--object bx--feature-background">
               <img class="hero__image" alt="" src="../../assets/ebrace-vote-gif.gif" />
             </div>
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-      <div class="hero__content">
-        <h1 class="hero__heading">{{ $t('welcomeMsg', ['Five Fifths Voter']) }}</h1>
-=======
       <div class="hero__content" role="contentinfo">
         <h1 class="hero__heading">Five Fifths Voter</h1>
->>>>>>> 872a913... fix #209
         <p class="hero__description">
           {{ $t('tagline') }}<br />{{ $t('subtagline') }}
           <br />

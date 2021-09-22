@@ -37,8 +37,7 @@ export default {
   components: { UserAvatar20 },
   data() {
     return {}
-    };
-  }
+    }
 };
 </script>
 
