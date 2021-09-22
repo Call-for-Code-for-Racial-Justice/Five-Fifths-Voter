@@ -111,19 +111,6 @@
       ],
       "value": ""
     }, {
-      "id": "94f97a8d-5400-4e5c-9a05-bb501cba2030",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Get Connected",
-      "targets": [
-        ["linkText=Get Connected", "linkText"],
-        ["css=.bx--side-nav__header-navigation > .cv-header-menu-item:nth-child(3) > .bx--header__menu-item", "css:finder"],
-        ["xpath=//nav[@id='side-nav']/ul/div/li[3]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#/connect')])[2]", "xpath:href"],
-        ["xpath=//div/li[3]/a", "xpath:position"]
-      ],
-      "value": ""
-    }, {
       "id": "46b96013-3d3c-41d7-9e4e-83fdd33767e2",
       "comment": "",
       "command": "click",
@@ -247,7 +234,7 @@
         ["css=.cv-link:nth-child(3)", "css:finder"],
         ["xpath=//a[contains(text(),'Free election day childcare →')]", "xpath:link"],
         ["xpath=//main[@id='#main-content']/div[2]/div/div/aside/div/div/a[2]", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, 'https://ymcaofcoastalga.org/news/2018/10/17/ymca-news/ymca-works-to-help-make-it-easier-for-parents-to-vote/')]", "xpath:href"],
+        ["xpath=//a[contains(@href, 'https://www.ymca.org/find-your-y?distance=175&lat=26.0517448&lng=-80.13727569999999&geolocation_geocoder_address=33004&type=branch')]", "xpath:href"],
         ["xpath=//div/a[2]", "xpath:position"],
         ["xpath=//a[contains(.,'Free election day childcare →')]", "xpath:innerText"]
       ],

@@ -15,11 +15,7 @@
               <br /><br />
               {{ $t('whyVotePageParagraph.3', ['Five Fifths Voter']) }}
               <br /><br />
-              Join us to <strong><em>get registered</em></strong
-              >, <strong><em>get educated</em></strong
-              >, <strong><em>get social</em></strong
-              >, and <strong><em>get vocal</em></strong
-              >.
+              <MarkDown :content="$t('whyVotePageQuote')" />
             </p>
           </div>
         </aside>
@@ -40,10 +36,11 @@
 <script>
 import PageLayout from '../../components/PageLayout';
 import MainContent from '../../components/MainContent';
+import MarkDown from '@/components/MarkDown';
 
 export default {
   name: 'connect',
-  components: { PageLayout, MainContent },
+  components: { PageLayout, MainContent, MarkDown },
   data() {
     return {};
   },

@@ -14,9 +14,9 @@
       <cv-header-menu-item :to="{ name: 'journey-page' }">
         {{ $t('appHeaderVoterJourney') }}
       </cv-header-menu-item>
-      <cv-header-menu-item :to="{ name: 'connect-page' }">
+      <!-- <cv-header-menu-item :to="{ name: 'connect-page' }">
         {{ $t('appHeaderGetConnected') }}
-      </cv-header-menu-item>
+      </cv-header-menu-item> -->
       <cv-header-menu-item :to="{ name: 'support-page' }">
         {{ $t('appHeaderVoterSupport') }}
       </cv-header-menu-item>
@@ -36,9 +36,9 @@
             <cv-header-menu-item :to="{ name: 'journey-page' }">
               Voter Journey
             </cv-header-menu-item>
-            <cv-header-menu-item :to="{ name: 'connect-page' }">
+            <!-- <cv-header-menu-item :to="{ name: 'connect-page' }">
               Get Connected
-            </cv-header-menu-item>
+            </cv-header-menu-item> -->
             <cv-header-menu-item :to="{ name: 'support-page' }">
               Voter Support
             </cv-header-menu-item>

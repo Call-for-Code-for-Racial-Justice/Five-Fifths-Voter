@@ -18,7 +18,7 @@
               ><br />
               <cv-link
                 class="aside__link"
-                href="https://ymcaofcoastalga.org/news/2018/10/17/ymca-news/ymca-works-to-help-make-it-easier-for-parents-to-vote/"
+                href="https://www.ymca.org/find-your-y?distance=175&lat=26.0517448&lng=-80.13727569999999&geolocation_geocoder_address=33004&type=branch"
                 target="_blank"
               >
                 {{ $t('supportChildCare') }} &rarr;</cv-link

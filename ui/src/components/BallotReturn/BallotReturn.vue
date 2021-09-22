@@ -6,7 +6,7 @@
           <h2 class="aside__header">{{ $t('ballotTitle') }}</h2>
           <div class="wrapper wrapper--address">
             <cv-text-input
-              :label="addressLabel"
+              :label="$t('ballotAddressLabel')"
               v-model="addressValue"
               :placeholder="placeholder"
               @input="updatedAddress"
@@ -75,7 +75,6 @@ export default {
   components: { MainContent, GoogleMap },
   data() {
     return {
-      addressLabel: 'Address where you are registered to vote',
       addressValue: '',
       placeholder: '123 Main St GA 30076',
       buttonDisabled: true,

@@ -22,8 +22,6 @@
 
   - [Deliver Your Ballot](#deliver-your-ballot)
 
-  - [Get Connected](#get-connected)
-
   - [Voter Support](#voter-support)
 
 # Introduction
@@ -94,12 +92,6 @@ The **Vote** page allows users to locate early voting locations and/or their pol
 ![](DeliverYourBallot.png)
 
 The **Deliver Your Ballot** page allows users to locate places to drop off their mail-in ballot. Users will input their address in the field provided. A list of local ballot drop boxes will be provided, allowing users to obtain directions via Google Maps to the ballot drop off location.
-
-## Get Connected
-
-![](GetSocial.png)
-
-The **Get Connected** page allows users the ability to get connect on social media and allow users to view candidate&#39;s social media pages. Enter a Candidate&#39;s name in the box below to see all of their latest tweets. Clicking on one of the social media icons will direct the user to social media hashtags pertaining to the election and how to get connected.
 
 ## Voter Support
 

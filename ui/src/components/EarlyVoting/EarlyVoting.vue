@@ -19,7 +19,7 @@
               </cv-select-option>
             </cv-select>
             <cv-text-input
-              :label="addressLabel"
+              :label="$t('voteAddressLabel')"
               v-model="addressValue"
               :placeholder="placeholder"
               @input="updatedAddress"
@@ -121,7 +121,6 @@ export default {
   components: { MainContent, GoogleMap },
   data() {
     return {
-      addressLabel: 'Address where you are registered to vote',
       addressValue: '',
       normalizedAddressValue: '',
       placeholder: '123 Main St GA 30076',
