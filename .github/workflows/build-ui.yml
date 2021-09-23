@@ -1,0 +1,28 @@
+on:
+  push:
+    branches:
+      - "**"
+  pull_request_target:
+    branches:
+      - main
+name: Build UI
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ui
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+      - name: Install dependencies
+        run: yarn
+      - run: yarn run build
+      - run: yarn run test
