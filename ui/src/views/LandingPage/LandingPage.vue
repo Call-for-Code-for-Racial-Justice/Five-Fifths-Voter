@@ -30,7 +30,7 @@
           <div class="article__content">
             <h2 class="article__heading">{{ $t('landingPageEdu') }}</h2>
             <span class="article__quote"
-              >&quot;{{ $t(quoteFrancisBacon) }}&quot;<span class="quote--author"
+              >&quot;{{ $t('quoteFrancisBacon') }}&quot;<span class="quote--author"
                 >- Francis Bacon</span
               ></span
             ><br /><br />
