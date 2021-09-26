@@ -13,6 +13,21 @@
           <cv-link href="https://www.vote.org/register-to-vote/" target="_blank">
             {{ $t('registerRegisterToVote') }} &rarr;</cv-link
           ><br />
+          <br /><br />
+          {{ $t('registerYouth.1') }}
+          <br /><br />
+          {{
+            $t('registerYouth.2', [
+              'https://registertovote.ca.gov/',
+              'https://www.ymcayag.org/vote/'
+            ])
+          }}
+          <br /><br />
+          {{
+            $t('registerYouth.3', [
+              'https://www.ncsl.org/research/elections-and-campaigns/preregistration-for-young-voters.aspx'
+            ])
+          }}
         </div>
       </aside>
     </template>

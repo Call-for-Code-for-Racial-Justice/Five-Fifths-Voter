@@ -59,6 +59,9 @@
   "registerDesc": "Voting is the perfect way for you to unite and implement change in your communities, state-wide and nationally.",
   "registerCheckVotingStatus": "Check voting status",
   "registerRegisterToVote": " Register to vote",
+  "registerYouth.1":"Aged 17-18? Did you know you can preregister to vote?",
+  "registerYouth.2": "California: Find out how {0}. The YMCA LA {1} can also support you.",
+  "registerYouth.3": "National: Find your state requirements {0}",
 
   "absenteeTitle": "Can't be there? Let us help you connect",
   "absenteeDesc": "Absentee voting is as easy as signing up before your state's deadline.",
