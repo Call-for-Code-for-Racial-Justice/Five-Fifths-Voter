@@ -14,9 +14,9 @@
       <cv-header-menu-item :to="{ name: 'journey-page' }">
         {{ $t('appHeaderVoterJourney') }}
       </cv-header-menu-item>
-      <cv-header-menu-item :to="{ name: 'connect-page' }">
+      <!-- <cv-header-menu-item :to="{ name: 'connect-page' }">
         {{ $t('appHeaderGetConnected') }}
-      </cv-header-menu-item>
+      </cv-header-menu-item> -->
       <cv-header-menu-item :to="{ name: 'support-page' }">
         {{ $t('appHeaderVoterSupport') }}
       </cv-header-menu-item>
@@ -25,6 +25,26 @@
       <cv-header-global-action aria-label="User avatar">
         <UserAvatar20 />
       </cv-header-global-action>
+    </template>
+    <template v-slot:left-panels v-if="areLeftPanels">
+      <cv-side-nav id="side-nav" fixed>
+        <cv-side-nav-items>
+          <cv-header-side-nav-items>
+            <cv-header-menu-item :to="{ name: 'why-page' }">
+              Why Vote
+            </cv-header-menu-item>
+            <cv-header-menu-item :to="{ name: 'journey-page' }">
+              Voter Journey
+            </cv-header-menu-item>
+            <!-- <cv-header-menu-item :to="{ name: 'connect-page' }">
+              Get Connected
+            </cv-header-menu-item> -->
+            <cv-header-menu-item :to="{ name: 'support-page' }">
+              Voter Support
+            </cv-header-menu-item>
+          </cv-header-side-nav-items>
+        </cv-side-nav-items>
+      </cv-side-nav>
     </template>
   </cv-header>
 </template>

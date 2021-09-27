@@ -19,14 +19,14 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "reg-page" */ './views/JourneyPage')
     },
-    {
-      path: '/connect',
-      name: 'connect-page',
-      // route level code-splitting
-      // this generates a separate chunk (reg-page.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "reg-page" */ './views/ConnectPage')
-    },
+    // {
+    //   path: '/connect',
+    //   name: 'connect-page',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (reg-page.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () => import(/* webpackChunkName: "reg-page" */ './views/ConnectPage')
+    // },
     {
       path: '/votersupport',
       name: 'support-page',
