@@ -36,8 +36,8 @@ export default {
   name: 'AppHeader',
   components: { UserAvatar20 },
   data() {
-    return {}
-    }
+    return {};
+  }
 };
 </script>
 
