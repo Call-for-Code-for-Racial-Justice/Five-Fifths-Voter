@@ -9,6 +9,9 @@ import sc from './zh_Hans_CN.json';
 import zh from './zh_Hans_TW.json';
 import ar from './ar';
 import vn from './vn';
+import fa from './fa';
+import ja from './ja';
+import tl from './tl';
 
 Vue.use(VueI18n);
 
@@ -21,7 +24,10 @@ const messages = {
   sc: sc,
   zh: zh,
   ar: ar,
-  vn: vn
+  vn: vn,
+  fa: fa,
+  ja: ja,
+  tl: tl
 };
 
 export default new VueI18n({

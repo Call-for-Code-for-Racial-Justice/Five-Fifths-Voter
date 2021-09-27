@@ -28,6 +28,9 @@ export default {
         { flag: '', language: 'zh', title: 'Traditional' },
         { flag: '', language: 'ru', title: 'Russian' },
         { flag: '', language: 'ar', title: 'Arabic' },
+        { flag: '', language: 'fa', title: 'Farsi' },
+        { flag: '', language: 'ja', title: 'Japanese' },
+        { flag: '', language: 'tl', title: 'Tagalog' },
         { flag: '', language: 'vn', title: 'Vietnamese' }
       ]
     };
