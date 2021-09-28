@@ -26,26 +26,7 @@
         <UserAvatar20 />
       </cv-header-global-action>
     </template>
-    <template v-slot:left-panels v-if="areLeftPanels">
-      <cv-side-nav id="side-nav" fixed>
-        <cv-side-nav-items>
-          <cv-header-side-nav-items>
-            <cv-header-menu-item :to="{ name: 'why-page' }">
-              Why Vote
-            </cv-header-menu-item>
-            <cv-header-menu-item :to="{ name: 'journey-page' }">
-              Voter Journey
-            </cv-header-menu-item>
-            <!-- <cv-header-menu-item :to="{ name: 'connect-page' }">
-              Get Connected
-            </cv-header-menu-item> -->
-            <cv-header-menu-item :to="{ name: 'support-page' }">
-              Voter Support
-            </cv-header-menu-item>
-          </cv-header-side-nav-items>
-        </cv-side-nav-items>
-      </cv-side-nav>
-    </template>
+    <template v-slot:left-panels> </template>
   </cv-header>
 </template>
 
