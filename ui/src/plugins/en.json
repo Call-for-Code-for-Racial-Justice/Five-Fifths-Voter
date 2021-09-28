@@ -80,6 +80,7 @@
   "voteEarlyVotingBtn": "Early Voting",
   "votePollingLocationBtn": "Polling Location",
   "voteAddressLabel": "Address where you are registered to vote",
+  "voteElectionMissing": "If you cannot find your election, the information may not be available through the Google Civic Information API right now. Check out the 'Get Informed' tab to find out more information about your state elections.",
   "voteEarlyNoLocationFound": "No known locations. Check with your local election officials. Use the links provided to verify voting information. This state information may not be available through the Google Civic Information API right now.",
 
   "ballotTitle": "Find your local ballot dropbox",
