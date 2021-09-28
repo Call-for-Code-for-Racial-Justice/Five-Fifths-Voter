@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="insight-app-sec-validation" content="2aad0d00-91e5-4fe6-a35a-c2c6fade951c">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>five/fifths voter</title>
+    <style>
+      h1 {
+        margin-top: 1rem !important;
+      }
+      div {
+        margin-top: 2rem !important;
+        display: flex;
+      }
+      img {
+        width: 25%;
+        position: relative;
+      }
+      @keyframes horizontalWiggle {
+        from {left: 0%;}
+        to {left: 15%;}
+      }
+      @keyframes verticalWiggle {
+        from {top: -100px;}
+        to {top: 150px;}
+      }
+      .bulldoze {
+        animation-name: horizontalWiggle;
+        animation-duration: 4s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+      .steel {
+        margin-left: auto;
+        animation-name: verticalWiggle;
+        animation-duration: 3.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Five/Fifths voter - Coming Soon</h1>
+    <div>
+    <img src="/images/bulldozer.svg" alt="construction bulldozer image" class="bulldoze">
+    <img src="/images/steel.svg" alt="construction steel girder image" class="steel">
+    </div>
+
+  </body>
+</html>
