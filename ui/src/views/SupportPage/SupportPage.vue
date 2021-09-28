@@ -8,6 +8,10 @@
         <aside class="aside" :aria-label="$t('supportResources')">
           <div class="aside__container--text">
             <h2 class="aside__header">{{ $t('supportResources') }}</h2>
+            <p>
+              {{ $t('supportDesc', ['Five Fifths Voter']) }}
+            </p>
+            <br />
             <div class="aside__link aside__container--links">
               <cv-link
                 class="aside__link"
@@ -45,9 +49,6 @@
                 {{ $t('supportDisabled') }} &rarr;</cv-link
               ><br />
             </div>
-            <p>
-              {{ $t('supportDesc', ['Five Fifths Voter']) }}
-            </p>
           </div>
         </aside>
       </template>
