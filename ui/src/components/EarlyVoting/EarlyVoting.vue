@@ -9,6 +9,10 @@
           <p class="aside__description">
             {{ $t('voteTitleDesc', ['Five Fifths Voter']) }}
           </p>
+          <br />
+          <p class="aside__description">
+            {{ $t('voteElectionMissing') }}
+          </p>
           <div class="wrapper wrapper--address">
             <cv-select :label="$t('voteSelectElection')" v-model="electionId">
               <cv-select-option disabled selected hidden>{{
