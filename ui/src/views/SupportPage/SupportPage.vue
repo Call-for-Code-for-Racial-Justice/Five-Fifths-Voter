@@ -5,7 +5,7 @@
     </div>
     <MainContent>
       <template v-slot:content>
-        <aside class="aside">
+        <aside class="aside" :aria-label="$t('supportResources')">
           <div class="aside__container--text">
             <h2 class="aside__header">{{ $t('supportResources') }}</h2>
             <div class="aside__link aside__container--links">
@@ -52,7 +52,7 @@
         </aside>
       </template>
       <template v-slot:image>
-        <aside class="aside__container--img">
+        <aside class="aside__container--img" aria-label="voter support image">
           <img
             class="aside__image"
             src="../../assets/support-page-father-baby-image-1.jpg"

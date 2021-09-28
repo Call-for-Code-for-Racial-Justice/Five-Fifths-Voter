@@ -5,7 +5,7 @@
     </div>
     <MainContent>
       <template v-slot:content>
-        <aside class="aside">
+        <aside class="aside" aria-label="get connected to voters">
           <div class="aside__container--text">
             <h2 class="aside__header">
               {{ $t('connectedPageMain') }}
@@ -109,7 +109,7 @@
         </aside>
       </template>
       <template v-slot:image>
-        <aside class="aside__container--img">
+        <aside class="aside__container--img" aria-label="get connected to voters image">
           <img
             class="aside__image"
             src="../../assets/connect-page-friends-image-1.jpg"

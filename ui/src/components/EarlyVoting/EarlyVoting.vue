@@ -1,7 +1,7 @@
 <template>
   <MainContent>
     <template v-slot:content>
-      <aside class="aside">
+      <aside class="aside" aria-label="early voting information">
         <div class="aside__container--text">
           <h2 class="aside__header">
             {{ $t('voteTitle') }}
@@ -95,7 +95,7 @@
       </aside>
     </template>
     <template v-slot:image>
-      <aside v-if="placeholderMap" class="aside__container--img">
+      <aside v-if="placeholderMap" class="aside__container--img" aria-label="early voting image">
         <img class="aside__image" src="../../assets/holder-atlanta-map.png" alt="google map img" />
       </aside>
       <aside v-else>

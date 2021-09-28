@@ -24,6 +24,6 @@ pnpm-debug.log*
 package-lock.json
 
 # ignore these until we upgrade to yarn 3+
-**/.yarn
+**/.yarn/cache
 **/.yarnrc.yml
 **/.pnp.*
