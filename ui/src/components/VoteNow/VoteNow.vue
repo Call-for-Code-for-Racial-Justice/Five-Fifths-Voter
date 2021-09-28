@@ -1,11 +1,12 @@
 <template>
   <MainContent>
     <template v-slot:content>
-      <aside class="aside">
+      <aside class="aside" aria-label="get informed about voting">
         <div class="aside__container--text">
           <h2 class="aside__header">{{ $t('getInformedTitle') }}</h2>
           <cv-dropdown
             class="dropdown"
+            :label="$t('getInformedDisplay.4')"
             :placeholder="$t('getInformedDropDown')"
             @change="onChange($event)"
           >
@@ -129,7 +130,7 @@
       </aside>
     </template>
     <template v-slot:image>
-      <aside class="aside__container--img">
+      <aside class="aside__container--img" aria-label="get informed image">
         <img
           class="aside__image"
           src="../../assets/vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg"
