@@ -80,8 +80,9 @@
   "voteEarlyVotingBtn": "Early Voting",
   "votePollingLocationBtn": "Polling Location",
   "voteAddressLabel": "Address where you are registered to vote",
-  "voteElectionMissing":"If you cannot find your election, the information may not be available through the Google Civic Information API right now. Check out the 'Get Informed' tab to find out more information about your state elections.",
-
+  "voteElectionMissing": "If you cannot find your election, the information may not be available through the Google Civic Information API right now. Check out the 'Get Informed' tab to find out more information about your state elections.",
+  "voteEarlyNoLocationFound": "No known locations. Check with your local election officials. Use the links provided to verify voting information. This state information may not be available through the Google Civic Information API right now.",
+  
   "ballotTitle": "Find your local ballot dropbox",
   "ballotDropBtn": "Show Ballot Drop Off Locations",
   "ballotAddressLabel": "Address where you are registered to vote",
@@ -98,5 +99,7 @@
   "supportFelons": "Voting for felons",
   "supportDisabled": "Voter tips for the disabled",
   "supportDesc": "Each voter’s journey is different. {0} can put you on the right path to reclaiming voter confidence.",
-  "supportImgAlt": "Man lounges on beanbag chair while browsing on his laptop"
+  "supportImgAlt": "Man lounges on beanbag chair while browsing on his laptop",
+  "supportLA.1":"Current and future elections",
+  "supportLA.2": "Election services"
 }
