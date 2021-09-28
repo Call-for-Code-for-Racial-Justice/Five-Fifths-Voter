@@ -58,9 +58,7 @@
               <span v-if="absenteeVotingInfoUrl">
                 <cv-link :href="absenteeVotingInfoUrl"> Get Absentee Ballot</cv-link><br />
               </span>
-              <span v-if="!locationAvailable"
-                >No known locations. Check with your local election officials.
-              </span>
+              <span v-if="!locationAvailable"> {{ $t('voteEarlyNoLocationFound') }} </span>
               <cv-select v-if="electionList.length" label="Select Your Election">
                 <cv-select-option disabled selected hidden>Choose an election</cv-select-option>
                 <cv-select-option
