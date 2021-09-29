@@ -74,7 +74,7 @@
         </aside>
       </template>
       <template v-slot:image>
-        <aside class="aside__container--img" aria-label="voter support image">
+        <aside class="aside__container--img" :aria-label="$t('ariaSupportingImage')">
           <img
             class="aside__image"
             src="../../assets/support-page-father-baby-image-1.jpg"

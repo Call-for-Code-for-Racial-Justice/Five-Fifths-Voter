@@ -101,5 +101,21 @@
   "supportDesc": "Each voter’s journey is different. {0} can put you on the right path to reclaiming voter confidence.",
   "supportImgAlt": "Man lounges on beanbag chair while browsing on his laptop",
   "supportLA.1":"Current and future elections",
-  "supportLA.2": "Election services"
+  "supportLA.2": "Election services",
+
+  "ariaAbsenteeInfo": "absentee ballot information",
+  "ariaMainMenu": "main menu",
+  "ariaHeaderMenu": "Header menu",
+  "ariaHeader": "header",
+  "ariaUser": "User avatar",
+  "ariaWhere": "where to vote information",
+  "ariaEarly": "early voting information",
+  "ariaHero": "hero image",
+  "ariaQuote": "hero quote",
+  "ariaQuickWhy": "quick link to why vote",
+  "ariaRegister": "register to vote information",
+  "ariaInformed": "get informed about voting",
+  "ariaWhy": "why to vote information",
+  "ariaSupportingImage": "supporting image",
+  "ariaOpen": "Open resource"
 }

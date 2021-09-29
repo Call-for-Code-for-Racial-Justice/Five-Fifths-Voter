@@ -6,7 +6,7 @@
           <div
             class="bx--aspect-ratio bx--feature-card__img bx--aspect-ratio--16x9"
             role="contentinfo"
-            aria-label="hero image"
+            :aria-label="$t('ariaHero')"
           >
             <div class="bx--aspect-ratio--object bx--feature-background">
               <img class="hero__image" alt="" src="../../assets/ebrace-vote-gif.gif" />
@@ -14,7 +14,7 @@
           </div>
         </div>
       </div>
-      <div class="hero__content" role="contentinfo" aria-label="hero quote">
+      <div class="hero__content" role="contentinfo" :aria-label="$t('ariaQuote')">
         <h1 class="hero__heading">Five Fifths Voter</h1>
         <p class="hero__description">
           {{ $t('tagline') }}<br />{{ $t('subtagline') }}
@@ -37,7 +37,7 @@
               <div
                 class="bx--aspect-ratio--object"
                 role="navigation"
-                aria-label="quick link to why vote"
+                :aria-label="$t('ariaQuickWhy')"
               >
                 <router-link class="bx--feature-card__link" to="/whyvote">
                   <div class="bx--tile">
@@ -48,7 +48,7 @@
                         fill="#fff"
                         focusable="false"
                         preserveAspectRatio="xMidYMid meet"
-                        aria-label="Open resource"
+                        :aria-label="$t('ariaOpen')"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"

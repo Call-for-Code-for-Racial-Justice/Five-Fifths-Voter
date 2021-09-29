@@ -1,7 +1,7 @@
 <template>
   <MainContent>
     <template v-slot:content>
-      <aside class="aside" aria-label="register to vote information">
+      <aside class="aside" :aria-label="$t('ariaRegister')">
         <div class="aside__container--text">
           <h2 class="aside__header">{{ $t('registerTitle') }}</h2>
           <p class="aside__paragraph">
@@ -17,7 +17,7 @@
       </aside>
     </template>
     <template v-slot:image>
-      <aside class="aside__container--img" aria-label="register to vote image">
+      <aside class="aside__container--img" :aria-label="$t('ariaSupportingImage')">
         <img
           class="aside__image"
           src="../../assets/register-page-woman-in-sun-image-1.jpeg"
