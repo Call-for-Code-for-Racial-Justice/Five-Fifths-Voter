@@ -1,7 +1,7 @@
 <template>
   <MainContent>
     <template v-slot:content>
-      <aside class="aside" aria-label="where to vote information">
+      <aside class="aside" :aria-label="$t('ariaWhere')">
         <div class="aside__container--text">
           <h2 class="aside__header">{{ $t('ballotTitle') }}</h2>
           <div class="wrapper wrapper--address">
@@ -52,7 +52,11 @@
       </aside>
     </template>
     <template v-slot:image>
-      <aside v-if="placeholderMap" class="aside__container--img" aria-label="where to vote image">
+      <aside
+        v-if="placeholderMap"
+        class="aside__container--img"
+        :aria-label="$t('ariaSupportingImage')"
+      >
         <img class="aside__image" src="../../assets/holder-atlanta-map.png" alt="google map img" />
       </aside>
       <aside v-else>

@@ -5,7 +5,7 @@
     </div>
     <MainContent>
       <template v-slot:content>
-        <aside class="aside" aria-label="why to vote information">
+        <aside class="aside" :aria-label="$t('ariaWhy')">
           <div class="aside__container--text">
             <h2 class="aside__header">{{ $t('whyVotePageSubTitle') }}</h2>
             <p class="aside__paragraph">
@@ -21,7 +21,7 @@
         </aside>
       </template>
       <template v-slot:image>
-        <aside class="aside__container--img" aria-label="why to vote image">
+        <aside class="aside__container--img" :aria-label="$t('ariaSupportingImage')">
           <img
             class="aside__image"
             src="../../assets/why-vote-page-father-daughter-image-1.jpg"
