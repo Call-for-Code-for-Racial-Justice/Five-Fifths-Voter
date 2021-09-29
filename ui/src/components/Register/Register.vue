@@ -23,7 +23,9 @@
               >
             </template>
             <template v-slot:ymca>
-              <a href="https://www.ymcayag.org/vote/">{{ $t('registerYouth.2b') }}</a>
+              <a href="https://www.ymcayag.org/vote/" target="_blank">{{
+                $t('registerYouth.2b')
+              }}</a>
             </template>
           </i18n>
           <br /><br />
