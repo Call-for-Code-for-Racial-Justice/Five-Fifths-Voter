@@ -16,18 +16,26 @@
           <br /><br />
           {{ $t('registerYouth.1') }}
           <br /><br />
-          {{
-            $t('registerYouth.2', [
-              'https://registertovote.ca.gov/',
-              'https://www.ymcayag.org/vote/'
-            ])
-          }}
+          <i18n path="registerYouth.2">
+            <template v-slot:here>
+              <a href="https://registertovote.ca.gov/" target="_blank">
+                {{ $t('registerYouth.2a') }}</a
+              >
+            </template>
+            <template v-slot:ymca>
+              <a href="https://www.ymcayag.org/vote/">{{ $t('registerYouth.2b') }}</a>
+            </template>
+          </i18n>
           <br /><br />
-          {{
-            $t('registerYouth.3', [
-              'https://www.ncsl.org/research/elections-and-campaigns/preregistration-for-young-voters.aspx'
-            ])
-          }}
+          <i18n path="registerYouth.3">
+            <template v-slot:state>
+              <a
+                href="https://www.ncsl.org/research/elections-and-campaigns/preregistration-for-young-voters.aspx"
+                target="_blank"
+                >{{ $t('registerYouth.3a') }}</a
+              >
+            </template>
+          </i18n>
         </div>
       </aside>
     </template>
