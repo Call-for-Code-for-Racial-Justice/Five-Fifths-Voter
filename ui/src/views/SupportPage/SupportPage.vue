@@ -53,6 +53,10 @@
               {{ $t('supportDesc', ['Five Fifths Voter']) }}
             </p>
             <br />
+            <h4>
+              {{ $t('voterJourneyLAResources') }}
+            </h4>
+            <br />
             <div class="aside__link aside__container--links">
               <cv-link
                 class="aside__link"
