@@ -57,12 +57,20 @@
   flex-direction: column;
 }
 
-.aside__container--text {
-  padding: $spacing-05;
+.aside__container {
+  &--text {
+    padding: $spacing-05;
 
-  @media (min-width: 1056px) {
-    padding-left: 15%;
-    padding-right: $layout-05;
+    @media (min-width: 1056px) {
+      padding-left: 15%;
+      padding-right: $layout-05;
+    }
+    .bx--link {
+      color: $carbon--gray-10;
+    }
+    .bx--label {
+      color: $carbon--gray-10;
+    }
   }
 }
 

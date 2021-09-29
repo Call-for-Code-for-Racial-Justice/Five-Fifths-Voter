@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero img="mother-daughter-hero.jpeg" />
+    <Hero img="mother-daughter-hero.jpeg" role="complementary" :aria-label="$t('ariaHero')" />
     <AppHeader />
     <cv-content class="main-content" id="#main-content">
       <slot />

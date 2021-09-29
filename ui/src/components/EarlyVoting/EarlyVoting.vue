@@ -1,13 +1,17 @@
 <template>
   <MainContent>
     <template v-slot:content>
-      <aside class="aside">
+      <aside class="aside" :aria-label="$t('ariaEarly')">
         <div class="aside__container--text">
           <h2 class="aside__header">
             {{ $t('voteTitle') }}
           </h2>
           <p class="aside__description">
             {{ $t('voteTitleDesc', ['Five Fifths Voter']) }}
+          </p>
+          <br />
+          <p class="aside__description">
+            {{ $t('voteElectionMissing') }}
           </p>
           <div class="wrapper wrapper--address">
             <cv-select :label="$t('voteSelectElection')" v-model="electionId">
@@ -58,9 +62,7 @@
               <span v-if="absenteeVotingInfoUrl">
                 <cv-link :href="absenteeVotingInfoUrl"> Get Absentee Ballot</cv-link><br />
               </span>
-              <span v-if="!locationAvailable"
-                >No known locations. Check with your local election officials.
-              </span>
+              <span v-if="!locationAvailable"> {{ $t('voteEarlyNoLocationFound') }} </span>
               <cv-select v-if="electionList.length" label="Select Your Election">
                 <cv-select-option disabled selected hidden>Choose an election</cv-select-option>
                 <cv-select-option
@@ -95,7 +97,11 @@
       </aside>
     </template>
     <template v-slot:image>
-      <aside v-if="placeholderMap" class="aside__container--img">
+      <aside
+        v-if="placeholderMap"
+        class="aside__container--img"
+        :aria-label="$t('ariaSupportingImage')"
+      >
         <img class="aside__image" src="../../assets/holder-atlanta-map.png" alt="google map img" />
       </aside>
       <aside v-else>

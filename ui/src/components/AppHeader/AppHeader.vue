@@ -1,13 +1,13 @@
 <template>
-  <cv-header aria-label="Carbon header">
-    <cv-header-menu-button aria-label="Header menu" aria-controls="side-nav" />
+  <cv-header :aria-label="$t('ariaHeader')">
+    <cv-header-menu-button :aria-label="$t('ariaHeaderMenu')" aria-controls="side-nav" />
     <cv-skip-to-content href="#main-content">
       Skip to content
     </cv-skip-to-content>
     <cv-header-name :to="{ name: 'landing-page' }" prefix="">
       Five Fifths Voter
     </cv-header-name>
-    <cv-header-nav aria-label="Carbon nav">
+    <cv-header-nav :aria-label="$t('ariaMainMenu')">
       <cv-header-menu-item :to="{ name: 'why-page' }">
         {{ $t('appHeaderWhyVote') }}
       </cv-header-menu-item>
@@ -22,30 +22,11 @@
       </cv-header-menu-item>
     </cv-header-nav>
     <template v-slot:header-global>
-      <cv-header-global-action aria-label="User avatar" aria-controls="user-panel">
+      <cv-header-global-action :aria-label="$t('ariaUser')">
         <UserAvatar20 />
       </cv-header-global-action>
     </template>
-    <template v-slot:left-panels v-if="areLeftPanels">
-      <cv-side-nav id="side-nav" fixed>
-        <cv-side-nav-items>
-          <cv-header-side-nav-items>
-            <cv-header-menu-item :to="{ name: 'why-page' }">
-              Why Vote
-            </cv-header-menu-item>
-            <cv-header-menu-item :to="{ name: 'journey-page' }">
-              Voter Journey
-            </cv-header-menu-item>
-            <!-- <cv-header-menu-item :to="{ name: 'connect-page' }">
-              Get Connected
-            </cv-header-menu-item> -->
-            <cv-header-menu-item :to="{ name: 'support-page' }">
-              Voter Support
-            </cv-header-menu-item>
-          </cv-header-side-nav-items>
-        </cv-side-nav-items>
-      </cv-side-nav>
-    </template>
+    <template v-slot:left-panels> </template>
   </cv-header>
 </template>
 
@@ -56,11 +37,7 @@ export default {
   name: 'AppHeader',
   components: { UserAvatar20 },
   data() {
-    return {
-      areLeftPanels() {
-        return false;
-      }
-    };
+    return {};
   }
 };
 </script>

@@ -3,15 +3,19 @@
     <div class="bx--feature-card">
       <div class="bx--row">
         <div class="hero bx--no-gutter-md--left bx--col-lg-12">
-          <div class="bx--aspect-ratio bx--feature-card__img bx--aspect-ratio--16x9">
+          <div
+            class="bx--aspect-ratio bx--feature-card__img bx--aspect-ratio--16x9"
+            role="contentinfo"
+            :aria-label="$t('ariaHero')"
+          >
             <div class="bx--aspect-ratio--object bx--feature-background">
               <img class="hero__image" alt="" src="../../assets/ebrace-vote-gif.gif" />
             </div>
           </div>
         </div>
       </div>
-      <div class="hero__content">
-        <h1 class="hero__heading">{{ $t('welcomeMsg', ['Five Fifths Voter']) }}</h1>
+      <div class="hero__content" role="contentinfo" :aria-label="$t('ariaQuote')">
+        <h1 class="hero__heading">Five Fifths Voter</h1>
         <p class="hero__description">
           {{ $t('tagline') }}<br />{{ $t('subtagline') }}
           <br />
@@ -30,7 +34,11 @@
         >
           <div target="_blank" rel="noopener noreferrer" class="bx--resource-card">
             <div class="bx--aspect-ratio bx--aspect-ratio--2x1">
-              <div class="bx--aspect-ratio--object">
+              <div
+                class="bx--aspect-ratio--object"
+                role="navigation"
+                :aria-label="$t('ariaQuickWhy')"
+              >
                 <router-link class="bx--feature-card__link" to="/whyvote">
                   <div class="bx--tile">
                     <h4 class="bx--resource-card__title">{{ $t('whyVoteBtn') }}</h4>
@@ -40,7 +48,7 @@
                         fill="#fff"
                         focusable="false"
                         preserveAspectRatio="xMidYMid meet"
-                        aria-label="Open resource"
+                        :aria-label="$t('ariaOpen')"
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
                         height="20"

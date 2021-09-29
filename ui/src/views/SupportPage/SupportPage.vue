@@ -5,9 +5,13 @@
     </div>
     <MainContent>
       <template v-slot:content>
-        <aside class="aside">
+        <aside class="aside" :aria-label="$t('supportResources')">
           <div class="aside__container--text">
             <h2 class="aside__header">{{ $t('supportResources') }}</h2>
+            <p>
+              {{ $t('supportDesc', ['Five Fifths Voter']) }}
+            </p>
+            <br />
             <div class="aside__link aside__container--links">
               <cv-link
                 class="aside__link"
@@ -43,16 +47,34 @@
                 target="_blank"
               >
                 {{ $t('supportDisabled') }} &rarr;</cv-link
-              ><br />
+              >
             </div>
             <p>
               {{ $t('supportDesc', ['Five Fifths Voter']) }}
             </p>
+            <br />
+            <div class="aside__link aside__container--links">
+              <cv-link
+                class="aside__link"
+                href="https://www.lavote.net/home/voting-elections/current-elections/upcoming-elections#"
+                target="_blank"
+              >
+                {{ $t('supportLA.1') }} &rarr;</cv-link
+              >
+              <br />
+              <cv-link
+                class="aside__link"
+                href="https://clerk.lacity.org/clerk-services/elections"
+                target="_blank"
+              >
+                {{ $t('supportLA.2') }} &rarr;</cv-link
+              >
+            </div>
           </div>
         </aside>
       </template>
       <template v-slot:image>
-        <aside class="aside__container--img">
+        <aside class="aside__container--img" :aria-label="$t('ariaSupportingImage')">
           <img
             class="aside__image"
             src="../../assets/support-page-father-baby-image-1.jpg"

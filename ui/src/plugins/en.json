@@ -59,6 +59,12 @@
   "registerDesc": "Voting is the perfect way for you to unite and implement change in your communities, state-wide and nationally.",
   "registerCheckVotingStatus": "Check voting status",
   "registerRegisterToVote": " Register to vote",
+  "registerYouth.1":"Aged 17-18? Did you know you can preregister to vote?",
+  "registerYouth.2": "California: Find out how {here}. The {ymca} can also support you.",
+  "registerYouth.2a": "here",
+  "registerYouth.2b": "YMCA LA",
+  "registerYouth.3": "National: Find your {state}",
+  "registerYouth.3a": "state requirements",
 
   "absenteeTitle": "Can't be there? Let us help you connect",
   "absenteeDesc": "Absentee voting is as easy as signing up before your state's deadline.",
@@ -80,6 +86,8 @@
   "voteEarlyVotingBtn": "Early Voting",
   "votePollingLocationBtn": "Polling Location",
   "voteAddressLabel": "Address where you are registered to vote",
+  "voteElectionMissing": "If you cannot find your election, the information may not be available through the Google Civic Information API right now. Check out the 'Get Informed' tab to find out more information about your state elections.",
+  "voteEarlyNoLocationFound": "No known locations. Check with your local election officials. Use the links provided to verify voting information. This state information may not be available through the Google Civic Information API right now.",
 
   "ballotTitle": "Find your local ballot dropbox",
   "ballotDropBtn": "Show Ballot Drop Off Locations",
@@ -96,6 +104,24 @@
   "supportMailVoting": "Mail-in voting instructions",
   "supportFelons": "Voting for felons",
   "supportDisabled": "Voter tips for the disabled",
-  "supportDesc": "Each voter’s journey is different. {0} can put you on the right path to reclaiming voter confidence. Please visit our support channels to help guide you.",
-  "supportImgAlt": "Man lounges on beanbag chair while browsing on his laptop"
+  "supportDesc": "Each voter’s journey is different. {0} can put you on the right path to reclaiming voter confidence.",
+  "supportImgAlt": "Man lounges on beanbag chair while browsing on his laptop",
+  "supportLA.1":"Current and future elections",
+  "supportLA.2": "Election services",
+
+  "ariaAbsenteeInfo": "absentee ballot information",
+  "ariaMainMenu": "main menu",
+  "ariaHeaderMenu": "Header menu",
+  "ariaHeader": "header",
+  "ariaUser": "User avatar",
+  "ariaWhere": "where to vote information",
+  "ariaEarly": "early voting information",
+  "ariaHero": "hero image",
+  "ariaQuote": "hero quote",
+  "ariaQuickWhy": "quick link to why vote",
+  "ariaRegister": "register to vote information",
+  "ariaInformed": "get informed about voting",
+  "ariaWhy": "why to vote information",
+  "ariaSupportingImage": "supporting image",
+  "ariaOpen": "Open resource"
 }
