@@ -50,6 +50,21 @@ import i18n from '@/plugins/i18n';
 export default {
   name: 'AppHeader',
   components: { UserAvatar20, Language32 },
+  mounted() {
+    this.$watch(
+      '$i18n.locale',
+      (newLocale, oldLocale) => {
+        if (newLocale === oldLocale) {
+          return;
+        }
+
+        setDocumentLang(newLocale);
+
+        setDocumentDirectionPerLocale(newLocale);
+      },
+      { immediate: true }
+    );
+  },
   data() {
     return {
       languages: [
@@ -74,6 +89,14 @@ export default {
     }
   }
 };
+
+export function setDocumentDirectionPerLocale(locale) {
+  document.dir = ['ar', 'fa'].includes(locale) ? 'rtl' : 'ltr';
+}
+
+export function setDocumentLang(lang) {
+  document.documentElement.lang = lang;
+}
 </script>
 
 <style lang="scss">
