@@ -25,6 +25,18 @@
       <cv-header-global-action :aria-label="$t('ariaUser')">
         <UserAvatar20 />
       </cv-header-global-action>
+      <cv-overflow-menu :flip-menu="ltr" :label="$t('ariaLanguageSetting')">
+        <template slot="trigger">
+          <Language32 />
+        </template>
+        <cv-overflow-menu-item
+          v-for="entry in languages"
+          :key="entry.title"
+          @click="changeLocale(entry.language)"
+        >
+          {{ entry.title }}
+        </cv-overflow-menu-item>
+      </cv-overflow-menu>
     </template>
     <template v-slot:left-panels>
       <cv-side-nav id="side-nav" fixed>
@@ -51,14 +63,61 @@
 
 <script>
 import UserAvatar20 from '@carbon/icons-vue/lib/user--avatar/20';
+import Language32 from '@carbon/icons-vue/lib/language/32';
+import i18n from '@/plugins/i18n';
 
 export default {
   name: 'AppHeader',
-  components: { UserAvatar20 },
+  components: { UserAvatar20, Language32 },
+  mounted() {
+    this.$watch(
+      '$i18n.locale',
+      (newLocale, oldLocale) => {
+        if (newLocale === oldLocale) {
+          return;
+        }
+
+        setDocumentLang(newLocale);
+
+        setDocumentDirectionPerLocale(newLocale);
+      },
+      { immediate: true }
+    );
+  },
   data() {
-    return {};
+    return {
+      ltr: true,
+      languages: [
+        { flag: '', language: 'en', title: 'English' },
+        { flag: '', language: 'es', title: 'Español' },
+        { flag: '', language: 'hi', title: 'हिंदी' },
+        { flag: '', language: 'kr', title: '한국어' },
+        { flag: '', language: 'sc', title: '汉语' },
+        { flag: '', language: 'zh', title: '漢語' },
+        { flag: '', language: 'ru', title: 'русский' },
+        { flag: '', language: 'ar', title: 'اللغة العربية' },
+        { flag: '', language: 'fa', title: ' زبان فارسی' },
+        { flag: '', language: 'ja', title: '日本語' },
+        { flag: '', language: 'tl', title: 'Tagalog' },
+        { flag: '', language: 'vn', title: 'ngôn ngữ tiếng Việt' }
+      ]
+    };
+  },
+  methods: {
+    changeLocale(locale) {
+      i18n.locale = locale;
+      this.ltr = !['ar', 'fa'].includes(locale);
+    }
   }
 };
+
+export function setDocumentDirectionPerLocale(locale) {
+  document.dir = ['ar', 'fa'].includes(locale) ? 'rtl' : 'ltr';
+}
+
+export function setDocumentLang(lang) {
+  document.documentElement.lang = lang;
+}
 </script>
 
 <style lang="scss">

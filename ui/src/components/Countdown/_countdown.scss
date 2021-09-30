@@ -15,6 +15,14 @@
 .vuejs-countdown .text {
   @include carbon--type-style('productive-heading-06');
   text-transform: capitalize !important;
+  font-size: 12px !important;
+
+  @media (min-width: 1063px) {
+    font-size: 20px !important;
+  }
+}
+
+.vuejs-countdown .digit {
   font-size: 28px !important;
 
   @media (min-width: 1063px) {
@@ -22,22 +30,15 @@
   }
 }
 
-.vuejs-countdown .digit {
-  font-size: 12vw !important;
-
-  @media (min-width: 1063px) {
-    font-size: 14vw !important;
-  }
-}
-
 .vuejs-countdown li:after {
-  top: 5% !important;
-  right: -20% !important;
-  font-size: 12vw !important;
+  top: 12px !important;
+  right: -12px !important;
+  font-size: 12px !important;
 
   @media (min-width: 1063px) {
-    right: -15% !important;
-    font-size: 16vw !important;
+    top: 24px !important;
+    right: -15px !important;
+    font-size: 20px !important;
   }
 }
 
