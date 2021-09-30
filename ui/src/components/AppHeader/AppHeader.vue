@@ -25,7 +25,7 @@
       <cv-header-global-action :aria-label="$t('ariaUser')">
         <UserAvatar20 />
       </cv-header-global-action>
-      <cv-overflow-menu :flip-menu="true" :label="$t('ariaLanguageSetting')">
+      <cv-overflow-menu :flip-menu="ltr" :label="$t('ariaLanguageSetting')">
         <template slot="trigger">
           <Language32 />
         </template>
@@ -67,6 +67,7 @@ export default {
   },
   data() {
     return {
+      ltr: true,
       languages: [
         { flag: '', language: 'en', title: 'English' },
         { flag: '', language: 'es', title: 'Español' },
@@ -86,6 +87,7 @@ export default {
   methods: {
     changeLocale(locale) {
       i18n.locale = locale;
+      this.ltr = !['ar', 'fa'].includes(locale);
     }
   }
 };
