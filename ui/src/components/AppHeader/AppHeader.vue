@@ -34,7 +34,7 @@
           :key="entry.title"
           @click="changeLocale(entry.language)"
         >
-          { entry.title }}
+          {{ entry.title }}
         </cv-overflow-menu-item>
       </cv-overflow-menu>
     </template>
