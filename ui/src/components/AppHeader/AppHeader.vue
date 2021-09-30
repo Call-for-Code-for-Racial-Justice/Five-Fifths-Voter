@@ -25,21 +25,18 @@
       <cv-header-global-action :aria-label="$t('ariaUser')">
         <UserAvatar20 />
       </cv-header-global-action>
-        <cv-overflow-menu
-          :flip-menu=true
-          :label="$t('ariaLanguageSetting')"
+      <cv-overflow-menu :flip-menu="true" :label="$t('ariaLanguageSetting')">
+        <template slot="trigger">
+          <Language32 />
+        </template>
+        <cv-overflow-menu-item
+          v-for="entry in languages"
+          :key="entry.title"
+          @click="changeLocale(entry.language)"
         >
-          <template slot="trigger"> 
-            <Language32 /> 
-          </template>
-          <cv-overflow-menu-item
-            v-for="entry in languages"
-            :key="entry.title"
-            @click="changeLocale(entry.language)"
-          >
-            {{ entry.title }}
-          </cv-overflow-menu-item>
-        </cv-overflow-menu>
+          { entry.title }}
+        </cv-overflow-menu-item>
+      </cv-overflow-menu>
     </template>
     <template v-slot:left-panels> </template>
   </cv-header>
@@ -74,7 +71,7 @@ export default {
   methods: {
     changeLocale(locale) {
       i18n.locale = locale;
-    },
+    }
   }
 };
 </script>
