@@ -25,7 +25,20 @@
       <cv-header-global-action :aria-label="$t('ariaUser')">
         <UserAvatar20 />
       </cv-header-global-action>
-      <cv-overflow-menu :flip-menu="ltr" :label="$t('ariaLanguageSetting')">
+      <cv-header-global-action
+        :aria-label="$t('ariaLanguageSetting')"
+        aria-controls="language-panel"
+        :label="$t('ariaLanguageSetting')"
+        tipPosition="bottom"
+        tipAlignment="end"
+      >
+        <Language32 />
+      </cv-header-global-action>
+      <!-- <cv-overflow-menu
+        :flip-menu="true"
+        :label="$t('ariaLanguageSetting')"
+        :offset="{ left: 0, top: 200 }"
+      >
         <template slot="trigger">
           <Language32 />
         </template>
@@ -36,27 +49,42 @@
         >
           {{ entry.title }}
         </cv-overflow-menu-item>
-      </cv-overflow-menu>
+      </cv-overflow-menu> -->
     </template>
     <template v-slot:left-panels>
       <cv-side-nav id="side-nav" fixed>
         <cv-side-nav-items>
           <cv-header-side-nav-items>
             <cv-header-menu-item :to="{ name: 'why-page' }">
-              Why Vote
+              {{ $t('appHeaderWhyVote') }}
             </cv-header-menu-item>
             <cv-header-menu-item :to="{ name: 'journey-page' }">
-              Voter Journey
+              {{ $t('appHeaderVoterJourney') }}
             </cv-header-menu-item>
             <!-- <cv-header-menu-item :to="{ name: 'connect-page' }">
               Get Connected
             </cv-header-menu-item> -->
             <cv-header-menu-item :to="{ name: 'support-page' }">
-              Voter Support
+              {{ $t('appHeaderVoterSupport') }}
             </cv-header-menu-item>
           </cv-header-side-nav-items>
         </cv-side-nav-items>
       </cv-side-nav>
+    </template>
+    <template v-slot:right-panels>
+      <cv-header-panel id="language-panel">
+        <cv-switcher>
+          <cv-switcher-item v-for="entry in languages" :key="entry.title">
+            <cv-switcher-item-link
+              href="#"
+              @click="changeLocale(entry.language)"
+              :selected="entry.language === currentLocale"
+            >
+              {{ entry.title }}
+            </cv-switcher-item-link>
+          </cv-switcher-item>
+        </cv-switcher>
+      </cv-header-panel>
     </template>
   </cv-header>
 </template>
@@ -86,7 +114,6 @@ export default {
   },
   data() {
     return {
-      ltr: true,
       languages: [
         { flag: '', language: 'en', title: 'English' },
         { flag: '', language: 'es', title: 'Español' },
@@ -103,10 +130,14 @@ export default {
       ]
     };
   },
+  computed: {
+    currentLocale() {
+      return i18n.locale;
+    }
+  },
   methods: {
     changeLocale(locale) {
       i18n.locale = locale;
-      this.ltr = !['ar', 'fa'].includes(locale);
     }
   }
 };
