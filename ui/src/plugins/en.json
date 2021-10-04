@@ -71,6 +71,9 @@
   "absenteeRequest": "Request an absentee ballot",
   "absenteeImageAlt": "stock image of voters at a voting poll",
 
+  "notfoundTitle": "Page Not Found",
+  "notfoundDesc": "Redirecting...",
+
   "getInformedTitle": "Candidates, deadlines and resources",
   "getInformedDropDown": "Choose your state for information",
 

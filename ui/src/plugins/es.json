@@ -57,6 +57,8 @@
   "absenteeDesc": "Para votar por correo solo debe inscribirse antes de la fecha límite establecida por su estado.",
   "absenteeRequest": "Solicite una boleta para emitir su voto por correo",
   "absenteeImageAlt": "imagen de archivo de votantes en un centro electoral",
+  "notfoundTitle": "Página no encontrada",
+  "notfoundDesc": "Redireccionando...",
   "getInformedTitle": "Candidatos, plazos y recursos",
   "getInformedDropDown": "Elija su estado para obtener información",
   "getInformedDisplay.1": "Identificaciones aceptables",
