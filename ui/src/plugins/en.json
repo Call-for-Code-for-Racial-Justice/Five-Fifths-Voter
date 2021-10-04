@@ -125,5 +125,7 @@
   "ariaInformed": "get informed about voting",
   "ariaWhy": "why to vote information",
   "ariaSupportingImage": "supporting image",
-  "ariaOpen": "Open resource"
+  "ariaOpen": "Open resource",
+
+  "mobilenav": "mobile navigation"
 }

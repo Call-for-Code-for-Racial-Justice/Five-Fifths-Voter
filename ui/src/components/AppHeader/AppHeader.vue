@@ -14,9 +14,6 @@
       <cv-header-menu-item :to="{ name: 'journey-page' }">
         {{ $t('appHeaderVoterJourney') }}
       </cv-header-menu-item>
-      <!-- <cv-header-menu-item :to="{ name: 'connect-page' }">
-        {{ $t('appHeaderGetConnected') }}
-      </cv-header-menu-item> -->
       <cv-header-menu-item :to="{ name: 'support-page' }">
         {{ $t('appHeaderVoterSupport') }}
       </cv-header-menu-item>
@@ -29,30 +26,12 @@
         :aria-label="$t('ariaLanguageSetting')"
         aria-controls="language-panel"
         :label="$t('ariaLanguageSetting')"
-        tipPosition="bottom"
-        tipAlignment="end"
       >
         <Language32 />
       </cv-header-global-action>
-      <!-- <cv-overflow-menu
-        :flip-menu="true"
-        :label="$t('ariaLanguageSetting')"
-        :offset="{ left: 0, top: 200 }"
-      >
-        <template slot="trigger">
-          <Language32 />
-        </template>
-        <cv-overflow-menu-item
-          v-for="entry in languages"
-          :key="entry.title"
-          @click="changeLocale(entry.language)"
-        >
-          {{ entry.title }}
-        </cv-overflow-menu-item>
-      </cv-overflow-menu> -->
     </template>
     <template v-slot:left-panels>
-      <cv-side-nav id="side-nav" fixed>
+      <cv-side-nav id="side-nav" fixed :aria-label="$t('mobilenav')">
         <cv-side-nav-items>
           <cv-header-side-nav-items>
             <cv-header-menu-item :to="{ name: 'why-page' }">
@@ -76,7 +55,6 @@
         <cv-switcher>
           <cv-switcher-item v-for="entry in languages" :key="entry.title">
             <cv-switcher-item-link
-              href="#"
               @click="changeLocale(entry.language)"
               :selected="entry.language === currentLocale"
             >
