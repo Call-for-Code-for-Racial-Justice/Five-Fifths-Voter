@@ -8,7 +8,7 @@
       <div class="bx--row landing-page__r2">
         <div class="bx--col-lg-16">
           <section>
-            <aside class="content--register">
+            <aside class="content--register" :aria-label="$t('notfoundDesc')">
               <p>{{ $t('notfoundDesc') }}</p>
             </aside>
           </section>
