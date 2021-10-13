@@ -1,3 +1,4 @@
+# Not needed for deployment
 FROM node:14
 RUN git --version
 RUN apt update

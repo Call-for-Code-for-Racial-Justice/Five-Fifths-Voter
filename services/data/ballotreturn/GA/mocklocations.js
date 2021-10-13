@@ -1,10 +1,10 @@
 module.exports = Object.freeze({
-  version: '1.0.0',
+  version: "1.0.0",
   list: [
     {
-      state: 'GA',
-      place: 'FULTON',
-      scrapeURL: '',
+      state: "GA",
+      place: "FULTON",
+      scrapeURL: "",
       dom: `
         <table align="center" border="0" width="800" cellpadding="4" cellspacing="2" id="Table1">
         <tbody>
@@ -348,9 +348,9 @@ module.exports = Object.freeze({
       `,
     },
     {
-      state: 'GA',
-      place: 'ATKINSON',
-      scrapeURL: '',
+      state: "GA",
+      place: "ATKINSON",
+      scrapeURL: "",
       dom: `
         <table align="center" border="0" width="800" cellpadding="4" cellspacing="2" id="Table1">
         <tbody>
