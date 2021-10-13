@@ -26,7 +26,7 @@
     -  https://console.cloud.google.com/ 
     -  https://developers.google.com/civic-information/docs/using_api
   - If you skip these steps Twitter information will not be available locally.
-  - The `NODE_CACHE_DB*` parameters do not need to be changed. They will allow connection to a local Mongo DB
+  - The `NODE_CACHE_DB*` parameters do not need to be changed.
   - The DEPLOYED version of all of the above are secrets maintained in Open Shift. You should **NEVER** add your .env file (or any other file with secrets) to git.
   - To test twitter directly you need to export the values from the .env file above like this:
     ```sh
