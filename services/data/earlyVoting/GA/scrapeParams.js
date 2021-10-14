@@ -162,4 +162,4 @@ module.exports = Object.freeze({
   WILKES: { townId: "157", SubmitCounty: "Submit", nmTown: "WILKES" },
   WILKINSON: { townId: "158", SubmitCounty: "Submit", nmTown: "WILKINSON" },
   WORTH: { townId: "159", SubmitCounty: "Submit", nmTown: "WORTH" },
-});
+})
