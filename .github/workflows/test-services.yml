@@ -1,4 +1,7 @@
 on:
+  push:
+    branches:
+      - "**"
   pull_request_target:
     branches:
       - main
@@ -14,8 +17,6 @@ jobs:
         node-version: [14.x]
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.merge.sha }}
       - name: Node ${{ matrix.node-version }}
         with:
           node-version: ${{ matrix.node-version }}
