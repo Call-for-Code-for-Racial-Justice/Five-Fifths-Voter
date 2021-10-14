@@ -22,4 +22,4 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Run ci-check
-        run: yarn ci-check
+        run: yarn ci-check --loglevel debug
