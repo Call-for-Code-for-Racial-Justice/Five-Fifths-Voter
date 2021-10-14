@@ -25,6 +25,4 @@ jobs:
           cache-dependency-path: '**/yarn.lock'
       - name: Install dependencies
         run: yarn
-      - run: yarn run build
-      - run: yarn run test:unit
-      - run: yarn run lint
+      - run: yarn ci-check
