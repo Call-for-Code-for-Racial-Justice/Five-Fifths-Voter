@@ -10,7 +10,7 @@
     "start": "node services.js",
     "serve": "nodemon services.js",
     "deploy": "ibmcloud cf push",
-    "ci-check": "yarn format:diff",
+    "ci-check": "yarn format:diff --loglevel debug",
     "ci-format": "prettier --write \"**/*.js\"",
     "format:diff": "prettier --list-different \"**/*.js\""
   },

@@ -8,7 +8,7 @@ require("dotenv-flow").config({ default_node_env: "development" });
 var isDevelopment =
   process.env.NODE_ENV === "development" || process.env.NODE_ENV === undefined;
 
-const port = 8080;
+  const port = 8080; //TODO allow pport to be set via process.env.PORT
 const app = express();
 app.use(bodyParser.json());
 const about = {

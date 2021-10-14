@@ -1,4 +1,4 @@
-# Not needed for deployment
+# Not needed for local development or deployment. (We may want to use Code Engine in the future)
 FROM node:14
 RUN git --version
 RUN apt update
