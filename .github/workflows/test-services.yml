@@ -19,7 +19,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
           cache-dependency-path: "**/yarn.lock"
+      #
+      # CAUTION: These steps run on code in the the PR. They should not execute any code that might be included in the PR.
+      # See: https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions
+      #
       - name: Install dependencies
         run: yarn
       - name: Run ci-check
-        run: yarn ci-check --loglevel debug
+        run: yarn ci-check
