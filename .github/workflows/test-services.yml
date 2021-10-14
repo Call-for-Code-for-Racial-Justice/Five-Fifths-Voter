@@ -24,7 +24,5 @@ jobs:
           cache-dependency-path: '**/yarn.lock'
       - name: Install dependencies
         run: yarn
-	run: echo ${GITHUB_SHA}
-        run: echo ${GITHUB_REF}
       - name: Run ci-check
         run: yarn ci-check
