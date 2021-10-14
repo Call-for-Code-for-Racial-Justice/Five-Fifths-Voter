@@ -384,4 +384,4 @@ module.exports = Object.freeze({
       `,
     },
   ],
-});
+})
