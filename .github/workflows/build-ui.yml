@@ -28,6 +28,6 @@ jobs:
       - name: Run unit tests
         run: yarn run test:unit
       - name: Checkout code format
-        run: yarn run lint
+        run: yarn ci-format
       - name: Simulate production build
         run: yarn build
