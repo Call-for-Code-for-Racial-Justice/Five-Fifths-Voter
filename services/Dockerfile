@@ -1,6 +1,5 @@
 # Not needed for local development or deployment.
 # NOTE: We may want to use this with Code Engine in the future.
-# action test
 FROM node:14
 RUN git --version
 RUN apt update
