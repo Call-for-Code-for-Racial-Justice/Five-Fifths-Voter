@@ -10,7 +10,8 @@
     "ci-format": "prettier --write \"src/**/*.{js,vue,scss}\"",
     "format:diff": "prettier --list-different \"src/**/*.{js,vue,scss}\"",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "test:a11y": "vue-cli-service test:unit --testPathPattern=a11y"
   },
   "engines": {
     "node": "14.x"
