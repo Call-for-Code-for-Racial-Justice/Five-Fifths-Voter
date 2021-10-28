@@ -3,9 +3,9 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.fivefifthsvoter",
+      "package_name": "com.fivefifthsvoter1",
       "sha256_cert_fingerprints": [
-        "33:87:4D:30:A9:04:47:C2:97:6B:AE:21:81:1F:DD:E1:19:DB:CF:77:A5:AA:32:DC:71:BD:F4:99:59:24:6C:6D"
+        "C5:6B:76:4B:A9:4E:00:01:26:4B:1E:C5:13:01:A2:2F:D7:F3:F4:2F:55:45:99:DE:00:B6:27:E8:15:BF:21:4A"
       ]
     }
   }
