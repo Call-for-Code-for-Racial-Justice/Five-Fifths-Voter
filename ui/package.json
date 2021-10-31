@@ -115,7 +115,7 @@
     ]
   },
   "engines": {
-    "node": "14.x"
+    "node": ">=14.x"
   },
   "resolutions": {
     "serialize-javascript": "^3",

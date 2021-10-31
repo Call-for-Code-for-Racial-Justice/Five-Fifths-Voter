@@ -16,7 +16,7 @@
     "postinstall": "cd .. && husky install"
   },
   "engines": {
-    "node": "14.x"
+    "node": ">=14.x"
   },
   "dependencies": {
     "@cloudant/cloudant": "^4.3.0",
