@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@cloudant/cloudant": "^4.3.0",
-    "axios": "^0.20.0",
+    "axios": "^0.24.0",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "dotenv-flow": "^3.2.0",
