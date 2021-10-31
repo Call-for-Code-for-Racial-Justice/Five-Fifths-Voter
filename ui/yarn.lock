@@ -1979,10 +1979,10 @@
   resolved "https://registry.yarnpkg.com/@vue/preload-webpack-plugin/-/preload-webpack-plugin-1.1.2.tgz#ceb924b4ecb3b9c43871c7a429a02f8423e621ab"
   integrity sha512-LIZMuJk38pk9U9Ur4YzHjlIyMuxPlACdBIHH9/nGYVTsaGKOSnSuELiE8vS9wa+dJpIYspYUOqk+L1Q4pgHQHQ==
 
-"@vue/test-utils@1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.1.2.tgz#fdb487448dceefeaf3d01d465f7c836a3d666dbc"
-  integrity sha512-utbIL7zn9c+SjhybPwh48lpWCiluFCbP1yyRNAy1fQsw/6hiNFioaWy05FoVAFIZXC5WwBf+5r4ypfM1j/nI4A==
+"@vue/test-utils@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.2.2.tgz#0242ea4e202d4853541bb167fead3f2249140ab7"
+  integrity sha512-P+yiAsszoy8z1TqXiVUnAZaJj0WGGz5fCxm4bOSI6Cpwy1+PNYwYxDv0ROAA/SUtOPppV+aD8tp/QWwxf8ROJw==
   dependencies:
     dom-event-types "^1.0.0"
     lodash "^4.17.15"
@@ -11586,7 +11586,7 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-plugin-load-script@^1.3.2:
+vue-plugin-load-script@^1.3.5:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/vue-plugin-load-script/-/vue-plugin-load-script-1.3.5.tgz#1ed078cf44fdc819411df66e1dae7a0ea0c0aafd"
   integrity sha512-ttXwyebnKjXIwtNePoo1IN86965GSZlyhZX4baLCufE3/nn27iUY7V56HPbHnOHn9U/N01Az45aJr+ZSJEPfxA==
