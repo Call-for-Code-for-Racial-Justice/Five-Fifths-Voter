@@ -118,8 +118,8 @@
     "node": ">=14.x"
   },
   "resolutions": {
-    "serialize-javascript": "^3",
+    "serialize-javascript": "^6",
     "node-forge": "^0.10",
-    "yargs-parser": "^18"
+    "yargs-parser": "^20"
   }
 }
