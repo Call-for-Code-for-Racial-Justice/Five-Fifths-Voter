@@ -25,7 +25,7 @@
     "dotenv": "^10.0.0",
     "dotenv-flow": "^3.2.0",
     "express": "^4.17.1",
-    "jsdom": "^16.4.0",
+    "jsdom": "^18.0.0",
     "lodash": "^4.17.19",
     "prettier": "^2.0.5"
   },
