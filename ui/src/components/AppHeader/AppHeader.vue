@@ -1,12 +1,8 @@
 <template>
   <cv-header :aria-label="$t('ariaHeader')">
     <cv-header-menu-button :aria-label="$t('ariaHeaderMenu')" aria-controls="side-nav" />
-    <cv-skip-to-content href="#main-content">
-      Skip to content
-    </cv-skip-to-content>
-    <cv-header-name :to="{ name: 'landing-page' }" prefix="">
-      Five Fifths Voter
-    </cv-header-name>
+    <cv-skip-to-content href="#main-content"> Skip to content </cv-skip-to-content>
+    <cv-header-name :to="{ name: 'landing-page' }" prefix=""> Five Fifths Voter </cv-header-name>
     <cv-header-nav :aria-label="$t('ariaMainMenu')">
       <cv-header-menu-item :to="{ name: 'why-page' }">
         {{ $t('appHeaderWhyVote') }}
@@ -104,20 +100,20 @@ export default {
         { flag: '', language: 'fa', title: ' زبان فارسی' },
         { flag: '', language: 'ja', title: '日本語' },
         { flag: '', language: 'tl', title: 'Tagalog' },
-        { flag: '', language: 'vn', title: 'ngôn ngữ tiếng Việt' }
-      ]
+        { flag: '', language: 'vn', title: 'ngôn ngữ tiếng Việt' },
+      ],
     };
   },
   computed: {
     currentLocale() {
       return i18n.locale;
-    }
+    },
   },
   methods: {
     changeLocale(locale) {
       i18n.locale = locale;
-    }
-  }
+    },
+  },
 };
 
 export function setDocumentDirectionPerLocale(locale) {

@@ -14,7 +14,7 @@
 <script>
 export default {
   name: 'MainContent',
-  props: ['childData']
+  props: ['childData'],
   //pagelayout needs prop for backgroundImg
 };
 </script>

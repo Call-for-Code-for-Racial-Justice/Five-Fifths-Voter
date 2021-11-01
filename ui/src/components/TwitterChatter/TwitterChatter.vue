@@ -66,59 +66,59 @@ export default {
         {
           value: 'realDonaldTrump',
           label: 'Donald Trump',
-          name: 'realDonaldTrump'
+          name: 'realDonaldTrump',
         },
         {
           value: 'JoeBiden',
           label: 'Joe Biden',
-          name: 'JoeBiden'
+          name: 'JoeBiden',
         },
         {
           value: 'VP',
           label: 'Mike Pence',
-          name: 'VP'
+          name: 'VP',
         },
         {
           value: 'KamalaHarris',
           label: 'Kamala Harris',
-          name: 'KamalaHarris'
+          name: 'KamalaHarris',
         },
         {
           value: 'BarackObama',
           label: 'Barack Obama',
-          name: 'BarackObama'
+          name: 'BarackObama',
         },
         {
           value: 'TheBushCenter',
           label: 'George W. Bush',
-          name: 'GeorgeWBush'
+          name: 'GeorgeWBush',
         },
         {
           value: 'BillClinton',
           label: 'Bill Clinton',
-          name: 'BillClinton'
+          name: 'BillClinton',
         },
         {
           value: 'Bush41Library',
           label: 'George Bush',
-          name: 'Bush41Library'
+          name: 'Bush41Library',
         },
         {
           value: 'RonaldReagan',
           label: 'Ronald Reagan',
-          name: 'RonaldReagan'
+          name: 'RonaldReagan',
         },
         {
           value: 'Someone',
           label: 'Someone',
-          name: 'Someone'
-        }
-      ]
+          name: 'Someone',
+        },
+      ],
     };
   },
   mounted() {},
   methods: {
-    checkChatter: function() {
+    checkChatter: function () {
       eval('console.log(this.$refs.r_combo)');
       this.twitter_chatter = { items: [] };
       this.loadingChatter = true;
@@ -126,33 +126,33 @@ export default {
         .get('/twitter/chatter', {
           baseURL: process.env.VUE_APP_SERVICE_API_HOST,
           params: {
-            screenname: this.screenname
-          }
+            screenname: this.screenname,
+          },
         })
-        .then(response => {
+        .then((response) => {
           this.loadingChatter = false;
           this.twitter_chatter = response.data;
           this.haveTweets = this.twitter_chatter.items.length > 0;
         })
-        .catch(error => {
+        .catch((error) => {
           error;
           this.loadingChatter = false;
           this.tweetError = true;
           this.haveTweets = false;
         });
     },
-    actionFilter: function(evt) {
+    actionFilter: function (evt) {
       this.options.pop();
       if (evt.length === 0)
         this.options.push({
           name: 'Someone',
           value: 'Someone',
-          label: 'Choose another name'
+          label: 'Choose another name',
         });
       else this.options.push({ name: evt, value: evt, label: evt });
       this.screenname = evt;
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -100,7 +100,7 @@ export default {
   components: { PageLayout, MainContent },
   data() {
     return {
-      regData: {}
+      regData: {},
     };
   },
   created() {
@@ -109,7 +109,7 @@ export default {
   methods: {
     navigate() {
       router.go(-1);
-    }
-  }
+    },
+  },
 };
 </script>

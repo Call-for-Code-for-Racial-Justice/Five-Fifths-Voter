@@ -59,12 +59,12 @@ export default {
     EarlyVoting,
     BallotReturn,
     VoteNow,
-    PageLayout
+    PageLayout,
   },
   data() {
     return {
       complete: [false, false, false, false, false],
-      container: true
+      container: true,
     };
   },
   created() {
@@ -73,8 +73,8 @@ export default {
   methods: {
     showStep() {
       this.complete = [true, false, false, false, false];
-    }
-  }
+    },
+  },
 };
 </script>
 

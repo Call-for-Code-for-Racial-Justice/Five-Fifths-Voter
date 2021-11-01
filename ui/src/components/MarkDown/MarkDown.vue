@@ -10,17 +10,17 @@ const markdown = require('markdown-it')();
 export default {
   name: 'MarkDown',
   props: {
-    content: { type: String, default: '' }
+    content: { type: String, default: '' },
   },
-  data: function() {
+  data: function () {
     return {
-      mdContent: ''
+      mdContent: '',
     };
   },
   watch: {
     content() {
       this.updateMarkDown();
-    }
+    },
   },
   created() {
     this.updateMarkDown();
@@ -28,8 +28,8 @@ export default {
   methods: {
     updateMarkDown() {
       this.mdContent = markdown.render(this.content);
-    }
-  }
+    },
+  },
 };
 </script>
 

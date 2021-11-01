@@ -33,17 +33,17 @@ import { mapSettings } from './constants/mapSettings';
 export default {
   components: {
     GoogleMapLoader,
-    GoogleMapMarker
+    GoogleMapMarker,
   },
   props: {
     markers: Array,
-    home: String
+    home: String,
   },
   data() {
     return {
       apiKey: process.env.VUE_APP_GOOGLE_MAP_API_KEY,
       markerRefs: [],
-      centerRef: []
+      centerRef: [],
     };
   },
   watch: {},
@@ -52,13 +52,13 @@ export default {
       return {
         id: this.home,
         position: { address: this.home },
-        title: 'Voter Address'
+        title: 'Voter Address',
       };
     },
     mapConfig() {
       return {
         ...mapSettings,
-        center: this.mapCenter
+        center: this.mapCenter,
       };
     },
     mapCenter() {
@@ -72,8 +72,8 @@ export default {
         cntr = pos;
       } else cntr = { lat: 38.889805, lng: -77.009056 };
       return cntr;
-    }
+    },
   },
-  methods: {}
+  methods: {},
 };
 </script>
