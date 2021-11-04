@@ -63,7 +63,7 @@
                 href="https://www.lavote.net/home/voting-elections/current-elections/upcoming-elections#"
                 target="_blank"
               >
-                {{ $t('supportLA.1') }} &rarr;</cv-link
+                {{ $t('supportLA_1') }} &rarr;</cv-link
               >
               <br />
               <cv-link
@@ -71,7 +71,7 @@
                 href="https://clerk.lacity.org/clerk-services/elections"
                 target="_blank"
               >
-                {{ $t('supportLA.2') }} &rarr;</cv-link
+                {{ $t('supportLA_2') }} &rarr;</cv-link
               >
             </div>
           </div>

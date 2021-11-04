@@ -6,7 +6,7 @@
           <h2 class="aside__header">{{ $t('getInformedTitle') }}</h2>
           <cv-dropdown
             class="dropdown"
-            :label="$t('getInformedDisplay.4')"
+            :label="$t('getInformedDisplay_4')"
             :placeholder="$t('getInformedDropDown')"
             @change="onChange($event)"
           >
@@ -65,11 +65,11 @@
           </cv-dropdown>
           <div v-if="displayDialog" class="bx--modal-container">
             <div tabindex="0" class="cv-modal__before-content"></div>
-            <div class="bx--modal-header">{{ $t('getInformedDisplay.1') }}</div>
+            <div class="bx--modal-header">{{ $t('getInformedDisplay_1') }}</div>
             <div class="bx--modal-content">
               <p v-if="stateVoterIdData.info">
                 <cv-link :href="stateVoterIdData.info" target="_blank">
-                  {{ $t('getInformedDisplay.2') }}
+                  {{ $t('getInformedDisplay_2') }}
                 </cv-link>
                 <span class="voter-id-validated">
                   (Validated on
@@ -85,7 +85,7 @@
                 </cv-list>
                 <span v-for="more in stateVoterIdData.more_info" :key="more">
                   <cv-link :href="more" target="_blank">
-                    {{ $t('getInformedDisplay.3') }}
+                    {{ $t('getInformedDisplay_3') }}
                   </cv-link>
                   <br />
                 </span>
@@ -121,7 +121,7 @@
                 type="button"
                 @click="showSofSSite"
               >
-                {{ $t('getInformedDisplay.4') }}
+                {{ $t('getInformedDisplay_4') }}
               </button>
             </div>
             <div tabindex="0" class="cv-modal__after-content"></div>

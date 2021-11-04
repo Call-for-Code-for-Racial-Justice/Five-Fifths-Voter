@@ -9,11 +9,11 @@
           <div class="aside__container--text">
             <h2 class="aside__header">{{ $t('whyVotePageSubTitle') }}</h2>
             <p class="aside__paragraph">
-              {{ $t('whyVotePageParagraph.1') }}
+              {{ $t('whyVotePageParagraph_1') }}
               <br /><br />
-              {{ $t('whyVotePageParagraph.2') }}
+              {{ $t('whyVotePageParagraph_2') }}
               <br /><br />
-              {{ $t('whyVotePageParagraph.3', ['Five Fifths Voter']) }}
+              {{ $t('whyVotePageParagraph_3', ['Five Fifths Voter']) }}
               <br /><br />
               <MarkDown :content="$t('whyVotePageQuote')" />
             </p>
