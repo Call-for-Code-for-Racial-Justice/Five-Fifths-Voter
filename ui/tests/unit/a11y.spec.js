@@ -15,14 +15,13 @@ describe('SampleA11yTest.vue', () => {
     //   runOnly: 'wcag2a'
     // })
 
-
     //test just a specific element
     // const wrapper = mount(Image);
     // //run the tests using WCAG 2.0A level
     // const results = await axe(wrapper.element, {
     //   runOnly: 'wcag2a'
     // });
-  
+
     //expect(results).toHaveNoViolations();
     expect(true);
   });

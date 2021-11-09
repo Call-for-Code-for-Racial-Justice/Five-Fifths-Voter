@@ -10,6 +10,7 @@ Vue.use(FlagIcon);
 Vue.use(CarbonComponentsVue);
 
 import VueAmplitude from 'vue-amplitude';
+import './registerServiceWorker';
 var isDevelopment = process.env.NODE_ENV === 'development' || process.env.NODE_ENV === undefined;
 if (isDevelopment)
   Vue.use(VueAmplitude, {
