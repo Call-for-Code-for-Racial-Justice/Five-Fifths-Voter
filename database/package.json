@@ -6,6 +6,10 @@
   "license": "MIT",
   "scripts": {
     "serve": "docker stop localdev-db; docker rm localdev-db; docker run --detach --rm -p 8888:5984 --name localdev-db five-fifths-voter/db",
-    "build": "docker build -t five-fifths-voter/db ."
+    "build": "docker build -t five-fifths-voter/db .",
+    "postinstall": "cd .. && husky install"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4"
   }
 }

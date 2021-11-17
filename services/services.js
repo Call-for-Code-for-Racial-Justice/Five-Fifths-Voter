@@ -1,16 +1,15 @@
-const express = require("express");
-const path = require("path");
-const bodyParser = require("body-parser");
-const querystring = require("querystring");
-const lodash = require("lodash");
-require("dotenv-flow").config({ default_node_env: "development" });
+const express = require("express")
+const path = require("path")
+const bodyParser = require("body-parser")
+const querystring = require("querystring")
+const lodash = require("lodash")
+require("dotenv-flow").config({ default_node_env: "development" })
 
-var isDevelopment =
-  process.env.NODE_ENV === "development" || process.env.NODE_ENV === undefined;
+var isDevelopment = process.env.NODE_ENV === "development" || process.env.NODE_ENV === undefined
 
-const port = 8080;
-const app = express();
-app.use(bodyParser.json());
+const port = 8080 //TODO allow pport to be set via process.env.PORT
+const app = express()
+app.use(bodyParser.json())
 const about = {
   version: "1.0.0",
   endpoints: [
@@ -22,20 +21,20 @@ const about = {
     "ballotreturn/locations/",
     "twitter/chatter",
   ],
-};
+}
 
-const states = require("./data/earlyVoting/states");
+const states = require("./data/earlyVoting/states")
 
-const states2 = require("./data/ballotreturn/states");
+const states2 = require("./data/ballotreturn/states")
 
-const regions2 = require("./data/ballotreturn/GA/regions");
+const regions2 = require("./data/ballotreturn/GA/regions")
 
-const locations2 = require("./data/ballotreturn/GA/mocklocations");
+const locations2 = require("./data/ballotreturn/GA/mocklocations")
 
-const mock_twitter = require("./data/mock/mock_twitter");
+const mock_twitter = require("./data/mock/mock_twitter")
 
-const earlyVotingGa = require("./routes/earlyvoting/ga");
-const civic = require("./routes/civic");
+const earlyVotingGa = require("./routes/earlyvoting/ga")
+const civic = require("./routes/civic")
 
 // app.use((req, res, next) => {
 //   res.append("Access-Control-Allow-Origin", ["*"]);
@@ -47,63 +46,63 @@ const civic = require("./routes/civic");
 
 app.get("/services", (req, res) => {
   // console.log('Returning version');
-  res.send(about);
-});
+  res.send(about)
+})
 
 app.get("/earlyvoting/states/", (req, res) => {
   // console.log('Returning states');
-  res.send(states);
-});
+  res.send(states)
+})
 
 app.get("/earlyvoting/regions/", (req, res) => {
   // console.log('Returning regions', req.query);
-  let stateid = req.query.stateid;
-  const foundRegions = stateid === "GA";
+  let stateid = req.query.stateid
+  const foundRegions = stateid === "GA"
   if (foundRegions) {
-    return earlyVotingGa.regions(req, res);
+    return earlyVotingGa.regions(req, res)
   } else {
-    console.error(`State not found.`);
-    res.status(404).send();
+    console.error(`State not found.`)
+    res.status(404).send()
   }
-});
+})
 
 app.get("/earlyvoting/locations/", (req, res) => {
   // console.log('Returning locations', req.query);
-  let stateid = req.query.stateid;
-  let locid = req.query.locid.toUpperCase();
-  if (stateid == "GA") return earlyVotingGa.locations(req, res);
-  else return res.status(404).send();
-});
+  let stateid = req.query.stateid
+  let locid = req.query.locid.toUpperCase()
+  if (stateid == "GA") return earlyVotingGa.locations(req, res)
+  else return res.status(404).send()
+})
 
 app.get("/ballotreturn/states/", (req, res) => {
   // console.log('Returning states');
-  res.send(states2);
-});
+  res.send(states2)
+})
 
 app.get("/ballotreturn/regions/", (req, res) => {
   // console.log('Returning regions', req.query);
-  let stateid = req.query.stateid;
-  const foundRegions = stateid === "GA";
+  let stateid = req.query.stateid
+  const foundRegions = stateid === "GA"
   if (foundRegions) {
-    res.send(regions2);
+    res.send(regions2)
   } else {
-    console.error(`State not found.`);
-    res.status(404).send();
+    console.error(`State not found.`)
+    res.status(404).send()
   }
-});
+})
 
 app.get("/ballotreturn/locations/", (req, res) => {
   // console.log('Returning locations', req.query);
-  let stateid = req.query.stateid;
-  let locid = req.query.locid.toUpperCase();
-  const foundLocation = locations2.list.find((loc) => loc.place === locid);
+  let stateid = req.query.stateid
+  let locid = req.query.locid.toUpperCase()
+  const foundLocation = locations2.list.find((loc) => loc.place === locid)
   if (foundLocation) {
-    res.send(foundLocation);
+    res.send(foundLocation)
   }
-});
+})
 
-app.post("/pollingplace/", civic.pollingPlace);
-app.get("/elections/", civic.elections);
+app.post("/pollingplace/", civic.pollingPlace)
+app.get("/elections/", civic.elections)
 
 // Removed zip code lookup - see 7147571738298eab5f5ff840c7cb7f674445b24c for old code
 
@@ -117,60 +116,57 @@ const useTwitterMock =
     !process.env.NODE_TA_API_KEY ||
     !process.env.NODE_TA_API_URL ||
     !process.env.NODE_NLU_API_KEY ||
-    !process.env.NODE_NLU_API_URL);
+    !process.env.NODE_NLU_API_URL)
 
 if (useTwitterMock) {
-  console.error("\x1b[31m%s\x1b[0m", "Twitter Access not configured");
+  console.error("\x1b[31m%s\x1b[0m", "Twitter Access not configured")
   console.log(
     "\x1b[31m%s\x1b[0m",
     "All Twitter requests from the social page will return mock data from BrackObama"
-  );
-  console.log(
-    "\x1b[33m%s\x1b[0m",
-    "If you are working locally read the services/README.md file"
-  );
+  )
+  console.log("\x1b[33m%s\x1b[0m", "If you are working locally read the services/README.md file")
   console.log(
     "\x1b[33m%s\x1b[0m",
     "If you need live Twitter data, you need to create twitter and IBM cloud access keys but both are free"
-  );
+  )
 }
 
 app.get("/twitter/chatter/", (req, res) => {
   if (useTwitterMock) {
-    res.send(mock_twitter);
+    res.send(mock_twitter)
   } else {
-    let screenname = req.query.screenname;
+    let screenname = req.query.screenname
 
-    const { spawn } = require("child_process");
-    const chatter = spawn("python3", ["twitter/Chatter.py", screenname]);
+    const { spawn } = require("child_process")
+    const chatter = spawn("python3", ["twitter/Chatter.py", screenname])
 
-    const chunks = [];
+    const chunks = []
 
     chatter.stdout.on("data", function (chunk) {
-      chunks.push(chunk);
-    });
+      chunks.push(chunk)
+    })
 
     chatter.on("close", (code) => {
-      console.log(`child process exited with code ${code}`);
+      console.log(`child process exited with code ${code}`)
       try {
         if (code !== 0) {
-          res.status(404).send();
+          res.status(404).send()
         } else {
-          const resp_data = Buffer.concat(chunks);
-          const jdata = JSON.parse(resp_data);
-          res.send(jdata);
+          const resp_data = Buffer.concat(chunks)
+          const jdata = JSON.parse(resp_data)
+          res.send(jdata)
         }
       } catch (error) {
-        res.status(500).send();
+        res.status(500).send()
       }
-    });
+    })
   }
-});
+})
 
-const voterids = require("./data/voterid");
+const voterids = require("./data/voterid")
 app.get("/voterids/", (req, res) => {
-  res.send(voterids);
-});
+  res.send(voterids)
+})
 
-console.log(`Service listening on port ${port}`);
-app.listen(port);
+console.log(`Service listening on port ${port}`)
+app.listen(port)
