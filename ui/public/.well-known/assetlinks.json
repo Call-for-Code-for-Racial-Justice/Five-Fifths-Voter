@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.fivefifthsvoter.www.twa",
+      "sha256_cert_fingerprints": [
+        "88:9A:CD:4B:A6:7C:B4:9E:3F:9D:90:0C:77:50:94:52:AD:43:43:36:AC:3B:0A:45:A2:98:71:19:95:04:6E:38"
+      ]
+    }
+  }
+]
