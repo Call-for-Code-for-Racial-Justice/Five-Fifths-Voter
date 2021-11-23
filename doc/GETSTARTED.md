@@ -4,8 +4,16 @@
 
 - [install yarn](https://yarnpkg.com/lang/en/docs/cli/install/)
 - [install python3](https://realpython.com/installing-python/)
-- install python dependencies - `pip3 install --user tweepy WordCloud ibm_watson`
-- [install docker](https://docs.docker.com/get-docker/)
+- **Fedora** Install python development package (needed by WordCloud)
+  ```sh
+  sudo dnf install python3-devel
+  ```
+- install python dependencies
+    ```sh
+    pip3 install --user tweepy WordCloud ibm_watson
+    ```
+- **OSX** [install docker](https://docs.docker.com/get-docker/)
+- **Fedora** You can of course skip the docker install since you already have podman. Use `podman` for any of the instructions that show `docker`. Or you can create a alias for docker.
 
 ## Developer Certification of Origin (DCO)
 
