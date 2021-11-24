@@ -50,9 +50,9 @@ jobs:
           IBM_CLOUD_CF_API: ${{ secrets.BLUE_IBM_CLOUD_CF_API }}
           IBM_CLOUD_CF_ORG: ${{ secrets.BLUE_IBM_CLOUD_CF_ORG }}
           IBM_CLOUD_CF_SPACE: ${{ secrets.BLUE_IBM_CLOUD_CF_SPACE }}
-          APP_MANIFEST_FILE: ${{ secrets.BLUE_IBM_MANIFEST_FILE }}
           RESOURCE_GROUP: ${{ secrets.BLUE_RESOURCE_GROUP }}
-          APP_VARS_FILE: ${{ secrets.BLUE_APP_VARS_FILE }}
+          APP_MANIFEST_FILE: manifest-blue.yml
+          APP_VARS_FILE: blue.yml
 
   deploy-ui:
     runs-on: ubuntu-latest
@@ -99,5 +99,5 @@ jobs:
           IBM_CLOUD_CF_ORG: ${{ secrets.BLUE_IBM_CLOUD_CF_ORG }}
           IBM_CLOUD_CF_SPACE: ${{ secrets.BLUE_IBM_CLOUD_CF_SPACE }}
           RESOURCE_GROUP: ${{ secrets.BLUE_RESOURCE_GROUP }}
-          APP_MANIFEST_FILE: ${{ secrets.BLUE_IBM_MANIFEST_FILE }}
-          APP_VARS_FILE: ${{ secrets.BLUE_APP_VARS_FILE }}
+          APP_MANIFEST_FILE: manifest-blue.yml
+          APP_VARS_FILE: blue.yml
