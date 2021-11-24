@@ -41,19 +41,21 @@ jobs:
         if: ${{ github.event_name == 'push'}}
         run: |
           sed -i  's/"postinstall":.*$/"postinstall": ""/g' package.json
-
-      - name: Deploy services to IBM Cloud Foundry
-        # You may pin to the exact commit or the version.
-        uses: IBM/cloudfoundry-deploy@master
-        working-directory: ${GITHUB_WORKSPACE}/services
-        with:
-          IBM_CLOUD_API_KEY: ${{ secrets.BLUE_IBM_CLOUD_API_KEY }}
-          IBM_CLOUD_CF_API: ${{ secrets.BLUE_IBM_CLOUD_CF_API }}
-          IBM_CLOUD_CF_ORG: ${{ secrets.BLUE_IBM_CLOUD_CF_ORG }}
-          IBM_CLOUD_CF_SPACE: ${{ secrets.BLUE_IBM_CLOUD_CF_SPACE }}
-          RESOURCE_GROUP: ${{ secrets.BLUE_RESOURCE_GROUP }}
-          APP_MANIFEST_FILE: ${GITHUB_WORKSPACE}/services/manifest-blue.yml
-          APP_VARS_FILE: ${GITHUB_WORKSPACE}/services/blue.yml
+      - name: Install IBM Cloud CLI
+        run: curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
+        shell: bash
+      - name: Install Cloud Foundry CLI
+        run: ibmcloud cf install
+        shell: bash
+      - name: Authenticate with IBM Cloud CLI
+        run: ibmcloud login --apikey "${{ secrets.BLUE_IBM_CLOUD_API_KEY }}" --no-region -g "${{ secrets.BLUE_RESOURCE_GROUP }}"
+        shell: bash
+      - name: Target a Cloud Foundry org and space
+        run: ibmcloud target --cf-api "${{ secrets.BLUE_IBM_CLOUD_CF_API }}" -o "${{ secrets.BLUE_IBM_CLOUD_CF_ORG }}" -s "${{ secrets.BLUE_IBM_CLOUD_CF_SPACE }}"
+        shell: bash
+      - name: Deploy to Cloud Foundry
+        run: ibmcloud cf push -f manifest-blue.yml --vars-file blue.yml
+        shell: bash
 
   deploy-ui:
     runs-on: ubuntu-latest
