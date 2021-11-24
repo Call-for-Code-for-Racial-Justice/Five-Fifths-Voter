@@ -45,6 +45,7 @@ jobs:
       - name: Deploy services to IBM Cloud Foundry
         # You may pin to the exact commit or the version.
         uses: IBM/cloudfoundry-deploy@master
+        working-directory: ${GITHUB_WORKSPACE}/services
         with:
           IBM_CLOUD_API_KEY: ${{ secrets.BLUE_IBM_CLOUD_API_KEY }}
           IBM_CLOUD_CF_API: ${{ secrets.BLUE_IBM_CLOUD_CF_API }}
