@@ -46,7 +46,7 @@ jobs:
         run: |
           pwd
           ls
-          
+
       - name: Deploy services to IBM Cloud Foundry
         # You may pin to the exact commit or the version.
         uses: IBM/cloudfoundry-deploy@master
@@ -56,8 +56,8 @@ jobs:
           IBM_CLOUD_CF_ORG: ${{ secrets.BLUE_IBM_CLOUD_CF_ORG }}
           IBM_CLOUD_CF_SPACE: ${{ secrets.BLUE_IBM_CLOUD_CF_SPACE }}
           RESOURCE_GROUP: ${{ secrets.BLUE_RESOURCE_GROUP }}
-          APP_MANIFEST_FILE: manifest-blue.yml
-          APP_VARS_FILE: blue.yml
+          APP_MANIFEST_FILE: ${GITHUB_WORKSPACE}/services/manifest-blue.yml
+          APP_VARS_FILE: ${GITHUB_WORKSPACE}/services/blue.yml
 
   deploy-ui:
     runs-on: ubuntu-latest
