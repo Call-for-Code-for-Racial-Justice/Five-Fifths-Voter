@@ -2,7 +2,7 @@
 name: deploy
 
 on:
-  push: # on every push and PR to branch
+  push: # on every push to main branch
     branches:
       - main
   release: # Execute when a release is created on the master branch
@@ -41,25 +41,17 @@ jobs:
         if: ${{ github.event_name == 'push'}}
         run: |
           sed -i  's/"postinstall":.*$/"postinstall": ""/g' package.json
-          export CI=1
-          export HUSKY=0
-          echo "IBM_CLOUD_API_KEY=${{ secrets.BLUE_IBM_CLOUD_API_KEY }}" >> $GITHUB_ENV
-          echo "IBM_CLOUD_CF_API=${{ secrets.BLUE_IBM_CLOUD_CF_API }}" >> $GITHUB_ENV
-          echo "IBM_CLOUD_CF_ORG=${{ secrets.BLUE_IBM_CLOUD_CF_ORG }}" >> $GITHUB_ENV
-          echo "IBM_CLOUD_CF_SPACE=${{ secrets.BLUE_IBM_CLOUD_CF_SPACE }}" >> $GITHUB_ENV
-          echo "APP_VARS_FILE=${{ secrets.BLUE_APP_VARS_FILE }}" >> $GITHUB_ENV
-          echo "IBM_MANIFEST_FILE=${{ secrets.BLUE_IBM_MANIFEST_FILE }}" >> $GITHUB_ENV
 
       - name: Deploy services to IBM Cloud Foundry
         # You may pin to the exact commit or the version.
         uses: IBM/cloudfoundry-deploy@master
         with:
-          IBM_CLOUD_API_KEY: $IBM_CLOUD_API_KEY
-          IBM_CLOUD_CF_API: $IBM_CLOUD_CF_API
-          IBM_CLOUD_CF_ORG: $IBM_CLOUD_CF_ORG
-          IBM_CLOUD_CF_SPACE: $IBM_CLOUD_CF_SPACE
-          APP_MANIFEST_FILE: $IBM_MANIFEST_FILE
-          APP_VARS_FILE: $APP_VARS_FILE
+          IBM_CLOUD_API_KEY: ${{ secrets.BLUE_IBM_CLOUD_API_KEY }}
+          IBM_CLOUD_CF_API: ${{ secrets.BLUE_IBM_CLOUD_CF_API }}
+          IBM_CLOUD_CF_ORG: ${{ secrets.BLUE_IBM_CLOUD_CF_ORG }}
+          IBM_CLOUD_CF_SPACE: ${{ secrets.BLUE_IBM_CLOUD_CF_SPACE }}
+          APP_MANIFEST_FILE: ${{ secrets.BLUE_IBM_MANIFEST_FILE }}
+          APP_VARS_FILE: ${{ secrets.BLUE_APP_VARS_FILE }}
 
   deploy-ui:
     runs-on: ubuntu-latest
@@ -93,24 +85,17 @@ jobs:
 
       - name: Configure blue server
         if: ${{ github.event_name == 'push'}}
+        # see issue https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter/issues/306
         run: |
           sed -i  's/"postinstall":.*$/"postinstall": "",/g' package.json
-          export CI=1
-          export HUSKY=0
-          echo "IBM_CLOUD_API_KEY=${{ secrets.BLUE_IBM_CLOUD_API_KEY }}" >> $GITHUB_ENV
-          echo "IBM_CLOUD_CF_API=${{ secrets.BLUE_IBM_CLOUD_CF_API }}" >> $GITHUB_ENV
-          echo "IBM_CLOUD_CF_ORG=${{ secrets.BLUE_IBM_CLOUD_CF_ORG }}" >> $GITHUB_ENV
-          echo "IBM_CLOUD_CF_SPACE=${{ secrets.BLUE_IBM_CLOUD_CF_SPACE }}" >> $GITHUB_ENV
-          echo "APP_VARS_FILE=${{ secrets.BLUE_APP_VARS_FILE }}" >> $GITHUB_ENV
-          echo "IBM_MANIFEST_FILE=${{ secrets.BLUE_IBM_MANIFEST_FILE }}" >> $GITHUB_ENV
 
       - name: Deploy UI to IBM Cloud Foundry
         # You may pin to the exact commit or the version.
         uses: IBM/cloudfoundry-deploy@master
         with:
-          IBM_CLOUD_API_KEY: $IBM_CLOUD_API_KEY
-          IBM_CLOUD_CF_API: $IBM_CLOUD_CF_API
-          IBM_CLOUD_CF_ORG: $IBM_CLOUD_CF_ORG
-          IBM_CLOUD_CF_SPACE: $IBM_CLOUD_CF_SPACE
-          APP_MANIFEST_FILE: $IBM_MANIFEST_FILE
-          APP_VARS_FILE: $APP_VARS_FILE
+          IBM_CLOUD_API_KEY: ${{ secrets.BLUE_IBM_CLOUD_API_KEY }}
+          IBM_CLOUD_CF_API: ${{ secrets.BLUE_IBM_CLOUD_CF_API }}
+          IBM_CLOUD_CF_ORG: ${{ secrets.BLUE_IBM_CLOUD_CF_ORG }}
+          IBM_CLOUD_CF_SPACE: ${{ secrets.BLUE_IBM_CLOUD_CF_SPACE }}
+          APP_MANIFEST_FILE: ${{ secrets.BLUE_IBM_MANIFEST_FILE }}
+          APP_VARS_FILE: ${{ secrets.BLUE_APP_VARS_FILE }}
