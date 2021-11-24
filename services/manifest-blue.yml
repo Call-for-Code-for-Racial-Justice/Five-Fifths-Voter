@@ -1,0 +1,9 @@
+---
+applications:
+  - name: ((name))
+    memory: ((memory))
+    command: ./production-start.sh
+    #command: yarn start
+    buildpacks:
+      - https://github.com/cloudfoundry/python-buildpack.git
+      - https://github.com/cloudfoundry/nodejs-buildpack.git
