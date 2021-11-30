@@ -97,7 +97,7 @@
                   <rect
                     id="_Transparent_Rectangle_"
                     data-name="&lt;Transparent Rectangle&gt;"
-                    style="fill:none;"
+                    style="fill: none"
                     width="32"
                     height="32"
                   />
@@ -135,6 +135,6 @@ export default {
   created() {
     this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Connect Page' });
   },
-  methods: {}
+  methods: {},
 };
 </script>

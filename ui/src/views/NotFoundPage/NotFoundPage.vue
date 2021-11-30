@@ -30,6 +30,6 @@ export default {
   created() {
     setTimeout(() => router.push('/'), 2000);
   },
-  methods: {}
+  methods: {},
 };
 </script>

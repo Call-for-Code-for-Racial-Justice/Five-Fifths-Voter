@@ -154,16 +154,16 @@ export default {
       stateName: '',
       displayDialog: false,
       allVoterIdData: {},
-      stateVoterIdData: {}
+      stateVoterIdData: {},
     };
   },
   mounted() {
     axios
       .get('/services/voterids')
-      .then(response => {
+      .then((response) => {
         this.allVoterIdData = response.data;
       })
-      .catch(error => {
+      .catch((error) => {
         error;
         this.allVoterIdData = {};
       });
@@ -185,9 +185,9 @@ export default {
     },
     showTool() {
       window.open('https://tool.votinginfoproject.org', '_blank');
-    }
+    },
   },
-  updated() {}
+  updated() {},
 };
 </script>
 

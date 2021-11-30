@@ -65,6 +65,8 @@ The DCO text can either be manually added to your commit body, or you can add ei
 
 ## Project setup
 
+Be sure to have a Node.js >=14.x
+
 ```
 cd ui
 yarn install

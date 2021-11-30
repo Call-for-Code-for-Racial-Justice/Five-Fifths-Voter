@@ -65,7 +65,7 @@ export default {
   name: 'reg',
   data() {
     return {
-      regData: {}
+      regData: {},
     };
   },
   created() {
@@ -74,7 +74,7 @@ export default {
   methods: {
     navigate() {
       router.go(-1);
-    }
-  }
+    },
+  },
 };
 </script>

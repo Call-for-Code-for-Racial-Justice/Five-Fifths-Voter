@@ -84,9 +84,7 @@
                   <span v-if="item.address.line3" class="loc-line">{{ item.address.line3 }}</span>
                   <span v-if="item.address.city" class="loc-city">{{ item.address.city }}</span>
                   <span v-if="item.address.state" class="loc-state"> {{ item.address.state }}</span>
-                  <cv-link :href="directionsLink(item)" target="_blank">
-                    Directions
-                  </cv-link>
+                  <cv-link :href="directionsLink(item)" target="_blank"> Directions </cv-link>
                 </cv-list-item>
               </cv-list>
 
@@ -135,7 +133,7 @@ export default {
       electionName: '',
       voterData: {},
       elections: [],
-      electionId: ''
+      electionId: '',
     };
   },
   created() {
@@ -150,10 +148,10 @@ export default {
 
     axios
       .get('/services/elections')
-      .then(response => {
+      .then((response) => {
         this.elections = response.data.elections;
       })
-      .catch(error => {
+      .catch((error) => {
         /* eslint no-console: 0 */
         console.error(error);
       });
@@ -233,7 +231,7 @@ export default {
         else locations = this.voterData.pollingLocations;
         if (!locations) locations = [];
 
-        var filteredLocation = locations.filter(function(item) {
+        var filteredLocation = locations.filter(function (item) {
           return !item.address.electionName || item.address.electionName === this.electionName;
         }, this);
 
@@ -264,7 +262,7 @@ export default {
             id: item.address.locationName + index,
             position: { lat: item.latitude, lng: item.longitude, address: dir_address },
             info: this.locationInfo(item),
-            title: item.address.locationName
+            title: item.address.locationName,
           });
           index++;
         }
@@ -275,11 +273,11 @@ export default {
       }
     },
     fileredElections() {
-      return this.elections.filter(item => item.id != '2000');
+      return this.elections.filter((item) => item.id != '2000');
     },
     disabledAddress() {
       return !this.electionId;
-    }
+    },
   },
   mounted() {},
   methods: {
@@ -288,14 +286,14 @@ export default {
         .post('/services/pollingplace', {
           data: {
             address: this.addressValue,
-            electionId: this.electionId
-          }
+            electionId: this.electionId,
+          },
         })
-        .then(response => {
+        .then((response) => {
           try {
             this.voterData = response.data;
             this.normalizedAddressValue = '';
-            Object.values(this.voterData.normalizedInput).forEach(element => {
+            Object.values(this.voterData.normalizedInput).forEach((element) => {
               this.normalizedAddressValue = this.normalizedAddressValue + ' ' + element;
             });
             this.normalizedAddressValue = this.normalizedAddressValue.trim();
@@ -308,7 +306,7 @@ export default {
             console.error(error);
           }
         })
-        .catch(error => {
+        .catch((error) => {
           error;
           /* eslint no-console: 0 */
           console.error(error);
@@ -360,8 +358,8 @@ export default {
       info +=
         '<div><a target="_blank" alt="directions" href="' + dir_link + '">Directions</a></div>';
       return info;
-    }
-  }
+    },
+  },
 };
 </script>
 

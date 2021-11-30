@@ -14,7 +14,7 @@ export default {
   props: {
     mapConfig: Object,
     apiKey: { type: String, required: true },
-    center: { type: Object, required: true }
+    center: { type: Object, required: true },
   },
 
   data() {
@@ -22,13 +22,13 @@ export default {
       google: null,
       map: null,
       codedCenter: {},
-      codedAddress: ''
+      codedAddress: '',
     };
   },
 
   async mounted() {
     const googleMapApi = await GoogleMapsApiLoader({
-      apiKey: this.apiKey
+      apiKey: this.apiKey,
     });
     this.google = googleMapApi;
     this.initializeMap();
@@ -39,7 +39,7 @@ export default {
 
       // Recenter / re-zoom the map whe the center changes
       this.reCenter();
-    }
+    },
   },
   methods: {
     initializeMap() {
@@ -79,7 +79,7 @@ export default {
         var geocoder = new Geocoder();
         geocoder.geocode(
           { address: this.center.address },
-          function(results, status) {
+          function (results, status) {
             if (status == GeocoderStatus.OK) {
               // update the position with the lat/lng for mthe geocoder
               this.codedCenter = results[0].geometry.location;
@@ -91,18 +91,18 @@ export default {
           }.bind(this)
         );
       })
-        .then(cntr => {
+        .then((cntr) => {
           // At this point we have a center that includes a lat/lng
           this.map.panTo(cntr);
           this.map.setZoom(this.mapConfig.zoom);
           return null;
         })
-        .catch(reason => {
+        .catch((reason) => {
           /* eslint no-console: 0 */
           console.error(reason);
         });
-    }
-  }
+    },
+  },
 };
 </script>
 

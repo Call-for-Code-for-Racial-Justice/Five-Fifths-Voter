@@ -5,11 +5,11 @@ const mapSettings = {
   gestureHandling: 'cooperative',
   mapTypeControl: false,
   zoomControlOptions: {
-    style: 'SMALL'
+    style: 'SMALL',
   },
   zoom: 13,
   minZoom: 2,
-  maxZoom: 18
+  maxZoom: 18,
 };
 
 export { mapSettings };

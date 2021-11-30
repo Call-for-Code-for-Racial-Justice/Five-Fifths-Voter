@@ -38,7 +38,7 @@ export default {
     this.$amplitude
       .getInstance()
       .logEvent('Page Visit', { page: 'Journey Page', component: 'Absentee' });
-  }
+  },
 };
 </script>
 <style lang="scss">
