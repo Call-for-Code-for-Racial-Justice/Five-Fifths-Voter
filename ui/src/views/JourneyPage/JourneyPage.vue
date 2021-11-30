@@ -3,7 +3,11 @@
     <div class="page__details">
       <h2 class="page__title">{{ $t('journeyPageTitle') }}</h2>
     </div>
-    <cv-tabs :container="container" :aria-label="$t('appHeaderVoterJourney')">
+    <cv-tabs
+      :container="container"
+      :aria-label="$t('appHeaderVoterJourney')"
+      class="journey-page__tabs"
+    >
       <cv-tab
         id="tab-1"
         :label="$t('journeyPageRegisteredLabel')"
@@ -59,12 +63,12 @@ export default {
     EarlyVoting,
     BallotReturn,
     VoteNow,
-    PageLayout,
+    PageLayout
   },
   data() {
     return {
       complete: [false, false, false, false, false],
-      container: true,
+      container: true
     };
   },
   created() {
@@ -73,8 +77,8 @@ export default {
   methods: {
     showStep() {
       this.complete = [true, false, false, false, false];
-    },
-  },
+    }
+  }
 };
 </script>
 
