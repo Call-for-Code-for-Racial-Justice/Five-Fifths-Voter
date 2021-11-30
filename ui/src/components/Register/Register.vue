@@ -14,27 +14,27 @@
             {{ $t('registerRegisterToVote') }} &rarr;</cv-link
           ><br />
           <br /><br />
-          {{ $t('registerYouth.1') }}
+          {{ $t('registerYouth_1') }}
           <br /><br />
-          <i18n path="registerYouth.2">
+          <i18n path="registerYouth_2">
             <template v-slot:here>
               <a href="https://registertovote.ca.gov/" target="_blank">
-                {{ $t('registerYouth.2a') }}</a
+                {{ $t('registerYouth_2a') }}</a
               >
             </template>
             <template v-slot:ymca>
               <a href="https://www.ymcayag.org/vote/" target="_blank">{{
-                $t('registerYouth.2b')
+                $t('registerYouth_2b')
               }}</a>
             </template>
           </i18n>
           <br /><br />
-          <i18n path="registerYouth.3">
+          <i18n path="registerYouth_3">
             <template v-slot:state>
               <a
                 href="https://www.ncsl.org/research/elections-and-campaigns/preregistration-for-young-voters.aspx"
                 target="_blank"
-                >{{ $t('registerYouth.3a') }}</a
+                >{{ $t('registerYouth_3a') }}</a
               >
             </template>
           </i18n>
