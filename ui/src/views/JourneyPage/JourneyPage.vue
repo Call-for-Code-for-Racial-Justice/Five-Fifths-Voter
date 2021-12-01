@@ -3,7 +3,11 @@
     <div class="page__details">
       <h2 class="page__title">{{ $t('journeyPageTitle') }}</h2>
     </div>
-    <cv-tabs :container="container" :aria-label="$t('appHeaderVoterJourney')">
+    <cv-tabs
+      :container="container"
+      :aria-label="$t('appHeaderVoterJourney')"
+      class="journey-page__tabs"
+    >
       <cv-tab
         id="tab-1"
         :label="$t('journeyPageRegisteredLabel')"

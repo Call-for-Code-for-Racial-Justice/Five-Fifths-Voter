@@ -10,14 +10,22 @@
 }
 
 .journey-page {
-  .impactFeatureCard {
-    @include carbon--breakpoint-up(lg) {
-      animation-name: shrinker;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
+  // .impactFeatureCard {
+  // @include carbon--breakpoint-up(lg) {
+  //   animation-name: shrinker;
+  //   animation-duration: 1s;
+  //   animation-fill-mode: forwards;
+  // }
+  // @include carbon--breakpoint-down(lg) {
+  //   height: 0;
+  // }
+  // }
+  &__tabs {
+    .bx--tabs--scrollable__nav-link {
+      color: $text-04 !important;
     }
-    @include carbon--breakpoint-down(lg) {
-      height: 0;
+    .cv-tabs-button:hover {
+      background-color: $interactive-01 !important;
     }
   }
 }
