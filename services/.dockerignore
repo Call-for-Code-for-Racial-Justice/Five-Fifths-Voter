@@ -1,7 +1,0 @@
-node_modules
-README.md
-.git*
-Dockerfile
-.dockerignore
-secrets.env
-.env*

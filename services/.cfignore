@@ -1,8 +1,0 @@
-localdb
-README.md
-Dockerfile
-.dockerignore
-manifest.yml
-samples
-vendor
-.env*

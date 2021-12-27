@@ -1,3 +1,0 @@
-tweepy
-WordCloud
-ibm_watson
