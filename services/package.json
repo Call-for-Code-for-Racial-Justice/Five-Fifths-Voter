@@ -13,7 +13,7 @@
     "ci-check": "yarn format:diff",
     "ci-format": "prettier --write \"**/*.js\"",
     "format:diff": "prettier --list-different \"**/*.js\"",
-    "postinstall": "cd .. && husky install"
+    "postinstall": "test -n \"$NPM_CONFIG_PRODUCTION\" || ( cd .. && husky install )"
   },
   "engines": {
     "node": "14"

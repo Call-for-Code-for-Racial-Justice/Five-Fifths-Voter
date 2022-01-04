@@ -6,3 +6,4 @@ manifest.yml
 samples
 vendor
 .env*
+.yarnrc

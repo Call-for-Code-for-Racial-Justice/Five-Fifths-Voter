@@ -36,10 +36,6 @@ jobs:
         run: |
           echo "production release TBD"
 
-      - name: Configure blue server
-        if: ${{ github.event_name == 'push'}}
-        run: |
-          sed -i  's/"postinstall":.*$/"postinstall": ""/g' package.json
       - name: Install IBM Cloud CLI
         run: curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
         shell: bash
