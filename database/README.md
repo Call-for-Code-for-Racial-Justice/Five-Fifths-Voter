@@ -1,6 +1,6 @@
 # Emulate deployed Cloudant db for local development
 
-The deployed version of this app use a Cloudant db to store cache data but this Docker image does not get deployed. Instead it emulates the deployed version of the db so that you can develop code locally. If you are working on the early voting locations or absentee drop off locations, you will want to follow these instructions.
+The deployed version of this app uses a Cloudant db to store cache data but this Docker image does not get deployed. Instead it emulates the deployed version of the db so that you can develop code locally. If you are working on the early voting locations or absentee drop off locations, you will want to follow these instructions.
 
 To do development work locally then you need a Couch db that is configured similarly to the deployed db. You might be tempted to work directly with the deployed db but that does not seem like a good idea. If you find a use case for that, document it here but for now lets use a docker image for our local Couch db.
 
@@ -10,6 +10,7 @@ To do development work locally then you need a Couch db that is configured simil
 - RECOMMENDED: [jq](https://stedolan.github.io/jq/)
 
 ## Build and Run the Docker image
+
 ```sh
 yarn build
 yarn serve
@@ -19,9 +20,9 @@ yarn serve
 
 This only needs to be done once unless the database schema or the sample/mock data changes.
 
-  ```sh
-  docker build -t five-fifths-voter/db .
-  ```
+```sh
+docker build -t five-fifths-voter/db .
+```
 
 ## Start the DB Docker image
 

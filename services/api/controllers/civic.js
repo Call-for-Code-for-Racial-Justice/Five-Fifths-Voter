@@ -15,7 +15,7 @@ if (process.env.VCAP_SERVICES) {
 //const currentElectionId = 2000; // VIP Test Election
 //const currentElectionId = 5029; // Louisiana General Congressional Election
 const currentElectionId = process.env.NODE_CIVIC_ELECTION_ID || 2000
-const earlyVotingGa = require("./earlyvoting/ga")
+const earlyVotingGa = require("./ga-locations")
 
 exports.pollingPlace = function (req, res) {
   // console.log("exports.pollingPlace", req.body.address);
@@ -23,7 +23,7 @@ exports.pollingPlace = function (req, res) {
     let voterAddress = null
     if (req.body.address) voterAddress = req.body.address
     else voterAddress = req.body.data.address
-
+    
     let voterElectionId = null
     if (req.body.electionId) voterElectionId = req.body.electionId
     else voterElectionId = req.body.data.electionId
@@ -76,7 +76,7 @@ exports.pollingPlace = function (req, res) {
             // console.log(county);
             if (!response.data.earlyVoteSites) {
               // console.log("no early voting data from google");
-              var more = earlyVotingGa.locationData("GA", county, response.data)
+              var more = earlyVotingGa.locationData(county, response.data)
               return more
             }
           }

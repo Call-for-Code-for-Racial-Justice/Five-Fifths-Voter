@@ -1,11 +1,8 @@
-const { JSDOM } = require("jsdom")
+const cache = require("../services/database")
 const axios = require("axios")
+const { JSDOM } = require("jsdom")
 const params = require("../../data/earlyVoting/GA/scrapeParams")
-const cache = require("../../data/cacheDb")
-
-exports.regions = function (req, res) {
-  res.status(200).send({ list: Object.keys(params) })
-}
+const STALE_TIME = process.env.STALE_TIME || 86400000 // 24 hours in milliseconds
 
 function geocodeAddress(county, address) {
   try {
@@ -29,22 +26,17 @@ function geocodeAddress(county, address) {
 
 /**
  * Return a promise that will deliver local early voting sites. The data will be amended to whatever is passed in the amend var.
- * @param {*} stateid - must be GA
- * @param {*} locid - must be a valid county in GA
+ * @param {*} locId - must be a valid county in GA
  * @param {*} amend - attach the data to this object
- * see exports.locations below for how to call this directly form the API
+ * see exports.locations below for how to call this directly from the API
  */
-locationData = exports.locationData = (stateid, locid, amend) => {
+locationData = exports.locationData = (locId, amend) => {
   try {
-    locid = locid.toUpperCase()
-    let getParams = params[locid]
-
-    // Only GA in the module. If its not GA then probably there is an error in
-    // earlier logic.
-    if (stateid !== "GA") throw { ok: false, message: "Only GA is supported" }
+    locId = locId.toUpperCase()
+    let getParams = params[locId]
 
     // Every county should be in the list
-    if (!getParams) throw { ok: false, message: "County not found: " + locid }
+    if (!getParams) throw { ok: false, message: "County not found: " + locId }
 
     var locationData = {}
 
@@ -53,12 +45,14 @@ locationData = exports.locationData = (stateid, locid, amend) => {
 
     return database
       .view("earlyVotingView", "early-voting-view", {
-        key: "GA/" + locid,
+        key: "GA/" + locId,
         include_docs: true,
       })
       .then((response) => {
-        if (response.rows.length != 1)
-          console.error("database error. Data not in expected format.", response.rows.length)
+        if (response.rows.length != 1) {
+          console.error("database error. Data not in expected format.", response.rows)
+          return {}
+        }
         return response.rows[0].doc
       })
       .then((result) => {
@@ -68,11 +62,11 @@ locationData = exports.locationData = (stateid, locid, amend) => {
         var retrieved = Date.now()
         var pollingLocs = result
         var cacheHit = result ? true : false
-        var cacheIsStale = !pollingLocs || retrieved - pollingLocs.retrieved > cache.staleTime
+        var cacheIsStale = !pollingLocs || retrieved - pollingLocs.retrieved > STALE_TIME
         //var cacheIsStale = true;
         if (pollingLocs) {
           console.log(
-            `${locid} cache is ${
+            `${locId} cache is ${
               (retrieved - pollingLocs.retrieved) / 1000
             } seconds old. Stale: ${cacheIsStale}`
           )
@@ -117,6 +111,7 @@ locationData = exports.locationData = (stateid, locid, amend) => {
         try {
           var inner = document.querySelector("#Table1 >  tbody > tr > td > table")
           if (inner) {
+            locationData
             var rows = inner.rows
             var addressStart = false
             var finishAddress = false
@@ -155,7 +150,7 @@ locationData = exports.locationData = (stateid, locid, amend) => {
               if (finishAddress && address) {
                 addressStart = false
                 finishAddress = false
-                var latLng = geocodeAddress(locid, address)
+                var latLng = geocodeAddress(locId, address)
                 addresses.push({
                   address: {
                     locationName: locationName,
@@ -199,10 +194,10 @@ locationData = exports.locationData = (stateid, locid, amend) => {
           state: locationData.cacheData.pollingLocs.state,
           place: locationData.cacheData.pollingLocs.place,
         })
-        var dbKey = { place: locid }
+        var dbKey = { place: locId }
         var dbDoc = locationData.cacheData.pollingLocs
 
-        console.log(`${locid} cache update`)
+        console.log(`${locId} cache update`)
         return database.insert(dbDoc)
       })
       .then((cacheDbUpdate) => {
@@ -229,34 +224,5 @@ locationData = exports.locationData = (stateid, locid, amend) => {
       })
   } catch (error) {
     throw { ok: false, message: error }
-  }
-}
-
-exports.locations = (req, res) => {
-  try {
-    let stateid = req.query.stateid
-    let locid = req.query.locid.toUpperCase()
-    let getParams = params[locid]
-
-    // console.log(stateid, locid, getParams);
-
-    // Only GA in the module. If its not GA then probably there is an error in
-    // earlier logic.
-    if (stateid !== "GA") return res.status(404).send()
-
-    // Every county should be in the list
-    if (!getParams) return res.status(404).send()
-
-    locationData(stateid, locid, {})
-      .then((data) => {
-        res.status(200).send(data)
-      })
-      .catch((reason) => {
-        console.error("error", reason)
-        return res.status(404).send({ ok: false, reason })
-      })
-  } catch (error) {
-    console.error("error", error)
-    return res.status(404).send({ ok: false, error })
   }
 }

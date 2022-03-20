@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node services.js",
-    "serve": "nodemon services.js",
+    "serve": "nodemon server.js",
     "deploy": "ibmcloud cf push",
     "ci-check": "yarn format:diff",
     "ci-format": "prettier --write \"**/*.js\"",
@@ -16,22 +16,24 @@
     "postinstall": "test -n \"$NPM_CONFIG_PRODUCTION\" || ( cd .. && husky install )"
   },
   "engines": {
-    "node": "14"
+    "node": "16"
   },
   "dependencies": {
-    "@cloudant/cloudant": "^4.3.0",
+    "@ibm-cloud/cloudant": "^0.0.25",
     "axios": "^0.24.0",
     "body-parser": "^1.19.0",
+    "debug": "^4.3.4",
     "dotenv": "^10.0.0",
     "dotenv-flow": "^3.2.0",
     "express": "^4.17.1",
+    "ibmcloud-appid": "^6.2.3",
     "jsdom": "^18.0.0",
     "lodash": "^4.17.19",
+    "morgan": "^1.10.0",
     "prettier": "^2.0.5"
   },
   "devDependencies": {
     "husky": "^7.0.4",
-    "nano": "^9.0.3",
     "nodemon": "^2.0.4"
   }
 }
