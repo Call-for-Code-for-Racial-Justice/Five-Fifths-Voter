@@ -32,7 +32,7 @@ if (process.env.CLOUDANTNOSQLDB_APIKEY) {
   service = new CloudantV1({
     authenticator: authenticator,
   })
-  let url = process.env.CLOUDANTNOSQLDB_URL || "http://localhost:8888"
+  let url = process.env.CLOUDANTNOSQLDB_URL || "http://localhost:8867"
   service.setServiceUrl(url)
 }
 
@@ -50,5 +50,5 @@ service
   })
 
 module.exports = {
-  db: service,
+  service: service,
 }

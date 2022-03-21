@@ -27,7 +27,7 @@ for dbdir in `find mock/* -maxdepth 0 -type d `; do
 
   for doc in `find mock/$db/ -type f`; do
     echo loading $doc
-	  curl --request POST --user @NODE_DB_USER@:@NODE_DB_PASSWORD@ --header "Content-Type:application/json" --data @$doc http://localhost:5984/$db
+	  curl --request POST --user @NODE_DB_USER@:@NODE_DB_PASSWORD@ --header "Content-Type:application/json" --data @$doc "http://localhost:5984/$db?partitioned=true"
   done
 
   # create any design docs (indexes etc)
@@ -36,9 +36,6 @@ for dbdir in `find mock/* -maxdepth 0 -type d `; do
     docname=$(basename $doc .json)
 	  curl --request PUT --user @NODE_DB_USER@:@NODE_DB_PASSWORD@ --header "Content-Type:application/json" --data @$doc http://localhost:5984/$db/_design/$docname
   done
-
-  # create the allDocs view
-  curl --request PUT --user @NODE_DB_USER@:@NODE_DB_PASSWORD@ --header "Content-Type:application/json" --data @design/allDocs.json http://localhost:5984/$db/_design/allDocs
 done
 
 if [[ -f status ]]; then rm status; fi

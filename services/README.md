@@ -22,12 +22,12 @@
 
   - To get the twitter results locally you will need to create your own twitter account and follow the Twitter developer instructions for creating and API key etc. https://developer.twitter.com/en/apps
   - For the tone analyzer and NLU use your own IBM Cloud account to create these services and get the API keys and URLs
-  - Develoeprs should request and maintain their own personal Google Civics API key to work with those services.
-    -  https://console.cloud.google.com/ 
-    -  https://developers.google.com/civic-information/docs/using_api
+  - Developers should request and maintain their own personal Google Civics API key to work with those services.
+    - https://console.cloud.google.com/
+    - https://developers.google.com/civic-information/docs/using_api
   - If you skip these steps Twitter information will not be available locally.
   - The `NODE_CACHE_DB*` parameters do not need to be changed.
-  - The DEPLOYED version of all of the above are secrets maintained in Open Shift. You should **NEVER** add your .env file (or any other file with secrets) to git.
+  - The DEPLOYED version of all of the above are secrets maintained as environment variables. You should **NEVER** add your .env file (or any other file with secrets) to git.
   - To test twitter directly you need to export the values from the .env file above like this:
     ```sh
     export $(cat .env | xargs)
@@ -39,10 +39,11 @@
 - Start the services - will reload automatically when changes are mode
 
   ```sh
-  docker run --detach --rm -p 27017:27017 --name five-fifths-voter-db five-fifths-voter/db
-  cd services
+  cd database
+  yarn serve # start the local database
+  cd ../services
   yarn
-  yarn test
+  yarn serve
   ```
 
 ### Usage - Early Voting
@@ -52,12 +53,8 @@
 #### HTTP request
 
 ```
-GET http://localhost:8080/earlyvoting/states
+GET http://localhost:3333/earlyvoting/
 ```
-
-#### Parameters
-
-None
 
 #### Response
 
@@ -70,17 +67,8 @@ None
 #### HTTP request
 
 ```
-GET http://localhost:8080/earlyvoting/regions
+GET http://localhost:3333/earlyvoting/:state:
 ```
-
-#### Parameters
-
-| Parameter name            | Value  | Description                                    |
-| ------------------------- | ------ | ---------------------------------------------- |
-| Required query parameters |
-| stateid                   | string | A valid state from the /earlyvoting/states API |
-| Optional query parameters |
-| NONE                      |
 
 #### Response
 
@@ -93,26 +81,37 @@ GET http://localhost:8080/earlyvoting/regions
 #### HTTP request
 
 ```
-GET http://localhost:8080/earlyvoting/locations
+GET http://localhost:3333/earlyvoting/:state:/:region:
 ```
-
-#### Parameters
-
-| Parameter name            | Value  | Description                                      |
-| ------------------------- | ------ | ------------------------------------------------ |
-| Required query parameters |
-| stateid                   | string | A valid state from the /earlyvoting/states API   |
-| locid                     | string | A valid region from the /earlyvoting/regions API |
-| Optional query parameters |
-| NONE                      |
 
 #### Response
 
 ```json
 {
-  "state": "GA",
-  "place": "ATKINSON",
-  "scrapeURL": "",
-  "dom": "\n        <table align=\"center\" border=\"0\" width=\"800\" cellpadding=\"4\" cellspacing=\"2\" id=\"Table1\">\n        <tbody>\n        <tr>\n        <td>\n        <p align=\"center\">&nbsp;</p>\n        <h3>Advanced Voting Location Information</h3>\n        <hr>\n        <strong>ATKINSON County</strong><br/>\n        <table align=\"left\" cellspacing=\"1\" cellpadding=\"1\">\n        <tr>\n        <td>\n        No Advance Polling Place Available.\n        </td>\n        </tr>\n        </table>\n        </td>\n        </tr>\n        </tbody>\n        </table>\n      "
+  "earlyVoteSites": [
+    {
+      "address": {
+        "electionName": "NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION",
+        "line1": "10 PARK PLAZA ALPHARETTA, GA 30009",
+        "locationName": "ALPHARETTA BRANCH LIBRARY"
+      },
+      "latitude": 34.0742279,
+      "longitude": -84.2919567,
+      "sources": [
+        {
+          "name": "Five Fifths Voter",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "fivefifthsdata": {
+    "collection": "early",
+    "earlyVoteSitesProvided": true,
+    "elections": ["NOVEMBER 3, 2020 GENERAL/SPECIAL ELECTION"],
+    "place": "FULTON",
+    "retrieved": 1647833567126,
+    "state": "GA"
+  }
 }
 ```
