@@ -1,18 +1,19 @@
-# Not needed for local development or deployment.
-# NOTE: We may want to use this with Code Engine in the future.
-# action test
-FROM node:14
-RUN git --version
-RUN apt update
-RUN apt install -y python3-pip
-RUN apt-get clean
-RUN pip3 install tweepy WordCloud ibm_watson
-WORKDIR /usr/src/app
-COPY package.json ./
-COPY yarn.lock ./
-ENV NODE_ENV=production
-RUN yarn
+FROM registry.access.redhat.com/ubi8/nodejs-16
+WORKDIR /opt/app-root/src
 COPY . .
-EXPOSE 8080
-CMD ["node", "services.js"]
+RUN npm install -g yarn && yarn install
 
+EXPOSE 8080
+ENV PORT 8080
+ENV NODE_ENV=production
+
+USER root
+ENV TINI_VERSION v0.19.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+RUN chmod +x /tini
+ENTRYPOINT ["/tini", "--"]
+RUN chown -R 1001:0 /opt/
+USER 1001
+
+# Start
+CMD node server.js

@@ -25,7 +25,7 @@ if (process.env.CLOUDANTNOSQLDB_APIKEY) {
   debug("using local database")
   let username = process.env.DB_USER || "adminXYZ"
   let password = process.env.DB_PASSWORD || "NotReallyImportantData"
-  const authenticator = new BasicAuthenticator({
+  let authenticator = new BasicAuthenticator({
     username: username,
     password: password,
   })
@@ -42,6 +42,7 @@ service
     debug(response.result)
   })
   .catch((err) => {
+    debug(err)
     debug("Cloudant db is not available.")
     debug("If you are working locally read the database/README.md file")
     debug(

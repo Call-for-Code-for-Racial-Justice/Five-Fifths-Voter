@@ -1,0 +1,56 @@
+{
+  "APPID_AUTH_CONTEXT": {
+    "accessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFwcElkLWY2ZGM1ZDExLTY3YTktNDkxZS05Yjc4LTc3Yzc1ZGRlM2FhYS0yMDIyLTAxLTA1VDIyOjAyOjA4LjExMyIsInZlciI6NH0.eyJpc3MiOiJodHRwczovL3VzLXNvdXRoLmFwcGlkLmNsb3VkLmlibS5jb20vb2F1dGgvdjQvZjZkYzVkMTEtNjdhOS00OTFlLTliNzgtNzdjNzVkZGUzYWFhIiwiZXhwIjoxNjQ3OTk1NjY1LCJhdWQiOlsiNjZmNzljYmUtNmUzZC00MGVlLTk4NTUtZWU2MTkwOWZjZTQ3Il0sInN1YiI6Ijg0NjNhMjk3LTVmOTEtNGNlYi1iNWNhLTlhYjI1MThmZDJjMiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhbXIiOlsiY2xvdWRfZGlyZWN0b3J5Il0sImlhdCI6MTY0Nzk5MjA2NSwidGVuYW50IjoiZjZkYzVkMTEtNjdhOS00OTFlLTliNzgtNzdjNzVkZGUzYWFhIiwic2NvcGUiOiJvcGVuaWQgYXBwaWRfZGVmYXVsdCBhcHBpZF9yZWFkdXNlcmF0dHIgYXBwaWRfcmVhZHByb2ZpbGUgYXBwaWRfd3JpdGV1c2VyYXR0ciBhcHBpZF9hdXRoZW50aWNhdGVkIn0.eQ3iHr5NE7lqHSCgu4vD6ABbM3kU2fzqdMshnkBBs4yeX66wxqFk6m9V1C7q3MWRR0rh3LOKcWzevbTnTfxRCdOBCABn8UsnDPNVd_1-BB-FZpx_2CH9LEFGGMPRu60x6yT3oxF0uEQSb4y7dOdnNDEZz8SvmunMmWHOo3TGu5fahTJHPJx7HuMxbsaE7awXk6NMHstXgjBCzaN0D--MactfCvwmSXX7qDs99KM9iBKSGB35wbgxSmtiaunOh_I1XshC9GVdgGJ2psB48C898eJgUWStLlWfCAdJzCtovJOVwMrY8ncOZuvwi-N9ix7sM80NThNu2cfX3FLTs-IpPw",
+    "accessTokenPayload": {
+      "iss": "https://us-south.appid.cloud.ibm.com/oauth/v4/f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+      "exp": 1647995665,
+      "aud": ["66f79cbe-6e3d-40ee-9855-ee61909fce47"],
+      "sub": "8463a297-5f91-4ceb-b5ca-9ab2518fd2c2",
+      "email_verified": true,
+      "amr": ["cloud_directory"],
+      "iat": 1647992065,
+      "tenant": "f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+      "scope": "openid appid_default appid_readuserattr appid_readprofile appid_writeuserattr appid_authenticated",
+      "ver": 4
+    },
+    "identityToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFwcElkLWY2ZGM1ZDExLTY3YTktNDkxZS05Yjc4LTc3Yzc1ZGRlM2FhYS0yMDIyLTAxLTA1VDIyOjAyOjA4LjExMyIsInZlciI6NH0.eyJpc3MiOiJodHRwczovL3VzLXNvdXRoLmFwcGlkLmNsb3VkLmlibS5jb20vb2F1dGgvdjQvZjZkYzVkMTEtNjdhOS00OTFlLTliNzgtNzdjNzVkZGUzYWFhIiwiYXVkIjpbIjY2Zjc5Y2JlLTZlM2QtNDBlZS05ODU1LWVlNjE5MDlmY2U0NyJdLCJleHAiOjE2NDc5OTU2NjUsInRlbmFudCI6ImY2ZGM1ZDExLTY3YTktNDkxZS05Yjc4LTc3Yzc1ZGRlM2FhYSIsImlhdCI6MTY0Nzk5MjA2NSwiZW1haWwiOiJkd25peG9uQGdtYWlsLmNvbSIsIm5hbWUiOiJEYXZpZCBOaXhvbiIsInN1YiI6Ijg0NjNhMjk3LTVmOTEtNGNlYi1iNWNhLTlhYjI1MThmZDJjMiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJnaXZlbl9uYW1lIjoiRGF2aWQiLCJmYW1pbHlfbmFtZSI6Ik5peG9uIiwiaWRlbnRpdGllcyI6W3sicHJvdmlkZXIiOiJjbG91ZF9kaXJlY3RvcnkiLCJpZCI6IjU0Mjg4NGJjLTJkOTEtNGQ1ZS1hYjc0LTExMDY1YmQxYzVmZCJ9XSwiYW1yIjpbImNsb3VkX2RpcmVjdG9yeSJdfQ.D8_yVWCyzNxxp3osXnwM-gclS0qnKmEcr77xsjdunRi_Dsi4RFZ4WVV86UpfMdYAEG_AzsTOsivwBHM4D1_2JxVP3ZEnmNYOU8lUYaXcXe6VY1rkIh216ett__f0-ke-SE0NP6eLv-vCJknMcXc8v0WMplkooxVKxpTL8Fg03d-gOW07ES3IkTOazkeKErjIXX9hunoYEi_RvdxKPYCRlAmLqaLg4JxTHOBfkk_G84SNoa-Eha4rXLVNAmIMRCry8KRoATfJIPNUrZC-9r41QIWKq3L15t1dxH6LU9SbVlbFzPq3NEQ7wcVxXbgBzbojaryNBpsQlAUhHDWUQSj4Fg",
+    "identityTokenPayload": {
+      "iss": "https://us-south.appid.cloud.ibm.com/oauth/v4/f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+      "aud": ["66f79cbe-6e3d-40ee-9855-ee61909fce47"],
+      "exp": 1647995665,
+      "tenant": "f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+      "iat": 1647992065,
+      "email": "dwnixon@gmail.com",
+      "name": "David Nixon",
+      "sub": "8463a297-5f91-4ceb-b5ca-9ab2518fd2c2",
+      "email_verified": true,
+      "given_name": "David",
+      "family_name": "Nixon",
+      "identities": [
+        { "provider": "cloud_directory", "id": "542884bc-2d91-4d5e-ab74-11065bd1c5fd" }
+      ],
+      "amr": ["cloud_directory"],
+      "ver": 4
+    }
+  },
+  "passport": {
+    "user": {
+      "iss": "https://us-south.appid.cloud.ibm.com/oauth/v4/f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+      "aud": ["66f79cbe-6e3d-40ee-9855-ee61909fce47"],
+      "exp": 1647995665,
+      "tenant": "f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+      "iat": 1647992065,
+      "email": "dwnixon@gmail.com",
+      "name": "David Nixon",
+      "sub": "8463a297-5f91-4ceb-b5ca-9ab2518fd2c2",
+      "email_verified": true,
+      "given_name": "David",
+      "family_name": "Nixon",
+      "identities": [
+        { "provider": "cloud_directory", "id": "542884bc-2d91-4d5e-ab74-11065bd1c5fd" }
+      ],
+      "amr": ["cloud_directory"],
+      "ver": 4
+    }
+  }
+}

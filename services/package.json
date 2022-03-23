@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node services.js",
-    "serve": "nodemon server.js",
+    "serve": "nodemon --ignore ./samples server.js",
     "deploy": "ibmcloud cf push",
     "ci-check": "yarn format:diff",
     "ci-format": "prettier --write \"**/*.js\"",
@@ -26,10 +26,13 @@
     "dotenv": "^10.0.0",
     "dotenv-flow": "^3.2.0",
     "express": "^4.17.1",
-    "ibmcloud-appid": "^6.2.3",
+    "express-session": "^1.17.2",
+    "ibmcloud-appid": "^6.2.5",
     "jsdom": "^18.0.0",
     "lodash": "^4.17.19",
+    "memorystore": "^1.6.7",
     "morgan": "^1.10.0",
+    "passport": "^0.5.2",
     "prettier": "^2.0.5"
   },
   "devDependencies": {

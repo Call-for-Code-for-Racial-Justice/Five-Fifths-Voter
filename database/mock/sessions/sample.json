@@ -1,0 +1,72 @@
+{
+  "_id": "global:123",
+  "session": {
+    "cookie": {
+      "originalMaxAge": null,
+      "expires": null,
+      "httpOnly": true,
+      "path": "/"
+    },
+    "APPID_AUTH_CONTEXT": {
+      "accessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFwcElkLWY2ZGM1ZDExLTY3YTktNDkxZS05Yjc4LTc3Yzc1ZGRlM2FhYS0yMDIyLTAxLTA1VDIyOjAyOjA4LjExMyIsInZlciI6NH0.eyJpc3MiOiJodHRwczovL3VzLXNvdXRoLmFwcGlkLmNsb3VkLmlibS5jb20vb2F1dGgvdjQvZjZkYzVkMTEtNjdhOS00OTFlLTliNzgtNzdjNzVkZGUzYWFhIiwiZXhwIjoxNjQ4MDUzMTY1LCJhdWQiOlsiNjZmNzljYmUtNmUzZC00MGVlLTk4NTUtZWU2MTkwOWZjZTQ3Il0sInN1YiI6ImUyNzI5YWVmLThiNjUtNGRhNC05Yjc2LWU0NTk5MTcxMTNlYiIsImFtciI6WyJnb29nbGUiXSwiaWF0IjoxNjQ4MDQ5NTY1LCJ0ZW5hbnQiOiJmNmRjNWQxMS02N2E5LTQ5MWUtOWI3OC03N2M3NWRkZTNhYWEiLCJzY29wZSI6Im9wZW5pZCBhcHBpZF9kZWZhdWx0IGFwcGlkX3JlYWR1c2VyYXR0ciBhcHBpZF9yZWFkcHJvZmlsZSBhcHBpZF93cml0ZXVzZXJhdHRyIGFwcGlkX2F1dGhlbnRpY2F0ZWQifQ.SdWdj2rVmsX9W8eUzv2fwuqu6tdKP1XiACEUK9hzw7dOFekbRfgXyLhAISXv73xPU1QZzMCFZZmm2etZqYY_Rv0Dvq6PrJL4hBs6lkqQj8GDzccmarBduu6OJrvlZZ-6VUyI-CiQy0RHLE62pfM8CVWhdWlTWoDvfdnJTsT5idtw9vZ0JjftuSW3GPjTdMEvhcMcQwuB60ToYWE8Zdi-0l5BUXBrj525Ycd44sKww18eqR-Ce-o5dOECvnPEgpCtfnBRH4Czxi0ifBRMhEk4_Q9qOVP7eBjdw0IXZZ59rcOZXEMSV2Jris7QIOKf7ahyfQSWv_mLFqJN_fJe94XdqQ",
+      "accessTokenPayload": {
+        "iss": "https://us-south.appid.cloud.ibm.com/oauth/v4/f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+        "exp": 1648053165,
+        "aud": ["66f79cbe-6e3d-40ee-9855-ee61909fce47"],
+        "sub": "e2729aef-8b65-4da4-9b76-e459917113eb",
+        "amr": ["google"],
+        "iat": 1648049565,
+        "tenant": "f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+        "scope": "openid appid_default appid_readuserattr appid_readprofile appid_writeuserattr appid_authenticated",
+        "ver": 4
+      },
+      "identityToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFwcElkLWY2ZGM1ZDExLTY3YTktNDkxZS05Yjc4LTc3Yzc1ZGRlM2FhYS0yMDIyLTAxLTA1VDIyOjAyOjA4LjExMyIsInZlciI6NH0.eyJpc3MiOiJodHRwczovL3VzLXNvdXRoLmFwcGlkLmNsb3VkLmlibS5jb20vb2F1dGgvdjQvZjZkYzVkMTEtNjdhOS00OTFlLTliNzgtNzdjNzVkZGUzYWFhIiwiYXVkIjpbIjY2Zjc5Y2JlLTZlM2QtNDBlZS05ODU1LWVlNjE5MDlmY2U0NyJdLCJleHAiOjE2NDgwNTMxNjUsInRlbmFudCI6ImY2ZGM1ZDExLTY3YTktNDkxZS05Yjc4LTc3Yzc1ZGRlM2FhYSIsImlhdCI6MTY0ODA0OTU2NSwiZW1haWwiOiJkd25peG9uQGdtYWlsLmNvbSIsIm5hbWUiOiJEYXZpZCBOaXhvbiIsImxvY2FsZSI6ImVuIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoeUJmbzVBMVJFX1A3S3ZyY2wzQi1fUDBPX3N4ZDJvR0U0Z1piRDc3cz1zOTYtYyIsInN1YiI6ImUyNzI5YWVmLThiNjUtNGRhNC05Yjc2LWU0NTk5MTcxMTNlYiIsImdpdmVuX25hbWUiOiJEYXZpZCIsImZhbWlseV9uYW1lIjoiTml4b24iLCJpZGVudGl0aWVzIjpbeyJwcm92aWRlciI6Imdvb2dsZSIsImlkIjoiMTAzMTE5NTcxNDU0MzQ2MTkxNTQyIn1dLCJhbXIiOlsiZ29vZ2xlIl19.KxkhMp0MAlHnHB7SuP9EL9Vtpz91G03Ujsum1n2cdBUWmzYnnB6sekZHBHVigvZbKWlY5nKXe_64iLM0vVhUrWRJU4cvL1oa9nSm8n16GuTfm0vs_mcOvzbYL8Mp8Wtwi-TagPdMJYPtKSmF40-A45D3M9nnC56iU6AnbLsyZCJ2_o3pmF6zSBEIJPhXsRcYDHDkIH1-kyxXHRBnsifhGGHrnKMksWEimvoRnSG2zxegXqSW6gD85Y7ymk8iVzMCSKAzzQ4MkDxcf69ztlbi0J2RDFx6qVTRiyrfYFEJO8_mrR6jEa1kguMgsPixj4DsXwL_Uth8r-AVBsGxGdtwxQ",
+      "identityTokenPayload": {
+        "iss": "https://us-south.appid.cloud.ibm.com/oauth/v4/f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+        "aud": ["66f79cbe-6e3d-40ee-9855-ee61909fce47"],
+        "exp": 1648053165,
+        "tenant": "f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+        "iat": 1648049565,
+        "email": "dwnixon@gmail.com",
+        "name": "David Nixon",
+        "locale": "en",
+        "picture": "https://lh3.googleusercontent.com/a-/AOh14GhyBfo5A1RE_P7Kvrcl3B-_P0O_sxd2oGE4gZbD77s=s96-c",
+        "sub": "e2729aef-8b65-4da4-9b76-e459917113eb",
+        "given_name": "David",
+        "family_name": "Nixon",
+        "identities": [
+          {
+            "provider": "google",
+            "id": "103119571454346191542"
+          }
+        ],
+        "amr": ["google"],
+        "ver": 4
+      }
+    },
+    "passport": {
+      "user": {
+        "iss": "https://us-south.appid.cloud.ibm.com/oauth/v4/f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+        "aud": ["66f79cbe-6e3d-40ee-9855-ee61909fce47"],
+        "exp": 1648053165,
+        "tenant": "f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+        "iat": 1648049565,
+        "email": "dwnixon@gmail.com",
+        "name": "David Nixon",
+        "locale": "en",
+        "picture": "https://lh3.googleusercontent.com/a-/AOh14GhyBfo5A1RE_P7Kvrcl3B-_P0O_sxd2oGE4gZbD77s=s96-c",
+        "sub": "e2729aef-8b65-4da4-9b76-e459917113eb",
+        "given_name": "David",
+        "family_name": "Nixon",
+        "identities": [
+          {
+            "provider": "google",
+            "id": "103119571454346191542"
+          }
+        ],
+        "amr": ["google"],
+        "ver": 4
+      }
+    }
+  }
+}

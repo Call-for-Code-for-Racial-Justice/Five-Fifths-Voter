@@ -1,0 +1,63 @@
+{
+  "sid": "lBtR-kkDqYAr8HjsXiS8eMzyFBrhHXxR",
+  "session": {
+    "passport": {
+      "user": {
+        "iss": "https://us-south.appid.cloud.ibm.com/oauth/v4/f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+        "aud": ["66f79cbe-6e3d-40ee-9855-ee61909fce47"],
+        "exp": 1647974817,
+        "tenant": "f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+        "iat": 1647971217,
+        "email": "dwnixon@gmail.com",
+        "name": "David Nixon",
+        "locale": "en",
+        "picture": "https://lh3.googleusercontent.com/a-/AOh14GhyBfo5A1RE_P7Kvrcl3B-_P0O_sxd2oGE4gZbD77s=s96-c",
+        "sub": "e2729aef-8b65-4da4-9b76-e459917113eb",
+        "given_name": "David",
+        "family_name": "Nixon",
+        "identities": [{ "provider": "google", "id": "103119571454346191542" }],
+        "amr": ["google"],
+        "ver": 4
+      }
+    },
+    "APPID_AUTH_CONTEXT": {
+      "accessToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFwcElkLWY2ZGM1ZDExLTY3YTktNDkxZS05Yjc4LTc3Yzc1ZGRlM2FhYS0yMDIyLTAxLTA1VDIyOjAyOjA4LjExMyIsInZlciI6NH0.eyJpc3MiOiJodHRwczovL3VzLXNvdXRoLmFwcGlkLmNsb3VkLmlibS5jb20vb2F1dGgvdjQvZjZkYzVkMTEtNjdhOS00OTFlLTliNzgtNzdjNzVkZGUzYWFhIiwiZXhwIjoxNjQ3OTc0ODE3LCJhdWQiOlsiNjZmNzljYmUtNmUzZC00MGVlLTk4NTUtZWU2MTkwOWZjZTQ3Il0sInN1YiI6ImUyNzI5YWVmLThiNjUtNGRhNC05Yjc2LWU0NTk5MTcxMTNlYiIsImFtciI6WyJnb29nbGUiXSwiaWF0IjoxNjQ3OTcxMjE3LCJ0ZW5hbnQiOiJmNmRjNWQxMS02N2E5LTQ5MWUtOWI3OC03N2M3NWRkZTNhYWEiLCJzY29wZSI6Im9wZW5pZCBhcHBpZF9kZWZhdWx0IGFwcGlkX3JlYWR1c2VyYXR0ciBhcHBpZF9yZWFkcHJvZmlsZSBhcHBpZF93cml0ZXVzZXJhdHRyIGFwcGlkX2F1dGhlbnRpY2F0ZWQifQ.ASnyW5Ee4dN3TuTuCRG2uGBbP8bddxnQHy-PiykMderXcVhlcSj2G98WqFdt_5v7aE9-7NAGqUH1ywYJWdoAaQpLCRzX4idmhY_1gKfGENvxPJCKYGU4KBEauRCY8YsVQ9FqG6TVhXdfhCv8qFUyD6DxcvkvbQtCEbUErGpsckZNBu3Yx0RBgvp0CWf5Rtx6q4Awd0bBlwObyBrp_QiIKyU-atRMvJwuWn8mj3IXVbK0AWgIBEZt8aJjTtkx7TT3pdDzVwBqq38M6gmN_fw72IaCOqMqrmyKrkou1zBPjTl5iPIndIf0O2saiVU8Emfx0jao932vH7Cfg-kA12vGLQ",
+      "accessTokenPayload": {
+        "iss": "https://us-south.appid.cloud.ibm.com/oauth/v4/f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+        "exp": 1647987979,
+        "aud": ["66f79cbe-6e3d-40ee-9855-ee61909fce47"],
+        "sub": "8463a297-5f91-4ceb-b5ca-9ab2518fd2c2",
+        "email_verified": true,
+        "amr": ["cloud_directory"],
+        "iat": 1647984379,
+        "tenant": "f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+        "scope": "openid appid_default appid_readuserattr appid_readprofile appid_writeuserattr appid_authenticated",
+        "ver": 4
+      },
+      "identityToken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImFwcElkLWY2ZGM1ZDExLTY3YTktNDkxZS05Yjc4LTc3Yzc1ZGRlM2FhYS0yMDIyLTAxLTA1VDIyOjAyOjA4LjExMyIsInZlciI6NH0.eyJpc3MiOiJodHRwczovL3VzLXNvdXRoLmFwcGlkLmNsb3VkLmlibS5jb20vb2F1dGgvdjQvZjZkYzVkMTEtNjdhOS00OTFlLTliNzgtNzdjNzVkZGUzYWFhIiwiYXVkIjpbIjY2Zjc5Y2JlLTZlM2QtNDBlZS05ODU1LWVlNjE5MDlmY2U0NyJdLCJleHAiOjE2NDc5NzQ4MTcsInRlbmFudCI6ImY2ZGM1ZDExLTY3YTktNDkxZS05Yjc4LTc3Yzc1ZGRlM2FhYSIsImlhdCI6MTY0Nzk3MTIxNywiZW1haWwiOiJkd25peG9uQGdtYWlsLmNvbSIsIm5hbWUiOiJEYXZpZCBOaXhvbiIsImxvY2FsZSI6ImVuIiwicGljdHVyZSI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hLS9BT2gxNEdoeUJmbzVBMVJFX1A3S3ZyY2wzQi1fUDBPX3N4ZDJvR0U0Z1piRDc3cz1zOTYtYyIsInN1YiI6ImUyNzI5YWVmLThiNjUtNGRhNC05Yjc2LWU0NTk5MTcxMTNlYiIsImdpdmVuX25hbWUiOiJEYXZpZCIsImZhbWlseV9uYW1lIjoiTml4b24iLCJpZGVudGl0aWVzIjpbeyJwcm92aWRlciI6Imdvb2dsZSIsImlkIjoiMTAzMTE5NTcxNDU0MzQ2MTkxNTQyIn1dLCJhbXIiOlsiZ29vZ2xlIl19.dJcPLf3YuGtYe90uPekYrtguc98Ll0Mu8bHQN8ou7ZkYBqQvV1tERT9PJ3pUj-Y0ALflGDjzjpJyCTkmoIjkmD8_ANAWOJgid3jzTP_3z8d4WYdLHv4N1fknvDF1QDumzitfMQRQIehdII4ObpQKhvjkeu9JfekXVV0w-UOA8U_yxr64cIkwKajlPnzaaCJ_rkLFuVmivAQ6HwNEmtYS6WduMDpBatG-2kvHrAhMfulIvBL2PJaiM8ZkYRMlUX7jvbXKLOoK9959uaNpd0GynbcdjFvWJ3dG8utHHjxkZf46NJotOsROGJmstZETADX6ub05ozWgMtlI-KOHO1lUuw",
+      "identityTokenPayload": {
+        "iss": "https://us-south.appid.cloud.ibm.com/oauth/v4/f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+        "aud": ["66f79cbe-6e3d-40ee-9855-ee61909fce47"],
+        "exp": 1647987979,
+        "tenant": "f6dc5d11-67a9-491e-9b78-77c75dde3aaa",
+        "iat": 1647984379,
+        "email": "dwnixon@gmail.com",
+        "name": "David Nixon",
+        "sub": "8463a297-5f91-4ceb-b5ca-9ab2518fd2c2",
+        "email_verified": true,
+        "given_name": "David",
+        "family_name": "Nixon",
+        "identities": [
+          {
+            "provider": "cloud_directory",
+            "id": "542884bc-2d91-4d5e-ab74-11065bd1c5fd"
+          }
+        ],
+        "amr": ["cloud_directory"],
+        "ver": 4
+      }
+    },
+    "iat": 1647971218,
+    "exp": 1655747218
+  }
+}

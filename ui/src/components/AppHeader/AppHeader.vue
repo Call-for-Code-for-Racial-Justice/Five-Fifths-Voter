@@ -13,9 +13,16 @@
       <cv-header-menu-item :to="{ name: 'support-page' }">
         {{ $t('appHeaderVoterSupport') }}
       </cv-header-menu-item>
+      <cv-header-menu-item :to="{ name: 'activities' }">
+        Work Together
+      </cv-header-menu-item>
     </cv-header-nav>
     <template v-slot:header-global>
-      <cv-header-global-action :aria-label="$t('ariaUser')">
+      <cv-header-global-action
+        :aria-label="$t('ariaUser')"
+        :label="avatarLabel"
+        @click="actionAvatar"
+      >
         <UserAvatar20 />
       </cv-header-global-action>
       <cv-header-global-action
@@ -67,6 +74,7 @@
 import UserAvatar20 from '@carbon/icons-vue/lib/user--avatar/20';
 import Language32 from '@carbon/icons-vue/lib/language/32';
 import i18n from '@/plugins/i18n';
+import { mapState } from 'vuex';
 
 export default {
   name: 'AppHeader',
@@ -100,20 +108,31 @@ export default {
         { flag: '', language: 'fa', title: ' زبان فارسی' },
         { flag: '', language: 'ja', title: '日本語' },
         { flag: '', language: 'tl', title: 'Tagalog' },
-        { flag: '', language: 'vn', title: 'ngôn ngữ tiếng Việt' },
-      ],
+        { flag: '', language: 'vn', title: 'ngôn ngữ tiếng Việt' }
+      ]
     };
   },
   computed: {
     currentLocale() {
       return i18n.locale;
     },
+    ...mapState({
+      userName: state => state.user.info.name
+    }),
+    avatarLabel() {
+      if (this.userName !== '') return `Logout ${this.userName}`;
+      else return 'Login';
+    }
   },
   methods: {
     changeLocale(locale) {
       i18n.locale = locale;
     },
-  },
+    actionAvatar() {
+      if (this.userName !== '') this.$router.push({ name: 'login' });
+      else this.$router.push({ name: 'logout' });
+    }
+  }
 };
 
 export function setDocumentDirectionPerLocale(locale) {
