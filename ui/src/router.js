@@ -3,6 +3,8 @@ import Router from 'vue-router';
 import superagent from 'superagent';
 import store from './store';
 
+const DEV_HEADER = process.env.DEV_HEADER || 'dev';
+
 Vue.use(Router);
 /*eslint-disable */
 const PREFIX = location.href.startsWith('http://localhost:') ? '/services' : '';
@@ -88,11 +90,14 @@ router.beforeEach(async (to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
     //     // this route requires auth, check if logged in
     //     // if not, redirect to login page.
-    let userResponse = await superagent.get(`${PREFIX}/auth/user`).catch(() => {
-      /*eslint-disable */
-      console.error('xhr error');
-      return { body: { authenticated: false, xhr: 'error' } };
-    });
+    let userResponse = await superagent
+      .get(`${PREFIX}/auth/user`)
+      .set('vue', DEV_HEADER)
+      .catch(() => {
+        /*eslint-disable */
+        console.error('xhr error');
+        return { body: { authenticated: false, xhr: 'error' } };
+      });
 
     let userInfo = userResponse.body;
 

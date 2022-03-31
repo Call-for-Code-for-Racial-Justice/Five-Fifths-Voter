@@ -1,0 +1,12 @@
+{
+  "_id": "_design/teams",
+  "views": {
+    "teams": {
+      "map": "function (doc) {\n  if (doc.doc_type === \"team\") emit(doc._id, 1);\n}"
+    }
+  },
+  "language": "javascript",
+  "options": {
+    "partitioned": true
+  }
+}

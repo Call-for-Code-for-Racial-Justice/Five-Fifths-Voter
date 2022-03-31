@@ -1,5 +1,4 @@
 const debug = require("debug")("CloudantStore")
-const debugSession = debug.extend("session")
 const expressSession = require("express-session")
 const MemoryStore = require("memorystore")(expressSession)
 const database = require("../services/database")

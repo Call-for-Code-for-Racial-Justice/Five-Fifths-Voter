@@ -2,13 +2,27 @@
   <div>
     <AppHeader />
     <cv-grid fullWidth class="team">
-      <cv-row>
+      <cv-row v-if="!loadedData">
+        <cv-column>
+          <cv-loading
+            :active="loadingData"
+            :overlay="false"
+            @loading-end="loadedData = true"
+          ></cv-loading>
+          <cv-skeleton-text :heading="true" :paragraph="true" :line-count="3"></cv-skeleton-text>
+        </cv-column>
+      </cv-row>
+
+      <cv-row v-if="loadedData">
         <cv-column>
           <div class="activities__user">Welcome {{ given_name }}</div>
         </cv-column>
       </cv-row>
-      <cv-row>
+      <cv-row v-if="loadedData">
         <cv-column :lg="10">
+          <div class="team__title">
+            {{ currentTeam.display_name }}
+          </div>
           <div class="team__description">
             {{ currentTeam.description }}
           </div>
@@ -17,7 +31,7 @@
             {{ currentTeam.badges }} badges <Badge32 />
           </div>
           <div class="team__badge" v-if="currentTeam.badges > 0">
-            <Sprout32 /> Congratutaions on joining our team
+            <Sprout32 /> Congratulations on joining our team
           </div>
           <div class="team__badge" v-if="currentTeam.badges > 1">
             <Account32 />You contributed money to a non-profit
@@ -72,6 +86,7 @@ import {
   Gift32,
   NoodleBowl32
 } from '@carbon/icons-vue';
+
 export default {
   name: 'ActivitiesPage',
   components: {
@@ -93,6 +108,10 @@ export default {
     teamId: { type: String, default: 'ymca-la' }
   },
   data: () => ({
+    loadingData: false,
+    loadedData: false,
+    showError: false,
+
     teams: [
       { name: 'YMCA LA', _id: 'team:ymca-la', description: 'Welcome to the YMCA LA', badges: 10 },
       {
@@ -123,13 +142,21 @@ export default {
       }
     ]
   }),
+  async created() {
+    this.loadingData = true;
+    this.loadedData = false;
+    await this.$store.dispatch('loadCurrent', this.teamId);
+
+    // TODO: load team and details like badges
+
+    // Finish loading animation
+    this.loadingData = false;
+  },
 
   computed: {
-    currentTeam() {
-      return this.teams.find(team => team._id === `team:${this.teamId}`);
-    },
     ...mapState({
-      given_name: state => state.user.info.given_name
+      given_name: state => state.user.info.given_name,
+      currentTeam: state => state.teams.current
     })
   }
 };
@@ -137,9 +164,14 @@ export default {
 
 <style lang="scss">
 @import '@/styles/theme';
+@import 'carbon-components/scss/components/skeleton/skeleton';
+@import 'carbon-components/scss/components/loading/loading';
 
 .team {
   margin-top: 4rem;
+  &__title {
+    @include carbon--type-style('productive-heading-03');
+  }
   &__description {
     @include carbon--type-style('body-long-01');
   }

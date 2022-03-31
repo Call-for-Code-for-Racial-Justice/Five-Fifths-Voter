@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@ibm-cloud/cloudant": "^0.0.25",
+    "ajv": "^8.11.0",
     "axios": "^0.24.0",
     "body-parser": "^1.19.0",
     "debug": "^4.3.4",
@@ -33,7 +34,8 @@
     "memorystore": "^1.6.7",
     "morgan": "^1.10.0",
     "passport": "^0.5.2",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "husky": "^7.0.4",

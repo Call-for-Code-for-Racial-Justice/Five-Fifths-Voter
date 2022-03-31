@@ -6,6 +6,9 @@
         <cv-column>
           <div class="activities__user">Welcome {{ given_name }}</div>
         </cv-column>
+        <cv-column>
+          <CreateTeam />
+        </cv-column>
       </cv-row>
       <cv-row>
         <cv-column :lg="10">
@@ -40,14 +43,17 @@
 
 <script>
 import AppHeader from '../../components/AppHeader';
+import CreateTeam from './CreateTeam.vue';
 import { mapState } from 'vuex';
 
 export default {
   name: 'ActivitiesPage',
   components: {
-    AppHeader
+    AppHeader,
+    CreateTeam
   },
   data: () => ({
+    // given_name: 'f',
     message: 'Hello world',
     yours: [
       { name: 'YMCA LA', _id: 'team:ymca-la' },
