@@ -1,7 +1,8 @@
 {
-  "display_name": "xx",
-  "description": "xx",
-  "slug": "xx",
+  "_id": "teams:sample",
+  "display_name": "Sample Team",
+  "description": "Sample Team description. Cattle it life set fruitful beginning deep their our day seasons very. Blessed made she'd image. First all they're created their their whose for third also Wherein, replenish.",
+  "slug": "sample",
   "doc_type": "team",
   "date_created": "2022-03-24T01:04:29.076Z",
   "date_modified": "2022-03-24T01:04:29.076Z",

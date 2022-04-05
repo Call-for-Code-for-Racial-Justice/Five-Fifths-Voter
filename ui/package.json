@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.0.0-0",
+    "@carbon/charts-vue": "^0.56.0",
     "@carbon/grid": "^10.13.0",
     "@carbon/icons": "^10.19.0",
     "@carbon/icons-vue": "^10.14.0",
