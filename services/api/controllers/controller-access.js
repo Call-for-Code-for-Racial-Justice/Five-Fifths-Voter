@@ -1,12 +1,12 @@
 const debug = require("debug")("teams")
 const database = require("../services/database")
 const Model = require("../models/model-access")
+const lodash = require("lodash")
 
 const DB = "teams"
 
 exports.create = async (req, res, next) => {
   var doc = req.body
-  if (doc._id) return next({ ok: false, errors: "new doc should not have an id" })
   if (doc._rev) return next({ ok: false, errors: "new doc should not have an rev" })
   // TODO: make sure req.user.sub has access to doc.team
 
@@ -17,8 +17,7 @@ exports.create = async (req, res, next) => {
   if (!valid) {
     return res.status(406).send({ ok: false, error: Model.validate.errors })
   }
-
-  resp = await database.service
+  let resp = await database.service
     .postDocument({
       db: DB,
       document: doc,
@@ -51,11 +50,14 @@ exports.list = async (req, res, next) => {
     })
   if (!resp) return res.status(404).send({ ok: false, message: "not found" })
 
-  return res.status(200).send(
-    resp.result.rows.map((row) => {
-      return { ...row.doc, _id: row.doc._id.slice(Model.PARTITION.length + 1) }
-    })
-  )
+  let accessDocs = resp.result.rows.map((row) => {
+    return { ...row.doc, _id: row.doc._id.slice(Model.PARTITION.length + 1) }
+  })
+  accessDocs.sort(function (a, b) {
+    return b.date_modified.localeCompare(a.date_modified)
+  })
+  accessDocs = lodash.sortedUniqBy(accessDocs, (doc) => `${doc.email}?${doc.team}`)
+  return res.status(200).send(accessDocs)
 }
 
 exports.read = async (req, res, next) => {

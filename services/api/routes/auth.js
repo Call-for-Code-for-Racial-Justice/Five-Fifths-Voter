@@ -5,14 +5,14 @@ const WebAppStrategy = require("ibmcloud-appid").WebAppStrategy
 
 const LANDING_PAGE = () => {
   if (process.env.CE_DOMAIN) {
-    return `https://${CE_APP}.${CE_SUBDOMAIN}.${CE_DOMAIN}/#/activities`
+    return `https://${process.env.CE_APP}.${process.env.CE_SUBDOMAIN}.${process.env.CE_DOMAIN}/#/activities`
   }
   return process.env.LANDING_PAGE || "http://localhost:4013/#/activities"
 }
 
 const HOME_PAGE = () => {
   if (process.env.CE_DOMAIN) {
-    return `https://${CE_APP}.${CE_SUBDOMAIN}.${CE_DOMAIN}/#`
+    return `https://${process.env.CE_APP}.${process.env.CE_SUBDOMAIN}.${process.env.CE_DOMAIN}/#`
   }
   return process.env.HOME_PAGE || "http://localhost:4013/#"
 }

@@ -115,3 +115,37 @@ GET http://localhost:3333/earlyvoting/:state:/:region:
   }
 }
 ```
+
+## Code Engine Deployment
+
+**Note** This section is for debugging the IBM Cloud CE deployment. It is not needed for local development.
+
+- [Install the code engine command line](https://cloud.ibm.com/docs/codeengine?topic=codeengine-cli)
+
+- Login and target the CE project
+
+  ```sh
+  ibmcloud login --apikey @~/projects/five-fifths-voter.json -g cfc-team-fivefifths -r us-south
+  ibmcloud ce project select --name fivefifthsvoter-next
+  ```
+
+- Deploy new version of the services app
+
+  ```sh
+  # Build
+  cd services
+  docker build -t fivefifthsvoter-next .
+  # Push to IBM registry
+  ibmcloud cr login
+  docker tag fivefifthsvoter-next:latest us.icr.io/fivefifthsvoter/fivefifthsvoter-next:latest
+  docker push us.icr.io/fivefifthsvoter/fivefifthsvoter-next:latest
+  docker push us.icr.io/fivefifthsvoter/fivefifthsvoter-next:latest us.icr.io/fivefifthsvoter/fivefifthsvoter-next:$(date '+%FT%H%M%S')
+  # Roll out new version of the app
+  ibmcloud ce app update -n fivefifthsvoter
+  ```
+
+- Show the latest logs
+
+  ```sh
+  ibmcloud ce app logs -f -n fivefifthsvoter
+  ```

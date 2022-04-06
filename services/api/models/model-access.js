@@ -16,12 +16,13 @@ const schema = {
     creator_sub: { type: "string" }, // unique id from APP ID
     date_created: { type: "string" }, // Date.toISOString()
     date_modified: { type: "string" }, // Date.toISOString()
-    email: { type: "string" },
-    team: { type: "string" }, // slug for the team
+    email: { type: "string", minLength: 6 },
+    team: { type: "string", minLength: 1 }, // slug for the team
     sub: { type: "string" }, // user unique name after they accept the invitation
+    acl: { type: "string", enum: ["admin", "editor", "user"] },
     status: { type: "string", enum: ["accepted", "ignored", "invited"] },
   },
-  required: ["email", "team", "status", "doc_type"],
+  required: ["doc_type", "email", "team", "acl", "status"],
   additionalProperties: false,
 }
 
@@ -37,7 +38,12 @@ module.exports = {
    * @returns { email: "", team: "", status: "invited" }
    */
   blank() {
-    return lodash.cloneDeep({ email: "", team: "", status: "invited" })
+    return lodash.cloneDeep({
+      _id: `${PARTITION}:${uuid().replace(/-/g, "")}`,
+      email: "",
+      team: "",
+      status: "invited",
+    })
   },
 
   /**

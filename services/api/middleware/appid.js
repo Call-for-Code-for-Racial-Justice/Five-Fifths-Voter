@@ -25,7 +25,7 @@ module.exports = function (app) {
   const REDIRECT_URI = () => {
     // are we deployed on code engine?
     if (process.env.CE_DOMAIN) {
-      return `https://${CE_APP}.${CE_SUBDOMAIN}.${CE_DOMAIN}/auth/callback`
+      return `https://${process.env.CE_APP}.${process.env.CE_SUBDOMAIN}.${process.env.CE_DOMAIN}/auth/callback`
     }
     return process.env.CALLBACK_URL || "http://localhost:3333/auth/callback"
   }
