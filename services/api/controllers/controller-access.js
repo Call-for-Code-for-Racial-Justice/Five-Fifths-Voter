@@ -90,12 +90,12 @@ exports.update = async (req, res, next) => {
   if (!resp) return res.status(errCode || 404).send({ ok: false, message: "not found" })
 
   let doc = resp.result
+  if (doc.team != update.team)
+    return res.status(400).send({ ok: false, message: "cannot change team in existing access doc" }) // cannot update slug
   doc = { ...doc, ...update, _id: doc._id, _rev: doc._rev }
   Model.update(userInfo.uniqueSecurityName, doc)
   let valid = Model.validate(doc)
   if (!valid) return res.status(406).send({ ok: false, errors: Model.validate.errors })
-  if (docId != update.slug)
-    return res.status(400).send({ ok: false, message: "cannot change slug" }) // cannot update slug
 
   resp = await database.service
     .postDocument({
@@ -132,5 +132,5 @@ exports.delete = async (req, res, next) => {
     })
   if (!resp) return res.status(417).send({ ok: false, message: "not found" })
 
-  return res.status(200).send({ ok: true, message: doc._id, status: "deleted" })
+  return res.status(200).send({ ok: true, message: docId, status: "deleted" })
 }

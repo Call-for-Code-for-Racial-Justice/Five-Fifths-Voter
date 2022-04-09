@@ -66,6 +66,7 @@ module.exports = {
     if (!doc._id) doc._id = `${PARTITION}:${uuid().replace(/-/g, "")}`
     if (!doc.creator_sub) doc.creator_sub = sub
     if (!doc.date_created) doc.date_created = new Date().toISOString()
+    if (!doc.email) doc.email = doc.email.toLowerCase()
     doc.date_modified = new Date().toISOString()
     doc.doc_type = DOC_TYPE
     debug("update", doc)
