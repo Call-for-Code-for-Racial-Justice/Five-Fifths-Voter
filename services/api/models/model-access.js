@@ -6,6 +6,8 @@ const { v4: uuid } = require("uuid")
 
 const DOC_TYPE = "access"
 const PARTITION = "teams"
+const ROLES = ["admin", "editor", "user"]
+const ROLE_NUM = { admin: 100, editor: 50, user: 10 }
 
 const schema = {
   type: "object",
@@ -19,7 +21,7 @@ const schema = {
     email: { type: "string", minLength: 6 },
     team: { type: "string", minLength: 1 }, // slug for the team
     sub: { type: "string" }, // user unique name after they accept the invitation
-    acl: { type: "string", enum: ["admin", "editor", "user"] },
+    acl: { type: "string", enum: ROLES },
     status: { type: "string", enum: ["accepted", "ignored", "invited"] },
   },
   required: ["doc_type", "email", "team", "acl", "status"],
@@ -32,6 +34,7 @@ module.exports = {
   validate,
 
   PARTITION,
+  ROLE_NUM,
 
   /**
    * Get a blank document with required fields
@@ -62,13 +65,23 @@ module.exports = {
    * @param {string} sub
    * @param {object} doc
    */
-  update(sub, doc) {
+  update(sub, doc, teamId) {
     if (!doc._id) doc._id = `${PARTITION}:${uuid().replace(/-/g, "")}`
     if (!doc.creator_sub) doc.creator_sub = sub
     if (!doc.date_created) doc.date_created = new Date().toISOString()
-    if (!doc.email) doc.email = doc.email.toLowerCase()
+    doc.email = doc.email.toLowerCase()
+    doc.team = teamId
     doc.date_modified = new Date().toISOString()
     doc.doc_type = DOC_TYPE
     debug("update", doc)
+  },
+
+  /**
+   * Is this access document accepted
+   * @param {object} doc
+   * @returns {boolean} true if status is accepted
+   */
+  isAccepted(doc) {
+    return doc && doc.status === "accepted"
   },
 }

@@ -6,6 +6,12 @@
     },
     "access": {
       "map": "function (doc) {\n  if(doc.doc_type === \"access\") emit(doc.email.toLowerCase(), 1);\n}"
+    },
+    "access-team": {
+      "map": "function (doc) {\n  if(doc.doc_type === \"access\") emit(doc.team, 1);\n}"
+    },
+    "access-team-user": {
+      "map": "function (doc) {\n  if(doc.doc_type === \"access\" && doc.status === 'accepted') emit([doc.email.toLowerCase(),doc.team], 1);\n}"
     }
   },
   "language": "javascript",
