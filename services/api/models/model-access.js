@@ -75,13 +75,4 @@ module.exports = {
     doc.doc_type = DOC_TYPE
     debug("update", doc)
   },
-
-  /**
-   * Is this access document accepted
-   * @param {object} doc
-   * @returns {boolean} true if status is accepted
-   */
-  isAccepted(doc) {
-    return doc && doc.status === "accepted"
-  },
 }

@@ -2,6 +2,7 @@ const debug = require("debug")("CloudantStore")
 const expressSession = require("express-session")
 const MemoryStore = require("memorystore")(expressSession)
 const database = require("../services/database")
+const lodash = require("lodash")
 
 module.exports = function (session) {
   const noop = () => {}
@@ -60,6 +61,11 @@ module.exports = function (session) {
 
           if (resp && resp.result && resp.result.session) {
             debug(`GOT ${this.partition}:${sid} from db`)
+            await new Promise((resolve) =>
+              MemoryStore.prototype.set.call(this, sid, resp.result.session, resolve)
+            )
+            debug("stored to memory")
+
             return cb(null, resp.result.session)
           }
         }
@@ -70,14 +76,26 @@ module.exports = function (session) {
     })
   }
 
-  CloudantStore.prototype.set = function (sid, session, cb = noop) {
+  CloudantStore.prototype.set = async function (sid, session, cb = noop) {
     debug("SET", sid)
+
+    var dirty = true
+    try {
+      var savedSession = this.store.get(sid)
+      var serSession = this.serializer.stringify(session)
+      dirty = !lodash.isEqual(savedSession, serSession)
+    } catch (error) {
+      debug("could not calculate dirty", error)
+    }
+
+    debug("SET dirty", dirty)
+
     MemoryStore.prototype.set.call(this, sid, session, async (err, result) => {
       try {
         // no need to wait for the db update to finish
         cb(err, result)
 
-        if (!err) {
+        if (dirty && !err) {
           // get the revision
           let resp = await database.service
             .getDocument({
