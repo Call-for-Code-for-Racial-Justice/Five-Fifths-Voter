@@ -55,7 +55,7 @@ exports.create = async (req, res, next) => {
     })
 
   if (resp)
-    res.status(201).send({
+    res.status(200).send({
       ok: true,
       message: "created",
       doc: { ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) },

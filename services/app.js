@@ -30,6 +30,7 @@ const pollingPlaceRoutes = require("./api/routes/pollingplace")
 const twitterRoutes = require("./api/routes/twitter")
 const teamRoutes = require("./api/routes/route-teams")
 const teamAccessRoutes = require("./api/routes/route-access")
+const teamElectionRoutes = require("./api/routes/route-election")
 
 app.use("/", staticRoutes)
 app.use("/auth", authRoutes)
@@ -42,6 +43,7 @@ app.use("/pollingplace", pollingPlaceRoutes)
 app.use("/twitter", twitterRoutes)
 app.use("/team", checkAuth, teamRoutes)
 app.use("/teams/access", checkAuth, teamAccessRoutes)
+app.use("/teams/election", checkAuth, teamElectionRoutes)
 
 // errors
 app.use((req, res, next) => {
