@@ -40,7 +40,10 @@
             <cv-tab label="Upcoming Election">
               <ElectionInfo v-if="currentTab == 2" />
             </cv-tab>
-            <cv-tab label="Invite voters">
+            <cv-tab
+              label="Manage team"
+              :disabled="userAccess.acl !== 'admin' && userAccess.acl !== 'editor'"
+            >
               <ManageAccess v-if="currentTab == 3" />
             </cv-tab>
           </cv-tabs>
@@ -80,6 +83,7 @@ export default {
     this.loadingData = true;
     this.loadedData = false;
     await this.$store.dispatch('loadCurrent', this.teamId);
+    await this.$store.dispatch('loadAccess');
 
     // TODO: load team and details like badges
 
@@ -90,8 +94,14 @@ export default {
   computed: {
     ...mapState({
       given_name: state => state.user.info.given_name,
-      currentTeam: state => state.teams.current
-    })
+      currentTeam: state => state.teams.current,
+      access: state => state.teams.access
+    }),
+
+    userAccess() {
+      let doc = this.access.find(access => access.team === this.teamId);
+      return doc || {};
+    }
   }
 };
 </script>

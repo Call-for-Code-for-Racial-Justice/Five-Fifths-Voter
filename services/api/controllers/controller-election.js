@@ -1,4 +1,4 @@
-const debug = require("debug")("teams")
+const debug = require("debug")("elections:controller")
 const database = require("../services/database")
 const Model = require("../models/model-election")
 const lodash = require("lodash")
@@ -78,6 +78,8 @@ exports.listTeam = async (req, res, next) => {
       debug(JSON.stringify(err))
     })
   if (!resp) return res.status(404).send({ ok: false, message: "not found" })
+
+  res.set("Cache-control", `public, max-age=300`) // let browser cache this for 5 minutes
 
   let elections = resp.result.rows.map((row) => {
     return { ...row.doc, _id: row.doc._id.slice(Model.PARTITION.length + 1) }

@@ -11,27 +11,47 @@
         </cv-column>
       </cv-row>
       <cv-row>
-        <cv-column :lg="10">
+        <cv-column :lg="10" v-if="loading">
+          <cv-inline-loading
+            ending-text="Here comes the awesome"
+            error-text="Could not load your teams"
+            loading-text="Loading your teams"
+            loaded-text="Loaded your teams"
+            :state="loadingState"
+          ></cv-inline-loading>
+        </cv-column>
+        <cv-column :lg="10" v-else>
           <div class="activities__yours">Your Election Teams</div>
           <cv-list :ordered="false">
             <cv-list-item v-for="team in yours" :key="team._id">
-              <cv-link
-                :to="{ name: 'team', params: { teamId: team._id.split(':')[1] } }"
-                :inline="true"
-              >
-                {{ team.name }}
+              <cv-link :to="{ name: 'team', params: { teamId: team.team } }" :inline="true">
+                {{ team.team }}
               </cv-link>
             </cv-list-item>
+            <div v-if="yours.length === 0">
+              You have not joined any teams yet. Look at your invitations or maybe create your own
+              team.
+            </div>
           </cv-list>
           <div class="activities__invitations">Your Invitations</div>
           <cv-list :ordered="false">
             <cv-list-item v-for="team in invitations" :key="team._id">
-              <div>{{ team.name }}</div>
-              <cv-button size="sm" @click="actionAcceptInvitation(team._id)">
-                Accept Invitation
-              </cv-button>
+              <div>{{ team.team }}</div>
+
+              <cv-button-set :stacked="false">
+                <cv-button kind="primary" @click="actionAcceptInvitation(team.team)"
+                  >Accept Invitation</cv-button
+                >
+                <cv-button kind="secondary" @click="actionAcceptInvitation(team.team, 'ignored')"
+                  >Ignore Invitation</cv-button
+                >
+              </cv-button-set>
             </cv-list-item>
           </cv-list>
+          <div v-if="invitations.length === 0">
+            You do not have any invitations yet. Make sure your team leader has your correct email
+            or maybe create your own team.
+          </div>
         </cv-column>
       </cv-row>
       <cv-row>
@@ -53,27 +73,48 @@ export default {
     CreateTeam
   },
   data: () => ({
-    // given_name: 'f',
-    message: 'Hello world',
-    yours: [
-      { name: 'YMCA LA', _id: 'team:ymca-la' },
-      { name: 'YMCA NYC', _id: 'team:ymca-nyc' },
-      { name: 'League Of Women Voters - Austin', _id: 'team:league-of-women-voters-austin' }
-    ],
-    invitations: [
-      { name: 'Roswell HS', _id: 'team:roswell-hs' },
-      { name: 'Scout Troop 989', _id: 'team:troop989' }
-    ]
+    loadingState: 'loaded'
   }),
+  async created() {
+    this.loadingState = 'loading';
+    await this.$store.dispatch('loadAccess');
+
+    if (this.access.length == 0) {
+      this.loadingState = 'error';
+    } else if (this.loadingState === 'loading') {
+      this.loadingState = 'ending';
+      setTimeout(() => {
+        this.loadingState = 'loaded';
+      }, 1000);
+    }
+  },
+
   computed: {
     ...mapState({
-      given_name: state => state.user.info.given_name
-    })
+      given_name: state => state.user.info.given_name,
+      access: state => state.teams.access
+    }),
+
+    loading() {
+      return (
+        this.loadingState === 'loading' ||
+        this.loadingState === 'ending' ||
+        this.loadingState === 'error'
+      );
+    },
+    yours() {
+      return this.access.filter(doc => doc.status === 'accepted');
+    },
+    invitations() {
+      return this.access.filter(doc => doc.status === 'invited');
+    }
   },
   methods: {
-    async actionAcceptInvitation(id) {
-      // TODO: call accept API
-      this.$router.push({ name: 'team', params: { teamId: id.split(':')[1] } });
+    async actionAcceptInvitation(id, status = 'accepted') {
+      let done = await this.$store.dispatch('updateInvite', { id: id, status: status });
+
+      if (done && status === 'accepted')
+        this.$router.push({ name: 'team', params: { teamId: id } });
     }
   }
 };
@@ -84,6 +125,7 @@ export default {
 @import 'carbon-components/scss/components/list/list';
 @import 'carbon-components/scss/components/link/link';
 @import 'carbon-components/scss/components/button/button';
+@import 'carbon-components/scss/components/inline-loading/inline-loading';
 
 .activities {
   margin-top: 4rem;

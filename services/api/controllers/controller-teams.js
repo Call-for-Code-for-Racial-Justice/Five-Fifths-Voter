@@ -1,4 +1,4 @@
-const debug = require("debug")("teams")
+const debug = require("debug")("teams:controller")
 const database = require("../services/database")
 const Model = require("../models/model-team")
 
@@ -26,13 +26,14 @@ exports.create = async (req, res, next) => {
       debug(JSON.stringify(err))
     })
 
-  if (resp)
+  if (resp) {
+    res.set("Cache-control", `no-store`)
     res.status(200).send({
       ok: true,
       message: "created",
       doc: { ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) },
     })
-  else res.status(409).send({ ok: false, message: "not created" })
+  } else res.status(409).send({ ok: false, message: "not created" })
 }
 
 exports.list = async (req, res, next) => {
@@ -49,6 +50,7 @@ exports.list = async (req, res, next) => {
     })
   if (!resp) return res.status(404).send({ ok: false, message: "not found" })
 
+  res.set("Cache-control", `private,max-age=300, must-revalidate, proxy-revalidate`) // let browser cache this for 5 minutes
   return res.status(200).send(
     resp.result.rows.map((row) => {
       return { ...row.doc, _id: row.doc._id.slice(Model.PARTITION.length + 1) }
@@ -69,7 +71,9 @@ exports.read = async (req, res, next) => {
   let doc = resp.result
   let valid = Model.validate(doc)
   if (!valid) return res.status(406).send({ ok: false, errors: Model.validate.errors })
-  else res.status(200).send({ ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) })
+
+  res.set("Cache-control", `private,max-age=300, must-revalidate, proxy-revalidate`) // let browser cache this for 5 minutes
+  return res.status(200).send({ ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) })
 }
 
 exports.update = async (req, res, next) => {
@@ -103,6 +107,7 @@ exports.update = async (req, res, next) => {
     })
   if (!resp) return res.status(417).send({ ok: false, message: "not updated" })
 
+  res.set("Cache-control", `no-store`)
   return res.status(200).send(resp.result)
 }
 
@@ -128,5 +133,6 @@ exports.delete = async (req, res, next) => {
     })
   if (!resp) return res.status(417).send({ ok: false, message: "not found" })
 
+  res.set("Cache-control", `no-store`)
   return res.status(200).send({ ok: true, message: doc._id, status: "deleted" })
 }

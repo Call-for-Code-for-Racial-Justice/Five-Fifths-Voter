@@ -6,8 +6,8 @@ const { v4: uuid } = require("uuid")
 
 const DOC_TYPE = "access"
 const PARTITION = "teams"
-const ROLES = ["admin", "editor", "user"]
-const ROLE_NUM = { admin: 100, editor: 50, user: 10 }
+const ROLES = ["admin", "editor", "user", "removed"]
+const ROLE_NUM = { admin: 100, editor: 50, user: 10, removed: Number.MIN_SAFE_INTEGER }
 
 const schema = {
   type: "object",

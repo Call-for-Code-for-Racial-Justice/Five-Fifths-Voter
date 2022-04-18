@@ -10,6 +10,7 @@ const DB = "teams"
 
 module.exports = (teamRole) => {
   return async (req, res, next) => {
+    debug(`checking for role:${teamRole}`)
     const teamId = req.params.teamId
     const requiredRoleNumber = Model.ROLE_NUM[teamRole]
     if (requiredRoleNumber === undefined || typeof requiredRoleNumber !== "number")
