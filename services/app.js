@@ -32,6 +32,7 @@ const teamRoutes = require("./api/routes/route-teams")
 const teamAccessRoutes = require("./api/routes/route-access")
 const teamInviteRoutes = require("./api/routes/route-invitations")
 const teamElectionRoutes = require("./api/routes/route-election")
+const teamContestRoutes = require("./api/routes/route-contests")
 
 app.use("/", staticRoutes)
 app.use("/auth", authRoutes)
@@ -46,6 +47,7 @@ app.use("/team", checkAuth, teamRoutes)
 app.use("/teams/access", checkAuth, teamAccessRoutes)
 app.use("/teams/invite", checkAuth, teamInviteRoutes)
 app.use("/teams/election", checkAuth, teamElectionRoutes)
+app.use("/teams/contests", checkAuth, teamContestRoutes)
 
 // errors
 app.use((req, res, next) => {

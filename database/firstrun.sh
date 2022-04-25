@@ -19,7 +19,7 @@ for dbdir in `find mock/* -maxdepth 0 -type d `; do
   touch status
   while ! grep -qE '"ok"|"file_exists"' status; do
     echo "creating database $db"
-    curl --request PUT --user @NODE_DB_USER@:@NODE_DB_PASSWORD@ http://localhost:5984/$db > status
+    curl --request PUT --user @NODE_DB_USER@:@NODE_DB_PASSWORD@ http://localhost:5984/$db?partitioned=true > status
     cat status
     sleep 1
   done
@@ -27,7 +27,7 @@ for dbdir in `find mock/* -maxdepth 0 -type d `; do
 
   for doc in `find mock/$db/ -type f`; do
     echo loading $doc
-	  curl --request POST --user @NODE_DB_USER@:@NODE_DB_PASSWORD@ --header "Content-Type:application/json" --data @$doc "http://localhost:5984/$db?partitioned=true"
+	  curl --request POST --user @NODE_DB_USER@:@NODE_DB_PASSWORD@ --header "Content-Type:application/json" --data @$doc "http://localhost:5984/$db"
   done
 
   # create any design docs (indexes etc)

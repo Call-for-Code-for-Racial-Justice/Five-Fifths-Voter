@@ -1,24 +1,24 @@
-const debug = require("debug")("teams:controller")
+const debug = require("debug")("contests:controller")
 const database = require("../services/database")
-const Model = require("../models/model-team")
-const accessModel = require("../models/model-access")
+const Model = require("../models/model-contests")
+const lodash = require("lodash")
 
 const DB = "teams"
 
 exports.create = async (req, res, next) => {
+  const teamId = req.params.teamId
   var doc = req.body
-  if (doc._id) return next({ ok: false, errors: "new doc should not have an id" })
   if (doc._rev) return next({ ok: false, errors: "new doc should not have an rev" })
-
   Model.creating(doc)
-  Model.update(req.user.sub, doc)
+  Model.update(req.user.sub, doc, teamId)
   Model.validate(doc)
   let valid = Model.validate(doc)
   if (!valid) {
     return res.status(406).send({ ok: false, error: Model.validate.errors })
   }
 
-  resp = await database.service
+  // create the new contest doc
+  let resp = await database.service
     .postDocument({
       db: DB,
       document: doc,
@@ -27,41 +27,25 @@ exports.create = async (req, res, next) => {
       debug(JSON.stringify(err))
     })
 
-  if (resp) {
-    // create the new access doc
-    let accessDoc = accessModel.blank()
-    accessDoc.email = req.user.email.toLocaleLowerCase()
-    accessDoc.status = "accepted"
-    accessDoc.acl = "admin"
-    accessModel.update(req.user.sub, accessDoc, doc.slug)
-    let accessResp = await database.service
-      .postDocument({
-        db: DB,
-        document: accessDoc,
-      })
-      .catch((err) => {
-        debug(JSON.stringify(err))
-      })
-    if (!accessResp) debug("access doc not created for team owner")
-  }
-
-  if (resp) {
-    res.set("Cache-control", `no-store`)
+  if (resp)
     res.status(200).send({
       ok: true,
       message: "created",
       doc: { ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) },
     })
-  } else res.status(409).send({ ok: false, message: "not created" })
+  else res.status(409).send({ ok: false, message: "not created" })
 }
 
-exports.list = async (req, res, next) => {
+exports.listTeam = async (req, res, next) => {
+  const teamId = req.params.teamId
+
   var resp = await database.service
     .postPartitionView({
       db: DB,
       partitionKey: Model.PARTITION,
       ddoc: "teams",
-      view: "teams",
+      view: "contests-team",
+      key: teamId,
       includeDocs: true,
     })
     .catch((err) => {
@@ -69,12 +53,12 @@ exports.list = async (req, res, next) => {
     })
   if (!resp) return res.status(404).send({ ok: false, message: "not found" })
 
-  res.set("Cache-control", `private,max-age=300, must-revalidate, proxy-revalidate`) // let browser cache this for 5 minutes
-  return res.status(200).send(
-    resp.result.rows.map((row) => {
-      return { ...row.doc, _id: row.doc._id.slice(Model.PARTITION.length + 1) }
-    })
-  )
+  res.set("Cache-control", `public, max-age=300`) // let browser cache this for 5 minutes
+
+  let contests = resp.result.rows.map((row) => {
+    return { ...row.doc, _id: row.doc._id.slice(Model.PARTITION.length + 1) }
+  })
+  return res.status(200).send(contests)
 }
 
 exports.read = async (req, res, next) => {
@@ -90,13 +74,11 @@ exports.read = async (req, res, next) => {
   let doc = resp.result
   let valid = Model.validate(doc)
   if (!valid) return res.status(406).send({ ok: false, errors: Model.validate.errors })
-
-  res.set("Cache-control", `private,max-age=300, must-revalidate, proxy-revalidate`) // let browser cache this for 5 minutes
-  return res.status(200).send({ ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) })
+  else res.status(200).send({ ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) })
 }
 
 exports.update = async (req, res, next) => {
-  const userInfo = req.user
+  const teamId = req.params.teamId
   const docId = req.params.id
   var update = req.body
 
@@ -109,12 +91,15 @@ exports.update = async (req, res, next) => {
   if (!resp) return res.status(errCode || 404).send({ ok: false, message: "not found" })
 
   let doc = resp.result
+  if (doc.team != teamId) return res.status(404).send({ ok: false, message: "not found" })
+  if (update.team && doc.team != update.team)
+    return res
+      .status(400)
+      .send({ ok: false, message: "cannot change team in existing election doc" }) // cannot update slug
   doc = { ...doc, ...update, _id: doc._id, _rev: doc._rev }
-  Model.update(userInfo.sub, doc)
+  Model.update(req.user.sub, doc, teamId)
   let valid = Model.validate(doc)
   if (!valid) return res.status(406).send({ ok: false, errors: Model.validate.errors })
-  if (docId != update.slug)
-    return res.status(400).send({ ok: false, message: "cannot change slug" }) // cannot update slug
 
   resp = await database.service
     .postDocument({
@@ -126,11 +111,11 @@ exports.update = async (req, res, next) => {
     })
   if (!resp) return res.status(417).send({ ok: false, message: "not updated" })
 
-  res.set("Cache-control", `no-store`)
   return res.status(200).send(resp.result)
 }
 
 exports.delete = async (req, res, next) => {
+  const teamId = req.params.teamId
   const docId = req.params.id
 
   // get current document
@@ -142,6 +127,8 @@ exports.delete = async (req, res, next) => {
   if (!resp) return res.status(404).send({ ok: false, message: "not found" })
 
   let doc = resp.result
+  if (doc.team != teamId) return res.status(404).send({ ok: false, message: "not found" })
+
   let valid = Model.validate(doc)
   if (!valid) return res.status(406).send({ ok: false, error: Model.validate.errors })
 
@@ -152,6 +139,5 @@ exports.delete = async (req, res, next) => {
     })
   if (!resp) return res.status(417).send({ ok: false, message: "not found" })
 
-  res.set("Cache-control", `no-store`)
-  return res.status(200).send({ ok: true, message: doc._id, status: "deleted" })
+  return res.status(200).send({ ok: true, message: docId, status: "deleted" })
 }

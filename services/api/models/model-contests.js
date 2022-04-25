@@ -1,13 +1,11 @@
-const debug = require("debug")("access:model")
+const debug = require("debug")("contest:model")
 const Ajv = require("ajv")
 const ajv = new Ajv({ removeAdditional: true })
 const lodash = require("lodash")
 const { v4: uuid } = require("uuid")
 
-const DOC_TYPE = "access"
+const DOC_TYPE = "contests"
 const PARTITION = "teams"
-const ROLES = ["admin", "editor", "user", "removed"]
-const ROLE_NUM = { admin: 100, editor: 50, user: 10, removed: Number.MIN_SAFE_INTEGER }
 
 const schema = {
   type: "object",
@@ -18,13 +16,11 @@ const schema = {
     creator_sub: { type: "string" }, // unique id from APP ID
     date_created: { type: "string" }, // Date.toISOString()
     date_modified: { type: "string" }, // Date.toISOString()
-    email: { type: "string", minLength: 6 },
     team: { type: "string", minLength: 1 }, // slug for the team
-    sub: { type: "string" }, // user unique name after they accept the invitation
-    acl: { type: "string", enum: ROLES },
-    status: { type: "string", enum: ["accepted", "ignored", "invited"] },
+    election: { type: "string", minLength: 32 }, // id of the election details
+    contests: { type: "array", items: { type: "object" } }, // https://developers.google.com/civic-information/docs/using_api#voterinfoquery-response:
   },
-  required: ["doc_type", "email", "team", "acl", "status"],
+  required: ["doc_type", "team", "election"],
   additionalProperties: false,
 }
 
@@ -34,20 +30,6 @@ module.exports = {
   validate,
 
   PARTITION,
-  ROLE_NUM,
-
-  /**
-   * Get a blank document with required fields
-   * @returns { email: "", team: "", status: "invited" }
-   */
-  blank() {
-    return lodash.cloneDeep({
-      _id: `${PARTITION}:${uuid().replace(/-/g, "")}`,
-      email: "",
-      team: "",
-      status: "invited",
-    })
-  },
 
   /**
    * Remove special properties from doc in anticipation of using it to create a new doc
@@ -69,9 +51,8 @@ module.exports = {
     if (!doc._id) doc._id = `${PARTITION}:${uuid().replace(/-/g, "")}`
     if (!doc.creator_sub) doc.creator_sub = sub
     if (!doc.date_created) doc.date_created = new Date().toISOString()
-    doc.email = doc.email.toLowerCase()
-    doc.team = teamId
     doc.date_modified = new Date().toISOString()
+    doc.team = teamId
     doc.doc_type = DOC_TYPE
     debug("update", doc)
   },

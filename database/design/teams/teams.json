@@ -21,6 +21,9 @@
     },
     "election-team-id": {
       "map": "function (doc) {\n  if(doc.doc_type === \"election\" && doc.google_id) emit([doc.google_id, doc.team], 1);\n}"
+    },
+    "contests-team": {
+      "map": "function (doc) {\n  if(doc.doc_type === \"contests\") emit(doc.team, 1);\n}"
     }
   },
   "language": "javascript",

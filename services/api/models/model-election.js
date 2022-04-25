@@ -1,4 +1,4 @@
-const debug = require("debug")("teams:model")
+const debug = require("debug")("election:model")
 const Ajv = require("ajv")
 const ajv = new Ajv({ removeAdditional: true })
 const lodash = require("lodash")

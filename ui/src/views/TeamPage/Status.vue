@@ -18,36 +18,24 @@ export default {
     return {
       data: [
         {
-          group: '2V2N 9KYPM version 1',
-          value: 20000
+          group: 'Badges',
+          value: 55
         },
         {
-          group: 'L22I P66EP L22I P66EP L22I P66EP',
-          value: 65000
+          group: 'Registrations',
+          value: 112
         },
         {
-          group: 'JQAI 2M4L1',
-          value: 75000
-        },
-        {
-          group: 'J9DZ F37AP',
-          value: 1200
-        },
-        {
-          group: 'YEL48 Q6XK YEL48',
-          value: 10000
-        },
-        {
-          group: 'Misc',
-          value: 25000
+          group: 'Door Knocks',
+          value: 76
         }
       ],
       options: {
-        title: 'Donut',
+        title: 'Team Goals',
         resizable: true,
         donut: {
           center: {
-            label: 'Browsers'
+            label: 'Vote Together'
           }
         },
         height: '400px'
@@ -55,13 +43,19 @@ export default {
     };
   },
   async created() {
-    this.badges = Math.floor(Math.random() * 11);
+    window.addEventListener('resize', this.actionResize);
+    this.actionResize();
   },
   computed: {
     ...mapState({
       given_name: state => state.user.info.given_name,
       currentTeam: state => state.teams.current
     })
+  },
+  methods: {
+    actionResize() {
+      this.$set(this.options, 'height', `${window.innerHeight * 0.5}px`);
+    }
   }
 };
 </script>
@@ -71,6 +65,7 @@ export default {
 .team {
   &__status {
     margin-top: 4rem;
+    margin-left: 4rem;
   }
 }
 </style>

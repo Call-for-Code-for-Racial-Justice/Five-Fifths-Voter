@@ -79,14 +79,10 @@ export default {
     this.loadingState = 'loading';
     await this.$store.dispatch('loadAccess');
 
-    if (this.access.length == 0) {
-      this.loadingState = 'error';
-    } else if (this.loadingState === 'loading') {
-      this.loadingState = 'ending';
-      setTimeout(() => {
-        this.loadingState = 'loaded';
-      }, 1000);
-    }
+    this.loadingState = 'ending';
+    setTimeout(() => {
+      this.loadingState = 'loaded';
+    }, 1000);
   },
 
   computed: {
@@ -103,7 +99,7 @@ export default {
       );
     },
     yours() {
-      return this.access.filter(doc => doc.status === 'accepted');
+      return this.access.filter(doc => doc.status === 'accepted' || doc.owner);
     },
     invitations() {
       return this.access.filter(doc => doc.status === 'invited');

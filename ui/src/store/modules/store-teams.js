@@ -1,5 +1,7 @@
 import teamApi from '../../api/team-api';
 import accessApi from '../../api/access-api';
+import electionsApi from '../../api/elections-api';
+import lodash from 'lodash';
 
 // initial state
 const state = () => ({
@@ -9,11 +11,43 @@ const state = () => ({
     slug: ''
   },
   teamAccess: [], // for current team
-  access: []
+  access: [], // for current user
+  contests: [], // contests in this team
+  local: {}
 });
 
 // getters
-const getters = {};
+const getters = {
+  isUserEditor: (state, getters, rootState) => {
+    try {
+      let doc = state.access.find(access => access.team === state.current.slug);
+      let isEditor = doc && (doc.acl === 'admin' || doc.acl === 'editor');
+      if (!isEditor) {
+        // maybe this is a new team and we did not yet get an owner access document from the db
+        isEditor = rootState.user.info.sub === state.current.creator_sub;
+      }
+      return isEditor;
+    } catch (error) {
+      //eslint-disable-next-line no-console
+      console.log(error);
+      return false;
+    }
+  },
+  mergeContests: state => {
+    try {
+      var merged = [];
+      state.contests.forEach(doc => {
+        merged.push(doc.contests.map((c, index) => ({ ...c, doc_id: doc._id, doc_index: index })));
+      });
+
+      return lodash.flatten(merged);
+    } catch (error) {
+      //eslint-disable-next-line no-console
+      console.log(error);
+      return [];
+    }
+  }
+};
 
 // actions
 const actions = {
@@ -32,6 +66,47 @@ const actions = {
       err;
     });
     if (docs) commit('setTeamAccessDocs', docs);
+  },
+
+  /**
+   * Load the contest docs for the current team
+   */
+  async loadTeamContests({ commit, state }) {
+    let docs = await electionsApi.getContests(state.current.slug).catch(err => {
+      err;
+    });
+    if (docs) commit('addTeamContestDocs', docs);
+  },
+  async removeContest({ commit, state }, payload) {
+    try {
+      // find the doc that has this contest
+      var doc = state.contests.find(doc => doc._id === payload.doc_id);
+      var found = doc.contests[payload.doc_index].office === payload.office;
+
+      // If there is only one contest in this document, remove the whole document
+      if (found && doc.contests.length === 1) {
+        let result = await electionsApi.deleteContest(state.current.slug, doc._id).catch(err => {
+          err;
+        });
+        if (result.ok) commit('removeTeamContest', doc);
+      } else if (found) {
+        // if there are multiple contests in this document, remove just the one
+        var update = lodash.cloneDeep(doc);
+        update.contests.splice(payload.doc_index, 1);
+        // eslint-disable-next-line no-console
+        console.log(payload, 'doc', update);
+        let result = await electionsApi.updateContest(state.current.slug, doc).catch(err => {
+          err;
+        });
+        if (result.ok) commit('addTeamContestDocs', update);
+      } else {
+        // eslint-disable-next-line no-console
+        console.error(`could not delete contest ${payload.office}`);
+      }
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(`could not delete contest`, error);
+    }
   },
 
   /**
@@ -124,6 +199,31 @@ const actions = {
       return result.ok;
     }
     return false;
+  },
+
+  async addVote({ commit, state }, payload) {
+    try {
+      var update = lodash.cloneDeep(state.local);
+      if (!update) update = { votes: {} };
+      if (!update.votes) update.votes = {};
+      update.votes[payload.contest.office] = lodash.cloneDeep(payload.candidate);
+      commit('setLocal', update);
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(`could not update vote`, error);
+    }
+  },
+  removeVote({ commit, state }, office) {
+    try {
+      var update = lodash.cloneDeep(state.local);
+      if (!update) update = { votes: {} };
+      if (!update.votes) update.votes = {};
+      update.votes = lodash.omit(update.votes, [office]);
+      commit('setLocal', update);
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(`could not update vote`, error);
+    }
   }
 };
 
@@ -135,6 +235,53 @@ const mutations = {
   setTeamAccessDocs(state, data) {
     state.teamAccess = data;
   },
+  addTeamContestDocs(state, data) {
+    var update;
+    if (Array.isArray(data)) update = data;
+    else update = [data];
+
+    update.forEach(doc => {
+      let index = state.contests.findIndex(contest => contest._id === doc._id);
+      if (index > -1) state.contests.splice(index, 1, doc);
+      else state.contests.push(doc);
+    });
+  },
+  removeTeamContest(state, data) {
+    let index = state.contests.findIndex(contest => contest._id === data._id);
+    if (index > -1) state.contests.splice(index, 1);
+  },
+  addBlankCandidate(state, data) {
+    try {
+      let doc = state.contests.find(contest => contest._id === data.doc_id);
+      if (doc) {
+        var contest = doc.contests.find(c => c.office === data.office);
+        contest.candidates.push({
+          name: '',
+          party: '',
+          candidateUrl: '',
+          phone: '',
+          email: '',
+          editing: true
+        });
+      }
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(`could not add candidate`, data.doc_id);
+    }
+  },
+  editCandidate(state, data) {
+    try {
+      let doc = state.contests.find(contest => contest._id === data.contest.doc_id);
+      var contest = doc.contests.find(c => c.office === data.office);
+      var candidate = contest.candidates.find(p => p.name === data.candidate);
+      candidate.editing = data.editing;
+      state.contests.splice(0, 0); // noop to notify that the object has changed
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(`could not edit candidate`, error);
+    }
+  },
+
   setTeamAccessDoc(state, data) {
     let index = state.teamAccess.findIndex(ta => ta._id === data._id);
     if (index > -1) state.teamAccess.splice(index, 1, data);
@@ -147,6 +294,23 @@ const mutations = {
     let index = state.access.findIndex(access => access._id === data._id);
     if (index > -1) state.access.splice(index, 1, data);
     else state.access.push(data);
+  },
+  loadLocal(state) {
+    try {
+      let data = localStorage.getItem(state.current.slug);
+      state.local = JSON.parse(data);
+    } catch (error) {
+      error;
+      state.local = {};
+    }
+  },
+  setLocal(state, data) {
+    try {
+      state.local = data;
+      localStorage.setItem(state.current.slug, JSON.stringify(data));
+    } catch (error) {
+      error;
+    }
   }
 };
 

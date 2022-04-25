@@ -40,11 +40,11 @@
             <cv-tab label="Upcoming Election">
               <ElectionInfo v-if="currentTab == 2" />
             </cv-tab>
-            <cv-tab
-              label="Manage team"
-              :disabled="userAccess.acl !== 'admin' && userAccess.acl !== 'editor'"
-            >
-              <ManageAccess v-if="currentTab == 3" />
+            <cv-tab label="My List">
+              <MyList v-if="currentTab == 3" />
+            </cv-tab>
+            <cv-tab label="Manage team" :disabled="!isUserEditor">
+              <ManageAccess v-if="currentTab == 4" />
             </cv-tab>
           </cv-tabs>
         </cv-column>
@@ -55,10 +55,11 @@
 
 <script>
 import AppHeader from '../../components/AppHeader';
-import { mapState } from 'vuex';
+import { mapGetters, mapState } from 'vuex';
 const Badges = () => import('./Badges.vue');
 const Status = () => import('./Status.vue');
 const ElectionInfo = () => import('./Elections.vue');
+const MyList = () => import('./MyList.vue');
 const ManageAccess = () => import('./ManageAccess.vue');
 
 export default {
@@ -68,6 +69,7 @@ export default {
     Badges,
     Status,
     ElectionInfo,
+    MyList,
     ManageAccess
   },
   props: {
@@ -97,11 +99,9 @@ export default {
       currentTeam: state => state.teams.current,
       access: state => state.teams.access
     }),
-
-    userAccess() {
-      let doc = this.access.find(access => access.team === this.teamId);
-      return doc || {};
-    }
+    ...mapGetters({
+      isUserEditor: 'isUserEditor'
+    })
   }
 };
 </script>
