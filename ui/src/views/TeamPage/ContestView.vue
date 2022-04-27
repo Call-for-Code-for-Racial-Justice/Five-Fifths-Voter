@@ -38,7 +38,7 @@
               <cv-data-table-heading v-if="isUserEditor" />
               <cv-data-table-heading v-if="isUserEditor" />
             </template>
-            <template slot="actions" :staticWidth="true">
+            <template slot="actions">
               <cv-button small @click="actionAddCandidate(c)" :disabled="true"
                 >Add candidate</cv-button
               >
@@ -60,7 +60,29 @@
                 <cv-data-table-cell v-if="candidate.editing"
                   ><cv-text-input :value="candidate.candidateUrl"> </cv-text-input
                 ></cv-data-table-cell>
-                <cv-data-table-cell v-else>{{ candidate.candidateUrl }}</cv-data-table-cell>
+                <cv-data-table-cell v-else>
+                  <div class="contest-view__icons">
+                    <cv-link
+                      :href="candidate.candidateUrl"
+                      :inline="true"
+                      v-if="candidate.candidateUrl"
+                    >
+                      <Link16 />
+                    </cv-link>
+                    <LogoTwitter16 />
+                    <LogoFacebook16 />
+                    <cv-interactive-tooltip>
+                      <template slot="content">
+                        It would be great to have an AI analysis of this candidate based on their
+                        social media, campaign web site, and any other public source. How would we
+                        do that? What sort of score would we show here?
+                      </template>
+                      <template slot="trigger">
+                        <Watson16 />
+                      </template>
+                    </cv-interactive-tooltip>
+                  </div>
+                </cv-data-table-cell>
                 <cv-data-table-cell v-if="candidate.editing"
                   ><cv-text-input :value="candidate.phone"> </cv-text-input
                 ></cv-data-table-cell>
@@ -117,10 +139,21 @@
 
 <script>
 import { mapState, mapGetters } from 'vuex';
-import { TrashCan16, Favorite16, FavoriteFilled16, Edit16, Save16 } from '@carbon/icons-vue';
+import {
+  TrashCan16,
+  Favorite16,
+  FavoriteFilled16,
+  Edit16,
+  Save16,
+  Link16,
+  LogoTwitter16,
+  LogoFacebook16,
+  Watson16
+} from '@carbon/icons-vue';
 
 export default {
   name: 'ContestView',
+  components: { Link16, LogoTwitter16, LogoFacebook16, Watson16 },
   data: () => ({
     loading: true,
     iconDelete: TrashCan16,
@@ -209,6 +242,8 @@ export default {
 @import 'carbon-components/scss/components/accordion/accordion';
 @import 'carbon-components/scss/components/inline-loading/inline-loading';
 @import 'carbon-components/scss/components/button/button';
+@import 'carbon-components/scss/components/link/link';
+@import 'carbon-components/scss/components/tooltip/tooltip';
 
 .contest-view {
   &__candidates {
@@ -231,6 +266,9 @@ export default {
   }
   &--office-voted {
     color: $support-success;
+  }
+  &__icons {
+    display: flex;
   }
 }
 </style>
