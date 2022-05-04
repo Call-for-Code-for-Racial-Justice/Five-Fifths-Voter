@@ -2,6 +2,7 @@ const debug = require("debug")("access:controller")
 const database = require("../services/database")
 const Model = require("../models/model-access")
 const lodash = require("lodash")
+const badgeController = require("./controller-badges")
 
 const DB = "teams"
 
@@ -65,6 +66,10 @@ exports.create = async (req, res, next) => {
 
 exports.list = async (req, res, next) => {
   debug(`list:${req.user.email}`)
+
+  // create new badge if needed
+  await badgeController.grant(req, "createAccount")
+
   var resp = await database.service
     .postPartitionView({
       db: DB,

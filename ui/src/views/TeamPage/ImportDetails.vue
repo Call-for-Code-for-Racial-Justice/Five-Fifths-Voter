@@ -137,8 +137,8 @@ export default {
         contests: this.contests
       };
       let resp = await electionsApi.addContests(this.currentTeam.slug, contests);
-      // eslint-disable-next-line no-console
-      console.log('added', resp);
+
+      if (resp) this.$store.commit('addTeamContestDocs', resp.doc);
 
       if (resp) this.modalVisible = false;
     }

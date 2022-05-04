@@ -12,8 +12,9 @@ const state = () => ({
   },
   teamAccess: [], // for current team
   access: [], // for current user
+  elections: [], // elections in this team
   contests: [], // contests in this team
-  local: {}
+  local: { votes: {} }
 });
 
 // getters
@@ -69,9 +70,23 @@ const actions = {
   },
 
   /**
+   * Load election documents for the current team
+   */
+  async loadTeamElections({ commit, state }) {
+    commit('clearTeamElectionDocs');
+    let docs = await electionsApi.get(state.current.slug).catch(err => {
+      err;
+    });
+
+    if (docs) commit('addTeamElectionDocs', docs);
+  },
+
+  /**
    * Load the contest docs for the current team
    */
   async loadTeamContests({ commit, state }) {
+    commit('clearTeamContestDocs');
+
     let docs = await electionsApi.getContests(state.current.slug).catch(err => {
       err;
     });
@@ -206,7 +221,9 @@ const actions = {
       var update = lodash.cloneDeep(state.local);
       if (!update) update = { votes: {} };
       if (!update.votes) update.votes = {};
-      update.votes[payload.contest.office] = lodash.cloneDeep(payload.candidate);
+      if (payload.contest.type !== 'Referendum')
+        update.votes[payload.contest.office] = lodash.cloneDeep(payload.candidate);
+      else update.votes[payload.contest.referendumTitle] = lodash.cloneDeep(payload.candidate);
       commit('setLocal', update);
     } catch (error) {
       // eslint-disable-next-line no-console
@@ -234,6 +251,23 @@ const mutations = {
   },
   setTeamAccessDocs(state, data) {
     state.teamAccess = data;
+  },
+  clearTeamElectionDocs(state) {
+    state.elections.splice(0);
+  },
+  addTeamElectionDocs(state, data) {
+    var update;
+    if (Array.isArray(data)) update = data;
+    else update = [data];
+
+    update.forEach(doc => {
+      let index = state.elections.findIndex(contest => contest._id === doc._id);
+      if (index > -1) state.elections.splice(index, 1, doc);
+      else state.elections.push(doc);
+    });
+  },
+  clearTeamContestDocs(state) {
+    state.contests.splice(0);
   },
   addTeamContestDocs(state, data) {
     var update;
@@ -298,10 +332,10 @@ const mutations = {
   loadLocal(state) {
     try {
       let data = localStorage.getItem(state.current.slug);
-      state.local = JSON.parse(data);
+      state.local = JSON.parse(data) || { votes: {} };
     } catch (error) {
       error;
-      state.local = {};
+      state.local = { votes: {} };
     }
   },
   setLocal(state, data) {

@@ -14,14 +14,22 @@
         :key="`${index}-${c.office}`"
         :open="open[index]"
       >
-        <template slot="title"
-          ><span
+        <template slot="title">
+          <span
+            class="contest-view__office"
+            v-bind:class="{ 'contest-view--office-voted': officeVoted(c.referendumTitle) }"
+            v-if="c.type === 'Referendum'"
+            >{{ c.referendumTitle }}</span
+          >
+
+          <span
+            v-else
             class="contest-view__office"
             v-bind:class="{ 'contest-view--office-voted': officeVoted(c.office) }"
             >{{ c.office }}</span
-          ></template
-        >
-        <template slot="content">
+          >
+        </template>
+        <template slot="content" v-if="c.type !== 'Referendum'">
           <cv-data-table
             :staticWidth="true"
             :zebra="true"
@@ -100,7 +108,6 @@
                     :label="'Add to my list'"
                     :tip-position="'top'"
                     @click="actionVote(c, candidate)"
-                    color="blue"
                   />
                 </cv-data-table-cell>
                 <cv-data-table-cell v-if="isUserEditor"
@@ -132,6 +139,39 @@
             Delete this contest
           </cv-button>
         </template>
+        <template slot="content" v-else>
+          <cv-tile kind="standard" :light="true">
+            <div class="contest-view__subtitle">{{ c.referendumSubtitle }}</div>
+            <cv-link :href="c.referendumUrl" :inline="false" target="blank">
+              More information
+            </cv-link>
+
+            <div class="contest-view__icons">
+              <cv-icon-button
+                class="contest-view__left"
+                :kind="'ghost'"
+                :size="'sm'"
+                :icon="voted(c.referendumTitle, 'Yes') ? iconChosenYes : iconYes"
+                :label="'Yes'"
+                :tip-position="'top'"
+                @click="actionReferendumVote(c, 'Yes')"
+              />
+              <cv-icon-button
+                class="contest-view__left"
+                :kind="'ghost'"
+                :size="'sm'"
+                :icon="voted(c.referendumTitle, 'No') ? iconChosenNo : iconNo"
+                :label="'No'"
+                :tip-position="'top'"
+                @click="actionReferendumVote(c, 'No')"
+              />
+            </div>
+          </cv-tile>
+
+          <cv-button v-if="isUserEditor" :kind="'danger--ghost'" @click="actionDeleteContest(c)">
+            Delete this referendum
+          </cv-button>
+        </template>
       </cv-accordion-item>
     </cv-accordion>
   </div>
@@ -148,7 +188,11 @@ import {
   Link16,
   LogoTwitter16,
   LogoFacebook16,
-  Watson16
+  Watson16,
+  ThumbsUp32,
+  ThumbsDown32,
+  ThumbsUpFilled32,
+  ThumbsDownFilled32
 } from '@carbon/icons-vue';
 
 export default {
@@ -159,6 +203,10 @@ export default {
     iconDelete: TrashCan16,
     iconVote: Favorite16,
     iconVoted: FavoriteFilled16,
+    iconYes: ThumbsUp32,
+    iconNo: ThumbsDown32,
+    iconChosenYes: ThumbsUpFilled32,
+    iconChosenNo: ThumbsDownFilled32,
     iconEdit: Edit16,
     iconSave: Save16,
     editing: new Set(),
@@ -221,6 +269,10 @@ export default {
     async actionVote(contest, candidate) {
       await this.$store.dispatch('addVote', { contest, candidate });
     },
+    async actionReferendumVote(contest, choice) {
+      if (!this.voted(contest.referendumTitle, choice)) this.actionVote(contest, { name: choice });
+      else await this.$store.dispatch('removeVote', contest.referendumTitle);
+    },
     actionToggleEdit(contest, office, candidate) {
       this.$store.commit('editCandidate', {
         contest,
@@ -244,6 +296,7 @@ export default {
 @import 'carbon-components/scss/components/button/button';
 @import 'carbon-components/scss/components/link/link';
 @import 'carbon-components/scss/components/tooltip/tooltip';
+@import 'carbon-components/scss/components/tile/tile';
 
 .contest-view {
   &__candidates {
@@ -269,6 +322,9 @@ export default {
   }
   &__icons {
     display: flex;
+  }
+  &__subtitle {
+    @include carbon--type-style('body-long-02');
   }
 }
 </style>

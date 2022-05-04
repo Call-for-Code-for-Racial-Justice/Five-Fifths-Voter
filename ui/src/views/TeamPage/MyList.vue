@@ -44,6 +44,8 @@
 <script>
 import { mapState } from 'vuex';
 import { Close16 } from '@carbon/icons-vue';
+import badgesApi from '../../api/badges-api';
+
 export default {
   name: 'MyList',
   components: {},
@@ -52,6 +54,10 @@ export default {
   }),
   async created() {
     this.$store.commit('loadLocal');
+
+    if (this.offices.length > 0) {
+      await badgesApi.madeList();
+    }
   },
   computed: {
     ...mapState({
@@ -61,8 +67,11 @@ export default {
       votes: state => state.teams.local.votes
     }),
     offices() {
-      this.local;
-      return Object.keys(this.local.votes);
+      try {
+        return Object.keys(this.local.votes);
+      } catch (error) {
+        return [];
+      }
     }
   },
   methods: {
@@ -79,6 +88,7 @@ export default {
 @import 'carbon-components/scss/components/button/button';
 .my-list {
   margin-top: 4rem;
+  margin-left: 4rem;
   &__title {
     @include carbon--type-style('productive-heading-02');
   }

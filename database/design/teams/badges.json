@@ -1,0 +1,15 @@
+{
+  "_id": "_design/badges",
+  "views": {
+    "user-badges": {
+      "map": "function (doc) {\n  if (doc.doc_type === 'badge') emit(doc.email, 1);\n}"
+    },
+    "user-badge-kind": {
+      "map": "function (doc) {\n  if (doc.doc_type === 'badge') emit([doc.email,doc.kind], 1);\n}"
+    }
+  },
+  "language": "javascript",
+  "options": {
+    "partitioned": true
+  }
+}

@@ -1,88 +1,101 @@
 <template>
   <div>
-    <div class="team__badges">
-      You have earned
-      {{ badges }} badges <Badge32 />
-    </div>
-    <div class="team__badge" v-if="badges > 0">
-      <Sprout32 /> Congratulations on joining our team
-    </div>
-    <div class="team__badge" v-if="badges > 1">
-      <Account32 />You contributed money to a non-profit
-    </div>
-    <div class="team__badge" v-if="badges > 2">
-      <Apple32 />You helped someone with voting technology
-    </div>
-    <div class="team__badge" v-if="badges > 3">
-      <Basketball32 />You told your teammates about the next election
-    </div>
-    <div class="team__badge" v-if="badges > 4"><Bat32 />You are a voint super hero!</div>
-    <div class="team__badge" v-if="badges > 5">
-      <Corn32 />You planted voting seeds at your school
-    </div>
-    <div class="team__badge" v-if="badges > 6">
-      <FruitBowl32 />You invited someone to join your voting team
-    </div>
-    <div class="team__badge" v-if="badges > 7">
-      <PiggyBankSlot32 />You helped a candidate raise money
-    </div>
-    <div class="team__badge" v-if="badges > 8"><Monster32 />You helped get out the vote</div>
-    <div class="team__badge" v-if="badges > 9"><Gift32 />You voted in an election</div>
-    <div class="team__badge" v-if="badges > 10">
-      <NoodleBowl32 />You brought someone to a polling place
+    <cv-inline-loading
+      v-if="loading"
+      ending-text="Sorting your badges"
+      error-text="Could not load badges"
+      loading-text="Loading badges"
+      loaded-text="Loaded badges"
+      :state="loadingState"
+    ></cv-inline-loading>
+    <div v-else>
+      <div class="team__badges">
+        You have earned
+        {{ badges.length }} badges
+      </div>
+      <div class="team__badge" v-for="(badge, index) in badges" :key="badge._id">
+        <show-badge :badge="badge" :forceShow="autoShow[index]" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex';
-import {
-  Badge32,
-  Sprout32,
-  Account32,
-  Apple32,
-  Basketball32,
-  Bat32,
-  Corn32,
-  FruitBowl32,
-  PiggyBankSlot32,
-  Monster32,
-  Gift32,
-  NoodleBowl32
-} from '@carbon/icons-vue';
+import ShowBadge from './ShowBadge.vue';
+
 export default {
   name: 'VoterBadges',
-  components: {
-    Badge32,
-    Sprout32,
-    Account32,
-    Apple32,
-    Basketball32,
-    Bat32,
-    Corn32,
-    FruitBowl32,
-    PiggyBankSlot32,
-    Monster32,
-    Gift32,
-    NoodleBowl32
-  },
+  components: { ShowBadge },
   data: () => ({
-    badges: 1
+    loadingState: 'loading',
+    badges_x: [
+      {
+        _id: 'joined',
+        name: 'Team up',
+        image: '/images/badges/noun-collaboration-2909353.svg',
+        description:
+          'You earned a badge for joining a team! Make a plan to vote. Take someone from your team with you.',
+        seen: false
+      },
+      {
+        _id: 'created',
+        name: 'Started Team',
+        image: '/images/badges/noun-leadership-2909348.svg',
+        description:
+          'You earned a badge for creating a team! Get your team together and set your voting goals.',
+        seen: false
+      },
+      {
+        _id: 'login',
+        name: 'Created account',
+        image: '/images/badges/noun-politician-2909359.svg',
+        description: 'You earned a badge for logging in! Make a plan to vote.',
+        seen: false
+      },
+      {
+        _id: 'madeList',
+        name: 'Created candidate list',
+        image: '/images/badges/noun-food-critic-2909382.svg',
+        description:
+          'You earned a badge for creating a list of candidates! Take your list to your polling location and vote!',
+        seen: false
+      }
+    ]
   }),
   async created() {
-    this.badges = 2 + Math.floor(Math.random() * 11);
+    this.loadingState = 'loading';
+
+    await this.$store.dispatch('loadBadges');
+
+    this.loadingState = 'ending';
+    this.loadingState = await new Promise(resolve => setTimeout(() => resolve('loaded'), 1000));
   },
   computed: {
     ...mapState({
       given_name: state => state.user.info.given_name,
-      currentTeam: state => state.teams.current
-    })
+      currentTeam: state => state.teams.current,
+      badges: state => state.user.badges
+    }),
+    autoShow() {
+      var showing = new Array(this.badges.length);
+      showing.fill(false);
+      var notSeen = this.badges.findIndex(doc => doc.seen === false);
+      if (notSeen > -1) showing[notSeen] = true;
+      // showing.fill(false); //debug
+      // showing[0] = true; // debug
+      return showing;
+    },
+    loading() {
+      return ['loading', 'ending', 'error'].includes(this.loadingState);
+    }
   }
 };
 </script>
 
 <style lang="scss">
 @import '@/styles/theme';
+@import 'carbon-components/scss/components/inline-loading/inline-loading';
 .team {
   margin-top: 4rem;
   &__badges {

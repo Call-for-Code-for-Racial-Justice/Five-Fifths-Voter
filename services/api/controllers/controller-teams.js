@@ -2,6 +2,7 @@ const debug = require("debug")("teams:controller")
 const database = require("../services/database")
 const Model = require("../models/model-team")
 const accessModel = require("../models/model-access")
+const badgeController = require("./controller-badges")
 
 const DB = "teams"
 
@@ -30,7 +31,7 @@ exports.create = async (req, res, next) => {
   if (resp) {
     // create the new access doc
     let accessDoc = accessModel.blank()
-    accessDoc.email = req.user.email.toLocaleLowerCase()
+    accessDoc.email = req.user.email.toLowerCase()
     accessDoc.status = "accepted"
     accessDoc.acl = "admin"
     accessModel.update(req.user.sub, accessDoc, doc.slug)
@@ -43,6 +44,11 @@ exports.create = async (req, res, next) => {
         debug(JSON.stringify(err))
       })
     if (!accessResp) debug("access doc not created for team owner")
+  }
+
+  if (resp) {
+    // create new badge if needed
+    await badgeController.grant(req, "createTeam")
   }
 
   if (resp) {

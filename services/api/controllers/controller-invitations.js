@@ -1,7 +1,7 @@
 const debug = require("debug")("invitations:controller")
 const database = require("../services/database")
 const Model = require("../models/model-access")
-const lodash = require("lodash")
+const badgeController = require("./controller-badges")
 
 const DB = "teams"
 
@@ -46,6 +46,9 @@ exports.publicInvite = async (req, res, next) => {
     })
 
   if (!resp) return res.status(409).send({ ok: false, message: "not created" })
+
+  // create new badge if needed
+  if (update.status == "accepted") await badgeController.grant(req, "joinTeam")
 
   res.set("Cache-control", `no-store`)
   res.status(200).send({
@@ -95,6 +98,9 @@ exports.invite = async (req, res, next) => {
       debug(JSON.stringify(err))
     })
   if (!resp) return res.status(417).send({ ok: false, message: "not updated" })
+
+  // create new badge if needed
+  if (update.status == "accepted") await badgeController.grant(req, "joinTeam")
 
   res.set("Cache-control", `no-store`)
   return res.status(200).send(resp.result)

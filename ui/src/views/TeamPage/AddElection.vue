@@ -122,6 +122,7 @@ export default {
         division: this.electionDivision
       };
       let resp = await electionsApi.create(election);
+      this.$store.commit('addTeamElectionDocs', resp.doc);
 
       if (resp) this.modalVisible = false;
     },

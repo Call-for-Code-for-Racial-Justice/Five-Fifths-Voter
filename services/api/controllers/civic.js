@@ -23,7 +23,7 @@ exports.pollingPlace = function (req, res) {
     let voterAddress = null
     if (req.body.address) voterAddress = req.body.address
     else voterAddress = req.body.data.address
-    
+
     let voterElectionId = null
     if (req.body.electionId) voterElectionId = req.body.electionId
     else voterElectionId = req.body.data.electionId
@@ -74,11 +74,11 @@ exports.pollingPlace = function (req, res) {
             var county = response.data.state[0].local_jurisdiction.name
             county = county.toUpperCase().replace("COUNTY", "").trim()
             // console.log(county);
-            if (!response.data.earlyVoteSites) {
-              // console.log("no early voting data from google");
-              var more = earlyVotingGa.locationData(county, response.data)
-              return more
-            }
+            // if (!response.data.earlyVoteSites) {
+            //   // console.log("no early voting data from google");
+            //   var more = earlyVotingGa.locationData(county, response.data)
+            //   return more
+            // }
           }
         } catch (error) {
           console.error("error parsing civic API response", error)

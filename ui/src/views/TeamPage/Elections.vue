@@ -29,7 +29,6 @@
 import { mapState, mapGetters } from 'vuex';
 import AddElection from './AddElection.vue';
 import ImportDetails from './ImportDetails.vue';
-import electionsApi from '../../api/elections-api';
 import ContestView from './ContestView.vue';
 
 export default {
@@ -37,20 +36,20 @@ export default {
   components: { AddElection, ImportDetails, ContestView },
   data: () => ({
     loading: true,
-    elections: [],
     selectedElection: {}
   }),
   async created() {
     this.loading = true;
 
-    this.elections = await electionsApi.get(this.currentTeam.slug);
+    await this.$store.dispatch('loadTeamElections');
 
     this.loading = false;
   },
   computed: {
     ...mapState({
       given_name: state => state.user.info.given_name,
-      currentTeam: state => state.teams.current
+      currentTeam: state => state.teams.current,
+      elections: state => state.teams.elections
     }),
     ...mapGetters({
       isUserEditor: 'isUserEditor'
