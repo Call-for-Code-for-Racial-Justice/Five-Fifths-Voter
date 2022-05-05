@@ -133,7 +133,9 @@ GET http://localhost:3333/earlyvoting/:state:/:region:
 
   ```sh
   # Build
-  cd services
+  cd ui
+  yarn build
+  cd ../services
   docker build -t fivefifthsvoter-next .
   # Push to IBM registry
   ibmcloud cr login

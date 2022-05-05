@@ -117,7 +117,7 @@ import MainContent from '../../components/MainContent';
 export default {
   name: 'LandingPage',
   props: {
-    heroImage: String,
+    heroImage: String
   },
   components: { Countdown, PageLayout, MainContent },
   data() {
@@ -126,20 +126,18 @@ export default {
       firstName: '',
       lastName: '',
       dob: '',
-      visible: false,
+      visible: false
     };
   },
-  created() {
-    this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Landing Page' });
-  },
+  created() {},
   methods: {
     onClick() {
       this.visible = true;
     },
     modalClosed() {
       this.visible = false;
-    },
-  },
+    }
+  }
 };
 </script>
 

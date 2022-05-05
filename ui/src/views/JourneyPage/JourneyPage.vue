@@ -63,22 +63,20 @@ export default {
     EarlyVoting,
     BallotReturn,
     VoteNow,
-    PageLayout,
+    PageLayout
   },
   data() {
     return {
       complete: [false, false, false, false, false],
-      container: true,
+      container: true
     };
   },
-  created() {
-    this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Journey Page' });
-  },
+  created() {},
   methods: {
     showStep() {
       this.complete = [true, false, false, false, false];
-    },
-  },
+    }
+  }
 };
 </script>
 

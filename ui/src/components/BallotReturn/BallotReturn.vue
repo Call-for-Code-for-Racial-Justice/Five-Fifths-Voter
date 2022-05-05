@@ -82,14 +82,10 @@ export default {
       addressValue: '',
       placeholder: '123 Main St GA 30076',
       buttonDisabled: true,
-      voterData: {},
+      voterData: {}
     };
   },
-  created() {
-    this.$amplitude
-      .getInstance()
-      .logEvent('Page Visit', { page: 'Journey Page', component: 'Ballot Return' });
-  },
+  created() {},
   computed: {
     electionInfoUrl() {
       try {
@@ -147,7 +143,7 @@ export default {
             id: item.address.locationName,
             position: { lat: item.latitude, lng: item.longitude },
             info: this.locationInfo(item),
-            title: item.address.locationName,
+            title: item.address.locationName
           });
           index++;
         }
@@ -168,7 +164,7 @@ export default {
       } catch (error) {
         return null;
       }
-    },
+    }
   },
   mounted() {},
   methods: {
@@ -177,13 +173,13 @@ export default {
       axios
         .post('/services/pollingplace', {
           data: {
-            address: this.addressValue,
-          },
+            address: this.addressValue
+          }
         })
-        .then((response) => {
+        .then(response => {
           this.voterData = response.data;
         })
-        .catch((error) => {
+        .catch(error => {
           error;
           this.voterData = { error: true };
         });
@@ -205,8 +201,8 @@ export default {
       if (item.address.city) info += '<span>' + item.address.city + '</span>';
       if (item.address.state) info += '<span> ' + item.address.state + '</span>';
       return info;
-    },
-  },
+    }
+  }
 };
 </script>
 <style lang="scss">

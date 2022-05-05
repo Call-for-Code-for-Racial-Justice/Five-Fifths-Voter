@@ -3,33 +3,33 @@ export default {
   props: {
     google: {
       type: Object,
-      required: true,
+      required: true
     },
     map: {
       type: Object,
-      required: true,
+      required: true
     },
     marker: {
       type: Object,
-      required: true,
+      required: true
     },
     geocode: {
       type: Boolean,
-      required: false,
+      required: false
     },
     icon: {
       type: String,
-      required: false,
+      required: false
     },
     collection: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   },
   data() {
     return {
       theinfo: null,
-      mapMarker: null,
+      mapMarker: null
     };
   },
   beforeDestroy() {
@@ -55,7 +55,7 @@ export default {
       var geocoder = new Geocoder();
       geocoder.geocode(
         { address: this.marker.position.address },
-        function (results, status) {
+        function(results, status) {
           if (status == GeocoderStatus.OK) {
             // update the position with the lat/lng for mthe geocoder
             this.marker.position = results[0].geometry.location;
@@ -65,14 +65,14 @@ export default {
         }.bind(this)
       );
     })
-      .then((marker) => {
+      .then(marker => {
         // At this point we have a marker that includes a lat/lng
         this.marker = marker;
         var markerConfig = {
           position: this.marker.position,
           title: this.marker.title,
           marker: this.marker,
-          map: this.map,
+          map: this.map
         };
         if (this.icon) {
           markerConfig.icon = this.icon;
@@ -82,7 +82,7 @@ export default {
         // Attached an info window to the marker and open it on click
         if (this.marker.info) {
           this.theinfo = new InfoWindow({
-            content: this.marker.info,
+            content: this.marker.info
           });
           this.theinfo.set('map', this.map);
           this.theinfo.set('marker', this.mapMarker);
@@ -92,7 +92,7 @@ export default {
         this.collection.push(this.mapMarker);
         return null;
       })
-      .catch((reason) => {
+      .catch(reason => {
         // do no create a marker for this address
         /* eslint no-console: 0 */
         console.error(reason);
@@ -103,10 +103,10 @@ export default {
       const map = this.theinfo.get('map');
       const mrk = this.theinfo.get('marker');
       this.theinfo.open(map, mrk);
-    },
+    }
   },
   render() {
     return null;
-  },
+  }
 };
 </script>

@@ -10,7 +10,7 @@ import countdown from 'vuejs-countdown';
 
 export default {
   name: 'Countdown',
-  components: { countdown },
+  components: { countdown }
 };
 </script>
 

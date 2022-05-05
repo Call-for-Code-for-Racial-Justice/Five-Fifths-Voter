@@ -16,9 +16,9 @@ export default {
   name: 'PageLayout',
   components: {
     Hero,
-    AppHeader,
+    AppHeader
   },
-  props: ['childData'],
+  props: ['childData']
   //pagelayout needs prop for backgroundImg
 };
 </script>

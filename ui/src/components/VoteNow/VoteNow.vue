@@ -154,23 +154,21 @@ export default {
       stateName: '',
       displayDialog: false,
       allVoterIdData: {},
-      stateVoterIdData: {},
+      stateVoterIdData: {}
     };
   },
   mounted() {
     axios
       .get('/services/voterids')
-      .then((response) => {
+      .then(response => {
         this.allVoterIdData = response.data;
       })
-      .catch((error) => {
+      .catch(error => {
         error;
         this.allVoterIdData = {};
       });
   },
-  created() {
-    this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Vote Now' });
-  },
+  created() {},
   methods: {
     navigate() {
       router.go(-1);
@@ -185,9 +183,9 @@ export default {
     },
     showTool() {
       window.open('https://tool.votinginfoproject.org', '_blank');
-    },
+    }
   },
-  updated() {},
+  updated() {}
 };
 </script>
 

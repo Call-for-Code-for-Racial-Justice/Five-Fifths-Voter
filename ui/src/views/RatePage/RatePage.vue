@@ -65,16 +65,14 @@ export default {
   name: 'reg',
   data() {
     return {
-      regData: {},
+      regData: {}
     };
   },
-  created() {
-    this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Rating Page' });
-  },
+  created() {},
   methods: {
     navigate() {
       router.go(-1);
-    },
-  },
+    }
+  }
 };
 </script>

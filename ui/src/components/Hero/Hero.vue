@@ -78,8 +78,8 @@
 export default {
   name: 'Hero',
   props: {
-    img: String,
-  },
+    img: String
+  }
 };
 </script>
 

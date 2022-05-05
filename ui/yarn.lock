@@ -7,11 +7,6 @@
   resolved "https://registry.yarnpkg.com/@amplitude/types/-/types-1.9.1.tgz#df614ac6d278c60c39bb49e05014cdcc7e7714e9"
   integrity sha512-s10ewnlFjHjNWrUMVTPJ2YRj0eD5UoeL+d0HB01x2Ltae/jFgtHQBS/HGKYV5I+NyiaezjrrZImhAQ72Ww/+8g==
 
-"@amplitude/ua-parser-js@0.7.11":
-  version "0.7.11"
-  resolved "https://registry.yarnpkg.com/@amplitude/ua-parser-js/-/ua-parser-js-0.7.11.tgz#e3e411912aa88b1832ce3fb4dd4996839bd39243"
-  integrity sha512-uBYLbl5dRh0w7yWATTiKwfzae4EU6B/jHK6xsY8vRgbNEfwJZLG44Z18B1sBGjeaUYCk2nP8lWNehKGeQf3jgw==
-
 "@amplitude/ua-parser-js@0.7.25":
   version "0.7.25"
   resolved "https://registry.yarnpkg.com/@amplitude/ua-parser-js/-/ua-parser-js-0.7.25.tgz#ccbeb0bd24fca3759cfc09a3b9ba95a23ea32756"
@@ -2419,16 +2414,6 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
-
-amplitude-js@^4.4.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/amplitude-js/-/amplitude-js-4.7.0.tgz#82a3f23d0dbe0e7ad3e319a974bd102389713fbb"
-  integrity sha512-4ZlJjZafznb6TDh/Bwr2DYWDDmivsrayqXoCK5p/1T59eqNHuEea41QwWde4S7kKz+CEeq4piaCS3sTQT1jJRg==
-  dependencies:
-    "@amplitude/ua-parser-js" "0.7.11"
-    blueimp-md5 "^2.10.0"
-    json3 "^3.3.2"
-    query-string "5"
 
 amplitude-js@^8.9.0:
   version "8.9.0"
@@ -7606,7 +7591,7 @@ json-stringify-safe@~5.0.1:
   resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
-json3@^3.3.2, json3@^3.3.3:
+json3@^3.3.3:
   version "3.3.3"
   resolved "https://registry.yarnpkg.com/json3/-/json3-3.3.3.tgz#7fc10e375fc5ae42c4705a5cc0aa6f62be305b81"
   integrity sha512-c7/8mbUsKigAbLkD5B010BK4D9LZm7A1pNItkEwiUZRpIN66exu/e7YQWysGun+TRKaJp8MhemM+VkfWv42aCA==
@@ -11717,13 +11702,6 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
-
-vue-amplitude@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/vue-amplitude/-/vue-amplitude-1.0.3.tgz#d6fc12ee3d5d4e022b080083031586a40195c5f2"
-  integrity sha512-ncSK74S5IDJgiqvVN8PMwmH6LtUQ7ICdxoSD8jaSvyZEFVVuRfJHawB3+XIU5nPvp9dq3Z223uH+Bi4/kqOY1Q==
-  dependencies:
-    amplitude-js "^4.4.0"
 
 vue-eslint-parser@^5.0.0:
   version "5.0.0"

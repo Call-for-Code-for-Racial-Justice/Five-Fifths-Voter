@@ -27,11 +27,11 @@ const messages = {
   vn: vn,
   fa: fa,
   ja: ja,
-  tl: tl,
+  tl: tl
 };
 
 export default new VueI18n({
   locale: navigator.language || 'en',
   fallbackLocale: 'en',
-  messages,
+  messages
 });

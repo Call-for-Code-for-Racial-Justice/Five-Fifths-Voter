@@ -4,9 +4,27 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="insight-app-sec-validation" content="2aad0d00-91e5-4fe6-a35a-c2c6fade951c">
+    <meta name="insight-app-sec-validation" content="2aad0d00-91e5-4fe6-a35a-c2c6fade951c" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title>five/fifths voter</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= BASE_URL %>" />
+    <meta property="og:site_name" content="five/fifths voter" />
+    <meta
+      property="og:image"
+      itemprop="image primaryImageOfPage"
+      content="<%= BASE_URL %>images/ebrace-vote-gif.jpg"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:domain" content="fivefifthsvoter.com" />
+    <meta name="twitter:title" property="og:title" itemprop="name" content="five/fifths voter" />
+    <meta
+      name="twitter:description"
+      property="og:description"
+      itemprop="description"
+      content="5/5 equals a whole. A whole person, a whole community, a whole nation. Our platform provides a personalized experience with useful tools to help marginalized voters overcome voting process roadblocks."
+    />
+
     <script>
       function goToGmap(pollPlaceAddr) {
         window.open(pollPlaceAddr, '_blank');
@@ -16,11 +34,18 @@
   <body>
     <noscript>
       <strong
-        >We're sorry but five/fifths voter doesn't work properly without
-        JavaScript enabled. Please enable it to continue.</strong
+        >We're sorry but five/fifths voter doesn't work properly without JavaScript enabled. Please
+        enable it to continue.</strong
       >
     </noscript>
+    <script>
+      window.goatcounter = { no_onload: true };
+    </script>
+    <script
+      data-goatcounter="https://fivefifthsvoter.goatcounter.com/count"
+      async
+      src="//gc.zgo.at/count.js"
+    ></script>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
   </body>
 </html>

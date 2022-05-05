@@ -19,7 +19,7 @@ exports.create = async (req, res, next) => {
     return res.status(406).send({ ok: false, error: Model.validate.errors })
   }
 
-  // lets see if this user already has access to this team
+  // let's see if this user already has access to this team
   let existingResp = await database.service
     .postPartitionView({
       db: DB,

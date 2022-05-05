@@ -5,7 +5,7 @@ const badgeController = require("./controller-badges")
 
 const DB = "teams"
 
-// Update invitation status for logged in user to a public invitation
+// Update invitation status for logged-in user to a public invitation
 exports.publicInvite = async (req, res, next) => {
   const teamId = req.params.teamId
   var update = req.body
@@ -58,7 +58,7 @@ exports.publicInvite = async (req, res, next) => {
   })
 }
 
-// Update invitation status only for logged in user
+// Update invitation status only for logged-in user
 exports.invite = async (req, res, next) => {
   const teamId = req.params.teamId
   const docId = req.params.id
