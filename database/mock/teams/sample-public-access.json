@@ -1,0 +1,11 @@
+{
+  "_id": "teams:3bc9d2d276d00d0b2669ba4bca001f8f",
+  "email": "public",
+  "team": "sample",
+  "status": "invited",
+  "acl": "user",
+  "creator_sub": "8463a297-5f91-4ceb-b5ca-9ab2518fd2c2",
+  "date_created": "2022-05-06T00:21:02.315Z",
+  "date_modified": "2022-05-06T00:21:02.315Z",
+  "doc_type": "access"
+}

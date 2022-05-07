@@ -30,8 +30,14 @@ const messages = {
   tl: tl
 };
 
+const localLang = localStorage.getItem('preferredLanguage');
+// eslint-disable-next-line no-console
+if (localLang) console.log('language set in local storage', localLang);
+const navLangRegion = navigator.language || 'en';
+const navLang = navLangRegion.split('-')[0];
+const useLang = localLang || navLang;
 export default new VueI18n({
-  locale: navigator.language || 'en',
+  locale: useLang,
   fallbackLocale: 'en',
   messages
 });

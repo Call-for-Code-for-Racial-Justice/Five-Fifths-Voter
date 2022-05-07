@@ -46,10 +46,9 @@
               <cv-data-table-heading v-if="isUserEditor" />
               <cv-data-table-heading v-if="isUserEditor" />
             </template>
-            <template slot="actions">
-              <cv-button small @click="actionAddCandidate(c)" :disabled="true"
-                >Add candidate</cv-button
-              >
+            <template slot="actions" v-if="isUserEditor">
+              <add-candidate :office="c.office" :contest="c" />
+              <add-contest :contest="c" :contestIndex="index" />
             </template>
             <template slot="data">
               <cv-data-table-row
@@ -57,18 +56,9 @@
                 :key="`${index}-${c.office}-${cIndex}-${candidate.name}`"
                 :value="`${c.office}:${candidate.name}`"
               >
-                <cv-data-table-cell v-if="candidate.editing"
-                  ><cv-text-input :value="candidate.name"> </cv-text-input
-                ></cv-data-table-cell>
-                <cv-data-table-cell v-else>{{ candidate.name }}</cv-data-table-cell>
-                <cv-data-table-cell v-if="candidate.editing"
-                  ><cv-text-input :value="candidate.party"> </cv-text-input
-                ></cv-data-table-cell>
-                <cv-data-table-cell v-else>{{ candidate.party }}</cv-data-table-cell>
-                <cv-data-table-cell v-if="candidate.editing"
-                  ><cv-text-input :value="candidate.candidateUrl"> </cv-text-input
-                ></cv-data-table-cell>
-                <cv-data-table-cell v-else>
+                <cv-data-table-cell>{{ candidate.name }}</cv-data-table-cell>
+                <cv-data-table-cell>{{ candidate.party }}</cv-data-table-cell>
+                <cv-data-table-cell>
                   <div class="contest-view__icons">
                     <cv-link
                       :href="candidate.candidateUrl"
@@ -91,14 +81,8 @@
                     </cv-interactive-tooltip>
                   </div>
                 </cv-data-table-cell>
-                <cv-data-table-cell v-if="candidate.editing"
-                  ><cv-text-input :value="candidate.phone"> </cv-text-input
-                ></cv-data-table-cell>
-                <cv-data-table-cell v-else>{{ candidate.phone }}</cv-data-table-cell>
-                <cv-data-table-cell v-if="candidate.editing"
-                  ><cv-text-input :value="candidate.email"> </cv-text-input
-                ></cv-data-table-cell>
-                <cv-data-table-cell v-else>{{ candidate.email }}</cv-data-table-cell>
+                <cv-data-table-cell>{{ candidate.phone }}</cv-data-table-cell>
+                <cv-data-table-cell>{{ candidate.email }}</cv-data-table-cell>
                 <cv-data-table-cell>
                   <cv-icon-button
                     class="contest-view__left"
@@ -110,16 +94,12 @@
                     @click="actionVote(c, candidate)"
                   />
                 </cv-data-table-cell>
-                <cv-data-table-cell v-if="isUserEditor"
-                  ><cv-icon-button
-                    class="contest-view__left"
-                    :kind="'ghost'"
-                    :size="'sm'"
-                    :icon="candidate.editing ? iconSave : iconEdit"
-                    :label="candidate.editing ? 'Save' : 'Edit'"
-                    :tip-position="'top'"
-                    @click="actionToggleEdit(c, c.office, candidate)"
-                    :disabled="true"
+                <cv-data-table-cell v-if="isUserEditor">
+                  <add-candidate
+                    :candidate="candidate"
+                    :contest="c"
+                    :index="cIndex"
+                    :office="c.office"
                   />
                 </cv-data-table-cell>
                 <cv-data-table-cell v-if="isUserEditor"
@@ -141,6 +121,7 @@
         </template>
         <template slot="content" v-else>
           <cv-tile kind="standard" :light="true">
+            <add-contest :contest="c" :contestIndex="index" />
             <div class="contest-view__subtitle">{{ c.referendumSubtitle }}</div>
             <cv-link :href="c.referendumUrl" :inline="false" target="blank">
               More information
@@ -174,6 +155,10 @@
         </template>
       </cv-accordion-item>
     </cv-accordion>
+
+    <div v-if="election">
+      <add-contest />
+    </div>
   </div>
 </template>
 
@@ -194,10 +179,12 @@ import {
   ThumbsUpFilled32,
   ThumbsDownFilled32
 } from '@carbon/icons-vue';
+import AddCandidate from '@/views/TeamPage/AddCandidate';
+import AddContest from '@/views/TeamPage/AddContest';
 
 export default {
   name: 'ContestView',
-  components: { Link16, LogoTwitter16, LogoFacebook16, Watson16 },
+  components: { AddContest, AddCandidate, Link16, LogoTwitter16, LogoFacebook16, Watson16 },
   data: () => ({
     loading: true,
     iconDelete: TrashCan16,
@@ -209,10 +196,11 @@ export default {
     iconChosenNo: ThumbsDownFilled32,
     iconEdit: Edit16,
     iconSave: Save16,
+    newContest: '',
     editing: new Set(),
     open: []
   }),
-  props: { election: Object },
+  props: { election: String },
   async created() {
     this.loading = true;
 
@@ -229,8 +217,11 @@ export default {
     }),
     ...mapGetters({
       isUserEditor: 'isUserEditor',
-      contests: 'mergeContests'
-    })
+      allContests: 'mergeContests'
+    }),
+    contests() {
+      return this.allContests.filter(c => c.doc_election === this.election);
+    }
   },
   methods: {
     officeVoted(office) {
@@ -247,19 +238,20 @@ export default {
         return false;
       }
     },
-    editingCandidate(office, name) {
-      // eslint-disable-next-line no-console
-      console.log('edit', office, name);
-      try {
-        return this.editing.has(`${office}:${name}`);
-      } catch (error) {
-        return false;
-      }
-    },
 
     actionChange(ev) {
       // Directly update the CvAccordionItem open property
       this.open = this.$refs.acc.state.map((item, index) => index === ev.changedIndex);
+    },
+    async actionAddContest() {
+      this.loading = true;
+      const contest = {
+        type: 'General',
+        office: this.newContest
+      };
+      await this.$store.dispatch('addContestInfo', contest);
+      this.newContest = '';
+      this.loading = false;
     },
     async actionDeleteContest(contest) {
       this.loading = true;
@@ -272,24 +264,13 @@ export default {
     async actionReferendumVote(contest, choice) {
       if (!this.voted(contest.referendumTitle, choice)) this.actionVote(contest, { name: choice });
       else await this.$store.dispatch('removeVote', contest.referendumTitle);
-    },
-    actionToggleEdit(contest, office, candidate) {
-      this.$store.commit('editCandidate', {
-        contest,
-        office,
-        candidate: candidate.name,
-        editing: !candidate.editing
-      });
-    },
-    async actionAddCandidate(contest) {
-      this.$store.commit('addBlankCandidate', contest);
     }
   }
 };
 </script>
 
 <style lang="scss">
-@import '@/styles/theme';
+@import '~@/styles/theme';
 @import 'carbon-components/scss/components/data-table/data-table';
 @import 'carbon-components/scss/components/accordion/accordion';
 @import 'carbon-components/scss/components/inline-loading/inline-loading';
@@ -297,6 +278,7 @@ export default {
 @import 'carbon-components/scss/components/link/link';
 @import 'carbon-components/scss/components/tooltip/tooltip';
 @import 'carbon-components/scss/components/tile/tile';
+@import 'carbon-components/scss/components/text-input/text-input';
 
 .contest-view {
   &__candidates {

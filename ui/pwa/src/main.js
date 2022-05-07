@@ -10,11 +10,13 @@ Vue.use(FlagIcon);
 
 Vue.use(CarbonComponentsVue);
 
+import './registerServiceWorker';
+
 Vue.config.productionTip = false;
 // store
 new Vue({
   i18n,
   router,
   store,
-  render: h => h(App)
+  render: (h) => h(App),
 }).$mount('#app');

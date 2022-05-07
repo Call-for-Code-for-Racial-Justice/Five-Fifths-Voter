@@ -90,5 +90,26 @@ export default {
         err;
         return { ok: false };
       });
+  },
+
+  /**
+   * Add another contest to an existing context document
+   * @param {String} teamId
+   * @param {Object} doc a contest document
+   * @param {object} info a new items for the contests list
+   * @returns
+   */
+  addContestInfo(teamId, doc, info) {
+    return agent
+      .patch(`${PREFIX}/teams/contests/${teamId}/${doc._id}`)
+      .set(DEV_HEADER)
+      .send(info)
+      .then(response => {
+        return response.body;
+      })
+      .catch(err => {
+        err;
+        return { ok: false };
+      });
   }
 };

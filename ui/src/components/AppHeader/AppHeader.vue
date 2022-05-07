@@ -126,6 +126,7 @@ export default {
   },
   methods: {
     changeLocale(locale) {
+      localStorage.setItem('preferredLanguage', locale);
       i18n.locale = locale;
     },
     actionAvatar() {

@@ -2,13 +2,18 @@ import teamApi from '../../api/team-api';
 import accessApi from '../../api/access-api';
 import electionsApi from '../../api/elections-api';
 import lodash from 'lodash';
+import Vue from 'vue';
 
+function contestsIsEqual(a, b) {
+  return a.office === b.office || a.referendumTitle === b.referendumTitle;
+}
 // initial state
 const state = () => ({
   current: {
     display_name: '',
     description: '',
-    slug: ''
+    slug: '',
+    election: ''
   },
   teamAccess: [], // for current team
   access: [], // for current user
@@ -36,9 +41,16 @@ const getters = {
   },
   mergeContests: state => {
     try {
-      var merged = [];
+      const merged = [];
       state.contests.forEach(doc => {
-        merged.push(doc.contests.map((c, index) => ({ ...c, doc_id: doc._id, doc_index: index })));
+        merged.push(
+          doc.contests.map((c, index) => ({
+            ...c,
+            doc_id: doc._id,
+            doc_index: index,
+            doc_election: doc.election
+          }))
+        );
       });
 
       return lodash.flatten(merged);
@@ -95,8 +107,8 @@ const actions = {
   async removeContest({ commit, state }, payload) {
     try {
       // find the doc that has this contest
-      var doc = state.contests.find(doc => doc._id === payload.doc_id);
-      var found = doc.contests[payload.doc_index].office === payload.office;
+      const doc = state.contests.find(doc => doc._id === payload.doc_id);
+      const found = contestsIsEqual(doc.contests[payload.doc_index], payload);
 
       // If there is only one contest in this document, remove the whole document
       if (found && doc.contests.length === 1) {
@@ -106,11 +118,11 @@ const actions = {
         if (result.ok) commit('removeTeamContest', doc);
       } else if (found) {
         // if there are multiple contests in this document, remove just the one
-        var update = lodash.cloneDeep(doc);
+        const update = lodash.cloneDeep(doc);
         update.contests.splice(payload.doc_index, 1);
         // eslint-disable-next-line no-console
         console.log(payload, 'doc', update);
-        let result = await electionsApi.updateContest(state.current.slug, doc).catch(err => {
+        let result = await electionsApi.updateContest(state.current.slug, update).catch(err => {
           err;
         });
         if (result.ok) commit('addTeamContestDocs', update);
@@ -122,6 +134,47 @@ const actions = {
       // eslint-disable-next-line no-console
       console.error(`could not delete contest`, error);
     }
+  },
+  async addContestInfo({ commit, state }, info) {
+    let contest = state.contests.find(c => c.election === state.current.election);
+    if (!contest) {
+      contest = {
+        team: state.current.slug,
+        election: state.current.election,
+        contests: [info]
+      };
+      let resp = await electionsApi.addContests(state.current.slug, contest);
+      if (resp) commit('addTeamContestDocs', resp.doc);
+    } else {
+      let resp = await electionsApi.addContestInfo(state.current.slug, contest, info);
+      if (resp) commit('addTeamContestDocs', { ...contest, contests: resp });
+    }
+  },
+  async addCandidateContest({ commit, state }, data) {
+    let added = false;
+    try {
+      let doc = state.contests.find(contest => contest._id === data.contest.doc_id);
+      let update = lodash.cloneDeep(doc);
+      const contest = update.contests.find(c => c.office === data.office);
+      if (!contest.candidates) contest.candidates = [];
+      if (data.index > -1) contest.candidates.splice(data.index, 1, data.candidate);
+      else contest.candidates.push(data.candidate);
+
+      let result = await electionsApi.updateContest(state.current.slug, update).catch(err => {
+        err;
+      });
+      if (result.ok) {
+        commit('addTeamContestDocs', update);
+        added = true;
+      } else {
+        // eslint-disable-next-line no-console
+        console.error(`could not update candidate ${data.candidate.name}`);
+      }
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(`could not update candidate`, error);
+    }
+    return added;
   },
 
   /**
@@ -266,6 +319,9 @@ const mutations = {
       else state.elections.push(doc);
     });
   },
+  selectElection(state, id) {
+    Vue.set(state.current, 'election', id);
+  },
   clearTeamContestDocs(state) {
     state.contests.splice(0);
   },
@@ -288,7 +344,8 @@ const mutations = {
     try {
       let doc = state.contests.find(contest => contest._id === data.doc_id);
       if (doc) {
-        var contest = doc.contests.find(c => c.office === data.office);
+        const contest = doc.contests.find(c => c.office === data.office);
+        if (!contest.candidates) Vue.set(contest, 'candidates', []);
         contest.candidates.push({
           name: '',
           party: '',
@@ -306,13 +363,25 @@ const mutations = {
   editCandidate(state, data) {
     try {
       let doc = state.contests.find(contest => contest._id === data.contest.doc_id);
-      var contest = doc.contests.find(c => c.office === data.office);
-      var candidate = contest.candidates.find(p => p.name === data.candidate);
-      candidate.editing = data.editing;
-      state.contests.splice(0, 0); // noop to notify that the object has changed
+      const contest = doc.contests.find(c => c.office === data.office);
+      const candidate = contest.candidates.findIndex(p => p.name === data.candidate);
+      Vue.set(candidate, 'editing', data.editing);
     } catch (error) {
       // eslint-disable-next-line no-console
       console.error(`could not edit candidate`, error);
+    }
+  },
+  setCandidate(state, data) {
+    try {
+      // noinspection DuplicatedCode
+      let doc = state.contests.find(contest => contest._id === data.contest.doc_id);
+      const contest = doc.contests.find(c => c.office === data.office);
+      // let candidate = contest.candidates[data.index];
+      contest.candidates[data.index].name = data.candidate.name;
+      // contest.candidates.splice(data.index, 1, { ...candidate, ...data.candidate });
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(`could not set candidate`, error);
     }
   },
 

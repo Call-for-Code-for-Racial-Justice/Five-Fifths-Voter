@@ -1,0 +1,513 @@
+{
+  "_id": "teams:595ef60cac534894b49f52e10bc03048",
+  "_rev": "68-ac28e04656758596bb15f6df259b9ea8",
+  "team": "crabapple-lake-parc",
+  "election": "38cab447ccf349d5923c1c50ab658907",
+  "contests": [
+    {
+      "type": "General",
+      "office": "For United States Senate",
+      "candidates": [
+        {
+          "name": "Tamara Johnson-Shealy",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Raphael Warnock",
+          "party": "Democratic",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "For Commissioner of Agriculture",
+      "candidates": [
+        {
+          "name": "Winfred Dukes",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Nakita Hemingway",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Fred Swann",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "For Public Service Commissioner District 3",
+      "candidates": [
+        {
+          "name": "Shelia Edwards",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Chandra Farley",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Missy Moore",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "For Governor",
+      "candidates": [
+        {
+          "name": "Stacey Abrams",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "For Lieutenant Governor",
+      "candidates": [
+        {
+          "name": "Erick E. Allen",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Charlie Bailey",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Tyrone Brooks, Jr.",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Tony Brown",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Kwanza Hall",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Jason T. Hayes",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Derrick L. Jackson",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "R. Malik",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Renitta Shannon",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "For Secretary of State",
+      "candidates": [
+        {
+          "name": "Dee Dawkins-Haigler",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "John Eaves",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Floyd Griffin",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Bee Nguyen",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Michael Owens",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "For Attorney General",
+      "candidates": [
+        {
+          "name": "Jennifer \"Jen\" Jordan",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Christian Wise Smith",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "For Commissioner of Insurance",
+      "candidates": [
+        {
+          "name": "Raphael Baker",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Janice Laws Robinson",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Matthew Wilson",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "Referendum",
+      "referendumTitle": "DEMOCRATIC PARTY QUESTIONS - 1",
+      "referendumSubtitle": "Should the United States remove obstacles to economic advancement by forgiving all student loan debt?",
+      "referendumUrl": ""
+    },
+    {
+      "type": "Referendum",
+      "referendumTitle": "DEMOCRATIC PARTY QUESTIONS - 2",
+      "referendumSubtitle": "Should all Georgians have access to paid parental leave following the birth or adoption of a child?",
+      "referendumUrl": ""
+    },
+    {
+      "office": "For State School Superintendent",
+      "type": "General",
+      "candidates": [
+        {
+          "name": "Currey Hitchens",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Jaha V. Howard",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "James Morrow, Jr.",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Alisha Thomas Searcy",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "For Commissioner of Labor",
+      "candidates": [
+        {
+          "name": "William \"Will\" Boddie, Jr.",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Thomas Dean",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Nicole Horn",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Lester G. Jackson III",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Nadia Surrency",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "For Public Service Commissioner District 2",
+      "candidates": [
+        {
+          "name": "Patty Durand",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Russell Edwards",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "For United States House of Representatives - District 6",
+      "candidates": [
+        {
+          "name": "Bob Christian",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Wayne C. White",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "For State House of Representatives - District 49",
+      "candidates": [
+        {
+          "name": "Peggy Gillen",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "For Fulton County Commissioner, Chairperson At Large",
+      "candidates": [
+        {
+          "name": "Jewel Johnson",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Robb Pitts (Incumbent)",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        },
+        {
+          "name": "Sonya Russell",
+          "party": "Democrat",
+          "candidateUrl": "",
+          "twitter": "",
+          "facebook": "",
+          "phone": "",
+          "email": ""
+        }
+      ]
+    }
+  ],
+  "creator_sub": "8463a297-5f91-4ceb-b5ca-9ab2518fd2c2",
+  "date_created": "2022-05-06T18:05:13.374Z",
+  "date_modified": "2022-05-07T03:38:38.593Z",
+  "doc_type": "contests"
+}

@@ -10,4 +10,12 @@ module.exports = {
       }
     }
   },
+  pwa: {
+    name: 'Five Fifths Voter',
+    manifestOptions: {
+      short_name: 'fivefifthsvoter',
+      start_url: '/',
+      theme_color: '#000000'
+    }
+  }
 };

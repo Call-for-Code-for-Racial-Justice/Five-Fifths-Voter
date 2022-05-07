@@ -18,10 +18,10 @@ const schema = {
     date_modified: { type: "string" }, // Date.toISOString()
     team: { type: "string", minLength: 1 }, // slug for the team
     election: { type: "string", minLength: 32 }, // id of the election details
-    contests: { type: "array", items: { type: "object" } }, // https://developers.google.com/civic-information/docs/using_api#voterinfoquery-response:
+    contests: { type: "array", items: { type: "object" } } // https://developers.google.com/civic-information/docs/using_api#voterinfoquery-response:
   },
-  required: ["doc_type", "team", "election"],
-  additionalProperties: false,
+  required: ["doc_type", "team", "election", "contests"],
+  additionalProperties: false
 }
 
 const validate = ajv.compile(schema)
@@ -51,9 +51,10 @@ module.exports = {
     if (!doc._id) doc._id = `${PARTITION}:${uuid().replace(/-/g, "")}`
     if (!doc.creator_sub) doc.creator_sub = sub
     if (!doc.date_created) doc.date_created = new Date().toISOString()
+    if (!doc.contests) doc.contests = []
     doc.date_modified = new Date().toISOString()
     doc.team = teamId
     doc.doc_type = DOC_TYPE
     debug("update", doc)
-  },
+  }
 }
