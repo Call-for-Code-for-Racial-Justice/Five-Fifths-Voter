@@ -3,9 +3,9 @@
 name: vNext - Design idea
 
 about: |
-    We are not ready yet for issues like  
-    "there should be more whitespace between X & Y ..." or "It would be better if you used green to show ...". 
-    Use this template to submit a design in sketch or any other format that you think will make the site better
+    We are not ready yet for issues like  
+    "add more whitespace ..." or "used green to show ...".                                        
+    Use this template to submit a design that you think will make the site better
 
 title: vNext Design idea
 
