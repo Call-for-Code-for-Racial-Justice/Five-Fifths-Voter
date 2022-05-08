@@ -47,8 +47,8 @@
               <cv-data-table-heading v-if="isUserEditor" />
             </template>
             <template slot="actions" v-if="isUserEditor">
-              <add-candidate :office="c.office" :contest="c" />
               <add-contest :contest="c" :contestIndex="index" />
+              <add-candidate :office="c.office" :contest="c" />
             </template>
             <template slot="data">
               <cv-data-table-row
