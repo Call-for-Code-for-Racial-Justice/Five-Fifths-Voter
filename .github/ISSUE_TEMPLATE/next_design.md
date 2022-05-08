@@ -1,18 +1,11 @@
 ---
-
 name: vNext - Design idea
-
-about: |
-    We are not ready yet for issues like  
+about: We are not ready yet for issues like  
     "add more whitespace ..." or "used green to show ...".                                        
     Use this template to submit a design that you think will make the site better
-
 title: vNext Design idea
-
 labels: [vNext, design]
-
 assignees: ""
-
 ---
 
 **Describe the idea**
