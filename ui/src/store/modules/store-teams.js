@@ -355,50 +355,6 @@ const mutations = {
     let index = state.contests.findIndex(contest => contest._id === data._id);
     if (index > -1) state.contests.splice(index, 1);
   },
-  addBlankCandidate(state, data) {
-    try {
-      let doc = state.contests.find(contest => contest._id === data.doc_id);
-      if (doc) {
-        const contest = doc.contests.find(c => c.office === data.office);
-        if (!contest.candidates) Vue.set(contest, 'candidates', []);
-        contest.candidates.push({
-          name: '',
-          party: '',
-          candidateUrl: '',
-          phone: '',
-          email: '',
-          editing: true
-        });
-      }
-    } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error(`could not add candidate`, data.doc_id);
-    }
-  },
-  editCandidate(state, data) {
-    try {
-      let doc = state.contests.find(contest => contest._id === data.contest.doc_id);
-      const contest = doc.contests.find(c => c.office === data.office);
-      const candidate = contest.candidates.findIndex(p => p.name === data.candidate);
-      Vue.set(candidate, 'editing', data.editing);
-    } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error(`could not edit candidate`, error);
-    }
-  },
-  setCandidate(state, data) {
-    try {
-      // noinspection DuplicatedCode
-      let doc = state.contests.find(contest => contest._id === data.contest.doc_id);
-      const contest = doc.contests.find(c => c.office === data.office);
-      // let candidate = contest.candidates[data.index];
-      contest.candidates[data.index].name = data.candidate.name;
-      // contest.candidates.splice(data.index, 1, { ...candidate, ...data.candidate });
-    } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error(`could not set candidate`, error);
-    }
-  },
 
   setTeamAccessDoc(state, data) {
     let index = state.teamAccess.findIndex(ta => ta._id === data._id);
