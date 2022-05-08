@@ -1,38 +1,41 @@
 ---
 
-name: vNext - Design idea
-
-about: |
-    We are not ready yet for issues like "the design should not..." or "the design should include ..." or 
-    "there should be more whitespace between X & Y ..." or "It would be better if you used green to show ...". 
-    Use this template to submit a design in sketch or any other format that you think will make the site better
-
-title: vNext Design idea
-
-labels: [vNext, design]
-
+name: vNext - Bug report
+about: Create a report to help us improve the teams area of the site
+title: "vNext - Bug report"
+labels: "vNext"
 assignees: ""
-
 ---
+### **Describe the bug**
+This report should only be used for issue with the vNext teams. Use the other bug report to report something not realated to teams
 
-**Describe the idea**
-This report should only be used for design ideas for the vNext teams.
-Use another template to suggest something **not** related to teams.
+### **To Reproduce**
+Steps to reproduce the behavior:
 
-The design idea should be Carbon compliant.
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-**Attach a mock-up of the idea**
+### **Expected behavior**
+A clear and concise description of what you expected to happen.
 
-(Add image here)
+### **Screenshots**
+If applicable, add screenshots to help explain your problem.
 
-**Attach a link or attachment**
+### **Desktop (please complete the following information):**
 
-This can be anything that can be used to implement a Carbon design.
-Sketch, Figma, InVision, Adobe etc.
+- Team: (which team were you using - paste the URL here or just the short name)
+- OS: [e.g. iOS]
+- Browser [e.g. chrome, safari]
+- Version [e.g. 22]
 
-**Screenshots**
+### **Smartphone (please complete the following information):**
 
-(Add more screenshots if needed)
+- Device: [e.g. iPhone6]
+- OS: [e.g. iOS8.1]
+- Browser [e.g. stock browser, safari]
+- Version [e.g. 22]
 
-**Additional context**
-Add any other context about the idea here.
+### **Additional context**
+Add any other context about the problem here.
