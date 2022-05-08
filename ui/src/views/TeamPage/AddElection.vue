@@ -48,6 +48,7 @@
 <script>
 import { mapState } from 'vuex';
 import { AddAlt16 } from '@carbon/icons-vue';
+import { v4 as uuid } from 'uuid';
 import civicApi from '../../api/civic-api';
 import electionsApi from '../../api/elections-api';
 
@@ -90,16 +91,15 @@ export default {
   },
   methods: {
     actionShow() {
-      this.modalVisible = true;
-
       // move popup out to body to ensure it behaves nicely
       if (!this.modalEl) {
         this.modalEl = document.body.appendChild(this.$refs.popup);
-      }
+        setTimeout(() => (this.modalVisible = true), 100);
+      } else this.modalVisible = true;
     },
     actionShown() {
       this.modalVisible = true;
-      this.googleId = Math.random().toString();
+      this.googleId = '';
       this.electionName = '';
       this.electionDay = '';
       this.electionDivision = '';
@@ -117,7 +117,7 @@ export default {
       let election = {
         name: this.electionName,
         team: this.currentTeam.slug,
-        google_id: this.googleId,
+        google_id: this.googleId || uuid(),
         election_day: this.electionDay,
         division: this.electionDivision
       };

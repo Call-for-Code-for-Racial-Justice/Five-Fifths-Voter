@@ -30,6 +30,19 @@ export default {
       });
   },
 
+  delete(teamId, electionId) {
+    return agent
+      .delete(`${PREFIX}/teams/election/${teamId}/${electionId}`)
+      .set(DEV_HEADER)
+      .then(response => {
+        return response.body;
+      })
+      .catch(err => {
+        err;
+        return { ok: false };
+      });
+  },
+
   // Contests
 
   addContests(teamId, doc) {

@@ -1,6 +1,13 @@
 <template>
   <div class="add-contest">
-    <cv-button :icon="iconBtn" small kind="primary" @click="actionShow">Import Details</cv-button>
+    <cv-button
+      :icon="iconBtn"
+      small
+      kind="primary"
+      @click="actionShow"
+      :disabled="!isGoogleElection"
+      >Import Details</cv-button
+    >
     <div ref="popup">
       <cv-modal
         class="add-contest__modal"
@@ -85,7 +92,10 @@ export default {
   computed: {
     ...mapState({
       currentTeam: state => state.teams.current
-    })
+    }),
+    isGoogleElection() {
+      return !isNaN(this.election.google_id) && Number.isInteger(Number(this.election.google_id));
+    }
   },
   async created() {},
   beforeDestroy() {

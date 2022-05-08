@@ -92,6 +92,17 @@ const actions = {
 
     if (docs) commit('addTeamElectionDocs', docs);
   },
+  async removeTeamElection({ commit, state }, payload) {
+    try {
+      let result = await electionsApi.delete(state.current.slug, payload._id).catch(err => {
+        err;
+      });
+      if (result.ok) commit('removeTeamElection', payload._id);
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.error(`could not delete election ${payload.name}`);
+    }
+  },
 
   /**
    * Load the contest docs for the current team
@@ -318,6 +329,10 @@ const mutations = {
       if (index > -1) state.elections.splice(index, 1, doc);
       else state.elections.push(doc);
     });
+  },
+  removeTeamElection(state, id) {
+    let index = state.elections.findIndex(doc => doc._id === id);
+    if (index > -1) state.elections.splice(index, 1);
   },
   selectElection(state, id) {
     Vue.set(state.current, 'election', id);

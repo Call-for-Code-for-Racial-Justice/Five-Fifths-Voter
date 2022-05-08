@@ -11,6 +11,7 @@
         <cv-data-table-heading heading="Name" />
         <cv-data-table-heading heading="Election day" />
         <cv-data-table-heading v-if="isUserEditor" />
+        <cv-data-table-heading v-if="isUserEditor" />
       </template>
       <template slot="data">
         <cv-data-table-row v-for="row in elections" :key="row._id" :value="row._id">
@@ -19,6 +20,7 @@
               :value="row._id"
               @change="actionSelect($event, row._id)"
               v-model="selectedElection[row._id]"
+              :checked="row._id === selected"
               :hide-label="true"
             >
             </cv-checkbox
@@ -28,6 +30,9 @@
           <cv-data-table-cell v-if="isUserEditor"
             ><import-details :election="row"
           /></cv-data-table-cell>
+          <cv-data-table-cell v-if="isUserEditor">
+            <remove-election :election="row"></remove-election>
+          </cv-data-table-cell>
         </cv-data-table-row>
       </template>
     </cv-data-table>
@@ -40,10 +45,11 @@ import { mapState, mapGetters } from 'vuex';
 import AddElection from './AddElection.vue';
 import ImportDetails from './ImportDetails.vue';
 import ContestView from './ContestView.vue';
+import RemoveElection from '@/views/TeamPage/RemoveElection';
 
 export default {
   name: 'ElectionInfo',
-  components: { AddElection, ImportDetails, ContestView },
+  components: { RemoveElection, AddElection, ImportDetails, ContestView },
   data: () => ({
     loading: true,
     selectedElection: {}
