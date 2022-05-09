@@ -58,7 +58,7 @@
           <cv-text-input label="Email" v-model.trim="email"> </cv-text-input>
         </template>
         <template slot="secondary-button">Cancel</template>
-        <template slot="primary-button">Add</template>
+        <template slot="primary-button">Save</template>
       </cv-modal>
     </div>
   </div>
@@ -144,13 +144,15 @@ export default {
       // console.log('actionHideRequest')
     },
     actionAfterHidden() {
-      this.name = '';
-      this.party = '';
-      this.candidateUrl = '';
-      this.twitter = '';
-      this.facebook = '';
-      this.phone = '';
-      this.email = '';
+      if (!this.candidate.name) {
+        this.name = '';
+        this.party = '';
+        this.candidateUrl = '';
+        this.twitter = '';
+        this.facebook = '';
+        this.phone = '';
+        this.email = '';
+      }
     },
     async actionAdd() {
       this.loading = true;

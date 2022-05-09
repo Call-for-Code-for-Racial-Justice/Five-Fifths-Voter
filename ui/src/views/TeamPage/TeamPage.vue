@@ -113,6 +113,7 @@ export default {
 
 .team {
   margin-top: 4rem;
+  margin-left: 2rem;
   &__title {
     @include carbon--type-style('productive-heading-03');
   }

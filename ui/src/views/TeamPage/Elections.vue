@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="elections">
     <add-election v-if="isUserEditor" />
     <div v-if="elections.length === 0">
       No elections have been added to this team yet.
@@ -92,10 +92,4 @@ export default {
 @import '~@/styles/theme';
 @import 'carbon-components/scss/components/data-table/data-table';
 @import 'carbon-components/scss/components/accordion/accordion';
-
-.team {
-  &__elections {
-    margin-left: 2rem;
-  }
-}
 </style>

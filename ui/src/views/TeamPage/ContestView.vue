@@ -64,11 +64,26 @@
                       :href="candidate.candidateUrl"
                       :inline="true"
                       v-if="candidate.candidateUrl"
+                      target="_blank"
                     >
                       <Link16 />
                     </cv-link>
-                    <LogoTwitter16 />
-                    <LogoFacebook16 />
+                    <cv-link
+                      v-if="candidate.twitter"
+                      :href="candidate.twitter"
+                      :inline="true"
+                      target="_blank"
+                    >
+                      <LogoTwitter16 />
+                    </cv-link>
+                    <cv-link
+                      v-if="candidate.facebook"
+                      :href="candidate.facebook"
+                      :inline="true"
+                      target="_blank"
+                    >
+                      <LogoFacebook16 />
+                    </cv-link>
                     <cv-interactive-tooltip>
                       <template slot="content">
                         It would be great to have an AI analysis of this candidate based on their
