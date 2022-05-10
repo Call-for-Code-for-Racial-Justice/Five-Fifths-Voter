@@ -29,7 +29,7 @@ const getters = {
       let doc = state.access.find(access => access.team === state.current.slug);
       let isEditor = doc && (doc.acl === 'admin' || doc.acl === 'editor');
       if (!isEditor) {
-        // maybe this is a new team and we did not yet get an owner access document from the db
+        // maybe this is a new team, and we did not yet get an owner access document from the db
         isEditor = rootState.user.info.sub === state.current.creator_sub;
       }
       return isEditor;

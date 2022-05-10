@@ -199,7 +199,14 @@ import AddContest from '@/views/TeamPage/AddContest';
 
 export default {
   name: 'ContestView',
-  components: { AddContest, AddCandidate, Link16, LogoTwitter16, LogoFacebook16, Watson16 },
+  components: {
+    AddContest,
+    AddCandidate,
+    Link16,
+    LogoTwitter16,
+    LogoFacebook16,
+    Watson16
+  },
   data: () => ({
     loading: true,
     iconDelete: TrashCan16,

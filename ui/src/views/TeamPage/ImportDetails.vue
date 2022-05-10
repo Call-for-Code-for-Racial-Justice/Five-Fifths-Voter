@@ -87,7 +87,7 @@ export default {
     contests: [],
 
     // inputs
-    streetAddress: '913 S Manor Rd Bloomington, Indiana'
+    streetAddress: ''
   }),
   computed: {
     ...mapState({
@@ -149,6 +149,7 @@ export default {
       let resp = await electionsApi.addContests(this.currentTeam.slug, contests);
 
       if (resp) this.$store.commit('addTeamContestDocs', resp.doc);
+      if (resp) this.$store.commit('selectElection', this.election._id);
 
       if (resp) this.modalVisible = false;
     }
@@ -157,7 +158,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/styles/theme';
+@import '~@/styles/theme';
 @import 'carbon-components/scss/components/modal/modal';
 @import 'carbon-components/scss/components/tooltip/tooltip';
 @import 'carbon-components/scss/components/button/button';
