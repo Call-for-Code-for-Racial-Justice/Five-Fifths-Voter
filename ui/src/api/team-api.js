@@ -11,11 +11,16 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return { ok: false };
       });
   },
+
+  /**
+   * Load a team document
+   * @param teamId
+   * @returns {Promise}
+   */
   get(teamId) {
     return agent
       .get(`${PREFIX}/team/${teamId}`)
@@ -23,8 +28,7 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return { ok: false };
       });
   },
@@ -34,12 +38,10 @@ export default {
       .head(`${PREFIX}/team/${path}`)
       .ok(res => res.status === 404)
       .set(DEV_HEADER)
-      .then(response => {
-        response;
+      .then(() => {
         return true;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return false;
       });
   }

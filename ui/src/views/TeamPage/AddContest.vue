@@ -87,6 +87,7 @@
 <script>
 import { mapState } from 'vuex';
 import { AddAlt16, Edit16 } from '@carbon/icons-vue';
+import readableId from '@/api/base58id';
 
 export default {
   name: 'AddReferendum',
@@ -103,8 +104,7 @@ export default {
           referendumUrl: ''
         };
       }
-    },
-    contestIndex: { type: Number, default: -1 }
+    }
   },
   data: () => ({
     iconAdd: AddAlt16,
@@ -154,7 +154,7 @@ export default {
       // console.log('actionHideRequest')
     },
     actionAfterHidden() {
-      if (this.contestIndex === -1) {
+      if (!this.contest.id) {
         this.contestType = 'General';
         this.office = '';
         this.referendumTitle = '';
@@ -168,17 +168,18 @@ export default {
 
       if (this.contestType === 'General')
         contest = {
+          id: this.contest.id || readableId(5),
           type: 'General',
           office: this.office,
-          contestIndex: this.contestIndex
+          candidates: this.contest.candidates || []
         };
       else
         contest = {
+          id: this.contest.id || readableId(5),
           type: 'Referendum',
           referendumTitle: this.referendumTitle,
           referendumSubtitle: this.referendumSubtitle,
-          referendumUrl: this.referendumUrl,
-          contestIndex: this.contestIndex
+          referendumUrl: this.referendumUrl
         };
       await this.$store.dispatch('addContestInfo', contest);
 

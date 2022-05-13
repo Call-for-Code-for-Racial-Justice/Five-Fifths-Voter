@@ -1,12 +1,11 @@
 import teamApi from '../../api/team-api';
 import accessApi from '../../api/access-api';
 import electionsApi from '../../api/elections-api';
+import readableId from '../../api/base58id';
+
 import lodash from 'lodash';
 import Vue from 'vue';
 
-function contestsIsEqual(a, b) {
-  return a.office === b.office || a.referendumTitle === b.referendumTitle;
-}
 // initial state
 const state = () => ({
   current: {
@@ -19,7 +18,7 @@ const state = () => ({
   access: [], // for current user
   elections: [], // elections in this team
   contests: [], // contests in this team
-  local: { votes: {} }
+  local: { votes: {}, tags: [] }
 });
 
 // getters
@@ -65,9 +64,7 @@ const getters = {
 // actions
 const actions = {
   async loadCurrent({ commit }, teamId) {
-    let doc = await teamApi.get(teamId).catch(err => {
-      err;
-    });
+    let doc = await teamApi.get(teamId);
     if (doc) commit('setCurrent', doc);
   },
 
@@ -75,9 +72,7 @@ const actions = {
    * Load the access docs for the current team
    */
   async loadTeamAccess({ commit, state }) {
-    let docs = await accessApi.getTeam(state.current.slug).catch(err => {
-      err;
-    });
+    let docs = await accessApi.getTeam(state.current.slug);
     if (docs) commit('setTeamAccessDocs', docs);
   },
 
@@ -86,17 +81,13 @@ const actions = {
    */
   async loadTeamElections({ commit, state }) {
     commit('clearTeamElectionDocs');
-    let docs = await electionsApi.get(state.current.slug).catch(err => {
-      err;
-    });
-
+    let docs = await electionsApi.get(state.current.slug);
+    if (docs.ok === false) return;
     if (docs) commit('addTeamElectionDocs', docs);
   },
   async removeTeamElection({ commit, state }, payload) {
     try {
-      let result = await electionsApi.delete(state.current.slug, payload._id).catch(err => {
-        err;
-      });
+      let result = await electionsApi.delete(state.current.slug, payload._id);
       if (result.ok) commit('removeTeamElection', payload._id);
     } catch (e) {
       // eslint-disable-next-line no-console
@@ -110,22 +101,40 @@ const actions = {
   async loadTeamContests({ commit, state }) {
     commit('clearTeamContestDocs');
 
-    let docs = await electionsApi.getContests(state.current.slug).catch(err => {
-      err;
-    });
+    let docs = await electionsApi.getContests(state.current.slug);
+    if (docs.ok === false) return;
+
+    // fixup any contests and candidates that do not have a unique id assigned.
+    let dirty = false;
+    for (const contest of docs) {
+      for (const c of contest.contests || []) {
+        if (!c.id) {
+          dirty = true;
+          c.id = readableId(5);
+        }
+        for (const person of c.candidates || []) {
+          if (!person.id) {
+            dirty = true;
+            person.id = readableId(5);
+          }
+        }
+      }
+      if (dirty) {
+        await electionsApi.updateContest(state.current.slug, contest);
+      }
+    }
+
     if (docs) commit('addTeamContestDocs', docs);
   },
   async removeContest({ commit, state }, payload) {
     try {
       // find the doc that has this contest
       const doc = state.contests.find(doc => doc._id === payload.doc_id);
-      const found = contestsIsEqual(doc.contests[payload.doc_index], payload);
+      const found = doc.contests.find(item => item.id === payload.id);
 
       // If there is only one contest in this document, remove the whole document
       if (found && doc.contests.length === 1) {
-        let result = await electionsApi.deleteContest(state.current.slug, doc._id).catch(err => {
-          err;
-        });
+        let result = await electionsApi.deleteContest(state.current.slug, doc._id);
         if (result.ok) commit('removeTeamContest', doc);
       } else if (found) {
         // if there are multiple contests in this document, remove just the one
@@ -133,13 +142,11 @@ const actions = {
         update.contests.splice(payload.doc_index, 1);
         // eslint-disable-next-line no-console
         console.log(payload, 'doc', update);
-        let result = await electionsApi.updateContest(state.current.slug, update).catch(err => {
-          err;
-        });
+        let result = await electionsApi.updateContest(state.current.slug, update);
         if (result.ok) commit('addTeamContestDocs', update);
       } else {
         // eslint-disable-next-line no-console
-        console.error(`could not delete contest ${payload.office}`);
+        console.error(`could not delete contest ${payload.id}`);
       }
     } catch (error) {
       // eslint-disable-next-line no-console
@@ -166,14 +173,13 @@ const actions = {
     try {
       let doc = state.contests.find(contest => contest._id === data.contest.doc_id);
       let update = lodash.cloneDeep(doc);
-      const contest = update.contests.find(c => c.office === data.office);
+      const contest = update.contests.find(c => c.id === data.contest.id);
       if (!contest.candidates) contest.candidates = [];
-      if (data.index > -1) contest.candidates.splice(data.index, 1, data.candidate);
+      const index = contest.candidates.findIndex(person => person.id === data.candidate.id);
+      if (index > -1) contest.candidates.splice(index, 1, data.candidate);
       else contest.candidates.push(data.candidate);
 
-      let result = await electionsApi.updateContest(state.current.slug, update).catch(err => {
-        err;
-      });
+      let result = await electionsApi.updateContest(state.current.slug, update);
       if (result.ok) {
         commit('addTeamContestDocs', update);
         added = true;
@@ -191,17 +197,14 @@ const actions = {
   /**
    * Load the access docs associated with the current user. The list will have
    * open invitations as well as teams where the user already has access
-   * @param {Object} commit
    */
   async loadAccess({ commit }) {
-    let docs = await accessApi.get().catch(err => {
-      err;
-    });
+    let docs = await accessApi.get();
     if (docs) commit('setAccessDocs', docs);
   },
 
   /**
-   * Update an invite for the current logged in user
+   * Update an invitation for the current logged-in user
    * @param {object} payload The the id of an existing access document and acl for the update
    * @returns {Boolean} true if the invitation is update successfully
    */
@@ -209,9 +212,7 @@ const actions = {
     let doc = state.access.find(access => access.team === payload.id);
     if (doc) {
       let update = { ...doc, status: payload.status };
-      let result = await accessApi.updateInvite(update).catch(err => {
-        err;
-      });
+      let result = await accessApi.updateInvite(update);
       if (result.ok) commit('setAccessDoc', update);
       return result.ok;
     }
@@ -246,9 +247,7 @@ const actions = {
       access => access.email === invite.email || access._id === invite._id
     );
     if (!doc) {
-      let result = await accessApi.addInvite(invite).catch(err => {
-        err;
-      });
+      let result = await accessApi.addInvite(invite);
       if (result.ok) commit('setTeamAccessDoc', result.doc);
       return result.ok;
     }
@@ -271,9 +270,7 @@ const actions = {
     );
     if (doc) {
       let update = { ...doc, ...invite };
-      let result = await accessApi.updateTeamInvite(update).catch(err => {
-        err;
-      });
+      let result = await accessApi.updateTeamInvite(update);
       if (result.ok) commit('setTeamAccessDoc', update);
       return result.ok;
     }
@@ -282,28 +279,59 @@ const actions = {
 
   async addVote({ commit, state }, payload) {
     try {
-      var update = lodash.cloneDeep(state.local);
-      if (!update) update = { votes: {} };
+      let update = lodash.cloneDeep(state.local);
+      if (!update) update = { votes: {}, tags: [] };
       if (!update.votes) update.votes = {};
-      if (payload.contest.type !== 'Referendum')
-        update.votes[payload.contest.office] = lodash.cloneDeep(payload.candidate);
-      else update.votes[payload.contest.referendumTitle] = lodash.cloneDeep(payload.candidate);
+      update.votes[payload.contest.id] = {
+        ...lodash.cloneDeep(payload.candidate),
+        office: payload.contest.office
+      };
       commit('setLocal', update);
     } catch (error) {
       // eslint-disable-next-line no-console
       console.error(`could not update vote`, error);
     }
   },
-  removeVote({ commit, state }, office) {
+  removeVote({ commit, state }, id) {
     try {
-      var update = lodash.cloneDeep(state.local);
-      if (!update) update = { votes: {} };
+      let update = lodash.cloneDeep(state.local);
+      if (!update) update = { votes: {}, tags: [] };
       if (!update.votes) update.votes = {};
-      update.votes = lodash.omit(update.votes, [office]);
+      update.votes = lodash.omit(update.votes, [id]);
       commit('setLocal', update);
     } catch (error) {
       // eslint-disable-next-line no-console
       console.error(`could not update vote`, error);
+    }
+  },
+  addTag({ commit, state }, payload) {
+    try {
+      let update = lodash.cloneDeep(state.local);
+      if (!update) update = { votes: {}, tags: [] };
+      if (!update.tags) update.tags = [];
+      const index = update.tags.findIndex(tag => lodash.isEqual(tag, payload));
+      if (index === -1) {
+        update.tags.push(payload);
+        commit('setLocal', update);
+      }
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.error(`could not add tag`, e);
+    }
+  },
+  removeTag({ commit, state }, payload) {
+    try {
+      let update = lodash.cloneDeep(state.local);
+      if (!update) update = { votes: {}, tags: [] };
+      if (!update.tags) update.tags = [];
+      const index = update.tags.findIndex(tag => lodash.isEqual(tag, payload));
+      if (index >= -1) {
+        update.tags.splice(index, 1);
+        commit('setLocal', update);
+      }
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.error(`could not remove tag`, e);
     }
   }
 };
@@ -320,7 +348,7 @@ const mutations = {
     state.elections.splice(0);
   },
   addTeamElectionDocs(state, data) {
-    var update;
+    let update;
     if (Array.isArray(data)) update = data;
     else update = [data];
 
@@ -341,7 +369,7 @@ const mutations = {
     state.contests.splice(0);
   },
   addTeamContestDocs(state, data) {
-    var update;
+    let update;
     if (Array.isArray(data)) update = data;
     else update = [data];
 
@@ -372,10 +400,11 @@ const mutations = {
   loadLocal(state) {
     try {
       let data = localStorage.getItem(state.current.slug);
-      state.local = JSON.parse(data) || { votes: {} };
+      state.local = JSON.parse(data) || { votes: {}, tags: [] };
+      if (!state.local.votes) state.local.votes = {};
+      if (!state.local.tags) state.local.tags = [];
     } catch (error) {
-      error;
-      state.local = { votes: {} };
+      state.local = { votes: {}, tags: [] };
     }
   },
   setLocal(state, data) {
@@ -383,7 +412,7 @@ const mutations = {
       state.local = data;
       localStorage.setItem(state.current.slug, JSON.stringify(data));
     } catch (error) {
-      error;
+      // ignore
     }
   }
 };

@@ -117,8 +117,8 @@ exports.update = async (req, res) => {
 exports.addContest = async (req, res) => {
   const teamId = req.params.teamId
   const docId = req.params.id
-  const contest = req.body
-  debug("[addContest]", contest)
+  const ballotItem = req.body
+  debug("[addContest]", ballotItem)
 
   // get current document
   let resp = await database.service
@@ -132,16 +132,11 @@ exports.addContest = async (req, res) => {
   if (doc.team !== teamId) return res.status(404).send({ ok: false, message: "not found" })
 
   // Add or update this contest in the document
-  const index = doc.contests.findIndex((c, i) => {
-    if (i === contest.contestIndex) return true
-    else if (c.type != "Referendum") return c.office === contest.office
-    else return c.referendumTitle === contest.referendumTitle
-  })
+  const index = doc.contests.findIndex(c => c.id === ballotItem.id)
   debug("[addContest] replacing", index)
-  delete contest.contestIndex
 
-  if (index > -1) doc.contests.splice(index, 1, contest)
-  else doc.contests.push(contest)
+  if (index > -1) doc.contests.splice(index, 1, ballotItem)
+  else doc.contests.push(ballotItem)
 
   Model.update(req.user.sub, doc, teamId)
   let valid = Model.validate(doc)

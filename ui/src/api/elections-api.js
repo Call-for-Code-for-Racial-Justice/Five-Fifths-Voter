@@ -11,12 +11,16 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return { ok: false };
       });
   },
 
+  /**
+   * Get elections for this team
+   * @param teamId
+   * @returns {Promise}
+   */
   get(teamId) {
     return agent
       .get(`${PREFIX}/teams/election/${teamId}`)
@@ -24,12 +28,17 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return { ok: false };
       });
   },
 
+  /**
+   * Delete an election
+   * @param teamId
+   * @param electionId
+   * @returns {Promise}
+   */
   delete(teamId, electionId) {
     return agent
       .delete(`${PREFIX}/teams/election/${teamId}/${electionId}`)
@@ -37,8 +46,7 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return { ok: false };
       });
   },
@@ -53,12 +61,16 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return { ok: false };
       });
   },
 
+  /**
+   * Get the contest documents for this election
+   * @param teamId
+   * @returns {Promise}
+   */
   getContests(teamId) {
     return agent
       .get(`${PREFIX}/teams/contests/${teamId}`)
@@ -66,12 +78,17 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return { ok: false };
       });
   },
 
+  /**
+   * Delete a contest
+   * @param teamId
+   * @param doc_id
+   * @returns {Promise}
+   */
   deleteContest(teamId, doc_id) {
     return agent
       .delete(`${PREFIX}/teams/contests/${teamId}/${doc_id}`)
@@ -79,8 +96,7 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return { ok: false };
       });
   },
@@ -89,7 +105,7 @@ export default {
    * Update existing context document
    * @param {String} teamId
    * @param {Object} doc
-   * @returns
+   * @returns {Promise}
    */
   updateContest(teamId, doc) {
     return agent
@@ -99,8 +115,7 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return { ok: false };
       });
   },
@@ -120,8 +135,7 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return { ok: false };
       });
   }

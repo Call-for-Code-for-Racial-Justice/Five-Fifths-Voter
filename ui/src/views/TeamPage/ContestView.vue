@@ -10,26 +10,26 @@
     ></cv-inline-loading>
     <cv-accordion @change="actionChange" ref="acc" v-else>
       <cv-accordion-item
-        v-for="(c, index) in contests"
-        :key="`${index}-${c.office}`"
+        v-for="(ballotItem, index) in contests"
+        :key="`${ballotItem.id}`"
         :open="open[index]"
       >
         <template slot="title">
           <span
             class="contest-view__office"
-            v-bind:class="{ 'contest-view--office-voted': officeVoted(c.referendumTitle) }"
-            v-if="c.type === 'Referendum'"
-            >{{ c.referendumTitle }}</span
+            v-bind:class="{ 'contest-view--office-voted': officeVoted(ballotItem) }"
+            v-if="ballotItem.type === 'Referendum'"
+            >{{ ballotItem.referendumTitle }}</span
           >
 
           <span
             v-else
             class="contest-view__office"
-            v-bind:class="{ 'contest-view--office-voted': officeVoted(c.office) }"
-            >{{ c.office }}</span
+            v-bind:class="{ 'contest-view--office-voted': officeVoted(ballotItem) }"
+            >{{ ballotItem.office }}</span
           >
         </template>
-        <template slot="content" v-if="c.type !== 'Referendum'">
+        <template slot="content" v-if="ballotItem.type !== 'Referendum'">
           <cv-data-table
             :staticWidth="true"
             :zebra="true"
@@ -43,18 +43,19 @@
               <cv-data-table-heading heading="Phone" />
               <cv-data-table-heading heading="Email" />
               <cv-data-table-heading />
+              <cv-data-table-heading />
               <cv-data-table-heading v-if="isUserEditor" />
               <cv-data-table-heading v-if="isUserEditor" />
             </template>
             <template slot="actions" v-if="isUserEditor">
-              <add-contest :contest="c" :contestIndex="index" />
-              <add-candidate :office="c.office" :contest="c" />
+              <add-contest :contest="ballotItem" />
+              <add-candidate :contest="ballotItem" />
             </template>
             <template slot="data">
               <cv-data-table-row
-                v-for="(candidate, cIndex) in c.candidates"
-                :key="`${index}-${c.office}-${cIndex}-${candidate.name}`"
-                :value="`${c.office}:${candidate.name}`"
+                v-for="candidate in ballotItem.candidates"
+                :key="`${candidate.id}`"
+                :value="`${candidate.id}`"
               >
                 <cv-data-table-cell>{{ candidate.name }}</cv-data-table-cell>
                 <cv-data-table-cell>{{ candidate.party }}</cv-data-table-cell>
@@ -69,16 +70,16 @@
                       <Link16 />
                     </cv-link>
                     <cv-link
-                      v-if="candidate.twitter"
-                      :href="candidate.twitter"
+                      v-if="twitter(candidate)"
+                      :href="twitter(candidate)"
                       :inline="true"
                       target="_blank"
                     >
                       <LogoTwitter16 />
                     </cv-link>
                     <cv-link
-                      v-if="candidate.facebook"
-                      :href="candidate.facebook"
+                      v-if="facebook(candidate)"
+                      :href="facebook(candidate)"
                       :inline="true"
                       target="_blank"
                     >
@@ -99,23 +100,23 @@
                 <cv-data-table-cell>{{ candidate.phone }}</cv-data-table-cell>
                 <cv-data-table-cell>{{ candidate.email }}</cv-data-table-cell>
                 <cv-data-table-cell>
+                  <tag-candidate :candidate="candidate" :ballotItem="ballotItem" />
+                </cv-data-table-cell>
+                <cv-data-table-cell>
                   <cv-icon-button
                     class="contest-view__left"
                     :kind="'ghost'"
                     :size="'sm'"
-                    :icon="voted(c.office, candidate.name) ? iconVoted : iconVote"
-                    :label="'Add to my list'"
+                    :icon="voted(ballotItem, candidate.id) ? iconVoted : iconVote"
+                    :label="
+                      voted(ballotItem, candidate.id) ? 'Remove from my list' : 'Add to my list'
+                    "
                     :tip-position="'top'"
-                    @click="actionVote(c, candidate)"
+                    @click="actionVote(ballotItem, candidate)"
                   />
                 </cv-data-table-cell>
                 <cv-data-table-cell v-if="isUserEditor">
-                  <add-candidate
-                    :candidate="candidate"
-                    :contest="c"
-                    :index="cIndex"
-                    :office="c.office"
-                  />
+                  <add-candidate :candidate="candidate" :contest="ballotItem" />
                 </cv-data-table-cell>
                 <cv-data-table-cell v-if="isUserEditor"
                   ><cv-icon-button
@@ -125,20 +126,24 @@
                     :icon="iconDelete"
                     :label="'Delete'"
                     :tip-position="'top'"
-                    :disabled="true"
+                    :disabled="false"
                 /></cv-data-table-cell>
               </cv-data-table-row>
             </template>
           </cv-data-table>
-          <cv-button v-if="isUserEditor" :kind="'danger--ghost'" @click="actionDeleteContest(c)">
+          <cv-button
+            v-if="isUserEditor"
+            :kind="'danger--ghost'"
+            @click="actionDeleteBallotItem(ballotItem)"
+          >
             Delete this contest
           </cv-button>
         </template>
         <template slot="content" v-else>
           <cv-tile kind="standard" :light="true">
-            <add-contest :contest="c" :contestIndex="index" />
-            <div class="contest-view__subtitle">{{ c.referendumSubtitle }}</div>
-            <cv-link :href="c.referendumUrl" :inline="false" target="blank">
+            <add-contest :contest="ballotItem" />
+            <div class="contest-view__subtitle">{{ ballotItem.referendumSubtitle }}</div>
+            <cv-link :href="ballotItem.referendumUrl" :inline="false" target="blank">
               More information
             </cv-link>
 
@@ -147,24 +152,28 @@
                 class="contest-view__left"
                 :kind="'ghost'"
                 :size="'sm'"
-                :icon="voted(c.referendumTitle, 'Yes') ? iconChosenYes : iconYes"
+                :icon="voted(ballotItem, 'Yes') ? iconChosenYes : iconYes"
                 :label="'Yes'"
                 :tip-position="'top'"
-                @click="actionReferendumVote(c, 'Yes')"
+                @click="actionReferendumVote(ballotItem, 'Yes')"
               />
               <cv-icon-button
                 class="contest-view__left"
                 :kind="'ghost'"
                 :size="'sm'"
-                :icon="voted(c.referendumTitle, 'No') ? iconChosenNo : iconNo"
+                :icon="voted(ballotItem, 'No') ? iconChosenNo : iconNo"
                 :label="'No'"
                 :tip-position="'top'"
-                @click="actionReferendumVote(c, 'No')"
+                @click="actionReferendumVote(ballotItem, 'No')"
               />
             </div>
           </cv-tile>
 
-          <cv-button v-if="isUserEditor" :kind="'danger--ghost'" @click="actionDeleteContest(c)">
+          <cv-button
+            v-if="isUserEditor"
+            :kind="'danger--ghost'"
+            @click="actionDeleteBallotItem(ballotItem)"
+          >
             Delete this referendum
           </cv-button>
         </template>
@@ -196,10 +205,12 @@ import {
 } from '@carbon/icons-vue';
 import AddCandidate from '@/views/TeamPage/AddCandidate';
 import AddContest from '@/views/TeamPage/AddContest';
+import TagCandidate from '@/views/TeamPage/TagCandidate';
 
 export default {
   name: 'ContestView',
   components: {
+    TagCandidate,
     AddContest,
     AddCandidate,
     Link16,
@@ -242,20 +253,35 @@ export default {
       allContests: 'mergeContests'
     }),
     contests() {
-      return this.allContests.filter(c => c.doc_election === this.election);
+      return this.allContests.filter(ballotItem => ballotItem.doc_election === this.election);
     }
   },
   methods: {
-    officeVoted(office) {
+    facebook(candidate) {
+      if (candidate.facebook) return candidate.facebook;
+      const channels = candidate.channels || [];
+      const channel = channels.find(channel => channel.type === 'Facebook');
+      if (channel) return channel.id;
+      return undefined;
+    },
+    twitter(candidate) {
+      if (candidate.facebook) return candidate.twitter;
+      const channels = candidate.channels || [];
+      const channel = channels.find(channel => channel.type === 'Twitter');
+      if (channel) return channel.id;
+      return undefined;
+    },
+
+    officeVoted(ballotItem) {
       try {
-        return Boolean(this.votes[office].name);
+        return Boolean(this.votes[ballotItem].id);
       } catch (error) {
         return false;
       }
     },
-    voted(office, name) {
+    voted(ballotItem, id) {
       try {
-        return this.votes[office].name === name;
+        return this.votes[ballotItem.id].id === id;
       } catch (error) {
         return false;
       }
@@ -265,27 +291,19 @@ export default {
       // Directly update the CvAccordionItem open property
       this.open = this.$refs.acc.state.map((item, index) => index === ev.changedIndex);
     },
-    async actionAddContest() {
+    async actionDeleteBallotItem(ballotItem) {
       this.loading = true;
-      const contest = {
-        type: 'General',
-        office: this.newContest
-      };
-      await this.$store.dispatch('addContestInfo', contest);
-      this.newContest = '';
+      await this.$store.dispatch('removeContest', ballotItem);
       this.loading = false;
     },
-    async actionDeleteContest(contest) {
-      this.loading = true;
-      await this.$store.dispatch('removeContest', contest);
-      this.loading = false;
+    async actionVote(ballotItem, candidate) {
+      if (!this.voted(ballotItem, candidate.id))
+        await this.$store.dispatch('addVote', { contest: ballotItem, candidate });
+      else await this.$store.dispatch('removeVote', ballotItem.id);
     },
-    async actionVote(contest, candidate) {
-      await this.$store.dispatch('addVote', { contest, candidate });
-    },
-    async actionReferendumVote(contest, choice) {
-      if (!this.voted(contest.referendumTitle, choice)) this.actionVote(contest, { name: choice });
-      else await this.$store.dispatch('removeVote', contest.referendumTitle);
+    async actionReferendumVote(ballotItem, choice) {
+      if (!this.voted(ballotItem, choice)) await this.actionVote(ballotItem, { id: choice });
+      else await this.$store.dispatch('removeVote', ballotItem.id);
     }
   }
 };

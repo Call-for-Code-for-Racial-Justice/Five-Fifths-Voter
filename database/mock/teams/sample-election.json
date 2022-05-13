@@ -1,0 +1,12 @@
+{
+  "_id": "teams:8be31034597743bd9ece5e110487d2b0",
+  "name": "VIP Test Election",
+  "team": "sample",
+  "google_id": "2000",
+  "election_day": "2025-06-06",
+  "division": "ocd-division/country:us",
+  "creator_sub": "8463a297-5f91-4ceb-b5ca-9ab2518fd2c2",
+  "date_created": "2022-05-11T00:59:15.260Z",
+  "date_modified": "2022-05-11T00:59:15.260Z",
+  "doc_type": "election"
+}

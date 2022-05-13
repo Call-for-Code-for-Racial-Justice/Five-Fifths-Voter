@@ -1,0 +1,11 @@
+{
+  "_id": "teams:ab61511886134461821f06a7a38e3804",
+  "email": "dwnixon@gmail.com",
+  "team": "sample",
+  "status": "accepted",
+  "acl": "admin",
+  "date_modified": "2022-05-11T00:57:23.346Z",
+  "doc_type": "access",
+  "creator_sub": "8463a297-5f91-4ceb-b5ca-9ab2518fd2c2",
+  "date_created": "2022-05-11T00:57:23.346Z"
+}

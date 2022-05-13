@@ -32,19 +32,19 @@
             @tab-selected="currentTab = $event"
           >
             <cv-tab label="Badges">
-              <Badges v-if="currentTab == 0" />
+              <Badges v-if="currentTab === 0" />
             </cv-tab>
             <cv-tab label="Team Status">
-              <Status v-if="currentTab == 1" />
+              <Status v-if="currentTab === 1" />
             </cv-tab>
             <cv-tab label="Upcoming Election">
-              <ElectionInfo v-if="currentTab == 2" />
+              <ElectionInfo v-if="currentTab === 2" />
             </cv-tab>
             <cv-tab label="My List">
-              <MyList v-if="currentTab == 3" />
+              <MyList v-if="currentTab === 3" />
             </cv-tab>
             <cv-tab label="Manage team" :disabled="!isUserEditor">
-              <ManageAccess v-if="currentTab == 4" />
+              <ManageAccess v-if="currentTab === 4" />
             </cv-tab>
           </cv-tabs>
         </cv-column>
@@ -107,9 +107,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/styles/theme';
+@import '~@/styles/theme';
 @import 'carbon-components/scss/components/skeleton/skeleton';
 @import 'carbon-components/scss/components/loading/loading';
+@import 'carbon-components/scss/globals/grid/grid';
 
 .team {
   margin-top: 4rem;
