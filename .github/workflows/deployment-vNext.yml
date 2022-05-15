@@ -31,7 +31,11 @@ jobs:
         shell: bash
 
       - name: Install Code Engine CLI
-        run: ibmcloud plugin install code-engine
+        run: ibmcloud plugin install -f code-engine
+        shell: bash
+
+      - name: Install Container Registry CLI
+        run: ibmcloud plugin install -f container-registry
         shell: bash
 
       - name: Authenticate with IBM Cloud CLI
