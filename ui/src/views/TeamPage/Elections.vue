@@ -1,6 +1,5 @@
 <template>
   <div class="elections">
-    {{ isUserEditor }}
     <add-election v-if="isUserEditor" />
     <div v-if="elections.length === 0">
       No elections have been added to this team yet.

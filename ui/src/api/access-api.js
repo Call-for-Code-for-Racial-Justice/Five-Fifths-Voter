@@ -3,6 +3,10 @@ const PREFIX = location.href.startsWith('http://localhost:') ? '/services' : '';
 const DEV_HEADER = PREFIX ? { 'x-authorization': process.env.DEV_HEADER || 'development' } : {};
 
 export default {
+  /**
+   * Get access list
+   * @returns {Promise}
+   */
   get() {
     return agent
       .get(`${PREFIX}/teams/access`)
@@ -10,8 +14,24 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
+        return [];
+      });
+  },
+
+  /**
+   * Clear the access document cache by issuing a POST request
+   * @returns {*}
+   */
+  clearCache() {
+    return agent
+      .post(`${PREFIX}/teams/access`)
+      .set(DEV_HEADER)
+      .send({ cache: 'clear' })
+      .then(response => {
+        return response.body;
+      })
+      .catch(() => {
         return [];
       });
   },
@@ -19,7 +39,7 @@ export default {
   /**
    * Get access docs for given team
    * @param {String} teamSlug
-   * @returns {Array} array of team access docs
+   * @returns {Promise} array of team access docs
    */
   getTeam(teamSlug) {
     return agent
@@ -28,12 +48,16 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return [];
       });
   },
 
+  /**
+   * Update invite doc
+   * @param doc
+   * @returns {Promise}
+   */
   updateInvite(doc) {
     if (doc.email === 'public')
       return agent
@@ -41,10 +65,14 @@ export default {
         .set(DEV_HEADER)
         .send({ status: doc.status })
         .then(response => {
+          // clear browser cache for access docs
+          this.clearCache();
+          return response;
+        })
+        .then(response => {
           return response.body;
         })
-        .catch(err => {
-          err;
+        .catch(() => {
           return { ok: false };
         });
     else
@@ -55,12 +83,16 @@ export default {
         .then(response => {
           return response.body;
         })
-        .catch(err => {
-          err;
+        .catch(() => {
           return { ok: false };
         });
   },
 
+  /**
+   * Add invitation to team
+   * @param doc
+   * @returns {Promise}
+   */
   addInvite(doc) {
     return agent
       .post(`${PREFIX}/teams/access/${doc.team}`)
@@ -69,8 +101,7 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return { ok: false };
       });
   },
@@ -83,8 +114,7 @@ export default {
       .then(response => {
         return response.body;
       })
-      .catch(err => {
-        err;
+      .catch(() => {
         return { ok: false };
       });
   }

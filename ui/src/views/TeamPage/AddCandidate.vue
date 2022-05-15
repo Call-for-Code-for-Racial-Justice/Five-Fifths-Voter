@@ -67,6 +67,7 @@
 <script>
 import { mapState } from 'vuex';
 import { AddAlt16, Edit16 } from '@carbon/icons-vue';
+import readableId from '@/api/base58id';
 
 export default {
   name: 'AddCandidate',
@@ -86,9 +87,7 @@ export default {
         };
       }
     },
-    contest: { type: Object, required: true },
-    office: { type: String, required: true },
-    index: { type: Number, default: -1 }
+    contest: { type: Object, required: true }
   },
   data: () => ({
     iconAdd: AddAlt16,
@@ -144,7 +143,7 @@ export default {
       // console.log('actionHideRequest')
     },
     actionAfterHidden() {
-      if (!this.candidate.name) {
+      if (!this.candidate.id) {
         this.name = '';
         this.party = '';
         this.candidateUrl = '';
@@ -159,9 +158,8 @@ export default {
 
       let payload = {
         contest: this.contest,
-        office: this.office,
-        index: this.index,
         candidate: {
+          id: this.candidate.id || readableId(5),
           name: this.name,
           party: this.party,
           candidateUrl: this.candidateUrl,

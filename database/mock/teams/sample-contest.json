@@ -1,513 +1,870 @@
 {
-  "_id": "teams:595ef60cac534894b49f52e10bc03048",
-  "_rev": "68-ac28e04656758596bb15f6df259b9ea8",
-  "team": "crabapple-lake-parc",
-  "election": "38cab447ccf349d5923c1c50ab658907",
+  "_id": "teams:e4b40971ce0d490abe5833bd0a4ea61a",
+  "team": "sample",
+  "election": "8be31034597743bd9ece5e110487d2b0",
   "contests": [
     {
       "type": "General",
-      "office": "For United States Senate",
+      "office": "United States Senator",
+      "level": [
+        "country"
+      ],
+      "roles": [
+        "legislatorUpperBody"
+      ],
+      "district": {
+        "name": "Georgia",
+        "scope": "statewide",
+        "id": "ocd-division/country:us/state:ga"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
       "candidates": [
         {
-          "name": "Tamara Johnson-Shealy",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Raphael Warnock",
+          "name": "M. Michelle Nunn",
           "party": "Democratic",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "candidateUrl": "http://michellenunn.com",
+          "email": "info@michellenunn.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/MichelleNunnGA"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/MichelleNunnGA"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/user/marymichellenunn"
+            }
+          ]
+        },
+        {
+          "name": "Amanda C. Swafford",
+          "party": "Libertarian",
+          "candidateUrl": "http://www.amandaswafford.net",
+          "email": "amanda@amandaswafford.net",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/CouncilMemberSwafford"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/The_Swaff"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/channel/UCfib7H2Hg5yH9dJq-4Sjz8g"
+            }
+          ]
+        },
+        {
+          "name": "David A. Perdue",
+          "party": "Republican",
+          "candidateUrl": "https://perduesenate.com/",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/perduesenate"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/Perduesenate"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/channel/UCyHalTHvVcAbfRJtUDeTpWg"
+            }
+          ]
         }
       ]
     },
     {
       "type": "General",
-      "office": "For Commissioner of Agriculture",
+      "office": "United States Representative, District 6",
+      "level": [
+        "country"
+      ],
+      "roles": [
+        "legislatorLowerBody"
+      ],
+      "district": {
+        "name": "Georgia's 6th congressional district",
+        "scope": "congressional",
+        "id": "ocd-division/country:us/state:ga/cd:6"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
       "candidates": [
         {
-          "name": "Winfred Dukes",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Thomas E \"Tom\" Price",
+          "party": "Republican",
+          "candidateUrl": "http://www.tomprice.com",
+          "email": "tom@tomprice.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/tompricemd"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/TOMPRICEMD"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/user/CongressmanTomPrice"
+            }
+          ]
         },
         {
-          "name": "Nakita Hemingway",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Fred Swann",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Robert G Montigel",
+          "party": "Democratic",
+          "candidateUrl": "http://www.montigelforcongress.com",
+          "email": "bob@montigelforcongress.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/MontigelForCongress"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/BobMontigel"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/channel/UCaXnTO687pbkboUItQOjb9A"
+            }
+          ]
         }
       ]
     },
     {
       "type": "General",
-      "office": "For Public Service Commissioner District 3",
+      "office": "Governor",
+      "level": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "headOfGovernment"
+      ],
+      "district": {
+        "name": "Georgia",
+        "scope": "statewide",
+        "id": "ocd-division/country:us/state:ga"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
       "candidates": [
         {
-          "name": "Shelia Edwards",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Jason J. Carter",
+          "party": "Democratic",
+          "candidateUrl": "http://www.carterforgovernor.com",
+          "phone": "(404) 692-7910",
+          "email": "jason@carterforgovernor.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/Carter4GA"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/carter4governor"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/user/Carter4GA"
+            }
+          ]
         },
         {
-          "name": "Chandra Farley",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Andrew T. Hunt",
+          "party": "Libertarian",
+          "candidateUrl": "http://andrewhunt.us",
+          "email": "info@andrewhunt.org",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/huntforgovernor"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/AndrewHuntGA"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/channel/UCnVMmugte-16d8c3JdDhW-w"
+            }
+          ]
         },
         {
-          "name": "Missy Moore",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "J. Nathan Deal",
+          "party": "Republican",
+          "candidateUrl": "http://www.nathandeal.org",
+          "phone": "770-297-0011",
+          "email": "nathan@nathandeal.org",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/GovernorDeal"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/NathanDeal"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/user/thedealreel"
+            }
+          ]
         }
       ]
     },
     {
       "type": "General",
-      "office": "For Governor",
+      "office": "Lieutenant Governor",
+      "level": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "deputyHeadOfGovernment"
+      ],
+      "district": {
+        "name": "Georgia",
+        "scope": "statewide",
+        "id": "ocd-division/country:us/state:ga"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
       "candidates": [
         {
-          "name": "Stacey Abrams",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "L.S. \"Casey\" Cagle",
+          "party": "Republican",
+          "candidateUrl": "http://www.caseycagle.com",
+          "email": "casey@caseycagle.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/CaseyCagleGa"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/CaseyCaglega"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/user/GeorgiansForCagle"
+            }
+          ]
+        },
+        {
+          "name": "Connie J. Stokes",
+          "party": "Democratic",
+          "candidateUrl": "http://www.conniestokes.com",
+          "phone": "(404) 867-8021",
+          "email": "connie@conniestokes.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/connie.stokes2"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/conniejstokes"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/user/conniejstokes"
+            }
+          ]
         }
       ]
     },
     {
       "type": "General",
-      "office": "For Lieutenant Governor",
+      "office": "Secretary Of State",
+      "level": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "district": {
+        "name": "Georgia",
+        "scope": "statewide",
+        "id": "ocd-division/country:us/state:ga"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
       "candidates": [
         {
-          "name": "Erick E. Allen",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Doreen Carter",
+          "party": "Democratic",
+          "candidateUrl": "http://doreencarter.com",
+          "email": "doreen@doreencarter.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/DoreenCarter4Ga"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/doreenrcarter"
+            }
+          ]
         },
         {
-          "name": "Charlie Bailey",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Tyrone Brooks, Jr.",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Tony Brown",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Kwanza Hall",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Jason T. Hayes",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Derrick L. Jackson",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "R. Malik",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Renitta Shannon",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Brian P. Kemp",
+          "party": "Republican",
+          "candidateUrl": "http://www.kempmeansbusiness.com",
+          "phone": "706-543-0188",
+          "email": "brian@votebriankemp.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/KempMeansBusiness"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/GASOSKemp"
+            }
+          ]
         }
       ]
     },
     {
       "type": "General",
-      "office": "For Secretary of State",
+      "office": "School Superintendent",
+      "level": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "district": {
+        "name": "Georgia",
+        "scope": "statewide",
+        "id": "ocd-division/country:us/state:ga"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
       "candidates": [
         {
-          "name": "Dee Dawkins-Haigler",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Richard L. Woods",
+          "party": "Republican",
+          "candidateUrl": "http://www.woodsforsuper.com/",
+          "email": "contact@woodsforsuper.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/woodsforsuper"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/woodsforsuper"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/channel/UCErl2TXxzvgelo017K6Kvng"
+            }
+          ]
         },
         {
-          "name": "John Eaves",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Floyd Griffin",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Bee Nguyen",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Michael Owens",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Valarie D. Wilson",
+          "party": "Democratic",
+          "candidateUrl": "http://valforeducation.com/",
+          "phone": "404-665-7624",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/valforeducation"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/ValForEducation"
+            }
+          ]
         }
       ]
     },
     {
       "type": "General",
-      "office": "For Attorney General",
+      "office": "Attorney General",
+      "level": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "district": {
+        "name": "Georgia",
+        "scope": "statewide",
+        "id": "ocd-division/country:us/state:ga"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
       "candidates": [
         {
-          "name": "Jennifer \"Jen\" Jordan",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Gregory Keith \"Greg\" Hecht",
+          "party": "Democratic",
+          "candidateUrl": "http://hechtforgeorgia.com",
+          "email": "greg@greghecht.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/hechtforgeorgia"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/HechtforGA"
+            }
+          ]
         },
         {
-          "name": "Christian Wise Smith",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Samuel S Olens",
+          "party": "Republican",
+          "candidateUrl": "http://www.samolens.com",
+          "phone": "404.980.3539",
+          "email": "sam@samolens.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/SamOlensGAAG"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/samolens"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/user/samolens"
+            }
+          ]
         }
       ]
     },
     {
       "type": "General",
-      "office": "For Commissioner of Insurance",
+      "office": "Commissioner Of Insurance",
+      "level": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "district": {
+        "name": "Georgia",
+        "scope": "statewide",
+        "id": "ocd-division/country:us/state:ga"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
       "candidates": [
         {
-          "name": "Raphael Baker",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Edward \"Ted\" Metz",
+          "party": "Libertarian",
+          "candidateUrl": "http://tedmetz.com",
+          "phone": "706-426-1871",
+          "email": "tedmetz@gmail.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/TedMetz4GIC"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/channel/UC-rP05F_CFoArFuPp2Cb45A"
+            }
+          ]
         },
         {
-          "name": "Janice Laws Robinson",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Ralph T. Hudgens",
+          "party": "Republican",
+          "candidateUrl": "http://www.ralphhudgens.com",
+          "phone": "706-614-5807",
+          "email": "ralph@ralphhudgens.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/ralphthudgens"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/RalphHudgens"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/channel/UCLnbfUFizj8P4nMGzEwV6YQ"
+            }
+          ]
         },
         {
-          "name": "Matthew Wilson",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Elizabeth Nelson \"Liz\" Johnson",
+          "party": "Democratic",
+          "candidateUrl": "http://www.electlizjohnson.com",
+          "phone": "912-330-6335",
+          "email": "electlizjohnson@gmail.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/lizjohnsonforGAinsuranceCommissioner"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/ElectLiz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "Commissioner Of Labor",
+      "level": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "district": {
+        "name": "Georgia",
+        "scope": "statewide",
+        "id": "ocd-division/country:us/state:ga"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Robbin K. Shipp",
+          "party": "Democratic",
+          "candidateUrl": "http://www.robbinshippforlabor.com",
+          "phone": "404-683-2491",
+          "email": "robbin.shipp@robbinshippforlabor.com"
+        },
+        {
+          "name": "J. Mark Butler",
+          "party": "Republican",
+          "candidateUrl": "http://www.markbutler.org",
+          "phone": "770.833.9631",
+          "email": "email@markbutler.org",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/MarkButler4LaborCommissioner"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/Butler4Labor"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/user/VoteMarkButler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "Commissioner Of Agriculture",
+      "level": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "governmentOfficer"
+      ],
+      "district": {
+        "name": "Georgia",
+        "scope": "statewide",
+        "id": "ocd-division/country:us/state:ga"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Gary W Black",
+          "party": "Republican",
+          "candidateUrl": "http://www.votegaryblack.com",
+          "email": "gary@votegaryblack.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/156665951025971"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/GaryBlack4Ag"
+            }
+          ]
+        },
+        {
+          "name": "Christopher James Irvin",
+          "party": "Democratic",
+          "candidateUrl": "http://irvinforag.com/",
+          "phone": "706-988-9856",
+          "email": "chrisirvinscorpio@yahoo.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/irvinforag"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/irvinforag"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "State Senator, District 56",
+      "level": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "legislatorUpperBody"
+      ],
+      "district": {
+        "name": "Georgia State Senate district 56",
+        "scope": "stateUpper",
+        "id": "ocd-division/country:us/state:ga/sldu:56"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Akhtar Sadiq",
+          "party": "Democratic",
+          "candidateUrl": "http://www.akhtarsadiqforsenator.com/",
+          "email": "info@sadiqforsenate.com"
+        },
+        {
+          "name": "John E Albers",
+          "party": "Republican",
+          "candidateUrl": "http://www.senatoralbers.com",
+          "email": "john@senatoralbers.com",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/john.albers"
+            },
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/johnalbers"
+            },
+            {
+              "type": "YouTube",
+              "id": "https://www.youtube.com/user/albersforsenate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "State Representative, District 47",
+      "level": [
+        "administrativeArea1"
+      ],
+      "roles": [
+        "legislatorLowerBody"
+      ],
+      "district": {
+        "name": "Georgia State House district 47",
+        "scope": "stateLower",
+        "id": "ocd-division/country:us/state:ga/sldl:47"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Jan Slaughter Jones",
+          "party": "Republican",
+          "candidateUrl": "http://www.janjonesforgeorgia.com",
+          "email": "janjones38@bellsouth.net"
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "County Commissioner from District 7 At-Large",
+      "level": [
+        "administrativeArea2"
+      ],
+      "roles": [
+        "legislatorUpperBody"
+      ],
+      "district": {
+        "name": "Fulton County",
+        "scope": "countywide",
+        "id": "ocd-division/country:us/state:ga/county:fulton"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
+      "candidates": [
+        {
+          "name": "John H. Eaves",
+          "party": "Democratic",
+          "candidateUrl": "http://commaximize.com/johneaves/",
+          "channels": [
+            {
+              "type": "Twitter",
+              "id": "https://twitter.com/johneaves"
+            }
+          ]
+        },
+        {
+          "name": "Earl Cooper",
+          "party": "Republican",
+          "candidateUrl": "http://www.earlcooper.org/",
+          "channels": [
+            {
+              "type": "Facebook",
+              "id": "https://www.facebook.com/EarlCooperForFultonCounty"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "General",
+      "office": "County Soil And Water Conservation District Supervisor",
+      "level": [
+        "administrativeArea2"
+      ],
+      "roles": [
+        "specialPurposeOfficer"
+      ],
+      "district": {
+        "name": "Fulton County",
+        "scope": "countywide",
+        "id": "ocd-division/country:us/state:ga/county:fulton"
+      },
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ],
+      "candidates": [
+        {
+          "name": "Lucy Lavoulle",
+          "party": "Non Partisan"
+        },
+        {
+          "name": "John M. Spotts",
+          "party": "Non Partisan"
         }
       ]
     },
     {
       "type": "Referendum",
-      "referendumTitle": "DEMOCRATIC PARTY QUESTIONS - 1",
-      "referendumSubtitle": "Should the United States remove obstacles to economic advancement by forgiving all student loan debt?",
-      "referendumUrl": ""
+      "district": {
+        "name": "Georgia",
+        "scope": "statewide",
+        "id": "ocd-division/country:us/state:ga"
+      },
+      "referendumTitle": "Proposed Constitutional Amendment A",
+      "referendumSubtitle": "To prohibit an increase in the state income tax rate in effect January 1, 2015 (Senate Resolution 415).",
+      "referendumUrl": "http://www.fultoncountyga.gov/images/stories/RAE/2014/Elect/Summaries_of_Proposed_Constitutional_Amendments1.pdf",
+      "sources": [
+        {
+          "name": "Ballot Information Project",
+          "official": false
+        }
+      ]
     },
     {
       "type": "Referendum",
-      "referendumTitle": "DEMOCRATIC PARTY QUESTIONS - 2",
-      "referendumSubtitle": "Should all Georgians have access to paid parental leave following the birth or adoption of a child?",
-      "referendumUrl": ""
-    },
-    {
-      "office": "For State School Superintendent",
-      "type": "General",
-      "candidates": [
+      "district": {
+        "name": "Georgia",
+        "scope": "statewide",
+        "id": "ocd-division/country:us/state:ga"
+      },
+      "referendumTitle": "Proposed Constitutional Amendment B",
+      "referendumSubtitle": "Adding reckless driving penalties or fees to the brain and spinal injury trust fund (House Resolution 1183).",
+      "referendumUrl": "http://www.fultoncountyga.gov/images/stories/RAE/2014/Elect/Summaries_of_Proposed_Constitutional_Amendments1.pdf",
+      "sources": [
         {
-          "name": "Currey Hitchens",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Jaha V. Howard",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "James Morrow, Jr.",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Alisha Thomas Searcy",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Ballot Information Project",
+          "official": false
         }
       ]
     },
     {
-      "type": "General",
-      "office": "For Commissioner of Labor",
-      "candidates": [
+      "type": "Referendum",
+      "district": {
+        "name": "Georgia",
+        "scope": "statewide",
+        "id": "ocd-division/country:us/state:ga"
+      },
+      "referendumTitle": "Proposed Statewide Referendum 1",
+      "referendumSubtitle": "Allows property owned by the University System of Georgia and operated by providers of student housing and other facilities to remain exempt from taxation.",
+      "referendumUrl": "http://www.fultoncountyga.gov/images/stories/RAE/2014/Elect/Summaries_of_Proposed_Constitutional_Amendments1.pdf",
+      "sources": [
         {
-          "name": "William \"Will\" Boddie, Jr.",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Thomas Dean",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Nicole Horn",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Lester G. Jackson III",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Nadia Surrency",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        }
-      ]
-    },
-    {
-      "type": "General",
-      "office": "For Public Service Commissioner District 2",
-      "candidates": [
-        {
-          "name": "Patty Durand",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Russell Edwards",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        }
-      ]
-    },
-    {
-      "type": "General",
-      "office": "For United States House of Representatives - District 6",
-      "candidates": [
-        {
-          "name": "Bob Christian",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Wayne C. White",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        }
-      ]
-    },
-    {
-      "type": "General",
-      "office": "For State House of Representatives - District 49",
-      "candidates": [
-        {
-          "name": "Peggy Gillen",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        }
-      ]
-    },
-    {
-      "type": "General",
-      "office": "For Fulton County Commissioner, Chairperson At Large",
-      "candidates": [
-        {
-          "name": "Jewel Johnson",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Robb Pitts (Incumbent)",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
-        },
-        {
-          "name": "Sonya Russell",
-          "party": "Democrat",
-          "candidateUrl": "",
-          "twitter": "",
-          "facebook": "",
-          "phone": "",
-          "email": ""
+          "name": "Ballot Information Project",
+          "official": false
         }
       ]
     }
   ],
   "creator_sub": "8463a297-5f91-4ceb-b5ca-9ab2518fd2c2",
-  "date_created": "2022-05-06T18:05:13.374Z",
-  "date_modified": "2022-05-07T03:38:38.593Z",
+  "date_created": "2022-05-11T00:59:28.613Z",
+  "date_modified": "2022-05-11T00:59:28.613Z",
   "doc_type": "contests"
 }

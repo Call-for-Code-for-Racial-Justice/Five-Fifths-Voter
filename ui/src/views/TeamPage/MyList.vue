@@ -19,7 +19,7 @@
       </template>
       <template slot="data">
         <cv-data-table-row v-for="office in offices" :key="office">
-          <cv-data-table-cell>{{ office }}</cv-data-table-cell>
+          <cv-data-table-cell>{{ votes[office].office }}</cv-data-table-cell>
           <cv-data-table-cell>{{ votes[office].name }}</cv-data-table-cell>
           <cv-data-table-cell>{{ votes[office].party }}</cv-data-table-cell>
           <cv-data-table-cell>{{ votes[office].candidateUrl }}</cv-data-table-cell>
@@ -83,7 +83,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/styles/theme';
+@import '~@/styles/theme';
 @import 'carbon-components/scss/components/data-table/data-table';
 @import 'carbon-components/scss/components/button/button';
 .my-list {

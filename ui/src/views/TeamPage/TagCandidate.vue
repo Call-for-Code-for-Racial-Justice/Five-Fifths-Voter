@@ -1,6 +1,24 @@
 <template>
   <div class="add-tags">
-    <cv-icon-button :icon="iconAdd" small kind="ghost" @click="actionShow" />
+    <div class="add-tags__tags">
+      <cv-tag
+        v-for="tag in tags"
+        :key="`tag-${tag}`"
+        filter
+        :kind="tag | tagColor"
+        :label="tag"
+        @remove="actionRemoveTag(tag)"
+      ></cv-tag>
+    </div>
+    <cv-icon-button
+      class="add-tags__btn"
+      :icon="iconAdd"
+      small
+      kind="ghost"
+      @click="actionShow"
+      label="Add tags"
+      :tip-position="'top'"
+    />
     <div ref="popup">
       <cv-modal
         class="add-tags__modal"
@@ -14,10 +32,16 @@
         :auto-hide-off="false"
         size="xs"
       >
-        <template slot="label">Add candidate</template>
-        <template slot="title">Add candidate to this election</template>
+        <template slot="label">Add tags</template>
+        <template slot="title">Tag this candidate</template>
         <template slot="content">
-          Hello
+          <cv-text-input
+            v-model.trim="tagInput"
+            placeholder="Type tags seperated by ,"
+            @input="parseTags"
+            @keyup.enter="parseTags((tagInput += ','))"
+          >
+          </cv-text-input>
         </template>
         <template slot="primary-button">Close</template>
       </cv-modal>
@@ -47,9 +71,7 @@ export default {
         };
       }
     },
-    contest: { type: Object, required: true },
-    office: { type: String, required: true },
-    index: { type: Number, default: -1 }
+    ballotItem: { type: Object, required: true }
   },
   data: () => ({
     iconAdd: Tag16,
@@ -58,19 +80,43 @@ export default {
     loading: false,
 
     // inputs
-    tags: [],
     tagInput: ''
   }),
   computed: {
     ...mapState({
-      currentTeam: state => state.teams.current
-    })
+      currentTeam: state => state.teams.current,
+      allTags: state => state.teams.local.tags
+    }),
+    tags() {
+      return this.allTags
+        .filter(tag => tag.candidate.id === this.candidate.id)
+        .map(tag => tag.label);
+    }
   },
   async created() {},
   beforeDestroy() {
     // move back to where it came from
     if (this.modalEl) {
       this.$el.appendChild(this.modalEl);
+    }
+  },
+  filters: {
+    tagColor(val) {
+      const colors = [
+        'red',
+        'magenta',
+        'purple',
+        'blue',
+        'cyan',
+        'teal',
+        'green',
+        'gray',
+        'cool-gray',
+        'warm-gray',
+        'high-contrast'
+      ];
+      let index = val.charCodeAt(0) % colors.length;
+      return colors[index];
     }
   },
   methods: {
@@ -97,6 +143,20 @@ export default {
       let resp = true;
 
       if (resp) this.modalVisible = false;
+    },
+    parseTags(val) {
+      const tags = val.split(',');
+      if (tags.length > 1) {
+        tags.forEach(tag => {
+          if (tag) this.$store.dispatch('addTag', { label: tag.trim(), candidate: this.candidate });
+        });
+        this.tagInput = '';
+      }
+    },
+    actionRemoveTag(ev) {
+      const list = this.allTags.filter(tag => tag.candidate.id === this.candidate.id);
+      const tag = list.find(tag => tag.label === ev);
+      if (tag) this.$store.dispatch('removeTag', tag);
     }
   }
 };
@@ -111,6 +171,16 @@ export default {
 .add-tags {
   &__modal {
     padding-bottom: 2rem;
+  }
+  &__btn {
+    .bx--assistive-text {
+      transform: translate(-50%, -100%) !important;
+    }
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 20rem;
   }
 }
 </style>

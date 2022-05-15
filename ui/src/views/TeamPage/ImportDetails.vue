@@ -71,6 +71,7 @@ import { EventsAlt16, WorkspaceImport16 } from '@carbon/icons-vue';
 
 import civicApi from '../../api/civic-api';
 import electionsApi from '../../api/elections-api';
+import readableId from '@/api/base58id';
 
 export default {
   name: 'AddElection',
@@ -141,6 +142,14 @@ export default {
     },
 
     async actionAdd() {
+      // assign unique ids
+      for (const contest of this.contests) {
+        if (!contest.id) contest.id = readableId(5);
+        for (const person of contest.candidates || []) {
+          if (!person.id) person.id = readableId(5);
+        }
+      }
+
       let contests = {
         team: this.currentTeam.slug,
         election: this.election._id,

@@ -110,7 +110,7 @@ export default {
       let done = await this.$store.dispatch('updateInvite', { id: id, status: status });
 
       if (done && status === 'accepted')
-        this.$router.push({ name: 'team', params: { teamId: id } });
+        await this.$router.push({ name: 'team', params: { teamId: id } });
     }
   }
 };

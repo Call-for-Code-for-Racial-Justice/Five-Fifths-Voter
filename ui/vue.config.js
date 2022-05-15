@@ -9,5 +9,5 @@ module.exports = {
         hostRewrite: true
       }
     }
-  },
+  }
 };
