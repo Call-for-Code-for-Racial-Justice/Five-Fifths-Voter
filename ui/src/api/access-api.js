@@ -20,6 +20,23 @@ export default {
   },
 
   /**
+   * Clear the access document cache by issuing a POST request
+   * @returns {*}
+   */
+  clearCache() {
+    return agent
+      .post(`${PREFIX}/teams/access`)
+      .set(DEV_HEADER)
+      .send({ cache: 'clear' })
+      .then(response => {
+        return response.body;
+      })
+      .catch(() => {
+        return [];
+      });
+  },
+
+  /**
    * Get access docs for given team
    * @param {String} teamSlug
    * @returns {Promise} array of team access docs
@@ -47,6 +64,11 @@ export default {
         .put(`${PREFIX}/teams/invite/public/${doc.team}`)
         .set(DEV_HEADER)
         .send({ status: doc.status })
+        .then(response => {
+          // clear browser cache for access docs
+          this.clearCache();
+          return response;
+        })
         .then(response => {
           return response.body;
         })

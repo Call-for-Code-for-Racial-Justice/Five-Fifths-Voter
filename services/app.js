@@ -15,6 +15,16 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.raw())
 app.use(cookieParser())
 
+// Some APIs like creating a team have a side effect of creating an access document for that team.
+// For that reason, sometimes the cache becomes stale on the browser side because we have done a
+// POST to something like "/teams" but the GET from something like "/access". A POST will clear the
+// browser cache so this is a way for the UI to do that. This does not feel like the right solution.
+// For now this is OK.
+app.post("*", (req, res, next) => {
+  console.log("POST", req.body)
+  if (req.body.cache === "clear") return res.status(200).send({ ok: true })
+  else next()
+})
 // setup logins
 appid(app)
 

@@ -4,18 +4,18 @@ const Model = require("../models/model-badge")
 
 const DB = "teams"
 
-exports.list = async (req, res, next) => {
+exports.list = async (req, res) => {
   debug("[list]", req.user.email.toLowerCase())
-  var resp = await database.service
+  const resp = await database.service
     .postPartitionView({
       db: DB,
       partitionKey: Model.PARTITION,
       ddoc: "badges",
       view: "user-badges",
       key: req.user.email.toLowerCase(),
-      includeDocs: true,
+      includeDocs: true
     })
-    .catch((err) => {
+    .catch(err => {
       debug(JSON.stringify(err))
     })
   if (!resp) return res.status(404).send({ ok: false, message: "not found" })
@@ -24,24 +24,23 @@ exports.list = async (req, res, next) => {
 
   res.set("Cache-control", `private,max-age=30, must-revalidate, proxy-revalidate`) // let browser cache this for 5 minutes
   return res.status(200).send(
-    resp.result.rows.map((row) => {
+    resp.result.rows.map(row => {
       return { ...row.doc, _id: row.doc._id.slice(Model.PARTITION.length + 1) }
     })
   )
 }
 
-exports.seen = async (req, res, next) => {
+exports.seen = async (req, res) => {
   const userInfo = req.user
   const docId = req.params.id
-  var update = req.body
 
   // get current document
-  var resp = await database.service
+  let resp = await database.service
     .getDocument({ db: DB, docId: `${Model.PARTITION}:${docId}` })
-    .catch((err) => {
+    .catch(err => {
       debug(JSON.stringify(err))
     })
-  if (!resp) return res.status(errCode || 404).send({ ok: false, message: "not found" })
+  if (!resp) return res.status(404).send({ ok: false, message: "not found" })
 
   let doc = resp.result
   doc = { ...doc, seen: true, _id: doc._id, _rev: doc._rev }
@@ -52,9 +51,9 @@ exports.seen = async (req, res, next) => {
   resp = await database.service
     .postDocument({
       db: DB,
-      document: doc,
+      document: doc
     })
-    .catch((err) => {
+    .catch(err => {
       debug(JSON.stringify(err))
     })
   if (!resp) return res.status(417).send({ ok: false, message: "not updated" })
@@ -77,24 +76,24 @@ async function grantUser(req, kind) {
       ddoc: "badges",
       view: "user-badge-kind",
       key: [req.user.email.toLowerCase(), kind],
-      limit: 1,
+      limit: 1
     })
-    .catch((err) => {
+    .catch(err => {
       debug(JSON.stringify(err))
     })
 
   if (existingResp && existingResp.result.rows.length > 0) return
 
-  var doc = Model.blankKind(kind)
+  const doc = Model.blankKind(kind)
   doc.email = req.user.email
   Model.update(req.user.sub, doc)
 
-  var badgeResp = await database.service
+  const badgeResp = await database.service
     .postDocument({
       db: DB,
-      document: doc,
+      document: doc
     })
-    .catch((err) => {
+    .catch(err => {
       debug(JSON.stringify(err))
     })
 
@@ -108,7 +107,7 @@ async function grantUser(req, kind) {
 
 exports.grant = grantUser
 
-exports.selfGrant = async (req, res, next) => {
+exports.selfGrant = async (req, res) => {
   const kind = req.params.kind
 
   // so far the only kind of badge you can self grant is the "made a list badge"
@@ -123,6 +122,6 @@ exports.selfGrant = async (req, res, next) => {
   res.status(200).send({
     ok: true,
     message: "created",
-    doc: { ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) },
+    doc: { ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) }
   })
 }

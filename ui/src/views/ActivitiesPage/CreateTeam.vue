@@ -66,8 +66,8 @@ export default {
       userName: state => state.user.info.name
     }),
     displayPath() {
-      var loc = window.location;
-      var path = this.path || '(enter a path)';
+      const loc = window.location;
+      const path = this.path || '(enter a path)';
       return `${loc.protocol}//${loc.host}/#/team/${path}`;
     },
     ready() {
@@ -106,7 +106,7 @@ export default {
 
         if (result && result.ok) {
           this.modalVisible = false;
-          this.$router.push({ name: 'team', params: { teamId: result.doc._id } });
+          await this.$router.push({ name: 'team', params: { teamId: result.doc._id } });
         }
       }
     },
@@ -119,22 +119,22 @@ export default {
     },
 
     /**
-     * @param title: string
+     * @param path: string
      */
     validatePath(path) {
       this.path = path
         .trim()
         .toLowerCase()
-        .replaceAll(/[^a-zA-Z0-9-]/g, '-')
-        .replaceAll(/[-]+/g, '-')
-        .replaceAll(/[^a-zA-Z0-9]+$/g, '');
+        .replaceAll(/[^a-zA-Z\d-]/g, '-')
+        .replaceAll(/-+/g, '-')
+        .replaceAll(/[^a-zA-Z\d]+$/g, '');
     }
   }
 };
 </script>
 
 <style lang="scss">
-@import '@/styles/theme';
+@import '~@/styles/theme';
 @import 'carbon-components/scss/components/button/button';
 @import 'carbon-components/scss/components/modal/modal';
 // .create-team {

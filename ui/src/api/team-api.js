@@ -1,6 +1,7 @@
 const agent = require('superagent');
 const PREFIX = location.href.startsWith('http://localhost:') ? '/services' : '';
 const DEV_HEADER = PREFIX ? { 'x-authorization': process.env.DEV_HEADER || 'development' } : {};
+import accessApi from './access-api';
 
 export default {
   create(doc) {
@@ -8,11 +9,16 @@ export default {
       .post(`${PREFIX}/team/`)
       .set(DEV_HEADER)
       .send(doc)
+      .then(async response => {
+        // clear browser cache for access docs
+        await accessApi.clearCache();
+        return response;
+      })
       .then(response => {
         return response.body;
       })
-      .catch(() => {
-        return { ok: false };
+      .catch(err => {
+        return { ok: false, err };
       });
   },
 

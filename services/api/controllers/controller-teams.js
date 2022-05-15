@@ -7,7 +7,7 @@ const badgeController = require("./controller-badges")
 const DB = "teams"
 
 exports.create = async (req, res, next) => {
-  var doc = req.body
+  const doc = req.body
   if (doc._id) return next({ ok: false, errors: "new doc should not have an id" })
   if (doc._rev) return next({ ok: false, errors: "new doc should not have an rev" })
 
@@ -19,12 +19,12 @@ exports.create = async (req, res, next) => {
     return res.status(406).send({ ok: false, error: Model.validate.errors })
   }
 
-  resp = await database.service
+  let resp = await database.service
     .postDocument({
       db: DB,
-      document: doc,
+      document: doc
     })
-    .catch((err) => {
+    .catch(err => {
       debug(JSON.stringify(err))
     })
 
@@ -38,9 +38,9 @@ exports.create = async (req, res, next) => {
     let accessResp = await database.service
       .postDocument({
         db: DB,
-        document: accessDoc,
+        document: accessDoc
       })
-      .catch((err) => {
+      .catch(err => {
         debug(JSON.stringify(err))
       })
     if (!accessResp) debug("access doc not created for team owner")
@@ -56,39 +56,39 @@ exports.create = async (req, res, next) => {
     res.status(200).send({
       ok: true,
       message: "created",
-      doc: { ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) },
+      doc: { ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) }
     })
   } else res.status(409).send({ ok: false, message: "not created" })
 }
 
-exports.list = async (req, res, next) => {
-  var resp = await database.service
+exports.list = async (req, res) => {
+  const resp = await database.service
     .postPartitionView({
       db: DB,
       partitionKey: Model.PARTITION,
       ddoc: "teams",
       view: "teams",
-      includeDocs: true,
+      includeDocs: true
     })
-    .catch((err) => {
+    .catch(err => {
       debug(JSON.stringify(err))
     })
   if (!resp) return res.status(404).send({ ok: false, message: "not found" })
 
   res.set("Cache-control", `private,max-age=300, must-revalidate, proxy-revalidate`) // let browser cache this for 5 minutes
   return res.status(200).send(
-    resp.result.rows.map((row) => {
+    resp.result.rows.map(row => {
       return { ...row.doc, _id: row.doc._id.slice(Model.PARTITION.length + 1) }
     })
   )
 }
 
-exports.read = async (req, res, next) => {
+exports.read = async (req, res) => {
   const docId = req.params.id
 
-  var resp = await database.service
+  const resp = await database.service
     .getDocument({ db: DB, docId: `${Model.PARTITION}:${docId}` })
-    .catch((err) => {
+    .catch(err => {
       debug(JSON.stringify(err))
     })
   if (!resp) return res.status(404).send({ ok: false, message: "not found" })
@@ -101,15 +101,15 @@ exports.read = async (req, res, next) => {
   return res.status(200).send({ ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) })
 }
 
-exports.update = async (req, res, next) => {
+exports.update = async (req, res) => {
   const userInfo = req.user
   const docId = req.params.id
-  var update = req.body
+  const update = req.body
 
   // get current document
-  var resp = await database.service
+  let resp = await database.service
     .getDocument({ db: DB, docId: `${Model.PARTITION}:${docId}` })
-    .catch((err) => {
+    .catch(err => {
       debug(JSON.stringify(err))
     })
   if (!resp) return res.status(errCode || 404).send({ ok: false, message: "not found" })
@@ -119,15 +119,15 @@ exports.update = async (req, res, next) => {
   Model.update(userInfo.sub, doc)
   let valid = Model.validate(doc)
   if (!valid) return res.status(406).send({ ok: false, errors: Model.validate.errors })
-  if (docId != update.slug)
+  if (docId !== update.slug)
     return res.status(400).send({ ok: false, message: "cannot change slug" }) // cannot update slug
 
   resp = await database.service
     .postDocument({
       db: DB,
-      document: doc,
+      document: doc
     })
-    .catch((err) => {
+    .catch(err => {
       debug(JSON.stringify(err))
     })
   if (!resp) return res.status(417).send({ ok: false, message: "not updated" })
@@ -136,13 +136,13 @@ exports.update = async (req, res, next) => {
   return res.status(200).send(resp.result)
 }
 
-exports.delete = async (req, res, next) => {
+exports.delete = async (req, res) => {
   const docId = req.params.id
 
   // get current document
-  var resp = await database.service
+  let resp = await database.service
     .getDocument({ db: DB, docId: `${Model.PARTITION}:${docId}` })
-    .catch((err) => {
+    .catch(err => {
       debug("error", JSON.stringify(err))
     })
   if (!resp) return res.status(404).send({ ok: false, message: "not found" })
@@ -153,7 +153,7 @@ exports.delete = async (req, res, next) => {
 
   resp = await database.service
     .deleteDocument({ db: DB, docId: doc._id, rev: doc._rev })
-    .catch((err) => {
+    .catch(err => {
       debug(`error deleting (${doc._id}, ${doc._rev})`, JSON.stringify(err))
     })
   if (!resp) return res.status(417).send({ ok: false, message: "not found" })
