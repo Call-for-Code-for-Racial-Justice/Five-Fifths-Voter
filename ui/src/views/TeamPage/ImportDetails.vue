@@ -144,11 +144,9 @@ export default {
     async actionAdd() {
       // assign unique ids
       for (const contest of this.contests) {
-        for (const c of contest.contests || []) {
-          if (!c.id) c.id = readableId(5);
-          for (const person of c.candidates || []) {
-            if (!person.id) person.id = readableId(5);
-          }
+        if (!contest.id) contest.id = readableId(5);
+        for (const person of contest.candidates || []) {
+          if (!person.id) person.id = readableId(5);
         }
       }
 
