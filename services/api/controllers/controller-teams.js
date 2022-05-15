@@ -22,9 +22,9 @@ exports.create = async (req, res, next) => {
   let resp = await database.service
     .postDocument({
       db: DB,
-      document: doc
+      document: doc,
     })
-    .catch(err => {
+    .catch((err) => {
       debug(JSON.stringify(err))
     })
 
@@ -38,9 +38,9 @@ exports.create = async (req, res, next) => {
     let accessResp = await database.service
       .postDocument({
         db: DB,
-        document: accessDoc
+        document: accessDoc,
       })
-      .catch(err => {
+      .catch((err) => {
         debug(JSON.stringify(err))
       })
     if (!accessResp) debug("access doc not created for team owner")
@@ -56,7 +56,7 @@ exports.create = async (req, res, next) => {
     res.status(200).send({
       ok: true,
       message: "created",
-      doc: { ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) }
+      doc: { ...doc, _id: doc._id.slice(Model.PARTITION.length + 1) },
     })
   } else res.status(409).send({ ok: false, message: "not created" })
 }
@@ -68,16 +68,16 @@ exports.list = async (req, res) => {
       partitionKey: Model.PARTITION,
       ddoc: "teams",
       view: "teams",
-      includeDocs: true
+      includeDocs: true,
     })
-    .catch(err => {
+    .catch((err) => {
       debug(JSON.stringify(err))
     })
   if (!resp) return res.status(404).send({ ok: false, message: "not found" })
 
   res.set("Cache-control", `private,max-age=300, must-revalidate, proxy-revalidate`) // let browser cache this for 5 minutes
   return res.status(200).send(
-    resp.result.rows.map(row => {
+    resp.result.rows.map((row) => {
       return { ...row.doc, _id: row.doc._id.slice(Model.PARTITION.length + 1) }
     })
   )
@@ -88,7 +88,7 @@ exports.read = async (req, res) => {
 
   const resp = await database.service
     .getDocument({ db: DB, docId: `${Model.PARTITION}:${docId}` })
-    .catch(err => {
+    .catch((err) => {
       debug(JSON.stringify(err))
     })
   if (!resp) return res.status(404).send({ ok: false, message: "not found" })
@@ -109,7 +109,7 @@ exports.update = async (req, res) => {
   // get current document
   let resp = await database.service
     .getDocument({ db: DB, docId: `${Model.PARTITION}:${docId}` })
-    .catch(err => {
+    .catch((err) => {
       debug(JSON.stringify(err))
     })
   if (!resp) return res.status(errCode || 404).send({ ok: false, message: "not found" })
@@ -125,9 +125,9 @@ exports.update = async (req, res) => {
   resp = await database.service
     .postDocument({
       db: DB,
-      document: doc
+      document: doc,
     })
-    .catch(err => {
+    .catch((err) => {
       debug(JSON.stringify(err))
     })
   if (!resp) return res.status(417).send({ ok: false, message: "not updated" })
@@ -142,7 +142,7 @@ exports.delete = async (req, res) => {
   // get current document
   let resp = await database.service
     .getDocument({ db: DB, docId: `${Model.PARTITION}:${docId}` })
-    .catch(err => {
+    .catch((err) => {
       debug("error", JSON.stringify(err))
     })
   if (!resp) return res.status(404).send({ ok: false, message: "not found" })
@@ -153,7 +153,7 @@ exports.delete = async (req, res) => {
 
   resp = await database.service
     .deleteDocument({ db: DB, docId: doc._id, rev: doc._rev })
-    .catch(err => {
+    .catch((err) => {
       debug(`error deleting (${doc._id}, ${doc._rev})`, JSON.stringify(err))
     })
   if (!resp) return res.status(417).send({ ok: false, message: "not found" })

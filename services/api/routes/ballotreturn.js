@@ -28,8 +28,7 @@ router.get("/locations/:stateId/:locId", (req, res) => {
   const foundLocation = stateId === "GA" && locations.list.find((loc) => loc.place === locId)
   if (foundLocation) {
     res.send(foundLocation)
-  }
-  else {
+  } else {
     res.status(404).send({ error: { message: "location not found" } })
   }
 })
