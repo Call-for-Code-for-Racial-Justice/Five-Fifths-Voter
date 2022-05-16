@@ -22,7 +22,7 @@
         <template slot="content">
           <cv-radio-group :vertical="false">
             <cv-radio-button
-              name="party"
+              name="politicalParty"
               label="Democrat"
               value="Democrat"
               :checked="party === 'Democrat'"
@@ -31,7 +31,7 @@
               v-model="party"
             />
             <cv-radio-button
-              name="party"
+              name="politicalParty"
               label="Republican"
               value="Republican"
               :checked="party === 'Republican'"
@@ -40,7 +40,7 @@
               v-model="party"
             />
             <cv-radio-button
-              name="party"
+              name="politicalParty"
               label="Independent"
               value="Independent"
               :checked="party === 'Independent'"
@@ -49,7 +49,7 @@
               v-model="party"
             />
           </cv-radio-group>
-          <cv-text-input label="Name" v-model.trim="name"> </cv-text-input>
+          <cv-text-input label="Name" v-model.trim="name" ref="firstInput"> </cv-text-input>
           <cv-text-input label="Party" v-model.trim="party"> </cv-text-input>
           <cv-text-input label="Url" v-model.trim="candidateUrl"> </cv-text-input>
           <cv-text-input label="Twitter" v-model.trim="twitter"> </cv-text-input>
@@ -135,6 +135,7 @@ export default {
     },
     actionShown() {
       this.modalVisible = true;
+      this.$refs?.firstInput?.focus();
     },
     actionHidden() {
       this.modalVisible = false;

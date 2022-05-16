@@ -33,7 +33,8 @@
               >{{ election.name }}</cv-dropdown-item
             >
           </cv-dropdown>
-          <cv-text-input label="Election Name" v-model="electionName"> </cv-text-input>
+          <cv-text-input label="Election Name" v-model="electionName" ref="firstInput">
+          </cv-text-input>
           <cv-text-input label="Election Day" v-model="electionDay"> </cv-text-input>
           <cv-text-input label="Election Division" v-model="electionDivision"> </cv-text-input>
           <div style="height:10rem;" />
@@ -103,6 +104,7 @@ export default {
       this.electionName = '';
       this.electionDay = '';
       this.electionDivision = '';
+      this.$refs?.firstInput?.focus();
     },
     actionHidden() {
       this.modalVisible = false;

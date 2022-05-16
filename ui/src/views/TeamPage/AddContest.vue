@@ -40,6 +40,15 @@
             />
             <cv-radio-button
               name="contestType"
+              label="Primary"
+              value="Primary"
+              :checked="contestType === 'Primary'"
+              :hide-label="false"
+              :label-left="true"
+              v-model="contestType"
+            />
+            <cv-radio-button
+              name="contestType"
               label="Referendum"
               value="Referendum"
               :checked="contestType === 'Referendum'"
@@ -49,10 +58,11 @@
             />
           </cv-radio-group>
           <cv-text-input
-            v-if="contestType === 'General'"
+            v-if="contestType === 'General' || contestType === 'Primary'"
             label="Office"
             v-model.trim="office"
             placeholder="Office title. i.e. Governor"
+            ref="firstInput"
           >
           </cv-text-input>
           <cv-text-input
@@ -146,6 +156,7 @@ export default {
     },
     actionShown() {
       this.modalVisible = true;
+      this.$refs?.firstInput?.focus();
     },
     actionHidden() {
       this.modalVisible = false;

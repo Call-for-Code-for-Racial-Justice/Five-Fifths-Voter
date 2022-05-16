@@ -76,6 +76,17 @@ module.exports = {
       seen: false,
     })
   },
+  blankShareList() {
+    return lodash.cloneDeep({
+      kind: "shareList",
+      name: "Shared tags & list",
+      image: "/images/badges/noun-success-2909316.svg",
+      description:
+        "You earned a badge for sharing your list of candidates and tags! Share, collaborate and vote!",
+      seen: false,
+    })
+  },
+
   blankKind(kind) {
     switch (kind) {
       case "joinTeam":
@@ -86,6 +97,8 @@ module.exports = {
         return this.blankLogin()
       case "madeList":
         return this.blankMadeList()
+      case "shareList":
+        return this.blankShareList()
 
       default:
         return {}

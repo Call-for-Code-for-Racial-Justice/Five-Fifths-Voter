@@ -44,6 +44,7 @@ const teamInviteRoutes = require("./api/routes/route-invitations")
 const teamElectionRoutes = require("./api/routes/route-election")
 const teamContestRoutes = require("./api/routes/route-contests")
 const badgeRoutes = require("./api/routes/route-badges")
+const shareRoutes = require("./api/routes/route-shared")
 
 app.use("/", staticRoutes)
 app.use("/auth", authRoutes)
@@ -60,6 +61,7 @@ app.use("/teams/access", checkAuth, teamAccessRoutes)
 app.use("/teams/invite", checkAuth, teamInviteRoutes)
 app.use("/teams/election", checkAuth, teamElectionRoutes)
 app.use("/teams/contests", checkAuth, teamContestRoutes)
+app.use("/share", checkAuth, shareRoutes)
 
 // errors
 app.use((req, res, next) => {
