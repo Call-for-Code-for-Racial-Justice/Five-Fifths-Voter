@@ -118,16 +118,9 @@
                 <cv-data-table-cell v-if="isUserEditor">
                   <add-candidate :candidate="candidate" :contest="ballotItem" />
                 </cv-data-table-cell>
-                <cv-data-table-cell v-if="isUserEditor"
-                  ><cv-icon-button
-                    class="contest-view__left"
-                    :kind="'danger--ghost'"
-                    :size="'sm'"
-                    :icon="iconDelete"
-                    :label="'Delete'"
-                    :tip-position="'top'"
-                    :disabled="false"
-                /></cv-data-table-cell>
+                <cv-data-table-cell v-if="isUserEditor">
+                  <remove-candidate :candidate="candidate" :ballot-item="ballotItem" />
+                </cv-data-table-cell>
               </cv-data-table-row>
             </template>
           </cv-data-table>
@@ -206,10 +199,12 @@ import {
 import AddCandidate from '@/views/TeamPage/AddCandidate';
 import AddContest from '@/views/TeamPage/AddContest';
 import TagCandidate from '@/views/TeamPage/TagCandidate';
+import RemoveCandidate from '@/views/TeamPage/RemoveCandidate';
 
 export default {
   name: 'ContestView',
   components: {
+    RemoveCandidate,
     TagCandidate,
     AddContest,
     AddCandidate,

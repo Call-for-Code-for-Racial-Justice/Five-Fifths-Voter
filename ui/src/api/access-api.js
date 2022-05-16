@@ -21,7 +21,7 @@ export default {
 
   /**
    * Clear the access document cache by issuing a POST request
-   * @returns {*}
+   * @returns {Promise}
    */
   clearCache() {
     return agent
