@@ -40,6 +40,7 @@
             placeholder="Type tags seperated by ,"
             @input="parseTags"
             @keyup.enter="parseTags((tagInput += ','))"
+            ref="tagInput"
           >
           </cv-text-input>
         </template>
@@ -93,6 +94,7 @@ export default {
         .map(tag => tag.label);
     }
   },
+  mounted() {},
   async created() {},
   beforeDestroy() {
     // move back to where it came from
@@ -129,6 +131,7 @@ export default {
     },
     actionShown() {
       this.modalVisible = true;
+      this.$refs?.tagInput?.focus();
     },
     actionHidden() {
       this.modalVisible = false;

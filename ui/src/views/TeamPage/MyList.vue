@@ -3,18 +3,16 @@
     <div class="my-list__title">
       My List
     </div>
+    <share-list />
     <div class="my-list__data">
       No one can see this information except you. Your team leader does not have access to this.
-      Also, we do not store this information except in your local browser.
+      Also, unless you share it, we do not store this information except in your local browser.
     </div>
-    <cv-data-table :staticWidth="true" :zebra="true" class="contest-view__candidates">
+    <cv-data-table :staticWidth="false" :zebra="true" class="contest-view__candidates">
       <template slot="headings">
         <cv-data-table-heading heading="Office" />
         <cv-data-table-heading heading="Name" />
         <cv-data-table-heading heading="Party" />
-        <cv-data-table-heading heading="Url" />
-        <cv-data-table-heading heading="Phone" />
-        <cv-data-table-heading heading="Email" />
         <cv-data-table-heading />
       </template>
       <template slot="data">
@@ -22,9 +20,6 @@
           <cv-data-table-cell>{{ votes[office].office }}</cv-data-table-cell>
           <cv-data-table-cell>{{ votes[office].name }}</cv-data-table-cell>
           <cv-data-table-cell>{{ votes[office].party }}</cv-data-table-cell>
-          <cv-data-table-cell>{{ votes[office].candidateUrl }}</cv-data-table-cell>
-          <cv-data-table-cell>{{ votes[office].phone }}</cv-data-table-cell>
-          <cv-data-table-cell>{{ votes[office].email }}</cv-data-table-cell>
           <cv-data-table-cell
             ><cv-icon-button
               class="my-list__left"
@@ -45,10 +40,11 @@
 import { mapState } from 'vuex';
 import { Close16 } from '@carbon/icons-vue';
 import badgesApi from '../../api/badges-api';
+import ShareList from '@/views/TeamPage/ShareList';
 
 export default {
   name: 'MyList',
-  components: {},
+  components: { ShareList },
   data: () => ({
     iconRemove: Close16
   }),
