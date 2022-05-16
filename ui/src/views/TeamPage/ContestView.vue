@@ -274,7 +274,7 @@ export default {
 
     officeVoted(ballotItem) {
       try {
-        return Boolean(this.votes[ballotItem].id);
+        return Boolean(this.votes[ballotItem.id]);
       } catch (error) {
         return false;
       }
@@ -302,7 +302,13 @@ export default {
       else await this.$store.dispatch('removeVote', ballotItem.id);
     },
     async actionReferendumVote(ballotItem, choice) {
-      if (!this.voted(ballotItem, choice)) await this.actionVote(ballotItem, { id: choice });
+      if (!this.voted(ballotItem, choice))
+        await this.actionVote(ballotItem, {
+          id: choice,
+          office: ballotItem.referendumTitle,
+          name: choice,
+          party: 'Referendum'
+        });
       else await this.$store.dispatch('removeVote', ballotItem.id);
     }
   }

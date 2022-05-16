@@ -284,7 +284,7 @@ const actions = {
       if (!update.votes) update.votes = {};
       update.votes[payload.contest.id] = {
         ...lodash.cloneDeep(payload.candidate),
-        office: payload.contest.office
+        office: payload.contest.office || payload.contest.referendumTitle
       };
       commit('setLocal', update);
     } catch (error) {
