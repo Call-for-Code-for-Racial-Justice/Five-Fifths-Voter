@@ -21,10 +21,10 @@ const schema = {
     name: { type: "string" },
     image: { type: "string" },
     description: { type: "string" },
-    seen: { type: "boolean" }
+    seen: { type: "boolean" },
   },
   required: ["kind", "name", "image", "description", "seen"],
-  additionalProperties: false
+  additionalProperties: false,
 }
 
 const validate = ajv.compile(schema)
@@ -44,7 +44,7 @@ module.exports = {
       image: "/images/badges/noun-collaboration-2909353.svg",
       description:
         "You earned a badge for joining a team! Make a plan to vote. Take someone from your team with you.",
-      seen: false
+      seen: false,
     })
   },
   blankStartTeam() {
@@ -54,7 +54,7 @@ module.exports = {
       image: "/images/badges/noun-leadership-2909348.svg",
       description:
         "You earned a badge for creating a team! Get your team together and set your voting goals.",
-      seen: false
+      seen: false,
     })
   },
   blankLogin() {
@@ -63,7 +63,7 @@ module.exports = {
       name: "Created account",
       image: "/images/badges/noun-politician-2909359.svg",
       description: "You earned a badge for logging in! Make a plan to vote.",
-      seen: false
+      seen: false,
     })
   },
   blankMadeList() {
@@ -73,7 +73,7 @@ module.exports = {
       image: "/images/badges/noun-food-critic-2909382.svg",
       description:
         "You earned a badge for creating a list of candidates! Take your list to your polling location and vote!",
-      seen: false
+      seen: false,
     })
   },
   blankShareList() {
@@ -83,7 +83,7 @@ module.exports = {
       image: "/images/badges/noun-success-2909316.svg",
       description:
         "You earned a badge for sharing your list of candidates and tags! Share, collaborate and vote!",
-      seen: false
+      seen: false,
     })
   },
 
@@ -129,5 +129,5 @@ module.exports = {
     doc.date_modified = new Date().toISOString()
     doc.doc_type = DOC_TYPE
     debug("update", doc)
-  }
+  },
 }

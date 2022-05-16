@@ -16,10 +16,10 @@ const schema = {
     doc_type: { type: "string", const: DOC_TYPE },
     date_created: { type: "string" }, // Date.toISOString()
     date_modified: { type: "string" }, // Date.toISOString()
-    local_data: { type: "object" } // Local browser data to be shared
+    local_data: { type: "object" }, // Local browser data to be shared
   },
   required: ["doc_type", "local_data"],
-  additionalProperties: false
+  additionalProperties: false,
 }
 
 const validate = ajv.compile(schema)
@@ -40,5 +40,5 @@ module.exports = {
     doc.date_modified = new Date().toISOString()
     doc.doc_type = DOC_TYPE
     debug("update", doc)
-  }
+  },
 }
