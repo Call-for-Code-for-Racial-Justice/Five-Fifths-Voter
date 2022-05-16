@@ -92,6 +92,18 @@ export default {
     // Finish loading animation
     this.loadingData = false;
   },
+  errorCaptured(err, vm, info) {
+    try {
+      if (info.includes('cv:beforeDestroy')) {
+        // eslint-disable-next-line no-console
+        console.warn('suppress error from carbon tabs', info);
+        return false;
+      }
+    } catch (e) {
+      //noop
+    }
+    return true;
+  },
 
   computed: {
     ...mapState({

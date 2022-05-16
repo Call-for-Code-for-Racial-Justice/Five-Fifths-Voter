@@ -102,6 +102,24 @@ export default {
   },
 
   /**
+   * Clear the contest document cache by issuing a POST request
+   * @param {String} teamId
+   * @returns {Promise}
+   */
+  clearContestCache(teamId) {
+    return agent
+      .post(`${PREFIX}/teams/contests/${teamId}`)
+      .set(DEV_HEADER)
+      .send({ cache: 'clear' })
+      .then(response => {
+        return response.body;
+      })
+      .catch(() => {
+        return [];
+      });
+  },
+
+  /**
    * Update existing context document
    * @param {String} teamId
    * @param {Object} doc
@@ -112,6 +130,10 @@ export default {
       .put(`${PREFIX}/teams/contests/${teamId}/${doc._id}`)
       .set(DEV_HEADER)
       .send(doc)
+      .then(async response => {
+        await this.clearContestCache(teamId);
+        return response;
+      })
       .then(response => {
         return response.body;
       })

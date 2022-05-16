@@ -118,16 +118,9 @@
                 <cv-data-table-cell v-if="isUserEditor">
                   <add-candidate :candidate="candidate" :contest="ballotItem" />
                 </cv-data-table-cell>
-                <cv-data-table-cell v-if="isUserEditor"
-                  ><cv-icon-button
-                    class="contest-view__left"
-                    :kind="'danger--ghost'"
-                    :size="'sm'"
-                    :icon="iconDelete"
-                    :label="'Delete'"
-                    :tip-position="'top'"
-                    :disabled="false"
-                /></cv-data-table-cell>
+                <cv-data-table-cell v-if="isUserEditor">
+                  <remove-candidate :candidate="candidate" :ballot-item="ballotItem" />
+                </cv-data-table-cell>
               </cv-data-table-row>
             </template>
           </cv-data-table>
@@ -206,10 +199,12 @@ import {
 import AddCandidate from '@/views/TeamPage/AddCandidate';
 import AddContest from '@/views/TeamPage/AddContest';
 import TagCandidate from '@/views/TeamPage/TagCandidate';
+import RemoveCandidate from '@/views/TeamPage/RemoveCandidate';
 
 export default {
   name: 'ContestView',
   components: {
+    RemoveCandidate,
     TagCandidate,
     AddContest,
     AddCandidate,
@@ -265,7 +260,7 @@ export default {
       return undefined;
     },
     twitter(candidate) {
-      if (candidate.facebook) return candidate.twitter;
+      if (candidate.twitter) return candidate.twitter;
       const channels = candidate.channels || [];
       const channel = channels.find(channel => channel.type === 'Twitter');
       if (channel) return channel.id;
@@ -274,7 +269,7 @@ export default {
 
     officeVoted(ballotItem) {
       try {
-        return Boolean(this.votes[ballotItem].id);
+        return Boolean(this.votes[ballotItem.id]);
       } catch (error) {
         return false;
       }
@@ -302,7 +297,13 @@ export default {
       else await this.$store.dispatch('removeVote', ballotItem.id);
     },
     async actionReferendumVote(ballotItem, choice) {
-      if (!this.voted(ballotItem, choice)) await this.actionVote(ballotItem, { id: choice });
+      if (!this.voted(ballotItem, choice))
+        await this.actionVote(ballotItem, {
+          id: choice,
+          office: ballotItem.referendumTitle,
+          name: choice,
+          party: 'Referendum'
+        });
       else await this.$store.dispatch('removeVote', ballotItem.id);
     }
   }

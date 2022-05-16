@@ -194,6 +194,32 @@ const actions = {
     return added;
   },
 
+  async removeCandidateContest({ commit, state }, data) {
+    let success = false;
+    try {
+      let doc = state.contests.find(contest => contest._id === data.contest.doc_id);
+      let update = lodash.cloneDeep(doc);
+      const contest = update.contests.find(c => c.id === data.contest.id);
+      if (!contest.candidates) contest.candidates = [];
+      const index = contest.candidates.findIndex(person => person.id === data.candidate.id);
+      if (index > -1) {
+        contest.candidates.splice(index, 1);
+        let result = await electionsApi.updateContest(state.current.slug, update);
+        if (result.ok) {
+          commit('addTeamContestDocs', update);
+          success = true;
+        } else {
+          // eslint-disable-next-line no-console
+          console.error(`could not update candidate ${data.candidate.name}`);
+        }
+      }
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(`could not update candidate`, error);
+    }
+    return success;
+  },
+
   /**
    * Load the access docs associated with the current user. The list will have
    * open invitations as well as teams where the user already has access
@@ -284,7 +310,7 @@ const actions = {
       if (!update.votes) update.votes = {};
       update.votes[payload.contest.id] = {
         ...lodash.cloneDeep(payload.candidate),
-        office: payload.contest.office
+        office: payload.contest.office || payload.contest.referendumTitle
       };
       commit('setLocal', update);
     } catch (error) {
@@ -357,6 +383,8 @@ const mutations = {
       if (index > -1) state.elections.splice(index, 1, doc);
       else state.elections.push(doc);
     });
+    if (!state.current.election && state.elections.length > 0)
+      Vue.set(state.current, 'election', state.elections[0]._id);
   },
   removeTeamElection(state, id) {
     let index = state.elections.findIndex(doc => doc._id === id);
