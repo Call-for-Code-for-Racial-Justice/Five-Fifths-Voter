@@ -260,7 +260,7 @@ export default {
       return undefined;
     },
     twitter(candidate) {
-      if (candidate.facebook) return candidate.twitter;
+      if (candidate.twitter) return candidate.twitter;
       const channels = candidate.channels || [];
       const channel = channels.find(channel => channel.type === 'Twitter');
       if (channel) return channel.id;
