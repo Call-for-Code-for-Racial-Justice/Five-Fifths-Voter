@@ -103,9 +103,7 @@ export default {
       regData: {},
     };
   },
-  created() {
-    this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Support Page' });
-  },
+  created() {},
   methods: {
     navigate() {
       router.go(-1);

@@ -129,9 +129,7 @@ export default {
       visible: false,
     };
   },
-  created() {
-    this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Landing Page' });
-  },
+  created() {},
   methods: {
     onClick() {
       this.visible = true;

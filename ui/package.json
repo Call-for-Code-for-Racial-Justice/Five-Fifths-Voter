@@ -64,9 +64,20 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "@vue/prettier"
+      "plugin:prettier/recommended",
+      "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": [
+        "warn",
+        {
+          "allow": [
+            "warn",
+            "error"
+          ]
+        }
+      ]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
@@ -118,8 +129,7 @@
     "node": ">=14.x"
   },
   "resolutions": {
-    "serialize-javascript": "^6",
-    "node-forge": "^0.10",
-    "yargs-parser": "^20"
+    "follow-redirects": "1.15.1",
+    "prettier": "2.7.1"
   }
 }

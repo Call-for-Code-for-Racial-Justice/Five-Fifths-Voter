@@ -30,10 +30,7 @@
       </div>
       <div class="bx--row bx--feature-card__row">
         <div
-          class="
-            bx--no-gutter-md--left bx--offset-md-4 bx--offset-lg-8 bx--col-md-4 bx--col-lg-4
-            bx--feature-card__column
-          "
+          class="bx--no-gutter-md--left bx--offset-md-4 bx--offset-lg-8 bx--col-md-4 bx--col-lg-4 bx--feature-card__column"
         >
           <div target="_blank" rel="noopener noreferrer" class="bx--resource-card">
             <div class="bx--aspect-ratio bx--aspect-ratio--2x1">

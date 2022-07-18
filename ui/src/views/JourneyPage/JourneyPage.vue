@@ -71,9 +71,7 @@ export default {
       container: true,
     };
   },
-  created() {
-    this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Journey Page' });
-  },
+  created() {},
   methods: {
     showStep() {
       this.complete = [true, false, false, false, false];

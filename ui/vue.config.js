@@ -6,16 +6,18 @@ module.exports = {
         xfwd: true,
         pathRewrite: { '^/services/': '' },
         autoRewrite: true,
-        hostRewrite: true
-      }
-    }
+        hostRewrite: true,
+      },
+    },
   },
-  pwa: {
-    name: 'Five Fifths Voter',
-    manifestOptions: {
-      short_name: 'fivefifthsvoter',
-      start_url: '/',
-      theme_color: '#000000'
-    }
-  }
+  pwa: process.env.PWA
+    ? {
+        name: 'Five Fifths Voter',
+        manifestOptions: {
+          short_name: 'fivefifthsvoter',
+          start_url: '/',
+          theme_color: '#000000',
+        },
+      }
+    : undefined,
 };
