@@ -1,7 +1,6 @@
 <template>
   <div>
     <Hero img="mother-daughter-hero.jpeg" role="complementary" :aria-label="$t('ariaHero')" />
-    <AppHeader />
     <cv-content class="main-content" id="#main-content">
       <slot />
     </cv-content>
@@ -10,13 +9,11 @@
 
 <script>
 import Hero from '../Hero';
-import AppHeader from '../AppHeader';
 
 export default {
   name: 'PageLayout',
   components: {
     Hero,
-    AppHeader,
   },
   props: ['childData'],
   //pagelayout needs prop for backgroundImg

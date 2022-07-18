@@ -1,6 +1,5 @@
 <template>
-  <cv-content id="#main-content">
-    <AppHeader />
+  <div>
     <div class="page__details">
       <h2 class="aside__header">{{ $t('notfoundTitle') }}</h2>
     </div>
@@ -15,20 +14,17 @@
         </div>
       </div>
     </div>
-  </cv-content>
+  </div>
 </template>
 
 <script>
-import AppHeader from '../../components/AppHeader';
-import router from '../../router';
 export default {
-  name: 'notfound',
-  components: { AppHeader },
+  name: 'NotFound',
   data() {
     return {};
   },
   created() {
-    setTimeout(() => router.push('/'), 2000);
+    setTimeout(() => this.$router.push('/'), 2000);
   },
   methods: {},
 };
