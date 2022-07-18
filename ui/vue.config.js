@@ -2,7 +2,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/services': {
-        target: process.env.SERVICES_URL,
+        target: `http://localhost:${process.env.SERVICES_PORT || 3333}/`,
         xfwd: true,
         pathRewrite: { '^/services/': '' },
         autoRewrite: true,

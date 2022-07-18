@@ -16,7 +16,7 @@
     "postinstall": "test -n \"$NPM_CONFIG_PRODUCTION\" || ( cd .. && husky install )"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "dependencies": {
     "@cloudant/cloudant": "^4.3.0",
