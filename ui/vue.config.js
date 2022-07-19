@@ -1,4 +1,16 @@
+const path = require('path');
 module.exports = {
+  chainWebpack: (config) => {
+    config.module.rule('svg').exclude.add(path.resolve(__dirname, '.'));
+
+    config.module
+      .rule('app-svgs')
+      .test(/\.(svg)(\?.*)?$/)
+      .include.add(path.resolve(__dirname, '.'))
+      .end()
+      .use('vue-svg-loader')
+      .loader('vue-svg-loader');
+  },
   devServer: {
     proxy: {
       '/services': {

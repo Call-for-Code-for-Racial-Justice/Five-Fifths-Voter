@@ -15,16 +15,20 @@
       </cv-header-menu-item>
     </cv-header-nav>
     <template v-slot:header-global>
-      <cv-header-global-action :aria-label="$t('ariaUser')">
+      <cv-header-global-action v-if="loginEnabled" :aria-label="$t('ariaUser')">
         <UserAvatar20 />
       </cv-header-global-action>
       <cv-header-global-action
         :aria-label="$t('ariaLanguageSetting')"
         aria-controls="language-panel"
         :label="$t('ariaLanguageSetting')"
+        class="lang-select"
       >
         <Language32 />
       </cv-header-global-action>
+      <div style="width: 48px; padding: 8px">
+        <capitol style="fill: white" />
+      </div>
     </template>
     <template v-slot:left-panels>
       <cv-side-nav id="side-nav" fixed :aria-label="$t('mobilenav')">
@@ -67,10 +71,11 @@
 import UserAvatar20 from '@carbon/icons-vue/lib/user--avatar/20';
 import Language32 from '@carbon/icons-vue/lib/language/32';
 import i18n from '@/plugins/i18n';
+import Capitol from '@/assets/icons/capitol.svg';
 
 export default {
   name: 'AppHeader',
-  components: { UserAvatar20, Language32 },
+  components: { UserAvatar20, Language32, Capitol },
   mounted() {
     this.$watch(
       '$i18n.locale',
@@ -88,6 +93,7 @@ export default {
   },
   data() {
     return {
+      loginEnabled: false,
       languages: [
         { flag: '', language: 'en', title: 'English' },
         { flag: '', language: 'es', title: 'Español' },
@@ -127,4 +133,11 @@ export function setDocumentLang(lang) {
 
 <style lang="scss">
 @import './appheader.scss';
+.app-header {
+  .bx--header__global {
+    button:last-child {
+      margin-right: 48px;
+    }
+  }
+}
 </style>
