@@ -114,10 +114,19 @@ export default {
     currentLocale() {
       return i18n.locale;
     },
+    routeName() {
+      return this.$route.name;
+    },
   },
   methods: {
     changeLocale(locale) {
       i18n.locale = locale;
+      document.activeElement.blur();
+    },
+  },
+  watch: {
+    routeName() {
+      document.activeElement.blur();
     },
   },
 };
