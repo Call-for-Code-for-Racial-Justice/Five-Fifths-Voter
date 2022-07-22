@@ -100,5 +100,6 @@ jobs:
         run: ibmcloud target --cf-api "${{ secrets.BLUE_IBM_CLOUD_CF_API }}" -o "${{ secrets.BLUE_IBM_CLOUD_CF_ORG }}" -s "${{ secrets.BLUE_IBM_CLOUD_CF_SPACE }}"
         shell: bash
       - name: Deploy to Cloud Foundry
-        run: ibmcloud cf push -f manifest-blue.yml --vars-file blue.yml
+        #run: ibmcloud cf push -f manifest-blue.yml --vars-file blue.yml
+        run: ibmcloud cf push -f manifest.yml
         shell: bash
