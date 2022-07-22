@@ -683,7 +683,9 @@ export default {
         width: '512px',
         height: `${(953 / 959) * 512}px`,
         margin: 'auto',
-        marginTop: '2rem',
+        top: '3rem',
+        position: 'absolute',
+        zIndex: '1',
       },
       targetViewBox: {
         intervalId: null,

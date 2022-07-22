@@ -6,7 +6,7 @@
 /**
  * Render the content propery using markdown-it
  */
-const markdown = require('markdown-it')();
+const MarkdownIt = require('markdown-it');
 export default {
   name: 'MarkDown',
   props: {
@@ -15,6 +15,7 @@ export default {
   data: function () {
     return {
       mdContent: '',
+      md: new MarkdownIt(),
     };
   },
   watch: {
@@ -23,11 +24,18 @@ export default {
     },
   },
   created() {
+    const proxy = (tokens, idx, options, env, self) => self.renderToken(tokens, idx, options);
+    const defaultLinkOpen = this.md.renderer.rules.link_open || proxy;
+    this.md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
+      // Make your changes here ...
+      tokens[idx].attrJoin('target', '_blank');
+      return defaultLinkOpen(tokens, idx, options, env, self);
+    };
     this.updateMarkDown();
   },
   methods: {
     updateMarkDown() {
-      this.mdContent = markdown.render(this.content);
+      this.mdContent = this.md.render(this.content);
     },
   },
 };
