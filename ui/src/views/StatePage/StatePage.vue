@@ -96,7 +96,6 @@ export default {
       resp.json().then((data) => {
         this.location = data;
         this.which = this.location.region;
-        console.log(this.location);
       });
     });
   },
