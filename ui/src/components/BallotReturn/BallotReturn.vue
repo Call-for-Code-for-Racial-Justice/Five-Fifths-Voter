@@ -85,11 +85,7 @@ export default {
       voterData: {},
     };
   },
-  created() {
-    this.$amplitude
-      .getInstance()
-      .logEvent('Page Visit', { page: 'Journey Page', component: 'Ballot Return' });
-  },
+  created() {},
   computed: {
     electionInfoUrl() {
       try {

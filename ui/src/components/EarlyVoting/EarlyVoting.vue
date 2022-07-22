@@ -137,15 +137,6 @@ export default {
     };
   },
   created() {
-    try {
-      this.$amplitude
-        .getInstance()
-        .logEvent('Page Visit', { page: 'Journey Page', component: 'Early Voting' });
-    } catch (e) {
-      /* eslint no-console: 0 */
-      console.error(e);
-    }
-
     axios
       .get('/services/elections')
       .then((response) => {

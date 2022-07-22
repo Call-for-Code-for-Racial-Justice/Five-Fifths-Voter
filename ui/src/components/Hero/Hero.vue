@@ -30,10 +30,7 @@
       </div>
       <div class="bx--row bx--feature-card__row">
         <div
-          class="
-            bx--no-gutter-md--left bx--offset-md-4 bx--offset-lg-8 bx--col-md-4 bx--col-lg-4
-            bx--feature-card__column
-          "
+          class="bx--no-gutter-md--left bx--offset-md-4 bx--offset-lg-8 bx--col-md-4 bx--col-lg-4 bx--feature-card__column"
         >
           <div target="_blank" rel="noopener noreferrer" class="bx--resource-card">
             <div class="bx--aspect-ratio bx--aspect-ratio--2x1">
@@ -47,21 +44,7 @@
                     <h4 class="bx--resource-card__title">{{ $t('whyVoteBtn') }}</h4>
                     <div class="bx--resource-card__icon--img"></div>
                     <div class="bx--resource-card__icon--action">
-                      <svg
-                        fill="#fff"
-                        focusable="false"
-                        preserveAspectRatio="xMidYMid meet"
-                        :aria-label="$t('ariaOpen')"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 32 32"
-                        role="img"
-                      >
-                        <polygon
-                          points="18,6 16.6,7.4 24.1,15 3,15 3,17 24.1,17 16.6,24.6 18,26 28,16 "
-                        />
-                      </svg>
+                      <arrow-right focusable="false" aria-hidden="true" />
                     </div>
                   </div>
                 </router-link>
@@ -75,11 +58,13 @@
 </template>
 
 <script>
+import { ArrowRight16 } from '@carbon/icons-vue';
 export default {
   name: 'Hero',
   props: {
     img: String,
   },
+  components: { ArrowRight: ArrowRight16 },
 };
 </script>
 

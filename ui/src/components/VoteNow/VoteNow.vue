@@ -168,9 +168,7 @@ export default {
         this.allVoterIdData = {};
       });
   },
-  created() {
-    this.$amplitude.getInstance().logEvent('Page Visit', { page: 'Vote Now' });
-  },
+  created() {},
   methods: {
     navigate() {
       router.go(-1);
