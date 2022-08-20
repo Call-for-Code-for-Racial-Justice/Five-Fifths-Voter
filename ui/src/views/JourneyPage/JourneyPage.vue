@@ -67,15 +67,19 @@ export default {
   },
   data() {
     return {
-      complete: [false, false, false, false, false],
       container: true,
     };
   },
   created() {},
-  methods: {
-    showStep() {
-      this.complete = [true, false, false, false, false];
-    },
+  methods: {},
+  errorCaptured(err, vm, info) {
+    try {
+      console.warn('suppress error from carbon tabs', info);
+      return false;
+    } catch (e) {
+      console.warn('errorCaptured', e);
+    }
+    return true;
   },
 };
 </script>
