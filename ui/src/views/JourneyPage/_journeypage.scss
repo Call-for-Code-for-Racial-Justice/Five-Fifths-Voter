@@ -20,6 +20,14 @@
       @include carbon--type-style('productive-heading-01');
       display: block;
       cursor: pointer;
+      color: $text-on-color;
+      margin-bottom: 0.5rem;
+      @include carbon--breakpoint-down(lg) {
+        margin-bottom: 0.25rem;
+      }
+    }
+    .cv-link:last-child {
+      margin-bottom: 0;
     }
   }
 }

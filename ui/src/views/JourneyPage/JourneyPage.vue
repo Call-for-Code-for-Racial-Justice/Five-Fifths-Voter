@@ -93,6 +93,7 @@ export default {
   errorCaptured(err, vm, info) {
     try {
       console.warn('suppress error from carbon tabs', info);
+      console.warn(err.stack);
       return false;
     } catch (e) {
       console.warn('errorCaptured', e);

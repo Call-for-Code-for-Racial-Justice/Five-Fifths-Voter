@@ -35,7 +35,7 @@ export default {
 @import '@/styles/_theme.scss';
 .usa-state {
   margin-bottom: 0.5rem;
-  max-width: 10rem;
+  max-width: 15rem;
   .bx--label {
   }
 }

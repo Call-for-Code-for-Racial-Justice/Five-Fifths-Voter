@@ -23,6 +23,22 @@
             {{ $t('registerDesc') }}
           </p>
 
+          <div v-if="info.register.territory" class="register-info">
+            <span
+              >Do you live is a US territory? Check with your local election officials about
+              voting.</span
+            >
+            <cv-link href="https://www.usa.gov/who-can-vote" target="_blank"
+              >U.S. citizens residing in U.S. territories</cv-link
+            >
+            <cv-link
+              href="https://en.wikipedia.org/wiki/Federal_voting_rights_in_Puerto_Rico"
+              target="_blank"
+              >Residents of U.S. territories do not have voting representation in the United States
+              Congress</cv-link
+            >
+          </div>
+
           <!-- registration deadline -->
           <div class="register-info" v-if="info.register.deadline_in_person">
             <span
@@ -76,18 +92,9 @@
           </div>
 
           <!-- Formerly incarcerated-->
-          <div v-if="info.register.felon" class="register-info">
-            <span>{{ info.register.felon }} </span>
-            <cv-link v-if="info.register.felon_link" :href="info.register.felon_link"
-              >More information</cv-link
-            >
-          </div>
-          <div v-else class="register-info">
-            <span>Felon Voting Rights</span>
-            <cv-link
-              href="https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx"
-              >More information</cv-link
-            >
+          <div class="register-info">
+            <span>{{ felonText }} </span>
+            <cv-link :href="felonLink" target="_blank">More information</cv-link>
           </div>
         </div>
       </aside>
@@ -126,10 +133,19 @@ export default {
     }),
     info() {
       const code = this.usaCode.toLowerCase();
-      return electionInfo[code] || {};
+      return electionInfo[code] || { register: { territory: true } };
     },
     checkRegLink() {
       return this.info?.register?.check_link || 'https://www.vote.org/am-i-registered-to-vote/';
+    },
+    felonText() {
+      return this.info?.register?.felon || 'Formerly incarcerated? You may be able to vote.';
+    },
+    felonLink() {
+      return (
+        this.info?.register?.felon_link ||
+        'https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx'
+      );
     },
   },
   created() {
