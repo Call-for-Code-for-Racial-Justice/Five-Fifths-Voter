@@ -60,8 +60,8 @@
 
 <script>
 import StateIcon from './StateIcon';
-import usaStates from './usa-states.json';
-import midterms2022 from './usa-2022-midterms-info.json';
+import usaStates from '@/data/usa-states.json';
+import midterms2022 from '@/data/usa-2022-midterms-info.json';
 import MarkDown from '../../components/MarkDown';
 
 export default {

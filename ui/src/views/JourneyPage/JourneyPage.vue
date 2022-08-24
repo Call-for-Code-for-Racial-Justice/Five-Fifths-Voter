@@ -3,47 +3,50 @@
     <div class="page__details">
       <h2 class="page__title">{{ $t('journeyPageTitle') }}</h2>
     </div>
-    <cv-tabs
-      :container="container"
-      :aria-label="$t('appHeaderVoterJourney')"
-      class="journey-page__tabs"
-    >
-      <cv-tab
-        id="tab-1"
-        :label="$t('journeyPageRegisteredLabel')"
+    <div class="journey-page__nav">
+      <cv-link
+        @click="which = 'register'"
         :aria-label="$t('journeyPageRegisteredAriaLabel')"
+        :aria-selected="which === 'register'"
       >
-        <Register />
-      </cv-tab>
-      <cv-tab
-        id="tab-2"
-        :label="$t('journeyPageBallotLabel')"
+        <Current v-if="which === 'register'" aria-hidden="true" />
+        {{ $t('journeyPageRegisteredLabel') }}
+      </cv-link>
+      <cv-link
+        @click="which = 'absentee'"
         :aria-label="$t('journeyPageBallotAriaLabel')"
+        :aria-selected="which === 'absentee'"
       >
-        <Absentee />
-      </cv-tab>
-      <cv-tab
-        id="tab-3"
-        :label="$t('journeyPageGetInformedLabel')"
+        <Current v-if="which === 'absentee'" /> {{ $t('journeyPageBallotLabel') }}
+      </cv-link>
+      <cv-link
+        @click="which = 'vote-now'"
         :aria-label="$t('journeyPageGetInformedAriaLabel')"
+        :aria-selected="which === 'vote-now'"
       >
-        <VoteNow />
-      </cv-tab>
-      <cv-tab
-        id="tab-4"
-        :label="$t('journeyPageVoteNowLabel')"
+        <Current v-if="which === 'vote-now'" /> {{ $t('journeyPageGetInformedLabel') }}
+      </cv-link>
+      <cv-link
+        @click="which = 'early-voting'"
         :aria-label="$t('journeyPageVoteNowAriaLabel')"
+        :aria-selected="which === 'early-voting'"
       >
-        <EarlyVoting />
-      </cv-tab>
-      <cv-tab
-        id="tab-5"
-        :label="$t('journeyPageDeliverLabel')"
+        <Current v-if="which === 'early-voting'" /> {{ $t('journeyPageVoteNowLabel') }}
+      </cv-link>
+      <cv-link
+        @click="which = 'ballot-return'"
         :aria-label="$t('journeyPageDeliverAriaLabel')"
+        :aria-selected="which === 'ballot-return'"
       >
-        <BallotReturn />
-      </cv-tab>
-    </cv-tabs>
+        <Current v-if="which === 'ballot-return'" /> {{ $t('journeyPageDeliverLabel') }}
+      </cv-link>
+    </div>
+
+    <Register v-if="which === 'register'" />
+    <Absentee v-else-if="which === 'absentee'" />
+    <VoteNow v-else-if="which === 'vote-now'" />
+    <EarlyVoting v-else-if="which === 'early-voting'" />
+    <BallotReturn v-else-if="which === 'ballot-return'" />
   </PageLayout>
 </template>
 
@@ -54,6 +57,8 @@ import EarlyVoting from '../../components/EarlyVoting';
 import BallotReturn from '../../components/BallotReturn';
 import VoteNow from '../../components/VoteNow';
 import PageLayout from '../../components/PageLayout';
+import { CaretRight16 } from '@carbon/icons-vue';
+import { mapState } from 'vuex';
 
 export default {
   name: 'journey',
@@ -64,13 +69,26 @@ export default {
     BallotReturn,
     VoteNow,
     PageLayout,
+    Current: CaretRight16,
   },
   data() {
     return {
-      container: true,
+      which: 'register',
     };
   },
-  created() {},
+  computed: {
+    ...mapState({
+      registered: (state) => Boolean(state.user.info?.registered === 'midterm-2022'),
+    }),
+  },
+  watch: {
+    registered() {
+      if (this.registered && this.which === 'register') this.which = 'absentee';
+    },
+  },
+  created() {
+    if (this.registered && this.which === 'register') this.which = 'absentee';
+  },
   methods: {},
   errorCaptured(err, vm, info) {
     try {

@@ -1,22 +1,26 @@
 @import '@/styles/_theme.scss';
 @import "carbon-components/scss/components/tabs/tabs";
-
+@import 'carbon-components/scss/components/button/button';
 .journey-page {
-  &__tabs {
-    .bx--tabs--scrollable__nav-link {
-      color: $text-04 !important;
-      width: fit-content;
-      min-width: 10rem;
-    }
-    .cv-tabs-button:hover {
-      background-color: $interactive-01 !important;
-    }
-    .bx--tabs__nav-item--selected {
-      background-color: $interactive-01 !important;
-    }
-  }
   .page__details {
     height: 2rem;
+  }
+  &__nav {
+    margin-left: 2rem;
+    @include carbon--breakpoint-down(lg) {
+      margin-left: 1rem;
+    }
+    @include carbon--breakpoint-down(lg) {
+      margin-top: 2rem;
+    }
+    @include carbon--breakpoint-down(md) {
+      margin-top: revert;
+    }
+      .cv-link {
+      @include carbon--type-style('productive-heading-01');
+      display: block;
+      cursor: pointer;
+    }
   }
 }
 

@@ -29,6 +29,7 @@
     "lit-element": "^3.0.1",
     "lit-html": "^2.0.1",
     "lodash": "^4.17.21",
+    "luxon": "^3.0.1",
     "markdown-it": "^12.2.0",
     "register-service-worker": "^1.7.1",
     "superagent": "^7.1.1",

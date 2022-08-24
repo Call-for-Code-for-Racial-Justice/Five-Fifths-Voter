@@ -1,4 +1,4 @@
-@import 'carbon-components/scss/globals/scss/vars.scss';
+@import '@/styles/_theme.scss';
 
 .content--register > .article__img--register {
   margin-top: 20px;
@@ -14,4 +14,33 @@
 
 .aside__img {
   max-width: 100%;
+}
+
+.days-left {
+  @include type-style('productive-heading-03');
+  color: $support-error
+}
+.register {
+  &-info {
+    @include type-style('body-short-02');
+    margin-top: 0.5rem;
+
+    .cv-link {
+      @include type-style('body-short-02');
+      margin-left: 0.5rem;
+    }
+  }
+  &-faq {
+    margin-top: 0.5rem;
+
+    span:nth-child(1) {
+      @include type-style('body-short-02');
+    }
+
+    span:nth-child(2) {
+      @include type-style('productive-heading-03');
+      margin-left: 0.5rem;
+      color: $support-info;
+    }
+  }
 }
