@@ -1,5 +1,5 @@
 @import '@/styles/_theme.scss';
-@import "carbon-components/scss/components/tabs/tabs";
+@import 'carbon-components/scss/components/tabs/tabs';
 @import 'carbon-components/scss/components/button/button';
 .journey-page {
   .page__details {
@@ -16,11 +16,10 @@
     @include carbon--breakpoint-down(md) {
       margin-top: revert;
     }
-      .cv-link {
+    .cv-link {
       @include carbon--type-style('productive-heading-01');
       display: block;
       cursor: pointer;
     }
   }
 }
-
