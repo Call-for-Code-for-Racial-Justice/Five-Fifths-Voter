@@ -14,7 +14,9 @@
           <!-- Check your registration -->
           <span class="register-info">
             <span>{{ $t('notSure') }} </span>
-            <cv-link :href="checkRegLink" target="_blank">{{ $t('checkHere') }}</cv-link>
+            <cv-link :inline="true" :href="checkRegLink" target="_blank">{{
+              $t('checkHere')
+            }}</cv-link>
           </span>
 
           <h2 class="aside__header">{{ $t('registerTitle') }}</h2>
@@ -25,10 +27,11 @@
 
           <div v-if="info.register.territory" class="register-info">
             <span>{{ $t('registerLiveInUsTerritory') }}</span>
-            <cv-link href="https://www.usa.gov/who-can-vote" target="_blank">{{
+            <cv-link :inline="true" href="https://www.usa.gov/who-can-vote" target="_blank">{{
               $t('registerTerritories')
             }}</cv-link>
             <cv-link
+              :inline="true"
               href="https://en.wikipedia.org/wiki/Federal_voting_rights_in_Puerto_Rico"
               target="_blank"
               >{{ $t('registerTerritoryCitizensRights') }}</cv-link
@@ -76,6 +79,7 @@
           <div v-else-if="info.register.youth" class="register-info">
             <span>{{ info.register.youth }} </span>
             <cv-link
+              :inline="true"
               :href="info.register.youth_link || info.register.online_link"
               target="_blank"
               >{{ $t('register') }}</cv-link
@@ -86,6 +90,7 @@
             <i18n path="registerYouth_3">
               <template v-slot:state>
                 <cv-link
+                  :inline="true"
                   href="https://www.ncsl.org/research/elections-and-campaigns/preregistration-for-young-voters.aspx"
                   target="_blank"
                   >{{ $t('registerYouth_3a') }}</cv-link
@@ -97,7 +102,9 @@
           <!-- Formerly incarcerated-->
           <div class="register-info">
             <span>{{ felonText }} </span>
-            <cv-link :href="felonLink" target="_blank">{{ $t('moreInformation') }}</cv-link>
+            <cv-link :inline="true" :href="felonLink" target="_blank">{{
+              $t('moreInformation')
+            }}</cv-link>
           </div>
         </div>
       </aside>
