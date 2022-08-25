@@ -15,8 +15,8 @@ const actions = {
   async getApproxLocation({ commit, state }) {
     // sample data
     // {
-    //   "ip": "24.197.110.138",
-    //     "network": "24.197.110.0/23",
+    //     "ip": "10.x.x.x",
+    //     "network": "10.x.x.0/23",
     //     "version": "IPv4",
     //     "city": "Liberty",
     //     "region": "South Carolina",
