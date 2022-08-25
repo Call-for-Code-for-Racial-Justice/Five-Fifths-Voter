@@ -18,74 +18,74 @@
   @media (min-width: 1056px) {
     margin-left: 0;
   }
-}
 
-.aside__image {
-  object-position: 10% 50%;
-  object-fit: cover;
-  display: block;
-  min-height: 400px;
-  max-height: 700px;
-  width: -webkit-fill-available;
-
-  @media (min-width: 672px) {
-    min-height: 700px;
+  &__image {
+    object-position: 10% 50%;
+    object-fit: cover;
+    display: block;
+    min-height: 400px;
+    max-height: 700px;
+    width: -webkit-fill-available;
+    @media (min-width: 672px) {
+      min-height: 700px;
+    }
   }
-}
 
-.aside__container--img {
-  margin-left: -1rem;
-
-  @media (min-width: 672px) {
-    margin-right: -1rem;
+  &__container--img {
     margin-left: -1rem;
-  }
-
-  @media (min-width: 1056px) {
-    margin-left: 0;
-  }
-}
-.aside__container--links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: $spacing-07;
-}
-
-.aside__link.aside__container--links {
-  flex-direction: column;
-}
-
-.aside__container {
-  &--text {
-    padding: $spacing-05;
-
-    @media (min-width: 1056px) {
-      padding-left: 15%;
-      padding-right: $layout-05;
-    }
-    .bx--link {
-      color: $carbon--gray-10;
-    }
-    .bx--label {
-      color: $carbon--gray-10;
+    height: 700px;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
   }
-}
 
-.aside__header {
-  @include carbon--type-style('productive-heading-04');
-  font: {
-    weight: 300;
-    size: 30px;
+  &__container--links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: $spacing-07;
   }
-  max-width: 32ch;
-  margin-bottom: $spacing-08;
-}
 
-.aside__paragraph {
-  margin-bottom: $spacing-08;
-  font-size: 16px;
+  &__link.aside__container--links {
+    flex-direction: column;
+  }
+
+  &__container {
+    &--text {
+      padding: $spacing-05;
+
+      @media (min-width: 1056px) {
+        padding-left: 15%;
+        padding-right: $layout-05;
+      }
+
+      .bx--link {
+        color: $carbon--gray-10;
+      }
+
+      .bx--label {
+        color: $carbon--gray-10;
+      }
+    }
+  }
+
+  &__header {
+    @include carbon--type-style('productive-heading-04');
+    font: {
+      weight: 300;
+      size: 30px;
+    }
+    max-width: 32ch;
+    margin-bottom: $spacing-08;
+  }
+
+  &__paragraph {
+    margin-bottom: $spacing-08;
+    font-size: 16px;
+  }
 }
 
 .page__details {
