@@ -3,33 +3,33 @@
     "region": "Alabama",
     "early_voting_faq": [
       {
-        "id": "11Fh",
+        "id": "8tRU",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available for those who qualify."
       },
       {
-        "id": "R8Pk",
+        "id": "NbCY",
         "question": "When is the first day I can vote early in person?",
         "answer": "Wednesday, Sept. 14"
       },
       {
-        "id": "7Bfz",
+        "id": "JNLT",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7"
       },
       {
-        "id": "y42i",
+        "id": "fDRt",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. Voters need to provide a photo copy of an approved ID with their absentee ballot application. [Valid forms of ID](https://www.sos.alabama.gov/alabama-votes/voter/voter-id)"
+        "answer": "Yes. Voters need to provide a photo copy of an approved ID with their absentee ballot application. Valid forms of ID are listed _here_.[https://www.sos.alabama.gov/alabama-votes/voter/voter-id]"
       },
       {
-        "id": "i2Rf",
+        "id": "gNBj",
         "question": "Additional information",
-        "answer": "[Absentee Voting](https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting)"
+        "answer": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting"
       }
     ],
     "core_races": {
-      "id": "DjKf",
+      "id": "nDER",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -44,78 +44,100 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "DV5E",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/24/2022",
+      "deadline_mail": "10/24/2022",
+      "deadline_online": "10/24/2022",
+      "mail_link": "https://www.sos.alabama.gov/sites/default/files/voter-pdfs/nvra-2.pdf?_ga=2.151867641.1776539306.1643579940-1569075100.1643579940",
+      "online_link": "https://www.alabamainteractive.org/sos/voter_registration/voterRegistrationWelcome.action",
+      "change_party_link": "N/A"
     }
   },
   "ak": {
     "region": "Alaska",
     "early_voting_faq": [
       {
-        "id": "ETBV",
+        "id": "bgVu",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting and in-person absentee voting are available."
       },
       {
-        "id": "vZFx",
+        "id": "5R5Q",
         "question": "When is the first day I can vote early in person?",
         "answer": "Monday, Oct. 24."
       },
       {
-        "id": "yXek",
+        "id": "LsGJ",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "Bk1Y",
+        "id": "NHJb",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. Photo ID is requested, though some forms of nonphoto ID are also accepted. Voters who do not present valid ID are allowed to cast a ballot that automatically undergoes additional scrutiny. [Valid forms of ID](https://www.elections.alaska.gov/Core/votingatthepollsonelectionday.php)"
+        "answer": "Yes. Photo ID is requested, though some forms of nonphoto ID are also accepted. Voters who do not present valid ID are allowed to cast a ballot that automatically undergoes additional scrutiny. Valid forms of ID are listed _here_.[https://www.elections.alaska.gov/Core/votingatthepollsonelectionday.php]"
       },
       {
-        "id": "bwU8",
+        "id": "8PR2",
         "question": "Additional information",
         "answer": "https://www.elections.alaska.gov/Core/absenteeearlyandinpersonvoting.php"
       }
     ],
     "core_races": {
-      "id": "Sk43",
+      "id": "sFkK",
       "answer": [
         "Governor",
         "Lieutenant Governor",
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "ty4M",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/09/2022",
+      "deadline_mail": "10/09/2022",
+      "deadline_online": "10/09/2022",
+      "mail_link": "https://absenteeballotapplication.alaska.gov/",
+      "online_link": "https://voterregistration.alaska.gov/",
+      "change_party_link": "N/A"
     }
   },
   "az": {
     "region": "Arizona",
     "early_voting_faq": [
       {
-        "id": "Dtt5",
+        "id": "Z31s",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "vbET",
+        "id": "96hs",
         "question": "When is the first day I can vote early in person?",
         "answer": "Wednesday, Oct. 12."
       },
       {
-        "id": "iYVm",
+        "id": "c7o4",
         "question": "When is the last day I can vote early in person?",
         "answer": "Friday, Nov. 4."
       },
       {
-        "id": "14pb",
+        "id": "ZrtU",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. ID is not required."
       },
       {
-        "id": "tKKk",
+        "id": "wfR3",
         "question": "Additional information",
         "answer": "https://www.azcleanelections.gov/how-to-vote/early-voting/in-person"
       }
     ],
     "core_races": {
-      "id": "fuZ2",
+      "id": "tBW7",
       "answer": [
         "Governor",
         "Secretary of State",
@@ -127,39 +149,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "LYgW",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/11/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "10/11/2022",
+      "mail_link": "https://azsos.gov/sites/default/files/20200417_AZ_Voter_Registration_Form_Printable_0.pdf",
+      "online_link": "https://servicearizona.com/VoterRegistration/selectLanguage",
+      "change_party_link": "https://servicearizona.com/VoterRegistration/selectLanguage"
     }
   },
   "ar": {
     "region": "Arkansas",
     "early_voting_faq": [
       {
-        "id": "axuE",
+        "id": "tLqu",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "tquz",
+        "id": "Vsh6",
         "question": "When is the first day I can vote early in person?",
         "answer": "Monday, Oct. 24."
       },
       {
-        "id": "mkMA",
+        "id": "i1Yq",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "ztah",
+        "id": "2Qwh",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "Yes. Photo ID is required. "
       },
       {
-        "id": "Z7Mc",
+        "id": "VgEh",
         "question": "Additional information",
         "answer": "https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/voting-in-arkansas"
       }
     ],
     "core_races": {
-      "id": "1SGN",
+      "id": "mmc1",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -171,39 +204,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "QCvG",
+      "election_day": false,
+      "online": false,
+      "deadline_in_person": "10/11/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "N/A",
+      "mail_link": "https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information",
+      "online_link": "N/A",
+      "change_party_link": "N/A"
     }
   },
   "ca": {
     "region": "California",
     "early_voting_faq": [
       {
-        "id": "dD6W",
+        "id": "jaxx",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available in some counties. "
       },
       {
-        "id": "Qg2P",
+        "id": "PRVA",
         "question": "When is the first day I can vote early in person?",
         "answer": "It varies. Check with your local election office. "
       },
       {
-        "id": "18WC",
+        "id": "KLnz",
         "question": "When is the last day I can vote early in person?",
         "answer": "It varies. Check with your local election office. "
       },
       {
-        "id": "j1MW",
+        "id": "Ctna",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "No. ID is not required for early voting, except for some first-time voters. [More information](https://www.sos.ca.gov/elections/voter-registration/vote-mail#vote-by-mail)"
+        "answer": "No. ID is not required for early voting, except for some first-time voters. More information _here_.[https://www.sos.ca.gov/elections/voter-registration/vote-mail#vote-by-mail]"
       },
       {
-        "id": "3A1G",
+        "id": "nWNc",
         "question": "Additional information",
         "answer": "https://www.sos.ca.gov/elections/voting-info/ways-vote"
       }
     ],
     "core_races": {
-      "id": "YQaS",
+      "id": "HD8r",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -217,39 +261,51 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "aLSB",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "10/24/2022",
+      "deadline_mail": "10/24/2022",
+      "deadline_online": "10/24/2022",
+      "mail_link": "https://registertovote.ca.gov/",
+      "online_link": "https://registertovote.ca.gov/",
+      "change_party_link": "https://registertovote.ca.gov/",
+      "youth_key": "registerYouth_1"
     }
   },
   "co": {
     "region": "Colorado",
     "early_voting_faq": [
       {
-        "id": "H14L",
+        "id": "bs83",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "S12z",
+        "id": "cy6s",
         "question": "When is the first day I can vote early in person?",
         "answer": "Monday, Oct. 24."
       },
       {
-        "id": "8cZ3",
+        "id": "wDNx",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "rkTy",
+        "id": "z6i3",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is required to vote early. [Valid forms of ID](https://www.sos.state.co.us/pubs/elections/vote/acceptableFormsOfID.html)"
+        "answer": "Yes. ID is required to vote early. Valid forms of ID are listed _here_. [https://www.sos.state.co.us/pubs/elections/vote/acceptableFormsOfID.html]"
       },
       {
-        "id": "TaiL",
+        "id": "xs7Y",
         "question": "Additional information",
         "answer": "N/A"
       }
     ],
     "core_races": {
-      "id": "pm9V",
+      "id": "aTww",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -260,39 +316,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "qWgB",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/08/2022",
+      "deadline_mail": "10/31/2022",
+      "deadline_online": "11/08/2022",
+      "mail_link": "https://www.sos.state.co.us/pubs/elections/vote/VoterRegFormEnglish.pdf",
+      "online_link": "https://www.coloradosos.gov/voter/pages/pub/olvr/verifyNewVoter.xhtml",
+      "change_party_link": "https://www.coloradosos.gov/voter/pages/pub/olvr/findVoterReg.xhtml"
     }
   },
   "ct": {
     "region": "Connecticut",
     "early_voting_faq": [
       {
-        "id": "nwrN",
+        "id": "DB96",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available for those who qualify."
       },
       {
-        "id": "jton",
+        "id": "8PxQ",
         "question": "When is the first day I can vote early in person?",
         "answer": "N/A"
       },
       {
-        "id": "R4GZ",
+        "id": "vPsU",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "ia42",
+        "id": "yRpW",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is requested. Voters who do not present valid ID are allowed to cast a ballot if they sign an affidavit attesting to their identity. For some first-time voters, ID is required. [Valid forms of ID](https://portal.ct.gov/SOTS/Election-Services/FAQ/FAQ---Voter-Identification)"
+        "answer": "Yes. ID is requested. Voters who do not present valid ID are allowed to cast a ballot if they sign an affidavit attesting to their identity. For some first-time voters, ID is required. Valid forms of ID are listed _here_. [https://portal.ct.gov/SOTS/Election-Services/FAQ/FAQ---Voter-Identification]"
       },
       {
-        "id": "TUk7",
+        "id": "Y6uL",
         "question": "Additional information",
         "answer": "https://portal.ct.gov/SOTS/Election-Services/Voter-Information/Absentee-Ballot-Process"
       }
     ],
     "core_races": {
-      "id": "AaBB",
+      "id": "9T3a",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -303,116 +370,149 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "s1mZ",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/01/2022",
+      "deadline_mail": "11/01/2022",
+      "deadline_online": "11/01/2022",
+      "mail_link": "https://portal.ct.gov/SOTS/Election-Services/Register-to-Vote/Voter-Registration-Application-English-and-Spanish",
+      "online_link": "https://voterregistration.ct.gov/OLVR/welcome.do",
+      "change_party_link": "https://voterregistration.ct.gov/OLVR/welcome.do"
     }
   },
   "de": {
     "region": "Delaware",
     "early_voting_faq": [
       {
-        "id": "cGnV",
+        "id": "M9SE",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting and in-person absentee voting are available."
       },
       {
-        "id": "Rygd",
+        "id": "CJyD",
         "question": "When is the first day I can vote early in person?",
-        "answer": "Dates and locations will be posted at least 30 days before Election Day. [Information](https://elections.delaware.gov/)"
+        "answer": "Dates and locations will be posted _here_ at least 30 days before Election Day. [https://elections.delaware.gov/] "
       },
       {
-        "id": "pdNC",
+        "id": "uVaS",
         "question": "When is the last day I can vote early in person?",
-        "answer": "Dates and locations will be posted at least 30 days before Election Day. [Information](https://elections.delaware.gov/)"
+        "answer": "Dates and locations will be posted _here_ at least 30 days before Election Day. [https://elections.delaware.gov/]"
       },
       {
-        "id": "fBoq",
+        "id": "XvtT",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is requested. Voters who do not present valid ID are allowed to cast a ballot if they sign an affidavit attesting to their identity. [Valid forms of ID](https://elections.delaware.gov/information/faq/voting.shtml)"
+        "answer": "Yes. ID is requested. Voters who do not present valid ID are allowed to cast a ballot if they sign an affidavit attesting to their identity. Valid forms of ID are listed _here_. [https://elections.delaware.gov/information/faq/voting.shtml]"
       },
       {
-        "id": "mN5o",
+        "id": "DMLh",
         "question": "Additional information",
         "answer": "N/A"
       }
     ],
     "core_races": {
-      "id": "mh23",
+      "id": "1jMp",
       "answer": [
         "Attorney General",
         "Treasurer",
         "Auditor",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "vHhe",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/15/2022",
+      "deadline_mail": "10/15/2022",
+      "deadline_online": "10/15/2022",
+      "mail_link": "https://elections.delaware.gov/voter/votereg.shtml",
+      "online_link": "https://ivote.de.gov/VoterView/registrant/newregistrant",
+      "change_party_link": "https://ivote.de.gov/VoterView"
     }
   },
   "dc": {
     "region": "District of Columbia",
     "early_voting_faq": [
       {
-        "id": "dRgC",
+        "id": "Mzvs",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting and in-person absentee voting are available."
       },
       {
-        "id": "5JmU",
+        "id": "BDp5",
         "question": "When is the first day I can vote early in person?",
         "answer": "Monday, Oct. 24 for in-person absentee, Friday, Oct. 28 for early voting."
       },
       {
-        "id": "UrgK",
+        "id": "PKd2",
         "question": "When is the last day I can vote early in person?",
         "answer": "Friday, Nov. 4."
       },
       {
-        "id": "BSHh",
+        "id": "Fd8t",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "No. ID is not required to vote early, except for first time mail voters. [More information](https://dcboe.org/Voters/How-to-Vote/Mail-Ballot-Instructions)"
+        "answer": "No. ID is not required to vote early, except for first time mail voters. More information _here_.[https://dcboe.org/Voters/How-to-Vote/Mail-Ballot-Instructions]"
       },
       {
-        "id": "7nAQ",
+        "id": "GmFS",
         "question": "Additional information",
         "answer": "https://earlyvoting.dcboe.org/"
       }
     ],
     "core_races": {
-      "id": "q5AK",
+      "id": "oieX",
       "answer": [
         "Mayor",
         "Attorney General",
         "City Council"
       ]
+    },
+    "register": {
+      "id": "KeDj",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/08/2022",
+      "deadline_mail": "10/19/2022",
+      "deadline_online": "10/19/2022",
+      "mail_link": "https://dcboe.org/Voters/Register-To-Vote/Register-to-Vote",
+      "online_link": "https://vr.dcboe.org/213324797239968?agency_code=12",
+      "change_party_link": "https://vr.dcboe.org/213324797239968?agency_code=12"
     }
   },
   "fl": {
     "region": "Florida",
     "early_voting_faq": [
       {
-        "id": "MvcX",
+        "id": "rn1H",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "BMr1",
+        "id": "2cHb",
         "question": "When is the first day I can vote early in person?",
         "answer": "No later than Saturday, Oct. 29."
       },
       {
-        "id": "PNfo",
+        "id": "U48y",
         "question": "When is the last day I can vote early in person?",
         "answer": "Saturday, Nov. 5, but some counties might extend this until Sunday, Nov. 6."
       },
       {
-        "id": "bwfx",
+        "id": "a9GE",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. Voters need to provide an ID number when requesting a mail ballot. [Valid forms of ID](https://dos.myflorida.com/elections/for-voters/voting/vote-by-mail/)"
+        "answer": "Yes. Voters need to provide an ID number when requesting a mail ballot. Valid forms of ID are listed _here_.[https://dos.myflorida.com/elections/for-voters/voting/vote-by-mail/]"
       },
       {
-        "id": "DYn3",
+        "id": "Mx6f",
         "question": "Additional information",
         "answer": "https://dos.myflorida.com/elections/for-voters/voting/early-voting-and-drop-boxes/"
       }
     ],
     "core_races": {
-      "id": "Ug6S",
+      "id": "seqT",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -422,39 +522,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "686Z",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/11/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "10/11/2022",
+      "mail_link": "https://dos.myflorida.com/elections/for-voters/voter-registration/register-to-vote-or-update-your-information/",
+      "online_link": "https://registertovoteflorida.gov/",
+      "change_party_link": "https://dos.myflorida.com/elections/for-voters/voter-registration/register-to-vote-or-update-your-information/"
     }
   },
   "ga": {
     "region": "Georgia",
     "early_voting_faq": [
       {
-        "id": "cEYj",
+        "id": "8oME",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "VJ5h",
+        "id": "ByYd",
         "question": "When is the first day I can vote early in person?",
         "answer": "Monday, Oct. 17."
       },
       {
-        "id": "SgKa",
+        "id": "E85A",
         "question": "When is the last day I can vote early in person?",
         "answer": "Friday, Nov. 4."
       },
       {
-        "id": "FcaW",
+        "id": "nKVU",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. Voters need to provide their Georgia driver's license number or a photo copy of an approved ID with their absentee ballot application. Valid forms of ID can be found [here](https://sos.ga.gov/admin/uploads/2021_Absentee_App.9721_2.pdf)"
+        "answer": "Yes. Voters need to provide their Georgia driver's license number or a photo copy of an approved ID with their absentee ballot application. Valid forms of ID can be found _here_.[https://sos.ga.gov/admin/uploads/2021_Absentee_App.9721_2.pdf]"
       },
       {
-        "id": "PTcS",
+        "id": "Mroc",
         "question": "Additional information",
-        "answer": "[Absentee voting in Georgia](https://sos.ga.gov/index.php/Elections/absentee_voting_in_georgia)"
+        "answer": "https://sos.ga.gov/index.php/Elections/absentee_voting_in_georgia"
       }
     ],
     "core_races": {
-      "id": "zmG7",
+      "id": "y8Ax",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -467,39 +578,55 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "XiTN",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/11/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "10/11/2022",
+      "mail_link": "https://sos.ga.gov/how-to-guide/how-guide-registering-vote",
+      "online_link": "https://sos.ga.gov/how-to-guide/how-guide-registering-vote",
+      "change_party_link": "N/A",
+      "youth": "Under 18? You can register to vote at 17 \u00BD and vote at 18.",
+      "youth_link": "https://sos.ga.gov/how-to-guide/how-guide-registering-vote",
+      "felon": "\"Off Paper\" (formerly incarcerated)? You can vote!",
+      "felon_link": "https://gjp.org/voting/",
+      "check_link": "https://www.mvp.sos.ga.gov/MVP/mvp.do"
     }
   },
   "hi": {
     "region": "Hawaii",
     "early_voting_faq": [
       {
-        "id": "XADp",
+        "id": "Kqir",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "9p7p",
+        "id": "U5uU",
         "question": "When is the first day I can vote early in person?",
         "answer": "Tuesday, Oct. 25."
       },
       {
-        "id": "nogw",
+        "id": "i23D",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "d6YU",
+        "id": "rAs3",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. ID is not required."
       },
       {
-        "id": "91bz",
+        "id": "aaP4",
         "question": "Additional information",
         "answer": "https://elections.hawaii.gov/voting/voting-in-hawaii/"
       }
     ],
     "core_races": {
-      "id": "ufVM",
+      "id": "s7hV",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -507,39 +634,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "vdVR",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/08/2022",
+      "deadline_mail": "10/31/2022",
+      "deadline_online": "11/08/2022",
+      "mail_link": "https://elections.hawaii.gov/wp-content/uploads/VR-Form-English-20210614C-Form-Fillable.pdf",
+      "online_link": "https://olvr.hawaii.gov/Default.aspx?redir=1",
+      "change_party_link": "N/A"
     }
   },
   "id": {
     "region": "Idaho",
     "early_voting_faq": [
       {
-        "id": "NSvb",
+        "id": "so2V",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting and in-person absentee voting are available in some counties. "
       },
       {
-        "id": "PTs3",
+        "id": "9dSt",
         "question": "When is the first day I can vote early in person?",
         "answer": "No later than Monday, Oct. 24."
       },
       {
-        "id": "NKng",
+        "id": "WoY4",
         "question": "When is the last day I can vote early in person?",
         "answer": "Friday, Nov. 4."
       },
       {
-        "id": "Em7Q",
+        "id": "rehT",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is requested. Voters who do not present valid ID are allowed to cast a ballot if they sign an affidavit attesting to their identity. [Valid forms of ID](https://voteidaho.gov/identification-requirements/)"
+        "answer": "Yes. ID is requested. Voters who do not present valid ID are allowed to cast a ballot if they sign an affidavit attesting to their identity. Valid forms of ID are listed _here_.[https://voteidaho.gov/identification-requirements/]"
       },
       {
-        "id": "VesD",
+        "id": "AbHU",
         "question": "Additional information",
         "answer": "N/A"
       }
     ],
     "core_races": {
-      "id": "DX7x",
+      "id": "B5cK",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -551,39 +689,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "n7ZU",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/08/2022",
+      "deadline_mail": "10/14/2022",
+      "deadline_online": "10/14/2022",
+      "mail_link": "https://sos.idaho.gov/elections/forms/voter_registration.pdf",
+      "online_link": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ApplicationInstructions.aspx",
+      "change_party_link": "N/A"
     }
   },
   "il": {
     "region": "Illinois",
     "early_voting_faq": [
       {
-        "id": "Q9wa",
+        "id": "g3mx",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes, early voting is available."
       },
       {
-        "id": "WMUF",
+        "id": "gihV",
         "question": "When is the first day I can vote early in person?",
         "answer": "Thursday, Sept. 29."
       },
       {
-        "id": "6hVd",
+        "id": "jH9k",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "s7mX",
+        "id": "2U3m",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. ID is not required to vote early. ID is only required when registering to vote."
       },
       {
-        "id": "yyTT",
+        "id": "vCRY",
         "question": "Additional information",
         "answer": "https://elections.il.gov/votingandregistrationsystems/beforeelectionday.aspx"
       }
     ],
     "core_races": {
-      "id": "2onc",
+      "id": "hWe3",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -594,39 +743,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "oZBH",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/08/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "10/23/2022",
+      "mail_link": "https://www2.illinois.gov/hfs/SiteCollectionDocuments/sber19.pdf",
+      "online_link": "https://ova.elections.il.gov/?Name=eYQq6FDqMBHM6r%2fWhrJ1SIpY4MGJGocO&T=637783653251228213",
+      "change_party_link": "N/A"
     }
   },
   "in": {
     "region": "Indiana",
     "early_voting_faq": [
       {
-        "id": "qtmr",
+        "id": "ZG2F",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available for those who qualify."
       },
       {
-        "id": "UqR5",
+        "id": "isGm",
         "question": "When is the first day I can vote early in person?",
         "answer": "Wednesday, Oct. 12."
       },
       {
-        "id": "3kB9",
+        "id": "QWuQ",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7, 12 p.m."
       },
       {
-        "id": "DNUf",
+        "id": "TD4W",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is required. [Valid forms of ID](https://www.in.gov/sos/elections/voter-information/photo-id-law/)"
+        "answer": "Yes. ID is required. Valid forms of ID are listed _here_. [https://www.in.gov/sos/elections/voter-information/photo-id-law/]"
       },
       {
-        "id": "1ubd",
+        "id": "5nod",
         "question": "Additional information",
         "answer": "https://www.in.gov/sos/elections/voter-information/ways-to-vote/absentee-voting/"
       }
     ],
     "core_races": {
-      "id": "jYVA",
+      "id": "6oyu",
       "answer": [
         "Secretary of State",
         "Treasurer",
@@ -634,39 +794,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "HpzD",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/11/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "10/11/2022",
+      "mail_link": "https://www.in.gov/sos/elections/voter-information/register-to-vote/",
+      "online_link": "http://www.indianavoters.com/",
+      "change_party_link": "N/A"
     }
   },
   "ia": {
     "region": "Iowa",
     "early_voting_faq": [
       {
-        "id": "T95U",
+        "id": "sjVP",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "yyep",
+        "id": "ATDA",
         "question": "When is the first day I can vote early in person?",
         "answer": "Wednesday, Oct. 19."
       },
       {
-        "id": "T47i",
+        "id": "MgnN",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "u5mP",
+        "id": "58HK",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. Voters must provide their ID number when requesting an absentee ballot. [Valid forms of ID](https://sos.iowa.gov/elections/voterinformation/voterIDfaq.html#17)"
+        "answer": "Yes. Voters must provide their ID number when requesting an absentee ballot. Valid forms of ID are listed _here_.[https://sos.iowa.gov/elections/voterinformation/voterIDfaq.html#17]"
       },
       {
-        "id": "EyRR",
+        "id": "jda4",
         "question": "Additional information",
         "answer": "https://sos.iowa.gov/elections/electioninfo/absenteeinperson.html"
       }
     ],
     "core_races": {
-      "id": "KuRo",
+      "id": "oW3c",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -678,39 +849,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "ZVgF",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/08/2022",
+      "deadline_mail": "10/24/2022",
+      "deadline_online": "10/24/2022",
+      "mail_link": "https://sos.iowa.gov/elections/pdf/voteapp.pdf",
+      "online_link": "https://mymvd.iowadot.gov/Account/Login?ReturnUrl=%2fVoterRegistration",
+      "change_party_link": "https://mymvd.iowadot.gov/Account/Login?ReturnUrl=%2fVoterRegistration"
     }
   },
   "ks": {
     "region": "Kansas",
     "early_voting_faq": [
       {
-        "id": "XNeM",
+        "id": "WPTX",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "pggc",
+        "id": "nQQd",
         "question": "When is the first day I can vote early in person?",
         "answer": "Can start as early as Wednesday, Oct. 19, but no later than Tuesday, Nov. 1. Check with your local election office. "
       },
       {
-        "id": "QyWp",
+        "id": "FRNh",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "fWqk",
+        "id": "4pLp",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. Voters need to provide their Kansas driver's license number or a photo copy of an approved ID with their application for an advanced ballot by mail.  Valid forms of ID](https://www.kssos.org/forms/elections/AV1.pdf)."
+        "answer": "Yes. Voters need to provide their Kansas driver's license number or a photo copy of an approved ID with their application for an advanced ballot by mail.  Valid forms of ID can be found _here_.[https://www.kssos.org/forms/elections/AV1.pdf]"
       },
       {
-        "id": "NiUo",
+        "id": "NWAJ",
         "question": "Additional information",
         "answer": "https://kcdcinfo.ks.gov/voter-registration-and-advanced-voting"
       }
     ],
     "core_races": {
-      "id": "k7G4",
+      "id": "CjXE",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -722,151 +904,195 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "igB3",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/18/2022",
+      "deadline_mail": "10/18/2022",
+      "deadline_online": "10/18/2022",
+      "mail_link": "https://www.kssos.org/forms/elections/voterregistration.pdf",
+      "online_link": "https://www.kdor.ks.gov/apps/voterreg/default.aspx",
+      "change_party_link": "https://www.kdor.ks.gov/apps/voterreg/default.aspx"
     }
   },
   "ky": {
     "region": "Kentucky",
     "early_voting_faq": [
       {
-        "id": "MND1",
+        "id": "EWyD",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available for those who qualify."
       },
       {
-        "id": "mWYh",
+        "id": "DDC2",
         "question": "When is the first day I can vote early in person?",
         "answer": "Thursday, Nov. 3."
       },
       {
-        "id": "2rh9",
+        "id": "neTL",
         "question": "When is the last day I can vote early in person?",
         "answer": "Saturday, Nov. 5."
       },
       {
-        "id": "V9Ni",
+        "id": "G5k6",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is required. Voters who do not present valid ID are allowed to cast a provisional ballot, but must provide valid ID to their county clerk's office at a later date in order for their ballot to be counted. [Valid forms of ID](https://elect.ky.gov/Frequently-Asked-Questions/Documents/SB%202%20FAQ.pdf)"
+        "answer": "Yes. ID is required. Voters who do not present valid ID are allowed to cast a provisional ballot, but must provide valid ID to their county clerk's office at a later date in order for their ballot to be counted. Valid forms of ID are listed _here_.[ https://elect.ky.gov/Frequently-Asked-Questions/Documents/SB%202%20FAQ.pdf]"
       },
       {
-        "id": "TBjo",
+        "id": "Syhy",
         "question": "Additional information",
         "answer": "https://elect.ky.gov/Voters/Pages/Absentee-Voting.aspx"
       }
     ],
     "core_races": {
-      "id": "t4u2",
+      "id": "FFaA",
       "answer": [
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "hKPe",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/11/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "10/11/2022",
+      "mail_link": "https://elect.ky.gov/registertovote/Pages/default.aspx",
+      "online_link": "https://vrsws.sos.ky.gov/ovrweb/",
+      "change_party_link": "https://vrsws.sos.ky.gov/ovrweb/govoteky"
     }
   },
   "la": {
     "region": "Louisiana",
     "early_voting_faq": [
       {
-        "id": "LnXe",
+        "id": "mgfk",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "vkGG",
+        "id": "8DvG",
         "question": "When is the first day I can vote early in person?",
         "answer": "Saturday, Nov. 26."
       },
       {
-        "id": "33eb",
+        "id": "Bb8n",
         "question": "When is the last day I can vote early in person?",
         "answer": "Saturday, Dec. 3."
       },
       {
-        "id": "YrjV",
+        "id": "sPFW",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is requested. Voters who do not present valid ID are allowed to cast a ballot if they sign an affidavit attesting to their identity. [Valid forms of ID](https://www.sos.la.gov/ElectionsAndVoting/Vote/VoteOnElectionDay/Pages/default.aspx)"
+        "answer": "Yes. ID is requested. Voters who do not present valid ID are allowed to cast a ballot if they sign an affidavit attesting to their identity. Valid forms of ID are listed _here_. [https://www.sos.la.gov/ElectionsAndVoting/Vote/VoteOnElectionDay/Pages/default.aspx]"
       },
       {
-        "id": "5Zrn",
+        "id": "nLHV",
         "question": "Additional information",
         "answer": "https://www.sos.la.gov/ElectionsAndVoting/Vote/VoteEarly/Pages/default.aspx"
       }
     ],
     "core_races": {
-      "id": "JHg9",
+      "id": "JV5o",
       "answer": [
         "Public Service Commissioner",
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "ZWWF",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "11/09/2022",
+      "deadline_mail": "11/09/2022",
+      "deadline_online": "11/19/2022",
+      "mail_link": "https://www.sos.la.gov/ElectionsAndVoting/RegisterToVote/Pages/default.aspx",
+      "online_link": "https://www.sos.la.gov/ElectionsAndVoting/Pages/OnlineVoterRegistration.aspx",
+      "change_party_link": "https://www.sos.la.gov/ElectionsAndVoting/Pages/OnlineVoterRegistration.aspx"
     }
   },
   "me": {
     "region": "Maine",
     "early_voting_faq": [
       {
-        "id": "zqL2",
+        "id": "55Ww",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "6Jvj",
+        "id": "MrmH",
         "question": "When is the first day I can vote early in person?",
         "answer": "No later than Friday, Oct. 7."
       },
       {
-        "id": "F3AJ",
+        "id": "4ari",
         "question": "When is the last day I can vote early in person?",
         "answer": "Thursday, Nov. 3."
       },
       {
-        "id": "FA8J",
+        "id": "P1aK",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "No. ID is not required, except for some first-time voters. [More information](https://apps.web.maine.gov/cgi-bin/online/AbsenteeBallot/index.pl)"
+        "answer": "No. ID is not required, except for some first-time voters. More information _here_.[https://apps.web.maine.gov/cgi-bin/online/AbsenteeBallot/index.pl]"
       },
       {
-        "id": "zoga",
+        "id": "7tWY",
         "question": "Additional information",
         "answer": "https://www.maine.gov/sos/cec/elec/voter-info/absenteeguide.html"
       }
     ],
     "core_races": {
-      "id": "FwTH",
+      "id": "fp6y",
       "answer": [
         "Governor",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "424R",
+      "election_day": true,
+      "online": false,
+      "deadline_in_person": "11/08/2022",
+      "deadline_mail": "10/18/2022",
+      "deadline_online": "N/A",
+      "mail_link": "https://www.maine.gov/sos/cec/elec/voter-info/voterguide.html",
+      "online_link": "N/A",
+      "change_party_link": "N/A"
     }
   },
   "md": {
     "region": "Maryland",
     "early_voting_faq": [
       {
-        "id": "6Jxe",
+        "id": "Zt8w",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "VxQN",
+        "id": "SB1J",
         "question": "When is the first day I can vote early in person?",
         "answer": "Thursday, Oct. 27."
       },
       {
-        "id": "5Gi2",
+        "id": "rgmL",
         "question": "When is the last day I can vote early in person?",
         "answer": "Thursday, Nov. 3."
       },
       {
-        "id": "Df5L",
+        "id": "Dy9y",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. ID is not required."
       },
       {
-        "id": "xUXo",
+        "id": "mWAF",
         "question": "Additional information",
         "answer": "https://elections.maryland.gov/voting/early_voting.html"
       }
     ],
     "core_races": {
-      "id": "TJSa",
+      "id": "w31U",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -875,39 +1101,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "Aqqg",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/08/2022",
+      "deadline_mail": "10/18/2022",
+      "deadline_online": "10/18/2022",
+      "mail_link": "https://elections.maryland.gov/voter_registration/application.html",
+      "online_link": "https://voterservices.elections.maryland.gov/OnlineVoterRegistration/InstructionsStep1",
+      "change_party_link": "https://voterservices.elections.maryland.gov/OnlineVoterRegistration/InstructionsStep1"
     }
   },
   "ma": {
     "region": "Massachusetts",
     "early_voting_faq": [
       {
-        "id": "hi8z",
+        "id": "eqbT",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting and in-person absentee voting is available."
       },
       {
-        "id": "bep2",
+        "id": "rsvz",
         "question": "When is the first day I can vote early in person?",
         "answer": "Varies. Check with your local election office. "
       },
       {
-        "id": "ye8B",
+        "id": "133P",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7 at 12 p.m."
       },
       {
-        "id": "JjhE",
+        "id": "3QeS",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "No. ID is not required, except for some first-time voters. [More information](https://www.sec.state.ma.us/ele/eleidreq/idrequirementsidx.htm)"
+        "answer": "No. ID is not required, except for some first-time voters. More information _here_.[https://www.sec.state.ma.us/ele/eleidreq/idrequirementsidx.htm]"
       },
       {
-        "id": "MKsj",
+        "id": "A5xh",
         "question": "Additional information",
         "answer": "https://www.sec.state.ma.us/ele/eleabsentee/absidx.htm"
       }
     ],
     "core_races": {
-      "id": "6auD",
+      "id": "DFzX",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -918,39 +1155,50 @@
         "Governor's Council",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "r7TF",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/19/2022",
+      "deadline_mail": "10/19/2022",
+      "deadline_online": "10/19/2022",
+      "mail_link": "https://www.sec.state.ma.us/ele/eleifv/howreg.htm",
+      "online_link": "https://www.sec.state.ma.us/ovr",
+      "change_party_link": "https://www.sec.state.ma.us/ovr/"
     }
   },
   "mi": {
     "region": "Michigan",
     "early_voting_faq": [
       {
-        "id": "6vqW",
+        "id": "Gx8X",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "VQ34",
+        "id": "61HW",
         "question": "When is the first day I can vote early in person?",
         "answer": "Saturday, Sept. 24."
       },
       {
-        "id": "zR3k",
+        "id": "QmRM",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "JR5u",
+        "id": "h4et",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is requested. Voters who do not present valid ID are allowed to cast a ballot if they sign an affidavit attesting to their identity. [Valid forms of ID](https://mvic.sos.state.mi.us/Home/VoteInPerson/#id-required)"
+        "answer": "Yes. ID is requested. Voters who do not present valid ID are allowed to cast a ballot if they sign an affidavit attesting to their identity. Valid forms of ID are listed _here_. [https://mvic.sos.state.mi.us/Home/VoteInPerson/#id-required]"
       },
       {
-        "id": "1Pei",
+        "id": "5kaq",
         "question": "Additional information",
         "answer": "https://mvic.sos.state.mi.us/Home/VoteAtHome"
       }
     ],
     "core_races": {
-      "id": "CDbe",
+      "id": "YaEN",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -958,39 +1206,50 @@
         "Attorney General",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "QbXu",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/08/2022",
+      "deadline_mail": "10/24/2022",
+      "deadline_online": "10/24/2022",
+      "mail_link": "https://www.michigan.gov/documents/MIVoterRegistration_97046_7.pdf",
+      "online_link": "https://mvic.sos.state.mi.us/RegisterVoter/Index",
+      "change_party_link": "https://mvic.sos.state.mi.us/RegisterVoter/Index"
     }
   },
   "mn": {
     "region": "Minnesota",
     "early_voting_faq": [
       {
-        "id": "4szp",
+        "id": "hMhv",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "SRQQ",
+        "id": "vWgY",
         "question": "When is the first day I can vote early in person?",
         "answer": "Friday, Sept. 23."
       },
       {
-        "id": "9L8A",
+        "id": "Pav7",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "pXZy",
+        "id": "fgX2",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. ID is not required."
       },
       {
-        "id": "s6TH",
+        "id": "erm3",
         "question": "Additional information",
         "answer": "https://www.sos.state.mn.us/elections-voting/other-ways-to-vote/vote-early-in-person/"
       }
     ],
     "core_races": {
-      "id": "aooY",
+      "id": "CHYV",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -999,150 +1258,194 @@
         "Auditor",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "Xgme",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "10/18/2022",
+      "deadline_mail": "10/18/2022",
+      "deadline_online": "10/18/2022",
+      "mail_link": "https://www.sos.state.mn.us/elections-voting/register-to-vote/register-on-paper/",
+      "online_link": "https://mnvotes.sos.state.mn.us/VoterRegistration/VoterRegistrationMain.aspx",
+      "change_party_link": "https://mnvotes.sos.state.mn.us/VoterRegistration/VoterRegistrationMain.aspx"
     }
   },
   "ms": {
     "region": "Mississippi",
     "early_voting_faq": [
       {
-        "id": "j9kV",
+        "id": "sehp",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available for those who qualify."
       },
       {
-        "id": "BkeP",
+        "id": "xcm9",
         "question": "When is the first day I can vote early in person?",
         "answer": "Saturday, Sept. 24."
       },
       {
-        "id": "EEXk",
+        "id": "32fk",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "jNGv",
+        "id": "PpJW",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is required. [Valid forms of ID](https://www.sos.ms.gov/content/documents/elections/Mississippi%20Voter%20Information%20Guide%202022.pdf)"
+        "answer": "Yes. ID is required. Valid forms of ID are listed _here_. [https://www.sos.ms.gov/content/documents/elections/Mississippi%20Voter%20Information%20Guide%202022.pdf]"
       },
       {
-        "id": "ZZ6H",
+        "id": "vQCa",
         "question": "Additional information",
         "answer": "https://www.sos.ms.gov/content/documents/elections/Mississippi%20Voter%20Information%20Guide%202022.pdf"
       }
     ],
     "core_races": {
-      "id": "UmaS",
+      "id": "9DCx",
       "answer": [
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "nnB2",
+      "election_day": false,
+      "online": false,
+      "deadline_in_person": "10/10/2022",
+      "deadline_mail": "10/10/2022",
+      "deadline_online": "N/A",
+      "mail_link": "https://www.sos.ms.gov/sites/default/files/election_and_voting/Voter_Registration.pdf",
+      "online_link": "N/A",
+      "change_party_link": "N/A"
     }
   },
   "mo": {
     "region": "Missouri",
     "early_voting_faq": [
       {
-        "id": "jRc6",
+        "id": "BDz6",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available for those who qualify."
       },
       {
-        "id": "kYbT",
+        "id": "FsY4",
         "question": "When is the first day I can vote early in person?",
         "answer": "Tuesday, Sept. 20."
       },
       {
-        "id": "x76w",
+        "id": "EQtV",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "xHhi",
+        "id": "dZ3q",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is required. [Valid forms of ID](https://www.sos.mo.gov/elections/goVoteMissouri/howtovote#Absentee)"
+        "answer": "Yes. ID is required. Valid forms of ID are listed _here_.[https://www.sos.mo.gov/elections/goVoteMissouri/howtovote#Absentee]"
       },
       {
-        "id": "SGEZ",
+        "id": "u7zc",
         "question": "Additional information",
         "answer": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote#absentee"
       }
     ],
     "core_races": {
-      "id": "TNSC",
+      "id": "qMhL",
       "answer": [
         "Auditor",
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "VYZw",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/12/2022",
+      "deadline_mail": "10/12/2022",
+      "deadline_online": "10/12/2022",
+      "mail_link": "https://www.sos.mo.gov/elections/goVoteMissouri/register",
+      "online_link": "https://s1.sos.mo.gov/elections/voterregistration/",
+      "change_party_link": "N/A"
     }
   },
   "mt": {
     "region": "Montana",
     "early_voting_faq": [
       {
-        "id": "9XQR",
+        "id": "txpV",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "PS1h",
+        "id": "runS",
         "question": "When is the first day I can vote early in person?",
         "answer": "No later than Tuesday, Oct. 11."
       },
       {
-        "id": "87AN",
+        "id": "uM6d",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "QYvd",
+        "id": "r4Jg",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. ID is not required. ID is only required when registering to vote."
       },
       {
-        "id": "w4RX",
+        "id": "FBmh",
         "question": "Additional information",
         "answer": "https://sosmt.gov/elections/faq/#absentee-voting"
       }
     ],
     "core_races": {
-      "id": "UVzh",
+      "id": "KB3N",
       "answer": [
         "Public Service Commissioner",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "ncxp",
+      "election_day": false,
+      "online": false,
+      "deadline_in_person": "11/07/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "N/A",
+      "mail_link": "https://sosmt.gov/elections/vote/#1641574992907-9dee3295-aa37",
+      "online_link": "N/A",
+      "change_party_link": "N/A"
     }
   },
   "ne": {
     "region": "Nebraska",
     "early_voting_faq": [
       {
-        "id": "kiWc",
+        "id": "n58j",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "HC9Y",
+        "id": "9gHN",
         "question": "When is the first day I can vote early in person?",
         "answer": "Tuesday, Oct. 11."
       },
       {
-        "id": "f2L5",
+        "id": "SXhL",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "AbWB",
+        "id": "shtT",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. ID is not required, except for some first time voters."
       },
       {
-        "id": "396N",
+        "id": "kp2M",
         "question": "Additional information",
         "answer": "https://sos.nebraska.gov/elections/early-voting"
       }
     ],
     "core_races": {
-      "id": "3LX2",
+      "id": "MvWd",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -1154,39 +1457,50 @@
         "Public Service Commissioner",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "sVKY",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/28/2022",
+      "deadline_mail": "10/21/2022",
+      "deadline_online": "10/21/2022",
+      "mail_link": "https://sos.nebraska.gov/elections/voter-forms",
+      "online_link": "https://www.nebraska.gov/apps-sos-voter-registration/",
+      "change_party_link": "https://www.nebraska.gov/apps-sos-voter-registration/"
     }
   },
   "nv": {
     "region": "Nevada",
     "early_voting_faq": [
       {
-        "id": "33Zh",
+        "id": "Hv6r",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting and in-person absentee voting are available."
       },
       {
-        "id": "LVXN",
+        "id": "WT3S",
         "question": "When is the first day I can vote early in person?",
         "answer": "Saturday, Oct. 22."
       },
       {
-        "id": "nn6S",
+        "id": "2dxJ",
         "question": "When is the last day I can vote early in person?",
         "answer": "Friday, Nov. 4."
       },
       {
-        "id": "kuM8",
+        "id": "XZKn",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "No. ID is not required, except for some first time voters. [More information](https://www.nvsos.gov/sos/elections/voters/mail-ballot-voting)"
+        "answer": "No. ID is not required, except for some first time voters. More information _here_.[https://www.nvsos.gov/sos/elections/voters/mail-ballot-voting]"
       },
       {
-        "id": "rbpJ",
+        "id": "x1Nb",
         "question": "Additional information",
         "answer": "https://www.nvsos.gov/sos/elections/voters/early-voting-information"
       }
     ],
     "core_races": {
-      "id": "ks5q",
+      "id": "ekG2",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -1197,114 +1511,147 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "6GTc",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "10/11/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "11/03/2022",
+      "mail_link": "https://www.nvsos.gov/sos/elections/voters/registering-to-vote",
+      "online_link": "https://www.nvsos.gov/SOSVoterServices/start.aspx",
+      "change_party_link": "https://www.nvsos.gov/SOSVoterServices/start.aspx"
     }
   },
   "nh": {
     "region": "New Hampshire",
     "early_voting_faq": [
       {
-        "id": "dqCU",
+        "id": "APfv",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available for those who qualify."
       },
       {
-        "id": "zmw9",
+        "id": "t177",
         "question": "When is the first day I can vote early in person?",
         "answer": "Sunday, Oct. 9."
       },
       {
-        "id": "tT1u",
+        "id": "opDX",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "btRW",
+        "id": "E2ST",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. Unless voter did not provide ID when registering to vote. "
       },
       {
-        "id": "RZAt",
+        "id": "TPpn",
         "question": "Additional information",
         "answer": "N/A"
       }
     ],
     "core_races": {
-      "id": "B9GS",
+      "id": "JuUx",
       "answer": [
         "Governor",
         "State Executive Council",
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "QFTD",
+      "election_day": true,
+      "online": false,
+      "deadline_in_person": "10/26/2022",
+      "deadline_mail": "10/26/2022",
+      "deadline_online": "N/A",
+      "mail_link": "https://sos.nh.gov/elections/voters/register-to-vote/",
+      "online_link": "N/A",
+      "change_party_link": "N/A"
     }
   },
   "nj": {
     "region": "New Jersey",
     "early_voting_faq": [
       {
-        "id": "fqSr",
+        "id": "uJ4e",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting and in-person absentee voting are available."
       },
       {
-        "id": "K5b2",
+        "id": "uRBZ",
         "question": "When is the first day I can vote early in person?",
         "answer": "Saturday, Oct. 29."
       },
       {
-        "id": "fnkM",
+        "id": "sncq",
         "question": "When is the last day I can vote early in person?",
         "answer": "Saturday, Nov. 5."
       },
       {
-        "id": "ahZP",
+        "id": "XH9s",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. ID is not required, except for some first time voters. "
       },
       {
-        "id": "ZrdS",
+        "id": "gCy9",
         "question": "Additional information",
         "answer": "https://www.state.nj.us/state/elections/vote-early-voting.shtml"
       }
     ],
     "core_races": {
-      "id": "AcCw",
+      "id": "xnNc",
       "answer": [
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "TGBe",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/18/2022",
+      "deadline_mail": "10/18/2022",
+      "deadline_online": "10/18/2022",
+      "mail_link": "https://nj.gov/state/elections/voter-registration.shtml#vrf",
+      "online_link": "https://nj.gov/state/elections/voter-registration.shtml",
+      "change_party_link": "https://www.state.nj.us/state/elections/voter-party-affiliation-declaration.shtml"
     }
   },
   "nm": {
     "region": "New Mexico",
     "early_voting_faq": [
       {
-        "id": "VUa7",
+        "id": "Ycub",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting and in-person absentee voting are available."
       },
       {
-        "id": "SWCw",
+        "id": "US2v",
         "question": "When is the first day I can vote early in person?",
         "answer": "Tuesday, Oct. 11."
       },
       {
-        "id": "wPKs",
+        "id": "UKJm",
         "question": "When is the last day I can vote early in person?",
         "answer": "Saturday, Nov. 5."
       },
       {
-        "id": "mRaH",
+        "id": "jMTT",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "No. ID is not required, except for some first-time voters. [More information](https://www.sos.state.nm.us/voting-and-elections/voting-faqs/voting/)"
+        "answer": "No. ID is not required, except for some first-time voters. More information _here_.[https://www.sos.state.nm.us/voting-and-elections/voting-faqs/voting/]"
       },
       {
-        "id": "X2vw",
+        "id": "z4MF",
         "question": "Additional information",
         "answer": "https://www.sos.state.nm.us/voting-and-elections/voting-faqs/early-voting-in-person/"
       }
     ],
     "core_races": {
-      "id": "3Nex",
+      "id": "pGE5",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -1316,39 +1663,50 @@
         "Public Lands Commissioner",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "MXZD",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "10/11/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "10/11/2022",
+      "mail_link": "https://www.sos.state.nm.us/voting-and-elections/voting-faqs/voter-registration/",
+      "online_link": "https://portal.sos.state.nm.us/OVR/WebPages/InstructionsStep1.aspx",
+      "change_party_link": "https://portal.sos.state.nm.us/OVR/WebPages/InstructionsStep1.aspx"
     }
   },
   "ny": {
     "region": "New York",
     "early_voting_faq": [
       {
-        "id": "CfjU",
+        "id": "To5Y",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting and in-person absentee voting are available."
       },
       {
-        "id": "icez",
+        "id": "75Do",
         "question": "When is the first day I can vote early in person?",
         "answer": "Saturday, Oct. 29."
       },
       {
-        "id": "p9f3",
+        "id": "zQja",
         "question": "When is the last day I can vote early in person?",
         "answer": "Sunday, Nov. 6."
       },
       {
-        "id": "ES9d",
+        "id": "Nc5B",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. No document is required to vote, unless you are a first-time voter and ID was not provided upon registration.  "
       },
       {
-        "id": "Uc8c",
+        "id": "p5kt",
         "question": "Additional information",
         "answer": "https://www.elections.ny.gov/VotingAbsentee.html"
       }
     ],
     "core_races": {
-      "id": "NRhQ",
+      "id": "fRvp",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -1357,76 +1715,98 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "8Xti",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/14/2022",
+      "deadline_mail": "10/14/2022",
+      "deadline_online": "10/14/2022",
+      "mail_link": "https://www.elections.ny.gov/VotingRegister.html",
+      "online_link": "https://voterreg.dmv.ny.gov/MotorVoter/?_ga=2.79059091.647255632.1643335721-1445420242.1642719875",
+      "change_party_link": "https://dmv.ny.gov/more-info/electronic-voter-registration-application"
     }
   },
   "nc": {
     "region": "North Carolina",
     "early_voting_faq": [
       {
-        "id": "gn1E",
+        "id": "43PL",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting and in-person absentee voting are available."
       },
       {
-        "id": "gieJ",
+        "id": "vJ8i",
         "question": "When is the first day I can vote early in person?",
         "answer": "Thursday, Oct. 20."
       },
       {
-        "id": "FyHh",
+        "id": "34nx",
         "question": "When is the last day I can vote early in person?",
         "answer": "Saturday, Nov. 5."
       },
       {
-        "id": "xVb6",
+        "id": "HMfx",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is required when applying for an absentee ballot. [More information](https://www.ncsbe.gov/voting/vote-mail/detailed-instructions-vote-mail#1-request-ballot)"
+        "answer": "Yes. ID is required when applying for an absentee ballot. More information _here_.[https://www.ncsbe.gov/voting/vote-mail/detailed-instructions-vote-mail#1-request-ballot]"
       },
       {
-        "id": "vpdN",
+        "id": "pUcq",
         "question": "Additional information",
         "answer": "https://www.ncsbe.gov/voting/vote-early-person"
       }
     ],
     "core_races": {
-      "id": "n6T4",
+      "id": "FGFp",
       "answer": [
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "jfzW",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/14/2022",
+      "deadline_mail": "10/14/2022",
+      "deadline_online": "10/14/2022",
+      "mail_link": "https://www.ncsbe.gov/registering/how-register/complete-your-registration-mail",
+      "online_link": "https://www.ncdot.gov/dmv/offices-services/online/Pages/voter-registration-application.aspx",
+      "change_party_link": "https://www.ncsbe.gov/registering/updating-registration"
     }
   },
   "nd": {
     "region": "North Dakota",
     "early_voting_faq": [
       {
-        "id": "RTmY",
+        "id": "e4FA",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting and in-person absentee voting are available."
       },
       {
-        "id": "4qff",
+        "id": "ecCq",
         "question": "When is the first day I can vote early in person?",
         "answer": "Varies by county, early voting may begin 15 days before the election. Check with your local election office."
       },
       {
-        "id": "5LKe",
+        "id": "Bddz",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "AD7j",
+        "id": "hSWr",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is required. If a voter is not able to provide valid ID, they may cast a ballot that is securely set aside until the individual can provide proper identification. [Valid forms of ID](https://vote.nd.gov/IDRequirements.aspx)"
+        "answer": "Yes. ID is required. If a voter is not able to provide valid ID, they may cast a ballot that is securely set aside until the individual can provide proper identification. Valid forms of ID are listed _here_. [https://vote.nd.gov/IDRequirements.aspx]"
       },
       {
-        "id": "o3RY",
+        "id": "7aYM",
         "question": "Additional information",
         "answer": "N/A"
       }
     ],
     "core_races": {
-      "id": "euhL",
+      "id": "WQLS",
       "answer": [
         "Secretary of State",
         "Attorney General",
@@ -1436,39 +1816,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "AyFN",
+      "election_day": false,
+      "online": false,
+      "deadline_in_person": "N/A",
+      "deadline_mail": "N/A",
+      "deadline_online": "N/A",
+      "mail_link": "N/A",
+      "online_link": "N/A",
+      "change_party_link": "N/A"
     }
   },
   "oh": {
     "region": "Ohio",
     "early_voting_faq": [
       {
-        "id": "w7Ec",
+        "id": "gBC1",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "r9FE",
+        "id": "4nJF",
         "question": "When is the first day I can vote early in person?",
         "answer": "Wednesday, Oct. 12."
       },
       {
-        "id": "tkvd",
+        "id": "xD3w",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7 at 2 p.m."
       },
       {
-        "id": "M2XL",
+        "id": "RGzp",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is required when requesting an absentee ballot. [More information](https://www.ohiosos.gov/elections/voters/absentee-voting/)"
+        "answer": "Yes. ID is required when requesting an absentee ballot. More information _here_.[https://www.ohiosos.gov/elections/voters/absentee-voting/]"
       },
       {
-        "id": "aYRK",
+        "id": "YcG3",
         "question": "Additional information",
         "answer": "https://www.ohiosos.gov/elections/voters/toolkit/early-voting/"
       }
     ],
     "core_races": {
-      "id": "Xzm4",
+      "id": "K1qK",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -1480,39 +1871,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "vvnP",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/11/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "10/11/2022",
+      "mail_link": "https://www.ohiosos.gov/publications/#vrf",
+      "online_link": "https://olvr.ohiosos.gov/",
+      "change_party_link": "N/A"
     }
   },
   "ok": {
     "region": "Oklahoma",
     "early_voting_faq": [
       {
-        "id": "wyoU",
+        "id": "WUAS",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "aaZJ",
+        "id": "GFWj",
         "question": "When is the first day I can vote early in person?",
         "answer": "Wednesday, Nov. 2."
       },
       {
-        "id": "VZaU",
+        "id": "hzT8",
         "question": "When is the last day I can vote early in person?",
         "answer": "Saturday, Nov. 5."
       },
       {
-        "id": "knCv",
+        "id": "L9Wi",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. Photo ID or voter identification card is required. [Valid forms of ID](https://oklahoma.gov/elections/voters/proof-of-identity.html)"
+        "answer": "Yes. Photo ID or voter identification card is required. Valid forms of ID are listed _here_.[https://oklahoma.gov/elections/voters/proof-of-identity.html]"
       },
       {
-        "id": "nTVn",
+        "id": "kfWe",
         "question": "Additional information",
         "answer": "https://oklahoma.gov/elections/voters/early-voting.html"
       }
     ],
     "core_races": {
-      "id": "ypWD",
+      "id": "NufK",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -1526,117 +1928,150 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "gySv",
+      "election_day": false,
+      "online": false,
+      "deadline_in_person": "10/14/2022",
+      "deadline_mail": "10/14/2022",
+      "deadline_online": "N/A",
+      "mail_link": "https://okvoterportal.okelections.us/Home/RegWizard",
+      "online_link": "N/A",
+      "change_party_link": "https://okvoterportal.okelections.us/"
     }
   },
   "or": {
     "region": "Oregon",
     "early_voting_faq": [
       {
-        "id": "bxCb",
+        "id": "58Xn",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "No."
       },
       {
-        "id": "7Y1Q",
+        "id": "wbVH",
         "question": "When is the first day I can vote early in person?",
         "answer": "N/A"
       },
       {
-        "id": "qECn",
+        "id": "1Qck",
         "question": "When is the last day I can vote early in person?",
         "answer": "N/A"
       },
       {
-        "id": "cfSo",
+        "id": "xKu5",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "No. ID is required when registering to vote. [More information](https://sos.oregon.gov/voting/pages/registration.aspx?lang=en)"
+        "answer": "No. ID is required when registering to vote. More information _here_.[https://sos.oregon.gov/voting/pages/registration.aspx?lang=en]"
       },
       {
-        "id": "8KsE",
+        "id": "ojck",
         "question": "Additional information",
         "answer": "N/A"
       }
     ],
     "core_races": {
-      "id": "Mqa5",
+      "id": "Cs46",
       "answer": [
         "Governor",
         "Labor Commissioner",
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "H38Y",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/18/2022",
+      "deadline_mail": "10/18/2022",
+      "deadline_online": "10/18/2022",
+      "mail_link": "https://sos.oregon.gov/elections/Documents/SEL500.pdf",
+      "online_link": "https://sos.oregon.gov/voting/pages/registration.aspx?lang=en",
+      "change_party_link": "https://sos.oregon.gov/voting/pages/myvote.aspx?lang=en"
     }
   },
   "pa": {
     "region": "Pennsylvania",
     "early_voting_faq": [
       {
-        "id": "kbDS",
+        "id": "ivPN",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "CHi8",
+        "id": "tRft",
         "question": "When is the first day I can vote early in person?",
         "answer": "Monday, Sept. 19."
       },
       {
-        "id": "DGUM",
+        "id": "dmP7",
         "question": "When is the last day I can vote early in person?",
         "answer": "Tuesday, Nov. 1."
       },
       {
-        "id": "4nga",
+        "id": "qTUG",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is required when applying for an absentee ballot. [Valid forms of ID](https://www.vote.pa.gov/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx#id-mail)"
+        "answer": "Yes. ID is required when applying for an absentee ballot. Valid forms of ID are listed _here_.[https://www.vote.pa.gov/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx#id-mail]"
       },
       {
-        "id": "cSwp",
+        "id": "nCjq",
         "question": "Additional information",
         "answer": "https://www.vote.pa.gov/Voting-in-PA/Pages/Early-Voting.aspx"
       }
     ],
     "core_races": {
-      "id": "exue",
+      "id": "6ZTE",
       "answer": [
         "Governor",
         "Lieutenant Governor",
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "uyxo",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/24/2022",
+      "deadline_mail": "10/24/2022",
+      "deadline_online": "10/24/2022",
+      "mail_link": "https://www.vote.pa.gov/Resources/Documents/Voter_Registration_Application_English.pdf",
+      "online_link": "https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx",
+      "change_party_link": "https://www.vote.pa.gov/Register-to-Vote/Pages/How-to-Update-Your-Registraton.aspx"
     }
   },
   "ri": {
     "region": "Rhode Island",
     "early_voting_faq": [
       {
-        "id": "C6Nd",
+        "id": "DyyJ",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "MaHx",
+        "id": "MkNM",
         "question": "When is the first day I can vote early in person?",
         "answer": "Wednesday, Oct. 19."
       },
       {
-        "id": "bN4v",
+        "id": "EtWw",
         "question": "When is the last day I can vote early in person?",
         "answer": "Friday, Nov. 11."
       },
       {
-        "id": "sBBw",
+        "id": "M38p",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. Photo ID is required. Voters who do not present valid ID are allowed to cast a provisional ballot. [Valid forms of ID](https://elections.ri.gov/voting/id.php)"
+        "answer": "Yes. Photo ID is required. Voters who do not present valid ID are allowed to cast a provisional ballot. Valid forms of ID are listed _here_. [https://elections.ri.gov/voting/id.php]"
       },
       {
-        "id": "dEKu",
+        "id": "MMHR",
         "question": "Additional information",
         "answer": "https://vote.sos.ri.gov/Voter/PersonVotingPage"
       }
     ],
     "core_races": {
-      "id": "Gxas",
+      "id": "38Lm",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -1645,39 +2080,50 @@
         "Treasurer",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "s4ax",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/09/2022",
+      "deadline_mail": "10/09/2022",
+      "deadline_online": "10/09/2022",
+      "mail_link": "https://vote.sos.ri.gov/Content/Pdfs/voter_registration_form.pdf",
+      "online_link": "https://vote.sos.ri.gov/Home/RegistertoVote?ActiveFlag=1",
+      "change_party_link": "https://vote.sos.ri.gov/Home/UpdateVoterRecord?ActiveFlag=0"
     }
   },
   "sc": {
     "region": "South Carolina",
     "early_voting_faq": [
       {
-        "id": "vDUB",
+        "id": "wPk3",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "Wf8V",
+        "id": "gAsp",
         "question": "When is the first day I can vote early in person?",
         "answer": "Tuesday, Oct. 25"
       },
       {
-        "id": "HXob",
+        "id": "V7Cp",
         "question": "When is the last day I can vote early in person?",
         "answer": "Friday, Nov. 4."
       },
       {
-        "id": "LUbT",
+        "id": "MRX8",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. Photo ID is required. [Valid forms of ID](https://www.scvotes.gov/node/235)"
+        "answer": "Yes. Photo ID is required. Valid forms of ID are listed _here_.[https://www.scvotes.gov/node/235]"
       },
       {
-        "id": "tgUa",
+        "id": "Fq51",
         "question": "Additional information",
         "answer": "N/A"
       }
     ],
     "core_races": {
-      "id": "jpJ5",
+      "id": "RfW3",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -1690,39 +2136,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "DQQZ",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/07/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "10/09/2022",
+      "mail_link": "https://www.scvotes.gov/sites/default/files/VR%20Blank%20Form.pdf",
+      "online_link": "https://info.scvotes.sc.gov/eng/ovr/start.aspx",
+      "change_party_link": "NAN/A"
     }
   },
   "sd": {
     "region": "South Dakota",
     "early_voting_faq": [
       {
-        "id": "vkTn",
+        "id": "hNTe",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "ABAF",
+        "id": "wyXK",
         "question": "When is the first day I can vote early in person?",
         "answer": "Friday, Sept. 23."
       },
       {
-        "id": "jjCH",
+        "id": "F2Cn",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "So1s",
+        "id": "QmCb",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. Photo ID is requested when submitting an absentee ballot application. If ID is not provided, voters can have their application notarized. [More information](https://sdsos.gov/elections-voting/voting/absentee-voting.aspx)"
+        "answer": "Yes. Photo ID is requested when submitting an absentee ballot application. If ID is not provided, voters can have their application notarized. More information _here_.[https://sdsos.gov/elections-voting/voting/absentee-voting.aspx]"
       },
       {
-        "id": "qbnc",
+        "id": "dBGe",
         "question": "Additional information",
         "answer": "https://sdsos.gov/elections-voting/voting/absentee-voting.aspx"
       }
     ],
     "core_races": {
-      "id": "rGxk",
+      "id": "mx2w",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -1735,76 +2192,98 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "zG7i",
+      "election_day": false,
+      "online": false,
+      "deadline_in_person": "10/24/2022",
+      "deadline_mail": "10/24/2022",
+      "deadline_online": "N/A",
+      "mail_link": "https://sdsos.gov/elections-voting/voting/register-to-vote/default.aspx",
+      "online_link": "N/A",
+      "change_party_link": "https://sdsos.gov/elections-voting/voting/registration-changes.aspx"
     }
   },
   "tn": {
     "region": "Tennessee",
     "early_voting_faq": [
       {
-        "id": "iVCA",
+        "id": "QDcs",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "bbiF",
+        "id": "WvWV",
         "question": "When is the first day I can vote early in person?",
         "answer": "Wednesday, Oct. 19."
       },
       {
-        "id": "e2X3",
+        "id": "AVMs",
         "question": "When is the last day I can vote early in person?",
         "answer": "Thursday, Nov. 3."
       },
       {
-        "id": "exn5",
+        "id": "vmgF",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. ID is not required. "
       },
       {
-        "id": "ki49",
+        "id": "Uqhs",
         "question": "Additional information",
         "answer": "https://sos.tn.gov/elections/guides/how-to-early-vote-in-person"
       }
     ],
     "core_races": {
-      "id": "yDne",
+      "id": "xqFK",
       "answer": [
         "Governor",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "ZSKx",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/11/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "10/11/2022",
+      "mail_link": "https://sos-stage.tnsosgovfiles.com/s3fs-public/division/Elections/document/ss-3010.pdf",
+      "online_link": "https://ovr.govote.tn.gov/",
+      "change_party_link": "N/A"
     }
   },
   "tx": {
     "region": "Texas",
     "early_voting_faq": [
       {
-        "id": "JBdE",
+        "id": "DiMQ",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "qroP",
+        "id": "Ys64",
         "question": "When is the first day I can vote early in person?",
         "answer": "Monday, Oct. 24."
       },
       {
-        "id": "bChh",
+        "id": "MM5X",
         "question": "When is the last day I can vote early in person?",
         "answer": "Friday, Nov. 4."
       },
       {
-        "id": "1jwv",
+        "id": "KJHX",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is required when applying for an absentee ballot and when returning completed ballot. [Valid forms of ID](https://www.votetexas.gov/voting-by-mail/index.html)"
+        "answer": "Yes. ID is required when applying for an absentee ballot and when returning completed ballot. Valid forms of ID are listed _here_.[https://www.votetexas.gov/voting-by-mail/index.html]"
       },
       {
-        "id": "HYo2",
+        "id": "WGnS",
         "question": "Additional information",
         "answer": "https://www.votetexas.gov/faq/early-voting.html"
       }
     ],
     "core_races": {
-      "id": "iChU",
+      "id": "FicV",
       "answer": [
         "Governor",
         "Lieutenant Governor",
@@ -1815,77 +2294,99 @@
         "Railroad Commissioner",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "cumy",
+      "election_day": false,
+      "online": false,
+      "deadline_in_person": "10/11/2022",
+      "deadline_mail": "10/11/2022",
+      "deadline_online": "N/A",
+      "mail_link": "https://www.votetexas.gov/register/index.html",
+      "online_link": "N/A",
+      "change_party_link": "N/A"
     }
   },
   "ut": {
     "region": "Utah",
     "early_voting_faq": [
       {
-        "id": "5T7E",
+        "id": "vd5Q",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "1p9T",
+        "id": "tZvX",
         "question": "When is the first day I can vote early in person?",
         "answer": "Varies. Check with your local election office. "
       },
       {
-        "id": "uv2d",
+        "id": "pRjP",
         "question": "When is the last day I can vote early in person?",
         "answer": "Varies. Check with your local election office. "
       },
       {
-        "id": "yqYt",
+        "id": "twbN",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. ID is not required. "
       },
       {
-        "id": "qcMz",
+        "id": "LaXc",
         "question": "Additional information",
         "answer": "N/A"
       }
     ],
     "core_races": {
-      "id": "Gdnb",
+      "id": "rPMe",
       "answer": [
         "Treasurer",
         "U.S Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "EFkp",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/08/2022",
+      "deadline_mail": "10/28/2022",
+      "deadline_online": "10/28/2022",
+      "mail_link": "https://voteinfo.utah.gov/wp-content/uploads/sites/42/2021/06/2021-Voter-Registration-Form-06-01-21-1.pdf",
+      "online_link": "https://secure.utah.gov/voterreg/login.html?selection=REGISTER",
+      "change_party_link": "https://secure.utah.gov/voterreg/login.html?selection=UPDATE"
     }
   },
   "vt": {
     "region": "Vermont",
     "early_voting_faq": [
       {
-        "id": "Drsx",
+        "id": "3bze",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "4u2W",
+        "id": "aqPm",
         "question": "When is the first day I can vote early in person?",
         "answer": "No later than Monday, Oct. 24."
       },
       {
-        "id": "a9e8",
+        "id": "WPmx",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "TNQg",
+        "id": "cPKL",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. ID not required. "
       },
       {
-        "id": "z9Dr",
+        "id": "o6nB",
         "question": "Additional information",
         "answer": "https://sos.vermont.gov/elections/voters/early-absentee-voting/"
       }
     ],
     "core_races": {
-      "id": "eD3v",
+      "id": "5Jid",
       "answer": [
         "Governor",
         "Lieutenant governor",
@@ -1895,149 +2396,193 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "2tMv",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/08/2022",
+      "deadline_mail": "11/08/2022",
+      "deadline_online": "11/04/2022",
+      "mail_link": "https://outside.vermont.gov/dept/sos/Elections%20Division/voters/voterapplication.pdf",
+      "online_link": "https://olvr.vermont.gov/",
+      "change_party_link": "N/A"
     }
   },
   "va": {
     "region": "Virginia",
     "early_voting_faq": [
       {
-        "id": "VehL",
+        "id": "B4bz",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "kKu2",
+        "id": "zALv",
         "question": "When is the first day I can vote early in person?",
         "answer": "Friday, Sept. 23."
       },
       {
-        "id": "wujb",
+        "id": "jDkZ",
         "question": "When is the last day I can vote early in person?",
         "answer": "Saturday, Nov. 5."
       },
       {
-        "id": "ezfq",
+        "id": "ZYhh",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is requested. Voters who do not present valid ID are allowed to cast a ballot if they sign an affidavit attesting to their identity. [Valid forms of ID](https://www.elections.virginia.gov/media/formswarehouse/voter-id/outreach-materials/documents/Voter-Identification-Chart-Rev-4-28-21.pdf)"
+        "answer": "Yes. ID is requested. Voters who do not present valid ID are allowed to cast a ballot if they sign an affidavit attesting to their identity. Valid forms of ID are listed _here_.[https://www.elections.virginia.gov/media/formswarehouse/voter-id/outreach-materials/documents/Voter-Identification-Chart-Rev-4-28-21.pdf]"
       },
       {
-        "id": "Lm7p",
+        "id": "XLy8",
         "question": "Additional information",
         "answer": "https://www.elections.virginia.gov/casting-a-ballot/absentee-voting/"
       }
     ],
     "core_races": {
-      "id": "4zL2",
+      "id": "PXQT",
       "answer": [
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "Kwcw",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/17/2022",
+      "deadline_mail": "10/17/2022",
+      "deadline_online": "10/17/2022",
+      "mail_link": "https://www.elections.virginia.gov/media/formswarehouse/veris-voter-registration/applications/VA-NVRA-1-Voter-Registration-Application-rev-4_1-(1).pdf",
+      "online_link": "https://vote.elections.virginia.gov/VoterInformation",
+      "change_party_link": "N/A"
     }
   },
   "wa": {
     "region": "Washington",
     "early_voting_faq": [
       {
-        "id": "EWpJ",
+        "id": "uisR",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "z6fQ",
+        "id": "17Ct",
         "question": "When is the first day I can vote early in person?",
         "answer": "Friday, Oct. 21."
       },
       {
-        "id": "5znG",
+        "id": "Rakd",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "kVfe",
+        "id": "hjpP",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
         "answer": "No. ID is not required. "
       },
       {
-        "id": "y19e",
+        "id": "LZBs",
         "question": "Additional information",
         "answer": "https://www.sos.wa.gov/elections/faq_vote_by_mail.aspx"
       }
     ],
     "core_races": {
-      "id": "dpau",
+      "id": "9a8F",
       "answer": [
         "Secretary of State",
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "SPqK",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/08/2022",
+      "deadline_mail": "10/31/2022",
+      "deadline_online": "10/31/2022",
+      "mail_link": "https://www.sos.wa.gov/_assets/elections/vrf_print_2022_english.pdf",
+      "online_link": "https://voter.votewa.gov/WhereToVote.aspx",
+      "change_party_link": "N/A"
     }
   },
   "wv": {
     "region": "West Virginia",
     "early_voting_faq": [
       {
-        "id": "UPhN",
+        "id": "mKzs",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. Early voting is available."
       },
       {
-        "id": "wBzK",
+        "id": "BGjX",
         "question": "When is the first day I can vote early in person?",
         "answer": "Wednesday, Oct. 26."
       },
       {
-        "id": "kcLX",
+        "id": "s1Ws",
         "question": "When is the last day I can vote early in person?",
         "answer": "Saturday, Nov. 5."
       },
       {
-        "id": "bqEC",
+        "id": "ftSS",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. ID is required. Voters who do not present valid ID are allowed to cast a provisional ballot if they sign an affidavit attesting to their identity. [Valid forms of ID](https://sos.wv.gov/elections/Pages/BeReg.aspx)"
+        "answer": "Yes. ID is required. Voters who do not present valid ID are allowed to cast a provisional ballot if they sign an affidavit attesting to their identity. Valid forms of ID are listed _here_. [https://sos.wv.gov/elections/Pages/BeReg.aspx]"
       },
       {
-        "id": "eRFS",
+        "id": "Dkcd",
         "question": "Additional information",
         "answer": "http://www.wvlegislature.gov/wvcode/ChapterEntire.cfm?chap=3&art=3&section=3"
       }
     ],
     "core_races": {
-      "id": "tsNy",
+      "id": "vAxm",
       "answer": [
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "wD36",
+      "election_day": false,
+      "online": true,
+      "deadline_in_person": "10/18/2022",
+      "deadline_mail": "10/18/2022",
+      "deadline_online": "10/18/2022",
+      "mail_link": "https://sos.wv.gov/FormSearch/Elections/Voter/mail%20in%20voter%20registration%20application.pdf",
+      "online_link": "https://ovr.sos.wv.gov/Register/Landing",
+      "change_party_link": "https://ovr.sos.wv.gov/Register/Landing#Qualifications"
     }
   },
   "wi": {
     "region": "Wisconsin",
     "early_voting_faq": [
       {
-        "id": "EWaL",
+        "id": "zmsX",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "rVqq",
+        "id": "qktm",
         "question": "When is the first day I can vote early in person?",
         "answer": "Varies by county. "
       },
       {
-        "id": "G3Fx",
+        "id": "X3i3",
         "question": "When is the last day I can vote early in person?",
         "answer": "Varies by county. "
       },
       {
-        "id": "B2Ws",
+        "id": "Z8eT",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. Photo ID is required. Voters who do not present valid ID are allowed to cast a provisional ballot, but must provide valid ID to their municipal clerk at a later date in order for their ballot to be counted. [Valid forms of ID](https://myvote.wi.gov/Portals/0/Documents/gab_123is_provisional_voting_information_sheet_20_31072.pdf)"
+        "answer": "Yes. Photo ID is required. Voters who do not present valid ID are allowed to cast a provisional ballot, but must provide valid ID to their municipal clerk at a later date in order for their ballot to be counted. Valid forms of ID are listed _here_.[https://myvote.wi.gov/Portals/0/Documents/gab_123is_provisional_voting_information_sheet_20_31072.pdf]"
       },
       {
-        "id": "2FnS",
+        "id": "6171",
         "question": "Additional information",
         "answer": "https://my.lwv.org/wisconsin/local-absentee-ballot-return-and-early-voting-locations"
       }
     ],
     "core_races": {
-      "id": "HrRf",
+      "id": "v9ZR",
       "answer": [
         "Governor",
         "Lieutenant governor",
@@ -2047,39 +2592,50 @@
         "U.S. Senator",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "Kjwi",
+      "election_day": true,
+      "online": true,
+      "deadline_in_person": "11/04/2022",
+      "deadline_mail": "10/18/2022",
+      "deadline_online": "10/18/2022",
+      "mail_link": "https://elections.wi.gov/forms/el-131-fillable",
+      "online_link": "https://myvote.wi.gov/en-us/Voter-Registration",
+      "change_party_link": "N/A"
     }
   },
   "wy": {
     "region": "Wyoming",
     "early_voting_faq": [
       {
-        "id": "hKUw",
+        "id": "crr7",
         "question": "Can I vote early (before Election Day) in person?",
         "answer": "Yes. In-person absentee voting is available."
       },
       {
-        "id": "BdU4",
+        "id": "mZ3Z",
         "question": "When is the first day I can vote early in person?",
         "answer": "Friday, Sept. 23."
       },
       {
-        "id": "mz9x",
+        "id": "22P5",
         "question": "When is the last day I can vote early in person?",
         "answer": "Monday, Nov. 7."
       },
       {
-        "id": "ogi3",
+        "id": "LozE",
         "question": "Is there an ID requirement? If so, what is an acceptable form of ID?",
-        "answer": "Yes. Photo ID is required. [Valid forms of ID](https://sos.wyo.gov/faqs.aspx?root=ELEC)"
+        "answer": "Yes. Photo ID is required. Valid forms of ID are listed _here_.[https://sos.wyo.gov/faqs.aspx?root=ELEC]"
       },
       {
-        "id": "G45n",
+        "id": "Hwf1",
         "question": "Additional information",
         "answer": "N/A"
       }
     ],
     "core_races": {
-      "id": "fVwp",
+      "id": "4ShE",
       "answer": [
         "Governor",
         "Secretary of State",
@@ -2088,6 +2644,17 @@
         "Superintendent of Public Instruction",
         "U.S. House of Representatives"
       ]
+    },
+    "register": {
+      "id": "3Rwt",
+      "election_day": true,
+      "online": false,
+      "deadline_in_person": "10/24/2022",
+      "deadline_mail": "10/24/2022",
+      "deadline_online": "N/A",
+      "mail_link": "https://sos.wyo.gov/Forms/Elections/General/VoterRegistrationForm.pdf",
+      "online_link": "N/A",
+      "change_party_link": "N/A"
     }
   }
 }

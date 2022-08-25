@@ -1,20 +1,18 @@
 <template>
-  <div class="main-content bx--grid">
-    <div class="bx--row">
-      <div class="bx--col-sm-12 bx--col-lg-6">
+  <cv-grid class="main-content">
+    <cv-row>
+      <cv-column :sm="12" :lg="6">
         <slot name="content" />
-      </div>
-      <div class="bx--col-sm-12 bx--col-lg-6">
+      </cv-column>
+      <cv-column :sm="12" :lg="6">
         <slot name="image" />
-      </div>
-    </div>
-  </div>
+      </cv-column>
+    </cv-row>
+  </cv-grid>
 </template>
 
 <script>
 export default {
   name: 'MainContent',
-  props: ['childData'],
-  //pagelayout needs prop for backgroundImg
 };
 </script>

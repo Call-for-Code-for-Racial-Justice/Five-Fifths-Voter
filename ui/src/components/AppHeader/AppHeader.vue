@@ -3,7 +3,7 @@
     <cv-header-menu-button :aria-label="$t('ariaHeaderMenu')" aria-controls="side-nav" />
     <cv-skip-to-content href="#main-content"> Skip to content </cv-skip-to-content>
     <cv-header-name :to="{ name: 'landing-page' }" prefix=""> Five Fifths Voter </cv-header-name>
-    <cv-header-nav :aria-label="$t('ariaMainMenu')">
+    <cv-header-nav :aria-label="$t('ariaMainMenu')" role="menu">
       <cv-header-menu-item :to="{ name: 'why-page' }">
         {{ $t('appHeaderWhyVote') }}
       </cv-header-menu-item>
@@ -120,6 +120,7 @@ export default {
   },
   methods: {
     changeLocale(locale) {
+      localStorage.setItem('locale', locale);
       i18n.locale = locale;
       document.activeElement.blur();
     },

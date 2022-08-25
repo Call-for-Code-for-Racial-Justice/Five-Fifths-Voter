@@ -113,6 +113,7 @@
 import Countdown from '../../components/Countdown';
 import PageLayout from '../../components/PageLayout';
 import MainContent from '../../components/MainContent';
+import { mapState } from 'vuex';
 
 export default {
   name: 'LandingPage',
@@ -129,7 +130,17 @@ export default {
       visible: false,
     };
   },
-  created() {},
+  computed: {
+    ...mapState({
+      redirected: (state) => state?.user?.redirected,
+    }),
+  },
+  created() {
+    if (!this.redirected) {
+      this.$store.commit('setRedirected', true);
+      this.$router.push({ name: 'journey-page' });
+    }
+  },
   methods: {
     onClick() {
       this.visible = true;

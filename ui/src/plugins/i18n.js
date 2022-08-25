@@ -29,9 +29,8 @@ const messages = {
   ja: ja,
   tl: tl,
 };
-
 export default new VueI18n({
-  locale: navigator.language || 'en',
+  locale: localStorage.getItem('locale') || navigator.language?.split('-')[0] || 'en',
   fallbackLocale: 'en',
   messages,
 });
