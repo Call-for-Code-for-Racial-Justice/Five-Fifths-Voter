@@ -13,8 +13,10 @@
           </cv-checkbox>
           <!-- Check your registration -->
           <span class="register-info">
-            <span>Not sure? </span>
-            <cv-link :href="checkRegLink" target="_blank">check here</cv-link>
+            <span>{{ $t('notSure') }} </span>
+            <cv-link :inline="true" :href="checkRegLink" target="_blank">{{
+              $t('checkHere')
+            }}</cv-link>
           </span>
 
           <h2 class="aside__header">{{ $t('registerTitle') }}</h2>
@@ -24,65 +26,71 @@
           </p>
 
           <div v-if="info.register.territory" class="register-info">
-            <span
-              >Do you live is a US territory? Check with your local election officials about
-              voting.</span
-            >
-            <cv-link href="https://www.usa.gov/who-can-vote" target="_blank"
-              >U.S. citizens residing in U.S. territories</cv-link
-            >
+            <span>{{ $t('registerLiveInUsTerritory') }}</span>
+            <cv-link :inline="true" href="https://www.usa.gov/who-can-vote" target="_blank">{{
+              $t('registerTerritories')
+            }}</cv-link>
             <cv-link
+              :inline="true"
               href="https://en.wikipedia.org/wiki/Federal_voting_rights_in_Puerto_Rico"
               target="_blank"
-              >Residents of U.S. territories do not have voting representation in the United States
-              Congress</cv-link
+              >{{ $t('registerTerritoryCitizensRights') }}</cv-link
             >
           </div>
 
           <!-- registration deadline -->
           <div class="register-info" v-if="info.register.deadline_in_person">
             <span
-              >Registration deadline
+              >{{ $t('registrationDeadline') }}
               <span class="days-left">{{ daysLeft(info.register.deadline_in_person) }}</span>
-              . ( {{ niceDate(info.register.deadline_in_person) }}) Act now!
+              . ( {{ niceDate(info.register.deadline_in_person) }}) {{ $t('actNow') }}
             </span>
             <cv-link
               v-if="info.register.online_link"
               :href="info.register.online_link"
+              :inline="true"
               target="_blank"
-              >Register online</cv-link
+              >{{ $t('registerOnline') }}</cv-link
             >
             or
-            <cv-link v-if="info.register.mail_link" :href="info.register.mail_link" target="_blank"
-              >Register by mail</cv-link
+            <cv-link
+              v-if="info.register.mail_link"
+              :href="info.register.mail_link"
+              :inline="true"
+              target="_blank"
+              >{{ $t('registerMail') }}</cv-link
             >
           </div>
 
           <!-- Register day of voting -->
           <div class="register-faq" v-if="'election_day' in info.register">
-            <span>Can I register to vote on election day?</span
-            ><span>{{ info.register.election_day ? 'Yes' : 'No' }}</span>
+            <span>{{ $t('registerElectionDay') }}</span
+            ><span>{{ info.register.election_day ? $t('yes') : $t('no') }}</span>
           </div>
 
           <!-- Register online -->
           <div class="register-faq" v-if="'online' in info.register">
-            <span>Can I register online?</span
-            ><span>{{ info.register.online ? 'Yes' : 'No' }}</span>
+            <span>{{ $t('registerOnlineQ') }}</span
+            ><span>{{ info.register.online ? $t('yes') : $t('no') }}</span>
           </div>
 
           <!-- Youth -->
           <CaliSpecial v-if="usaCode === 'ca'" />
           <div v-else-if="info.register.youth" class="register-info">
             <span>{{ info.register.youth }} </span>
-            <cv-link :href="info.register.youth_link || info.register.online_link" target="_blank"
-              >Register</cv-link
+            <cv-link
+              :inline="true"
+              :href="info.register.youth_link || info.register.online_link"
+              target="_blank"
+              >{{ $t('register') }}</cv-link
             >
           </div>
           <div v-else class="register-info">
-            <div>Aged 17-18? You might be able to preregister to vote</div>
+            <div>{{ $t('registerYouthQ') }}</div>
             <i18n path="registerYouth_3">
               <template v-slot:state>
                 <cv-link
+                  :inline="true"
                   href="https://www.ncsl.org/research/elections-and-campaigns/preregistration-for-young-voters.aspx"
                   target="_blank"
                   >{{ $t('registerYouth_3a') }}</cv-link
@@ -94,7 +102,9 @@
           <!-- Formerly incarcerated-->
           <div class="register-info">
             <span>{{ felonText }} </span>
-            <cv-link :href="felonLink" target="_blank">More information</cv-link>
+            <cv-link :inline="true" :href="felonLink" target="_blank">{{
+              $t('moreInformation')
+            }}</cv-link>
           </div>
         </div>
       </aside>
@@ -132,7 +142,7 @@ export default {
       registered: (state) => Boolean(state.user.info?.registered === 'midterm-2022'),
     }),
     info() {
-      const code = this.usaCode.toLowerCase();
+      const code = this.usaCode?.toLowerCase() || 'unknown';
       return electionInfo[code] || { register: { territory: true } };
     },
     checkRegLink() {

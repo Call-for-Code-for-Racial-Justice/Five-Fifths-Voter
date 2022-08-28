@@ -13,6 +13,36 @@ const getters = {};
 // actions
 const actions = {
   async getApproxLocation({ commit, state }) {
+    // sample data
+    // {
+    //     "ip": "10.x.x.x",
+    //     "network": "10.x.x.0/23",
+    //     "version": "IPv4",
+    //     "city": "Liberty",
+    //     "region": "South Carolina",
+    //     "region_code": "SC",
+    //     "country": "US",
+    //     "country_name": "United States",
+    //     "country_code": "US",
+    //     "country_code_iso3": "USA",
+    //     "country_capital": "Washington",
+    //     "country_tld": ".us",
+    //     "continent_code": "NA",
+    //     "in_eu": false,
+    //     "postal": "29657",
+    //     "latitude": 34.7846,
+    //     "longitude": -82.6942,
+    //     "timezone": "America/New_York",
+    //     "utc_offset": "-0400",
+    //     "country_calling_code": "+1",
+    //     "currency": "USD",
+    //     "currency_name": "Dollar",
+    //     "languages": "en-US,es-US,haw,fr",
+    //     "country_area": 9629091.0,
+    //     "country_population": 327167434,
+    //     "asn": "AS20115",
+    //     "org": "CHARTER-20115"
+    // }
     if (state.info.location) return state.info.location;
     commit('loadInfo');
     if (state.info.location) return state.info.location;
@@ -26,7 +56,7 @@ const actions = {
 // mutations
 const mutations = {
   setLocation(state, data) {
-    if (data.region !== state.info.location.region) {
+    if (data.region !== state.info?.location?.region) {
       state.info.location = data;
       localStorage.setItem('user', JSON.stringify(state.info));
     }
