@@ -5,7 +5,7 @@
         <div class="aside__container--text">
           <select-state />
           <cv-checkbox
-            label="Already registered?"
+            :label="$t('registerAlready')"
             value="checked-registered"
             :checked="registered"
             @change="onRegistered"
@@ -25,18 +25,7 @@
             {{ $t('registerDesc') }}
           </p>
 
-          <div v-if="info.register.territory" class="register-info">
-            <span>{{ $t('registerLiveInUsTerritory') }}</span>
-            <cv-link :inline="true" href="https://www.usa.gov/who-can-vote" target="_blank">{{
-              $t('registerTerritories')
-            }}</cv-link>
-            <cv-link
-              :inline="true"
-              href="https://en.wikipedia.org/wiki/Federal_voting_rights_in_Puerto_Rico"
-              target="_blank"
-              >{{ $t('registerTerritoryCitizensRights') }}</cv-link
-            >
-          </div>
+          <territory-info v-if="info.register.territory" />
 
           <!-- registration deadline -->
           <div class="register-info" v-if="info.register.deadline_in_person">
@@ -127,11 +116,12 @@ import { mapState } from 'vuex';
 import SelectState from '@/views/JourneyPage/SelectState';
 import CaliSpecial from '@/components/Register/CaliSpecial';
 import electionInfo from '@/data/usa-2022-midterms-info.json';
-import { DateTime } from 'luxon';
+import dateFormater from '@/api/dateFormatter';
+import TerritoryInfo from '@/views/JourneyPage/TerritoryInfo';
 
 export default {
   name: 'reg',
-  components: { SelectState, MainContent, CaliSpecial },
+  components: { TerritoryInfo, SelectState, MainContent, CaliSpecial },
   data() {
     return {};
   },
@@ -162,24 +152,8 @@ export default {
     this.$store.dispatch('getApproxLocation');
   },
   methods: {
-    daysLeft(dateStr) {
-      try {
-        const dt = DateTime.fromFormat(dateStr, 'MM/dd/yy');
-        return dt.toRelative({ unit: 'days' });
-      } catch (e) {
-        console.warn(e);
-      }
-      return dateStr;
-    },
-    niceDate(dateStr) {
-      try {
-        const dt = DateTime.fromFormat(dateStr, 'MM/dd/yy');
-        return dt.toLocaleString(DateTime.DATE_MED);
-      } catch (e) {
-        console.warn(e);
-      }
-      return dateStr;
-    },
+    daysLeft: (dateStr) => dateFormater.daysLeft(dateStr),
+    niceDate: (dateStr) => dateFormater.niceDate(dateStr),
     onRegistered(val) {
       this.$store.commit('setRegistered', val);
     },
