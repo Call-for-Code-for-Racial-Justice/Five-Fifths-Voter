@@ -3,6 +3,7 @@ const state = () => ({
   info: {
     location: null,
     registered: '',
+    requested_early: '', // Absentee ballot requested and plan to vote early are the same logic
   },
   redirected: false,
 });
@@ -63,6 +64,10 @@ const mutations = {
   },
   setRegistered(state, registered) {
     state.info.registered = registered ? 'midterm-2022' : '';
+    localStorage.setItem('user', JSON.stringify(state.info));
+  },
+  setRequested(state, requested) {
+    state.info.requested_early = requested ? 'midterm-2022' : '';
     localStorage.setItem('user', JSON.stringify(state.info));
   },
   setRedirected(state, redirected) {

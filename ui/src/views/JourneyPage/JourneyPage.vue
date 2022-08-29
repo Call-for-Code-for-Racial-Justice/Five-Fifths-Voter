@@ -79,15 +79,20 @@ export default {
   computed: {
     ...mapState({
       registered: (state) => Boolean(state.user.info?.registered === 'midterm-2022'),
+      requested: (state) => Boolean(state.user.info?.requested_early === 'midterm-2022'),
     }),
   },
   watch: {
     registered() {
       if (this.registered && this.which === 'register') this.which = 'absentee';
     },
+    requested() {
+      if (this.requested && this.which === 'absentee') this.which = 'vote-now';
+    },
   },
   created() {
     if (this.registered && this.which === 'register') this.which = 'absentee';
+    else if (this.registered && this.which === 'absentee') this.which = 'vote-now';
   },
   methods: {},
   errorCaptured(err, vm, info) {
