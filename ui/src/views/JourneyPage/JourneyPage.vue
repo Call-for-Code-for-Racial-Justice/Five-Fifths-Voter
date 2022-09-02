@@ -20,11 +20,11 @@
         <Current v-if="which === 'absentee'" /> {{ $t('journeyPageBallotLabel') }}
       </cv-link>
       <cv-link
-        @click="which = 'vote-now'"
+        @click="which = 'get-informed'"
         :aria-label="$t('journeyPageGetInformedAriaLabel')"
-        :aria-selected="which === 'vote-now'"
+        :aria-selected="which === 'get-informed'"
       >
-        <Current v-if="which === 'vote-now'" /> {{ $t('journeyPageGetInformedLabel') }}
+        <Current v-if="which === 'get-informed'" /> {{ $t('journeyPageGetInformedLabel') }}
       </cv-link>
       <cv-link
         @click="which = 'early-voting'"
@@ -44,7 +44,7 @@
 
     <Register v-if="which === 'register'" />
     <Absentee v-else-if="which === 'absentee'" />
-    <VoteNow v-else-if="which === 'vote-now'" />
+    <get-informed v-else-if="which === 'get-informed'" />
     <EarlyVoting v-else-if="which === 'early-voting'" />
     <BallotReturn v-else-if="which === 'ballot-return'" />
   </PageLayout>
@@ -55,7 +55,7 @@ import Register from '../../components/Register';
 import Absentee from '../../components/Absentee';
 import EarlyVoting from '../../components/EarlyVoting';
 import BallotReturn from '../../components/BallotReturn';
-import VoteNow from '../../components/VoteNow';
+import GetInformed from '../../components/GetInformed';
 import PageLayout from '../../components/PageLayout';
 import { CaretRight16 } from '@carbon/icons-vue';
 import { mapState } from 'vuex';
@@ -67,7 +67,7 @@ export default {
     Absentee,
     EarlyVoting,
     BallotReturn,
-    VoteNow,
+    GetInformed,
     PageLayout,
     Current: CaretRight16,
   },
@@ -79,20 +79,22 @@ export default {
   computed: {
     ...mapState({
       registered: (state) => Boolean(state.user.info?.registered === 'midterm-2022'),
-      requested: (state) => Boolean(state.user.info?.requested_early === 'midterm-2022'),
+      absentee: (state) => Boolean(state.user.info?.requested_early === 'midterm-2022'),
     }),
   },
   watch: {
     registered() {
+      console.log(this.registered, this.which);
       if (this.registered && this.which === 'register') this.which = 'absentee';
     },
-    requested() {
-      if (this.requested && this.which === 'absentee') this.which = 'vote-now';
+    absentee() {
+      console.log(this.absentee, this.which);
+      if (this.absentee && this.which === 'absentee') this.which = 'get-informed';
     },
   },
   created() {
     if (this.registered && this.which === 'register') this.which = 'absentee';
-    else if (this.registered && this.which === 'absentee') this.which = 'vote-now';
+    else if (this.registered && this.which === 'absentee') this.which = 'get-informed';
   },
   methods: {},
   errorCaptured(err, vm, info) {

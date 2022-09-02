@@ -116,7 +116,7 @@ import { mapState } from 'vuex';
 import SelectState from '@/views/JourneyPage/SelectState';
 import CaliSpecial from '@/components/Register/CaliSpecial';
 import electionInfo from '@/data/usa-2022-midterms-info.json';
-import dateFormater from '@/api/dateFormatter';
+import dateFormatter from '@/api/dateFormatter';
 import TerritoryInfo from '@/views/JourneyPage/TerritoryInfo';
 
 export default {
@@ -152,8 +152,8 @@ export default {
     this.$store.dispatch('getApproxLocation');
   },
   methods: {
-    daysLeft: (dateStr) => dateFormater.daysLeft(dateStr),
-    niceDate: (dateStr) => dateFormater.niceDate(dateStr),
+    daysLeft: (dateStr) => dateFormatter.daysLeft(dateStr),
+    niceDate: (dateStr) => dateFormatter.niceDate(dateStr),
     onRegistered(val) {
       this.$store.commit('setRegistered', val);
     },

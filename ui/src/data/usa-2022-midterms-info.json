@@ -28,23 +28,68 @@
         "answer": "https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting"
       }
     ],
-    "core_races": {
-      "id": "nDER",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Attorney General",
-        "Secretary of State",
-        "Treasurer",
-        "Auditor",
-        "State Board of Education",
-        "Commissioner of Agriculture and Industries",
-        "Agriculture Commissioner",
-        "Public Service Commissioner",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "7Z2s",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "MWh8",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "fp9b",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "s313",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "V459",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "j2yU",
+        "office": "Auditor",
+        "candidates": []
+      },
+      {
+        "id": "drCU",
+        "office": "State Board of Education",
+        "candidates": []
+      },
+      {
+        "id": "7FWx",
+        "office": "Commissioner of Agriculture and Industries",
+        "candidates": []
+      },
+      {
+        "id": "8o3V",
+        "office": "Agriculture Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "np4i",
+        "office": "Public Service Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "3L3Y",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "rb1E",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "DV5E",
       "election_day": false,
@@ -100,15 +145,28 @@
         "answer": "https://www.elections.alaska.gov/Core/absenteeearlyandinpersonvoting.php"
       }
     ],
-    "core_races": {
-      "id": "sFkK",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "QVAu",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "W5Vj",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "a7kY",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "vvNf",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "ty4M",
       "election_day": false,
@@ -164,20 +222,53 @@
         "answer": "https://www.azcleanelections.gov/how-to-vote/early-voting/in-person"
       }
     ],
-    "core_races": {
-      "id": "tBW7",
-      "answer": [
-        "Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Superintendent of Public Instruction",
-        "Corporation Commission",
-        "Mine Inspector",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "fxXq",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "HRuG",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "PrjL",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "zHiP",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "LRbw",
+        "office": "Superintendent of Public Instruction",
+        "candidates": []
+      },
+      {
+        "id": "4NAC",
+        "office": "Corporation Commission",
+        "candidates": []
+      },
+      {
+        "id": "YYX6",
+        "office": "Mine Inspector",
+        "candidates": []
+      },
+      {
+        "id": "jxcw",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "bMcK",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "LYgW",
       "election_day": false,
@@ -232,20 +323,53 @@
         "answer": "https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/voting-in-arkansas"
       }
     ],
-    "core_races": {
-      "id": "mmc1",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Auditor",
-        "Public Lands Commissioner",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "nXKq",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "3qt1",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "owXE",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "8yjq",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "j8H2",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "byfs",
+        "office": "Auditor",
+        "candidates": []
+      },
+      {
+        "id": "mvor",
+        "office": "Public Lands Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "c788",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "qx1J",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "QCvG",
       "election_day": false,
@@ -300,22 +424,63 @@
         "answer": "https://www.sos.ca.gov/elections/voting-info/ways-vote"
       }
     ],
-    "core_races": {
-      "id": "HD8r",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Controller",
-        "Superintendent of Public Instruction",
-        "State Board of Equalization",
-        "Insurance Commissioner",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "uf5u",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "e8Sp",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "dZt7",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "ayEe",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "ch4x",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "MhtE",
+        "office": "Controller",
+        "candidates": []
+      },
+      {
+        "id": "rkWp",
+        "office": "Superintendent of Public Instruction",
+        "candidates": []
+      },
+      {
+        "id": "q1CR",
+        "office": "State Board of Equalization",
+        "candidates": []
+      },
+      {
+        "id": "xo9z",
+        "office": "Insurance Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "QXnr",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "EesM",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "aLSB",
       "election_day": true,
@@ -371,19 +536,48 @@
         "answer": "N/A"
       }
     ],
-    "core_races": {
-      "id": "aTww",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "State Board of Education",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "SuRA",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "ma1E",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "qW88",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "cjns",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "KGKy",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "hjYN",
+        "office": "State Board of Education",
+        "candidates": []
+      },
+      {
+        "id": "fsdp",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "1jSb",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "qWgB",
       "election_day": true,
@@ -439,19 +633,48 @@
         "answer": "https://portal.ct.gov/SOTS/Election-Services/Voter-Information/Absentee-Ballot-Process"
       }
     ],
-    "core_races": {
-      "id": "9T3a",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Comptroller",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "UHpr",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "vhvq",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "pWhh",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "CY2F",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "CAQP",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "7FDy",
+        "office": "Comptroller",
+        "candidates": []
+      },
+      {
+        "id": "aZXu",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "UWce",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "s1mZ",
       "election_day": true,
@@ -506,15 +729,28 @@
         "answer": "N/A"
       }
     ],
-    "core_races": {
-      "id": "1jMp",
-      "answer": [
-        "Attorney General",
-        "Treasurer",
-        "Auditor",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "RtS4",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "245W",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "UJ7W",
+        "office": "Auditor",
+        "candidates": []
+      },
+      {
+        "id": "qxED",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "vHhe",
       "election_day": false,
@@ -570,14 +806,23 @@
         "answer": "https://earlyvoting.dcboe.org/"
       }
     ],
-    "core_races": {
-      "id": "oieX",
-      "answer": [
-        "Mayor",
-        "Attorney General",
-        "City Council"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "Xs5i",
+        "office": "Mayor",
+        "candidates": []
+      },
+      {
+        "id": "1Q5Q",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "cfry",
+        "office": "City Council",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "KeDj",
       "election_day": true,
@@ -633,18 +878,43 @@
         "answer": "https://dos.myflorida.com/elections/for-voters/voting/early-voting-and-drop-boxes/"
       }
     ],
-    "core_races": {
-      "id": "seqT",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Attorney General",
-        "Chief Financial Officer",
-        "Agriculture Commissioner",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "LVmv",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "566x",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "VFiP",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "zmMs",
+        "office": "Chief Financial Officer",
+        "candidates": []
+      },
+      {
+        "id": "jrf4",
+        "office": "Agriculture Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "VMLY",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "2iaa",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "686Z",
       "election_day": false,
@@ -673,6 +943,7 @@
   },
   "ga": {
     "region": "Georgia",
+    "sample_ballot": "The exact candidates can be found on **your** customized [sample ballot for the upcoming election](https://mvp.sos.ga.gov/s/).",
     "early_voting_faq": [
       {
         "id": "8oME",
@@ -700,21 +971,352 @@
         "answer": "https://sos.ga.gov/index.php/Elections/absentee_voting_in_georgia"
       }
     ],
-    "core_races": {
-      "id": "y8Ax",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Superintendent of Public Instruction",
-        "Agriculture Commissioner",
-        "Labor Commissioner",
-        "Insurance Commissioner",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "9qz6",
+        "office": "Governor",
+        "candidates": [
+          {
+            "name": "Brian Kemp",
+            "party": "Republican",
+            "candidateUrl": "https://ballotpedia.org/Brian_Kemp",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/GovKemp"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/GovKemp"
+              },
+              {
+                "type": "YouTube",
+                "id": "https://www.youtube.com/channel/UC1OZbue6-tnDSrHzDG0rVxA"
+              },
+              { "type": "Instagram", "id": "https://www.instagram.com/govkemp" }
+            ],
+            "id": "3lY2fn"
+          },
+          {
+            "name": "Stacey Abrams",
+            "party": "Democrat",
+            "candidateUrl": "https://ballotpedia.org/Stacey_Abrams",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/StaceyAbramsGA"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/staceyabrams"
+              },
+              {
+                "type": "YouTube",
+                "id": "https://www.youtube.com/channel/UCPjnB2FdBAvJp2fKOGzJHww"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/staceyabrams"
+              }
+            ],
+            "id": "xuY6z8"
+          },
+          {
+            "name": "Shane Hazel",
+            "party": "Libertarian",
+            "candidateUrl": "https://ballotpedia.org/Shane_Hazel",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/shanehazelga/"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/ShaneTHazel"
+              },
+              {
+                "type": "YouTube",
+                "id": "https://www.youtube.com/user/shanehazel1"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/shanethazel/"
+              }
+            ],
+            "id": "s0CHAt"
+          },
+          {
+            "name": "Elbert Bartell",
+            "party": "Independent",
+            "candidateUrl": "https://ballotpedia.org/Elbert_Bartell",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/albartellusa"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/BartellforGov"
+              },
+              {
+                "type": "YouTube",
+                "id": "https://www.youtube.com/channel/UCyXnWJDM7D-gLXsqmZBfaqQ"
+              },
+              {
+                "type": "LinkedIn",
+                "id": "https://www.linkedin.com/in/al-bartell-4172b919a"
+              }
+            ],
+            "id": "htrTkF"
+          }
+        ]
+      },
+      {
+        "id": "hJNp",
+        "office": "Lieutenant Governor",
+        "candidates": [
+          {
+            "name": "Charlie Bailey",
+            "party": "Democrat",
+            "candidateUrl": "https://ballotpedia.org/Charlie_Bailey",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/CharlieBaileyforLG"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/charlie4georgia"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://instagram.com/charlie4georgia"
+              }
+            ],
+            "id": "ahNlkM"
+          },
+          {
+            "name": "Burt Jones",
+            "party": "Republican",
+            "candidateUrl": "https://ballotpedia.org/Burt_Jones",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/burtjonesforga"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/burtjonesforga"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/burtjonesga/"
+              }
+            ],
+            "id": "SrNxlI"
+          }
+        ]
+      },
+      {
+        "id": "ove3",
+        "office": "Secretary of State",
+        "candidates": [
+          {
+            "name": "Brad Raffensperger",
+            "party": "Republican",
+            "candidateUrl": "https://ballotpedia.org/Brad_Raffensperger",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/BradForGeorgiaSOS"
+              },
+              {
+                "type": "YouTube",
+                "id": "https://www.youtube.com/channel/UCHlO8WB8V0GQ4tnMIr5KItA"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/secretarybradraffensperger"
+              }
+            ],
+            "id": "KaahNl"
+          },
+          {
+            "name": "Bee Nguyen",
+            "party": "Democrat",
+            "candidateUrl": "https://ballotpedia.org/Bee_Nguyen",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/beeforgeorgia/"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/beeforgeorgia?lang=en"
+              },
+              {
+                "type": "YouTube",
+                "id": "https://www.youtube.com/channel/UC5CskU43dp9b7y6-0gYJZVg"
+              },
+              {
+                "type": "Instagram",
+                "id": "http://instagram.com/beeforgeorgia"
+              }
+            ],
+            "id": "uUtwQq"
+          },
+          {
+            "name": "Ted Metz",
+            "party": "Libertarian",
+            "candidateUrl": "https://ballotpedia.org/Ted_Metz",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/ted.metz.31"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/tedmetz"
+              },
+              {
+                "type": "LinkedIn",
+                "id": "https://www.linkedin.com/in/tedmetz"
+              }
+            ],
+            "id": "DCROQt"
+          }
+        ]
+      },
+      {
+        "id": "ssDT",
+        "office": "Attorney General",
+        "candidates": [
+          {
+            "name": "Chris Carr",
+            "party": "Republican",
+            "candidateUrl": "https://ballotpedia.org/Chris_Carr_(Georgia)",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/attorneygeneralchriscarr"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/ChrisCarr_Ga"
+              }
+            ],
+            "id": "tLYbUu"
+          },
+          {
+            "name": "Jen Jordan",
+            "party": "Democrat",
+            "candidateUrl": "https://ballotpedia.org/Jen_Jordan",
+            "channels": [
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/senatorjen"
+              },
+              {
+                "type": "YouTube",
+                "id": "https://www.youtube.com/channel/UCoGXaUyBXY6SSqOpHu647ug"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/senatorjen"
+              }
+            ],
+            "id": "M5mNK0"
+          },
+          {
+            "name": "Martin Cowen",
+            "party": "Libertarian",
+            "candidateUrl": "https://ballotpedia.org/Martin_Cowen",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/martin.cowen.9843"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://mobile.twitter.com/mlcowen"
+              },
+              {
+                "type": "LinkedIn",
+                "id": "https://www.linkedin.com/in/martin-cowen-b133a316"
+              }
+            ],
+            "id": "DCROQt"
+          }
+        ]
+      },
+      {
+        "id": "cFti",
+        "office": "Superintendent of Public Instruction",
+        "candidates": [
+          {
+            "name": "Richard Woods",
+            "party": "Republican",
+            "candidateUrl": "https://ballotpedia.org/Richard_Woods_(Georgia)",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/woodsforsuper"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/SuptWoods"
+              },
+              {
+                "type": "LinkedIn",
+                "id": "https://www.linkedin.com/in/richard-woods-52571849"
+              }
+            ],
+            "id": "z9tQ9L"
+          },
+          {
+            "name": "Alisha Searcy",
+            "party": "Democrat",
+            "candidateUrl": "https://ballotpedia.org/Alisha_Searcy",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/SearcyforSuperintendent"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/alishamichelle227"
+              }
+            ],
+            "id": "dBDzbB"
+          }
+        ]
+      },
+      {
+        "id": "ZkT9",
+        "office": "Agriculture Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "YP4u",
+        "office": "Labor Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "PzHy",
+        "office": "Insurance Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "FsJY",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "AMqe",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "XiTN",
       "election_day": false,
@@ -776,16 +1378,33 @@
         "answer": "https://elections.hawaii.gov/voting/voting-in-hawaii/"
       }
     ],
-    "core_races": {
-      "id": "s7hV",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Office of Hawaiian Affairs",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "FhKG",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "NS4y",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "TqR7",
+        "office": "Office of Hawaiian Affairs",
+        "candidates": []
+      },
+      {
+        "id": "3nBu",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "JFTt",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "vdVR",
       "election_day": true,
@@ -840,20 +1459,53 @@
         "answer": "N/A"
       }
     ],
-    "core_races": {
-      "id": "B5cK",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Controller",
-        "Superintendent of Public Instruction",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "ArdA",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "cMJh",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "NypF",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "8sBn",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "iet3",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "DNbE",
+        "office": "Controller",
+        "candidates": []
+      },
+      {
+        "id": "Nbtq",
+        "office": "Superintendent of Public Instruction",
+        "candidates": []
+      },
+      {
+        "id": "puU4",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "3LJu",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "n7ZU",
       "election_day": true,
@@ -908,19 +1560,48 @@
         "answer": "https://elections.il.gov/votingandregistrationsystems/beforeelectionday.aspx"
       }
     ],
-    "core_races": {
-      "id": "hWe3",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Comptroller",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "qWp5",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "fbPt",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "3W1f",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "LtDX",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "KYum",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "cda9",
+        "office": "Comptroller",
+        "candidates": []
+      },
+      {
+        "id": "U79o",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "Kozj",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "oZBH",
       "election_day": true,
@@ -975,16 +1656,33 @@
         "answer": "https://www.in.gov/sos/elections/voter-information/ways-to-vote/absentee-voting/"
       }
     ],
-    "core_races": {
-      "id": "6oyu",
-      "answer": [
-        "Secretary of State",
-        "Treasurer",
-        "Auditor",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "Vdvn",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "Q6TS",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "KpF8",
+        "office": "Auditor",
+        "candidates": []
+      },
+      {
+        "id": "k7sA",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "DReG",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "HpzD",
       "election_day": false,
@@ -1039,20 +1737,53 @@
         "answer": "https://sos.iowa.gov/elections/electioninfo/absenteeinperson.html"
       }
     ],
-    "core_races": {
-      "id": "oW3c",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Auditor",
-        "Secretary of Agriculture",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "ywB8",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "iaob",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "JR76",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "W1FY",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "e5zr",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "c59T",
+        "office": "Auditor",
+        "candidates": []
+      },
+      {
+        "id": "HyG6",
+        "office": "Secretary of Agriculture",
+        "candidates": []
+      },
+      {
+        "id": "Y855",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "Fmds",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "ZVgF",
       "election_day": true,
@@ -1108,20 +1839,53 @@
         "answer": "https://kcdcinfo.ks.gov/voter-registration-and-advanced-voting"
       }
     ],
-    "core_races": {
-      "id": "CjXE",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "State Board of Education",
-        "Insurance Commissioner",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "gXHS",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "Nczc",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "QiGU",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "ggwx",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "jeKk",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "A2tL",
+        "office": "State Board of Education",
+        "candidates": []
+      },
+      {
+        "id": "E8ng",
+        "office": "Insurance Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "NhZk",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "MdLk",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "igB3",
       "election_day": false,
@@ -1177,13 +1941,18 @@
         "answer": "https://elect.ky.gov/Voters/Pages/Absentee-Voting.aspx"
       }
     ],
-    "core_races": {
-      "id": "FFaA",
-      "answer": [
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "1C45",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "NepN",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "hKPe",
       "election_day": false,
@@ -1238,14 +2007,23 @@
         "answer": "https://www.sos.la.gov/ElectionsAndVoting/Vote/VoteEarly/Pages/default.aspx"
       }
     ],
-    "core_races": {
-      "id": "JV5o",
-      "answer": [
-        "Public Service Commissioner",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "ZeMg",
+        "office": "Public Service Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "HkC4",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "JkaA",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "ZWWF",
       "election_day": false,
@@ -1300,13 +2078,18 @@
         "answer": "https://www.maine.gov/sos/cec/elec/voter-info/absenteeguide.html"
       }
     ],
-    "core_races": {
-      "id": "fp6y",
-      "answer": [
-        "Governor",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "DetC",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "zKta",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "424R",
       "election_day": true,
@@ -1362,17 +2145,38 @@
         "answer": "https://elections.maryland.gov/voting/early_voting.html"
       }
     ],
-    "core_races": {
-      "id": "w31U",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Attorney General",
-        "Comptroller",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "6zVN",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "vjYS",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "uU7V",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "K2je",
+        "office": "Comptroller",
+        "candidates": []
+      },
+      {
+        "id": "ELge",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "9LvE",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "Aqqg",
       "election_day": true,
@@ -1427,19 +2231,48 @@
         "answer": "https://www.sec.state.ma.us/ele/eleabsentee/absidx.htm"
       }
     ],
-    "core_races": {
-      "id": "DFzX",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Auditor",
-        "Governor's Council",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "U4sf",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "F4nY",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "Cn8R",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "LYAY",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "Wnrt",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "91AY",
+        "office": "Auditor",
+        "candidates": []
+      },
+      {
+        "id": "L6YV",
+        "office": "Governor's Council",
+        "candidates": []
+      },
+      {
+        "id": "gKbB",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "r7TF",
       "election_day": false,
@@ -1495,16 +2328,33 @@
         "answer": "https://mvic.sos.state.mi.us/Home/VoteAtHome"
       }
     ],
-    "core_races": {
-      "id": "YaEN",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "HLtn",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "fz1y",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "Zhah",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "9H4L",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "hN8q",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "QbXu",
       "election_day": true,
@@ -1559,17 +2409,38 @@
         "answer": "https://www.sos.state.mn.us/elections-voting/other-ways-to-vote/vote-early-in-person/"
       }
     ],
-    "core_races": {
-      "id": "CHYV",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Auditor",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "Dh1J",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "BMNu",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "pgCv",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "GFue",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "x1RN",
+        "office": "Auditor",
+        "candidates": []
+      },
+      {
+        "id": "mvxu",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "Xgme",
       "election_day": true,
@@ -1624,12 +2495,13 @@
         "answer": "https://www.sos.ms.gov/content/documents/elections/Mississippi%20Voter%20Information%20Guide%202022.pdf"
       }
     ],
-    "core_races": {
-      "id": "9DCx",
-      "answer": [
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "L3eL",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "nnB2",
       "election_day": false,
@@ -1684,14 +2556,23 @@
         "answer": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote#absentee"
       }
     ],
-    "core_races": {
-      "id": "qMhL",
-      "answer": [
-        "Auditor",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "cPMy",
+        "office": "Auditor",
+        "candidates": []
+      },
+      {
+        "id": "n89w",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "rWQq",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "VYZw",
       "election_day": false,
@@ -1747,13 +2628,18 @@
         "answer": "https://sosmt.gov/elections/faq/#absentee-voting"
       }
     ],
-    "core_races": {
-      "id": "KB3N",
-      "answer": [
-        "Public Service Commissioner",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "WPXV",
+        "office": "Public Service Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "SjC9",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "ncxp",
       "election_day": false,
@@ -1808,20 +2694,53 @@
         "answer": "https://sos.nebraska.gov/elections/early-voting"
       }
     ],
-    "core_races": {
-      "id": "MvWd",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Auditor",
-        "State Board of Education",
-        "Public Service Commissioner",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "V4rN",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "yqz9",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "N1qG",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "xD7S",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "79ah",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "gJuV",
+        "office": "Auditor",
+        "candidates": []
+      },
+      {
+        "id": "y293",
+        "office": "State Board of Education",
+        "candidates": []
+      },
+      {
+        "id": "ptrw",
+        "office": "Public Service Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "GnU7",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "sVKY",
       "election_day": false,
@@ -1876,19 +2795,48 @@
         "answer": "https://www.nvsos.gov/sos/elections/voters/early-voting-information"
       }
     ],
-    "core_races": {
-      "id": "ekG2",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Controller",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "ciah",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "X5kb",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "KRhn",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "k9YF",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "iYor",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "jVPK",
+        "office": "Controller",
+        "candidates": []
+      },
+      {
+        "id": "V7qg",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "rcZ9",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "6GTc",
       "election_day": true,
@@ -1944,15 +2892,28 @@
         "answer": "N/A"
       }
     ],
-    "core_races": {
-      "id": "JuUx",
-      "answer": [
-        "Governor",
-        "State Executive Council",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "ej9b",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "CRmz",
+        "office": "State Executive Council",
+        "candidates": []
+      },
+      {
+        "id": "iHXJ",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "XrdB",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "QFTD",
       "election_day": true,
@@ -2007,12 +2968,13 @@
         "answer": "https://www.state.nj.us/state/elections/vote-early-voting.shtml"
       }
     ],
-    "core_races": {
-      "id": "xnNc",
-      "answer": [
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "8iSW",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "TGBe",
       "election_day": false,
@@ -2067,20 +3029,53 @@
         "answer": "https://www.sos.state.nm.us/voting-and-elections/voting-faqs/early-voting-in-person/"
       }
     ],
-    "core_races": {
-      "id": "pGE5",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Auditor",
-        "Public Education Commission",
-        "Public Lands Commissioner",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "kZ7r",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "Tzd4",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "rbLv",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "hT9T",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "8vqh",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "6142",
+        "office": "Auditor",
+        "candidates": []
+      },
+      {
+        "id": "rtJC",
+        "office": "Public Education Commission",
+        "candidates": []
+      },
+      {
+        "id": "gyWg",
+        "office": "Public Lands Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "4MTe",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "MXZD",
       "election_day": true,
@@ -2136,17 +3131,38 @@
         "answer": "https://www.elections.ny.gov/VotingAbsentee.html"
       }
     ],
-    "core_races": {
-      "id": "fRvp",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Attorney General",
-        "Comptroller",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "arwJ",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "YWGK",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "mEV7",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "pjN7",
+        "office": "Comptroller",
+        "candidates": []
+      },
+      {
+        "id": "ok2z",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "UdYX",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "8Xti",
       "election_day": false,
@@ -2201,13 +3217,18 @@
         "answer": "https://www.ncsbe.gov/voting/vote-early-person"
       }
     ],
-    "core_races": {
-      "id": "FGFp",
-      "answer": [
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "rwjw",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "94Jr",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "jfzW",
       "election_day": false,
@@ -2263,18 +3284,43 @@
         "answer": "N/A"
       }
     ],
-    "core_races": {
-      "id": "WQLS",
-      "answer": [
-        "Secretary of State",
-        "Attorney General",
-        "Agriculture Commissioner",
-        "Public Service Commission",
-        "Tax Commissioner",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "7K6i",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "A79d",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "TMyo",
+        "office": "Agriculture Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "hcJQ",
+        "office": "Public Service Commission",
+        "candidates": []
+      },
+      {
+        "id": "vb4g",
+        "office": "Tax Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "bh16",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "SmmP",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "AyFN",
       "election_day": false,
@@ -2330,20 +3376,53 @@
         "answer": "https://www.ohiosos.gov/elections/voters/toolkit/early-voting/"
       }
     ],
-    "core_races": {
-      "id": "K1qK",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Auditor",
-        "State Board of Education",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "eYTG",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "wYWU",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "uFPK",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "yGR5",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "Nyi5",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "Y23q",
+        "office": "Auditor",
+        "candidates": []
+      },
+      {
+        "id": "NzXA",
+        "office": "State Board of Education",
+        "candidates": []
+      },
+      {
+        "id": "oNFu",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "TSzb",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "vvnP",
       "election_day": false,
@@ -2399,22 +3478,63 @@
         "answer": "https://oklahoma.gov/elections/voters/early-voting.html"
       }
     ],
-    "core_races": {
-      "id": "NufK",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Attorney General",
-        "Treasurer",
-        "Auditor",
-        "Superintendent of Public Instruction",
-        "Corporation Commissioner",
-        "Insurance Commissioner",
-        "Labor Commissioner",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "fbNw",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "UwEW",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "aoEP",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "tN8A",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "epT5",
+        "office": "Auditor",
+        "candidates": []
+      },
+      {
+        "id": "GGbY",
+        "office": "Superintendent of Public Instruction",
+        "candidates": []
+      },
+      {
+        "id": "JYz9",
+        "office": "Corporation Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "jt4U",
+        "office": "Insurance Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "Zyx3",
+        "office": "Labor Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "29pN",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "gNfk",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "gySv",
       "election_day": false,
@@ -2470,15 +3590,28 @@
         "answer": "N/A"
       }
     ],
-    "core_races": {
-      "id": "Cs46",
-      "answer": [
-        "Governor",
-        "Labor Commissioner",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "2h99",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "UGS6",
+        "office": "Labor Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "Yw6q",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "kLra",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "H38Y",
       "election_day": false,
@@ -2534,15 +3667,28 @@
         "answer": "https://www.vote.pa.gov/Voting-in-PA/Pages/Early-Voting.aspx"
       }
     ],
-    "core_races": {
-      "id": "6ZTE",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "DtvY",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "4RU6",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "nyVx",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "jnue",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "uyxo",
       "election_day": false,
@@ -2598,17 +3744,38 @@
         "answer": "https://vote.sos.ri.gov/Voter/PersonVotingPage"
       }
     ],
-    "core_races": {
-      "id": "38Lm",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "5X6C",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "2Kcg",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "WFnn",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "31WY",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "srhL",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "K7sN",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "s4ax",
       "election_day": false,
@@ -2663,21 +3830,58 @@
         "answer": "N/A"
       }
     ],
-    "core_races": {
-      "id": "RfW3",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "Treasurer",
-        "Comptroller",
-        "Superintendent of Education",
-        "Agriculture Commissioner",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "1vYe",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "uTMs",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "7dxx",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "oJFX",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "3j6h",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "S8rn",
+        "office": "Comptroller",
+        "candidates": []
+      },
+      {
+        "id": "y9G8",
+        "office": "Superintendent of Education",
+        "candidates": []
+      },
+      {
+        "id": "e71C",
+        "office": "Agriculture Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "6t3h",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "1ksh",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "DQQZ",
       "election_day": false,
@@ -2732,21 +3936,58 @@
         "answer": "https://sdsos.gov/elections-voting/voting/absentee-voting.aspx"
       }
     ],
-    "core_races": {
-      "id": "mx2w",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Secretary of State",
-        "Attorney General",
-        "State Auditor",
-        "State Treasurer",
-        "Public Utilities Commissioner",
-        "Commissioner of School and Public Lands",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "HrBq",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "3Zge",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "m6jW",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "MJ1b",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "2b1g",
+        "office": "State Auditor",
+        "candidates": []
+      },
+      {
+        "id": "txhc",
+        "office": "State Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "e7eL",
+        "office": "Public Utilities Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "Cx3H",
+        "office": "Commissioner of School and Public Lands",
+        "candidates": []
+      },
+      {
+        "id": "MrfS",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "twqN",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "zG7i",
       "election_day": false,
@@ -2802,13 +4043,18 @@
         "answer": "https://sos.tn.gov/elections/guides/how-to-early-vote-in-person"
       }
     ],
-    "core_races": {
-      "id": "xqFK",
-      "answer": [
-        "Governor",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "F4rq",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "qPDT",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "ZSKx",
       "election_day": false,
@@ -2863,19 +4109,48 @@
         "answer": "https://www.votetexas.gov/faq/early-voting.html"
       }
     ],
-    "core_races": {
-      "id": "FicV",
-      "answer": [
-        "Governor",
-        "Lieutenant Governor",
-        "Attorney General",
-        "Comptroller",
-        "Land Office Commissioner",
-        "Agriculture Commissioner",
-        "Railroad Commissioner",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "ZML7",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "PJXi",
+        "office": "Lieutenant Governor",
+        "candidates": []
+      },
+      {
+        "id": "5ufo",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "NbsT",
+        "office": "Comptroller",
+        "candidates": []
+      },
+      {
+        "id": "thYc",
+        "office": "Land Office Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "YhpV",
+        "office": "Agriculture Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "VhpK",
+        "office": "Railroad Commissioner",
+        "candidates": []
+      },
+      {
+        "id": "abL9",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "cumy",
       "election_day": false,
@@ -2931,14 +4206,23 @@
         "answer": "N/A"
       }
     ],
-    "core_races": {
-      "id": "rPMe",
-      "answer": [
-        "Treasurer",
-        "U.S Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "SUaW",
+        "office": "Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "X1Wi",
+        "office": "U.S Senator",
+        "candidates": []
+      },
+      {
+        "id": "m7ci",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "EFkp",
       "election_day": true,
@@ -2993,18 +4277,43 @@
         "answer": "https://sos.vermont.gov/elections/voters/early-absentee-voting/"
       }
     ],
-    "core_races": {
-      "id": "5Jid",
-      "answer": [
-        "Governor",
-        "Lieutenant governor",
-        "Secretary of State",
-        "Attorney General",
-        "State Auditor",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "M32m",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "fupo",
+        "office": "Lieutenant governor",
+        "candidates": []
+      },
+      {
+        "id": "og9K",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "c713",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "7Mzm",
+        "office": "State Auditor",
+        "candidates": []
+      },
+      {
+        "id": "dTK6",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "G3CF",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "2tMv",
       "election_day": true,
@@ -3059,12 +4368,13 @@
         "answer": "https://www.elections.virginia.gov/casting-a-ballot/absentee-voting/"
       }
     ],
-    "core_races": {
-      "id": "PXQT",
-      "answer": [
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "w8Dp",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "Kwcw",
       "election_day": false,
@@ -3120,14 +4430,23 @@
         "answer": "https://www.sos.wa.gov/elections/faq_vote_by_mail.aspx"
       }
     ],
-    "core_races": {
-      "id": "9a8F",
-      "answer": [
-        "Secretary of State",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "HKGm",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "Z1hV",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "EXeq",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "SPqK",
       "election_day": true,
@@ -3182,12 +4501,13 @@
         "answer": "http://www.wvlegislature.gov/wvcode/ChapterEntire.cfm?chap=3&art=3&section=3"
       }
     ],
-    "core_races": {
-      "id": "vAxm",
-      "answer": [
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "rZEH",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "wD36",
       "election_day": false,
@@ -3243,18 +4563,43 @@
         "answer": "https://my.lwv.org/wisconsin/local-absentee-ballot-return-and-early-voting-locations"
       }
     ],
-    "core_races": {
-      "id": "v9ZR",
-      "answer": [
-        "Governor",
-        "Lieutenant governor",
-        "Attorney General",
-        "Secretary of State",
-        "State Treasurer",
-        "U.S. Senator",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "QS51",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "hs5k",
+        "office": "Lieutenant governor",
+        "candidates": []
+      },
+      {
+        "id": "zS7W",
+        "office": "Attorney General",
+        "candidates": []
+      },
+      {
+        "id": "37Rt",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "2EWu",
+        "office": "State Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "fg4W",
+        "office": "U.S. Senator",
+        "candidates": []
+      },
+      {
+        "id": "NWCX",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "Kjwi",
       "election_day": true,
@@ -3310,17 +4655,38 @@
         "answer": "N/A"
       }
     ],
-    "core_races": {
-      "id": "4ShE",
-      "answer": [
-        "Governor",
-        "Secretary of State",
-        "State Auditor",
-        "State Treasurer",
-        "Superintendent of Public Instruction",
-        "U.S. House of Representatives"
-      ]
-    },
+    "core_races": [
+      {
+        "id": "KwTX",
+        "office": "Governor",
+        "candidates": []
+      },
+      {
+        "id": "iHF2",
+        "office": "Secretary of State",
+        "candidates": []
+      },
+      {
+        "id": "YVmM",
+        "office": "State Auditor",
+        "candidates": []
+      },
+      {
+        "id": "RcZ3",
+        "office": "State Treasurer",
+        "candidates": []
+      },
+      {
+        "id": "LCDT",
+        "office": "Superintendent of Public Instruction",
+        "candidates": []
+      },
+      {
+        "id": "PTzE",
+        "office": "U.S. House of Representatives",
+        "candidates": []
+      }
+    ],
     "register": {
       "id": "3Rwt",
       "election_day": true,

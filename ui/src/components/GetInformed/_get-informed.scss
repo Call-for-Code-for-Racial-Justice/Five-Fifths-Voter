@@ -1,0 +1,22 @@
+@import '@/styles/_theme.scss';
+@import 'carbon-components/scss/components/accordion/accordion';
+
+.candidate {
+  @include type-style('body-short-02');
+  margin-top: 0.5rem;
+
+  .cv-link {
+    @include type-style('body-short-02');
+    margin-left: 0.5rem;
+    color: $text-on-color !important;
+  }
+  span {
+    margin-left: 0.5rem;
+    font-weight: 800;
+    color: $text-error;
+  }
+  svg {
+    position: relative;
+    bottom: -8px;
+  }
+}

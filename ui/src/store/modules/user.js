@@ -1,3 +1,4 @@
+import Vue from 'vue';
 // initial state
 const state = () => ({
   info: {
@@ -63,11 +64,11 @@ const mutations = {
     }
   },
   setRegistered(state, registered) {
-    state.info.registered = registered ? 'midterm-2022' : '';
+    Vue.set(state.info, 'registered', registered ? 'midterm-2022' : '');
     localStorage.setItem('user', JSON.stringify(state.info));
   },
   setRequested(state, requested) {
-    state.info.requested_early = requested ? 'midterm-2022' : '';
+    Vue.set(state.info, 'requested_early', requested ? 'midterm-2022' : '');
     localStorage.setItem('user', JSON.stringify(state.info));
   },
   setRedirected(state, redirected) {
