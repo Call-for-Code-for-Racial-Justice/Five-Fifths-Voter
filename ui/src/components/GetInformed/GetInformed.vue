@@ -13,10 +13,20 @@
             <span>These are the top contests in your state.</span>
             <mark-down v-if="info.sample_ballot" :content="info.sample_ballot" />
           </div>
-          <cv-accordion>
+          <cv-accordion class="candidate__accordion">
             <cv-accordion-item v-for="c in info.core_races" :key="c.id" :open="open === c.id">
               <template v-slot:title>{{ c.office }} </template>
-              <template v-slot:content v-if="c.candidates.length === 0">
+              <template v-slot:content v-if="c.districts">
+                <find-cong v-if="c.find_cong_district" :district="c.find_cong_district" />
+                <div
+                  class="candidate"
+                  v-for="district in c.districts"
+                  :key="`${c.id}-${district.name}`"
+                >
+                  <cv-link :href="district.link" target="_blank">{{ district.name }}</cv-link>
+                </div>
+              </template>
+              <template v-slot:content v-else-if="c.candidates.length === 0">
                 <cv-link :href="`https://www.vote411.org/${usaState}`" target="_blank"
                   >More information about candidates</cv-link
                 >
@@ -114,10 +124,12 @@ import {
   LogoInstagram32,
   LogoLinkedin32,
 } from '@carbon/icons-vue';
+import FindCong from '@/components/GetInformed/FindCong';
 
 export default {
   name: 'GetInformed',
   components: {
+    FindCong,
     MainContent,
     SelectState,
     MarkDown,

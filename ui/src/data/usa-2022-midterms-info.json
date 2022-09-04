@@ -973,8 +973,8 @@
     ],
     "core_races": [
       {
-        "id": "9qz6",
         "office": "Governor",
+        "id": "9qz6",
         "candidates": [
           {
             "name": "Brian Kemp",
@@ -1070,6 +1070,76 @@
             "id": "htrTkF"
           }
         ]
+      },
+      {
+        "office": "U.S. Senator",
+        "candidates": [
+          {
+            "name": "Raphael Warnock",
+            "party": "Democrat",
+            "candidateUrl": "https://ballotpedia.org/Raphael_Warnock",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/RaphaelWarnock"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/RaphaelWarnock"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/raphaelwarnock"
+              },
+              {
+                "type": "YouTube",
+                "id": "https://www.youtube.com/channel/UCEARDmtU8htGQ_hqviHGrVA"
+              }
+            ],
+            "id": "tuHffG"
+          },
+          {
+            "name": "Herschel Walker",
+            "party": "Republican",
+            "candidateUrl": "https://ballotpedia.org/Herschel_Walker",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/TeamHerschel"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/HerschelWalker"
+              },
+              {
+                "type": "YouTube",
+                "id": "https://www.youtube.com/channel/UCRA3XGgTqmk0CEOdyh8XqrQ"
+              }
+            ],
+            "id": "5TBuyR"
+          },
+          {
+            "name": "Chase Oliver",
+            "party": "Libertarian",
+            "candidateUrl": "https://ballotpedia.org/Chase_Oliver",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/chasethelibertarian"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/chaseforliberty"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/chaseforgeorgia/"
+              }
+            ],
+            "id": "AEndfL"
+          }
+        ],
+        "id": "FsJY"
       },
       {
         "id": "hJNp",
@@ -1183,7 +1253,7 @@
                 "id": "https://www.linkedin.com/in/tedmetz"
               }
             ],
-            "id": "DCROQt"
+            "id": "0PAZQt"
           }
         ]
       },
@@ -1294,27 +1364,243 @@
       {
         "id": "ZkT9",
         "office": "Agriculture Commissioner",
-        "candidates": []
+        "candidates": [
+          {
+            "name": "Nakita Hemingway",
+            "party": "Democrat",
+            "candidateUrl": "https://ballotpedia.org/Nakita_Hemingway",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/NAKITA4GEORGIA/"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/nakitahemingway"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/nakitahemingway/"
+              }
+            ],
+            "id": "daDMRR"
+          },
+          {
+            "name": "Tyler Harper",
+            "party": "Republican",
+            "candidateUrl": "https://ballotpedia.org/Tyler_Harper",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/TylerHarperForGeorgia"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/TylerHarperGA"
+              },
+              {
+                "type": "LinkedIn",
+                "id": "https://www.linkedin.com/in/tyler-harper-31a175104"
+              }
+            ],
+            "id": "h2KDzo"
+          },
+          {
+            "name": "David Raudabaugh",
+            "party": "Libertarian",
+            "candidateUrl": "https://ballotpedia.org/David_Raudabaugh",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/profile.php?id=100079570715128"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/JointdecisionGA"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/jointdecisionforga/"
+              },
+              {
+                "type": "YouTube",
+                "id": "https://www.youtube.com/channel/UCDjS17Aqxv-IroowJmAN2PA"
+              }
+            ],
+            "id": "X8A5RH"
+          },
+          {
+            "name": "Mollie Beavers",
+            "party": "Independent",
+            "candidateUrl": "https://ballotpedia.org/Mollie_Beavers",
+            "channels": [
+              {
+                "type": "YouTube",
+                "id": "https://www.youtube.com/channel/UCw7gpzd8PnY4lZUXm9XNlcg"
+              }
+            ],
+            "id": "Ip5i06"
+          }
+        ]
       },
       {
         "id": "YP4u",
         "office": "Labor Commissioner",
-        "candidates": []
+        "candidates": [
+          {
+            "name": "William Boddie",
+            "party": "Democrat",
+            "candidateUrl": "https://ballotpedia.org/William_Boddie",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/BoddieforGA/"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/boddieforga"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/boddieforga/"
+              }
+            ],
+            "id": "ZOK9eH"
+          },
+          {
+            "name": "Bruce Thompson",
+            "party": "Republican",
+            "candidateUrl": "https://ballotpedia.org/Bruce_Thompson_(Georgia)",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/brucethompsonga/"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/BruceThompsonGA/"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/brucethompsonga/"
+              }
+            ],
+            "id": "o5rIYU"
+          },
+          {
+            "name": "Emily Anderson",
+            "party": "Libertarian",
+            "candidateUrl": "https://ballotpedia.org/Emily_Anderson_(Georgia)",
+            "channels": [],
+            "id": "tQj16C"
+          }
+        ]
       },
       {
         "id": "PzHy",
         "office": "Insurance Commissioner",
-        "candidates": []
+        "candidates": [
+          {
+            "name": "John King",
+            "party": "Republican",
+            "candidateUrl": "https://ballotpedia.org/John_King_(Georgia)",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/generaljohnking/"
+              }
+            ],
+            "id": "d0wNhp"
+          },
+          {
+            "name": "Janice Laws Robinson",
+            "party": "Democrat",
+            "candidateUrl": "https://ballotpedia.org/Janice_Laws_Robinson",
+            "channels": [
+              {
+                "type": "Facebook",
+                "id": "https://www.facebook.com/janiceforgeorgia"
+              },
+              {
+                "type": "Twitter",
+                "id": "https://twitter.com/JaniceForGA"
+              },
+              {
+                "type": "Instagram",
+                "id": "https://www.instagram.com/janiceforGeorgia"
+              }
+            ],
+            "id": "Cp9MQS"
+          }
+        ]
       },
-      {
-        "id": "FsJY",
-        "office": "U.S. Senator",
-        "candidates": []
-      },
+
       {
         "id": "AMqe",
         "office": "U.S. House of Representatives",
-        "candidates": []
+        "candidates": [],
+        "find_cong_district": {
+          "image": "/images/WhatsMyGaCongressionalDistrict.gif",
+          "instructions": "To find your congressional district, login to [My Voter Page](https://mvp.sos.ga.gov/s/) with your name, county and birthday. Scroll to \"View/Print Precinct Card\" and clink the link. A PDF will open and your congressional district will show as \"CONG\". The example shows a voter in \"CONG\" district 6. "
+        },
+        "districts": [
+          {
+            "name": "District 1",
+            "link": "https://ballotpedia.org/Georgia%27s_1st_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 2",
+            "link": "https://ballotpedia.org/Georgia%27s_2nd_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 3",
+            "link": "https://ballotpedia.org/Georgia%27s_3rd_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 4",
+            "link": "https://ballotpedia.org/Georgia%27s_4th_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 5",
+            "link": "https://ballotpedia.org/Georgia%27s_5th_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 6",
+            "link": "https://ballotpedia.org/Georgia%27s_6th_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 7",
+            "link": "htthttps://ballotpedia.org/Georgia%27s_7th_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 8",
+            "link": "https://ballotpedia.org/Georgia%27s_8th_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 9",
+            "link": "https://ballotpedia.org/Georgia%27s_9th_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 10",
+            "link": "https://ballotpedia.org/Georgia%27s_10th_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 11",
+            "link": "https://ballotpedia.org/Georgia%27s_11th_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 12",
+            "link": "https://ballotpedia.org/Georgia%27s_12th_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 13",
+            "link": "https://ballotpedia.org/Georgia%27s_13th_Congressional_District_election,_2022"
+          },
+          {
+            "name": "District 14",
+            "link": "https://ballotpedia.org/Georgia%27s_14th_Congressional_District_election,_2022"
+          }
+        ]
       }
     ],
     "register": {

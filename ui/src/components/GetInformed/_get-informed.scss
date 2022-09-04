@@ -19,4 +19,9 @@
     position: relative;
     bottom: -8px;
   }
+  &__accordion {
+    .bx--accordion__content {
+      padding-right: 1rem;
+    }
+  }
 }
