@@ -10,7 +10,7 @@
           <territory-info v-if="info.territory" />
 
           <div class="register-info">
-            <span>These are the top contests in your state.</span>
+            <span>{{ $t('getInformedTopContests') }}</span>
             <mark-down v-if="info.sample_ballot" :content="info.sample_ballot" />
           </div>
           <cv-accordion class="candidate__accordion">
@@ -27,9 +27,9 @@
                 </div>
               </template>
               <template v-slot:content v-else-if="c.candidates.length === 0">
-                <cv-link :href="`https://www.vote411.org/${usaState}`" target="_blank"
-                  >More information about candidates</cv-link
-                >
+                <cv-link :href="`https://www.vote411.org/${usaState}`" target="_blank">{{
+                  $t('getInformedMoreInfo')
+                }}</cv-link>
               </template>
               <template v-slot:content v-else>
                 <div class="candidate" v-for="candidate in c.candidates" :key="candidate.id">
@@ -108,14 +108,43 @@
 <script>
 import SelectState from '@/views/JourneyPage/SelectState';
 import { MarkDown } from '@/components/MarkDown';
-import axios from 'axios';
 import MainContent from '../../components/MainContent';
-import router from '../../router';
 import { mapState } from 'vuex';
+
+//TODO move these somewhere else
+/**
+ * @typedef {Object} candidateInfo
+ * @property {!string} name
+ * @property {!string} party
+ * @property {!string} candidateUrl
+ * @property {Array} channels
+ */
+
+/**
+ * @typedef {Object} contestInfo
+ * @property {!string} office
+ * @property {!string} id
+ * @property {?Object} find_cong_district
+ * @property {Array<candidateInfo>} candidates
+ */
+
+/**
+ * @typedef {Object} regionInfo
+ * @property {?boolean} territory
+ * @property {?string }region
+ * @property {?string} sample_ballot
+ * @property {Array} districts
+ * @property {Array<contestInfo>} core_races
+ */
+
+/**
+ * @typedef {Object<string,regionInfo>} electionInfo
+ */
 import electionInfo from '@/data/usa-2022-midterms-info.json';
 import Republican from '@/assets/icons/Republican';
 import Democrat from '@/assets/icons/Democrat';
 import Libertarian from '@/assets/icons/Libertarian';
+import TerritoryInfo from '@/views/JourneyPage/TerritoryInfo';
 
 import {
   LogoFacebook32,
@@ -133,6 +162,7 @@ export default {
     MainContent,
     SelectState,
     MarkDown,
+    TerritoryInfo,
     Facebook: LogoFacebook32,
     Twitter: LogoTwitter32,
     Youtube: LogoYoutube32,
@@ -153,34 +183,18 @@ export default {
       usaCode: (state) => state.user.info?.location?.region_code,
       registered: (state) => Boolean(state.user.info?.registered === 'midterm-2022'),
     }),
+    /**
+     * Info for a given region ("al", "ga", etc...)
+     * @returns {regionInfo}
+     */
     info() {
       const code = this.usaCode?.toLowerCase() || 'unknown';
       return electionInfo[code] || { territory: true, core_races: [{}] };
     },
   },
-  mounted() {
-    axios
-      .get('/services/voterids')
-      .then((response) => {
-        this.allVoterIdData = response.data;
-      })
-      .catch((error) => {
-        error;
-        this.allVoterIdData = {};
-      });
-  },
+  mounted() {},
   created() {},
-  methods: {
-    navigate() {
-      router.go(-1);
-    },
-    showSofSSite() {
-      window.open('https://www.vote411.org/' + this.stateName, '_blank');
-    },
-    showTool() {
-      window.open('https://tool.votinginfoproject.org', '_blank');
-    },
-  },
+  methods: {},
   updated() {},
 };
 </script>

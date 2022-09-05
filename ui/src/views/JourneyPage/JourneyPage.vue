@@ -84,11 +84,9 @@ export default {
   },
   watch: {
     registered() {
-      console.log(this.registered, this.which);
       if (this.registered && this.which === 'register') this.which = 'absentee';
     },
     absentee() {
-      console.log(this.absentee, this.which);
       if (this.absentee && this.which === 'absentee') this.which = 'get-informed';
     },
   },

@@ -59,12 +59,7 @@
 
   &__container {
     &--text {
-      padding: $spacing-05;
-
-      @media (min-width: 1056px) {
-        padding-left: 15%;
-        padding-right: $layout-05;
-      }
+      padding: $spacing-05 1rem;
 
       .bx--link {
         color: $carbon--gray-10;

@@ -1,5 +1,23 @@
 import Vue from 'vue';
 // initial state
+/**
+ * @typedef locationInfo
+ * @property {!string} region
+ * @property {!string} region_code
+ */
+
+/**
+ * @typedef userDetails
+ * @property {?locationInfo} location
+ * @property {!string} registered
+ * @property {!string} requested_early
+ */
+
+/**
+ * @typedef userInfo
+ * @property {userDetails} info
+ * @property {boolean} redirected
+ */
 const state = () => ({
   info: {
     location: null,
