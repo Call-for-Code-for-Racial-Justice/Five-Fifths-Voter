@@ -94,3 +94,8 @@ See the [issues list](https://github.com/Call-for-Code-for-Racial-Justice/Five-F
 # Solution Summary
 
 For details, see [Five Fifths Technology Summary](doc/SolutionFortification.md).
+
+# Image credits
+democrat by Yi Chen from [Noun Project](https://thenounproject.com/browse/icons/term/democrat/)
+Republican by Yi Chen from [Noun Project](https://thenounproject.com/browse/icons/term/republican/)
+Porcupine by Loritas Medina from [Noun Project](https://thenounproject.com/browse/icons/term/porcupine/)
