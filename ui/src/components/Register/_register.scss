@@ -23,13 +23,17 @@
 .register {
   &-info {
     @include type-style('body-short-02');
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 
     .cv-link {
       @include type-style('body-short-02');
-      margin-left: 0.5rem;
+      margin-left: 1rem;
+    }
+    &-deadline {
+      @include type-style('productive-heading-03');
     }
   }
+
   &-faq {
     margin-top: 0.5rem;
 
@@ -42,5 +46,11 @@
       margin-left: 0.5rem;
       color: $support-info;
     }
+    &-header {
+      @include type-style('productive-heading-03');
+      font-weight: 800;
+      margin-top: 1rem;
+    }
   }
+
 }

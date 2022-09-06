@@ -1,7 +1,7 @@
 <template>
   <MainContent>
     <template v-slot:content>
-      <aside class="aside" :aria-label="$t('ariaAbsenteeInfo')">
+      <aside class="aside alternate" :aria-label="$t('ariaAbsenteeInfo')">
         <div class="aside__container--text">
           <select-state />
           <cv-checkbox
@@ -57,40 +57,6 @@
             >.
           </div>
 
-          <!-- ID needed -->
-          <div class="register-faq" v-if="'id_needed' in info.mail_in">
-            <span>{{ $t('absenteeIdFaq') }}</span>
-            <span>{{ info.mail_in.id_needed ? $t('yes') : $t('no') }}</span>
-          </div>
-
-          <!-- id link -->
-          <div class="register-info" v-if="info.mail_in.id_link">
-            <span>{{ info.mail_in.id_explainer || $t('absenteeMoreId') }}</span>
-            <cv-link :inline="true" :href="info.mail_in.id_link" target="_blank">{{
-              $t('moreInformation')
-            }}</cv-link
-            >.
-          </div>
-
-          <div class="register-faq" v-if="'any_reason' in info.mail_in">
-            <span>{{ $t('absenteeReasonFaq') }}</span
-            ><span>{{ !info.mail_in.any_reason ? $t('yes') : $t('no') }}</span>
-          </div>
-          <div class="register-faq" v-if="'without_notary' in info.mail_in">
-            <span>{{ $t('absenteeWitnessFaq') }}</span
-            ><span>{{ !info.mail_in.without_notary ? $t('yes') : $t('no') }}</span>
-          </div>
-
-          <!-- drop-off -->
-          <div class="register-faq" v-if="'dropoff' in info.mail_in">
-            <span>{{ $t('absenteeDropFaq') }}</span
-            ><span>{{ info.mail_in.dropoff ? $t('yes') : $t('no') }}</span>
-            <mark-down
-              v-if="info.mail_in.dropoff_explainer"
-              :content="info.mail_in.dropoff_explainer"
-            />
-          </div>
-
           <!-- Request deadline -->
           <div class="register-info" v-if="info.mail_in.return_deadline">
             <span
@@ -98,6 +64,45 @@
               <span class="days-left">{{ daysLeft(info.mail_in.return_deadline) }}</span>
               . ( {{ niceDate(info.mail_in.return_deadline) }})
             </span>
+          </div>
+
+          <div class="register-faq-header">FAQ</div>
+          <!-- ID needed -->
+          <div class="register-faq" v-if="'id_needed' in info.mail_in">
+            <span>{{ $t('absenteeIdFaq') }}</span>
+            <span>{{ info.mail_in.id_needed ? $t('yes') : $t('no') }}</span>
+          </div>
+          <!-- id link -->
+          <div class="register-info" v-if="info.mail_in.id_link">
+            <span>{{ info.mail_in.id_explainer || $t('absenteeMoreId') }} </span>
+            <cv-link
+              :inline="true"
+              :href="info.mail_in.id_link"
+              target="_blank"
+              style="margin-left: 0"
+              >{{ $t('moreInformation') }}</cv-link
+            >.
+          </div>
+
+          <!-- drop-off -->
+          <div class="register-faq" v-if="'dropoff' in info.mail_in">
+            <span>{{ $t('absenteeDropFaq') }}</span
+            ><span>{{ info.mail_in.dropoff ? $t('yes') : $t('no') }}</span>
+            <div>
+              <mark-down
+                style="display: inline-block"
+                v-if="info.mail_in.dropoff_explainer"
+                :content="info.mail_in.dropoff_explainer"
+              />
+            </div>
+          </div>
+          <div class="register-faq" v-if="'any_reason' in info.mail_in">
+            <span>{{ $t('absenteeReasonFaq') }}</span
+            ><span>{{ !info.mail_in.any_reason ? $t('yes') : $t('no') }}</span>
+          </div>
+          <div class="register-faq" v-if="'without_notary' in info.mail_in">
+            <span>{{ $t('absenteeWitnessFaq') }}</span
+            ><span>{{ !info.mail_in.without_notary ? $t('yes') : $t('no') }}</span>
           </div>
         </div>
       </aside>
@@ -153,4 +158,30 @@ export default {
 <style lang="scss">
 @import '../Register/register';
 @import 'carbon-components/scss/components/checkbox/checkbox';
+.alternate {
+  background-color: $background; // current
+  //background-color: $background-hover;
+  //background-color: $background-active;
+  //background-color: $background-selected;
+  //background-color: $background-selected-hover;
+  //background-color: $background-inverse;
+  //background-color: $background-inverse-hover; //maybe
+  //background-color: $background-brand;
+
+  color: $text-on-color; // current
+  //color: $text-primary;
+  //color: $text-secondary;
+  //color: $text-placeholder;
+  //color: $text-on-color-disabled;
+  //color: $text-helper;
+  //color: $text-error;
+  //color: $text-inverse; // maybe
+  //color: $blue-50;
+  //color: $cool-gray-10;
+  //color: $cyan-50;
+  //color: $gray-10;
+  //color: $green-50;
+  //color: $magenta-50;
+  //color: $orange-50;
+}
 </style>

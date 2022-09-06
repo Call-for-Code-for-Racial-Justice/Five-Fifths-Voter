@@ -1627,7 +1627,7 @@
       "id_explainer": "Laws have changed since the 2020 election. A drivers license or other ID is required.",
       "id_link": "https://sos.ga.gov/page/georgia-voter-identification-requirements",
       "dropoff": true,
-      "dropoff_explainer": "Check with your [County Elections Office](https://sos.ga.gov/county-elections-offices) to find out what drop box locations are available closest to you.",
+      "dropoff_explainer": "\u21b3 Check with your [County Elections Office](https://sos.ga.gov/county-elections-offices) to find out what drop box locations are available closest to you.",
       "request_deadline": "10/28/2022",
       "return_deadline": "11/08/2022",
       "request_link": "https://ballotrequest.sos.ga.gov/",

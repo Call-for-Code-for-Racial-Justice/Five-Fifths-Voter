@@ -5,6 +5,7 @@
         <div class="aside__container--text">
           <select-state />
           <cv-checkbox
+            style="display: inline-block"
             :label="$t('registerAlready')"
             value="checked-registered"
             :checked="registered"
@@ -13,13 +14,12 @@
           </cv-checkbox>
           <!-- Check your registration -->
           <span class="register-info">
-            <span>{{ $t('notSure') }} </span>
             <cv-link :inline="true" :href="checkRegLink" target="_blank">{{
               $t('checkHere')
             }}</cv-link>
           </span>
 
-          <h2 class="aside__header">{{ $t('registerTitle') }}</h2>
+          <h2 class="aside__header" style="margin-top: 2rem">{{ $t('registerTitle') }}</h2>
 
           <p class="aside__paragraph">
             {{ $t('registerDesc') }}
@@ -29,12 +29,14 @@
 
           <!-- registration deadline -->
           <div class="register-info" v-if="info.register.deadline_in_person">
-            <span
-              >{{ $t('registrationDeadline') }}
-              <span class="days-left">{{ daysLeft(info.register.deadline_in_person) }}</span>
-              . ( {{ niceDate(info.register.deadline_in_person) }}) {{ $t('actNow') }}
-            </span>
+            <div class="register-info-deadline">
+              {{ $t('registrationDeadline') }}
+              <span style="font-weight: 800">{{ niceDate(info.register.deadline_in_person) }}</span
+              >,
+              <span class="days-left">{{ daysLeft(info.register.deadline_in_person) }}!</span>
+            </div>
             <cv-link
+              style="margin-left: 0; margin-top: 1rem"
               v-if="info.register.online_link"
               :href="info.register.online_link"
               :inline="true"
@@ -43,6 +45,7 @@
             >
             or
             <cv-link
+              style="margin-left: 0"
               v-if="info.register.mail_link"
               :href="info.register.mail_link"
               :inline="true"
@@ -51,23 +54,12 @@
             >
           </div>
 
-          <!-- Register day of voting -->
-          <div class="register-faq" v-if="'election_day' in info.register">
-            <span>{{ $t('registerElectionDay') }}</span
-            ><span>{{ info.register.election_day ? $t('yes') : $t('no') }}</span>
-          </div>
-
-          <!-- Register online -->
-          <div class="register-faq" v-if="'online' in info.register">
-            <span>{{ $t('registerOnlineQ') }}</span
-            ><span>{{ info.register.online ? $t('yes') : $t('no') }}</span>
-          </div>
-
           <!-- Youth -->
           <CaliSpecial v-if="usaCode === 'ca'" />
           <div v-else-if="info.register.youth" class="register-info">
             <span>{{ info.register.youth }} </span>
             <cv-link
+              style="margin-left: 0"
               :inline="true"
               :href="info.register.youth_link || info.register.online_link"
               target="_blank"
@@ -79,6 +71,7 @@
             <i18n path="registerYouth_3">
               <template v-slot:state>
                 <cv-link
+                  style="margin-left: 0"
                   :inline="true"
                   href="https://www.ncsl.org/research/elections-and-campaigns/preregistration-for-young-voters.aspx"
                   target="_blank"
@@ -91,9 +84,22 @@
           <!-- Formerly incarcerated-->
           <div class="register-info">
             <span>{{ felonText }} </span>
-            <cv-link :inline="true" :href="felonLink" target="_blank">{{
+            <cv-link style="margin-left: 0" :inline="true" :href="felonLink" target="_blank">{{
               $t('moreInformation')
             }}</cv-link>
+          </div>
+
+          <!-- Register day of voting -->
+          <div class="register-faq-header">FAQ</div>
+          <div class="register-faq" v-if="'election_day' in info.register">
+            <span>{{ $t('registerElectionDay') }}</span
+            ><span>{{ info.register.election_day ? $t('yes') : $t('no') }}</span>
+          </div>
+
+          <!-- Register online -->
+          <div class="register-faq" v-if="'online' in info.register">
+            <span>{{ $t('registerOnlineQ') }}</span
+            ><span>{{ info.register.online ? $t('yes') : $t('no') }}</span>
           </div>
         </div>
       </aside>
