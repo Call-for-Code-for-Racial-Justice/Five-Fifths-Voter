@@ -1,0 +1,137 @@
+name: Submit candidate information
+description: Submit a request to add/update candidate information for US midterm 2022 elections
+title: "[state/contest/candidate]: "
+labels: ["midterm-2022"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest edits to our list of candidates!
+  - type: dropdown
+    id: state
+    attributes:
+      label: State
+      description: Which US state?
+      options:
+        - "Alabama"
+        - "Alaska"
+        - "Arizona"
+        - "Arkansas"
+        - "California"
+        - "Colorado"
+        - "Connecticut"
+        - "Delaware"
+        - "Florida"
+        - "Georgia"
+        - "Hawaii"
+        - "Idaho"
+        - "Illinois"
+        - "Indiana"
+        - "Iowa"
+        - "Kansas"
+        - "Kentucky"
+        - "Louisiana"
+        - "Maine"
+        - "Maryland"
+        - "Massachusetts"
+        - "Michigan"
+        - "Minnesota"
+        - "Mississippi"
+        - "Missouri"
+        - "Montana"
+        - "Nebraska"
+        - "Nevada"
+        - "New Hampshire"
+        - "New Jersey"
+        - "New Mexico"
+        - "New York"
+        - "North Carolina"
+        - "North Dakota"
+        - "Ohio"
+        - "Oklahoma"
+        - "Oregon"
+        - "Pennsylvania"
+        - "Rhode Island"
+        - "South Carolina"
+        - "South Dakota"
+        - "Tennessee"
+        - "Texas"
+        - "Utah"
+        - "Vermont"
+        - "Virginia"
+        - "Washington"
+        - "West Virginia"
+        - "Wisconsin"
+        - "Wyoming"
+        - "District of Columbia"
+  - type: input
+    id: contest
+    attributes:
+      label: Contest
+      description: Which contest is this candidate running for
+      placeholder: Secretary of State
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Candidate Name
+      placeholder: Jane Smith
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Link to information about the candidate.
+      description: An independent link to information. (Should NOT be the candidates web site)
+      placeholder: https://ballotpedia.com/candidate_name
+    validations:
+      required: true
+  - type: input
+    id: facebook
+    attributes:
+      label: Facebook
+      description: A link to the candidate's Facebook page. (not required)
+      placeholder: https://www.facebook.com/JaneForGeorgia
+    validations:
+      required: false
+  - type: input
+    id: twitter
+    attributes:
+      label: Twitter
+      description: A "blue checkmark" link to the candidate's Twitter page. (not required)
+      placeholder: https://twitter.com/JaneForGeorgia
+    validations:
+      required: false
+  - type: input
+    id: youtube
+    attributes:
+      label: YouTube
+      description: A link to the candidate's official YouTube channel. (not required)
+      placeholder: https://www.youtube.com/channel/JaneForGeorgia
+    validations:
+      required: false
+  - type: input
+    id: instagram
+    attributes:
+      label: Instagram
+      description: A "blue checkmark" link to the candidate's official Instagram. (not required)
+      placeholder: https://www.instagram.com/JaneForGeorgia
+    validations:
+      required: false
+  - type: input
+    id: linkedin
+    attributes:
+      label: LinkedIn
+      description: A link to the candidate's official LinkedIn. (not required)
+      placeholder: https://www.linkedin.com/in/JaneForGeorgia
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter/blob/main/CONTRIBUTING.md#code-of-conduct)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
