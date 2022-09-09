@@ -31,7 +31,7 @@
           <div class="register-info" v-if="info.register.deadline_in_person">
             <div class="register-info-deadline">
               {{ $t('registrationDeadline') }}
-              <span style="font-weight: 800">{{ niceDate(info.register.deadline_in_person) }}</span
+              <span>{{ niceDate(info.register.deadline_in_person) }}</span
               >,
               <span class="days-left">{{ daysLeft(info.register.deadline_in_person) }}!</span>
             </div>
@@ -90,7 +90,7 @@
           </div>
 
           <!-- Register day of voting -->
-          <div class="register-faq-header">FAQ</div>
+          <div class="register-faq-header">{{ $t('faq') }}</div>
           <div class="register-faq" v-if="'election_day' in info.register">
             <span>{{ $t('registerElectionDay') }}</span
             ><span>{{ info.register.election_day ? $t('yes') : $t('no') }}</span>

@@ -31,6 +31,9 @@
     }
     &-deadline {
       @include type-style('productive-heading-03');
+      span:nth-child(1) {
+        font-weight: 800;
+      }
     }
   }
 

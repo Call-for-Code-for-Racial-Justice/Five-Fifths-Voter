@@ -1,7 +1,7 @@
 <template>
   <MainContent>
     <template v-slot:content>
-      <aside class="aside alternate" :aria-label="$t('ariaAbsenteeInfo')">
+      <aside class="aside" :aria-label="$t('ariaAbsenteeInfo')">
         <div class="aside__container--text">
           <select-state />
           <cv-checkbox
@@ -12,7 +12,7 @@
           >
           </cv-checkbox>
 
-          <h2 class="aside__header">{{ $t('absenteeTitle') }}</h2>
+          <h2 class="aside__header" style="margin-top: 2rem">{{ $t('absenteeTitle') }}</h2>
           <p class="aside__paragraph">
             {{ $t('absenteeDesc') }}
           </p>
@@ -20,12 +20,10 @@
           <territory-info v-if="info.mail_in.territory" />
 
           <!-- Request deadline -->
-          <div class="register-info" v-if="info.mail_in.request_deadline">
-            <span
-              >{{ $t('registrationDeadline') }}
-              <span class="days-left">{{ daysLeft(info.mail_in.request_deadline) }}</span>
-              . ( {{ niceDate(info.mail_in.request_deadline) }}) {{ $t('actNow') }}
-            </span>
+          <div class="register-info-deadline" v-if="info.mail_in.request_deadline">
+            {{ $t('registrationDeadline') }}
+            <span>{{ niceDate(info.mail_in.request_deadline) }}, </span>
+            <span class="days-left">{{ daysLeft(info.mail_in.request_deadline) }}</span>
           </div>
 
           <!-- link request ballot -->
@@ -58,30 +56,32 @@
           </div>
 
           <!-- Request deadline -->
-          <div class="register-info" v-if="info.mail_in.return_deadline">
-            <span
-              >{{ $t('absenteeReturn') }}
-              <span class="days-left">{{ daysLeft(info.mail_in.return_deadline) }}</span>
-              . ( {{ niceDate(info.mail_in.return_deadline) }})
-            </span>
+          <div
+            class="register-info-deadline"
+            style="margin-top: 1rem"
+            v-if="info.mail_in.return_deadline"
+          >
+            {{ $t('absenteeReturn') }}
+            <span>{{ niceDate(info.mail_in.return_deadline) }}, </span>
+            <span class="days-left">{{ daysLeft(info.mail_in.return_deadline) }}. </span>
           </div>
 
-          <div class="register-faq-header">FAQ</div>
+          <div class="register-faq-header">{{ $t('faq') }}</div>
           <!-- ID needed -->
           <div class="register-faq" v-if="'id_needed' in info.mail_in">
             <span>{{ $t('absenteeIdFaq') }}</span>
             <span>{{ info.mail_in.id_needed ? $t('yes') : $t('no') }}</span>
-          </div>
-          <!-- id link -->
-          <div class="register-info" v-if="info.mail_in.id_link">
-            <span>{{ info.mail_in.id_explainer || $t('absenteeMoreId') }} </span>
-            <cv-link
-              :inline="true"
-              :href="info.mail_in.id_link"
-              target="_blank"
-              style="margin-left: 0"
-              >{{ $t('moreInformation') }}</cv-link
-            >.
+            <div>
+              <mark-down
+                style="display: inline-block"
+                v-if="info.mail_in.id_explainer"
+                :content="
+                  `\u21b3 ` +
+                  info.mail_in.id_explainer +
+                  ` [${$t('absenteeMoreId')}](${info.mail_in.id_link})`
+                "
+              />
+            </div>
           </div>
 
           <!-- drop-off -->
@@ -92,7 +92,7 @@
               <mark-down
                 style="display: inline-block"
                 v-if="info.mail_in.dropoff_explainer"
-                :content="info.mail_in.dropoff_explainer"
+                :content="`\u21b3 ` + info.mail_in.dropoff_explainer"
               />
             </div>
           </div>
@@ -158,30 +158,4 @@ export default {
 <style lang="scss">
 @import '../Register/register';
 @import 'carbon-components/scss/components/checkbox/checkbox';
-.alternate {
-  background-color: $background; // current
-  //background-color: $background-hover;
-  //background-color: $background-active;
-  //background-color: $background-selected;
-  //background-color: $background-selected-hover;
-  //background-color: $background-inverse;
-  //background-color: $background-inverse-hover; //maybe
-  //background-color: $background-brand;
-
-  color: $text-on-color; // current
-  //color: $text-primary;
-  //color: $text-secondary;
-  //color: $text-placeholder;
-  //color: $text-on-color-disabled;
-  //color: $text-helper;
-  //color: $text-error;
-  //color: $text-inverse; // maybe
-  //color: $blue-50;
-  //color: $cool-gray-10;
-  //color: $cyan-50;
-  //color: $gray-10;
-  //color: $green-50;
-  //color: $magenta-50;
-  //color: $orange-50;
-}
 </style>
