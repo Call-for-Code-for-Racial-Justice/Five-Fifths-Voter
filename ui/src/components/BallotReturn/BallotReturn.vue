@@ -52,15 +52,8 @@
       </aside>
     </template>
     <template v-slot:image>
-      <aside
-        v-if="placeholderMap"
-        class="aside__container--img"
-        :aria-label="$t('ariaSupportingImage')"
-      >
-        <img class="aside__image" src="../../assets/holder-atlanta-map.png" alt="google map img" />
-      </aside>
-      <aside v-else>
-        <GoogleMap class="map__container" :markers="mapMarkers" ref="dropoffMap" />
+      <aside class="aside__container--img" :aria-label="$t('ariaSupportingImage')">
+        <img class="aside__image" src="../../assets/ballot-return-image-1.jpg" alt="Sideimage" />
       </aside>
     </template>
   </MainContent>
@@ -72,11 +65,10 @@
 
 import axios from 'axios';
 import MainContent from '../../components/MainContent';
-import GoogleMap from '../../components/Maps/GoogleMap';
 
 export default {
   name: 'ballotreturn',
-  components: { MainContent, GoogleMap },
+  components: { MainContent },
   data() {
     return {
       addressValue: '',
