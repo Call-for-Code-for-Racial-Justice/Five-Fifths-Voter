@@ -9,7 +9,7 @@
 
           <territory-info v-if="info.territory" />
 
-          <div class="register-info">
+          <div class="register-info" v-if="info.core_races.length">
             <span>{{ $t('getInformedTopContests') }}</span>
             <mark-down v-if="info.sample_ballot" :content="info.sample_ballot" />
           </div>
@@ -26,7 +26,7 @@
                   <cv-link :href="district.link" target="_blank">{{ district.name }}</cv-link>
                 </div>
               </template>
-              <template v-slot:content v-else-if="c.candidates.length === 0">
+              <template v-slot:content v-else-if="!c.candidates || c.candidates.length === 0">
                 <cv-link :href="`https://www.vote411.org/${usaState}`" target="_blank">{{
                   $t('getInformedMoreInfo')
                 }}</cv-link>
@@ -189,7 +189,12 @@ export default {
      */
     info() {
       const code = this.usaCode?.toLowerCase() || 'unknown';
-      return electionInfo[code] || { territory: true, core_races: [{}] };
+      return (
+        electionInfo[code] || {
+          territory: true,
+          core_races: [],
+        }
+      );
     },
   },
   mounted() {},

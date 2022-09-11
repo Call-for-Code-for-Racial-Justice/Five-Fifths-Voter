@@ -68,7 +68,7 @@
   "register": "Register",
   "registerYouthQ": "Aged 17-18? You might be able to preregister to vote",
   "registerTerritories": "U.S. citizens residing in U.S. territories",
-  "registrationDeadline": "Registration deadline",
+  "registrationDeadline": "Registration deadline is",
   "registerLiveInUsTerritory": "Do you live is a US territory? Check with your local election officials about voting.",
   "registerTerritoryCitizensRights": "Residents of U.S. territories do not have voting representation in the United States Congress",
   "registerOnline": "Register online",
@@ -156,9 +156,10 @@
   "mobilenav": "mobile navigation",
 
   "moreInformation": "More information",
-  "checkHere": "check here",
+  "checkHere": "Check status.",
   "notSure": "Not sure?",
   "actNow": "Act now!",
   "yes": "Yes",
-  "no": "No"
+  "no": "No",
+  "faq": "FAQ"
 }

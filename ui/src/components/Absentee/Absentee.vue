@@ -12,7 +12,7 @@
           >
           </cv-checkbox>
 
-          <h2 class="aside__header">{{ $t('absenteeTitle') }}</h2>
+          <h2 class="aside__header" style="margin-top: 2rem">{{ $t('absenteeTitle') }}</h2>
           <p class="aside__paragraph">
             {{ $t('absenteeDesc') }}
           </p>
@@ -20,12 +20,10 @@
           <territory-info v-if="info.mail_in.territory" />
 
           <!-- Request deadline -->
-          <div class="register-info" v-if="info.mail_in.request_deadline">
-            <span
-              >{{ $t('registrationDeadline') }}
-              <span class="days-left">{{ daysLeft(info.mail_in.request_deadline) }}</span>
-              . ( {{ niceDate(info.mail_in.request_deadline) }}) {{ $t('actNow') }}
-            </span>
+          <div class="register-info-deadline" v-if="info.mail_in.request_deadline">
+            {{ $t('registrationDeadline') }}
+            <span>{{ niceDate(info.mail_in.request_deadline) }}, </span>
+            <span class="days-left">{{ daysLeft(info.mail_in.request_deadline) }}</span>
           </div>
 
           <!-- link request ballot -->
@@ -57,21 +55,47 @@
             >.
           </div>
 
+          <!-- Request deadline -->
+          <div
+            class="register-info-deadline"
+            style="margin-top: 1rem"
+            v-if="info.mail_in.return_deadline"
+          >
+            {{ $t('absenteeReturn') }}
+            <span>{{ niceDate(info.mail_in.return_deadline) }}, </span>
+            <span class="days-left">{{ daysLeft(info.mail_in.return_deadline) }}. </span>
+          </div>
+
+          <div class="register-faq-header">{{ $t('faq') }}</div>
           <!-- ID needed -->
           <div class="register-faq" v-if="'id_needed' in info.mail_in">
             <span>{{ $t('absenteeIdFaq') }}</span>
             <span>{{ info.mail_in.id_needed ? $t('yes') : $t('no') }}</span>
+            <div>
+              <mark-down
+                style="display: inline-block"
+                v-if="info.mail_in.id_explainer"
+                :content="
+                  `\u21b3 ` +
+                  info.mail_in.id_explainer +
+                  ` [${$t('absenteeMoreId')}](${info.mail_in.id_link})`
+                "
+              />
+            </div>
           </div>
 
-          <!-- id link -->
-          <div class="register-info" v-if="info.mail_in.id_link">
-            <span>{{ info.mail_in.id_explainer || $t('absenteeMoreId') }}</span>
-            <cv-link :inline="true" :href="info.mail_in.id_link" target="_blank">{{
-              $t('moreInformation')
-            }}</cv-link
-            >.
+          <!-- drop-off -->
+          <div class="register-faq" v-if="'dropoff' in info.mail_in">
+            <span>{{ $t('absenteeDropFaq') }}</span
+            ><span>{{ info.mail_in.dropoff ? $t('yes') : $t('no') }}</span>
+            <div>
+              <mark-down
+                style="display: inline-block"
+                v-if="info.mail_in.dropoff_explainer"
+                :content="`\u21b3 ` + info.mail_in.dropoff_explainer"
+              />
+            </div>
           </div>
-
           <div class="register-faq" v-if="'any_reason' in info.mail_in">
             <span>{{ $t('absenteeReasonFaq') }}</span
             ><span>{{ !info.mail_in.any_reason ? $t('yes') : $t('no') }}</span>
@@ -79,25 +103,6 @@
           <div class="register-faq" v-if="'without_notary' in info.mail_in">
             <span>{{ $t('absenteeWitnessFaq') }}</span
             ><span>{{ !info.mail_in.without_notary ? $t('yes') : $t('no') }}</span>
-          </div>
-
-          <!-- drop-off -->
-          <div class="register-faq" v-if="'dropoff' in info.mail_in">
-            <span>{{ $t('absenteeDropFaq') }}</span
-            ><span>{{ info.mail_in.dropoff ? $t('yes') : $t('no') }}</span>
-            <mark-down
-              v-if="info.mail_in.dropoff_explainer"
-              :content="info.mail_in.dropoff_explainer"
-            />
-          </div>
-
-          <!-- Request deadline -->
-          <div class="register-info" v-if="info.mail_in.return_deadline">
-            <span
-              >{{ $t('absenteeReturn') }}
-              <span class="days-left">{{ daysLeft(info.mail_in.return_deadline) }}</span>
-              . ( {{ niceDate(info.mail_in.return_deadline) }})
-            </span>
           </div>
         </div>
       </aside>
