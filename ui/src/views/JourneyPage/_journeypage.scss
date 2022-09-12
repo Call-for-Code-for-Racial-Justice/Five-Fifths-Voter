@@ -61,4 +61,21 @@
       margin-bottom: 0;
     }
   }
+
+}
+.journey-info {
+  &__deadline {
+    @include type-style('productive-heading-03');
+    margin-top: 0.5rem;
+    p {
+      @include type-style('productive-heading-03');
+    }
+    em {
+      font-style: normal;
+      color: $support-error
+    }
+    strong {
+      font-weight: 800;
+    }
+  }
 }

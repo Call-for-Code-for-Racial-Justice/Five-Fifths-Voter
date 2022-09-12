@@ -3,22 +3,73 @@
     <template v-slot:content>
       <aside class="aside" :aria-label="$t('ariaEarly')">
         <div class="aside__container--text">
-          <h2 class="aside__header">
+          <select-state />
+
+          <h2 class="aside__header" style="margin-top: 2rem">
             {{ $t('voteTitle') }}
           </h2>
-          <p class="aside__description">
-            {{ $t('voteTitleDesc', ['Five Fifths Voter']) }}
-          </p>
-          <br />
-          <p class="aside__description">
-            {{ $t('voteElectionMissing') }}
-          </p>
+
+          <territory-info v-if="info.register.territory" />
+
+          <!-- Early voting start -->
+          <mark-down
+            class="journey-info__deadline"
+            :content="
+              $t('voteEarlyStart', {
+                medDate: niceDate(info.early_voting.start_date),
+                relativeDays: daysLeft(info.early_voting.start_date),
+              })
+            "
+          />
+          <!-- Early voting end -->
+          <mark-down
+            class="journey-info__deadline"
+            :content="
+              $t('voteEarlyEnd', {
+                medDate: niceDate(info.early_voting.last_date),
+                relativeDays: daysLeft(info.early_voting.last_date),
+              })
+            "
+          />
+
+          <!-- info link -->
+          <div class="register-info" v-if="info.early_voting.more_link">
+            <mark-down :content="$t('voteEarlyMore', { link: info.early_voting.more_link })" />
+          </div>
+
+          <!-- Election day voting -->
+          <mark-down
+            class="journey-info__deadline"
+            :content="
+              $t('voteElectionDay', {
+                medDate: niceIsoDate(info.election_start || '2022-11-08T12:00:00.000Z'),
+                relativeDays: daysLeftIso(info.election_start || '2022-11-08T12:00:00.000Z'),
+              })
+            "
+          />
+          <span class="register-faq" v-if="'election_day_info' in info">{{
+            `\u21b3 ` + info.election_day_info
+          }}</span>
+
+          <div class="register-faq-header">{{ $t('faq') }}</div>
+          <!-- Vote early -->
+          <div class="register-faq" v-if="'available' in info.early_voting">
+            <span>{{ $t('voteEarlyAvailable') }}</span
+            ><span>{{ info.early_voting.available ? $t('yes') : $t('no') }}</span>
+          </div>
+
+          <!-- ID needed -->
+          <div class="register-faq" v-if="'id_needed' in info.mail_in">
+            <span>{{ $t('voteEarlyIdNeeded') }}</span>
+            <span>{{ info.early_voting.id_needed ? $t('yes') : $t('no') }}</span>
+          </div>
+
           <div class="wrapper wrapper--address">
             <cv-select :label="$t('voteSelectElection')" v-model="electionId">
-              <cv-select-option disabled selected hidden>{{
+              <cv-select-option value="" :selected="true" :disabled="true" :hidden="true">{{
                 $t('voteChooseElection')
               }}</cv-select-option>
-              <cv-select-option v-for="elec in fileredElections" :value="elec.id" :key="elec.id">
+              <cv-select-option v-for="elec in filteredElections" :value="elec.id" :key="elec.id">
                 {{ elec.name }} {{ elec.electionDay }}
               </cv-select-option>
             </cv-select>
@@ -26,19 +77,10 @@
               :label="$t('voteAddressLabel')"
               v-model="addressValue"
               :placeholder="placeholder"
-              @input="updatedAddress"
               :disabled="disabledAddress"
             >
             </cv-text-input>
             <div class="wrapper wrapper--button">
-              <cv-button
-                class="button--early-voting"
-                kind="secondary"
-                @click="showEarlyPollingLocation"
-                :disabled="buttonDisabled"
-              >
-                {{ $t('voteEarlyVotingBtn') }}
-              </cv-button>
               <cv-button
                 class="button--early-voting"
                 kind="primary"
@@ -64,7 +106,7 @@
               </span>
               <span v-if="!locationAvailable"> {{ $t('voteEarlyNoLocationFound') }} </span>
               <cv-select v-if="electionList.length" label="Select Your Election">
-                <cv-select-option disabled selected hidden>Choose an election</cv-select-option>
+                <cv-select-option selected>Choose an election</cv-select-option>
                 <cv-select-option
                   v-for="(item, index) in electionList"
                   :key="index"
@@ -72,21 +114,7 @@
                   >{{ item }}</cv-select-option
                 >
               </cv-select>
-              <cv-list v-if="locationList">
-                <cv-list-item v-for="(item, index) in locationList" :key="index">
-                  <span class="loc-name">{{ item.address.locationName }}</span>
-                  <span v-if="!early && item.pollingHours" class="loc-name">{{
-                    item.pollingHours
-                  }}</span>
-
-                  <span v-if="item.address.line1" class="loc-line">{{ item.address.line1 }}</span>
-                  <span v-if="item.address.line2" class="loc-line">{{ item.address.line2 }}</span>
-                  <span v-if="item.address.line3" class="loc-line">{{ item.address.line3 }}</span>
-                  <span v-if="item.address.city" class="loc-city">{{ item.address.city }}</span>
-                  <span v-if="item.address.state" class="loc-state"> {{ item.address.state }}</span>
-                  <cv-link :href="directionsLink(item)" target="_blank"> Directions </cv-link>
-                </cv-list-item>
-              </cv-list>
+              <location-list v-if="voterData.state" :votingData="voterData" />
 
               <span><br />Powered by the Civic Information API</span>
             </div>
@@ -119,24 +147,33 @@
 import axios from 'axios';
 import MainContent from '../../components/MainContent';
 import GoogleMap from '../../components/Maps/GoogleMap';
+import SelectState from './SelectState';
+import TerritoryInfo from './TerritoryInfo';
+import { mapState } from 'vuex';
+import electionInfo from '@/data/usa-2022-midterms-info.json';
+import dateFormatter from '@/api/dateFormatter';
+import MarkDown from '@/components/MarkDown/MarkDown';
+import LocationList from '@/views/JourneyPage/LocationList';
 
 export default {
-  name: 'earlyvoting',
-  components: { MainContent, GoogleMap },
+  name: 'VoteNow',
+  components: { LocationList, MarkDown, MainContent, GoogleMap, SelectState, TerritoryInfo },
   data() {
     return {
-      addressValue: '',
+      addressValue: '301 County Rd 195 Dover, Delaware',
+      good: '836 Lincoln St Dover, Delaware',
       normalizedAddressValue: '',
       placeholder: '123 Main St GA 30076',
-      buttonDisabled: true,
       early: false,
       electionName: '',
       voterData: {},
       elections: [],
       electionId: '',
+      loading: false,
     };
   },
   created() {
+    this.loading = true;
     axios
       .get('/services/elections')
       .then((response) => {
@@ -145,10 +182,38 @@ export default {
       .catch((error) => {
         /* eslint no-console: 0 */
         console.error(error);
+      })
+      .finally(() => {
+        this.loading = false;
       });
+    this.actionUsaState();
+    this.addressValue = this.votingAddress;
   },
-
+  watch: {
+    usaCode() {
+      this.actionUsaState();
+    },
+    elections() {
+      this.actionUsaState();
+    },
+    votingAddress() {
+      this.addressValue = this.votingAddress;
+    },
+  },
   computed: {
+    ...mapState({
+      usaState: (state) => state.user.info?.location?.region,
+      usaCode: (state) => state.user.info?.location?.region_code,
+      votingAddress: (state) => state.user.info?.voting_address,
+    }),
+    info() {
+      const code = this.usaCode?.toLowerCase() || 'unknown';
+      return electionInfo[code] || { register: { territory: true } };
+    },
+    buttonDisabled() {
+      return this.electionId === '' || this.addressValue < 10;
+    },
+
     electionInfoUrl() {
       try {
         return this.voterData.state[0].electionAdministrationBody.electionInfoUrl;
@@ -263,16 +328,29 @@ export default {
         return list;
       }
     },
-    fileredElections() {
+    filteredElections() {
       return this.elections.filter((item) => item.id != '2000');
     },
     disabledAddress() {
       return !this.electionId;
     },
   },
-  mounted() {},
   methods: {
+    daysLeft: (dateStr) => dateFormatter.daysLeft(dateStr),
+    daysLeftIso: (dateStr) => dateFormatter.daysLeftIso(dateStr),
+    niceDate: (dateStr) => dateFormatter.niceDate(dateStr),
+    niceIsoDate: (dateStr) => dateFormatter.niceIsoDate(dateStr),
+
+    actionUsaState() {
+      const found = this.elections.find((election) =>
+        election.ocdDivisionId?.endsWith(`state:${this.usaCode}`)
+      );
+      if (found) this.electionId = found.id;
+      else this.electionId = '';
+    },
+
     showPollingLocation() {
+      this.loading = true;
       axios
         .post('/services/pollingplace', {
           data: {
@@ -282,12 +360,30 @@ export default {
         })
         .then((response) => {
           try {
+            /**
+             * @typedef VoterData
+             * @property {object} VoterData.normalizedInput
+             */
             this.voterData = response.data;
-            this.normalizedAddressValue = '';
-            Object.values(this.voterData.normalizedInput).forEach((element) => {
+
+            // Get a normalized address from the result
+            /*
+             *   "normalizedInput": {
+             *     "line1": "123 Main Street",
+             *     "city": "Any Town",
+             *     "state": "GA",
+             *     "zip": "30000"
+             *   },
+             */
+            const addressParts = Object.values(this.voterData?.normalizedInput);
+            if (addressParts?.length > 0) this.normalizedAddressValue = '';
+            else this.normalizedAddressValue = this.addressValue;
+
+            addressParts.forEach((element) => {
               this.normalizedAddressValue = this.normalizedAddressValue + ' ' + element;
             });
             this.normalizedAddressValue = this.normalizedAddressValue.trim();
+            this.$store.commit('setVotingAddress', this.normalizedAddressValue);
 
             if (this.voterData.fivefifthsdata && this.voterData.fivefifthsdata.elections) {
               var elections = this.voterData.fivefifthsdata.elections;
@@ -298,10 +394,12 @@ export default {
           }
         })
         .catch((error) => {
-          error;
           /* eslint no-console: 0 */
           console.error(error);
           this.voterData = { error: true };
+        })
+        .finally(() => {
+          this.loading = false;
         });
     },
     showEarlyPollingLocation() {
@@ -311,9 +409,6 @@ export default {
     showNowPollingLocation() {
       this.early = false;
       this.showPollingLocation();
-    },
-    updatedAddress() {
-      this.buttonDisabled = this.addressValue.length < 10;
     },
 
     /**
@@ -355,5 +450,6 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/components/Register/register';
 @import './earlyvoting';
 </style>

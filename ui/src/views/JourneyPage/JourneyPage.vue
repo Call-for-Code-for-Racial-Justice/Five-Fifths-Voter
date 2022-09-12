@@ -43,7 +43,7 @@
 <script>
 import Register from '../../components/Register';
 import Absentee from '../../components/Absentee';
-import EarlyVoting from '../../components/EarlyVoting';
+import EarlyVoting from './EarlyVoting';
 import BallotReturn from '../../components/BallotReturn';
 import GetInformed from '../../components/GetInformed';
 import PageLayout from '../../components/PageLayout';
@@ -80,6 +80,8 @@ export default {
     },
   },
   created() {
+    this.$store.dispatch('getApproxLocation');
+
     if (this.registered && this.which === 'register') this.which = 'absentee';
     else if (this.registered && this.which === 'absentee') this.which = 'get-informed';
     window.addEventListener('resize', this.actionResize);

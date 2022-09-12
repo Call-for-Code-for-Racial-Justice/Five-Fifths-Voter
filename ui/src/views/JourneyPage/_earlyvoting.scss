@@ -1,7 +1,4 @@
-@import 'carbon-components/scss/globals/scss/vars';
-.cv-tabs__panels {
-  width: 100%; /* why!!?? */
-}
+@import '@/styles/_theme.scss';
 
 .content--early-voting > .article__img--register {
   margin-top: 20px;

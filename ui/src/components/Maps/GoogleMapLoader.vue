@@ -13,7 +13,7 @@ import GoogleMapsApiLoader from 'google-maps-api-loader';
 export default {
   props: {
     mapConfig: Object,
-    apiKey: { type: String, required: true },
+    apiKey: { type: String, default: '' },
     center: { type: Object, required: true },
   },
 

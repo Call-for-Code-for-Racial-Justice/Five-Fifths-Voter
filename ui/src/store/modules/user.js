@@ -23,6 +23,7 @@ const state = () => ({
     location: null,
     registered: '',
     requested_early: '', // Absentee ballot requested and plan to vote early are the same logic
+    voting_address: '',
   },
   redirected: false,
 });
@@ -87,6 +88,10 @@ const mutations = {
   },
   setRequested(state, requested) {
     Vue.set(state.info, 'requested_early', requested ? 'midterm-2022' : '');
+    localStorage.setItem('user', JSON.stringify(state.info));
+  },
+  setVotingAddress(state, normalized_address) {
+    Vue.set(state.info, 'voting_address', normalized_address);
     localStorage.setItem('user', JSON.stringify(state.info));
   },
   setRedirected(state, redirected) {
