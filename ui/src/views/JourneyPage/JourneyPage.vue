@@ -4,42 +4,32 @@
       <h2 class="page__title">{{ $t('journeyPageTitle') }}</h2>
     </div>
     <div class="journey-page__nav">
-      <cv-link
-        @click="which = 'register'"
-        :aria-label="$t('journeyPageRegisteredAriaLabel')"
-        :aria-selected="which === 'register'"
-      >
-        <Current v-if="which === 'register'" aria-hidden="true" />
-        {{ $t('journeyPageRegisteredLabel') }}
-      </cv-link>
-      <cv-link
-        @click="which = 'absentee'"
-        :aria-label="$t('journeyPageBallotAriaLabel')"
-        :aria-selected="which === 'absentee'"
-      >
-        <Current v-if="which === 'absentee'" /> {{ $t('journeyPageBallotLabel') }}
-      </cv-link>
-      <cv-link
-        @click="which = 'get-informed'"
-        :aria-label="$t('journeyPageGetInformedAriaLabel')"
-        :aria-selected="which === 'get-informed'"
-      >
-        <Current v-if="which === 'get-informed'" /> {{ $t('journeyPageGetInformedLabel') }}
-      </cv-link>
-      <cv-link
-        @click="which = 'early-voting'"
-        :aria-label="$t('journeyPageVoteNowAriaLabel')"
-        :aria-selected="which === 'early-voting'"
-      >
-        <Current v-if="which === 'early-voting'" /> {{ $t('journeyPageVoteNowLabel') }}
-      </cv-link>
-      <cv-link
-        @click="which = 'ballot-return'"
-        :aria-label="$t('journeyPageDeliverAriaLabel')"
-        :aria-selected="which === 'ballot-return'"
-      >
-        <Current v-if="which === 'ballot-return'" /> {{ $t('journeyPageDeliverLabel') }}
-      </cv-link>
+      <cv-progress :initial-step="0" :vertical="isMobile">
+        <cv-progress-step
+          :label="$t('journeyPageRegisteredLabel')"
+          @step-clicked="which = 'register'"
+          :complete="which !== 'register'"
+        />
+        <cv-progress-step
+          :label="$t('journeyPageBallotLabel')"
+          @step-clicked="which = 'absentee'"
+          :complete="which !== 'absentee'"
+        />
+        <cv-progress-step
+          :label="$t('journeyPageGetInformedLabel')"
+          @step-clicked="which = 'get-informed'"
+          :complete="which !== 'get-informed'"
+        />
+        <cv-progress-step
+          :label="$t('journeyPageVoteNowLabel')"
+          @step-clicked="which = 'early-voting'"
+          :complete="which !== 'early-voting'"
+        />
+        <cv-progress-step
+          :label="$t('journeyPageDeliverLabel')"
+          @step-clicked="which = 'ballot-return'"
+        />
+      </cv-progress>
     </div>
 
     <Register v-if="which === 'register'" />
@@ -53,11 +43,10 @@
 <script>
 import Register from '../../components/Register';
 import Absentee from '../../components/Absentee';
-import EarlyVoting from '../../components/EarlyVoting';
+import EarlyVoting from './EarlyVoting';
 import BallotReturn from '../../components/BallotReturn';
 import GetInformed from '../../components/GetInformed';
 import PageLayout from '../../components/PageLayout';
-import { CaretRight16 } from '@carbon/icons-vue';
 import { mapState } from 'vuex';
 
 export default {
@@ -69,11 +58,11 @@ export default {
     BallotReturn,
     GetInformed,
     PageLayout,
-    Current: CaretRight16,
   },
   data() {
     return {
       which: 'register',
+      isMobile: false,
     };
   },
   computed: {
@@ -91,14 +80,24 @@ export default {
     },
   },
   created() {
+    this.$store.dispatch('getApproxLocation');
+
     if (this.registered && this.which === 'register') this.which = 'absentee';
     else if (this.registered && this.which === 'absentee') this.which = 'get-informed';
+    window.addEventListener('resize', this.actionResize);
+    this.actionResize();
   },
-  methods: {},
+  destroyed() {
+    window.removeEventListener('resize', this.actionResize);
+  },
+  methods: {
+    actionResize() {
+      this.isMobile = window.innerWidth <= 950;
+    },
+  },
   errorCaptured(err, vm, info) {
     try {
-      console.warn('suppress error from carbon tabs', info);
-      console.warn(err.stack);
+      console.warn(err.stack, info);
       return false;
     } catch (e) {
       console.warn('errorCaptured', e);

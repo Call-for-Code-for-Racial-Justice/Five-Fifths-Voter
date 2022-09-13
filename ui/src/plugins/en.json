@@ -110,10 +110,16 @@
   "voteChooseElection": "Choose an election",
   "voteSelectElection": "Select election",
   "voteEarlyVotingBtn": "Early Voting",
-  "votePollingLocationBtn": "Polling Location",
+  "votePollingLocationBtn": "Polling Locations",
   "voteAddressLabel": "Address where you are registered to vote",
   "voteElectionMissing": "If you cannot find your election, the information may not be available through the Google Civic Information API right now. Check out the 'Get Informed' tab to find out more information about your state elections.",
   "voteEarlyNoLocationFound": "No known locations. Check with your local election officials. Use the links provided to verify voting information. This state information may not be available through the Google Civic Information API right now.",
+  "voteEarlyAvailable": "Can I vote in-person before election day?",
+  "voteEarlyStart": "Early voting begins **{medDate}**, *{relativeDays}*.",
+  "voteEarlyEnd": "Early voting ends **{medDate}**, *{relativeDays}*.",
+  "voteElectionDay": "Election day voting starts **{medDate}**, *{relativeDays}*.",
+  "voteEarlyIdNeeded": "Do I need an ID to vote early?",
+  "voteEarlyMore": "[More information]({link}) about early voting.",
 
   "ballotTitle": "Find your local ballot dropbox",
   "ballotDropBtn": "Show Ballot Drop Off Locations",
@@ -161,5 +167,6 @@
   "actNow": "Act now!",
   "yes": "Yes",
   "no": "No",
-  "faq": "FAQ"
+  "faq": "FAQ",
+  "mapDirections": "Directions"
 }

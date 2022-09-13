@@ -1,21 +1,51 @@
 @import '@/styles/_theme.scss';
 @import 'carbon-components/scss/components/tabs/tabs';
 @import 'carbon-components/scss/components/button/button';
+@import 'carbon-components/scss/components/progress-bar/progress-bar';
 .journey-page {
   .page__details {
     height: 2rem;
   }
   &__nav {
     margin-left: 2rem;
-    @include carbon--breakpoint-down(lg) {
-      margin-left: 1rem;
-    }
+    margin-bottom: 1rem;
     @include carbon--breakpoint-down(lg) {
       margin-top: 2rem;
+      margin-left: 1rem;
+      margin-bottom: 0.25rem;
     }
     @include carbon--breakpoint-down(md) {
       margin-top: revert;
+      margin-bottom: 0.25rem;
     }
+    .cv-progress-step {
+      width: 13rem;
+      margin-left: 1rem;
+    }
+    .cv-progress-step:first-child {
+      margin-left: 0;
+    }
+    .bx--progress-label {
+      color: $text-on-color;
+      max-width: unset;
+    }
+    .bx--progress-step--incomplete svg {
+      fill: $text-on-color;
+    }
+    .bx--progress-line {
+      width: 100%;
+    }
+    .bx--progress--vertical {
+      .bx--progress-line {
+        display: none;
+      }
+      .cv-progress-step {
+        margin-left: 0;
+        min-height: 1.5rem;
+        width: fit-content;
+      }
+    }
+
     .cv-link {
       @include carbon--type-style('productive-heading-01');
       display: block;
@@ -29,5 +59,42 @@
     .cv-link:last-child {
       margin-bottom: 0;
     }
+  }
+}
+.journey-info {
+  &__deadline {
+    @include type-style('productive-heading-03');
+    margin-top: 0.5rem;
+    p {
+      @include type-style('productive-heading-03');
+    }
+    em {
+      font-style: normal;
+      color: $support-error;
+    }
+    strong {
+      font-weight: 800;
+    }
+  }
+  &__more {
+    @include type-style('body-short-02');
+  }
+  &__section {
+    width: calc(100% - 1rem);
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5rem;
+  }
+  &__collapsable {
+    overflow: hidden;
+    transition: height 0.75s;
+  }
+  &-collapsed {
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+  &__voter-data {
+    @include type-style('body-short-02');
   }
 }

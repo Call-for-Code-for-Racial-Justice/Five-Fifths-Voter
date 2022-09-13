@@ -38,6 +38,7 @@
   }
 
   &-faq {
+    @include type-style('body-short-02');
     margin-top: 0.5rem;
 
     span:nth-child(1) {
