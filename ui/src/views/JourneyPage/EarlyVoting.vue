@@ -9,59 +9,69 @@
             {{ $t('voteTitle') }}
           </h2>
 
-          <territory-info v-if="info.register.territory" />
-
-          <!-- Early voting start -->
-          <mark-down
-            class="journey-info__deadline"
-            :content="
-              $t('voteEarlyStart', {
-                medDate: niceDate(info.early_voting.start_date),
-                relativeDays: daysLeft(info.early_voting.start_date),
-              })
-            "
-          />
-          <!-- Early voting end -->
-          <mark-down
-            class="journey-info__deadline"
-            :content="
-              $t('voteEarlyEnd', {
-                medDate: niceDate(info.early_voting.last_date),
-                relativeDays: daysLeft(info.early_voting.last_date),
-              })
-            "
-          />
-
-          <!-- info link -->
-          <div class="register-info" v-if="info.early_voting.more_link">
-            <mark-down :content="$t('voteEarlyMore', { link: info.early_voting.more_link })" />
+          <!-- this appears after user enter their address -->
+          <div class="journey-info__section" v-if="voterData.state">
+            <location-list :votingData="voterData" />
+            <civic-data :voter-data="voterData" />
           </div>
 
-          <!-- Election day voting -->
-          <mark-down
-            class="journey-info__deadline"
-            :content="
-              $t('voteElectionDay', {
-                medDate: niceIsoDate(info.election_start || '2022-11-08T12:00:00.000Z'),
-                relativeDays: daysLeftIso(info.election_start || '2022-11-08T12:00:00.000Z'),
-              })
-            "
-          />
-          <span class="register-faq" v-if="'election_day_info' in info">{{
-            `\u21b3 ` + info.election_day_info
-          }}</span>
+          <div class="journey-info__collapsable" ref="generalInfo">
+            <territory-info v-if="info.register.territory" />
 
-          <div class="register-faq-header">{{ $t('faq') }}</div>
-          <!-- Vote early -->
-          <div class="register-faq" v-if="'available' in info.early_voting">
-            <span>{{ $t('voteEarlyAvailable') }}</span
-            ><span>{{ info.early_voting.available ? $t('yes') : $t('no') }}</span>
-          </div>
+            <!-- Early voting start -->
+            <mark-down
+              class="journey-info__deadline"
+              :content="
+                $t('voteEarlyStart', {
+                  medDate: niceDate(info.early_voting.start_date),
+                  relativeDays: daysLeft(info.early_voting.start_date),
+                })
+              "
+            />
+            <!-- Early voting end -->
+            <mark-down
+              class="journey-info__deadline"
+              :content="
+                $t('voteEarlyEnd', {
+                  medDate: niceDate(info.early_voting.last_date),
+                  relativeDays: daysLeft(info.early_voting.last_date),
+                })
+              "
+            />
 
-          <!-- ID needed -->
-          <div class="register-faq" v-if="'id_needed' in info.mail_in">
-            <span>{{ $t('voteEarlyIdNeeded') }}</span>
-            <span>{{ info.early_voting.id_needed ? $t('yes') : $t('no') }}</span>
+            <!-- info link -->
+            <mark-down
+              class="journey-info__more"
+              v-if="info.early_voting.more_link"
+              :content="`\u21b3 ` + $t('voteEarlyMore', { link: info.early_voting.more_link })"
+            />
+
+            <!-- Election day voting -->
+            <mark-down
+              class="journey-info__deadline"
+              :content="
+                $t('voteElectionDay', {
+                  medDate: niceIsoDate(info.election_start || '2022-11-08T12:00:00.000Z'),
+                  relativeDays: daysLeftIso(info.election_start || '2022-11-08T12:00:00.000Z'),
+                })
+              "
+            />
+            <span class="register-faq" v-if="'election_day_info' in info">{{
+              `\u21b3 ` + info.election_day_info
+            }}</span>
+
+            <div class="register-faq-header">{{ $t('faq') }}</div>
+            <!-- Vote early -->
+            <div class="register-faq" v-if="'available' in info.early_voting">
+              <span>{{ $t('voteEarlyAvailable') }}</span
+              ><span>{{ info.early_voting.available ? $t('yes') : $t('no') }}</span>
+            </div>
+
+            <!-- ID needed -->
+            <div class="register-faq" v-if="'id_needed' in info.mail_in">
+              <span>{{ $t('voteEarlyIdNeeded') }}</span>
+              <span>{{ info.early_voting.id_needed ? $t('yes') : $t('no') }}</span>
+            </div>
           </div>
 
           <div class="wrapper wrapper--address">
@@ -84,39 +94,11 @@
               <cv-button
                 class="button--early-voting"
                 kind="primary"
-                @click="showNowPollingLocation"
+                @click="showPollingLocation"
                 :disabled="buttonDisabled"
               >
                 {{ $t('votePollingLocationBtn') }}
               </cv-button>
-            </div>
-            <div v-if="voterData.state">
-              <p>
-                {{ voterData.state[0].name }}
-                <span v-if="voterData.state[0].electionAdministrationBody.name">
-                  -
-                  {{ voterData.state[0].electionAdministrationBody.name }}
-                </span>
-              </p>
-              <span v-if="electionInfoUrl">
-                <cv-link :href="electionInfoUrl"> Election Info</cv-link><br />
-              </span>
-              <span v-if="absenteeVotingInfoUrl">
-                <cv-link :href="absenteeVotingInfoUrl"> Get Absentee Ballot</cv-link><br />
-              </span>
-              <span v-if="!locationAvailable"> {{ $t('voteEarlyNoLocationFound') }} </span>
-              <cv-select v-if="electionList.length" label="Select Your Election">
-                <cv-select-option selected>Choose an election</cv-select-option>
-                <cv-select-option
-                  v-for="(item, index) in electionList"
-                  :key="index"
-                  :selected="index == 0 ? 'selected' : ''"
-                  >{{ item }}</cv-select-option
-                >
-              </cv-select>
-              <location-list v-if="voterData.state" :votingData="voterData" />
-
-              <span><br />Powered by the Civic Information API</span>
             </div>
           </div>
         </div>
@@ -154,22 +136,32 @@ import electionInfo from '@/data/usa-2022-midterms-info.json';
 import dateFormatter from '@/api/dateFormatter';
 import MarkDown from '@/components/MarkDown/MarkDown';
 import LocationList from '@/views/JourneyPage/LocationList';
+import CivicData from '@/views/JourneyPage/CivicData';
+import { DateTime } from 'luxon';
+import readableId from '@/api/base58id';
 
 export default {
   name: 'VoteNow',
-  components: { LocationList, MarkDown, MainContent, GoogleMap, SelectState, TerritoryInfo },
+  components: {
+    CivicData,
+    LocationList,
+    MarkDown,
+    MainContent,
+    GoogleMap,
+    SelectState,
+    TerritoryInfo,
+  },
   data() {
     return {
-      addressValue: '301 County Rd 195 Dover, Delaware',
-      good: '836 Lincoln St Dover, Delaware',
+      addressValue: '',
       normalizedAddressValue: '',
       placeholder: '123 Main St GA 30076',
-      early: false,
       electionName: '',
       voterData: {},
       elections: [],
       electionId: '',
       loading: false,
+      infoHeight: '',
     };
   },
   created() {
@@ -214,13 +206,6 @@ export default {
       return this.electionId === '' || this.addressValue < 10;
     },
 
-    electionInfoUrl() {
-      try {
-        return this.voterData.state[0].electionAdministrationBody.electionInfoUrl;
-      } catch (error) {
-        return '';
-      }
-    },
     electionRegistrationUrl() {
       try {
         return this.voterData.state[0].electionAdministrationBody.electionRegistrationUrl;
@@ -236,13 +221,7 @@ export default {
         return '';
       }
     },
-    absenteeVotingInfoUrl() {
-      try {
-        return this.voterData.state[0].electionAdministrationBody.absenteeVotingInfoUrl;
-      } catch (error) {
-        return '';
-      }
-    },
+
     votingLocationFinderUrl() {
       try {
         return this.voterData.state[0].electionAdministrationBody.votingLocationFinderUrl;
@@ -260,53 +239,39 @@ export default {
     placeholderMap() {
       return this.mapMarkers.length === 0;
     },
-    electionList() {
-      try {
-        if (!this.voterData.fivefifthsdata || !this.voterData.fivefifthsdata.elections) return [];
 
-        var elections = this.voterData.fivefifthsdata.elections;
-
-        if (elections.length > 1) return elections;
-        else return [];
-      } catch (error) {
-        return [];
-      }
-    },
-    locationAvailable() {
-      var locations;
-      if (this.early) locations = this.voterData.earlyVoteSites;
-      else locations = this.voterData.pollingLocations;
-
-      var good = locations && locations.length > 0;
-      return good;
-    },
     locationList() {
       try {
-        var locations = [];
-        if (this.early) locations = this.voterData.earlyVoteSites;
-        else locations = this.voterData.pollingLocations;
-        if (!locations) locations = [];
+        const electionDate = DateTime.fromJSDate(
+          this.info.election_start || '2022-11-08T12:00:00.000Z'
+        );
+        const preferEarly = Date.now() < electionDate.toMillis();
 
-        var filteredLocation = locations.filter(function (item) {
+        let locations = [];
+        if (preferEarly && 'earlyVoteSites' in this.voterData)
+          locations = this.voterData.earlyVoteSites;
+        else if ('xpollingLocations' in this.voterData) locations = this.voterData.pollingLocations;
+        else if ('dropOffLocations' in this.voterData) locations = this.voterData.dropOffLocations;
+
+        return locations.filter((item) => {
           return !item.address.electionName || item.address.electionName === this.electionName;
-        }, this);
-
-        return filteredLocation;
+        });
       } catch (error) {
         //console.error(error);
         return null;
       }
     },
     mapMarkers() {
-      var list = [];
+      const list = [];
       try {
-        var index = 0;
-        var locations = this.locationList;
+        let index = 0;
+        const locations = this.locationList;
 
         while (index < locations.length) {
-          var item = locations[index];
+          const item = locations[index];
+          let dir_address = '';
+
           if (!item.latitude || !item.longitude) {
-            var dir_address = '';
             if (item.address.line1) dir_address += item.address.line1;
             if (item.address.line2) dir_address += ' ' + item.address.line2;
             if (item.address.line3) dir_address += ' ' + item.address.line3;
@@ -314,11 +279,15 @@ export default {
             if (item.address.state) dir_address += ' ' + item.address.state;
           }
 
+          let id;
+          if (item.latitude && item.longitude) id = `${item.latitude}/${item.longitude}`;
+          else id = readableId(6);
+
           list.push({
-            id: item.address.locationName + index,
+            id: id,
             position: { lat: item.latitude, lng: item.longitude, address: dir_address },
             info: this.locationInfo(item),
-            title: item.address.locationName,
+            title: item.address.locationName || 'Polling Place',
           });
           index++;
         }
@@ -329,7 +298,7 @@ export default {
       }
     },
     filteredElections() {
-      return this.elections.filter((item) => item.id != '2000');
+      return this.elections.filter((item) => item.id !== '2000');
     },
     disabledAddress() {
       return !this.electionId;
@@ -348,7 +317,6 @@ export default {
       if (found) this.electionId = found.id;
       else this.electionId = '';
     },
-
     showPollingLocation() {
       this.loading = true;
       axios
@@ -386,7 +354,7 @@ export default {
             this.$store.commit('setVotingAddress', this.normalizedAddressValue);
 
             if (this.voterData.fivefifthsdata && this.voterData.fivefifthsdata.elections) {
-              var elections = this.voterData.fivefifthsdata.elections;
+              const elections = this.voterData.fivefifthsdata.elections;
               this.electionName = elections[elections.length - 1];
             }
           } catch (error) {
@@ -402,47 +370,37 @@ export default {
           this.loading = false;
         });
     },
-    showEarlyPollingLocation() {
-      this.early = true;
-      this.showPollingLocation();
-    },
-    showNowPollingLocation() {
-      this.early = false;
-      this.showPollingLocation();
-    },
 
     /**
-     * Create a google link to directions
+     * Create a Google link to directions
      */
     directionsLink(item) {
-      var dir_address = '';
+      let dir_address = '';
       if (item.address.line1) dir_address += item.address.line1;
       if (item.address.line2) dir_address += ' ' + item.address.line2;
       if (item.address.line3) dir_address += ' ' + item.address.line3;
       if (item.address.city) dir_address += ' ' + item.address.city;
       if (item.address.state) dir_address += ' ' + item.address.state;
       const escapedValue = encodeURIComponent(dir_address).replaceAll('%20', '+');
-      var dir_link = 'https://www.google.com/maps/search/?api=1&query=' + escapedValue;
-      return dir_link;
+      return 'https://www.google.com/maps/search/?api=1&query=' + escapedValue;
     },
 
     /**
-     * This is used by the map to contruct an info window for each marker. Styling is mostly
+     * This is used by the map to construct an info window for each marker. Styling is mostly
      * controlled by the map api but simple things should work ok.
      */
     locationInfo(item) {
-      var info = '<div><b>' + item.address.locationName + '</b></div>';
-      if (!this.early && item.pollingHours) info += '<div><b>' + item.pollingHours + '</b></div>';
+      let info = '<div><b>' + (item.address.locationName || 'Polling Place') + '</b></div>';
+      if (item.pollingHours) info += '<div><b>' + item.pollingHours + '</b></div>';
       if (item.address.line1) info += '<div>' + item.address.line1 + '</div>';
       if (item.address.line2) info += '<div>' + item.address.line2 + '</div>';
       if (item.address.line3) info += '<div>' + item.address.line3 + '</div>';
       if (item.address.city) info += '<span>' + item.address.city + '</span>';
       if (item.address.state) info += '<span> ' + item.address.state + '</span>';
 
-      var dir_link = this.directionsLink(item);
+      const dir_link = this.directionsLink(item);
 
-      info +=
-        '<div><a target="_blank" alt="directions" href="' + dir_link + '">Directions</a></div>';
+      info += '<div><a target="_blank" href="' + dir_link + '">Directions</a></div>';
       return info;
     },
   },

@@ -1,4 +1,7 @@
 <script>
+import createDebug from 'debug';
+const debug = createDebug('map:marker');
+
 export default {
   props: {
     google: {
@@ -40,63 +43,44 @@ export default {
       error;
     }
   },
-  mounted() {
-    const { Geocoder, GeocoderStatus, Marker, InfoWindow } = this.google.maps;
+  async mounted() {
+    const { Geocoder, Marker, InfoWindow } = this.google.maps;
+    debug('creating map pin for', this.marker);
 
-    new Promise((resolve, reject) => {
-      // If there is already a lat/lng then we are done
-      if (this.marker.position.lat && this.marker.position.lng) {
-        return resolve(this.marker);
+    if (!this.marker?.position?.lat || !this.marker?.position?.lng) {
+      if (this.geocode) {
+        // try to get a latitude & longitude for this address
+        const geocoder = new Geocoder();
+        const results = await geocoder.geocode({ address: this.marker.position.address });
+        debug('geocoded', results);
+        this.marker.position = results[0]?.geometry?.location;
       }
+    }
 
-      if (!this.geocode) return reject('geocoding not enabled');
+    // If we have latitude & longitude for this address
+    if (this.marker?.position?.lat && this.marker?.position?.lng) {
+      const markerConfig = {
+        position: this.marker.position,
+        title: this.marker.title,
+        marker: this.marker,
+        map: this.map,
+      };
+      if (this.icon) {
+        markerConfig.icon = this.icon;
+      }
+      this.mapMarker = new Marker(markerConfig);
 
-      // otherwise the address has to be geocoded
-      var geocoder = new Geocoder();
-      geocoder.geocode(
-        { address: this.marker.position.address },
-        function (results, status) {
-          if (status == GeocoderStatus.OK) {
-            // update the position with the lat/lng for mthe geocoder
-            this.marker.position = results[0].geometry.location;
-            return resolve(this.marker);
-          }
-          return reject('geocoded failed');
-        }.bind(this)
-      );
-    })
-      .then((marker) => {
-        // At this point we have a marker that includes a lat/lng
-        this.marker = marker;
-        var markerConfig = {
-          position: this.marker.position,
-          title: this.marker.title,
-          marker: this.marker,
-          map: this.map,
-        };
-        if (this.icon) {
-          markerConfig.icon = this.icon;
-        }
-        this.mapMarker = new Marker(markerConfig);
-
-        // Attached an info window to the marker and open it on click
-        if (this.marker.info) {
-          this.theinfo = new InfoWindow({
-            content: this.marker.info,
-          });
-          this.theinfo.set('map', this.map);
-          this.theinfo.set('marker', this.mapMarker);
-          this.mapMarker.addListener('click', this.showInfo);
-        }
-
-        this.collection.push(this.mapMarker);
-        return null;
-      })
-      .catch((reason) => {
-        // do no create a marker for this address
-        /* eslint no-console: 0 */
-        console.error(reason);
-      });
+      // Attached an info window to the marker and open it on click
+      if (this.marker.info) {
+        this.theinfo = new InfoWindow({
+          content: this.marker.info,
+        });
+        this.theinfo.set('map', this.map);
+        this.theinfo.set('marker', this.mapMarker);
+        this.mapMarker.addListener('click', this.showInfo);
+      }
+      this.collection.push(this.mapMarker);
+    }
   },
   methods: {
     showInfo() {

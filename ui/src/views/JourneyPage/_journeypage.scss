@@ -46,7 +46,6 @@
       }
     }
 
-
     .cv-link {
       @include carbon--type-style('productive-heading-01');
       display: block;
@@ -61,7 +60,6 @@
       margin-bottom: 0;
     }
   }
-
 }
 .journey-info {
   &__deadline {
@@ -72,10 +70,31 @@
     }
     em {
       font-style: normal;
-      color: $support-error
+      color: $support-error;
     }
     strong {
       font-weight: 800;
     }
+  }
+  &__more {
+    @include type-style('body-short-02');
+  }
+  &__section {
+    width: calc(100% - 1rem);
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5rem;
+  }
+  &__collapsable {
+    overflow: hidden;
+    transition: height 0.75s;
+  }
+  &-collapsed {
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+  &__voter-data {
+    @include type-style('body-short-02');
   }
 }

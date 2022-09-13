@@ -1,5 +1,5 @@
 <template>
-  <cv-accordion>
+  <cv-accordion v-if="earlyVoteSites.length || earlyVoteSites.length || dropOffLocations.length">
     <cv-accordion-item v-if="earlyVoteSites.length" :open="false">
       <template v-slot:title>Election Day Voting Location</template>
       <template v-slot:content>

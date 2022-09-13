@@ -16,7 +16,7 @@
         :marker="voterAddress"
         :google="google"
         :map="map"
-        :geocode="true"
+        :geocode="false"
         :icon="require('@/assets/icons/user.png')"
         :collection="centerRef"
       />
