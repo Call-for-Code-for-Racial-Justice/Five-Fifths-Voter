@@ -34,7 +34,6 @@ export default {
   /**
    * Get a string with a format like " Oct 28, 2022"
    * @param dateStr {string} Like 'MM/dd/yy'
-   * @param iso {boolean}
    * @returns {string}
    */
   niceDate(dateStr) {
@@ -50,7 +49,6 @@ export default {
   /**
    * Get a string with a format like " Oct 28, 2022"
    * @param dateStr {string} Like '2022-11-09T00:00:00.000Z'
-   * @param iso {boolean}
    * @returns {string}
    */
   niceIsoDate(dateStr) {

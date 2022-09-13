@@ -140,6 +140,23 @@ import CivicData from '@/views/JourneyPage/CivicData';
 import { DateTime } from 'luxon';
 import readableId from '@/api/base58id';
 
+/**
+ * Help for IDE
+ * @property {?Object} early_voting
+ * @property {?string} start_date
+ * @property {?string} last_date
+ * @property {?string} more_link
+ * @property {?string} election_start
+ * @property {?boolean} id_needed
+ * @property {?boolean} available
+ * @property {?string} line1
+ * @property {?string} line2
+ * @property {?string} line3
+ * @property {?string} electionDay
+ * @property {?string} ocdDivisionId
+ * @property {?string} pollingHours
+ */
+
 export default {
   name: 'VoteNow',
   components: {
@@ -242,7 +259,7 @@ export default {
 
     locationList() {
       try {
-        const electionDate = DateTime.fromJSDate(
+        const electionDate = DateTime.fromISO(
           this.info.election_start || '2022-11-08T12:00:00.000Z'
         );
         const preferEarly = Date.now() < electionDate.toMillis();
@@ -250,7 +267,7 @@ export default {
         let locations = [];
         if (preferEarly && 'earlyVoteSites' in this.voterData)
           locations = this.voterData.earlyVoteSites;
-        else if ('xpollingLocations' in this.voterData) locations = this.voterData.pollingLocations;
+        else if ('pollingLocations' in this.voterData) locations = this.voterData.pollingLocations;
         else if ('dropOffLocations' in this.voterData) locations = this.voterData.dropOffLocations;
 
         return locations.filter((item) => {
