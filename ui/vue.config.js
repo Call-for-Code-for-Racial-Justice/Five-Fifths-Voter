@@ -18,9 +18,13 @@ module.exports = {
         xfwd: true,
         pathRewrite: { '^/services/': '' },
         autoRewrite: true,
-        hostRewrite: true,
+        hostRewrite: true
       },
     },
+    watchOptions: {
+      poll: true
+    },
+    hot: true
   },
   pwa: process.env.PWA
     ? {
