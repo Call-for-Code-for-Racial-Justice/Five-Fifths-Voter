@@ -3,50 +3,42 @@
     <template v-slot:content>
       <aside class="aside" :aria-label="$t('ariaWhere')">
         <div class="aside__container--text">
+          <select-state />
+
           <h2 class="aside__header">{{ $t('ballotTitle') }}</h2>
-          <div class="wrapper wrapper--address">
-            <cv-text-input
-              :label="$t('ballotAddressLabel')"
-              v-model="addressValue"
-              :placeholder="placeholder"
-              @input="updatedAddress"
-            >
-            </cv-text-input>
-            <div class="wrapper wrapper--button">
-              <cv-button kind="primary" @click="showPollingLocation" :disabled="buttonDisabled">
-                {{ $t('ballotDropBtn') }}
-              </cv-button>
-            </div>
-            <div v-if="voterData.state">
-              <p>
-                {{ voterData.state[0].name }}
-                <span v-if="voterData.state[0].electionAdministrationBody.name">
-                  -
-                  {{ voterData.state[0].electionAdministrationBody.name }}
-                </span>
-              </p>
-              <span v-if="electionInfoUrl">
-                <cv-link :href="electionInfoUrl"> {{ $t('ballotElectionInfo') }} </cv-link><br />
-              </span>
-              <span v-if="absenteeVotingInfoUrl">
-                <cv-link :href="absenteeVotingInfoUrl"> {{ $t('ballotAbsentee') }} </cv-link><br />
-              </span>
-              <span v-if="placeholderMap"> {{ $t('ballotNoLocation') }} </span>
-              <cv-list v-if="locationList">
-                <cv-list-item v-for="item in locationList" :key="item.address.locationName">
-                  <span class="loc-name">{{ item.address.locationName }}</span>
-                  <span v-if="item.notes" class="loc-name">{{ item.notes }}</span>
 
-                  <span v-if="item.address.line1" class="loc-line">{{ item.address.line1 }}</span>
-                  <span v-if="item.address.line2" class="loc-line">{{ item.address.line2 }}</span>
-                  <span v-if="item.address.line3" class="loc-line">{{ item.address.line3 }}</span>
-                  <span v-if="item.address.city" class="loc-city">{{ item.address.city }}</span>
-                  <span v-if="item.address.state" class="loc-state"> {{ item.address.state }}</span>
-                </cv-list-item>
-              </cv-list>
+          <!-- Return deadline -->
+          <div
+            class="register-info-deadline"
+            style="margin-top: 1rem"
+            v-if="info.mail_in.return_deadline"
+          >
+            {{ $t('absenteeReturn') }}
+            <span>{{ niceDate(info.mail_in.return_deadline) }}, </span>
+            <span class="days-left">{{ daysLeft(info.mail_in.return_deadline) }}. </span>
+          </div>
 
-              <span><br />Powered by the Civic Information API</span>
+          <!-- drop-off -->
+          <div class="register-faq" v-if="'dropoff' in info.mail_in">
+            <span>{{ $t('absenteeDropFaq') }}</span
+            ><span>{{ info.mail_in.dropoff ? $t('yes') : $t('no') }}</span>
+            <div>
+              <mark-down
+                style="display: inline-block"
+                v-if="info.mail_in.dropoff_explainer"
+                :content="`\u21b3 ` + info.mail_in.dropoff_explainer"
+              />
             </div>
+          </div>
+
+          <!-- State link -->
+          <div v-if="info.mail_in.track_link" class="register-info">
+            <mark-down :content="$t('absenteeTrack', { trackUrl: info.mail_in.track_link })" />
+          </div>
+
+          <!-- State link -->
+          <div v-if="info.mail_in.more_link" class="register-info">
+            <mark-down :content="$t('absenteeMoreInfo', { moreUlrl: info.mail_in.more_link })" />
           </div>
         </div>
       </aside>
@@ -60,15 +52,17 @@
 </template>
 
 <script>
-//todo: The zip lookup and the templates parts that use it should be its own component.
-// This componet should be able to just include, for example, <ZipToData service='/ballotreturn/locations'/>
-
 import axios from 'axios';
 import MainContent from '../../components/MainContent';
+import SelectState from '@/views/JourneyPage/SelectState';
+import MarkDown from '@/components/MarkDown/MarkDown';
+import electionInfo from '@/data/usa-2022-midterms-info.json';
+import { mapState } from 'vuex';
+import dateFormatter from '@/api/dateFormatter';
 
 export default {
-  name: 'ballotreturn',
-  components: { MainContent },
+  name: 'BallotReturn',
+  components: { MainContent, SelectState, MarkDown },
   data() {
     return {
       addressValue: '',
@@ -79,6 +73,16 @@ export default {
   },
   created() {},
   computed: {
+    ...mapState({
+      usaState: (state) => state.user.info?.location?.region,
+      usaCode: (state) => state.user.info?.location?.region_code,
+      requested: (state) => Boolean(state.user.info?.requested_early === 'midterm-2022'),
+    }),
+    info() {
+      const code = this.usaCode?.toLowerCase() || 'unknown';
+      return electionInfo[code] || { mail_in: { territory: true } };
+    },
+
     electionInfoUrl() {
       try {
         return this.voterData.state[0].electionAdministrationBody.electionInfoUrl;
@@ -160,6 +164,9 @@ export default {
   },
   mounted() {},
   methods: {
+    daysLeft: (dateStr) => dateFormatter.daysLeft(dateStr),
+    niceDate: (dateStr) => dateFormatter.niceDate(dateStr),
+
     showPollingLocation() {
       if (this.$refs.dropoffMap) this.$refs.dropoffMap.clearMarkers();
       axios
