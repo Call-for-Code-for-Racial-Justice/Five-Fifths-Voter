@@ -41,12 +41,12 @@
 </template>
 
 <script>
-import Register from '../../components/Register';
-import Absentee from '../../components/Absentee';
+import Register from './Register';
+import Absentee from './Absentee';
 import EarlyVoting from './EarlyVoting';
 import BallotReturn from './BallotReturn';
-import GetInformed from '../../components/GetInformed';
-import PageLayout from '../../components/PageLayout';
+import GetInformed from './GetInformed';
+import PageLayout from '@/components/PageLayout';
 import { mapState } from 'vuex';
 
 export default {

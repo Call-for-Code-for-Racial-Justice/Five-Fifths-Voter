@@ -28,14 +28,10 @@
 
           <!-- link request ballot -->
           <div class="register-info" v-if="!info.mail_in.territory">
-            <span>Online request </span>
-            <cv-link
+            <mark-down
               v-if="info.mail_in.request_link"
-              :inline="true"
-              :href="info.mail_in.request_link"
-              target="_blank"
-              >{{ $t('absenteeRequest') }}</cv-link
-            >
+              :content="$t('absenteeRequest', { url: info.mail_in.request_link })"
+            />
             <cv-link
               v-else
               href="https://www.vote.org/absentee-ballot/"
@@ -117,12 +113,12 @@
 
 <script>
 import MainContent from '@/components/MainContent';
-import SelectState from '@/views/JourneyPage/SelectState';
+import SelectState from './SelectState';
 import electionInfo from '@/data/usa-2022-midterms-info.json';
 import { mapState } from 'vuex';
 import MarkDown from '@/components/MarkDown/MarkDown';
 import dateFormatter from '@/api/dateFormatter';
-import TerritoryInfo from '@/views/JourneyPage/TerritoryInfo';
+import TerritoryInfo from './TerritoryInfo';
 
 export default {
   name: 'absentee',
@@ -152,6 +148,6 @@ export default {
 };
 </script>
 <style lang="scss">
-@import '../Register/register';
+@import './register';
 @import 'carbon-components/scss/components/checkbox/checkbox';
 </style>

@@ -425,6 +425,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/components/Register/register';
+@import './register';
 @import './earlyvoting';
 </style>

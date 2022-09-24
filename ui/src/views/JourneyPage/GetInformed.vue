@@ -32,6 +32,7 @@
                 }}</cv-link>
               </template>
               <template v-slot:content v-else>
+                <div>{{ $t('getInformedCandidateOrder') }}</div>
                 <div class="candidate" v-for="candidate in c.candidates" :key="candidate.id">
                   <cv-link :inline="true" :href="candidate.candidateUrl" target="_blank">{{
                     candidate.name
@@ -153,7 +154,7 @@ import {
   LogoInstagram32,
   LogoLinkedin32,
 } from '@carbon/icons-vue';
-import FindCong from '@/components/GetInformed/FindCong';
+import FindCong from '@/views/JourneyPage/FindCong';
 
 export default {
   name: 'GetInformed',

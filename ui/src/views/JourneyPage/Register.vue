@@ -35,23 +35,14 @@
               >,
               <span class="days-left">{{ daysLeft(info.register.deadline_in_person) }}!</span>
             </div>
-            <cv-link
-              style="margin-left: 0; margin-top: 1rem"
-              v-if="info.register.online_link"
-              :href="info.register.online_link"
-              :inline="true"
-              target="_blank"
-              >{{ $t('registerOnline') }}</cv-link
-            >
-            or
-            <cv-link
-              style="margin-left: 0"
-              v-if="info.register.mail_link"
-              :href="info.register.mail_link"
-              :inline="true"
-              target="_blank"
-              >{{ $t('registerMail') }}</cv-link
-            >
+            <mark-down
+              :content="
+                $t('registerLinks', {
+                  onlineUrl: info.register.online_link,
+                  mailLink: info.register.mail_link,
+                })
+              "
+            />
           </div>
 
           <!-- Youth -->
@@ -119,15 +110,16 @@
 <script>
 import MainContent from '../../components/MainContent';
 import { mapState } from 'vuex';
-import SelectState from '@/views/JourneyPage/SelectState';
-import CaliSpecial from '@/components/Register/CaliSpecial';
+import SelectState from './SelectState';
+import CaliSpecial from './CaliSpecial';
 import electionInfo from '@/data/usa-2022-midterms-info.json';
 import dateFormatter from '@/api/dateFormatter';
 import TerritoryInfo from '@/views/JourneyPage/TerritoryInfo';
+import MarkDown from '@/components/MarkDown/MarkDown';
 
 export default {
   name: 'reg',
-  components: { TerritoryInfo, SelectState, MainContent, CaliSpecial },
+  components: { MarkDown, TerritoryInfo, SelectState, MainContent, CaliSpecial },
   data() {
     return {};
   },
