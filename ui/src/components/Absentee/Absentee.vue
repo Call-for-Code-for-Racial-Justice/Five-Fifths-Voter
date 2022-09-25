@@ -48,14 +48,10 @@
 
           <!-- State link -->
           <div v-if="info.mail_in.more_link" class="register-info">
-            <span>{{ $t('absenteeMoreInfo') }}</span>
-            <cv-link :inline="true" :href="info.mail_in.more_link" target="_blank">{{
-              $t('registerYouth_2a')
-            }}</cv-link
-            >.
+            <mark-down :content="$t('absenteeMoreInfo', { moreUlrl: info.mail_in.more_link })" />
           </div>
 
-          <!-- Request deadline -->
+          <!-- Return deadline -->
           <div
             class="register-info-deadline"
             style="margin-top: 1rem"

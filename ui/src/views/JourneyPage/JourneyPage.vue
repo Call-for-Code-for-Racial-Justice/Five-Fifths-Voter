@@ -44,7 +44,7 @@
 import Register from '../../components/Register';
 import Absentee from '../../components/Absentee';
 import EarlyVoting from './EarlyVoting';
-import BallotReturn from '../../components/BallotReturn';
+import BallotReturn from './BallotReturn';
 import GetInformed from '../../components/GetInformed';
 import PageLayout from '../../components/PageLayout';
 import { mapState } from 'vuex';
