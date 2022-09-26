@@ -22,5 +22,5 @@ export default {
 <style lang="scss">
 @import '@/styles/_theme.scss';
 @import 'carbon-components/scss/components/link/link';
-@import '@/components/Register/_register.scss';
+@import './_register.scss';
 </style>

@@ -1,4 +1,5 @@
 import { DateTime } from 'luxon';
+import i18n from '@/plugins/i18n';
 
 export default {
   /**
@@ -9,7 +10,7 @@ export default {
   daysLeft(dateStr) {
     try {
       const dt = DateTime.fromFormat(dateStr, 'MM/dd/yy');
-      return dt.toRelative({ unit: ['days', 'hours'] });
+      return dt.toRelative({ unit: ['days', 'hours'], locale: i18n.locale });
     } catch (e) {
       console.warn(e);
     }
@@ -24,7 +25,7 @@ export default {
   daysLeftIso(dateStr) {
     try {
       const dt = DateTime.fromISO(dateStr);
-      return dt.toRelative({ unit: ['days', 'hours'] });
+      return dt.toRelative({ unit: ['days', 'hours'], locale: i18n.locale });
     } catch (e) {
       console.warn(e);
     }
@@ -39,7 +40,7 @@ export default {
   niceDate(dateStr) {
     try {
       const dt = DateTime.fromFormat(dateStr, 'MM/dd/yy');
-      return dt.toLocaleString(DateTime.DATE_MED);
+      return dt.toLocaleString(DateTime.DATE_MED, { locale: i18n.locale });
     } catch (e) {
       console.warn(e);
     }
@@ -54,7 +55,7 @@ export default {
   niceIsoDate(dateStr) {
     try {
       const dt = DateTime.fromISO(dateStr);
-      return dt.toLocaleString(DateTime.DATE_MED);
+      return dt.toLocaleString(DateTime.DATE_MED, { locale: i18n.locale });
     } catch (e) {
       console.warn(e);
     }

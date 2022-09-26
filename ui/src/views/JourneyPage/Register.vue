@@ -28,30 +28,25 @@
           <territory-info v-if="info.register.territory" />
 
           <!-- registration deadline -->
-          <div class="register-info" v-if="info.register.deadline_in_person">
-            <div class="register-info-deadline">
-              {{ $t('registrationDeadline') }}
-              <span>{{ niceDate(info.register.deadline_in_person) }}</span
-              >,
-              <span class="days-left">{{ daysLeft(info.register.deadline_in_person) }}!</span>
-            </div>
-            <cv-link
-              style="margin-left: 0; margin-top: 1rem"
-              v-if="info.register.online_link"
-              :href="info.register.online_link"
-              :inline="true"
-              target="_blank"
-              >{{ $t('registerOnline') }}</cv-link
-            >
-            or
-            <cv-link
-              style="margin-left: 0"
-              v-if="info.register.mail_link"
-              :href="info.register.mail_link"
-              :inline="true"
-              target="_blank"
-              >{{ $t('registerMail') }}</cv-link
-            >
+          <div v-if="info.register.deadline_in_person" class="journey-info__deadline">
+            <mark-down
+              :content="
+                $t('registrationDeadline', {
+                  date: niceDate(info.register.deadline_in_person),
+                  days: daysLeft(info.register.deadline_in_person),
+                })
+              "
+            />
+          </div>
+          <div class="register-info" v-if="info.register.online_link">
+            <mark-down
+              :content="
+                $t('registerLinks', {
+                  onlineUrl: info.register.online_link,
+                  mailLink: info.register.mail_link,
+                })
+              "
+            />
           </div>
 
           <!-- Youth -->
@@ -117,17 +112,18 @@
 </template>
 
 <script>
-import MainContent from '../../components/MainContent';
+import MainContent from '@/components/MainContent';
 import { mapState } from 'vuex';
-import SelectState from '@/views/JourneyPage/SelectState';
-import CaliSpecial from '@/components/Register/CaliSpecial';
+import SelectState from './SelectState';
+import CaliSpecial from './CaliSpecial';
 import electionInfo from '@/data/usa-2022-midterms-info.json';
 import dateFormatter from '@/api/dateFormatter';
-import TerritoryInfo from '@/views/JourneyPage/TerritoryInfo';
+import TerritoryInfo from './TerritoryInfo';
+import MarkDown from '@/components/MarkDown/MarkDown';
 
 export default {
-  name: 'reg',
-  components: { TerritoryInfo, SelectState, MainContent, CaliSpecial },
+  name: 'RegisterToVote',
+  components: { MarkDown, TerritoryInfo, SelectState, MainContent, CaliSpecial },
   data() {
     return {};
   },

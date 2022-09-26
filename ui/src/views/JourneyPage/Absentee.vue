@@ -20,22 +20,23 @@
           <territory-info v-if="info.mail_in.territory" />
 
           <!-- Request deadline -->
-          <div class="register-info-deadline" v-if="info.mail_in.request_deadline">
-            {{ $t('registrationDeadline') }}
-            <span>{{ niceDate(info.mail_in.request_deadline) }}, </span>
-            <span class="days-left">{{ daysLeft(info.mail_in.request_deadline) }}</span>
+          <div class="journey-info__deadline" v-if="info.mail_in.request_deadline">
+            <mark-down
+              :content="
+                $t('absenteeRequestDeadline', {
+                  date: niceDate(info.mail_in.request_deadline),
+                  days: daysLeft(info.mail_in.request_deadline),
+                })
+              "
+            />
           </div>
 
           <!-- link request ballot -->
           <div class="register-info" v-if="!info.mail_in.territory">
-            <span>Online request </span>
-            <cv-link
+            <mark-down
               v-if="info.mail_in.request_link"
-              :inline="true"
-              :href="info.mail_in.request_link"
-              target="_blank"
-              >{{ $t('absenteeRequest') }}</cv-link
-            >
+              :content="$t('absenteeRequest', { url: info.mail_in.request_link })"
+            />
             <cv-link
               v-else
               href="https://www.vote.org/absentee-ballot/"
@@ -53,13 +54,18 @@
 
           <!-- Return deadline -->
           <div
-            class="register-info-deadline"
+            class="journey-info__deadline"
             style="margin-top: 1rem"
             v-if="info.mail_in.return_deadline"
           >
-            {{ $t('absenteeReturn') }}
-            <span>{{ niceDate(info.mail_in.return_deadline) }}, </span>
-            <span class="days-left">{{ daysLeft(info.mail_in.return_deadline) }}. </span>
+            <mark-down
+              :content="
+                $t('absenteeReturn', {
+                  date: niceDate(info.mail_in.return_deadline),
+                  days: daysLeft(info.mail_in.return_deadline),
+                })
+              "
+            />
           </div>
 
           <div class="register-faq-header">{{ $t('faq') }}</div>
@@ -117,12 +123,12 @@
 
 <script>
 import MainContent from '@/components/MainContent';
-import SelectState from '@/views/JourneyPage/SelectState';
+import SelectState from './SelectState';
 import electionInfo from '@/data/usa-2022-midterms-info.json';
 import { mapState } from 'vuex';
 import MarkDown from '@/components/MarkDown/MarkDown';
 import dateFormatter from '@/api/dateFormatter';
-import TerritoryInfo from '@/views/JourneyPage/TerritoryInfo';
+import TerritoryInfo from './TerritoryInfo';
 
 export default {
   name: 'absentee',
@@ -152,6 +158,6 @@ export default {
 };
 </script>
 <style lang="scss">
-@import '../Register/register';
+@import './register';
 @import 'carbon-components/scss/components/checkbox/checkbox';
 </style>

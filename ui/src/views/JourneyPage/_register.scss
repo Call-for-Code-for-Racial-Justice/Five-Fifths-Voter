@@ -27,13 +27,6 @@
 
     .cv-link {
       @include type-style('body-short-02');
-      margin-left: 1rem;
-    }
-    &-deadline {
-      @include type-style('productive-heading-03');
-      span:nth-child(1) {
-        font-weight: 800;
-      }
     }
   }
 
