@@ -28,12 +28,6 @@
     .cv-link {
       @include type-style('body-short-02');
     }
-    &-deadline {
-      @include type-style('productive-heading-03');
-      span:nth-child(1) {
-        font-weight: 800;
-      }
-    }
   }
 
   &-faq {

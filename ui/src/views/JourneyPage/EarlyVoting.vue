@@ -23,8 +23,8 @@
               class="journey-info__deadline"
               :content="
                 $t('voteEarlyStart', {
-                  medDate: niceDate(info.early_voting.start_date),
-                  relativeDays: daysLeft(info.early_voting.start_date),
+                  date: niceDate(info.early_voting.start_date),
+                  days: daysLeft(info.early_voting.start_date),
                 })
               "
             />
@@ -33,8 +33,8 @@
               class="journey-info__deadline"
               :content="
                 $t('voteEarlyEnd', {
-                  medDate: niceDate(info.early_voting.last_date),
-                  relativeDays: daysLeft(info.early_voting.last_date),
+                  date: niceDate(info.early_voting.last_date),
+                  days: daysLeft(info.early_voting.last_date),
                 })
               "
             />
@@ -51,8 +51,8 @@
               class="journey-info__deadline"
               :content="
                 $t('voteElectionDay', {
-                  medDate: niceIsoDate(info.election_start || '2022-11-08T12:00:00.000Z'),
-                  relativeDays: daysLeftIso(info.election_start || '2022-11-08T12:00:00.000Z'),
+                  date: niceIsoDate(info.election_start || '2022-11-08T12:00:00.000Z'),
+                  days: daysLeftIso(info.election_start || '2022-11-08T12:00:00.000Z'),
                 })
               "
             />

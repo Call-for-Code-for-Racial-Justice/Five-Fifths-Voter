@@ -1,5 +1,5 @@
 @import '@/styles/_theme.scss';
-@import '../../../node_modules/carbon-components/scss/components/accordion/accordion';
+@import 'carbon-components/scss/components/accordion/accordion';
 
 .candidate {
   @include type-style('body-short-02');

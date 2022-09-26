@@ -9,13 +9,18 @@
 
           <!-- Return deadline -->
           <div
-            class="register-info-deadline"
+            class="journey-info__deadline"
             style="margin-top: 1rem"
             v-if="info.mail_in.return_deadline"
           >
-            {{ $t('absenteeReturn') }}
-            <span>{{ niceDate(info.mail_in.return_deadline) }}, </span>
-            <span class="days-left">{{ daysLeft(info.mail_in.return_deadline) }}. </span>
+            <mark-down
+              :content="
+                $t('absenteeReturn', {
+                  date: niceDate(info.mail_in.return_deadline),
+                  days: daysLeft(info.mail_in.return_deadline),
+                })
+              "
+            />
           </div>
 
           <!-- drop-off -->
@@ -52,7 +57,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import MainContent from '../../components/MainContent';
 import SelectState from '@/views/JourneyPage/SelectState';
 import MarkDown from '@/components/MarkDown/MarkDown';
@@ -64,12 +68,7 @@ export default {
   name: 'BallotReturn',
   components: { MainContent, SelectState, MarkDown },
   data() {
-    return {
-      addressValue: '',
-      placeholder: '123 Main St GA 30076',
-      buttonDisabled: true,
-      voterData: {},
-    };
+    return {};
   },
   created() {},
   computed: {
@@ -82,125 +81,11 @@ export default {
       const code = this.usaCode?.toLowerCase() || 'unknown';
       return electionInfo[code] || { mail_in: { territory: true } };
     },
-
-    electionInfoUrl() {
-      try {
-        return this.voterData.state[0].electionAdministrationBody.electionInfoUrl;
-      } catch (error) {
-        return '';
-      }
-    },
-    electionRegistrationUrl() {
-      try {
-        return this.voterData.state[0].electionAdministrationBody.electionRegistrationUrl;
-      } catch (error) {
-        return '';
-      }
-    },
-    electionRegistrationConfirmationUrl() {
-      try {
-        return this.voterData.state[0].electionAdministrationBody
-          .electionRegistrationConfirmationUrl;
-      } catch (error) {
-        return '';
-      }
-    },
-    absenteeVotingInfoUrl() {
-      try {
-        return this.voterData.state[0].electionAdministrationBody.absenteeVotingInfoUrl;
-      } catch (error) {
-        return '';
-      }
-    },
-    votingLocationFinderUrl() {
-      try {
-        return this.voterData.state[0].electionAdministrationBody.votingLocationFinderUrl;
-      } catch (error) {
-        return '';
-      }
-    },
-    ballotInfoUrl() {
-      try {
-        return this.voterData.state[0].electionAdministrationBody.ballotInfoUrl;
-      } catch (error) {
-        return '';
-      }
-    },
-    placeholderMap() {
-      return this.mapMarkers.length === 0;
-    },
-    mapMarkers() {
-      var list = [];
-      try {
-        var index = 0;
-        while (index < this.voterData.dropOffLocations.length) {
-          var item = this.voterData.dropOffLocations[index];
-          list.push({
-            id: item.address.locationName,
-            position: { lat: item.latitude, lng: item.longitude },
-            info: this.locationInfo(item),
-            title: item.address.locationName,
-          });
-          index++;
-        }
-        return list;
-      } catch (error) {
-        return list;
-      }
-    },
-
-    /**
-     * To turn off the list of location just return null from this function. Or maybe show the first N
-     * locations.
-     */
-    locationList() {
-      try {
-        var locations = this.voterData.dropOffLocations;
-        return locations;
-      } catch (error) {
-        return null;
-      }
-    },
   },
   mounted() {},
   methods: {
     daysLeft: (dateStr) => dateFormatter.daysLeft(dateStr),
     niceDate: (dateStr) => dateFormatter.niceDate(dateStr),
-
-    showPollingLocation() {
-      if (this.$refs.dropoffMap) this.$refs.dropoffMap.clearMarkers();
-      axios
-        .post('/services/pollingplace', {
-          data: {
-            address: this.addressValue,
-          },
-        })
-        .then((response) => {
-          this.voterData = response.data;
-        })
-        .catch((error) => {
-          error;
-          this.voterData = { error: true };
-        });
-    },
-    updatedAddress() {
-      this.buttonDisabled = this.addressValue.length < 10;
-    },
-
-    /**
-     * This is used by the map to contruct an info window for each marker. Styling is mostly
-     * controlled by the map api but simple things should work ok.
-     */
-    locationInfo(item) {
-      var info = '<div><b>' + item.address.locationName + '</b></div>';
-      if (item.notes) info += '<div>' + item.notes + '</div>';
-      if (item.address.line1) info += '<div>' + item.address.line1 + '</div>';
-      if (item.address.line2) info += '<div>' + item.address.line2 + '</div>';
-      if (item.address.line3) info += '<div>' + item.address.line3 + '</div>';
-      if (item.address.city) info += '<span>' + item.address.city + '</span>';
-      if (item.address.state) info += '<span> ' + item.address.state + '</span>';
-      return info;
-    },
   },
 };
 </script>

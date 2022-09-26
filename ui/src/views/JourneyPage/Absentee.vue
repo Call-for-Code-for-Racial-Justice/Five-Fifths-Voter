@@ -20,10 +20,15 @@
           <territory-info v-if="info.mail_in.territory" />
 
           <!-- Request deadline -->
-          <div class="register-info-deadline" v-if="info.mail_in.request_deadline">
-            {{ $t('registrationDeadline') }}
-            <span>{{ niceDate(info.mail_in.request_deadline) }}, </span>
-            <span class="days-left">{{ daysLeft(info.mail_in.request_deadline) }}</span>
+          <div class="journey-info__deadline" v-if="info.mail_in.request_deadline">
+            <mark-down
+              :content="
+                $t('absenteeRequestDeadline', {
+                  date: niceDate(info.mail_in.request_deadline),
+                  days: daysLeft(info.mail_in.request_deadline),
+                })
+              "
+            />
           </div>
 
           <!-- link request ballot -->
@@ -49,13 +54,18 @@
 
           <!-- Return deadline -->
           <div
-            class="register-info-deadline"
+            class="journey-info__deadline"
             style="margin-top: 1rem"
             v-if="info.mail_in.return_deadline"
           >
-            {{ $t('absenteeReturn') }}
-            <span>{{ niceDate(info.mail_in.return_deadline) }}, </span>
-            <span class="days-left">{{ daysLeft(info.mail_in.return_deadline) }}. </span>
+            <mark-down
+              :content="
+                $t('absenteeReturn', {
+                  date: niceDate(info.mail_in.return_deadline),
+                  days: daysLeft(info.mail_in.return_deadline),
+                })
+              "
+            />
           </div>
 
           <div class="register-faq-header">{{ $t('faq') }}</div>

@@ -28,13 +28,17 @@
           <territory-info v-if="info.register.territory" />
 
           <!-- registration deadline -->
-          <div class="register-info" v-if="info.register.deadline_in_person">
-            <div class="register-info-deadline">
-              {{ $t('registrationDeadline') }}
-              <span>{{ niceDate(info.register.deadline_in_person) }}</span
-              >,
-              <span class="days-left">{{ daysLeft(info.register.deadline_in_person) }}!</span>
-            </div>
+          <div v-if="info.register.deadline_in_person" class="journey-info__deadline">
+            <mark-down
+              :content="
+                $t('registrationDeadline', {
+                  date: niceDate(info.register.deadline_in_person),
+                  days: daysLeft(info.register.deadline_in_person),
+                })
+              "
+            />
+          </div>
+          <div class="register-info" v-if="info.register.online_link">
             <mark-down
               :content="
                 $t('registerLinks', {
@@ -108,17 +112,17 @@
 </template>
 
 <script>
-import MainContent from '../../components/MainContent';
+import MainContent from '@/components/MainContent';
 import { mapState } from 'vuex';
 import SelectState from './SelectState';
 import CaliSpecial from './CaliSpecial';
 import electionInfo from '@/data/usa-2022-midterms-info.json';
 import dateFormatter from '@/api/dateFormatter';
-import TerritoryInfo from '@/views/JourneyPage/TerritoryInfo';
+import TerritoryInfo from './TerritoryInfo';
 import MarkDown from '@/components/MarkDown/MarkDown';
 
 export default {
-  name: 'reg',
+  name: 'RegisterToVote',
   components: { MarkDown, TerritoryInfo, SelectState, MainContent, CaliSpecial },
   data() {
     return {};

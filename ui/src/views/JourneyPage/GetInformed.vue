@@ -145,8 +145,8 @@ import electionInfo from '@/data/usa-2022-midterms-info.json';
 import Republican from '@/assets/icons/Republican';
 import Democrat from '@/assets/icons/Democrat';
 import Libertarian from '@/assets/icons/Libertarian';
-import TerritoryInfo from '@/views/JourneyPage/TerritoryInfo';
-
+import TerritoryInfo from './TerritoryInfo';
+import FindCong from './FindCong';
 import {
   LogoFacebook32,
   LogoTwitter32,
@@ -154,7 +154,6 @@ import {
   LogoInstagram32,
   LogoLinkedin32,
 } from '@carbon/icons-vue';
-import FindCong from '@/views/JourneyPage/FindCong';
 
 export default {
   name: 'GetInformed',
@@ -207,4 +206,5 @@ export default {
 
 <style lang="scss">
 @import 'get-informed';
+@import 'register';
 </style>
