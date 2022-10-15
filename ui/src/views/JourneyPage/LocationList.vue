@@ -1,7 +1,7 @@
 <template>
   <cv-accordion v-if="earlyVoteSites.length || earlyVoteSites.length || dropOffLocations.length">
     <cv-accordion-item v-if="earlyVoteSites.length" :open="false">
-      <template v-slot:title>Election Day Voting Location</template>
+      <template v-slot:title>Early Voting Location</template>
       <template v-slot:content>
         <cv-list>
           <cv-list-item v-for="(item, index) in earlyVoteSites" :key="index">
