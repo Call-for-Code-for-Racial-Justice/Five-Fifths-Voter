@@ -2888,8 +2888,9 @@
       "id_explainer": "ID is required when applying for an absentee ballot.",
       "id_link": "https://www.ncsbe.gov/voting/vote-mail/detailed-instructions-vote-mail#1-request-ballot",
       "dropoff": true,
-      "request_deadline": "TBD",
-      "return_deadline": "TBD",
+      "return_deadline": "11/08/2022",
+      "request_deadline": "11/01/2022",
+
       "request_link": "https://s3.amazonaws.com/dl.ncsbe.gov/Forms/English-Fillable-2022-Absentee-Ballot-Request-Form.pdf",
       "track_link": "https://vt.ncsbe.gov/RegLkup/",
       "more_link": "https://www.ncsbe.gov/voting/vote-mail"
@@ -3043,7 +3044,7 @@
       "id_explainer": "ID is required when requesting an absentee ballot.",
       "id_link": "https://www.ohiosos.gov/elections/voters/absentee-voting/",
       "dropoff": true,
-      "request_deadline": "TBD",
+      "request_deadline": "11/05/2022",
       "return_deadline": "11/07/2022",
       "request_link": "https://www.ohiosos.gov/elections/voters/absentee-ballot/",
       "track_link": "https://www.ohiosos.gov/elections/voters/toolkit/ballot-tracking/",
