@@ -208,6 +208,9 @@ export default {
     votingAddress() {
       this.addressValue = this.votingAddress;
     },
+    filteredElections() {
+      if (this.filteredElections?.length === 1) this.electionId = this.filteredElections[0].id;
+    },
   },
   computed: {
     ...mapState({
