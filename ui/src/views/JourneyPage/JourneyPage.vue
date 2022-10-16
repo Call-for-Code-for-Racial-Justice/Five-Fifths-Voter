@@ -87,8 +87,8 @@ export default {
       if (this.absentee && this.which === 'absentee') this.which = 'get-informed';
     },
   },
-  created() {
-    this.$store.dispatch('getApproxLocation');
+  async created() {
+    await this.$store.dispatch('getApproxLocation');
     const regTooLate = dateFormatter.tooLate(this.info?.register?.deadline_in_person);
     const skipRegistration = this.registered || regTooLate;
     const absenteeTooLate = dateFormatter.tooLate(this.info?.mail_in?.request_deadline);
