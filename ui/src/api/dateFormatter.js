@@ -61,4 +61,18 @@ export default {
     }
     return dateStr;
   },
+
+  /**
+   * Is date in the past?
+   * @param dateStr {string} Like 'MM/dd/yy'
+   * @returns {boolean}
+   */
+  tooLate(dateStr) {
+    try {
+      const dt = DateTime.fromFormat(dateStr, 'MM/dd/yy');
+      return DateTime.now().toMillis() > dt.toMillis();
+    } catch (e) {
+      return false;
+    }
+  },
 };

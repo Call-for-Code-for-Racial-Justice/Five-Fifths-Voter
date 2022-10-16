@@ -48,6 +48,8 @@ import BallotReturn from './BallotReturn';
 import GetInformed from './GetInformed';
 import PageLayout from '@/components/PageLayout';
 import { mapState } from 'vuex';
+import electionInfo from '@/data/usa-2022-midterms-info.json';
+import dateFormatter from '@/api/dateFormatter';
 
 export default {
   name: 'journey',
@@ -69,7 +71,13 @@ export default {
     ...mapState({
       registered: (state) => Boolean(state.user.info?.registered === 'midterm-2022'),
       absentee: (state) => Boolean(state.user.info?.requested_early === 'midterm-2022'),
+      usaState: (state) => state.user.info?.location?.region,
+      usaCode: (state) => state.user.info?.location?.region_code,
     }),
+    info() {
+      const code = this.usaCode?.toLowerCase() || 'unknown';
+      return electionInfo[code] || { register: { territory: true } };
+    },
   },
   watch: {
     registered() {
@@ -81,9 +89,13 @@ export default {
   },
   created() {
     this.$store.dispatch('getApproxLocation');
+    const regTooLate = dateFormatter.tooLate(this.info?.register?.deadline_in_person);
+    const skipRegistration = this.registered || regTooLate;
+    const absenteeTooLate = dateFormatter.tooLate(this.info?.mail_in?.request_deadline);
+    const skipAbsentee = this.absentee || absenteeTooLate;
 
-    if (this.registered && this.which === 'register') this.which = 'absentee';
-    else if (this.registered && this.which === 'absentee') this.which = 'get-informed';
+    if (skipRegistration && this.which === 'register') this.which = 'absentee';
+    if (skipAbsentee && this.which === 'absentee') this.which = 'get-informed';
     window.addEventListener('resize', this.actionResize);
     this.actionResize();
   },
