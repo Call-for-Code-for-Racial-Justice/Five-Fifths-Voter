@@ -1,0 +1,69 @@
+# This is a basic workflow to help you get started with Actions
+
+name: IBM Cloud Code Engine Deploy
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+#  push:
+#    branches: [main]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+
+      # Runs a single command using the runners shell
+      - name: Install IBM Cloud CLI
+        run: curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
+
+      - name: Install Code Engine plugin
+        run: |
+          ibmcloud plugin install code-engine
+          ibmcloud plugin install container-registry
+
+      - name: Show IBM CLI version
+        run: ibmcloud -v
+
+      - name: Login to IBM Cloud
+        env:
+          IBM_CLOUD_APIKEY: ${{ secrets.IBM_CLOUD_APIKEY }}
+          IBM_CLOUD_CF_ENDPOINT: ${{ secrets.IBM_CLOUD_CF_ENDPOINT }}
+          IBM_CLOUD_GROUP: ${{ secrets.IBM_CLOUD_GROUP }}
+          IBM_CLOUD_ORG: ${{ secrets.IBM_CLOUD_ORG }}
+          IBM_CLOUD_SPACE: ${{ secrets.IBM_CLOUD_SPACE }}
+        run: |
+          ibmcloud login --apikey $IBM_CLOUD_APIKEY -g $IBM_CLOUD_GROUP -r us-south
+          ibmcloud cr login
+
+      # Runs a set of commands using the runners shell
+      - name: Build and deploy
+        run: |
+          cd ui
+          yarn
+          yarn build
+          cd ../services
+          yarn
+          docker build -t fivefifthsvoter . -f ce/alpine.dockerfile
+          docker tag fivefifthsvoter:latest us.icr.io/fivefifthsvoter/codeengine-fivefifthsvoter:latest
+          docker push us.icr.io/fivefifthsvoter/codeengine-fivefifthsvoter:latest
+          ibmcloud ce project select --name fivefifthsvoter
+          ibmcloud ce app update --name fivefifthsvoter
+
