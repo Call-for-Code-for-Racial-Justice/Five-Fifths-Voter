@@ -1,8 +1,6 @@
 const express = require("express")
-const path = require("path")
 const bodyParser = require("body-parser")
-const querystring = require("querystring")
-const lodash = require("lodash")
+const staticRoutes = require("./routes/static")
 require("dotenv-flow").config({ default_node_env: "development" })
 
 var isDevelopment = process.env.NODE_ENV === "development" || process.env.NODE_ENV === undefined
@@ -43,7 +41,7 @@ const civic = require("./routes/civic")
 //   res.append("Content-Type", "application/json");
 //   next();
 // });
-
+app.use("/", staticRoutes)
 app.get("/services", (req, res) => {
   // console.log('Returning version');
   res.send(about)

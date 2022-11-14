@@ -1,6 +1,0 @@
----
-applications:
-  - name: fivefifthsvoter
-    memory: 512M
-    buildpacks:
-      - https://github.com/cloudfoundry/nginx-buildpack

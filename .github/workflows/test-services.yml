@@ -12,15 +12,15 @@ jobs:
       matrix:
         node-version: [16.x]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
           cache: "yarn"
           cache-dependency-path: "**/yarn.lock"
       #
-      # CAUTION: These steps run on code in the the PR. They should not execute any code that might be included in the PR.
+      # CAUTION: These steps run on code in the PR. They should not execute any code that might be included in the PR.
       # See: https://docs.github.com/en/actions/security-guides/security-hardening-for-github-actions
       #
       - name: Install dependencies

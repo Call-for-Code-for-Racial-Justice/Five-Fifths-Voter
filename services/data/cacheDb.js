@@ -19,9 +19,9 @@ var cloudDB
 /**
  * The VCAP_SERVICES environment variable is defined in production. So use it to connect to cloudant DB
  */
-if (process.env.VCAP_SERVICES) {
+if (process.env.CLOUDANT) {
   // Load the Cloudant library.
-  var vcap_services = JSON.parse(process.env.VCAP_SERVICES)
+  var vcap_services = JSON.parse(process.env.CLOUDANT)
   var Cloudant = require("@cloudant/cloudant")
   var cloudant = Cloudant({
     vcapInstanceName: "five-fifth-voters-cloudant-prod",
