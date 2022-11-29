@@ -120,6 +120,7 @@
   "voteEarlyStart": "Early voting begins **{date}**, *{days}*.",
   "voteEarlyEnd": "Early voting ends **{date}**, *{days}*.",
   "voteElectionDay": "Election day voting starts **{date}**, *{days}*.",
+  "voteElectionDayEnd": "Election day voting ends **{date}**, *{days}*.",
   "voteEarlyIdNeeded": "Do I need an ID to vote early?",
   "voteEarlyMore": "[More information]({link}) about early voting.",
 

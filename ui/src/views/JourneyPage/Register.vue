@@ -116,7 +116,7 @@ import MainContent from '@/components/MainContent';
 import { mapState } from 'vuex';
 import SelectState from './SelectState';
 import CaliSpecial from './CaliSpecial';
-import electionInfo from '@/data/usa-2022-midterms-info.json';
+import electionInfo from '@/data/usa-2022-midterms-runoff.json';
 import dateFormatter from '@/api/dateFormatter';
 import TerritoryInfo from './TerritoryInfo';
 import MarkDown from '@/components/MarkDown/MarkDown';

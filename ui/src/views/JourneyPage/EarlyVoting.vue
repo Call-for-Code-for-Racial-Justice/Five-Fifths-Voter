@@ -56,6 +56,16 @@
                 })
               "
             />
+            <mark-down
+              v-if="showEnd"
+              class="journey-info__deadline"
+              :content="
+                $t('voteElectionDayEnd', {
+                  date: niceIsoDate(info.election_end || '2022-11-08T12:00:00.000Z'),
+                  days: daysLeftIso(info.election_end || '2022-11-08T12:00:00.000Z'),
+                })
+              "
+            />
             <span class="register-faq" v-if="'election_day_info' in info">{{
               `\u21b3 ` + info.election_day_info
             }}</span>
@@ -132,7 +142,7 @@ import GoogleMap from '../../components/Maps/GoogleMap';
 import SelectState from './SelectState';
 import TerritoryInfo from './TerritoryInfo';
 import { mapState } from 'vuex';
-import electionInfo from '@/data/usa-2022-midterms-info.json';
+import electionInfo from '@/data/usa-2022-midterms-runoff.json';
 import dateFormatter from '@/api/dateFormatter';
 import MarkDown from '@/components/MarkDown/MarkDown';
 import LocationList from '@/views/JourneyPage/LocationList';
@@ -322,6 +332,10 @@ export default {
     },
     disabledAddress() {
       return !this.electionId;
+    },
+    showEnd() {
+      if (!this.info.election_end) return false;
+      return dateFormatter.tooLateIso(this.info.election_start);
     },
   },
   methods: {
