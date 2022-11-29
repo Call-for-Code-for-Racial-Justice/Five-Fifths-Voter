@@ -60,7 +60,7 @@
 import MainContent from '../../components/MainContent';
 import SelectState from '@/views/JourneyPage/SelectState';
 import MarkDown from '@/components/MarkDown/MarkDown';
-import electionInfo from '@/data/usa-2022-midterms-info.json';
+import electionInfo from '@/data/usa-2022-midterms-runoff.json';
 import { mapState } from 'vuex';
 import dateFormatter from '@/api/dateFormatter';
 

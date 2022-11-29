@@ -26,6 +26,11 @@
                   <cv-link :href="district.link" target="_blank">{{ district.name }}</cv-link>
                 </div>
               </template>
+              <template v-slot:content v-else-if="c.more_link">
+                <cv-link :href="c.more_link" target="_blank">{{
+                  $t('getInformedMoreInfo')
+                }}</cv-link>
+              </template>
               <template v-slot:content v-else-if="!c.candidates || c.candidates.length === 0">
                 <cv-link :href="`https://www.vote411.org/${usaState}`" target="_blank">{{
                   $t('getInformedMoreInfo')
@@ -141,7 +146,7 @@ import { mapState } from 'vuex';
 /**
  * @typedef {Object<string,regionInfo>} electionInfo
  */
-import electionInfo from '@/data/usa-2022-midterms-info.json';
+import electionInfo from '@/data/usa-2022-midterms-runoff.json';
 import Republican from '@/assets/icons/Republican';
 import Democrat from '@/assets/icons/Democrat';
 import Libertarian from '@/assets/icons/Libertarian';

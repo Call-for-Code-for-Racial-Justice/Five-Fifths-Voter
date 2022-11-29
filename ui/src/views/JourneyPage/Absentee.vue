@@ -124,7 +124,7 @@
 <script>
 import MainContent from '@/components/MainContent';
 import SelectState from './SelectState';
-import electionInfo from '@/data/usa-2022-midterms-info.json';
+import electionInfo from '@/data/usa-2022-midterms-runoff.json';
 import { mapState } from 'vuex';
 import MarkDown from '@/components/MarkDown/MarkDown';
 import dateFormatter from '@/api/dateFormatter';

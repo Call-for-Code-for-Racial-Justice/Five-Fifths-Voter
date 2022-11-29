@@ -48,7 +48,7 @@ import BallotReturn from './BallotReturn';
 import GetInformed from './GetInformed';
 import PageLayout from '@/components/PageLayout';
 import { mapState } from 'vuex';
-import electionInfo from '@/data/usa-2022-midterms-info.json';
+import electionInfo from '@/data/usa-2022-midterms-runoff.json';
 import dateFormatter from '@/api/dateFormatter';
 
 export default {
@@ -90,12 +90,14 @@ export default {
   async created() {
     await this.$store.dispatch('getApproxLocation');
     const regTooLate = dateFormatter.tooLate(this.info?.register?.deadline_in_person);
+    const earlyVotingStarted = dateFormatter.tooLate(this.info?.early_voting?.start_date);
     const skipRegistration = this.registered || regTooLate;
     const absenteeTooLate = dateFormatter.tooLate(this.info?.mail_in?.request_deadline);
     const skipAbsentee = this.absentee || absenteeTooLate;
 
     if (skipRegistration && this.which === 'register') this.which = 'absentee';
     if (skipAbsentee && this.which === 'absentee') this.which = 'get-informed';
+    if (earlyVotingStarted && this.which === 'get-informed') this.which = 'early-voting';
     window.addEventListener('resize', this.actionResize);
     this.actionResize();
   },
