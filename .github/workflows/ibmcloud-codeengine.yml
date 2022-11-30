@@ -44,8 +44,7 @@ jobs:
 
       - name: Login to IBM Cloud
         env:
-          IBM_CLOUD_APIKEY: ${{ secrets.IBM_CLOUD_APIKEY }}
-          IBM_CLOUD_CF_ENDPOINT: ${{ secrets.IBM_CLOUD_CF_ENDPOINT }}
+          IBM_CLOUD_APIKEY: ${{ secrets.BLUE_IBM_CLOUD_API_KEY }}
           IBM_CLOUD_GROUP: ${{ secrets.IBM_CLOUD_GROUP }}
           IBM_CLOUD_ORG: ${{ secrets.IBM_CLOUD_ORG }}
           IBM_CLOUD_SPACE: ${{ secrets.IBM_CLOUD_SPACE }}
