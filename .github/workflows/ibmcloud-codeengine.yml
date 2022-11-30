@@ -57,7 +57,6 @@ jobs:
           yarn
           yarn build
           cd ../services
-          yarn
           docker build -t fivefifthsvoter . -f ce/alpine.dockerfile
           docker tag fivefifthsvoter:latest us.icr.io/fivefifthsvoter/codeengine-fivefifthsvoter:latest
           docker push us.icr.io/fivefifthsvoter/codeengine-fivefifthsvoter:latest
