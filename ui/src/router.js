@@ -4,7 +4,7 @@ import LandingPage from './views/LandingPage';
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -50,3 +50,8 @@ export default new Router({
     },
   ],
 });
+router.beforeEach((to, from, next) => {
+  window.goatcounter?.count({ path: to.path });
+  next();
+});
+export default router;

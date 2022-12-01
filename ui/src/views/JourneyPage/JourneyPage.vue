@@ -7,27 +7,27 @@
       <cv-progress :initial-step="0" :vertical="isMobile">
         <cv-progress-step
           :label="$t('journeyPageRegisteredLabel')"
-          @step-clicked="which = 'register'"
+          @step-clicked="actionClick('register')"
           :complete="which !== 'register'"
         />
         <cv-progress-step
           :label="$t('journeyPageBallotLabel')"
-          @step-clicked="which = 'absentee'"
+          @step-clicked="actionClick('absentee')"
           :complete="which !== 'absentee'"
         />
         <cv-progress-step
           :label="$t('journeyPageGetInformedLabel')"
-          @step-clicked="which = 'get-informed'"
+          @step-clicked="actionClick('get-informed')"
           :complete="which !== 'get-informed'"
         />
         <cv-progress-step
           :label="$t('journeyPageVoteNowLabel')"
-          @step-clicked="which = 'early-voting'"
+          @step-clicked="actionClick('early-voting')"
           :complete="which !== 'early-voting'"
         />
         <cv-progress-step
           :label="$t('journeyPageDeliverLabel')"
-          @step-clicked="which = 'ballot-return'"
+          @step-clicked="actionClick('ballot-return')"
         />
       </cv-progress>
     </div>
@@ -107,6 +107,14 @@ export default {
   methods: {
     actionResize() {
       this.isMobile = window.innerWidth <= 950;
+    },
+    actionClick(which) {
+      this.which = which;
+      window.goatcounter?.count({
+        path: this.$route.path,
+        title: which,
+        event: true,
+      });
     },
   },
   errorCaptured(err, vm, info) {

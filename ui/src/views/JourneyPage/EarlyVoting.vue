@@ -197,7 +197,6 @@ export default {
     this.axiosInstance = axios.create({
       baseURL: window.location.hostname === 'localhost' ? '/services' : '/',
     });
-    console.log(window.location.hostname);
     this.axiosInstance
       .get('/elections')
       .then((response) => {
