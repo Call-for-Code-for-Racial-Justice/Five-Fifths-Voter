@@ -5,6 +5,7 @@ USER node
 
 WORKDIR /home/node/app
 COPY --chown=node:node . ./
+RUN ls -la .. .
 RUN NPM_CONFIG_PRODUCTION=1 yarn install
 CMD yarn start
 
