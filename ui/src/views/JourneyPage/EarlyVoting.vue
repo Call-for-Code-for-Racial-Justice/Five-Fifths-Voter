@@ -189,12 +189,17 @@ export default {
       electionId: '',
       loading: false,
       infoHeight: '',
+      axiosInstance: undefined,
     };
   },
   created() {
     this.loading = true;
-    axios
-      .get('/services/elections')
+    this.axiosInstance = axios.create({
+      baseURL: window.location.hostname === 'localhost' ? '/services' : '/',
+    });
+    console.log(window.location.hostname);
+    this.axiosInstance
+      .get('/elections')
       .then((response) => {
         this.elections = response.data.elections;
       })
@@ -353,8 +358,8 @@ export default {
     },
     showPollingLocation() {
       this.loading = true;
-      axios
-        .post('/services/pollingplace', {
+      this.axiosInstance
+        .post('/pollingplace', {
           data: {
             address: this.addressValue,
             electionId: this.electionId,
