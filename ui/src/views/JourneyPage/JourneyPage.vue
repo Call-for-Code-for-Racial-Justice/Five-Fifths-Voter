@@ -110,11 +110,15 @@ export default {
     },
     actionClick(which) {
       this.which = which;
-      window.goatcounter?.count({
-        path: this.$route.path,
-        title: which,
-        event: true,
-      });
+      try {
+        window.goatcounter?.count({
+          path: this.$route.path,
+          title: which,
+          event: true,
+        });
+      } catch (e) {
+        // could not count
+      }
     },
   },
   errorCaptured(err, vm, info) {
