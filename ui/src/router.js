@@ -51,7 +51,11 @@ const router = new Router({
   ],
 });
 router.beforeEach((to, from, next) => {
-  window.goatcounter?.count({ path: to.path });
+  try {
+    window.goatcounter?.count({ path: to.path });
+  } catch (e) {
+    // console.warn(e);
+  }
   next();
 });
 export default router;
