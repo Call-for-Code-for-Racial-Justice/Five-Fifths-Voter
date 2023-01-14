@@ -61,7 +61,7 @@
 <script>
 import StateIcon from './StateIcon';
 import usaStates from '@/data/usa-states.json';
-import midterms2022 from '@/data/usa-2022-midterms-runoff.json';
+import midterms2022 from '@/data/usa-2024.json';
 import MarkDown from '../../components/MarkDown';
 
 export default {
@@ -113,8 +113,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import 'carbon-components/scss/globals/scss/vars.scss';
-@import 'carbon-components/scss/globals/scss/typography.scss';
+@import '@/styles/_theme.scss';
 .usa-state {
   &__nav-form {
     position: absolute;

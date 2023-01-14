@@ -83,11 +83,11 @@ const mutations = {
     }
   },
   setRegistered(state, registered) {
-    Vue.set(state.info, 'registered', registered ? 'midterm-2022' : '');
+    Vue.set(state.info, 'registered', registered ? 'presidential-2024' : '');
     localStorage.setItem('user', JSON.stringify(state.info));
   },
   setRequested(state, requested) {
-    Vue.set(state.info, 'requested_early', requested ? 'midterm-2022' : '');
+    Vue.set(state.info, 'requested_early', requested ? 'presidential-2024' : '');
     localStorage.setItem('user', JSON.stringify(state.info));
   },
   setVotingAddress(state, normalized_address) {

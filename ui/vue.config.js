@@ -11,6 +11,14 @@ module.exports = {
       .use('vue-svg-loader')
       .loader('vue-svg-loader');
   },
+  configureWebpack: {
+    devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'eval-cheap-source-map',
+    devServer: {
+      watchOptions: {
+        ignored: ['**/node_modules', '**/src/assets', '**/test'],
+      },
+    },
+  },
   devServer: {
     proxy: {
       '/services': {
@@ -18,13 +26,13 @@ module.exports = {
         xfwd: true,
         pathRewrite: { '^/services/': '' },
         autoRewrite: true,
-        hostRewrite: true
+        hostRewrite: true,
       },
     },
     watchOptions: {
-      poll: true
+      poll: true,
     },
-    hot: true
+    hot: true,
   },
   pwa: process.env.PWA
     ? {

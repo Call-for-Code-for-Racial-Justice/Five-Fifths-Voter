@@ -1,6 +1,4 @@
 @import '@/styles/_theme.scss';
-@import 'carbon-components/scss/components/accordion/accordion';
-
 .candidate {
   @include type-style('body-short-02');
   margin-top: 0.5rem;
@@ -23,5 +21,15 @@
     .bx--accordion__content {
       padding-right: 1rem;
     }
+  }
+}
+.informed {
+  &__next-date {
+    @include type-style('heading-03');
+    margin-top: $spacing-03;
+  }
+  &__next-message {
+    @include type-style('body-long-02');
+    margin-top: $spacing-03;
   }
 }

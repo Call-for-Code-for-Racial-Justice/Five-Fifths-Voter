@@ -124,7 +124,7 @@
 <script>
 import MainContent from '@/components/MainContent';
 import SelectState from './SelectState';
-import electionInfo from '@/data/usa-2022-midterms-runoff.json';
+import electionInfo from '@/data/usa-2024.json';
 import { mapState } from 'vuex';
 import MarkDown from '@/components/MarkDown/MarkDown';
 import dateFormatter from '@/api/dateFormatter';
@@ -140,7 +140,7 @@ export default {
     ...mapState({
       usaState: (state) => state.user.info?.location?.region,
       usaCode: (state) => state.user.info?.location?.region_code,
-      requested: (state) => Boolean(state.user.info?.requested_early === 'midterm-2022'),
+      requested: (state) => Boolean(state.user.info?.requested_early === 'presidential-2024'),
     }),
     info() {
       const code = this.usaCode?.toLowerCase() || 'unknown';
@@ -159,5 +159,4 @@ export default {
 </script>
 <style lang="scss">
 @import './register';
-@import 'carbon-components/scss/components/checkbox/checkbox';
 </style>

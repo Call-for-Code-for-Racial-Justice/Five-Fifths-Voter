@@ -1,3 +1,4 @@
+@import 'carbon-components/scss/components/checkbox/checkbox'; // hack to make checkbox white
 @import '@/styles/_theme.scss';
 
 .content--register > .article__img--register {
@@ -27,6 +28,10 @@
 
     .cv-link {
       @include type-style('body-short-02');
+      margin-left: $spacing-01;
+    }
+    &__checkbox {
+      display: inline-block;
     }
   }
 
