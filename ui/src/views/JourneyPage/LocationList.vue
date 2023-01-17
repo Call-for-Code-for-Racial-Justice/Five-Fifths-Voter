@@ -136,8 +136,6 @@ export default {
 
 <style lang="scss">
 @import '@/styles/_theme.scss';
-@import 'carbon-components/scss/components/list/list';
-@import 'carbon-components/scss/components/accordion/accordion';
 .location {
   &__directions {
     margin-top: 0.75rem;

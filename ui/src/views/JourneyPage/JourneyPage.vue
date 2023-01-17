@@ -48,7 +48,7 @@ import BallotReturn from './BallotReturn';
 import GetInformed from './GetInformed';
 import PageLayout from '@/components/PageLayout';
 import { mapState } from 'vuex';
-import electionInfo from '@/data/usa-2022-midterms-runoff.json';
+import electionInfo from '@/data/usa-2024.json';
 import dateFormatter from '@/api/dateFormatter';
 
 export default {
@@ -69,8 +69,8 @@ export default {
   },
   computed: {
     ...mapState({
-      registered: (state) => Boolean(state.user.info?.registered === 'midterm-2022'),
-      absentee: (state) => Boolean(state.user.info?.requested_early === 'midterm-2022'),
+      registered: (state) => Boolean(state.user.info?.registered === 'presidential-2024'),
+      absentee: (state) => Boolean(state.user.info?.requested_early === 'presidential-2024'),
       usaState: (state) => state.user.info?.location?.region,
       usaCode: (state) => state.user.info?.location?.region_code,
     }),

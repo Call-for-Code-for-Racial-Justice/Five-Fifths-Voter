@@ -55,6 +55,4 @@ export default {
 
 <style lang="scss">
 @import 'get-informed';
-@import 'carbon-components/scss/components/modal/modal';
-@import 'carbon-components/scss/components/button/button';
 </style>

@@ -128,6 +128,7 @@ export default {
       lastName: '',
       dob: '',
       visible: false,
+      midtermMode: false,
     };
   },
   computed: {
@@ -136,7 +137,7 @@ export default {
     }),
   },
   created() {
-    if (!this.redirected) {
+    if (this.midtermMode && !this.redirected) {
       this.$store.commit('setRedirected', true);
       this.$router.push({ name: 'journey-page' });
     }

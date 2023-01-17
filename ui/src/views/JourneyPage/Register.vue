@@ -5,9 +5,8 @@
         <div class="aside__container--text">
           <select-state />
           <cv-checkbox
-            style="display: inline-block"
-            :label="$t('registerAlready')"
             value="checked-registered"
+            :label="$t('journeyPageRegisteredLabel')"
             :checked="registered"
             @change="onRegistered"
           >
@@ -116,7 +115,7 @@ import MainContent from '@/components/MainContent';
 import { mapState } from 'vuex';
 import SelectState from './SelectState';
 import CaliSpecial from './CaliSpecial';
-import electionInfo from '@/data/usa-2022-midterms-runoff.json';
+import electionInfo from '@/data/usa-2024.json';
 import dateFormatter from '@/api/dateFormatter';
 import TerritoryInfo from './TerritoryInfo';
 import MarkDown from '@/components/MarkDown/MarkDown';
@@ -131,7 +130,7 @@ export default {
     ...mapState({
       usaState: (state) => state.user.info?.location?.region,
       usaCode: (state) => state.user.info?.location?.region_code,
-      registered: (state) => Boolean(state.user.info?.registered === 'midterm-2022'),
+      registered: (state) => Boolean(state.user.info?.registered === 'presidential-2024'),
     }),
     info() {
       const code = this.usaCode?.toLowerCase() || 'unknown';
@@ -165,5 +164,4 @@ export default {
 
 <style lang="scss">
 @import './register.scss';
-@import 'carbon-components/scss/components/checkbox/checkbox';
 </style>

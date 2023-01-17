@@ -9,7 +9,7 @@
 
           <territory-info v-if="info.territory" />
 
-          <div class="register-info" v-if="info.core_races.length">
+          <div class="register-info" v-if="hasCoreRaces">
             <span>{{ $t('getInformedTopContests') }}</span>
             <mark-down v-if="info.sample_ballot" :content="info.sample_ballot" />
           </div>
@@ -96,6 +96,15 @@
               </template>
             </cv-accordion-item>
           </cv-accordion>
+          <div v-if="!hasCoreRaces">
+            <div class="informed__next-date">
+              Next election: {{ niceIsoDate(info.election_start) }}
+            </div>
+            <div class="informed__next-message">
+              It looks like we do not know much about the upcoming election yet. Check back closer
+              to election day.
+            </div>
+          </div>
         </div>
       </aside>
     </template>
@@ -112,6 +121,7 @@
 </template>
 
 <script>
+import dateFormatter from '@/api/dateFormatter';
 import SelectState from '@/views/JourneyPage/SelectState';
 import { MarkDown } from '@/components/MarkDown';
 import MainContent from '../../components/MainContent';
@@ -146,7 +156,7 @@ import { mapState } from 'vuex';
 /**
  * @typedef {Object<string,regionInfo>} electionInfo
  */
-import electionInfo from '@/data/usa-2022-midterms-runoff.json';
+import electionInfo from '@/data/usa-2024.json';
 import Republican from '@/assets/icons/Republican';
 import Democrat from '@/assets/icons/Democrat';
 import Libertarian from '@/assets/icons/Libertarian';
@@ -186,7 +196,7 @@ export default {
     ...mapState({
       usaState: (state) => state.user.info?.location?.region,
       usaCode: (state) => state.user.info?.location?.region_code,
-      registered: (state) => Boolean(state.user.info?.registered === 'midterm-2022'),
+      registered: (state) => Boolean(state.user.info?.registered === 'presidential-2024'),
     }),
     /**
      * Info for a given region ("al", "ga", etc...)
@@ -201,10 +211,15 @@ export default {
         }
       );
     },
+    hasCoreRaces() {
+      return !!this.info?.core_races?.length;
+    },
   },
   mounted() {},
   created() {},
-  methods: {},
+  methods: {
+    niceIsoDate: (dateStr) => dateFormatter.niceIsoDate(dateStr),
+  },
   updated() {},
 };
 </script>

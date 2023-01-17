@@ -1,7 +1,7 @@
 <template>
   <div class="container--countdown">
     <h3>{{ $t('countdownHeader') }}</h3>
-    <countdown deadline="November 8, 2022" />
+    <countdown deadline="November 5, 2024" />
   </div>
 </template>
 

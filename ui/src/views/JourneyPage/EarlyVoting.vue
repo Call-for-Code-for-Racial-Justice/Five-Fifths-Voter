@@ -20,6 +20,7 @@
 
             <!-- Early voting start -->
             <mark-down
+              v-if="hasEarlyVotingDate"
               class="journey-info__deadline"
               :content="
                 $t('voteEarlyStart', {
@@ -30,6 +31,7 @@
             />
             <!-- Early voting end -->
             <mark-down
+              v-if="hasEarlyVotingEndDate"
               class="journey-info__deadline"
               :content="
                 $t('voteEarlyEnd', {
@@ -142,7 +144,7 @@ import GoogleMap from '../../components/Maps/GoogleMap';
 import SelectState from './SelectState';
 import TerritoryInfo from './TerritoryInfo';
 import { mapState } from 'vuex';
-import electionInfo from '@/data/usa-2022-midterms-runoff.json';
+import electionInfo from '@/data/usa-2024.json';
 import dateFormatter from '@/api/dateFormatter';
 import MarkDown from '@/components/MarkDown/MarkDown';
 import LocationList from '@/views/JourneyPage/LocationList';
@@ -340,6 +342,12 @@ export default {
     showEnd() {
       if (!this.info.election_end) return false;
       return dateFormatter.tooLateIso(this.info.election_start);
+    },
+    hasEarlyVotingDate() {
+      return !!this.info?.early_voting?.start_date;
+    },
+    hasEarlyVotingEndDate() {
+      return !!this.info?.early_voting?.last_date;
     },
   },
   methods: {

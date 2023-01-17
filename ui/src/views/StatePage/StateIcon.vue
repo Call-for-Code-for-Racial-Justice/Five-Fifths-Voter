@@ -812,7 +812,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import 'carbon-components/scss/globals/scss/vars.scss';
+@import '@/styles/_theme.scss';
 .state-nav-form {
   position: relative;
   right: 2rem;
