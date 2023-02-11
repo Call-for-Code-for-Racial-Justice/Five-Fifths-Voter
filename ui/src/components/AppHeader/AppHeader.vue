@@ -13,6 +13,8 @@
       <cv-header-menu-item :to="{ name: 'support-page' }">
         {{ $t('appHeaderVoterSupport') }}
       </cv-header-menu-item>
+    </cv-header-nav>
+    <template v-slot:header-global>
       <cv-link
         style="width: 48px; padding: 8px"
         href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
@@ -20,8 +22,6 @@
       >
         <instagram style="fill: white" />
       </cv-link>
-    </cv-header-nav>
-    <template v-slot:header-global>
       <cv-header-global-action v-if="loginEnabled" :aria-label="$t('ariaUser')">
         <UserAvatar20 />
       </cv-header-global-action>
@@ -53,13 +53,6 @@
             <cv-header-menu-item :to="{ name: 'support-page' }">
               {{ $t('appHeaderVoterSupport') }}
             </cv-header-menu-item>
-            <cv-link
-              style="width: 48px; padding: 8px"
-              href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
-              target="_blank"
-            >
-              <instagram style="fill: black" />
-            </cv-link>
           </cv-header-side-nav-items>
         </cv-side-nav-items>
       </cv-side-nav>
