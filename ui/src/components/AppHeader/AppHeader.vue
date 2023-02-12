@@ -15,6 +15,13 @@
       </cv-header-menu-item>
     </cv-header-nav>
     <template v-slot:header-global>
+      <cv-link
+        style="width: 48px; padding: 8px"
+        href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
+        target="_blank"
+      >
+        <instagram style="fill: white" />
+      </cv-link>
       <cv-header-global-action v-if="loginEnabled" :aria-label="$t('ariaUser')">
         <UserAvatar20 />
       </cv-header-global-action>
@@ -72,10 +79,11 @@ import UserAvatar20 from '@carbon/icons-vue/lib/user--avatar/20';
 import Language32 from '@carbon/icons-vue/lib/language/32';
 import i18n from '@/plugins/i18n';
 import Capitol from '@/assets/icons/capitol.svg';
+import { LogoInstagram32 } from '@carbon/icons-vue';
 
 export default {
   name: 'AppHeader',
-  components: { UserAvatar20, Language32, Capitol },
+  components: { UserAvatar20, Language32, Capitol, Instagram: LogoInstagram32 },
   mounted() {
     this.$watch(
       '$i18n.locale',
