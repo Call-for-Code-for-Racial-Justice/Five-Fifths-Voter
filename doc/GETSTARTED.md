@@ -4,6 +4,7 @@
 
 - [install yarn](https://yarnpkg.com/lang/en/docs/cli/install/)
 - [install python3](https://realpython.com/installing-python/)
+- [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - **Fedora** Install python development package (needed by WordCloud)
   ```sh
   sudo dnf install python3-devel
@@ -63,9 +64,16 @@ The DCO text can either be manually added to your commit body, or you can add ei
 - `git config user.email` make sure your email is configured
 - If it is not configured `git config --global user.email "person@example.com"`
 
+## Setup local environment
+Begin by cloning the Git repository
+```
+ git clone https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter
+ cd Five-Fifths-Voter
+```
+
 ## Project setup
 
-Be sure to have a Node.js >=14.x
+Be sure to have a Node.js >=14.x. To check the node.js version, in a terminal you can run ``` node -v ```
 
 ```
 cd ui
