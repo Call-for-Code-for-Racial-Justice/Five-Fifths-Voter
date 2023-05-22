@@ -2,6 +2,8 @@
 
 ![Vision](doc/5-fifths-banner-1.png)
 
+[![IBM Cloud Code Engine Deploy](https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter/actions/workflows/ibmcloud-codeengine.yml/badge.svg)](https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter/actions/workflows/ibmcloud-codeengine.yml)
+
 # Five Fifths Voter Solution Starter
 
 This solution starter was created by technologists from IBM.
@@ -96,6 +98,7 @@ See the [issues list](https://github.com/Call-for-Code-for-Racial-Justice/Five-F
 For details, see [Five Fifths Technology Summary](doc/SolutionFortification.md).
 
 # Image credits
+
 democrat by Yi Chen from [Noun Project](https://thenounproject.com/browse/icons/term/democrat/)
 Republican by Yi Chen from [Noun Project](https://thenounproject.com/browse/icons/term/republican/)
 Porcupine by Loritas Medina from [Noun Project](https://thenounproject.com/browse/icons/term/porcupine/)
