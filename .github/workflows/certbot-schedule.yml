@@ -1,0 +1,69 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Update site certificate
+
+# Controls when the workflow will run
+on:
+  #schedule:
+    # Runs "At 09:29 on the 12 day of every month."
+    #- cron: '29 9 12 * *'
+
+  # Or manually trigger this
+  workflow_dispatch:
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  certbot:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      - name: Install certbot
+        run: sudo apt install -y certbot
+
+      - name: Install IBM Cloud CLI
+        run: | 
+          curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
+          ibmcloud plugin install -f code-engine
+          ibmcloud -v
+
+      - name: Login to IBM Cloud
+        env:
+          IBMCLOUD_API_KEY: ${{ secrets.BLUE_IBM_CLOUD_API_KEY }}
+          IBM_CLOUD_GROUP: ${{ secrets.BLUE_RESOURCE_GROUP }}
+        run: |
+          ibmcloud login -g ${IBM_CLOUD_GROUP} -r us-south
+          ibmcloud ce project select --name fivefifthsvoter
+
+      - name: Create ini for CloudFlare hook
+        env:
+          CERTBOT_API_TOKEN: ${{ secrets.CERTBOT_API_TOKEN }}
+        run: |
+          echo "dns_cloudflare_api_token = ${CERTBOT_API_TOKEN}">cloudflare.ini
+
+      - name: Create certificate with CloudFlare hook
+        env:
+          CERTBOT_EMAIL_ADDRESS: ${{ secrets.CERTBOT_EMAIL_ADDRESS }}
+        run: >
+          certbot certonly
+            --test-cert
+            --non-interactive
+            --agree-tos
+            -m ${CERTBOT_EMAIL_ADDRESS}
+            --dns-cloudflare
+            --dns-cloudflare-credentials=cloudflare.ini
+            --domain "*.fivefifthsvoter.com"
+
+      # Added XX to make sure this fails for testing
+      - name: Install certificate
+        run: >
+          ibmcloud ce secret update 
+          --name XXwww.fivefifthsvoter.com-tls-1668394118316 
+          --cert-chain-file certbot-config/live/fivefifthsvoter.com/fullchain.pem  
+          --private-key-file certbot-config/live/fivefifthsvoter.com/privkey.pem
