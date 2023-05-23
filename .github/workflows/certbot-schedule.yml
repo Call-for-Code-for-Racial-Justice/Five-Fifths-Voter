@@ -4,9 +4,10 @@ name: Update site certificate
 
 # Controls when the workflow will run
 on:
-  #schedule:
-    # Runs "At 09:29 on the 12 day of every month."
-    #- cron: '29 9 12 * *'
+  schedule:
+    # Runs At 03:29 on day-of-month 12.
+    # https://crontab.guru/#29_3_12_*_*
+    - cron: '29 3 12 * *'
 
   # Or manually trigger this
   workflow_dispatch:
@@ -24,9 +25,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Install certbot
-        run: sudo apt install -y certbot
-
       - name: Install IBM Cloud CLI
         run: | 
           curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
@@ -41,29 +39,48 @@ jobs:
           ibmcloud login -g ${IBM_CLOUD_GROUP} -r us-south
           ibmcloud ce project select --name fivefifthsvoter
 
-      - name: Create ini for CloudFlare hook
+      - name: Prepare CloudFlare & certbot
         env:
           CERTBOT_API_TOKEN: ${{ secrets.CERTBOT_API_TOKEN }}
         run: |
           echo "dns_cloudflare_api_token = ${CERTBOT_API_TOKEN}">cloudflare.ini
+          mkdir -p certbot-config/live/fivefifthsvoter.com
+          mkdir -p certbot-config/archive/fivefifthsvoter.com
+          mkdir -p certbot-config/accounts
+          id
 
       - name: Create certificate with CloudFlare hook
-        env:
-          CERTBOT_EMAIL_ADDRESS: ${{ secrets.CERTBOT_EMAIL_ADDRESS }}
-        run: >
-          certbot certonly
-            --test-cert
-            --non-interactive
-            --agree-tos
-            -m ${CERTBOT_EMAIL_ADDRESS}
-            --dns-cloudflare
-            --dns-cloudflare-credentials=cloudflare.ini
+        uses: docker://certbot/dns-cloudflare
+        with:
+          args: >- 
+            certonly 
+            --non-interactive 
+            --config-dir /github/workspace/certbot-config 
+            --work-dir /github/workspace/certbot-work 
+            --logs-dir /github/workspace/certbot-logs 
+            --agree-tos 
+            -m ${{ secrets.CERTBOT_EMAIL_ADDRESS }} 
+            --dns-cloudflare 
+            --dns-cloudflare-credentials=/github/workspace/cloudflare.ini 
             --domain "*.fivefifthsvoter.com"
 
-      # Added XX to make sure this fails for testing
+      - name: Fix file permissions
+        uses: docker://certbot/dns-cloudflare
+        with:
+          entrypoint: /bin/sh
+          args: -c "chmod -R o+rw /github/workspace/certbot-config"
+
+      - name: debug
+        run: |
+          find certbot-config/live -ls
+          find certbot-config/archive -ls
+
       - name: Install certificate
-        run: >
+        run: >-
           ibmcloud ce secret update 
-          --name XXwww.fivefifthsvoter.com-tls-1668394118316 
-          --cert-chain-file certbot-config/live/fivefifthsvoter.com/fullchain.pem  
-          --private-key-file certbot-config/live/fivefifthsvoter.com/privkey.pem
+          --name www.fivefifthsvoter.com-tls-1668394118316 
+          --cert-chain-file certbot-config/archive/fivefifthsvoter.com/fullchain1.pem  
+          --private-key-file certbot-config/archive/fivefifthsvoter.com/privkey1.pem
+
+      - name: Shred certificates
+        run: shred -u certbot-config/archive/fivefifthsvoter.com/*.pem
