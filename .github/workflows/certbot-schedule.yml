@@ -46,6 +46,7 @@ jobs:
           mkdir -p certbot-config/live/fivefifthsvoter.com
           mkdir -p certbot-config/archive/fivefifthsvoter.com
           mkdir -p certbot-config/accounts
+          id
 
       - name: Create certificate with CloudFlare hook
         uses: docker://certbot/dns-cloudflare
@@ -63,15 +64,20 @@ jobs:
             --dns-cloudflare-credentials=/github/workspace/cloudflare.ini 
             --domain "*.fivefifthsvoter.com"
 
+      - name: Fix file permissions
+        uses: docker://certbot/dns-cloudflare
+        with:
+          entrypoint: /bin/sh
+          args: -c "chmod -R o+rw /github/workspace/certbot-config"
+
       - name: debug
         run: |
-          find certbot-config/live
-          find certbot-config/archive
+          find certbot-config/live -ls
+          find certbot-config/archive -ls
 
-      # Added XX to make sure this fails for testing
       - name: Install certificate
         run: >-
           ibmcloud ce secret update 
           --name www.fivefifthsvoter.com-tls-1668394118316 
-          --cert-chain-file certbot-config/live/fivefifthsvoter.com/fullchain.pem  
-          --private-key-file certbot-config/live/fivefifthsvoter.com/privkey.pem
+          --cert-chain-file certbot-config/archive/fivefifthsvoter.com/fullchain1.pem  
+          --private-key-file certbot-config/archive/fivefifthsvoter.com/privkey1.pem
