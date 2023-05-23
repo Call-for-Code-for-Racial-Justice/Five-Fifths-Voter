@@ -53,7 +53,6 @@ jobs:
         with:
           args: >- 
             certonly 
-            --test-cert 
             --non-interactive 
             --config-dir /github/workspace/certbot-config 
             --work-dir /github/workspace/certbot-work 
@@ -81,3 +80,6 @@ jobs:
           --name www.fivefifthsvoter.com-tls-1668394118316 
           --cert-chain-file certbot-config/archive/fivefifthsvoter.com/fullchain1.pem  
           --private-key-file certbot-config/archive/fivefifthsvoter.com/privkey1.pem
+
+      - name: Shred certificates
+        run: shred -u certbot-config/archive/fivefifthsvoter.com/*.pem
