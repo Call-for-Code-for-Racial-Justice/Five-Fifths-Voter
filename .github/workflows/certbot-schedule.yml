@@ -54,6 +54,9 @@ jobs:
           certbot certonly
             --test-cert
             --non-interactive
+            --config-dir ./certbot-config 
+            --work-dir ./certbot-work 
+            --logs-dir ./certbot-logs
             --agree-tos
             -m ${CERTBOT_EMAIL_ADDRESS}
             --dns-cloudflare
