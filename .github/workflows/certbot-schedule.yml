@@ -4,9 +4,10 @@ name: Update site certificate
 
 # Controls when the workflow will run
 on:
-  #schedule:
-    # Runs "At 09:29 on the 12 day of every month."
-    #- cron: '29 9 12 * *'
+  schedule:
+    # Runs At 03:29 on day-of-month 12.
+    # https://crontab.guru/#29_3_12_*_*
+    - cron: '29 3 12 * *'
 
   # Or manually trigger this
   workflow_dispatch:
