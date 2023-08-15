@@ -1,9 +1,0 @@
-{
-  "_id": "_design/allDocs",
-  "views": {
-    "allDocs": {
-      "map": "function (doc) {\n  emit(doc._id, doc);\n}"
-    }
-  },
-  "language": "javascript"
-}
