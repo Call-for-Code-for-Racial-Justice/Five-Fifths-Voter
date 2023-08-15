@@ -76,8 +76,7 @@ The IBM Call for Code for Policy & Legislation Reform has developed a solution t
 
 ## Open source technology
 
-- [VueJS](https://vuejs.org)
-- [ExpressJS](https://expressjs.com)
+- [Nuxt](https://nuxt.com/)
 - [Python](https://www.python.org)
 - [Carbon](https://www.carbondesignsystem.com)
 
