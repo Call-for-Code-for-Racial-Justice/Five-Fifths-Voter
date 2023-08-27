@@ -12,6 +12,17 @@
     "@carbon/vue": "3.0.7-alpha.0",
     "@nuxt/devtools": "latest",
     "@types/node": "^18.17.3",
-    "nuxt": "^3.6.5"
+    "carbon-components": "^10.58.5",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier-vue": "^4.2.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "nuxt": "^3.6.5",
+    "prettier": "^3.0.2",
+    "sass": "^1.65.1"
+  },
+  "dependencies": {
+    "@carbon/icons-vue": "10",
+    "@carbon/themes": "10"
   }
 }
