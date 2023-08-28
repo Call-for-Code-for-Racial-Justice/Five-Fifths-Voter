@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@carbon/icons-vue": "10",
-    "@carbon/themes": "10"
+    "@carbon/themes": "10",
+    "@nuxtjs/i18n": "8.0.0-rc.3"
   }
 }
