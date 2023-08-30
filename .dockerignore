@@ -1,0 +1,6 @@
+app/.output
+app/node_modules
+app/.nuxt
+app/README.md
+app/carbon-preprocessing.sh
+app/.gitignore

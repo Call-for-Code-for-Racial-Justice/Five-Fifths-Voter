@@ -12,7 +12,7 @@
         <div class="unit">Days</div>
       </div>
       <div>
-        :{{ hours.toString().padStart(2, "0") }}
+        :{{ hours }}
         <div class="oval">
           <img alt="" src="@/assets/images/skewed-oval-empty.svg" />
         </div>
@@ -40,7 +40,7 @@
 import { DateTime, Interval } from "luxon";
 const headlines = ref("Days until the/2024/Presidential Election".split("/"));
 const election = ref("20241105T120000"); // Tuesday, November 5, 2024 7:00:00 AM GMT-05:00
-const days = ref(0);
+const days = ref(432);
 const hours = ref("00");
 const minutes = ref("00");
 const seconds = ref("00");
@@ -82,6 +82,10 @@ onBeforeUnmount(() => clearInterval(intervalID));
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
+    @include carbon--breakpoint-down(lg) {
+      width: calc(100vw - 1rem);
+      padding-left: 1rem;
+    }
   }
   &--headline {
     div {
@@ -89,6 +93,9 @@ onBeforeUnmount(() => clearInterval(intervalID));
       font-size: 3.1rem;
       font-weight: 500;
       max-width: 320px;
+      @include carbon--breakpoint-down(lg) {
+        font-size: 2.1rem;
+      }
     }
 
     div:nth-child(1) {
@@ -113,17 +120,16 @@ onBeforeUnmount(() => clearInterval(intervalID));
     margin-left: auto;
     padding-right: 2.5rem;
     align-items: center;
+    @include carbon--breakpoint-down(lg) {
+      flex-flow: column;
+      font-size: 2rem;
+    }
     .unit {
       @include type-style("productive-heading-03");
       font-family: "IBM Plex Sans", sans-serif;
     }
     .oval {
       width: 225px;
-      //height: 208px;
-      //background-image: url("@/assets/images/skewed-oval-empty.svg");
-      //background-repeat: no-repeat;
-      //background-position-y: center;
-      //background-position-x: center;
       position: absolute;
       z-index: 99;
       top: 0;
@@ -131,16 +137,28 @@ onBeforeUnmount(() => clearInterval(intervalID));
       img {
         width: 100%;
       }
+      @include carbon--breakpoint-down(lg) {
+        width: 100px;
+      }
     }
     div {
       position: relative;
       min-width: 225px;
+      @include carbon--breakpoint-down(lg) {
+        min-width: 100px;
+      }
     }
     div:nth-child(1) {
       margin-right: 1.5rem;
+      @include carbon--breakpoint-down(lg) {
+        margin-right: 0;
+      }
     }
     div:nth-child(2) {
       margin-right: 1.5rem;
+      @include carbon--breakpoint-down(lg) {
+        margin-right: 0;
+      }
     }
   }
 }

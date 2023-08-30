@@ -47,6 +47,13 @@
   font-style: normal;
   font-weight: 500;
   line-height: 64px; /* 114.286% */
+  @include carbon--breakpoint-down(lg) {
+    width: calc(100% - 5rem);
+    padding-right: 1rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    line-height: calc(1.5rem * 1.14);
+  }
 }
 .motto {
   @include type-style("body-short-01");
@@ -58,5 +65,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 32px; /* 133.333% */
+  @include carbon--breakpoint-down(lg) {
+    width: calc(100% - 5rem);
+    padding-right: 1rem;
+    margin-top: 30%;
+    font-size: 0.875rem;
+    line-height: calc(0.875rem * 1.33);
+  }
 }
 </style>
