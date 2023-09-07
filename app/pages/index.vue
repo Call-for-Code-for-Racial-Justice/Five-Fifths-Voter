@@ -1,7 +1,7 @@
 <template>
-  <cv-grid :full-width="true">
-    <cv-row kind="condensed">
-      <cv-column>
+  <div>
+    <div style="height: calc(100vh - 320px)">
+      <hero>
         <five-fiths-title class="title" />
         <div class="whole">
           A whole person.<br />A whole community.<br />A whole nation.
@@ -10,26 +10,27 @@
           Together, we can change the narrative of historically disenfranchised
           people in our democratic process.
         </div>
-        <silhouette-group class="background" />
-      </cv-column>
-    </cv-row>
-    <cv-row kind="condensed">
-      <cv-column> <countdown class="footer" /> </cv-column>
-    </cv-row>
-  </cv-grid>
+        <!--        <silhouette-group class="background" />-->
+      </hero>
+    </div>
+    <div class="footer"><countdown /></div>
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Hero from "~/components/Hero.vue";
+</script>
 
 <style lang="scss">
 @import "@/assets/scss/theme";
+
 .title {
-  margin-top: 2rem;
-  margin-left: 2rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
+  height: 320px;
+  position: relative;
 }
 .background {
   position: absolute;
@@ -39,7 +40,8 @@
 }
 .whole {
   @include type-style("productive-heading-03");
-  width: 380px;
+  width: 25%;
+  max-width: 480px;
   color: white;
   margin-top: 4rem;
   margin-left: 4rem;
@@ -54,23 +56,22 @@
     font-size: 1.5rem;
     line-height: calc(1.5rem * 1.14);
   }
+  @include carbon--breakpoint-down(md) {
+    font-size: 1rem;
+    line-height: calc(1rem * 1.14);
+  }
 }
 .motto {
-  @include type-style("body-short-01");
+  @include type-style("quotation-02");
   width: 380px;
   color: white;
   margin-top: 4rem;
   margin-left: 4rem;
-  font-size: 1.5rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px; /* 133.333% */
-  @include carbon--breakpoint-down(lg) {
+  @include carbon--breakpoint-down(md) {
+    @include type-style("body-long-01");
     width: calc(100% - 5rem);
     padding-right: 1rem;
-    margin-top: 30%;
-    font-size: 0.875rem;
-    line-height: calc(0.875rem * 1.33);
+    margin-top: 2rem;
   }
 }
 </style>

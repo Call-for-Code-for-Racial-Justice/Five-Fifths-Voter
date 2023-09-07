@@ -1,5 +1,5 @@
 <template>
-  <div class="countdown--container">
+  <div class="countdown--container" ref="el">
     <div class="countdown--headline">
       <div v-for="headline in headlines">{{ headline }}</div>
     </div>
@@ -38,6 +38,8 @@
 
 <script setup>
 import { DateTime, Interval } from "luxon";
+import { default as actual } from "actual";
+
 const headlines = ref("Days until the/2024/Presidential Election".split("/"));
 const election = ref("20241105T120000"); // Tuesday, November 5, 2024 7:00:00 AM GMT-05:00
 const days = ref(432);
@@ -66,6 +68,47 @@ onMounted(() => {
   intervalID = setInterval(updateCountdown, 1000);
 });
 onBeforeUnmount(() => clearInterval(intervalID));
+
+// Resize countdown for the screen
+const parent = ref(null);
+const el = ref(null);
+const paddingLeft = ref("96px");
+const width = ref(`${1568 - 96}px`);
+const height = ref(`${320 - 2 * 32}px`);
+const headlineFontSize = ref("49.5px");
+const numberFontSize = ref("128px");
+const numberWidth = ref("225px");
+
+function between(val, min, max) {
+  return Math.max(Math.min(val, max), min);
+}
+function resize() {
+  const vw = actual("width", "px");
+
+  console.log(`countdown ${vw} x ${parent.value?.clientHeight}`);
+  if (parent.value) {
+    const left = between(0.06 * vw, 8, 96);
+    paddingLeft.value = `${left}px`;
+    width.value = `${vw - left}px`;
+
+    height.value = `${parent.value.clientHeight}px`;
+
+    const hFontSize = between((49.5 * vw) / 1568, 17.5, 49.5);
+    headlineFontSize.value = `${hFontSize}px`;
+
+    const nFontSize = between((128 * vw) / 1568, 16, 128);
+    numberFontSize.value = `${nFontSize}px`;
+
+    const nWidth = between((225 * vw) / 1568, 16, 225);
+    numberWidth.value = `${nWidth}px`;
+  }
+}
+onMounted(() => {
+  parent.value = el.value.parentElement;
+  window.addEventListener("resize", resize);
+  resize();
+});
+onUnmounted(() => window.removeEventListener("resize", resize));
 </script>
 
 <style scoped lang="scss">
@@ -76,26 +119,19 @@ onBeforeUnmount(() => clearInterval(intervalID));
 .countdown {
   &--container {
     background-color: $ff-red-01;
-    width: calc(100vw - 6rem);
-    height: calc(320px - 4rem);
-    padding-left: 6rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    width: v-bind(width);
+    height: v-bind(height);
+    overflow: hidden;
+    padding-left: v-bind(paddingLeft);
     display: flex;
-    @include carbon--breakpoint-down(lg) {
-      width: calc(100vw - 1rem);
-      padding-left: 1rem;
-    }
+    align-items: center;
   }
   &--headline {
     div {
       @include type-style("productive-heading-07");
-      font-size: 3.1rem;
+      font-size: v-bind(headlineFontSize);
       font-weight: 500;
       max-width: 320px;
-      @include carbon--breakpoint-down(lg) {
-        font-size: 2.1rem;
-      }
     }
 
     div:nth-child(1) {
@@ -113,23 +149,22 @@ onBeforeUnmount(() => clearInterval(intervalID));
 
   &--numbers {
     display: flex;
-    font-size: 8rem;
+    @include carbon--breakpoint-down(md) {
+      flex-direction: column;
+    }
+    font-size: v-bind(numberFontSize);
     //font-family: 'Alfa Slab One', cursive;
     font-family: "Caprasimo", serif;
     color: white;
     margin-left: auto;
     padding-right: 2.5rem;
     align-items: center;
-    @include carbon--breakpoint-down(lg) {
-      flex-flow: column;
-      font-size: 2rem;
-    }
     .unit {
       @include type-style("productive-heading-03");
       font-family: "IBM Plex Sans", sans-serif;
     }
     .oval {
-      width: 225px;
+      width: v-bind(numberWidth);
       position: absolute;
       z-index: 99;
       top: 0;
@@ -137,27 +172,21 @@ onBeforeUnmount(() => clearInterval(intervalID));
       img {
         width: 100%;
       }
-      @include carbon--breakpoint-down(lg) {
-        width: 100px;
-      }
     }
     div {
       position: relative;
-      min-width: 225px;
-      @include carbon--breakpoint-down(lg) {
-        min-width: 100px;
-      }
+      min-width: v-bind(numberWidth);
     }
     div:nth-child(1) {
       margin-right: 1.5rem;
       @include carbon--breakpoint-down(lg) {
-        margin-right: 0;
+        margin-right: 0.5rem;
       }
     }
     div:nth-child(2) {
       margin-right: 1.5rem;
       @include carbon--breakpoint-down(lg) {
-        margin-right: 0;
+        margin-right: 0.5rem;
       }
     }
   }
