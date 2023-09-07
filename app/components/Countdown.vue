@@ -83,17 +83,15 @@ function between(val, min, max) {
   return Math.max(Math.min(val, max), min);
 }
 function resize() {
-  const vw = actual("width", "px");
-
-  console.log(`countdown ${vw} x ${parent.value?.clientHeight}`);
   if (parent.value) {
+    const vw = actual("width", "px");
     const left = between(0.06 * vw, 8, 96);
     paddingLeft.value = `${left}px`;
     width.value = `${vw - left}px`;
 
     height.value = `${parent.value.clientHeight}px`;
 
-    // at md breakpoint number flow as a column
+    // at md breakpoint numbers flow as a column
     if (vw < 672) {
       const hFontSize = between((49.5 * vw) / 1568, 32, 49.5);
       headlineFontSize.value = `${hFontSize}px`;

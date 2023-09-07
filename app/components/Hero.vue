@@ -21,7 +21,6 @@ function resize() {
   if (parent.value) {
     const vw = actual("width", "px");
     const vh = actual("height", "px");
-    console.log(`hero ${vw} x ${parent.value?.clientHeight}`);
 
     width.value = `${vw}px`;
     height.value = `${vh - props.heightReserve}px`;
