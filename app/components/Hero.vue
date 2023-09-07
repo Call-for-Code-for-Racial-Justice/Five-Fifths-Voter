@@ -40,6 +40,13 @@ onUnmounted(() => window.removeEventListener("resize", resize));
 .hero {
   width: v-bind(width);
   height: v-bind(height);
-  background: $ff-green-02;
+  background-color: $ff-green-02;
+  background-image: url("@/assets/images/mask-group.svg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  @include carbon--breakpoint(max) {
+    background-size: contain;
+    background-color: $ff-purple-01;
+  }
 }
 </style>

@@ -93,11 +93,20 @@ function resize() {
 
     height.value = `${parent.value.clientHeight}px`;
 
-    const hFontSize = between((49.5 * vw) / 1568, 17.5, 49.5);
-    headlineFontSize.value = `${hFontSize}px`;
+    // at md breakpoint number flow as a column
+    if (vw < 672) {
+      const hFontSize = between((49.5 * vw) / 1568, 32, 49.5);
+      headlineFontSize.value = `${hFontSize}px`;
 
-    const nFontSize = between((128 * vw) / 1568, 16, 128);
-    numberFontSize.value = `${nFontSize}px`;
+      const nFontSize = between((128 * vw) / 1568, 16, 32);
+      numberFontSize.value = `${nFontSize}px`;
+    } else {
+      const hFontSize = between((49.5 * vw) / 1568, 17.5, 49.5);
+      headlineFontSize.value = `${hFontSize}px`;
+
+      const nFontSize = between((128 * vw) / 1568, 16, 128);
+      numberFontSize.value = `${nFontSize}px`;
+    }
 
     const nWidth = between((225 * vw) / 1568, 16, 225);
     numberWidth.value = `${nWidth}px`;

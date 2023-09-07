@@ -39,36 +39,32 @@ import Hero from "~/components/Hero.vue";
   z-index: -99;
 }
 .whole {
-  @include type-style("productive-heading-03");
+  @include type-style("productive-heading-01");
+  font-size: carbon--type-scale(13);
   width: 25%;
   max-width: 480px;
   color: white;
   margin-top: 4rem;
   margin-left: 4rem;
-  font-size: 3.5rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 64px; /* 114.286% */
   @include carbon--breakpoint-down(lg) {
     width: calc(100% - 5rem);
     padding-right: 1rem;
     margin-top: 2rem;
-    font-size: 1.5rem;
-    line-height: calc(1.5rem * 1.14);
   }
   @include carbon--breakpoint-down(md) {
-    font-size: 1rem;
-    line-height: calc(1rem * 1.14);
+    font-size: carbon--type-scale(5);
   }
 }
 .motto {
-  @include type-style("quotation-02");
-  width: 380px;
+  @include type-style("body-long-02");
+  font-size: carbon--type-scale(7);
+  width: 25%;
+  max-width: 480px;
   color: white;
   margin-top: 4rem;
   margin-left: 4rem;
   @include carbon--breakpoint-down(md) {
-    @include type-style("body-long-01");
+    font-size: carbon--type-scale(4);
     width: calc(100% - 5rem);
     padding-right: 1rem;
     margin-top: 2rem;
