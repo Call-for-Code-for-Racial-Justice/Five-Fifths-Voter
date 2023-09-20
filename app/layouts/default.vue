@@ -1,16 +1,20 @@
 <template>
   <div>
-    <main class="main-content" id="#main-content">
+    <the-header />
+    <main class="main-content with-header" id="#main-content">
       <slot />
     </main>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import "@/assets/css/five-fifths-theme.css";
+</script>
 
 <style lang="scss">
-body {
-  margin: 0;
-  font-family: 'IBM Plex Sans', sans-serif;
+@import "@/assets/scss/theme";
+.with-header {
+  margin-top: 6rem;
+  margin-left: 1rem;
 }
 </style>

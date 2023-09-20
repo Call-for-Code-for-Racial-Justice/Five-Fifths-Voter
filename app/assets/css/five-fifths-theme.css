@@ -1966,7 +1966,7 @@ em {
   font-weight: 400;
   line-height: 1.28572;
   letter-spacing: 0.16px;
-  background-color: #262626;
+  background-color: #210D34;
   color: #f4f4f4;
   line-height: 1;
 }
@@ -1976,7 +1976,7 @@ body {
   font-weight: 400;
   line-height: 1.28572;
   letter-spacing: 0.16px;
-  background-color: #262626;
+  background-color: #210D34;
   color: #f4f4f4;
   line-height: 1;
 }
@@ -4258,7 +4258,7 @@ li.bx--accordion__item--disabled:last-of-type {
 }
 .bx--btn--primary:focus {
   border-color: #ffffff;
-  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #262626;
+  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #210D34;
 }
 .bx--btn--primary:active {
   background-color: #002d9c;
@@ -4283,7 +4283,7 @@ li.bx--accordion__item--disabled:last-of-type {
 }
 .bx--btn--secondary:focus {
   border-color: #ffffff;
-  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #262626;
+  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #210D34;
 }
 .bx--btn--secondary:active {
   background-color: #393939;
@@ -4308,7 +4308,7 @@ li.bx--accordion__item--disabled:last-of-type {
 }
 .bx--btn--tertiary:focus {
   border-color: #ffffff;
-  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #262626;
+  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #210D34;
 }
 .bx--btn--tertiary:active {
   background-color: #c6c6c6;
@@ -4348,7 +4348,7 @@ li.bx--accordion__item--disabled:last-of-type {
 }
 .bx--btn--ghost:focus {
   border-color: #ffffff;
-  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #262626;
+  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #210D34;
 }
 .bx--btn--ghost:active {
   background-color: #6f6f6f;
@@ -5699,7 +5699,7 @@ li.bx--accordion__item--disabled:last-of-type {
 }
 .bx--btn--danger:focus {
   border-color: #ffffff;
-  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #262626;
+  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #210D34;
 }
 .bx--btn--danger:active {
   background-color: #750e13;
@@ -5723,7 +5723,7 @@ li.bx--accordion__item--disabled:last-of-type {
 }
 .bx--btn--danger-tertiary:focus, .bx--btn--danger--tertiary:focus {
   border-color: #ffffff;
-  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #262626;
+  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #210D34;
 }
 .bx--btn--danger-tertiary:active, .bx--btn--danger--tertiary:active {
   background-color: #750e13;
@@ -5763,7 +5763,7 @@ li.bx--accordion__item--disabled:last-of-type {
 }
 .bx--btn--danger-ghost:focus, .bx--btn--danger--ghost:focus {
   border-color: #ffffff;
-  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #262626;
+  box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 2px #210D34;
 }
 .bx--btn--danger-ghost:active, .bx--btn--danger--ghost:active {
   background-color: #750e13;
@@ -13130,6 +13130,7 @@ button.bx--dropdown-text:focus {
   border: 0;
   border-bottom: 0.0625rem solid #210D34;
   -moz-appearance: textfield;
+  appearance: textfield;
   background-color: #393939;
   border-radius: 0;
   color: #f4f4f4;
@@ -14226,7 +14227,7 @@ optgroup.bx--select-optgroup:disabled,
 .bx--select--inline .bx--select-input:focus,
 .bx--select--inline .bx--select-input:focus option,
 .bx--select--inline .bx--select-input:focus optgroup {
-  background-color: #262626;
+  background-color: #210D34;
 }
 
 .bx--select--inline .bx--select-input[disabled],
@@ -15293,7 +15294,7 @@ span.bx--pagination__text {
   word-wrap: break-word;
 }
 .bx--tooltip:focus {
-  box-shadow: inset 0 0 0 1px #f4f4f4, inset 0 0 0 2px #262626;
+  box-shadow: inset 0 0 0 1px #f4f4f4, inset 0 0 0 2px #210D34;
   outline: 0;
 }
 .bx--tooltip.bx--tooltip--top.bx--tooltip--align-start, .bx--tooltip.bx--tooltip--bottom.bx--tooltip--align-start {
@@ -18411,6 +18412,7 @@ span.bx--pagination__text {
   width: 4rem;
   height: 2.5rem;
   -moz-appearance: textfield;
+  appearance: textfield;
   text-align: center;
 }
 .bx--slider-text-input::-webkit-outer-spin-button, .bx--slider-text-input::-webkit-inner-spin-button,
@@ -19221,11 +19223,11 @@ a.bx--tabs__nav-link:focus, a.bx--tabs__nav-link:active {
 }
 .bx--tabs--scrollable .bx--tabs__overflow-indicator--left {
   margin-right: -0.5rem;
-  background-image: linear-gradient(to left, transparent, #262626);
+  background-image: linear-gradient(to left, transparent, #210D34);
 }
 .bx--tabs--scrollable .bx--tabs__overflow-indicator--right {
   margin-left: -0.5rem;
-  background-image: linear-gradient(to right, transparent, #262626);
+  background-image: linear-gradient(to right, transparent, #210D34);
 }
 .bx--tabs--scrollable .bx--tabs--scrollable--light .bx--tabs__overflow-indicator--left {
   background-image: linear-gradient(to left, transparent, #FFEBD9);
@@ -19242,10 +19244,10 @@ a.bx--tabs__nav-link:focus, a.bx--tabs__nav-link:active {
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
     .bx--tabs--scrollable .bx--tabs__overflow-indicator--left {
-      background-image: linear-gradient(to left, rgba(38, 38, 38, 0), #262626);
+      background-image: linear-gradient(to left, rgba(33, 13, 52, 0), #210D34);
     }
     .bx--tabs--scrollable .bx--tabs__overflow-indicator--right {
-      background-image: linear-gradient(to right, rgba(38, 38, 38, 0), #262626);
+      background-image: linear-gradient(to right, rgba(33, 13, 52, 0), #210D34);
     }
     .bx--tabs--scrollable.bx--tabs--scrollable--container .bx--tabs__overflow-indicator--left {
       background-image: linear-gradient(to left, rgba(236, 152, 153, 0), #EC9899);
@@ -19352,7 +19354,7 @@ a.bx--tabs__nav-link:focus, a.bx--tabs__nav-link:active {
   line-height: calc(3rem - (0.5rem * 2));
 }
 .bx--tabs--scrollable.bx--tabs--scrollable--light.bx--tabs--scrollable--container .bx--tabs--scrollable__nav-item--selected, .bx--tabs--scrollable.bx--tabs--scrollable--light.bx--tabs--scrollable--container .bx--tabs--scrollable__nav-item--selected:hover {
-  background-color: #262626;
+  background-color: #210D34;
 }
 .bx--tabs--scrollable .bx--tabs--scrollable__nav-link {
   display: inline-block;
@@ -19664,7 +19666,7 @@ a.bx--tabs__nav-link:focus, a.bx--tabs__nav-link:active {
 }
 
 .bx--tag--outline {
-  background-color: #262626;
+  background-color: #210D34;
   color: #f4f4f4;
   box-shadow: inset 0 0 0 1px #f4f4f4;
 }

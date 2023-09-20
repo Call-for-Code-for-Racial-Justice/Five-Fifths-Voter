@@ -39,7 +39,8 @@ $five-fifths--theme: (
         'support-error': $ff-red-01,
         'support-success': $ff-green-01,
         'support-warning':$ff-yellow-01,
-        'support-info': $ff-blue-02
+        'support-info': $ff-blue-02,
+        'ui-background': $ff-purple-01
 );
 $feature-flags: (
   grid-columns-16: true,

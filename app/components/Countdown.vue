@@ -41,7 +41,7 @@ import { DateTime, Interval } from "luxon";
 import { default as actual } from "actual";
 
 const headlines = ref("Days until the/2024/Presidential Election".split("/"));
-const election = ref("20241105T120000"); // Tuesday, November 5, 2024 7:00:00 AM GMT-05:00
+const election = ref("20241105T050000"); // Tuesday, November 5, 2024 7:00:00 AM GMT-05:00
 const days = ref(432);
 const hours = ref("00");
 const minutes = ref("00");
@@ -55,7 +55,7 @@ function updateCountdown() {
     "hours",
     "minutes",
     "seconds",
-    "milliseconds",
+    "milliseconds"
   ]);
   days.value = duration.values.days;
   hours.value = duration.values.hours.toString().padStart(2, "0");
@@ -126,7 +126,7 @@ onUnmounted(() => window.removeEventListener("resize", resize));
 .countdown {
   &--container {
     background-color: $ff-red-01;
-    width: v-bind(width);
+    width: 100%;
     height: v-bind(height);
     overflow: hidden;
     padding-left: v-bind(paddingLeft);
