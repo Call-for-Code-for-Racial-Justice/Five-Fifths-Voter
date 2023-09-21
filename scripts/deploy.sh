@@ -23,11 +23,11 @@ ibmcloud cr region-set ${CR_REGION}
 ibmcloud cr login
 
 # Build the image
-docker build -t ${CR_TAG}:$IMAGE_TAG .
+docker build  --ulimit nofile=102400:102400 -t ${CR_TAG}:$IMAGE_TAG .
 docker push ${CR_TAG}:$IMAGE_TAG
 
 # Update staging
 ibmcloud ce project select --name ${CE_PROJ_NAME}
 ibmcloud ce app logs --tail 5 --follow --name ${CE_APP_NAME} &
-ibmcloud ce app update --image private.${CR_TAG}:$IMAGE_TAG --name ${CE_APP_NAME}
+ibmcloud ce app update --scale-down-delay 3600 --image private.${CR_TAG}:$IMAGE_TAG --name ${CE_APP_NAME}
 kill $(jobs -p) # this throws errors in zsh but is OK in bash
