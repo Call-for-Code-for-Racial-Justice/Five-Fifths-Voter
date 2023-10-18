@@ -3,7 +3,15 @@
     <main-nav :active-section="activeSection" @nav-section="scrollToSection" />
     <section class="full-page dark">
       <five-fiths-title />
-      <h1>A whole person.A whole community.A whole nation.</h1>
+      <div class="slogan">
+        <div class="slogan__whole">
+          A whole person.<br />A whole community.<br />A whole nation.
+        </div>
+        <div class="slogan__motto">
+          Together, we can change the narrative of historically disenfranchised
+          people in our democratic process.
+        </div>
+      </div>
       <countdown />
     </section>
     <section class="full-page white filled-oval">
@@ -195,9 +203,54 @@ onBeforeUnmount(stopListeningToScrolls);
   position: relative;
 }
 section.dark {
-  background-color: $ff-purple-01;
-  h1 {
-    color: white;
+  background-color: $ff-green-02;
+  justify-content: normal;
+  background-image: url("@/assets/images/mask-group.svg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  @include carbon--breakpoint(max) {
+    background-size: contain;
+    background-color: $ff-purple-01;
+  }
+  .slogan {
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    //height: calc(100vh - 320px - 92px);
+    width: 100%;
+    gap: 3rem;
+
+    &__whole {
+      @include type-style("productive-heading-01");
+      font-size: carbon--type-scale(13);
+      width: 35%;
+      max-width: 480px;
+      color: white;
+      margin-left: 4rem;
+      @include carbon--breakpoint-down(lg) {
+        width: calc(100% - 5rem);
+        padding-right: 1rem;
+      }
+      @include carbon--breakpoint-down(md) {
+        font-size: carbon--type-scale(5);
+        margin-left: 2rem;
+      }
+    }
+
+    &__motto {
+      @include type-style("body-long-02");
+      font-size: carbon--type-scale(7);
+      width: 35%;
+      max-width: 480px;
+      color: white;
+      margin-left: 4rem;
+      @include carbon--breakpoint-down(md) {
+        font-size: carbon--type-scale(4);
+        width: calc(100% - 5rem);
+        padding-right: 1rem;
+        margin-left: 2rem;
+      }
+    }
   }
 }
 section.white {
@@ -221,12 +274,13 @@ section.blue {
     background-color: $ff-blue-03;
     padding: 4px;
     width: 86%;
+    min-height: 20%;
   }
 }
 section.filled-oval {
   background-image: url("@/assets/images/skewed-oval.svg");
   background-repeat: no-repeat;
-  background-size: 62%;
+  background-size: 55%;
   background-position-y: 5rem;
   background-position-x: center;
   @media (orientation: portrait) {
