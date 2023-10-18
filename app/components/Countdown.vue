@@ -112,8 +112,8 @@ function resize() {
 }
 onMounted(() => {
   parent.value = el.value.parentElement;
-  window.addEventListener("resize", resize);
-  resize();
+  // window.addEventListener("resize", resize);
+  // resize();
 });
 onUnmounted(() => window.removeEventListener("resize", resize));
 </script>
@@ -132,6 +132,9 @@ onUnmounted(() => window.removeEventListener("resize", resize));
     padding-left: v-bind(paddingLeft);
     display: flex;
     align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
   &--headline {
     div {

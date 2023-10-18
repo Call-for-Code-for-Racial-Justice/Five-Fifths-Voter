@@ -1,10 +1,12 @@
-// Do not use this file directly. See carbon-preprocessing.sh in the root dir
+// Do not use this file directly. Creat css with:
+// npx sass --load-path=node_modules assets/scss/carbon-gray-90.scss assets/css/carbon-gray-90.css
+
 $feature-flags: (
   grid-columns-16: true,
 );
-@import '../../node_modules/@carbon/themes/scss/themes.scss';
+@import '@carbon/themes/scss/themes.scss';
 
 $carbon--theme: $carbon--theme--g90;
 @include carbon--theme();
 
-@import '../../../node_modules/carbon-components/scss/globals/scss/styles';
+@import 'carbon-components/scss/globals/scss/styles';

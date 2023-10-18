@@ -1,4 +1,5 @@
 // Do not use this file directly. See carbon-preprocessing.sh in the root dir
+// npx sass --load-path=node_modules assets/scss/five-fifths-theme.scss assets/css/five-fifths-theme.css
 
 /*
 From figma
@@ -45,9 +46,9 @@ $five-fifths--theme: (
 $feature-flags: (
   grid-columns-16: true,
 );
-@import '../../../node_modules/@carbon/themes/scss/themes.scss';
+@import '@carbon/themes/scss/themes.scss';
 $carbon--theme: map-merge($carbon--theme--g90, $five-fifths--theme);
 @include carbon--theme();
 
-@import '../../../node_modules/carbon-components/scss/globals/scss/styles';
+@import 'carbon-components/scss/globals/scss/styles';
 

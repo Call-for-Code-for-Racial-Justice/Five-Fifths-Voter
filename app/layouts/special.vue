@@ -13,5 +13,6 @@
 body {
   margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
+  overflow: hidden;
 }
 </style>

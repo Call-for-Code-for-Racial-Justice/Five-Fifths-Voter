@@ -9,5 +9,8 @@
 <style scoped lang="scss">
 @import "@/assets/scss/theme";
 .title--block {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
 }
 </style>

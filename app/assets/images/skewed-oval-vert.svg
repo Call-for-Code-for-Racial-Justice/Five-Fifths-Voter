@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="728.01886"
+   height="969.93103"
+   viewBox="0 0 728.01886 969.93103"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="skewed-oval-vert.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.60631"
+     inkscape:cx="363.25491"
+     inkscape:cy="634.06191"
+     inkscape:window-width="2560"
+     inkscape:window-height="1372"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="M 724.88311,449.66221 C 698.72711,182.54521 515.95411,-18.188788 316.64911,1.3082116 117.34411,20.806209 -23.020888,253.15221 3.1356248,520.26921 29.292115,787.38521 212.06511,988.12031 411.37011,968.62275 c 199.305,-19.49754 339.67,-251.84454 313.513,-518.96054 z"
+     fill="#85276e"
+     id="path1" />
+</svg>
