@@ -12,5 +12,7 @@
   position: absolute;
   top: 2rem;
   left: 2rem;
+  height: 56px;
+  width: 160px;
 }
 </style>

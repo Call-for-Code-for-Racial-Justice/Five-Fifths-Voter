@@ -2,17 +2,7 @@
   <div ref="el">
     <main-nav :active-section="activeSection" @nav-section="scrollToSection" />
     <section class="full-page dark">
-      <five-fiths-title />
-      <div class="slogan">
-        <div class="slogan__whole">
-          A whole person.<br />A whole community.<br />A whole nation.
-        </div>
-        <div class="slogan__motto">
-          Together, we can change the narrative of historically disenfranchised
-          people in our democratic process.
-        </div>
-      </div>
-      <countdown />
+      <home-page-slogan />
     </section>
     <section class="full-page white filled-oval">
       <h1>Our mission</h1>
@@ -37,9 +27,13 @@
 </template>
 
 <script setup>
+import HomePageSlogan from "~/components/HomePageSlogan.vue";
+
 definePageMeta({
-  layout: "special"
+  layout: "special",
 });
+provide("countdown-data", ref({ height: 320, visible: true }));
+
 const inMove = ref(false);
 const inMoveDelay = ref(400);
 const activeSection = ref(0);
@@ -168,20 +162,20 @@ function touchMove(e) {
 function listenToScrolls() {
   window.addEventListener("DOMMouseScroll", handleMouseWheelDOM); // Mozilla Firefox
   window.addEventListener("mousewheel", handleMouseWheel, {
-    passive: false
+    passive: false,
   }); // Other browsers
 
   window.addEventListener("touchstart", touchStart, {
-    passive: false
+    passive: false,
   }); // mobile devices
   window.addEventListener("touchmove", touchMove, {
-    passive: false
+    passive: false,
   }); // mobile devices
 }
 function stopListeningToScrolls() {
   window.removeEventListener("DOMMouseScroll", handleMouseWheelDOM); // Mozilla Firefox
   window.removeEventListener("mousewheel", handleMouseWheel, {
-    passive: false
+    passive: false,
   }); // Other browsers
 
   window.removeEventListener("touchstart", touchStart); // mobile devices
@@ -211,46 +205,6 @@ section.dark {
   @include carbon--breakpoint(max) {
     background-size: contain;
     background-color: $ff-purple-01;
-  }
-  .slogan {
-    margin-top: 12rem;
-    display: flex;
-    flex-direction: column;
-    //height: calc(100vh - 320px - 92px);
-    width: 100%;
-    gap: 3rem;
-
-    &__whole {
-      @include type-style("productive-heading-01");
-      font-size: carbon--type-scale(13);
-      width: 35%;
-      max-width: 480px;
-      color: white;
-      margin-left: 4rem;
-      @include carbon--breakpoint-down(lg) {
-        width: calc(100% - 5rem);
-        padding-right: 1rem;
-      }
-      @include carbon--breakpoint-down(md) {
-        font-size: carbon--type-scale(5);
-        margin-left: 2rem;
-      }
-    }
-
-    &__motto {
-      @include type-style("body-long-02");
-      font-size: carbon--type-scale(7);
-      width: 35%;
-      max-width: 480px;
-      color: white;
-      margin-left: 4rem;
-      @include carbon--breakpoint-down(md) {
-        font-size: carbon--type-scale(4);
-        width: calc(100% - 5rem);
-        padding-right: 1rem;
-        margin-left: 2rem;
-      }
-    }
   }
 }
 section.white {

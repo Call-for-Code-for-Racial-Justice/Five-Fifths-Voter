@@ -55,7 +55,7 @@ function updateCountdown() {
     "hours",
     "minutes",
     "seconds",
-    "milliseconds"
+    "milliseconds",
   ]);
   days.value = duration.values.days;
   hours.value = duration.values.hours.toString().padStart(2, "0");
@@ -74,6 +74,10 @@ const parent = ref(null);
 const el = ref(null);
 const paddingLeft = ref("96px");
 const width = ref(`${1568 - 96}px`);
+const countdownData = inject(
+  "countdown-data",
+  ref({ height: 320, visible: true }),
+);
 const height = ref(`${320}px`);
 const headlineFontSize = ref("49.5px");
 const numberFontSize = ref("128px");
@@ -81,6 +85,15 @@ const numberWidth = ref("225px");
 
 function between(val, min, max) {
   return Math.max(Math.min(val, max), min);
+}
+function resize2() {
+  // const vw = actual("width", "px");
+  const vh = actual("height", "px");
+  if (vh < 1320)
+    countdownData.value.height = between((vh / 1320) * 320, 100, 320);
+  else countdownData.value.height = 320;
+
+  height.value = `${countdownData.value.height}px`;
 }
 function resize() {
   if (parent.value) {
@@ -112,8 +125,8 @@ function resize() {
 }
 onMounted(() => {
   parent.value = el.value.parentElement;
-  // window.addEventListener("resize", resize);
-  // resize();
+  window.addEventListener("resize", resize2);
+  resize2();
 });
 onUnmounted(() => window.removeEventListener("resize", resize));
 </script>
