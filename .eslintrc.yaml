@@ -1,0 +1,15 @@
+root: true
+env:
+  node: true
+
+extends:
+  - "eslint:recommended"
+  - "plugin:vue/vue3-recommended"
+  - "plugin:prettier-vue/recommended"
+
+rules:
+  no-console:
+    - error
+    - allow:
+        - warn
+        - error

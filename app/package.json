@@ -6,27 +6,28 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint **/*.{js,vue}"
   },
   "devDependencies": {
-    "@carbon/vue": "3.0.7-alpha.0",
-    "@nuxt/devtools": "latest",
-    "@types/node": "^18.17.12",
+    "@carbon/vue": "3.0.10",
+    "@nuxt/devtools": "^1.0.0",
+    "@types/node": "^18.18.8",
     "carbon-components": "^10.58.10",
-    "eslint": "^8.48.0",
+    "eslint": "^8.52.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier-vue": "^4.2.0",
-    "eslint-plugin-vue": "^9.17.0",
-    "nuxt": "^3.7.0",
+    "eslint-plugin-vue": "^9.18.1",
+    "nuxt": "^3.8.0",
     "prettier": "^3.0.3",
-    "sass": "^1.66.1"
+    "sass": "^1.69.5"
   },
   "dependencies": {
-    "@carbon/icons-vue": "^10.72.1",
+    "@carbon/icons-vue": "^10.78.2",
     "@carbon/themes": "^10.55.3",
     "@nuxtjs/i18n": "8.0.0-rc.3",
     "actual": "^0.4.0",
-    "luxon": "^3.4.2",
-    "markdown-it": "^13.0.1"
+    "luxon": "^3.4.3",
+    "markdown-it": "^13.0.2"
   }
 }
