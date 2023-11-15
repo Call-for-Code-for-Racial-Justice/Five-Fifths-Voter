@@ -1,19 +1,6 @@
 <template>
   <div :class="`nav-container active-section-${activeSection}`">
-    <svg
-      width="677"
-      height="157"
-      viewBox="0 0 677 157"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <rect width="1" height="157" fill="currentColor" />
-      <rect x="224" y="139" width="1" height="18" fill="currentColor" />
-      <rect x="465" y="139" width="1" height="18" fill="currentColor" />
-      <rect x="676" y="139" width="1" height="18" fill="currentColor" />
-      <rect y="139" width="676" height="1" fill="currentColor" />
-    </svg>
-
+    <nav-lines />
     <cv-link
       v-if="activeSection !== 0"
       :icon="iconTop"
@@ -49,8 +36,9 @@ import {
   ArrowUp32 as ArrowUp,
   ArrowUpRight32 as ArrowUpRight,
   CircleFilled32 as CircleFilled,
-  UpToTop32 as UpToTop
+  UpToTop32 as UpToTop,
 } from "@carbon/icons-vue";
+import NavLines from "~/components/svg/NavLines.vue";
 const iconDown = ArrowDown;
 const iconUp = ArrowUp;
 const iconUpRight = ArrowUpRight;
@@ -58,7 +46,7 @@ const iconSelected = CircleFilled;
 const iconTop = UpToTop;
 
 const props = defineProps({
-  activeSection: { type: Number, default: 0 }
+  activeSection: { type: Number, default: 0 },
 });
 defineEmits(["nav-section"]);
 const missionIcon = computed(() => {
@@ -71,6 +59,14 @@ const valuesIcon = computed(() => {
   else if (props.activeSection > 2) return iconUp;
   else return iconSelected;
 });
+
+const countdownData = inject(
+  "countdown-data",
+  ref({ height: 320, visible: true }),
+);
+const bottom = computed(() => {
+  return `${countdownData.value.height || 320}px`;
+});
 </script>
 
 <style scoped lang="scss">
@@ -80,7 +76,7 @@ const valuesIcon = computed(() => {
   position: fixed;
   transition-property: bottom, color;
   transition-duration: 1s;
-  bottom: 320px;
+  bottom: v-bind(bottom);
   z-index: 100;
   left: 4rem;
   display: flex;
@@ -111,14 +107,14 @@ const valuesIcon = computed(() => {
     }
   }
   &.active-section-1 {
-    bottom: 120px;
+    bottom: 25px;
     color: $ff-purple-02;
     a {
       color: $ff-purple-02;
     }
   }
   &.active-section-2 {
-    bottom: 120px;
+    bottom: 25px;
     color: $ff-blue-03;
     a {
       color: $ff-blue-03;
