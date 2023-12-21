@@ -8,6 +8,9 @@
 </template>
 
 <script setup>
+defineOptions({
+  name: "DefaultLayout",
+});
 import "@/assets/css/five-fifths-theme.css";
 </script>
 
@@ -16,5 +19,10 @@ import "@/assets/css/five-fifths-theme.css";
 .with-header {
   margin-top: 6rem;
   margin-left: 1rem;
+}
+body {
+  margin: unset;
+  font-family: "IBM Plex Sans", sans-serif;
+  overflow: auto;
 }
 </style>

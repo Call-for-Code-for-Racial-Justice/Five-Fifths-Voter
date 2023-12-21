@@ -7,7 +7,11 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+defineOptions({
+  name: "SpecialLayout",
+});
+</script>
 
 <style lang="scss">
 body {
