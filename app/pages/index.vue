@@ -27,6 +27,9 @@
 </template>
 
 <script setup>
+defineOptions({
+  name: "HomePage",
+});
 import HomePageSlogan from "~/components/HomePageSlogan.vue";
 
 definePageMeta({

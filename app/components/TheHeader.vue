@@ -22,15 +22,21 @@
       <cv-header-menu-item :active="activeVoterSupport" href="/voterSupport">
         Voter support
       </cv-header-menu-item>
+      <cv-header-menu-item :active="activeWhyVote" href="/whyVote">
+        Why Vote
+      </cv-header-menu-item>
     </cv-header-nav>
   </cv-header>
 </template>
 
 <script setup>
+defineOptions({
+  name: "TheHeader",
+});
 const route = useRoute();
 const activeVoterSupport = computed(() => route.name === "VoterSupport");
+const activeWhyVote = computed(() => route.name === "WhyVote");
 const activeJourney = computed(() => route.name === "Journey");
-console.log(route.name);
 </script>
 
 <style lang="scss">

@@ -27,7 +27,11 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+defineOptions({
+  name: "JourneyPage",
+});
+</script>
 
 <style scoped lang="scss">
 .voter-journey {
