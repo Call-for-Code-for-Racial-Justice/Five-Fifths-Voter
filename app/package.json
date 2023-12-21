@@ -10,24 +10,24 @@
     "lint": "eslint **/*.{js,vue}"
   },
   "devDependencies": {
-    "@carbon/vue": "3.0.10",
-    "@nuxt/devtools": "^1.0.0",
+    "@nuxt/devtools": "^1.0.2",
     "@types/node": "^18.18.8",
     "carbon-components": "^10.58.10",
-    "eslint": "^8.52.0",
+    "eslint": "^8.53.0",
     "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier-vue": "^4.2.0",
+    "eslint-plugin-prettier-vue": "^5.0.0",
     "eslint-plugin-vue": "^9.18.1",
-    "nuxt": "^3.8.0",
-    "prettier": "^3.0.3",
+    "prettier": "^3.1.0",
     "sass": "^1.69.5"
   },
   "dependencies": {
-    "@carbon/icons-vue": "^10.78.2",
+    "@carbon/icons-vue": "^10.79.1",
     "@carbon/themes": "^10.55.3",
+    "@carbon/vue": "3.0.10",
     "@nuxtjs/i18n": "8.0.0-rc.3",
     "actual": "^0.4.0",
-    "luxon": "^3.4.3",
-    "markdown-it": "^13.0.2"
+    "luxon": "^3.4.4",
+    "markdown-it": "^13.0.2",
+    "nuxt": "^3.8.1"
   }
 }
