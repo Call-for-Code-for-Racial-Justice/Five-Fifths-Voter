@@ -37,6 +37,9 @@
 </template>
 
 <script setup>
+defineOptions({
+  name: "CountdownClock",
+});
 import { DateTime, Interval } from "luxon";
 import { default as actual } from "actual";
 

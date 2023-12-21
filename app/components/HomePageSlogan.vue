@@ -15,6 +15,9 @@
 </template>
 
 <script setup>
+defineOptions({
+  name: "HomePageSlogan",
+});
 import { default as actual } from "actual";
 
 const countdownData = inject(

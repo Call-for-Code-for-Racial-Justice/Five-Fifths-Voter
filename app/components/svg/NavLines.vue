@@ -15,6 +15,9 @@
 </template>
 
 <script setup>
+defineOptions({
+  name: "NavLines",
+});
 defineProps({
   fill: { type: String, default: "currentColor" },
 });

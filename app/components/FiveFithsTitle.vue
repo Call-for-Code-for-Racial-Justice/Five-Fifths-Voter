@@ -4,7 +4,11 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+defineOptions({
+  name: "TitleBlock",
+});
+</script>
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

@@ -1,8 +1,13 @@
 <template>
   <div class="silhouette-group">
-    <img src="@/assets/images/mask-group.svg" /></div
-></template>
-<script setup></script>
+    <img src="@/assets/images/mask-group.svg" />
+  </div>
+</template>
+<script setup>
+defineOptions({
+  name: "SilhouetteGroup",
+});
+</script>
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

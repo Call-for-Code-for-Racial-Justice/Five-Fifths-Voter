@@ -5,6 +5,9 @@
 </template>
 
 <script setup>
+defineOptions({
+  name: "HeroBlock",
+});
 import { default as actual } from "actual";
 
 const props = defineProps({
