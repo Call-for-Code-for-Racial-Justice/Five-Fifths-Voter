@@ -33,15 +33,21 @@ $ff-blue-03: #1140A7;
 $ff-green-01: #397F42;
 $ff-green-02: #24502A;
 $five-fifths--theme: (
-  'ui-01': $ff-white-01,
-  'ui-02': $ff-blue-01,
-  'ui-03': $ff-pink-01,
-  'ui-04': $ff-purple-01,
+        'ui-01': $ff-white-01,
+        'ui-02': $ff-blue-01,
+        'ui-03': $ff-pink-01,
+        'ui-04': $ff-purple-01,
         'support-error': $ff-red-01,
         'support-success': $ff-green-01,
         'support-warning':$ff-yellow-01,
         'support-info': $ff-blue-02,
-        'ui-background': $ff-purple-01
+        'ui-background': $ff-purple-01,
+        'shell-header-bg-01': $ff-purple-01,
+        'shell-side-nav-bg-04': $ff-purple-01,
+        'shell-side-nav-text-01': white,
+        'shell-side-nav-accent-01': $ff-purple-01,
+        'shell-side-nav-icon-01': white,
+        'shell-side-nav-bg-02': red
 );
 $feature-flags: (
   grid-columns-16: true,

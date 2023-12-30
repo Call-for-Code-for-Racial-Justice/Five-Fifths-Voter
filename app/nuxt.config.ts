@@ -1,8 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// eslint-disable-next-line no-undef
 export default defineNuxtConfig({
+  telemetry: true,
   devtools: { enabled: true },
   devServer: {
-    port: 4007
+    port: 4007,
   },
   // TODO: revisit this for Carbon 11
   // Do not add Carbon anything here - it will cause loops and fail
@@ -22,8 +24,8 @@ export default defineNuxtConfig({
     [
       "@nuxtjs/i18n",
       {
-        vueI18n: "./i18n.config.js"
-      }
-    ]
-  ]
+        vueI18n: "./i18n.config.js",
+      },
+    ],
+  ],
 });
