@@ -1,14 +1,11 @@
 FROM docker.io/node:18-alpine AS base
 FROM base AS builder
 WORKDIR /mono
-COPY package.json .
-COPY pnpm-*.yaml .
 COPY .npmrc .
 COPY app app
-RUN npm add -g pnpm && \
-    pnpm i --frozen-lockfile && \
-    cd app && \
-    pnpm run build
+RUN cd app && \
+    npm i  && \
+    npm run build
 
 # Production image, copy all the files and run nuxt
 FROM base AS runner

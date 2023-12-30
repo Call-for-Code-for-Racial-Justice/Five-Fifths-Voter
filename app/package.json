@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "five-fiths-voter-app",
   "private": true,
   "scripts": {
     "build": "nuxt build",

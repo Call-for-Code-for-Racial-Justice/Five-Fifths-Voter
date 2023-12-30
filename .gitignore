@@ -24,10 +24,9 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
-# Do not check in npm lock file
-package-lock.json
 
-# ignore these until we upgrade to yarn 3+
-**/.yarn/cache
-**/.yarnrc.yml
+# ignore non-npm files 
+pnpm*
+yarn*
+.yarn*
 **/.pnp.*
