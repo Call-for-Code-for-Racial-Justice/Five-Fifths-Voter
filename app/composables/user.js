@@ -1,5 +1,3 @@
-import Vue from 'vue';
-// initial state
 /**
  * @typedef locationInfo
  * @property {!string} region
@@ -18,22 +16,43 @@ import Vue from 'vue';
  * @property {userDetails} info
  * @property {boolean} redirected
  */
-const state = () => ({
-  info: {
-    location: null,
-    registered: '',
-    requested_early: '', // Absentee ballot requested and plan to vote early are the same logic
-    voting_address: '',
-  },
-  redirected: false,
-});
+export const useUser = () =>
+  useState("user", () => {
+    return {
+      info: {
+        location: null,
+        registered: "",
+        requested_early: "", // Absentee ballot requested and plan to vote early are the same logic
+        voting_address: "",
+        fromCache: false,
+        source: "",
+      },
+      redirected: false,
+    };
+  });
 
-// getters
-const getters = {};
+export function setUserLocation(data) {
+  const user = useState("user");
+  if (data.region !== user.value.info?.location?.region) {
+    user.value.info.location = data;
+    user.value.info.source = "user";
+    localStorage.setItem("user", JSON.stringify(user.value.info));
+  }
+}
 
-// actions
-const actions = {
-  async getApproxLocation({ commit, state }) {
+callOnce(async () => {
+  const user = useState("user");
+  try {
+    const localString = localStorage.getItem("user");
+    if (localString) {
+      user.value.info = JSON.parse(localString);
+      user.value.info.fromCache = true;
+    }
+  } catch (e) {
+    console.warn("loadInfo", e);
+  }
+  if (!user.value.info.location) {
+    const data = await $fetch("https://ipapi.co/json/");
     // sample data
     // {
     //     "ip": "10.x.x.x",
@@ -64,56 +83,50 @@ const actions = {
     //     "asn": "AS20115",
     //     "org": "CHARTER-20115"
     // }
-    if (state.info.location) return state.info.location;
-    commit('loadInfo');
-    if (state.info.location) return state.info.location;
-
-    const resp = await fetch('https://ipapi.co/json/');
-    const data = await resp.json();
-    commit('setLocation', data);
-  },
-};
+    if (data.region !== user.value.info?.location?.region) {
+      user.value.info.location = data;
+      user.value.info.source = "ipapi";
+      localStorage.setItem("user", JSON.stringify(user.value.info));
+    }
+  }
+});
 
 // mutations
 const mutations = {
   setLocation(state, data) {
     if (data.region !== state.info?.location?.region) {
       state.info.location = data;
-      localStorage.setItem('user', JSON.stringify(state.info));
+      localStorage.setItem("user", JSON.stringify(state.info));
     }
   },
   setRegistered(state, registered) {
-    Vue.set(state.info, 'registered', registered ? 'presidential-2024' : '');
-    localStorage.setItem('user', JSON.stringify(state.info));
+    Vue.set(state.info, "registered", registered ? "presidential-2024" : "");
+    localStorage.setItem("user", JSON.stringify(state.info));
   },
   setRequested(state, requested) {
-    Vue.set(state.info, 'requested_early', requested ? 'presidential-2024' : '');
-    localStorage.setItem('user', JSON.stringify(state.info));
+    Vue.set(
+      state.info,
+      "requested_early",
+      requested ? "presidential-2024" : "",
+    );
+    localStorage.setItem("user", JSON.stringify(state.info));
   },
   setVotingAddress(state, normalized_address) {
-    Vue.set(state.info, 'voting_address', normalized_address);
-    localStorage.setItem('user', JSON.stringify(state.info));
+    Vue.set(state.info, "voting_address", normalized_address);
+    localStorage.setItem("user", JSON.stringify(state.info));
   },
   setRedirected(state, redirected) {
     state.redirected = redirected;
   },
   loadInfo(state) {
     try {
-      const localString = localStorage.getItem('user');
+      const localString = localStorage.getItem("user");
       if (localString) {
         const localData = JSON.parse(localString);
         state.info = localData;
       }
     } catch (e) {
-      console.warn('loadInfo', e);
+      console.warn("loadInfo", e);
     }
   },
-};
-
-export default {
-  namespaced: false,
-  state,
-  getters,
-  actions,
-  mutations,
 };

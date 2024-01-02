@@ -1,5 +1,9 @@
 <template>
   <div class="voter-journey">
+    <div class="current-location">
+      Election information for {{ user?.info?.location?.region }}
+    </div>
+    <select-state />
     <cv-accordion @change="onChange">
       <cv-accordion-item
         id="registeredSection"
@@ -48,14 +52,16 @@
 </template>
 
 <script setup>
+defineOptions({
+  name: "JourneyPage",
+});
 const registeredSectionOpen = ref(false);
 const ballotSectionOpen = ref(false);
 const informedSectionOpen = ref(false);
 const voteSectionOpen = ref(false);
 const deliverSectionOpen = ref(false);
-defineOptions({
-  name: "JourneyPage",
-});
+const user = useUser();
+
 /**
  * @param {AccordianChangeEvent} ev
  */
@@ -94,6 +100,9 @@ function onChange(ev) {
   .bx--accordion__item {
     border-left: 1px solid #ec9899;
     border-right: 1px solid #ec9899;
+  }
+  .current-location {
+    @include type-style("productive-heading-01");
   }
 }
 </style>
