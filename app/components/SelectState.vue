@@ -37,7 +37,7 @@ function onChange(val) {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 @import "@/assets/scss/theme";
 .usa-state {
   margin-bottom: 0.5rem;

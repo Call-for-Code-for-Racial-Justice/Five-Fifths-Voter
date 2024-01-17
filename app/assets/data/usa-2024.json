@@ -394,7 +394,7 @@
       "id": "XiTN",
       "election_day": false,
       "online": true,
-      "deadline_in_person": null,
+      "deadline_in_person": "02/12/2024",
       "deadline_mail": null,
       "deadline_online": null,
       "mail_link": "https://sos.ga.gov/how-to-guide/how-guide-registering-vote",
@@ -1915,5 +1915,6 @@
       "more_link": "https://sos.wyo.gov/elections/state/absenteevoting.aspx"
     },
     "election_start": "2024-11-05T07:00:00-05:00"
-  }
+  },
+  "unknown": { "register": { "territory": true } }
 }

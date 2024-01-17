@@ -11,7 +11,7 @@
       >
         <template #title> {{ $t("journeyPageRegisteredLabel") }}</template>
         <template #content>
-          <img src="@/assets/images/black-woman-vertical.png" alt="" />
+          <register-to-vote />
         </template>
       </cv-accordion-item>
       <cv-accordion-item id="ballotSection" v-model:open="ballotSectionOpen">
@@ -79,7 +79,6 @@ function onChange(ev) {
     if (ev.change.id !== "deliverSection")
       setTimeout(() => (deliverSectionOpen.value = false), 250);
   }
-  console.log(ev);
 }
 </script>
 

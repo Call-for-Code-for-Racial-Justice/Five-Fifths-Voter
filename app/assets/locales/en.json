@@ -61,7 +61,7 @@
   "registerCheckVotingStatus": "Check voting status",
   "registerRegisterToVote": " Register to vote",
   "registerYouth_1":"Aged 17-18? Did you know you can preregister to vote?",
-  "registerYouth_2": "California: Find out how {here}. The {ymca} can also support you.",
+  "registerYouth_2": "California: Find out how [here]({here}). The [YMCA LA]({ymca}) can also support you.",
   "registerYouth_2a": "here",
   "registerYouth_2b": "YMCA LA",
   "registerYouth_3": "National: Find your {state}",
