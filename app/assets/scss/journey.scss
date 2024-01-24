@@ -1,0 +1,33 @@
+.journey {
+  &__link {
+    color: white !important;
+  }
+  &__desc {
+    @include carbon--type-style("body-long-02");
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+    :deep(a) {
+      color: white;
+    }
+  }
+  &__faq {
+    @include type-style("body-short-02");
+    margin-top: 0.5rem;
+
+    span:nth-child(1) {
+      @include type-style("body-short-02");
+    }
+
+    span:nth-child(2) {
+      @include type-style("productive-heading-03");
+      margin-left: 0.5rem;
+      color: $ff-yellow-01;
+    }
+    &-header {
+      @include type-style("productive-heading-03");
+      font-weight: 800;
+      margin-top: 1rem;
+    }
+  }
+}

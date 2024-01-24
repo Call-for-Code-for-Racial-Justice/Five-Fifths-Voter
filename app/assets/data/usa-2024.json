@@ -415,9 +415,9 @@
       "id_link": "https://sos.ga.gov/page/georgia-voter-identification-requirements",
       "dropoff": true,
       "dropoff_explainer": "Check with your [County Elections Office](https://sos.ga.gov/county-elections-offices) to find out what drop box locations are available closest to you.",
-      "request_deadline": null,
-      "return_deadline": null,
-      "request_link": "https://ballotrequest.sos.ga.gov/",
+      "request_deadline": "03/01/2024",
+      "return_deadline": "03/12/2024",
+      "request_link": "https://georgia.gov/vote-absentee-ballot",
       "track_link": "https://www.mvp.sos.ga.gov/MVP/mvp.do",
       "more_link": "https://sos.ga.gov/index.php/Elections/absentee_voting_in_georgia"
     }

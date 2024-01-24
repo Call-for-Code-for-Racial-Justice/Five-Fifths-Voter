@@ -12,13 +12,13 @@
         </cv-checkbox>
         <!-- Check your registration -->
         <cv-link :inline="true" :href="checkRegLink" target="_blank"
-          ><span class="register__link">{{ $t("checkHere") }}</span></cv-link
+          ><span class="journey__link">{{ $t("checkHere") }}</span></cv-link
         >
 
-        <p class="register__desc">
+        <p class="journey__desc">
           {{ $t("registerDesc") }}
         </p>
-        <territory-info v-if="info.register.territory" class="register__desc" />
+        <territory-info v-if="info.register.territory" class="journey__desc" />
 
         <!-- registration deadline -->
         <mark-down
@@ -28,13 +28,13 @@
 
         <mark-down
           v-if="registerLinks"
-          class="register__desc"
+          class="journey__desc"
           :content="registerLinks"
         />
 
         <!-- Youth -->
-        <cali-special v-if="usaCode === 'ca'" class="register__desc" />
-        <div v-else class="register__desc">
+        <cali-special v-if="usaCode === 'ca'" class="journey__desc" />
+        <div v-else class="journey__desc">
           <div>{{ registerYouth }}</div>
           <cv-link
             style="margin-left: 0"
@@ -46,7 +46,7 @@
         </div>
 
         <!-- Formerly incarcerated-->
-        <div class="register__desc">
+        <div class="journey__desc">
           <div>{{ felonText }}</div>
           <cv-link
             style="margin-left: 0"
@@ -57,16 +57,17 @@
           >
         </div>
 
-        <!-- Register day of voting -->
-        <div v-if="hasFaq" class="register__faq__header">{{ $t("faq") }}</div>
+        <!-- FAQ section -->
+        <div v-if="hasFaq" class="journey__faq__header">{{ $t("faq") }}</div>
 
-        <div v-if="'election_day' in info.register" class="register__faq">
+        <!-- Register day of voting -->
+        <div v-if="'election_day' in info.register" class="journey__faq">
           <span>{{ $t("registerElectionDay") }}</span
           ><span>{{ info.register.election_day ? $t("yes") : $t("no") }}</span>
         </div>
 
         <!-- Register online -->
-        <div v-if="'online' in info.register" class="register__faq">
+        <div v-if="'online' in info.register" class="journey__faq">
           <span>{{ $t("registerOnlineQ") }}</span
           ><span>{{ info.register.online ? $t("yes") : $t("no") }}</span>
         </div>
@@ -98,7 +99,6 @@ const registered = computed(() =>
 );
 const info = computed(() => {
   const code = usaCode.value?.toLowerCase() || "unknown";
-  console.log("code:", code, electionInfo[code]);
   return electionInfo[code] || { register: { territory: true } };
 });
 const checkRegLink = computed(() => {
@@ -160,37 +160,5 @@ onMounted(() => {
 <style scoped lang="scss">
 @import "@/assets/scss/theme";
 @import "@/assets/scss/pages";
-.register {
-  &__link {
-    color: white !important;
-  }
-  &__desc {
-    @include carbon--type-style("body-long-02");
-    color: white;
-    margin-top: 0.5rem;
-    margin-bottom: 2.5rem;
-    :deep(a) {
-      color: white;
-    }
-  }
-  &__faq {
-    @include type-style("body-short-02");
-    margin-top: 0.5rem;
-
-    span:nth-child(1) {
-      @include type-style("body-short-02");
-    }
-
-    span:nth-child(2) {
-      @include type-style("productive-heading-03");
-      margin-left: 0.5rem;
-      color: $ff-yellow-01;
-    }
-    &-header {
-      @include type-style("productive-heading-03");
-      font-weight: 800;
-      margin-top: 1rem;
-    }
-  }
-}
+@import "@/assets/scss/journey";
 </style>

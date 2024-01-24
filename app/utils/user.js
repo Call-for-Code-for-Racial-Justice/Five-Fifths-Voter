@@ -55,3 +55,11 @@ export const loadApproxLocation = async () => {
     });
   }
 };
+
+export const setUserRequested = (requested) => {
+  const user = useState("user");
+  user.value.info.location.requested_early = requested
+    ? "presidential-2024"
+    : "";
+  localStorage.setItem("user", JSON.stringify(user.value.info));
+};

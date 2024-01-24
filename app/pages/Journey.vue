@@ -17,10 +17,7 @@
       <cv-accordion-item id="ballotSection" v-model:open="ballotSectionOpen">
         <template #title> {{ $t("journeyPageBallotLabel") }}</template>
         <template #content>
-          <img
-            src="@/assets/images/absentee-page-group-friends-laptop-image-1.jpg"
-            alt=""
-          />
+          <mail-in-ballot />
         </template>
       </cv-accordion-item>
       <cv-accordion-item
@@ -52,6 +49,8 @@
 </template>
 
 <script setup>
+import { loadApproxLocation } from "~/utils/user";
+
 defineOptions({
   name: "JourneyPage",
 });
@@ -80,6 +79,10 @@ function onChange(ev) {
       setTimeout(() => (deliverSectionOpen.value = false), 250);
   }
 }
+
+onMounted(() => {
+  loadApproxLocation();
+});
 </script>
 
 <style scoped lang="scss">
