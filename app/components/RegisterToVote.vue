@@ -27,13 +27,13 @@
         />
 
         <mark-down
-          class="register__desc"
           v-if="registerLinks"
+          class="register__desc"
           :content="registerLinks"
         />
 
         <!-- Youth -->
-        <cali-special class="register__desc" v-if="usaCode === 'ca'" />
+        <cali-special v-if="usaCode === 'ca'" class="register__desc" />
         <div v-else class="register__desc">
           <div>{{ registerYouth }}</div>
           <cv-link
@@ -58,7 +58,8 @@
         </div>
 
         <!-- Register day of voting -->
-        <div class="register__faq__header">{{ $t("faq") }}</div>
+        <div v-if="hasFaq" class="register__faq__header">{{ $t("faq") }}</div>
+
         <div v-if="'election_day' in info.register" class="register__faq">
           <span>{{ $t("registerElectionDay") }}</span
           ><span>{{ info.register.election_day ? $t("yes") : $t("no") }}</span>
@@ -145,6 +146,10 @@ const felonLink = computed(() => {
     info.value?.register?.felon_link ||
     "https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx"
   );
+});
+const hasFaq = computed(() => {
+  const register = info.value?.register || {};
+  return "election_day" in register || "online" in register;
 });
 const onRegistered = (val) => setUserRegistered(val);
 onMounted(() => {
