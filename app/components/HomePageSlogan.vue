@@ -1,9 +1,9 @@
 <template>
   <div class="home-one">
     <five-fiths-title id="title-block" />
-    <div class="slogan" ref="elSlogan">
+    <div ref="elSlogan" class="slogan">
       <div class="slogan__whole">
-        A whole person.<br />A whole community.<br />A whole nation.
+        Overcoming barriers<br />Amplifying voices
       </div>
       <div class="slogan__motto">
         Together, we can change the narrative of historically disenfranchised
@@ -41,22 +41,22 @@ function resize() {
   const height = bottomMost - topMost;
   const idealHeight = 540; //elSlogan.value?.getBoundingClientRect()?.height;
   const fontScale = height / idealHeight;
-  console.log(
-    "topMost",
-    topMost,
-    "bottomMost",
-    bottomMost,
-    "height",
-    height,
-    "idealHeight",
-    idealHeight,
-    "scale",
-    fontScale,
-  );
+  // console.log(
+  //   "topMost",
+  //   topMost,
+  //   "bottomMost",
+  //   bottomMost,
+  //   "height",
+  //   height,
+  //   "idealHeight",
+  //   idealHeight,
+  //   "scale",
+  //   fontScale,
+  // );
   if (fontScale < 1) {
     wholeFontSize.value = `${3.75 * fontScale}rem`;
     sloganFontSize.value = `${1.75 * fontScale}rem`;
-    console.log("whole", wholeFontSize.value, "slogan", sloganFontSize.value);
+    // console.log("whole", wholeFontSize.value, "slogan", sloganFontSize.value);
   } else {
     wholeFontSize.value = "3.75rem";
     sloganFontSize.value = "1.75rem";
