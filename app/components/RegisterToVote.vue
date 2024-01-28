@@ -12,7 +12,7 @@
         </cv-checkbox>
         <!-- Check your registration -->
         <cv-link :inline="true" :href="checkRegLink" target="_blank"
-          ><span class="journey__link">{{ $t("checkHere") }}</span></cv-link
+          ><span>{{ $t("checkHere") }}</span></cv-link
         >
 
         <p class="journey__desc">
@@ -74,7 +74,7 @@
       </cv-column>
       <cv-column :sm="4" :lg="8">
         <img
-          class="aside__image"
+          class="side-image"
           src="@/assets/images/register-page-woman-in-sun-image-1.jpeg"
           alt=""
         />

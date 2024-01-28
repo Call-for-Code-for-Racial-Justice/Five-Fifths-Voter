@@ -103,8 +103,14 @@ onMounted(() => {
     border-left: 1px solid #ec9899;
     border-right: 1px solid #ec9899;
   }
+  :deep(.bx--accordion__content) {
+    padding-right: 3rem;
+  }
   .current-location {
     @include type-style("productive-heading-01");
+  }
+  :deep(a) {
+    color: white !important;
   }
 }
 </style>

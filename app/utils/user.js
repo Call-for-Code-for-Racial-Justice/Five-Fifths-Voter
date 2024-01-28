@@ -14,7 +14,7 @@ export const loadApproxLocation = async () => {
     console.warn("loadInfo", e);
   }
   if (!user.value.info.location) {
-    console.log("get location from ipapi");
+    // console.log("get location from ipapi");
     const { pending, data } = await useLazyFetch("https://ipapi.co/json/");
     // sample data
     // {

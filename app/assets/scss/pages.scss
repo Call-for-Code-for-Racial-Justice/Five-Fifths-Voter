@@ -1,0 +1,28 @@
+@import "./theme";
+.page {
+  &__title {
+    @include type-style("productive-heading-05");
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  &__subtitle {
+    @include type-style("productive-heading-04");
+    margin-bottom: 0.5rem;
+  }
+  &__inset {
+    width: 85%;
+    max-width: 1346px;
+    margin-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+    background-color: $ff-blue-03;
+    @include carbon--breakpoint-down(md) {
+      margin-left: unset;
+      margin-right: unset;
+      width: calc(100% - 1rem);
+    }
+  }
+}
