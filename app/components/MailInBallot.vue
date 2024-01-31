@@ -85,15 +85,6 @@
       </cv-column>
     </cv-row>
   </cv-grid>
-
-  <!--      </aside>-->
-  <!--    </template>-->
-  <!--    <template v-slot:image>-->
-  <!--      <aside class="aside__container&#45;&#45;img" :aria-label="$t('ariaSupportingImage')">-->
-
-  <!--      </aside>-->
-  <!--    </template>-->
-  <!--  </MainContent>-->
 </template>
 
 <script setup>

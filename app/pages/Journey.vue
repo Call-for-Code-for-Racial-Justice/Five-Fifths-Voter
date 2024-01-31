@@ -26,10 +26,7 @@
       >
         <template #title> {{ $t("journeyPageGetInformedLabel") }}</template>
         <template #content>
-          <img
-            src="@/assets/images/vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg"
-            alt=""
-          />
+          <get-informed />
         </template>
       </cv-accordion-item>
       <cv-accordion-item id="voteSection" v-model:open="voteSectionOpen">

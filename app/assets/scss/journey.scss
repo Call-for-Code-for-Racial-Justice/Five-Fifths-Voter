@@ -36,4 +36,8 @@
       margin-left: 0.5rem;
     }
   }
+  &__next-date {
+    @include carbon--type-style('productive-heading-03');
+    margin-top: $spacing-03;
+  }
 }
