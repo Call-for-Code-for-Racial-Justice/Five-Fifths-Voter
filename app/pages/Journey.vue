@@ -38,7 +38,7 @@
       <cv-accordion-item id="deliverSection" v-model:open="deliverSectionOpen">
         <template #title> {{ $t("journeyPageDeliverLabel") }}</template>
         <template #content>
-          <img src="@/assets/images/ballot-return-image-1.jpg" alt="" />
+          <ballot-return />
         </template>
       </cv-accordion-item>
     </cv-accordion>
