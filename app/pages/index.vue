@@ -2,7 +2,7 @@
   <div ref="el">
     <main-nav :active-section="activeSection" @nav-section="scrollToSection" />
     <section class="full-page dark">
-      <home-page-slogan />
+      <home-slogan />
     </section>
     <section class="full-page white filled-oval">
       <h1>Our mission</h1>
@@ -30,7 +30,6 @@
 defineOptions({
   name: "HomePage",
 });
-import HomePageSlogan from "~/components/HomePageSlogan.vue";
 
 definePageMeta({
   layout: "special",

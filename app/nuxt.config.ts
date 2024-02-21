@@ -20,12 +20,19 @@ export default defineNuxtConfig({
   //     },
   //   },
   // },
-  modules: [
-    [
-      "@nuxtjs/i18n",
+  modules: ["@nuxtjs/i18n", "@nuxtjs/tailwindcss", "@pinia/nuxt"],
+  routeRules: {
+    "/api/**": { cors: false },
+  },
+  i18n: {
+    locales: [
       {
-        vueI18n: "./i18n.config.js",
+        code: "en",
+        file: "en.json",
       },
     ],
-  ],
+    lazy: true,
+    langDir: "lang",
+    defaultLocale: "en",
+  },
 });

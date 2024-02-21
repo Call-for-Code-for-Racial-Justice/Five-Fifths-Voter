@@ -18,7 +18,10 @@
         <p class="journey__desc">
           {{ $t("registerDesc") }}
         </p>
-        <territory-info v-if="info.register.territory" class="journey__desc" />
+        <journey-territory-info
+          v-if="info.register.territory"
+          class="journey__desc"
+        />
 
         <!-- registration deadline -->
         <mark-down
@@ -33,7 +36,7 @@
         />
 
         <!-- Youth -->
-        <cali-special v-if="usaCode === 'ca'" class="journey__desc" />
+        <journey-cali-special v-if="usaCode === 'ca'" class="journey__desc" />
         <div v-else class="journey__desc">
           <div>{{ registerYouth }}</div>
           <cv-link
@@ -86,8 +89,6 @@
 <script setup>
 import electionInfo from "@/assets/data/usa-2024.json";
 import { setUserRegistered } from "~/composables/user";
-import CaliSpecial from "~/components/journey/CaliSpecial.vue";
-import TerritoryInfo from "~/components/journey/TerritoryInfo.vue";
 import { loadApproxLocation } from "~/utils/user";
 
 const { t } = useI18n();

@@ -1,6 +1,6 @@
 <template>
   <div :class="`nav-container active-section-${activeSection}`">
-    <nav-lines />
+    <svg-nav-lines />
     <cv-link
       v-if="activeSection !== 0"
       :icon="iconTop"
@@ -41,7 +41,6 @@ import {
   CircleFilled32 as CircleFilled,
   UpToTop32 as UpToTop,
 } from "@carbon/icons-vue";
-import NavLines from "~/components/svg/NavLines.vue";
 const iconDown = ArrowDown;
 const iconUp = ArrowUp;
 const iconUpRight = ArrowUpRight;

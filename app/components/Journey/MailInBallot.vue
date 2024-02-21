@@ -14,7 +14,10 @@
           {{ $t("absenteeDesc") }}
         </p>
 
-        <territory-info v-if="info.register.territory" class="journey__info" />
+        <journey-territory-info
+          v-if="info.register.territory"
+          class="journey__info"
+        />
 
         <!-- link request ballot -->
         <mark-down :content="requestLink" class="journey__info" />
@@ -89,7 +92,6 @@
 
 <script setup>
 import electionInfo from "@/assets/data/usa-2024.json";
-import TerritoryInfo from "~/components/journey/TerritoryInfo.vue";
 
 const { t } = useI18n();
 const user = useUser();

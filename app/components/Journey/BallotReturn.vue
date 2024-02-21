@@ -66,7 +66,6 @@ const info = computed(() => {
   return electionInfo[code] || { register: { territory: true } };
 });
 const returnDeadline = computed(() => {
-  console.log("info.value?.mail_in", info.value?.mail_in);
   const dateStr = info.value?.mail_in?.return_deadline;
   if (!dateStr) return "";
   return t("absenteeReturn", {

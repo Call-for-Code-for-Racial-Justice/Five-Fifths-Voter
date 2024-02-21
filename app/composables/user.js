@@ -46,6 +46,12 @@ export const setUserRegistered = (registered) => {
   localStorage.setItem("user", JSON.stringify(user.value.info));
 };
 
+export const setVotingAddress = (normalizedAddress) => {
+  const user = useState("user");
+  user.value.info.voting_address = normalizedAddress;
+  localStorage.setItem("user", JSON.stringify(user.value.info));
+};
+
 // mutations
 // const mutations = {
 //   setLocation(state, data) {
@@ -63,10 +69,7 @@ export const setUserRegistered = (registered) => {
 //     );
 //     localStorage.setItem("user", JSON.stringify(state.info));
 //   },
-//   setVotingAddress(state, normalized_address) {
-//     Vue.set(state.info, "voting_address", normalized_address);
-//     localStorage.setItem("user", JSON.stringify(state.info));
-//   },
+
 //   setRedirected(state, redirected) {
 //     state.redirected = redirected;
 //   },

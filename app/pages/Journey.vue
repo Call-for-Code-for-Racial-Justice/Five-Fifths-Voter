@@ -3,7 +3,7 @@
     <div class="current-location">
       Election information for {{ user?.info?.location?.region }}
     </div>
-    <select-state />
+    <journey-select-state />
     <cv-accordion @change="onChange">
       <cv-accordion-item
         id="registeredSection"
@@ -11,13 +11,13 @@
       >
         <template #title> {{ $t("journeyPageRegisteredLabel") }}</template>
         <template #content>
-          <register-to-vote />
+          <journey-register-to-vote />
         </template>
       </cv-accordion-item>
       <cv-accordion-item id="ballotSection" v-model:open="ballotSectionOpen">
         <template #title> {{ $t("journeyPageBallotLabel") }}</template>
         <template #content>
-          <mail-in-ballot />
+          <journey-mail-in-ballot />
         </template>
       </cv-accordion-item>
       <cv-accordion-item
@@ -26,19 +26,19 @@
       >
         <template #title> {{ $t("journeyPageGetInformedLabel") }}</template>
         <template #content>
-          <get-informed />
+          <journey-get-informed />
         </template>
       </cv-accordion-item>
       <cv-accordion-item id="voteSection" v-model:open="voteSectionOpen">
         <template #title> {{ $t("journeyPageVoteNowLabel") }}</template>
         <template #content>
-          <img src="@/assets/images/holder-atlanta-map.png" alt="" />
+          <journey-vote-in-person />
         </template>
       </cv-accordion-item>
       <cv-accordion-item id="deliverSection" v-model:open="deliverSectionOpen">
         <template #title> {{ $t("journeyPageDeliverLabel") }}</template>
         <template #content>
-          <ballot-return />
+          <journey-ballot-return />
         </template>
       </cv-accordion-item>
     </cv-accordion>
@@ -46,8 +46,6 @@
 </template>
 
 <script setup>
-import { loadApproxLocation } from "~/utils/user";
-
 defineOptions({
   name: "JourneyPage",
 });
@@ -59,7 +57,7 @@ const deliverSectionOpen = ref(false);
 const user = useUser();
 
 /**
- * @param {AccordianChangeEvent} ev
+ * @param {AccordionChangeEvent} ev
  */
 function onChange(ev) {
   document.activeElement.blur();

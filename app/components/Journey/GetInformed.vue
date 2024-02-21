@@ -3,7 +3,10 @@
   <cv-grid :full-width="true">
     <cv-row>
       <cv-column :sm="4" :lg="8">
-        <territory-info v-if="info.register.territory" class="journey__info" />
+        <journey-territory-info
+          v-if="info.register.territory"
+          class="journey__info"
+        />
 
         <!-- show core races for this state -->
         <div v-if="hasCoreRaces" class="journey__info">
@@ -139,7 +142,6 @@
 <!--</template>-->
 
 <script setup>
-import TerritoryInfo from "~/components/journey/TerritoryInfo.vue";
 //TODO move these somewhere else
 /**
  * @typedef {Object} candidateInfo
@@ -173,7 +175,6 @@ import electionInfo from "@/assets/data/usa-2024.json";
 // import Republican from '@/assets/icons/Republican';
 // import Democrat from '@/assets/icons/Democrat';
 // import Libertarian from '@/assets/icons/Libertarian';
-// import TerritoryInfo from './TerritoryInfo';
 // import FindCong from './FindCong';
 // import {
 //   LogoFacebook32,
