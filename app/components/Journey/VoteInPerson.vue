@@ -168,20 +168,19 @@
 // import { DateTime } from "luxon";
 // import readableId from "@/api/base58id";
 
-import electionInfo from "assets/data/usa-2024.json";
+// import electionInfo from "assets/data/usa-2024.json";
 import { useVoterInfoStore } from "~/stores/voterInfo";
 import { setVotingAddress } from "~/composables/user";
 
 const voterInfo = useVoterInfoStore();
 
-const { t } = useI18n();
 const user = useUser();
-const usaCode = computed(() => user.value.info?.location?.region_code);
+// const usaCode = computed(() => user.value.info?.location?.region_code);
 
-const info = computed(() => {
-  const code = usaCode.value?.toLowerCase() || "unknown";
-  return electionInfo[code] || { register: { territory: true } };
-});
+// const info = computed(() => {
+//   const code = usaCode.value?.toLowerCase() || "unknown";
+//   return electionInfo[code] || { register: { territory: true } };
+// });
 
 const addressValue = ref("");
 const placeholder = ref("123 Main St GA 30076");

@@ -42,22 +42,13 @@
   </cv-grid>
 </template>
 
-<!--      </aside>-->
-<!--    </template>-->
-<!--    <template v-slot:image>-->
-<!--      <aside class="aside__container&#45;&#45;img" :aria-label="$t('ariaSupportingImage')">-->
-<!--        <img class="aside__image" src="../../assets/ballot-return-image-1.jpg" alt="Sideimage" />-->
-<!--      </aside>-->
-<!--    </template>-->
-<!--  </MainContent>-->
-<!--</template>-->
-
 <script setup>
 import electionInfo from "@/assets/data/usa-2024.json";
 
 const { t } = useI18n();
 const user = useUser();
 const usaCode = computed(() => user.value.info?.location?.region_code);
+// eslint-disable-next-line no-unused-vars
 const registered = computed(() =>
   Boolean(user.value.info?.registered === "presidential-2024"),
 );
@@ -72,20 +63,6 @@ const returnDeadline = computed(() => {
     date: niceDate(dateStr),
     days: daysLeft(dateStr),
   });
-});
-const hasFaq = computed(() => {
-  const faq = info.value?.mail_in || {};
-  return "dropoff" in faq;
-});
-
-const idExplainer = computed(() => {
-  const explainer = info.value?.mail_in?.id_explainer;
-  const idLink =
-    info.value?.mail_in?.id_link ||
-    "https://www.ncsl.org/elections-and-campaigns/voter-id";
-  if (!explainer) return "";
-
-  return `\u21b3 ${explainer}[${t("absenteeMoreId")}](${idLink})`;
 });
 const hasDropoff = computed(() => {
   const faq = info.value?.mail_in || {};

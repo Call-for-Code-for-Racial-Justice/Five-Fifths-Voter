@@ -3,10 +3,12 @@ env:
   node: true
 
 extends:
+  - ".nuxt/.eslint.globals.cjs"
   - "eslint:recommended"
   - "plugin:vue/vue3-recommended"
   - "plugin:prettier-vue/recommended"
-
+globals:
+  defineCachedEventHandler: readonly
 rules:
   no-console:
     - error

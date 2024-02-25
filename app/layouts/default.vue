@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-header />
-    <main class="main-content with-header" id="#main-content">
+    <main id="#main-content" class="main-content with-header">
       <slot />
     </main>
   </div>

@@ -20,7 +20,12 @@ export default defineNuxtConfig({
   //     },
   //   },
   // },
-  modules: ["@nuxtjs/i18n", "@nuxtjs/tailwindcss", "@pinia/nuxt"],
+  modules: [
+    "@nuxtjs/i18n",
+    "@nuxtjs/tailwindcss",
+    "@pinia/nuxt",
+    "nuxt-eslint-globals",
+  ],
   routeRules: {
     "/api/**": { cors: false },
   },

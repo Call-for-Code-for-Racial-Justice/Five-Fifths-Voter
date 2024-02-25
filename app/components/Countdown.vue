@@ -1,7 +1,9 @@
 <template>
-  <div class="countdown--container" ref="el">
+  <div ref="el" class="countdown--container">
     <div class="countdown--headline">
-      <div v-for="headline in headlines">{{ headline }}</div>
+      <div v-for="headline in headlines" :key="`key-${headline}`">
+        {{ headline }}
+      </div>
     </div>
     <div class="countdown--numbers">
       <div>

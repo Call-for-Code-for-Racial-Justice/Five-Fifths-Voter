@@ -4,14 +4,14 @@
     <cv-link
       v-if="activeSection !== 0"
       :icon="iconTop"
-      @click.prevent="$emit('nav-section', 0)"
       href="#"
+      @click.prevent="$emit('nav-section', 0)"
     />
     <cv-link
       :disabled="activeSection === 1"
       :icon="missionIcon"
-      @click.prevent="$emit('nav-section', 1)"
       href="#"
+      @click.prevent="$emit('nav-section', 1)"
       ><span>Our mission</span></cv-link
     >
     <cv-link :icon="iconUpRight" href="/journey"
@@ -20,8 +20,8 @@
     <cv-link
       :disabled="activeSection === 2"
       :icon="valuesIcon"
-      @click.prevent="$emit('nav-section', 2)"
       href="#"
+      @click.prevent="$emit('nav-section', 2)"
       ><span>Our values</span></cv-link
     >
     <cv-link :icon="iconUpRight" href="/voterSupport"

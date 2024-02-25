@@ -186,9 +186,6 @@ import electionInfo from "@/assets/data/usa-2024.json";
 
 const user = useUser();
 const usaCode = computed(() => user.value.info?.location?.region_code);
-const registered = computed(() =>
-  Boolean(user.value.info?.registered === "presidential-2024"),
-);
 const info = computed(() => {
   const code = usaCode.value?.toLowerCase() || "unknown";
   return electionInfo[code] || { register: { territory: true } };

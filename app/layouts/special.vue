@@ -1,7 +1,7 @@
 <!-- this layout has no nav/header and so is intended for special pages like the home page -->
 <template>
   <div>
-    <main class="main-content" id="#main-content">
+    <main id="#main-content" class="main-content">
       <slot />
     </main>
   </div>
