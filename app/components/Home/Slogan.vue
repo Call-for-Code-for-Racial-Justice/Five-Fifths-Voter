@@ -16,7 +16,7 @@
 
 <script setup>
 defineOptions({
-  name: "HomePageSlogan",
+  name: "HomeSlogan",
 });
 import { default as actual } from "actual";
 
