@@ -11,6 +11,7 @@
 defineOptions({
   name: "SpecialLayout",
 });
+import "@/assets/css/five-fifths-theme.css";
 </script>
 
 <style lang="scss">

@@ -1,8 +1,9 @@
 <template>
-  <div class="snap-always">
-    <section id="top" :class="['w-full', 'h-dvh', 'snap-start']">
+  <div>
+    <home-header />
+    <section id="top" class="w-full h-dvh mt-[2rem]">
       <div
-        class="w-full h-[calc(100%-320px)] bg-ff-purple-01 bg-repeat-x bg-[url(@/assets/images/silhouette-tile.png)] bg-cover md:bg-contain'"
+        class="w-full h-[calc(100%-320px-2rem)] bg-ff-purple-01 bg-repeat-x bg-[url(@/assets/images/silhouette-tile.png)] bg-cover md:bg-contain"
       >
         <div class="p-8">
           <img
@@ -52,10 +53,8 @@
             class="bg-ff-purple-01 text-2xl p-3 text-white"
             @click="router.replace({ name: 'journey' })"
           >
-            <cv-link href="/Journey"
-              >Your Voter Journey
-              <arrow-up-right class="inline-block" />
-            </cv-link>
+            Your Voter Journey
+            <arrow-up-right class="inline-block" />
           </button>
         </div>
       </div>
@@ -63,7 +62,7 @@
         class="hidden m:block h-full w-[20%] bg-[url(@/assets/images/oval-purple-right.svg)] bg-left bg-no-repeat"
       ></div>
     </section>
-    <section id="our-values" class="w-full h-screen bg-ff-blue-01 snap-start">
+    <section id="our-values" class="w-full h-screen bg-ff-blue-01 pt-[3rem]">
       <div class="w-[99%] md:w-[90%] mr-auto ml-auto">
         <h1 class="text-ff-blue-03 text-5xl md:text-6xl p-10">Our values</h1>
 
@@ -110,6 +109,7 @@
 <script setup>
 import { ArrowUpRight32 as ArrowUpRight } from "@carbon/icons-vue";
 import { ChevronDown16 as Chevron } from "@carbon/icons-vue";
+import HomeHeader from "~/components/Home/Header.vue";
 
 defineOptions({
   name: "HomePage",

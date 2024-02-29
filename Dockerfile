@@ -1,7 +1,6 @@
 FROM docker.io/node:18-alpine AS base
 FROM base AS builder
 WORKDIR /mono
-COPY .npmrc .
 COPY app app
 RUN cd app && \
     npm i  && \
