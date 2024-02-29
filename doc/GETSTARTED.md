@@ -4,10 +4,7 @@
 
 - [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [install nvm](https://github.com/nvm-sh/nvm#install--update-script)
-- [install pnpm](https://pnpm.io/installation#using-npm)
 - Install node 18 `nvm install 18`
-- **OSX** [install docker](https://docs.docker.com/get-docker/)
-- **Fedora** You can of course skip the docker install since you already have podman. Use `podman` for any of the instructions that show `docker`. Or you can create an alias for docker.
 
 ## Running locally
 See [README](../app/README.md) in the app folder

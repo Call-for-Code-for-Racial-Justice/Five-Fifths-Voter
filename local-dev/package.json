@@ -1,0 +1,20 @@
+{
+  "name": "local-dev",
+  "version": "1.0.0",
+  "description": "Local development tools for Five Fifths Voter",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mockoon-cli start --data ./mock/civics.json"
+  },
+  "keywords": [
+    "mock",
+    "mockoon",
+    "docker",
+    "docker-compose"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@mockoon/cli": "^6.2.0"
+  }
+}

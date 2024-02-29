@@ -1,0 +1,511 @@
+{
+  "uuid": "c958f96e-2ff0-49a2-b0ab-e3b18fc585cc",
+  "lastMigration": 32,
+  "name": "Civics API",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 4514,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "cdcad618-616e-4e88-88c4-6f934d575619",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "civicinfo/v2/elections",
+      "responses": [
+        {
+          "uuid": "5af96bf7-58a0-499e-b3b6-4f43a426b9e0",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "private"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Server",
+              "value": "ESF"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin, X-Origin, Referer"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/elections.json.gz",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "fb12f755-7454-4f12-99a7-59647861371d",
+          "body": "",
+          "latency": 0,
+          "statusCode": 403,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/missing-apikey.json.gz",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "key",
+              "value": "",
+              "invert": false,
+              "operator": "null"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "66cf7f8b-1c63-48a7-a646-f503622da39c",
+          "body": "",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/invalid-apikey.json.gz",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "key",
+              "value": "local-dev",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "c08083f3-89e5-44ab-8ca3-18f8b731a439",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "civicinfo/v2/voterinfo",
+      "responses": [
+        {
+          "uuid": "1bba078b-3979-47a6-bd66-cf67407fd883",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Washington Special Election",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "private"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/voter-info-8112.json.gz",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "id",
+              "value": "8112",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "6fe08b3f-182c-4c88-b3cd-962eafe2843c",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Wisconsin Spring Primary Election",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "private"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/voter-info-8113.json.gz",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "id",
+              "value": "8113",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "73f72e8d-7cf6-4ca1-8469-0c4db62be99a",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Virginia Democratic Presidential Primary Election",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "private"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/voter-info-8121.json.gz",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "id",
+              "value": "8121",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "d27f1129-43c4-4fdc-a7ab-930e90af9a85",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Virginia Republican Presidential Primary Election",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "private"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/voter-info-8122.json.gz",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "id",
+              "value": "8122",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "dac6a8bd-8e15-469c-bc76-ecdf65c8be07",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 403,
+          "label": "Missing key",
+          "headers": [
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/missing-apikey.json.gz",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "key",
+              "value": "",
+              "invert": false,
+              "operator": "null"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "1f096b13-478d-46b6-9206-434df46afaec",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "Invalid apikey",
+          "headers": [
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/invalid-apikey.json.gz",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "1d349b32-d0ef-4907-8563-f2d0badda0d6",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "Missing address",
+          "headers": [
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/missing.address.json.gz",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "address",
+              "value": "",
+              "invert": false,
+              "operator": "null"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "20e03eed-430d-461a-b293-0ed6154e74c7",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Virginia multiple elections",
+          "headers": [
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/voter-info-va.json.gz",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "address",
+              "value": "\\sVA(\\s|$)",
+              "invert": false,
+              "operator": "regex_i"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "eb5fc401-0cb0-4b8d-8794-bc7a145fc214",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "Default for unknown address / ids",
+          "headers": [
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/voter-info-unknown.json.gz",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "cdcad618-616e-4e88-88c4-6f934d575619"
+    },
+    {
+      "type": "route",
+      "uuid": "c08083f3-89e5-44ab-8ca3-18f8b731a439"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
