@@ -1,24 +1,38 @@
 <template>
   <div
+    ref="el"
     class="group flex flex-col gap-2 rounded-lg bg-ff-blue-03 p-5 text-white"
+    :class="{ 'is-expanded': expanded }"
     tabindex="1"
   >
-    <div class="flex cursor-pointer items-center justify-between">
+    <div
+      class="flex cursor-pointer items-center justify-between"
+      @click="toggle()"
+    >
       <span class="text-2xl"> {{ name }} </span>
-      <chevron class="transition-all duration-500 group-focus:-rotate-180" />
+      <button class="relative">
+        <expand-icon
+          class="absolute -translate-x-[100%] -translate-y-[50%] opacity-100 transition-all
+            group-[.is-expanded]:opacity-0 group-[.is-expanded]:duration-1000"
+        />
+        <collapse-icon
+          class="absolute -translate-x-[100%] -translate-y-[50%] opacity-0 transition-all
+            group-[.is-expanded]:opacity-100 group-[.is-expanded]:duration-1000"
+        />
+      </button>
     </div>
     <div
-      class="visible xinvisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+      class="invisible h-auto max-h-0 items-center opacity-0 transition-all
+        group-[.is-expanded]:visible group-[.is-expanded]:max-h-screen
+        group-[.is-expanded]:opacity-100 group-[.is-expanded]:duration-1000
+        data-[expanded=true]:visible data-[expanded=true]:max-h-screen
+        data-[expanded=true]:opacity-100"
     >
-      <div class="flex justify-around flex-col gap-10 md:gap-0 md:flex-row">
+      <div class="flex flex-col justify-around gap-10 md:flex-row md:gap-0">
         <div class="w:full md:w-1/3 md:text-2xl">
-          <slot name="main">
-            Five Fifths Voter will educate disenfranchised voters with voting
-            guidance and connection to up&#x2011;to&#x2011;date tools necessary
-            to complete the voting process.
-          </slot>
+          {{ main }}
           <button
-            class="bg-ff-purple-01 md:text-2xl p-3 text-white block mt-10"
+            class="mt-10 block bg-ff-purple-01 p-3 text-white md:text-2xl"
           >
             <cv-link href="/Journey" class="!text-white"
               >Your Voter Journey
@@ -32,23 +46,24 @@
             educate: image === 'educate',
             enable: image === 'enable',
           }"
-          class="w-full max-w-[350px] md:w-[350px] h-[350px] bg-cover bg-center"
+          class="h-[350px] w-full max-w-[350px] bg-cover bg-center md:w-[350px]"
         >
-          <div class="bg-black bg-opacity-30 md:bg-opacity-0">
+          <div class="bg-black bg-opacity-60 md:bg-opacity-0">
+            <div class="relative inline">
+              <span
+                class="absolute -translate-x-[230px] -translate-y-[20px] text-9xl text-ff-yellow-01"
+                >&#8220;</span
+              >
+            </div>
             <span
-              class="text-ff-yellow-01 text-9xl md:ml-[-50%] align-bottom leading-3"
-              >&#8220;</span
+              class="w-full align-top text-2xl font-bold italic md:ml-[-50%] md:inline-block
+                md:w-[360px] md:text-3xl"
             >
-            <span
-              class="text-2xl md:text-3xl w-full md:w-[360px] font-bold italic align-top md:inline-block md:mt-5"
-            >
-              <slot name="quote"> Knowledge is power. </slot>
+              {{ quote }}
             </span>
-          </div>
-          <div
-            class="text-1xl md:text-2xl md:ml-[-50%] md:font-light pl-[60px] mt-2 bg-black bg-opacity-30 md:bg-opacity-0"
-          >
-            <slot name="author"> Francis Bacon </slot>
+            <div class="text-1xl pt-2 md:ml-[-50%] md:text-2xl md:font-light">
+              {{ author }}
+            </div>
           </div>
         </div>
       </div>
@@ -59,15 +74,36 @@
 <script setup>
 import {
   ArrowUpRight32 as ArrowUpRight,
-  ChevronDown16 as Chevron,
+  Add20 as ExpandIcon,
+  Subtract20 as CollapseIcon,
 } from "@carbon/icons-vue";
 defineOptions({
   name: "HomeValuesCard",
 });
-defineProps({
+const props = defineProps({
   name: { type: String, required: true },
+  main: { type: String, required: true },
+  quote: { type: String, required: true },
+  author: { type: String, required: true },
   image: { type: String, default: "empower" },
 });
+
+const expandedCard = inject("expanded-card", ref(""));
+const expanded = ref(false);
+const el = ref(null);
+function toggle() {
+  expanded.value = !expanded.value;
+  if (expanded.value) expandedCard.value = props.image;
+}
+watch(
+  expandedCard,
+  () => {
+    if (expandedCard.value && expandedCard.value !== props.image) {
+      setTimeout(() => (expanded.value = false), 250);
+    }
+  },
+  { flush: "post" },
+);
 </script>
 
 <style scoped lang="scss">
