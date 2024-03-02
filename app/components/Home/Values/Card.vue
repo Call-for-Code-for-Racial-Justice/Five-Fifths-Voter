@@ -8,7 +8,7 @@
       <chevron class="transition-all duration-500 group-focus:-rotate-180" />
     </div>
     <div
-      class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+      class="visible xinvisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
     >
       <div class="flex justify-around flex-col gap-10 md:gap-0 md:flex-row">
         <div class="w:full md:w-1/3 md:text-2xl">
@@ -20,7 +20,7 @@
           <button
             class="bg-ff-purple-01 md:text-2xl p-3 text-white block mt-10"
           >
-            <cv-link href="/Journey"
+            <cv-link href="/Journey" class="!text-white"
               >Your Voter Journey
               <arrow-up-right class="inline-block" />
             </cv-link>

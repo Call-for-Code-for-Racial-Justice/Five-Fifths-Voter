@@ -40,7 +40,6 @@ the [mockoon](https://mockoon.com/tutorials/run-mock-api-anywhere-cli/) server t
    - Start server
    **NOTE**: **⚠**  It is easy to make unintended changes to the civics.json while in the UI. Please do not include updates to this file in your PR unless you **intentionally** changed it. 
 
-
 3. **option 3** - Mockoon CLI
    If you have already installed mockoon globally, you can run `mockoon-cli start --data local-dev/mock/civics.jsonn`
 

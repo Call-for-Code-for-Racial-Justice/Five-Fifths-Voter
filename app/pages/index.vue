@@ -66,6 +66,49 @@
       <div class="w-[99%] md:w-[90%] mr-auto ml-auto">
         <h1 class="text-ff-blue-03 text-5xl md:text-6xl p-10">Our values</h1>
 
+        <div class="flex justify-around flex-col gap-10 md:gap-0 md:flex-row">
+          <div class="w:full md:w-1/3 md:text-2xl">
+            <slot name="main">
+              Five Fifths Voter will educate disenfranchised voters with voting
+              guidance and connection to up&#x2011;to&#x2011;date tools
+              necessary to complete the voting process.
+            </slot>
+            <button
+              class="bg-ff-purple-01 md:text-2xl p-3 text-white block mt-10"
+            >
+              <cv-link href="/Journey" class="!text-white"
+                >Your Voter Journey
+                <arrow-up-right class="inline-block" />
+              </cv-link>
+            </button>
+          </div>
+          <div
+            :class="{
+              empower: image === 'empower',
+              educate: image === 'educate',
+              enable: image === 'enable',
+            }"
+            class="w-full max-w-[350px] md:w-[350px] h-[350px] bg-cover bg-center"
+          >
+            <div class="bg-black bg-opacity-30 md:bg-opacity-0">
+              <span
+                class="text-ff-yellow-01 text-9xl md:ml-[-50%] align-bottom leading-3"
+                >&#8220;</span
+              >
+              <span
+                class="text-2xl md:text-3xl w-full md:w-[360px] font-bold italic align-top md:inline-block md:mt-5"
+              >
+                <slot name="quote"> Knowledge is power. </slot>
+              </span>
+            </div>
+            <div
+              class="text-1xl md:text-2xl md:ml-[-50%] md:font-light pl-[60px] mt-2 bg-black bg-opacity-30 md:bg-opacity-0"
+            >
+              <slot name="author"> Francis Bacon </slot>
+            </div>
+          </div>
+        </div>
+
         <div class="m-2 space-y-2 max-w-[1300px]">
           <home-values-card name="Educate" image="educate">
             <template #main>
