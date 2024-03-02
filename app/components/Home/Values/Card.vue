@@ -1,9 +1,9 @@
 <template>
   <div
+    ref="el"
     class="group flex flex-col gap-2 rounded-lg bg-ff-blue-03 p-5 text-white"
     :class="{ 'is-expanded': expanded }"
     tabindex="1"
-    ref="el"
   >
     <div
       class="flex cursor-pointer items-center justify-between"

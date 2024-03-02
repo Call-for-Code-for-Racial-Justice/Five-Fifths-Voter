@@ -73,7 +73,6 @@
 
 <script setup>
 import { ArrowUpRight32 as ArrowUpRight } from "@carbon/icons-vue";
-import { ChevronDown16 as Chevron } from "@carbon/icons-vue";
 import HomeHeader from "~/components/Home/Header.vue";
 
 defineOptions({
