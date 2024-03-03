@@ -1,6 +1,7 @@
 <template>
   <div
-    class="w-full h-[320px] bg-ff-red-01 flex justify-between items-center pl-3 md:pl-14 pr-3 md:pr-14"
+    class="flex h-[320px] w-full items-center justify-between bg-ff-red-01 pl-3 pr-3
+      md:pl-14 md:pr-14"
   >
     <div class="text-4xl md:text-7xl">
       <div class="text-ff-pink-01">{{ headlines[0] }}</div>
@@ -8,30 +9,34 @@
       <div class="text-ff-blue-03">{{ headlines[2] }}</div>
     </div>
     <div
-      class="text-white flex justify-between items-center flex-col md:flex-row gap-x-10"
+      class="flex flex-col items-center justify-between gap-x-10 text-white md:flex-row"
     >
       <div
-        class="align-middle bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain bg-no-repeat w-[125px] md:w-[unset]"
+        class="w-[125px] bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain
+          bg-no-repeat align-middle md:w-[unset]"
       >
-        <div class="text-3xl md:text-9xl font-[Caprasimo]">{{ days }}</div>
+        <div class="font-[Caprasimo] text-3xl md:text-9xl">{{ days }}</div>
         <div class="pl-[44px] md:pl-[10px]">Days</div>
       </div>
       <div
-        class="bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain bg-no-repeat w-[125px] md:w-[unset]"
+        class="w-[125px] bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain
+          bg-no-repeat md:w-[unset]"
       >
-        <div class="text-3xl md:text-9xl font-[Caprasimo]">:{{ hours }}</div>
+        <div class="font-[Caprasimo] text-3xl md:text-9xl">:{{ hours }}</div>
         <div class="pl-[44px]">Hours</div>
       </div>
       <div
-        class="bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain bg-no-repeat w-[125px] md:w-[unset]"
+        class="w-[125px] bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain
+          bg-no-repeat md:w-[unset]"
       >
-        <div class="text-3xl md:text-9xl font-[Caprasimo]">:{{ minutes }}</div>
+        <div class="font-[Caprasimo] text-3xl md:text-9xl">:{{ minutes }}</div>
         <div class="pl-[44px]">Minutes</div>
       </div>
       <div
-        class="text-white bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain bg-no-repeat w-[125px] md:w-[unset]"
+        class="w-[125px] bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain
+          bg-no-repeat text-white md:w-[unset]"
       >
-        <div class="text-3xl md:text-9xl font-[Caprasimo]">:{{ seconds }}</div>
+        <div class="font-[Caprasimo] text-3xl md:text-9xl">:{{ seconds }}</div>
         <div class="pl-[44px]">Seconds</div>
       </div>
     </div>
@@ -40,6 +45,10 @@
 
 <script setup>
 import { DateTime, Interval } from "luxon";
+
+defineOptions({
+  name: "HomeCountdown",
+});
 
 const headlines = ref("Days until the/2024/Presidential Election".split("/"));
 const election = ref("20241105T050000"); // Tuesday, November 5, 2024 7:00:00 AM GMT-05:00

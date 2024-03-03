@@ -15,7 +15,9 @@
           />
         </div>
         <div
-          class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+          class="invisible h-auto max-h-0 items-center opacity-0 transition-all
+            group-focus:visible group-focus:max-h-screen group-focus:opacity-100
+            group-focus:duration-1000"
         >
           <span v-if="item.address.line1">{{ item.address.line1 }}</span>
 
@@ -62,7 +64,9 @@
           />
         </div>
         <div
-          class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+          class="invisible h-auto max-h-0 items-center opacity-0 transition-all
+            group-focus:visible group-focus:max-h-screen group-focus:opacity-100
+            group-focus:duration-1000"
         >
           <span v-if="item.address.line1">{{ item.address.line1 }}</span>
 
@@ -109,7 +113,9 @@
           />
         </div>
         <div
-          class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+          class="invisible h-auto max-h-0 items-center opacity-0 transition-all
+            group-focus:visible group-focus:max-h-screen group-focus:opacity-100
+            group-focus:duration-1000"
         >
           <span v-if="item.address.line1">{{ item.address.line1 }}</span>
 

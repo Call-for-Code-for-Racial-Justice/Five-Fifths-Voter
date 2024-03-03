@@ -29,7 +29,7 @@
         </div>
 
         <!-- address -->
-        <div class="mt-4 mb-2">
+        <div class="mb-2 mt-4">
           <cv-text-input
             v-model="addressValue"
             :label="$t('voteAddressLabel')"

@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="hasVoterInfo"
-    class="border-solid border-2 border-[#393939] p-2 rounded mt-4"
+    class="mt-4 rounded border-2 border-solid border-[#393939] p-2"
   >
     <p>
       {{ voterState }}
