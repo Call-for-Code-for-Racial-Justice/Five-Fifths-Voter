@@ -10,7 +10,11 @@
     <cv-skip-to-content href="#main-content"></cv-skip-to-content>
     <cv-header-name prefix="" @click="scrollTop()"> FiveFifths</cv-header-name>
     <cv-header-nav aria-label="Five Fifths Voter navigation">
-      <cv-header-menu-item @click="scrollToId('our-mission')">
+      <cv-header-menu-item
+        :data-pos="ourMissionPosition"
+        class="data-[pos=here]:font-extrabold"
+        @click="scrollToId('our-mission')"
+      >
         Our mission
         <arrow-down
           :data-pos="ourMissionPosition"
@@ -21,7 +25,11 @@
       <cv-header-menu-item href="/journey" :active="activeJourney">
         Voter journey <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
-      <cv-header-menu-item @click="scrollToId('our-values')">
+      <cv-header-menu-item
+        :data-pos="ourValuesPosition"
+        class="data-[pos=here]:font-extrabold"
+        @click="scrollToId('our-values')"
+      >
         Our Values
         <arrow-down
           :data-pos="ourValuesPosition"
@@ -44,7 +52,12 @@
             Home
           </cv-side-nav-link>
           <cv-side-nav-link @click="scrollToId('our-mission')">
-            <template #nav-icon><arrow-down /></template>
+            <template #nav-icon
+              ><arrow-down
+                :data-pos="ourMissionPosition"
+                class="inline-block opacity-100 transition-all duration-500 data-[pos=here]:-rotate-90
+                  data-[pos=up]:-rotate-180 md:data-[pos=here]:opacity-0"
+            /></template>
             Our Mission
           </cv-side-nav-link>
           <cv-side-nav-link href="/journey">
@@ -52,7 +65,12 @@
             Voter Journey
           </cv-side-nav-link>
           <cv-side-nav-link @click="scrollToId('our-values')">
-            <template #nav-icon><arrow-down /></template>
+            <template #nav-icon
+              ><arrow-down
+                :data-pos="ourValuesPosition"
+                class="inline-block opacity-100 transition-all duration-500 data-[pos=here]:-rotate-90
+                  data-[pos=up]:-rotate-180 md:data-[pos=here]:opacity-0"
+            /></template>
             Our Values
           </cv-side-nav-link>
           <cv-side-nav-link href="/voterSupport">
@@ -100,16 +118,16 @@ const ourValuesPosition = ref("down");
 const ourMissionPosition = ref("down");
 const onScroll = debounce(function () {
   const ourValueEl = document.getElementById("our-values");
-  const ourMissionEl = document.getElementById("our-mission");
   const valuesRect = ourValueEl.getBoundingClientRect();
-  if (valuesRect.top > 0) ourValuesPosition.value = "down";
-  else if (valuesRect.top < 0) ourValuesPosition.value = "up";
-  else ourValuesPosition.value = "here";
+  if (Math.abs(valuesRect.top) < 150) ourValuesPosition.value = "here";
+  else if (valuesRect.top > 0) ourValuesPosition.value = "down";
+  else ourValuesPosition.value = "up";
 
+  const ourMissionEl = document.getElementById("our-mission");
   const missionRect = ourMissionEl.getBoundingClientRect();
-  if (missionRect.top > 0) ourMissionPosition.value = "down";
-  else if (missionRect.top < 0) ourMissionPosition.value = "up";
-  else ourMissionPosition.value = "here";
+  if (Math.abs(missionRect.top) < 150) ourMissionPosition.value = "here";
+  else if (missionRect.top > 0) ourMissionPosition.value = "down";
+  else ourMissionPosition.value = "up";
 }, 250);
 onMounted(() => addEventListener("scroll", onScroll));
 onBeforeUnmount(() => removeEventListener("scroll", onScroll));
@@ -120,7 +138,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
 $shell-side-nav-text-01: white;
 
 #side-nav {
-  margin-top: 3rem;
+  margin-top: -1rem;
   background-color: $gray-100;
   // Side nav link text & icon
   ul > li > a > span,

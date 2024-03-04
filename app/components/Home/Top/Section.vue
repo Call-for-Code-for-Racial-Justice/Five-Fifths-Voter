@@ -11,10 +11,10 @@
         />
       </div>
       <div class="h-full w-full p-3 text-white md:p-14">
-        <h1 class="text-4xl md:text-6xl">
-          {{ $t("landingTopTagline") }}
-          <mark-down :content="$t('landingTopTagline')" />
-        </h1>
+        <line-breaks
+          :content="$t('landingTopTagline')"
+          class="text-4xl md:text-6xl"
+        />
         <div class="pt-10 text-2xl md:max-w-96 md:pt-8 md:text-2xl">
           {{ $t("landingTopDesc") }}
         </div>
