@@ -11,13 +11,23 @@
     <cv-header-name prefix="" @click="scrollTop()"> FiveFifths</cv-header-name>
     <cv-header-nav aria-label="Five Fifths Voter navigation">
       <cv-header-menu-item @click="scrollToId('our-mission')">
-        Our mission <arrow-down class="inline-block" />
+        Our mission
+        <arrow-down
+          :data-pos="ourMissionPosition"
+          class="inline-block opacity-100 transition-all duration-500 data-[pos=up]:-rotate-180
+            data-[pos=here]:opacity-0"
+        />
       </cv-header-menu-item>
       <cv-header-menu-item href="/journey" :active="activeJourney">
         Voter journey <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
       <cv-header-menu-item @click="scrollToId('our-values')">
-        Our Values <arrow-down class="inline-block" />
+        Our Values
+        <arrow-down
+          :data-pos="ourValuesPosition"
+          class="inline-block opacity-100 transition-all duration-500 data-[pos=up]:-rotate-180
+            data-[pos=here]:opacity-0"
+        />
       </cv-header-menu-item>
       <cv-header-menu-item :active="activeVoterSupport" href="/voterSupport">
         Voter support <arrow-up-right class="inline-block" />
@@ -29,20 +39,20 @@
     <template #left-panels>
       <cv-side-nav id="side-nav" :rail="false" :fixed="true" :expanded="false">
         <cv-side-nav-items>
-          <cv-side-nav-link href="/">
+          <cv-side-nav-link @click="scrollTop()">
             <template #nav-icon><home-icon /></template>
             Home
           </cv-side-nav-link>
-          <cv-side-nav-link href="/#our-mission">
-            <template #nav-icon><our-mission-icon /></template>
+          <cv-side-nav-link @click="scrollToId('our-mission')">
+            <template #nav-icon><arrow-down /></template>
             Our Mission
           </cv-side-nav-link>
           <cv-side-nav-link href="/journey">
             <template #nav-icon><voter-journey-icon /></template>
             Voter Journey
           </cv-side-nav-link>
-          <cv-side-nav-link href="/#our-values">
-            <template #nav-icon><our-values-icon /></template>
+          <cv-side-nav-link @click="scrollToId('our-values')">
+            <template #nav-icon><arrow-down /></template>
             Our Values
           </cv-side-nav-link>
           <cv-side-nav-link href="/voterSupport">
@@ -62,14 +72,14 @@
 <script setup>
 import {
   Home16 as HomeIcon,
-  Information16 as OurMissionIcon,
   Compass16 as VoterJourneyIcon,
-  Group16 as OurValuesIcon,
   HelpDesk16 as VoterSupportIcon,
   Help16 as WhyVoteIcon,
   ArrowDown16 as ArrowDown,
   ArrowUpRight16 as ArrowUpRight,
 } from "@carbon/icons-vue";
+import { debounce } from "lodash";
+
 defineOptions({
   name: "HomeHeader",
 });
@@ -80,10 +90,29 @@ const activeJourney = computed(() => route.name === "Journey");
 
 function scrollToId(id) {
   document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  document.activeElement.blur();
 }
 function scrollTop() {
   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  document.activeElement.blur();
 }
+const ourValuesPosition = ref("down");
+const ourMissionPosition = ref("down");
+const onScroll = debounce(function () {
+  const ourValueEl = document.getElementById("our-values");
+  const ourMissionEl = document.getElementById("our-mission");
+  const valuesRect = ourValueEl.getBoundingClientRect();
+  if (valuesRect.top > 0) ourValuesPosition.value = "down";
+  else if (valuesRect.top < 0) ourValuesPosition.value = "up";
+  else ourValuesPosition.value = "here";
+
+  const missionRect = ourMissionEl.getBoundingClientRect();
+  if (missionRect.top > 0) ourMissionPosition.value = "down";
+  else if (missionRect.top < 0) ourMissionPosition.value = "up";
+  else ourMissionPosition.value = "here";
+}, 250);
+onMounted(() => addEventListener("scroll", onScroll));
+onBeforeUnmount(() => removeEventListener("scroll", onScroll));
 </script>
 
 <style lang="scss">
