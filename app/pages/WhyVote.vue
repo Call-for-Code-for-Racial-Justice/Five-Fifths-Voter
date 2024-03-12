@@ -27,11 +27,6 @@
   </div>
 </template>
 
-<script setup>
-defineOptions({
-  name: "WhyVote",
-});
-</script>
 <style scoped lang="scss">
 @import "@/assets/scss/theme";
 @import "@/assets/scss/pages";

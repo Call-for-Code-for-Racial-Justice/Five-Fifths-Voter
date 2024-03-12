@@ -1,7 +1,9 @@
 <template>
   <section id="our-values" class="h-screen w-full bg-ff-blue-01 pt-[3rem]">
     <div class="ml-auto mr-auto w-[99%] md:w-[90%]">
-      <h1 class="p-10 text-5xl text-ff-blue-03 md:text-6xl">Our values</h1>
+      <h1 class="py-10 text-5xl font-semibold text-ff-blue-03 md:text-6xl">
+        Our values
+      </h1>
       <div class="m-2 max-w-[1300px] space-y-2">
         <home-values-card
           :name="$t('landingPageEdu')"
@@ -9,6 +11,7 @@
           :main="$t('landingPageEduDesc', ['Five Fifths Voter'])"
           :quote="$t('quoteFrancisBacon')"
           author="Francis Bacon"
+          :expand="true"
         />
         <home-values-card
           :name="$t('landingPageEmpower')"

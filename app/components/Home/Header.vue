@@ -22,7 +22,7 @@
             data-[pos=here]:opacity-0"
         />
       </cv-header-menu-item>
-      <cv-header-menu-item href="/journey" :active="activeJourney">
+      <cv-header-menu-item to="/journey" :active="activeJourney">
         Voter journey <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
       <cv-header-menu-item
@@ -37,10 +37,10 @@
             data-[pos=here]:opacity-0"
         />
       </cv-header-menu-item>
-      <cv-header-menu-item :active="activeVoterSupport" href="/voterSupport">
+      <cv-header-menu-item :active="activeVoterSupport" to="/voterSupport">
         Voter support <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
-      <cv-header-menu-item :active="activeWhyVote" href="/whyVote">
+      <cv-header-menu-item :active="activeWhyVote" to="/whyVote">
         Why Vote <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
     </cv-header-nav>
@@ -60,7 +60,7 @@
             /></template>
             Our Mission
           </cv-side-nav-link>
-          <cv-side-nav-link href="/journey">
+          <cv-side-nav-link to="/journey">
             <template #nav-icon><voter-journey-icon /></template>
             Voter Journey
           </cv-side-nav-link>
@@ -73,11 +73,11 @@
             /></template>
             Our Values
           </cv-side-nav-link>
-          <cv-side-nav-link href="/voterSupport">
+          <cv-side-nav-link to="/voterSupport">
             <template #nav-icon><voter-support-icon /></template>
             Voter Support
           </cv-side-nav-link>
-          <cv-side-nav-link href="/whyVote">
+          <cv-side-nav-link to="/whyVote">
             <template #nav-icon><why-vote-icon /></template>
             Why Vote
           </cv-side-nav-link>

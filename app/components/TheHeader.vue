@@ -1,55 +1,62 @@
 <template>
-  <cv-header aria-label="Five Fifths Voter header">
+  <cv-header aria-label="Five Fifths Voter header" class="!h-[6rem]">
     <cv-header-menu-button
       aria-label="header - menu"
       aria-controls="side-nav"
     />
     <cv-skip-to-content href="#main-content"></cv-skip-to-content>
-    <cv-header-name href="/" prefix=""
+    <cv-header-name to="/" prefix=""
       ><img alt="" src="@/assets/images/FiveFifthsVoterLogo.png" height="64" />
       FiveFifths</cv-header-name
     >
     <cv-header-nav aria-label="Five Fifths Voter navigation">
-      <cv-header-menu-item href="/#our-mission">
+      <cv-header-menu-item to="/#our-mission">
         Our mission
       </cv-header-menu-item>
-      <cv-header-menu-item href="/journey" :active="activeJourney">
+      <cv-header-menu-item
+        to="/journey"
+        :class="{ '!bg-ff-purple-02': activeJourney }"
+      >
         Voter journey
       </cv-header-menu-item>
-      <cv-header-menu-item href="/#our-values">
-        Our Values
-      </cv-header-menu-item>
-      <cv-header-menu-item :active="activeVoterSupport" href="/voterSupport">
+      <cv-header-menu-item to="/#our-values"> Our Values </cv-header-menu-item>
+      <cv-header-menu-item
+        :class="{ '!bg-ff-purple-02': activeVoterSupport }"
+        to="/voterSupport"
+      >
         Voter support
       </cv-header-menu-item>
-      <cv-header-menu-item :active="activeWhyVote" href="/whyVote">
+      <cv-header-menu-item
+        :class="{ '!bg-ff-purple-02': activeWhyVote }"
+        to="/whyVote"
+      >
         Why Vote
       </cv-header-menu-item>
     </cv-header-nav>
     <template #left-panels>
       <cv-side-nav id="side-nav" :rail="false" :fixed="true" :expanded="false">
         <cv-side-nav-items>
-          <cv-side-nav-link href="/">
+          <cv-side-nav-link to="/">
             <template #nav-icon><home-icon /></template>
             Home
           </cv-side-nav-link>
-          <cv-side-nav-link href="/#our-mission">
+          <cv-side-nav-link to="/#our-mission">
             <template #nav-icon><our-mission-icon /></template>
             Our Mission
           </cv-side-nav-link>
-          <cv-side-nav-link href="/journey">
+          <cv-side-nav-link to="/journey">
             <template #nav-icon><voter-journey-icon /></template>
             Voter Journey
           </cv-side-nav-link>
-          <cv-side-nav-link href="/#our-values">
+          <cv-side-nav-link to="/#our-values">
             <template #nav-icon><our-values-icon /></template>
             Our Values
           </cv-side-nav-link>
-          <cv-side-nav-link href="/voterSupport">
+          <cv-side-nav-link to="/voterSupport">
             <template #nav-icon><voter-support-icon /></template>
             Voter Support
           </cv-side-nav-link>
-          <cv-side-nav-link href="/whyVote">
+          <cv-side-nav-link to="/whyVote">
             <template #nav-icon><why-vote-icon /></template>
             Why Vote
           </cv-side-nav-link>
@@ -72,18 +79,18 @@ defineOptions({
   name: "TheHeader",
 });
 const route = useRoute();
-const activeVoterSupport = computed(() => route.name === "VoterSupport");
-const activeWhyVote = computed(() => route.name === "WhyVote");
-const activeJourney = computed(() => route.name === "Journey");
+const activeVoterSupport = computed(
+  () => route.path.toLowerCase() === "/votersupport",
+);
+const activeWhyVote = computed(() => route.path.toLowerCase() === "/whyvote");
+const activeJourney = computed(() => route.path === "/journey");
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 @import "@/assets/scss/theme";
 $shell-side-nav-text-01: white;
 
 .cv-header {
-  height: 96px !important;
-
   a.bx--header__name {
     color: white !important;
     font-size: carbon--type-scale(5);

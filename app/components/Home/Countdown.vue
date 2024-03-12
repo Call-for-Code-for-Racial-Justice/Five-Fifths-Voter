@@ -3,7 +3,7 @@
     class="flex h-[320px] w-full items-center justify-between bg-ff-red-01 pl-3 pr-3
       md:pl-14 md:pr-14"
   >
-    <div class="text-4xl md:text-7xl">
+    <div class="text-4xl md:text-6xl 2xl:text-7xl">
       <div class="text-ff-pink-01">{{ headlines[0] }}</div>
       <div class="text-white">{{ headlines[1] }}</div>
       <div class="text-ff-blue-03">{{ headlines[2] }}</div>

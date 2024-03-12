@@ -44,7 +44,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/elections.json.gz",
+          "filePath": "./elections.json.gz",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [],
@@ -72,7 +72,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/missing-apikey.json.gz",
+          "filePath": "./missing-apikey.json.gz",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -108,7 +108,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/invalid-apikey.json.gz",
+          "filePath": "./invalid-apikey.json.gz",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -158,7 +158,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/voter-info-8112.json.gz",
+          "filePath": "./voter-info-8112.json.gz",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -198,7 +198,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/voter-info-8113.json.gz",
+          "filePath": "./voter-info-8113.json.gz",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -238,7 +238,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/voter-info-8121.json.gz",
+          "filePath": "./voter-info-8121.json.gz",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -278,7 +278,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/voter-info-8122.json.gz",
+          "filePath": "./voter-info-8122.json.gz",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -314,7 +314,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/missing-apikey.json.gz",
+          "filePath": "./missing-apikey.json.gz",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -350,7 +350,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/invalid-apikey.json.gz",
+          "filePath": "./invalid-apikey.json.gz",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [],
@@ -378,7 +378,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/missing.address.json.gz",
+          "filePath": "./missing.address.json.gz",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -414,7 +414,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/voter-info-va.json.gz",
+          "filePath": "./voter-info-va.json.gz",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -450,7 +450,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "/Users/davidnixon/projects/Five-Fifths-Voter/local-dev/mock/voter-info-unknown.json.gz",
+          "filePath": "./voter-info-unknown.json.gz",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [],

@@ -1,8 +1,10 @@
 <template>
   <div
-    ref="el"
-    class="group flex flex-col gap-2 rounded-lg bg-ff-blue-03 p-5 text-white"
-    :class="{ 'is-expanded': expanded }"
+    class="group flex flex-col gap-2 border border-solid border-white p-5 text-white
+      transition-all"
+    :class="{
+      'is-expanded border-0 bg-ff-blue-03': expanded,
+    }"
     tabindex="1"
   >
     <div
@@ -86,11 +88,11 @@ const props = defineProps({
   quote: { type: String, required: true },
   author: { type: String, required: true },
   image: { type: String, default: "empower" },
+  expand: { type: Boolean, default: false },
 });
 
 const expandedCard = inject("expanded-card", ref(""));
-const expanded = ref(false);
-const el = ref(null);
+const expanded = ref(props.expand);
 function toggle() {
   expanded.value = !expanded.value;
   if (expanded.value) expandedCard.value = props.image;
