@@ -50,7 +50,7 @@
           }"
           class="h-[350px] w-full max-w-[350px] bg-cover bg-center md:w-[350px]"
         >
-          <div class="bg-black bg-opacity-60 md:bg-opacity-0">
+          <div class="backdrop-blur-sm md:backdrop-blur-none">
             <div class="relative inline">
               <span
                 class="absolute -translate-x-[230px] -translate-y-[20px] text-9xl text-ff-yellow-01"
