@@ -54,15 +54,11 @@ The IBM Call for Code for Policy & Legislation Reform has developed a solution t
 
 ![Architecture](doc/five-fifths-voter-flow.png)
 
-![System Context](doc/SystemContext.png)
-
-![Components](doc/Components.png)
 
 # Datasets
 
 - [Google Civic Information API](https://developers.google.com/civic-information/)
 - [Google Maps API](https://developers.google.com/maps/documentation)
-- [Twitter API](https://developer.twitter.com/en/docs/twitter-api)
 - [Vote.org Civic engagement tools](https://www.vote.org/technology/)
 - [The Voting Information Project](https://www.votinginfoproject.org/)
 - [Vote 411 Election Information](https://www.vote411.org/)
@@ -71,14 +67,13 @@ The IBM Call for Code for Policy & Legislation Reform has developed a solution t
 
 ## IBM technology
 
-- [Watson Tone Analyzer](https://www.ibm.com/watson/services/tone-analyzer/)
-- [Watson Natural Language Understanding](https://www.ibm.com/cloud/watson-natural-language-understanding)
+- [IBM Code Engine](https://www.ibm.com/products/code-engine)
 
 ## Open source technology
 
 - [Nuxt](https://nuxt.com/)
-- [Python](https://www.python.org)
 - [Carbon](https://www.carbondesignsystem.com)
+- [Tailwind](https://tailwindcss.com/)
 
 # For developers
 
@@ -98,6 +93,6 @@ For details, see [Five Fifths Technology Summary](doc/SolutionFortification.md).
 
 # Image credits
 
-democrat by Yi Chen from [Noun Project](https://thenounproject.com/browse/icons/term/democrat/)
-Republican by Yi Chen from [Noun Project](https://thenounproject.com/browse/icons/term/republican/)
-Porcupine by Loritas Medina from [Noun Project](https://thenounproject.com/browse/icons/term/porcupine/)
+- democrat by Yi Chen from [Noun Project](https://thenounproject.com/browse/icons/term/democrat/)
+- Republican by Yi Chen from [Noun Project](https://thenounproject.com/browse/icons/term/republican/)
+- Porcupine by Loritas Medina from [Noun Project](https://thenounproject.com/browse/icons/term/porcupine/)
