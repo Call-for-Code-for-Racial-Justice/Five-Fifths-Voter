@@ -96,7 +96,7 @@ import {
   ArrowDown16 as ArrowDown,
   ArrowUpRight16 as ArrowUpRight,
 } from "@carbon/icons-vue";
-import { debounce } from "lodash";
+import lodash from "lodash";
 
 defineOptions({
   name: "HomeHeader",
@@ -116,7 +116,7 @@ function scrollTop() {
 }
 const ourValuesPosition = ref("down");
 const ourMissionPosition = ref("down");
-const onScroll = debounce(function () {
+const onScroll = lodash.debounce(function () {
   const ourValueEl = document.getElementById("our-values");
   const valuesRect = ourValueEl.getBoundingClientRect();
   if (Math.abs(valuesRect.top) < 150) ourValuesPosition.value = "here";
