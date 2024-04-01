@@ -11,54 +11,84 @@
     >
     <cv-header-nav aria-label="Five Fifths Voter navigation">
       <cv-header-menu-item to="/#our-mission">
-        Our mission
+        {{ $t("landingPageMain") }}
       </cv-header-menu-item>
       <cv-header-menu-item
         to="/journey"
         :class="{ '!bg-ff-purple-02': activeJourney }"
       >
-        Voter journey
+        {{ $t("appHeaderVoterJourney") }}
       </cv-header-menu-item>
-      <cv-header-menu-item to="/#our-values"> Our Values </cv-header-menu-item>
+      <cv-header-menu-item to="/#our-values">
+        {{ $t("appHeaderOurValues") }}
+      </cv-header-menu-item>
       <cv-header-menu-item
         :class="{ '!bg-ff-purple-02': activeVoterSupport }"
         to="/voterSupport"
       >
-        Voter support
+        {{ $t("appHeaderVoterSupport") }}
       </cv-header-menu-item>
       <cv-header-menu-item
         :class="{ '!bg-ff-purple-02': activeWhyVote }"
         to="/whyVote"
       >
-        Why Vote
+        {{ $t("appHeaderWhyVote") }}
       </cv-header-menu-item>
     </cv-header-nav>
+    <template #header-global>
+      <cv-link
+        class="px-2 py-8"
+        href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
+        target="_blank"
+      >
+        <instagram class="text-carbon-gray-30" />
+      </cv-link>
+      <cv-link
+        class="px-2 py-8"
+        href="https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter"
+        target="_blank"
+      >
+        <git-hub class="text-carbon-gray-30" />
+      </cv-link>
+      <cv-header-global-action
+        :aria-label="$t('ariaLanguageSetting')"
+        aria-controls="language-panel"
+        :label="$t('ariaLanguageSetting')"
+        class="!mx-2 !h-6 !min-h-0 !px-0 !py-12"
+        tip-position="left"
+      >
+        <language-switcher class="text-carbon-gray-30" />
+      </cv-header-global-action>
+    </template>
+    <template #right-panels>
+      <language-panel header-size="thick" />
+    </template>
     <template #left-panels>
       <cv-side-nav id="side-nav" :rail="false" :fixed="true" :expanded="false">
         <cv-side-nav-items>
           <cv-side-nav-link to="/">
             <template #nav-icon><home-icon /></template>
-            Home
+            {{ $t("appHeaderHome") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/#our-mission">
             <template #nav-icon><our-mission-icon /></template>
-            Our Mission
+            {{ $t("landingPageMain") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/journey">
             <template #nav-icon><voter-journey-icon /></template>
-            Voter Journey
+            {{ $t("appHeaderVoterJourney") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/#our-values">
             <template #nav-icon><our-values-icon /></template>
-            Our Values
+            {{ $t("appHeaderOurValues") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/voterSupport">
             <template #nav-icon><voter-support-icon /></template>
-            Voter Support
+            {{ $t("appHeaderVoterSupport") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/whyVote">
             <template #nav-icon><why-vote-icon /></template>
-            Why Vote
+            {{ $t("appHeaderWhyVote") }}
           </cv-side-nav-link>
         </cv-side-nav-items>
       </cv-side-nav>
@@ -74,7 +104,11 @@ import {
   Group16 as OurValuesIcon,
   HelpDesk16 as VoterSupportIcon,
   Help16 as WhyVoteIcon,
+  LogoInstagram32 as Instagram,
+  LogoGithub32 as GitHub,
+  Language32 as LanguageSwitcher,
 } from "@carbon/icons-vue";
+import LanguagePanel from "~/components/LanguagePanel.vue";
 defineOptions({
   name: "TheHeader",
 });

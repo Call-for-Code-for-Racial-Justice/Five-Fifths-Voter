@@ -15,7 +15,7 @@
         class="data-[pos=here]:font-extrabold"
         @click="scrollToId('our-mission')"
       >
-        Our mission
+        {{ $t("landingPageMain") }}
         <arrow-down
           :data-pos="ourMissionPosition"
           class="inline-block opacity-100 transition-all duration-500 data-[pos=up]:-rotate-180
@@ -23,14 +23,14 @@
         />
       </cv-header-menu-item>
       <cv-header-menu-item to="/journey" :active="activeJourney">
-        Voter journey <arrow-up-right class="inline-block" />
+        {{ $t("appHeaderVoterJourney") }} <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
       <cv-header-menu-item
         :data-pos="ourValuesPosition"
         class="data-[pos=here]:font-extrabold"
         @click="scrollToId('our-values')"
       >
-        Our Values
+        {{ $t("appHeaderOurValues") }}
         <arrow-down
           :data-pos="ourValuesPosition"
           class="inline-block opacity-100 transition-all duration-500 data-[pos=up]:-rotate-180
@@ -38,18 +38,46 @@
         />
       </cv-header-menu-item>
       <cv-header-menu-item :active="activeVoterSupport" to="/voterSupport">
-        Voter support <arrow-up-right class="inline-block" />
+        {{ $t("appHeaderVoterSupport") }} <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
       <cv-header-menu-item :active="activeWhyVote" to="/whyVote">
-        Why Vote <arrow-up-right class="inline-block" />
+        {{ $t("appHeaderWhyVote") }} <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
     </cv-header-nav>
+    <template #header-global>
+      <cv-link
+        class="p-1"
+        href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
+        target="_blank"
+      >
+        <instagram class="text-carbon-gray-30" />
+      </cv-link>
+      <cv-link
+        class="p-1"
+        href="https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter"
+        target="_blank"
+      >
+        <git-hub class="text-carbon-gray-30" />
+      </cv-link>
+      <cv-header-global-action
+        :aria-label="$t('ariaLanguageSetting')"
+        aria-controls="language-panel"
+        :label="$t('ariaLanguageSetting')"
+        class="!h-6 !min-h-0 !px-0 !py-3.5"
+        tip-position="left"
+      >
+        <language-switcher class="text-carbon-gray-30" />
+      </cv-header-global-action>
+    </template>
+    <template #right-panels>
+      <language-panel />
+    </template>
     <template #left-panels>
       <cv-side-nav id="side-nav" :rail="false" :fixed="true" :expanded="false">
         <cv-side-nav-items>
           <cv-side-nav-link @click="scrollTop()">
             <template #nav-icon><home-icon /></template>
-            Home
+            {{ $t("appHeaderHome") }}
           </cv-side-nav-link>
           <cv-side-nav-link @click="scrollToId('our-mission')">
             <template #nav-icon
@@ -58,11 +86,11 @@
                 class="inline-block opacity-100 transition-all duration-500 data-[pos=here]:-rotate-90
                   data-[pos=up]:-rotate-180 md:data-[pos=here]:opacity-0"
             /></template>
-            Our Mission
+            {{ $t("landingPageMain") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/journey">
             <template #nav-icon><voter-journey-icon /></template>
-            Voter Journey
+            {{ $t("appHeaderVoterJourney") }}
           </cv-side-nav-link>
           <cv-side-nav-link @click="scrollToId('our-values')">
             <template #nav-icon
@@ -71,15 +99,15 @@
                 class="inline-block opacity-100 transition-all duration-500 data-[pos=here]:-rotate-90
                   data-[pos=up]:-rotate-180 md:data-[pos=here]:opacity-0"
             /></template>
-            Our Values
+            {{ $t("appHeaderOurValues") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/voterSupport">
             <template #nav-icon><voter-support-icon /></template>
-            Voter Support
+            {{ $t("appHeaderVoterSupport") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/whyVote">
             <template #nav-icon><why-vote-icon /></template>
-            Why Vote
+            {{ $t("appHeaderWhyVote") }}
           </cv-side-nav-link>
         </cv-side-nav-items>
       </cv-side-nav>
@@ -95,6 +123,9 @@ import {
   Help16 as WhyVoteIcon,
   ArrowDown16 as ArrowDown,
   ArrowUpRight16 as ArrowUpRight,
+  LogoInstagram24 as Instagram,
+  LogoGithub24 as GitHub,
+  Language24 as LanguageSwitcher,
 } from "@carbon/icons-vue";
 import lodash from "lodash";
 
