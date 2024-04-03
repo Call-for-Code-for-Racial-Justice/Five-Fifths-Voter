@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-// eslint-disable-next-line no-undef
 export default defineNuxtConfig({
   telemetry: true,
   devtools: { enabled: true },
@@ -35,9 +34,54 @@ export default defineNuxtConfig({
         code: "en",
         file: "en.json",
       },
+      {
+        code: "ar",
+        file: "ar.json",
+      },
+      {
+        code: "es",
+        file: "es.json",
+      },
+      {
+        code: "hi",
+        file: "hi.json",
+      },
+      {
+        code: "kr",
+        file: "kr.json",
+      },
+      {
+        code: "tl",
+        file: "tl.json",
+      },
+      {
+        code: "fa",
+        file: "fa.json",
+      },
+      {
+        code: "ja",
+        file: "ja.json",
+      },
+      {
+        code: "ru",
+        file: "ru.json",
+      },
+      {
+        code: "vn",
+        file: "vn.json",
+      },
+      {
+        code: "zh",
+        file: "zh_Hans_CN.json",
+      },
+      {
+        code: "zh-TW",
+        file: "zh_Hans_TW.json",
+      },
     ],
     lazy: true,
     langDir: "lang",
     defaultLocale: "en",
+    strategy: "no_prefix",
   },
 });
