@@ -25,10 +25,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: '16.x'
+          node-version: '18.x'
 
       # Runs a single command using the runners shell
       - name: Install IBM Cloud CLI
@@ -47,19 +47,16 @@ jobs:
           IBM_CLOUD_APIKEY: ${{ secrets.BLUE_IBM_CLOUD_API_KEY }}
           IBM_CLOUD_GROUP: ${{ secrets.BLUE_RESOURCE_GROUP }}
         run: |
-          ibmcloud login --apikey $IBM_CLOUD_APIKEY -g $IBM_CLOUD_GROUP -r us-south
+          ibmcloud login --apikey $IBM_CLOUD_APIKEY -g $IBM_CLOUD_GROUP -r us-south:q
           ibmcloud cr login
 
       # Runs a set of commands using the runners shell
       - name: Build and deploy
         run: |
-          cd ui
-          yarn
-          yarn build
-          cd ../services
-          docker build -t fivefifthsvoter . -f ce/alpine.dockerfile
-          docker tag fivefifthsvoter:latest us.icr.io/fivefifthsvoter/codeengine-fivefifthsvoter:latest
-          docker push us.icr.io/fivefifthsvoter/codeengine-fivefifthsvoter:latest
+          IMAGE_TAG=$(date '+%FT%H%M%S')
+          docker build -t us.icr.io/fivefifthsvoter/fivefifthsvoter-next:$IMAGE_TAG .
+          docker push us.icr.io/fivefifthsvoter/fivefifthsvoter-next:$IMAGE_TAG
           ibmcloud ce project select --name fivefifthsvoter
-          ibmcloud ce app update --name fivefifthsvoter
+          ibmcloud ce app logs --tail 5 --follow --name fivefifthsvoter &
+          ibmcloud ce app update --image private.us.icr.io/fivefifthsvoter/fivefifthsvoter-next:$IMAGE_TAG --name fivefifthsvoter
 
