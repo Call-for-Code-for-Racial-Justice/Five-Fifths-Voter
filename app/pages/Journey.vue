@@ -1,7 +1,9 @@
 <template>
   <div class="voter-journey">
     <div class="current-location">
-      Election information for {{ user?.info?.location?.region }}
+      {{
+        $t("journeyPageElectionState", { state: user?.info?.location?.region })
+      }}
     </div>
     <journey-select-state />
     <cv-accordion @change="onChange">
