@@ -47,8 +47,8 @@ export default defineNuxtConfig({
         file: "hi.json",
       },
       {
-        code: "kr",
-        file: "kr.json",
+        code: "ko",
+        file: "ko.json",
       },
       {
         code: "tl",
@@ -67,8 +67,8 @@ export default defineNuxtConfig({
         file: "ru.json",
       },
       {
-        code: "vn",
-        file: "vn.json",
+        code: "vi",
+        file: "vi.json",
       },
       {
         code: "zh",
