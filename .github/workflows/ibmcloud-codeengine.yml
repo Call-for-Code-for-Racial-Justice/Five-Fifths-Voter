@@ -47,7 +47,7 @@ jobs:
           IBM_CLOUD_APIKEY: ${{ secrets.BLUE_IBM_CLOUD_API_KEY }}
           IBM_CLOUD_GROUP: ${{ secrets.BLUE_RESOURCE_GROUP }}
         run: |
-          ibmcloud login --apikey $IBM_CLOUD_APIKEY -g $IBM_CLOUD_GROUP -r us-south:q
+          ibmcloud login --apikey $IBM_CLOUD_APIKEY -g $IBM_CLOUD_GROUP -r us-south
           ibmcloud cr login
 
       # Runs a set of commands using the runners shell
