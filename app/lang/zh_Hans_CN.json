@@ -63,6 +63,8 @@
   "getInformedDisplay_4": "州级投票信息",
   "getInformedDropDown": "选择您的状态以获取信息",
   "getInformedMoreInfo": "其他候選項的相關資訊",
+  "getInformedNextElection": "下次选举：{date}",
+  "getInformedNextCheck": "看来我们对即将到来的选举还不太了解。",
   "getInformedTitle": "候选人、截止日期和资源",
   "getInformedTopContests": "這些都是你國家的頂級比賽",
   "journeyPageBallotAriaLabel": "申请邮寄选票",

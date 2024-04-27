@@ -60,6 +60,8 @@
   "getInformedDisplay_4": "Информация о голосовании в штате",
   "getInformedDropDown": "Выберите ваш штат для получения информации",
   "getInformedMoreInfo": "Дополнительная информация о кандидатах ",
+  "getInformedNextElection": "Следующие выборы: {date}",
+  "getInformedNextCheck": "Похоже, мы пока мало что знаем о предстоящих выборах. ",
   "getInformedTitle": "Кандидаты, сроки и ресурсы",
   "getInformedTopContests": "Это высшие конкурсы в вашем штате. ",
   "journeyPageBallotAriaLabel": "Отправьте запрос на получение бюллетеня для заочного голосования",

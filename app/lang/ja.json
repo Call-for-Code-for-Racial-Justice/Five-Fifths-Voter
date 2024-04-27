@@ -60,6 +60,8 @@
   "getInformedDisplay_4": "州の投票情報",
   "getInformedDropDown": "情報が必要なあなたの州を選択する",
   "getInformedMoreInfo": "応募者に関する詳細情報",
+  "getInformedNextElection": "次の選挙: {date}",
+  "getInformedNextCheck": "次の選挙についてはまだよくわかっていないようです。",
   "getInformedTitle": "候補者、締め切り、リソース",
   "getInformedTopContests": "これらは、あなたの州で最も上位にあるコンテストです。",
   "journeyPageBallotAriaLabel": "不在者投票を申請する",

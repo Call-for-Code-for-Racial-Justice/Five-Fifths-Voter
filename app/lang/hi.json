@@ -62,6 +62,8 @@
   "getInformedDisplay_4": "राज्य मतदान की जानकारी",
   "getInformedDropDown": "जानकारी के लिए अपना राज्य चुनें",
   "getInformedMoreInfo": "उम्मीदवारों के बारे में अधिक जानकारी ",
+  "getInformedNextElection": "अगला चुनाव: {date}",
+  "getInformedNextCheck": "ऐसा लगता है कि हम अभी तक आगामी चुनाव के बारे में ज्यादा कुछ नहीं जानते हैं। ",
   "getInformedTitle": "उम्मीदवार, समय सीमा और संसाधन",
   "getInformedTopContests": "ये आपके राज्य में शीर्ष प्रतियोगिताएं हैं. ",
   "journeyPageBallotAriaLabel": "अनुपस्थित मतपत्र का अनुरोध करें",

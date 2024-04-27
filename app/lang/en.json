@@ -62,6 +62,8 @@
   "getInformedDisplay_4": "State Voting Info",
   "getInformedDropDown": "Choose your state for information",
   "getInformedMoreInfo": "More information about candidates",
+  "getInformedNextElection": "Next election: {date}",
+  "getInformedNextCheck": "It looks like we do not know much about the upcoming election yet. Check back closer to election day.",
   "getInformedTitle": "Candidates, deadlines and resources",
   "getInformedTopContests": "These are the top contests in your state.",
   "journeyPageBallotAriaLabel": "request an absentee ballot",

@@ -63,6 +63,8 @@
   "getInformedDisplay_4": "اطلاعات رأی گیری ایالتی",
   "getInformedDropDown": "برای دریافت اطلاعات، ایالت خود را انتخاب کنید",
   "getInformedMoreInfo": "اطلاعات بیشتر در مورد نامزدها",
+  "getInformedNextElection": "انتخابات بعدی: {date}",
+  "getInformedNextCheck": "به نظر می رسد ما هنوز اطلاعات زیادی در مورد انتخابات آینده نداریم. ",
   "getInformedTitle": "کاندیداها، مهلت ها و منابع",
   "getInformedTopContests": "اینها برترین مسابقات در ایالت شما هستند.",
   "journeyPageBallotAriaLabel": "درخواست رأی دهی غیابی",

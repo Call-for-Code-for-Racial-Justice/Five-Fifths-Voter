@@ -63,6 +63,8 @@
   "getInformedDisplay_4": "معلومات تصويت الولاية",
   "getInformedDropDown": "اختر ولايتك للحصول على المعلومات",
   "getInformedMoreInfo": "مزيد من المعلومات حول المرشحين",
+  "getInformedNextElection": "الانتخابات التالية: {date}",
+  "getInformedNextCheck": "ويبدو أننا لا نعرف الكثير عن الانتخابات المقبلة حتى الآن. ",
   "getInformedTitle": "المرشحون، الموعد النهائي، والمصادر",
   "getInformedTopContests": "هذه هي أهم المسابقات في ولايتك.",
   "journeyPageBallotAriaLabel": "طلب اقتراع غيابي",

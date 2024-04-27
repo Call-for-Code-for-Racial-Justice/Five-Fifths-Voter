@@ -62,6 +62,8 @@
   "getInformedDisplay_4": "州投票資訊",
   "getInformedDropDown": "選擇您所屬州獲取資訊",
   "getInformedMoreInfo": "关于候选人的更多信息",
+  "getInformedNextElection": "下次選舉：{date}",
+  "getInformedNextCheck": "看來我們對即將到來的選舉還不太了解。",
   "getInformedTitle": "候選人、截止日期和資源",
   "getInformedTopContests": "这是你们国家最顶尖的比赛",
   "journeyPageBallotAriaLabel": "申請不在籍投票",

@@ -60,6 +60,8 @@
   "getInformedDisplay_4": "Thông tin bỏ phiếu của Tiểu bang",
   "getInformedDropDown": "Chọn tiểu bang của bạn để xem thông tin",
   "getInformedMoreInfo": "Thông tin thêm về ứng viên ",
+  "getInformedNextElection": "Cuộc bầu cử tiếp theo: {date}",
+  "getInformedNextCheck": "Có vẻ như chúng ta chưa biết nhiều về cuộc bầu cử sắp tới. ",
   "getInformedTitle": "Ứng cử viên, thời hạn và nguồn lực",
   "getInformedTopContests": "Đây là những cuộc thi hàng đầu trong bang của anh. ",
   "journeyPageBallotAriaLabel": "yêu cầu một lá phiếu vắng mặt",

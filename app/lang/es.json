@@ -60,6 +60,8 @@
   "getInformedDisplay_4": "Información sobre la votación en el estado",
   "getInformedDropDown": "Elija su estado para obtener información",
   "getInformedMoreInfo": "Más información sobre los candidatos ",
+  "getInformedNextElection": "Próximas elecciones: {date}",
+  "getInformedNextCheck": "Parece que todavía no sabemos mucho sobre las próximas elecciones.",
   "getInformedTitle": "Candidatos, plazos y recursos",
   "getInformedTopContests": "Estos son los principales concursos en su estado. ",
   "journeyPageBallotAriaLabel": "solicite una boleta para emitir su voto por correo",

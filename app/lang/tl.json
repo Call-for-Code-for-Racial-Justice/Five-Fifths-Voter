@@ -62,6 +62,8 @@
   "getInformedDisplay_4": "Impormasyon ng Pagboto sa Estado",
   "getInformedDropDown": "Piliin ang iyong estado para sa impormasyon",
   "getInformedMoreInfo": "Higit pang impormasyon tungkol sa mga kandidato",
+  "getInformedNextElection": "Susunod na halalan: {date}",
+  "getInformedNextCheck": "Mukhang wala pa tayong masyadong alam sa darating na eleksyon. ",
   "getInformedTitle": "Mga kandidato, mga huling araw at mapagkukunan",
   "getInformedTopContests": "Ito ang mga nangungunang paligsahan sa iyong estado.",
   "journeyPageBallotAriaLabel": "humiling ng balota sa absentee",
