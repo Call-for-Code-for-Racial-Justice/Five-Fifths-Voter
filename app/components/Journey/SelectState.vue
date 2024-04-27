@@ -1,7 +1,7 @@
 <template>
   <div class="usa-state">
     <cv-select
-      :label="'Switch location'"
+      :label="$t('journeyPageElectionStateSwitch')"
       :value="usaState"
       size="sm"
       @change="onChange"

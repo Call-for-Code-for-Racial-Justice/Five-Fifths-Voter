@@ -7,7 +7,7 @@
     }"
   >
     <cv-switcher>
-      <cv-switcher-item v-for="entry in languages" :key="entry.title">
+      <cv-switcher-item v-for="entry in availableLocales" :key="entry.title">
         <cv-switcher-item-link
           :selected="entry.language === locale"
           :class="{ '!bg-ff-purple-02': entry.language === locale }"
@@ -27,7 +27,7 @@ const languages = [
   { flag: "", language: "en", title: "English" },
   { flag: "", language: "es", title: "Español" },
   { flag: "", language: "hi", title: "हिंदी" },
-  { flag: "", language: "kr", title: "한국어" },
+  { flag: "", language: "ko", title: "한국어" },
   { flag: "", language: "sc", title: "汉语" },
   { flag: "", language: "zh", title: "漢語" },
   { flag: "", language: "ru", title: "русский" },
@@ -38,9 +38,20 @@ const languages = [
   { flag: "", language: "vn", title: "ngôn ngữ tiếng Việt" },
 ];
 
-const { setLocale, locale } = useI18n();
+const { setLocale, locale, locales } = useI18n();
 function changeLocale(locale) {
   document.activeElement.blur();
   if (setLocale) setLocale(locale);
 }
+const availableLocales = computed(() => {
+  return locales.value?.map((i) => {
+    const names = new Intl.DisplayNames(i.code, { type: "language" });
+    const locals = new Intl.DisplayNames(locale.value, {
+      type: "language",
+    });
+    let displayName = names.of(i.code);
+    if (locale.value !== i.code) displayName += ":" + locals.of(i.code);
+    return { language: i.code, title: displayName };
+  });
+});
 </script>

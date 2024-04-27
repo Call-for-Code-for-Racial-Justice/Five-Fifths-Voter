@@ -16,11 +16,14 @@
 
         <div v-else>
           <div class="journey__next-date">
-            Next election: {{ niceIsoDate(info.election_start) }}
+            {{
+              $t("getInformedNextElection", {
+                date: niceIsoDate(info.election_start),
+              })
+            }}
           </div>
           <div class="journey__info">
-            It looks like we do not know much about the upcoming election yet.
-            Check back closer to election day.
+            {{ $t("getInformedNextCheck") }}
           </div>
         </div>
       </cv-column>
