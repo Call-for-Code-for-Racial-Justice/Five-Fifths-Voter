@@ -106,6 +106,7 @@
   "registerCheckVotingStatus": "查看投票狀態",
   "registerDesc": "投票是讓你團結起來，在社區、全州和全國執行改變的最完美方式。",
   "registerElectionDay": "我可否在选举日登记投票 ?",
+  "registerFormerlyIncarcerated": "以前被監禁過嗎？",
   "registerLinks": "[ 注册联机]({onlineUrl}) 或 [ 通过邮件注册 ] ( {mailUrl})。",
   "registerLiveInUsTerritory": "你住的是美国领土吗 ? 请与当地的选举官员进行投票。",
   "registerOnlineQ": "我可以在线注册吗 ?",

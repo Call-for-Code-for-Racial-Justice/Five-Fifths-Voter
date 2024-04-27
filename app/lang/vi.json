@@ -102,6 +102,7 @@
   "registerCheckVotingStatus": "Kiểm tra trạng thái bỏ phiếu",
   "registerDesc": "Bỏ phiếu là cách hoàn hảo để đoàn kết và thực hiện các thay đổi trong cộng đồng của bạn, trên toàn tiểu bang và trên toàn quốc.",
   "registerElectionDay": "Tôi có thể đăng ký bầu cử trong ngày bầu cử không? ",
+  "registerFormerlyIncarcerated": "Trước đây bị giam giữ? ",
   "registerLinks": "[Đăng ký trực tuyến]({onlineUrl}) hoặc [Đăng bởi thư]({mailUrl}). ",
   "registerLiveInUsTerritory": "Anh có sống là lãnh thổ của Hoa Kỳ không?  Kiểm tra với các quan chức bầu cử địa phương về việc bỏ phiếu ",
   "registerOnlineQ": "Tôi đăng ký trực tuyến được không? ",

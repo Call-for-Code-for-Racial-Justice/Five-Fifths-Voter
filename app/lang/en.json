@@ -106,6 +106,7 @@
   "registerCheckVotingStatus": "Check voting status",
   "registerDesc": "Voting is the perfect way for you to unite and implement change in your communities, state-wide and nationally.",
   "registerElectionDay": "Can I register to vote on election day?",
+  "registerFormerlyIncarcerated": "Formerly incarcerated? You may be able to vote.",
   "registerLinks": "[Register online]({onlineUrl}) or [Register by mail]({mailUrl}).",
   "registerLiveInUsTerritory": "Do you live is a US territory? Check with your local election officials about voting.",
   "registerOnlineQ": "Can I register online?",

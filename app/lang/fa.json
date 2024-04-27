@@ -107,6 +107,7 @@
   "registerCheckVotingStatus": "وضعیت رأی دهی را بررسی کنید",
   "registerDesc": "رأی دادن روشی عالی برای شما است تا متحد شوید و دست به اجرای تغییرات در جوامع خود، در سطح ایالتی و ملی بزنید.",
   "registerElectionDay": "آیا می توانم برای رای دادن در روز انتخابات ثبت نام کنم؟",
+  "registerFormerlyIncarcerated": "قبلا زندانی بودی؟ ",
   "registerLinks": "({onlineUrl})[ثبت‌نام آنلاین] یا ({mailUrl})[ثبت‌نام از طریق پست].",
   "registerLiveInUsTerritory": "آیا شما در یک قلمرو ایالات متحده زندگی می کنید؟ ",
   "registerOnlineQ": "آیا می توانم آنلاین ثبت نام کنم؟",

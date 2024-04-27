@@ -102,6 +102,7 @@
   "registerCheckVotingStatus": "投票状況を確認する",
   "registerDesc": "投票は、皆さんが団結して、コミュニティや州全体、国全体に変革をもたらすための最適な方法です。",
   "registerElectionDay": "選挙日に投票するために登録できますか?",
+  "registerFormerlyIncarcerated": "以前収監されていた？",
   "registerLinks": "[オンラインで登録]({onlineUrl}) または [メールで登録]({mailUrl})。",
   "registerLiveInUsTerritory": "あなたはアメリカの領土ですか。 投票については、地元の選挙管理者に確認してください。",
   "registerOnlineQ": "オンラインで登録できますか?",

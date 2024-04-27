@@ -107,6 +107,7 @@
   "registerCheckVotingStatus": "투표 상태 확인",
   "registerDesc": "투표는 내가 속한 공동체, 주, 나라에서 연대하고 변화를 이룰 수 있는 완전한 방법입니다.",
   "registerElectionDay": "선거일에 유권자 등록을 할 수 있나요?",
+  "registerFormerlyIncarcerated": "이전에 투옥되었습니까? ",
   "registerLinks": "[온라인으로 등록]({onlineUrl}) 또는 [우편으로 등록]({mailUrl}).",
   "registerLiveInUsTerritory": "당신은 미국 영토에 살고 있습니까? ",
   "registerOnlineQ": "온라인으로 등록할 수 있나요?",

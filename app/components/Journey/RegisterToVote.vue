@@ -137,10 +137,7 @@ const registerYouthLink = computed(() => {
   );
 });
 const felonText = computed(() => {
-  return (
-    info.value?.register?.felon ||
-    "Formerly incarcerated? You may be able to vote."
-  );
+  return info.value?.register?.felon || t("registerFormerlyIncarcerated");
 });
 const felonLink = computed(() => {
   return (

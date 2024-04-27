@@ -107,6 +107,7 @@
   "registerCheckVotingStatus": "التحقق من حالة التصويت",
   "registerDesc": "التصويت هو طريقتكم المُثلى للاتحاد وتنفيذ التغيير في مجتمعاتكم وعلى مستوى الولاية وعلى الصعيد الوطني.",
   "registerElectionDay": "هل يمكنني التسجيل للتصويت يوم الانتخابات؟",
+  "registerFormerlyIncarcerated": "مسجون سابقاً؟ ",
   "registerLinks": "[التسجيل عبر الإنترنت]({onlineUrl}) أو [التسجيل عبر البريد]({mailUrl}).",
   "registerLiveInUsTerritory": "هل تعيش في الأراضي الأمريكية؟ ",
   "registerOnlineQ": "هل يمكنني التسجيل عبر الإنترنت؟",
