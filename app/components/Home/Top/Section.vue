@@ -10,12 +10,12 @@
           src="@/assets/images/five-fifths-voter.svg"
         />
       </div>
-      <div class="w-full p-3 text-white md:p-14">
+      <div class="w-full p-3 text-white md:p-14 lg:pt-0">
         <line-breaks
           :content="$t('landingTopTagline')"
           class="text-4xl md:text-6xl"
         />
-        <div class="pt-10 text-2xl md:max-w-96 md:pt-8 md:text-2xl">
+        <div class="pt-10 text-2xl md:max-w-96 md:pt-8 md:text-2xl lg:pt-1">
           {{ $t("landingTopDesc") }}
         </div>
       </div>
