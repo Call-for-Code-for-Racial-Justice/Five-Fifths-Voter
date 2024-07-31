@@ -5,8 +5,8 @@
   >
     <div
       class="h-[calc(100%-320px)] w-full bg-ff-purple-01
-        bg-[url(@/assets/images/silhouette-tile.png)] bg-cover bg-repeat-x md:bg-contain
-        lg:h-[calc(100%-150px)] xl:h-[calc(100%-320px)]"
+        bg-[url(@/assets/images/silhouette-tile.png)] bg-cover bg-repeat-x
+        md:h-[calc(100%-270px)] lg:h-[calc(100%-150px)] xl:h-[calc(100%-320px)]"
     >
       <div class="mt-2 w-[160px] p-8 3xl:w-[320px]">
         <img
@@ -18,10 +18,10 @@
       <div class="w-full p-3 text-white md:p-14 lg:pt-0">
         <line-breaks
           :content="$t('landingTopTagline')"
-          class="text-4xl md:text-6xl 3xl:text-9xl"
+          class="text-2xl sm:text-4xl md:text-6xl 3xl:text-9xl"
         />
         <div
-          class="pt-10 text-2xl md:max-w-96 md:pt-8 md:text-2xl lg:pt-1 xl:pt-16
+          class="pt-10 sm:text-2xl md:max-w-96 md:pt-8 md:text-2xl lg:pt-1 xl:pt-16
             3xl:max-w-[75rem] 3xl:text-7xl"
         >
           {{ $t("landingTopDesc") }}
