@@ -1,42 +1,62 @@
 <template>
   <div
-    class="flex h-[320px] w-full items-center justify-between bg-ff-red-01 pl-3 pr-3
-      md:pl-14 md:pr-14"
+    class="short-screen flex h-[320px] w-full items-center justify-between bg-ff-red-01
+      px-3 md:h-[270px] lg:h-[150px] lg:px-14 xl:h-[320px]"
   >
-    <div class="text-4xl md:text-6xl 2xl:text-7xl">
+    <div class="text-2xl sm:text-4xl md:text-6xl lg:text-4xl 2xl:text-7xl">
       <div class="text-ff-pink-01">{{ headlines[0] }}</div>
       <div class="text-white">{{ headlines[1] }}</div>
       <div class="text-ff-blue-03">{{ headlines[2] }}</div>
     </div>
     <div
-      class="flex flex-col items-center justify-between gap-x-10 text-white md:flex-row"
+      class="flex flex-col items-center justify-between gap-x-10 text-white lg:flex-row"
     >
       <div
         class="w-[125px] bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain
           bg-no-repeat align-middle md:w-[unset]"
       >
-        <div class="font-[Caprasimo] text-3xl md:text-9xl">{{ days }}</div>
-        <div class="pl-[44px] md:pl-[10px]">{{ labelDays }}</div>
+        <div
+          class="font-[Caprasimo] text-[14px] sm:text-3xl md:text-5xl lg:text-6xl xl:text-9xl
+            3xl:text-[15rem]"
+        >
+          {{ days }}
+        </div>
+        <div class="pl-[44px] lg:pl-[10px]">{{ labelDays }}</div>
       </div>
       <div
         class="w-[125px] bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain
           bg-no-repeat md:w-[unset]"
       >
-        <div class="font-[Caprasimo] text-3xl md:text-9xl">:{{ hours }}</div>
+        <div
+          class="font-[Caprasimo] text-[14px] sm:text-3xl md:text-5xl lg:text-6xl xl:text-9xl
+            3xl:text-[15rem]"
+        >
+          :{{ hours }}
+        </div>
         <div class="pl-[44px]">{{ labelHours }}</div>
       </div>
       <div
         class="w-[125px] bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain
           bg-no-repeat md:w-[unset]"
       >
-        <div class="font-[Caprasimo] text-3xl md:text-9xl">:{{ minutes }}</div>
+        <div
+          class="font-[Caprasimo] text-[14px] sm:text-3xl md:text-6xl lg:text-6xl xl:text-9xl
+            3xl:text-[15rem]"
+        >
+          :{{ minutes }}
+        </div>
         <div class="pl-[44px]">{{ labelMinutes }}</div>
       </div>
       <div
         class="w-[125px] bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain
           bg-no-repeat text-white md:w-[unset]"
       >
-        <div class="font-[Caprasimo] text-3xl md:text-9xl">:{{ seconds }}</div>
+        <div
+          class="font-[Caprasimo] text-[14px] sm:text-3xl md:text-6xl lg:text-6xl xl:text-9xl
+            3xl:text-[15rem]"
+        >
+          :{{ seconds }}
+        </div>
         <div class="pl-[44px]">{{ labelSeconds }}</div>
       </div>
     </div>
@@ -126,4 +146,10 @@ onBeforeUnmount(() => clearInterval(intervalID));
 <style scoped lang="scss">
 //@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caprasimo&display=swap");
+
+@media (max-height: 675px) {
+  .short-screen {
+    height: 150px !important;
+  }
+}
 </style>

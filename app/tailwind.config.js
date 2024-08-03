@@ -141,6 +141,9 @@ export default {
         "carbon-yellow-90": "#302400",
         "carbon-yellow-100": "#1c1500",
       },
+      screens: {
+        "3xl": "2560px",
+      },
     },
   },
 };

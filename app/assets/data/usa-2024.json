@@ -19,7 +19,7 @@
       "deadline_online": null,
       "mail_link": "https://www.sos.alabama.gov/sites/default/files/voter-pdfs/nvra-2.pdf?_ga=2.151867641.1776539306.1643579940-1569075100.1643579940",
       "online_link": "https://www.alabamainteractive.org/sos/voter_registration/voterRegistrationWelcome.action",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "BEM5",
@@ -57,7 +57,7 @@
       "deadline_online": null,
       "mail_link": "https://absenteeballotapplication.alaska.gov/",
       "online_link": "https://voterregistration.alaska.gov/",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "E22h",
@@ -131,8 +131,8 @@
       "deadline_mail": null,
       "deadline_online": null,
       "mail_link": "https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information",
-      "online_link": "N/A",
-      "change_party_link": "N/A"
+      "online_link": null,
+      "change_party_link": null
     },
     "mail_in": {
       "id": "f9U9",
@@ -218,7 +218,7 @@
       "dropoff": true,
       "request_deadline": null,
       "return_deadline": null,
-      "request_link": "N/A",
+      "request_link": null,
       "track_link": "https://colorado.ballottrax.net/voter/",
       "more_link": "https://www.sos.state.co.us/pubs/elections/FAQs/mailBallotsFAQ.html"
     },
@@ -399,7 +399,7 @@
       "deadline_online": null,
       "mail_link": "https://sos.ga.gov/how-to-guide/how-guide-registering-vote",
       "online_link": "https://sos.ga.gov/how-to-guide/how-guide-registering-vote",
-      "change_party_link": "N/A",
+      "change_party_link": null,
       "youth": "Under 18? You can register to vote at 17 ½ and vote at 18.",
       "youth_link": "https://sos.ga.gov/how-to-guide/how-guide-registering-vote",
       "felon": "\"Off Paper\" (formerly incarcerated)? You can vote!",
@@ -442,7 +442,7 @@
       "deadline_online": null,
       "mail_link": "https://elections.hawaii.gov/wp-content/uploads/VR-Form-English-20210614C-Form-Fillable.pdf",
       "online_link": "https://olvr.hawaii.gov/Default.aspx?redir=1",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "t9xQ",
@@ -478,7 +478,7 @@
       "deadline_online": null,
       "mail_link": "https://sos.idaho.gov/elections/forms/voter_registration.pdf",
       "online_link": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/ApplicationInstructions.aspx",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "y1j5",
@@ -491,7 +491,7 @@
       "return_deadline": null,
       "request_link": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/BeginAbsenteeRequest.aspx",
       "track_link": "https://elections.sos.idaho.gov/ElectionLink/ElectionLink/VoterSearch.aspx",
-      "more_link": "N/A"
+      "more_link": null
     },
     "election_start": "2024-11-05T07:00:00-05:00"
   },
@@ -515,7 +515,7 @@
       "deadline_online": null,
       "mail_link": "https://www2.illinois.gov/hfs/SiteCollectionDocuments/sber19.pdf",
       "online_link": "https://ova.elections.il.gov/?Name=eYQq6FDqMBHM6r%2fWhrJ1SIpY4MGJGocO&T=637783653251228213",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "57WU",
@@ -527,7 +527,7 @@
       "request_deadline": null,
       "return_deadline": null,
       "request_link": "https://elections.il.gov/electionoperations/votingbymail.aspx",
-      "track_link": "N/A",
+      "track_link": null,
       "more_link": "https://elections.il.gov/electionoperations/votingbymail.aspx"
     },
     "election_start": "2024-11-05T07:00:00-05:00"
@@ -552,7 +552,7 @@
       "deadline_online": null,
       "mail_link": "https://www.in.gov/sos/elections/voter-information/register-to-vote/",
       "online_link": "http://www.indianavoters.com/",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "ynaK",
@@ -740,8 +740,8 @@
       "deadline_mail": null,
       "deadline_online": null,
       "mail_link": "https://www.maine.gov/sos/cec/elec/voter-info/voterguide.html",
-      "online_link": "N/A",
-      "change_party_link": "N/A"
+      "online_link": null,
+      "change_party_link": null
     },
     "mail_in": {
       "id": "asjm",
@@ -927,8 +927,8 @@
       "deadline_mail": null,
       "deadline_online": null,
       "mail_link": "https://www.sos.ms.gov/sites/default/files/election_and_voting/Voter_Registration.pdf",
-      "online_link": "N/A",
-      "change_party_link": "N/A"
+      "online_link": null,
+      "change_party_link": null
     },
     "mail_in": {
       "id": "XZGk",
@@ -939,9 +939,9 @@
       "dropoff": false,
       "request_deadline": null,
       "return_deadline": null,
-      "request_link": "N/A",
-      "track_link": "N/A",
-      "more_link": "N/A"
+      "request_link": null,
+      "track_link": null,
+      "more_link": null
     },
     "election_start": "2024-11-05T07:00:00-05:00"
   },
@@ -965,7 +965,7 @@
       "deadline_online": null,
       "mail_link": "https://www.sos.mo.gov/elections/goVoteMissouri/register",
       "online_link": "https://s1.sos.mo.gov/elections/voterregistration/",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "NtJN",
@@ -978,7 +978,7 @@
       "request_deadline": null,
       "return_deadline": null,
       "request_link": "https://www.sos.mo.gov/CMSImages/ElectionGoVoteMissouri//AbsenteeBallotrequestformfillable.pdf",
-      "track_link": "N/A",
+      "track_link": null,
       "more_link": "https://www.sos.mo.gov/elections/goVoteMissouri/howtovote#Absentee"
     },
     "election_start": "2024-11-05T07:00:00-05:00"
@@ -1002,8 +1002,8 @@
       "deadline_mail": null,
       "deadline_online": null,
       "mail_link": "https://sosmt.gov/elections/vote/#1641574992907-9dee3295-aa37",
-      "online_link": "N/A",
-      "change_party_link": "N/A"
+      "online_link": null,
+      "change_party_link": null
     },
     "mail_in": {
       "id": "HSYv",
@@ -1089,7 +1089,7 @@
       "dropoff": true,
       "request_deadline": null,
       "return_deadline": null,
-      "request_link": "N/A",
+      "request_link": null,
       "track_link": "https://nevada.ballottrax.net/voter/",
       "more_link": "https://www.nvsos.gov/sos/elections/voters/mail-ballot-voting"
     },
@@ -1113,8 +1113,8 @@
       "deadline_mail": null,
       "deadline_online": null,
       "mail_link": "https://sos.nh.gov/elections/voters/register-to-vote/",
-      "online_link": "N/A",
-      "change_party_link": "N/A"
+      "online_link": null,
+      "change_party_link": null
     },
     "mail_in": {
       "id": "nR5m",
@@ -1298,9 +1298,9 @@
       "deadline_in_person": null,
       "deadline_mail": null,
       "deadline_online": null,
-      "mail_link": "N/A",
-      "online_link": "N/A",
-      "change_party_link": "N/A"
+      "mail_link": null,
+      "online_link": null,
+      "change_party_link": null
     },
     "mail_in": {
       "id": "35Wa",
@@ -1338,7 +1338,7 @@
       "deadline_online": null,
       "mail_link": "https://www.ohiosos.gov/publications/#vrf",
       "online_link": "https://olvr.ohiosos.gov/",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "VCGz",
@@ -1375,7 +1375,7 @@
       "deadline_mail": null,
       "deadline_online": null,
       "mail_link": "https://okvoterportal.okelections.us/Home/RegWizard",
-      "online_link": "N/A",
+      "online_link": null,
       "change_party_link": "https://okvoterportal.okelections.us/"
     },
     "mail_in": {
@@ -1561,7 +1561,7 @@
       "deadline_mail": null,
       "deadline_online": null,
       "mail_link": "https://sdsos.gov/elections-voting/voting/register-to-vote/default.aspx",
-      "online_link": "N/A",
+      "online_link": null,
       "change_party_link": "https://sdsos.gov/elections-voting/voting/registration-changes.aspx"
     },
     "mail_in": {
@@ -1600,7 +1600,7 @@
       "deadline_online": null,
       "mail_link": "https://sos-stage.tnsosgovfiles.com/s3fs-public/division/Elections/document/ss-3010.pdf",
       "online_link": "https://ovr.govote.tn.gov/",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "rHzp",
@@ -1636,8 +1636,8 @@
       "deadline_mail": null,
       "deadline_online": null,
       "mail_link": "https://www.votetexas.gov/register/index.html",
-      "online_link": "N/A",
-      "change_party_link": "N/A"
+      "online_link": null,
+      "change_party_link": null
     },
     "mail_in": {
       "id": "YUAB",
@@ -1685,7 +1685,7 @@
       "dropoff": true,
       "request_deadline": null,
       "return_deadline": null,
-      "request_link": "N/A",
+      "request_link": null,
       "track_link": "https://votesearch.utah.gov/voter-search/search/search-by-voter/track-mail-ballot",
       "more_link": "https://voteinfo.utah.gov/securing-your-mail-ballot/"
     },
@@ -1711,7 +1711,7 @@
       "deadline_online": null,
       "mail_link": "https://outside.vermont.gov/dept/sos/Elections%20Division/voters/voterapplication.pdf",
       "online_link": "https://olvr.vermont.gov/",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "zaQa",
@@ -1748,7 +1748,7 @@
       "deadline_online": null,
       "mail_link": "https://www.elections.virginia.gov/media/formswarehouse/veris-voter-registration/applications/VA-NVRA-1-Voter-Registration-Application-rev-4_1-(1).pdf",
       "online_link": "https://vote.elections.virginia.gov/VoterInformation",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "gtjW",
@@ -1762,7 +1762,7 @@
       "return_deadline": null,
       "request_link": "https://vote.elections.virginia.gov/VoterInformation/Lookup/absentee",
       "track_link": "https://www.elections.virginia.gov/citizen-portal/",
-      "more_link": "N/A"
+      "more_link": null
     },
     "election_start": "2024-11-05T07:00:00-05:00"
   },
@@ -1786,7 +1786,7 @@
       "deadline_online": null,
       "mail_link": "https://www.sos.wa.gov/_assets/elections/vrf_print_2022_english.pdf",
       "online_link": "https://voter.votewa.gov/WhereToVote.aspx",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "ufKx",
@@ -1797,7 +1797,7 @@
       "dropoff": true,
       "request_deadline": null,
       "return_deadline": null,
-      "request_link": "N/A",
+      "request_link": null,
       "track_link": "https://voter.votewa.gov/WhereToVote.aspx",
       "more_link": "https://www.sos.wa.gov/elections/faq_vote_by_mail.aspx"
     },
@@ -1861,7 +1861,7 @@
       "deadline_online": null,
       "mail_link": "https://elections.wi.gov/forms/el-131-fillable",
       "online_link": "https://myvote.wi.gov/en-us/Voter-Registration",
-      "change_party_link": "N/A"
+      "change_party_link": null
     },
     "mail_in": {
       "id": "1F2b",
@@ -1897,8 +1897,8 @@
       "deadline_mail": null,
       "deadline_online": null,
       "mail_link": "https://sos.wyo.gov/Forms/Elections/General/VoterRegistrationForm.pdf",
-      "online_link": "N/A",
-      "change_party_link": "N/A"
+      "online_link": null,
+      "change_party_link": null
     },
     "mail_in": {
       "id": "ep6y",
@@ -1911,7 +1911,7 @@
       "request_deadline": null,
       "return_deadline": null,
       "request_link": "https://sos.wyo.gov/Forms/Elections/General/AbsenteeRequestForm-Standard.pdf",
-      "track_link": "N/A",
+      "track_link": null,
       "more_link": "https://sos.wyo.gov/elections/state/absenteevoting.aspx"
     },
     "election_start": "2024-11-05T07:00:00-05:00"

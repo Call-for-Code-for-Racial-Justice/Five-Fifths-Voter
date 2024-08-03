@@ -107,7 +107,7 @@ onMounted(() => {
     @include type-style("productive-heading-01");
   }
   :deep(a) {
-    color: white !important;
+    color: $ff-pink-01 !important;
   }
 }
 </style>

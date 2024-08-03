@@ -23,12 +23,11 @@
           <div class="text-1xl p-4 text-center text-white md:text-2xl">
             {{ $t("landingPageMission") }}
           </div>
-          <button
-            class="bg-ff-purple-01 p-3 text-2xl text-white"
-            @click="router.replace({ name: 'journey' })"
-          >
-            {{ $t("appHeaderVoterJourney") }}
-            <arrow-up-right class="inline-block" />
+          <button class="bg-ff-purple-01 p-3 text-2xl text-white">
+            <cv-link href="/Journey" class="!text-white"
+              >{{ $t("appHeaderVoterJourney") }}
+              <arrow-up-right class="inline-block" />
+            </cv-link>
           </button>
         </div>
       </div>
@@ -52,7 +51,5 @@ defineOptions({
 definePageMeta({
   layout: "special",
 });
-
-const router = useRouter();
 </script>
 <style scoped lang="scss"></style>
