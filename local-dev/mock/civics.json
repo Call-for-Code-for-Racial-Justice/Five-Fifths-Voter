@@ -3,7 +3,7 @@
   "lastMigration": 32,
   "name": "Civics API",
   "endpointPrefix": "",
-  "latency": 0,
+  "latency": 4000,
   "port": 4514,
   "hostname": "",
   "folders": [],

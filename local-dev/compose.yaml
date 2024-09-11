@@ -1,0 +1,15 @@
+services:
+  cloudant:
+    image: docker.io/couchdb:3.3.1
+    volumes:
+      - ./cloudant/data:/opt/couchdb/data${z}
+      - ./cloudant/docker-entrypoint.sh:/docker-entrypoint.sh${z}
+      - ./cloudant/startup.sh:/home/startup.sh${z}
+    user: ${UID}:${GID}
+    environment:
+      - COUCHDB_USER=admin
+      - COUCHDB_PASSWORD=ThisIsGibberish
+      - COUCH_DB=local_metrics
+    ports:
+      - 6143:5984
+

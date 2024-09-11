@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group flex flex-col gap-2 rounded-lg bg-ff-purple-01 p-5 text-white"
+    class="group flex max-w-xl flex-col gap-2 rounded-lg bg-ff-pink-01 p-1 text-white"
     :class="{ 'is-expanded': expanded }"
     tabindex="1"
   >
@@ -8,7 +8,9 @@
       class="flex cursor-pointer items-center justify-between"
       @click="toggle()"
     >
-      <span class="text-1xl font-semibold"> {{ locationName }} </span>
+      <div class="text-1xl relative left-1 top-1 font-semibold">
+        {{ locationName }}
+      </div>
       <button class="relative">
         <chevron
           class="transition-all duration-500 group-[.is-expanded]:-rotate-180"
@@ -22,7 +24,7 @@
         data-[expanded=true]:visible data-[expanded=true]:max-h-screen
         data-[expanded=true]:opacity-100"
     >
-      <div>
+      <div class="bg-ff-white-01 p-1 text-ff-purple-01">
         <div v-if="addressLines">{{ addressLines }}</div>
 
         <div v-if="addressLines" class="mt-1">

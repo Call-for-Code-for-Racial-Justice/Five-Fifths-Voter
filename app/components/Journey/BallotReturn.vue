@@ -32,11 +32,13 @@
 
       <!-- side image -->
       <cv-column :sm="4" :lg="8">
-        <img
-          class="side-image"
-          src="@/assets/images/ballot-return-image-1.jpg"
-          alt=""
-        />
+        <div class="aspect-[4/3] w-full max-w-xl">
+          <img
+            class="h-full w-full object-cover object-[0_39%]"
+            src="@/assets/images/ballot-return-image-1.jpg"
+            alt=""
+          />
+        </div>
       </cv-column>
     </cv-row>
   </cv-grid>

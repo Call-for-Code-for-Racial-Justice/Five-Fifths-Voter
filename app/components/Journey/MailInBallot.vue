@@ -80,11 +80,13 @@
         </div>
       </cv-column>
       <cv-column :sm="4" :lg="8">
-        <img
-          class="side-image"
-          src="@/assets/images/absentee-page-group-friends-laptop-image-1.jpg"
-          :alt="$t('absenteeImageAlt')"
-        />
+        <div class="aspect-[4/3] w-full max-w-xl">
+          <img
+            class="h-full w-full object-cover"
+            src="@/assets/images/absentee-page-group-friends-laptop-image-1.jpg"
+            :alt="$t('absenteeImageAlt')"
+          />
+        </div>
       </cv-column>
     </cv-row>
   </cv-grid>
@@ -92,13 +94,15 @@
 
 <script setup>
 import electionInfo from "@/assets/data/usa-2024.json";
+import {
+  isUserRequestedBallot,
+  setUserRequestedBallot,
+} from "~/composables/user";
 
 const { t } = useI18n();
 const user = useUser();
 const usaCode = computed(() => user.value.info?.location?.region_code);
-const requested = computed(() =>
-  Boolean(user.value.info?.requested_early === "presidential-2024"),
-);
+const requested = computed(() => isUserRequestedBallot());
 const info = computed(() => {
   const code = usaCode.value?.toLowerCase() || "unknown";
   return electionInfo[code] || { register: { territory: true } };
@@ -179,7 +183,7 @@ const hasNotary = computed(() => {
   return "without_notary" in faq;
 });
 
-const onRequested = (val) => setUserRequested(val);
+const onRequested = (val) => setUserRequestedBallot(val);
 </script>
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

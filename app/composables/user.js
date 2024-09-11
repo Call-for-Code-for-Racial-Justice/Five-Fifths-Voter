@@ -40,10 +40,23 @@ export const setUserLocation = (data) => {
     localStorage.setItem("user", JSON.stringify(user.value.info));
   }
 };
-export const setUserRegistered = (registered) => {
+export const setUserRegistered = (confirm) => {
   const user = useState("user");
-  user.value.info.location.registered = registered ? "presidential-2024" : "";
+  user.value.info.registered = confirm ? "presidential-2024" : "";
   localStorage.setItem("user", JSON.stringify(user.value.info));
+};
+export const isUserRegistered = () => {
+  const user = useState("user");
+  return Boolean(user.value.info?.registered === "presidential-2024");
+};
+export const setUserRequestedBallot = (confirm) => {
+  const user = useState("user");
+  user.value.info.requested_early = confirm ? "presidential-2024" : "";
+  localStorage.setItem("user", JSON.stringify(user.value.info));
+};
+export const isUserRequestedBallot = () => {
+  const user = useState("user");
+  return Boolean(user.value.info?.requested_early === "presidential-2024");
 };
 
 export const setVotingAddress = (normalizedAddress) => {

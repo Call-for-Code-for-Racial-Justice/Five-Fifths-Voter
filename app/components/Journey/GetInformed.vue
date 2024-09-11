@@ -1,6 +1,6 @@
 <template>
   <div class="page__title">{{ $t("getInformedTitle") }}</div>
-  <cv-grid :full-width="true">
+  <cv-grid :full-width="true" kind="condensed">
     <cv-row>
       <cv-column :sm="4" :lg="8">
         <journey-territory-info
@@ -15,24 +15,29 @@
         </div>
 
         <div v-else>
-          <div class="journey__next-date">
+          <div class="text-2xl">
             {{
               $t("getInformedNextElection", {
-                date: niceIsoDate(info.election_start),
+                date: niceIsoDate(electionStartDate),
               })
             }}
-          </div>
-          <div class="journey__info">
-            {{ $t("getInformedNextCheck") }}
+            <mark-down v-if="earlyVoting" :content="earlyVoting" />
           </div>
         </div>
       </cv-column>
       <cv-column :sm="4" :lg="8">
-        <img
-          class="side-image"
-          src="@/assets/images/vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg"
-          alt=""
-        />
+        <div class="aspect-[4/3] w-full max-w-[128px]">
+          <img
+            class="h-full w-full object-cover"
+            src="@/assets/images/vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg"
+            alt=""
+          />
+        </div>
+      </cv-column>
+    </cv-row>
+    <cv-row>
+      <cv-column>
+        <journey-candidates-by-state />
       </cv-column>
     </cv-row>
   </cv-grid>
@@ -186,7 +191,7 @@ import electionInfo from "@/assets/data/usa-2024.json";
 //   LogoInstagram32,
 //   LogoLinkedin32,
 // } from '@carbon/icons-vue';
-
+const { t } = useI18n();
 const user = useUser();
 const usaCode = computed(() => user.value.info?.location?.region_code);
 const info = computed(() => {
@@ -195,6 +200,17 @@ const info = computed(() => {
 });
 const hasCoreRaces = computed(() => {
   return info.value?.core_races?.length;
+});
+const electionStartDate = computed(() => {
+  return info.value.election_start || electionInfo.unknown.election_start;
+});
+const earlyVoting = computed(() => {
+  if (info.value?.early_voting?.start_date)
+    return t("voteEarlyStart", {
+      date: niceDate(info.value.early_voting.start_date),
+      days: daysLeft(info.value.early_voting.start_date),
+    });
+  return "";
 });
 // function niceIsoDate(dateStr) {
 //   return niceIsoDate(dateStr)
