@@ -76,11 +76,13 @@
         </div>
       </cv-column>
       <cv-column :sm="4" :lg="8">
-        <img
-          class="side-image"
-          src="@/assets/images/register-page-woman-in-sun-image-1.jpeg"
-          alt=""
-        />
+        <div class="aspect-[4/3] w-full max-w-xl">
+          <img
+            class="h-full w-full object-cover"
+            src="@/assets/images/register-page-woman-in-sun-image-1.jpeg"
+            alt=""
+          />
+        </div>
       </cv-column>
     </cv-row>
   </cv-grid>
@@ -88,16 +90,14 @@
 
 <script setup>
 import electionInfo from "@/assets/data/usa-2024.json";
-import { setUserRegistered } from "~/composables/user";
+import { isUserRegistered, setUserRegistered } from "~/composables/user";
 import { loadApproxLocation } from "~/utils/user";
 
 const { t } = useI18n();
 
 const user = useUser();
 const usaCode = computed(() => user.value.info?.location?.region_code);
-const registered = computed(() =>
-  Boolean(user.value.info?.registered === "presidential-2024"),
-);
+const registered = computed(() => isUserRegistered());
 const info = computed(() => {
   const code = usaCode.value?.toLowerCase() || "unknown";
   return electionInfo[code] || { register: { territory: true } };

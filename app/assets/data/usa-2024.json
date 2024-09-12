@@ -1,4 +1,5 @@
 {
+  "unknown": { "register": { "territory": true }, "election_start": "2024-11-05T07:00:00-05:00" },
   "al": {
     "region": "Alabama",
     "early_voting": {
@@ -42,8 +43,8 @@
     "early_voting": {
       "id": "jdXD",
       "available": true,
-      "start_date": null,
-      "last_date": null,
+      "start_date": "10/21/2024",
+      "last_date": "11/05/2024",
       "id_needed": true,
       "more_link": "https://www.elections.alaska.gov/Core/absenteeearlyandinpersonvoting.php"
     },
@@ -80,8 +81,8 @@
     "early_voting": {
       "id": "wNax",
       "available": true,
-      "start_date": null,
-      "last_date": null,
+      "start_date": "10/29/2024",
+      "last_date": "11/01/2024",
       "id_needed": false,
       "more_link": "https://www.azcleanelections.gov/how-to-vote/early-voting/in-person"
     },
@@ -117,8 +118,8 @@
     "early_voting": {
       "id": "yYTY",
       "available": true,
-      "start_date": null,
-      "last_date": null,
+      "start_date": "10/29/2024",
+      "last_date": "11/04/2024",
       "id_needed": true,
       "more_link": "https://www.sos.arkansas.gov/elections/voter-information/voter-registration-information/voting-in-arkansas"
     },
@@ -154,8 +155,8 @@
     "early_voting": {
       "id": "aXFP",
       "available": true,
-      "start_date": null,
-      "last_date": null,
+      "start_date": "10/29/2024",
+      "last_date": "11/04/2024",
       "id_needed": false,
       "more_link": "https://www.sos.ca.gov/elections/voting-info/ways-vote"
     },
@@ -192,7 +193,7 @@
     "early_voting": {
       "id": "uEh7",
       "available": true,
-      "start_date": null,
+      "start_date": "10/21/2024",
       "last_date": null,
       "id_needed": true
     },
@@ -229,8 +230,8 @@
     "early_voting": {
       "id": "AfCA",
       "available": true,
-      "start_date": null,
-      "last_date": null,
+      "start_date": "10/21/2024",
+      "last_date": "11/03/2024",
       "id_needed": true,
       "more_link": "https://portal.ct.gov/SOTS/Election-Services/Voter-Information/Absentee-Ballot-Process"
     },
@@ -266,8 +267,8 @@
     "early_voting": {
       "id": "tzSi",
       "available": true,
-      "start_date": null,
-      "last_date": null,
+      "start_date": "10/26/2024",
+      "last_date": "11/03/2024",
       "id_needed": true
     },
     "core_races": null,
@@ -341,8 +342,8 @@
     "early_voting": {
       "id": "WkzR",
       "available": true,
-      "start_date": null,
-      "last_date": null,
+      "start_date": "10/26/2024",
+      "last_date": "11/02/2024",
       "id_needed": true,
       "more_link": "https://dos.myflorida.com/elections/for-voters/voting/early-voting-and-drop-boxes/"
     },
@@ -384,8 +385,8 @@
     "early_voting": {
       "id": "LVUZ",
       "available": true,
-      "start_date": null,
-      "last_date": null,
+      "start_date": "10/15/2024",
+      "last_date": "11/01/2024",
       "id_needed": true,
       "more_link": "https://sos.ga.gov/how-to-guide/how-guide-voting#Early%20Voting"
     },
@@ -500,8 +501,8 @@
     "early_voting": {
       "id": "DVWD",
       "available": true,
-      "start_date": null,
-      "last_date": null,
+      "start_date": "09/26/2024",
+      "last_date": "11/05/2024",
       "id_needed": false,
       "more_link": "https://elections.il.gov/votingandregistrationsystems/beforeelectionday.aspx"
     },
@@ -1915,6 +1916,5 @@
       "more_link": "https://sos.wyo.gov/elections/state/absenteevoting.aspx"
     },
     "election_start": "2024-11-05T07:00:00-05:00"
-  },
-  "unknown": { "register": { "territory": true } }
+  }
 }

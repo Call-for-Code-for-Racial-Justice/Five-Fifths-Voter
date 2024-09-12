@@ -1,5 +1,6 @@
 <template>
-  <svg viewBox="0 0 700 700" fill="currentColor">
+  <svg viewBox="0 0 700 700" fill="currentColor" :width="width">
+    <title>Libertarian Party</title>
     <defs>
       <symbol id="v" overflow="visible">
         <path
@@ -121,7 +122,7 @@
   </svg>
 </template>
 <script setup>
-defineOptions({
-  name: "LibertarianIcon",
+defineProps({
+  width: { type: Number, default: 32 },
 });
 </script>

@@ -1,19 +1,21 @@
 <template>
-  <div class="usa-state">
-    <cv-select
-      :label="$t('journeyPageElectionStateSwitch')"
-      :value="usaState"
-      size="sm"
-      @change="onChange"
-    >
-      <cv-select-option
-        v-for="opt in options"
-        :key="`select-${opt.value}`"
-        :value="opt.value"
-        >{{ opt.label }}
-      </cv-select-option>
-    </cv-select>
-  </div>
+  <ClientOnly>
+    <div class="usa-state">
+      <cv-select
+        :label="$t('journeyPageElectionStateSwitch')"
+        :value="usaState"
+        size="sm"
+        @change="onChange"
+      >
+        <cv-select-option
+          v-for="opt in options"
+          :key="`select-${opt.value}`"
+          :value="opt.value"
+          >{{ opt.label }}
+        </cv-select-option>
+      </cv-select>
+    </div>
+  </ClientOnly>
 </template>
 
 <script setup>

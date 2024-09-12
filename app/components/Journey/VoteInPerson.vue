@@ -1,9 +1,19 @@
 <template>
   <div class="page__title">{{ $t("voteTitle") }}</div>
-  <cv-grid :full-width="true">
+  <cv-grid :full-width="true" kind="narrow">
     <cv-row>
       <cv-column :sm="4" :lg="8">
         <!-- this appears after user enter their address -->
+        <cv-loading :active="loading" :overlay="true" />
+        <div class="text-2xl">
+          {{
+            $t("getInformedNextElection", {
+              date: niceIsoDate(electionStartDate),
+            })
+          }}
+          <mark-down v-if="earlyVoting" :content="earlyVoting" />
+        </div>
+
         <div v-if="hasVoterInfo" class="journey-info__section">
           <journey-location-list />
           <journey-civic-data />
@@ -40,7 +50,7 @@
           </cv-text-input>
         </div>
         <cv-button
-          class="bg-black"
+          class="!text-carbon-gray-90"
           kind="primary"
           :disabled="buttonDisabled"
           @click="showPollingLocation"
@@ -48,14 +58,14 @@
           {{ $t("votePollingLocationBtn") }}
         </cv-button>
       </cv-column>
-
-      <!-- side image -->
-      <cv-column :sm="4" :lg="8">
-        <img
-          class="side-image"
-          src="@/assets/images/holder-atlanta-map.png"
-          alt=""
-        />
+      <cv-column :sm="0" :lg="8">
+        <div class="aspect-[4/3] w-full">
+          <img
+            class="h-full w-full -scale-x-100 object-cover object-[0_20%]"
+            src="@/assets/images/black-woman.png"
+            alt=""
+          />
+        </div>
       </cv-column>
     </cv-row>
   </cv-grid>
@@ -171,16 +181,18 @@
 // import electionInfo from "assets/data/usa-2024.json";
 import { useVoterInfoStore } from "~/stores/voterInfo";
 import { setVotingAddress } from "~/composables/user";
+import electionInfo from "assets/data/usa-2024.json";
 
+const { t } = useI18n();
 const voterInfo = useVoterInfoStore();
-
 const user = useUser();
-// const usaCode = computed(() => user.value.info?.location?.region_code);
 
-// const info = computed(() => {
-//   const code = usaCode.value?.toLowerCase() || "unknown";
-//   return electionInfo[code] || { register: { territory: true } };
-// });
+const usaCode = computed(() => user.value.info?.location?.region_code);
+
+const info = computed(() => {
+  const code = usaCode.value?.toLowerCase() || "unknown";
+  return electionInfo[code] || { register: { territory: true } };
+});
 
 const addressValue = ref("");
 const placeholder = ref("123 Main St GA 30076");
@@ -212,6 +224,17 @@ watch(normalizedAddress, () => {
 const disabledAddress = computed(() => {
   return !electionId.value;
 });
+const electionStartDate = computed(() => {
+  return info.value.election_start || electionInfo.unknown.election_start;
+});
+const earlyVoting = computed(() => {
+  if (info.value?.early_voting?.start_date)
+    return t("voteEarlyStart", {
+      date: niceDate(info.value.early_voting.start_date),
+      days: daysLeft(info.value.early_voting.start_date),
+    });
+  return "";
+});
 
 // Election selection
 /**
@@ -237,9 +260,15 @@ watch(filteredElections, () => {
 function showPollingLocation() {
   document.activeElement.blur();
   // loadVoterData(addressValue.value, electionId.value);
+  loading.value = true;
   voterInfo.fetch(addressValue.value, electionId.value);
 }
 const hasVoterInfo = computed(() => !!voterInfo.info?.state);
+// watch(() => voterInfo.status , () => {
+//   if (voterInfo.status !== 'loading') loading.value = false;
+// })
+
+const loading = computed(() => voterInfo.status === "loading");
 
 // created() {
 //   this.loading = true;

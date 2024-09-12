@@ -1,21 +1,15 @@
 import winston from "winston";
 
+const simpleService = winston.format.printf((info) => {
+  const { level, message, service } = info;
+  return `[${service}] ${level}: ${message}`;
+  // return JSON.stringify(info, null, 2);
+});
 export const useWinstonLogger = (meta) => {
-  const logger = winston.createLogger({
+  return winston.createLogger({
     level: "info",
-    format: winston.format.combine(
-      winston.format.printf((event) => {
-        return `${JSON.stringify({ ...event, timestamp: new Date().toISOString() }, null, 4)}\n`;
-      }),
-    ),
+    format: winston.format.combine(winston.format.colorize(), simpleService),
     defaultMeta: { service: meta || "five-fifths-voter" },
     transports: [new winston.transports.Console()],
   });
-  logger.add(
-    new winston.transports.Console({
-      format: winston.format.simple(),
-    }),
-  );
-
-  return logger;
 };

@@ -1,6 +1,11 @@
 <template>
-  <cv-header aria-label="Five Fifths Voter header" class="!h-[6rem]">
+  <cv-header
+    id="ff-header"
+    aria-label="Five Fifths Voter header"
+    class="!h-[6rem]"
+  >
     <cv-header-menu-button
+      id="ff-header-menu"
       aria-label="header - menu"
       aria-controls="side-nav"
     />
@@ -121,7 +126,7 @@ const activeVoterSupport = computed(
   () => route.path.toLowerCase() === "/votersupport",
 );
 const activeWhyVote = computed(() => route.path.toLowerCase() === "/whyvote");
-const activeJourney = computed(() => route.path === "/journey");
+const activeJourney = computed(() => route.path.startsWith("/journey"));
 </script>
 
 <style scoped lang="scss">

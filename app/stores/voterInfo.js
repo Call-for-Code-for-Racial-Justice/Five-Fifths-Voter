@@ -84,12 +84,13 @@
  */
 export const useVoterInfoStore = defineStore("voter-info", {
   state: () => ({
-    status: "loading",
+    status: "",
     /** @type CivicVoterInfo */
     info: {},
   }),
   actions: {
     async fetch(address, electionId) {
+      this.status = "loading";
       this.info = await $fetch("/api/voterInfo", {
         query: { address: address, electionId: electionId },
       });
