@@ -1,0 +1,35 @@
+{
+  "elections": [
+    {
+      "id": "8112",
+      "name": "Washington Special Election",
+      "electionDay": "2024-02-13",
+      "ocdDivisionId": "ocd-division/country:us/state:wa"
+    },
+    {
+      "id": "8113",
+      "name": "Wisconsin Spring Primary Election",
+      "electionDay": "2024-02-20",
+      "ocdDivisionId": "ocd-division/country:us/state:wi"
+    },
+    {
+      "id": "8121",
+      "name": "Virginia Democratic Presidential Primary Election",
+      "electionDay": "2024-03-05",
+      "ocdDivisionId": "ocd-division/country:us/state:va"
+    },
+    {
+      "id": "8122",
+      "name": "Virginia Republican Presidential Primary Election",
+      "electionDay": "2024-03-05",
+      "ocdDivisionId": "ocd-division/country:us/state:va"
+    },
+    {
+      "electionDay": "2025-06-06",
+      "id": "2000",
+      "name": "VIP Test Election",
+      "ocdDivisionId": "ocd-division/country:us"
+    }
+  ],
+  "kind": "civicinfo#electionsQueryResponse"
+}

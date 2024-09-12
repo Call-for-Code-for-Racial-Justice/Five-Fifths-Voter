@@ -17,7 +17,7 @@
       "responses": [
         {
           "uuid": "5af96bf7-58a0-499e-b3b6-4f43a426b9e0",
-          "body": "{}",
+          "body": "{\n  \"elections\": [\n    {\n      \"id\": \"8112\",\n      \"name\": \"Washington Special Election\",\n      \"electionDay\": \"2024-02-13\",\n      \"ocdDivisionId\": \"ocd-division/country:us/state:wa\"\n    },\n    {\n      \"id\": \"8113\",\n      \"name\": \"Wisconsin Spring Primary Election\",\n      \"electionDay\": \"2024-02-20\",\n      \"ocdDivisionId\": \"ocd-division/country:us/state:wi\"\n    },\n    {\n      \"id\": \"8121\",\n      \"name\": \"Virginia Democratic Presidential Primary Election\",\n      \"electionDay\": \"2024-03-05\",\n      \"ocdDivisionId\": \"ocd-division/country:us/state:va\"\n    },\n    {\n      \"id\": \"8122\",\n      \"name\": \"Virginia Republican Presidential Primary Election\",\n      \"electionDay\": \"2024-03-05\",\n      \"ocdDivisionId\": \"ocd-division/country:us/state:va\"\n    },\n    {\n      \"electionDay\": \"2025-06-06\",\n      \"id\": \"2000\",\n      \"name\": \"VIP Test Election\",\n      \"ocdDivisionId\": \"ocd-division/country:us\"\n    }\n  ],\n  \"kind\": \"civicinfo#electionsQueryResponse\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -25,10 +25,6 @@
             {
               "key": "Cache-Control",
               "value": "private"
-            },
-            {
-              "key": "Content-Encoding",
-              "value": "gzip"
             },
             {
               "key": "Server",
@@ -44,7 +40,7 @@
             }
           ],
           "bodyType": "FILE",
-          "filePath": "./elections.json.gz",
+          "filePath": "./elections.json",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [],

@@ -19,44 +19,49 @@
           <journey-civic-data />
         </div>
 
-        <div class="mt-4">
-          <cv-select v-model="electionId" :label="$t('voteSelectElection')">
-            <cv-select-option
-              value=""
-              :selected="true"
-              :disabled="true"
-              :hidden="true"
-              >{{ $t("voteChooseElection") }}</cv-select-option
-            >
-            <cv-select-option
-              v-for="elec in filteredElections"
-              :key="elec.id"
-              :value="elec.id"
-            >
-              {{ elec.name }} {{ elec.electionDay }}
-            </cv-select-option>
-          </cv-select>
-        </div>
+        <div v-if="filteredElections.length > 0">
+          <div class="mt-4">
+            <cv-select v-model="electionId" :label="$t('voteSelectElection')">
+              <cv-select-option
+                value=""
+                :selected="true"
+                :disabled="true"
+                :hidden="true"
+                >{{ $t("voteChooseElection") }}</cv-select-option
+              >
+              <cv-select-option
+                v-for="elec in filteredElections"
+                :key="elec.id"
+                :value="elec.id"
+              >
+                {{ elec.name }} {{ elec.electionDay }}
+              </cv-select-option>
+            </cv-select>
+          </div>
 
-        <!-- address -->
-        <div class="mb-2 mt-4">
-          <cv-text-input
-            v-model="addressValue"
-            :label="$t('voteAddressLabel')"
-            :hide-label="disabledAddress"
-            :placeholder="placeholder"
-            :disabled="disabledAddress"
+          <!-- address -->
+          <div class="mb-2 mt-4">
+            <cv-text-input
+              v-model="addressValue"
+              :label="$t('voteAddressLabel')"
+              :hide-label="disabledAddress"
+              :placeholder="placeholder"
+              :disabled="disabledAddress"
+            >
+            </cv-text-input>
+          </div>
+          <cv-button
+            class="!text-carbon-gray-90"
+            kind="primary"
+            :disabled="buttonDisabled"
+            @click="showPollingLocation"
           >
-          </cv-text-input>
+            {{ $t("votePollingLocationBtn") }}
+          </cv-button>
         </div>
-        <cv-button
-          class="!text-carbon-gray-90"
-          kind="primary"
-          :disabled="buttonDisabled"
-          @click="showPollingLocation"
-        >
-          {{ $t("votePollingLocationBtn") }}
-        </cv-button>
+        <div v-else class="mt-2 text-xl">
+          {{ $t("getInformedNextCheck") }}
+        </div>
       </cv-column>
       <cv-column :sm="0" :lg="8">
         <div class="aspect-[4/3] w-full">
@@ -242,6 +247,17 @@ const earlyVoting = computed(() => {
  * @type {Ref<UnwrapRef<string>>}
  */
 const electionId = ref("");
+function defaultElection() {
+  if (filteredElections.value?.length === 1) {
+    electionId.value = filteredElections.value[0].id;
+  }
+  const election = filteredElections.value.find((election) =>
+    election.ocdDivisionId?.endsWith(`:${usaCode.value}`),
+  );
+  if (election) electionId.value = election.id;
+}
+onMounted(() => defaultElection());
+
 const buttonDisabled = computed(() => {
   return !electionId.value || addressValue.value.length < 10;
 });
@@ -249,14 +265,14 @@ const buttonDisabled = computed(() => {
 /** @type Ref<UnwrapRef<CivicElectionsData>> */
 const electionData = useElectionData();
 const filteredElections = computed(() => {
-  // TODO: filter based on name instead. Exclude "test"
-  // return elections.value.filter((item) => item.id !== "2000");
-  return electionData.value.elections;
+  return electionData.value.elections.filter(
+    (election) =>
+      election.id !== "2000" &&
+      election.name.toLowerCase().indexOf("test") === -1,
+  );
 });
-watch(filteredElections, () => {
-  if (filteredElections.value?.length === 1)
-    electionId.value = filteredElections.value[0].id;
-});
+watch(filteredElections, () => defaultElection());
+watch(usaCode, () => defaultElection());
 function showPollingLocation() {
   document.activeElement.blur();
   // loadVoterData(addressValue.value, electionId.value);
