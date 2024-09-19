@@ -14,7 +14,7 @@
           <cv-column :lg="5" :sm="2">
             <nav-card
               title="Are you registered to vote?"
-              image-src="register-page-woman-in-sun-image-1.jpeg"
+              image-src="ebrace-vote-gif.gif"
               to="/journey/register"
               :checked="isUserRegistered()"
             />
@@ -37,8 +37,7 @@
           <cv-column :lg="0" :sm="2">
             <nav-card
               title="Vote"
-              image-src="black-woman.png"
-              image-class="-scale-x-100 object-[0_20%]"
+              image-src="landing-page-grandpa-grandson-image-2.jpeg"
               to="/journey/voteInPerson"
             />
           </cv-column>
@@ -48,8 +47,7 @@
           <cv-column :lg="5" :sm="0">
             <nav-card
               title="Vote"
-              image-src="black-woman.png"
-              image-class="-scale-x-100 object-[0_20%]"
+              image-src="landing-page-grandpa-grandson-image-2.jpeg"
               to="/journey/voteInPerson"
             />
           </cv-column>

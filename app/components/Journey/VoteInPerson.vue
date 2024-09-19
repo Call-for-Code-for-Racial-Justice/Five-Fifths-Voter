@@ -66,8 +66,8 @@
       <cv-column :sm="0" :lg="8">
         <div class="aspect-[4/3] w-full">
           <img
-            class="h-full w-full -scale-x-100 object-cover object-[0_20%]"
-            src="@/assets/images/black-woman.png"
+            class="h-full w-full object-cover"
+            src="@/assets/images/landing-page-grandpa-grandson-image-2.jpeg"
             alt=""
           />
         </div>

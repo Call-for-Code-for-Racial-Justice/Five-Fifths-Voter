@@ -30,18 +30,25 @@
         data-[expanded=true]:visible data-[expanded=true]:max-h-screen
         data-[expanded=true]:opacity-100"
     >
+      <div class="-mx-4 mb-3 text-ff-white-01 md:text-2xl lg:hidden">
+        <div>
+          <span class="text-3xl">&#x201c; </span>{{ quote }} &#x2014;
+          {{ author }}
+        </div>
+      </div>
       <div class="flex flex-col justify-around gap-10 md:flex-row md:gap-0">
         <div class="w:full md:w-1/3 md:text-2xl">
           {{ main }}
           <button
             class="mt-10 block bg-ff-purple-01 p-3 text-white md:text-2xl"
           >
-            <cv-link href="/Journey" class="!text-white"
-              >Your Voter Journey
+            <cv-link href="/journey" class="!text-white"
+              >{{ $t("journeyPageTitle") }}
               <arrow-up-right class="inline-block" />
             </cv-link>
           </button>
         </div>
+
         <div
           :class="{
             empower: image === 'empower',
@@ -50,7 +57,7 @@
           }"
           class="h-[350px] w-full max-w-[350px] bg-cover bg-center md:w-[350px]"
         >
-          <div class="backdrop-blur-sm md:backdrop-blur-none">
+          <div class="hidden backdrop-blur-sm lg:block">
             <div class="relative inline">
               <span
                 class="absolute -translate-x-[230px] -translate-y-[20px] text-9xl text-ff-yellow-01"
