@@ -69,7 +69,7 @@
   "journeyPageBallotAriaLabel": "request an absentee ballot",
   "journeyPageBallotLabel": "Mail In Ballot",
   "journeyPageDeliverAriaLabel": "find a drop box for your absentee ballot",
-  "journeyPageDeliverLabel": "Deliver Your Ballot",
+  "journeyPageDeliverLabel": "Deliver your ballot",
   "journeyPageElectionState": "Election information for {state}",
   "journeyPageElectionStateSwitch": "Switch location",
   "journeyPageGetInformedAriaLabel": "find information regarding your state's voting credentials",

@@ -6,8 +6,8 @@
       aria-controls="side-nav"
     />
     <cv-skip-to-content href="#main-content"></cv-skip-to-content>
-    <cv-header-name to="/" prefix="" aria-label="navigate to home">
-      ><img
+    <cv-header-name to="/" prefix="">
+      <img
         alt=""
         src="@/assets/images/FiveFifthsVoterLogo.png"
         class="h-full max-h-[32px] sm:max-h-[64px]"
@@ -45,7 +45,7 @@
         class="px-2 py-8"
         href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
         target="_blank"
-        aria-label="Five Fifths Voter on instagram"
+        aria-label="Five Fifths Voter on instagram - link opens in a new window"
       >
         <instagram class="text-carbon-gray-30" />
       </cv-link>
@@ -53,11 +53,9 @@
         class="px-2 py-8"
         href="https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter"
         target="_blank"
+        aria-label="Link to code for this site in GitHub - link opens in a new window"
       >
-        <git-hub
-          class="text-carbon-gray-30"
-          alt="Link to code for this site in GitHub"
-        />
+        <git-hub class="text-carbon-gray-30" />
       </cv-link>
       <cv-header-global-action
         :aria-label="$t('ariaLanguageSetting')"
@@ -73,7 +71,13 @@
       <language-panel header-size="thick" />
     </template>
     <template #left-panels>
-      <cv-side-nav id="side-nav" :rail="false" :fixed="true" :expanded="false">
+      <cv-side-nav
+        id="side-nav"
+        :rail="false"
+        :fixed="true"
+        :expanded="false"
+        aria-label="Side navigation for mobile devices"
+      >
         <cv-side-nav-items>
           <cv-side-nav-link to="/">
             <template #nav-icon><home-icon /></template>
