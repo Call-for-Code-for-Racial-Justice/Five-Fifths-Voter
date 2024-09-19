@@ -1,16 +1,12 @@
 <template>
-  <cv-header
-    id="ff-header"
-    aria-label="Five Fifths Voter header"
-    class="!h-[6rem]"
-  >
+  <cv-header id="ff-header" class="!h-[6rem]">
     <cv-header-menu-button
       id="ff-header-menu"
       aria-label="header - menu"
       aria-controls="side-nav"
     />
     <cv-skip-to-content href="#main-content"></cv-skip-to-content>
-    <cv-header-name to="/" prefix=""
+    <cv-header-name to="/" prefix="" aria-label="navigate to home">
       ><img
         alt=""
         src="@/assets/images/FiveFifthsVoterLogo.png"
@@ -49,6 +45,7 @@
         class="px-2 py-8"
         href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
         target="_blank"
+        aria-label="Five Fifths Voter on instagram"
       >
         <instagram class="text-carbon-gray-30" />
       </cv-link>
@@ -57,7 +54,10 @@
         href="https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter"
         target="_blank"
       >
-        <git-hub class="text-carbon-gray-30" />
+        <git-hub
+          class="text-carbon-gray-30"
+          alt="Link to code for this site in GitHub"
+        />
       </cv-link>
       <cv-header-global-action
         :aria-label="$t('ariaLanguageSetting')"

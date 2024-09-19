@@ -1,8 +1,5 @@
 <template>
-  <cv-header
-    aria-label="Five Fifths Voter header"
-    class="!h-[2rem] !bg-ff-purple-01"
-  >
+  <cv-header class="!h-[2rem] !bg-ff-purple-01">
     <cv-header-menu-button
       aria-label="header - menu"
       aria-controls="side-nav"
@@ -23,7 +20,8 @@
         />
       </cv-header-menu-item>
       <cv-header-menu-item to="/journey" :active="activeJourney">
-        {{ $t("appHeaderVoterJourney") }} <arrow-up-right class="inline-block" />
+        {{ $t("appHeaderVoterJourney") }}
+        <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
       <cv-header-menu-item
         :data-pos="ourValuesPosition"
@@ -38,7 +36,8 @@
         />
       </cv-header-menu-item>
       <cv-header-menu-item :active="activeVoterSupport" to="/voterSupport">
-        {{ $t("appHeaderVoterSupport") }} <arrow-up-right class="inline-block" />
+        {{ $t("appHeaderVoterSupport") }}
+        <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
       <cv-header-menu-item :active="activeWhyVote" to="/whyVote">
         {{ $t("appHeaderWhyVote") }} <arrow-up-right class="inline-block" />
@@ -49,6 +48,7 @@
         class="p-1"
         href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
         target="_blank"
+        aria-label="Five Fifths Voter on instagram - link opens in a new window"
       >
         <instagram class="text-carbon-gray-30" />
       </cv-link>
@@ -56,6 +56,7 @@
         class="p-1"
         href="https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter"
         target="_blank"
+        aria-label="Link to code for this site in GitHub"
       >
         <git-hub class="text-carbon-gray-30" />
       </cv-link>
@@ -73,7 +74,13 @@
       <language-panel />
     </template>
     <template #left-panels>
-      <cv-side-nav id="side-nav" :rail="false" :fixed="true" :expanded="false">
+      <cv-side-nav
+        id="side-nav"
+        :rail="false"
+        :fixed="true"
+        :expanded="false"
+        aria-label="Side navigation for mobile devices"
+      >
         <cv-side-nav-items>
           <cv-side-nav-link @click="scrollTop()">
             <template #nav-icon><home-icon /></template>

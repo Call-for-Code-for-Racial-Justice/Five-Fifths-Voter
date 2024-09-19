@@ -5,14 +5,25 @@
     :class="{
       'is-expanded border-0 bg-ff-blue-03': expanded,
     }"
-    tabindex="1"
+    tabindex="-1"
   >
     <div
       class="flex cursor-pointer items-center justify-between"
       @click="toggle()"
     >
-      <span class="text-2xl"> {{ name }} </span>
-      <button class="relative">
+      <span
+        class="text-2xl text-ff-purple-01 data-[expanded=true]:text-white"
+        :data-expanded="expanded"
+      >
+        {{ name }}
+      </span>
+      <button
+        class="relative"
+        :aria-expanded="expanded"
+        :aria-controls="`id-${name}`"
+        tabindex="1"
+        :aria-label="name"
+      >
         <expand-icon
           class="absolute -translate-x-[100%] -translate-y-[50%] opacity-100 transition-all
             group-[.is-expanded]:opacity-0 group-[.is-expanded]:duration-1000"
@@ -24,13 +35,16 @@
       </button>
     </div>
     <div
+      :id="`id-${name}`"
       class="invisible h-auto max-h-0 items-center opacity-0 transition-all
         group-[.is-expanded]:visible group-[.is-expanded]:max-h-screen
         group-[.is-expanded]:opacity-100 group-[.is-expanded]:duration-1000
         data-[expanded=true]:visible data-[expanded=true]:max-h-screen
         data-[expanded=true]:opacity-100"
+      role="region"
+      :aria-label="name"
     >
-      <div class="-mx-4 mb-3 text-ff-white-01 md:text-2xl lg:hidden">
+      <div class="-mx-4 mb-3 text-ff-white-01 md:text-2xl xl:hidden">
         <div>
           <span class="text-3xl">&#x201c; </span>{{ quote }} &#x2014;
           {{ author }}
@@ -40,12 +54,11 @@
         <div class="w:full md:w-1/3 md:text-2xl">
           {{ main }}
           <button
-            class="mt-10 block bg-ff-purple-01 p-3 text-white md:text-2xl"
+            class="mt-10 block bg-ff-purple-01 p-3 text-base text-white"
+            @click="navigateTo('/journey')"
           >
-            <cv-link href="/journey" class="!text-white"
-              >{{ $t("journeyPageTitle") }}
-              <arrow-up-right class="inline-block" />
-            </cv-link>
+            {{ $t("journeyPageTitle") }}
+            <arrow-up-right class="inline-block" />
           </button>
         </div>
 
@@ -57,7 +70,7 @@
           }"
           class="h-[350px] w-full max-w-[350px] bg-cover bg-center md:w-[350px]"
         >
-          <div class="hidden backdrop-blur-sm lg:block">
+          <div class="hidden backdrop-blur-sm xl:block">
             <div class="relative inline">
               <span
                 class="absolute -translate-x-[230px] -translate-y-[20px] text-9xl text-ff-yellow-01"
@@ -82,7 +95,7 @@
 
 <script setup>
 import {
-  ArrowUpRight32 as ArrowUpRight,
+  ArrowUpRight20 as ArrowUpRight,
   Add20 as ExpandIcon,
   Subtract20 as CollapseIcon,
 } from "@carbon/icons-vue";

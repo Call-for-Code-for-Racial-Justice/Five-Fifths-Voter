@@ -5,7 +5,7 @@
   >
     <div
       class="h-[calc(100%-320px)] w-full bg-ff-purple-01
-        bg-[url(@/assets/images/silhouette-tile.png)] bg-cover bg-repeat-x
+        bg-[url(@/assets/images/silhouette-tile.png)] bg-contain bg-repeat-x
         md:h-[calc(100%-270px)] lg:h-[calc(100%-150px)] xl:h-[calc(100%-320px)]"
     >
       <div class="mt-2 w-[160px] p-8 3xl:w-[320px]">

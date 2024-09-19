@@ -16,18 +16,19 @@
           class="flex h-[90%] flex-col items-center justify-around rounded-full bg-ff-purple-02"
         >
           <h1
-            class="mt-10 p-4 text-center text-6xl text-ff-orange-01 md:mt-0 md:text-8xl"
+            class="mt-10 p-4 text-center text-6xl text-ff-white-01 md:mt-0 md:text-8xl"
           >
             {{ $t("landingPageMain") }}
           </h1>
           <div class="text-1xl p-4 text-center text-white md:text-2xl">
             {{ $t("landingPageMission") }}
           </div>
-          <button class="bg-ff-purple-01 p-3 text-2xl text-white">
-            <cv-link href="/Journey" class="!text-white"
-              >{{ $t("appHeaderVoterJourney") }}
-              <arrow-up-right class="inline-block" />
-            </cv-link>
+          <button
+            class="bg-ff-purple-01 p-3 text-2xl text-white"
+            @click="navigateTo('/journey')"
+          >
+            {{ $t("appHeaderVoterJourney") }}
+            <arrow-up-right class="inline-block" />
           </button>
         </div>
       </div>

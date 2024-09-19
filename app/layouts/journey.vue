@@ -26,8 +26,12 @@
 
 <script setup>
 import "@/assets/css/five-fifths-theme.css";
-defineOptions({
-  name: "DefaultLayout",
+const { locale } = useI18n();
+
+useHead({
+  htmlAttrs: {
+    lang: locale || "en",
+  },
 });
 const { t } = useI18n();
 /** @type {Array<SubPage>} */

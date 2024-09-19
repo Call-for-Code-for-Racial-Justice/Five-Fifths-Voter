@@ -8,8 +8,15 @@
 </template>
 
 <script setup>
+const { locale } = useI18n();
+
 defineOptions({
   name: "DefaultLayout",
+});
+useHead({
+  htmlAttrs: {
+    lang: locale || "en",
+  },
 });
 import "@/assets/css/five-fifths-theme.css";
 </script>
