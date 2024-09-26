@@ -19,7 +19,7 @@
     "eslint-plugin-prettier-vue": "^5.0.0",
     "eslint-plugin-vue": "^9.21.1",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
+    "lint-staged": "^15.2.10",
     "nuxt-eslint-globals": "^1.0.5",
     "prettier": "^3.2.5",
     "prettier-plugin-classnames": "^0.6.1",
@@ -42,7 +42,7 @@
     "luxon": "^3.4.4",
     "markdown-it": "^14.0.0",
     "nano": "^10.1.4",
-    "nuxt": "^3.10.2",
+    "nuxt": "^3.13.2",
     "pinia": "^2.1.7",
     "winston": "^3.11.0"
   }
