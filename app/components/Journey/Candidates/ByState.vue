@@ -27,9 +27,24 @@ const candidates = useFetch("/api/candidateInfo", {
       :expandable="true"
     >
       <template #headings>
-        <cv-data-table-heading heading="Name" name="name" />
-        <cv-data-table-heading heading="Election" name="election" />
-        <cv-data-table-heading heading="Party" name="party" />
+        <cv-data-table-heading
+          id="table-candidate-name"
+          heading="Name"
+          name="name"
+          class="!text-ff-purple-01"
+        />
+        <cv-data-table-heading
+          id="table-election-name"
+          heading="Election"
+          name="election"
+          class="!text-ff-purple-01"
+        />
+        <cv-data-table-heading
+          id="table-candidate-party"
+          heading="Party"
+          name="party"
+          class="!text-ff-purple-01"
+        />
       </template>
       <template #data>
         <cv-data-table-row
@@ -37,13 +52,20 @@ const candidates = useFetch("/api/candidateInfo", {
           :key="row._id"
           :value="row._id"
         >
-          <cv-data-table-cell class="!text-ff-purple-01">{{
-            row.name
-          }}</cv-data-table-cell>
-          <cv-data-table-cell class="!text-ff-purple-01">{{
-            row.candidate
-          }}</cv-data-table-cell>
-          <cv-data-table-cell class="!text-ff-purple-01">
+          <cv-data-table-cell
+            headers="table-candidate-name"
+            class="!text-ff-purple-01"
+            >{{ row.name }}</cv-data-table-cell
+          >
+          <cv-data-table-cell
+            headers="table-election-name"
+            class="!text-ff-purple-01"
+            >{{ row.candidate }}</cv-data-table-cell
+          >
+          <cv-data-table-cell
+            headers="table-candidate-party"
+            class="!text-ff-purple-01"
+          >
             <icon-democrat
               v-if="row.party === 'Democrat'"
               class="w-8 lg:w-16"
@@ -72,12 +94,31 @@ const candidates = useFetch("/api/candidateInfo", {
                 target="_blank"
                 class="!text-ff-purple-01"
               >
-                <web-icon v-if="social === 'website'" />
-                <facebook-icon v-else-if="social === 'fb'" />
-                <youtube-icon v-else-if="social === 'yt'" />
-                <twitter-icon v-else-if="social === 'x'" />
-                <instagram-icon v-else-if="social === 'gram'" />
-                <icon-tik-tok v-else-if="social === 'tt'" class="p-1" />
+                <web-icon
+                  v-if="social === 'website'"
+                  aria-label="candidate website"
+                />
+                <facebook-icon
+                  v-else-if="social === 'fb'"
+                  aria-label="candidate facebook site"
+                />
+                <youtube-icon
+                  v-else-if="social === 'yt'"
+                  aria-label="candidate youtube site"
+                />
+                <twitter-icon
+                  v-else-if="social === 'x'"
+                  aria-label="candidate x site"
+                />
+                <instagram-icon
+                  v-else-if="social === 'gram'"
+                  aria-label="candidate instagram sie"
+                />
+                <icon-tik-tok
+                  v-else-if="social === 'tt'"
+                  class="p-1"
+                  aria-label="candidate TikTok site"
+                />
                 <generic-icon v-else />
               </cv-link>
             </div>
