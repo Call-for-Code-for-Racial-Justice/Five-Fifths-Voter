@@ -4,9 +4,9 @@
       px-3 md:h-[270px] lg:h-[150px] lg:px-14 xl:h-[320px]"
   >
     <div class="text-2xl sm:text-4xl md:text-6xl lg:text-4xl 2xl:text-7xl">
-      <div class="text-ff-pink-01">{{ headlines[0] }}</div>
+      <div class="text-ff-white-01">{{ headlines[0] }}</div>
       <div class="text-white">{{ headlines[1] }}</div>
-      <div class="text-ff-blue-03">{{ headlines[2] }}</div>
+      <div class="text-ff-white-01">{{ headlines[2] }}</div>
     </div>
     <div
       class="flex flex-col items-center justify-between gap-x-10 text-white lg:flex-row"

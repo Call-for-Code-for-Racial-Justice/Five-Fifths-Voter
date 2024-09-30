@@ -79,7 +79,7 @@
         <div class="aspect-[4/3] w-full max-w-xl">
           <img
             class="h-full w-full object-cover"
-            src="@/assets/images/register-page-woman-in-sun-image-1.jpeg"
+            src="@/assets/images/ebrace-vote-gif.gif"
             alt=""
           />
         </div>

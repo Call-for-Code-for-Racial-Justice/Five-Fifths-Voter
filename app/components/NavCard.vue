@@ -24,12 +24,12 @@ const imageUrl = computed(
         :src="imageUrl"
         alt=""
       />
-      <div
+      <h4
         class="absolute bottom-0 right-0 min-h-[33%] w-1/2 bg-ff-pink-01 p-2 text-xs
           text-carbon-gray-90 md:h-1/3 md:p-3 md:text-xl"
       >
         {{ title }}
-      </div>
+      </h4>
       <arrow-right
         class="absolute bottom-3 right-3 text-carbon-gray-90 opacity-0 md:opacity-100"
       />
