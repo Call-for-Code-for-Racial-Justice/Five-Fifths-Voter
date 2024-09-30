@@ -1,6 +1,7 @@
 <template>
-  <cv-header class="!h-[2rem] !bg-ff-purple-01">
+  <cv-header :id="id" class="!h-[2rem] !bg-ff-purple-01">
     <cv-header-menu-button
+      :id="`${id}-side-nav-button`"
       aria-label="header - menu"
       aria-controls="side-nav"
     />
@@ -135,6 +136,8 @@ import {
   Language24 as LanguageSwitcher,
 } from "@carbon/icons-vue";
 import lodash from "lodash";
+
+const id = useId();
 
 defineOptions({
   name: "HomeHeader",
