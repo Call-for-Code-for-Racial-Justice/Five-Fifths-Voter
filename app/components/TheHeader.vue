@@ -59,9 +59,23 @@
       >
         <language-switcher class="text-carbon-gray-30" />
       </cv-header-global-action>
+      <cv-header-global-action
+        v-if="userLoggedIn"
+        :aria-label="$t('profile')"
+        aria-controls="user-panel"
+        :label="$t('profile')"
+        class="!mx-1 !h-6 !min-h-0 !px-0 !py-12"
+        tip-position="bottom"
+      >
+        <show-user-icon class="text-carbon-gray-30" />
+      </cv-header-global-action>
+      <cv-link v-else class="px-2 py-8" href="/auth/login">
+        <login-icon class="text-carbon-gray-30" />
+      </cv-link>
     </template>
     <template #right-panels>
       <language-panel header-size="thick" />
+      <user-panel header-size="thick" />
     </template>
     <template #left-panels>
       <cv-side-nav id="side-nav" :rail="false" :fixed="true" :expanded="false">
@@ -107,6 +121,8 @@ import {
   LogoInstagram32 as Instagram,
   LogoGithub32 as GitHub,
   Language32 as LanguageSwitcher,
+  UserAvatar32 as LoginIcon,
+  UserAvatarFilled32 as ShowUserIcon,
 } from "@carbon/icons-vue";
 import LanguagePanel from "~/components/LanguagePanel.vue";
 defineOptions({
@@ -118,6 +134,10 @@ const activeVoterSupport = computed(
 );
 const activeWhyVote = computed(() => route.path.toLowerCase() === "/whyvote");
 const activeJourney = computed(() => route.path === "/journey");
+
+const user = useUserStore();
+const userLoggedIn = computed(() => Boolean(user.info.sub));
+onMounted(() => user.fetch());
 </script>
 
 <style scoped lang="scss">

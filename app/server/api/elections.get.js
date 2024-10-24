@@ -1,4 +1,4 @@
-import { useWinstonLogger } from "~/utils/logging";
+import { useWinstonLogger } from "~/server/utils/logging";
 
 export default defineCachedEventHandler(
   (event) => {

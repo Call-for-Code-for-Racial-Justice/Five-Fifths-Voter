@@ -1,0 +1,846 @@
+{
+  "election": {
+    "id": "8112",
+    "name": "Washington Special Election",
+    "electionDay": "2024-02-13",
+    "ocdDivisionId": "ocd-division/country:us/state:wa"
+  },
+  "normalizedInput": {
+    "line1": "123 East Main Street",
+    "city": "Tacoma",
+    "state": "WA",
+    "zip": "98404"
+  },
+  "pollingLocations": [
+    {
+      "address": {
+        "locationName": "Pierce County Election Center",
+        "line1": "2501 S 35th St, Suite C",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98409"
+      },
+      "notes": "Located west of the Pierce County Annex. Open 8:30 a.m. to 8 p.m. on Election Day. Voting center offers touch screen accessible voting",
+      "pollingHours": "Mon - Fri: 8:30 a.m. - 4:30 p.m.\nSaturday before Election Day: 10a.m. - 4p.m.\nElection Day: 8:30 a.m. - 8 p.m.",
+      "latitude": 47.2286873,
+      "longitude": -122.4696808,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "earlyVoteSites": [
+    {
+      "address": {
+        "locationName": "Pierce County Election Center",
+        "line1": "2501 S 35th St, Suite C",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98409"
+      },
+      "notes": "Located west of the Pierce County Annex. Open 8:30 a.m. to 8 p.m. on Election Day. Voting center offers touch screen accessible voting",
+      "pollingHours": "Mon - Fri: 8:30 a.m. - 4:30 p.m.\nSaturday before Election Day: 10a.m. - 4p.m.\nElection Day: 8:30 a.m. - 8 p.m.",
+      "latitude": 47.2286873,
+      "longitude": -122.4696808,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "dropOffLocations": [
+    {
+      "address": {
+        "locationName": "UW Tacoma Drop Box",
+        "line1": "1906 Pacific Ave",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98402"
+      },
+      "notes": "Drop Box. This is a pedestrian only box.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.2448502,
+      "longitude": -122.4368515,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Community Health Care at Salishan Drop Box",
+        "line1": "1708 E 44th Street",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98404"
+      },
+      "notes": "Drop Box. Drop box is located in the South Parking lot.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.2163773,
+      "longitude": -122.4054565,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Pierce County Annex Drop Box",
+        "line1": "2401 South 35th Street",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98409"
+      },
+      "notes": "Drop Box. Two drop boxes are located in the east portion of the Annex parking lot.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.2285728,
+      "longitude": -122.4664917,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Pierce County Election Center Drop Box",
+        "line1": "2501 S 35th St, Suite C",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98409"
+      },
+      "notes": "Located west of the Pierce County Annex. Open 8:30 a.m. to 8 p.m. on Election Day. Voting center offers touch screen accessible voting",
+      "pollingHours": "Mon - Fri: 8:30 a.m. - 4:30 p.m.\nSaturday before Election Day: 10a.m. - 4p.m.\nElection Day: 8:30 a.m. - 8 p.m.",
+      "latitude": 47.2286873,
+      "longitude": -122.4696808,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "72nd St Transit Center Drop Box",
+        "line1": "1319 E 72nd St",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98404"
+      },
+      "notes": "Drop Box. This is a pedestrian only box. Located in the park & ride parking lot.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1925507,
+      "longitude": -122.4113312,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hilltop Drop Box",
+        "line1": "902 S L Street",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98405"
+      },
+      "notes": "Drop Box. Located in front of The Housing Authority.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.2535133,
+      "longitude": -122.4536438,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Fife City Hall Drop Box",
+        "line1": "5411 23rd Street E",
+        "city": "Fife",
+        "state": "WA",
+        "zip": "98424"
+      },
+      "notes": "Drop Box",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.237011,
+      "longitude": -122.3561859,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Fircrest City Hall Drop Box",
+        "line1": "115 Ramsdell St",
+        "city": "Fircrest",
+        "state": "WA",
+        "zip": "98466"
+      },
+      "notes": "Drop Box",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.2322578,
+      "longitude": -122.5058517,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Wapato Park (S 72nd St & S Ainsworth Ave) Drop Box",
+        "line1": "1501 S 72nd St",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98408"
+      },
+      "notes": "Drop Box",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1922379,
+      "longitude": -122.4554367,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "West Pierce Fire & Rescue Drop Box",
+        "line1": "3631 Drexler Dr W",
+        "city": "University Place",
+        "state": "WA",
+        "zip": "98466"
+      },
+      "notes": "Drop Box\t. Box is located in the fire station parking lot.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.2250786,
+      "longitude": -122.5352631,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "TACID Drop Box",
+        "line1": "6315 South 19th Street",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98466"
+      },
+      "notes": "Drop Box. Located in the front TACID parking lot.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.2434464,
+      "longitude": -122.5221024,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Browns Pt NE Tacoma Police Substation Drop Box",
+        "line1": "4731 Norpoint Way NE",
+        "city": "Browns Point",
+        "state": "WA",
+        "zip": "98422"
+      },
+      "notes": "Drop Box. Box is located in the police parking area by the water tank.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.3003426,
+      "longitude": -122.4062729,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Wheelock Library Drop Box",
+        "line1": "3722 N 26th St",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98407"
+      },
+      "notes": "Drop Box. This is a pedestrian only box.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.2709694,
+      "longitude": -122.4866638,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Edgewood City Hall Drop Box",
+        "line1": "2224 104th Ave E",
+        "city": "Edgewood",
+        "state": "WA",
+        "zip": "98372"
+      },
+      "notes": "Drop Box. Box is located in the south parking area.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.2363892,
+      "longitude": -122.2913055,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Kandle Park Police Substation Drop Box",
+        "line1": "5140 N 26th St",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98407"
+      },
+      "notes": "Drop Box. Box is located in front of the Gonyea Boys & Girls Club.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.2710991,
+      "longitude": -122.5059967,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Parkland Spanaway Library Drop Box",
+        "line1": "13718 Pacific Ave S",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98444"
+      },
+      "notes": "Drop Box. Located at the front of the library.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1322441,
+      "longitude": -122.4354858,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lakewood (SR512) Park & Ride Drop Box",
+        "line1": "10417 South Tacoma Way",
+        "city": "Lakewood",
+        "state": "WA",
+        "zip": "98499"
+      },
+      "notes": "Drop Box. Located near the disabled parking, near bus only lane.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1614265,
+      "longitude": -122.4831924,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Summit Library Drop Box",
+        "line1": "5107 112th Street E",
+        "city": "Tacoma",
+        "state": "WA",
+        "zip": "98446"
+      },
+      "notes": "Drop Box",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1549873,
+      "longitude": -122.3605042,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Puyallup Library Drop Box",
+        "line1": "324 South Meridian",
+        "city": "Puyallup",
+        "state": "WA",
+        "zip": "98371"
+      },
+      "notes": "Drop Box. Box is located west of the front entrance to the library.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1892776,
+      "longitude": -122.2958755,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Ruston Drop Box",
+        "line1": "5045 N Highland St",
+        "city": "Ruston",
+        "state": "WA",
+        "zip": "98407"
+      },
+      "notes": "Drop Box. Behind Totem Yacht Club, entrance off N 51st St.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.2978783,
+      "longitude": -122.5136566,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lakewood City Hall Drop Box",
+        "line1": "6000 Main Street SW",
+        "city": "Lakewood",
+        "state": "WA",
+        "zip": "98499"
+      },
+      "notes": "Drop Box. Located by the accessible parking.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.161171,
+      "longitude": -122.515892,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Sumner Library Drop Box",
+        "line1": "1116 Fryer Ave",
+        "city": "Sumner",
+        "state": "WA",
+        "zip": "98390"
+      },
+      "notes": "Drop Box\t. Box is located at the parking lot entrance.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.2049255,
+      "longitude": -122.2440643,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Roy Y Park & Ride Drop Box",
+        "line1": "SR 507 & Pacific Ave S",
+        "city": "Spanaway",
+        "state": "WA",
+        "zip": "98387"
+      },
+      "notes": "Drop Box. Located in the parking lot.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.0828056,
+      "longitude": -122.4345093,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Steilacoom Library Drop Box",
+        "line1": "2950 Steilacoom Blvd",
+        "city": "Steilacoom",
+        "state": "WA",
+        "zip": "98388"
+      },
+      "notes": "Drop Box\t. Box is located in the book drop drive-thru.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1764984,
+      "longitude": -122.5788269,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Skookum Archers Drop Box",
+        "line1": "11209 Shaw Rd E",
+        "city": "Puyallup",
+        "state": "WA",
+        "zip": "98374"
+      },
+      "notes": "Drop Box",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1546898,
+      "longitude": -122.2562714,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Tillicum Community Center Drop Box",
+        "line1": "14916 Washington Ave SW",
+        "city": "Lakewood",
+        "state": "WA",
+        "zip": "98498"
+      },
+      "notes": "Drop Box",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1235123,
+      "longitude": -122.5541229,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "South Hill Library Drop Box",
+        "line1": "15420 Meridian E",
+        "city": "Puyallup",
+        "state": "WA",
+        "zip": "98375"
+      },
+      "notes": "Drop Box\t. Located at the exit of the book drop drive-thru.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1160393,
+      "longitude": -122.2943497,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Bonney Lake Public Safety Building Drop Box",
+        "line1": "18409 Veterans Memorial Dr E",
+        "city": "Bonney Lake",
+        "state": "WA",
+        "zip": "98391"
+      },
+      "notes": "Stand-alone box in the parking lot to the west of the Bonney Lake Public Safety Building.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1779213,
+      "longitude": -122.1831512,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Bonney Lake South Park & Ride Drop Box",
+        "line1": "184th Ave E & Sky Island Dr E",
+        "city": "Bonney Lake",
+        "state": "WA",
+        "zip": "98391"
+      },
+      "notes": "Drop Box. Located near the disabled parking.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1739502,
+      "longitude": -122.1859665,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Graham Fire & Rescue Drop Box",
+        "line1": "10012 187th Street E",
+        "city": "Puyallup",
+        "state": "WA",
+        "zip": "98375"
+      },
+      "notes": "Drop Box",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.0859528,
+      "longitude": -122.2962189,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Orting Valley Fire & Rescue Drop Box",
+        "line1": "401 Washington Ave SE",
+        "city": "Orting",
+        "state": "WA",
+        "zip": "98360"
+      },
+      "notes": "Drop Box",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.0952988,
+      "longitude": -122.2002945,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Roy City Hall Drop Box",
+        "line1": "216 McNaught Rd S",
+        "city": "Roy",
+        "state": "WA",
+        "zip": "98580"
+      },
+      "notes": "Drop Box",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.0028419,
+      "longitude": -122.5432281,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Wilkeson Town Hall Drop Box",
+        "line1": "540 Church St",
+        "city": "Wilkeson",
+        "state": "WA",
+        "zip": "98396"
+      },
+      "notes": "Drop Box",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 47.1041489,
+      "longitude": -122.0459824,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Carbonado Town Hall Drop Box",
+        "line1": "250 Coal Ave",
+        "city": "Carbonado",
+        "state": "WA",
+        "zip": "98323"
+      },
+      "notes": "Drop Box. This is a pedestrian only box. Located at the Post Office.",
+      "pollingHours": "Open 24/7 18 days before Election Day.",
+      "latitude": 47.0794296,
+      "longitude": -122.0528564,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Barneys Corner Drop Box",
+        "line1": "40512 Meridian E",
+        "city": "Eatonville",
+        "state": "WA",
+        "zip": "98328"
+      },
+      "notes": "Drop Box. Box is located between the store and the police substation.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 46.8888435,
+      "longitude": -122.3018417,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Eatonville Town Hall Drop Box",
+        "line1": "201 Center St W",
+        "city": "Eatonville",
+        "state": "WA",
+        "zip": "98328"
+      },
+      "notes": "Drop Box",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 46.8671684,
+      "longitude": -122.2682648,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Elbe Drop Box",
+        "line1": "54102 181st Avenue Ct E",
+        "city": "Elbe",
+        "state": "WA",
+        "zip": "98330"
+      },
+      "notes": "Drop Box. Box is located next to the lahar station across from the Fire Department.",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 46.7659416,
+      "longitude": -122.1933365,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Ashford County Park Drop Box",
+        "line1": "29801 SR 706",
+        "city": "Ashford",
+        "state": "WA",
+        "zip": "98304"
+      },
+      "notes": "Drop Box",
+      "pollingHours": "Open 24/7 18 days before Election Day",
+      "latitude": 46.7602997,
+      "longitude": -122.0399704,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "contests": [
+    {
+      "type": "ballot-measure",
+      "electorateSpecifications": "all registered voters at least 18 years of age as of Feb 13, 2024",
+      "ballotTitle": "TACOMA SCHOOL DISTRICT NO. 10: PROPOSITION NO. 1",
+      "district": {
+        "name": "TACOMA SCHOOL DISTRICT NO. 10",
+        "scope": "schoolBoard"
+      },
+      "ballotPlacement": "2",
+      "referendumTitle": "TACOMA SCHOOL DISTRICT NO. 10: PROPOSITION NO. 1",
+      "referendumSubtitle": "Proposition No. 1",
+      "referendumUrl": "https://voter.votewa.gov/GenericVoterGuide.aspx?e=885#/measure/6206",
+      "referendumBrief": "Proposition 1 authorizes the issuance of bonds to improve learning and teaching environments that support student achievement at nearly all neighborhood schools and will replace or renovate 11 aged and deteriorating schools including: DeLong, Point Defiance, Stanley, Whitman, and Franklin elementary schools; Hilltop Heritage Middle School; IDEA H.S.; Silas H.S.; Central Administration Building; Professional Development Center; and West End (formerly Skyline) swing site.\n\nProposition 1 will expand career and technical education opportunities and make basic needed improvements at neighborhood schools district-wide including: up-to-date classrooms; repair leaking and deteriorating roofs; quality food and nutrition service improvements; upgrade aging school boilers and elevators; exterior building improvements to prevent weather or mold damage; retrofit buildings for earthquake safety; improve playgrounds, playfields, athletic facilities and ADA accessibility for students, staff and visitors with disabilities; and repair heating/cooling, ventilation and plumbing to maintain clean air and safe water.\n\nProposition 1 will implement Basic Life Safety and security improvements at renovated or replacement schools including controlled school entry, security cameras, updated fire alarm, fire/sprinkler, and intercom systems used in emergencies; The $650,000,000 of general obligation bonds would mature within a maximum term of 25 years and be repaid from annual excess property tax levies.",
+      "referendumText": "The Board of Directors of Tacoma School District No. 10 adopted Resolution No. 2130, concerning neighborhood school improvements and safety upgrades districtwide. If approved, Proposition No. 1 would authorize the District to: replace or renovate eleven aging neighborhood schools; make districtwide K-12 classroom and learning environment improvements; repair deteriorating roofs; implement health, security and seismic upgrades; improve ADA accessibility, playgrounds/athletic facilities; repair plumbing/HVAC systems for clean water and safe air; make other capital improvements; issue $650,000,000 of general obligation bonds maturing within 25 years; and levy annual excess property taxes to repay the bonds, all as provided in Resolution No. 2130.  Should Proposition No. 1 be:",
+      "referendumProStatement": "ARGUMENT FOR:\n\nRenew our Commitment to Every Child.  Proposition 1 is about helping every child succeed in Tacoma, regardless of background, with a quality education in the best possible classrooms and schools for teaching and learning. Proposition 1 makes basic improvements in nearly every neighborhood school, helping them last longer and saving money in the long run.\n\nNeighborhood School Improvements across Tacoma. Proposition 1 renovates or replaces 11 deteriorating schools and makes needed improvements districtwide: repairs leaky roofs; ADA upgrades; expands career/technical education facilities; improves food quality and services; exterior building improvements, prevents weather mold damage; plumbing HVAC upgrades to maintain clean air and safe water. \n\nSafety, Health, Security in all Schools. Proposition 1 builds safe and secure schools including: 911 emergency communications; controlled school entry; alarm systems; earthquake safety; playgrounds and athletic facility improvements. If approved, the increased cost to the average Tacoma homeowner would be $7.53/month.\n\nVote Yes - Endorsements include Chamber of Commerce; Pierce County Labor; PTA; Foundation for Tacoma Students; Realtors; Kiwanis; Greater Tacoma Community Foundation, Metro Parks.",
+      "referendumBallotResponses": [
+        "Approved",
+        "Rejected"
+      ],
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "state": [
+    {
+      "name": "Washington",
+      "electionAdministrationBody": {
+        "electionInfoUrl": "https://www.sos.wa.gov/elections/",
+        "electionRegistrationUrl": "https://voter.votewa.gov/",
+        "electionRegistrationConfirmationUrl": "https://voter.votewa.gov/",
+        "absenteeVotingInfoUrl": "https://voter.votewa.gov/",
+        "votingLocationFinderUrl": "https://voter.votewa.gov/",
+        "electionRulesUrl": "https://voter.votewa.gov/"
+      },
+      "local_jurisdiction": {
+        "name": "Pierce County",
+        "electionAdministrationBody": {
+          "electionInfoUrl": "http://piercecountywa.gov/328/Elections",
+          "electionRegistrationUrl": "https://voter.votewa.gov/",
+          "electionRegistrationConfirmationUrl": "https://voter.votewa.gov/",
+          "absenteeVotingInfoUrl": "https://voter.votewa.gov/",
+          "votingLocationFinderUrl": "https://voter.votewa.gov/",
+          "electionRulesUrl": "https://voter.votewa.gov/"
+        },
+        "sources": [
+          {
+            "name": "Voting Information Project",
+            "official": true
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "mailOnly": true,
+  "kind": "civicinfo#voterInfoResponse"
+}
