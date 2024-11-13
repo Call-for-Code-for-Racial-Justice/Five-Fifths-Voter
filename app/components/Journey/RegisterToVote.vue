@@ -79,7 +79,7 @@
         <div class="aspect-[4/3] w-full max-w-xl">
           <img
             class="h-full w-full object-cover"
-            src="@/assets/images/ebrace-vote-gif.gif"
+            src="@/assets/images/journey/embrace-vote.gif"
             alt=""
           />
         </div>

@@ -13,7 +13,7 @@ const usaState = computed(() => {
   return user.value?.info?.location?.region_code?.toLowerCase();
 });
 const candidates = useFetch("/api/candidateInfo", {
-  query: { date: "2024", state: usaState },
+  query: { date: "11-03-2026", state: usaState },
 });
 </script>
 

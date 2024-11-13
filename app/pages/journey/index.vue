@@ -14,7 +14,7 @@
           <cv-column :lg="5" :sm="2">
             <nav-card
               :title="$t('journeyPageRegisteredLabel')"
-              image-src="ebrace-vote-gif.gif"
+              image-src="journey/elderly-lady-glasses.jpg"
               to="/journey/register"
               :checked="isUserRegistered()"
             />
@@ -22,7 +22,7 @@
           <cv-column :lg="5" :sm="2">
             <nav-card
               :title="$t('journeyPageBallotLabel')"
-              image-src="absentee-page-group-friends-laptop-image-1.jpg"
+              image-src="journey/absentee-page-group-friends-laptop.jpg"
               to="/journey/mailInBallot"
               :checked="isUserRequestedBallot()"
             />
@@ -37,7 +37,7 @@
           <cv-column :lg="0" :sm="2">
             <nav-card
               :title="$t('journeyPageVoteNowLabel')"
-              image-src="landing-page-grandpa-grandson-image-2.jpeg"
+              image-src="journey/grandpa-grandson.jpeg"
               to="/journey/voteInPerson"
             />
           </cv-column>
@@ -47,7 +47,7 @@
           <cv-column :lg="5" :sm="0">
             <nav-card
               :title="$t('journeyPageVoteNowLabel')"
-              image-src="landing-page-grandpa-grandson-image-2.jpeg"
+              image-src="journey/grandpa-grandson.jpeg"
               to="/journey/voteInPerson"
             />
           </cv-column>

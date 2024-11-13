@@ -77,7 +77,7 @@ const headlines = computed(() => {
     "Days until the/2024/Presidential Election",
   ).split("/");
 });
-const election = ref("20241105T050000"); // Tuesday, November 5, 2024 7:00:00 AM GMT-05:00
+const election = ref("20261103T050000"); // Tuesday, November 3, 2026 7:00:00 AM GMT-05:00
 const days = ref(432);
 const hours = ref("00");
 const minutes = ref("00");
