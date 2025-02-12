@@ -12,4 +12,15 @@ services:
       - COUCH_DB=local_metrics
     ports:
       - 6143:5984
-
+  ibmid:
+    image: quay.io/keycloak/keycloak:latest
+    command: start-dev --import-realm
+    restart: always
+    volumes:
+      # https://github.com/vbhayden/keycloak-federation-examples/blob/master/keycloak/keycloak-config/realms/example-realm.json
+      - ./ibm-id:/opt/keycloak/data/import${z}
+    environment:
+      - KC_BOOTSTRAP_ADMIN_USERNAME=admin
+      - KC_BOOTSTRAP_ADMIN_PASSWORD=change_me
+    ports:
+      - "8080:8080"

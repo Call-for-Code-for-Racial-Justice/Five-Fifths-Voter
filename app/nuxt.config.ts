@@ -2,9 +2,26 @@
 export default defineNuxtConfig({
   telemetry: true,
   devtools: { enabled: true },
+
   devServer: {
     port: 4007,
   },
+  auth: {
+    // Override with AUTH_ORIGIN environment variable in production
+    // https://auth.sidebase.io/guide/application-side/configuration#originenvkey
+    baseURL: "http://localhost:4007/api/auth",
+    isEnabled: true,
+    provider: {
+      type: "authjs",
+      defaultProvider: process.env.AUTH_PROVIDER || "ibmid",
+    },
+    sessionRefresh: {
+      enablePeriodically: 1000 * 60 * 10, // 10 minutes
+      enableOnWindowFocus: true,
+    },
+    globalAppMiddleware: true, // enable to protect the entire app
+  },
+
   // TODO: revisit this for Carbon 11
   // Do not add Carbon anything here - it will cause loops and fail
   // css: ['@/assets/scss/theme.scss'],
@@ -24,10 +41,15 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
     "nuxt-eslint-globals",
+    "@sidebase/nuxt-auth",
   ],
+  runtimeConfig: {
+    authSecret: process.env.NUXT_AUTH_SECRET,
+  },
   routeRules: {
     "/api/**": { cors: false },
   },
+
   i18n: {
     locales: [
       {
@@ -84,4 +106,6 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     strategy: "no_prefix",
   },
+
+  compatibilityDate: "2025-02-12",
 });

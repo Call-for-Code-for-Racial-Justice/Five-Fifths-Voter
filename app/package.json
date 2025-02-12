@@ -10,6 +10,26 @@
     "lint": "eslint --ext .vue,.js .",
     "prepare": "cd .. && husky app/.husky"
   },
+  "dependencies": {
+    "@carbon/icons-vue": "^10.96.1",
+    "@carbon/themes": "^10.55.3",
+    "@carbon/vue": "^3.0.20",
+    "@googlemaps/js-api-loader": "^1.16.6",
+    "@nuxt/kit": "^3.10.2",
+    "@nuxtjs/i18n": "8.1.1",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@pinia/nuxt": "^0.5.1",
+    "@sidebase/nuxt-auth": "^0.10.0",
+    "actual": "^0.4.0",
+    "ibm-cloud-sdk-core": "^5.1.2",
+    "lodash": "^4.17.21",
+    "luxon": "^3.4.4",
+    "markdown-it": "^14.0.0",
+    "nano": "^10.1.4",
+    "nuxt": "^3.13.2",
+    "pinia": "^2.1.7",
+    "winston": "^3.11.0"
+  },
   "devDependencies": {
     "@nuxt/devtools": "^1.0.8",
     "@types/node": "^18.18.8",
@@ -26,24 +46,5 @@
     "prettier-plugin-merge": "^0.6.0",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "sass": "^1.71.1"
-  },
-  "dependencies": {
-    "@carbon/icons-vue": "^10.96.1",
-    "@carbon/themes": "^10.55.3",
-    "@carbon/vue": "^3.0.20",
-    "@googlemaps/js-api-loader": "^1.16.6",
-    "@nuxt/kit": "^3.10.2",
-    "@nuxtjs/i18n": "8.1.1",
-    "@nuxtjs/tailwindcss": "^6.11.4",
-    "@pinia/nuxt": "^0.5.1",
-    "actual": "^0.4.0",
-    "ibm-cloud-sdk-core": "^5.0.2",
-    "lodash": "^4.17.21",
-    "luxon": "^3.4.4",
-    "markdown-it": "^14.0.0",
-    "nano": "^10.1.4",
-    "nuxt": "^3.13.2",
-    "pinia": "^2.1.7",
-    "winston": "^3.11.0"
   }
 }

@@ -1,0 +1,10 @@
+cypress
+.husky
+.idea
+.env.example
+docs
+.dockerignore
+Dockerfile
+LICENSE
+README.md
+cypress.config.mjs
