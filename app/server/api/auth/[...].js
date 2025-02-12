@@ -27,12 +27,6 @@ const runtimeConfig = useRuntimeConfig();
 // or locally
 // http://localhost:4507/api/auth/callback/ibmid
 
-console.warn({
-  name: DefaultProvider.name,
-  secret: runtimeConfig.authSecret.slice(0, 3) + "...",
-  clientId: process.env.AUTH_CLIENT_ID,
-  clientSecret: process.env.AUTH_CLIENT_SECRET.slice(0, 3) + "...",
-});
 export default NuxtAuthHandler({
   // A secret string you define, to ensure correct encryption - NUXT_AUTH_SECRET required in production
   secret: runtimeConfig.authSecret,
