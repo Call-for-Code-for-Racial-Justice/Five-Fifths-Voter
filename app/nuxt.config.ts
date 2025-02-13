@@ -19,7 +19,7 @@ export default defineNuxtConfig({
       enablePeriodically: 1000 * 60 * 10, // 10 minutes
       enableOnWindowFocus: true,
     },
-    globalAppMiddleware: true, // enable to protect the entire app
+    globalAppMiddleware: false, // enable to protect the entire app
   },
 
   // TODO: revisit this for Carbon 11
