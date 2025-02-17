@@ -47,8 +47,7 @@
               :hide-label="disabledAddress"
               :placeholder="placeholder"
               :disabled="disabledAddress"
-            >
-            </cv-text-input>
+            />
           </div>
           <cv-button
             class="!text-carbon-gray-90"
@@ -69,7 +68,7 @@
             class="h-full w-full object-cover"
             src="@/assets/images/landing-page-grandpa-grandson-image-2.jpeg"
             alt=""
-          />
+          >
         </div>
       </cv-column>
     </cv-row>
@@ -221,7 +220,7 @@ const normalizedAddress = computed(() => {
   } else return "";
 });
 watch(normalizedAddress, () => {
-  if (normalizedAddress) {
+  if (normalizedAddress.value) {
     addressValue.value = normalizedAddress.value;
     setVotingAddress(normalizedAddress.value);
   }

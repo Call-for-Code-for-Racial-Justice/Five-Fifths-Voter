@@ -8,7 +8,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "local:e2e": "cypress run --e2e",
-    "lint": "eslint --ext .vue,.js .",
+    "lint": "eslint",
     "prepare": "cd .. && husky app/.husky"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "@carbon/themes": "^10.55.3",
     "@carbon/vue": "^3.0.24",
     "@googlemaps/js-api-loader": "^1.16.6",
+    "@nuxt/eslint": "^1.0.1",
     "@nuxt/kit": "^3.10.2",
     "@nuxtjs/i18n": "8.1.1",
     "@nuxtjs/tailwindcss": "^6.11.4",
@@ -36,17 +37,9 @@
     "@types/node": "^18.18.8",
     "carbon-components": "^10.58.15",
     "cypress": "^14.0.3",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier-vue": "^5.0.0",
-    "eslint-plugin-vue": "^9.21.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.10",
     "nuxt-eslint-globals": "^1.0.5",
-    "prettier": "^3.2.5",
-    "prettier-plugin-classnames": "^0.6.1",
-    "prettier-plugin-merge": "^0.6.0",
-    "prettier-plugin-tailwindcss": "^0.5.11",
     "sass": "^1.71.1"
   }
 }

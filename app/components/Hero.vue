@@ -5,10 +5,10 @@
 </template>
 
 <script setup>
+import actual from "actual";
 defineOptions({
   name: "HeroBlock",
 });
-import { default as actual } from "actual";
 
 const props = defineProps({
   heightReserve: { type: Number, default: 320 },

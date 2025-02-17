@@ -44,9 +44,6 @@
 </template>
 
 <script setup>
-defineOptions({
-  name: "JourneyLocation",
-});
 import { Map32 as MapIcon, ChevronDown16 as Chevron } from "@carbon/icons-vue";
 
 const props = defineProps({

@@ -91,7 +91,7 @@ export const tooLate = (dateStr) => {
   try {
     const dt = DateTime.fromFormat(dateStr, "MM/dd/yy");
     return DateTime.now().toMillis() > dt.toMillis();
-  } catch (e) {
+  } catch {
     return false;
   }
 };
@@ -106,7 +106,7 @@ export const tooLateIso = (dateStr) => {
     const dt = DateTime.fromISO(dateStr);
     const now = base || DateTime.now();
     return now.toMillis() > dt.toMillis();
-  } catch (e) {
+  } catch {
     return false;
   }
 };

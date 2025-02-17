@@ -31,9 +31,6 @@
 </template>
 
 <script setup>
-defineOptions({
-  name: "MainNav",
-});
 import {
   ArrowDown32 as ArrowDown,
   ArrowUp32 as ArrowUp,

@@ -7,11 +7,11 @@
           <div class="page__subtitle">{{ $t("whyVotePageSubTitle") }}</div>
           <p class="aside__paragraph">
             {{ $t("whyVotePageParagraph_1") }}
-            <br /><br />
+            <br ><br >
             {{ $t("whyVotePageParagraph_2") }}
-            <br /><br />
+            <br ><br >
             {{ $t("whyVotePageParagraph_3", ["Five Fifths Voter"]) }}
-            <br /><br />
+            <br ><br >
             <MarkDown :content="$t('whyVotePageQuote')" />
           </p>
         </cv-column>
@@ -20,7 +20,7 @@
             class="side-image"
             alt=""
             src="../../assets/images/why-vote-page-father-daughter-image-1.jpg"
-          />
+          >
         </cv-column>
       </cv-row>
     </cv-grid>

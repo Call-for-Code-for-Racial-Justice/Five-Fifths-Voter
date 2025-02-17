@@ -61,7 +61,7 @@
             class="side-image"
             alt=""
             src="../../assets/images/support-page-father-baby-image-1.jpg"
-          />
+          >
         </cv-column>
       </cv-row>
     </cv-grid>

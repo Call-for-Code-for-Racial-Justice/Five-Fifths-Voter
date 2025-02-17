@@ -10,7 +10,7 @@
       <div
         class="hidden h-full w-[20%] bg-[url(@/assets/images/oval-purple-left.svg)] bg-right
           bg-no-repeat md:block"
-      ></div>
+      />
       <div class="flex h-full items-center justify-items-center">
         <div
           class="flex h-[90%] flex-col items-center justify-around rounded-full bg-ff-purple-02"
@@ -36,7 +36,7 @@
       <div
         class="hidden h-full w-[20%] bg-[url(@/assets/images/oval-purple-right.svg)] bg-left
           bg-no-repeat md:block"
-      ></div>
+      />
     </section>
     <home-values-section />
   </div>

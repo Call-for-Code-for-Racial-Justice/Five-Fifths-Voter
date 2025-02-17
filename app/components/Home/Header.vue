@@ -5,7 +5,7 @@
       aria-label="header - menu"
       aria-controls="side-nav"
     />
-    <cv-skip-to-content href="#main-content"></cv-skip-to-content>
+    <cv-skip-to-content href="#main-content"/>
     <cv-header-name prefix="" @click="scrollTop()"> FiveFifths</cv-header-name>
     <cv-header-nav aria-label="Five Fifths Voter navigation">
       <cv-header-menu-item

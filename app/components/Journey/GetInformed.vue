@@ -31,7 +31,7 @@
             class="h-full w-full object-cover"
             src="@/assets/images/vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg"
             alt=""
-          />
+          >
         </div>
       </cv-column>
     </cv-row>

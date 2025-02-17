@@ -13,14 +13,14 @@
     </p>
     <cv-link v-if="electionInfoUrl" :href="electionInfoUrl" target="_blank">
       Election Info</cv-link
-    ><br />
+    ><br >
     <cv-link
       v-if="absenteeVotingInfoUrl"
       :href="absenteeVotingInfoUrl"
       target="_blank"
     >
       Get Absentee Ballot</cv-link
-    ><br />
+    ><br >
     <span v-if="!locationAvailable">
       {{ $t("voteEarlyNoLocationFound") }}
     </span>
@@ -34,7 +34,7 @@
       >
     </cv-select>
 
-    <span class="text-xs"><br />Powered by the Civic Information API</span>
+    <span class="text-xs"><br >Powered by the Civic Information API</span>
   </div>
 </template>
 
@@ -45,14 +45,14 @@ const hasVoterInfo = computed(() => !!voterInfo.info?.state);
 const voterState = computed(() => {
   try {
     return voterInfo.info.state[0].name;
-  } catch (error) {
+  } catch {
     return "";
   }
 });
 const stateBody = computed(() => {
   try {
     return voterInfo.info.state[0].electionAdministrationBody.name;
-  } catch (error) {
+  } catch {
     return "";
   }
 });
@@ -60,7 +60,7 @@ const stateBody = computed(() => {
 const electionInfoUrl = computed(() => {
   try {
     return voterInfo.info.state[0].electionAdministrationBody.electionInfoUrl;
-  } catch (error) {
+  } catch  {
     return "";
   }
 });
@@ -68,7 +68,7 @@ const absenteeVotingInfoUrl = computed(() => {
   try {
     return voterInfo.info.state[0].electionAdministrationBody
       .absenteeVotingInfoUrl;
-  } catch (error) {
+  } catch {
     return "";
   }
 });
@@ -87,7 +87,7 @@ const locationAvailable = computed(() => {
 const electionList = computed(() => {
   try {
     return voterInfo.info?.fivefifthsdata?.elections || [];
-  } catch (error) {
+  } catch  {
     return [];
   }
 });

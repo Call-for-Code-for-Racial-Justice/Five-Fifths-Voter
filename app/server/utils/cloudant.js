@@ -55,7 +55,6 @@ export async function retryHelper(fn, ignoreConflict = true) {
         logger.info(
           `cloudant: sleeping ${sleep.toFixed(1)} ms due to rate limit (remaining retries ${retry})`,
         );
-        // eslint-disable-next-line no-undef
         await new Promise((resolve) => setTimeout(resolve, sleep));
       } else if (ignoreConflict && reason.statusCode === 409) {
         return {};

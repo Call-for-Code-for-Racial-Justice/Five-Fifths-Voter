@@ -5,13 +5,13 @@
       aria-label="header - menu"
       aria-controls="side-nav"
     />
-    <cv-skip-to-content href="#main-content"></cv-skip-to-content>
+    <cv-skip-to-content href="#main-content"/>
     <cv-header-name to="/" prefix="">
       <img
         alt=""
         src="@/assets/images/FiveFifthsVoterLogo.png"
         class="h-full max-h-[32px] sm:max-h-[64px]"
-      />
+      >
       FiveFifths</cv-header-name
     >
     <cv-header-nav aria-label="Five Fifths Voter navigation">

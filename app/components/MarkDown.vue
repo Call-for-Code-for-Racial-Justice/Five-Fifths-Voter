@@ -1,12 +1,9 @@
 <template>
   <!--  eslint-disable-next-line vue/no-v-html-->
-  <div v-html="mdContent"></div>
+  <div v-html="mdContent"/>
 </template>
 
 <script setup>
-defineOptions({
-  name: "MarkdownBlock",
-});
 import MarkdownIt from "markdown-it";
 const md = new MarkdownIt();
 /**

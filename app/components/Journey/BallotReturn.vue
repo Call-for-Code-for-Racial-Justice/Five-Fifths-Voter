@@ -37,7 +37,7 @@
             class="h-full w-full object-cover object-[0_39%]"
             src="@/assets/images/ballot-return-image-1.jpg"
             alt=""
-          />
+          >
         </div>
       </cv-column>
     </cv-row>
@@ -50,7 +50,7 @@ import electionInfo from "@/assets/data/usa-2024.json";
 const { t } = useI18n();
 const user = useUser();
 const usaCode = computed(() => user.value.info?.location?.region_code);
-// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const registered = computed(() =>
   Boolean(user.value.info?.registered === "presidential-2024"),
 );

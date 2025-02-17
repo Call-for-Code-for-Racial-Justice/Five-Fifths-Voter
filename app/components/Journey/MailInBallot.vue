@@ -85,7 +85,7 @@
             class="h-full w-full object-cover"
             src="@/assets/images/absentee-page-group-friends-laptop-image-1.jpg"
             :alt="$t('absenteeImageAlt')"
-          />
+          >
         </div>
       </cv-column>
     </cv-row>

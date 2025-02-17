@@ -8,8 +8,8 @@
 </template>
 
 <script setup>
+import "@/assets/css/five-fifths-theme.css";
 const { locale } = useI18n();
-
 defineOptions({
   name: "DefaultLayout",
 });
@@ -18,7 +18,6 @@ useHead({
     lang: locale || "en",
   },
 });
-import "@/assets/css/five-fifths-theme.css";
 </script>
 
 <style lang="scss">

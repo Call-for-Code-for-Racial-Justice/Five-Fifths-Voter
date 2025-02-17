@@ -8,8 +8,7 @@
           :label="$t('journeyPageRegisteredLabel')"
           :checked="registered"
           @change="onRegistered"
-        >
-        </cv-checkbox>
+        />
         <!-- Check your registration -->
         <cv-link :inline="true" :href="checkRegLink" target="_blank"
           ><span>{{ $t("checkHere") }}</span></cv-link
@@ -81,7 +80,7 @@
             class="h-full w-full object-cover"
             src="@/assets/images/journey/embrace-vote.gif"
             alt=""
-          />
+          >
         </div>
       </cv-column>
     </cv-row>

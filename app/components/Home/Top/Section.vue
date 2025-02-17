@@ -13,7 +13,7 @@
           alt="Five Fifths voter"
           src="@/assets/images/five-fifths-voter.svg"
           class="w-full"
-        />
+        >
       </div>
       <div class="w-full p-3 text-white md:p-14 lg:pt-0">
         <line-breaks

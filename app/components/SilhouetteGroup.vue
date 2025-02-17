@@ -1,6 +1,6 @@
 <template>
   <div class="silhouette-group">
-    <img src="@/assets/images/mask-group.svg" />
+    <img src="@/assets/images/mask-group.svg" >
   </div>
 </template>
 <script setup>
