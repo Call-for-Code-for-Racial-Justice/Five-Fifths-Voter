@@ -15,6 +15,9 @@ jobs:
           docker compose -f "compose.yaml" up -d
           docker compose logs --follow ibmid &
           sleep 45
+      - name: Setup sample environment
+        working-directory: ./app
+        run: cp .env.example .env
       - name: Cypress run
         uses: cypress-io/github-action@v6
         env:
