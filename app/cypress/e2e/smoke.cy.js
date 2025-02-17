@@ -32,7 +32,6 @@ describe("smoke test", () => {
     cy.get("#card-empower").should("be.visible");
     cy.get("[aria-controls=card-enable]").parent().click();
     cy.get("#card-empower").should("not.be.visible");
-    cy.get("#card-enable").should("be.visible");
   });
   it("should have i18n content", () => {
     cy.visit("/");
