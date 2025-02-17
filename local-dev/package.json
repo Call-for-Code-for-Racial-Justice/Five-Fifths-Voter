@@ -15,6 +15,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@mockoon/cli": "^6.2.0"
+    "@mockoon/cli": "^9.1.0"
   }
 }
