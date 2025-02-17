@@ -20,7 +20,7 @@
       <button
         class="relative"
         :aria-expanded="expanded"
-        :aria-controls="`id-${name}`"
+        :aria-controls="id"
         tabindex="1"
         :aria-label="name"
       >
@@ -35,7 +35,7 @@
       </button>
     </div>
     <div
-      :id="`id-${name}`"
+      :id="id"
       class="invisible h-auto max-h-0 items-center opacity-0 transition-all
         group-[.is-expanded]:visible group-[.is-expanded]:max-h-screen
         group-[.is-expanded]:opacity-100 group-[.is-expanded]:duration-1000
@@ -99,14 +99,12 @@ import {
   Add20 as ExpandIcon,
   Subtract20 as CollapseIcon,
 } from "@carbon/icons-vue";
-defineOptions({
-  name: "HomeValuesCard",
-});
 const props = defineProps({
   name: { type: String, required: true },
   main: { type: String, required: true },
   quote: { type: String, required: true },
   author: { type: String, required: true },
+  id: { type: String, required: true },
   image: { type: String, default: "empower" },
   expand: { type: Boolean, default: false },
 });

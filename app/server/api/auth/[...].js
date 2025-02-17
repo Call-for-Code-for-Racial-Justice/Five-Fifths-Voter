@@ -11,7 +11,7 @@ import MockIdProvider from "@/server/utils/mockid";
 import { NuxtAuthHandler } from "#auth";
 
 let DefaultProvider;
-if (process.env.AUTH_PROVIDER == "ibmid") DefaultProvider = IBMidProvider;
+if (process.env.AUTH_PROVIDER === "ibmid") DefaultProvider = IBMidProvider;
 else if (process.env.AUTH_PROVIDER === "w3id") DefaultProvider = W3idProvider;
 else if (process.env.AUTH_PROVIDER === "github")
   DefaultProvider = GithubProvider.default;

@@ -24,6 +24,7 @@
             {{ $t("landingPageMission") }}
           </div>
           <button
+            id="mission-journey-button"
             class="bg-ff-purple-01 p-3 text-2xl text-white"
             @click="navigateTo('/journey')"
           >

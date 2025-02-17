@@ -6,6 +6,7 @@
       </h1>
       <div class="m-2 max-w-[1300px] space-y-2">
         <home-values-card
+          id="card-educate"
           :name="$t('landingPageEdu')"
           image="educate"
           :main="$t('landingPageEduDesc', ['Five Fifths Voter'])"
@@ -14,6 +15,7 @@
           :expand="true"
         />
         <home-values-card
+          id="card-empower"
           :name="$t('landingPageEmpower')"
           image="empower"
           :main="$t('landingPageEmpowerDesc', ['Five Fifths Voter'])"
@@ -21,6 +23,7 @@
           author="Charlotte Brontë"
         />
         <home-values-card
+          id="card-enable"
           :name="$t('landingPageEnable')"
           image="enable"
           :main="$t('landingPageEnableDesc', ['Five Fifths Voter'])"

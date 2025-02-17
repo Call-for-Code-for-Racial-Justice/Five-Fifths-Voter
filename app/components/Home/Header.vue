@@ -1,6 +1,7 @@
 <template>
   <cv-header class="!h-[2rem] !bg-ff-purple-01">
     <cv-header-menu-button
+      id="ff-header-menu"
       aria-label="header - menu"
       aria-controls="side-nav"
     />
@@ -8,6 +9,7 @@
     <cv-header-name prefix="" @click="scrollTop()"> FiveFifths</cv-header-name>
     <cv-header-nav aria-label="Five Fifths Voter navigation">
       <cv-header-menu-item
+        id="header-menu-our-mission"
         :data-pos="ourMissionPosition"
         class="data-[pos=here]:font-extrabold"
         @click="scrollToId('our-mission')"
@@ -19,11 +21,17 @@
             data-[pos=here]:opacity-0"
         />
       </cv-header-menu-item>
-      <cv-header-menu-item to="/journey" :active="activeJourney">
+
+      <cv-header-menu-item
+        id="header-menu-journey"
+        to="/journey"
+        :active="activeJourney"
+      >
         {{ $t("appHeaderVoterJourney") }}
         <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
       <cv-header-menu-item
+        id="header-menu-our-values"
         :data-pos="ourValuesPosition"
         class="data-[pos=here]:font-extrabold"
         @click="scrollToId('our-values')"
@@ -35,11 +43,19 @@
             data-[pos=here]:opacity-0"
         />
       </cv-header-menu-item>
-      <cv-header-menu-item :active="activeVoterSupport" to="/voterSupport">
+      <cv-header-menu-item
+        id="header-menu-support"
+        :active="activeVoterSupport"
+        to="/voterSupport"
+      >
         {{ $t("appHeaderVoterSupport") }}
         <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
-      <cv-header-menu-item :active="activeWhyVote" to="/whyVote">
+      <cv-header-menu-item
+        id="header-menu-why"
+        :active="activeWhyVote"
+        to="/whyVote"
+      >
         {{ $t("appHeaderWhyVote") }} <arrow-up-right class="inline-block" />
       </cv-header-menu-item>
     </cv-header-nav>
@@ -61,6 +77,7 @@
         <git-hub class="text-carbon-gray-30" />
       </cv-link>
       <cv-header-global-action
+        id="header-language-button"
         :aria-label="$t('ariaLanguageSetting')"
         aria-controls="language-panel"
         :label="$t('ariaLanguageSetting')"
@@ -82,11 +99,14 @@
         aria-label="Side navigation for mobile devices"
       >
         <cv-side-nav-items>
-          <cv-side-nav-link @click="scrollTop()">
+          <cv-side-nav-link id="side-nav-home" @click="scrollTop()">
             <template #nav-icon><home-icon /></template>
             {{ $t("appHeaderHome") }}
           </cv-side-nav-link>
-          <cv-side-nav-link @click="scrollToId('our-mission')">
+          <cv-side-nav-link
+            id="side-nav-mission"
+            @click="scrollToId('our-mission')"
+          >
             <template #nav-icon
               ><arrow-down
                 :data-pos="ourMissionPosition"
@@ -95,11 +115,14 @@
             /></template>
             {{ $t("landingPageMain") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/journey">
+          <cv-side-nav-link id="side-nav-journey" to="/journey">
             <template #nav-icon><voter-journey-icon /></template>
             {{ $t("appHeaderVoterJourney") }}
           </cv-side-nav-link>
-          <cv-side-nav-link @click="scrollToId('our-values')">
+          <cv-side-nav-link
+            id="side-nav-values"
+            @click="scrollToId('our-values')"
+          >
             <template #nav-icon
               ><arrow-down
                 :data-pos="ourValuesPosition"
@@ -108,11 +131,11 @@
             /></template>
             {{ $t("appHeaderOurValues") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/voterSupport">
+          <cv-side-nav-link id="side-nav-support" to="/voterSupport">
             <template #nav-icon><voter-support-icon /></template>
             {{ $t("appHeaderVoterSupport") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/whyVote">
+          <cv-side-nav-link id="side-nav-why" to="/whyVote">
             <template #nav-icon><why-vote-icon /></template>
             {{ $t("appHeaderWhyVote") }}
           </cv-side-nav-link>
@@ -136,9 +159,6 @@ import {
 } from "@carbon/icons-vue";
 import lodash from "lodash";
 
-defineOptions({
-  name: "HomeHeader",
-});
 const route = useRoute();
 const activeVoterSupport = computed(() => route.name === "VoterSupport");
 const activeWhyVote = computed(() => route.name === "WhyVote");

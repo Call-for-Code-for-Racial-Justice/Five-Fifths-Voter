@@ -1,0 +1,29 @@
+name: End-to-end tests
+on: pull_request
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        browser: [ chrome, edge ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Start containers
+        working-directory: ./local-dev
+        run: |
+          docker compose -f "compose.yaml" up -d
+          docker compose logs --follow ibmid &
+          sleep 45
+      - name: Setup sample environment
+        working-directory: ./app
+        run: cp .env.example .env
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        env:
+          PORT: 4007
+        with:
+          working-directory: ./app
+          build: npm run build
+          start: npm run preview
+          browser: ${{ matrix.browser }}

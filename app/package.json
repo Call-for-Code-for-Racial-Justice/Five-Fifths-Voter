@@ -7,13 +7,14 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "local:e2e": "cypress run --e2e",
     "lint": "eslint --ext .vue,.js .",
     "prepare": "cd .. && husky app/.husky"
   },
   "dependencies": {
     "@carbon/icons-vue": "^10.96.1",
     "@carbon/themes": "^10.55.3",
-    "@carbon/vue": "^3.0.20",
+    "@carbon/vue": "^3.0.24",
     "@googlemaps/js-api-loader": "^1.16.6",
     "@nuxt/kit": "^3.10.2",
     "@nuxtjs/i18n": "8.1.1",
@@ -34,6 +35,7 @@
     "@nuxt/devtools": "^1.0.8",
     "@types/node": "^18.18.8",
     "carbon-components": "^10.58.15",
+    "cypress": "^14.0.3",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier-vue": "^5.0.0",
