@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  telemetry: true,
+  telemetry: { enabled: true },
   devtools: { enabled: true },
 
   devServer: {
@@ -107,5 +107,5 @@ export default defineNuxtConfig({
     strategy: "no_prefix",
   },
 
-  compatibilityDate: "2025-02-12",
+  compatibilityDate: "2025-02-13",
 });

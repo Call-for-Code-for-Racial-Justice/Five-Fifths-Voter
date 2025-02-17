@@ -15,25 +15,28 @@
       FiveFifths</cv-header-name
     >
     <cv-header-nav aria-label="Five Fifths Voter navigation">
-      <cv-header-menu-item to="/#our-mission">
+      <cv-header-menu-item id="header-menu-our-mission" to="/#our-mission">
         {{ $t("landingPageMain") }}
       </cv-header-menu-item>
       <cv-header-menu-item
+        id="header-menu-journey"
         to="/journey"
         :class="{ '!bg-ff-purple-02': activeJourney }"
       >
         {{ $t("appHeaderVoterJourney") }}
       </cv-header-menu-item>
-      <cv-header-menu-item to="/#our-values">
+      <cv-header-menu-item id="header-menu-our-values" to="/#our-values">
         {{ $t("appHeaderOurValues") }}
       </cv-header-menu-item>
       <cv-header-menu-item
+        id="header-menu-support"
         :class="{ '!bg-ff-purple-02': activeVoterSupport }"
         to="/voterSupport"
       >
         {{ $t("appHeaderVoterSupport") }}
       </cv-header-menu-item>
       <cv-header-menu-item
+        id="header-menu-why"
         :class="{ '!bg-ff-purple-02': activeWhyVote }"
         to="/whyVote"
       >
@@ -58,6 +61,7 @@
         <git-hub class="text-carbon-gray-30" />
       </cv-link>
       <cv-header-global-action
+        id="header-language-button"
         :aria-label="$t('ariaLanguageSetting')"
         aria-controls="language-panel"
         :label="$t('ariaLanguageSetting')"

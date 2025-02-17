@@ -1,0 +1,21 @@
+name: Test PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+      - name: Install dependencies
+        working-directory: ./app
+        run: npm install
+      - name: lint
+        run: npm run lint

@@ -1,0 +1,20 @@
+name: End-to-end tests
+on: pull_request
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        browser: [ chrome, edge ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        env:
+          PORT: 4007
+        with:
+          working-directory: ./app
+          build: npm run build
+          start: npm run preview
+          browser: ${{ matrix.browser }}
