@@ -9,6 +9,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Start containers
+        working-directory: ./local-dev
+        run: |
+          docker compose -f "compose.yml" up -d
+          docker compose logs --follow ibmid &
+          sleep 45
       - name: Cypress run
         uses: cypress-io/github-action@v6
         env:

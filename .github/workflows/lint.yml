@@ -18,4 +18,5 @@ jobs:
         working-directory: ./app
         run: npm install
       - name: lint
+        working-directory: ./app
         run: npm run lint
