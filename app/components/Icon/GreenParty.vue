@@ -1,3 +1,8 @@
+<script setup>
+defineProps({
+  width: { type: Number, default: 32 },
+});
+</script>
 <template>
   <svg
     viewBox="0 0 132.2916 132.2917"
@@ -14,8 +19,3 @@
     </g>
   </svg>
 </template>
-<script setup>
-defineProps({
-  width: { type: Number, default: 32 },
-});
-</script>

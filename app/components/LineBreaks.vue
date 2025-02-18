@@ -1,14 +1,3 @@
-<template>
-  <div>
-    <div
-      v-for="(line, index) in lines"
-      :key="`${index}-${line}`"
-    >
-      {{ line }}
-    </div>
-  </div>
-</template>
-
 <script setup>
 const props = defineProps({
   content: { type: String, default: "" },
@@ -27,5 +16,16 @@ const lines = computed(() => {
   return augmented;
 });
 </script>
+
+<template>
+  <div>
+    <div
+      v-for="(line, index) in lines"
+      :key="`${index}-${line}`"
+    >
+      {{ line }}
+    </div>
+  </div>
+</template>
 
 <style scoped lang="scss"></style>

@@ -1,3 +1,12 @@
+<script setup>
+import { isUserRegistered, isUserRequestedBallot } from "~/composables/user";
+
+const user = useUser();
+onMounted(() => {
+  loadApproxLocation();
+});
+</script>
+
 <template>
   <div class="mt-32 flex flex-row items-center justify-center">
     <div>
@@ -82,15 +91,6 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import { isUserRegistered, isUserRequestedBallot } from "~/composables/user";
-
-const user = useUser();
-onMounted(() => {
-  loadApproxLocation();
-});
-</script>
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

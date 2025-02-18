@@ -1,36 +1,3 @@
-<template>
-  <div>
-    <ClientOnly>
-      <the-header />
-      <sub-nav
-        :current="currentSub"
-        :sub-pages="subPages"
-        prefix="/journey"
-      />
-      <main
-        id="#main-content"
-        class="main-content with-header"
-      >
-        <div class="current-location mt-32">
-          {{
-            $t("journeyPageElectionState", {
-              state: user?.info?.location?.region,
-            })
-          }}
-        </div>
-        <journey-select-state />
-        <cv-grid class="mt-0 lg:-mt-12">
-          <cv-row>
-            <cv-column :lg="16">
-              <slot />
-            </cv-column>
-          </cv-row>
-        </cv-grid>
-      </main>
-    </ClientOnly>
-  </div>
-</template>
-
 <script setup>
 import "@/assets/css/five-fifths-theme.css";
 const { locale } = useI18n();
@@ -73,6 +40,39 @@ const currentSub = computed(() => {
   return route.path.split("/").slice(-1)[0];
 });
 </script>
+
+<template>
+  <div>
+    <ClientOnly>
+      <the-header />
+      <sub-nav
+        :current="currentSub"
+        :sub-pages="subPages"
+        prefix="/journey"
+      />
+      <main
+        id="#main-content"
+        class="main-content with-header"
+      >
+        <div class="current-location mt-32">
+          {{
+            $t("journeyPageElectionState", {
+              state: user?.info?.location?.region,
+            })
+          }}
+        </div>
+        <journey-select-state />
+        <cv-grid class="mt-0 lg:-mt-12">
+          <cv-row>
+            <cv-column :lg="16">
+              <slot />
+            </cv-column>
+          </cv-row>
+        </cv-grid>
+      </main>
+    </ClientOnly>
+  </div>
+</template>
 
 <style lang="scss">
 @import "@/assets/scss/theme";

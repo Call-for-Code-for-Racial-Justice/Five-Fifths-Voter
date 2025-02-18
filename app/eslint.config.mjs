@@ -17,6 +17,16 @@ export default withNuxt([
       "@stylistic/semi": ["error", "always"],
       "@stylistic/quotes": ["error", "double"],
       "operator-linebreak": ["error", "none"],
+      "vue/component-tags-order": [
+        "warn",
+        {
+          order: [
+            "script",
+            "template",
+            "style",
+          ],
+        },
+      ],
     },
   },
 ]);

@@ -1,3 +1,12 @@
+<script setup>
+defineOptions({
+  name: "NavLines",
+});
+defineProps({
+  fill: { type: String, default: "currentColor" },
+});
+</script>
+
 <template>
   <svg
     width="677"
@@ -40,14 +49,5 @@
     />
   </svg>
 </template>
-
-<script setup>
-defineOptions({
-  name: "NavLines",
-});
-defineProps({
-  fill: { type: String, default: "currentColor" },
-});
-</script>
 
 <style scoped lang="scss"></style>

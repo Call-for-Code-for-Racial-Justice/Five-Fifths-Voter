@@ -1,3 +1,89 @@
+<script setup>
+import electionInfo from "@/assets/data/usa-2024.json";
+import {
+  isUserRequestedBallot,
+  setUserRequestedBallot,
+} from "~/composables/user";
+
+const { t } = useI18n();
+const user = useUser();
+const usaCode = computed(() => user.value.info?.location?.region_code);
+const requested = computed(() => isUserRequestedBallot());
+const info = computed(() => {
+  const code = usaCode.value?.toLowerCase() || "unknown";
+  return electionInfo[code] || { register: { territory: true } };
+});
+
+const requestLink = computed(() => {
+  const requestUrl = info.value?.mail_in?.request_link || "https://www.vote.org/absentee-ballot/";
+  return t("absenteeRequest", { url: requestUrl });
+});
+const moreLink = computed(() => {
+  const moreUrl = info.value?.mail_in?.more_link;
+  if (!moreUrl) return "";
+
+  return t("absenteeMoreInfo", { moreUrl: moreUrl });
+});
+const requestDeadline = computed(() => {
+  const dateStr = info.value?.mail_in?.request_deadline;
+  if (!dateStr) return "";
+  return t("absenteeRequestDeadline", {
+    date: niceDate(dateStr),
+    days: daysLeft(dateStr),
+  });
+});
+const returnDeadline = computed(() => {
+  const dateStr = info.value?.mail_in?.return_deadline;
+  if (!dateStr) return "";
+  return t("absenteeReturn", {
+    date: niceDate(dateStr),
+    days: daysLeft(dateStr),
+  });
+});
+const hasFaq = computed(() => {
+  const faq = info.value?.mail_in || {};
+  return (
+    "id_needed" in faq || "online" in faq || "dropoff" in faq || "any_reason" in faq || "without_notary" in faq
+  );
+});
+
+const idNeeded = computed(() => {
+  const faq = info.value?.mail_in || {};
+  return "id_needed" in faq;
+});
+
+const idExplainer = computed(() => {
+  const explainer = info.value?.mail_in?.id_explainer;
+  const idLink = info.value?.mail_in?.id_link || "https://www.ncsl.org/elections-and-campaigns/voter-id";
+  if (!explainer) return "";
+
+  return `\u21b3 ${explainer}[${t("absenteeMoreId")}](${idLink})`;
+});
+
+const dropoffExplainer = computed(() => {
+  const explainer = info.value?.mail_in?.dropoff_explainer;
+  if (!explainer) return "";
+
+  return `\u21b3 ${info.value.mail_in.dropoff_explainer}`;
+});
+
+const hasDropoff = computed(() => {
+  const faq = info.value?.mail_in || {};
+  return "dropoff" in faq;
+});
+
+const hasAnyReason = computed(() => {
+  const faq = info.value?.mail_in || {};
+  return "any_reason" in faq;
+});
+const hasNotary = computed(() => {
+  const faq = info.value?.mail_in || {};
+  return "without_notary" in faq;
+});
+
+const onRequested = val => setUserRequestedBallot(val);
+</script>
+
 <template>
   <div class="page__title">
     {{ $t("absenteeTitle") }}
@@ -120,92 +206,6 @@
     </cv-row>
   </cv-grid>
 </template>
-
-<script setup>
-import electionInfo from "@/assets/data/usa-2024.json";
-import {
-  isUserRequestedBallot,
-  setUserRequestedBallot,
-} from "~/composables/user";
-
-const { t } = useI18n();
-const user = useUser();
-const usaCode = computed(() => user.value.info?.location?.region_code);
-const requested = computed(() => isUserRequestedBallot());
-const info = computed(() => {
-  const code = usaCode.value?.toLowerCase() || "unknown";
-  return electionInfo[code] || { register: { territory: true } };
-});
-
-const requestLink = computed(() => {
-  const requestUrl = info.value?.mail_in?.request_link || "https://www.vote.org/absentee-ballot/";
-  return t("absenteeRequest", { url: requestUrl });
-});
-const moreLink = computed(() => {
-  const moreUrl = info.value?.mail_in?.more_link;
-  if (!moreUrl) return "";
-
-  return t("absenteeMoreInfo", { moreUrl: moreUrl });
-});
-const requestDeadline = computed(() => {
-  const dateStr = info.value?.mail_in?.request_deadline;
-  if (!dateStr) return "";
-  return t("absenteeRequestDeadline", {
-    date: niceDate(dateStr),
-    days: daysLeft(dateStr),
-  });
-});
-const returnDeadline = computed(() => {
-  const dateStr = info.value?.mail_in?.return_deadline;
-  if (!dateStr) return "";
-  return t("absenteeReturn", {
-    date: niceDate(dateStr),
-    days: daysLeft(dateStr),
-  });
-});
-const hasFaq = computed(() => {
-  const faq = info.value?.mail_in || {};
-  return (
-    "id_needed" in faq || "online" in faq || "dropoff" in faq || "any_reason" in faq || "without_notary" in faq
-  );
-});
-
-const idNeeded = computed(() => {
-  const faq = info.value?.mail_in || {};
-  return "id_needed" in faq;
-});
-
-const idExplainer = computed(() => {
-  const explainer = info.value?.mail_in?.id_explainer;
-  const idLink = info.value?.mail_in?.id_link || "https://www.ncsl.org/elections-and-campaigns/voter-id";
-  if (!explainer) return "";
-
-  return `\u21b3 ${explainer}[${t("absenteeMoreId")}](${idLink})`;
-});
-
-const dropoffExplainer = computed(() => {
-  const explainer = info.value?.mail_in?.dropoff_explainer;
-  if (!explainer) return "";
-
-  return `\u21b3 ${info.value.mail_in.dropoff_explainer}`;
-});
-
-const hasDropoff = computed(() => {
-  const faq = info.value?.mail_in || {};
-  return "dropoff" in faq;
-});
-
-const hasAnyReason = computed(() => {
-  const faq = info.value?.mail_in || {};
-  return "any_reason" in faq;
-});
-const hasNotary = computed(() => {
-  const faq = info.value?.mail_in || {};
-  return "without_notary" in faq;
-});
-
-const onRequested = val => setUserRequestedBallot(val);
-</script>
 <style scoped lang="scss">
 @import "@/assets/scss/theme";
 @import "@/assets/scss/pages";

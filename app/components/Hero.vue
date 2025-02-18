@@ -1,12 +1,3 @@
-<template>
-  <div
-    ref="el"
-    class="hero"
-  >
-    <slot>Add your content here</slot>
-  </div>
-</template>
-
 <script setup>
 import actual from "actual";
 defineOptions({
@@ -39,6 +30,15 @@ onMounted(() => {
 });
 onUnmounted(() => window.removeEventListener("resize", resize));
 </script>
+
+<template>
+  <div
+    ref="el"
+    class="hero"
+  >
+    <slot>Add your content here</slot>
+  </div>
+</template>
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

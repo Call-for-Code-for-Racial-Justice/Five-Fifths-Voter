@@ -1,3 +1,66 @@
+<script setup>
+import electionInfo from "@/assets/data/usa-2024.json";
+import { isUserRegistered, setUserRegistered } from "~/composables/user";
+import { loadApproxLocation } from "~/utils/user";
+
+const { t } = useI18n();
+
+const user = useUser();
+const usaCode = computed(() => user.value.info?.location?.region_code);
+const registered = computed(() => isUserRegistered());
+const info = computed(() => {
+  const code = usaCode.value?.toLowerCase() || "unknown";
+  return electionInfo[code] || { register: { territory: true } };
+});
+const checkRegLink = computed(() => {
+  return (
+    info.value?.register?.check_link || "https://www.vote.org/am-i-registered-to-vote/"
+  );
+});
+const registrationDeadline = computed(() => {
+  const dateStr = info.value?.register?.deadline_in_person;
+  if (!dateStr) return "";
+  return t("registrationDeadline", {
+    date: niceDate(dateStr),
+    days: daysLeft(dateStr),
+  });
+});
+const registerLinks = computed(() => {
+  const onlineUrl = info.value?.register?.online_link;
+  const mailLink = info.value?.register?.mail_link;
+  if (!onlineUrl && !mailLink) return "";
+
+  return t("registerLinks", {
+    onlineUrl,
+    mailLink,
+  });
+});
+const registerYouth = computed(() => {
+  return info.value?.register?.youth || t("registerYouthQ");
+});
+const registerYouthLink = computed(() => {
+  return (
+    info.value?.register?.youth_link || info.value?.register?.online_link || "https://www.ncsl.org/research/elections-and-campaigns/preregistration-for-young-voters.aspx"
+  );
+});
+const felonText = computed(() => {
+  return info.value?.register?.felon || t("registerFormerlyIncarcerated");
+});
+const felonLink = computed(() => {
+  return (
+    info.value?.register?.felon_link || "https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx"
+  );
+});
+const hasFaq = computed(() => {
+  const register = info.value?.register || {};
+  return "election_day" in register || "online" in register;
+});
+const onRegistered = val => setUserRegistered(val);
+onMounted(() => {
+  loadApproxLocation();
+});
+</script>
+
 <template>
   <div class="page__title">
     {{ $t("registerTitle") }}
@@ -115,69 +178,6 @@
     </cv-row>
   </cv-grid>
 </template>
-
-<script setup>
-import electionInfo from "@/assets/data/usa-2024.json";
-import { isUserRegistered, setUserRegistered } from "~/composables/user";
-import { loadApproxLocation } from "~/utils/user";
-
-const { t } = useI18n();
-
-const user = useUser();
-const usaCode = computed(() => user.value.info?.location?.region_code);
-const registered = computed(() => isUserRegistered());
-const info = computed(() => {
-  const code = usaCode.value?.toLowerCase() || "unknown";
-  return electionInfo[code] || { register: { territory: true } };
-});
-const checkRegLink = computed(() => {
-  return (
-    info.value?.register?.check_link || "https://www.vote.org/am-i-registered-to-vote/"
-  );
-});
-const registrationDeadline = computed(() => {
-  const dateStr = info.value?.register?.deadline_in_person;
-  if (!dateStr) return "";
-  return t("registrationDeadline", {
-    date: niceDate(dateStr),
-    days: daysLeft(dateStr),
-  });
-});
-const registerLinks = computed(() => {
-  const onlineUrl = info.value?.register?.online_link;
-  const mailLink = info.value?.register?.mail_link;
-  if (!onlineUrl && !mailLink) return "";
-
-  return t("registerLinks", {
-    onlineUrl,
-    mailLink,
-  });
-});
-const registerYouth = computed(() => {
-  return info.value?.register?.youth || t("registerYouthQ");
-});
-const registerYouthLink = computed(() => {
-  return (
-    info.value?.register?.youth_link || info.value?.register?.online_link || "https://www.ncsl.org/research/elections-and-campaigns/preregistration-for-young-voters.aspx"
-  );
-});
-const felonText = computed(() => {
-  return info.value?.register?.felon || t("registerFormerlyIncarcerated");
-});
-const felonLink = computed(() => {
-  return (
-    info.value?.register?.felon_link || "https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx"
-  );
-});
-const hasFaq = computed(() => {
-  const register = info.value?.register || {};
-  return "election_day" in register || "online" in register;
-});
-const onRegistered = val => setUserRegistered(val);
-onMounted(() => {
-  loadApproxLocation();
-});
-</script>
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

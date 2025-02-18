@@ -1,67 +1,70 @@
-<template>
-  <div class="page__title">
-    {{ $t("getInformedTitle") }}
-  </div>
-  <cv-grid
-    :full-width="true"
-    kind="condensed"
-  >
-    <cv-row>
-      <cv-column
-        :sm="4"
-        :lg="8"
-      >
-        <journey-territory-info
-          v-if="info.register.territory"
-          class="journey__info"
-        />
+<script setup>
+// TODO move these somewhere else
+/**
+ * @typedef {Object} candidateInfo
+ * @property {!string} name
+ * @property {!string} party
+ * @property {!string} candidateUrl
+ * @property {Array} channels
+ */
 
-        <!-- show core races for this state -->
-        <div
-          v-if="hasCoreRaces"
-          class="journey__info"
-        >
-          <span>{{ $t("getInformedTopContests") }}</span>
-          <mark-down
-            v-if="info.sample_ballot"
-            :content="info.sample_ballot"
-          />
-        </div>
+/**
+ * @typedef {Object} contestInfo
+ * @property {!string} office
+ * @property {!string} id
+ * @property {?Object} find_cong_district
+ * @property {Array<candidateInfo>} candidates
+ */
 
-        <div v-else>
-          <div class="text-2xl">
-            {{
-              $t("getInformedNextElection", {
-                date: niceIsoDate(electionStartDate),
-              })
-            }}
-            <mark-down
-              v-if="earlyVoting"
-              :content="earlyVoting"
-            />
-          </div>
-        </div>
-      </cv-column>
-      <cv-column
-        :sm="4"
-        :lg="8"
-      >
-        <div class="aspect-[4/3] w-full max-w-[128px]">
-          <img
-            class="size-full object-cover"
-            src="@/assets/images/vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg"
-            alt=""
-          >
-        </div>
-      </cv-column>
-    </cv-row>
-    <cv-row>
-      <cv-column>
-        <journey-candidates-by-state />
-      </cv-column>
-    </cv-row>
-  </cv-grid>
-</template>
+/**
+ * @typedef {Object} regionInfo
+ * @property {?boolean} territory
+ * @property {?string }region
+ * @property {?string} sample_ballot
+ * @property {Array} districts
+ * @property {Array<contestInfo>} core_races
+ */
+
+/**
+ * @typedef {Object<string,regionInfo>} electionInfo
+ */
+import electionInfo from "@/assets/data/usa-2024.json";
+// import Republican from '@/assets/icons/Republican';
+// import Democrat from '@/assets/icons/Democrat';
+// import Libertarian from '@/assets/icons/Libertarian';
+// import FindCong from './FindCong';
+// import {
+//   LogoFacebook32,
+//   LogoTwitter32,
+//   LogoYoutube32,
+//   LogoInstagram32,
+//   LogoLinkedin32,
+// } from '@carbon/icons-vue';
+const { t } = useI18n();
+const user = useUser();
+const usaCode = computed(() => user.value.info?.location?.region_code);
+const info = computed(() => {
+  const code = usaCode.value?.toLowerCase() || "unknown";
+  return electionInfo[code] || { register: { territory: true } };
+});
+const hasCoreRaces = computed(() => {
+  return info.value?.core_races?.length;
+});
+const electionStartDate = computed(() => {
+  return info.value.election_start || electionInfo.unknown.election_start;
+});
+const earlyVoting = computed(() => {
+  if (info.value?.early_voting?.start_date)
+    return t("voteEarlyStart", {
+      date: niceDate(info.value.early_voting.start_date),
+      days: daysLeft(info.value.early_voting.start_date),
+    });
+  return "";
+});
+// function niceIsoDate(dateStr) {
+//   return niceIsoDate(dateStr)
+// }
+</script>
 <!--          <cv-accordion class="candidate__accordion">-->
 <!--            <cv-accordion-item v-for="c in info.core_races" :key="c.id" :open="open === c.id">-->
 <!--              <template v-slot:title>{{ c.office }} </template>-->
@@ -169,73 +172,70 @@
 <!--  </MainContent>-->
 <!--</template>-->
 
-<script setup>
-// TODO move these somewhere else
-/**
- * @typedef {Object} candidateInfo
- * @property {!string} name
- * @property {!string} party
- * @property {!string} candidateUrl
- * @property {Array} channels
- */
+<template>
+  <div class="page__title">
+    {{ $t("getInformedTitle") }}
+  </div>
+  <cv-grid
+    :full-width="true"
+    kind="condensed"
+  >
+    <cv-row>
+      <cv-column
+        :sm="4"
+        :lg="8"
+      >
+        <journey-territory-info
+          v-if="info.register.territory"
+          class="journey__info"
+        />
 
-/**
- * @typedef {Object} contestInfo
- * @property {!string} office
- * @property {!string} id
- * @property {?Object} find_cong_district
- * @property {Array<candidateInfo>} candidates
- */
+        <!-- show core races for this state -->
+        <div
+          v-if="hasCoreRaces"
+          class="journey__info"
+        >
+          <span>{{ $t("getInformedTopContests") }}</span>
+          <mark-down
+            v-if="info.sample_ballot"
+            :content="info.sample_ballot"
+          />
+        </div>
 
-/**
- * @typedef {Object} regionInfo
- * @property {?boolean} territory
- * @property {?string }region
- * @property {?string} sample_ballot
- * @property {Array} districts
- * @property {Array<contestInfo>} core_races
- */
-
-/**
- * @typedef {Object<string,regionInfo>} electionInfo
- */
-import electionInfo from "@/assets/data/usa-2024.json";
-// import Republican from '@/assets/icons/Republican';
-// import Democrat from '@/assets/icons/Democrat';
-// import Libertarian from '@/assets/icons/Libertarian';
-// import FindCong from './FindCong';
-// import {
-//   LogoFacebook32,
-//   LogoTwitter32,
-//   LogoYoutube32,
-//   LogoInstagram32,
-//   LogoLinkedin32,
-// } from '@carbon/icons-vue';
-const { t } = useI18n();
-const user = useUser();
-const usaCode = computed(() => user.value.info?.location?.region_code);
-const info = computed(() => {
-  const code = usaCode.value?.toLowerCase() || "unknown";
-  return electionInfo[code] || { register: { territory: true } };
-});
-const hasCoreRaces = computed(() => {
-  return info.value?.core_races?.length;
-});
-const electionStartDate = computed(() => {
-  return info.value.election_start || electionInfo.unknown.election_start;
-});
-const earlyVoting = computed(() => {
-  if (info.value?.early_voting?.start_date)
-    return t("voteEarlyStart", {
-      date: niceDate(info.value.early_voting.start_date),
-      days: daysLeft(info.value.early_voting.start_date),
-    });
-  return "";
-});
-// function niceIsoDate(dateStr) {
-//   return niceIsoDate(dateStr)
-// }
-</script>
+        <div v-else>
+          <div class="text-2xl">
+            {{
+              $t("getInformedNextElection", {
+                date: niceIsoDate(electionStartDate),
+              })
+            }}
+            <mark-down
+              v-if="earlyVoting"
+              :content="earlyVoting"
+            />
+          </div>
+        </div>
+      </cv-column>
+      <cv-column
+        :sm="4"
+        :lg="8"
+      >
+        <div class="aspect-[4/3] w-full max-w-[128px]">
+          <img
+            class="size-full object-cover"
+            src="@/assets/images/vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg"
+            alt=""
+          >
+        </div>
+      </cv-column>
+    </cv-row>
+    <cv-row>
+      <cv-column>
+        <journey-candidates-by-state />
+      </cv-column>
+    </cv-row>
+  </cv-grid>
+</template>
 
 <style lang="scss">
 @import "@/assets/scss/theme";

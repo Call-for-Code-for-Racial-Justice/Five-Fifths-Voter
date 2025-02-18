@@ -1,3 +1,49 @@
+<script setup>
+import {
+  Home16 as HomeIcon,
+  Compass16 as VoterJourneyIcon,
+  HelpDesk16 as VoterSupportIcon,
+  Help16 as WhyVoteIcon,
+  ArrowDown16 as ArrowDown,
+  ArrowUpRight16 as ArrowUpRight,
+  LogoInstagram24 as Instagram,
+  LogoGithub24 as GitHub,
+  Language24 as LanguageSwitcher,
+} from "@carbon/icons-vue";
+import lodash from "lodash";
+
+const route = useRoute();
+const activeVoterSupport = computed(() => route.name === "VoterSupport");
+const activeWhyVote = computed(() => route.name === "WhyVote");
+const activeJourney = computed(() => route.name === "Journey");
+
+function scrollToId(id) {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  document.activeElement.blur();
+}
+function scrollTop() {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  document.activeElement.blur();
+}
+const ourValuesPosition = ref("down");
+const ourMissionPosition = ref("down");
+const onScroll = lodash.debounce(function () {
+  const ourValueEl = document.getElementById("our-values");
+  const valuesRect = ourValueEl.getBoundingClientRect();
+  if (Math.abs(valuesRect.top) < 150) ourValuesPosition.value = "here";
+  else if (valuesRect.top > 0) ourValuesPosition.value = "down";
+  else ourValuesPosition.value = "up";
+
+  const ourMissionEl = document.getElementById("our-mission");
+  const missionRect = ourMissionEl.getBoundingClientRect();
+  if (Math.abs(missionRect.top) < 150) ourMissionPosition.value = "here";
+  else if (missionRect.top > 0) ourMissionPosition.value = "down";
+  else ourMissionPosition.value = "up";
+}, 250);
+onMounted(() => addEventListener("scroll", onScroll));
+onBeforeUnmount(() => removeEventListener("scroll", onScroll));
+</script>
+
 <template>
   <cv-header class="!h-8 !bg-ff-purple-01">
     <cv-header-menu-button
@@ -171,52 +217,6 @@
     </template>
   </cv-header>
 </template>
-
-<script setup>
-import {
-  Home16 as HomeIcon,
-  Compass16 as VoterJourneyIcon,
-  HelpDesk16 as VoterSupportIcon,
-  Help16 as WhyVoteIcon,
-  ArrowDown16 as ArrowDown,
-  ArrowUpRight16 as ArrowUpRight,
-  LogoInstagram24 as Instagram,
-  LogoGithub24 as GitHub,
-  Language24 as LanguageSwitcher,
-} from "@carbon/icons-vue";
-import lodash from "lodash";
-
-const route = useRoute();
-const activeVoterSupport = computed(() => route.name === "VoterSupport");
-const activeWhyVote = computed(() => route.name === "WhyVote");
-const activeJourney = computed(() => route.name === "Journey");
-
-function scrollToId(id) {
-  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-  document.activeElement.blur();
-}
-function scrollTop() {
-  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  document.activeElement.blur();
-}
-const ourValuesPosition = ref("down");
-const ourMissionPosition = ref("down");
-const onScroll = lodash.debounce(function () {
-  const ourValueEl = document.getElementById("our-values");
-  const valuesRect = ourValueEl.getBoundingClientRect();
-  if (Math.abs(valuesRect.top) < 150) ourValuesPosition.value = "here";
-  else if (valuesRect.top > 0) ourValuesPosition.value = "down";
-  else ourValuesPosition.value = "up";
-
-  const ourMissionEl = document.getElementById("our-mission");
-  const missionRect = ourMissionEl.getBoundingClientRect();
-  if (Math.abs(missionRect.top) < 150) ourMissionPosition.value = "here";
-  else if (missionRect.top > 0) ourMissionPosition.value = "down";
-  else ourMissionPosition.value = "up";
-}, 250);
-onMounted(() => addEventListener("scroll", onScroll));
-onBeforeUnmount(() => removeEventListener("scroll", onScroll));
-</script>
 
 <style lang="scss">
 @import "@/assets/scss/theme";

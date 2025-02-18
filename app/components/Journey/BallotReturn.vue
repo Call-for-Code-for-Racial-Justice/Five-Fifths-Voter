@@ -1,3 +1,47 @@
+<script setup>
+import electionInfo from "@/assets/data/usa-2024.json";
+
+const { t } = useI18n();
+const user = useUser();
+const usaCode = computed(() => user.value.info?.location?.region_code);
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const registered = computed(() =>
+  Boolean(user.value.info?.registered === "presidential-2024"),
+);
+const info = computed(() => {
+  const code = usaCode.value?.toLowerCase() || "unknown";
+  return electionInfo[code] || { register: { territory: true } };
+});
+const returnDeadline = computed(() => {
+  const dateStr = info.value?.mail_in?.return_deadline;
+  if (!dateStr) return "";
+  return t("absenteeReturn", {
+    date: niceDate(dateStr),
+    days: daysLeft(dateStr),
+  });
+});
+const hasDropoff = computed(() => {
+  const faq = info.value?.mail_in || {};
+  return "dropoff" in faq;
+});
+const dropoffExplainer = computed(() => {
+  const explainer = info.value?.mail_in?.dropoff_explainer;
+  if (!explainer) return "";
+
+  return `\u21b3 ${info.value.mail_in.dropoff_explainer}`;
+});
+const trackingLink = computed(() => {
+  const url = info.value?.mail_in?.track_link;
+  if (!url) return "";
+  return t("absenteeTrack", { trackUrl: url });
+});
+const moreAbsenteeInfoLink = computed(() => {
+  const url = info.value?.mail_in?.more_link;
+  if (!url) return "";
+  return t("absenteeMoreInfo", { moreUrl: url });
+});
+</script>
+
 <template>
   <div class="page__title">
     {{ $t("ballotTitle") }}
@@ -62,50 +106,6 @@
     </cv-row>
   </cv-grid>
 </template>
-
-<script setup>
-import electionInfo from "@/assets/data/usa-2024.json";
-
-const { t } = useI18n();
-const user = useUser();
-const usaCode = computed(() => user.value.info?.location?.region_code);
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const registered = computed(() =>
-  Boolean(user.value.info?.registered === "presidential-2024"),
-);
-const info = computed(() => {
-  const code = usaCode.value?.toLowerCase() || "unknown";
-  return electionInfo[code] || { register: { territory: true } };
-});
-const returnDeadline = computed(() => {
-  const dateStr = info.value?.mail_in?.return_deadline;
-  if (!dateStr) return "";
-  return t("absenteeReturn", {
-    date: niceDate(dateStr),
-    days: daysLeft(dateStr),
-  });
-});
-const hasDropoff = computed(() => {
-  const faq = info.value?.mail_in || {};
-  return "dropoff" in faq;
-});
-const dropoffExplainer = computed(() => {
-  const explainer = info.value?.mail_in?.dropoff_explainer;
-  if (!explainer) return "";
-
-  return `\u21b3 ${info.value.mail_in.dropoff_explainer}`;
-});
-const trackingLink = computed(() => {
-  const url = info.value?.mail_in?.track_link;
-  if (!url) return "";
-  return t("absenteeTrack", { trackUrl: url });
-});
-const moreAbsenteeInfoLink = computed(() => {
-  const url = info.value?.mail_in?.more_link;
-  if (!url) return "";
-  return t("absenteeMoreInfo", { moreUrl: url });
-});
-</script>
 <style lang="scss">
 @import "@/assets/scss/theme";
 @import "@/assets/scss/pages";

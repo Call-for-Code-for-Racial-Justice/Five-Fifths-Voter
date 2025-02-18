@@ -1,3 +1,41 @@
+<script setup>
+import {
+  ArrowDown32 as ArrowDown,
+  ArrowUp32 as ArrowUp,
+  ArrowUpRight32 as ArrowUpRight,
+  CircleFilled32 as CircleFilled,
+  UpToTop32 as UpToTop,
+} from "@carbon/icons-vue";
+const iconDown = ArrowDown;
+const iconUp = ArrowUp;
+const iconUpRight = ArrowUpRight;
+const iconSelected = CircleFilled;
+const iconTop = UpToTop;
+
+const props = defineProps({
+  activeSection: { type: Number, default: 0 },
+});
+defineEmits(["nav-section"]);
+const missionIcon = computed(() => {
+  if (props.activeSection < 1) return iconDown;
+  else if (props.activeSection > 1) return iconUp;
+  else return iconSelected;
+});
+const valuesIcon = computed(() => {
+  if (props.activeSection < 2) return iconDown;
+  else if (props.activeSection > 2) return iconUp;
+  else return iconSelected;
+});
+
+const countdownData = inject(
+  "countdown-data",
+  ref({ height: 320, visible: true }),
+);
+const bottom = computed(() => {
+  return `${countdownData.value.height || 320}px`;
+});
+</script>
+
 <template>
   <div :class="`nav-container active-section-${activeSection}`">
     <svg-nav-lines />
@@ -37,44 +75,6 @@
     </cv-link>
   </div>
 </template>
-
-<script setup>
-import {
-  ArrowDown32 as ArrowDown,
-  ArrowUp32 as ArrowUp,
-  ArrowUpRight32 as ArrowUpRight,
-  CircleFilled32 as CircleFilled,
-  UpToTop32 as UpToTop,
-} from "@carbon/icons-vue";
-const iconDown = ArrowDown;
-const iconUp = ArrowUp;
-const iconUpRight = ArrowUpRight;
-const iconSelected = CircleFilled;
-const iconTop = UpToTop;
-
-const props = defineProps({
-  activeSection: { type: Number, default: 0 },
-});
-defineEmits(["nav-section"]);
-const missionIcon = computed(() => {
-  if (props.activeSection < 1) return iconDown;
-  else if (props.activeSection > 1) return iconUp;
-  else return iconSelected;
-});
-const valuesIcon = computed(() => {
-  if (props.activeSection < 2) return iconDown;
-  else if (props.activeSection > 2) return iconUp;
-  else return iconSelected;
-});
-
-const countdownData = inject(
-  "countdown-data",
-  ref({ height: 320, visible: true }),
-);
-const bottom = computed(() => {
-  return `${countdownData.value.height || 320}px`;
-});
-</script>
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

@@ -1,3 +1,8 @@
+<script setup>
+defineOptions({
+  name: "SilhouetteGroup",
+});
+</script>
 <template>
   <div class="silhouette-group">
     <img
@@ -6,11 +11,6 @@
     >
   </div>
 </template>
-<script setup>
-defineOptions({
-  name: "SilhouetteGroup",
-});
-</script>
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

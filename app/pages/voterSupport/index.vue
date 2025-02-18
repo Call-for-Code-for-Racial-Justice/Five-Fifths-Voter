@@ -1,3 +1,5 @@
+<script setup></script>
+
 <template>
   <div class="page__inset blue-bg voter-support__content">
     <div class="page__title">
@@ -76,8 +78,6 @@
     </cv-grid>
   </div>
 </template>
-
-<script setup></script>
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

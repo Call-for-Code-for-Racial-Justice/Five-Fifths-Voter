@@ -1,3 +1,11 @@
+<script setup>
+defineOptions({
+  name: "HomeValuesSection",
+});
+const expandedCard = ref("");
+provide("expanded-card", expandedCard);
+</script>
+
 <template>
   <section
     id="our-values"
@@ -37,11 +45,3 @@
     </div>
   </section>
 </template>
-
-<script setup>
-defineOptions({
-  name: "HomeValuesSection",
-});
-const expandedCard = ref("");
-provide("expanded-card", expandedCard);
-</script>

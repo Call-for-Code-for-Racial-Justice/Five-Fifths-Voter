@@ -1,3 +1,36 @@
+<script setup>
+import {
+  ArrowUpRight20 as ArrowUpRight,
+  Add20 as ExpandIcon,
+  Subtract20 as CollapseIcon,
+} from "@carbon/icons-vue";
+const props = defineProps({
+  name: { type: String, required: true },
+  main: { type: String, required: true },
+  quote: { type: String, required: true },
+  author: { type: String, required: true },
+  id: { type: String, required: true },
+  image: { type: String, default: "empower" },
+  expand: { type: Boolean, default: false },
+});
+
+const expandedCard = inject("expanded-card", ref(""));
+const expanded = ref(props.expand);
+function toggle() {
+  expanded.value = !expanded.value;
+  if (expanded.value) expandedCard.value = props.image;
+}
+watch(
+  expandedCard,
+  () => {
+    if (expandedCard.value && expandedCard.value !== props.image) {
+      setTimeout(() => (expanded.value = false), 250);
+    }
+  },
+  { flush: "post" },
+);
+</script>
+
 <template>
   <div
     class="group flex flex-col gap-2 border border-solid border-white p-5 text-white
@@ -91,39 +124,6 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import {
-  ArrowUpRight20 as ArrowUpRight,
-  Add20 as ExpandIcon,
-  Subtract20 as CollapseIcon,
-} from "@carbon/icons-vue";
-const props = defineProps({
-  name: { type: String, required: true },
-  main: { type: String, required: true },
-  quote: { type: String, required: true },
-  author: { type: String, required: true },
-  id: { type: String, required: true },
-  image: { type: String, default: "empower" },
-  expand: { type: Boolean, default: false },
-});
-
-const expandedCard = inject("expanded-card", ref(""));
-const expanded = ref(props.expand);
-function toggle() {
-  expanded.value = !expanded.value;
-  if (expanded.value) expandedCard.value = props.image;
-}
-watch(
-  expandedCard,
-  () => {
-    if (expandedCard.value && expandedCard.value !== props.image) {
-      setTimeout(() => (expanded.value = false), 250);
-    }
-  },
-  { flush: "post" },
-);
-</script>
 
 <style scoped lang="scss">
 .empower {

@@ -1,206 +1,3 @@
-<template>
-  <div class="page__title">
-    {{ $t("voteTitle") }}
-  </div>
-  <cv-grid
-    :full-width="true"
-    kind="narrow"
-  >
-    <cv-row>
-      <cv-column
-        :sm="4"
-        :lg="8"
-      >
-        <!-- this appears after user enter their address -->
-        <cv-loading
-          :active="loading"
-          :overlay="true"
-        />
-        <div class="text-2xl">
-          {{
-            $t("getInformedNextElection", {
-              date: niceIsoDate(electionStartDate),
-            })
-          }}
-          <mark-down
-            v-if="earlyVoting"
-            :content="earlyVoting"
-          />
-        </div>
-
-        <div
-          v-if="hasVoterInfo"
-          class="journey-info__section"
-        >
-          <journey-location-list />
-          <journey-civic-data />
-        </div>
-
-        <div v-if="filteredElections.length > 0">
-          <div class="mt-4">
-            <cv-select
-              v-model="electionId"
-              :label="$t('voteSelectElection')"
-            >
-              <cv-select-option
-                value=""
-                :selected="true"
-                :disabled="true"
-                :hidden="true"
-              >
-                {{ $t("voteChooseElection") }}
-              </cv-select-option>
-              <cv-select-option
-                v-for="elec in filteredElections"
-                :key="elec.id"
-                :value="elec.id"
-              >
-                {{ elec.name }} {{ elec.electionDay }}
-              </cv-select-option>
-            </cv-select>
-          </div>
-
-          <!-- address -->
-          <div class="mb-2 mt-4">
-            <cv-text-input
-              v-model="addressValue"
-              :label="$t('voteAddressLabel')"
-              :hide-label="disabledAddress"
-              :placeholder="placeholder"
-              :disabled="disabledAddress"
-            />
-          </div>
-          <cv-button
-            class="!text-carbon-gray-90"
-            kind="primary"
-            :disabled="buttonDisabled"
-            @click="showPollingLocation"
-          >
-            {{ $t("votePollingLocationBtn") }}
-          </cv-button>
-        </div>
-        <div
-          v-else
-          class="mt-2 text-xl"
-        >
-          {{ $t("getInformedNextCheck") }}
-        </div>
-      </cv-column>
-      <cv-column
-        :sm="0"
-        :lg="8"
-      >
-        <div class="aspect-[4/3] w-full">
-          <img
-            class="size-full object-cover"
-            src="@/assets/images/landing-page-grandpa-grandson-image-2.jpeg"
-            alt=""
-          >
-        </div>
-      </cv-column>
-    </cv-row>
-  </cv-grid>
-</template>
-
-<!--          <div class="journey-info__collapsable" ref="generalInfo">-->
-<!--            <territory-info v-if="info.register.territory" />-->
-
-<!--            &lt;!&ndash; Early voting start &ndash;&gt;-->
-<!--            <mark-down-->
-<!--              v-if="hasEarlyVotingDate"-->
-<!--              class="journey-info__deadline"-->
-<!--              :content="-->
-<!--                $t('voteEarlyStart', {-->
-<!--                  date: niceDate(info.early_voting.start_date),-->
-<!--                  days: daysLeft(info.early_voting.start_date),-->
-<!--                })-->
-<!--              "-->
-<!--            />-->
-<!--            &lt;!&ndash; Early voting end &ndash;&gt;-->
-<!--            <mark-down-->
-<!--              v-if="hasEarlyVotingEndDate"-->
-<!--              class="journey-info__deadline"-->
-<!--              :content="-->
-<!--                $t('voteEarlyEnd', {-->
-<!--                  date: niceDate(info.early_voting.last_date),-->
-<!--                  days: daysLeft(info.early_voting.last_date),-->
-<!--                })-->
-<!--              "-->
-<!--            />-->
-
-<!--            &lt;!&ndash; info link &ndash;&gt;-->
-<!--            <mark-down-->
-<!--              class="journey-info__more"-->
-<!--              v-if="info.early_voting.more_link"-->
-<!--              :content="`\u21b3 ` + $t('voteEarlyMore', { link: info.early_voting.more_link })"-->
-<!--            />-->
-
-<!--            &lt;!&ndash; Election day voting &ndash;&gt;-->
-<!--            <mark-down-->
-<!--              class="journey-info__deadline"-->
-<!--              :content="-->
-<!--                $t('voteElectionDay', {-->
-<!--                  date: niceIsoDate(info.election_start || '2022-11-08T12:00:00.000Z'),-->
-<!--                  days: daysLeftIso(info.election_start || '2022-11-08T12:00:00.000Z'),-->
-<!--                })-->
-<!--              "-->
-<!--            />-->
-<!--            <mark-down-->
-<!--              v-if="showEnd"-->
-<!--              class="journey-info__deadline"-->
-<!--              :content="-->
-<!--                $t('voteElectionDayEnd', {-->
-<!--                  date: niceIsoDate(info.election_end || '2022-11-08T12:00:00.000Z'),-->
-<!--                  days: daysLeftIso(info.election_end || '2022-11-08T12:00:00.000Z'),-->
-<!--                })-->
-<!--              "-->
-<!--            />-->
-<!--            <span class="register-faq" v-if="'election_day_info' in info">{{-->
-<!--              `\u21b3 ` + info.election_day_info-->
-<!--            }}</span>-->
-
-<!--            <div class="register-faq-header">{{ $t('faq') }}</div>-->
-<!--            &lt;!&ndash; Vote early &ndash;&gt;-->
-<!--            <div class="register-faq" v-if="'available' in info.early_voting">-->
-<!--              <span>{{ $t('voteEarlyAvailable') }}</span-->
-<!--              ><span>{{ info.early_voting.available ? $t('yes') : $t('no') }}</span>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash; ID needed &ndash;&gt;-->
-<!--            <div class="register-faq" v-if="'id_needed' in info.mail_in">-->
-<!--              <span>{{ $t('voteEarlyIdNeeded') }}</span>-->
-<!--              <span>{{ info.early_voting.id_needed ? $t('yes') : $t('no') }}</span>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          <div class="wrapper wrapper&#45;&#45;address">-->
-
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </aside>-->
-<!--    </template>-->
-<!--    <template v-slot:image>-->
-<!--      <aside-->
-<!--        v-if="placeholderMap"-->
-<!--        class="aside__container&#45;&#45;img"-->
-<!--        :aria-label="$t('ariaSupportingImage')"-->
-<!--      >-->
-<!--        <img class="aside__image" src="../../assets/holder-atlanta-map.png" alt="google map img" />-->
-<!--      </aside>-->
-<!--      <aside v-else>-->
-<!--        <GoogleMap-->
-<!--          class="side-map"-->
-<!--          :markers="mapMarkers"-->
-<!--          :home="normalizedAddressValue"-->
-<!--          :key="normalizedAddressValue"-->
-<!--          ref="earlyMap"-->
-<!--        />-->
-<!--      </aside>-->
-<!--    </template>-->
-<!--  </MainContent>-->
-<!--</template>-->
-
 <script setup>
 // import GoogleMap from "../../components/Maps/GoogleMap";
 // import electionInfo from "@/data/usa-2024.json";
@@ -571,6 +368,209 @@ const loading = computed(() => voterInfo.status === "loading");
 // },
 // };
 </script>
+
+<!--          <div class="journey-info__collapsable" ref="generalInfo">-->
+<!--            <territory-info v-if="info.register.territory" />-->
+
+<!--            &lt;!&ndash; Early voting start &ndash;&gt;-->
+<!--            <mark-down-->
+<!--              v-if="hasEarlyVotingDate"-->
+<!--              class="journey-info__deadline"-->
+<!--              :content="-->
+<!--                $t('voteEarlyStart', {-->
+<!--                  date: niceDate(info.early_voting.start_date),-->
+<!--                  days: daysLeft(info.early_voting.start_date),-->
+<!--                })-->
+<!--              "-->
+<!--            />-->
+<!--            &lt;!&ndash; Early voting end &ndash;&gt;-->
+<!--            <mark-down-->
+<!--              v-if="hasEarlyVotingEndDate"-->
+<!--              class="journey-info__deadline"-->
+<!--              :content="-->
+<!--                $t('voteEarlyEnd', {-->
+<!--                  date: niceDate(info.early_voting.last_date),-->
+<!--                  days: daysLeft(info.early_voting.last_date),-->
+<!--                })-->
+<!--              "-->
+<!--            />-->
+
+<!--            &lt;!&ndash; info link &ndash;&gt;-->
+<!--            <mark-down-->
+<!--              class="journey-info__more"-->
+<!--              v-if="info.early_voting.more_link"-->
+<!--              :content="`\u21b3 ` + $t('voteEarlyMore', { link: info.early_voting.more_link })"-->
+<!--            />-->
+
+<!--            &lt;!&ndash; Election day voting &ndash;&gt;-->
+<!--            <mark-down-->
+<!--              class="journey-info__deadline"-->
+<!--              :content="-->
+<!--                $t('voteElectionDay', {-->
+<!--                  date: niceIsoDate(info.election_start || '2022-11-08T12:00:00.000Z'),-->
+<!--                  days: daysLeftIso(info.election_start || '2022-11-08T12:00:00.000Z'),-->
+<!--                })-->
+<!--              "-->
+<!--            />-->
+<!--            <mark-down-->
+<!--              v-if="showEnd"-->
+<!--              class="journey-info__deadline"-->
+<!--              :content="-->
+<!--                $t('voteElectionDayEnd', {-->
+<!--                  date: niceIsoDate(info.election_end || '2022-11-08T12:00:00.000Z'),-->
+<!--                  days: daysLeftIso(info.election_end || '2022-11-08T12:00:00.000Z'),-->
+<!--                })-->
+<!--              "-->
+<!--            />-->
+<!--            <span class="register-faq" v-if="'election_day_info' in info">{{-->
+<!--              `\u21b3 ` + info.election_day_info-->
+<!--            }}</span>-->
+
+<!--            <div class="register-faq-header">{{ $t('faq') }}</div>-->
+<!--            &lt;!&ndash; Vote early &ndash;&gt;-->
+<!--            <div class="register-faq" v-if="'available' in info.early_voting">-->
+<!--              <span>{{ $t('voteEarlyAvailable') }}</span-->
+<!--              ><span>{{ info.early_voting.available ? $t('yes') : $t('no') }}</span>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash; ID needed &ndash;&gt;-->
+<!--            <div class="register-faq" v-if="'id_needed' in info.mail_in">-->
+<!--              <span>{{ $t('voteEarlyIdNeeded') }}</span>-->
+<!--              <span>{{ info.early_voting.id_needed ? $t('yes') : $t('no') }}</span>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="wrapper wrapper&#45;&#45;address">-->
+
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </aside>-->
+<!--    </template>-->
+<!--    <template v-slot:image>-->
+<!--      <aside-->
+<!--        v-if="placeholderMap"-->
+<!--        class="aside__container&#45;&#45;img"-->
+<!--        :aria-label="$t('ariaSupportingImage')"-->
+<!--      >-->
+<!--        <img class="aside__image" src="../../assets/holder-atlanta-map.png" alt="google map img" />-->
+<!--      </aside>-->
+<!--      <aside v-else>-->
+<!--        <GoogleMap-->
+<!--          class="side-map"-->
+<!--          :markers="mapMarkers"-->
+<!--          :home="normalizedAddressValue"-->
+<!--          :key="normalizedAddressValue"-->
+<!--          ref="earlyMap"-->
+<!--        />-->
+<!--      </aside>-->
+<!--    </template>-->
+<!--  </MainContent>-->
+<!--</template>-->
+
+<template>
+  <div class="page__title">
+    {{ $t("voteTitle") }}
+  </div>
+  <cv-grid
+    :full-width="true"
+    kind="narrow"
+  >
+    <cv-row>
+      <cv-column
+        :sm="4"
+        :lg="8"
+      >
+        <!-- this appears after user enter their address -->
+        <cv-loading
+          :active="loading"
+          :overlay="true"
+        />
+        <div class="text-2xl">
+          {{
+            $t("getInformedNextElection", {
+              date: niceIsoDate(electionStartDate),
+            })
+          }}
+          <mark-down
+            v-if="earlyVoting"
+            :content="earlyVoting"
+          />
+        </div>
+
+        <div
+          v-if="hasVoterInfo"
+          class="journey-info__section"
+        >
+          <journey-location-list />
+          <journey-civic-data />
+        </div>
+
+        <div v-if="filteredElections.length > 0">
+          <div class="mt-4">
+            <cv-select
+              v-model="electionId"
+              :label="$t('voteSelectElection')"
+            >
+              <cv-select-option
+                value=""
+                :selected="true"
+                :disabled="true"
+                :hidden="true"
+              >
+                {{ $t("voteChooseElection") }}
+              </cv-select-option>
+              <cv-select-option
+                v-for="elec in filteredElections"
+                :key="elec.id"
+                :value="elec.id"
+              >
+                {{ elec.name }} {{ elec.electionDay }}
+              </cv-select-option>
+            </cv-select>
+          </div>
+
+          <!-- address -->
+          <div class="mb-2 mt-4">
+            <cv-text-input
+              v-model="addressValue"
+              :label="$t('voteAddressLabel')"
+              :hide-label="disabledAddress"
+              :placeholder="placeholder"
+              :disabled="disabledAddress"
+            />
+          </div>
+          <cv-button
+            class="!text-carbon-gray-90"
+            kind="primary"
+            :disabled="buttonDisabled"
+            @click="showPollingLocation"
+          >
+            {{ $t("votePollingLocationBtn") }}
+          </cv-button>
+        </div>
+        <div
+          v-else
+          class="mt-2 text-xl"
+        >
+          {{ $t("getInformedNextCheck") }}
+        </div>
+      </cv-column>
+      <cv-column
+        :sm="0"
+        :lg="8"
+      >
+        <div class="aspect-[4/3] w-full">
+          <img
+            class="size-full object-cover"
+            src="@/assets/images/landing-page-grandpa-grandson-image-2.jpeg"
+            alt=""
+          >
+        </div>
+      </cv-column>
+    </cv-row>
+  </cv-grid>
+</template>
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

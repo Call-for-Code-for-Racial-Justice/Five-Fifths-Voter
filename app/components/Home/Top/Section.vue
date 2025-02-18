@@ -1,3 +1,9 @@
+<script setup>
+defineOptions({
+  name: "HomeTopSection",
+});
+</script>
+
 <template>
   <section
     id="top"
@@ -31,11 +37,5 @@
     <home-countdown />
   </section>
 </template>
-
-<script setup>
-defineOptions({
-  name: "HomeTopSection",
-});
-</script>
 
 <style scoped lang="scss"></style>

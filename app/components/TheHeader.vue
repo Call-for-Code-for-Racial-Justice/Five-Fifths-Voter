@@ -1,3 +1,27 @@
+<script setup>
+import {
+  Home16 as HomeIcon,
+  Information16 as OurMissionIcon,
+  Compass16 as VoterJourneyIcon,
+  Group16 as OurValuesIcon,
+  HelpDesk16 as VoterSupportIcon,
+  Help16 as WhyVoteIcon,
+  LogoInstagram32 as Instagram,
+  LogoGithub32 as GitHub,
+  Language32 as LanguageSwitcher,
+} from "@carbon/icons-vue";
+import LanguagePanel from "~/components/LanguagePanel.vue";
+defineOptions({
+  name: "TheHeader",
+});
+const route = useRoute();
+const activeVoterSupport = computed(
+  () => route.path.toLowerCase() === "/votersupport",
+);
+const activeWhyVote = computed(() => route.path.toLowerCase() === "/whyvote");
+const activeJourney = computed(() => route.path.startsWith("/journey"));
+</script>
+
 <template>
   <cv-header
     id="ff-header"
@@ -136,30 +160,6 @@
     </template>
   </cv-header>
 </template>
-
-<script setup>
-import {
-  Home16 as HomeIcon,
-  Information16 as OurMissionIcon,
-  Compass16 as VoterJourneyIcon,
-  Group16 as OurValuesIcon,
-  HelpDesk16 as VoterSupportIcon,
-  Help16 as WhyVoteIcon,
-  LogoInstagram32 as Instagram,
-  LogoGithub32 as GitHub,
-  Language32 as LanguageSwitcher,
-} from "@carbon/icons-vue";
-import LanguagePanel from "~/components/LanguagePanel.vue";
-defineOptions({
-  name: "TheHeader",
-});
-const route = useRoute();
-const activeVoterSupport = computed(
-  () => route.path.toLowerCase() === "/votersupport",
-);
-const activeWhyVote = computed(() => route.path.toLowerCase() === "/whyvote");
-const activeJourney = computed(() => route.path.startsWith("/journey"));
-</script>
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

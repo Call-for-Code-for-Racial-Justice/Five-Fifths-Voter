@@ -1,3 +1,55 @@
+<script setup>
+import { Map32 as MapIcon, ChevronDown16 as Chevron } from "@carbon/icons-vue";
+
+const props = defineProps({
+  location: { type: Object, required: true },
+  id: { type: String, required: true },
+});
+
+const expandedLocation = inject("expanded-location", ref(""));
+const expanded = ref(false);
+function toggle() {
+  expanded.value = !expanded.value;
+  if (expanded.value) expandedLocation.value = props.id;
+}
+watch(
+  expandedLocation,
+  () => {
+    if (expandedLocation.value && expandedLocation.value !== props.id) {
+      setTimeout(() => (expanded.value = false), 250);
+    }
+  },
+  { flush: "post" },
+);
+
+const locationName = computed(() => {
+  return props.location.address?.locationName || "location";
+});
+function addAddressPart(partial, part) {
+  if (part) {
+    if (partial === undefined) partial = part;
+    else if (partial.length > 0) partial += " " + part;
+    else partial += part;
+  }
+  return partial;
+}
+const addressLines = computed(() => {
+  let address = addAddressPart(undefined, props.location.address?.line1);
+  address = addAddressPart(address, props.location.address?.line2);
+  address = addAddressPart(address, props.location.address?.line3);
+  address = addAddressPart(address, props.location.address?.city);
+  address = addAddressPart(address, props.location.address?.state);
+  address = addAddressPart(address, props.location.address?.zip);
+
+  return address;
+});
+
+function directionsLink(address) {
+  const escapedValue = encodeURIComponent(address).replaceAll("%20", "+");
+  return "https://www.google.com/maps/search/?api=1&query=" + escapedValue;
+}
+</script>
+
 <template>
   <div
     class="group flex max-w-xl flex-col gap-2 rounded-lg bg-ff-pink-01 p-1 text-white"
@@ -53,55 +105,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import { Map32 as MapIcon, ChevronDown16 as Chevron } from "@carbon/icons-vue";
-
-const props = defineProps({
-  location: { type: Object, required: true },
-  id: { type: String, required: true },
-});
-
-const expandedLocation = inject("expanded-location", ref(""));
-const expanded = ref(false);
-function toggle() {
-  expanded.value = !expanded.value;
-  if (expanded.value) expandedLocation.value = props.id;
-}
-watch(
-  expandedLocation,
-  () => {
-    if (expandedLocation.value && expandedLocation.value !== props.id) {
-      setTimeout(() => (expanded.value = false), 250);
-    }
-  },
-  { flush: "post" },
-);
-
-const locationName = computed(() => {
-  return props.location.address?.locationName || "location";
-});
-function addAddressPart(partial, part) {
-  if (part) {
-    if (partial === undefined) partial = part;
-    else if (partial.length > 0) partial += " " + part;
-    else partial += part;
-  }
-  return partial;
-}
-const addressLines = computed(() => {
-  let address = addAddressPart(undefined, props.location.address?.line1);
-  address = addAddressPart(address, props.location.address?.line2);
-  address = addAddressPart(address, props.location.address?.line3);
-  address = addAddressPart(address, props.location.address?.city);
-  address = addAddressPart(address, props.location.address?.state);
-  address = addAddressPart(address, props.location.address?.zip);
-
-  return address;
-});
-
-function directionsLink(address) {
-  const escapedValue = encodeURIComponent(address).replaceAll("%20", "+");
-  return "https://www.google.com/maps/search/?api=1&query=" + escapedValue;
-}
-</script>

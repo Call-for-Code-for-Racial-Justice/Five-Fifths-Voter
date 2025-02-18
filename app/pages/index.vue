@@ -1,3 +1,16 @@
+<script setup>
+import { ArrowUpRight32 as ArrowUpRight } from "@carbon/icons-vue";
+import HomeHeader from "~/components/Home/Header.vue";
+
+defineOptions({
+  name: "HomePage",
+});
+
+definePageMeta({
+  layout: "special",
+});
+</script>
+
 <template>
   <div>
     <home-header />
@@ -41,17 +54,4 @@
     <home-values-section />
   </div>
 </template>
-
-<script setup>
-import { ArrowUpRight32 as ArrowUpRight } from "@carbon/icons-vue";
-import HomeHeader from "~/components/Home/Header.vue";
-
-defineOptions({
-  name: "HomePage",
-});
-
-definePageMeta({
-  layout: "special",
-});
-</script>
 <style scoped lang="scss"></style>
