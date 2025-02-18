@@ -7,7 +7,10 @@
     }"
   >
     <cv-switcher>
-      <cv-switcher-item v-for="entry in availableLocales" :key="entry.title">
+      <cv-switcher-item
+        v-for="entry in availableLocales"
+        :key="entry.title"
+      >
         <cv-switcher-item-link
           :id="`language-${entry.language}`"
           :selected="entry.language === locale"

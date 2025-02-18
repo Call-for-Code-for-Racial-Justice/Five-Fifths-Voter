@@ -1,21 +1,31 @@
 <template>
   <div class="page__inset blue-bg">
-    <div class="page__title">{{ $t("whyVotePageTitle") }}</div>
+    <div class="page__title">
+      {{ $t("whyVotePageTitle") }}
+    </div>
     <cv-grid :full-width="true">
       <cv-row>
-        <cv-column :sm="4" :lg="8">
-          <div class="page__subtitle">{{ $t("whyVotePageSubTitle") }}</div>
+        <cv-column
+          :sm="4"
+          :lg="8"
+        >
+          <div class="page__subtitle">
+            {{ $t("whyVotePageSubTitle") }}
+          </div>
           <p class="aside__paragraph">
             {{ $t("whyVotePageParagraph_1") }}
-            <br ><br >
+            <br><br>
             {{ $t("whyVotePageParagraph_2") }}
-            <br ><br >
+            <br><br>
             {{ $t("whyVotePageParagraph_3", ["Five Fifths Voter"]) }}
-            <br ><br >
+            <br><br>
             <MarkDown :content="$t('whyVotePageQuote')" />
           </p>
         </cv-column>
-        <cv-column :sm="4" :lg="8">
+        <cv-column
+          :sm="4"
+          :lg="8"
+        >
           <img
             class="side-image"
             alt=""

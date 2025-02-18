@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div v-for="(line, index) in lines" :key="`${index}-${line}`">
+    <div
+      v-for="(line, index) in lines"
+      :key="`${index}-${line}`"
+    >
       {{ line }}
     </div>
   </div>

@@ -4,10 +4,10 @@ describe("smoke test", () => {
     cy.visit("/");
     cy.get("#header-menu-our-mission");
     cy.get(
-      '[href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"]',
+      "[href=\"https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D\"]",
     );
     cy.get(
-      '[href="https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter"]',
+      "[href=\"https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter\"]",
     );
     cy.get("#header-language-button");
     cy.get("#side-nav");
@@ -70,12 +70,12 @@ describe("smoke test", () => {
     cy.get("#ff-header-menu svg").click();
     cy.get("#side-nav-why").click();
     cy.url().should("contain", "/whyVote");
-    cy.get('[href="/"]');
+    cy.get("[href=\"/\"]");
     cy.get(
-      '[href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"]',
+      "[href=\"https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D\"]",
     );
     cy.get(
-      '[href="https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter"]',
+      "[href=\"https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter\"]",
     );
     cy.get("#header-language-button");
   });
@@ -91,12 +91,12 @@ describe("smoke test", () => {
     cy.get("#header-menu-why").click();
     cy.url().should("contain", "/whyVote");
     cy.get("#header-menu-our-mission").should("be.visible");
-    cy.get('[href="/"]');
+    cy.get("[href=\"/\"]");
     cy.get(
-      '[href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"]',
+      "[href=\"https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D\"]",
     );
     cy.get(
-      '[href="https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter"]',
+      "[href=\"https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter\"]",
     );
     cy.get("#header-language-button");
   });

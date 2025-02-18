@@ -11,7 +11,8 @@
           v-for="opt in options"
           :key="`select-${opt.value}`"
           :value="opt.value"
-          >{{ opt.label }}
+        >
+          {{ opt.label }}
         </cv-select-option>
       </cv-select>
     </div>
@@ -34,7 +35,7 @@ const options = computed(() => {
   });
 });
 function onChange(val) {
-  const location = usaStates.find((s) => s.region_code === val);
+  const location = usaStates.find(s => s.region_code === val);
   if (location) setUserLocation(location);
 }
 </script>

@@ -4,9 +4,15 @@
       px-3 md:h-[270px] lg:h-[150px] lg:px-14 xl:h-[320px]"
   >
     <div class="text-2xl sm:text-4xl md:text-6xl lg:text-4xl 2xl:text-7xl">
-      <div class="text-ff-white-01">{{ headlines[0] }}</div>
-      <div class="text-white">{{ headlines[1] }}</div>
-      <div class="text-ff-white-01">{{ headlines[2] }}</div>
+      <div class="text-ff-white-01">
+        {{ headlines[0] }}
+      </div>
+      <div class="text-white">
+        {{ headlines[1] }}
+      </div>
+      <div class="text-ff-white-01">
+        {{ headlines[2] }}
+      </div>
     </div>
     <div
       class="flex flex-col items-center justify-between gap-x-10 text-white lg:flex-row"
@@ -21,7 +27,9 @@
         >
           {{ days }}
         </div>
-        <div class="pl-[44px] lg:pl-[10px]">{{ labelDays }}</div>
+        <div class="pl-[44px] lg:pl-[10px]">
+          {{ labelDays }}
+        </div>
       </div>
       <div
         class="w-[125px] bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain
@@ -33,7 +41,9 @@
         >
           :{{ hours }}
         </div>
-        <div class="pl-[44px]">{{ labelHours }}</div>
+        <div class="pl-[44px]">
+          {{ labelHours }}
+        </div>
       </div>
       <div
         class="w-[125px] bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain
@@ -45,7 +55,9 @@
         >
           :{{ minutes }}
         </div>
-        <div class="pl-[44px]">{{ labelMinutes }}</div>
+        <div class="pl-[44px]">
+          {{ labelMinutes }}
+        </div>
       </div>
       <div
         class="w-[125px] bg-[url(@/assets/images/skewed-oval-empty.svg)] bg-contain
@@ -57,7 +69,9 @@
         >
           :{{ seconds }}
         </div>
-        <div class="pl-[44px]">{{ labelSeconds }}</div>
+        <div class="pl-[44px]">
+          {{ labelSeconds }}
+        </div>
       </div>
     </div>
   </div>

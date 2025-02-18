@@ -25,17 +25,28 @@
         data-[expanded=true]:opacity-100"
     >
       <div class="bg-ff-white-01 p-1 text-ff-purple-01">
-        <div v-if="addressLines">{{ addressLines }}</div>
+        <div v-if="addressLines">
+          {{ addressLines }}
+        </div>
 
-        <div v-if="addressLines" class="mt-1">
-          <cv-link :href="directionsLink(addressLines)" target="_blank">
+        <div
+          v-if="addressLines"
+          class="mt-1"
+        >
+          <cv-link
+            :href="directionsLink(addressLines)"
+            target="_blank"
+          >
             <div><map-icon /></div>
             <div class="ml-2 flex items-center">
               {{ $t("mapDirections") }}
             </div>
           </cv-link>
         </div>
-        <div v-if="location.notes" class="mt-1 text-[16px]">
+        <div
+          v-if="location.notes"
+          class="mt-1 text-[16px]"
+        >
           {{ location.notes }}
         </div>
       </div>

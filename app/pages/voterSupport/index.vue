@@ -1,43 +1,49 @@
 <template>
   <div class="page__inset blue-bg voter-support__content">
-    <div class="page__title">{{ $t("supportTitle") }}</div>
+    <div class="page__title">
+      {{ $t("supportTitle") }}
+    </div>
     <cv-grid :full-width="true">
       <cv-row>
-        <cv-column :sm="4" :lg="8">
+        <cv-column
+          :sm="4"
+          :lg="8"
+        >
           <cv-link
             class="voter-support__link"
             href="https://www.empowerline.org/services/transportation-options/"
             target="_blank"
           >
-            {{ $t("supportSeniors") }} &rarr;</cv-link
-          >
+            {{ $t("supportSeniors") }} &rarr;
+          </cv-link>
           <cv-link
             class="voter-support__link"
             href="https://www.ymca.org/find-your-y?distance=175&lat=26.0517448&lng=-80.13727569999999&geolocation_geocoder_address=33004&type=branch"
             target="_blank"
           >
-            {{ $t("supportChildCare") }} &rarr;</cv-link
-          >
+            {{ $t("supportChildCare") }} &rarr;
+          </cv-link>
           <cv-link
             class="voter-support__link"
             href="https://www.npr.org/2020/08/07/900210406/the-most-important-mail-youll-ever-send-a-ballot"
             target="_blank"
           >
-            {{ $t("supportMailVoting") }} &rarr;</cv-link
-          >
+            {{ $t("supportMailVoting") }} &rarr;
+          </cv-link>
           <cv-link
             class="voter-support__link"
             href="https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx"
             target="_blank"
-            >{{ $t("supportFelons") }} &rarr;</cv-link
           >
+            {{ $t("supportFelons") }} &rarr;
+          </cv-link>
           <cv-link
             class="voter-support__link"
             href="https://sos.ga.gov/index.php/elections/voters_with_disabilities"
             target="_blank"
           >
-            {{ $t("supportDisabled") }} &rarr;</cv-link
-          >
+            {{ $t("supportDisabled") }} &rarr;
+          </cv-link>
           <h4>
             {{ $t("voterJourneyLAResources") }}
           </h4>
@@ -46,17 +52,20 @@
             href="https://www.lavote.net/home/voting-elections/current-elections/upcoming-elections#"
             target="_blank"
           >
-            {{ $t("supportLA_1") }} &rarr;</cv-link
-          >
+            {{ $t("supportLA_1") }} &rarr;
+          </cv-link>
           <cv-link
             class="voter-support__link"
             href="https://clerk.lacity.org/clerk-services/elections"
             target="_blank"
           >
-            {{ $t("supportLA_2") }} &rarr;</cv-link
-          >
+            {{ $t("supportLA_2") }} &rarr;
+          </cv-link>
         </cv-column>
-        <cv-column :sm="4" :lg="8">
+        <cv-column
+          :sm="4"
+          :lg="8"
+        >
           <img
             class="side-image"
             alt=""

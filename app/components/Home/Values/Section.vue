@@ -1,6 +1,9 @@
 <template>
-  <section id="our-values" class="h-screen w-full bg-ff-blue-01 pt-[3rem]">
-    <div class="ml-auto mr-auto w-[99%] md:w-[90%]">
+  <section
+    id="our-values"
+    class="h-screen w-full bg-ff-blue-01 pt-12"
+  >
+    <div class="mx-auto w-[99%] md:w-[90%]">
       <h1 class="py-10 text-5xl font-semibold text-ff-blue-03 md:text-6xl">
         Our values
       </h1>

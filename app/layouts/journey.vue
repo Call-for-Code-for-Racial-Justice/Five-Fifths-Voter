@@ -2,9 +2,16 @@
   <div>
     <ClientOnly>
       <the-header />
-      <sub-nav :current="currentSub" :sub-pages="subPages" prefix="/journey" />
-      <main id="#main-content" class="main-content with-header">
-        <div class="current-location mt-[8rem]">
+      <sub-nav
+        :current="currentSub"
+        :sub-pages="subPages"
+        prefix="/journey"
+      />
+      <main
+        id="#main-content"
+        class="main-content with-header"
+      >
+        <div class="current-location mt-32">
           {{
             $t("journeyPageElectionState", {
               state: user?.info?.location?.region,

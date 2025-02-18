@@ -1,8 +1,13 @@
 <template>
-  <div class="page__title">{{ $t("absenteeTitle") }}</div>
+  <div class="page__title">
+    {{ $t("absenteeTitle") }}
+  </div>
   <cv-grid :full-width="true">
     <cv-row>
-      <cv-column :sm="4" :lg="8">
+      <cv-column
+        :sm="4"
+        :lg="8"
+      >
         <cv-checkbox
           value="checked-requested"
           :label="$t('absenteeRequested')"
@@ -20,10 +25,17 @@
         />
 
         <!-- link request ballot -->
-        <mark-down :content="requestLink" class="journey__info" />
+        <mark-down
+          :content="requestLink"
+          class="journey__info"
+        />
 
         <!-- State link -->
-        <mark-down v-if="moreLink" :content="moreLink" class="journey__info" />
+        <mark-down
+          v-if="moreLink"
+          :content="moreLink"
+          class="journey__info"
+        />
 
         <!-- Request deadline -->
         <mark-down
@@ -40,10 +52,18 @@
         />
 
         <!-- FAQ section -->
-        <div v-if="hasFaq" class="journey__faq__header">{{ $t("faq") }}</div>
+        <div
+          v-if="hasFaq"
+          class="journey__faq__header"
+        >
+          {{ $t("faq") }}
+        </div>
 
         <!-- ID needed -->
-        <div v-if="idNeeded" class="journey__faq">
+        <div
+          v-if="idNeeded"
+          class="journey__faq"
+        >
           <span>{{ $t("absenteeIdFaq") }}</span>
           <span>{{ info.mail_in.id_needed ? $t("yes") : $t("no") }}</span>
 
@@ -55,9 +75,11 @@
         </div>
 
         <!-- drop-off -->
-        <div v-if="hasDropoff" class="journey__faq">
-          <span>{{ $t("absenteeDropFaq") }}</span
-          ><span>{{ info.mail_in.dropoff ? $t("yes") : $t("no") }}</span>
+        <div
+          v-if="hasDropoff"
+          class="journey__faq"
+        >
+          <span>{{ $t("absenteeDropFaq") }}</span><span>{{ info.mail_in.dropoff ? $t("yes") : $t("no") }}</span>
           <mark-down
             v-if="dropoffExplainer"
             style="display: inline-block"
@@ -66,23 +88,30 @@
         </div>
 
         <!-- any special reason -->
-        <div v-if="hasAnyReason" class="journey__faq">
-          <span>{{ $t("absenteeReasonFaq") }}</span
-          ><span>{{ !info.mail_in.any_reason ? $t("yes") : $t("no") }}</span>
+        <div
+          v-if="hasAnyReason"
+          class="journey__faq"
+        >
+          <span>{{ $t("absenteeReasonFaq") }}</span><span>{{ !info.mail_in.any_reason ? $t("yes") : $t("no") }}</span>
         </div>
 
         <!-- Need notary? -->
-        <div v-if="hasNotary" class="journey__faq">
-          <span>{{ $t("absenteeWitnessFaq") }}</span
-          ><span>{{
+        <div
+          v-if="hasNotary"
+          class="journey__faq"
+        >
+          <span>{{ $t("absenteeWitnessFaq") }}</span><span>{{
             !info.mail_in.without_notary ? $t("yes") : $t("no")
           }}</span>
         </div>
       </cv-column>
-      <cv-column :sm="4" :lg="8">
+      <cv-column
+        :sm="4"
+        :lg="8"
+      >
         <div class="aspect-[4/3] w-full max-w-xl">
           <img
-            class="h-full w-full object-cover"
+            class="size-full object-cover"
             src="@/assets/images/absentee-page-group-friends-laptop-image-1.jpg"
             :alt="$t('absenteeImageAlt')"
           >
@@ -109,9 +138,7 @@ const info = computed(() => {
 });
 
 const requestLink = computed(() => {
-  const requestUrl =
-    info.value?.mail_in?.request_link ||
-    "https://www.vote.org/absentee-ballot/";
+  const requestUrl = info.value?.mail_in?.request_link || "https://www.vote.org/absentee-ballot/";
   return t("absenteeRequest", { url: requestUrl });
 });
 const moreLink = computed(() => {
@@ -139,11 +166,7 @@ const returnDeadline = computed(() => {
 const hasFaq = computed(() => {
   const faq = info.value?.mail_in || {};
   return (
-    "id_needed" in faq ||
-    "online" in faq ||
-    "dropoff" in faq ||
-    "any_reason" in faq ||
-    "without_notary" in faq
+    "id_needed" in faq || "online" in faq || "dropoff" in faq || "any_reason" in faq || "without_notary" in faq
   );
 });
 
@@ -154,9 +177,7 @@ const idNeeded = computed(() => {
 
 const idExplainer = computed(() => {
   const explainer = info.value?.mail_in?.id_explainer;
-  const idLink =
-    info.value?.mail_in?.id_link ||
-    "https://www.ncsl.org/elections-and-campaigns/voter-id";
+  const idLink = info.value?.mail_in?.id_link || "https://www.ncsl.org/elections-and-campaigns/voter-id";
   if (!explainer) return "";
 
   return `\u21b3 ${explainer}[${t("absenteeMoreId")}](${idLink})`;
@@ -183,7 +204,7 @@ const hasNotary = computed(() => {
   return "without_notary" in faq;
 });
 
-const onRequested = (val) => setUserRequestedBallot(val);
+const onRequested = val => setUserRequestedBallot(val);
 </script>
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

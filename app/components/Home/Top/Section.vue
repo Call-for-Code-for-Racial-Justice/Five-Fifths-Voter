@@ -1,7 +1,7 @@
 <template>
   <section
     id="top"
-    class="-mt-[8px] flex h-dvh w-full flex-col justify-between"
+    class="mt-[-8px] flex h-dvh w-full flex-col justify-between"
   >
     <div
       class="h-[calc(100%-320px)] w-full bg-ff-purple-01

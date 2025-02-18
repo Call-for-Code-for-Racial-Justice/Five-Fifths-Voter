@@ -1,4 +1,4 @@
-import type { OAuthConfig, OAuthUserConfig } from 'next-auth/providers/index'
+import type { OAuthConfig, OAuthUserConfig } from "next-auth/providers/index";
 
 /** The returned user profile from IBMId when using the profile callback. */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -21,7 +21,7 @@ export interface IBMIdProfile extends Record<string, any> {
      * The value of this claim is always true, because the servers only return verified email addresses.
      * The value can either be a String (`"true"`) or a Boolean (`true`).
      */
-  email_verified: 'true' | true
+  email_verified: "true" | true
 
   /** The user's username. */
   name: string
@@ -33,11 +33,11 @@ export default function IBMId(
   config: OAuthUserConfig<IBMIdProfile>,
 ): OAuthConfig<IBMIdProfile> {
   return {
-    type: 'oauth',
-    id: 'ibmid',
-    name: 'IBMid',
-    authorization: { params: { scope: 'openid email' } },
-    wellKnown: 'https://login.ibm.com/oidc/endpoint/default/.well-known/openid-configuration',
+    type: "oauth",
+    id: "ibmid",
+    name: "IBMid",
+    authorization: { params: { scope: "openid email" } },
+    wellKnown: "https://login.ibm.com/oidc/endpoint/default/.well-known/openid-configuration",
     profile(profile) {
       // enable these to debug
       // console.log('profile callback', profile)
@@ -45,8 +45,8 @@ export default function IBMId(
         id: profile.sub,
         name: profile.name,
         email: profile.email,
-      }
+      };
     },
     options: config,
-  }
+  };
 }

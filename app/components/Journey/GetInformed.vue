@@ -1,17 +1,31 @@
 <template>
-  <div class="page__title">{{ $t("getInformedTitle") }}</div>
-  <cv-grid :full-width="true" kind="condensed">
+  <div class="page__title">
+    {{ $t("getInformedTitle") }}
+  </div>
+  <cv-grid
+    :full-width="true"
+    kind="condensed"
+  >
     <cv-row>
-      <cv-column :sm="4" :lg="8">
+      <cv-column
+        :sm="4"
+        :lg="8"
+      >
         <journey-territory-info
           v-if="info.register.territory"
           class="journey__info"
         />
 
         <!-- show core races for this state -->
-        <div v-if="hasCoreRaces" class="journey__info">
+        <div
+          v-if="hasCoreRaces"
+          class="journey__info"
+        >
           <span>{{ $t("getInformedTopContests") }}</span>
-          <mark-down v-if="info.sample_ballot" :content="info.sample_ballot" />
+          <mark-down
+            v-if="info.sample_ballot"
+            :content="info.sample_ballot"
+          />
         </div>
 
         <div v-else>
@@ -21,14 +35,20 @@
                 date: niceIsoDate(electionStartDate),
               })
             }}
-            <mark-down v-if="earlyVoting" :content="earlyVoting" />
+            <mark-down
+              v-if="earlyVoting"
+              :content="earlyVoting"
+            />
           </div>
         </div>
       </cv-column>
-      <cv-column :sm="4" :lg="8">
+      <cv-column
+        :sm="4"
+        :lg="8"
+      >
         <div class="aspect-[4/3] w-full max-w-[128px]">
           <img
-            class="h-full w-full object-cover"
+            class="size-full object-cover"
             src="@/assets/images/vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg"
             alt=""
           >
@@ -150,7 +170,7 @@
 <!--</template>-->
 
 <script setup>
-//TODO move these somewhere else
+// TODO move these somewhere else
 /**
  * @typedef {Object} candidateInfo
  * @property {!string} name

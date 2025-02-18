@@ -1,12 +1,17 @@
 <template>
-  <cv-header class="!h-[2rem] !bg-ff-purple-01">
+  <cv-header class="!h-8 !bg-ff-purple-01">
     <cv-header-menu-button
       id="ff-header-menu"
       aria-label="header - menu"
       aria-controls="side-nav"
     />
-    <cv-skip-to-content href="#main-content"/>
-    <cv-header-name prefix="" @click="scrollTop()"> FiveFifths</cv-header-name>
+    <cv-skip-to-content href="#main-content" />
+    <cv-header-name
+      prefix=""
+      @click="scrollTop()"
+    >
+      FiveFifths
+    </cv-header-name>
     <cv-header-nav aria-label="Five Fifths Voter navigation">
       <cv-header-menu-item
         id="header-menu-our-mission"
@@ -99,44 +104,66 @@
         aria-label="Side navigation for mobile devices"
       >
         <cv-side-nav-items>
-          <cv-side-nav-link id="side-nav-home" @click="scrollTop()">
-            <template #nav-icon><home-icon /></template>
+          <cv-side-nav-link
+            id="side-nav-home"
+            @click="scrollTop()"
+          >
+            <template #nav-icon>
+              <home-icon />
+            </template>
             {{ $t("appHeaderHome") }}
           </cv-side-nav-link>
           <cv-side-nav-link
             id="side-nav-mission"
             @click="scrollToId('our-mission')"
           >
-            <template #nav-icon
-              ><arrow-down
+            <template #nav-icon>
+              <arrow-down
                 :data-pos="ourMissionPosition"
                 class="inline-block opacity-100 transition-all duration-500 data-[pos=here]:-rotate-90
                   data-[pos=up]:-rotate-180 md:data-[pos=here]:opacity-0"
-            /></template>
+              />
+            </template>
             {{ $t("landingPageMain") }}
           </cv-side-nav-link>
-          <cv-side-nav-link id="side-nav-journey" to="/journey">
-            <template #nav-icon><voter-journey-icon /></template>
+          <cv-side-nav-link
+            id="side-nav-journey"
+            to="/journey"
+          >
+            <template #nav-icon>
+              <voter-journey-icon />
+            </template>
             {{ $t("appHeaderVoterJourney") }}
           </cv-side-nav-link>
           <cv-side-nav-link
             id="side-nav-values"
             @click="scrollToId('our-values')"
           >
-            <template #nav-icon
-              ><arrow-down
+            <template #nav-icon>
+              <arrow-down
                 :data-pos="ourValuesPosition"
                 class="inline-block opacity-100 transition-all duration-500 data-[pos=here]:-rotate-90
                   data-[pos=up]:-rotate-180 md:data-[pos=here]:opacity-0"
-            /></template>
+              />
+            </template>
             {{ $t("appHeaderOurValues") }}
           </cv-side-nav-link>
-          <cv-side-nav-link id="side-nav-support" to="/voterSupport">
-            <template #nav-icon><voter-support-icon /></template>
+          <cv-side-nav-link
+            id="side-nav-support"
+            to="/voterSupport"
+          >
+            <template #nav-icon>
+              <voter-support-icon />
+            </template>
             {{ $t("appHeaderVoterSupport") }}
           </cv-side-nav-link>
-          <cv-side-nav-link id="side-nav-why" to="/whyVote">
-            <template #nav-icon><why-vote-icon /></template>
+          <cv-side-nav-link
+            id="side-nav-why"
+            to="/whyVote"
+          >
+            <template #nav-icon>
+              <why-vote-icon />
+            </template>
             {{ $t("appHeaderWhyVote") }}
           </cv-side-nav-link>
         </cv-side-nav-items>

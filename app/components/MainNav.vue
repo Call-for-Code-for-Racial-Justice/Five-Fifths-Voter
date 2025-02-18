@@ -12,21 +12,29 @@
       :icon="missionIcon"
       href="#"
       @click.prevent="$emit('nav-section', 1)"
-      ><span>Our mission</span></cv-link
     >
-    <cv-link :icon="iconUpRight" href="/journey"
-      ><span>Voter journey</span></cv-link
+      <span>Our mission</span>
+    </cv-link>
+    <cv-link
+      :icon="iconUpRight"
+      href="/journey"
     >
+      <span>Voter journey</span>
+    </cv-link>
     <cv-link
       :disabled="activeSection === 2"
       :icon="valuesIcon"
       href="#"
       @click.prevent="$emit('nav-section', 2)"
-      ><span>Our values</span></cv-link
     >
-    <cv-link :icon="iconUpRight" href="/voterSupport"
-      ><span>Voter support</span></cv-link
+      <span>Our values</span>
+    </cv-link>
+    <cv-link
+      :icon="iconUpRight"
+      href="/voterSupport"
     >
+      <span>Voter support</span>
+    </cv-link>
   </div>
 </template>
 

@@ -2,7 +2,7 @@ import { useUser } from "~/composables/user";
 
 export const loadApproxLocation = async () => {
   const user = useUser();
-  if (process.server || user.value?.info?.location) return;
+  if (import.meta.server || user.value?.info?.location) return;
 
   try {
     const localString = localStorage.getItem("user");
@@ -10,7 +10,8 @@ export const loadApproxLocation = async () => {
       user.value.info = JSON.parse(localString);
       user.value.info.fromCache = true;
     }
-  } catch (e) {
+  }
+  catch (e) {
     console.warn("loadInfo", e);
   }
   if (!user.value.info.location) {
@@ -58,8 +59,6 @@ export const loadApproxLocation = async () => {
 
 export const setUserRequested = (requested) => {
   const user = useState("user");
-  user.value.info.location.requested_early = requested
-    ? "presidential-2024"
-    : "";
+  user.value.info.location.requested_early = requested ? "presidential-2024" : "";
   localStorage.setItem("user", JSON.stringify(user.value.info));
 };

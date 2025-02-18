@@ -1,17 +1,27 @@
 <template>
-  <div class="page__title">{{ $t("ballotTitle") }}</div>
+  <div class="page__title">
+    {{ $t("ballotTitle") }}
+  </div>
   <cv-grid :full-width="true">
     <cv-row>
-      <cv-column :sm="4" :lg="8">
+      <cv-column
+        :sm="4"
+        :lg="8"
+      >
         <!-- Return deadline -->
-        <div v-if="returnDeadline" class="journey__info">
+        <div
+          v-if="returnDeadline"
+          class="journey__info"
+        >
           <mark-down :content="returnDeadline" />
         </div>
 
         <!-- drop-off -->
-        <div v-if="hasDropoff" class="journey__faq">
-          <span>{{ $t("absenteeDropFaq") }}</span
-          ><span>{{ info.mail_in.dropoff ? $t("yes") : $t("no") }}</span>
+        <div
+          v-if="hasDropoff"
+          class="journey__faq"
+        >
+          <span>{{ $t("absenteeDropFaq") }}</span><span>{{ info.mail_in.dropoff ? $t("yes") : $t("no") }}</span>
           <mark-down
             v-if="dropoffExplainer"
             style="display: inline-block"
@@ -20,21 +30,30 @@
         </div>
 
         <!-- State link -->
-        <div v-if="trackingLink" class="journey__info">
+        <div
+          v-if="trackingLink"
+          class="journey__info"
+        >
           <mark-down :content="trackingLink" />
         </div>
 
         <!-- more information link -->
-        <div v-if="moreAbsenteeInfoLink" class="journey__info">
+        <div
+          v-if="moreAbsenteeInfoLink"
+          class="journey__info"
+        >
           <mark-down :content="moreAbsenteeInfoLink" />
         </div>
       </cv-column>
 
       <!-- side image -->
-      <cv-column :sm="4" :lg="8">
+      <cv-column
+        :sm="4"
+        :lg="8"
+      >
         <div class="aspect-[4/3] w-full max-w-xl">
           <img
-            class="h-full w-full object-cover object-[0_39%]"
+            class="size-full object-cover object-[0_39%]"
             src="@/assets/images/ballot-return-image-1.jpg"
             alt=""
           >

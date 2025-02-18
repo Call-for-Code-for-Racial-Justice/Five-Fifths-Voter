@@ -1,7 +1,10 @@
 <template>
   <div>
     <the-header />
-    <main id="#main-content" class="main-content with-header">
+    <main
+      id="#main-content"
+      class="main-content with-header"
+    >
       <slot />
     </main>
   </div>

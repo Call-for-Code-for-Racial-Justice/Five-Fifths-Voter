@@ -1,6 +1,6 @@
 <template>
   <!--  eslint-disable-next-line vue/no-v-html-->
-  <div v-html="mdContent"/>
+  <div v-html="mdContent" />
 </template>
 
 <script setup>

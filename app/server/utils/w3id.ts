@@ -1,4 +1,4 @@
-import type { OAuthConfig, OAuthUserConfig } from 'next-auth/providers/index'
+import type { OAuthConfig, OAuthUserConfig } from "next-auth/providers/index";
 /** This provider is only available internally at IBM **/
 
 /** The returned user profile from IBM W3 ID when using the profile callback. */
@@ -22,7 +22,7 @@ export interface IBMW3IdProfile extends Record<string, any> {
      * The value of this claim is always true, because the servers only return verified email addresses.
      * The value can either be a String (`"true"`) or a Boolean (`true`).
      */
-  email_verified: 'true' | true
+  email_verified: "true" | true
 
   /** The user's username. */
   name: string
@@ -34,11 +34,11 @@ export default function W3Id(
   config: OAuthUserConfig<IBMW3IdProfile>,
 ): OAuthConfig<IBMW3IdProfile> {
   return {
-    type: 'oauth',
-    id: 'w3id',
-    name: 'w3id',
-    authorization: { params: { scope: 'openid email' } },
-    wellKnown: 'https://login.w3.ibm.com/oidc/endpoint/default/.well-known/openid-configuration',
+    type: "oauth",
+    id: "w3id",
+    name: "w3id",
+    authorization: { params: { scope: "openid email" } },
+    wellKnown: "https://login.w3.ibm.com/oidc/endpoint/default/.well-known/openid-configuration",
     profile(profile) {
       // enable these to debug
       // console.log('profile callback', profile)
@@ -46,8 +46,8 @@ export default function W3Id(
         id: profile.sub,
         name: profile.name,
         email: profile.email,
-      }
+      };
     },
     options: config,
-  }
+  };
 }

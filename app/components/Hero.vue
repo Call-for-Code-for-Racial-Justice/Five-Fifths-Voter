@@ -1,5 +1,8 @@
 <template>
-  <div ref="el" class="hero">
+  <div
+    ref="el"
+    class="hero"
+  >
     <slot>Add your content here</slot>
   </div>
 </template>

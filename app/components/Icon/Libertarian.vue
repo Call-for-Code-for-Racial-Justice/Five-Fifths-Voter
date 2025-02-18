@@ -1,5 +1,9 @@
 <template>
-  <svg viewBox="0 0 700 700" fill="currentColor" :width="width">
+  <svg
+    viewBox="0 0 700 700"
+    fill="currentColor"
+    :width="width"
+  >
     <title>Libertarian Party</title>
     <defs>
       <symbol overflow="visible">

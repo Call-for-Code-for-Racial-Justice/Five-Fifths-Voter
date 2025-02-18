@@ -1,8 +1,13 @@
 <template>
-  <div class="page__title">{{ $t("registerTitle") }}</div>
+  <div class="page__title">
+    {{ $t("registerTitle") }}
+  </div>
   <cv-grid :full-width="true">
     <cv-row>
-      <cv-column :sm="4" :lg="8">
+      <cv-column
+        :sm="4"
+        :lg="8"
+      >
         <cv-checkbox
           value="checked-registered"
           :label="$t('journeyPageRegisteredLabel')"
@@ -10,9 +15,13 @@
           @change="onRegistered"
         />
         <!-- Check your registration -->
-        <cv-link :inline="true" :href="checkRegLink" target="_blank"
-          ><span>{{ $t("checkHere") }}</span></cv-link
+        <cv-link
+          :inline="true"
+          :href="checkRegLink"
+          target="_blank"
         >
+          <span>{{ $t("checkHere") }}</span>
+        </cv-link>
 
         <p class="journey__desc">
           {{ $t("registerDesc") }}
@@ -35,16 +44,23 @@
         />
 
         <!-- Youth -->
-        <journey-cali-special v-if="usaCode === 'ca'" class="journey__desc" />
-        <div v-else class="journey__desc">
+        <journey-cali-special
+          v-if="usaCode === 'ca'"
+          class="journey__desc"
+        />
+        <div
+          v-else
+          class="journey__desc"
+        >
           <div>{{ registerYouth }}</div>
           <cv-link
             style="margin-left: 0"
             :inline="true"
             :href="registerYouthLink"
             target="_blank"
-            >{{ $t("register") }}</cv-link
           >
+            {{ $t("register") }}
+          </cv-link>
         </div>
 
         <!-- Formerly incarcerated-->
@@ -55,29 +71,42 @@
             :inline="true"
             :href="felonLink"
             target="_blank"
-            >{{ $t("moreInformation") }}</cv-link
           >
+            {{ $t("moreInformation") }}
+          </cv-link>
         </div>
 
         <!-- FAQ section -->
-        <div v-if="hasFaq" class="journey__faq__header">{{ $t("faq") }}</div>
+        <div
+          v-if="hasFaq"
+          class="journey__faq__header"
+        >
+          {{ $t("faq") }}
+        </div>
 
         <!-- Register day of voting -->
-        <div v-if="'election_day' in info.register" class="journey__faq">
-          <span>{{ $t("registerElectionDay") }}</span
-          ><span>{{ info.register.election_day ? $t("yes") : $t("no") }}</span>
+        <div
+          v-if="'election_day' in info.register"
+          class="journey__faq"
+        >
+          <span>{{ $t("registerElectionDay") }}</span><span>{{ info.register.election_day ? $t("yes") : $t("no") }}</span>
         </div>
 
         <!-- Register online -->
-        <div v-if="'online' in info.register" class="journey__faq">
-          <span>{{ $t("registerOnlineQ") }}</span
-          ><span>{{ info.register.online ? $t("yes") : $t("no") }}</span>
+        <div
+          v-if="'online' in info.register"
+          class="journey__faq"
+        >
+          <span>{{ $t("registerOnlineQ") }}</span><span>{{ info.register.online ? $t("yes") : $t("no") }}</span>
         </div>
       </cv-column>
-      <cv-column :sm="4" :lg="8">
+      <cv-column
+        :sm="4"
+        :lg="8"
+      >
         <div class="aspect-[4/3] w-full max-w-xl">
           <img
-            class="h-full w-full object-cover"
+            class="size-full object-cover"
             src="@/assets/images/journey/embrace-vote.gif"
             alt=""
           >
@@ -103,8 +132,7 @@ const info = computed(() => {
 });
 const checkRegLink = computed(() => {
   return (
-    info.value?.register?.check_link ||
-    "https://www.vote.org/am-i-registered-to-vote/"
+    info.value?.register?.check_link || "https://www.vote.org/am-i-registered-to-vote/"
   );
 });
 const registrationDeadline = computed(() => {
@@ -130,9 +158,7 @@ const registerYouth = computed(() => {
 });
 const registerYouthLink = computed(() => {
   return (
-    info.value?.register?.youth_link ||
-    info.value?.register?.online_link ||
-    "https://www.ncsl.org/research/elections-and-campaigns/preregistration-for-young-voters.aspx"
+    info.value?.register?.youth_link || info.value?.register?.online_link || "https://www.ncsl.org/research/elections-and-campaigns/preregistration-for-young-voters.aspx"
   );
 });
 const felonText = computed(() => {
@@ -140,15 +166,14 @@ const felonText = computed(() => {
 });
 const felonLink = computed(() => {
   return (
-    info.value?.register?.felon_link ||
-    "https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx"
+    info.value?.register?.felon_link || "https://www.ncsl.org/research/elections-and-campaigns/felon-voting-rights.aspx"
   );
 });
 const hasFaq = computed(() => {
   const register = info.value?.register || {};
   return "election_day" in register || "online" in register;
 });
-const onRegistered = (val) => setUserRegistered(val);
+const onRegistered = val => setUserRegistered(val);
 onMounted(() => {
   loadApproxLocation();
 });

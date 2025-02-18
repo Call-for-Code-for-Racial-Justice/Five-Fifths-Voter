@@ -1,34 +1,55 @@
 <template>
-  <div class="page__title">{{ $t("voteTitle") }}</div>
-  <cv-grid :full-width="true" kind="narrow">
+  <div class="page__title">
+    {{ $t("voteTitle") }}
+  </div>
+  <cv-grid
+    :full-width="true"
+    kind="narrow"
+  >
     <cv-row>
-      <cv-column :sm="4" :lg="8">
+      <cv-column
+        :sm="4"
+        :lg="8"
+      >
         <!-- this appears after user enter their address -->
-        <cv-loading :active="loading" :overlay="true" />
+        <cv-loading
+          :active="loading"
+          :overlay="true"
+        />
         <div class="text-2xl">
           {{
             $t("getInformedNextElection", {
               date: niceIsoDate(electionStartDate),
             })
           }}
-          <mark-down v-if="earlyVoting" :content="earlyVoting" />
+          <mark-down
+            v-if="earlyVoting"
+            :content="earlyVoting"
+          />
         </div>
 
-        <div v-if="hasVoterInfo" class="journey-info__section">
+        <div
+          v-if="hasVoterInfo"
+          class="journey-info__section"
+        >
           <journey-location-list />
           <journey-civic-data />
         </div>
 
         <div v-if="filteredElections.length > 0">
           <div class="mt-4">
-            <cv-select v-model="electionId" :label="$t('voteSelectElection')">
+            <cv-select
+              v-model="electionId"
+              :label="$t('voteSelectElection')"
+            >
               <cv-select-option
                 value=""
                 :selected="true"
                 :disabled="true"
                 :hidden="true"
-                >{{ $t("voteChooseElection") }}</cv-select-option
               >
+                {{ $t("voteChooseElection") }}
+              </cv-select-option>
               <cv-select-option
                 v-for="elec in filteredElections"
                 :key="elec.id"
@@ -58,14 +79,20 @@
             {{ $t("votePollingLocationBtn") }}
           </cv-button>
         </div>
-        <div v-else class="mt-2 text-xl">
+        <div
+          v-else
+          class="mt-2 text-xl"
+        >
           {{ $t("getInformedNextCheck") }}
         </div>
       </cv-column>
-      <cv-column :sm="0" :lg="8">
+      <cv-column
+        :sm="0"
+        :lg="8"
+      >
         <div class="aspect-[4/3] w-full">
           <img
-            class="h-full w-full object-cover"
+            class="size-full object-cover"
             src="@/assets/images/landing-page-grandpa-grandson-image-2.jpeg"
             alt=""
           >
@@ -214,10 +241,10 @@ const normalizedAddress = computed(() => {
   if (voterInfo.info?.normalizedInput) {
     const normalized = voterInfo.info.normalizedInput;
     return (
-      `${normalized.line1 || ""} ${normalized.line2 || ""}`.trim() +
-      ` ${normalized.city} ${normalized.state} ${normalized.zip}`
+      `${normalized.line1 || ""} ${normalized.line2 || ""}`.trim() + ` ${normalized.city} ${normalized.state} ${normalized.zip}`
     );
-  } else return "";
+  }
+  else return "";
 });
 watch(normalizedAddress, () => {
   if (normalizedAddress.value) {
@@ -250,7 +277,7 @@ function defaultElection() {
   if (filteredElections.value?.length === 1) {
     electionId.value = filteredElections.value[0].id;
   }
-  const election = filteredElections.value.find((election) =>
+  const election = filteredElections.value.find(election =>
     election.ocdDivisionId?.endsWith(`:${usaCode.value}`),
   );
   if (election) electionId.value = election.id;
@@ -265,9 +292,8 @@ const buttonDisabled = computed(() => {
 const electionData = useElectionData();
 const filteredElections = computed(() => {
   return electionData.value.elections.filter(
-    (election) =>
-      election.id !== "2000" &&
-      election.name.toLowerCase().indexOf("test") === -1,
+    election =>
+      election.id !== "2000" && election.name.toLowerCase().indexOf("test") === -1,
   );
 });
 watch(filteredElections, () => defaultElection());

@@ -19,7 +19,10 @@ const candidates = useFetch("/api/candidateInfo", {
 
 <template>
   <div>
-    <div v-if="candidates?.data?.value?.length > 0" class="mt-1 md:text-xl">
+    <div
+      v-if="candidates?.data?.value?.length > 0"
+      class="mt-1 md:text-xl"
+    >
       {{ $t("getInformedTopContests") }}
     </div>
     <cv-data-table
@@ -55,13 +58,15 @@ const candidates = useFetch("/api/candidateInfo", {
           <cv-data-table-cell
             headers="table-candidate-name"
             class="!text-ff-purple-01"
-            >{{ row.name }}</cv-data-table-cell
           >
+            {{ row.name }}
+          </cv-data-table-cell>
           <cv-data-table-cell
             headers="table-election-name"
             class="!text-ff-purple-01"
-            >{{ row.candidate }}</cv-data-table-cell
           >
+            {{ row.candidate }}
+          </cv-data-table-cell>
           <cv-data-table-cell
             headers="table-candidate-party"
             class="!text-ff-purple-01"
@@ -82,8 +87,10 @@ const candidates = useFetch("/api/candidateInfo", {
               v-else-if="row.party === 'Green Party'"
               class="w-8 p-1 lg:w-16 lg:p-2"
             />
-            <div v-else>{{ row.party }}</div></cv-data-table-cell
-          >
+            <div v-else>
+              {{ row.party }}
+            </div>
+          </cv-data-table-cell>
           <template #expandedContent>
             <div class="flex gap-1">
               <cv-link
@@ -126,12 +133,20 @@ const candidates = useFetch("/api/candidateInfo", {
         </cv-data-table-row>
       </template>
     </cv-data-table>
-    <div v-else class="mt-2 text-xl">
+    <div
+      v-else
+      class="mt-2 text-xl"
+    >
       {{ $t("getInformedNextCheck") }}
     </div>
-    <cv-link href="https://www.vote411.org/ballot" target="_blank">{{
-      $t("getInformedMoreInfo")
-    }}</cv-link>
+    <cv-link
+      href="https://www.vote411.org/ballot"
+      target="_blank"
+    >
+      {{
+        $t("getInformedMoreInfo")
+      }}
+    </cv-link>
   </div>
 </template>
 

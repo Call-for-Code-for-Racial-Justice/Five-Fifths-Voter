@@ -25,11 +25,11 @@
         :aria-label="name"
       >
         <expand-icon
-          class="absolute -translate-x-[100%] -translate-y-[50%] opacity-100 transition-all
+          class="absolute -translate-x-full -translate-y-1/2 opacity-100 transition-all
             group-[.is-expanded]:opacity-0 group-[.is-expanded]:duration-1000"
         />
         <collapse-icon
-          class="absolute -translate-x-[100%] -translate-y-[50%] opacity-0 transition-all
+          class="absolute -translate-x-full -translate-y-1/2 opacity-0 transition-all
             group-[.is-expanded]:opacity-100 group-[.is-expanded]:duration-1000"
         />
       </button>
@@ -73,9 +73,8 @@
           <div class="hidden backdrop-blur-sm xl:block">
             <div class="relative inline">
               <span
-                class="absolute -translate-x-[230px] -translate-y-[20px] text-9xl text-ff-yellow-01"
-                >&#8220;</span
-              >
+                class="absolute translate-x-[-230px] translate-y-[-20px] text-9xl text-ff-yellow-01"
+              >&#8220;</span>
             </div>
             <span
               class="w-full align-top text-2xl font-bold italic md:ml-[-50%] md:inline-block

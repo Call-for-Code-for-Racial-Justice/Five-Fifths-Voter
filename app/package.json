@@ -9,6 +9,7 @@
     "postinstall": "nuxt prepare",
     "local:e2e": "cypress run --e2e",
     "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "prepare": "cd .. && husky app/.husky"
   },
   "dependencies": {
@@ -34,9 +35,12 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.0.8",
+    "@stylistic/eslint-plugin": "^3.1.0",
     "@types/node": "^18.18.8",
     "carbon-components": "^10.58.15",
     "cypress": "^14.0.3",
+    "eslint-plugin-tailwindcss": "^3.18.0",
+    "eslint-plugin-vue": "^9.32.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.10",
     "nuxt-eslint-globals": "^1.0.5",

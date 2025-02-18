@@ -1,6 +1,8 @@
 <template>
   <div v-if="locations.length > 0">
-    <div class="text-lg">{{ label }}</div>
+    <div class="text-lg">
+      {{ label }}
+    </div>
     <div class="m-2 space-y-2">
       <journey-location
         v-for="(item, index) in filtered"
@@ -12,8 +14,9 @@
         kind="tertiary"
         size="sm"
         @click="showMore"
-        >Show more locations</cv-button
       >
+        Show more locations
+      </cv-button>
     </div>
   </div>
 </template>
