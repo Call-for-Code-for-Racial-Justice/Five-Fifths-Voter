@@ -1,52 +1,4 @@
-<template>
-  <div
-    class="group flex max-w-xl flex-col gap-2 rounded-lg bg-ff-pink-01 p-1 text-white"
-    :class="{ 'is-expanded': expanded }"
-    tabindex="1"
-  >
-    <div
-      class="flex cursor-pointer items-center justify-between"
-      @click="toggle()"
-    >
-      <div class="text-1xl relative left-1 top-1 font-semibold">
-        {{ locationName }}
-      </div>
-      <button class="relative">
-        <chevron
-          class="transition-all duration-500 group-[.is-expanded]:-rotate-180"
-        />
-      </button>
-    </div>
-    <div
-      class="invisible h-auto max-h-0 items-center opacity-0 transition-all
-        group-[.is-expanded]:visible group-[.is-expanded]:max-h-screen
-        group-[.is-expanded]:opacity-100 group-[.is-expanded]:duration-1000
-        data-[expanded=true]:visible data-[expanded=true]:max-h-screen
-        data-[expanded=true]:opacity-100"
-    >
-      <div class="bg-ff-white-01 p-1 text-ff-purple-01">
-        <div v-if="addressLines">{{ addressLines }}</div>
-
-        <div v-if="addressLines" class="mt-1">
-          <cv-link :href="directionsLink(addressLines)" target="_blank">
-            <div><map-icon /></div>
-            <div class="ml-2 flex items-center">
-              {{ $t("mapDirections") }}
-            </div>
-          </cv-link>
-        </div>
-        <div v-if="location.notes" class="mt-1 text-[16px]">
-          {{ location.notes }}
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup>
-defineOptions({
-  name: "JourneyLocation",
-});
 import { Map32 as MapIcon, ChevronDown16 as Chevron } from "@carbon/icons-vue";
 
 const props = defineProps({
@@ -97,3 +49,59 @@ function directionsLink(address) {
   return "https://www.google.com/maps/search/?api=1&query=" + escapedValue;
 }
 </script>
+
+<template>
+  <div
+    class="group flex max-w-xl flex-col gap-2 rounded-lg bg-ff-pink-01 p-1 text-white"
+    :class="{ 'is-expanded': expanded }"
+    tabindex="1"
+  >
+    <div
+      class="flex cursor-pointer items-center justify-between"
+      @click="toggle()"
+    >
+      <div class="text-1xl relative left-1 top-1 font-semibold">
+        {{ locationName }}
+      </div>
+      <button class="relative">
+        <chevron
+          class="transition-all duration-500 group-[.is-expanded]:-rotate-180"
+        />
+      </button>
+    </div>
+    <div
+      class="invisible h-auto max-h-0 items-center opacity-0 transition-all
+        group-[.is-expanded]:visible group-[.is-expanded]:max-h-screen
+        group-[.is-expanded]:opacity-100 group-[.is-expanded]:duration-1000
+        data-[expanded=true]:visible data-[expanded=true]:max-h-screen
+        data-[expanded=true]:opacity-100"
+    >
+      <div class="bg-ff-white-01 p-1 text-ff-purple-01">
+        <div v-if="addressLines">
+          {{ addressLines }}
+        </div>
+
+        <div
+          v-if="addressLines"
+          class="mt-1"
+        >
+          <cv-link
+            :href="directionsLink(addressLines)"
+            target="_blank"
+          >
+            <div><map-icon /></div>
+            <div class="ml-2 flex items-center">
+              {{ $t("mapDirections") }}
+            </div>
+          </cv-link>
+        </div>
+        <div
+          v-if="location.notes"
+          class="mt-1 text-[16px]"
+        >
+          {{ location.notes }}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

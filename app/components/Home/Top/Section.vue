@@ -1,7 +1,13 @@
+<script setup>
+defineOptions({
+  name: "HomeTopSection",
+});
+</script>
+
 <template>
   <section
     id="top"
-    class="-mt-[8px] flex h-dvh w-full flex-col justify-between"
+    class="mt-[-8px] flex h-dvh w-full flex-col justify-between"
   >
     <div
       class="h-[calc(100%-320px)] w-full bg-ff-purple-01
@@ -13,7 +19,7 @@
           alt="Five Fifths voter"
           src="@/assets/images/five-fifths-voter.svg"
           class="w-full"
-        />
+        >
       </div>
       <div class="w-full p-3 text-white md:p-14 lg:pt-0">
         <line-breaks
@@ -31,11 +37,5 @@
     <home-countdown />
   </section>
 </template>
-
-<script setup>
-defineOptions({
-  name: "HomeTopSection",
-});
-</script>
 
 <style scoped lang="scss"></style>

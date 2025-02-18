@@ -42,6 +42,7 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "nuxt-eslint-globals",
     "@sidebase/nuxt-auth",
+    "@nuxt/eslint",
   ],
   runtimeConfig: {
     authSecret: process.env.NUXT_AUTH_SECRET,

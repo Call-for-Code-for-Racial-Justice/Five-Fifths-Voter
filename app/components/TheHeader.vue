@@ -1,21 +1,54 @@
+<script setup>
+import {
+  Home16 as HomeIcon,
+  Information16 as OurMissionIcon,
+  Compass16 as VoterJourneyIcon,
+  Group16 as OurValuesIcon,
+  HelpDesk16 as VoterSupportIcon,
+  Help16 as WhyVoteIcon,
+  LogoInstagram32 as Instagram,
+  LogoGithub32 as GitHub,
+  Language32 as LanguageSwitcher,
+} from "@carbon/icons-vue";
+import LanguagePanel from "~/components/LanguagePanel.vue";
+defineOptions({
+  name: "TheHeader",
+});
+const route = useRoute();
+const activeVoterSupport = computed(
+  () => route.path.toLowerCase() === "/votersupport",
+);
+const activeWhyVote = computed(() => route.path.toLowerCase() === "/whyvote");
+const activeJourney = computed(() => route.path.startsWith("/journey"));
+</script>
+
 <template>
-  <cv-header id="ff-header" class="!h-[6rem]">
+  <cv-header
+    id="ff-header"
+    class="!h-24"
+  >
     <cv-header-menu-button
       id="ff-header-menu"
       aria-label="header - menu"
       aria-controls="side-nav"
     />
-    <cv-skip-to-content href="#main-content"></cv-skip-to-content>
-    <cv-header-name to="/" prefix="">
+    <cv-skip-to-content href="#main-content" />
+    <cv-header-name
+      to="/"
+      prefix=""
+    >
       <img
         alt=""
         src="@/assets/images/FiveFifthsVoterLogo.png"
         class="h-full max-h-[32px] sm:max-h-[64px]"
-      />
-      FiveFifths</cv-header-name
-    >
+      >
+      FiveFifths
+    </cv-header-name>
     <cv-header-nav aria-label="Five Fifths Voter navigation">
-      <cv-header-menu-item id="header-menu-our-mission" to="/#our-mission">
+      <cv-header-menu-item
+        id="header-menu-our-mission"
+        to="/#our-mission"
+      >
         {{ $t("landingPageMain") }}
       </cv-header-menu-item>
       <cv-header-menu-item
@@ -25,7 +58,10 @@
       >
         {{ $t("appHeaderVoterJourney") }}
       </cv-header-menu-item>
-      <cv-header-menu-item id="header-menu-our-values" to="/#our-values">
+      <cv-header-menu-item
+        id="header-menu-our-values"
+        to="/#our-values"
+      >
         {{ $t("appHeaderOurValues") }}
       </cv-header-menu-item>
       <cv-header-menu-item
@@ -84,27 +120,39 @@
       >
         <cv-side-nav-items>
           <cv-side-nav-link to="/">
-            <template #nav-icon><home-icon /></template>
+            <template #nav-icon>
+              <home-icon />
+            </template>
             {{ $t("appHeaderHome") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/#our-mission">
-            <template #nav-icon><our-mission-icon /></template>
+            <template #nav-icon>
+              <our-mission-icon />
+            </template>
             {{ $t("landingPageMain") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/journey">
-            <template #nav-icon><voter-journey-icon /></template>
+            <template #nav-icon>
+              <voter-journey-icon />
+            </template>
             {{ $t("appHeaderVoterJourney") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/#our-values">
-            <template #nav-icon><our-values-icon /></template>
+            <template #nav-icon>
+              <our-values-icon />
+            </template>
             {{ $t("appHeaderOurValues") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/voterSupport">
-            <template #nav-icon><voter-support-icon /></template>
+            <template #nav-icon>
+              <voter-support-icon />
+            </template>
             {{ $t("appHeaderVoterSupport") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/whyVote">
-            <template #nav-icon><why-vote-icon /></template>
+            <template #nav-icon>
+              <why-vote-icon />
+            </template>
             {{ $t("appHeaderWhyVote") }}
           </cv-side-nav-link>
         </cv-side-nav-items>
@@ -112,30 +160,6 @@
     </template>
   </cv-header>
 </template>
-
-<script setup>
-import {
-  Home16 as HomeIcon,
-  Information16 as OurMissionIcon,
-  Compass16 as VoterJourneyIcon,
-  Group16 as OurValuesIcon,
-  HelpDesk16 as VoterSupportIcon,
-  Help16 as WhyVoteIcon,
-  LogoInstagram32 as Instagram,
-  LogoGithub32 as GitHub,
-  Language32 as LanguageSwitcher,
-} from "@carbon/icons-vue";
-import LanguagePanel from "~/components/LanguagePanel.vue";
-defineOptions({
-  name: "TheHeader",
-});
-const route = useRoute();
-const activeVoterSupport = computed(
-  () => route.path.toLowerCase() === "/votersupport",
-);
-const activeWhyVote = computed(() => route.path.toLowerCase() === "/whyvote");
-const activeJourney = computed(() => route.path.startsWith("/journey"));
-</script>
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

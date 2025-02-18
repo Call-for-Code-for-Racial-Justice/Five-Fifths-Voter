@@ -1,4 +1,4 @@
-import type { OAuthConfig, OAuthUserConfig } from 'next-auth/providers/index'
+import type { OAuthConfig, OAuthUserConfig } from "next-auth/providers/index";
 /** This provider is only for local development **/
 
 /** The returned user profile from IBMId when using the profile callback. */
@@ -22,7 +22,7 @@ export interface MockIdProfile extends Record<string, any> {
      * The value of this claim is always true, because the servers only return verified email addresses.
      * The value can either be a String (`"true"`) or a Boolean (`true`).
      */
-  email_verified: 'true' | true
+  email_verified: "true" | true
 
   /** The user's username. */
   name: string
@@ -34,11 +34,11 @@ export default function MockId(
   config: OAuthUserConfig<MockIdProfile>,
 ): OAuthConfig<MockIdProfile> {
   return {
-    type: 'oauth',
-    id: 'ibmid',
-    name: 'MockId',
-    authorization: { params: { scope: 'openid email' } },
-    wellKnown: 'http://localhost:8080/realms/ibmid/.well-known/openid-configuration',
+    type: "oauth",
+    id: "ibmid",
+    name: "MockId",
+    authorization: { params: { scope: "openid email" } },
+    wellKnown: "http://localhost:8080/realms/ibmid/.well-known/openid-configuration",
     profile(profile) {
       // enable these to debug
       // console.log('profile callback', profile)
@@ -46,8 +46,8 @@ export default function MockId(
         id: profile.sub,
         name: profile.name,
         email: profile.email,
-      }
+      };
     },
     options: config,
-  }
+  };
 }

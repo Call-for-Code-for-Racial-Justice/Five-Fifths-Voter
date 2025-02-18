@@ -32,7 +32,6 @@ export const useUser = () =>
   });
 
 export const setUserLocation = (data) => {
-  // eslint-disable-next-line no-undef
   const user = useState("user");
   if (data.region !== user.value.info?.location?.region) {
     user.value.info.location = data;

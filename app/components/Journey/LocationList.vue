@@ -1,20 +1,3 @@
-<template>
-  <div v-if="hasSites">
-    <journey-locations
-      :locations="earlyVoteSites"
-      label="Early Voting Location"
-    />
-    <journey-locations
-      :locations="pollingLocations"
-      label="In Person Voting Locations"
-    />
-    <journey-locations
-      :locations="dropOffLocations"
-      label="Ballot drop-off Locations"
-    />
-  </div>
-</template>
-
 <script setup>
 // import { Map32 as MapIcon } from "@carbon/icons-vue";
 import { useVoterInfoStore } from "~/stores/voterInfo";
@@ -61,5 +44,22 @@ const dropOffLocations = computed(() => {
 //   filteredDropOffLocationsLen.value += 3;
 // }
 </script>
+
+<template>
+  <div v-if="hasSites">
+    <journey-locations
+      :locations="earlyVoteSites"
+      label="Early Voting Location"
+    />
+    <journey-locations
+      :locations="pollingLocations"
+      label="In Person Voting Locations"
+    />
+    <journey-locations
+      :locations="dropOffLocations"
+      label="Ballot drop-off Locations"
+    />
+  </div>
+</template>
 
 <style scoped lang="scss"></style>

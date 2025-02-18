@@ -1,12 +1,4 @@
-<template>
-  <!--  eslint-disable-next-line vue/no-v-html-->
-  <div v-html="mdContent"></div>
-</template>
-
 <script setup>
-defineOptions({
-  name: "MarkdownBlock",
-});
 import MarkdownIt from "markdown-it";
 const md = new MarkdownIt();
 /**
@@ -29,5 +21,10 @@ onBeforeMount(() => {
   };
 });
 </script>
+
+<template>
+  <!--  eslint-disable-next-line vue/no-v-html-->
+  <div v-html="mdContent" />
+</template>
 
 <style lang="scss"></style>

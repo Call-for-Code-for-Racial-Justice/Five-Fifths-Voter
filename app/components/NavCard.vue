@@ -17,13 +17,17 @@ const imageUrl = computed(
 </script>
 
 <template>
-  <cv-tile kind="clickable" class="mb-6 !p-0 md:mb-0" :to="to">
+  <cv-tile
+    kind="clickable"
+    class="mb-6 !p-0 md:mb-0"
+    :to="to"
+  >
     <div class="relative aspect-[4/3] hover:scale-105">
       <img
         :class="`relative h-full w-full !max-w-full object-cover ${imageClass}`"
         :src="imageUrl"
         alt=""
-      />
+      >
       <h4
         class="absolute bottom-0 right-0 min-h-[33%] w-1/2 bg-ff-pink-01 p-2 text-xs
           text-carbon-gray-90 md:h-1/3 md:p-3 md:text-xl"

@@ -1,14 +1,8 @@
-<template>
-  <div ref="el" class="hero">
-    <slot>Add your content here</slot>
-  </div>
-</template>
-
 <script setup>
+import actual from "actual";
 defineOptions({
   name: "HeroBlock",
 });
-import { default as actual } from "actual";
 
 const props = defineProps({
   heightReserve: { type: Number, default: 320 },
@@ -36,6 +30,15 @@ onMounted(() => {
 });
 onUnmounted(() => window.removeEventListener("resize", resize));
 </script>
+
+<template>
+  <div
+    ref="el"
+    class="hero"
+  >
+    <slot>Add your content here</slot>
+  </div>
+</template>
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";

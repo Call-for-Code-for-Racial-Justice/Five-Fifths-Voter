@@ -1,3 +1,36 @@
+<script setup>
+import {
+  ArrowUpRight20 as ArrowUpRight,
+  Add20 as ExpandIcon,
+  Subtract20 as CollapseIcon,
+} from "@carbon/icons-vue";
+const props = defineProps({
+  name: { type: String, required: true },
+  main: { type: String, required: true },
+  quote: { type: String, required: true },
+  author: { type: String, required: true },
+  id: { type: String, required: true },
+  image: { type: String, default: "empower" },
+  expand: { type: Boolean, default: false },
+});
+
+const expandedCard = inject("expanded-card", ref(""));
+const expanded = ref(props.expand);
+function toggle() {
+  expanded.value = !expanded.value;
+  if (expanded.value) expandedCard.value = props.image;
+}
+watch(
+  expandedCard,
+  () => {
+    if (expandedCard.value && expandedCard.value !== props.image) {
+      setTimeout(() => (expanded.value = false), 250);
+    }
+  },
+  { flush: "post" },
+);
+</script>
+
 <template>
   <div
     class="group flex flex-col gap-2 border border-solid border-white p-5 text-white
@@ -25,11 +58,11 @@
         :aria-label="name"
       >
         <expand-icon
-          class="absolute -translate-x-[100%] -translate-y-[50%] opacity-100 transition-all
+          class="absolute -translate-x-full -translate-y-1/2 opacity-100 transition-all
             group-[.is-expanded]:opacity-0 group-[.is-expanded]:duration-1000"
         />
         <collapse-icon
-          class="absolute -translate-x-[100%] -translate-y-[50%] opacity-0 transition-all
+          class="absolute -translate-x-full -translate-y-1/2 opacity-0 transition-all
             group-[.is-expanded]:opacity-100 group-[.is-expanded]:duration-1000"
         />
       </button>
@@ -73,9 +106,8 @@
           <div class="hidden backdrop-blur-sm xl:block">
             <div class="relative inline">
               <span
-                class="absolute -translate-x-[230px] -translate-y-[20px] text-9xl text-ff-yellow-01"
-                >&#8220;</span
-              >
+                class="absolute translate-x-[-230px] translate-y-[-20px] text-9xl text-ff-yellow-01"
+              >&#8220;</span>
             </div>
             <span
               class="w-full align-top text-2xl font-bold italic md:ml-[-50%] md:inline-block
@@ -92,39 +124,6 @@
     </div>
   </div>
 </template>
-
-<script setup>
-import {
-  ArrowUpRight20 as ArrowUpRight,
-  Add20 as ExpandIcon,
-  Subtract20 as CollapseIcon,
-} from "@carbon/icons-vue";
-const props = defineProps({
-  name: { type: String, required: true },
-  main: { type: String, required: true },
-  quote: { type: String, required: true },
-  author: { type: String, required: true },
-  id: { type: String, required: true },
-  image: { type: String, default: "empower" },
-  expand: { type: Boolean, default: false },
-});
-
-const expandedCard = inject("expanded-card", ref(""));
-const expanded = ref(props.expand);
-function toggle() {
-  expanded.value = !expanded.value;
-  if (expanded.value) expandedCard.value = props.image;
-}
-watch(
-  expandedCard,
-  () => {
-    if (expandedCard.value && expandedCard.value !== props.image) {
-      setTimeout(() => (expanded.value = false), 250);
-    }
-  },
-  { flush: "post" },
-);
-</script>
 
 <style scoped lang="scss">
 .empower {

@@ -1,5 +1,14 @@
+<script setup>
+defineProps({
+  width: { type: Number, default: 32 },
+});
+</script>
 <template>
-  <svg viewBox="0 0 700 700" fill="currentColor" :width="width">
+  <svg
+    viewBox="0 0 700 700"
+    fill="currentColor"
+    :width="width"
+  >
     <title>Libertarian Party</title>
     <defs>
       <symbol overflow="visible">
@@ -121,8 +130,3 @@
     </g>
   </svg>
 </template>
-<script setup>
-defineProps({
-  width: { type: Number, default: 32 },
-});
-</script>

@@ -1,9 +1,3 @@
-<template>
-  <div>
-    {{ $t("registerYouth_1") }}
-    <mark-down :content="ymcaInfo" />
-  </div>
-</template>
 <script setup>
 const { t } = useI18n();
 const ymcaInfo = computed(() => {
@@ -13,3 +7,9 @@ const ymcaInfo = computed(() => {
   });
 });
 </script>
+<template>
+  <div>
+    {{ $t("registerYouth_1") }}
+    <mark-down :content="ymcaInfo" />
+  </div>
+</template>

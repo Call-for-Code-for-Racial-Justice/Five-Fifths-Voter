@@ -4,8 +4,7 @@ import { useWinstonLogger } from "~/utils/logging";
 
 const logger = useWinstonLogger("cloudant");
 
-const CLOUDANT_URL =
-  process.env.CLOUDANT_URL || "http://admin:ThisIsGibberish@0.0.0.0:6143";
+const CLOUDANT_URL = process.env.CLOUDANT_URL || "http://admin:ThisIsGibberish@0.0.0.0:6143";
 const CLOUDANT_DB = process.env.CLOUDANT_DB || "local_55voter";
 const CLOUDANT_APIKEY = process.env.CLOUDANT_APIKEY;
 // Leave headers empty for now. This is used by nano and IamAuthenticator
@@ -55,11 +54,12 @@ export async function retryHelper(fn, ignoreConflict = true) {
         logger.info(
           `cloudant: sleeping ${sleep.toFixed(1)} ms due to rate limit (remaining retries ${retry})`,
         );
-        // eslint-disable-next-line no-undef
-        await new Promise((resolve) => setTimeout(resolve, sleep));
-      } else if (ignoreConflict && reason.statusCode === 409) {
+        await new Promise(resolve => setTimeout(resolve, sleep));
+      }
+      else if (ignoreConflict && reason.statusCode === 409) {
         return {};
-      } else {
+      }
+      else {
         throw reason;
       }
     });
@@ -97,5 +97,5 @@ export async function getCandidates(date, state) {
   );
   logger.info(`got ${body.rows.length} items from ${date}`);
 
-  return body.rows.map((row) => row.doc);
+  return body.rows.map(row => row.doc);
 }
