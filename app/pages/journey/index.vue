@@ -1,6 +1,10 @@
 <script setup>
 import { isUserRegistered, isUserRequestedBallot } from "~/composables/user";
-
+import navBallotReturnUrl from "~/assets/images/ballot-return-image-1.jpg";
+import navRegisterUrl from "~/assets/images/journey/elderly-lady-glasses.jpg";
+import navMailUrl from "~/assets/images/journey/absentee-page-group-friends-laptop.jpg";
+import navInformedUrl from "~/assets/images/vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg";
+import navVoteUrl from "~/assets/images/journey/grandpa-grandson.jpeg";
 const user = useUser();
 onMounted(() => {
   loadApproxLocation();
@@ -26,7 +30,7 @@ onMounted(() => {
           >
             <nav-card
               :title="$t('journeyPageRegisteredLabel')"
-              image-src="journey/elderly-lady-glasses.jpg"
+              :image-src="navRegisterUrl"
               to="/journey/register"
               :checked="isUserRegistered()"
             />
@@ -37,7 +41,7 @@ onMounted(() => {
           >
             <nav-card
               :title="$t('journeyPageBallotLabel')"
-              image-src="journey/absentee-page-group-friends-laptop.jpg"
+              :image-src="navMailUrl"
               to="/journey/mailInBallot"
               :checked="isUserRequestedBallot()"
             />
@@ -48,7 +52,7 @@ onMounted(() => {
           >
             <nav-card
               :title="$t('journeyPageGetInformedLabel')"
-              image-src="vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg"
+              :image-src="navInformedUrl"
               to="/journey/getInformed"
             />
           </cv-column>
@@ -58,7 +62,7 @@ onMounted(() => {
           >
             <nav-card
               :title="$t('journeyPageVoteNowLabel')"
-              image-src="journey/grandpa-grandson.jpeg"
+              :image-src="navVoteUrl"
               to="/journey/voteInPerson"
             />
           </cv-column>
@@ -71,7 +75,7 @@ onMounted(() => {
           >
             <nav-card
               :title="$t('journeyPageVoteNowLabel')"
-              image-src="journey/grandpa-grandson.jpeg"
+              :image-src="navVoteUrl"
               to="/journey/voteInPerson"
             />
           </cv-column>
@@ -81,7 +85,7 @@ onMounted(() => {
           >
             <nav-card
               :title="$t('journeyPageDeliverLabel')"
-              image-src="ballot-return-image-1.jpg"
+              :image-src="navBallotReturnUrl"
               image-class="object-[0_39%]"
               to="/journey/ballotReturn"
             />

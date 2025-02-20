@@ -4,16 +4,13 @@ import {
   CheckmarkFilled20 as CheckmarkFilled,
 } from "@carbon/icons-vue";
 
-const props = defineProps({
+defineProps({
   title: { type: String, required: true },
   imageSrc: { type: String, required: true },
   imageClass: { type: String, default: "", required: false },
   to: { type: String, required: true },
   checked: { type: Boolean, default: false },
 });
-const imageUrl = computed(
-  () => new URL(`/assets/images/${props.imageSrc}`, import.meta.url),
-);
 </script>
 
 <template>
@@ -25,12 +22,12 @@ const imageUrl = computed(
     <div class="relative aspect-[4/3] hover:scale-105">
       <img
         :class="`relative h-full w-full !max-w-full object-cover ${imageClass}`"
-        :src="imageUrl"
+        :src="imageSrc"
         alt=""
       >
       <h4
         class="absolute bottom-0 right-0 min-h-[33%] w-1/2 bg-ff-pink-01 p-2 text-xs
-          text-carbon-gray-90 md:h-1/3 md:p-3 md:text-xl"
+          text-carbon-gray-90 md:h-1/3 md:p-2 md:text-xl"
       >
         {{ title }}
       </h4>
