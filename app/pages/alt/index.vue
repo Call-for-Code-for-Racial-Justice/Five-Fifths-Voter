@@ -119,8 +119,8 @@ function autoClose(ev) {
       </ul>
     </nav>
     <div
-      class="fixed z-10 h-52 w-full origin-top-left bg-contain
-        bg-right-top bg-no-repeat opacity-95"
+      class="fixed z-10 h-52 w-full bg-contain bg-right-top
+        bg-no-repeat opacity-95 lg:w-1/2"
       :style="{backgroundImage: `url(${bgUrl})`}"
     >
       <div class="float-start mt-2 w-32 p-8 sm:w-44">
