@@ -89,11 +89,11 @@ function autoClose(ev) {
     class="relative"
   >
     <nav
-      class="fixed left-2 top-20 z-20 cursor-pointer bg-ff-purple-01/90"
+      class="fixed left-2 top-20 z-20 cursor-pointer bg-ff-purple-01/90 sm:text-lg"
     >
       <ul>
         <li
-          class="border-l border-solid  p-3"
+          class="border-l border-solid p-3 sm:p-1"
           :class="{'border-ff-purple-02': navSection === 'top',
                    'border-carbon-gray-80': navSection !== 'top'}"
           @click="scrollToId('top')"
@@ -101,7 +101,7 @@ function autoClose(ev) {
           {{ $t("appHeaderHome") }}
         </li>
         <li
-          class="border-l border-solid p-3 hover:border-l-8"
+          class="border-l border-solid p-3 hover:border-l-8 sm:p-1"
           :class="{'border-ff-purple-02': navSection === 'mission',
                    'border-carbon-gray-80': navSection !== 'mission'}"
           @click="scrollToId('mission')"
@@ -109,7 +109,7 @@ function autoClose(ev) {
           {{ $t("landingPageMain") }}
         </li>
         <li
-          class="border-l border-solid p-3"
+          class="border-l border-solid p-3 sm:p-1"
           :class="{'border-ff-purple-02': navSection === 'values',
                    'border-carbon-gray-80': navSection !== 'values'}"
           @click="scrollToId('values')"
@@ -123,7 +123,7 @@ function autoClose(ev) {
         bg-right-top bg-no-repeat opacity-95"
       :style="{backgroundImage: `url(${bgUrl})`}"
     >
-      <div class="float-start mt-2 w-32 p-8">
+      <div class="float-start mt-2 w-32 p-8 sm:w-44">
         <img
           alt="Five Fifths voter"
           :src="titleLogoUrl"
@@ -138,12 +138,13 @@ function autoClose(ev) {
       class="h-dvh pt-52"
     >
       <div class="mb-16 w-full px-2 pt-0 text-white">
-        <line-breaks
-          :content="$t('landingTopTagline')"
-          class="text-5xl"
-        />
         <div
-          class="mt-4 max-w-96 text-2xl"
+          class="whitespace-break-spaces text-5xl sm:text-6xl"
+        >
+          {{ $t('landingTopTagline') }}
+        </div>
+        <div
+          class="mt-4 max-w-96 text-2xl sm:mt-8 sm:text-3xl"
         >
           {{ $t("landingTopDesc") }}
         </div>
@@ -163,11 +164,11 @@ function autoClose(ev) {
       class="h-dvh pt-52"
     >
       <h1
-        class="mb-4 px-2 text-5xl text-ff-white-01"
+        class="mb-4 px-2 text-5xl text-ff-white-01 sm:text-6xl"
       >
         {{ $t("landingPageMain") }}
       </h1>
-      <div class="mb-8 px-2 leading-5 text-white">
+      <div class="mb-8 whitespace-break-spaces px-2 leading-5 text-white sm:text-lg">
         {{ $t("landingPageMission") }}
       </div>
       <button
@@ -184,7 +185,7 @@ function autoClose(ev) {
       ref="valuesSection"
       class="h-dvh pt-52"
     >
-      <h1 class="mb-4 px-2 text-5xl">
+      <h1 class="mb-4 px-2 text-5xl sm:text-6xl">
         {{ $t("appHeaderOurValues") }}
       </h1>
       <cv-accordion @change="autoClose">
@@ -193,7 +194,9 @@ function autoClose(ev) {
           v-model:open="isEduOpen"
         >
           <template #title>
-            {{ $t('landingPageEdu') }}
+            <div class="sm:text-lg">
+              {{ $t('landingPageEdu') }}
+            </div>
           </template>
           <template #content>
             <div class="mb-4">
@@ -210,7 +213,9 @@ function autoClose(ev) {
           v-model:open="isEmpowerOpen"
         >
           <template #title>
-            {{ $t('landingPageEmpower') }}
+            <div class="sm:text-lg">
+              {{ $t('landingPageEmpower') }}
+            </div>
           </template>
           <template #content>
             <div class="mb-4">
@@ -227,7 +232,9 @@ function autoClose(ev) {
           v-model:open="isEnableOpen"
         >
           <template #title>
-            {{ $t('landingPageEnable') }}
+            <div class="sm:text-lg">
+              {{ $t('landingPageEnable') }}
+            </div>
           </template>
           <template #content>
             <div class="mb-4">
