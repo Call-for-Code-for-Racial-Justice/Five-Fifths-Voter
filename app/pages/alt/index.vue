@@ -154,7 +154,7 @@ function autoClose(ev) {
         class="ml-2 bg-ff-purple-02 p-3 text-white"
         @click="navigateTo('/journey')"
       >
-        {{ $t("appHeaderVoterJourney") }}
+        <span class="md:text-lg">{{ $t("appHeaderVoterJourney") }}</span>
         <arrow-up-right class="inline-block" />
       </button>
     </section>
@@ -176,7 +176,7 @@ function autoClose(ev) {
         class="ml-2 bg-ff-purple-02 p-3 text-white"
         @click="navigateTo('/journey')"
       >
-        {{ $t("appHeaderVoterJourney") }}
+        <span class="md:text-lg">{{ $t("appHeaderVoterJourney") }}</span>
         <arrow-up-right class="inline-block" />
       </button>
     </section>
@@ -252,11 +252,11 @@ function autoClose(ev) {
         class="ml-2 mt-8 bg-ff-purple-02 p-3 text-white"
         @click="navigateTo('/journey')"
       >
-        {{ $t("appHeaderVoterJourney") }}
+        <span class="md:text-lg">{{ $t("appHeaderVoterJourney") }}</span>
         <arrow-up-right class="inline-block" />
       </button>
     </section>
-    <footer class="sticky bottom-0 h-20 bg-ff-red-01">
+    <footer class="sticky bottom-0 h-20 bg-ff-red-01 md:h-28">
       <alt-countdown-container />
     </footer>
   </div>

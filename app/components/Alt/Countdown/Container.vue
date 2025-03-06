@@ -80,7 +80,7 @@ onBeforeUnmount(() => clearInterval(intervalID));
     class="flex size-full items-center justify-between
       bg-ff-red-01 px-3"
   >
-    <div class="text-base sm:text-lg">
+    <div class="text-base sm:text-lg md:text-3xl">
       <div class="text-ff-white-01">
         {{ headlines[0] }}
       </div>

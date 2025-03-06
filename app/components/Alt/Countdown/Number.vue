@@ -11,11 +11,11 @@ defineProps({
     class="bg-oval bg-contain bg-no-repeat text-white"
   >
     <div
-      class="font-[Caprasimo] text-2xl sm:text-4xl"
+      class="font-[Caprasimo] text-2xl sm:text-4xl md:text-5xl"
     >
       {{ prefix }} {{ number }}
     </div>
-    <div class="text-right text-xs sm:text-base">
+    <div class="text-right text-xs sm:text-base ">
       {{ label }}
     </div>
   </div>
