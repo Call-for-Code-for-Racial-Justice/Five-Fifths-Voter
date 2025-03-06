@@ -89,11 +89,11 @@ function autoClose(ev) {
     class="relative"
   >
     <nav
-      class="fixed left-2 top-20 z-20 cursor-pointer bg-ff-purple-01/90 sm:text-lg"
+      class="fixed left-2 top-20 z-20 cursor-pointer bg-ff-purple-01/90 sm:text-lg 3xl:text-xl"
     >
       <ul>
         <li
-          class="border-l border-solid p-3 sm:p-1"
+          class="border-l border-solid p-3 hover:border-l-4 sm:p-1 3xl:p-2"
           :class="{'border-ff-purple-02': navSection === 'top',
                    'border-carbon-gray-80': navSection !== 'top'}"
           @click="scrollToId('top')"
@@ -101,7 +101,7 @@ function autoClose(ev) {
           {{ $t("appHeaderHome") }}
         </li>
         <li
-          class="border-l border-solid p-3 hover:border-l-8 sm:p-1"
+          class="border-l border-solid p-3 hover:border-l-4 sm:p-1 3xl:p-2"
           :class="{'border-ff-purple-02': navSection === 'mission',
                    'border-carbon-gray-80': navSection !== 'mission'}"
           @click="scrollToId('mission')"
@@ -109,7 +109,7 @@ function autoClose(ev) {
           {{ $t("landingPageMain") }}
         </li>
         <li
-          class="border-l border-solid p-3 sm:p-1"
+          class="border-l border-solid p-3 hover:border-l-4 sm:p-1 3xl:p-2"
           :class="{'border-ff-purple-02': navSection === 'values',
                    'border-carbon-gray-80': navSection !== 'values'}"
           @click="scrollToId('values')"
@@ -119,11 +119,11 @@ function autoClose(ev) {
       </ul>
     </nav>
     <div
-      class="fixed z-10 h-52 w-full bg-contain bg-right-top
-        bg-no-repeat opacity-95 lg:w-1/2 2xl:w-1/3"
+      class="fixed z-10 h-52 w-full bg-contain bg-right-top bg-no-repeat
+        opacity-95 lg:w-1/2 2xl:w-1/3 3xl:h-56"
       :style="{backgroundImage: `url(${bgUrl})`}"
     >
-      <div class="float-start mt-2 w-32 p-8 sm:w-44">
+      <div class="float-start mt-2 w-32 p-8 sm:w-44 3xl:w-52">
         <img
           alt="Five Fifths voter"
           :src="titleLogoUrl"
@@ -135,7 +135,7 @@ function autoClose(ev) {
     <section
       id="top"
       ref="topSection"
-      class="h-dvh pt-52"
+      class="h-dvh pt-52 3xl:pt-56"
     >
       <div class="mb-16 w-full px-2 pt-0 text-white">
         <div
@@ -161,7 +161,7 @@ function autoClose(ev) {
     <section
       id="mission"
       ref="missionSection"
-      class="h-dvh pt-52"
+      class="h-dvh pt-52 3xl:pt-56"
     >
       <h1
         class="mb-4 px-2 text-5xl text-ff-white-01 sm:text-6xl 2xl:text-8xl"
@@ -183,7 +183,7 @@ function autoClose(ev) {
     <section
       id="values"
       ref="valuesSection"
-      class="h-dvh pt-52"
+      class="h-dvh pt-52 3xl:pt-56"
     >
       <h1 class="mb-4 px-2 text-5xl sm:text-6xl 2xl:text-8xl">
         {{ $t("appHeaderOurValues") }}
@@ -256,7 +256,7 @@ function autoClose(ev) {
         <arrow-up-right class="inline-block" />
       </button>
     </section>
-    <footer class="sticky bottom-0 h-20 bg-ff-red-01 md:h-28 xl:h-32">
+    <footer class="sticky bottom-0 h-20 bg-ff-red-01 md:h-28 xl:h-32 3xl:h-64">
       <alt-countdown-container />
     </footer>
   </div>
