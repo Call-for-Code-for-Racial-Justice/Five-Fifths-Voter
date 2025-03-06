@@ -256,7 +256,7 @@ function autoClose(ev) {
         <arrow-up-right class="inline-block" />
       </button>
     </section>
-    <footer class="sticky bottom-0 h-20 bg-ff-red-01 md:h-28">
+    <footer class="sticky bottom-0 h-20 bg-ff-red-01 md:h-28 xl:h-32">
       <alt-countdown-container />
     </footer>
   </div>
