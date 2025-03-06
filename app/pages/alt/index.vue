@@ -120,7 +120,7 @@ function autoClose(ev) {
     </nav>
     <div
       class="fixed z-10 h-52 w-full bg-contain bg-right-top
-        bg-no-repeat opacity-95 lg:w-1/2"
+        bg-no-repeat opacity-95 lg:w-1/2 2xl:w-1/3"
       :style="{backgroundImage: `url(${bgUrl})`}"
     >
       <div class="float-start mt-2 w-32 p-8 sm:w-44">
@@ -139,12 +139,12 @@ function autoClose(ev) {
     >
       <div class="mb-16 w-full px-2 pt-0 text-white">
         <div
-          class="whitespace-break-spaces text-5xl sm:text-6xl"
+          class="whitespace-break-spaces text-5xl sm:text-6xl 2xl:text-8xl"
         >
           {{ $t('landingTopTagline') }}
         </div>
         <div
-          class="mt-4 max-w-96 text-2xl sm:mt-8 sm:text-3xl"
+          class="mt-4 max-w-96 text-2xl sm:mt-8 sm:text-3xl 2xl:max-w-2xl 2xl:text-4xl"
         >
           {{ $t("landingTopDesc") }}
         </div>
@@ -164,11 +164,11 @@ function autoClose(ev) {
       class="h-dvh pt-52"
     >
       <h1
-        class="mb-4 px-2 text-5xl text-ff-white-01 sm:text-6xl"
+        class="mb-4 px-2 text-5xl text-ff-white-01 sm:text-6xl 2xl:text-8xl"
       >
         {{ $t("landingPageMain") }}
       </h1>
-      <div class="mb-8 whitespace-break-spaces px-2 leading-5 text-white sm:text-lg">
+      <div class="mb-8 whitespace-break-spaces px-2 leading-5 text-white sm:text-lg 2xl:text-2xl">
         {{ $t("landingPageMission") }}
       </div>
       <button
@@ -185,7 +185,7 @@ function autoClose(ev) {
       ref="valuesSection"
       class="h-dvh pt-52"
     >
-      <h1 class="mb-4 px-2 text-5xl sm:text-6xl">
+      <h1 class="mb-4 px-2 text-5xl sm:text-6xl 2xl:text-8xl">
         {{ $t("appHeaderOurValues") }}
       </h1>
       <cv-accordion @change="autoClose">
