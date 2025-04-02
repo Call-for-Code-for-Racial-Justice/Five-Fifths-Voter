@@ -54,4 +54,3 @@ definePageMeta({
     <home-values-section />
   </div>
 </template>
-<style scoped lang="scss"></style>

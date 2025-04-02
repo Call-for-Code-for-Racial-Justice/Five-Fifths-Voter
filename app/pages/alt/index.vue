@@ -261,4 +261,3 @@ function autoClose(ev) {
     </footer>
   </div>
 </template>
-<style scoped lang="scss"></style>
