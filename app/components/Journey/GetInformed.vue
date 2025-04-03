@@ -173,9 +173,9 @@ const earlyVoting = computed(() => {
 <!--</template>-->
 
 <template>
-  <div class="page__title">
+  <page-title>
     {{ $t("getInformedTitle") }}
-  </div>
+  </page-title>
   <cv-grid
     :full-width="true"
     kind="condensed"
@@ -239,6 +239,5 @@ const earlyVoting = computed(() => {
 
 <style lang="scss">
 @import "@/assets/scss/theme";
-@import "@/assets/scss/pages";
 @import "@/assets/scss/journey";
 </style>

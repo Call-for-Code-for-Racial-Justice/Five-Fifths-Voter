@@ -1,17 +1,17 @@
 <script setup></script>
 
 <template>
-  <div class="page__inset blue-bg">
-    <div class="page__title">
+  <page-inset>
+    <page-title>
       {{ $t("whyVotePageTitle") }}
-    </div>
+    </page-title>
     <cv-grid :full-width="true">
       <cv-row>
         <cv-column
           :sm="4"
           :lg="8"
         >
-          <div class="page__subtitle">
+          <div class="mb-2 text-heading-04">
             {{ $t("whyVotePageSubTitle") }}
           </div>
           <p class="aside__paragraph">
@@ -36,10 +36,5 @@
         </cv-column>
       </cv-row>
     </cv-grid>
-  </div>
+  </page-inset>
 </template>
-
-<style scoped lang="scss">
-@import "@/assets/scss/theme";
-@import "@/assets/scss/pages";
-</style>

@@ -85,9 +85,9 @@ const onRequested = val => setUserRequestedBallot(val);
 </script>
 
 <template>
-  <div class="page__title">
+  <page-title>
     {{ $t("absenteeTitle") }}
-  </div>
+  </page-title>
   <cv-grid :full-width="true">
     <cv-row>
       <cv-column
@@ -208,7 +208,6 @@ const onRequested = val => setUserRequestedBallot(val);
 </template>
 <style scoped lang="scss">
 @import "@/assets/scss/theme";
-@import "@/assets/scss/pages";
 @import "@/assets/scss/journey";
 .aside__img {
   max-height: 100%;

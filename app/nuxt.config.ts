@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   telemetry: { enabled: true },
   devtools: { enabled: true },
-
+  css: ['~/assets/css/five-fifths-theme.css'],
   devServer: {
     port: 4007,
   },
@@ -52,6 +52,9 @@ export default defineNuxtConfig({
   },
 
   i18n: {
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
     locales: [
       {
         code: "en",

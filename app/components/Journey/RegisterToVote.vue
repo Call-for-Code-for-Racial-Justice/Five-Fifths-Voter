@@ -62,9 +62,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="page__title">
+  <page-title>
     {{ $t("registerTitle") }}
-  </div>
+  </page-title>
   <cv-grid :full-width="true">
     <cv-row>
       <cv-column
@@ -181,6 +181,5 @@ onMounted(() => {
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";
-@import "@/assets/scss/pages";
 @import "@/assets/scss/journey";
 </style>

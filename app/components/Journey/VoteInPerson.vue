@@ -469,9 +469,9 @@ const loading = computed(() => voterInfo.status === "loading");
 <!--</template>-->
 
 <template>
-  <div class="page__title">
+  <page-title>
     {{ $t("voteTitle") }}
-  </div>
+  </page-title>
   <cv-grid
     :full-width="true"
     kind="narrow"
@@ -551,7 +551,7 @@ const loading = computed(() => voterInfo.status === "loading");
         </div>
         <div
           v-else
-          class="mt-2 text-xl"
+          class="text-xl mt-2"
         >
           {{ $t("getInformedNextCheck") }}
         </div>
@@ -574,7 +574,6 @@ const loading = computed(() => voterInfo.status === "loading");
 
 <style scoped lang="scss">
 @import "@/assets/scss/theme";
-@import "@/assets/scss/pages";
 @import "@/assets/scss/journey";
 :deep(.bx--btn--primary) {
   background-color: $ff-blue-01;

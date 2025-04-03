@@ -43,9 +43,9 @@ const moreAbsenteeInfoLink = computed(() => {
 </script>
 
 <template>
-  <div class="page__title">
+  <page-title>
     {{ $t("ballotTitle") }}
-  </div>
+  </page-title>
   <cv-grid :full-width="true">
     <cv-row>
       <cv-column
@@ -108,6 +108,5 @@ const moreAbsenteeInfoLink = computed(() => {
 </template>
 <style lang="scss">
 @import "@/assets/scss/theme";
-@import "@/assets/scss/pages";
 @import "@/assets/scss/journey";
 </style>
