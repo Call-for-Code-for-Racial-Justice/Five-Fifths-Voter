@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   telemetry: { enabled: true },
   devtools: { enabled: true },
-  css: ['~/assets/css/five-fifths-theme.css'],
+  css: ["~/assets/css/five-fifths-theme.css"],
   devServer: {
     port: 4007,
   },
@@ -22,20 +22,6 @@ export default defineNuxtConfig({
     globalAppMiddleware: false, // enable to protect the entire app
   },
 
-  // TODO: revisit this for Carbon 11
-  // Do not add Carbon anything here - it will cause loops and fail
-  // css: ['@/assets/scss/theme.scss'],
-  // You might see this solution from a search. This does not work either.
-  // Do not add Carbon anything here - it will cause loops and fail
-  // vite: {
-  //   css: {
-  //     preprocessorOptions: {
-  //       scss: {
-  //         additionalData: '@use "@/assets/scss/theme.scss" as *;',
-  //       },
-  //     },
-  //   },
-  // },
   modules: [
     "@nuxtjs/i18n",
     "@nuxtjs/tailwindcss",

@@ -41,7 +41,6 @@ function onChange(val) {
 </template>
 
 <style scoped lang="scss">
-@import "@/assets/scss/theme";
 .usa-state {
   margin-bottom: 0.5rem;
   max-width: 15rem;

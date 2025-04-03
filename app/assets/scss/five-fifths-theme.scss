@@ -59,6 +59,9 @@ $carbon--theme: map-merge($carbon--theme--g90, $five-fifths--theme);
 @import 'carbon-components/scss/globals/scss/styles';
 
 :root {
+  --carbon--gray-90: #262626;
+  --gray-100: #161616;
+
   --ff-purple-01: #210D34;
   --ff-purple-02: #85276E;
   --ff-white-01: #FFEBD9;

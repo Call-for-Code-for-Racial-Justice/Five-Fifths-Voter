@@ -218,13 +218,10 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
   </cv-header>
 </template>
 
-<style lang="scss">
-@import "@/assets/scss/theme";
-$shell-side-nav-text-01: white;
-
+<style lang="css">
 #side-nav {
   margin-top: -1rem;
-  background-color: $gray-100;
+  background-color: var(--gray-100);
   // Side nav link text & icon
   ul > li > a > span,
   ul > li > a > div > svg {
@@ -232,7 +229,7 @@ $shell-side-nav-text-01: white;
     fill: white;
   }
   ul > li > a:hover {
-    background-color: $ff-purple-01;
+    background-color: var(--ff-purple-01);
   }
   ul > li > a > span:hover {
     color: white;

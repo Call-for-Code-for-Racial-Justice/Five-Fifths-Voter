@@ -161,14 +161,10 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
   </cv-header>
 </template>
 
-<style scoped lang="scss">
-@import "@/assets/scss/theme";
-$shell-side-nav-text-01: white;
-
+<style scoped lang="css">
 .cv-header {
   a.bx--header__name {
     color: white !important;
-    font-size: carbon--type-scale(5);
   }
 
   .cv-header-name {
@@ -179,10 +175,9 @@ $shell-side-nav-text-01: white;
   .cv-header-menu-item {
     .bx--header__menu-item {
       color: white;
-      font-size: carbon--type-scale(5);
     }
     .bx--header__menu-item--current {
-      background-color: $ff-purple-01;
+      background-color: var(--ff-purple-01);
     }
     .bx--header__menu-item--current:after {
       border-width: 0;
@@ -203,7 +198,7 @@ $shell-side-nav-text-01: white;
     fill: white;
   }
   ul > li > a:hover {
-    background-color: $ff-purple-01;
+    background-color: var(--ff-purple-01);
   }
   ul > li > a > span:hover {
     color: white;

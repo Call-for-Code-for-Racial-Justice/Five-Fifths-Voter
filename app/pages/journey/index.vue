@@ -95,7 +95,3 @@ onMounted(() => {
     </div>
   </div>
 </template>
-
-<style scoped lang="scss">
-@import "@/assets/scss/theme";
-</style>
