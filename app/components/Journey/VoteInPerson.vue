@@ -572,13 +572,11 @@ const loading = computed(() => voterInfo.status === "loading");
   </cv-grid>
 </template>
 
-<style scoped lang="scss">
-@import "@/assets/scss/theme";
-@import "@/assets/scss/journey";
+<style scoped lang="css">
 :deep(.bx--btn--primary) {
-  background-color: $ff-blue-01;
+  background-color: var(--ff-blue-01);
 }
 :deep(.bx--btn--primary:hover) {
-  background-color: $ff-green-01;
+  background-color: var(--ff-green-01);
 }
 </style>
