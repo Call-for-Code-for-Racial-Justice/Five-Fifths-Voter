@@ -26,6 +26,5 @@ useHead({
 <style lang="scss">
 body {
   margin: 0;
-  font-family: "IBM Plex Sans", sans-serif;
 }
 </style>

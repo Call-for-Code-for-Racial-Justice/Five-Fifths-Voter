@@ -144,6 +144,32 @@ export default {
       screens: {
         "3xl": "2560px",
       },
+      fontSize: {
+        "heading-04": ["1.75rem", {
+          lineHeight: "1.28572",
+          letterSpacing: "0",
+          fontWeight: "400",
+        }],
+        "heading-05": ["2rem", {
+          lineHeight: "1.25",
+          letterSpacing: "0",
+          fontWeight: "400",
+        }],
+        "body-long-01": ["0.875rem", {
+          lineHeight: "1.42857",
+          letterSpacing: "0.16px",
+          fontWeight: "400",
+        }],
+        "body-long-02": ["1rem", {
+          lineHeight: "1.5",
+          letterSpacing: "0",
+          fontWeight: "400",
+        }],
+      },
+      fontFamily: {
+        sans: ["IBM Plex Sans", "ui-sans-serif", "system-ui", "Helvetica Neue", "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+        mono: ["IBM Plex Mono", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
+      },
     },
   },
 };

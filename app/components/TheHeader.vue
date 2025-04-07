@@ -190,8 +190,7 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
 
 #side-nav {
   margin-top: 3rem;
-  background-color: $gray-100;
-  // Side nav link text & icon
+  background-color: var(--gray-100);
   ul > li > a > span,
   ul > li > a > div > svg {
     color: white;

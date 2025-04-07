@@ -222,7 +222,6 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
 #side-nav {
   margin-top: -1rem;
   background-color: var(--gray-100);
-  // Side nav link text & icon
   ul > li > a > span,
   ul > li > a > div > svg {
     color: white;

@@ -101,40 +101,40 @@ const onRequested = val => setUserRequestedBallot(val);
             @change="onRequested"
         />
 
-        <p class="text-base mb-6 mt-2 text-white">
+        <p class="mb-6 mt-2 text-base text-white">
           {{ $t("absenteeDesc") }}
         </p>
 
         <journey-territory-info
             v-if="info.register.territory"
-            class="text-base mb-4"
+            class="mb-4 text-base"
         />
 
         <!-- link request ballot -->
         <mark-down
             :content="requestLink"
-            class="text-base mb-4"
+            class="mb-4 text-base"
         />
 
         <!-- State link -->
         <mark-down
             v-if="moreLink"
             :content="moreLink"
-            class="text-base mb-4"
+            class="mb-4 text-base"
         />
 
         <!-- Request deadline -->
         <mark-down
             v-if="requestDeadline"
             :content="requestDeadline"
-            class="text-base mb-4"
+            class="mb-4 text-base"
         />
 
         <!-- Return deadline -->
         <mark-down
             v-if="returnDeadline"
             :content="returnDeadline"
-            class="text-base mb-4"
+            class="mb-4 text-base"
         />
 
         <!-- FAQ section -->
@@ -200,7 +200,7 @@ const onRequested = val => setUserRequestedBallot(val);
     </cv-row>
   </cv-grid>
 </template>
-<style scoped lang="scss">
+<style scoped lang="css">
 .aside__img {
   max-height: 100%;
   max-width: 100%;

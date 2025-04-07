@@ -80,7 +80,6 @@ const currentSub = computed(() => {
 }
 body {
   margin: unset;
-  font-family: "IBM Plex Sans", sans-serif;
   overflow: auto;
 }
 </style>
