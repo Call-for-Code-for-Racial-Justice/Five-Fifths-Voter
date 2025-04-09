@@ -43,71 +43,65 @@ const moreAbsenteeInfoLink = computed(() => {
 </script>
 
 <template>
-  <div class="page__title">
+  <page-title>
     {{ $t("ballotTitle") }}
-  </div>
+  </page-title>
   <cv-grid :full-width="true">
     <cv-row>
       <cv-column
-        :sm="4"
-        :lg="8"
+          :sm="4"
+          :lg="8"
       >
         <!-- Return deadline -->
         <div
-          v-if="returnDeadline"
-          class="journey__info"
+            v-if="returnDeadline"
+            class="text-base mb-4"
         >
-          <mark-down :content="returnDeadline" />
+          <mark-down :content="returnDeadline"/>
         </div>
 
         <!-- drop-off -->
-        <div
-          v-if="hasDropoff"
-          class="journey__faq"
-        >
-          <span>{{ $t("absenteeDropFaq") }}</span><span>{{ info.mail_in.dropoff ? $t("yes") : $t("no") }}</span>
+        <journey-f-a-q
+            v-if="hasDropoff"
+            :question="t('absenteeDropFaq')"
+            :answer="!!info?.mail_in?.dropoff">
           <mark-down
-            v-if="dropoffExplainer"
-            style="display: inline-block"
-            :content="dropoffExplainer"
+              v-if="dropoffExplainer"
+              style="display: inline-block"
+              :content="dropoffExplainer"
           />
-        </div>
+        </journey-f-a-q>
 
         <!-- State link -->
         <div
-          v-if="trackingLink"
-          class="journey__info"
+            v-if="trackingLink"
+            class="text-base mb-4"
         >
-          <mark-down :content="trackingLink" />
+          <mark-down :content="trackingLink"/>
         </div>
 
         <!-- more information link -->
         <div
-          v-if="moreAbsenteeInfoLink"
-          class="journey__info"
+            v-if="moreAbsenteeInfoLink"
+            class="text-base mb-4"
         >
-          <mark-down :content="moreAbsenteeInfoLink" />
+          <mark-down :content="moreAbsenteeInfoLink"/>
         </div>
       </cv-column>
 
       <!-- side image -->
       <cv-column
-        :sm="4"
-        :lg="8"
+          :sm="4"
+          :lg="8"
       >
         <div class="aspect-[4/3] w-full max-w-xl">
           <img
-            class="size-full object-cover object-[0_39%]"
-            src="@/assets/images/ballot-return-image-1.jpg"
-            alt=""
+              class="size-full object-cover object-[0_39%]"
+              src="@/assets/images/ballot-return-image-1.jpg"
+              alt=""
           >
         </div>
       </cv-column>
     </cv-row>
   </cv-grid>
 </template>
-<style lang="scss">
-@import "@/assets/scss/theme";
-@import "@/assets/scss/pages";
-@import "@/assets/scss/journey";
-</style>

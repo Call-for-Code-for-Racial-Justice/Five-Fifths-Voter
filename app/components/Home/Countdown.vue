@@ -157,8 +157,7 @@ onBeforeUnmount(() => clearInterval(intervalID));
   </div>
 </template>
 
-<style scoped lang="scss">
-//@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+<style scoped lang="css">
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caprasimo&display=swap");
 
 @media (max-height: 675px) {

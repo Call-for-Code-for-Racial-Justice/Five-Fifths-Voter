@@ -26,5 +26,3 @@ onBeforeMount(() => {
   <!--  eslint-disable-next-line vue/no-v-html-->
   <div v-html="mdContent" />
 </template>
-
-<style lang="scss"></style>

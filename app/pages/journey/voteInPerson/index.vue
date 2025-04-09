@@ -10,5 +10,3 @@ definePageMeta({
 <template>
   <journey-vote-in-person />
 </template>
-
-<style scoped lang="scss"></style>

@@ -1,15 +1,20 @@
 <script setup>
-import { ArrowUpRight32 as ArrowUpRight } from "@carbon/icons-vue";
-import { useElementVisibility } from "@vueuse/core";
+import { ArrowUpRight32 as ArrowUpRight,
+  Menu20 as MenuIcon,
+  Close20 as CloseIcon } from "@carbon/icons-vue";
+import { useElementVisibility, useWindowScroll, useWindowSize } from "@vueuse/core";
 import titleLogoUrl from "~/assets/images/five-fifths-voter.svg";
 import bgUrl from "~/assets/images/mask-group.svg";
 
 definePageMeta({
   layout: "special",
 });
+
+const mobileActive = ref(false);
 function scrollToId(id) {
   document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   document.activeElement.blur();
+  mobileActive.value = false;
 }
 
 const topSection = useTemplateRef("topSection");
@@ -81,15 +86,63 @@ function autoClose(ev) {
 // })
 // useEventListener(window, "scroll", handleScrollEnd);
 // useEventListener(window, "scroll", handleScroll);
+
+const { width: screenWidth } = useWindowSize();
+const { y } = useWindowScroll();
+function easeInOutCubic(x) {
+  return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+}
+const scaleLogo = computed(() => {
+  let baseHeight = 320;
+  if (screenWidth.value < 1536) baseHeight = 208;
+  return `${baseHeight - (baseHeight - 48) * easeInOutCubic(Math.min(1, y.value / 208))}px`;
+});
+const scaleFF = computed(() => {
+  let baseHeight = 128;
+  if (screenWidth.value < 640) baseHeight = 64;
+  return `${baseHeight - (baseHeight - 48) * easeInOutCubic(Math.min(1, y.value / 208))}px`;
+});
+
 </script>
 
 <template>
   <div
-    ref="el"
     class="relative"
   >
+    <nav class="fixed left-0 top-0 z-20">
+      <transition name="slide-up">
+        <button v-if="mobileActive" class="absolute" @click="mobileActive = false"><CloseIcon /></button>
+        <button v-else class="absolute" @click="mobileActive = true"><MenuIcon/></button>
+      </transition>
+      <ul v-if="mobileActive" class="z-30 ml-1 mt-8 cursor-pointer border border-solid border-ff-white-01 bg-ff-purple-01 p-2">
+        <li
+            class="border-l border-solid p-3 hover:border-l-4 sm:p-1 3xl:p-2"
+            :class="{'border-ff-purple-02': navSection === 'top',
+                   'border-carbon-gray-80': navSection !== 'top'}"
+            @click="scrollToId('top')"
+        >
+          {{ $t("appHeaderHome") }}
+        </li>
+        <li
+            class="border-l border-solid p-3 hover:border-l-4 sm:p-1 3xl:p-2"
+            :class="{'border-ff-purple-02': navSection === 'mission',
+                   'border-carbon-gray-80': navSection !== 'mission'}"
+            @click="scrollToId('mission')"
+        >
+          {{ $t("landingPageMain") }}
+        </li>
+        <li
+            class="border-l border-solid p-3 hover:border-l-4 sm:p-1 3xl:p-2"
+            :class="{'border-ff-purple-02': navSection === 'values',
+                   'border-carbon-gray-80': navSection !== 'values'}"
+            @click="scrollToId('values')"
+        >
+          {{ $t("appHeaderOurValues") }}
+        </li>
+      </ul>
+    </nav>
     <nav
-      class="fixed left-2 top-20 z-20 cursor-pointer bg-ff-purple-01/90 sm:text-lg 3xl:text-xl"
+      class="fixed left-2 top-20 z-20 hidden cursor-pointer bg-ff-purple-01/90 sm:text-lg 3xl:text-xl"
     >
       <ul>
         <li
@@ -119,23 +172,23 @@ function autoClose(ev) {
       </ul>
     </nav>
     <div
-      class="fixed z-10 h-52 w-full bg-contain bg-right-top bg-no-repeat
-        opacity-95 lg:w-1/2 2xl:w-1/3 3xl:h-56"
-      :style="{backgroundImage: `url(${bgUrl})`}"
+      class="fixed z-10 h-52 w-full bg-ff-purple-01 bg-contain bg-right-top
+        bg-no-repeat 3xl:h-56"
+      :class="{'border border-solid border-carbon-gray-90' : scaleLogo === '48px'}"
+      :style="{backgroundImage: `url(${bgUrl})`, height: scaleLogo}"
     >
-      <div class="float-start mt-2 w-32 p-8 sm:w-44 3xl:w-52">
+      <div class="float-start ml-1 px-8 py-2" :style="{height: scaleFF}">
         <img
           alt="Five Fifths voter"
           :src="titleLogoUrl"
-          class="w-full"
+          class="h-full"
         >
       </div>
     </div>
-
     <section
       id="top"
       ref="topSection"
-      class="h-dvh pt-52 3xl:pt-56"
+      class="ml-3 h-dvh pt-52 3xl:pt-56"
     >
       <div class="mb-16 w-full px-2 pt-0 text-white">
         <div
@@ -161,7 +214,7 @@ function autoClose(ev) {
     <section
       id="mission"
       ref="missionSection"
-      class="h-dvh pt-52 3xl:pt-56"
+      class="ml-3 h-dvh pt-24 3xl:pt-56"
     >
       <h1
         class="mb-4 px-2 text-5xl text-ff-white-01 sm:text-6xl 2xl:text-8xl"
@@ -183,7 +236,7 @@ function autoClose(ev) {
     <section
       id="values"
       ref="valuesSection"
-      class="h-dvh pt-52 3xl:pt-56"
+      class="ml-3 h-dvh pt-24 3xl:pt-56"
     >
       <h1 class="mb-4 px-2 text-5xl sm:text-6xl 2xl:text-8xl">
         {{ $t("appHeaderOurValues") }}
@@ -261,4 +314,20 @@ function autoClose(ev) {
     </footer>
   </div>
 </template>
-<style scoped lang="scss"></style>
+
+<style lang="css" scoped>
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transition: all 0.25s ease-out;
+}
+
+.slide-up-enter-from {
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.slide-up-leave-to {
+  transform: rotate(-45deg);
+  opacity: 0;
+}
+</style>

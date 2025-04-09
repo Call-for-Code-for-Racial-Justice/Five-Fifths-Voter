@@ -62,78 +62,78 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="page__title">
+  <page-title>
     {{ $t("registerTitle") }}
-  </div>
+  </page-title>
   <cv-grid :full-width="true">
     <cv-row>
       <cv-column
-        :sm="4"
-        :lg="8"
+          :sm="4"
+          :lg="8"
       >
         <cv-checkbox
-          value="checked-registered"
-          :label="$t('journeyPageRegisteredLabel')"
-          :checked="registered"
-          @change="onRegistered"
+            value="checked-registered"
+            :label="$t('journeyPageRegisteredLabel')"
+            :checked="registered"
+            @change="onRegistered"
         />
         <!-- Check your registration -->
         <cv-link
-          :inline="true"
-          :href="checkRegLink"
-          target="_blank"
+            :inline="true"
+            :href="checkRegLink"
+            target="_blank"
         >
           <span>{{ $t("checkHere") }}</span>
         </cv-link>
 
-        <p class="journey__desc">
+        <p class="text-base mb-6 mt-2 text-white">
           {{ $t("registerDesc") }}
         </p>
         <journey-territory-info
-          v-if="info.register.territory"
-          class="journey__desc"
+            v-if="info.register.territory"
+            class="text-base mb-6 mt-2 text-white"
         />
 
         <!-- registration deadline -->
         <mark-down
-          v-if="registrationDeadline"
-          :content="registrationDeadline"
+            v-if="registrationDeadline"
+            :content="registrationDeadline"
         />
 
         <mark-down
-          v-if="registerLinks"
-          class="journey__desc"
-          :content="registerLinks"
+            v-if="registerLinks"
+            class="text-base mb-6 mt-2 text-white"
+            :content="registerLinks"
         />
 
         <!-- Youth -->
         <journey-cali-special
-          v-if="usaCode === 'ca'"
-          class="journey__desc"
+            v-if="usaCode === 'ca'"
+            class="text-base mb-6 mt-2 text-white"
         />
         <div
-          v-else
-          class="journey__desc"
+            v-else
+            class="text-base mb-6 mt-2 text-white"
         >
           <div>{{ registerYouth }}</div>
           <cv-link
-            style="margin-left: 0"
-            :inline="true"
-            :href="registerYouthLink"
-            target="_blank"
+              style="margin-left: 0"
+              :inline="true"
+              :href="registerYouthLink"
+              target="_blank"
           >
             {{ $t("register") }}
           </cv-link>
         </div>
 
         <!-- Formerly incarcerated-->
-        <div class="journey__desc">
+        <div class="text-base mb-6 mt-2 text-white">
           <div>{{ felonText }}</div>
           <cv-link
-            style="margin-left: 0"
-            :inline="true"
-            :href="felonLink"
-            target="_blank"
+              style="margin-left: 0"
+              :inline="true"
+              :href="felonLink"
+              target="_blank"
           >
             {{ $t("moreInformation") }}
           </cv-link>
@@ -141,46 +141,38 @@ onMounted(() => {
 
         <!-- FAQ section -->
         <div
-          v-if="hasFaq"
-          class="journey__faq__header"
+            v-if="hasFaq"
+            class="text-xl font-extrabold"
         >
           {{ $t("faq") }}
         </div>
 
         <!-- Register day of voting -->
-        <div
-          v-if="'election_day' in info.register"
-          class="journey__faq"
-        >
-          <span>{{ $t("registerElectionDay") }}</span><span>{{ info.register.election_day ? $t("yes") : $t("no") }}</span>
-        </div>
+        <journey-f-a-q
+            v-if="'election_day' in info.register"
+            :question="t('registerElectionDay')"
+            :answer="!!info.register.election_day"
+        />
 
         <!-- Register online -->
-        <div
-          v-if="'online' in info.register"
-          class="journey__faq"
-        >
-          <span>{{ $t("registerOnlineQ") }}</span><span>{{ info.register.online ? $t("yes") : $t("no") }}</span>
-        </div>
+        <journey-f-a-q
+            v-if="'online' in info.register"
+            :question="t('registerOnlineQ')"
+            :answer="!!info.register.online"
+        />
       </cv-column>
       <cv-column
-        :sm="4"
-        :lg="8"
+          :sm="4"
+          :lg="8"
       >
         <div class="aspect-[4/3] w-full max-w-xl">
           <img
-            class="size-full object-cover"
-            src="@/assets/images/journey/embrace-vote.gif"
-            alt=""
+              class="size-full object-cover"
+              src="@/assets/images/journey/embrace-vote.gif"
+              alt=""
           >
         </div>
       </cv-column>
     </cv-row>
   </cv-grid>
 </template>
-
-<style scoped lang="scss">
-@import "@/assets/scss/theme";
-@import "@/assets/scss/pages";
-@import "@/assets/scss/journey";
-</style>

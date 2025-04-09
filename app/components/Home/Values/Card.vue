@@ -125,7 +125,7 @@ watch(
   </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped lang="css">
 .empower {
   background-image: url(@/assets/images/landing-page-black-woman-orange-image-3.jpeg);
 }

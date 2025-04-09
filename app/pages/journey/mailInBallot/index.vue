@@ -7,5 +7,3 @@ definePageMeta({
 <template>
   <journey-mail-in-ballot />
 </template>
-
-<style scoped lang="scss"></style>

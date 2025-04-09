@@ -7,5 +7,3 @@ definePageMeta({
 <template>
   <journey-register-to-vote />
 </template>
-
-<style scoped lang="scss"></style>

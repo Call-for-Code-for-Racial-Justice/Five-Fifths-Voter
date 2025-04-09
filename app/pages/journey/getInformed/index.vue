@@ -7,5 +7,3 @@ definePageMeta({
 <template>
   <journey-get-informed />
 </template>
-
-<style scoped lang="scss"></style>

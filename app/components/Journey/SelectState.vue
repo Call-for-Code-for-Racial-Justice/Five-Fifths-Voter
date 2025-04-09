@@ -40,8 +40,7 @@ function onChange(val) {
   </ClientOnly>
 </template>
 
-<style scoped lang="scss">
-@import "@/assets/scss/theme";
+<style scoped lang="css">
 .usa-state {
   margin-bottom: 0.5rem;
   max-width: 15rem;

@@ -21,7 +21,7 @@ const candidates = useFetch("/api/candidateInfo", {
   <div>
     <div
       v-if="candidates?.data?.value?.length > 0"
-      class="mt-1 md:text-xl"
+      class="md:text-xl mt-1"
     >
       {{ $t("getInformedTopContests") }}
     </div>
@@ -135,7 +135,7 @@ const candidates = useFetch("/api/candidateInfo", {
     </cv-data-table>
     <div
       v-else
-      class="mt-2 text-xl"
+      class="text-xl mt-2"
     >
       {{ $t("getInformedNextCheck") }}
     </div>
@@ -150,19 +150,18 @@ const candidates = useFetch("/api/candidateInfo", {
   </div>
 </template>
 
-<style scoped lang="scss">
-@import "~/assets/scss/theme";
+<style scoped lang="css">
 ::v-deep(.bx--table-expand__svg) {
-  fill: $carbon--gray-90;
+  fill: var(--carbon--gray-90);
 }
 ::v-deep(.bx--child-row-inner-container) {
-  color: $carbon--gray-90;
+  color: var(--carbon--gray-90);
 }
 ::v-deep(.bx--data-table tbody tr:hover td),
 ::v-deep(.bx--data-table tbody tr:hover th) {
   background: #f0c39c;
 }
 ::v-deep(tr.bx--parent-row.bx--expandable-row:hover + tr[data-child-row] td) {
-  background: $ff-white-01;
+  background: var(--ff-white-01);
 }
 </style>

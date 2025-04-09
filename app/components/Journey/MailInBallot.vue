@@ -85,131 +85,122 @@ const onRequested = val => setUserRequestedBallot(val);
 </script>
 
 <template>
-  <div class="page__title">
+  <page-title>
     {{ $t("absenteeTitle") }}
-  </div>
+  </page-title>
   <cv-grid :full-width="true">
     <cv-row>
       <cv-column
-        :sm="4"
-        :lg="8"
+          :sm="4"
+          :lg="8"
       >
         <cv-checkbox
-          value="checked-requested"
-          :label="$t('absenteeRequested')"
-          :checked="requested"
-          @change="onRequested"
+            value="checked-requested"
+            :label="$t('absenteeRequested')"
+            :checked="requested"
+            @change="onRequested"
         />
 
-        <p class="journey__desc">
+        <p class="mb-6 mt-2 text-base text-white">
           {{ $t("absenteeDesc") }}
         </p>
 
         <journey-territory-info
-          v-if="info.register.territory"
-          class="journey__info"
+            v-if="info.register.territory"
+            class="mb-4 text-base"
         />
 
         <!-- link request ballot -->
         <mark-down
-          :content="requestLink"
-          class="journey__info"
+            :content="requestLink"
+            class="mb-4 text-base"
         />
 
         <!-- State link -->
         <mark-down
-          v-if="moreLink"
-          :content="moreLink"
-          class="journey__info"
+            v-if="moreLink"
+            :content="moreLink"
+            class="mb-4 text-base"
         />
 
         <!-- Request deadline -->
         <mark-down
-          v-if="requestDeadline"
-          :content="requestDeadline"
-          class="journey__info"
+            v-if="requestDeadline"
+            :content="requestDeadline"
+            class="mb-4 text-base"
         />
 
         <!-- Return deadline -->
         <mark-down
-          v-if="returnDeadline"
-          :content="returnDeadline"
-          class="journey__info"
+            v-if="returnDeadline"
+            :content="returnDeadline"
+            class="mb-4 text-base"
         />
 
         <!-- FAQ section -->
         <div
-          v-if="hasFaq"
-          class="journey__faq__header"
+            v-if="hasFaq"
+            class="text-xl font-extrabold"
         >
           {{ $t("faq") }}
         </div>
 
         <!-- ID needed -->
-        <div
-          v-if="idNeeded"
-          class="journey__faq"
+        <journey-f-a-q
+            v-if="idNeeded"
+            :question="t('absenteeIdFaq')"
+            :answer="!!info.mail_in.id_needed"
         >
-          <span>{{ $t("absenteeIdFaq") }}</span>
-          <span>{{ info.mail_in.id_needed ? $t("yes") : $t("no") }}</span>
-
           <mark-down
-            v-if="info.mail_in.id_explainer"
-            style="display: inline-block"
-            :content="idExplainer"
+              v-if="info.mail_in.id_explainer"
+              style="display: inline-block"
+              :content="idExplainer"
           />
-        </div>
+        </journey-f-a-q>
 
         <!-- drop-off -->
-        <div
-          v-if="hasDropoff"
-          class="journey__faq"
+        <journey-f-a-q
+            v-if="hasDropoff"
+            :question="t('absenteeDropFaq')"
+            :answer="!!info.mail_in?.dropoff"
         >
-          <span>{{ $t("absenteeDropFaq") }}</span><span>{{ info.mail_in.dropoff ? $t("yes") : $t("no") }}</span>
           <mark-down
-            v-if="dropoffExplainer"
-            style="display: inline-block"
-            :content="dropoffExplainer"
+              v-if="dropoffExplainer"
+              style="display: inline-block"
+              :content="dropoffExplainer"
           />
-        </div>
+        </journey-f-a-q>
 
         <!-- any special reason -->
-        <div
-          v-if="hasAnyReason"
-          class="journey__faq"
-        >
-          <span>{{ $t("absenteeReasonFaq") }}</span><span>{{ !info.mail_in.any_reason ? $t("yes") : $t("no") }}</span>
-        </div>
+        <journey-f-a-q
+            v-if="hasAnyReason"
+            :question="t('absenteeReasonFaq')"
+            :answer="!!info.mail_in?.any_reason"
+        />
 
         <!-- Need notary? -->
-        <div
-          v-if="hasNotary"
-          class="journey__faq"
-        >
-          <span>{{ $t("absenteeWitnessFaq") }}</span><span>{{
-            !info.mail_in.without_notary ? $t("yes") : $t("no")
-          }}</span>
-        </div>
+        <journey-f-a-q
+            v-if="hasNotary"
+            :question="t('absenteeWitnessFaq')"
+            :answer="!!info.mail_in?.without_notary"
+        />
       </cv-column>
       <cv-column
-        :sm="4"
-        :lg="8"
+          :sm="4"
+          :lg="8"
       >
         <div class="aspect-[4/3] w-full max-w-xl">
           <img
-            class="size-full object-cover"
-            src="@/assets/images/absentee-page-group-friends-laptop-image-1.jpg"
-            :alt="$t('absenteeImageAlt')"
+              class="size-full object-cover"
+              src="@/assets/images/absentee-page-group-friends-laptop-image-1.jpg"
+              :alt="$t('absenteeImageAlt')"
           >
         </div>
       </cv-column>
     </cv-row>
   </cv-grid>
 </template>
-<style scoped lang="scss">
-@import "@/assets/scss/theme";
-@import "@/assets/scss/pages";
-@import "@/assets/scss/journey";
+<style scoped lang="css">
 .aside__img {
   max-height: 100%;
   max-width: 100%;

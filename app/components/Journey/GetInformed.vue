@@ -173,9 +173,9 @@ const earlyVoting = computed(() => {
 <!--</template>-->
 
 <template>
-  <div class="page__title">
+  <page-title>
     {{ $t("getInformedTitle") }}
-  </div>
+  </page-title>
   <cv-grid
     :full-width="true"
     kind="condensed"
@@ -187,13 +187,13 @@ const earlyVoting = computed(() => {
       >
         <journey-territory-info
           v-if="info.register.territory"
-          class="journey__info"
+          class="text-base mb-4"
         />
 
         <!-- show core races for this state -->
         <div
           v-if="hasCoreRaces"
-          class="journey__info"
+          class="text-base mb-4"
         >
           <span>{{ $t("getInformedTopContests") }}</span>
           <mark-down
@@ -236,9 +236,3 @@ const earlyVoting = computed(() => {
     </cv-row>
   </cv-grid>
 </template>
-
-<style lang="scss">
-@import "@/assets/scss/theme";
-@import "@/assets/scss/pages";
-@import "@/assets/scss/journey";
-</style>
