@@ -551,7 +551,7 @@ const loading = computed(() => voterInfo.status === "loading");
         </div>
         <div
           v-else
-          class="text-xl mt-2"
+          class="mt-2 text-xl"
         >
           {{ $t("getInformedNextCheck") }}
         </div>

@@ -10,7 +10,7 @@ defineProps({
         :href="href"
         target="_blank"
     >
-      <span class="text-sm md:text-base text-ff-white-01">
+      <span class="text-sm text-ff-white-01 md:text-base">
       <slot/>
       </span>
     </cv-link>

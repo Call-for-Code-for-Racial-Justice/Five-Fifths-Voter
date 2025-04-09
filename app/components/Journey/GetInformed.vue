@@ -187,13 +187,13 @@ const earlyVoting = computed(() => {
       >
         <journey-territory-info
           v-if="info.register.territory"
-          class="text-base mb-4"
+          class="mb-4 text-base"
         />
 
         <!-- show core races for this state -->
         <div
           v-if="hasCoreRaces"
-          class="text-base mb-4"
+          class="mb-4 text-base"
         >
           <span>{{ $t("getInformedTopContests") }}</span>
           <mark-down
