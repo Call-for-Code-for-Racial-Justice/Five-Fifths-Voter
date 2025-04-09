@@ -7,10 +7,10 @@ defineProps({
 
 <template>
   <div
-      class="text-base mt-2"
+      class="mt-2 text-base"
   >
     <span>{{ question }}</span>
-    <span class="text-xl ml-2 text-ff-yellow-01">{{ answer ? $t("yes") : $t("no") }}</span>
+    <span class="ml-2 text-xl text-ff-yellow-01">{{ answer ? $t("yes") : $t("no") }}</span>
     <slot/>
   </div>
 </template>

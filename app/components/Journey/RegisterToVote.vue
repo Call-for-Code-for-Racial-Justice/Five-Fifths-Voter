@@ -86,12 +86,12 @@ onMounted(() => {
           <span>{{ $t("checkHere") }}</span>
         </cv-link>
 
-        <p class="text-base mb-6 mt-2 text-white">
+        <p class="mb-6 mt-2 text-base text-white">
           {{ $t("registerDesc") }}
         </p>
         <journey-territory-info
             v-if="info.register.territory"
-            class="text-base mb-6 mt-2 text-white"
+            class="mb-6 mt-2 text-base text-white"
         />
 
         <!-- registration deadline -->
@@ -102,18 +102,18 @@ onMounted(() => {
 
         <mark-down
             v-if="registerLinks"
-            class="text-base mb-6 mt-2 text-white"
+            class="mb-6 mt-2 text-base text-white"
             :content="registerLinks"
         />
 
         <!-- Youth -->
         <journey-cali-special
             v-if="usaCode === 'ca'"
-            class="text-base mb-6 mt-2 text-white"
+            class="mb-6 mt-2 text-base text-white"
         />
         <div
             v-else
-            class="text-base mb-6 mt-2 text-white"
+            class="mb-6 mt-2 text-base text-white"
         >
           <div>{{ registerYouth }}</div>
           <cv-link
@@ -127,7 +127,7 @@ onMounted(() => {
         </div>
 
         <!-- Formerly incarcerated-->
-        <div class="text-base mb-6 mt-2 text-white">
+        <div class="mb-6 mt-2 text-base text-white">
           <div>{{ felonText }}</div>
           <cv-link
               style="margin-left: 0"

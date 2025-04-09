@@ -55,7 +55,7 @@ const moreAbsenteeInfoLink = computed(() => {
         <!-- Return deadline -->
         <div
             v-if="returnDeadline"
-            class="text-base mb-4"
+            class="mb-4 text-base"
         >
           <mark-down :content="returnDeadline"/>
         </div>
@@ -75,7 +75,7 @@ const moreAbsenteeInfoLink = computed(() => {
         <!-- State link -->
         <div
             v-if="trackingLink"
-            class="text-base mb-4"
+            class="mb-4 text-base"
         >
           <mark-down :content="trackingLink"/>
         </div>
@@ -83,7 +83,7 @@ const moreAbsenteeInfoLink = computed(() => {
         <!-- more information link -->
         <div
             v-if="moreAbsenteeInfoLink"
-            class="text-base mb-4"
+            class="mb-4 text-base"
         >
           <mark-down :content="moreAbsenteeInfoLink"/>
         </div>

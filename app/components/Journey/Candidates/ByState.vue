@@ -21,7 +21,7 @@ const candidates = useFetch("/api/candidateInfo", {
   <div>
     <div
       v-if="candidates?.data?.value?.length > 0"
-      class="md:text-xl mt-1"
+      class="mt-1 md:text-xl"
     >
       {{ $t("getInformedTopContests") }}
     </div>
@@ -135,7 +135,7 @@ const candidates = useFetch("/api/candidateInfo", {
     </cv-data-table>
     <div
       v-else
-      class="text-xl mt-2"
+      class="mt-2 text-xl"
     >
       {{ $t("getInformedNextCheck") }}
     </div>
