@@ -43,8 +43,8 @@ const currentSub = computed(() => {
 <template>
   <div>
     <ClientOnly>
-      <the-header />
-      <sub-nav
+      <TheHeader />
+      <SubNav
         :current="currentSub"
         :sub-pages="subPages"
         prefix="/journey"
@@ -60,7 +60,7 @@ const currentSub = computed(() => {
             })
           }}
         </div>
-        <journey-select-state />
+        <JourneySelectState />
         <cv-grid class="mt-0 lg:-mt-12">
           <cv-row>
             <cv-column :lg="16">

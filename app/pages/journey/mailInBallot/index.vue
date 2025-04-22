@@ -5,5 +5,5 @@ definePageMeta({
 </script>
 
 <template>
-  <journey-mail-in-ballot />
+  <JourneyMailInBallot />
 </template>

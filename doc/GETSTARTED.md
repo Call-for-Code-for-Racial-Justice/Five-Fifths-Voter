@@ -4,7 +4,7 @@
 
 - [install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [install nvm](https://github.com/nvm-sh/nvm#install--update-script)
-- Install node 18 `nvm install 18`
+- Install node 18 `nvm install 22`
 
 ## Running locally
 See [README](../app/README.md) in the app folder

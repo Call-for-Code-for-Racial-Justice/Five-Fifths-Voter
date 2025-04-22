@@ -1,10 +1,10 @@
 <script setup></script>
 
 <template>
-  <page-inset>
-    <page-title>
+  <PageInset>
+    <PageTitle>
       {{ $t("whyVotePageTitle") }}
-    </page-title>
+    </PageTitle>
     <cv-grid :full-width="true">
       <cv-row>
         <cv-column
@@ -36,5 +36,5 @@
         </cv-column>
       </cv-row>
     </cv-grid>
-  </page-inset>
+  </PageInset>
 </template>

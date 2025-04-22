@@ -16,7 +16,7 @@ provide("expanded-card", expandedCard);
         Our values
       </h1>
       <div class="m-2 max-w-[1300px] space-y-2">
-        <home-values-card
+        <HomeValuesCard
           id="card-educate"
           :name="$t('landingPageEdu')"
           image="educate"
@@ -25,7 +25,7 @@ provide("expanded-card", expandedCard);
           author="Francis Bacon"
           :expand="true"
         />
-        <home-values-card
+        <HomeValuesCard
           id="card-empower"
           :name="$t('landingPageEmpower')"
           image="empower"
@@ -33,7 +33,7 @@ provide("expanded-card", expandedCard);
           :quote="$t('quoteCharlotteBronte')"
           author="Charlotte Brontë"
         />
-        <home-values-card
+        <HomeValuesCard
           id="card-enable"
           :name="$t('landingPageEnable')"
           image="enable"

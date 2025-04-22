@@ -86,7 +86,7 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
         target="_blank"
         aria-label="Five Fifths Voter on instagram - link opens in a new window"
       >
-        <instagram class="text-carbon-gray-30" />
+        <Instagram class="text-carbon-gray-30" />
       </cv-link>
       <cv-link
         class="px-2 py-8"
@@ -94,7 +94,7 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
         target="_blank"
         aria-label="Link to code for this site in GitHub - link opens in a new window"
       >
-        <git-hub class="text-carbon-gray-30" />
+        <GitHub class="text-carbon-gray-30" />
       </cv-link>
       <cv-header-global-action
         id="header-language-button"
@@ -104,11 +104,11 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
         class="!mx-2 !h-6 !min-h-0 !px-0 !py-12"
         tip-position="left"
       >
-        <language-switcher class="text-carbon-gray-30" />
+        <LanguageSwitcher class="text-carbon-gray-30" />
       </cv-header-global-action>
     </template>
     <template #right-panels>
-      <language-panel header-size="thick" />
+      <LanguagePanel header-size="thick" />
     </template>
     <template #left-panels>
       <cv-side-nav
@@ -121,37 +121,37 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
         <cv-side-nav-items>
           <cv-side-nav-link to="/">
             <template #nav-icon>
-              <home-icon />
+              <HomeIcon />
             </template>
             {{ $t("appHeaderHome") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/#our-mission">
             <template #nav-icon>
-              <our-mission-icon />
+              <OurMissionIcon />
             </template>
             {{ $t("landingPageMain") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/journey">
             <template #nav-icon>
-              <voter-journey-icon />
+              <VoterJourneyIcon />
             </template>
             {{ $t("appHeaderVoterJourney") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/#our-values">
             <template #nav-icon>
-              <our-values-icon />
+              <OurValuesIcon />
             </template>
             {{ $t("appHeaderOurValues") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/voterSupport">
             <template #nav-icon>
-              <voter-support-icon />
+              <VoterSupportIcon />
             </template>
             {{ $t("appHeaderVoterSupport") }}
           </cv-side-nav-link>
           <cv-side-nav-link to="/whyVote">
             <template #nav-icon>
-              <why-vote-icon />
+              <WhyVoteIcon />
             </template>
             {{ $t("appHeaderWhyVote") }}
           </cv-side-nav-link>

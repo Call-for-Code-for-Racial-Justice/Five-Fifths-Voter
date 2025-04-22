@@ -20,39 +20,21 @@ npm run dev
 ```
 
 If you are working on the "Journey" page, you will want to start
-the [mockoon](https://mockoon.com/tutorials/run-mock-api-anywhere-cli/) server to access the mock Google civis APIs.
+the local servers to access the mock Google civis APIs and other APIs.
 
-1. **option 1** - `npm run dev`
+1. docker compose up
 
    ```shell
    cd local-dev
-   npm i
-   npm run dev
+   docker compose up
    ```
 
-   You should see something like this
+2. Test connections
 
-   > local-dev@1.0.0 dev
-   >
-   > mockoon-cli start --data ./mock/civics.json
-   >
-   > {"app":"mockoon-server","environmentName":"Civics API","environmentUUID":"c958f96e-2ff0-49a2-b0ab-e3b18fc585cc","level":"info","message":"Server started on port 4514","timestamp":"2024-02-29T18:54:17.809Z"}
-
-2. **option 2** - Mockoon GUI
-
-   - choose File / Open environment
-   - Open `local-dev/mock/civics.json`
-   - Start server
-     **NOTE**: **⚠** It is easy to make unintended changes to the civics.json while in the UI. Please do not include updates to this file in your PR unless you **intentionally** changed it.
-
-3. **option 3** - Mockoon CLI
-   If you have already installed mockoon globally, you can run `mockoon-cli start --data local-dev/mock/civics.jsonn`
-
-## Cloudant data
-
-To work with the get informed page or the vote page you will need some APIs that work locally. You can launch these
-in `local-dev` directory. The get informed page uses the cloudant db which can be launched from the compose.yml.
-You can launch this in your IDE or from the command line as `docker-compose up`.
+   ```shell
+   curl --request GET \
+     --url 'http://localhost:4514/civicinfo/v2/elections?key=local-dev'
+   ```
 
 ## Get the latest data locally
 

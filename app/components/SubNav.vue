@@ -72,12 +72,12 @@ defineProps({
       :key="step.page"
       class="py-2"
     >
-      <circle-filled v-if="current === step.page" />
+      <CircleFilled v-if="current === step.page" />
       <cv-link
         v-else
         :to="`${prefix}/${step.page}`"
       >
-        <icon-other />
+        <IconOther />
       </cv-link>
     </div>
   </div>

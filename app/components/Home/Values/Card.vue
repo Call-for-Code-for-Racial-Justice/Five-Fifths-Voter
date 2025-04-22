@@ -57,11 +57,11 @@ watch(
         tabindex="1"
         :aria-label="name"
       >
-        <expand-icon
+        <ExpandIcon
           class="absolute -translate-x-full -translate-y-1/2 opacity-100 transition-all
             group-[.is-expanded]:opacity-0 group-[.is-expanded]:duration-1000"
         />
-        <collapse-icon
+        <CollapseIcon
           class="absolute -translate-x-full -translate-y-1/2 opacity-0 transition-all
             group-[.is-expanded]:opacity-100 group-[.is-expanded]:duration-1000"
         />
@@ -91,7 +91,7 @@ watch(
             @click="navigateTo('/journey')"
           >
             {{ $t("journeyPageTitle") }}
-            <arrow-up-right class="inline-block" />
+            <ArrowUpRight class="inline-block" />
           </button>
         </div>
 

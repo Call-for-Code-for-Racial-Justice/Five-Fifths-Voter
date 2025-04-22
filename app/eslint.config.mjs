@@ -25,6 +25,10 @@ export default withNuxt([
           ],
         },
       ],
+      "vue/component-name-in-template-casing": ["error", "PascalCase", {
+        registeredComponentsOnly: false,
+        ignores: ["/^cv-/"],
+      }],
     },
   },
 ]);

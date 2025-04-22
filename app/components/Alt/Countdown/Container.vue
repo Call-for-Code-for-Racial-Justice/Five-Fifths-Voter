@@ -94,20 +94,20 @@ onBeforeUnmount(() => clearInterval(intervalID));
     <div
       class="flex flex-row items-center justify-between gap-x-1 text-white"
     >
-      <alt-countdown-number
+      <AltCountdownNumber
         :label="labelDays"
         :number="days"
         prefix=""
       />
-      <alt-countdown-number
+      <AltCountdownNumber
         :label="labelHours"
         :number="hours"
       />
-      <alt-countdown-number
+      <AltCountdownNumber
         :label="labelMinutes"
         :number="minutes"
       />
-      <alt-countdown-number
+      <AltCountdownNumber
         :label="labelSeconds"
         :number="seconds"
       />

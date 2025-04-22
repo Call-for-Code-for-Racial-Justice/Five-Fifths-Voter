@@ -29,7 +29,7 @@ function showMore() {
       {{ label }}
     </div>
     <div class="m-2 space-y-2">
-      <journey-location
+      <JourneyLocation
         v-for="(item, index) in filtered"
         :key="`ev-${index}`"
         :location="item"

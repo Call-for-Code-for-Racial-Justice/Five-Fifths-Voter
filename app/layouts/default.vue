@@ -12,7 +12,7 @@ useHead({
 
 <template>
   <div>
-    <the-header />
+    <TheHeader />
     <main
       id="#main-content"
       class="main-content with-header"

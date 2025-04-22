@@ -10,6 +10,6 @@ const ymcaInfo = computed(() => {
 <template>
   <div>
     {{ $t("registerYouth_1") }}
-    <mark-down :content="ymcaInfo" />
+    <MarkDown :content="ymcaInfo" />
   </div>
 </template>

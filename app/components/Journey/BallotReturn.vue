@@ -43,9 +43,9 @@ const moreAbsenteeInfoLink = computed(() => {
 </script>
 
 <template>
-  <page-title>
+  <PageTitle>
     {{ $t("ballotTitle") }}
-  </page-title>
+  </PageTitle>
   <cv-grid :full-width="true">
     <cv-row>
       <cv-column
@@ -57,27 +57,27 @@ const moreAbsenteeInfoLink = computed(() => {
             v-if="returnDeadline"
             class="mb-4 text-base"
         >
-          <mark-down :content="returnDeadline"/>
+          <MarkDown :content="returnDeadline"/>
         </div>
 
         <!-- drop-off -->
-        <journey-f-a-q
+        <JourneyFAQ
             v-if="hasDropoff"
             :question="t('absenteeDropFaq')"
             :answer="!!info?.mail_in?.dropoff">
-          <mark-down
+          <MarkDown
               v-if="dropoffExplainer"
               style="display: inline-block"
               :content="dropoffExplainer"
           />
-        </journey-f-a-q>
+        </JourneyFAQ>
 
         <!-- State link -->
         <div
             v-if="trackingLink"
             class="mb-4 text-base"
         >
-          <mark-down :content="trackingLink"/>
+          <MarkDown :content="trackingLink"/>
         </div>
 
         <!-- more information link -->
@@ -85,7 +85,7 @@ const moreAbsenteeInfoLink = computed(() => {
             v-if="moreAbsenteeInfoLink"
             class="mb-4 text-base"
         >
-          <mark-down :content="moreAbsenteeInfoLink"/>
+          <MarkDown :content="moreAbsenteeInfoLink"/>
         </div>
       </cv-column>
 

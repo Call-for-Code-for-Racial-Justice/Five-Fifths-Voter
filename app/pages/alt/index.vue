@@ -110,10 +110,10 @@ const scaleFF = computed(() => {
     class="relative"
   >
     <nav class="fixed left-0 top-0 z-20">
-      <transition name="slide-up">
+      <Transition name="slide-up">
         <button v-if="mobileActive" class="absolute" @click="mobileActive = false"><CloseIcon /></button>
         <button v-else class="absolute" @click="mobileActive = true"><MenuIcon/></button>
-      </transition>
+      </Transition>
       <ul v-if="mobileActive" class="z-30 ml-1 mt-8 cursor-pointer border border-solid border-ff-white-01 bg-ff-purple-01 p-2">
         <li
             class="border-l border-solid p-3 hover:border-l-4 sm:p-1 3xl:p-2"
@@ -208,7 +208,7 @@ const scaleFF = computed(() => {
         @click="navigateTo('/journey')"
       >
         <span class="md:text-lg">{{ $t("appHeaderVoterJourney") }}</span>
-        <arrow-up-right class="inline-block" />
+        <ArrowUpRight class="inline-block" />
       </button>
     </section>
     <section
@@ -230,7 +230,7 @@ const scaleFF = computed(() => {
         @click="navigateTo('/journey')"
       >
         <span class="md:text-lg">{{ $t("appHeaderVoterJourney") }}</span>
-        <arrow-up-right class="inline-block" />
+        <ArrowUpRight class="inline-block" />
       </button>
     </section>
     <section
@@ -306,11 +306,11 @@ const scaleFF = computed(() => {
         @click="navigateTo('/journey')"
       >
         <span class="md:text-lg">{{ $t("appHeaderVoterJourney") }}</span>
-        <arrow-up-right class="inline-block" />
+        <ArrowUpRight class="inline-block" />
       </button>
     </section>
     <footer class="sticky bottom-0 h-20 bg-ff-red-01 md:h-28 xl:h-32 3xl:h-64">
-      <alt-countdown-container />
+      <AltCountdownContainer />
     </footer>
   </div>
 </template>

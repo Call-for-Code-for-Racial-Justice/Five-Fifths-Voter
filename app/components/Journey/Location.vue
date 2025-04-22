@@ -64,7 +64,7 @@ function directionsLink(address) {
         {{ locationName }}
       </div>
       <button class="relative">
-        <chevron
+        <Chevron
           class="transition-all duration-500 group-[.is-expanded]:-rotate-180"
         />
       </button>
@@ -89,7 +89,7 @@ function directionsLink(address) {
             :href="directionsLink(addressLines)"
             target="_blank"
           >
-            <div><map-icon /></div>
+            <div><MapIcon /></div>
             <div class="ml-2 flex items-center">
               {{ $t("mapDirections") }}
             </div>

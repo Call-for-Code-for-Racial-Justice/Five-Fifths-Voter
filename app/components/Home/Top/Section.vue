@@ -21,7 +21,7 @@ import bgUrl from "~/assets/images/mask-group.svg";
         >
       </div>
       <div class="w-full p-3 text-white md:p-14 lg:pt-0">
-        <line-breaks
+        <LineBreaks
           :content="$t('landingTopTagline')"
           class="text-2xl sm:text-4xl md:text-6xl 3xl:text-9xl"
         />
@@ -33,6 +33,6 @@ import bgUrl from "~/assets/images/mask-group.svg";
         </div>
       </div>
     </div>
-    <home-countdown />
+    <HomeCountdown />
   </section>
 </template>
