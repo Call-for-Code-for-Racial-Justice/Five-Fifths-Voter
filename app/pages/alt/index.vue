@@ -1,7 +1,7 @@
 <script setup>
 import { ArrowUpRight32 as ArrowUpRight,
-  Menu20 as MenuIcon,
-  Close20 as CloseIcon } from "@carbon/icons-vue";
+  Menu24 as MenuIcon,
+  Close24 as CloseIcon } from "@carbon/icons-vue";
 import { useElementVisibility, useWindowScroll, useWindowSize } from "@vueuse/core";
 import titleLogoUrl from "~/assets/images/five-fifths-voter.svg";
 import bgUrl from "~/assets/images/mask-group.svg";
@@ -111,10 +111,10 @@ const scaleFF = computed(() => {
   >
     <nav class="fixed left-0 top-0 z-20">
       <Transition name="slide-up">
-        <button v-if="mobileActive" class="absolute" @click="mobileActive = false"><CloseIcon /></button>
-        <button v-else class="absolute" @click="mobileActive = true"><MenuIcon/></button>
+        <button v-if="mobileActive" class="absolute p-3" @click="mobileActive = false"><CloseIcon /></button>
+        <button v-else class="absolute p-3" @click="mobileActive = true"><MenuIcon/></button>
       </Transition>
-      <ul v-if="mobileActive" class="z-30 ml-1 mt-8 cursor-pointer border border-solid border-ff-white-01 bg-ff-purple-01 p-2">
+      <ul v-if="mobileActive" class="z-30 ml-1 mt-12 cursor-pointer border border-solid border-ff-white-01 bg-ff-purple-01 p-2">
         <li
             class="border-l border-solid p-3 hover:border-l-4 sm:p-1 3xl:p-2"
             :class="{'border-ff-purple-02': navSection === 'top',
@@ -177,7 +177,7 @@ const scaleFF = computed(() => {
       :class="{'border border-solid border-carbon-gray-90' : scaleLogo === '48px'}"
       :style="{backgroundImage: `url(${bgUrl})`, height: scaleLogo}"
     >
-      <div class="float-start ml-1 px-8 py-2" :style="{height: scaleFF}">
+      <div class="float-start ml-6 px-8 py-2" :style="{height: scaleFF}">
         <img
           alt="Five Fifths voter"
           :src="titleLogoUrl"
