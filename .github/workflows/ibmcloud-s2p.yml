@@ -1,0 +1,109 @@
+# Deploy cloud - IBM Code Engine
+name: IBM Cloud - Staging to Production
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Not branch specific
+        run: |
+          echo "### Workflow is not branch specific" >> $GITHUB_STEP_SUMMARY
+          echo ":lock: This workflow promotes the current staging image to production. It does not rebuild using the code on the selected branch." >> $GITHUB_STEP_SUMMARY
+          echo "The staging and prod apps should be in the same CE project and use the same container registry region" >> $GITHUB_STEP_SUMMARY
+
+      - name: Install IBM Cloud CLI
+        run: curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
+
+      - name: Install Code Engine plugin
+        run: |
+          ibmcloud plugin install code-engine
+          ibmcloud plugin install container-registry
+
+      - name: Show IBM CLI version
+        run: ibmcloud -v
+
+      - name: Login to IBM Cloud
+        env:
+          IBMCLOUD_API_KEY: ${{ secrets.BLUE_IBM_CLOUD_API_KEY }}
+          IBM_CLOUD_GROUP: ${{ secrets.BLUE_RESOURCE_GROUP }}
+          IBM_REGION: ${{ vars.IBM_REGION }}
+          IBM_CR_REGION: ${{ vars.IBM_CR_REGION }}
+        run: |
+          ibmcloud login -g ${IBM_CLOUD_GROUP} -r ${IBM_REGION}
+          ibmcloud cr region-set ${IBM_CR_REGION}
+          ibmcloud cr login
+
+      - name: Select the project
+        env:
+          CE_PROJECT: ${{ vars.CE_PROJECT }}
+        run: ibmcloud ce project select --name ${CE_PROJECT}
+
+      - name: Get deployed staging image
+        id: staging
+        env:
+          CE_APP_NAME: ${{ vars.CE_APP_NAME }}
+        run: echo "IMAGE=$(ibmcloud ce app get --output json --name ${CE_APP_NAME} | jq -r '.spec.template.spec.containers[0].image[8:]')" >> "$GITHUB_OUTPUT"
+
+      - name: Get deployed prod image
+        id: prod
+        env:
+          CE_APP_NAME: ${{ vars.CE_PROD_APP }}
+        run: echo "IMAGE=$(ibmcloud ce app get --output json --name ${CE_APP_NAME} | jq -r '.spec.template.spec.containers[0].image[8:]')" >> "$GITHUB_OUTPUT"
+
+      - name: Updated prod image
+        id: updated
+        env:
+          CR_IMAGE: ${{ vars.CR_IMAGE }}
+          CR_PROD_IMAGE: ${{ vars.CR_PROD_IMAGE }}
+        run: |
+          echo IMAGE=$(sed "s#$CR_IMAGE#$CR_PROD_IMAGE#g" <<< ${{ steps.staging.outputs.IMAGE }}) >> $GITHUB_OUTPUT
+
+      - name: Re-tag staging image as new prod image
+        if: ${{ vars.DRYRUN != 'true' }}
+        run: |
+          ibmcloud cr image-tag ${{ steps.staging.outputs.IMAGE }} ${{ steps.updated.outputs.IMAGE }}
+          echo "### Tagged production image" >> $GITHUB_STEP_SUMMARY
+          echo ":pushpin: production image ${{ steps.updated.outputs.IMAGE }}" >> $GITHUB_STEP_SUMMARY
+
+      - name: Re-tag staging image as new prod image - dry run
+        if: ${{ vars.DRYRUN == 'true' }}
+        run: echo "ibmcloud cr image-tag ${{ steps.staging.outputs.IMAGE }} ${{ steps.updated.outputs.IMAGE }}"
+
+      - name: Update production app
+        if: ${{ vars.DRYRUN != 'true' }}
+        env:
+          CE_PROJECT: ${{ vars.CE_PROJECT }}
+          CE_APP_NAME: ${{ vars.CE_PROD_APP }}
+          CE_SCALE_DOWN_DELAY: ${{ vars.CE_SCALE_DOWN_DELAY }}
+          CR_IMAGE: ${{ vars.CR_IMAGE }}
+        run: |
+          ibmcloud ce project select --name ${CE_PROJECT}
+          ibmcloud ce app logs --tail 5 --follow --name ${CE_APP_NAME} &
+          ibmcloud ce app update --image private.${{ steps.updated.outputs.IMAGE }} --scale-down-delay ${CE_SCALE_DOWN_DELAY} --name ${CE_APP_NAME}
+          echo "### Application updated" >> $GITHUB_STEP_SUMMARY
+          echo "- :skull: application was previously using image ${{ steps.prod.outputs.IMAGE }}" >> $GITHUB_STEP_SUMMARY
+          echo "- :baby: application is now using image ${{ steps.updated.outputs.IMAGE }}" >> $GITHUB_STEP_SUMMARY
+
+      - name: Update production App -- dry run
+        if: ${{ vars.DRYRUN == 'true' }}
+        env:
+          CE_PROJECT: ${{ vars.CE_PROJECT }}
+          CE_APP_NAME: ${{ vars.CE_PROD_APP }}
+          CE_SCALE_DOWN_DELAY: ${{ vars.CE_SCALE_DOWN_DELAY }}
+          CR_IMAGE: ${{ vars.CR_IMAGE }}
+        run: |
+          ibmcloud ce project select --name ${CE_PROJECT}
+          ibmcloud ce app list | grep ${CE_APP_NAME}
+          echo [DRYRUN] ibmcloud ce app logs --tail 5 --follow --name ${CE_APP_NAME}
+          echo [DRYRUN] ibmcloud ce app update --image private.${{ steps.updated.outputs.IMAGE }} --scale-down-delay ${CE_SCALE_DOWN_DELAY} --name ${CE_APP_NAME}
+          echo "### Application NOT updated" >> $GITHUB_STEP_SUMMARY
+          echo ":microscope: dryrun mode is set. Updates was not completed."  >> $GITHUB_STEP_SUMMARY
