@@ -5,5 +5,5 @@ definePageMeta({
 </script>
 
 <template>
-  <journey-register-to-vote />
+  <JourneyRegisterToVote />
 </template>

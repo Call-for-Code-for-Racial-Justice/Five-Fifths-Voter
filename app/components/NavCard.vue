@@ -31,10 +31,10 @@ defineProps({
       >
         {{ title }}
       </h4>
-      <arrow-right
+      <ArrowRight
         class="absolute bottom-3 right-3 text-carbon-gray-90 opacity-0 md:opacity-100"
       />
-      <checkmark-filled
+      <CheckmarkFilled
         v-if="checked"
         class="absolute right-3 top-3 text-ff-pink-01"
       />

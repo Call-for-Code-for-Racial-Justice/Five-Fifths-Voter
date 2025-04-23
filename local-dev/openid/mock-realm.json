@@ -1,6 +1,6 @@
 {
   "id": "F5E8F95E-0402-4803-AF1D-AC284C730F77",
-  "realm": "ibmid",
+  "realm": "mock",
   "displayName": "Keycloak",
   "displayNameHtml": "<div class=\"kc-logo-text\"><span>Keycloak</span></div>",
   "notBefore": 0,
@@ -48,24 +48,62 @@
   "maxDeltaTimeSeconds": 43200,
   "failureFactor": 30,
   "users": [
-   {
-       "username":"admin",
-       "firstName":"Fallarnon",
-       "lastName":"Mnementh",
-       "email":"admin@ibm.example.com",
-       "emailVerified": true,
-       "enabled":true,
-       "credentials":[
-          {
-             "type":"password",
-             "value":"potato-history"
-          }
-       ],
-       "clientRoles":{
-          "account":[
-             "manage-account"
-          ]
-       }
+    {
+      "username":"martin",
+      "firstName":"Martin",
+      "lastName":"Luther King",
+      "email":"martin@vote.example.com",
+      "emailVerified": true,
+      "enabled":true,
+      "credentials":[
+        {
+          "type":"password",
+          "value":"vote"
+        }
+      ],
+      "clientRoles":{
+        "account":[
+          "manage-account"
+        ]
+      }
+    },
+    {
+      "username":"john",
+      "firstName":"John",
+      "lastName":"Lewis",
+      "email":"john@vote.example.com",
+      "emailVerified": true,
+      "enabled":true,
+      "credentials":[
+        {
+          "type":"password",
+          "value":"vote"
+        }
+      ],
+      "clientRoles":{
+        "account":[
+          "manage-account"
+        ]
+      }
+    },
+    {
+      "username":"susan",
+      "firstName":"Susan",
+      "lastName":"Anthony",
+      "email":"susan@vote.example.com",
+      "emailVerified": true,
+      "enabled":true,
+      "credentials":[
+        {
+          "type":"password",
+          "value":"vote"
+        }
+      ],
+      "clientRoles":{
+        "account":[
+          "manage-account"
+        ]
+      }
     }
   ],
   "roles": {
@@ -128,7 +166,7 @@
             "create-realm"
           ],
           "client": {
-            "ibmid-realm": [
+            "mock-realm": [
               "manage-realm",
               "query-groups",
               "view-users",
@@ -391,7 +429,7 @@
       ],
       "security-admin-console": [],
       "admin-cli": [],
-      "ibmid-realm": [
+      "mock-realm": [
         {
           "id": "766a558f-8532-4ad6-b369-074b2bbba8d2",
           "name": "manage-realm",
@@ -417,7 +455,7 @@
           "composite": true,
           "composites": {
             "client": {
-              "ibmid-realm": [
+              "mock-realm": [
                 "query-users",
                 "query-groups"
               ]
@@ -533,7 +571,7 @@
           "composite": true,
           "composites": {
             "client": {
-              "ibmid-realm": [
+              "mock-realm": [
                 "query-clients"
               ]
             }
@@ -937,7 +975,7 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "http://localhost:4007/api/auth/callback/ibmid"
+        "*"
       ],
       "webOrigins": [
         "+"
@@ -1174,8 +1212,8 @@
     },
     {
       "id": "05cc06aa-a478-4b61-93dc-456501a94874",
-      "clientId": "ibmid-realm",
-      "name": "ibmid Realm",
+      "clientId": "mock-realm",
+      "name": "Mock Realm",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,

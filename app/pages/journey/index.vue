@@ -21,14 +21,14 @@ onMounted(() => {
           })
         }}
       </div>
-      <journey-select-state />
+      <JourneySelectState />
       <cv-grid kind="wide">
         <cv-row class="my-8">
           <cv-column
             :lg="5"
             :sm="2"
           >
-            <nav-card
+            <NavCard
               :title="$t('journeyPageRegisteredLabel')"
               :image-src="navRegisterUrl"
               to="/journey/register"
@@ -39,7 +39,7 @@ onMounted(() => {
             :lg="5"
             :sm="2"
           >
-            <nav-card
+            <NavCard
               :title="$t('journeyPageBallotLabel')"
               :image-src="navMailUrl"
               to="/journey/mailInBallot"
@@ -50,7 +50,7 @@ onMounted(() => {
             :lg="5"
             :sm="2"
           >
-            <nav-card
+            <NavCard
               :title="$t('journeyPageGetInformedLabel')"
               :image-src="navInformedUrl"
               to="/journey/getInformed"
@@ -60,7 +60,7 @@ onMounted(() => {
             :lg="0"
             :sm="2"
           >
-            <nav-card
+            <NavCard
               :title="$t('journeyPageVoteNowLabel')"
               :image-src="navVoteUrl"
               to="/journey/voteInPerson"
@@ -73,7 +73,7 @@ onMounted(() => {
             :lg="5"
             :sm="0"
           >
-            <nav-card
+            <NavCard
               :title="$t('journeyPageVoteNowLabel')"
               :image-src="navVoteUrl"
               to="/journey/voteInPerson"
@@ -83,7 +83,7 @@ onMounted(() => {
             :lg="5"
             :sm="2"
           >
-            <nav-card
+            <NavCard
               :title="$t('journeyPageDeliverLabel')"
               :image-src="navBallotReturnUrl"
               image-class="object-[0_39%]"

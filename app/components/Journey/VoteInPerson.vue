@@ -469,9 +469,9 @@ const loading = computed(() => voterInfo.status === "loading");
 <!--</template>-->
 
 <template>
-  <page-title>
+  <PageTitle>
     {{ $t("voteTitle") }}
-  </page-title>
+  </PageTitle>
   <cv-grid
     :full-width="true"
     kind="narrow"
@@ -492,7 +492,7 @@ const loading = computed(() => voterInfo.status === "loading");
               date: niceIsoDate(electionStartDate),
             })
           }}
-          <mark-down
+          <MarkDown
             v-if="earlyVoting"
             :content="earlyVoting"
           />
@@ -502,8 +502,8 @@ const loading = computed(() => voterInfo.status === "loading");
           v-if="hasVoterInfo"
           class="journey-info__section"
         >
-          <journey-location-list />
-          <journey-civic-data />
+          <JourneyLocationList />
+          <JourneyCivicData />
         </div>
 
         <div v-if="filteredElections.length > 0">

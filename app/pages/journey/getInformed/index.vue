@@ -5,5 +5,5 @@ definePageMeta({
 </script>
 
 <template>
-  <journey-get-informed />
+  <JourneyGetInformed />
 </template>

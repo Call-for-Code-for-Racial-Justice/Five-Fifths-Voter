@@ -66,7 +66,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
         @click="scrollToId('our-mission')"
       >
         {{ $t("landingPageMain") }}
-        <arrow-down
+        <ArrowDown
           :data-pos="ourMissionPosition"
           class="inline-block opacity-100 transition-all duration-500 data-[pos=up]:-rotate-180
             data-[pos=here]:opacity-0"
@@ -79,7 +79,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
         :active="activeJourney"
       >
         {{ $t("appHeaderVoterJourney") }}
-        <arrow-up-right class="inline-block" />
+        <ArrowUpRight class="inline-block" />
       </cv-header-menu-item>
       <cv-header-menu-item
         id="header-menu-our-values"
@@ -88,7 +88,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
         @click="scrollToId('our-values')"
       >
         {{ $t("appHeaderOurValues") }}
-        <arrow-down
+        <ArrowDown
           :data-pos="ourValuesPosition"
           class="inline-block opacity-100 transition-all duration-500 data-[pos=up]:-rotate-180
             data-[pos=here]:opacity-0"
@@ -100,14 +100,14 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
         to="/voterSupport"
       >
         {{ $t("appHeaderVoterSupport") }}
-        <arrow-up-right class="inline-block" />
+        <ArrowUpRight class="inline-block" />
       </cv-header-menu-item>
       <cv-header-menu-item
         id="header-menu-why"
         :active="activeWhyVote"
         to="/whyVote"
       >
-        {{ $t("appHeaderWhyVote") }} <arrow-up-right class="inline-block" />
+        {{ $t("appHeaderWhyVote") }} <ArrowUpRight class="inline-block" />
       </cv-header-menu-item>
     </cv-header-nav>
     <template #header-global>
@@ -117,7 +117,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
         target="_blank"
         aria-label="Five Fifths Voter on instagram - link opens in a new window"
       >
-        <instagram class="text-carbon-gray-30" />
+        <Instagram class="text-carbon-gray-30" />
       </cv-link>
       <cv-link
         class="p-1"
@@ -125,7 +125,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
         target="_blank"
         aria-label="Link to code for this site in GitHub"
       >
-        <git-hub class="text-carbon-gray-30" />
+        <GitHub class="text-carbon-gray-30" />
       </cv-link>
       <cv-header-global-action
         id="header-language-button"
@@ -135,11 +135,11 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
         class="!h-6 !min-h-0 !px-0 !py-3.5"
         tip-position="left"
       >
-        <language-switcher class="text-carbon-gray-30" />
+        <LanguageSwitcher class="text-carbon-gray-30" />
       </cv-header-global-action>
     </template>
     <template #right-panels>
-      <language-panel />
+      <LanguagePanel />
     </template>
     <template #left-panels>
       <cv-side-nav
@@ -155,7 +155,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
             @click="scrollTop()"
           >
             <template #nav-icon>
-              <home-icon />
+              <HomeIcon />
             </template>
             {{ $t("appHeaderHome") }}
           </cv-side-nav-link>
@@ -164,7 +164,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
             @click="scrollToId('our-mission')"
           >
             <template #nav-icon>
-              <arrow-down
+              <ArrowDown
                 :data-pos="ourMissionPosition"
                 class="inline-block opacity-100 transition-all duration-500 data-[pos=here]:-rotate-90
                   data-[pos=up]:-rotate-180 md:data-[pos=here]:opacity-0"
@@ -177,7 +177,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
             to="/journey"
           >
             <template #nav-icon>
-              <voter-journey-icon />
+              <VoterJourneyIcon />
             </template>
             {{ $t("appHeaderVoterJourney") }}
           </cv-side-nav-link>
@@ -186,7 +186,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
             @click="scrollToId('our-values')"
           >
             <template #nav-icon>
-              <arrow-down
+              <ArrowDown
                 :data-pos="ourValuesPosition"
                 class="inline-block opacity-100 transition-all duration-500 data-[pos=here]:-rotate-90
                   data-[pos=up]:-rotate-180 md:data-[pos=here]:opacity-0"
@@ -199,7 +199,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
             to="/voterSupport"
           >
             <template #nav-icon>
-              <voter-support-icon />
+              <VoterSupportIcon />
             </template>
             {{ $t("appHeaderVoterSupport") }}
           </cv-side-nav-link>
@@ -208,7 +208,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
             to="/whyVote"
           >
             <template #nav-icon>
-              <why-vote-icon />
+              <WhyVoteIcon />
             </template>
             {{ $t("appHeaderWhyVote") }}
           </cv-side-nav-link>

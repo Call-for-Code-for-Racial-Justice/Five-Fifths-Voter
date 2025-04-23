@@ -71,19 +71,19 @@ const candidates = useFetch("/api/candidateInfo", {
             headers="table-candidate-party"
             class="!text-ff-purple-01"
           >
-            <icon-democrat
+            <IconDemocrat
               v-if="row.party === 'Democrat'"
               class="w-8 lg:w-16"
             />
-            <icon-libertarian
+            <IconLibertarian
               v-else-if="row.party === 'Libertarian'"
               class="w-8 lg:w-16"
             />
-            <icon-republican
+            <IconRepublican
               v-else-if="row.party === 'Republican'"
               class="w-8 lg:w-16"
             />
-            <icon-green-party
+            <IconGreenParty
               v-else-if="row.party === 'Green Party'"
               class="w-8 p-1 lg:w-16 lg:p-2"
             />
@@ -101,32 +101,32 @@ const candidates = useFetch("/api/candidateInfo", {
                 target="_blank"
                 class="!text-ff-purple-01"
               >
-                <web-icon
+                <WebIcon
                   v-if="social === 'website'"
                   aria-label="candidate website"
                 />
-                <facebook-icon
+                <FacebookIcon
                   v-else-if="social === 'fb'"
                   aria-label="candidate facebook site"
                 />
-                <youtube-icon
+                <YoutubeIcon
                   v-else-if="social === 'yt'"
                   aria-label="candidate youtube site"
                 />
-                <twitter-icon
+                <TwitterIcon
                   v-else-if="social === 'x'"
                   aria-label="candidate x site"
                 />
-                <instagram-icon
+                <InstagramIcon
                   v-else-if="social === 'gram'"
                   aria-label="candidate instagram sie"
                 />
-                <icon-tik-tok
+                <IconTikTok
                   v-else-if="social === 'tt'"
                   class="p-1"
                   aria-label="candidate TikTok site"
                 />
-                <generic-icon v-else />
+                <GenericIcon v-else />
               </cv-link>
             </div>
           </template>

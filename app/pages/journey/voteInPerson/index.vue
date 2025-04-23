@@ -8,5 +8,5 @@ definePageMeta({
 </script>
 
 <template>
-  <journey-vote-in-person />
+  <JourneyVoteInPerson />
 </template>

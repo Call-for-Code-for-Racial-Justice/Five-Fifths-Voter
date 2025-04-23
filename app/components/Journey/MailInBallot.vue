@@ -85,9 +85,9 @@ const onRequested = val => setUserRequestedBallot(val);
 </script>
 
 <template>
-  <page-title>
+  <PageTitle>
     {{ $t("absenteeTitle") }}
-  </page-title>
+  </PageTitle>
   <cv-grid :full-width="true">
     <cv-row>
       <cv-column
@@ -105,33 +105,33 @@ const onRequested = val => setUserRequestedBallot(val);
           {{ $t("absenteeDesc") }}
         </p>
 
-        <journey-territory-info
+        <JourneyTerritoryInfo
             v-if="info.register.territory"
             class="mb-4 text-base"
         />
 
         <!-- link request ballot -->
-        <mark-down
+        <MarkDown
             :content="requestLink"
             class="mb-4 text-base"
         />
 
         <!-- State link -->
-        <mark-down
+        <MarkDown
             v-if="moreLink"
             :content="moreLink"
             class="mb-4 text-base"
         />
 
         <!-- Request deadline -->
-        <mark-down
+        <MarkDown
             v-if="requestDeadline"
             :content="requestDeadline"
             class="mb-4 text-base"
         />
 
         <!-- Return deadline -->
-        <mark-down
+        <MarkDown
             v-if="returnDeadline"
             :content="returnDeadline"
             class="mb-4 text-base"
@@ -146,40 +146,40 @@ const onRequested = val => setUserRequestedBallot(val);
         </div>
 
         <!-- ID needed -->
-        <journey-f-a-q
+        <JourneyFAQ
             v-if="idNeeded"
             :question="t('absenteeIdFaq')"
             :answer="!!info.mail_in.id_needed"
         >
-          <mark-down
+          <MarkDown
               v-if="info.mail_in.id_explainer"
               style="display: inline-block"
               :content="idExplainer"
           />
-        </journey-f-a-q>
+        </JourneyFAQ>
 
         <!-- drop-off -->
-        <journey-f-a-q
+        <JourneyFAQ
             v-if="hasDropoff"
             :question="t('absenteeDropFaq')"
             :answer="!!info.mail_in?.dropoff"
         >
-          <mark-down
+          <MarkDown
               v-if="dropoffExplainer"
               style="display: inline-block"
               :content="dropoffExplainer"
           />
-        </journey-f-a-q>
+        </JourneyFAQ>
 
         <!-- any special reason -->
-        <journey-f-a-q
+        <JourneyFAQ
             v-if="hasAnyReason"
             :question="t('absenteeReasonFaq')"
             :answer="!!info.mail_in?.any_reason"
         />
 
         <!-- Need notary? -->
-        <journey-f-a-q
+        <JourneyFAQ
             v-if="hasNotary"
             :question="t('absenteeWitnessFaq')"
             :answer="!!info.mail_in?.without_notary"

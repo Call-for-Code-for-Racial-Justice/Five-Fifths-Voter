@@ -173,9 +173,9 @@ const earlyVoting = computed(() => {
 <!--</template>-->
 
 <template>
-  <page-title>
+  <PageTitle>
     {{ $t("getInformedTitle") }}
-  </page-title>
+  </PageTitle>
   <cv-grid
     :full-width="true"
     kind="condensed"
@@ -185,7 +185,7 @@ const earlyVoting = computed(() => {
         :sm="4"
         :lg="8"
       >
-        <journey-territory-info
+        <JourneyTerritoryInfo
           v-if="info.register.territory"
           class="mb-4 text-base"
         />
@@ -196,7 +196,7 @@ const earlyVoting = computed(() => {
           class="mb-4 text-base"
         >
           <span>{{ $t("getInformedTopContests") }}</span>
-          <mark-down
+          <MarkDown
             v-if="info.sample_ballot"
             :content="info.sample_ballot"
           />
@@ -209,7 +209,7 @@ const earlyVoting = computed(() => {
                 date: niceIsoDate(electionStartDate),
               })
             }}
-            <mark-down
+            <MarkDown
               v-if="earlyVoting"
               :content="earlyVoting"
             />
@@ -231,7 +231,7 @@ const earlyVoting = computed(() => {
     </cv-row>
     <cv-row>
       <cv-column>
-        <journey-candidates-by-state />
+        <JourneyCandidatesByState />
       </cv-column>
     </cv-row>
   </cv-grid>

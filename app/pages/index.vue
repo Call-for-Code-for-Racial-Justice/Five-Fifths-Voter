@@ -13,8 +13,8 @@ definePageMeta({
 
 <template>
   <div>
-    <home-header />
-    <home-top-section />
+    <HomeHeader />
+    <HomeTopSection />
     <!-- TODO: Move to component -->
     <section
       id="our-mission"
@@ -42,7 +42,7 @@ definePageMeta({
             @click="navigateTo('/journey')"
           >
             {{ $t("appHeaderVoterJourney") }}
-            <arrow-up-right class="inline-block" />
+            <ArrowUpRight class="inline-block" />
           </button>
         </div>
       </div>
@@ -51,6 +51,6 @@ definePageMeta({
           bg-no-repeat md:block"
       />
     </section>
-    <home-values-section />
+    <HomeValuesSection />
   </div>
 </template>

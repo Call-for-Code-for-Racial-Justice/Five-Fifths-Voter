@@ -62,9 +62,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <page-title>
+  <PageTitle>
     {{ $t("registerTitle") }}
-  </page-title>
+  </PageTitle>
   <cv-grid :full-width="true">
     <cv-row>
       <cv-column
@@ -89,25 +89,25 @@ onMounted(() => {
         <p class="mb-6 mt-2 text-base text-white">
           {{ $t("registerDesc") }}
         </p>
-        <journey-territory-info
+        <JourneyTerritoryInfo
             v-if="info.register.territory"
             class="mb-6 mt-2 text-base text-white"
         />
 
         <!-- registration deadline -->
-        <mark-down
+        <MarkDown
             v-if="registrationDeadline"
             :content="registrationDeadline"
         />
 
-        <mark-down
+        <MarkDown
             v-if="registerLinks"
             class="mb-6 mt-2 text-base text-white"
             :content="registerLinks"
         />
 
         <!-- Youth -->
-        <journey-cali-special
+        <JourneyCaliSpecial
             v-if="usaCode === 'ca'"
             class="mb-6 mt-2 text-base text-white"
         />
@@ -148,14 +148,14 @@ onMounted(() => {
         </div>
 
         <!-- Register day of voting -->
-        <journey-f-a-q
+        <JourneyFAQ
             v-if="'election_day' in info.register"
             :question="t('registerElectionDay')"
             :answer="!!info.register.election_day"
         />
 
         <!-- Register online -->
-        <journey-f-a-q
+        <JourneyFAQ
             v-if="'online' in info.register"
             :question="t('registerOnlineQ')"
             :answer="!!info.register.online"

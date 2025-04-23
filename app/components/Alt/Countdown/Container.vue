@@ -76,7 +76,8 @@ onBeforeUnmount(() => clearInterval(intervalID));
 </script>
 
 <template>
-  <div
+  <footer class="sticky bottom-0 z-20 h-20 bg-ff-red-01 md:h-28 xl:h-32 3xl:h-64">
+    <div
     class="flex size-full items-center justify-between
       bg-ff-red-01 px-3"
   >
@@ -94,25 +95,26 @@ onBeforeUnmount(() => clearInterval(intervalID));
     <div
       class="flex flex-row items-center justify-between gap-x-1 text-white"
     >
-      <alt-countdown-number
+      <AltCountdownNumber
         :label="labelDays"
         :number="days"
         prefix=""
       />
-      <alt-countdown-number
+      <AltCountdownNumber
         :label="labelHours"
         :number="hours"
       />
-      <alt-countdown-number
+      <AltCountdownNumber
         :label="labelMinutes"
         :number="minutes"
       />
-      <alt-countdown-number
+      <AltCountdownNumber
         :label="labelSeconds"
         :number="seconds"
       />
     </div>
   </div>
+  </footer>
 </template>
 
 <style scoped lang="css">
