@@ -1,10 +1,9 @@
-# This is a basic workflow to help you get started with Actions
-
-name: IBM Cloud Code Engine Deploy
+# Deploy cloud - IBM Code Engine
+name: IBM Cloud - Deploy to Staging site
 
 # Controls when the action will run.
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
+  # Triggers the workflow on push for the main branch
   push:
     branches: [main]
 
@@ -15,22 +14,18 @@ defaults:
   run:
     shell: bash
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
+  # Build & deploy
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '18.x'
+          node-version-file: "./app/.nvmrc"
 
-      # Runs a single command using the runners shell
       - name: Install IBM Cloud CLI
         run: curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
 
@@ -44,19 +39,28 @@ jobs:
 
       - name: Login to IBM Cloud
         env:
-          IBM_CLOUD_APIKEY: ${{ secrets.BLUE_IBM_CLOUD_API_KEY }}
+          IBMCLOUD_API_KEY: ${{ secrets.BLUE_IBM_CLOUD_API_KEY }}
           IBM_CLOUD_GROUP: ${{ secrets.BLUE_RESOURCE_GROUP }}
+          IBM_REGION: ${{ vars.IBM_REGION }}
+          IBM_CR_REGION: ${{ vars.IBM_CR_REGION }}
         run: |
-          ibmcloud login --apikey $IBM_CLOUD_APIKEY -g $IBM_CLOUD_GROUP -r us-south
+          ibmcloud login -g ${IBM_CLOUD_GROUP} -r ${IBM_REGION}
+          ibmcloud cr region-set ${IBM_CR_REGION}
           ibmcloud cr login
 
-      # Runs a set of commands using the runners shell
-      - name: Build and deploy
+      - name: Updating staging site
+        env:
+          CE_PROJECT: ${{ vars.CE_PROJECT }}
+          CE_APP_NAME: ${{ vars.CE_APP_NAME }}
+          CE_SCALE_DOWN_DELAY: ${{ vars.CE_SCALE_DOWN_DELAY }}
+          CR_IMAGE: ${{ vars.CR_IMAGE }}
         run: |
           IMAGE_TAG=$(date '+%FT%H%M%S')
-          docker build -t us.icr.io/fivefifthsvoter/fivefifthsvoter-next:$IMAGE_TAG .
-          docker push us.icr.io/fivefifthsvoter/fivefifthsvoter-next:$IMAGE_TAG
-          ibmcloud ce project select --name fivefifthsvoter
-          ibmcloud ce app logs --tail 5 --follow --name fivefifthsvoter &
-          ibmcloud ce app update --image private.us.icr.io/fivefifthsvoter/fivefifthsvoter-next:$IMAGE_TAG --name fivefifthsvoter
+          docker build -t ${CR_IMAGE}:$IMAGE_TAG .
+          docker push ${CR_IMAGE}:$IMAGE_TAG
+          ibmcloud ce project select --name ${CE_PROJECT}
+          ibmcloud ce app logs --tail 5 --follow --name ${CE_APP_NAME} &
+          ibmcloud ce app update --image private.${CR_IMAGE}:$IMAGE_TAG --scale-down-delay ${CE_SCALE_DOWN_DELAY} --name ${CE_APP_NAME}
+          echo "### Staging site updated :rocket:" >> $GITHUB_STEP_SUMMARY
+          echo "Staging is now using image ${CR_IMAGE}:$IMAGE_TAG" >> $GITHUB_STEP_SUMMARY
 
