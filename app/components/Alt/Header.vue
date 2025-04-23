@@ -23,8 +23,8 @@ function easeInOutCubic(x) {
   return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
 }
 const scaleLogo = computed(() => {
-  let baseHeight = 320;
-  if (screenWidth.value < 1536) baseHeight = 208;
+  let baseHeight = 320; // for 3xl use h-80
+  if (screenWidth.value < 1536) baseHeight = 208; // for bp smaller than 3xl use height h-52
   return `${baseHeight - (baseHeight - 48) * easeInOutCubic(Math.min(1, y.value / 208))}px`;
 });
 const scaleFF = computed(() => {
@@ -69,7 +69,7 @@ const scaleFF = computed(() => {
   </nav>
   <div
       class="fixed z-10 h-52 w-full bg-ff-purple-01 bg-contain bg-right-top
-        bg-no-repeat 3xl:h-56"
+        bg-no-repeat 3xl:h-80"
       :class="{'border border-solid border-carbon-gray-90' : scaleLogo === '48px'}"
       :style="{backgroundImage: `url(${bgUrl})`, height: scaleLogo}"
   >

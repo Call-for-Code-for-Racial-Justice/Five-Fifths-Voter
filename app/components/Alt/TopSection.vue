@@ -16,7 +16,7 @@ watchEffect(() => {
   <section
       id="top"
       ref="section"
-      class="ml-3 h-dvh pt-52 3xl:pt-56"
+      class="ml-3 h-dvh pt-52 lg:pt-80"
   >
     <div class="mb-16 w-full px-2 pt-0 text-white">
       <div
