@@ -23,7 +23,7 @@ jobs:
       - name: Install IBM Cloud CLI
         run: curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
 
-      - name: Install Code Engine plugin
+      - name: Install IBM cloud plugins
         run: |
           ibmcloud plugin install code-engine
           ibmcloud plugin install container-registry

@@ -1,0 +1,62 @@
+name: Scan deployed images with Trivy
+
+# Controls when the action will run.
+on:
+  #schedule:
+    # At 12:29 on day-of-month 8
+    # - cron: '29 12 8 * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+
+    steps:
+      - name: Install IBM Cloud CLI
+        run: curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
+
+      - name: Install IBM cloud plugins
+        run: |
+          ibmcloud plugin install code-engine
+          ibmcloud plugin install container-registry
+
+      - name: Show IBM CLI version
+        run: ibmcloud -v
+
+      - name: Login to IBM Cloud
+        env:
+          IBMCLOUD_API_KEY: ${{ secrets.BLUE_IBM_CLOUD_API_KEY }}
+          IBM_CLOUD_GROUP: ${{ secrets.BLUE_RESOURCE_GROUP }}
+          IBM_REGION: ${{ vars.IBM_REGION }}
+          IBM_CR_REGION: ${{ vars.IBM_CR_REGION }}
+        run: |
+          ibmcloud login -g ${IBM_CLOUD_GROUP} -r ${IBM_REGION}
+          ibmcloud cr region-set ${IBM_CR_REGION}
+          ibmcloud cr login
+
+      - name: Select the project
+        env:
+          CE_PROJECT: ${{ vars.CE_PROJECT }}
+        run: ibmcloud ce project select --name ${CE_PROJECT}
+
+      - name: Get deployed image
+        id: image
+        env:
+          CE_APP_NAME: ${{ vars.CE_PROD_APP }}
+        run: echo "IMAGE=$(ibmcloud ce app get --output json --name ${CE_APP_NAME} | jq -r '.spec.template.spec.containers[0].image[8:]')" >> "$GITHUB_OUTPUT"
+
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: '${{ steps.image.outputs.IMAGE }}'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+
+      - name: Upload Trivy scan results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: 'trivy-results.sarif'
