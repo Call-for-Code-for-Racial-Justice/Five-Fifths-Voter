@@ -103,7 +103,7 @@ function autoClose(ev) {
       </cv-accordion-item>
     </cv-accordion>
     <button
-        id="mission-journey-button"
+        id="values-journey-button"
         class="ml-2 mt-8 bg-ff-purple-02 p-3 text-white"
         @click="navigateTo('/journey')"
     >

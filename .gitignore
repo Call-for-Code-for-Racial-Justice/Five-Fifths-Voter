@@ -32,3 +32,4 @@ pnpm*
 yarn*
 .yarn*
 **/.pnp.*
+app/cypress/screenshots

@@ -20,6 +20,10 @@ const activeVoterSupport = computed(
 );
 const activeWhyVote = computed(() => route.path.toLowerCase() === "/whyvote");
 const activeJourney = computed(() => route.path.startsWith("/journey"));
+
+watch(() => route.path, () => {
+  document?.activeElement?.blur();
+});
 </script>
 
 <template>
@@ -117,37 +121,37 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
         aria-label="Side navigation for mobile devices"
       >
         <cv-side-nav-items>
-          <cv-side-nav-link to="/">
+          <cv-side-nav-link id="side-nav-home" to="/">
             <template #nav-icon>
               <HomeIcon />
             </template>
             {{ $t("appHeaderHome") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/#our-mission">
+          <cv-side-nav-link id="side-nav-mission" to="/#our-mission">
             <template #nav-icon>
               <OurMissionIcon />
             </template>
             {{ $t("landingPageMain") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/journey">
+          <cv-side-nav-link id="side-nav-journey" to="/journey">
             <template #nav-icon>
               <VoterJourneyIcon />
             </template>
             {{ $t("appHeaderVoterJourney") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/#our-values">
+          <cv-side-nav-link id="side-nav-values" to="/#our-values">
             <template #nav-icon>
               <OurValuesIcon />
             </template>
             {{ $t("appHeaderOurValues") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/voterSupport">
+          <cv-side-nav-link id="side-nav-support" to="/voterSupport">
             <template #nav-icon>
               <VoterSupportIcon />
             </template>
             {{ $t("appHeaderVoterSupport") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/whyVote">
+          <cv-side-nav-link id="side-nav-why" to="/whyVote">
             <template #nav-icon>
               <WhyVoteIcon />
             </template>
