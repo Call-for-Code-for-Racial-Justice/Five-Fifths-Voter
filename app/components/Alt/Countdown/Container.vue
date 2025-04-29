@@ -1,6 +1,8 @@
 <script setup>
 import { DateTime, Duration, Interval } from "luxon";
+import { useWindowSize } from "@vueuse/core";
 
+const { width } = useWindowSize();
 const { t, locale } = useI18n();
 
 const headlines = computed(() => {
@@ -109,6 +111,7 @@ onBeforeUnmount(() => clearInterval(intervalID));
         :number="minutes"
       />
       <AltCountdownNumber
+          v-if="width > 370"
         :label="labelSeconds"
         :number="seconds"
       />
