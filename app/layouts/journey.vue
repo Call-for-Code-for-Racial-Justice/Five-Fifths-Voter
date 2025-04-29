@@ -53,7 +53,7 @@ const currentSub = computed(() => {
         id="#main-content"
         class="main-content with-header"
       >
-        <div class="current-location mt-32">
+        <div class="current-location mt-16">
           {{
             $t("journeyPageElectionState", {
               state: user?.info?.location?.region,
