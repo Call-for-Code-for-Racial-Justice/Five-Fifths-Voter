@@ -15,7 +15,7 @@ useHead({
     <TheHeader />
     <main
       id="#main-content"
-      class="main-content with-header"
+      class="main-content px-1"
     >
       <slot />
     </main>

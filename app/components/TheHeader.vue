@@ -20,12 +20,15 @@ const activeVoterSupport = computed(
 );
 const activeWhyVote = computed(() => route.path.toLowerCase() === "/whyvote");
 const activeJourney = computed(() => route.path.startsWith("/journey"));
+
+watch(() => route.path, () => {
+  document?.activeElement?.blur();
+});
 </script>
 
 <template>
   <cv-header
     id="ff-header"
-    class="!h-24"
   >
     <cv-header-menu-button
       id="ff-header-menu"
@@ -40,7 +43,7 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
       <img
         alt=""
         src="@/assets/images/FiveFifthsVoterLogo.png"
-        class="h-full max-h-[32px] sm:max-h-[64px]"
+        class="h-full"
       >
       FiveFifths
     </cv-header-name>
@@ -81,7 +84,7 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
     </cv-header-nav>
     <template #header-global>
       <cv-link
-        class="px-2 py-8"
+        class="p-2"
         href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
         target="_blank"
         aria-label="Five Fifths Voter on instagram - link opens in a new window"
@@ -89,7 +92,7 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
         <Instagram class="text-carbon-gray-30" />
       </cv-link>
       <cv-link
-        class="px-2 py-8"
+        class="p-2"
         href="https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter"
         target="_blank"
         aria-label="Link to code for this site in GitHub - link opens in a new window"
@@ -101,7 +104,6 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
         :aria-label="$t('ariaLanguageSetting')"
         aria-controls="language-panel"
         :label="$t('ariaLanguageSetting')"
-        class="!mx-2 !h-6 !min-h-0 !px-0 !py-12"
         tip-position="left"
       >
         <LanguageSwitcher class="text-carbon-gray-30" />
@@ -119,37 +121,37 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
         aria-label="Side navigation for mobile devices"
       >
         <cv-side-nav-items>
-          <cv-side-nav-link to="/">
+          <cv-side-nav-link id="side-nav-home" to="/">
             <template #nav-icon>
               <HomeIcon />
             </template>
             {{ $t("appHeaderHome") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/#our-mission">
+          <cv-side-nav-link id="side-nav-mission" to="/#our-mission">
             <template #nav-icon>
               <OurMissionIcon />
             </template>
             {{ $t("landingPageMain") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/journey">
+          <cv-side-nav-link id="side-nav-journey" to="/journey">
             <template #nav-icon>
               <VoterJourneyIcon />
             </template>
             {{ $t("appHeaderVoterJourney") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/#our-values">
+          <cv-side-nav-link id="side-nav-values" to="/#our-values">
             <template #nav-icon>
               <OurValuesIcon />
             </template>
             {{ $t("appHeaderOurValues") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/voterSupport">
+          <cv-side-nav-link id="side-nav-support" to="/voterSupport">
             <template #nav-icon>
               <VoterSupportIcon />
             </template>
             {{ $t("appHeaderVoterSupport") }}
           </cv-side-nav-link>
-          <cv-side-nav-link to="/whyVote">
+          <cv-side-nav-link id="side-nav-why" to="/whyVote">
             <template #nav-icon>
               <WhyVoteIcon />
             </template>

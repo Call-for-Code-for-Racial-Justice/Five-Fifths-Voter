@@ -16,7 +16,7 @@ defineProps({
 <template>
   <cv-tile
     kind="clickable"
-    class="mb-6 !p-0 md:mb-0"
+    class="mb-4 !p-0"
     :to="to"
   >
     <div class="relative aspect-[4/3] hover:scale-105">

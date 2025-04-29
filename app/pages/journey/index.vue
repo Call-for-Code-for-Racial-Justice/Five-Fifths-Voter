@@ -12,7 +12,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="mt-32 flex flex-row items-center justify-center">
+  <div class="mt-16 flex flex-row items-center justify-center">
     <div>
       <div class="current-location">
         {{
@@ -22,76 +22,38 @@ onMounted(() => {
         }}
       </div>
       <JourneySelectState />
-      <cv-grid kind="wide">
-        <cv-row class="my-8">
-          <cv-column
-            :lg="5"
-            :sm="2"
-          >
+      <div class="grid grid-cols-2 justify-center gap-4 md:grid-cols-3">
+        <NavCard
+            :title="$t('journeyPageRegisteredLabel')"
+            :image-src="navRegisterUrl"
+            to="/journey/register"
+            :checked="isUserRegistered()"
+        />
+        <NavCard
+            :title="$t('journeyPageBallotLabel')"
+            :image-src="navMailUrl"
+            to="/journey/mailInBallot"
+            :checked="isUserRequestedBallot()"
+        />
+        <NavCard
+            :title="$t('journeyPageGetInformedLabel')"
+            :image-src="navInformedUrl"
+            to="/journey/getInformed"
+        />
+        <NavCard
+            :title="$t('journeyPageDeliverLabel')"
+            :image-src="navBallotReturnUrl"
+            image-class="object-[0_39%]"
+            to="/journey/ballotReturn"
+            class="md:translate-x-[calc((100%+16px)/2)]"
+        />
             <NavCard
-              :title="$t('journeyPageRegisteredLabel')"
-              :image-src="navRegisterUrl"
-              to="/journey/register"
-              :checked="isUserRegistered()"
+                :title="$t('journeyPageVoteNowLabel')"
+                :image-src="navVoteUrl"
+                to="/journey/voteInPerson"
+                class="translate-x-1/2 md:translate-x-[calc((100%+16px)/2)]"
             />
-          </cv-column>
-          <cv-column
-            :lg="5"
-            :sm="2"
-          >
-            <NavCard
-              :title="$t('journeyPageBallotLabel')"
-              :image-src="navMailUrl"
-              to="/journey/mailInBallot"
-              :checked="isUserRequestedBallot()"
-            />
-          </cv-column>
-          <cv-column
-            :lg="5"
-            :sm="2"
-          >
-            <NavCard
-              :title="$t('journeyPageGetInformedLabel')"
-              :image-src="navInformedUrl"
-              to="/journey/getInformed"
-            />
-          </cv-column>
-          <cv-column
-            :lg="0"
-            :sm="2"
-          >
-            <NavCard
-              :title="$t('journeyPageVoteNowLabel')"
-              :image-src="navVoteUrl"
-              to="/journey/voteInPerson"
-            />
-          </cv-column>
-        </cv-row>
-        <cv-row>
-          <cv-column :lg="2" />
-          <cv-column
-            :lg="5"
-            :sm="0"
-          >
-            <NavCard
-              :title="$t('journeyPageVoteNowLabel')"
-              :image-src="navVoteUrl"
-              to="/journey/voteInPerson"
-            />
-          </cv-column>
-          <cv-column
-            :lg="5"
-            :sm="2"
-          >
-            <NavCard
-              :title="$t('journeyPageDeliverLabel')"
-              :image-src="navBallotReturnUrl"
-              image-class="object-[0_39%]"
-              to="/journey/ballotReturn"
-            />
-          </cv-column>
-        </cv-row>
-      </cv-grid>
+      </div>
     </div>
   </div>
 </template>

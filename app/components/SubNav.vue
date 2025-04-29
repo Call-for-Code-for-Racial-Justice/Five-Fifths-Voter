@@ -46,7 +46,7 @@ defineProps({
 
 <template>
   <cv-breadcrumb
-    class="fixed left-1 top-24 z-50 hidden h-6 w-full bg-ff-purple-01 md:block"
+    class="fixed left-1 top-12 z-50 hidden h-6 w-full bg-ff-purple-01 md:block"
   >
     <cv-breadcrumb-item
       v-for="step in subPages"
@@ -64,7 +64,7 @@ defineProps({
     </cv-breadcrumb-item>
   </cv-breadcrumb>
   <div
-    class="fixed left-1 top-24 z-50 flex w-full flex-row gap-4 bg-ff-purple-01
+    class="fixed left-1 top-12 z-50 flex w-full flex-row gap-4 bg-ff-purple-01
       text-ff-white-01 md:hidden"
   >
     <div

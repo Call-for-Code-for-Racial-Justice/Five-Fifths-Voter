@@ -31,7 +31,7 @@ watchEffect(() => {
       </div>
     </div>
     <button
-        id="mission-journey-button"
+        id="top-journey-button"
         class="ml-2 bg-ff-purple-02 p-3 text-white"
         @click="navigateTo('/journey')"
     >

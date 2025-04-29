@@ -33,6 +33,6 @@ import bgUrl from "~/assets/images/mask-group.svg";
         </div>
       </div>
     </div>
-    <HomeCountdown />
+    <HomeV3Countdown />
   </section>
 </template>
