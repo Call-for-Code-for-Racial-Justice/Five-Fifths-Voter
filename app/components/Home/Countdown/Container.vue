@@ -97,20 +97,20 @@ onBeforeUnmount(() => clearInterval(intervalID));
     <div
       class="flex flex-row items-center justify-between gap-x-1 text-white"
     >
-      <AltCountdownNumber
+      <HomeCountdownNumber
         :label="labelDays"
         :number="days"
         prefix=""
       />
-      <AltCountdownNumber
+      <HomeCountdownNumber
         :label="labelHours"
         :number="hours"
       />
-      <AltCountdownNumber
+      <HomeCountdownNumber
         :label="labelMinutes"
         :number="minutes"
       />
-      <AltCountdownNumber
+      <HomeCountdownNumber
           v-if="width > 370"
         :label="labelSeconds"
         :number="seconds"
