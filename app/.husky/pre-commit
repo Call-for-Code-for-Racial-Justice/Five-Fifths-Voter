@@ -1,2 +1,0 @@
-cd app
-npx lint-staged

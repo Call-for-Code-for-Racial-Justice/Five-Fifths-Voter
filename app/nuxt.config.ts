@@ -26,9 +26,8 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
-    "nuxt-eslint-globals",
     "@sidebase/nuxt-auth",
-    "@nuxt/eslint",
+    "@nuxt/eslint"
   ],
   runtimeConfig: {
     authSecret: process.env.NUXT_AUTH_SECRET,

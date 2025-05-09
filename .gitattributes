@@ -2,3 +2,11 @@
 *.js text eol=lf
 *.vue text eol=lf
 *.scss text eol=lf
+app/assets/css/** linguist-generated
+docs/** linguist-documentation
+contributing/** linguist-documentation
+scripts/** linguist-documentation
+CONTRIBUTING.md linguist-documentation
+README.md linguist-documentation
+local-dev/** -linguist-detectable
+app/cypress/** -linguist-detectable
