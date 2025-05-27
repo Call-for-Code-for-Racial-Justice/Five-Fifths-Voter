@@ -21,10 +21,11 @@ import bgUrl from "~/assets/images/mask-group.svg";
         >
       </div>
       <div class="w-full p-3 text-white md:p-14 lg:pt-0">
-        <LineBreaks
-          :content="$t('landingTopTagline')"
-          class="text-2xl sm:text-4xl md:text-6xl 3xl:text-9xl"
-        />
+        <div
+          class="whitespace-pre text-2xl sm:text-4xl md:text-6xl 3xl:text-9xl"
+        >
+          {{ $t('landingTopTagline') }}
+        </div>
         <div
           class="pt-10 sm:text-2xl md:max-w-96 md:pt-8 md:text-2xl lg:pt-1 xl:pt-16
             3xl:max-w-[75rem] 3xl:text-7xl"

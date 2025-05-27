@@ -5,7 +5,6 @@ import navRegisterUrl from "~/assets/images/journey/elderly-lady-glasses.jpg";
 import navMailUrl from "~/assets/images/journey/absentee-page-group-friends-laptop.jpg";
 import navInformedUrl from "~/assets/images/vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg";
 import navVoteUrl from "~/assets/images/journey/grandpa-grandson.jpeg";
-const user = useUser();
 onMounted(() => {
   loadApproxLocation();
 });
@@ -14,14 +13,6 @@ onMounted(() => {
 <template>
   <div class="mt-16 flex flex-row items-center justify-center">
     <div>
-      <div class="current-location">
-        {{
-          $t("journeyPageElectionState", {
-            state: user?.info?.location?.region,
-          })
-        }}
-      </div>
-      <JourneySelectState />
       <div class="grid grid-cols-2 justify-center gap-4 md:grid-cols-3">
         <NavCard
             :title="$t('journeyPageRegisteredLabel')"

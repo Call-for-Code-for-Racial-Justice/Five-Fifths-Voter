@@ -49,7 +49,7 @@ export const daysLeftIso = (dateStr) => {
 };
 
 /**
- * Get a string with a format like " Oct 28, 2022"
+ * Get a string with a format like "Oct 28, 2022"
  * @param dateStr {string} Like 'MM/dd/yy'
  * @returns {string}
  */
@@ -68,7 +68,7 @@ export const niceDate = (dateStr) => {
 };
 
 /**
- * Get a string with a format like " Oct 28, 2022"
+ * Get a string with a format like "Oct 28, 2022"
  * @param dateStr {string} Like '2022-11-09T00:00:00.000Z'
  * @returns {string}
  */

@@ -1,9 +1,4 @@
 <script setup>
-import {
-  ArrowRight20 as ArrowRight,
-  CheckmarkFilled20 as CheckmarkFilled,
-} from "@carbon/icons-vue";
-
 defineProps({
   title: { type: String, required: true },
   imageSrc: { type: String, required: true },
@@ -16,28 +11,27 @@ defineProps({
 <template>
   <cv-tile
     kind="clickable"
-    class="mb-4 !p-0"
+    class="card-zoom"
     :to="to"
   >
-    <div class="relative aspect-[4/3] hover:scale-105">
-      <img
-        :class="`relative h-full w-full !max-w-full object-cover ${imageClass}`"
-        :src="imageSrc"
-        alt=""
-      >
-      <h4
-        class="absolute bottom-0 right-0 min-h-[33%] w-1/2 bg-ff-pink-01 p-2 text-xs
-          text-carbon-gray-90 md:h-1/3 md:p-2 md:text-xl"
-      >
-        {{ title }}
-      </h4>
-      <ArrowRight
-        class="absolute bottom-3 right-3 text-carbon-gray-90 opacity-0 md:opacity-100"
-      />
-      <CheckmarkFilled
-        v-if="checked"
-        class="absolute right-3 top-3 text-ff-pink-01"
-      />
-    </div>
+    <div class="card-zoom-image" :style="{backgroundImage: `url(${imageSrc})`}"/>
+    <h1 class="card-zoom-text">{{ title }}</h1>
   </cv-tile>
 </template>
+<style lang="css">
+.card-zoom {
+  @apply relative flex items-center justify-center m-3 overflow-hidden mb-4 !p-0 w-48 h-36 md:w-96 md:h-72 ;
+}
+.card-zoom-image {
+  @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+}
+.card-zoom-text {
+  @apply absolute text-xs md:text-xl bg-white/80 contrast-more:bg-white contrast-more:p-2 text-carbon-gray-90 transition-all duration-500 ease-in-out transform scale-150;
+}
+.card-zoom:hover .card-zoom-image {
+  @apply scale-150;
+}
+.card-zoom:hover .card-zoom-text {
+  @apply scale-100 contrast-more:scale-150;
+}
+</style>

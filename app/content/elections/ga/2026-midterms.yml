@@ -1,0 +1,38 @@
+ocdId: "ocd-division/country:us/state:ga"
+date: "2026-11-03"
+description: "General election for Governor, US Senate, US House, and other offices."
+type: "general"
+website: "https://mvp.sos.ga.gov"
+guidancePhase: "final"
+
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  idUrl: https://sos.ga.gov/page/georgia-voter-identification-requirements
+  ballotpediaUrl: https://ballotpedia.org/Elections_calendar
+
+  early:
+    url: "https://sos.ga.gov/how-to-guide/how-guide-voting#Early%20Voting"
+    startDate: "2026-10-13"
+    endDate: "2026-10-30"
+    varies: true
+
+  byMail:
+    idInstructions: > 
+      You must include the number for your driver’s license or free state ID or a copy of a document listed on the back
+      of the absentee application."
+    explainerUrl: "https://sos.ga.gov/how-to-guide/how-guide-voting#Absentee%20Voting"
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2026-11-03"
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-10-23"
+        description: "Your request must be made at least 11 days before the election. (Hospital patients have an extra day to apply.)"
+
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: "Voters must present one of the acceptable forms of photo ID at the polls."
+    electionDay:
+      opening: "7:00 AM"
+      closing: "7:00 PM. If you are in line by 7:00 PM, you are allowed to cast your ballot."
