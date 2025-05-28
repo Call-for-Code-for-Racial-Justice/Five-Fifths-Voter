@@ -33,3 +33,4 @@ yarn*
 .yarn*
 **/.pnp.*
 cypress/screenshots
+/archive.zip

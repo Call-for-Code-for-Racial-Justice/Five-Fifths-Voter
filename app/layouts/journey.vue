@@ -30,9 +30,6 @@ const subPages = ref([
     label: t("journeyPageDeliverLabel"),
   },
 ]);
-onMounted(() => {
-  loadApproxLocation();
-});
 const route = useRoute();
 const currentSub = computed(() => {
   return route.path.split("/").slice(-1)[0];

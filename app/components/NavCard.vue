@@ -26,7 +26,7 @@ defineProps({
   @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
 }
 .card-zoom-text {
-  @apply absolute text-xs md:text-xl bg-white/80 contrast-more:bg-white contrast-more:p-2 text-carbon-gray-90 transition-all duration-500 ease-in-out transform scale-150;
+  @apply absolute text-xs md:text-xl bg-white/80 contrast-more:bg-white contrast-more:p-2 text-carbon-gray-90 transition-all duration-500 ease-in-out transform right-0 bottom-0 md:right-auto md:bottom-auto md:scale-150 max-w-[60%];
 }
 .card-zoom:hover .card-zoom-image {
   @apply scale-150;

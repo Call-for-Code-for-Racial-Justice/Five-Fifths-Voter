@@ -1,5 +1,5 @@
 /* eslint no-undef: 0 */
-describe("smoke test", () => {
+describe("journey test", () => {
   it("should have basic content", () => {
     cy.visit("/journey");
     cy.get("#header-menu-our-mission");

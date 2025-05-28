@@ -1,5 +1,5 @@
 /* eslint no-undef: 0 */
-describe("smoke test", () => {
+describe("i18n test", () => {
   it("should have i18n content", () => {
     cy.visit("/");
     cy.get("#values").scrollIntoView({ easing: "linear", duration: 200 });
@@ -10,9 +10,9 @@ describe("smoke test", () => {
     cy.get("#header-language-button").click();
     cy.get("#language-es").click();
     cy.get("#language-es").should("not.be.visible");
-    cy.contains("Información electoral para");
+    cy.contains("Infórmese");
     cy.get("#header-language-button").click();
     cy.get("#language-en").click();
-    cy.contains("Election information for");
+    cy.contains("Get Informed");
   });
 });

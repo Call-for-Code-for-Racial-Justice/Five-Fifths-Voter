@@ -1,5 +1,5 @@
 /* eslint no-undef: 0 */
-describe("smoke test", () => {
+describe("voter support test", () => {
   it("should have voter support content", () => {
     cy.visit("/");
     cy.get("#values").scrollIntoView({ easing: "linear", duration: 200 });

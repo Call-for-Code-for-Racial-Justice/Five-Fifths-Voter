@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev:e2e": "npx cypress open --e2e",
+    "dev:e2e": "cypress open --e2e",
     "local:e2e": "cypress run --e2e",
     "prepare": "husky"
   },

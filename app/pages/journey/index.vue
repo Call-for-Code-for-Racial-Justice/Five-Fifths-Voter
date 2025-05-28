@@ -1,13 +1,13 @@
 <script setup>
-import { isUserRegistered, isUserRequestedBallot } from "~/composables/user";
 import navBallotReturnUrl from "~/assets/images/ballot-return-image-1.jpg";
 import navRegisterUrl from "~/assets/images/journey/elderly-lady-glasses.jpg";
 import navMailUrl from "~/assets/images/journey/absentee-page-group-friends-laptop.jpg";
 import navInformedUrl from "~/assets/images/vote-now-black-man-red-flower-1515201899114-98ba64d41df7.jpeg";
 import navVoteUrl from "~/assets/images/journey/grandpa-grandson.jpeg";
-onMounted(() => {
-  loadApproxLocation();
-});
+
+const isRegistered = useLocalStorage(LOCAL_STORAGE_KEYS.VOTER_REGISTERED, false);
+const requestedBallot = useLocalStorage(LOCAL_STORAGE_KEYS.VOTER_REQUESTED_BALLOT, false);
+
 </script>
 
 <template>
@@ -18,13 +18,13 @@ onMounted(() => {
             :title="$t('journeyPageRegisteredLabel')"
             :image-src="navRegisterUrl"
             to="/journey/register"
-            :checked="isUserRegistered()"
+            :checked="isRegistered"
         />
         <NavCard
             :title="$t('journeyPageBallotLabel')"
             :image-src="navMailUrl"
             to="/journey/mailInBallot"
-            :checked="isUserRequestedBallot()"
+            :checked="requestedBallot"
         />
         <NavCard
             :title="$t('journeyPageGetInformedLabel')"
