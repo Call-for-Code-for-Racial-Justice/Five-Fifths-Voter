@@ -23,7 +23,6 @@ jobs:
         env:
           PORT: 4007
         with:
-          working-directory: ./app
-          build: npm run build
-          start: npm run preview
+          build: npm run build -w app
+          start: npm run preview -w app
           browser: ${{ matrix.browser }}
