@@ -14,9 +14,8 @@
     "app"
   ],
   "devDependencies": {
-    "cypress": "^14.3.3",
+    "cypress": "^14.4.0",
     "husky": "^9.1.7",
-    "lint-staged": "^15.5.2",
-    "nuxt-eslint-globals": "file:patches/nuxt-eslint-globals-v2.1.5.tgz"
+    "lint-staged": "^16.1.0"
   }
 }
