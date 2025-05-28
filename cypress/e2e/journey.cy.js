@@ -15,13 +15,14 @@ describe("journey test", () => {
     cy.get("#ff-header-menu").click();
     cy.get("#side-nav-home svg").should("be.visible");
     cy.get("#side-nav-mission svg").should("be.visible");
-    cy.get("#side-nav-journey svg").should("be.visible");
+    cy.get("#side-nav-journey-menu svg").should("be.visible");
     cy.get("#side-nav-values svg").should("be.visible");
     cy.get("#side-nav-support svg").should("be.visible");
     cy.get("#side-nav-why svg").should("be.visible");
     cy.get("#side-nav-support").click();
     cy.get("#side-nav-why svg").should("not.be.visible");
     cy.get("#ff-header-menu").click();
+    cy.get("#side-nav-journey-menu").click();
     cy.get("#side-nav-journey").click();
     cy.get(".cv-tile-clickable").should("have.length", 5);
   });
