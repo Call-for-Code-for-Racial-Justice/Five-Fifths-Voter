@@ -1,9 +1,14 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({
   layout: "journey",
 });
 </script>
 
 <template>
-  <JourneyBallotReturn />
+  <div>
+    <PageTitle>
+      {{ $t("journeyPageDeliverLabel") }}
+    </PageTitle>
+    <JourneyDeliverDashboard/>
+  </div>
 </template>

@@ -3,9 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "ce-deploy": "bash -c scripts/deploy.sh"
+    "dev:e2e": "cypress open --e2e",
+    "local:e2e": "cypress run --e2e",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "workspaces": [
+    "app"
+  ],
+  "devDependencies": {
+    "cypress": "^14.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.0"
+  }
 }

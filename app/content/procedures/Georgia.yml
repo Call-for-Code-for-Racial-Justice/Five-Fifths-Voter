@@ -1,0 +1,28 @@
+region_code: ga
+region: Georgia
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://sos.ga.gov/how-to-guide/how-guide-voting#Early%20Voting
+register:
+  formerlyIncarcerated: true
+  election_day: false
+  online: true
+  mail_link: https://sos.ga.gov/how-to-guide/how-guide-registering-vote
+  online_link: https://sos.ga.gov/how-to-guide/how-guide-registering-vote
+  change_party_link: null
+  under18: true
+  under18key: You can register to vote at 17 ½ and vote at 18.
+  youth_link: https://sos.ga.gov/how-to-guide/how-guide-registering-vote
+  felon_link: https://gjp.org/voting/
+  check_link: https://www.mvp.sos.ga.gov/MVP/mvp.do
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: true
+  id_link: https://sos.ga.gov/page/georgia-voter-identification-requirements
+  dropoff: true
+  dropoff_link: https://sos.ga.gov/county-elections-offices
+  request_link: https://georgia.gov/vote-absentee-ballot
+  track_link: https://www.mvp.sos.ga.gov/MVP/mvp.do
+  more_link: https://sos.ga.gov/index.php/Elections/absentee_voting_in_georgia

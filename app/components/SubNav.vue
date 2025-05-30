@@ -1,8 +1,4 @@
 <script setup>
-import {
-  CircleFilled16 as CircleFilled,
-  CircleOutline16 as IconOther,
-} from "@carbon/icons-vue";
 /**
  * Sup Page
  * @typedef {object} SubPage
@@ -63,22 +59,4 @@ defineProps({
       </cv-link>
     </cv-breadcrumb-item>
   </cv-breadcrumb>
-  <div
-    class="fixed left-1 top-12 z-50 flex w-full flex-row gap-4 bg-ff-purple-01
-      text-ff-white-01 md:hidden"
-  >
-    <div
-      v-for="step in subPages"
-      :key="step.page"
-      class="py-2"
-    >
-      <CircleFilled v-if="current === step.page" />
-      <cv-link
-        v-else
-        :to="`${prefix}/${step.page}`"
-      >
-        <IconOther />
-      </cv-link>
-    </div>
-  </div>
 </template>

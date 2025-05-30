@@ -22591,6 +22591,16 @@ a.bx--navigation-link:focus {
   --ff-blue-03: #1140A7;
   --ff-green-01: #397F42;
   --ff-green-02: #24502A;
+
+          --dui-primary: #85276E;
+          --dui-secondary: #EC9899;
+          --dui-accent: #E8B933;
+          --dui-neutral: #210D34;
+          --dui-base-100: #FFEBD9;
+          --dui-info: #D35492;
+          --dui-success: #AFCB61;
+          --dui-warning: #E66C31;
+          --dui-error: #E02E38;
 }
 
 /*# sourceMappingURL=five-fifths-theme.css.map */

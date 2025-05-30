@@ -1,0 +1,24 @@
+region_code: al
+region: Alabama
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting
+register:
+  election_day: false
+  online: true
+  mail_link: https://www.sos.alabama.gov/sites/default/files/voter-pdfs/nvra-2.pdf?_ga=2.151867641.1776539306.1643579940-1569075100.1643579940
+  online_link: https://www.alabamainteractive.org/sos/voter_registration/voterRegistrationWelcome.action
+  change_party_link: null
+  more_link: https://www.sos.alabama.gov/alabama-votes/voter-registration/general-info
+  under18: false
+mail_in:
+  any_reason: false
+  without_notary: false
+  id_needed: true
+  id_explainer: Voters need to provide a photo copy of an approved ID with their absentee ballot application.
+  id_link: https://www.sos.alabama.gov/alabama-votes/voter/voter-id
+  dropoff: true
+  request_link: https://www.sos.alabama.gov/alabama-votes/absentee-ballot-applications
+  track_link: https://myinfo.alabamavotes.gov/voterview
+  more_link: https://www.sos.alabama.gov/alabama-votes/voter/absentee-voting

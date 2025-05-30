@@ -1,9 +1,8 @@
 <script setup>
 import usaStates from "@/assets/data/usa-states.json";
-const user = useUser();
-const usaState = computed(() => {
-  return user.value?.info?.location?.region_code?.toLowerCase();
-});
+
+const usaState = useLocalStorage(LOCAL_STORAGE_KEYS.USA_STATE, "");
+
 const options = computed(() => {
   return usaStates.map((e) => {
     return {
@@ -13,9 +12,10 @@ const options = computed(() => {
     };
   });
 });
+
 function onChange(val) {
   const location = usaStates.find(s => s.region_code === val);
-  if (location) setUserLocation(location);
+  if (location) usaState.value = location.region_code;
 }
 </script>
 

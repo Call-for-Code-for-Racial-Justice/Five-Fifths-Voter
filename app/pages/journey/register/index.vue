@@ -5,5 +5,11 @@ definePageMeta({
 </script>
 
 <template>
-  <JourneyRegisterToVote />
+  <div>
+    <PageTitle>
+      {{ $t("registerTitle") }}
+    </PageTitle>
+    <p class="text-center">{{ $t("registerDesc") }}</p>
+    <JourneyRegisterDashboard/>
+  </div>
 </template>

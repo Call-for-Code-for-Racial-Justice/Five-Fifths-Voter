@@ -2,14 +2,15 @@ FROM docker.io/node:22-alpine AS base
 FROM base AS builder
 WORKDIR /mono
 COPY app app
-RUN cd app && \
-    npm i  && \
-    npm run build
+COPY package.json .
+COPY package-lock.json .
+RUN npm i  && \
+    npm run build -w app
 
 # Production image, copy all the files and run nuxt
 FROM base AS runner
 WORKDIR /webapp
-ENV NODE_ENV production
+ENV NODE_ENV=production
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nuxtjs
 COPY --from=builder --chown=nuxtjs:nodejs /mono/app/.output /webapp/.output

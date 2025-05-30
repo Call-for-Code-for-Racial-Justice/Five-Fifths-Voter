@@ -30,10 +30,6 @@ const subPages = ref([
     label: t("journeyPageDeliverLabel"),
   },
 ]);
-const user = useUser();
-onMounted(() => {
-  loadApproxLocation();
-});
 const route = useRoute();
 const currentSub = computed(() => {
   return route.path.split("/").slice(-1)[0];
@@ -42,34 +38,15 @@ const currentSub = computed(() => {
 
 <template>
   <div>
-    <ClientOnly>
-      <TheHeader />
-      <SubNav
-        :current="currentSub"
-        :sub-pages="subPages"
-        prefix="/journey"
-      />
-      <main
-        id="#main-content"
-        class="main-content with-header"
-      >
-        <div class="current-location mt-16">
-          {{
-            $t("journeyPageElectionState", {
-              state: user?.info?.location?.region,
-            })
-          }}
-        </div>
-        <JourneySelectState />
-        <cv-grid class="mt-0 lg:-mt-12">
-          <cv-row>
-            <cv-column :lg="16">
-              <slot />
-            </cv-column>
-          </cv-row>
-        </cv-grid>
-      </main>
-    </ClientOnly>
+    <TheHeader />
+    <SubNav
+      :current="currentSub"
+      :sub-pages="subPages"
+      prefix="/journey"
+    />
+    <main id="#main-content" class="main-content with-header">
+      <slot />
+    </main>
   </div>
 </template>
 

@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   devServer: {
     port: 4007,
   },
+  vite: {
+    cacheDir: ".nuxt/.vite",
+  },
   auth: {
     // Override with AUTH_ORIGIN environment variable in production
     // https://auth.sidebase.io/guide/application-side/configuration#originenvkey
@@ -26,9 +29,11 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
-    "nuxt-eslint-globals",
     "@sidebase/nuxt-auth",
     "@nuxt/eslint",
+    "@nuxt/content",
+    "@vueuse/nuxt",
+    "nuxt-eslint-globals",
   ],
   runtimeConfig: {
     authSecret: process.env.NUXT_AUTH_SECRET,
@@ -94,6 +99,12 @@ export default defineNuxtConfig({
     lazy: true,
     defaultLocale: "en",
     strategy: "no_prefix",
+  },
+
+  content: {
+    preview: {
+      api: "https://api.nuxt.studio",
+    },
   },
 
   compatibilityDate: "2025-04-23",

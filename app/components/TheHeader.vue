@@ -24,6 +24,7 @@ const activeJourney = computed(() => route.path.startsWith("/journey"));
 watch(() => route.path, () => {
   document?.activeElement?.blur();
 });
+const { t } = useI18n();
 </script>
 
 <template>
@@ -133,12 +134,17 @@ watch(() => route.path, () => {
             </template>
             {{ $t("landingPageMain") }}
           </cv-side-nav-link>
-          <cv-side-nav-link id="side-nav-journey" to="/journey">
+          <cv-side-nav-menu id="side-nav-journey-menu" :title="$t('appHeaderVoterJourney')">
             <template #nav-icon>
               <VoterJourneyIcon />
             </template>
-            {{ $t("appHeaderVoterJourney") }}
-          </cv-side-nav-link>
+            <cv-side-nav-menu-item id="side-nav-journey" to="/journey">▶</cv-side-nav-menu-item>
+            <cv-side-nav-menu-item to="/journey/register">{{ t("journeyPageRegisteredLabel") }}</cv-side-nav-menu-item>
+            <cv-side-nav-menu-item to="/journey/mailInBallot">{{ t("journeyPageBallotLabel") }}</cv-side-nav-menu-item>
+            <cv-side-nav-menu-item to="/journey/getInformed">{{ t("journeyPageGetInformedLabel") }}</cv-side-nav-menu-item>
+            <cv-side-nav-menu-item to="/journey/voteInPerson">{{ t("journeyPageVoteNowLabel") }}</cv-side-nav-menu-item>
+            <cv-side-nav-menu-item to="/journey/ballotReturn">{{ t("journeyPageDeliverLabel") }}</cv-side-nav-menu-item>
+          </cv-side-nav-menu>
           <cv-side-nav-link id="side-nav-values" to="/#our-values">
             <template #nav-icon>
               <OurValuesIcon />
@@ -164,6 +170,16 @@ watch(() => route.path, () => {
 </template>
 
 <style scoped lang="css">
+::v-deep(.bx--side-nav__submenu),
+::v-deep(.bx--side-nav__icon),
+::v-deep(.bx--side-nav__link-text),
+::v-deep(.bx--side-nav__icon) > svg {
+  @apply !text-white;
+  fill: currentColor;
+}
+::v-deep(a.bx--side-nav__link[aria-current="page"]) {
+  background-color: #85276E;
+}
 .cv-header {
   a.bx--header__name {
     color: white !important;
@@ -174,6 +190,7 @@ watch(() => route.path, () => {
       margin-right: 8px;
     }
   }
+
   .cv-header-menu-item {
     .bx--header__menu-item {
       color: white;
