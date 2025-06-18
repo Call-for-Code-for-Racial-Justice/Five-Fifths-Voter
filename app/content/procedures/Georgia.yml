@@ -16,6 +16,7 @@ register:
   youth_link: https://sos.ga.gov/how-to-guide/how-guide-registering-vote
   felon_link: https://gjp.org/voting/
   check_link: https://www.mvp.sos.ga.gov/MVP/mvp.do
+  more_link: https://sos.ga.gov/how-to-guide/how-guide-registering-vote
 mail_in:
   any_reason: true
   without_notary: true

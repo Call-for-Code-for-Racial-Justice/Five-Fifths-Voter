@@ -25,7 +25,7 @@ const { data: election, status } = await useAsyncData<ContentProcedure>(
 
 const idInfoLink = computed(() => election.value?.voting?.idUrl);
 const infoLink = computed(() => election.value?.website ?? "https://www.vote.org/");
-const ballotpediaLink = computed(() => election.value?.ballotpediaUrl ?? "https://ballotpedia.org/Elections_calendar");
+const ballotpediaLink = computed(() => election.value?.voting?.ballotpediaUrl ?? "https://ballotpedia.org/Elections_calendar");
 
 function yesNoMaybe(val: string | boolean | undefined, yes: string = t("yes"), no: string = t("no"), maybe: string | undefined) {
   if (val === true) return yes;
