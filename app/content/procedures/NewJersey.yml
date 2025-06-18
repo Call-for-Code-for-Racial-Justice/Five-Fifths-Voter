@@ -1,0 +1,27 @@
+region_code: nj
+region: New Jersey
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://www.nj.gov/state/elections/vote-3-ways-to-vote.shtml
+register:
+  formerlyIncarcerated: true
+  election_day: false
+  online: true
+  mail_link: https://www.nj.gov/state/elections/voter-registration.shtml
+  online_link: https://www.nj.gov/state/elections/voter-registration.shtml
+  change_party_link: https://www.state.nj.us/state/elections/voter-party-affiliation-declaration.shtml
+  under18: true
+  under18key: You can register to vote at 17 and vote at 18.
+  youth_link: https://www.nj.gov/state/elections/vote-students.shtml
+  felon_link: https://www.nj.gov/state/elections/voter-rights.shtml
+  check_link: https://voter.svrs.nj.gov/registration-check
+mail_in:
+  any_reason: true
+  without_notary: false
+  id_needed: true
+  dropoff: true
+  dropoff_link: https://www.nj.gov/state/elections/vote-by-mail.shtml
+  request_link: https://www.nj.gov/state/elections/vote-by-mail.shtml
+  track_link: http://trackmyballot.nj.gov/
+  more_link: https://www.nj.gov/state/elections/vote-by-mail.shtml

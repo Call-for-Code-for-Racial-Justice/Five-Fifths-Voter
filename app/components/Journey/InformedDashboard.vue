@@ -126,8 +126,8 @@ const infoLinks = computed(() => [
               <div class="mb-4">
                 <h3 class="font-semibold text-ff-purple-01">In-Person Voting</h3>
                 <p><strong>ID Required for All Voters:</strong> {{ yesNoMaybe(election.voting.inPerson.idRequiredAllVoters) }}</p>
-                <p v-if="election.voting.inPerson.idInstructions"><strong>ID Instructions:</strong> {
-                  { election.voting.inPerson.idInstructions }}
+                <p v-if="election.voting.inPerson.idInstructions"><strong>ID Instructions:</strong>
+                  {{ election.voting.inPerson.idInstructions }}
                 </p>
                 <a :href="idInfoLink" target="_blank" class="text-blue-600 hover:underline">More information about IDs</a>
                 <p><strong>Election Day Hours:</strong>
