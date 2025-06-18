@@ -35,7 +35,7 @@ const registerOnlineLink = computed(() => content.value?.register?.online_link ?
 const registerByMailLink = computed(() => content.value?.register?.mail_link ?? "https://www.vote.org/absentee-ballot/");
 const changePartyLink = computed(() => content.value?.register?.change_party_link);
 const infoLink = computed(() => content.value?.register?.more_link ?? "https://www.usa.gov/voter-registration");
-const felonLink = computed(() => content.value?.register?.felonLink ?? "https://www.nationalvotinginprison.org/#state-laws");
+const felonLink = computed(() => content.value?.register?.felon_link ?? "https://www.nationalvotinginprison.org/#state-laws");
 
 function yesNoMaybe(val: string | boolean | undefined, yes: string, no: string, maybe: string | undefined) {
   if (val === true) return yes;

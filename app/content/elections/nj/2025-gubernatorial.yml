@@ -1,0 +1,39 @@
+ocdId: "ocd-division/country:us/state:nj"
+date: "2025-11-04"
+description: "New Jersey Gubernatorial and General Assembly General Election"
+type: "general"
+website: "https://www.nj.gov/state/elections/vote.shtml"
+guidancePhase: "final"
+
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  idUrl: https://www.nj.gov/state/elections/voter-registration.shtml
+  ballotpediaUrl: https://ballotpedia.org/New_Jersey_elections,_2025
+
+  early:
+    url: https://www.nj.gov/state/elections/vote-3-ways-to-vote.shtml
+    startDate: "2025-10-25"
+    endDate: "2025-11-02"
+    varies: true
+
+  byMail:
+    idInstructions: >
+      A current and valid Driver’s License or a non-driver Identification Card (ID card) issued by the New Jersey 
+      Motor Vehicle Commission (MVC) Your information will be provided to the MVC to validate identification, and to 
+      retrieve a copy of your digitized signature.
+    explainerUrl: https://www.nj.gov/state/elections/vote-3-ways-to-vote.shtml
+    deadline:
+      postmarkedOrReceived: "postmarked"
+      date: "2025-11-10"
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2025-10-28"
+        description: "Your ballot request can also be made in person until Mon Nov 3, 2025"
+
+  inPerson:
+    idRequiredAllVoters: false
+    idInstructions: "If you have not previously voted in New Jersey, you need to provide ID the first time you vote."
+    electionDay:
+      opening: "6:00 AM"
+      closing: "8:00 PM"
