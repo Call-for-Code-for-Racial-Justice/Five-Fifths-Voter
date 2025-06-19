@@ -26,6 +26,7 @@ const { data: content, status } = await useAsyncData<ContentProcedure>(
   },
 );
 const requestBallotLink = computed(() => content.value?.mail_in?.request_link || "https://www.vote.org/absentee-ballot/");
+const trackBallotLink = computed(() => content.value?.mail_in?.track_link || "https://www.vote.org/ballot-tracker-tools/");
 const absenteeInfoLink = computed(() => content.value?.mail_in?.more_link || "https://www.vote.org/absentee-ballot/");
 const idInfoLink = computed(() => content.value?.mail_in?.id_link ?? "https://www.ncsl.org/elections-and-campaigns/voter-id");
 const dropoffLink = computed(() => content.value?.mail_in?.dropoff_link);
@@ -55,7 +56,7 @@ const infoLinks = computed(() => [
   },
   {
     title: t("absenteeTrack"),
-    link: dropoffLink.value,
+    link: trackBallotLink.value,
     icon: PackageSearch,
   },
   {

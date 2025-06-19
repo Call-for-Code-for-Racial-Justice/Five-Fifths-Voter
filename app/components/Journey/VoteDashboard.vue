@@ -28,7 +28,7 @@ const ballotpediaLink = computed(() => election.value?.voting?.ballotpediaUrl ??
 
 const infoLinks = computed(() => [
   {
-    title: "Upcoming electoions",
+    title: "Upcoming elections",
     link: ballotpediaLink.value,
     icon: CalendarDays,
   },

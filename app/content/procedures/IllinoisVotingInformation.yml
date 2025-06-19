@@ -1,0 +1,33 @@
+region_code: il
+region: Illinois
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://elections.il.gov/votingandregistrationsystems/beforeelectionday.aspx
+
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: > 
+    You must be at least 17 years old on or before the date of the Primary Election and turn 18 on or before the date of 
+    the General or Consolidated Election (16 year olds may preregister to vote).
+  formerlyIncarcerated: true
+  mail_link: https://www.elections.il.gov/InformationForVoters.aspx?MID=I0cuvBFuZRw%3d
+  online_link: https://ova.elections.il.gov/?Name=eYQq6FDqMBHM6r%2fWhrJ1SIpY4MGJGocO&T=637783653251228213
+  change_party_link: null
+  check_link: https://ova.elections.il.gov/RegistrationLookup.aspx
+  more_link: https://elections.il.gov/Default.aspx
+  felon_link: https://www.illinoislegalaid.org/legal-information/can-i-vote-if-i-have-been-convicted-felony
+
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://elections.il.gov/VotingAndRegistrationSystems/VoteByMailBallotDropBoxLocations.aspx
+  id_explainer: ID is not required to vote by mail. ID is only required when registering to vote.
+  id_link: https://ballotpedia.org/Voter_ID_in_Illinois
+  request_link: https://elections.il.gov/electionoperations/votingbymail.aspx
+  track_link: null
+  more_link: https://elections.il.gov/electionoperations/votingbymail.aspx

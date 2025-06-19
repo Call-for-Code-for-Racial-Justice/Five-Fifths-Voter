@@ -35,7 +35,7 @@ export const daysLeft = (dateStr) => {
 export const daysLeftIso = (dateStr) => {
   const { locale } = useI18n();
   try {
-    const dt = DateTime.fromISO(dateStr);
+    const dt = DateTime.fromISO(dateStr, { zone: "utc" });
     return dt.toRelative({
       base,
       unit: ["days", "hours"],
@@ -75,7 +75,7 @@ export const niceDate = (dateStr) => {
 export const niceIsoDate = (dateStr) => {
   const { locale } = useI18n();
   try {
-    const dt = DateTime.fromISO(dateStr);
+    const dt = DateTime.fromISO(dateStr, { zone: "utc" });
     return dt.toLocaleString(DateTime.DATE_MED, {
       locale: locale.value || "en",
     });
@@ -108,7 +108,7 @@ export const tooLate = (dateStr) => {
  */
 export const tooLateIso = (dateStr) => {
   try {
-    const dt = DateTime.fromISO(dateStr);
+    const dt = DateTime.fromISO(dateStr, { zone: "utc" });
     const now = base || DateTime.now();
     return now.toMillis() > dt.toMillis();
   }
