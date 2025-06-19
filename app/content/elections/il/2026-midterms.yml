@@ -1,0 +1,34 @@
+ocdId: "ocd-division/country:us/state:il"
+date: "2026-11-03"
+description: "General election for Governor, US Senate, US House, and other offices."
+type: "general"
+website: "https://www.elections.il.gov/"
+guidancePhase: "final"
+
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  idUrl: null
+  ballotpediaUrl: https://ballotpedia.org/Illinois_elections,_2026
+
+  early:
+    url: "https://sos.ga.gov/how-to-guide/how-guide-voting#Early%20Voting"
+    startDate: "2026-09-24"
+    endDate: "2026-11-02"
+    varies: true
+
+  byMail:
+    explainerUrl: "https://www.elections.il.gov/NewDocDisplay.aspx?%2fM0cs48zOKVZyk9eAbpEoxjoGz9b5YaGOZJlr8CbkngFbsRPV%2f1ATx4aQkxzja565ESGno4fDfetZNJEnD3jlKUsS4RoI55UaaHzJzO%2bW22z%2bFdnOD0t%2fwh1C2oj%2b6xuWex0QqWjWNBPVuyG4mP71aeJ81dCoVnPT2xSsv019YSRF00y%2bwzk7g%3d%3d"
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2026-10-31"
+      ballotRequest:
+        postmarkedOrReceived: "postmarked"
+        date: "2026-11-05"
+        description: "The State Board of Elections urges any voter considering voting by mail to apply for a ballot as early as possible."
+
+  inPerson:
+    idRequiredAllVoters: false
+    electionDay:
+      opening: "6:00 AM"
+      closing: "7:00 PM. If you are in line by 7:00 PM, you are allowed to cast your ballot."

@@ -42,7 +42,7 @@ function yesNoMaybe(val: string | boolean | undefined, yes: string, no: string, 
 const infoLinks = computed(() => [
   {
     title: t("absenteeTrack"),
-    link: dropoffLink.value,
+    link: trackBallotLink.value,
     icon: PackageSearch,
   },
   {

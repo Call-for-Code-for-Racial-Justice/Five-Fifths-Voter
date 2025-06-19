@@ -35,7 +35,7 @@ function yesNoMaybe(val: string | boolean | undefined, yes: string = t("yes"), n
 
 const infoLinks = computed(() => [
   {
-    title: "Upcoming electoions",
+    title: "Upcoming elections",
     link: ballotpediaLink.value,
     icon: CalendarDays,
   },
@@ -129,7 +129,7 @@ const infoLinks = computed(() => [
                 <p v-if="election.voting.inPerson.idInstructions"><strong>ID Instructions:</strong>
                   {{ election.voting.inPerson.idInstructions }}
                 </p>
-                <a :href="idInfoLink" target="_blank" class="text-blue-600 hover:underline">More information about IDs</a>
+                <a v-if="idInfoLink" :href="idInfoLink" target="_blank" class="text-blue-600 hover:underline">More information about IDs</a>
                 <p><strong>Election Day Hours:</strong>
                   {{ election.voting.inPerson.electionDay.opening || 'N/A' }} - {{ election.voting.inPerson.electionDay.closing || 'N/A' }}
                 </p>

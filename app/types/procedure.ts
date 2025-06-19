@@ -14,6 +14,7 @@ export const contentProcedureSchema = z.object({
     under18: z.boolean(),
     under18key: z.string().default("yes"),
     formerlyIncarcerated: z.boolean(),
+    felon_link: z.string().url(),
     mail_link: z.string().url(),
     online_link: z.string().url(),
     change_party_link: z.string().url(),
