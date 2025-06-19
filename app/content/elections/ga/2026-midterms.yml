@@ -9,7 +9,7 @@ voting:
   inPersonVotingAvailable: true
   mailBallotsSentAutomatically: false
   idUrl: https://sos.ga.gov/page/georgia-voter-identification-requirements
-  ballotpediaUrl: https://ballotpedia.org/Elections_calendar
+  ballotpediaUrl: https://ballotpedia.org/Georgia_elections,_2026
 
   early:
     url: "https://sos.ga.gov/how-to-guide/how-guide-voting#Early%20Voting"

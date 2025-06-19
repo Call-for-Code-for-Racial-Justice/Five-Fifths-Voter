@@ -66,7 +66,7 @@ const infoLinks = computed(() => [
   },
   {
     title: "Voter registration info",
-    link: infoLink,
+    link: infoLink.value,
     icon: FileText,
   },
 ].filter(info => info.link));

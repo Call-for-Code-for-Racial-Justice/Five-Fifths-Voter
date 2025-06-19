@@ -8,6 +8,7 @@ register:
   formerlyIncarcerated: true
   election_day: false
   online: true
+  more_link: https://www.nj.gov/state/elections/vote.shtml
   mail_link: https://www.nj.gov/state/elections/voter-registration.shtml
   online_link: https://www.nj.gov/state/elections/voter-registration.shtml
   change_party_link: https://www.state.nj.us/state/elections/voter-party-affiliation-declaration.shtml
@@ -18,10 +19,11 @@ register:
   check_link: https://voter.svrs.nj.gov/registration-check
 mail_in:
   any_reason: true
-  without_notary: false
+  without_notary: true
   id_needed: true
   dropoff: true
   dropoff_link: https://www.nj.gov/state/elections/vote-by-mail.shtml
   request_link: https://www.nj.gov/state/elections/vote-by-mail.shtml
   track_link: http://trackmyballot.nj.gov/
   more_link: https://www.nj.gov/state/elections/vote-by-mail.shtml
+  id_link: https://www.nj.gov/state/elections/vote-faq.shtml#faq2-12
