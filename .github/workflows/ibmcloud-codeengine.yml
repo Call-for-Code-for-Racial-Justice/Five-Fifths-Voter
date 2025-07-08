@@ -1,6 +1,9 @@
 # Deploy cloud - IBM Code Engine
 name: IBM Cloud - Deploy to Staging site
 
+permissions:
+  contents: read
+
 # Controls when the action will run.
 on:
   # Triggers the workflow on push for the main branch
