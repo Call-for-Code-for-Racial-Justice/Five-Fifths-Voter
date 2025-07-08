@@ -1,6 +1,8 @@
 # This is a basic workflow to help you get started with Actions
 
 name: Update site certificate
+permissions:
+  contents: read
 
 # Controls when the workflow will run
 on:
