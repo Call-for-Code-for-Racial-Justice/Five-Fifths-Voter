@@ -1,5 +1,7 @@
 # Deploy cloud - IBM Code Engine
 name: IBM Cloud - Staging to Production
+permissions:
+  contents: read
 
 on:
   # Allows you to run this workflow manually from the Actions tab
