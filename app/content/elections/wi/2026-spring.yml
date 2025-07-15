@@ -1,0 +1,34 @@
+ocdId: "ocd-division/country:us/state:wi"
+date: "2026-04-07"
+description: "Wisconsin Spring Election"
+type: "spring"
+website: "https://myvote.wi.gov"
+guidancePhase: "preliminary"
+
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  
+  early:
+    url: "https://myvote.wi.gov/en-us/Vote-Absentee-In-Person"
+    startDate: "2026-03-24"
+    endDate: "2026-04-05"
+    varies: true
+
+  byMail:
+    idInstructions: "Photo ID and proof of residence document are required for voter registration. A valid photo ID is required to receive an absentee ballot."
+    explainerUrl: "https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail"
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2026-04-07"
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-04-05"
+        description: "Absentee ballots must be received by 8:00 PM on Election Day"
+
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: "Photo ID is required for all voters to receive a ballot" 
+    electionDay:
+      opening: "7:00 AM"
+      closing: "8:00 PM"

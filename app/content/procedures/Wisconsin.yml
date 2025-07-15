@@ -1,0 +1,29 @@
+region_code: wi
+region: Wisconsin
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://myvote.wi.gov/en-us/Vote-Absentee-In-Person
+register:
+  formerlyIncarcerated: true
+  election_day: true
+  online: true
+  mail_link: https://elections.wi.gov/forms/el-131-fillable
+  online_link: https://myvote.wi.gov/en-us/RegisterToVote
+  change_party_link: null
+  under18: true
+  under18key: You can register to vote at 17 if you'll be 18 by Election Day.
+  felon_link: https://www.aclu-wi.org/en/votingrightscriminalconvictions
+  check_link: https://myvote.wi.gov/en-us/My-Voter-Info
+  more_link: https://elections.wi.gov/Register
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: true
+  id_link: https://bringit.wi.gov/
+  id_explainer: Wisconsin Now Requires a Photo ID to Vote
+  dropoff: true
+  dropoff_link: https://myvote.wi.gov/en-us/My-Voter-Info
+  request_link: https://myvote.wi.gov/en-us/Vote-Absentee-By-Mail
+  track_link: https://myvote.wi.gov/en-us/Track-My-Ballot
+  more_link: https://elections.wi.gov/voters/voting-absentee

@@ -1,0 +1,34 @@
+ocdId: "ocd-division/country:us/state:pa"
+date: "2025-11-04"
+description: "Pennsylvania Municipal Election"
+type: "general"
+website: "https://www.pa.gov/agencies/vote/elections"
+guidancePhase: "final"
+
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  
+  early:
+    url: "https://www.vote.pa.gov/Voting-in-PA/Pages/Early-Voting.aspx"
+    startDate: "2025-09-15"
+    endDate: "2025-10-28"
+    varies: true
+
+  byMail:
+    idInstructions: "You need to provide either the last four digits of your Social Security number or your PA driver's license/PennDOT ID card number on your mail ballot application."
+    explainerUrl: "https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot.html"
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2025-11-04"
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2025-10-28"
+        description: "Mail ballot requests must be received by your county election office"
+
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: "Voters must show ID. Acceptable IDs include PA driver's license, US passport, or other official photo ID."
+    electionDay:
+      opening: "7:00 AM"
+      closing: "8:00 PM"
