@@ -1,0 +1,30 @@
+
+region_code: pa
+region: Pennsylvania
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://www.vote.pa.gov/Voting-in-PA/Pages/Early-Voting.aspx
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: Be at least 18 years of age on or before the day of the next primary, special, municipal, or general election.
+  formerlyIncarcerated: true
+  mail_link: https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/
+  online_link: https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx
+  change_party_link: https://www.vote.pa.gov/Register-to-Vote/Pages/How-to-Update-Your-Registraton.aspx
+  felon_link: https://www.pa.gov/agencies/vote/voter-support/your-rights-and-the-law/criminal-status-and-voting
+  check_link: https://www.pa.gov/agencies/vote/voter-registration/check-my-registration-status
+  more_link: https://www.pa.gov/agencies/vote/voter-registration
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: true
+  id_explainer: ID is required when applying for an absentee ballot.
+  id_link: https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot
+  dropoff: true
+  dropoff_link: https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot/return-ballot
+  request_link: https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/#/OnlineAbsenteeBegin
+  track_link: https://www.pavoterservices.pa.gov/pages/ballottracking.aspx
+  more_link: https://www.vote.pa.gov/Voting-in-PA/Pages/Mail-and-Absentee-Ballot.aspx
