@@ -1,0 +1,28 @@
+region_code: az
+region: Arizona
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://azsos.gov/elections/voters/voting-elections
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: You must be 18 years of age on or before the day of the next regular General Election
+  formerlyIncarcerated: true
+  mail_link: https://my.arizona.vote/Early/ApplicationLogin.aspx
+  online_link: https://my.arizona.vote/WhereToVote.aspx?s=individual
+  change_party_link: https://my.arizona.vote/WhereToVote.aspx?s=individual
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/arizona
+  check_link: https://my.arizona.vote/WhereToVote.aspx?s=individual
+  more_link: https://my.arizona.vote/PortalList.aspx
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  id_explainer: "ID is not required"
+  dropoff_link: https://my.arizona.vote/PortalList.aspx
+  request_link: https://my.arizona.vote/Early/ApplicationLogin.aspx
+  track_link: https://my.arizona.vote/AbsenteeTracker.aspx
+  more_link: https://my.arizona.vote/PortalList.aspx

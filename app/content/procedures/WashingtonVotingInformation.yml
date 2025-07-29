@@ -1,0 +1,28 @@
+region_code: wa
+region: Washington
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://www.sos.wa.gov/elections/voters/
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: "You can pre-register at 16 and vote when you turn 18"
+  formerlyIncarcerated: true
+  mail_link: https://www.sos.wa.gov/elections/voters/voter-registration/requesting-voter-registration-by-forms-mail
+  online_link: https://www.sos.wa.gov/elections#voters
+  felon_link: https://www.sos.wa.gov/elections/voters/voter-eligibility-resources/felony-convictions-and-voting-rights
+  check_link: https://www.sos.wa.gov/elections#voters
+  change_party_link: https://www.sos.wa.gov/elections#voters
+  more_link: https://www.sos.wa.gov/elections/voters/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://www.sos.wa.gov/elections/voters/voter-registration/drop-box-and-voting-center-locations
+  id_explainer: "If your signature doesn’t match your voter records, you may be asked to show photo ID"
+  request_link: https://www.sos.wa.gov/elections/voters/
+  track_link: https://www.sos.wa.gov/elections#voters
+  more_link: https://www.sos.wa.gov/elections/voters/

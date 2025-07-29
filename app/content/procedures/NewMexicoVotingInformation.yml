@@ -1,0 +1,29 @@
+
+region_code: nm
+region: New Mexico
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://www.sos.state.nm.us/voting-and-elections/voter-information/absentee-and-early-voting/
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: "You can pre-register at 16 and vote at 18"
+  formerlyIncarcerated: true
+  mail_link: https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/
+  online_link: https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/
+  felon_link: https://www.aclu-nm.org/en/know-your-rights/voters-rights
+  check_link: https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/
+  change_party_link: https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/
+  more_link: https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/
+  id_explainer: "If you are registering for the first time in New Mexico, and you submit the registration form by mail, then you must submit with the form a valid id"
+  request_link:  https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/
+  track_link:  https://www.sos.nm.gov/voting-and-elections/voter-information-portal-nmvote-org/
+  more_link: https://www.sos.state.nm.us/voting-and-elections/voter-information/absentee-and-early-voting/
