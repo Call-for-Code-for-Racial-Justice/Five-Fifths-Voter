@@ -1,0 +1,28 @@
+region_code: nv
+region: Nevada
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://www.nvsos.gov/sos/elections/voters/early-voting-information
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: "You can pre-register at 17 and vote at 18"
+  formerlyIncarcerated: true
+  mail_link: https://www.nvsos.gov/SOSVoterRegForm/home.aspx
+  online_link: https://www.nvsos.gov/SOSVoterServices/Registration/Step0.aspx
+  felon_link: https://www.nvsos.gov/sos/elections/voters/restoration-of-voting-rights-in-nevada
+  check_link: https://www.nvsos.gov/votersearch/
+  change_party_link: https://www.registertovotenv.gov/
+  more_link: https://www.nvsos.gov/sos/elections/voters/registering-to-vote
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: true
+  dropoff: true
+  dropoff_link: https://www.nvsos.gov/sos/elections/voters/absentee-voting
+  id_explainer: "Please be aware if you are a first time voter, you may be required to present I.D. for voting"
+  request_link: https://www.nvsos.gov/sos/elections/voters/mail-ballot-voting
+  track_link: https://www.nvsos.gov/votersearch/
+  more_link: https://www.nvsos.gov/sos/elections/voters/mail-ballot-voting

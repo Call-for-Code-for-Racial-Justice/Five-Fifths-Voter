@@ -1,0 +1,29 @@
+
+region_code: or
+region: Oregon
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://sos.oregon.gov/voting/Pages/voteinor.aspx
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: "You can pre-register at 16 and vote when you turn 18"
+  formerlyIncarcerated: true
+  mail_link: https://sos.oregon.gov/elections/Documents/SEL500.pdf
+  online_link: https://secure.sos.state.or.us/orestar/vr/register.do
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/oregon
+  check_link: https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do
+  change_party_link: https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do
+  more_link: https://sos.oregon.gov/voting/Pages/registration.aspx
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://sos.oregon.gov/voting/Pages/drop-box-locator.aspx
+  id_explainer: "ID is not required for mail voting in Oregon"
+  request_link: https://sos.oregon.gov/voting/Pages/voteinor.aspx
+  track_link: https://secure.sos.state.or.us/orestar/vr/showVoterSearch.do
+  more_link: https://sos.oregon.gov/voting/Pages/voteinor.aspx
