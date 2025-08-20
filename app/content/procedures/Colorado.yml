@@ -1,0 +1,29 @@
+region_code: co
+region: Colorado
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://www.coloradosos.gov/pubs/elections/FAQs/ElectionDay.html
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: Colorado allows and encourages pre-registration of all eligible voters beginning at the age of 15
+  formerlyIncarcerated: true
+  felon_link: https://www.coloradosos.gov/pubs/elections/FAQs/VotingAndConviction.html
+  mail_link: https://www.sos.state.co.us/pubs/elections/vote/VoterRegFormEnglish.pdf
+  online_link: https://www.coloradosos.gov/voter/pages/pub/olvr/verifyNewVoter.xhtml
+  change_party_link: https://www.coloradosos.gov/voter/pages/pub/olvr/findVoterReg.xhtml
+  check_link: https://colorado.ballottrax.net/
+  more_link: https://www.coloradosos.gov/pubs/elections/main.html
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://www.coloradosos.gov/pubs/elections/FAQs/mailBallotsFAQ.html
+  id_explainer: ID is not required to vote by mail, except for first-time mail voters.
+  id_link: https://www.sos.state.co.us/pubs/elections/vote/acceptableFormsOfID.html
+  request_link: https://www.coloradosos.gov/pubs/elections/FAQs/mailBallotsFAQ.html
+  track_link: https://colorado.ballottrax.net/voter/
+  more_link: https://www.sos.state.co.us/pubs/elections/FAQs/mailBallotsFAQ.html

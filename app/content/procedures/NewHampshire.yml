@@ -1,0 +1,29 @@
+region_code: nh
+region: New Hampshire
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://www.sos.nh.gov/elections/voters
+register:
+  election_day: true
+  online: false
+  under18: true
+  under18key: Yes, but you must be 18 by Election Day.
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/new-hampshire
+  mail_link: https://sos.nh.gov/elections/voters/register-to-vote/
+  online_link: null
+  change_party_link: null
+  check_link: null
+  more_link: https://www.sos.nh.gov/elections/register-vote
+mail_in:
+  any_reason: false
+  without_notary: true
+  id_needed: true
+  dropoff: true
+  dropoff_link: null
+  id_explainer: Unless voter did not provide ID when registering to vote.
+  id_link: null
+  request_link: https://www.sos.nh.gov/elections/absentee-ballots
+  track_link: https://app.sos.nh.gov/viphome
+  more_link: https://sos.nh.gov/elections/voters/absentee-ballots/

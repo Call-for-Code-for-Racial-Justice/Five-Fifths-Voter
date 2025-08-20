@@ -1,0 +1,29 @@
+region_code: mn
+region: Minnesota
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://www.sos.state.mn.us/elections-voting/other-ways-to-vote/vote-early-in-person/
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: At least 18 years old on Election Day (16 & 17 year olds can pre-register)
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/minnesota
+  mail_link: https://www.sos.state.mn.us/elections-voting/register-to-vote/register-on-paper/
+  online_link: https://mnvotes.sos.state.mn.us/VoterRegistration/VoterRegistrationMain.aspx
+  change_party_link: https://mnvotes.sos.state.mn.us/VoterRegistration/VoterRegistrationMain.aspx
+  check_link: https://www.sos.mn.gov/elections-voting/register-to-vote/check-my-registration/
+  more_link: https://www.sos.mn.gov/elections-voting/register-to-vote/
+mail_in:
+  any_reason: true
+  without_notary: false
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://www.sos.mn.gov/elections-voting/other-ways-to-vote/ballot-drop-box-locations/
+  id_explainer: ID is not required.
+  id_link: https://www.sos.mn.gov/elections-voting/election-day-voting/do-i-need-to-bring-id/
+  request_link: https://www.sos.state.mn.us/media/2444/english-regular-absentee-ballot-application.pdf
+  track_link: https://mnvotes.sos.state.mn.us/AbsenteeBallotStatus.aspx
+  more_link: https://www.sos.state.mn.us/elections-voting/other-ways-to-vote/vote-early-by-mail/

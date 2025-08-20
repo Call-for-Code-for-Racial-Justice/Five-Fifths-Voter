@@ -1,0 +1,29 @@
+region_code: mo
+region: Missouri
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://www.sos.mo.gov/elections/goVoteMissouri/howtovote#absentee
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: Yes, you must be 17 ½ years of age to register, 18 years of age to vote.
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/missouri
+  mail_link: https://www.sos.mo.gov/elections/goVoteMissouri/register
+  online_link: https://s1.sos.mo.gov/elections/voterregistration/
+  change_party_link: https://s1.sos.mo.gov/elections/voterregistration/home/partyaffiliationlanding
+  check_link: https://s1.sos.mo.gov/elections/voterlookup
+  more_link: https://www.sos.mo.gov/elections/goVoteMissouri/register
+mail_in:
+  any_reason: false
+  without_notary: false
+  id_needed: true
+  dropoff: true
+  dropoff_link: null
+  id_explainer: ID is required.
+  id_link: https://www.sos.mo.gov/elections/goVoteMissouri/howtovote#Absentee
+  request_link: https://www.sos.mo.gov/elections/goVoteMissouri/howtovote#Absentee
+  track_link: null
+  more_link: https://www.sos.mo.gov/elections/goVoteMissouri/howtovote#Absentee
