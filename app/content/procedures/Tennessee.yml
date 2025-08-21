@@ -1,0 +1,29 @@
+region_code: tn
+region: Tennessee
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://sos.tn.gov/elections/guides/how-to-early-vote-in-person
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: You must be at least 18 years old on/or before the next election.
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/tennessee
+  mail_link: https://ovr.govote.tn.gov/
+  online_link: https://ovr.govote.tn.gov/
+  change_party_link: null
+  check_link: https://tnmap.tn.gov/voterlookup/
+  more_link: https://ovr.govote.tn.gov/
+mail_in:
+  any_reason: false
+  without_notary: true
+  id_needed: true
+  dropoff: false
+  dropoff_link: null
+  id_explainer: ID is not required.
+  id_link: https://sos.tn.gov/elections/services/tennessee-election-integrity
+  request_link: https://sos.tn.gov/elections/guides/guide-to-absentee-voting
+  track_link: https://tnmap.tn.gov/voterlookup/
+  more_link: https://sos.tn.gov/elections/guides/guide-to-absentee-voting

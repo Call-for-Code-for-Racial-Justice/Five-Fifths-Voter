@@ -1,0 +1,29 @@
+region_code: mi
+region: Michigan
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://mvic.sos.state.mi.us/Home/VoteAtHome
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: Be 17.5 years of age and 18 by Election Day to vote (eligible 16 and 17 year-olds can pre-register to vote).
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/michigan
+  mail_link: null
+  online_link: https://mvic.sos.state.mi.us/RegisterVoter/Index
+  change_party_link: https://mvic.sos.state.mi.us/RegisterVoter/Index
+  check_link: https://mvic.sos.state.mi.us/Voter/Index/
+  more_link: https://www.michigan.gov/sos/elections/voting/register-to-vote
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://mvic.sos.state.mi.us/Voter/Index/#yourclerk
+  id_explainer: ID is not required. ID is only required when registering to vote.
+  id_link: https://www.michigan.gov/sos/faqs/elections-and-campaign-finance/elections-and-voting
+  request_link: https://mvic.sos.state.mi.us/AVApplication/Index
+  track_link: https://mvic.sos.state.mi.us/Voter/Index
+  more_link: https://mvic.sos.state.mi.us/Home/VoteAtHome/#due

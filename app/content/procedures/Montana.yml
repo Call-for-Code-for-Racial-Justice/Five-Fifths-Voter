@@ -1,0 +1,29 @@
+region_code: mt
+region: Montana
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://sosmt.gov/elections/faq/#absentee-voting
+register:
+  election_day: false
+  online: false
+  under18: true
+  under18key: Yes, but you must be 18 before the next election day.
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/montana
+  mail_link: https://votemt.gov/voter-registration/
+  online_link: https://app.mt.gov/voterinfo/
+  change_party_link: https://app.mt.gov/voterinfo/
+  check_link: https://app.mt.gov/voterinfo/
+  more_link: https://votemt.gov/voter-registration/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: true
+  dropoff: true
+  dropoff_link: null
+  id_explainer: ID is not required. ID is only required when registering to vote.
+  id_link: https://votemt.gov/voter-identification/
+  request_link: https://sosmt.gov/elections/absentee/
+  track_link: https://app.mt.gov/voterinfo/
+  more_link: https://sosmt.gov/elections/absentee/
