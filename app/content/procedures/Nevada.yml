@@ -21,7 +21,7 @@ mail_in:
   without_notary: true
   id_needed: true
   dropoff: true
-  dropoff_link: https://www.nvsos.gov/sos/elections/voters/absentee-voting
+  dropoff_link: https://www.nvsos.gov/sos/elections/election-resources/faqs
   id_explainer: "Please be aware if you are a first time voter, you may be required to present I.D. for voting"
   request_link: https://www.nvsos.gov/sos/elections/voters/mail-ballot-voting
   track_link: https://www.nvsos.gov/votersearch/

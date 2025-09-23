@@ -1,0 +1,29 @@
+region_code: ak
+region: Alaska
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://www.elections.alaska.gov/Core/absenteeearlyandinpersonvoting.php
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: 18 years of age or will be 18 on election day.
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/alaska
+  mail_link: https://absenteeballotapplication.alaska.gov/
+  online_link: https://voterregistration.alaska.gov/
+  change_party_link: null
+  check_link: https://myvoterinformation.alaska.gov/
+  more_link: https://www.elections.alaska.gov/voter-information/#Reg
+mail_in:
+  any_reason: true
+  without_notary: false
+  id_needed: true
+  dropoff: true
+  dropoff_link: null
+  id_explainer: Voters need to provide the ID number from an approved ID when returning their absentee ballot.
+  id_link: https://www.elections.alaska.gov/voter-information/#AlaskavoterID
+  request_link: https://absenteeballotapplication.alaska.gov/
+  track_link: https://myvoterinformation.alaska.gov/
+  more_link: https://www.elections.alaska.gov/Core/votingbymail.php

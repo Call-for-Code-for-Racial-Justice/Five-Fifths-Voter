@@ -1,0 +1,30 @@
+region_code: fl
+region: Florida
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://dos.myflorida.com/elections/for-voters/voting/early-voting-and-drop-boxes/
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: >
+    Be at least 18 years old (You may pre-register to vote if you are 16 years old);
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/florida
+  mail_link: https://dos.myflorida.com/elections/for-voters/voter-registration/register-to-vote-or-update-your-information/
+  online_link: https://registertovoteflorida.gov/
+  change_party_link: https://dos.myflorida.com/elections/for-voters/voter-registration/register-to-vote-or-update-your-information/
+  check_link: https://registertovoteflorida.gov/
+  more_link: https://dos.myflorida.com/elections/for-voters/voter-registration/register-to-vote-or-update-your-information/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: true
+  dropoff: true
+  dropoff_link: null
+  id_explainer: Voters need to provide an ID number when requesting a mail ballot.
+  id_link: https://dos.myflorida.com/elections/for-voters/voting/vote-by-mail/
+  request_link: https://www.myfloridaelections.com/Voting-Elections/Ways-to-Vote#VBM
+  track_link: https://dos.myflorida.com/elections/for-voters/check-your-voter-status-and-polling-place/vote-by-mail-ballot-information-and-status-lookup/
+  more_link: https://dos.myflorida.com/elections/for-voters/voting/vote-by-mail/

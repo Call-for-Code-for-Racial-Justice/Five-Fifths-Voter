@@ -1,0 +1,34 @@
+region_code: md
+region: Maryland
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://elections.maryland.gov/voting/early_voting.html
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: > 
+    You may register to vote if you are at least 16 years old
+    but cannot vote unless you will be at least 18 years old
+    by the next general election."
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/maryland
+  mail_link: https://elections.maryland.gov/voter_registration/application.html
+  online_link: https://voterservices.elections.maryland.gov/OnlineVoterRegistration/InstructionsStep1
+  change_party_link: https://voterservices.elections.maryland.gov/OnlineVoterRegistration/InstructionsStep1
+  check_link: https://voterservices.elections.maryland.gov/VoterSearch
+  more_link: https://elections.maryland.gov/voting/index.html
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: true
+  dropoff: true
+  dropoff_link: https://elections.maryland.gov/voting/absentee.html
+  id_explainer: > 
+    Individuals applying to register to vote must provide their driver's license number on the voter 
+    registration application.
+  id_link: https://elections.maryland.gov/vote_act_2002/general_requirements.html
+  request_link: https://voterservices.elections.maryland.gov/onlinemailinrequest/InstructionsStep1
+  track_link: https://voterservices.elections.maryland.gov/VoterSearch
+  more_link: https://elections.maryland.gov/voting/absentee.html

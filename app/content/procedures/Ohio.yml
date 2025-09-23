@@ -1,0 +1,29 @@
+region_code: oh
+region: Ohio
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://www.ohiosos.gov/elections/voters/toolkit/early-voting/
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: "You must be at least 18 years old on or before the day of the next general election"
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/ohio
+  mail_link: https://www.ohiosos.gov/publications/#vrf
+  online_link: https://olvr.ohiosos.gov/
+  change_party_link: null
+  check_link: https://www.ohiosos.gov/elections/voters/?page=20547
+  more_link: https://www.ohiosos.gov/elections/voters/register/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: true
+  dropoff: true
+  dropoff_link: https://www.ohiosos.gov/elections/voters/absentee-voting/#steps
+  id_explainer: ID is required when requesting an absentee ballot.
+  id_link: https://www.ohiosos.gov/elections/voters/absentee-voting/
+  request_link: https://www.ohiosos.gov/elections/voters/absentee-ballot/
+  track_link: https://www.ohiosos.gov/elections/voters/toolkit/ballot-tracking/
+  more_link: https://www.ohiosos.gov/elections/voters/absentee-voting/
