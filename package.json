@@ -5,7 +5,8 @@
   "scripts": {
     "dev:e2e": "cypress open --e2e",
     "local:e2e": "cypress run --e2e",
-    "prepare": "husky"
+    "prepare": "husky",
+    "screenshots:procedures": "node scripts/screenshot-procedures.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,8 @@
   "devDependencies": {
     "cypress": "^14.4.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.0"
+    "lint-staged": "^16.1.0",
+    "js-yaml": "^4.1.0",
+    "puppeteer": "^22.11.0"
   }
 }

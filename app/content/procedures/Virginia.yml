@@ -1,0 +1,29 @@
+region_code: va
+region: Virginia
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://www.elections.virginia.gov/casting-a-ballot/absentee-voting/
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: "Be 18 years old on or before the next general election"
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/virginia
+  mail_link: https://www.elections.virginia.gov/registration/how-to-register/
+  online_link: https://vote.elections.virginia.gov/VoterInformation
+  change_party_link: null
+  check_link: https://www.elections.virginia.gov/registration/view-your-info/
+  more_link: https://vote.elections.virginia.gov/VoterInformation
+mail_in:
+  any_reason: true
+  without_notary: false
+  id_needed: false
+  dropoff: true
+  dropoff_link: null
+  id_explainer: ID is not required, except for some first-time voters.
+  id_link: https://www.elections.virginia.gov/casting-a-ballot/early-absentee/
+  request_link: https://vote.elections.virginia.gov/VoterInformation/Lookup/absentee
+  track_link: https://www.elections.virginia.gov/citizen-portal/
+  more_link: https://www.elections.virginia.gov/casting-a-ballot/early-absentee/

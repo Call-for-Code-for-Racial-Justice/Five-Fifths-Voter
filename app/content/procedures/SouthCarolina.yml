@@ -1,0 +1,29 @@
+region_code: sc
+region: South Carolina
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://scvotes.gov/voters/early-voting/
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: "Citizens who are not yet 18-years-old but will turn 18 before the next ensuing election"
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/south-carolina
+  mail_link: https://scvotes.gov/voters/register-to-vote/
+  online_link: https://vrems.scvotes.sc.gov/ovr/start
+  change_party_link:  null
+  check_link: https://vrems.scvotes.sc.gov/Voter/Login
+  more_link: https://scvotes.gov/voters/register-to-vote/
+mail_in:
+  any_reason: false
+  without_notary: false
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://scvotes.gov/voters/absentee-voting/#how-can-i-vote-absentee
+  id_explainer: ID is not required.
+  id_link: https://scvotes.gov/voters/photo-id-requirements/
+  request_link: https://scvotes.gov/voters/absentee-voting/#how-can-i-vote-absentee
+  track_link: https://scvotes.gov/voters/absentee-voting/#how-can-i-track-the-status-of-my-absentee-request
+  more_link: https://www.scvotes.gov/absentee-voting

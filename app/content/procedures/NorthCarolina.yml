@@ -1,0 +1,29 @@
+region_code: nc
+region: North Carolina
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://www.ncsbe.gov/voting/vote-early-person
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: "16 and 17 year-olds may preregister to vote."
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/north-carolina
+  mail_link: https://www.ncsbe.gov/registering/how-register/complete-your-registration-mail
+  online_link: https://www.ncdot.gov/dmv/offices-services/online/Pages/voter-registration-application.aspx
+  change_party_link: https://www.ncsbe.gov/registering/updating-registration
+  check_link: https://www.ncsbe.gov/registering/checking-your-registration
+  more_link: https://www.ncsbe.gov/registering/how-register/complete-your-registration-mail
+mail_in:
+  any_reason: true
+  without_notary: false
+  id_needed: true
+  dropoff: true
+  dropoff_link: https://www.ncsbe.gov/voting/vote-mail/faq-voting-mail#HowcanIreturnmyabsenteeballot-781
+  id_explainer: ID is required when applying for an absentee ballot.
+  id_link: https://www.ncsbe.gov/voting/vote-mail/detailed-instructions-vote-mail#1-request-ballot
+  request_link: https://www.ncsbe.gov/voting/vote-mail
+  track_link: https://vt.ncsbe.gov/RegLkup/
+  more_link: https://www.ncsbe.gov/voting/vote-mail

@@ -1,0 +1,29 @@
+region_code: hi
+region: Hawaii
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://elections.hawaii.gov/voting/voting-in-hawaii/
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: "???Under 18? You may be able to pre-register; confirm exact age rules."
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/hawaii
+  mail_link: https://elections.hawaii.gov/wp-content/uploads/VR-Form-English-20210614C-Form-Fillable.pdf
+  online_link: https://olvr.hawaii.gov/Default.aspx?redir=1
+  change_party_link: null
+  check_link: "???"
+  more_link: https://elections.hawaii.gov/voters/registration/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: "???"
+  id_explainer: ID is not required.
+  id_link: "???"
+  request_link: https://elections.hawaii.gov/wp-content/uploads/2015/03/AB-Form-English-20210614E-Form-Fillabe.pdf
+  track_link: "???"
+  more_link: https://ballotstatus.hawaii.gov/Default
