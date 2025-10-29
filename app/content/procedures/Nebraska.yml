@@ -1,0 +1,31 @@
+region_code: ne
+region: Nebraska
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://sos.nebraska.gov/elections/early-voting
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: Be 18 years old on or before the next general election
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/nebraska
+  mail_link: https://www.vote.org/state/nebraska/
+  online_link: https://www.nebraska.gov/apps-sos-voter-registration/
+  change_party_link: https://www.nebraska.gov/apps-sos-voter-registration/
+  check_link: https://www.nebraska.gov/featured/elections-voting/
+  more_link: https://www.nebraska.gov/featured/elections-voting/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: true
+  dropoff: true
+  dropoff_link: https://www.vote.org/state/nebraska/
+  id_explainer: >
+    The only time voters are asked for their ID (or a form of address verification) is if they were a first time 
+    Nebraska registrant who mailed in their registration application
+  id_link: https://sos.nebraska.gov/elections/election-day-faq
+  request_link: https://www.vote.org/state/nebraska/
+  track_link: https://www.votercheck.necvr.ne.gov/VoterView/AbsenteeBallotSearch.do
+  more_link: https://sos.nebraska.gov/elections/early-voting

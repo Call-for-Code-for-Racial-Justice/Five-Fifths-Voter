@@ -1,0 +1,29 @@
+region_code: ri
+region: Rhode Island
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://vote.sos.ri.gov/Voter/PersonVotingPage
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: You must be 16 years of age (you must be at least 18 years of age to vote).
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/rhode-island
+  mail_link: https://www.vote.org/state/rhode-island/
+  online_link: https://vote.sos.ri.gov/
+  change_party_link: https://www.vote.org/state/rhode-island/
+  check_link: https://vote.sos.ri.gov/
+  more_link: https://www.vote.org/state/rhode-island/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://vote.sos.ri.gov/Home/PollingPlaces?ActiveFlag=2
+  id_explainer: Poll workers will ask you to show a Photo ID when you vote at your polling place.
+  id_link: https://vote.sos.ri.gov/Content/Pdfs/voter_id_information.pdf
+  request_link: https://www.vote.org/state/rhode-island/
+  track_link: https://vote.sos.ri.gov/Home/UpdateVoterRecord?ActiveFlag=3
+  more_link: https://vote.sos.ri.gov/Voter/VotebyMail
