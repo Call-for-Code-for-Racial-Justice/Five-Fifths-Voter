@@ -1,0 +1,29 @@
+region_code: de
+region: Delaware
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://elections.delaware.gov/voter/waystovote.shtml#ev
+register:
+  election_day: false
+  online: true
+  under18: true
+  under18key: Be 18 years old on or before the next general election
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/delaware
+  mail_link: https://www.vote.org/state/delaware/
+  online_link: https://www.vote.org/register-to-vote/delaware/
+  change_party_link: https://www.vote.org/state/delaware/
+  check_link: https://www.vote.org/state/delaware/
+  more_link: https://elections.delaware.gov/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://www.vote.org/state/delaware/
+  id_explainer: ID requirements and procedures may vary; see the linked page for current details.
+  id_link: https://elections.delaware.gov/voter/votereg.shtml#how
+  request_link: https://www.vote.org/absentee-ballot/delaware/
+  track_link: https://ivote.de.gov/VoterView/AbsenteeBallotSearch.do
+  more_link: https://elections.delaware.gov/voter/absentee/index.shtml

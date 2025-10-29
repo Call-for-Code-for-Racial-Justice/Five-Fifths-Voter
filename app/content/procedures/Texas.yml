@@ -1,0 +1,33 @@
+region_code: tx
+region: Texas
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://www.votetexas.gov/faq/early-voting.html
+register:
+  election_day: false
+  online: false
+  under18: true
+  under18key: > 
+    You are at least 17 years and 10 months old on the date your voter registration application is submitted, and you
+    are 18 years of age on Election Day.
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/texas
+  mail_link: https://www.vote.org/state/texas/
+  online_link: https://www.votetexas.gov/register-to-vote/update-voter-registration.html
+  change_party_link: null
+  check_link: https://goelect.txelections.civixapps.com/ivis-mvp-ui/#/login
+  more_link: https://www.sos.state.tx.us/elections/index.shtml
+mail_in:
+  any_reason: false
+  without_notary: false
+  id_needed: true
+  dropoff: true
+  dropoff_link: https://teamrv-mvp.sos.texas.gov/MVP/mvp.do
+  id_explainer: > 
+    If you are voting in person in Texas, you must present photo ID at the time you vote. To vote by mail, you must
+    provide an ID number from an approved ID card issuer.
+  id_link: https://www.votetexas.gov/register-to-vote/need-id.html
+  request_link: https://www.vote.org/state/texas/
+  track_link: https://teamrv-mvp.sos.texas.gov/BallotTrackerApp/#/login
+  more_link: https://www.votetexas.gov/faq/early-voting.html

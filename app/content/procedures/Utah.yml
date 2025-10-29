@@ -1,0 +1,34 @@
+region_code: ut
+region: Utah
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://votesearch.utah.gov/voter-search/search/search-by-address/how-and-where-can-i-vote
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: >
+    If you are 16 or 17 years old, you can pre-register to vote. If you pre-register, you will automatically be 
+    registered to vote when you turn 18 years old.
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/utah
+  mail_link: null
+  online_link: https://www.vote.org/register-to-vote/utah/
+  change_party_link: https://www.vote.org/register-to-vote/utah/
+  check_link: https://www.vote.org/state/utah/
+  more_link: https://vote.utah.gov/register-to-vote-or-update-your-voter-registration/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://votesearch.utah.gov/voter-search/search/search-by-address/how-and-where-can-i-vote
+  id_explainer: >
+    If you are voting in person in Utah (early or on Election Day), you must present an approved photo ID at the time 
+    you vote. If you're voting in Utah for the first time, registered to vote by mail, and didn't provide ID when you
+    registered, you must include a copy of an acceptable ID when you mail in your ballot.
+  id_link: https://voteinfo.utah.gov/voter-id-requirements/
+  request_link: https://www.vote.org/state/utah/
+  track_link: https://votesearch.utah.gov/voter-search/search/search-by-voter/track-mail-ballot
+  more_link: https://vote.utah.gov/

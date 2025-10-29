@@ -1,0 +1,29 @@
+region_code: ca
+region: California
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://caearlyvoting.sos.ca.gov/
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: Pre-register at 16 or 17; you must be 18 to vote
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/california
+  mail_link: https://www.vote.org/state/california/
+  online_link: https://www.vote.org/register-to-vote/california/
+  change_party_link: https://www.vote.org/state/california/
+  check_link: https://www.vote.org/state/california/
+  more_link: https://www.sos.ca.gov/elections
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://www.vote.org/state/california/
+  id_explainer: California uses universal mail ballots for most elections; see link for details.
+  id_link: https://www.sos.ca.gov/elections/voter-registration/voter-id-requirements
+  request_link: https://www.vote.org/absentee-ballot/california/
+  track_link: https://california.ballottrax.net/voter/
+  more_link: https://www.sos.ca.gov/elections/voter-registration/vote-mail

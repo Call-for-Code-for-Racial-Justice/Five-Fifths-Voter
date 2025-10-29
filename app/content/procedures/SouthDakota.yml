@@ -1,0 +1,29 @@
+region_code: sd
+region: South Dakota
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://sdsos.gov/elections-voting/voting/absentee-voting.aspx
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: Be at least 18 years old on or before the next election
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/south-dakota
+  mail_link: https://www.vote.org/state/south-dakota/
+  online_link: https://sdsos.gov/elections-voting/voting/register-to-vote/default.aspx
+  change_party_link: https://sdsos.gov/elections-voting/voting/register-to-vote/default.aspx
+  check_link: https://vip.sdsos.gov/VIPLogin.aspx
+  more_link: https://sdsos.gov/elections-voting/voting/register-to-vote/default.aspx
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: true
+  dropoff: true
+  dropoff_link: https://vip.sdsos.gov/VIPLogin.aspx
+  id_explainer: You must provide an acceptable photo ID when you vote in-person or by mail.
+  id_link: https://sdsos.gov/elections-voting/voting/default.aspx
+  request_link: https://www.vote.org/state/south-dakota/
+  track_link: https://vip.sdsos.gov/VIPLogin.aspx
+  more_link: https://sdsos.gov/elections-voting/voting/absentee-voting.aspx

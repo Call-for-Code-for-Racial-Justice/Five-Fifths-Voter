@@ -1,0 +1,29 @@
+region_code: nd
+region: North Dakota
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://vip.sos.nd.gov/votebymail.aspx?ptlhPKID=129&ptlPKID=7
+register:
+  election_day: true
+  online: false
+  under18: true
+  under18key: Be 18 years old on or before the next general election
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/north-dakota
+  mail_link: null
+  online_link: https://vip.sos.nd.gov/Civics101.aspx
+  change_party_link: null
+  check_link: null
+  more_link: https://www.vote.org/state/north-dakota/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: true
+  dropoff: true
+  dropoff_link: https://vip.sos.nd.gov/wheretovote.aspx
+  id_explainer: ID requirements and procedures may vary; see the linked page for current details.
+  id_link: https://vip.sos.nd.gov/IDRequirements.aspx
+  request_link: https://www.vote.org/state/north-dakota/
+  track_link: https://vip.sos.nd.gov/AbsenteeTracker.aspx
+  more_link: https://vip.sos.nd.gov/PortalListDetails.aspx?ptlhPKID=53&ptlPKID=7#content-start

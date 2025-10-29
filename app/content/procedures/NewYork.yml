@@ -1,0 +1,29 @@
+region_code: ny
+region: New York
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://ag.ny.gov/voting-key-dates-resources-hotline-information#byperson
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: Pre-register at 16 or 17; you must be 18 to vote
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/new-york
+  mail_link: https://elections.ny.gov/voter-registration-process
+  online_link: https://elections.ny.gov/voter-registration-process
+  change_party_link: https://elections.ny.gov/voter-registration-process#make-changes-to-your-registration
+  check_link: https://elections.ny.gov/register-vote
+  more_link: https://www.elections.ny.gov/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://voterlookup.elections.ny.gov/
+  id_explainer: ID is required to vote.
+  id_link: https://www.vote.org/state/new-york/
+  request_link: https://www.elections.ny.gov/RequestBallot.html
+  track_link: https://www.vote.org/state/new-york/
+  more_link: https://www.elections.ny.gov/RequestBallot.html

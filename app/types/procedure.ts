@@ -35,4 +35,5 @@ export const contentProcedureSchema = z.object({
   }),
 });
 
+// @ts-expect-error using z from @nuxt/content
 export type ContentProcedure = z.infer<typeof contentProcedureSchema>;

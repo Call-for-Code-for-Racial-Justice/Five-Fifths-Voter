@@ -1,0 +1,29 @@
+region_code: vt
+region: Vermont
+early_voting:
+  available: true
+  id_needed: false
+  more_link: https://sos.vermont.gov/elections/voters/early-absentee-voting/
+register:
+  election_day: true
+  online: true
+  under18: true
+  under18key: Pre-register at 16 or 17; you must be 18 to vote
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/vermont
+  mail_link: https://sos.vermont.gov/elections/voters/registration/
+  online_link: https://sos.vermont.gov/elections/voters/registration/
+  change_party_link: null
+  check_link: https://sos.vermont.gov/elections/voters/registration/
+  more_link: https://sos.vermont.gov/elections/voters/registration/
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: false
+  dropoff: true
+  dropoff_link: https://sos.vermont.gov/elections/voters/polling-places/
+  id_explainer: If you've voted in Vermont before, you don't need to show ID to vote.
+  id_link: https://sos.vermont.gov/elections/voters/voter-faqs/voter-registration-faqs/#index
+  request_link: https://www.vote.org/absentee-ballot/vermont/
+  track_link: https://mvp.vermont.gov/
+  more_link: https://sos.vermont.gov/elections/voters/early-absentee-voting/

@@ -1,0 +1,30 @@
+region_code: wy
+region: Wyoming
+early_voting:
+  available: true
+  id_needed: true
+  more_link: https://sos.wyo.gov/Elections/State/AbsenteeVoting.aspx
+register:
+  election_day: true
+  online: false
+  under18: true
+  under18key: Be 18 years old on or before the next general election
+  formerlyIncarcerated: true
+  felon_link: https://www.usvotefoundation.org/voting-rights-restoration/wyoming
+  mail_link: https://www.vote.org/register-to-vote/wyoming/
+  online_link: https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx
+  change_party_link: https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx
+  check_link: https://www.vote.org/register-to-vote/wyoming/
+  more_link: https://sos.wyo.gov/Elections/State/RegisteringToVote.aspx
+mail_in:
+  any_reason: true
+  without_notary: true
+  id_needed: true
+  dropoff: true
+  dropoff_link: https://sos.wyo.gov/Elections/PollPlace/Default.aspx
+  id_explainer: >
+    You are required to provide an acceptable form of identification when voting in person or by mail.
+  id_link: https://soswy.state.wy.us/faqs.aspx?root=ELEC
+  request_link: https://www.vote.org/state/wyoming/
+  track_link: https://www.vote.org/state/wyoming/
+  more_link: https://sos.wyo.gov/elections/state/absenteevoting.aspx
