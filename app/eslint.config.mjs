@@ -30,5 +30,15 @@ export default withNuxt([
         ignores: ["/^cv-/"],
       }],
     },
+    languageOptions: {
+      globals: {
+        defineCachedEventHandler: "readonly",
+        defineEventHandler: "readonly",
+        getQuery: "readonly",
+        getRequestProtocol: "readonly",
+        getMethod: "readonly",
+        getRequestIP: "readonly",
+      },
+    },
   },
 ]);
