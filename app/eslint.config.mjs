@@ -1,12 +1,10 @@
 // @ts-check
 import stylistic from "@stylistic/eslint-plugin";
 // @ts-ignore
-import tailwind from "eslint-plugin-tailwindcss";
 import withNuxt from "./.nuxt/eslint.config.mjs";
 
 export default withNuxt([
   stylistic.configs["recommended"],
-  ...tailwind.configs["flat/recommended"],
   {
     rules: {
       "vue/multi-word-component-names": "off",

@@ -132,7 +132,7 @@ const faqs = computed(() => [
         <div class="mb-6 space-y-4">
           <JourneySelectState/>
           <div class="flex items-center">
-            <input id="registered" v-model="isRegistered" type="checkbox" class="size-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" >
+            <input id="registered" v-model="isRegistered" type="checkbox" class="size-4 rounded-sm border-gray-300 text-blue-600 focus:ring-blue-500" >
             <label for="registered" class="ml-2 block text-sm text-gray-700">I am already registered to vote</label>
           </div>
         </div>

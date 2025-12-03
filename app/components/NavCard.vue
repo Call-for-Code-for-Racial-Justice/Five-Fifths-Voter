@@ -20,7 +20,7 @@ defineProps({
 </template>
 <style lang="css">
 .card-zoom {
-  @apply relative flex items-center justify-center m-3 overflow-hidden mb-4 !p-0 w-48 h-36 md:w-96 md:h-72 ;
+  @apply relative flex items-center justify-center m-3 overflow-hidden mb-4 p-0! w-48 h-36 md:w-96 md:h-72 ;
 }
 .card-zoom-image {
   @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;

@@ -1,0 +1,184 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ff-purple-01: #210d34;
+  --color-ff-purple-02: #85276e;
+  --color-ff-white-01: #ffebd9;
+  --color-ff-yellow-01: #e8b933;
+  --color-ff-yellow-02: #afcb61;
+  --color-ff-orange-01: #e66c31;
+  --color-ff-red-01: #e02e38;
+  --color-ff-pink-01: #ec9899;
+  --color-ff-pink-02: #d35492;
+  --color-ff-blue-01: #56b5b5;
+  --color-ff-blue-02: #366ae2;
+  --color-ff-blue-03: #1140a7;
+  --color-ff-green-01: #397f42;
+  --color-ff-green-02: #24502a;
+  --color-carbon-black-100: #000000;
+  --color-carbon-blue-10: #edf5ff;
+  --color-carbon-blue-20: #d0e2ff;
+  --color-carbon-blue-30: #a6c8ff;
+  --color-carbon-blue-40: #78a9ff;
+  --color-carbon-blue-50: #4589ff;
+  --color-carbon-blue-60: #0f62fe;
+  --color-carbon-blue-70: #0043ce;
+  --color-carbon-blue-80: #002d9c;
+  --color-carbon-blue-90: #001d6c;
+  --color-carbon-blue-100: #001141;
+  --color-carbon-cool-gray-10: #f2f4f8;
+  --color-carbon-cool-gray-20: #dde1e6;
+  --color-carbon-cool-gray-30: #c1c7cd;
+  --color-carbon-cool-gray-40: #a2a9b0;
+  --color-carbon-cool-gray-50: #878d96;
+  --color-carbon-cool-gray-60: #697077;
+  --color-carbon-cool-gray-70: #4d5358;
+  --color-carbon-cool-gray-80: #343a3f;
+  --color-carbon-cool-gray-90: #21272a;
+  --color-carbon-cool-gray-100: #121619;
+  --color-carbon-cyan-10: #e5f6ff;
+  --color-carbon-cyan-20: #bae6ff;
+  --color-carbon-cyan-30: #82cfff;
+  --color-carbon-cyan-40: #33b1ff;
+  --color-carbon-cyan-50: #1192e8;
+  --color-carbon-cyan-60: #0072c3;
+  --color-carbon-cyan-70: #00539a;
+  --color-carbon-cyan-80: #003a6d;
+  --color-carbon-cyan-90: #012749;
+  --color-carbon-cyan-100: #061727;
+  --color-carbon-gray-10: #f4f4f4;
+  --color-carbon-gray-20: #e0e0e0;
+  --color-carbon-gray-30: #c6c6c6;
+  --color-carbon-gray-40: #a8a8a8;
+  --color-carbon-gray-50: #8d8d8d;
+  --color-carbon-gray-60: #6f6f6f;
+  --color-carbon-gray-70: #525252;
+  --color-carbon-gray-80: #393939;
+  --color-carbon-gray-90: #262626;
+  --color-carbon-gray-100: #161616;
+  --color-carbon-green-10: #defbe6;
+  --color-carbon-green-20: #a7f0ba;
+  --color-carbon-green-30: #6fdc8c;
+  --color-carbon-green-40: #42be65;
+  --color-carbon-green-50: #24a148;
+  --color-carbon-green-60: #198038;
+  --color-carbon-green-70: #0e6027;
+  --color-carbon-green-80: #044317;
+  --color-carbon-green-90: #022d0d;
+  --color-carbon-green-100: #071908;
+  --color-carbon-magenta-10: #fff0f7;
+  --color-carbon-magenta-20: #ffd6e8;
+  --color-carbon-magenta-30: #ffafd2;
+  --color-carbon-magenta-40: #ff7eb6;
+  --color-carbon-magenta-50: #ee5396;
+  --color-carbon-magenta-60: #d02670;
+  --color-carbon-magenta-70: #9f1853;
+  --color-carbon-magenta-80: #740937;
+  --color-carbon-magenta-90: #510224;
+  --color-carbon-magenta-100: #2a0a18;
+  --color-carbon-orange-10: #fff2e8;
+  --color-carbon-orange-20: #ffd9be;
+  --color-carbon-orange-30: #ffb784;
+  --color-carbon-orange-40: #ff832b;
+  --color-carbon-orange-50: #eb6200;
+  --color-carbon-orange-60: #ba4e00;
+  --color-carbon-orange-70: #8a3800;
+  --color-carbon-orange-80: #5e2900;
+  --color-carbon-orange-90: #3e1a00;
+  --color-carbon-orange-100: #231000;
+  --color-carbon-purple-10: #f6f2ff;
+  --color-carbon-purple-20: #e8daff;
+  --color-carbon-purple-30: #d4bbff;
+  --color-carbon-purple-40: #be95ff;
+  --color-carbon-purple-50: #a56eff;
+  --color-carbon-purple-60: #8a3ffc;
+  --color-carbon-purple-70: #6929c4;
+  --color-carbon-purple-80: #491d8b;
+  --color-carbon-purple-90: #31135e;
+  --color-carbon-purple-100: #1c0f30;
+  --color-carbon-red-10: #fff1f1;
+  --color-carbon-red-20: #ffd7d9;
+  --color-carbon-red-30: #ffb3b8;
+  --color-carbon-red-40: #ff8389;
+  --color-carbon-red-50: #fa4d56;
+  --color-carbon-red-60: #da1e28;
+  --color-carbon-red-70: #a2191f;
+  --color-carbon-red-80: #750e13;
+  --color-carbon-red-90: #520408;
+  --color-carbon-red-100: #2d0709;
+  --color-carbon-teal-10: #d9fbfb;
+  --color-carbon-teal-20: #9ef0f0;
+  --color-carbon-teal-30: #3ddbd9;
+  --color-carbon-teal-40: #08bdba;
+  --color-carbon-teal-50: #009d9a;
+  --color-carbon-teal-60: #007d79;
+  --color-carbon-teal-70: #005d5d;
+  --color-carbon-teal-80: #004144;
+  --color-carbon-teal-90: #022b30;
+  --color-carbon-teal-100: #081a1c;
+  --color-carbon-warm-gray-10: #f7f3f2;
+  --color-carbon-warm-gray-20: #e5e0df;
+  --color-carbon-warm-gray-30: #cac5c4;
+  --color-carbon-warm-gray-40: #ada8a8;
+  --color-carbon-warm-gray-50: #8f8b8b;
+  --color-carbon-warm-gray-60: #726e6e;
+  --color-carbon-warm-gray-70: #565151;
+  --color-carbon-warm-gray-80: #3c3838;
+  --color-carbon-warm-gray-90: #272525;
+  --color-carbon-warm-gray-100: #171414;
+  --color-carbon-white-0: #ffffff;
+  --color-carbon-yellow-10: #fcf4d6;
+  --color-carbon-yellow-20: #fddc69;
+  --color-carbon-yellow-30: #f1c21b;
+  --color-carbon-yellow-40: #d2a106;
+  --color-carbon-yellow-50: #b28600;
+  --color-carbon-yellow-60: #8e6a00;
+  --color-carbon-yellow-70: #684e00;
+  --color-carbon-yellow-80: #483700;
+  --color-carbon-yellow-90: #302400;
+  --color-carbon-yellow-100: #1c1500;
+
+  --breakpoint-3xl: 2560px;
+
+  --text-heading-04: 1.75rem;
+  --text-heading-04--line-height: 1.28572;
+  --text-heading-04--letter-spacing: 0;
+  --text-heading-04--font-weight: 400;
+  --text-heading-05: 2rem;
+  --text-heading-05--line-height: 1.25;
+  --text-heading-05--letter-spacing: 0;
+  --text-heading-05--font-weight: 400;
+  --text-body-long-01: 0.875rem;
+  --text-body-long-01--line-height: 1.42857;
+  --text-body-long-01--letter-spacing: 0.16px;
+  --text-body-long-01--font-weight: 400;
+  --text-body-long-02: 1rem;
+  --text-body-long-02--line-height: 1.5;
+  --text-body-long-02--letter-spacing: 0;
+  --text-body-long-02--font-weight: 400;
+
+  --font-sans:
+    IBM Plex Sans, ui-sans-serif, system-ui, Helvetica Neue, Arial, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --font-mono:
+    IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    Liberation Mono, Courier New, monospace;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}

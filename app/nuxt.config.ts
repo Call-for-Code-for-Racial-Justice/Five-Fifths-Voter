@@ -1,13 +1,16 @@
+import tailwindcss from "@tailwindcss/vite";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   telemetry: { enabled: true },
   devtools: { enabled: true },
-  css: ["~/assets/css/five-fifths-theme.css"],
+  css: ["~/assets/css/main.css"],
   devServer: {
     port: 4007,
   },
   vite: {
     cacheDir: ".nuxt/.vite",
+    plugins: [tailwindcss()],
   },
   auth: {
     // Override with AUTH_ORIGIN environment variable in production
@@ -27,7 +30,6 @@ export default defineNuxtConfig({
 
   modules: [
     "@nuxtjs/i18n",
-    "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
     "@sidebase/nuxt-auth",
     "@nuxt/eslint",

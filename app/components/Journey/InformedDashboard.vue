@@ -76,7 +76,7 @@ const infoLinks = computed(() => [
         <div class="mb-6 space-y-4">
           <JourneySelectState/>
           <div v-if="election" class="flex items-center">
-            <input id="informed" v-model="isInformed" type="checkbox" class="size-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" >
+            <input id="informed" v-model="isInformed" type="checkbox" class="size-4 rounded-sm border-gray-300 text-blue-600 focus:ring-blue-500" >
             <label for="informed" class="ml-2 block text-sm text-gray-700">I am informed about the next election</label>
           </div>
         </div>

@@ -58,7 +58,7 @@ const { t } = useI18n();
       <cv-header-menu-item
         id="header-menu-journey"
         to="/journey"
-        :class="{ '!bg-ff-purple-02': activeJourney }"
+        :class="{ 'bg-ff-purple-02!': activeJourney }"
       >
         {{ $t("appHeaderVoterJourney") }}
       </cv-header-menu-item>
@@ -70,14 +70,14 @@ const { t } = useI18n();
       </cv-header-menu-item>
       <cv-header-menu-item
         id="header-menu-support"
-        :class="{ '!bg-ff-purple-02': activeVoterSupport }"
+        :class="{ 'bg-ff-purple-02!': activeVoterSupport }"
         to="/voterSupport"
       >
         {{ $t("appHeaderVoterSupport") }}
       </cv-header-menu-item>
       <cv-header-menu-item
         id="header-menu-why"
-        :class="{ '!bg-ff-purple-02': activeWhyVote }"
+        :class="{ 'bg-ff-purple-02!': activeWhyVote }"
         to="/whyVote"
       >
         {{ $t("appHeaderWhyVote") }}

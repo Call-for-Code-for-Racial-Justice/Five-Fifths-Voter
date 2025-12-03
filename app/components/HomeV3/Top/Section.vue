@@ -9,7 +9,7 @@ import bgUrl from "~/assets/images/mask-group.svg";
   >
     <div
       class="h-[calc(100%-320px)] w-full bg-ff-purple-01
-        bg-contain bg-right-top bg-no-repeat
+        bg-contain bg-top-right bg-no-repeat
         md:h-[calc(100%-270px)] lg:h-[calc(100%-150px)] xl:h-[calc(100%-320px)]"
       :style="`background-image: url(${bgUrl})`"
     >
@@ -28,7 +28,7 @@ import bgUrl from "~/assets/images/mask-group.svg";
         </div>
         <div
           class="pt-10 sm:text-2xl md:max-w-96 md:pt-8 md:text-2xl lg:pt-1 xl:pt-16
-            3xl:max-w-[75rem] 3xl:text-7xl"
+            3xl:max-w-300 3xl:text-7xl"
         >
           {{ $t("landingTopDesc") }}
         </div>

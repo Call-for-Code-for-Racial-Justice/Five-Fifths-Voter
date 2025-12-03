@@ -36,7 +36,7 @@ const availableLocales = computed(() => {
         <cv-switcher-item-link
           :id="`language-${entry.language}`"
           :selected="entry.language === locale"
-          :class="{ '!bg-ff-purple-02': entry.language === locale }"
+          :class="{ 'bg-ff-purple-02!': entry.language === locale }"
           @click="changeLocale(entry.language)"
         >
           {{ entry.title }}

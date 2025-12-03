@@ -69,7 +69,7 @@ const infoLinks = computed(() => [
         <div class="mb-6 space-y-4">
           <JourneySelectState/>
           <div v-if="election" class="flex items-center">
-            <input id="i-voted" v-model="iVoted" type="checkbox" class="size-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" >
+            <input id="i-voted" v-model="iVoted" type="checkbox" class="size-4 rounded-sm border-gray-300 text-blue-600 focus:ring-blue-500" >
             <label for="i-voted" class="ml-2 block text-sm text-gray-700">I voted!</label>
           </div>
         </div>

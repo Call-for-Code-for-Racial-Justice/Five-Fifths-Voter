@@ -45,7 +45,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
 </script>
 
 <template>
-  <cv-header class="!h-8 !bg-ff-purple-01">
+  <cv-header class="h-8! bg-ff-purple-01!">
     <cv-header-menu-button
       id="ff-header-menu"
       aria-label="header - menu"
@@ -132,7 +132,7 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
         :aria-label="$t('ariaLanguageSetting')"
         aria-controls="language-panel"
         :label="$t('ariaLanguageSetting')"
-        class="!h-6 !min-h-0 !px-0 !py-3.5"
+        class="h-6! min-h-0! px-0! py-3.5!"
         tip-position="left"
       >
         <LanguageSwitcher class="text-carbon-gray-30" />

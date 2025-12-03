@@ -68,7 +68,7 @@ const scaleFF = computed(() => {
     </ul>
   </nav>
   <div
-      class="fixed z-10 h-52 w-full bg-ff-purple-01 bg-contain bg-right-top
+      class="fixed z-10 h-52 w-full bg-ff-purple-01 bg-contain bg-top-right
         bg-no-repeat 3xl:h-80"
       :class="{'border border-solid border-carbon-gray-90' : scaleLogo === '48px'}"
       :style="{backgroundImage: `url(${bgUrl})`, height: scaleLogo}"

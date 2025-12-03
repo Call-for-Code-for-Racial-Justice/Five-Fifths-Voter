@@ -131,7 +131,7 @@ const faqs = computed(() => [
         <div class="mb-6 space-y-4">
           <JourneySelectState/>
           <div class="flex items-center">
-            <input id="delivered-ballot" v-model="deliveredBallot" type="checkbox" class="size-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500" >
+            <input id="delivered-ballot" v-model="deliveredBallot" type="checkbox" class="size-4 rounded-sm border-gray-300 text-blue-600 focus:ring-blue-500" >
             <label for="delivered-ballot" class="ml-2 block text-sm text-gray-700">I dropped off my ballot or voted early</label>
           </div>
         </div>
