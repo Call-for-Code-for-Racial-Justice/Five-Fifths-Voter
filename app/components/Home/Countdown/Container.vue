@@ -78,10 +78,9 @@ onBeforeUnmount(() => clearInterval(intervalID));
 </script>
 
 <template>
-  <footer class="sticky bottom-0 z-20 h-20 bg-ff-red-01 md:h-28 xl:h-32 3xl:h-64">
+  <footer class="sticky left-0 -mx-1 bottom-0 z-20 h-20 bg-ff-red-01 md:h-28 xl:h-32 3xl:h-64">
     <div
-    class="flex size-full items-center justify-between
-      bg-ff-red-01 px-3"
+    class="flex size-full items-center justify-between px-3"
   >
     <div class="text-base sm:text-lg md:text-3xl xl:text-4xl 3xl:text-7xl">
       <div class="text-ff-white-01">

@@ -1,7 +1,8 @@
 <script setup lang="js">
 import {
-  Menu24 as MenuIcon,
-  Close24 as CloseIcon } from "@carbon/icons-vue";
+  Menu as MenuIcon,
+  X as CloseIcon,
+} from "lucide-vue-next";
 import bgUrl from "assets/images/mask-group.svg";
 import titleLogoUrl from "assets/images/five-fifths-voter.svg";
 import { useWindowScroll, useWindowSize } from "@vueuse/core";

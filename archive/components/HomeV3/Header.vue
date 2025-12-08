@@ -1,15 +1,15 @@
 <script setup>
 import {
-  Home16 as HomeIcon,
-  Compass16 as VoterJourneyIcon,
-  HelpDesk16 as VoterSupportIcon,
-  Help16 as WhyVoteIcon,
-  ArrowDown16 as ArrowDown,
-  ArrowUpRight16 as ArrowUpRight,
-  LogoInstagram24 as Instagram,
-  LogoGithub24 as GitHub,
-  Language24 as LanguageSwitcher,
-} from "@carbon/icons-vue";
+  Home as HomeIcon,
+  Map as VoterJourneyIcon,
+  LifeBuoy as VoterSupportIcon,
+  CircleHelp as WhyVoteIcon,
+  ChevronDown as ArrowDown,
+  ArrowUpRight as ArrowUpRight,
+  Camera as Instagram,
+  Github as GitHub,
+  Globe as LanguageSwitcher,
+} from "lucide-vue-next";
 import lodash from "lodash";
 
 const route = useRoute();
@@ -111,22 +111,24 @@ onBeforeUnmount(() => removeEventListener("scroll", onScroll));
       </cv-header-menu-item>
     </cv-header-nav>
     <template #header-global>
-      <cv-link
-        class="p-1"
+      <a
+        class="link link-hover p-1"
         href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
         target="_blank"
+        rel="noopener noreferrer"
         aria-label="Five Fifths Voter on instagram - link opens in a new window"
       >
         <Instagram class="text-carbon-gray-30" />
-      </cv-link>
-      <cv-link
-        class="p-1"
+      </a>
+      <a
+        class="link link-hover p-1"
         href="https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter"
         target="_blank"
+        rel="noopener noreferrer"
         aria-label="Link to code for this site in GitHub"
       >
         <GitHub class="text-carbon-gray-30" />
-      </cv-link>
+      </a>
       <cv-header-global-action
         id="header-language-button"
         :aria-label="$t('ariaLanguageSetting')"

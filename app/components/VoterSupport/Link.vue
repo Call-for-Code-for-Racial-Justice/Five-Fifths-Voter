@@ -5,14 +5,15 @@ defineProps({
 </script>
 <template>
   <div>
-    <cv-link
-        class="ff-link mb-2"
-        :href="href"
-        target="_blank"
+    <a
+      class="link link-hover ff-link mb-2"
+      :href="href"
+      target="_blank"
+      rel="noopener noreferrer"
     >
       <span class="text-sm text-ff-white-01 md:text-base">
-      <slot/>
+        <slot/>
       </span>
-    </cv-link>
+    </a>
   </div>
 </template>

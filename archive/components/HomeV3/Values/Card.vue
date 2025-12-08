@@ -1,9 +1,9 @@
 <script setup>
 import {
-  ArrowUpRight20 as ArrowUpRight,
-  Add20 as ExpandIcon,
-  Subtract20 as CollapseIcon,
-} from "@carbon/icons-vue";
+  ArrowUpRight as ArrowUpRight,
+  Plus as ExpandIcon,
+  Minus as CollapseIcon,
+} from "lucide-vue-next";
 const props = defineProps({
   name: { type: String, required: true },
   main: { type: String, required: true },

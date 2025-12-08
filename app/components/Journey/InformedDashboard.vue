@@ -61,7 +61,7 @@ const infoLinks = computed(() => [
       <aside class="rounded-lg bg-white p-4 shadow-md lg:col-span-1">
         <h2 class="mb-4 text-xl font-semibold text-gray-800">Information Links</h2>
         <Transition>
-          <cv-skeleton-text v-if="status === 'pending'"/>
+          <div class="skeleton h-4 w-full" v-if="status === 'pending'"/>
           <ul v-else class="space-y-3">
             <li v-for="info in infoLinks" :key="info.title" class="flex items-center gap-2">
               <component :is="info.icon" class="size-5 text-blue-500" />
@@ -84,8 +84,8 @@ const infoLinks = computed(() => [
         <h1 class="mb-6 text-2xl font-bold text-ff-purple-01">Upcoming election</h1>
 
         <Transition>
-          <cv-skeleton-text v-if="status === 'pending'"/>
-          <div v-else class="space-y-4 text-carbon-gray-100">
+          <div class="skeleton h-4 w-full" v-if="status === 'pending'"/>
+          <div v-else class="space-y-4 text-base-200">
             <div v-if="election">
               <p class="mb-4 text-xl">{{ election.description }}</p>
 
@@ -145,9 +145,6 @@ const infoLinks = computed(() => [
   </div>
 </template>
 <style scoped lang="css">
-::v-deep(.bx--select .bx--label) {
- @apply text-carbon-gray-100
-}
 .v-enter-active,
 .v-leave-active {
   transition: opacity 0.5s ease;

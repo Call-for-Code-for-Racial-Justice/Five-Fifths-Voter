@@ -8,6 +8,7 @@ import {
   BadgeCheck,
   MapPin, PackageSearch,
 } from "lucide-vue-next";
+import JourneyFAQ from "~/components/Journey/JourneyFAQ.vue";
 
 const requestedBallot = useLocalStorage(LOCAL_STORAGE_KEYS.VOTER_REQUESTED_BALLOT, false);
 const usaState = useLocalStorage(LOCAL_STORAGE_KEYS.USA_STATE, "");
@@ -103,12 +104,12 @@ const faqs = computed(() => [
       <!-- Sidebar: Info Links -->
       <aside class="rounded-lg bg-white p-4 shadow-md lg:col-span-1">
         <Transition>
-          <cv-skeleton-text v-if="status === 'pending'"/>
+          <div class="skeleton h-4 w-full" v-if="status === 'pending'"/>
           <h2 v-else-if="content" class="mb-4 text-xl font-semibold text-gray-800">Information Links</h2>
           <h2 v-else class="mb-4 text-lg font-semibold text-ff-red-01">We don’t have a lot of details for your state or territory just yet, but here’s some general info to help you out.</h2>
         </Transition>
         <Transition>
-          <cv-skeleton-text v-if="status === 'pending'"/>
+          <div class="skeleton h-4 w-full" v-if="status === 'pending'"/>
           <ul v-else class="space-y-3">
             <li v-for="info in infoLinks" :key="info.title" class="flex items-center gap-2">
               <component :is="info.icon" class="size-5 text-blue-500" />
@@ -131,24 +132,9 @@ const faqs = computed(() => [
         <h1 class="mb-6 text-2xl font-bold text-gray-900">Frequently Asked Questions</h1>
 
         <Transition>
-          <cv-skeleton-text v-if="status === 'pending'"/>
+          <div class="skeleton h-4 w-full" v-if="status === 'pending'"/>
           <div v-else class="space-y-4">
-            <details
-                v-for="faq in faqs"
-                :key="faq.question"
-                class="group rounded-lg border border-solid border-carbon-gray-100 p-4"
-            >
-              <summary class="flex cursor-pointer items-center gap-2 font-semibold text-gray-800 group-open:text-blue-600">
-                <component :is="faq.icon" class="size-5 text-blue-500" />
-                {{ faq.question }}
-              </summary>
-              <div>
-                <p class="mt-2 text-gray-600">
-                  {{ faq.answer }}
-                </p>
-                <a v-if="faq.link" :href="faq.link" target="_blank" class="text-blue-600 hover:underline">More information</a>
-              </div>
-            </details>
+            <JourneyFAQ :faqs="faqs"/>
           </div>
         </Transition>
       </section>
@@ -156,9 +142,6 @@ const faqs = computed(() => [
   </div>
 </template>
 <style scoped lang="css">
-::v-deep(.bx--select .bx--label) {
- @apply text-carbon-gray-100
-}
 .v-enter-active,
 .v-leave-active {
   transition: opacity 0.5s ease;

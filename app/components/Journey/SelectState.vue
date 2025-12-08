@@ -12,30 +12,23 @@ const options = computed(() => {
     };
   });
 });
-
-function onChange(val) {
-  const location = usaStates.find(s => s.region_code === val);
-  if (location) usaState.value = location.region_code;
-}
 </script>
 
 <template>
   <ClientOnly>
     <div class="usa-state">
-      <cv-select
-        :label="$t('journeyPageElectionStateSwitch')"
-        :value="usaState"
-        size="sm"
-        @change="onChange"
-      >
-        <cv-select-option
-          v-for="opt in options"
-          :key="`select-${opt.value}`"
-          :value="opt.value"
+      <fieldset class="fieldset">
+        <legend class="fieldset-legend">{{ $t('journeyPageElectionStateSwitch') }}</legend>
+        <select
+            id="state-select"
+            v-model="usaState"
+            class="select select-sm w-full"
         >
-          {{ opt.label }}
-        </cv-select-option>
-      </cv-select>
+          <option v-for="opt in options" :key="`select-${opt.value}`" :value="opt.value">
+            {{ opt.label }}
+          </option>
+        </select>
+      </fieldset>
     </div>
   </ClientOnly>
 </template>

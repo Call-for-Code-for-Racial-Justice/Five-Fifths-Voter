@@ -1,6 +1,6 @@
 <script setup>
 definePageMeta({
-  layout: "special",
+  shrinkingBanner: true,
 });
 
 const topSectionIsVisible = ref(true);
@@ -19,7 +19,6 @@ const navSection = computed(() => {
   <div
     class="relative"
   >
-    <HomeHeader :nav-section="navSection"/>
     <HomeTopSection @visibility-change="(isVisible) => topSectionIsVisible=isVisible"/>
     <HomeMissionSection @visibility-change="(isVisible) => missionSectionIsVisible=isVisible"/>
     <HomeValuesSection @visibility-change="(isVisible) => valuesSectionIsVisible=isVisible"/>

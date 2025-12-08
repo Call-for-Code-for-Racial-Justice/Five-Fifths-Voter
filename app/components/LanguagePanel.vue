@@ -1,4 +1,6 @@
 <script setup>
+import {Languages} from "lucide-vue-next";
+
 defineProps({
   headerSize: { type: String, default: "thin" },
 });
@@ -21,27 +23,13 @@ const availableLocales = computed(() => {
 });
 </script>
 <template>
-  <cv-header-panel
-    id="language-panel"
-    :class="{
-      '-mt-4': headerSize === 'thin',
-      'mt-12': headerSize === 'thick',
-    }"
-  >
-    <cv-switcher>
-      <cv-switcher-item
-        v-for="entry in availableLocales"
-        :key="entry.title"
-      >
-        <cv-switcher-item-link
-          :id="`language-${entry.language}`"
-          :selected="entry.language === locale"
-          :class="{ 'bg-ff-purple-02!': entry.language === locale }"
-          @click="changeLocale(entry.language)"
-        >
-          {{ entry.title }}
-        </cv-switcher-item-link>
-      </cv-switcher-item>
-    </cv-switcher>
-  </cv-header-panel>
+  <div class="dropdown">
+    <div tabindex="0" role="button" class="btn btn-ghost btn-square"> <Languages /></div>
+    <ul tabindex="-1" class="dropdown-content menu text-base-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+      <li v-for="entry in availableLocales" :key="entry.title" @click="changeLocale(entry.language)"
+          :class="{ 'menu-active': entry.language === locale }">
+        <a>{{ entry.title }}</a>
+      </li>
+    </ul>
+  </div>
 </template>

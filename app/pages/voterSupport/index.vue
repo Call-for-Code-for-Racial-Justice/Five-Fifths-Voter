@@ -6,12 +6,9 @@
     <PageTitle>
       {{ $t("supportTitle") }}
     </PageTitle>
-    <cv-grid :full-width="true">
-      <cv-row>
-        <cv-column
-          :sm="4"
-          :lg="8"
-        >
+    <div>
+      <div class="flex">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <VoterSupportLink
             href="https://www.empowerline.org/services/transportation-options/"
           >
@@ -50,18 +47,15 @@
           >
             {{ $t("supportLA_2") }} &rarr;
           </VoterSupportLink>
-        </cv-column>
-        <cv-column
-          :sm="4"
-          :lg="8"
-        >
+        </div>
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <img
             class="side-image"
             alt=""
             src="../../assets/images/support-page-father-baby-image-1.jpg"
           >
-        </cv-column>
-      </cv-row>
-    </cv-grid>
+        </div>
+      </div>
+    </div>
   </PageInset>
 </template>

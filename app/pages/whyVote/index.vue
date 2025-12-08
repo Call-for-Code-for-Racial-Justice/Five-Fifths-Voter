@@ -5,12 +5,9 @@
     <PageTitle>
       {{ $t("whyVotePageTitle") }}
     </PageTitle>
-    <cv-grid :full-width="true">
-      <cv-row>
-        <cv-column
-          :sm="4"
-          :lg="8"
-        >
+    <div>
+      <div class="flex">
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <div class="mb-2 text-heading-04">
             {{ $t("whyVotePageSubTitle") }}
           </div>
@@ -23,18 +20,15 @@
             <br><br>
             <MarkDown :content="$t('whyVotePageQuote')" />
           </p>
-        </cv-column>
-        <cv-column
-          :sm="4"
-          :lg="8"
-        >
+        </div>
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <img
             class="side-image"
             alt=""
             src="../../assets/images/why-vote-page-father-daughter-image-1.jpg"
           >
-        </cv-column>
-      </cv-row>
-    </cv-grid>
+        </div>
+      </div>
+    </div>
   </PageInset>
 </template>
