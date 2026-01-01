@@ -103,12 +103,12 @@ const faqs = computed<FAQ[]>(() => [
       <!-- Sidebar: Info Links -->
       <aside class="rounded-lg bg-white p-4 shadow-md lg:col-span-1">
         <Transition>
-          <div class="skeleton h-4 w-full" v-if="status === 'pending'"/>
+          <div v-if="status === 'pending'" class="skeleton h-4 w-full"/>
           <h2 v-else-if="content" class="mb-4 text-xl font-semibold text-gray-800">Information Links</h2>
           <h2 v-else class="mb-4 text-lg font-semibold text-ff-red-01">We don’t have a lot of details for your state or territory just yet, but here’s some general info to help you out.</h2>
         </Transition>
         <Transition>
-          <div class="skeleton h-4 w-full" v-if="status === 'pending'"/>
+          <div v-if="status === 'pending'" class="skeleton h-4 w-full"/>
           <ul v-else class="space-y-3">
             <li v-for="info in infoLinks" :key="info.title" class="flex items-center gap-2">
               <component :is="info.icon" class="size-5 text-primary" />
@@ -131,7 +131,7 @@ const faqs = computed<FAQ[]>(() => [
         <h1 class="mb-6 text-2xl font-bold text-gray-900">Frequently Asked Questions</h1>
 
         <Transition>
-          <div class="skeleton h-4 w-full" v-if="status === 'pending'"/>
+          <div v-if="status === 'pending'" class="skeleton h-4 w-full"/>
           <div v-else class="space-y-4">
             <JourneyFAQ :faqs="faqs"/>
           </div>

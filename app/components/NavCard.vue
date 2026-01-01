@@ -1,4 +1,6 @@
 <script setup>
+import { CheckCircle } from "lucide-vue-next";
+
 defineProps({
   title: { type: String, required: true },
   imageSrc: { type: String, required: true },
@@ -9,17 +11,25 @@ defineProps({
 </script>
 
 <template>
-  <div class="indicator">
-    <span class="indicator-item badge badge-primary">{{ checked ? 'done' : 'no done' }}</span>
-    <NuxtLink class="card" :to="to">
-      <figure>
-        <img
-            :src="imageSrc"
-            :alt="title">
-      </figure>
+  <NuxtLink :to="to" class="hover-3d mt-4">
+    <!-- content -->
+    <div class="card max-w-100 bg-base-300">
       <div class="card-body">
-        <h1 class="card-title">{{ title }}</h1>
+        <img :src="imageSrc" :alt="title" class="rounded-2xl">
+        <p class="font-semibold flex items-center">
+          <span v-if="checked" class="mr-2 text-ff-green-01"><CheckCircle class="size-4"/></span>
+          {{ title }}
+        </p>
       </div>
-    </NuxtLink>
-  </div>
+    </div>
+    <!-- 8 empty divs needed for the 3D effect -->
+    <div/>
+    <div/>
+    <div/>
+    <div/>
+    <div/>
+    <div/>
+    <div/>
+    <div/>
+  </NuxtLink>
 </template>

@@ -113,9 +113,7 @@ function scrollToId(id) {
         >
       </NuxtLink>
     </div>
-    <div class="navbar-center">
-
-    </div>
+    <div class="navbar-center"/>
 
     <!-- RIGHT: profile mask group -->
     <div class="navbar-end relative h-full flex items-end">

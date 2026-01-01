@@ -25,7 +25,7 @@ watchEffect(() => {
     </h1>
     <div class="space-y-3">
       <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-        <input type="radio" name="values-accordion" checked="checked" />
+        <input type="radio" name="values-accordion" checked="checked" >
         <div class="collapse-title sm:text-lg font-semibold">
           {{ $t('landingPageEdu') }}
         </div>
@@ -41,7 +41,7 @@ watchEffect(() => {
       </div>
 
       <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-        <input type="radio" name="values-accordion" />
+        <input type="radio" name="values-accordion" >
         <div class="collapse-title sm:text-lg font-semibold">
           {{ $t('landingPageEmpower') }}
         </div>
@@ -57,7 +57,7 @@ watchEffect(() => {
       </div>
 
       <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-        <input type="radio" name="values-accordion" />
+        <input type="radio" name="values-accordion" >
         <div class="collapse-title sm:text-lg font-semibold">
           {{ $t('landingPageEnable') }}
         </div>
