@@ -1,6 +1,6 @@
 <script setup>
 definePageMeta({
-  layout: "journey",
+  subnavigation: "journey",
 });
 </script>
 

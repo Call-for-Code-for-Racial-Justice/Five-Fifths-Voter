@@ -1,5 +1,10 @@
-<script setup>
+<script setup lang="ts">
 import { CheckCircle, Circle, CircleDot } from "lucide-vue-next";
+
+defineProps<{
+  mobile?: boolean
+}>();
+
 const route = useRoute();
 
 const { t } = useI18n();
@@ -29,7 +34,7 @@ const currentSub = computed(() => {
   return route.path.split("/").slice(-1)[0];
 });
 
-const isCurrentStep = step => step.page === currentSub.value;
+const isCurrentStep = (step: { page: string }) => step.page === currentSub.value;
 
 const deliveredBallot = useLocalStorage(LOCAL_STORAGE_KEYS.VOTER_DELIVERED_BALLOT, false);
 const isInformed = useLocalStorage(LOCAL_STORAGE_KEYS.VOTER_INFORMED, false);
@@ -37,7 +42,7 @@ const requestedBallot = useLocalStorage(LOCAL_STORAGE_KEYS.VOTER_REQUESTED_BALLO
 const isRegistered = useLocalStorage(LOCAL_STORAGE_KEYS.VOTER_REGISTERED, false);
 const iVoted = useLocalStorage(LOCAL_STORAGE_KEYS.VOTER_VOTED, false);
 
-function isCompleted(step) {
+function isCompleted(step: { page: string }) {
   switch (step.page) {
     case "register":
       return isRegistered.value;
@@ -56,8 +61,22 @@ function isCompleted(step) {
 </script>
 
 <template>
-  <div class="fixed left-1 top-12 z-50 hidden w-full bg-ff-purple-01 md:block">
-  <nav class="flex gap-2 overflow-x-auto border-b border-gray-200 p-2 sm:gap-4 sm:px-4">
+  <nav v-if="mobile">
+    <ul>
+      <li v-for="(step) in subPages" :key="step.page">
+        <NuxtLink
+            :to="`/journey/${step.page}`"
+            class="text-xs"
+            :class="{'menu-active': isCurrentStep(step)}"
+        >
+          <CheckCircle v-if="isCompleted(step)" class="size-4 text-ff-green-01" />
+          <Circle v-else class="size-4 text-gray-400" />
+          <span>{{ step.label }}</span>
+        </NuxtLink>
+      </li>
+    </ul>
+  </nav>
+  <nav v-else class="flex gap-2 overflow-x-auto p-2 sm:gap-4 sm:px-4">
     <template v-for="(step) in subPages" :key="step.page">
       <NuxtLink
           :to="`/journey/${step.page}`"
@@ -74,5 +93,4 @@ function isCompleted(step) {
       </NuxtLink>
     </template>
   </nav>
-  </div>
 </template>

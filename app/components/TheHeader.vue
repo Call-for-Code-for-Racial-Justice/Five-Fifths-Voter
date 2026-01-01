@@ -4,12 +4,9 @@ import facesUrl from "assets/images/mask-group.svg";
 import { computed, ref, watch } from "vue";
 import { useDebounceFn, useMediaQuery, useScroll } from "@vueuse/core";
 import { Menu } from "lucide-vue-next";
-import { InstagramIcon, GitHubIcon } from "vue3-simple-icons";
+import { GitHubIcon, InstagramIcon } from "vue3-simple-icons";
 import { useRoute } from "vue-router";
 
-defineProps({
-  navSection: { type: String, required: true },
-});
 // Constants
 const route = useRoute();
 const minHeight = 64;
@@ -75,6 +72,10 @@ watch(targetHeight, (h) => {
 });
 
 const isHome = computed(() => route.name === "index");
+watch(() => route.name, () => {
+  document.activeElement.blur(); // close nav menu
+});
+
 function scrollToId(id) {
   document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   document.activeElement.blur();
@@ -89,16 +90,41 @@ function scrollToId(id) {
     <!-- LEFT: hamburger + Five Fifths Voter text -->
     <div class="navbar-start gap-4 pl-2 items-start">
       <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost btn-square"> <Menu /></div>
-        <ul v-if="isHome" tabindex="-1" class="dropdown-content menu text-base-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-square">
+          <Menu/>
+        </div>
+        <ul
+            v-if="isHome" tabindex="-1"
+            class="dropdown-content menu text-base-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
           <li @click="scrollToId('top')"><a>{{ $t("appHeaderHome") }}</a></li>
           <li @click="scrollToId('mission')"><a>{{ $t("landingPageMain") }}</a></li>
           <li @click="scrollToId('values')"><a>{{ $t("appHeaderOurValues") }}</a></li>
         </ul>
-        <ul v-else tabindex="-1" class="dropdown-content menu text-base-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-          <li><NuxtLink to="/journey">{{ $t("appHeaderVoterJourney") }}</NuxtLink></li>
-          <li><NuxtLink to="/voterSupport">{{ $t("appHeaderVoterSupport") }}</NuxtLink></li>
-          <li><NuxtLink to="/whyVote">{{ $t("appHeaderWhyVote") }}</NuxtLink></li>
+        <ul
+            v-else tabindex="-1"
+            class="dropdown-content menu text-base-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+          <li>
+            <NuxtLink
+to="/journey"
+                      :class="{'menu-active': $route.name === 'journey'}">
+              {{ $t("appHeaderVoterJourney") }}
+            </NuxtLink>
+            <JourneySubNav :mobile="true"/>
+          </li>
+          <li>
+            <NuxtLink
+to="/voterSupport"
+                      :class="{'menu-active': $route.name === 'voterSupport'}">
+              {{ $t("appHeaderVoterSupport") }}
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+                      to="/whyVote"
+                      :class="{'menu-active': $route.name === 'whyVote'}">
+              {{ $t("appHeaderWhyVote") }}
+            </NuxtLink>
+          </li>
         </ul>
       </div>
 
@@ -113,12 +139,17 @@ function scrollToId(id) {
         >
       </NuxtLink>
     </div>
-    <div class="navbar-center"/>
+    <div class="navbar-center hidden lg:block">
+      <Transition>
+        <JourneySubNav v-if="route.meta.subnavigation === 'journey'"/>
+      </Transition>
+    </div>
 
     <!-- RIGHT: profile mask group -->
-    <div class="navbar-end relative h-full flex items-end">
+    <div class="navbar-end relative h-full flex items-end gap-1">
       <a
-          class="btn btn-ghost btn-square self-start" href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
+          class="btn btn-ghost btn-square self-start btn-xs md:btn-md"
+          href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Five Fifths Voter on instagram - link opens in a new window"
@@ -126,7 +157,7 @@ function scrollToId(id) {
         <InstagramIcon/>
       </a>
       <a
-          class="btn btn-ghost btn-square self-start"
+          class="btn btn-ghost btn-square btn-xs md:btn-md self-start"
           href="https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter"
           target="_blank"
           rel="noopener noreferrer"
@@ -148,3 +179,14 @@ function scrollToId(id) {
     </div>
   </nav>
 </template>
+<style lang="css" scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>
