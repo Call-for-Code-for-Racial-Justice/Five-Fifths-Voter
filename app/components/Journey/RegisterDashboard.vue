@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { AlertCircle, CalendarCheck, Edit, FileText, Mail, RefreshCcw, Scale, Search } from "lucide-vue-next";
+import type { FAQ } from "~/types/faq";
 
 const isRegistered = useLocalStorage(LOCAL_STORAGE_KEYS.VOTER_REGISTERED, false);
 const usaState = useLocalStorage(LOCAL_STORAGE_KEYS.USA_STATE, "");
@@ -28,10 +29,10 @@ const changePartyLink = computed(() => content.value?.register?.change_party_lin
 const infoLink = computed(() => content.value?.register?.more_link ?? "https://www.usa.gov/voter-registration");
 const felonLink = computed(() => content.value?.register?.felon_link ?? "https://www.nationalvotinginprison.org/#state-laws");
 
-function yesNoMaybe(val: string | boolean | undefined, yes: string, no: string, maybe: string | undefined) {
+function yesNoMaybe(val: string | boolean | undefined, yes: string, no: string, maybe?: string) {
   if (val === true) return yes;
   if (val === false) return no;
-  return maybe;
+  return maybe || "";
 }
 
 const infoLinks = computed(() => [
@@ -61,7 +62,7 @@ const infoLinks = computed(() => [
     icon: FileText,
   },
 ].filter(info => info.link));
-const faqs = computed<FAQ[]>(() => [
+const faqs: ComputedRef<FAQ[]> = computed(() => [
   {
     question: "Can I register to vote if I am under 18?",
     answer: yesNoMaybe(content.value?.register.under18,
@@ -101,34 +102,36 @@ const faqs = computed<FAQ[]>(() => [
 
     <div class="mx-auto grid max-w-6xl grid-cols-1 gap-6 lg:grid-cols-3">
       <!-- Sidebar: Info Links -->
-      <aside class="rounded-lg bg-white p-4 shadow-md lg:col-span-1">
+      <aside class="rounded-lg bg-base-300 p-4 shadow-md lg:col-span-1">
         <Transition>
           <div v-if="status === 'pending'" class="skeleton h-4 w-full"/>
-          <h2 v-else-if="content" class="mb-4 text-xl font-semibold text-gray-800">Information Links</h2>
-          <h2 v-else class="mb-4 text-lg font-semibold text-ff-red-01">We don’t have a lot of details for your state or territory just yet, but here’s some general info to help you out.</h2>
+          <h2 v-else-if="content" class="mb-4 text-xl font-semibold">Information Links</h2>
+          <h2 v-else class="mb-4 font-semibold text-error">We don’t have a lot of details for your state or territory just yet, but here’s some general info to help you out.</h2>
         </Transition>
         <Transition>
           <div v-if="status === 'pending'" class="skeleton h-4 w-full"/>
           <ul v-else class="space-y-3">
             <li v-for="info in infoLinks" :key="info.title" class="flex items-center gap-2">
               <component :is="info.icon" class="size-5 text-primary" />
-              <a :href="info.link" target="_blank" class="text-blue-600 hover:underline">{{ info.title }}</a>
+              <a :href="info.link" target="_blank" class="link link-hover">{{ info.title }}</a>
             </li>
           </ul>
         </Transition>
       </aside>
 
       <!-- Main Content: FAQs -->
-      <section class="rounded-lg bg-white p-4 shadow-md lg:col-span-2">
+      <section class="rounded-lg bg-base-300 p-4 shadow-md lg:col-span-2">
         <div class="mb-6 space-y-4">
           <JourneySelectState/>
           <div class="flex items-center">
-            <input id="registered" v-model="isRegistered" type="checkbox" class="size-4 rounded-sm border-gray-300 text-blue-600 focus:ring-blue-500" >
-            <label for="registered" class="ml-2 block text-sm text-gray-700">I am already registered to vote</label>
+            <label class="label">
+              <input id="registered" v-model="isRegistered" type="checkbox" class="checkbox checkbox-primary" >
+              I am already registered to vote
+            </label>
           </div>
         </div>
 
-        <h1 class="mb-6 text-2xl font-bold text-gray-900">Frequently Asked Questions</h1>
+        <h1 class="mb-6 text-2xl font-semibold">Frequently Asked Questions</h1>
 
         <Transition>
           <div v-if="status === 'pending'" class="skeleton h-4 w-full"/>

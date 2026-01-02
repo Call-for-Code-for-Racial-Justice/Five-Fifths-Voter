@@ -11,6 +11,7 @@ import {
   Vote,
 } from "lucide-vue-next";
 import JourneyFAQ from "~/components/Journey/JourneyFAQ.vue";
+import type { FAQ } from "~/types/faq";
 
 const deliveredBallot = useLocalStorage(LOCAL_STORAGE_KEYS.VOTER_DELIVERED_BALLOT, false);
 const usaState = useLocalStorage(LOCAL_STORAGE_KEYS.USA_STATE, "");
@@ -37,7 +38,7 @@ const infoLink = computed(() => content.value?.mail_in?.more_link ?? "https://ww
 function yesNoMaybe(val: string | boolean | undefined, yes: string, no: string, maybe: string | undefined) {
   if (val === true) return yes;
   if (val === false) return no;
-  return maybe;
+  return maybe || "";
 }
 
 const infoLinks = computed(() => [
@@ -67,7 +68,7 @@ const infoLinks = computed(() => [
     icon: FileText,
   },
 ].filter(info => info.link));
-const faqs = computed(() => [
+const faqs: ComputedRef<FAQ[]> = computed(() => [
   {
     question: t("absenteeDropFaq"),
     answer: yesNoMaybe(content.value?.mail_in?.dropoff,
@@ -110,34 +111,36 @@ const faqs = computed(() => [
 
     <div class="mx-auto grid max-w-6xl grid-cols-1 gap-6 lg:grid-cols-3">
       <!-- Sidebar: Info Links -->
-      <aside class="rounded-lg bg-white p-4 shadow-md lg:col-span-1">
+      <aside class="rounded-lg bg-base-300 p-4 shadow-md lg:col-span-1">
         <Transition>
           <div v-if="status === 'pending'" class="skeleton h-4 w-full"/>
-          <h2 v-else-if="content" class="mb-4 text-xl font-semibold text-gray-800">Information Links</h2>
-          <h2 v-else class="mb-4 text-lg font-semibold text-ff-red-01">We don’t have a lot of details for your state or territory just yet, but here’s some general info to help you out.</h2>
+          <h2 v-else-if="content" class="mb-4 text-xl font-semibold">Information Links</h2>
+          <h2 v-else class="mb-4 font-semibold text-error">We don’t have a lot of details for your state or territory just yet, but here’s some general info to help you out.</h2>
         </Transition>
         <Transition>
           <div v-if="status === 'pending'" class="skeleton h-4 w-full"/>
           <ul v-else class="space-y-3">
             <li v-for="info in infoLinks" :key="info.title" class="flex items-center gap-2">
-              <component :is="info.icon" class="size-5 text-blue-500" />
-              <a :href="info.link" target="_blank" class="text-blue-600 hover:underline">{{ info.title }}</a>
+              <component :is="info.icon" class="size-5 text-primary" />
+              <a :href="info.link" target="_blank" class="link link-hover">{{ info.title }}</a>
             </li>
           </ul>
         </Transition>
       </aside>
 
       <!-- Main Content: FAQs -->
-      <section class="rounded-lg bg-white p-4 shadow-md lg:col-span-2">
+      <section class="rounded-lg bg-base-300 p-4 shadow-md lg:col-span-2">
         <div class="mb-6 space-y-4">
           <JourneySelectState/>
           <div class="flex items-center">
-            <input id="delivered-ballot" v-model="deliveredBallot" type="checkbox" class="size-4 rounded-sm border-gray-300 text-blue-600 focus:ring-blue-500" >
-            <label for="delivered-ballot" class="ml-2 block text-sm text-gray-700">I dropped off my ballot or voted early</label>
+            <label class="label">
+              <input id="delivered-ballot" v-model="deliveredBallot" type="checkbox" class="checkbox checkbox-primary" >
+              I dropped off my ballot or voted early
+            </label>
           </div>
         </div>
 
-        <h1 class="mb-6 text-2xl font-bold text-gray-900">Frequently Asked Questions</h1>
+        <h1 class="mb-6 text-2xl font-semibold">Frequently Asked Questions</h1>
 
         <Transition>
           <div v-if="status === 'pending'" class="skeleton h-4 w-full"/>

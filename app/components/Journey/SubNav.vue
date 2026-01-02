@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CheckCircle, Circle, CircleDot } from "lucide-vue-next";
+import { CheckCircle, Circle } from "lucide-vue-next";
 
 defineProps<{
   mobile?: boolean
@@ -69,8 +69,8 @@ function isCompleted(step: { page: string }) {
             class="text-xs"
             :class="{'menu-active': isCurrentStep(step)}"
         >
-          <CheckCircle v-if="isCompleted(step)" class="size-4 text-ff-green-01" />
-          <Circle v-else class="size-4 text-gray-400" />
+          <CheckCircle v-if="isCompleted(step)" class="size-4 text-success" />
+          <Circle v-else class="size-4" />
           <span>{{ step.label }}</span>
         </NuxtLink>
       </li>
@@ -86,8 +86,7 @@ function isCompleted(step: { page: string }) {
           'menu-active': isCurrentStep(step),
         }"
       >
-        <CircleDot v-if="isCurrentStep(step)" class="size-4" />
-        <CheckCircle v-else-if="isCompleted(step)" class="size-4 text-ff-green-01" />
+        <CheckCircle v-if="isCompleted(step)" class="size-4 p-0.5 rounded-full bg-success text-success-content" />
         <Circle v-else class="size-4" />
         <span>{{ step.label }}</span>
       </NuxtLink>

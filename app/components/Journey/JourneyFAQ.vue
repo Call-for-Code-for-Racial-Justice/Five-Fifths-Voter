@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Faq } from "~/types/faq";
+import type { FAQ } from "~/types/faq";
 defineProps<{
-  faqs: Faq[]
+  faqs: FAQ[]
 }>();
 const id = useId();
 </script>
@@ -13,7 +13,7 @@ const id = useId();
       :name="`faq-${id}`"
   >
     <summary class="collapse-title font-semibold">
-      <component :is="faq.icon" class="size-5 text-primary"/>
+      <component :is="faq.icon" class="size-5 text-primary inline-block mr-2"/>
       {{ faq.question }}
     </summary>
     <div class="collapse-content text-sm">

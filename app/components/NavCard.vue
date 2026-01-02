@@ -17,7 +17,7 @@ defineProps({
       <div class="card-body">
         <img :src="imageSrc" :alt="title" class="rounded-2xl">
         <p class="font-semibold flex items-center">
-          <span v-if="checked" class="mr-2 text-ff-green-01"><CheckCircle class="size-4"/></span>
+          <span v-if="checked" class="mr-2"><CheckCircle class="rounded-full bg-success text-success-content size-5 p-0.5"/></span>
           {{ title }}
         </p>
       </div>
