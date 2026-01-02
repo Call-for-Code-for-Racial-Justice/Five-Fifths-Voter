@@ -76,21 +76,22 @@ function isCompleted(step: { page: string }) {
       </li>
     </ul>
   </nav>
-  <nav v-else class="flex gap-2 overflow-x-auto p-2 sm:gap-4 sm:px-4">
-    <template v-for="(step) in subPages" :key="step.page">
+  <nav v-else>
+    <ul class="menu menu-horizontal">
+    <li v-for="(step) in subPages" :key="step.page">
       <NuxtLink
           :to="`/journey/${step.page}`"
-          class="flex items-center gap-1 whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors duration-500"
+          class="transition-colors duration-100"
           :class="{
-          'bg-ff-purple-02 font-bold text-white': isCurrentStep(step),
-          'bg-gray-100 text-gray-800 hover:bg-gray-200': !isCurrentStep(step)
+          'menu-active': isCurrentStep(step),
         }"
       >
-        <CircleDot v-if="isCurrentStep(step)" class="size-4 text-white" />
+        <CircleDot v-if="isCurrentStep(step)" class="size-4" />
         <CheckCircle v-else-if="isCompleted(step)" class="size-4 text-ff-green-01" />
-        <Circle v-else class="size-4 text-gray-400" />
+        <Circle v-else class="size-4" />
         <span>{{ step.label }}</span>
       </NuxtLink>
-    </template>
+    </li>
+    </ul>
   </nav>
 </template>

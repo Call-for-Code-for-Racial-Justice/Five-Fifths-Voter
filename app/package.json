@@ -48,6 +48,6 @@
   "version": "1.0.0",
   "license": "ISC",
   "lint-staged": {
-    "app/**/*.{js,vue}": "eslint"
+    "**/*.{js,vue}": "eslint"
   }
 }

@@ -27,10 +27,10 @@ const idInfoLink = computed(() => election.value?.voting?.idUrl);
 const infoLink = computed(() => election.value?.website ?? "https://www.vote.org/");
 const ballotpediaLink = computed(() => election.value?.voting?.ballotpediaUrl ?? "https://ballotpedia.org/Elections_calendar");
 
-function yesNoMaybe(val: string | boolean | undefined, yes: string = t("yes"), no: string = t("no"), maybe: string | undefined) {
-  if (val === true) return yes;
-  if (val === false) return no;
-  return maybe;
+function yesNoMaybe(val: string | boolean | undefined) {
+  if (val === true) return t("yes");
+  if (val === false) return t("no");
+  return t("maybe");
 }
 
 const infoLinks = computed(() => [
@@ -58,81 +58,102 @@ const infoLinks = computed(() => [
 
     <div class="mx-auto grid max-w-6xl grid-cols-1 gap-6 lg:grid-cols-3">
       <!-- Sidebar: Info Links -->
-      <aside class="rounded-lg bg-white p-4 shadow-md lg:col-span-1">
-        <h2 class="mb-4 text-xl font-semibold text-gray-800">Information Links</h2>
+      <aside class="rounded-lg bg-base-300 p-4 shadow-md lg:col-span-1">
+        <h2 class="mb-4 text-xl font-semibold text-base-content">Information Links</h2>
         <Transition>
           <div v-if="status === 'pending'" class="skeleton h-4 w-full"/>
           <ul v-else class="space-y-3">
             <li v-for="info in infoLinks" :key="info.title" class="flex items-center gap-2">
-              <component :is="info.icon" class="size-5 text-blue-500" />
-              <a :href="info.link" target="_blank" class="text-blue-600 hover:underline">{{ info.title }}</a>
+              <component :is="info.icon" class="size-5 text-primary" />
+              <a :href="info.link" target="_blank" class="link link-hover">{{ info.title }}</a>
             </li>
           </ul>
         </Transition>
       </aside>
 
       <!-- Main election -->
-      <section class="rounded-lg bg-white p-4 shadow-md lg:col-span-2">
+      <section class="rounded-lg bg-base-300 p-4 shadow-md lg:col-span-2">
         <div class="mb-6 space-y-4">
           <JourneySelectState/>
           <div v-if="election" class="flex items-center">
-            <input id="informed" v-model="isInformed" type="checkbox" class="size-4 rounded-sm border-gray-300 text-blue-600 focus:ring-blue-500" >
-            <label for="informed" class="ml-2 block text-sm text-gray-700">I am informed about the next election</label>
+            <label class="label">
+              <input id="informed" v-model="isInformed" type="checkbox" class="checkbox checkbox-primary" >
+              I am informed about the next election
+            </label>
           </div>
         </div>
 
-        <h1 class="mb-6 text-2xl font-bold text-ff-purple-01">Upcoming election</h1>
+        <h1 class="mb-6 text-2xl font-semibold text-base-content">Upcoming election</h1>
 
         <Transition>
           <div v-if="status === 'pending'" class="skeleton h-4 w-full"/>
-          <div v-else class="space-y-4 text-base-200">
-            <div v-if="election">
-              <p class="mb-4 text-xl">{{ election.description }}</p>
+          <div v-else class="space-y-4 text-base-content">
+            <div v-if="election" class="grid space-y-4">
+              <p class="text-xl">{{ election.description }}</p>
 
-              <div class="mb-6">
-                <p><strong>Date:</strong> {{ niceIsoDate(election.date) }} ⟶ {{ daysLeftIso(election.date)}}</p>
-                <a :href="election.website" target="_blank" class="text-blue-600 hover:underline">Official Website</a>
+              <div>
+                <JourneyInfoField label="Date" :value="`${niceIsoDate(election.date) } ⟶ ${ daysLeftIso(election.date)}`" />
+                <a :href="election.website" target="_blank" class="link link-primary link-hover">Official Website</a>
               </div>
 
-              <h2 class="mb-2 text-xl font-semibold text-gray-800">Voting Options</h2>
-              <ul class="mb-4 space-y-1">
-                <li><strong>In-Person Voting Available:</strong> {{ yesNoMaybe(election.voting.inPersonVotingAvailable) }}</li>
-                <li><strong>Mail Ballots Sent Automatically:</strong> {{ yesNoMaybe(election.voting.mailBallotsSentAutomatically) }}</li>
-              </ul>
+              <h2 class="text-xl font-semibold">Voting Options</h2>
+              <div class="grid space-y-1">
+                <JourneyInfoField
+                  label="In-Person Voting Available"
+                  :value="yesNoMaybe(election.voting.inPersonVotingAvailable)" />
+
+                <JourneyInfoField
+                  label="Mail Ballots Sent Automatically"
+                  :value="yesNoMaybe(election.voting.mailBallotsSentAutomatically)" />
+              </div>
 
               <!-- early voting -->
-              <div class="mb-6">
-                <h3 class="font-semibold text-ff-purple-01">Early Voting</h3>
-                <p><strong>Start:</strong> {{ niceIsoDate(election.voting.early.startDate) }}  ⟶ {{ daysLeftIso(election.voting.early.startDate)}} </p>
-                <p><strong>End:</strong> {{ niceIsoDate(election.voting.early.endDate) }}  ⟶ {{ daysLeftIso(election.voting.early.endDate)}}</p>
-                <p><strong>Varies by location:</strong> {{ yesNoMaybe(election.voting.early.varies) }}</p>
-                <a :href="election.voting.early.url" target="_blank" class="text-blue-600 hover:underline">More Info</a>
+              <div class="grid space-y-1">
+                <h3 class="font-semibold">Early Voting</h3>
+                <JourneyInfoField
+                    label="Start"
+                    :value="`${niceIsoDate(election.voting.early.startDate) } ⟶ ${ daysLeftIso(election.voting.early.startDate)}`" />
+                <JourneyInfoField
+                    label="End"
+                    :value="`${niceIsoDate(election.voting.early.endDate) } ⟶ ${ daysLeftIso(election.voting.early.endDate)}`" />
+                <JourneyInfoField
+                    label="Varies by location"
+                    :value="yesNoMaybe(election.voting.early.varies)" />
+                <a :href="election.voting.early.url" target="_blank" class="link link-primary link-hover">More Info</a>
               </div>
 
               <!-- by mail -->
-              <div class="mb-6">
-                <h3 class="font-semibold text-ff-purple-01">Voting by Mail</h3>
-                <p><strong>ID Instructions:</strong> {{ election.voting.byMail.idInstructions }}</p>
-                <a :href="election.voting.byMail.explainerUrl" target="_blank" class="text-blue-600 hover:underline">View Explainer</a>
-                <p><strong>Ballot request deadline:</strong>
-                  {{ niceIsoDate(election.voting.byMail.deadline.ballotRequest.date) }}
-                  ({{ election.voting.byMail.deadline.ballotRequest.postmarkedOrReceived || 'N/A' }})
-                  ⟶ {{ daysLeftIso(election.voting.byMail.deadline.ballotRequest.date)}}</p>
-                <p><strong>Ballot delivery deadline:</strong> {{ niceIsoDate(election.voting.byMail.deadline.date) }} ({{ election.voting.byMail.deadline.postmarkedOrReceived || 'N/A' }})  ⟶ {{ daysLeftIso(election.voting.byMail.deadline.date)}}</p>
-                <p>{{ election.voting.byMail.deadline.ballotRequest.description }}</p>
+              <div class="grid space-y-1">
+                <h3 class="font-semibold">Voting by Mail</h3>
+                <span class="font-semibold text-sm">ID Instructions:</span>
+                <div class="text-sm">{{ election.voting.byMail.idInstructions }}</div>
+                <a :href="election.voting.byMail.explainerUrl" target="_blank" class="link link-primary link-hover">View Explainer</a>
+                <JourneyInfoField
+                  label="Ballot request deadline"
+                  :value="`${niceIsoDate(election.voting.byMail.deadline.ballotRequest.date) } ⟶ ${ daysLeftIso(election.voting.byMail.deadline.ballotRequest.date)}`"/>
+                <JourneyInfoField
+                  label="(Postmarked or Received)"
+                  :value="election.voting.byMail.deadline.ballotRequest.postmarkedOrReceived || 'N/A'"/>
+                <JourneyInfoField
+                  label="Ballot delivery deadline"
+                  :value="`${niceIsoDate(election.voting.byMail.deadline.date) } ⟶ ${ daysLeftIso(election.voting.byMail.deadline.date)}`"/>
+                <div class="text-sm">{{ election.voting.byMail.deadline.ballotRequest.description }}</div>
               </div>
 
               <!-- in person -->
-              <div class="mb-4">
-                <h3 class="font-semibold text-ff-purple-01">In-Person Voting</h3>
-                <p><strong>ID Required for All Voters:</strong> {{ yesNoMaybe(election.voting.inPerson.idRequiredAllVoters) }}</p>
-                <p v-if="election.voting.inPerson.idInstructions"><strong>ID Instructions:</strong>
+              <div class="grid space-y-1">
+                <h3 class="font-semibold">In-Person Voting</h3>
+                <JourneyInfoField
+                  label="ID Required for All Voters"
+                  :value="yesNoMaybe(election.voting.inPerson.idRequiredAllVoters)"/>
+                <div v-if="election.voting.inPerson.idInstructions" class="text-sm">
+                  <span class="font-semibold">ID Instructions:</span>
                   {{ election.voting.inPerson.idInstructions }}
-                </p>
-                <a v-if="idInfoLink" :href="idInfoLink" target="_blank" class="text-blue-600 hover:underline">More information about IDs</a>
-                <p><strong>Election Day Hours:</strong>
+                </div>
+                <a v-if="idInfoLink" :href="idInfoLink" target="_blank" class="link link-primary link-hover">More information about IDs</a>
+                <div class="text-sm"><span class="font-semibold">Election Day Hours:</span>
                   {{ election.voting.inPerson.electionDay.opening || 'N/A' }} - {{ election.voting.inPerson.electionDay.closing || 'N/A' }}
-                </p>
+                </div>
               </div>
             </div>
             <div v-else class="text-lg">
