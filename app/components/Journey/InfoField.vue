@@ -19,7 +19,7 @@ const displayValue = computed(() =>
       {{ label }}:
     </span>
 
-    <span class="badge badge-secondary badge-md">
+    <span class="badge badge-secondary badge-md h-fit md:h-[unset] text-xs md:text-base">
       {{ displayValue }}
     </span>
   </div>

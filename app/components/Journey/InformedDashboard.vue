@@ -54,11 +54,11 @@ const infoLinks = computed(() => [
 </script>
 
 <template>
-  <div class="p-4 sm:p-6 md:p-8">
+  <div class="mt-2">
 
     <div class="mx-auto grid max-w-6xl grid-cols-1 gap-6 lg:grid-cols-3">
       <!-- Sidebar: Info Links -->
-      <aside class="rounded-lg bg-base-300 p-4 shadow-md lg:col-span-1">
+      <aside class="rounded-lg bg-base-200 p-4 shadow-md lg:col-span-1">
         <h2 class="mb-4 text-xl font-semibold text-base-content">Information Links</h2>
         <Transition>
           <div v-if="status === 'pending'" class="skeleton h-4 w-full"/>
@@ -72,7 +72,7 @@ const infoLinks = computed(() => [
       </aside>
 
       <!-- Main election -->
-      <section class="rounded-lg bg-base-300 p-4 shadow-md lg:col-span-2">
+      <section class="rounded-lg bg-base-200 p-4 shadow-md lg:col-span-2">
         <div class="mb-6 space-y-4">
           <JourneySelectState/>
           <div v-if="election" class="flex items-center">

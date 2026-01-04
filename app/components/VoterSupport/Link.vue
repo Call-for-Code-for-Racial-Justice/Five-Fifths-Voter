@@ -1,4 +1,6 @@
-<script setup>
+<script setup lang="ts">
+import { ExternalLinkIcon } from "lucide-vue-next";
+
 defineProps({
   href: { type: String, required: true },
 });
@@ -6,14 +8,15 @@ defineProps({
 <template>
   <div>
     <a
-      class="link link-hover ff-link mb-2"
+      class="link link-hover mb-2"
       :href="href"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <span class="text-sm text-ff-white-01 md:text-base">
+      <span>
         <slot/>
       </span>
+      <ExternalLinkIcon class="inline-block ml-1 size-4" />
     </a>
   </div>
 </template>
