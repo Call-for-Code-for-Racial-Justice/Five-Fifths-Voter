@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { AlertCircle, CalendarCheck, Edit, FileText, Mail, RefreshCcw, Scale, Search } from "lucide-vue-next";
+import IconYMCA from "~/components/Icon/YMCA.vue";
 import type { FAQ } from "~/types/faq";
 
 const isRegistered = useLocalStorage(LOCAL_STORAGE_KEYS.VOTER_REGISTERED, false);
@@ -60,6 +61,11 @@ const infoLinks = computed(() => [
     title: "Voter registration info",
     link: infoLink.value,
     icon: FileText,
+  },
+  {
+    title: t("registerYouth_2"),
+    link: "https://www.ymcayag.org/vote/",
+    icon: IconYMCA,
   },
 ].filter(info => info.link));
 const faqs: ComputedRef<FAQ[]> = computed(() => [
