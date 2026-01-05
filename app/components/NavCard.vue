@@ -8,10 +8,11 @@ defineProps({
   to: { type: String, required: true },
   checked: { type: Boolean, default: false },
 });
+const id = useId();
 </script>
 
 <template>
-  <NuxtLink :to="to" class="hover-3d mt-4">
+  <NuxtLink :id="`nav-card-${id}`" :to="to" class="hover-3d mt-4">
     <!-- content -->
     <div class="card max-w-100 bg-base-300">
       <div class="card-body">

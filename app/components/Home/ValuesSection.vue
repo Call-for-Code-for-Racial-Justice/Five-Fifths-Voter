@@ -24,12 +24,12 @@ watchEffect(() => {
       {{ $t("appHeaderOurValues") }}
     </h1>
     <div class="space-y-3">
-      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+      <div class="collapse collapse-arrow bg-base-200 border border-base-300">
         <input type="radio" name="values-accordion" checked="checked" >
-        <div class="collapse-title sm:text-lg font-semibold">
+        <div class="collapse-title sm:text-lg font-semibold" aria-controls=item-education>
           {{ $t('landingPageEdu') }}
         </div>
-        <div class="collapse-content text-sm md:text-base">
+        <div id="item-education" class="collapse-content text-sm md:text-base" >
           <div class="mb-4">
             <span class="text-3xl">&#x201c; </span>{{ $t('quoteFrancisBacon') }} &#x2014;
             Francis Bacon
@@ -40,14 +40,14 @@ watchEffect(() => {
         </div>
       </div>
 
-      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-        <input type="radio" name="values-accordion" >
-        <div class="collapse-title sm:text-lg font-semibold">
+      <div class="collapse collapse-arrow bg-base-200 border border-base-300">
+        <input type="radio" name="values-accordion">
+        <div class="collapse-title sm:text-lg font-semibold" aria-controls=item-empower>
           {{ $t('landingPageEmpower') }}
         </div>
         <div class="collapse-content text-sm md:text-base">
           <div class="mb-4">
-            <span class="text-3xl">&#x201c; </span>{{ $t('quoteCharlotteBronte') }} &#x2014;
+            <span id="item-empower" class="text-3xl">&#x201c; </span>{{ $t('quoteCharlotteBronte') }} &#x2014;
             Charlotte Brontë
           </div>
           <div class="w-full text-lg">
@@ -56,14 +56,14 @@ watchEffect(() => {
         </div>
       </div>
 
-      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
-        <input type="radio" name="values-accordion" >
-        <div class="collapse-title sm:text-lg font-semibold">
+      <div class="collapse collapse-arrow bg-base-200 border border-base-300">
+        <input type="radio" name="values-accordion">
+        <div class="collapse-title sm:text-lg font-semibold" aria-controls=item-enable>
           {{ $t('landingPageEnable') }}
         </div>
         <div class="collapse-content text-sm md:text-base">
           <div class="mb-4">
-            <span class="text-3xl">&#x201c; </span>{{ $t('quotePaulRepetto') }} &#x2014;
+            <span id="item-enable" class="text-3xl">&#x201c; </span>{{ $t('quotePaulRepetto') }} &#x2014;
             Paul Repetto
           </div>
           <div class="w-full text-lg">

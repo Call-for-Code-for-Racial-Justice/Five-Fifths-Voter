@@ -89,37 +89,40 @@ function scrollToId(id) {
   >
     <!-- LEFT: hamburger + Five Fifths Voter text -->
     <div class="navbar-start gap-4 pl-2 items-start">
-      <div class="dropdown">
+      <div id="ff-header-menu" class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost btn-square">
           <Menu/>
         </div>
         <ul
             v-if="isHome" tabindex="-1"
             class="dropdown-content menu text-base-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-          <li @click="scrollToId('top')"><a>{{ $t("appHeaderHome") }}</a></li>
-          <li @click="scrollToId('mission')"><a>{{ $t("landingPageMain") }}</a></li>
-          <li @click="scrollToId('values')"><a>{{ $t("appHeaderOurValues") }}</a></li>
+          <li id="side-nav-top" @click="scrollToId('top')"><a>{{ $t("appHeaderHome") }}</a></li>
+          <li id="side-nav-mission" @click="scrollToId('mission')"><a>{{ $t("landingPageMain") }}</a></li>
+          <li id="side-nav-values" @click="scrollToId('values')"><a>{{ $t("appHeaderOurValues") }}</a></li>
         </ul>
         <ul
             v-else tabindex="-1"
             class="dropdown-content menu text-base-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
           <li>
             <NuxtLink
-to="/journey"
-                      :class="{'menu-active': $route.name === 'journey'}">
+                id="side-nav-journey"
+                to="/journey"
+                :class="{'menu-active': $route.name === 'journey'}">
               {{ $t("appHeaderVoterJourney") }}
             </NuxtLink>
             <JourneySubNav :mobile="true"/>
           </li>
           <li>
             <NuxtLink
-to="/voterSupport"
-                      :class="{'menu-active': $route.name === 'voterSupport'}">
+                id="side-nav-support"
+                to="/voterSupport"
+                :class="{'menu-active': $route.name === 'voterSupport'}">
               {{ $t("appHeaderVoterSupport") }}
             </NuxtLink>
           </li>
           <li>
             <NuxtLink
+                id="side-nav-why"
                       to="/whyVote"
                       :class="{'menu-active': $route.name === 'whyVote'}">
               {{ $t("appHeaderWhyVote") }}

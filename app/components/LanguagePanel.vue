@@ -25,15 +25,17 @@ const availableLocales = computed(() => {
 });
 </script>
 <template>
-  <div class="dropdown dropdown-end">
+  <div id="header-language-button" class="dropdown dropdown-end">
     <div tabindex="0" role="button" class="btn btn-ghost btn-square btn-xs md:btn-md">
       <Languages/>
     </div>
     <ul tabindex="-1" class="dropdown-content menu text-base-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
       <li
-          v-for="entry in availableLocales" :key="entry.title" :class="{ 'menu-active': entry.language === locale }"
+          v-for="entry in availableLocales"
+          :key="entry.title"
+          :class="{ 'menu-active': entry.language === locale }"
           @click="changeLocale(entry.language)">
-        <a>{{ entry.title }}</a>
+        <a :id="`language-${entry.language}`">{{ entry.title }}</a>
       </li>
     </ul>
   </div>
