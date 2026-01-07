@@ -40,6 +40,7 @@
     "@nuxt/devtools": "^2.4.1",
     "@nuxt/types": "^2.18.1",
     "@stylistic/eslint-plugin": "^4.4.0",
+    "@types/luxon": "^3.7.1",
     "@types/node": "^22.15.23",
     "daisyui": "^5.5.14",
     "nuxt-eslint-globals": "^2.1.5",

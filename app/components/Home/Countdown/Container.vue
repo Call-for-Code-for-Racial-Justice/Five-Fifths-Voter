@@ -1,21 +1,14 @@
-<script setup>
+<script setup lang="ts">
 import { DateTime, Duration, Interval } from "luxon";
-import { useWindowSize } from "@vueuse/core";
 
-const { width } = useWindowSize();
-const { t, locale } = useI18n();
+const { locale } = useI18n();
 
-const headlines = computed(() => {
-  return t(
-    "countdownHeader",
-    "Days until the/2024/Presidential Election",
-  ).split("/");
-});
 const election = ref("20261103T050000"); // Tuesday, November 3, 2026 7:00:00 AM GMT-05:00
 const days = ref(432);
-const hours = ref("00");
-const minutes = ref("00");
-const seconds = ref("00");
+const hours = ref(0);
+const minutes = ref(0);
+const seconds = ref(0);
+
 function updateCountdown() {
   const now = DateTime.now();
   const electionDt = DateTime.fromISO(election.value);
@@ -25,18 +18,20 @@ function updateCountdown() {
     "hours",
     "minutes",
     "seconds",
-    "milliseconds",
+    "milliseconds", // needed to keep seconds rounded properly
   ]);
-  days.value = duration.values.days;
-  hours.value = duration.values.hours.toString().padStart(2, "0");
-  minutes.value = duration.values.minutes.toString().padStart(2, "0");
-  seconds.value = duration.values.seconds.toString().padStart(2, "0");
+  days.value = duration.days;
+  hours.value = duration.hours;
+  minutes.value = duration.minutes;
+  seconds.value = duration.seconds;
 }
-function titleCase(s) {
-  if (["en", "es"].includes(locale.value))
-    return s.at(0).toUpperCase() + s.slice(1);
+
+function titleCase(s: string) {
+  if (["en", "es"].includes(locale.value) && s.at(0))
+    return s.at(0)?.toUpperCase() + s.slice(1);
   else return s;
 }
+
 const labelDays = computed(() => {
   return titleCase(
     Duration.fromObject({ days: 0 }, { locale: locale.value })
@@ -45,6 +40,13 @@ const labelDays = computed(() => {
       .trim(),
   );
 });
+const labelDys = computed(() => {
+  return Duration.fromObject({ days: 0 }, { locale: locale.value })
+    .toHuman()
+    .slice(1)
+    .trim();
+});
+
 const labelHours = computed(() => {
   return titleCase(
     Duration.fromObject({ hours: 0 }, { locale: locale.value })
@@ -53,6 +55,13 @@ const labelHours = computed(() => {
       .trim(),
   );
 });
+const labelHrs = computed(() => {
+  return Duration.fromObject({ hours: 0 }, { locale: locale.value })
+    .toHuman({ unitDisplay: "short" })
+    .slice(1)
+    .trim();
+});
+
 const labelMinutes = computed(() => {
   return titleCase(
     Duration.fromObject({ minutes: 0 }, { locale: locale.value })
@@ -61,7 +70,14 @@ const labelMinutes = computed(() => {
       .trim(),
   );
 });
-const labelSeconds = computed(() => {
+const labelMin = computed(() => {
+  return Duration.fromObject({ minutes: 0 }, { locale: locale.value })
+    .toHuman({ unitDisplay: "short" })
+    .slice(1)
+    .trim();
+});
+
+const labelSeconds = computed<string>(() => {
   return titleCase(
     Duration.fromObject({ seconds: 0 }, { locale: locale.value })
       .toHuman()
@@ -69,7 +85,14 @@ const labelSeconds = computed(() => {
       .trim(),
   );
 });
-let intervalID;
+const labelSec = computed<string>(() => {
+  return Duration.fromObject({ seconds: 0 }, { locale: locale.value })
+    .toHuman({ unitDisplay: "short" })
+    .slice(1)
+    .trim();
+});
+
+let intervalID: NodeJS.Timeout;
 onMounted(() => {
   updateCountdown();
   intervalID = setInterval(updateCountdown, 1000);
@@ -78,47 +101,20 @@ onBeforeUnmount(() => clearInterval(intervalID));
 </script>
 
 <template>
-  <footer class="sticky left-0 -mx-1 bottom-0 z-20 h-20 bg-ff-red-01 md:h-28 xl:h-32 3xl:h-64">
-    <div
-    class="flex size-full items-center justify-between px-3"
-  >
-    <div class="text-base sm:text-lg md:text-3xl xl:text-4xl 3xl:text-7xl">
-      <div class="text-ff-white-01">
-        {{ headlines[0] }}
-      </div>
-      <div class="text-white">
-        {{ headlines[1] }}
-      </div>
-      <div class="text-ff-white-01">
-        {{ headlines[2] }}
-      </div>
+  <footer
+      class="sticky left-0 -mx-1 bottom-0 z-20 h-20 bg-error md:h-28 xl:h-32 3xl:h-64 p-2 flex items-center justify-center overflow-hidden">
+    <div class="text-error-content p-2 font-semibold text-lg md:text-3xl lg:text-4xl flex-1 max-w-lg">
+      {{ $t("countdownHeader", "Days until the 2026 US Midterm Election") }}
     </div>
-    <div
-      class="flex flex-row items-center justify-between gap-x-1 text-white"
-    >
-      <HomeCountdownNumber
-        :label="labelDays"
-        :number="days"
-        prefix=""
-      />
-      <HomeCountdownNumber
-        :label="labelHours"
-        :number="hours"
-      />
-      <HomeCountdownNumber
-        :label="labelMinutes"
-        :number="minutes"
-      />
-      <HomeCountdownNumber
-          v-if="width > 370"
-        :label="labelSeconds"
-        :number="seconds"
-      />
+    <div class="grid auto-cols-max grid-flow-col gap-1 md:gap-5 text-center">
+      <HomeCountdownNumber :value="days" :label="labelDays" :mobile-label="labelDys"/>
+      <HomeCountdownNumber :value="hours" :label="labelHours" :mobile-label="labelHrs"/>
+      <HomeCountdownNumber :value="minutes" :label="labelMinutes" :mobile-label="labelMin"/>
+      <HomeCountdownNumber :value="seconds" :label="labelSeconds" :mobile-label="labelSec" />
     </div>
-  </div>
   </footer>
 </template>
 
 <style scoped lang="css">
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caprasimo&display=swap");
+
 </style>

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 definePageMeta({
   shrinkingBanner: true,
 });
@@ -15,7 +15,3 @@ definePageMeta({
     <HomeCountdownContainer />
   </div>
 </template>
-
-<style lang="css" scoped>
-
-</style>

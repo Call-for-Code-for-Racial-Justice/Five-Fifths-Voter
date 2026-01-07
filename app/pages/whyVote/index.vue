@@ -28,27 +28,4 @@
       </div>
     </div>
   </div>
-
-<!--  <PageInset>-->
-<!--    <PageTitle>-->
-<!--      {{ $t("whyVotePageTitle") }}-->
-<!--    </PageTitle>-->
-<!--    <div>-->
-<!--      <div class="flex">-->
-<!--        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">-->
-<!--          <div class="mb-2 text-heading-04">-->
-<!--            {{ $t("whyVotePageSubTitle") }}-->
-<!--          </div>-->
-
-<!--        </div>-->
-<!--        <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">-->
-<!--          <img-->
-<!--            class="side-image"-->
-<!--            alt=""-->
-<!--            src="../../assets/images/why-vote-page-father-daughter-image-1.jpg"-->
-<!--          >-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </PageInset>-->
 </template>
