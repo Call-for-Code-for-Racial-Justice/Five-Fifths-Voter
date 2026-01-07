@@ -151,7 +151,7 @@ function scrollToId(id) {
     <!-- RIGHT: profile mask group -->
     <div class="navbar-end relative h-full flex items-end gap-1">
       <a
-          class="btn btn-ghost btn-square self-start btn-xs md:btn-md"
+          class="btn btn-ghost btn-square self-start md:self-end lg:self-start btn-xs md:btn-md z-10"
           href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
           target="_blank"
           rel="noopener noreferrer"
@@ -160,7 +160,7 @@ function scrollToId(id) {
         <InstagramIcon/>
       </a>
       <a
-          class="btn btn-ghost btn-square btn-xs md:btn-md self-start"
+          class="btn btn-ghost btn-square btn-xs md:btn-md self-start md:self-end lg:self-start z-10"
           href="https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter"
           target="_blank"
           rel="noopener noreferrer"
@@ -168,7 +168,7 @@ function scrollToId(id) {
       >
         <GitHubIcon/>
       </a>
-      <LanguagePanel class="self-start"/>
+      <LanguagePanel class="self-start md:self-end lg:self-start z-10"/>
 
       <img
           :src="facesUrl"
