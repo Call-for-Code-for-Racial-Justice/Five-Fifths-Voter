@@ -1,28 +1,17 @@
-<script setup>
-defineProps({
-  number: { type: [Number, String], required: true },
-  label: { type: String, required: true },
-  prefix: { type: String, default: ":" },
-});
+<script setup lang="ts">
+defineProps<{
+  value: number
+  label: string
+  mobileLabel: string
+}>();
 </script>
 
 <template>
-  <div
-    class="bg-oval bg-contain bg-no-repeat text-white"
-  >
-    <div
-      class="font-[Caprasimo] text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl 3xl:text-9xl"
-    >
-      {{ prefix }} {{ number }}
+  <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
+    <div class="countdown font-mono grid place-items-center text-sm md:text-5xl lg:text-7xl">
+      <div :style="`--value:${value}`" aria-live="polite" :aria-label="`${value}`">{{ value }}</div>
     </div>
-    <div class="text-right text-xs sm:text-base lg:text-xl 3xl:text-3xl">
-      {{ label }}
-    </div>
+    <span class="block md:hidden text-xs">{{ mobileLabel }}</span>
+    <span class="hidden md:block">{{ label }}</span>
   </div>
 </template>
-
-<style scoped>
-.bg-oval {
-  background-image: url("@/assets/images/skewed-oval-empty.svg");
-}
-</style>

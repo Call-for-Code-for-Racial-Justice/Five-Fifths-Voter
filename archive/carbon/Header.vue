@@ -1,7 +1,8 @@
 <script setup lang="js">
 import {
-  Menu24 as MenuIcon,
-  Close24 as CloseIcon } from "@carbon/icons-vue";
+  Menu as MenuIcon,
+  X as CloseIcon,
+} from "lucide-vue-next";
 import bgUrl from "assets/images/mask-group.svg";
 import titleLogoUrl from "assets/images/five-fifths-voter.svg";
 import { useWindowScroll, useWindowSize } from "@vueuse/core";
@@ -68,7 +69,7 @@ const scaleFF = computed(() => {
     </ul>
   </nav>
   <div
-      class="fixed z-10 h-52 w-full bg-ff-purple-01 bg-contain bg-right-top
+      class="fixed z-10 h-52 w-full bg-ff-purple-01 bg-contain bg-top-right
         bg-no-repeat 3xl:h-80"
       :class="{'border border-solid border-carbon-gray-90' : scaleLogo === '48px'}"
       :style="{backgroundImage: `url(${bgUrl})`, height: scaleLogo}"

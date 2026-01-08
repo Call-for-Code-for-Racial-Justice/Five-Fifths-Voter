@@ -2,13 +2,16 @@
 describe("voter support test", () => {
   it("should have voter support content", () => {
     cy.visit("/");
-    cy.get("#values").scrollIntoView({ easing: "linear", duration: 200 });
-    cy.get("#mission").scrollIntoView({ easing: "linear", duration: 200 });
-    cy.get("#top").scrollIntoView({ easing: "linear", duration: 200 });
-    cy.get("#top-journey-button").click();
-    cy.get("#ff-header-menu svg").click();
+    cy.get("#ff-header-menu").click();
+    cy.wait(500);
+    cy.get('#side-nav-values').click();
+    cy.wait(500);
+    cy.get('#values-journey-button').click();
+    cy.url().should("contain", "/journey");
+
+    cy.get("#ff-header-menu").click();
     cy.get("#side-nav-support").click();
     cy.url().should("contain", "/voterSupport");
-    cy.get(".cv-link").should("have.length.gte", 6);
+    cy.get(".link").should("have.length.gte", 6);
   });
 });

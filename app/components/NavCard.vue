@@ -1,4 +1,6 @@
 <script setup>
+import { CheckCircle } from "lucide-vue-next";
+
 defineProps({
   title: { type: String, required: true },
   imageSrc: { type: String, required: true },
@@ -6,32 +8,29 @@ defineProps({
   to: { type: String, required: true },
   checked: { type: Boolean, default: false },
 });
+const id = useId();
 </script>
 
 <template>
-  <cv-tile
-    kind="clickable"
-    class="card-zoom"
-    :to="to"
-  >
-    <div class="card-zoom-image" :style="{backgroundImage: `url(${imageSrc})`}"/>
-    <h1 class="card-zoom-text">{{ title }}</h1>
-  </cv-tile>
+  <NuxtLink :id="`nav-card-${id}`" :to="to" class="hover-3d mt-4">
+    <!-- content -->
+    <div class="card max-w-100 bg-base-300">
+      <div class="card-body">
+        <img :src="imageSrc" :alt="title" class="rounded-2xl">
+        <p class="font-semibold flex items-center">
+          <span v-if="checked" class="mr-2"><CheckCircle class="rounded-full bg-success text-success-content size-5 p-0.5"/></span>
+          {{ title }}
+        </p>
+      </div>
+    </div>
+    <!-- 8 empty divs needed for the 3D effect -->
+    <div/>
+    <div/>
+    <div/>
+    <div/>
+    <div/>
+    <div/>
+    <div/>
+    <div/>
+  </NuxtLink>
 </template>
-<style lang="css">
-.card-zoom {
-  @apply relative flex items-center justify-center m-3 overflow-hidden mb-4 !p-0 w-48 h-36 md:w-96 md:h-72 ;
-}
-.card-zoom-image {
-  @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
-}
-.card-zoom-text {
-  @apply absolute text-xs md:text-xl bg-white/80 contrast-more:bg-white contrast-more:p-2 text-carbon-gray-90 transition-all duration-500 ease-in-out transform right-0 bottom-0 md:right-auto md:bottom-auto md:scale-150 max-w-[60%];
-}
-.card-zoom:hover .card-zoom-image {
-  @apply scale-150;
-}
-.card-zoom:hover .card-zoom-text {
-  @apply scale-100 contrast-more:scale-150;
-}
-</style>

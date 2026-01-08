@@ -2,10 +2,12 @@
 describe("i18n test", () => {
   it("should have i18n content", () => {
     cy.visit("/");
-    cy.get("#values").scrollIntoView({ easing: "linear", duration: 200 });
-    cy.get("#mission").scrollIntoView({ easing: "linear", duration: 200 });
-    cy.get("#top").scrollIntoView({ easing: "linear", duration: 200 });
-    cy.get("#top-journey-button").click();
+    cy.get("#ff-header-menu").click();
+    cy.wait(500);
+    cy.get('#side-nav-values').click();
+    cy.wait(500);
+    cy.get('#values-journey-button').click();
+    cy.url().should("contain", "/journey");
     cy.get("#language-es").should("not.be.visible");
     cy.get("#header-language-button").click();
     cy.get("#language-es").click();

@@ -1,9 +1,9 @@
 <script setup>
 import {
-  ArrowUpRight20 as ArrowUpRight,
-  Add20 as ExpandIcon,
-  Subtract20 as CollapseIcon,
-} from "@carbon/icons-vue";
+  ArrowUpRight as ArrowUpRight,
+  Plus as ExpandIcon,
+  Minus as CollapseIcon,
+} from "lucide-vue-next";
 const props = defineProps({
   name: { type: String, required: true },
   main: { type: String, required: true },
@@ -103,7 +103,7 @@ watch(
           }"
           class="h-[350px] w-full max-w-[350px] bg-cover bg-center md:w-[350px]"
         >
-          <div class="hidden backdrop-blur-sm xl:block">
+          <div class="hidden backdrop-blur-xs xl:block">
             <div class="relative inline">
               <span
                 class="absolute translate-x-[-230px] translate-y-[-20px] text-9xl text-ff-yellow-01"

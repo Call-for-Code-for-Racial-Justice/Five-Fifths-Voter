@@ -1,19 +1,15 @@
-<script setup></script>
+<script setup>
+</script>
 
 <template>
-  <PageInset>
+  <div>
     <PageTitle>
       {{ $t("whyVotePageTitle") }}
     </PageTitle>
-    <cv-grid :full-width="true">
-      <cv-row>
-        <cv-column
-          :sm="4"
-          :lg="8"
-        >
-          <div class="mb-2 text-heading-04">
-            {{ $t("whyVotePageSubTitle") }}
-          </div>
+    <div class="flex items-center justify-center p-4">
+      <div class="card bg-base-200 card-lg md:max-w-1/2 shadow-sm">
+        <div class="card-body">
+          <h2 class="card-title">{{ $t("whyVotePageSubTitle") }}</h2>
           <p class="aside__paragraph">
             {{ $t("whyVotePageParagraph_1") }}
             <br><br>
@@ -23,18 +19,13 @@
             <br><br>
             <MarkDown :content="$t('whyVotePageQuote')" />
           </p>
-        </cv-column>
-        <cv-column
-          :sm="4"
-          :lg="8"
-        >
+        </div>
+        <figure>
           <img
-            class="side-image"
-            alt=""
-            src="../../assets/images/why-vote-page-father-daughter-image-1.jpg"
-          >
-        </cv-column>
-      </cv-row>
-    </cv-grid>
-  </PageInset>
+              src="../../assets/images/why-vote-page-father-daughter-image-1.jpg"
+              alt="" >
+        </figure>
+      </div>
+    </div>
+  </div>
 </template>

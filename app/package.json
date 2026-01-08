@@ -11,17 +11,14 @@
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
-    "@carbon/icons-vue": "^10.99.1",
-    "@carbon/themes": "^10.55.3",
-    "@carbon/vue": "^3.0.26",
     "@googlemaps/js-api-loader": "^1.16.8",
     "@nuxt/content": "^3.8.0",
     "@nuxt/eslint": "^1.4.1",
     "@nuxt/kit": "^3.17.4",
     "@nuxtjs/i18n": "^10.2.0",
-    "@nuxtjs/tailwindcss": "^6.13.2",
     "@pinia/nuxt": "^0.11.2",
     "@sidebase/nuxt-auth": "^1.1.0",
+    "@tailwindcss/vite": "^4.1.17",
     "@vueuse/core": "^13.3.0",
     "@vueuse/nuxt": "^13.3.0",
     "actual": "^0.4.0",
@@ -34,19 +31,24 @@
     "nano": "^11.0.3",
     "nuxt": "^3.20.0",
     "pinia": "^3.0.2",
+    "tailwindcss": "^4.1.17",
     "vue": "^3.5.22",
+    "vue3-simple-icons": "^15.6.0",
     "winston": "^3.17.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.4.1",
     "@nuxt/types": "^2.18.1",
     "@stylistic/eslint-plugin": "^4.4.0",
+    "@types/luxon": "^3.7.1",
     "@types/node": "^22.15.23",
-    "carbon-components": "^10.59.1",
-    "eslint-plugin-tailwindcss": "^3.18.0",
+    "daisyui": "^5.5.14",
     "nuxt-eslint-globals": "^2.1.5",
     "sass": "^1.89.0"
   },
   "version": "1.0.0",
-  "license": "ISC"
+  "license": "ISC",
+  "lint-staged": {
+    "**/*.{js,vue}": "eslint"
+  }
 }

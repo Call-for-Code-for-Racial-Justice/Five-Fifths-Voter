@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import 'tailwindcss';
+@plugin "daisyui";
+
+/*
+From figma
+dark #210D34
+off white #FFEBD9
+saffron #E8B933
+orange #E66C31
+red #E02E38
+salmon #EC9899
+mulberry #D35492
+plum #85276E
+verdigis #56B5B5
+royal blue #366AE2
+cobalt blue #1140A7
+yellow green #AFCB61
+fern green #397F42
+cal green #24502A
+*/
+
+@theme {
+  --color-ff-purple-01: #210d34;
+  --color-ff-purple-02: #85276e;
+  --color-ff-white-01: #ffebd9;
+  --color-ff-yellow-01: #e8b933;
+  --color-ff-yellow-02: #afcb61;
+  --color-ff-orange-01: #e66c31;
+  --color-ff-red-01: #e02e38;
+  --color-ff-pink-01: #ec9899;
+  --color-ff-pink-02: #d35492;
+  --color-ff-blue-01: #56b5b5;
+  --color-ff-blue-02: #366ae2;
+  --color-ff-blue-03: #1140a7;
+  --color-ff-green-01: #397f42;
+  --color-ff-green-02: #24502a;
+
+
+
+  --font-sans:
+    IBM Plex Sans, ui-sans-serif, system-ui, Helvetica Neue, Arial, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --font-mono:
+    IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    Liberation Mono, Courier New, monospace;
+}
+
+/* Five-Fifths Voter DaisyUI themes (Tailwind v4 + DaisyUI v5) */
+@plugin "daisyui/theme" {
+  name: "ffv-light";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+
+  /* base */
+  --color-base-100: var(--color-ff-white-01); /* #ffebd9 */
+  --color-base-200: #f6ddc6;
+  --color-base-300: #edd2b9;
+  --color-base-content: var(--color-ff-purple-01); /* #210d34 */
+
+  /* brand */
+  --color-primary: var(--color-ff-purple-02); /* #85276e */
+  --color-primary-content: #ffffff;
+  --color-secondary: var(--color-ff-yellow-01); /* #e8b933 */
+  --color-secondary-content: var(--color-ff-purple-01); /* #210d34 */
+  --color-accent: var(--color-ff-orange-01); /* #e66c31 */
+  --color-accent-content: var(--color-ff-purple-01); /* #210d34 */
+
+  /* neutral */
+  --color-neutral: #34303a;
+  --color-neutral-content: #ffffff;
+
+  /* state */
+  --color-info: var(--color-ff-blue-02); /* #366ae2 */
+  --color-info-content: #ffffff;
+  --color-success: var(--color-ff-green-01); /* #397f42 */
+  --color-success-content: #ffffff;
+  --color-warning: var(--color-ff-yellow-01); /* #e8b933 */
+  --color-warning-content: var(--color-ff-purple-01); /* #210d34 */
+  --color-error: var(--color-ff-red-01); /* #e02e38 */
+  --color-error-content: #ffffff;
+
+  /* radius, sizes, and surface details */
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "ffv-dark";
+  default: false;
+  prefersdark: true;
+  color-scheme: "dark";
+
+  /* base */
+  --color-base-100: var(--color-ff-purple-01); /* #210d34 */
+  --color-base-200: #1a0a2a;
+  --color-base-300: #140821;
+  --color-base-content: var(--color-ff-white-01); /* #ffebd9 */
+
+  /* brand (slightly brighter primary for dark for contrast) */
+  --color-primary: var(--color-ff-pink-02); /* #d35492 */
+  --color-primary-content: var(--color-ff-purple-01); /* #210d34 */
+  --color-secondary: var(--color-ff-yellow-01); /* #e8b933 */
+  --color-secondary-content: var(--color-ff-purple-01); /* #210d34 */
+  --color-accent: var(--color-ff-blue-02); /* #366ae2 */
+  --color-accent-content: #ffffff;
+
+  /* neutral */
+  --color-neutral: #241230;
+  --color-neutral-content: var(--color-ff-white-01);
+
+  /* state */
+  --color-info: var(--color-ff-blue-01); /* #56b5b5 */
+  --color-info-content: #ffffff;
+  --color-success: var(--color-ff-green-01); /* #397f42 */
+  --color-success-content: #ffffff;
+  --color-warning: var(--color-ff-yellow-01); /* #e8b933 */
+  --color-warning-content: var(--color-ff-purple-01); /* #210d34 */
+  --color-error: var(--color-ff-red-01); /* #e02e38 */
+  --color-error-content: #ffffff;
+
+  /* radius, sizes, and surface details */
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}

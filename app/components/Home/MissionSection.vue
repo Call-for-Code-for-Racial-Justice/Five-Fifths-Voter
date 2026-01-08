@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ArrowUpRight32 as ArrowUpRight } from "@carbon/icons-vue";
+import { ArrowUpRight as ArrowUpRight } from "lucide-vue-next";
 import { useElementVisibility } from "@vueuse/core";
 
 const section = useTemplateRef("section");
@@ -14,21 +14,21 @@ watchEffect(() => {
 <template>
   <section
       id="mission"
-      class="ml-3 h-dvh pt-24 3xl:pt-56"
+      class="ml-3 h-dvh [@media(max-height:568px)]:h-auto pt-24 3xl:pt-56"
   >
     <h1
-        class="mb-4 px-2 text-5xl text-ff-white-01 sm:text-6xl 2xl:text-8xl"
+        class="mb-4 px-2 text-5xl sm:text-6xl 2xl:text-8xl"
     >
       {{ $t("landingPageMain") }}
     </h1>
     <div
         ref="section"
-        class="mb-8 whitespace-break-spaces px-2 leading-5 text-white sm:text-lg 2xl:text-2xl">
+        class="mb-8 whitespace-break-spaces px-2 leading-5 sm:text-lg 2xl:text-2xl">
       {{ $t("landingPageMission") }}
     </div>
     <button
         id="mission-journey-button"
-        class="ml-2 bg-ff-purple-02 p-3 text-white"
+        class="btn btn-primary lg:btn-xl"
         @click="navigateTo('/journey')"
     >
       <span class="md:text-lg">{{ $t("appHeaderVoterJourney") }}</span>
