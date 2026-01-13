@@ -8,6 +8,7 @@ export const contentElectionSchema = z.object({
   type: z.string(),
   website: z.string(),
   guidancePhase: z.string(),
+  fiveFifthsId: z.string(),
   voting: z.object({
     inPersonVotingAvailable: z.boolean(),
     mailBallotsSentAutomatically: z.boolean(),

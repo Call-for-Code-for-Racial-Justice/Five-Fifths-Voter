@@ -4,6 +4,7 @@ description: "General election for Governor, US Senate, US House, and other offi
 type: "general"
 website: "https://www.elections.il.gov/"
 guidancePhase: "final"
+fiveFifthsId: "il-2026-midterms"
 
 voting:
   inPersonVotingAvailable: true
