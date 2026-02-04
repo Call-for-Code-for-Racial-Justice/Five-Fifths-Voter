@@ -15,7 +15,7 @@ const election = computed(() => {
 </script>
 
 <template>
-  <div class="p-4 max-w-4xl mx-auto">
+  <div class="p-4 max-w-4xl mx-auto mt-14">
     <div v-if="status === 'pending'" class="flex justify-center p-12">
       <span class="loading loading-spinner loading-lg text-primary"></span>
     </div>
@@ -24,7 +24,6 @@ const election = computed(() => {
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-base-300 pb-4">
         <div>
           <h1 class="text-3xl font-bold text-primary">{{ election.name }}</h1>
-          <p class="text-lg opacity-70">Civic Information API Election</p>
         </div>
         <div class="badge badge-primary badge-lg p-4">
           {{ niceIsoDate(election.date) }}

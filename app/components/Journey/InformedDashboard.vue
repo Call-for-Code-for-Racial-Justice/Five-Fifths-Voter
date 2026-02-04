@@ -84,7 +84,7 @@ const infoLinks = computed(() => [
                       </NuxtLink>
                       <p class="text-sm opacity-70">{{ niceIsoDate(e.date) }}</p>
                     </div>
-                    <div class="badge badge-outline badge-sm shrink-0">{{ e.source === 'content' ? 'Five Fifths' : 'Google Civics' }}</div>
+                    <span v-if="e.source === 'content'" class="badge badge-outline badge-sm shrink-0">Five Fifths</span>
                     <NuxtLink :to="`/journey/election/${e.source}/${e.id}`" class="btn btn-primary btn-sm shrink-0">
                       Details
                     </NuxtLink>

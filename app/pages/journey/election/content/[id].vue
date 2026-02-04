@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { daysLeftIso, niceIsoDate } from "~/utils/dateFormatter";
+import { Info } from "lucide-vue-next";
 
 definePageMeta({
   subnavigation: "journey",
@@ -22,7 +23,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
 </script>
 
 <template>
-  <div class="p-4 max-w-4xl mx-auto">
+  <div class="p-4 max-w-4xl mx-auto mt-14">
     <div v-if="status === 'pending'" class="flex justify-center p-12">
       <span class="loading loading-spinner loading-lg text-primary"></span>
     </div>
@@ -31,7 +32,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-base-300 pb-4">
         <div>
           <h1 class="text-3xl font-bold text-primary">{{ election.name }}</h1>
-          <p class="text-lg opacity-70">{{ election.originalData.description }}</p>
+          <p class="text-lg opacity-70">Information from Five Fifths Voter</p>
         </div>
         <div class="badge badge-primary badge-lg p-4">
           {{ niceIsoDate(election.date) }}
@@ -42,7 +43,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
         <!-- Date and Website -->
         <div class="card bg-base-200 shadow-sm">
           <div class="card-body">
-            <h2 class="card-title text-secondary">General Info</h2>
+            <h2 class="card-title">General Info</h2>
             <JourneyInfoField label="Date" :value="`${niceIsoDate(election.date)} ⟶ ${daysLeftIso(election.date)}`" />
             <div class="mt-4">
               <a :href="election.originalData.website" target="_blank" class="btn btn-outline btn-primary btn-block">
@@ -55,7 +56,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
         <!-- Voting Options -->
         <div class="card bg-base-200 shadow-sm">
           <div class="card-body">
-            <h2 class="card-title text-secondary">Voting Options</h2>
+            <h2 class="card-title">Voting Options</h2>
             <div class="space-y-2">
               <JourneyInfoField
                 label="In-Person Voting Available"
@@ -70,9 +71,33 @@ function yesNoMaybe(val: string | boolean | undefined) {
         <!-- Early Voting -->
         <div class="card bg-base-200 shadow-sm md:col-span-2">
           <div class="card-body">
-            <h2 class="card-title text-secondary">Early Voting</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
+            <h2 class="card-title">Early Voting</h2>
+            <div class="grid grid-cols-1 gap-4">
+              <ul class="list bg-base-100 rounded-box shadow-md">
+
+                <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Mark your calendar</li>
+
+                <li class="list-row">
+                  <div><span class="badge">Start</span></div>
+                  <div>
+                    <div>{{niceIsoDate(election.originalData.voting.early.endDate)}}</div>
+                  </div>
+                  <a  :href="election.originalData.voting.early.url" target="_blank" class="btn btn-sm btn-ghost btn-primary">
+                    <Info title="More information"/>
+                  </a>
+                </li>
+
+                <li class="list-row">
+                  <div><span class="badge">End</span></div>
+                  <div>
+                    <div>{{niceIsoDate(election.originalData.voting.early.startDate)}}</div>
+                  </div>
+                  <a  :href="election.originalData.voting.early.url" target="_blank" class="btn btn-sm btn-ghost btn-primary">
+                    <Info title="More information"/>
+                  </a>
+                </li>
+              </ul>
+              <div v-if="false">
                 <JourneyInfoField
                   label="Start"
                   :value="`${niceIsoDate(election.originalData.voting.early.startDate)} ⟶ ${daysLeftIso(election.originalData.voting.early.startDate)}`" />
@@ -80,7 +105,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
                   label="End"
                   :value="`${niceIsoDate(election.originalData.voting.early.endDate)} ⟶ ${daysLeftIso(election.originalData.voting.early.endDate)}`" />
               </div>
-              <div>
+              <div v-if="false">
                 <JourneyInfoField
                   label="Varies by location"
                   :value="yesNoMaybe(election.originalData.voting.early.varies)" />
@@ -97,7 +122,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
         <!-- Voting by Mail -->
         <div class="card bg-base-200 shadow-sm">
           <div class="card-body">
-            <h2 class="card-title text-secondary">Voting by Mail</h2>
+            <h2 class="card-title">Voting by Mail</h2>
             <div class="space-y-3">
               <div>
                 <span class="text-sm font-bold opacity-70 uppercase">ID Instructions</span>
@@ -121,7 +146,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
         <!-- In-Person Voting -->
         <div class="card bg-base-200 shadow-sm">
           <div class="card-body">
-            <h2 class="card-title text-secondary">In-Person Voting</h2>
+            <h2 class="card-title">In-Person Voting</h2>
             <div class="space-y-3">
               <JourneyInfoField
                 label="ID Required for All Voters"

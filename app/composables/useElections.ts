@@ -64,7 +64,46 @@ export const useElections = async () => {
     {
       watch: [usaState],
       transform: (data) => {
-        return data.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+        if (!usaState.value) return data;
+
+        const stateLower = usaState.value.toLowerCase();
+
+        return data.sort((a, b) => {
+          // Check if ocdId matches the state
+          const aMatchesState = a.ocdId.includes(`state:${stateLower}`);
+          const bMatchesState = b.ocdId.includes(`state:${stateLower}`);
+
+          // Check if the source field is "content"
+          const aIsContent = a.source === "content";
+          const bIsContent = b.source === "content";
+
+          // Check if ocdId is a country-level division (no state)
+          const aIsCountryOnly = a.ocdId === "ocd-division/country:us";
+          const bIsCountryOnly = b.ocdId === "ocd-division/country:us";
+
+          // Priority order:
+          // 1. Matches state AND is content
+          // 2. Matches state AND is API
+          // 3. Is country-level (no state)
+          // 4. Everything else
+
+          if (aMatchesState && bMatchesState) {
+            // they both match state - content comes first
+            if (aIsContent && !bIsContent) return -1;
+            if (!aIsContent && bIsContent) return 1;
+            // Both same value for source - sort by date
+            return new Date(a.date).getTime() - new Date(b.date).getTime();
+          }
+
+          if (aMatchesState && !bMatchesState) return -1;
+          if (!aMatchesState && bMatchesState) return 1;
+
+          if (aIsCountryOnly && !bIsCountryOnly) return -1;
+          if (!aIsCountryOnly && bIsCountryOnly) return 1;
+
+          // Everything else - sort by date
+          return new Date(a.date).getTime() - new Date(b.date).getTime();
+        });
       },
     },
   );
