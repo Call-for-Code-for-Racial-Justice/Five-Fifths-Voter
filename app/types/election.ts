@@ -39,6 +39,7 @@ export const contentElectionSchema = z.object({
         closing: z.string().nullable(),
       }),
     }),
+    candidates: z.array(z.object({ title: z.string(), url: z.string().url() })).optional(),
   }),
 });
 

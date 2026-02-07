@@ -6,6 +6,7 @@ const { t } = useI18n();
 const props = defineProps<{
   label: string
   value: string | number | boolean
+  prefix?: string
 }>();
 
 const displayValue = computed(() =>
@@ -19,6 +20,9 @@ const displayValue = computed(() =>
       {{ label }}:
     </span>
 
+    <span v-if="prefix" class="text-xs md:text-base">
+      {{ prefix }}
+    </span>
     <span class="badge badge-secondary badge-md h-fit md:h-[unset] text-xs md:text-base">
       {{ displayValue }}
     </span>

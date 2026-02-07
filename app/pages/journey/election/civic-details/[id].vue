@@ -17,7 +17,7 @@ const election = computed(() => {
 <template>
   <div class="p-4 max-w-4xl mx-auto mt-14">
     <div v-if="status === 'pending'" class="flex justify-center p-12">
-      <span class="loading loading-spinner loading-lg text-primary"></span>
+      <span class="loading loading-spinner loading-lg text-primary"/>
     </div>
 
     <div v-else-if="election" class="space-y-8 animate-in fade-in duration-500">
@@ -39,7 +39,7 @@ const election = computed(() => {
           </div>
 
           <div class="alert alert-info mt-6 shadow-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             <span>This election data is provided by the Google Civic Information API. For more detailed local information, please check your local election official's website.</span>
           </div>
         </div>

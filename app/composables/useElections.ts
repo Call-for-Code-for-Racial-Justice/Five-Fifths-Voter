@@ -35,7 +35,7 @@ export const useElections = async () => {
       if (Array.isArray(contentData)) {
         contentData.forEach((e: ContentElections) => {
           unified.push({
-            id: e.meta.fiveFifthsId || e.id || e.stem,
+            id: e.fiveFifthsId || e.meta.fiveFifthsId || e.id || e.stem,
             name: e.title || e.description,
             date: e.date,
             ocdId: e.ocdId,

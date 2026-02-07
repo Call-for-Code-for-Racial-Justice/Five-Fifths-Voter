@@ -1,10 +1,10 @@
 ocdId: "ocd-division/country:us/state:il"
-date: "2026-11-03"
-description: "Illinois General election for Governor, US Senate, US House, and other offices."
+date: "2026-03-17"
+description: "Illinois Primary for Senate and US House."
 type: "general"
 website: "https://www.elections.il.gov/"
 guidancePhase: "final"
-fiveFifthsId: "il-2026-midterms"
+fiveFifthsId: "il-2026-primary-mar-midterms"
 
 voting:
   inPersonVotingAvailable: true
@@ -14,8 +14,8 @@ voting:
 
   early:
     url: "https://www.elections.il.gov/"
-    startDate: "2026-09-24"
-    endDate: "2026-11-02"
+    startDate: "2026-02-05"
+    endDate: "2026-03-16"
     varies: true
 
   byMail:
@@ -23,10 +23,10 @@ voting:
     idInstructions: Illinois does not require voters to present identification while voting, in most cases. First-time voters who registered by mail and did not submit their driver’s license number, state ID number, last four digits of their social security number, or other form of ID are required to present identification showing their name and address before voting
     deadline:
       postmarkedOrReceived: "received"
-      date: "2026-10-31"
+      date: "2026-03-12"
       ballotRequest:
         postmarkedOrReceived: "postmarked"
-        date: "2026-11-05"
+        date: "2026-02-17"
         description: "The State Board of Elections urges any voter considering voting by mail to apply for a ballot as early as possible."
 
   inPerson:
@@ -34,3 +34,14 @@ voting:
     electionDay:
       opening: "6:00 AM"
       closing: "7:00 PM. If you are in line by 7:00 PM, you are allowed to cast your ballot."
+
+  candidates:
+    links:
+      - title: Illinois' 2nd Congressional District
+        url: https://ballotpedia.org/Illinois%27_2nd_Congressional_District_election,_2026
+      - title: Illinois' 7th Congressional District
+        url: https://ballotpedia.org/Illinois%27_7th_Congressional_District_election,_2026
+      - title: Illinois' 9th Congressional District
+        url: https://ballotpedia.org/Illinois%27_9th_Congressional_District_election,_2026
+      - title: United States Senate
+        url: https://ballotpedia.org/United_States_Senate_election_in_Illinois,_2026

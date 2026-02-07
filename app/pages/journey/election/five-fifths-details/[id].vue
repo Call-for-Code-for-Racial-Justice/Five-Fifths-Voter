@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { daysLeftIso, niceIsoDate } from "~/utils/dateFormatter";
-import { Info } from "lucide-vue-next";
+import { Info, MoveLeftIcon } from "lucide-vue-next";
 
 definePageMeta({
   subnavigation: "journey",
@@ -25,17 +25,19 @@ function yesNoMaybe(val: string | boolean | undefined) {
 <template>
   <div class="p-4 max-w-4xl mx-auto mt-14">
     <div v-if="status === 'pending'" class="flex justify-center p-12">
-      <span class="loading loading-spinner loading-lg text-primary"></span>
+      <span class="loading loading-spinner loading-lg text-primary"/>
     </div>
 
-    <div v-else-if="election" class="space-y-8 animate-in fade-in duration-500">
-      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-base-300 pb-4">
+    <div v-else-if="election" class="animate-in fade-in duration-500">
+      <div>
+        <NuxtLink to="/journey/getInformed" class="btn btn-ghost text-xs">
+          <MoveLeftIcon/> Back to Dashboard
+        </NuxtLink>
+      </div>
+      <div class="border-b border-base-300 pb-4">
         <div>
           <h1 class="text-3xl font-bold text-primary">{{ election.name }}</h1>
           <p class="text-lg opacity-70">Information from Five Fifths Voter</p>
-        </div>
-        <div class="badge badge-primary badge-lg p-4">
-          {{ niceIsoDate(election.date) }}
         </div>
       </div>
 
@@ -44,7 +46,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
         <div class="card bg-base-200 shadow-sm">
           <div class="card-body">
             <h2 class="card-title">General Info</h2>
-            <JourneyInfoField label="Date" :value="`${niceIsoDate(election.date)} ⟶ ${daysLeftIso(election.date)}`" />
+            <JourneyInfoField label="Date" :prefix="`${niceIsoDate(election.date)} ⟶`" :value="daysLeftIso(election.date)" />
             <div class="mt-4">
               <a :href="election.originalData.website" target="_blank" class="btn btn-outline btn-primary btn-block">
                 Official Website
@@ -58,6 +60,9 @@ function yesNoMaybe(val: string | boolean | undefined) {
           <div class="card-body">
             <h2 class="card-title">Voting Options</h2>
             <div class="space-y-2">
+              <JourneyInfoField
+                  label="Early Voting Available"
+                  :value="yesNoMaybe(election.originalData.voting.early.startDate ? true : undefined)" />
               <JourneyInfoField
                 label="In-Person Voting Available"
                 :value="yesNoMaybe(election.originalData.voting.inPersonVotingAvailable)" />
@@ -78,9 +83,13 @@ function yesNoMaybe(val: string | boolean | undefined) {
                 <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Mark your calendar</li>
 
                 <li class="list-row">
-                  <div><span class="badge">Start</span></div>
+                  <div><span class="badge badge-success">Start</span></div>
                   <div>
-                    <div>{{niceIsoDate(election.originalData.voting.early.endDate)}}</div>
+                    <div>
+                      {{niceIsoDate(election.originalData.voting.early.startDate)}}
+                      ⟶
+                      <span class="badge badge-secondary badge-md">{{ daysLeftIso(election.originalData.voting.early.startDate) }}</span>
+                    </div>
                   </div>
                   <a  :href="election.originalData.voting.early.url" target="_blank" class="btn btn-sm btn-ghost btn-primary">
                     <Info title="More information"/>
@@ -88,42 +97,91 @@ function yesNoMaybe(val: string | boolean | undefined) {
                 </li>
 
                 <li class="list-row">
-                  <div><span class="badge">End</span></div>
+                  <div><span class="badge badge-error">End</span></div>
                   <div>
-                    <div>{{niceIsoDate(election.originalData.voting.early.startDate)}}</div>
+                    <div>{{niceIsoDate(election.originalData.voting.early.endDate)}}
+                      ⟶
+                      <span class="badge badge-secondary badge-md">{{ daysLeftIso(election.originalData.voting.early.endDate) }}</span>
+                    </div>
                   </div>
                   <a  :href="election.originalData.voting.early.url" target="_blank" class="btn btn-sm btn-ghost btn-primary">
                     <Info title="More information"/>
                   </a>
                 </li>
               </ul>
-              <div v-if="false">
-                <JourneyInfoField
-                  label="Start"
-                  :value="`${niceIsoDate(election.originalData.voting.early.startDate)} ⟶ ${daysLeftIso(election.originalData.voting.early.startDate)}`" />
-                <JourneyInfoField
-                  label="End"
-                  :value="`${niceIsoDate(election.originalData.voting.early.endDate)} ⟶ ${daysLeftIso(election.originalData.voting.early.endDate)}`" />
-              </div>
-              <div v-if="false">
-                <JourneyInfoField
-                  label="Varies by location"
-                  :value="yesNoMaybe(election.originalData.voting.early.varies)" />
-                <div class="mt-2">
-                  <a :href="election.originalData.voting.early.url" target="_blank" class="btn btn-sm btn-ghost btn-primary">
-                    More Info
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
 
         <!-- Voting by Mail -->
-        <div class="card bg-base-200 shadow-sm">
+        <div class="card bg-base-200 shadow-sm md:col-span-2">
           <div class="card-body">
             <h2 class="card-title">Voting by Mail</h2>
-            <div class="space-y-3">
+            <ul class="list bg-base-100 rounded-box shadow-md">
+
+              <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Get organized</li>
+
+              <li class="list-row">
+                <div><span class="badge">ID Instructions</span></div>
+                <div>
+                  <div>{{ election.originalData.voting.byMail.idInstructions }}</div>
+                </div>
+                <a  :href="election.originalData.voting.byMail.explainerUrl" target="_blank" class="btn btn-sm btn-ghost btn-primary">
+                  <Info title="Id instructions"/>
+                </a>
+              </li>
+
+              <li class="list-row">
+                <div><span class="badge">Ballot request deadline</span></div>
+                <div>
+                  <div>
+                    {{ niceIsoDate(election.originalData.voting.byMail.deadline.ballotRequest.date) }}
+                    ⟶
+                    <span class="badge badge-secondary badge-md">{{ daysLeftIso(election.originalData.voting.byMail.deadline.ballotRequest.date) }}</span>
+                  </div>
+                </div>
+                <a  :href="election.originalData.voting.byMail.explainerUrl" target="_blank" class="btn btn-sm btn-ghost btn-primary">
+                  <Info title="More information"/>
+                </a>
+              </li>
+              <li class="list-row">
+                <div><span class="badge">Postmarked or Received</span></div>
+                <div>
+                  <div>{{
+                      election.originalData.voting.byMail.deadline.ballotRequest.postmarkedOrReceived || 'N/A'
+                    }}</div>
+                </div>
+                <a  :href="election.originalData.voting.early.url" target="_blank" class="btn btn-sm btn-ghost btn-primary">
+                  <Info title="More information"/>
+                </a>
+              </li>
+              <li class="list-row">
+                <div><span class="badge">Ballot delivery deadline</span></div>
+                <div>
+                  <div>
+                    {{ niceIsoDate(election.originalData.voting.byMail.deadline.date) }}
+                    ⟶
+                    <span class="badge badge-secondary badge-md">{{ daysLeftIso(election.originalData.voting.byMail.deadline.date) }}</span>
+                  </div>
+                </div>
+                <a  :href="election.originalData.voting.early.url" target="_blank" class="btn btn-sm btn-ghost btn-primary">
+                  <Info title="More information"/>
+                </a>
+              </li>
+              <li class="list-row">
+                <div><span class="badge">Reminder</span></div>
+                <div>
+                  <div>
+                    {{ election.originalData.voting.byMail.deadline.ballotRequest.description }}
+                  </div>
+                </div>
+                <a  :href="election.originalData.voting.byMail.explainerUrl" target="_blank" class="btn btn-sm btn-ghost btn-primary">
+                  <Info title="More information"/>
+                </a>
+              </li>
+            </ul>
+
+            <div v-if="false" class="space-y-3">
               <div>
                 <span class="text-sm font-bold opacity-70 uppercase">ID Instructions</span>
                 <p class="text-sm mt-1">{{ election.originalData.voting.byMail.idInstructions }}</p>
@@ -144,7 +202,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
         </div>
 
         <!-- In-Person Voting -->
-        <div class="card bg-base-200 shadow-sm">
+        <div class="card bg-base-200 shadow-sm md:col-span-2">
           <div class="card-body">
             <h2 class="card-title">In-Person Voting</h2>
             <div class="space-y-3">
@@ -165,12 +223,6 @@ function yesNoMaybe(val: string | boolean | undefined) {
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="mt-8">
-        <NuxtLink to="/journey/getInformed" class="btn btn-ghost">
-          ← Back to Dashboard
-        </NuxtLink>
       </div>
     </div>
 
