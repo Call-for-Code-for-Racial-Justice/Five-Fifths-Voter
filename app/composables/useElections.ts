@@ -12,6 +12,7 @@ export interface UnifiedElection {
 
 export const useElections = async () => {
   const usaState = useLocalStorage(LOCAL_STORAGE_KEYS.USA_STATE, "");
+  const config = useRuntimeConfig();
 
   const { data, status, refresh } = await useAsyncData(
     `elections-combined-${usaState.value}`,
@@ -31,7 +32,7 @@ export const useElections = async () => {
 
       const unified: UnifiedElection[] = [];
 
-      // Add content elections
+      // Add elections from five fiths content
       if (Array.isArray(contentData)) {
         contentData.forEach((e: ContentElections) => {
           unified.push({
@@ -48,6 +49,7 @@ export const useElections = async () => {
       // Add API elections
       if (apiData?.elections) {
         apiData.elections.forEach((e) => {
+          if (!config.public.civicDebug && String(e.id) === "2000") return; // debug election
           unified.push({
             id: e.id,
             name: e.name,
