@@ -39,6 +39,9 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     authSecret: process.env.NUXT_AUTH_SECRET,
+    public: {
+      civicDebug: process.env.NUXT_PUBLIC_CIVIC_DEBUG,
+    },
   },
   routeRules: {
     "/api/**": { cors: false },

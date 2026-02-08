@@ -8,6 +8,7 @@ export const contentElectionSchema = z.object({
   type: z.string(),
   website: z.string(),
   guidancePhase: z.string(),
+  fiveFifthsId: z.string(),
   voting: z.object({
     inPersonVotingAvailable: z.boolean(),
     mailBallotsSentAutomatically: z.boolean(),
@@ -38,6 +39,7 @@ export const contentElectionSchema = z.object({
         closing: z.string().nullable(),
       }),
     }),
+    candidates: z.array(z.object({ title: z.string(), url: z.string().url() })).optional(),
   }),
 });
 

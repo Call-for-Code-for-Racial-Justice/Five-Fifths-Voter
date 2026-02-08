@@ -4,6 +4,7 @@ description: "Wisconsin Spring Election"
 type: "spring"
 website: "https://myvote.wi.gov"
 guidancePhase: "preliminary"
+fiveFifthsId: "wi-2026-spring"
 
 voting:
   inPersonVotingAvailable: true

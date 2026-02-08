@@ -4,6 +4,7 @@ description: "General election for Governor, US Senate, US House, and other offi
 type: "general"
 website: "https://mvp.sos.ga.gov"
 guidancePhase: "final"
+fiveFifthsId: "ga-2026-midterms"
 
 voting:
   inPersonVotingAvailable: true
