@@ -24,7 +24,7 @@
     "actual": "^0.4.0",
     "better-sqlite3": "^12.4.1",
     "ibm-cloud-sdk-core": "^5.4.3",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "lucide-vue-next": "^0.511.0",
     "luxon": "^3.6.1",
     "markdown-it": "^14.1.0",
