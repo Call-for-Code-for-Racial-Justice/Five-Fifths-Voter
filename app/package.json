@@ -27,7 +27,7 @@
     "lodash": "^4.17.23",
     "lucide-vue-next": "^0.511.0",
     "luxon": "^3.6.1",
-    "markdown-it": "^14.1.0",
+    "markdown-it": "^14.1.1",
     "nano": "^11.0.3",
     "nuxt": "^4.2.2",
     "pinia": "^3.0.2",
