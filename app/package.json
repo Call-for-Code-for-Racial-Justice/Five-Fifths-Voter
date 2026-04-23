@@ -23,7 +23,7 @@
     "@vueuse/nuxt": "^13.3.0",
     "actual": "^0.4.0",
     "better-sqlite3": "^12.4.1",
-    "ibm-cloud-sdk-core": "^5.4.3",
+    "ibm-cloud-sdk-core": "^5.4.11",
     "lodash": "^4.18.1",
     "lucide-vue-next": "^0.511.0",
     "luxon": "^3.6.1",
