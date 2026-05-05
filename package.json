@@ -20,5 +20,8 @@
     "js-yaml": "^4.1.1",
     "lint-staged": "^16.2.7",
     "puppeteer": "^22.11.0"
+  },
+  "dependencies": {
+    "nuxt": "^4.4.4"
   }
 }
