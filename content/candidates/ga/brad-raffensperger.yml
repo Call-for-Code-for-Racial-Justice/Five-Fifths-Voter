@@ -1,0 +1,136 @@
+fiveFifthsId: "candidate-brd-raffensperger"
+name: "Brad Raffensperger"
+state: "GA"
+race: "Governor"
+party: "Republican"
+primary: "Republican Primary 2026"
+office_sought: "Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "BR"
+meta:
+  issues_addressed: 12
+  issues_total: 13
+  clarity: "Specific on jobs and elections"
+  sources_count: 3
+  sources_list:
+    - "Atlanta Press Club debate transcript (primary)"
+    - "bradforgeorgia.com issues pages"
+    - "News coverage"
+  last_updated: "2026-05-01"
+  callout: "Website is one of the most policy-detailed in the field. Raffensperger explicitly states positions on LGBTQ+ (ban puberty blockers, ban biological males in female sports), immigration (support Trump deportation), eliminate income tax, expand school choice, and oppose gambling. Strong confirmation across both sources on elections and jobs."
+  data_note: "JSON source file contained a Ballotpedia link swap between Raffensperger and Williams — flagged for correction."
+  links:
+    - label: "Campaign website"
+      url: "https://bradforgeorgia.com/"
+    - label: "Ballotpedia"
+      url: "https://ballotpedia.org/Brad_Raffensperger"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Prices, wages, groceries, energy"
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: "both"
+      - topic: "Taxation"
+        note: "Cap property taxes; eliminate income tax; end non-essential property taxes for seniors"
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: "both"
+      - topic: "Small business & farming"
+        note: "Tax free zones for depressed communities; incentivize reshoring"
+        coverage: 2
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: "both"
+      - topic: "Workers & wages"
+        note: "Minimum wage, labor protections"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Gangs, cartels, mandatory sentencing; end revolving-door justice"
+        coverage: 3
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: "both"
+      - topic: "Reproductive policy"
+        note: "Abortion, contraception, medical decisions"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "Defended GA elections record; first state citizenship verification"
+        coverage: 3
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: "both"
+      - topic: "Gun policy"
+        note: "Explicitly states 'stand firm against any effort to undermine gun rights'"
+        coverage: 2
+        position_tag: "Expand gun rights"
+        position_type: "pos"
+        source: "website"
+      - topic: "LGBTQ+ policy"
+        note: "Ban puberty blockers and gender surgeries for minors; ban biological males in female sports"
+        coverage: 3
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: "website"
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Tax incentives for childcare; address healthcare costs broadly"
+        coverage: 2
+        position_tag: "Expand private options"
+        position_type: "pos"
+        source: "website"
+      - topic: "Education"
+        note: "School choice; double school safety grants to $100k; end woke curricula"
+        coverage: 3
+        position_tag: "Support school choice"
+        position_type: "pos"
+        source: "both"
+      - topic: "Broadband & infrastructure"
+        note: "Rural connectivity, roads, utilities"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Climate, clean water, energy production"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Partner with Trump admin; deport criminal aliens; fund state law enforcement"
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: "website"
+      - topic: "Housing"
+        note: "Repeal closing cost taxes; tax incentives to reduce cost burden"
+        coverage: 2
+        position_tag: "Mixed approach"
+        position_type: "mixed"
+        source: "website"
