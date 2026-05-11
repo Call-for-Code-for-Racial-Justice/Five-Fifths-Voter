@@ -6,7 +6,6 @@ const props = defineProps<{
   candidates: ContentCandidate[]
   state?: string
   race?: string
-  electionId?: string
 }>();
 
 const activeParty = ref<string | null>(null);
@@ -46,13 +45,13 @@ const filtered = computed(() =>
       <NuxtLink
         v-for="c in filtered"
         :key="c.fiveFifthsId"
-        :to="`/journey/election/${electionId}/candidates/score/${c.fiveFifthsId}`"
-        class="card bg-base-100 shadow-sm dark:border dark:border-accent hover:shadow-md transition-shadow cursor-pointer"
+        :to="`/journey/election/candidates/score/${c.fiveFifthsId}`"
+        class="card bg-base-100 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
       >
         <div class="card-body py-3 px-4">
           <div class="flex items-center gap-3">
             <div class="avatar avatar-placeholder">
-              <div class="bg-neutral text-neutral-content dark:bg-neutral-content dark:text-neutral w-10 rounded-full">
+              <div class="bg-neutral text-neutral-content w-10 rounded-full">
                 <span class="text-xs font-medium">{{ c.avatar_initials }}</span>
               </div>
             </div>
@@ -85,7 +84,7 @@ const filtered = computed(() =>
           <div class="flex flex-wrap gap-1 mt-2">
             <template v-for="section in c.sections" :key="section.id">
               <template v-for="item in section.items.filter((i: { position_type: string; }) => i.position_type === 'pos').slice(0, 2)" :key="item.topic">
-                <CandidatePositionTag class="badge-xs" :position_type="item.position_type" :position_tag="item.position_tag" />
+                <span class="badge badge-xs badge-success">{{ item.position_tag }}</span>
               </template>
             </template>
             <span class="badge badge-xs badge-ghost">View scorecard →</span>

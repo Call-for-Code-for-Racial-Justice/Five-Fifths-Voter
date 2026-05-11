@@ -4,8 +4,8 @@ interface SectionItem {
   note?: string
   coverage: number
   position_tag: string | null
-  position_type: "pos" | "neg" | "mixed" | "none"
-  source: string | null
+  position_type: "pos" | "mixed" | "none"
+  source: "debate" | "website" | "both" | null
 }
 
 interface Section {
@@ -18,20 +18,20 @@ const props = defineProps<{
   section: Section
 }>();
 
-// Assign a distinct neutral dot color per section based on id
+// Assign a distinct neutral dot colour per section based on id
 const sectionDotClass = computed(() => {
   const map: Record<string, string> = {
     "economic-security": "bg-success",
     "civil-rights-justice": "bg-secondary",
-    "access-services": "bg-accent",
-    "community-environment": "bg-primary",
+    "access-services": "bg-warning",
+    "community-environment": "bg-error",
   };
   return map[props.section.id] ?? "bg-neutral";
 });
 </script>
 
 <template>
-  <div class="collapse collapse-arrow bg-base-100 shadow-sm dark:border dark:border-accent">
+  <div class="collapse collapse-arrow bg-base-100 shadow-sm">
     <input type="checkbox" >
 
     <!-- Collapsed header -->
@@ -46,12 +46,15 @@ const sectionDotClass = computed(() => {
           <!-- Position tag summary in collapsed state -->
           <div class="flex flex-wrap gap-1.5 mt-1.5">
             <template v-for="item in section.items" :key="item.topic">
-              <CandidatePositionTag
-                class="badge-sm"
-                :position_type="item.position_type"
-                :position_tag="item.position_tag"
-                :topic="item.topic"
-              />
+              <span v-if="item.position_type === 'pos'" class="badge badge-sm badge-success gap-1">
+                {{ item.position_tag }}
+              </span>
+              <span v-else-if="item.position_type === 'mixed'" class="badge badge-sm badge-warning gap-1">
+                {{ item.position_tag }}
+              </span>
+              <span v-else class="badge badge-sm badge-ghost text-base-content/40 italic">
+                {{ item.topic }}: no position found
+              </span>
             </template>
           </div>
         </div>

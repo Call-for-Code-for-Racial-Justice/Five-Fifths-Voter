@@ -8,9 +8,9 @@ const coverageItems = [
 </script>
 
 <template>
-  <div class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-neutral-content">
+  <div class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-base-content/50">
     <!-- Coverage -->
-    <div class="flex items-center gap-1.5 font-medium">Coverage:</div>
+    <div class="flex items-center gap-1.5 font-medium text-base-content/60">Coverage:</div>
     <div v-for="item in coverageItems" :key="item.label" class="flex items-center gap-1.5">
       <div class="flex gap-0.5">
         <span
@@ -27,7 +27,7 @@ const coverageItems = [
     <div class="w-px h-3 bg-base-300 self-center hidden sm:block" />
 
     <!-- Sources -->
-    <div class="flex items-center gap-1.5 font-medium">Sources:</div>
+    <div class="flex items-center gap-1.5 font-medium text-base-content/60">Sources:</div>
     <div class="flex items-center gap-1.5">
       <span class="badge badge-xs badge-success badge-outline">Debate</span>
       <span>Primary source</span>

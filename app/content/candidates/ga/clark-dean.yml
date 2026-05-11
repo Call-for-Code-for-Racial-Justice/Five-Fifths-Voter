@@ -1,7 +1,7 @@
-fiveFifthsId: "candidate-grg-kirkpatrick"
-name: "Gregg Kirkpatrick"
+fiveFifthsId: "clark-dean"
+name: "Clark Dean"
 state: "GA"
-race: "Governor"
+race: "Governor — Republican Primary 2026"
 party: "Republican"
 primary: "Republican Primary 2026"
 office_sought: "Governor"
@@ -9,40 +9,43 @@ district: null
 region: "Statewide"
 incumbent: false
 debate_participant: true
-avatar_initials: "GK"
-meta:
-  issues_addressed: 5
+avatar_initials: "CD"
+ballot_order: 2
+issues:
+  issues_addressed: 6
   issues_total: 13
-  clarity: "Partial — limited debate time"
-  sources_count: 2
+  clarity: "General — process over positions"
+  sources_count: 3
   sources_list:
     - "Atlanta Press Club debate transcript (primary)"
-    - "ballotpedia.org/Gregg_Kirkpatrick"
+    - "clarkdeanforga.com ASAP plan"
+    - "News coverage"
   last_updated: "2026-05-01"
-  callout: "Kirkpatrick's Ballotpedia page and campaign website offered very limited policy detail beyond what appeared in the debate. His referenced 90-page plan was not publicly accessible online. His debate time was limited after being cut off mid-opening remarks. Scorecard reflects only what was verifiably found."
   links:
+    - label: "Campaign website"
+      url: "https://www.clarkdeanforga.com/"
     - label: "Ballotpedia"
-      url: "https://ballotpedia.org/Gregg_Kirkpatrick"
+      url: "https://ballotpedia.org/Clark_Dean"
 
 sections:
   - id: "economic-security"
     title: "Economic security"
     items:
       - topic: "Cost of living"
-        note: "Proposes eliminating state income tax within 2 years"
-        coverage: 3
+        note: "Prices, wages, groceries, energy"
+        coverage: 2
         position_tag: "Market-driven solutions"
         position_type: "pos"
-        source: "debate"
+        source: "both"
       - topic: "Taxation"
-        note: "Eliminate state income tax; zero property tax for seniors, veterans, disabled"
-        coverage: 3
+        note: "Tax rates, cuts, who pays"
+        coverage: 2
         position_tag: "Reduce taxes"
         position_type: "pos"
-        source: "debate"
+        source: "website"
       - topic: "Small business & farming"
         note: "Support, capital access, regulation"
-        coverage: 2
+        coverage: 1
         position_tag: "Reduce regulation"
         position_type: "pos"
         source: "debate"
@@ -58,10 +61,10 @@ sections:
     items:
       - topic: "Criminal justice system"
         note: "Policing, sentencing, incarceration"
-        coverage: 0
-        position_tag: null
-        position_type: "none"
-        source: null
+        coverage: 2
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: "website"
       - topic: "Reproductive policy"
         note: "Abortion, contraception, medical decisions"
         coverage: 0
@@ -69,11 +72,11 @@ sections:
         position_type: "none"
         source: null
       - topic: "Voting & elections"
-        note: "Proposes grand jury investigation of election fraud; anti-QR codes"
-        coverage: 3
-        position_tag: "Strengthen voter verification"
-        position_type: "pos"
-        source: "debate"
+        note: "ID laws, ballot access, integrity"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
       - topic: "Gun policy"
         note: "Ownership rights, regulations, safety"
         coverage: 0
@@ -91,23 +94,23 @@ sections:
     title: "Access & services"
     items:
       - topic: "Healthcare"
-        note: "Proposes reducing medical device costs; market-based approach"
-        coverage: 3
-        position_tag: "Reduce government role"
-        position_type: "pos"
-        source: "debate"
+        note: "Coverage, Medicaid, rural access"
+        coverage: 2
+        position_tag: "Mixed approach"
+        position_type: "mixed"
+        source: "website"
       - topic: "Education"
         note: "Public schools, choice, funding, HBCUs"
-        coverage: 0
-        position_tag: null
-        position_type: "none"
-        source: null
+        coverage: 2
+        position_tag: "Both public and choice"
+        position_type: "pos"
+        source: "both"
       - topic: "Broadband & infrastructure"
         note: "Rural connectivity, roads, utilities"
-        coverage: 0
-        position_tag: null
-        position_type: "none"
-        source: null
+        coverage: 2
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: "website"
 
   - id: "community-environment"
     title: "Community & environment"
@@ -120,13 +123,13 @@ sections:
         source: null
       - topic: "Immigration"
         note: "Enforcement, pathways, local policy"
-        coverage: 1
-        position_tag: "Stricter enforcement"
-        position_type: "pos"
-        source: "debate"
-      - topic: "Housing"
-        note: "Affordability, development, tenant policy"
         coverage: 0
         position_tag: null
         position_type: "none"
         source: null
+      - topic: "Housing"
+        note: "Affordability, development, tenant policy"
+        coverage: 2
+        position_tag: "Reduce development barriers"
+        position_type: "pos"
+        source: "website"

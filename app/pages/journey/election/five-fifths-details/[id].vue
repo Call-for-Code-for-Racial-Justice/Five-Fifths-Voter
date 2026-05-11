@@ -18,16 +18,6 @@ const election = computed(() => {
 const races = computed(() => election.value?.originalData?.meta?.races || []);
 const voting = computed(() => election.value?.originalData?.voting || {});
 
-const { origin } = useRequestURL();
-useSeoMeta({
-  title: () => election.value ? `five/fifths voter | ${election.value.name}` : "five/fifths voter",
-  ogTitle: () => election.value ? `five/fifths voter | ${election.value.name}` : "five/fifths voter",
-  description: () => election.value ? `Voting dates, candidates, and registration information for ${election.value.name}` : "Election information from five/fifths voter",
-  ogDescription: () => election.value ? `Voting dates, candidates, and registration information for ${election.value.name}` : "Election information from five/fifths voter",
-  ogImage: `${origin}${maskGroupUrl}`,
-  twitterCard: "summary_large_image",
-});
-
 function yesNoMaybe(val: string | boolean | undefined) {
   if (val === true) return t("yes");
   if (val === false) return t("no");
@@ -129,12 +119,10 @@ function yesNoMaybe(val: string | boolean | undefined) {
             <div v-if="races.length === 0">
               No candidates available for this election.
             </div>
-            <div v-else class="flex flex-col gap-2 items-start">
+            <div v-else>
               <NuxtLink
-                  v-for="r in races"
-                  :key="r"
-                  class="btn btn-link"
-                  :to="`/journey/election/${id}/candidates/${r}`">
+                  v-for="r in races" :key="r"
+                        :to="`/journey/election/candidates/${r}`">
                 {{ r }}
               </NuxtLink>
               </div>

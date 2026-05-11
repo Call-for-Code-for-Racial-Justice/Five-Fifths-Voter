@@ -1,9 +1,57 @@
 <script setup lang="ts">
 import { CheckCircle, ExternalLink, Info, AlertTriangle } from "lucide-vue-next";
-import type { ContentCandidate } from "~/types/candidate";
+
+interface CandidateLink {
+  label: string
+  url: string
+}
+
+interface CandidateMeta {
+  issues_addressed: number
+  issues_total: number
+  clarity: string
+  sources_count: number
+  sources_list: string[]
+  last_updated: string
+  callout?: string
+  data_note?: string
+  links?: CandidateLink[]
+}
+
+interface SectionItem {
+  topic: string
+  note?: string
+  coverage: number // 0–3
+  position_tag: string | null
+  position_type: "pos" | "mixed" | "none"
+  source: "debate" | "website" | "both" | null
+}
+
+interface Section {
+  id: string
+  title: string
+  items: SectionItem[]
+}
+
+interface Candidate {
+  fiveFifthsId: string
+  name: string
+  state: string
+  race: string
+  party: string
+  primary: string
+  office_sought: string
+  district: string | null
+  region: string
+  incumbent: boolean
+  debate_participant: boolean
+  avatar_initials: string
+  issues: CandidateMeta
+  sections: Section[]
+}
 
 const props = defineProps<{
-  candidate: ContentCandidate
+  candidate: Candidate
 }>();
 
 const clarityLabel = computed(() => {
@@ -13,22 +61,22 @@ const clarityLabel = computed(() => {
   return "Low";
 });
 
-const sourcesSummary = computed(() => {
-  const sources_list = props.candidate.issues?.sources_list || [];
-  return sources_list.map((s: string) => s.split(" ")[0]?.replace(/[()]/g, "") ?? "")
-    .join(" · ");
-});
+const sourcesSummary = computed(() =>
+  props.candidate.issues.sources_list
+    .map(s => s.split(" ")[0].replace(/[()]/g, ""))
+    .join(" · "),
+);
 </script>
 
 <template>
-  <div class="space-y-4">
+  <div class="space-y-4 mt-16">
     <!-- Header -->
     <div class="card bg-base-100 shadow-sm">
       <div class="card-body py-4 px-5">
         <div class="flex items-start gap-4">
           <!-- Avatar -->
           <div class="avatar avatar-placeholder">
-            <div class="bg-neutral text-neutral-content dark:bg-neutral-content dark:text-neutral w-10 rounded-full">
+            <div class="bg-neutral text-neutral-content w-10 rounded-full">
               <span class="text-xs font-medium">{{ candidate.avatar_initials }}</span>
             </div>
           </div>
@@ -109,7 +157,7 @@ const sourcesSummary = computed(() => {
     />
 
     <!-- Legend -->
-    <div class="card bg-neutral text-neutral-content shadow-sm dark:border-l dark:border-secondary">
+    <div class="card bg-base-100 shadow-sm">
       <div class="card-body py-3 px-4">
         <CandidateLegend />
       </div>

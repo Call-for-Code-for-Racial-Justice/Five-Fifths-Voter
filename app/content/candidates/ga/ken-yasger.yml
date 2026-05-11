@@ -1,7 +1,7 @@
-fiveFifthsId: "candidate-clk-dean"
-name: "Clark Dean"
+fiveFifthsId: "ken-yasger"
+name: "Ken Yasger"
 state: "GA"
-race: "Governor"
+race: "Governor — Republican Primary 2026"
 party: "Republican"
 primary: "Republican Primary 2026"
 office_sought: "Governor"
@@ -9,46 +9,47 @@ district: null
 region: "Statewide"
 incumbent: false
 debate_participant: true
-avatar_initials: "CD"
-meta:
+avatar_initials: "KY"
+ballot_order: 8
+issues:
   issues_addressed: 6
   issues_total: 13
-  clarity: "General — process over positions"
-  sources_count: 3
+  clarity: "Personal experience over policy in debate"
+  sources_count: 2
   sources_list:
     - "Atlanta Press Club debate transcript (primary)"
-    - "clarkdeanforga.com ASAP plan"
-    - "News coverage"
+    - "kenforgeorgia.com priorities page"
   last_updated: "2026-05-01"
-  callout: "Dean's ASAP plan (Affordability, Strength, Accessibility, Prosperity) adds tax cuts, housing cost reduction, and healthcare access as stated priorities — but still offers no explicit positions on reproductive policy, gun policy, immigration, or LGBTQ+. His platform focuses on operational process over issue stances."
+  callout: "Yasger's website reveals the most distinctive platform in the field — eliminate income tax, suspend gas tax, reform teacher pay. His debate performance was personal and emotional; his website is more policy-specific than it appeared. Some website priorities fall outside the current topic framework and are not included here."
+  data_note: "Yasger's website lists marijuana legalization and gambling legalization as priorities — these fall outside the current topic framework and are not included here."
   links:
     - label: "Campaign website"
-      url: "https://www.clarkdeanforga.com/"
+      url: "https://www.kenforgeorgia.com/"
     - label: "Ballotpedia"
-      url: "https://ballotpedia.org/Clark_Dean"
+      url: "https://ballotpedia.org/Ken_Yasger"
 
 sections:
   - id: "economic-security"
     title: "Economic security"
     items:
       - topic: "Cost of living"
-        note: "Prices, wages, groceries, energy"
+        note: "Suspend gas tax; eliminate income tax to relieve family burden"
         coverage: 2
         position_tag: "Market-driven solutions"
         position_type: "pos"
         source: "both"
       - topic: "Taxation"
-        note: "Tax rates, cuts, who pays"
-        coverage: 2
+        note: "Eliminate Georgia income tax; temporary gas tax suspension"
+        coverage: 3
         position_tag: "Reduce taxes"
         position_type: "pos"
         source: "website"
       - topic: "Small business & farming"
         note: "Support, capital access, regulation"
-        coverage: 1
-        position_tag: "Reduce regulation"
-        position_type: "pos"
-        source: "debate"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
       - topic: "Workers & wages"
         note: "Minimum wage, labor protections"
         coverage: 0
@@ -60,11 +61,11 @@ sections:
     title: "Civil rights & justice"
     items:
       - topic: "Criminal justice system"
-        note: "Policing, sentencing, incarceration"
-        coverage: 2
-        position_tag: "Increase enforcement"
-        position_type: "pos"
-        source: "website"
+        note: "Mentioned mental health and addiction context from personal experience"
+        coverage: 1
+        position_tag: "Mixed approach"
+        position_type: "mixed"
+        source: "debate"
       - topic: "Reproductive policy"
         note: "Abortion, contraception, medical decisions"
         coverage: 0
@@ -95,22 +96,22 @@ sections:
     items:
       - topic: "Healthcare"
         note: "Coverage, Medicaid, rural access"
-        coverage: 2
-        position_tag: "Mixed approach"
-        position_type: "mixed"
-        source: "website"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
       - topic: "Education"
-        note: "Public schools, choice, funding, HBCUs"
-        coverage: 2
-        position_tag: "Both public and choice"
+        note: "Reform educator pay; cap admin salaries to fund teacher raises"
+        coverage: 3
+        position_tag: "Increase public school funding"
         position_type: "pos"
-        source: "both"
+        source: "website"
       - topic: "Broadband & infrastructure"
         note: "Rural connectivity, roads, utilities"
-        coverage: 2
-        position_tag: "Increase public investment"
-        position_type: "pos"
-        source: "website"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
 
   - id: "community-environment"
     title: "Community & environment"
@@ -122,14 +123,14 @@ sections:
         position_type: "none"
         source: null
       - topic: "Immigration"
-        note: "Enforcement, pathways, local policy"
+        note: "Supports enforcement as framed in debate context"
+        coverage: 1
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Housing"
+        note: "Affordability, development, tenant policy"
         coverage: 0
         position_tag: null
         position_type: "none"
         source: null
-      - topic: "Housing"
-        note: "Affordability, development, tenant policy"
-        coverage: 2
-        position_tag: "Reduce development barriers"
-        position_type: "pos"
-        source: "website"
