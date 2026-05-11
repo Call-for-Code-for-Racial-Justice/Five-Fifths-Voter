@@ -61,11 +61,11 @@ const clarityLabel = computed(() => {
   return "Low";
 });
 
-const sourcesSummary = computed(() =>
-  props.candidate.issues.sources_list
-    .map(s => s.split(" ")[0].replace(/[()]/g, ""))
-    .join(" · "),
-);
+const sourcesSummary = computed(() => {
+  const sources_list = props.candidate.issues?.sources_list || [];
+  return sources_list.map(s => s.split(" ")[0]?.replace(/[()]/g, "") ?? "")
+    .join(" · ");
+});
 </script>
 
 <template>
@@ -76,7 +76,7 @@ const sourcesSummary = computed(() =>
         <div class="flex items-start gap-4">
           <!-- Avatar -->
           <div class="avatar avatar-placeholder">
-            <div class="bg-neutral text-neutral-content w-10 rounded-full">
+            <div class="bg-neutral text-neutral-content dark:bg-neutral-content dark:text-neutral w-10 rounded-full">
               <span class="text-xs font-medium">{{ candidate.avatar_initials }}</span>
             </div>
           </div>
@@ -157,7 +157,7 @@ const sourcesSummary = computed(() =>
     />
 
     <!-- Legend -->
-    <div class="card bg-base-100 shadow-sm">
+    <div class="card bg-neutral text-neutral-content shadow-sm dark:border-l dark:border-secondary">
       <div class="card-body py-3 px-4">
         <CandidateLegend />
       </div>
