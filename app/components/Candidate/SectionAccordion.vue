@@ -31,7 +31,7 @@ const sectionDotClass = computed(() => {
 </script>
 
 <template>
-  <div class="collapse collapse-arrow bg-base-100 shadow-sm">
+  <div class="collapse collapse-arrow bg-base-100 shadow-sm dark:border dark:border-accent">
     <input type="checkbox" >
 
     <!-- Collapsed header -->

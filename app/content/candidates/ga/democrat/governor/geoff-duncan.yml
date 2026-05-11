@@ -1,0 +1,138 @@
+fiveFifthsId: "geoff-duncan"
+name: "Geoff Duncan"
+state: "GA"
+race: "Governor — Democratic Primary 2026"
+party: "Democratic"
+primary: "Democratic Primary 2026"
+office_sought: "Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "GD"
+ballot_order: 4
+issues:
+  issues_addressed: 12
+  issues_total: 13
+  clarity: "Specific — detailed issues pages across five policy areas"
+  sources_count: 4
+  sources_list:
+    - "Atlanta Press Club debate transcript (primary)"
+    - "duncanforgeorgia.com issues pages (healthcare, economy, education, democracy, affordability)"
+    - "News coverage: NBC, CBS, WGXA, AJC"
+  last_updated: "2026-05-10"
+  callout: "Duncan is a former Republican Lt. Governor who joined the Democratic Party in 2025. He explicitly acknowledged being wrong on the heartbeat bill and gun legislation. His website reveals a more detailed platform than his debate performance suggested — covering healthcare expansion, housing, small business, immigration (opposes inhumane raids), and an independent redistricting commission. His three core issues are the affordability crisis, the healthcare crisis, and the Trump crisis."
+  links:
+    - label: "Campaign website"
+      url: "https://www.duncanforgeorgia.com/"
+    - label: "Issues overview"
+      url: "https://www.duncanforgeorgia.com/issues/"
+    - label: "Ballotpedia"
+      url: "https://ballotpedia.org/Geoff_Duncan"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Jumpstart Fund — 10% of $17B rainy day fund ($1.7B) targeting poverty, childcare, housing; push back against Trump tariffs hurting Georgia businesses and farmers"
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: "both"
+      - topic: "Taxation"
+        note: "Smart, practical solutions that deliver real relief; opposes tariffs raising costs; no explicit state tax rate position found"
+        coverage: 1
+        position_tag: "Mixed approach"
+        position_type: "mixed"
+        source: "website"
+      - topic: "Small business & farming"
+        note: "Cut unnecessary red tape; expand capital access; push back against tariffs; fair access to contracting for minority business owners; inclusive growth strategy"
+        coverage: 3
+        position_tag: "Mixed approach"
+        position_type: "mixed"
+        source: "website"
+      - topic: "Workers & wages"
+        note: "Expand apprenticeship pathways; skills-based credentialing; diverse hiring in state government; endorsed by IBEW Local 613 and Southern Regional Council of Carpenters"
+        coverage: 2
+        position_tag: "Expand worker protections"
+        position_type: "pos"
+        source: "website"
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Policing, sentencing, incarceration"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "Day-one executive order for doctors to practice without fear of prosecution; introduce legislation to repeal six-week abortion ban; expand tele-OB and rural nurse navigators; explicitly states was wrong to support heartbeat bill"
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: "both"
+      - topic: "Voting & elections"
+        note: "Stood up to Trump on 2020 election; bipartisan independent redistricting commission; people should pick representatives not the other way around"
+        coverage: 3
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: "both"
+      - topic: "Gun policy"
+        note: "Explicitly stated was wrong to oppose common sense gun legislation as Republican; now supports gun legislation"
+        coverage: 2
+        position_tag: "Increase gun regulations"
+        position_type: "pos"
+        source: "debate"
+      - topic: "LGBTQ+ policy"
+        note: "LGBTQ+ community deserves same rights as everyone else; supported hate crimes legislation; will have most diverse governor's cabinet in Georgia history"
+        coverage: 3
+        position_tag: "Expand protections"
+        position_type: "pos"
+        source: "debate"
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Expand Medicaid — no other option; strengthen private coverage options; mental health investment; maternal health: repeal abortion ban, tele-OB, nurse navigators; leverage hospitals and technical colleges"
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: "both"
+      - topic: "Education"
+        note: "Modernize QBE K-12 funding; expand early childhood via CAPS program; improve reimbursement rates; bridge to college and careers; universal school meals; strengthen career pipelines"
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: "both"
+      - topic: "Broadband & infrastructure"
+        note: "Modernize infrastructure across metro and rural regions; public investment follows opportunity not just geography; passenger rail and connectivity implied through economic agenda"
+        coverage: 2
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: "website"
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Climate, clean water, energy production"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Will not use state resources for inhumane immigration raids that tear families apart; enforce law while respecting human dignity; balance public safety with compassion"
+        coverage: 3
+        position_tag: "Expand legal pathways"
+        position_type: "pos"
+        source: "website"
+      - topic: "Housing"
+        note: "Accelerate responsible housing development; reduce unnecessary building barriers; prioritize workforce housing near job centers; wrap-around services for working homeless; cited Atlanta and Dundee Cottages Savannah as models"
+        coverage: 3
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: "both"

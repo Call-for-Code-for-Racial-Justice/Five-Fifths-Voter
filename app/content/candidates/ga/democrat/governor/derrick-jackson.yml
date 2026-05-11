@@ -1,0 +1,138 @@
+fiveFifthsId: "derrick-jackson"
+name: "Derrick Jackson"
+state: "GA"
+race: "Governor — Democratic Primary 2026"
+party: "Democratic"
+primary: "Democratic Primary 2026"
+office_sought: "Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "DJ"
+ballot_order: 6
+issues:
+  issues_addressed: 9
+  issues_total: 13
+  clarity: "Specific on wages, healthcare, and education; personal and experiential in delivery"
+  sources_count: 3
+  sources_list:
+    - "Atlanta Press Club debate transcript (primary)"
+    - "votederrickjackson.org platform page"
+    - "WABE interview and 41NBC news coverage"
+  last_updated: "2026-05-01"
+  callout: "Jackson is a 10-year state representative, 22-year Navy veteran, and corporate executive. He is the only military veteran in the Democratic field. His platform centers on minimum wage ($20/hr), Medicaid expansion, maternal health, income tax exemptions for nurses, teachers, veterans, and seniors. He was vocal on Duncan's credibility throughout the debate and challenged Esteves on SB 82."
+  links:
+    - label: "Campaign website"
+      url: "https://www.votederrickjackson.org/"
+    - label: "Facebook"
+      url: "https://www.facebook.com/Jackson4Georgia/"
+    - label: "Ballotpedia"
+      url: "https://ballotpedia.org/Derrick_Jackson"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Address affordability for urban, suburban, and rural differently; minimum wage as economic access point; seven children referenced as example"
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: "both"
+      - topic: "Taxation"
+        note: "Exempt state income taxes for nurses, public school teachers, military veterans, and seniors over 65"
+        coverage: 3
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: "both"
+      - topic: "Small business & farming"
+        note: "Invest in Black farmers; cut red tape; expand capital access; support small businesses and nonprofits; permanent seat at policy table"
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: "both"
+      - topic: "Workers & wages"
+        note: "Raise minimum wage to $20/hour; current Georgia minimum is $5.15, restaurant workers $2.13; legislation already introduced"
+        coverage: 3
+        position_tag: "Raise minimum wage"
+        position_type: "pos"
+        source: "both"
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Constitutional rights under attack; number one state for families not business; cited women and children dying under current system"
+        coverage: 2
+        position_tag: "Invest in prevention"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Reproductive policy"
+        note: "Repeal Georgia abortion law; cited 169 women dying, 772 children dying in first 12 months; 82 counties without an OB/GYN"
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: "both"
+      - topic: "Voting & elections"
+        note: "Constitutional rights under attack framing; voting rights mentioned broadly"
+        coverage: 1
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Gun policy"
+        note: "Pledged to push for stricter gun laws"
+        coverage: 2
+        position_tag: "Increase gun regulations"
+        position_type: "pos"
+        source: "website"
+      - topic: "LGBTQ+ policy"
+        note: "Protections, discrimination, parental rights"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Expand Medicaid; use $2B of $14.3B surplus to keep hospitals from closing; 13 hospitals on brink of closing; cap medicine costs; increase OB/GYNs and pediatricians statewide"
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: "both"
+      - topic: "Education"
+        note: "Revise QBE formula with poverty weight; oppose SB 82 voucher diversion; 62% of third graders not reading at level; modernize funding for 21st century"
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: "both"
+      - topic: "Broadband & infrastructure"
+        note: "Rural connectivity, roads, utilities"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Climate, clean water, energy production"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Enforcement, pathways, local policy"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Champion policies to make everyday life more affordable including housing; no detailed housing policy found"
+        coverage: 1
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: "website"

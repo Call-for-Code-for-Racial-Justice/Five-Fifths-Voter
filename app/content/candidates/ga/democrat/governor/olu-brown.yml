@@ -1,0 +1,135 @@
+fiveFifthsId: "olu-brown"
+name: "Olu Brown"
+state: "GA"
+race: "Governor — Democratic Primary 2026"
+party: "Democratic"
+primary: "Democratic Primary 2026"
+office_sought: "Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "OB"
+ballot_order: 2
+issues:
+  issues_addressed: 7
+  issues_total: 13
+  clarity: "General — themes over specifics in debate; website minimal"
+  sources_count: 2
+  sources_list:
+    - "Atlanta Press Club debate transcript (primary)"
+    - "oluforga.com (minimal content rendered)"
+  last_updated: "2026-05-01"
+  callout: "Brown is a pastor and small business owner who framed nearly every position through a faith-and-community lens. Strong on Medicaid expansion, reproductive rights, LGBTQ+ protections, and teacher pay. His website rendered minimal content; debate is the primary source. He also explicitly apologized to the LGBTQ+ community on behalf of the legislature."
+  links:
+    - label: "Campaign website"
+      url: "https://www.oluforga.com/"
+    - label: "Ballotpedia"
+      url: "https://ballotpedia.org/Olu_Brown"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Healthcare premium relief fund — 15% discount on monthly insurance premium using surplus; fights so families don't check bank account daily"
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Taxation"
+        note: "Tax rates, cuts, who pays"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Small business & farming"
+        note: "Self-described small business owner; protect rural healthcare; union protections mentioned"
+        coverage: 2
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Workers & wages"
+        note: "Protect unions; fight for working-class communities; senior income poverty addressed"
+        coverage: 2
+        position_tag: "Expand worker protections"
+        position_type: "pos"
+        source: "debate"
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Policing, sentencing, incarceration"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No one under the gold dome makes decisions about women's bodies; explicitly pro-choice; will veto legislation denying reproductive rights"
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Voting & elections"
+        note: "ID laws, ballot access, integrity"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "Ownership rights, regulations, safety"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Explicitly fights for LGBTQIA+ rights; will veto any legislation denying rights of LGBTQIA+ Georgians; apologized on behalf of legislature"
+        coverage: 3
+        position_tag: "Expand protections"
+        position_type: "pos"
+        source: "debate"
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Expand Medicaid; protect rural hospitals; healthcare premium relief fund using state surplus; action before legislation"
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Education"
+        note: "Start teacher compensation at $50,000; eliminate state income tax for veteran teachers; raise pay for cafeteria workers, bus drivers, custodians; address QBE formula"
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Broadband & infrastructure"
+        note: "Rural connectivity, roads, utilities"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Climate, clean water, energy production"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Enforcement, pathways, local policy"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Affordability, development, tenant policy"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

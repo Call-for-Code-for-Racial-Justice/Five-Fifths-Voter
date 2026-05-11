@@ -122,10 +122,12 @@ function yesNoMaybe(val: string | boolean | undefined) {
             <div v-if="races.length === 0">
               No candidates available for this election.
             </div>
-            <div v-else>
+            <div v-else class="flex flex-col gap-2 items-start">
               <NuxtLink
-                  v-for="r in races" :key="r"
-                        :to="`/journey/election/candidates/${r}`">
+                  v-for="r in races"
+                  :key="r"
+                  class="btn btn-link"
+                  :to="`/journey/election/candidates/${r}`">
                 {{ r }}
               </NuxtLink>
               </div>
