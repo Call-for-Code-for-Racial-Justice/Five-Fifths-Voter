@@ -1,7 +1,7 @@
-fiveFifthsId: "candidate-chr-carr"
-name: "Chris Carr"
+fiveFifthsId: "tom-williams"
+name: "Tom Williams"
 state: "GA"
-race: "Governor"
+race: "Governor — Republican Primary 2026"
 party: "Republican"
 primary: "Republican Primary 2026"
 office_sought: "Governor"
@@ -9,46 +9,44 @@ district: null
 region: "Statewide"
 incumbent: false
 debate_participant: true
-avatar_initials: "CC"
-meta:
-  issues_addressed: 10
+avatar_initials: "TW"
+ballot_order: 7
+issues:
+  issues_addressed: 9
   issues_total: 13
-  clarity: "General — themes over specifics"
-  sources_count: 3
+  clarity: "Specific on elections only in debate"
+  sources_count: 2
   sources_list:
     - "Atlanta Press Club debate transcript (primary)"
-    - "carrforgeorgia.com issues pages"
-    - "News coverage"
+    - "tomwilliamsforga.com issues page"
   last_updated: "2026-05-01"
-  callout: "Website fills significant gaps. Carr explicitly lists Second Amendment protection, religious freedom, anti-human trafficking, mental health investment, and public corruption reform. His debate focus was electability and Kemp-era continuity; website provides the policy specifics."
+  data_note: "Williams asked explicitly to be called 'Tom Williams' not 'Thomas Williams' during the debate."
   links:
     - label: "Campaign website"
-      url: "https://carrforgeorgia.com/"
-    - label: "Ballotpedia"
-      url: "https://ballotpedia.org/Chris_Carr_(Georgia)"
+      url: "https://tomwilliamsforga.com/"
 
 sections:
   - id: "economic-security"
     title: "Economic security"
     items:
       - topic: "Cost of living"
-        note: "Prices, wages, groceries, energy"
-        coverage: 2
+        note: "Attributes affordability crisis to radical Democrats"
+        coverage: 1
         position_tag: "Market-driven solutions"
         position_type: "pos"
         source: "both"
       - topic: "Taxation"
-        note: "Tax rates, cuts, who pays"
-        coverage: 3
+        note: "Fight to reduce state income taxes"
+        coverage: 2
         position_tag: "Reduce taxes"
         position_type: "pos"
-        source: "both"
+        source: "website"
       - topic: "Small business & farming"
         note: "Support, capital access, regulation"
-        coverage: 2
-        position_tag: "Reduce regulation"
-        position_type: "pos"
-        source: "website"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
       - topic: "Workers & wages"
         note: "Minimum wage, labor protections"
         coverage: 0
@@ -60,57 +58,57 @@ sections:
     title: "Civil rights & justice"
     items:
       - topic: "Criminal justice system"
-        note: "Policing, sentencing, incarceration"
-        coverage: 3
+        note: "Defend law enforcement from defunding; oppose rogue prosecutors"
+        coverage: 2
         position_tag: "Increase enforcement"
         position_type: "pos"
-        source: "both"
+        source: "website"
       - topic: "Reproductive policy"
-        note: "Abortion, contraception, medical decisions"
-        coverage: 0
-        position_tag: null
-        position_type: "none"
-        source: null
+        note: "'Protect every precious unborn child'; strongest pro-life laws in country"
+        coverage: 3
+        position_tag: "Pro-life"
+        position_type: "pos"
+        source: "website"
       - topic: "Voting & elections"
-        note: "ID laws, ballot access, integrity"
-        coverage: 2
+        note: "Paper ballots, no QR codes, outlaw leadership PACs, ban money in politics"
+        coverage: 3
         position_tag: "Strengthen voter verification"
         position_type: "pos"
-        source: "debate"
+        source: "both"
       - topic: "Gun policy"
-        note: "Ownership rights, regulations, safety"
+        note: "Defend Second Amendment against local authorities who try to weaken it"
         coverage: 2
         position_tag: "Expand gun rights"
         position_type: "pos"
         source: "website"
       - topic: "LGBTQ+ policy"
-        note: "Protections, discrimination, parental rights"
-        coverage: 0
-        position_tag: null
-        position_type: "none"
-        source: null
+        note: "Protect women's sports, locker rooms, restrooms from biological males"
+        coverage: 2
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: "website"
 
   - id: "access-services"
     title: "Access & services"
     items:
       - topic: "Healthcare"
         note: "Coverage, Medicaid, rural access"
-        coverage: 2
-        position_tag: "Mixed approach"
-        position_type: "mixed"
-        source: "website"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
       - topic: "Education"
-        note: "Public schools, choice, funding, HBCUs"
+        note: "School choice; protect parental rights; sanction schools that violate them"
         coverage: 3
-        position_tag: "Both public and choice"
+        position_tag: "Support school choice"
         position_type: "pos"
-        source: "both"
+        source: "website"
       - topic: "Broadband & infrastructure"
         note: "Rural connectivity, roads, utilities"
-        coverage: 2
-        position_tag: "Increase public investment"
-        position_type: "pos"
-        source: "debate"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
 
   - id: "community-environment"
     title: "Community & environment"
@@ -122,14 +120,14 @@ sections:
         position_type: "none"
         source: null
       - topic: "Immigration"
-        note: "Enforcement, pathways, local policy"
+        note: "Strong borders; enforcement against criminal illegal aliens"
         coverage: 2
         position_tag: "Stricter enforcement"
         position_type: "pos"
         source: "website"
       - topic: "Housing"
         note: "Affordability, development, tenant policy"
-        coverage: 2
-        position_tag: "Mixed approach"
-        position_type: "mixed"
-        source: "both"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

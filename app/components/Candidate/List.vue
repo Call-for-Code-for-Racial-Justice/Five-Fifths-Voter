@@ -1,31 +1,9 @@
 <script setup lang="ts">
 import { CheckCircle } from "lucide-vue-next";
-
-interface CandidateSummary {
-  fiveFifthsId: string
-  name: string
-  state: string
-  race: string
-  party: string
-  incumbent: boolean
-  debate_participant: boolean
-  avatar_initials: string
-  meta: {
-    issues_addressed: number
-    issues_total: number
-  }
-  sections: Array<{
-    id: string
-    items: Array<{
-      position_type: "pos" | "mixed" | "none"
-      position_tag: string | null
-      topic: string
-    }>
-  }>
-}
+import type { ContentCandidate } from "~/types/candidate";
 
 const props = defineProps<{
-  candidates: CandidateSummary[]
+  candidates: ContentCandidate[]
   state?: string
   race?: string
 }>();
@@ -63,18 +41,17 @@ const filtered = computed(() =>
     </div>
 
     <!-- Candidate cards -->
-    <div class="grid gap-3 sm:grid-cols-2">
+    <div class="grid gap-3 sm:grid-cols-1">
       <NuxtLink
         v-for="c in filtered"
         :key="c.fiveFifthsId"
-        :to="`/candidates/${c.fiveFifthsId}`"
+        :to="`/journey/election/candidates/score/${c.fiveFifthsId}`"
         class="card bg-base-100 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
       >
         <div class="card-body py-3 px-4">
           <div class="flex items-center gap-3">
-            <!-- Avatar -->
-            <div class="avatar placeholder shrink-0">
-              <div class="bg-neutral text-neutral-content rounded-full w-10">
+            <div class="avatar avatar-placeholder">
+              <div class="bg-neutral text-neutral-content w-10 rounded-full">
                 <span class="text-xs font-medium">{{ c.avatar_initials }}</span>
               </div>
             </div>
@@ -97,7 +74,7 @@ const filtered = computed(() =>
             <!-- Coverage summary -->
             <div class="text-right shrink-0">
               <div class="text-base font-semibold text-base-content">
-                {{ c.meta.issues_addressed }}/{{ c.meta.issues_total }}
+                {{ c.issues?.issues_addressed }}/{{ c.issues?.issues_total }}
               </div>
               <div class="text-xs text-base-content/40">topics</div>
             </div>
@@ -106,7 +83,7 @@ const filtered = computed(() =>
           <!-- Mini position tag preview -->
           <div class="flex flex-wrap gap-1 mt-2">
             <template v-for="section in c.sections" :key="section.id">
-              <template v-for="item in section.items.filter(i => i.position_type === 'pos').slice(0, 2)" :key="item.topic">
+              <template v-for="item in section.items.filter((i: { position_type: string; }) => i.position_type === 'pos').slice(0, 2)" :key="item.topic">
                 <span class="badge badge-xs badge-success">{{ item.position_tag }}</span>
               </template>
             </template>

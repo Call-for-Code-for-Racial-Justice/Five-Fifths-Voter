@@ -39,8 +39,9 @@ export const contentElectionSchema = z.object({
         closing: z.string().nullable(),
       }),
     }),
-    candidates: z.array(z.object({ title: z.string(), url: z.string().url() })).optional(),
+    races: z.array(z.string()),
   }),
 });
 
+// @ts-expect-error z namespace is defined in @nuxt/content
 export type ContentElections = z.infer<typeof contentElectionSchema>;

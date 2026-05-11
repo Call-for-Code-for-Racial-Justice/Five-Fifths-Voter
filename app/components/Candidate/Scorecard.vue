@@ -46,7 +46,7 @@ interface Candidate {
   incumbent: boolean
   debate_participant: boolean
   avatar_initials: string
-  meta: CandidateMeta
+  issues: CandidateMeta
   sections: Section[]
 }
 
@@ -55,29 +55,29 @@ const props = defineProps<{
 }>();
 
 const clarityLabel = computed(() => {
-  const pct = props.candidate.meta.issues_addressed / props.candidate.meta.issues_total;
+  const pct = props.candidate.issues.issues_addressed / props.candidate.issues.issues_total;
   if (pct >= 0.8) return "High";
   if (pct >= 0.5) return "Moderate";
   return "Low";
 });
 
 const sourcesSummary = computed(() =>
-  props.candidate.meta.sources_list
+  props.candidate.issues.sources_list
     .map(s => s.split(" ")[0].replace(/[()]/g, ""))
     .join(" · "),
 );
 </script>
 
 <template>
-  <div class="space-y-4">
+  <div class="space-y-4 mt-16">
     <!-- Header -->
     <div class="card bg-base-100 shadow-sm">
       <div class="card-body py-4 px-5">
         <div class="flex items-start gap-4">
           <!-- Avatar -->
-          <div class="avatar placeholder shrink-0">
-            <div class="bg-neutral text-neutral-content rounded-full w-12">
-              <span class="text-sm font-medium">{{ candidate.avatar_initials }}</span>
+          <div class="avatar avatar-placeholder">
+            <div class="bg-neutral text-neutral-content w-10 rounded-full">
+              <span class="text-xs font-medium">{{ candidate.avatar_initials }}</span>
             </div>
           </div>
 
@@ -101,9 +101,9 @@ const sourcesSummary = computed(() =>
           </div>
 
           <!-- Links -->
-          <div v-if="candidate.meta?.links?.length" class="hidden sm:flex flex-col gap-1 shrink-0">
+          <div v-if="candidate.issues?.links?.length" class="hidden sm:flex flex-col gap-1 shrink-0">
             <a
-              v-for="link in candidate.meta.links"
+              v-for="link in candidate.issues.links"
               :key="link.url"
               :href="link.url"
               target="_blank"
@@ -119,34 +119,34 @@ const sourcesSummary = computed(() =>
     </div>
 
     <!-- Callout -->
-    <div v-if="candidate.meta?.callout" role="alert" class="alert bg-base-200 border-l-4 border-base-content/20 rounded-none text-sm text-base-content/70">
+    <div v-if="candidate.issues?.callout" role="alert" class="alert bg-base-200 border-l-4 border-base-content/20 rounded-none text-sm text-base-content/70">
       <Info :size="16" class="shrink-0 text-base-content/40" />
-      <span>{{ candidate.meta.callout }}</span>
+      <span>{{ candidate.issues.callout }}</span>
     </div>
 
     <!-- Summary stats -->
     <div class="grid grid-cols-3 gap-3">
       <div class="stat bg-base-100 shadow-sm rounded-box p-3">
         <div class="stat-title text-xs">Issues addressed</div>
-        <div class="stat-value text-lg">{{ candidate.meta.issues_addressed }} / {{ candidate.meta.issues_total }}</div>
+        <div class="stat-value text-lg">{{ candidate.issues.issues_addressed }} / {{ candidate.issues.issues_total }}</div>
         <div class="stat-desc text-xs">of tracked topics</div>
       </div>
       <div class="stat bg-base-100 shadow-sm rounded-box p-3">
         <div class="stat-title text-xs">Clarity</div>
         <div class="stat-value text-base leading-tight mt-1">{{ clarityLabel }}</div>
-        <div class="stat-desc text-xs truncate">{{ candidate.meta.clarity }}</div>
+        <div class="stat-desc text-xs truncate">{{ candidate.issues.clarity }}</div>
       </div>
       <div class="stat bg-base-100 shadow-sm rounded-box p-3">
         <div class="stat-title text-xs">Sources reviewed</div>
-        <div class="stat-value text-lg">{{ candidate.meta.sources_count }}</div>
+        <div class="stat-value text-lg">{{ candidate.issues.sources_count }}</div>
         <div class="stat-desc text-xs">{{ sourcesSummary }}</div>
       </div>
     </div>
 
     <!-- Data note if present -->
-    <div v-if="candidate.meta?.data_note" role="alert" class="alert alert-warning alert-sm text-xs py-2">
+    <div v-if="candidate.issues?.data_note" role="alert" class="alert alert-warning alert-sm text-xs py-2">
       <AlertTriangle :size="14" class="shrink-0" />
-      <span>{{ candidate.meta.data_note }}</span>
+      <span>{{ candidate.issues.data_note }}</span>
     </div>
 
     <!-- Issue sections -->
@@ -165,8 +165,8 @@ const sourcesSummary = computed(() =>
 
     <!-- Footer -->
     <div class="text-xs text-base-content/40 px-1 space-y-1">
-      <div v-for="src in candidate.meta.sources_list" :key="src">{{ src }}</div>
-      <div>Last updated: {{ candidate.meta.last_updated }}</div>
+      <div v-for="src in candidate.issues.sources_list" :key="src">{{ src }}</div>
+      <div>Last updated: {{ candidate.issues.last_updated }}</div>
     </div>
   </div>
 </template>

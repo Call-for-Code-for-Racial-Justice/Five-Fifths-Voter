@@ -1,7 +1,7 @@
-fiveFifthsId: "candidate-rck-jackson"
+fiveFifthsId: "rick-jackson"
 name: "Rick Jackson"
 state: "GA"
-race: "Governor"
+race: "Governor — Republican Primary 2026"
 party: "Republican"
 primary: "Republican Primary 2026"
 office_sought: "Governor"
@@ -10,7 +10,8 @@ region: "Statewide"
 incumbent: false
 debate_participant: true
 avatar_initials: "RJ"
-meta:
+ballot_order: 3
+issues:
   issues_addressed: 10
   issues_total: 13
   clarity: "Specific on key economic topics"
@@ -20,7 +21,6 @@ meta:
     - "rickjackson.com action plan"
     - "News coverage"
   last_updated: "2026-05-01"
-  callout: "Action plan substantially fills gaps. Jackson explicitly addresses DEI ban, school choice, boys in girls' sports, foster care reform, and work requirements for public assistance. His reproductive policy remains implied but not explicitly stated as a policy position on the website."
   links:
     - label: "Campaign website"
       url: "https://rickjackson.com/"

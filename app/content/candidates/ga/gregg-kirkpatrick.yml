@@ -1,7 +1,7 @@
-fiveFifthsId: "candidate-ken-yasger"
-name: "Ken Yasger"
+fiveFifthsId: "gregg-kirkpatrick"
+name: "Gregg Kirkpatrick"
 state: "GA"
-race: "Governor"
+race: "Governor — Republican Primary 2026"
 party: "Republican"
 primary: "Republican Primary 2026"
 office_sought: "Governor"
@@ -9,46 +9,43 @@ district: null
 region: "Statewide"
 incumbent: false
 debate_participant: true
-avatar_initials: "KY"
-meta:
-  issues_addressed: 6
+avatar_initials: "GK"
+ballot_order: 5
+issues:
+  issues_addressed: 5
   issues_total: 13
-  clarity: "Personal experience over policy in debate"
+  clarity: "Partial — limited debate time"
   sources_count: 2
   sources_list:
     - "Atlanta Press Club debate transcript (primary)"
-    - "kenforgeorgia.com priorities page"
+    - "ballotpedia.org/Gregg_Kirkpatrick"
   last_updated: "2026-05-01"
-  callout: "Yasger's website reveals the most distinctive platform in the field — eliminate income tax, suspend gas tax, reform teacher pay. His debate performance was personal and emotional; his website is more policy-specific than it appeared. Some website priorities fall outside the current topic framework and are not included here."
-  data_note: "Yasger's website lists marijuana legalization and gambling legalization as priorities — these fall outside the current topic framework and are not included here."
   links:
-    - label: "Campaign website"
-      url: "https://www.kenforgeorgia.com/"
     - label: "Ballotpedia"
-      url: "https://ballotpedia.org/Ken_Yasger"
+      url: "https://ballotpedia.org/Gregg_Kirkpatrick"
 
 sections:
   - id: "economic-security"
     title: "Economic security"
     items:
       - topic: "Cost of living"
-        note: "Suspend gas tax; eliminate income tax to relieve family burden"
-        coverage: 2
+        note: "Proposes eliminating state income tax within 2 years"
+        coverage: 3
         position_tag: "Market-driven solutions"
         position_type: "pos"
-        source: "both"
+        source: "debate"
       - topic: "Taxation"
-        note: "Eliminate Georgia income tax; temporary gas tax suspension"
+        note: "Eliminate state income tax; zero property tax for seniors, veterans, disabled"
         coverage: 3
         position_tag: "Reduce taxes"
         position_type: "pos"
-        source: "website"
+        source: "debate"
       - topic: "Small business & farming"
         note: "Support, capital access, regulation"
-        coverage: 0
-        position_tag: null
-        position_type: "none"
-        source: null
+        coverage: 2
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: "debate"
       - topic: "Workers & wages"
         note: "Minimum wage, labor protections"
         coverage: 0
@@ -60,11 +57,11 @@ sections:
     title: "Civil rights & justice"
     items:
       - topic: "Criminal justice system"
-        note: "Mentioned mental health and addiction context from personal experience"
-        coverage: 1
-        position_tag: "Mixed approach"
-        position_type: "mixed"
-        source: "debate"
+        note: "Policing, sentencing, incarceration"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
       - topic: "Reproductive policy"
         note: "Abortion, contraception, medical decisions"
         coverage: 0
@@ -72,11 +69,11 @@ sections:
         position_type: "none"
         source: null
       - topic: "Voting & elections"
-        note: "ID laws, ballot access, integrity"
-        coverage: 0
-        position_tag: null
-        position_type: "none"
-        source: null
+        note: "Proposes grand jury investigation of election fraud; anti-QR codes"
+        coverage: 3
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: "debate"
       - topic: "Gun policy"
         note: "Ownership rights, regulations, safety"
         coverage: 0
@@ -94,17 +91,17 @@ sections:
     title: "Access & services"
     items:
       - topic: "Healthcare"
-        note: "Coverage, Medicaid, rural access"
+        note: "Proposes reducing medical device costs; market-based approach"
+        coverage: 3
+        position_tag: "Reduce government role"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Education"
+        note: "Public schools, choice, funding, HBCUs"
         coverage: 0
         position_tag: null
         position_type: "none"
         source: null
-      - topic: "Education"
-        note: "Reform educator pay; cap admin salaries to fund teacher raises"
-        coverage: 3
-        position_tag: "Increase public school funding"
-        position_type: "pos"
-        source: "website"
       - topic: "Broadband & infrastructure"
         note: "Rural connectivity, roads, utilities"
         coverage: 0
@@ -122,7 +119,7 @@ sections:
         position_type: "none"
         source: null
       - topic: "Immigration"
-        note: "Supports enforcement as framed in debate context"
+        note: "Enforcement, pathways, local policy"
         coverage: 1
         position_tag: "Stricter enforcement"
         position_type: "pos"

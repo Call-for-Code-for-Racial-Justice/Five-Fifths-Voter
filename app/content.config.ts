@@ -1,6 +1,7 @@
 import { defineCollection, defineContentConfig } from "@nuxt/content";
 import { contentProcedureSchema } from "./types/procedure";
 import { contentElectionSchema } from "./types/election";
+import { contentCandidateSchema } from "./types/candidate";
 
 export default defineContentConfig({
   collections: {
@@ -13,6 +14,11 @@ export default defineContentConfig({
       type: "data",
       source: "elections/**/*.yml",
       schema: contentElectionSchema,
+    }),
+    candidates: defineCollection({
+      type: "data",
+      source: "candidates/**/*.yml",
+      schema: contentCandidateSchema,
     }),
   },
 });
