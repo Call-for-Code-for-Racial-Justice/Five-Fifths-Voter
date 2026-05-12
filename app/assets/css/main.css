@@ -59,6 +59,7 @@ cal green #24502A
   --color-base-200: #f6ddc6;
   --color-base-300: #edd2b9;
   --color-base-content: var(--color-ff-purple-01); /* #210d34 */
+  --mask-color5: var(--color-ff-purple-01);
 
   /* brand */
   --color-primary: var(--color-ff-purple-02); /* #85276e */
@@ -104,6 +105,7 @@ cal green #24502A
   --color-base-200: #1a0a2a;
   --color-base-300: #140821;
   --color-base-content: var(--color-ff-white-01); /* #ffebd9 */
+  --mask-color5: var(--color-base-300);
 
   /* brand (slightly brighter primary for dark for contrast) */
   --color-primary: var(--color-ff-pink-02); /* #d35492 */

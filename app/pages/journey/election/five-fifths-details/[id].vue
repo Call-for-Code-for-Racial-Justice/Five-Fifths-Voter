@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { daysLeftIso, niceIsoDate } from "~/utils/dateFormatter";
-import { Info, MoveLeftIcon } from "lucide-vue-next";
+import { Info } from "lucide-vue-next";
 
 definePageMeta({
   subnavigation: "journey",
@@ -31,11 +31,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
     </div>
 
     <div v-else-if="election" class="animate-in fade-in duration-500">
-      <div>
-        <NuxtLink to="/journey/getInformed" class="btn btn-ghost text-xs">
-          <MoveLeftIcon/> Back to Dashboard
-        </NuxtLink>
-      </div>
+      <ElectionsBreadcrumbs :items="[{ label: election.name }]" />
       <div class="border-b border-base-300 pb-4">
         <div>
           <h1 class="text-3xl font-bold text-primary">{{ election.name }}</h1>
@@ -127,7 +123,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
                   v-for="r in races"
                   :key="r"
                   class="btn btn-link"
-                  :to="`/journey/election/candidates/${r}`">
+                  :to="`/journey/election/${id}/candidates/${r}`">
                 {{ r }}
               </NuxtLink>
               </div>

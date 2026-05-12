@@ -2,8 +2,11 @@
 import { AlertCircle } from "lucide-vue-next";
 
 const route = useRoute();
+const electionId = route.params.electionId as string;
 
-// fiveFifthsId comes from the route param, e.g. /candidates/candidate-brt-jones
+const { elections } = await useElections();
+const election = computed(() => elections.value?.find(e => e.id === electionId));
+
 const candidateId = computed(() => route.params.id as string);
 
 const { data: candidate, status } = await useAsyncData(
@@ -21,14 +24,20 @@ useHead({
   meta: [
     {
       name: "description",
-      content: candidate.value?.meta?.callout ?? "Candidate issue scorecard",
+      content: candidate.value?.issues?.callout ?? "Candidate issue scorecard",
     },
   ],
 });
 </script>
 
 <template>
-  <div class="max-w-2xl mx-auto px-4 py-6">
+  <div class="max-w-2xl mx-auto px-4 py-6 mt-16">
+    <ElectionsBreadcrumbs
+      :items="[
+      { label: election?.name ?? '', to: `/journey/election/five-fifths-details/${electionId}` },
+      { label: candidate?.race ?? '', to: candidate?.race ? `/journey/election/${electionId}/candidates/${candidate.race}` : undefined },
+      { label: candidate?.name ?? '' },
+    ]" />
     <div v-if="status === 'pending'" class="flex justify-center py-16">
       <span class="loading loading-spinner loading-lg" />
     </div>

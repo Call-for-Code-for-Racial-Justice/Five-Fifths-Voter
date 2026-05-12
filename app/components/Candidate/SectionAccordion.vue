@@ -4,8 +4,8 @@ interface SectionItem {
   note?: string
   coverage: number
   position_tag: string | null
-  position_type: "pos" | "mixed" | "none"
-  source: "debate" | "website" | "both" | null
+  position_type: "pos" | "neg" | "mixed" | "none"
+  source: string | null
 }
 
 interface Section {

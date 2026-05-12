@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { AlertTriangle } from "lucide-vue-next";
 
-// These could come from route params or props depending on your routing setup
 const state = "GA";
 const route = useRoute();
+const electionId = route.params.electionId as string;
 const race = route.params.id as string;
+
+const { elections } = await useElections();
+const election = computed(() => elections.value?.find(e => e.id === electionId));
 
 const { data: candidates, status } = await useAsyncData(
   `candidates-${race}`,
@@ -18,6 +21,10 @@ const { data: candidates, status } = await useAsyncData(
 
 <template>
   <div class="max-w-3xl mx-auto px-4 py-6 mt-8">
+    <ElectionsBreadcrumbs :items="[
+      { label: election?.name ?? '', to: `/journey/election/five-fifths-details/${electionId}` },
+      { label: race },
+    ]" />
     <PageTitle>
       Candidates
     </PageTitle>
@@ -35,6 +42,7 @@ const { data: candidates, status } = await useAsyncData(
       :candidates="candidates"
       :state="state"
       :race="race"
+      :election-id="electionId"
     />
   </div>
 </template>
