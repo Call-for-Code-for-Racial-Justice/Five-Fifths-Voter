@@ -1,0 +1,125 @@
+[
+  {
+    "topic": "Cost of living",
+    "tags": [
+      { "label": "Government programs", "lean": "left" },
+      { "label": "Market-driven solutions", "lean": "right" },
+      { "label": "Mixed approach", "lean": "center" }
+    ]
+  },
+  {
+    "topic": "Taxation",
+    "tags": [
+      { "label": "Increase taxes", "lean": "left" },
+      { "label": "Reduce taxes", "lean": "right" },
+      { "label": "Restructure tax system", "lean": "center" }
+    ]
+  },
+  {
+    "topic": "Small business & farming",
+    "tags": [
+      { "label": "Increase government support", "lean": "left" },
+      { "label": "Reduce regulation", "lean": "right" },
+      { "label": "Mixed approach", "lean": "center" }
+    ]
+  },
+  {
+    "topic": "Workers & wages",
+    "tags": [
+      { "label": "Raise minimum wage", "lean": "left" },
+      { "label": "Expand worker protections", "lean": "left" },
+      { "label": "Reduce labor regulation", "lean": "right" },
+      { "label": "Mixed approach", "lean": "center" }
+    ]
+  },
+  {
+    "topic": "Criminal justice system",
+    "tags": [
+      { "label": "Reduce incarceration", "lean": "left" },
+      { "label": "Invest in prevention", "lean": "left" },
+      { "label": "Increase enforcement", "lean": "right" },
+      { "label": "Mixed approach", "lean": "center" }
+    ]
+  },
+  {
+    "topic": "Reproductive policy",
+    "tags": [
+      { "label": "Pro-choice", "lean": "left" },
+      { "label": "Restrictions with exceptions", "lean": "center" },
+      { "label": "Pro-life", "lean": "right" }
+    ]
+  },
+  {
+    "topic": "Voting & elections",
+    "tags": [
+      { "label": "Expand ballot access", "lean": "left" },
+      { "label": "Mixed approach", "lean": "center" },
+      { "label": "Strengthen voter verification", "lean": "right" }
+    ]
+  },
+  {
+    "topic": "Gun policy",
+    "tags": [
+      { "label": "Increase gun regulations", "lean": "left" },
+      { "label": "Maintain current laws", "lean": "center" },
+      { "label": "Expand gun rights", "lean": "right" }
+    ]
+  },
+  {
+    "topic": "LGBTQ+ policy",
+    "tags": [
+      { "label": "Expand protections", "lean": "left" },
+      { "label": "Defer to existing law", "lean": "center" },
+      { "label": "Limit or oppose expansions", "lean": "right" }
+    ]
+  },
+  {
+    "topic": "Healthcare",
+    "tags": [
+      { "label": "Expand public coverage", "lean": "left" },
+      { "label": "Mixed approach", "lean": "center" },
+      { "label": "Expand private options", "lean": "right" },
+      { "label": "Reduce government role", "lean": "right" }
+    ]
+  },
+  {
+    "topic": "Education",
+    "tags": [
+      { "label": "Increase public school funding", "lean": "left" },
+      { "label": "Both public and choice", "lean": "center" },
+      { "label": "Support school choice", "lean": "right" }
+    ]
+  },
+  {
+    "topic": "Broadband & infrastructure",
+    "tags": [
+      { "label": "Increase public investment", "lean": "left" },
+      { "label": "Public-private partnership", "lean": "center" },
+      { "label": "Private sector led", "lean": "right" }
+    ]
+  },
+  {
+    "topic": "Environment & energy",
+    "tags": [
+      { "label": "Prioritize regulation", "lean": "left" },
+      { "label": "Balance both", "lean": "center" },
+      { "label": "Prioritize energy production", "lean": "right" }
+    ]
+  },
+  {
+    "topic": "Immigration",
+    "tags": [
+      { "label": "Expand legal pathways", "lean": "left" },
+      { "label": "Mixed approach", "lean": "center" },
+      { "label": "Stricter enforcement", "lean": "right" }
+    ]
+  },
+  {
+    "topic": "Housing",
+    "tags": [
+      { "label": "Increase government programs", "lean": "left" },
+      { "label": "Mixed approach", "lean": "center" },
+      { "label": "Reduce development barriers", "lean": "right" }
+    ]
+  }
+]
