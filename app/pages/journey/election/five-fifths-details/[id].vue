@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { daysLeftIso, niceIsoDate } from "~/utils/dateFormatter";
 import { Info } from "lucide-vue-next";
+import maskGroupUrl from "~/assets/images/mask-group.svg";
 
 definePageMeta({
   subnavigation: "journey",
@@ -16,6 +17,16 @@ const election = computed(() => {
 });
 const races = computed(() => election.value?.originalData?.meta?.races || []);
 const voting = computed(() => election.value?.originalData?.voting || {});
+
+const { origin } = useRequestURL();
+useSeoMeta({
+  title: () => election.value ? `five/fifths voter | ${election.value.name}` : "five/fifths voter",
+  ogTitle: () => election.value ? `five/fifths voter | ${election.value.name}` : "five/fifths voter",
+  description: () => election.value ? `Voting dates, candidates, and registration information for ${election.value.name}` : "Election information from five/fifths voter",
+  ogDescription: () => election.value ? `Voting dates, candidates, and registration information for ${election.value.name}` : "Election information from five/fifths voter",
+  ogImage: `${origin}${maskGroupUrl}`,
+  twitterCard: "summary_large_image",
+});
 
 function yesNoMaybe(val: string | boolean | undefined) {
   if (val === true) return t("yes");
@@ -35,7 +46,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
       <div class="border-b border-base-300 pb-4">
         <div>
           <h1 class="text-3xl font-bold text-primary">{{ election.name }}</h1>
-          <p class="text-lg opacity-70">Information from Five Fifths Voter</p>
+          <p class="text-lg opacity-70">Information from five/fifths voter</p>
         </div>
       </div>
 
