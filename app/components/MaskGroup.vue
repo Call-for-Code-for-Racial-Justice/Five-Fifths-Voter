@@ -1,13 +1,10 @@
 <script setup lang="ts">
-// CSS color value: hex, rgb, rgba, hsl, hsla, named colors, or CSS variables
-type CSSColor = string;
-
 const props = withDefaults(defineProps<{
-  color1?: CSSColor
-  color2?: CSSColor
-  color3?: CSSColor
-  color4?: CSSColor
-  color5?: CSSColor
+  color1?: string
+  color2?: string
+  color3?: string
+  color4?: string
+  color5?: string
 }>(), {
   color1: "#E8B933",
   color2: "#85276E",
@@ -20,7 +17,7 @@ const maskId = useId();
 </script>
 
 <template>
-  <svg width="1568" height="1000" viewBox="0 0 1568 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Five Fifths Voter logo">
+  <svg width="1568" height="1000" viewBox="0 0 1568 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
     <mask :id="maskId" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1568" height="1000">
       <rect width="1568" height="1000" fill="#24502A"/>
     </mask>

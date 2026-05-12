@@ -6,6 +6,7 @@ const props = defineProps<{
   candidates: ContentCandidate[]
   state?: string
   race?: string
+  electionId?: string
 }>();
 
 const activeParty = ref<string | null>(null);
@@ -45,7 +46,7 @@ const filtered = computed(() =>
       <NuxtLink
         v-for="c in filtered"
         :key="c.fiveFifthsId"
-        :to="`/journey/election/candidates/score/${c.fiveFifthsId}`"
+        :to="`/journey/election/${electionId}/candidates/score/${c.fiveFifthsId}`"
         class="card bg-base-100 shadow-sm dark:border dark:border-accent hover:shadow-md transition-shadow cursor-pointer"
       >
         <div class="card-body py-3 px-4">

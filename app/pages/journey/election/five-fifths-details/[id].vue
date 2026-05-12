@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { daysLeftIso, niceIsoDate } from "~/utils/dateFormatter";
 import { Info } from "lucide-vue-next";
-import maskGroupUrl from "~/assets/images/mask-group.svg";
 
 definePageMeta({
   subnavigation: "journey",
@@ -124,7 +123,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
                   v-for="r in races"
                   :key="r"
                   class="btn btn-link"
-                  :to="`/journey/election/candidates/${r}`">
+                  :to="`/journey/election/${id}/candidates/${r}`">
                 {{ r }}
               </NuxtLink>
               </div>
