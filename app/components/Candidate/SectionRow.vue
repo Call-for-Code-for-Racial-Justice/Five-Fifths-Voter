@@ -4,8 +4,8 @@ interface SectionItem {
   note?: string
   coverage: number
   position_tag: string | null
-  position_type: "pos" | "mixed" | "none"
-  source: "debate" | "website" | "both" | null
+  position_type: "pos" | "neg" | "mixed" | "none"
+  source: string | null
 }
 
 const props = defineProps<{
@@ -46,13 +46,11 @@ const coverageLabel = computed(() => {
 
     <!-- Position tag -->
     <div class="flex justify-center">
-      <span v-if="item.position_type === 'pos'" class="badge badge-sm badge-success">
-        {{ item.position_tag }}
-      </span>
-      <span v-else-if="item.position_type === 'mixed'" class="badge badge-sm badge-warning">
-        {{ item.position_tag }}
-      </span>
-      <span v-else class="text-xs text-base-content/40 italic">No position found</span>
+      <CandidatePositionTag
+        class="badge-sm"
+        :position_type="item.position_type"
+        :position_tag="item.position_tag"
+      />
     </div>
 
     <!-- Source badge -->
