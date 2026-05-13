@@ -32,12 +32,12 @@ export const useElections = async () => {
 
       const unified: UnifiedElection[] = [];
 
-      // Add elections from five fiths content
+      // Add elections from five fifths content
       if (Array.isArray(contentData)) {
         contentData.forEach((e: ContentElection) => {
           unified.push({
-            id: e.fiveFifthsId || e.meta.fiveFifthsId || e.id || e.stem,
-            name: e.title || e.description,
+            id: e.fiveFifthsId,
+            name: e.description,
             date: e.date,
             ocdId: e.ocdId,
             source: "content",
