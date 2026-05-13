@@ -98,7 +98,6 @@ export default defineNuxtConfig({
         file: "zh_Hans_TW.json",
       },
     ],
-    lazy: true,
     defaultLocale: "en",
     strategy: "no_prefix",
   },
