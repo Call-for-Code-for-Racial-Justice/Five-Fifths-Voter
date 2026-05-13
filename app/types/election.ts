@@ -44,4 +44,4 @@ export const contentElectionSchema = z.object({
 });
 
 // @ts-expect-error z namespace is defined in @nuxt/content
-export type ContentElections = z.infer<typeof contentElectionSchema>;
+export type ContentElection = z.infer<typeof contentElectionSchema>;
