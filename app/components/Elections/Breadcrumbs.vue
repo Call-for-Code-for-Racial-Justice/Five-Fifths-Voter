@@ -12,13 +12,13 @@ const visibleItems = computed(() => props.items.filter(item => item.label));
 </script>
 
 <template>
-  <div class="breadcrumbs text-sm">
-    <ul>
+  <nav class="breadcrumbs text-sm" role="navigation" aria-label="Breadcrumb">
+    <ol>
       <li><NuxtLink to="/journey/getInformed">Dashboard</NuxtLink></li>
       <li v-for="item in visibleItems" :key="item.label">
         <NuxtLink v-if="item.to" class="max-w-[20ch] truncate inline-block" :to="item.to">{{ item.label }}</NuxtLink>
-        <span v-else class="max-w-[20ch] truncate inline-block">{{ item.label }}</span>
+        <span v-else class="max-w-[20ch] truncate inline-block" aria-current="page">{{ item.label }}</span>
       </li>
-    </ul>
-  </div>
+    </ol>
+  </nav>
 </template>
