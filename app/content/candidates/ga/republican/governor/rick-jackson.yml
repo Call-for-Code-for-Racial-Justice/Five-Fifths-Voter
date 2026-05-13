@@ -1,0 +1,135 @@
+fiveFifthsId: "rick-jackson"
+name: "Rick Jackson"
+state: "GA"
+race: "Governor — Republican Primary 2026"
+party: "Republican"
+primary: "Republican Primary 2026"
+office_sought: "Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "RJ"
+ballot_order: 3
+issues:
+  issues_addressed: 10
+  issues_total: 13
+  clarity: "Specific on key economic topics"
+  sources_count: 3
+  sources_list:
+    - "Atlanta Press Club debate transcript (primary)"
+    - "rickjackson.com action plan"
+    - "News coverage"
+  last_updated: "2026-05-01"
+  links:
+    - label: "Campaign website"
+      url: "https://rickjackson.com/"
+    - label: "Ballotpedia"
+      url: "https://ballotpedia.org/Rick_Jackson_(Georgia)"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Prices, wages, groceries, energy"
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: "both"
+      - topic: "Taxation"
+        note: "Cut income tax in half within 4 years; freeze property taxes"
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: "both"
+      - topic: "Small business & farming"
+        note: "Support, capital access, regulation"
+        coverage: 2
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: "both"
+      - topic: "Workers & wages"
+        note: "Minimum wage, labor protections"
+        coverage: 1
+        position_tag: "Reduce labor regulation"
+        position_type: "pos"
+        source: "website"
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Policing, sentencing, incarceration"
+        coverage: 2
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: "both"
+      - topic: "Reproductive policy"
+        note: "Denied Planned Parenthood ties; no explicit policy stance found"
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: "debate"
+      - topic: "Voting & elections"
+        note: "ID laws, ballot access, integrity"
+        coverage: 1
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Gun policy"
+        note: "Ownership rights, regulations, safety"
+        coverage: 2
+        position_tag: "Expand gun rights"
+        position_type: "pos"
+        source: "website"
+      - topic: "LGBTQ+ policy"
+        note: "Bans boys in girls' sports/bathrooms; bans DEI programs"
+        coverage: 2
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: "website"
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Coverage, Medicaid, rural access"
+        coverage: 2
+        position_tag: "Expand private options"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Education"
+        note: "School choice; Parents' Bill of Rights; ban ideological indoctrination"
+        coverage: 3
+        position_tag: "Support school choice"
+        position_type: "pos"
+        source: "website"
+      - topic: "Broadband & infrastructure"
+        note: "Rural connectivity, roads, utilities"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Climate, clean water, energy production"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Make Georgia #1 for deporting criminal illegal immigrants"
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: "both"
+      - topic: "Housing"
+        note: "Affordability, development, tenant policy"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

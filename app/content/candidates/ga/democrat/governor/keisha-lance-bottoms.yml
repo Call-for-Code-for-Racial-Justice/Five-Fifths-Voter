@@ -1,0 +1,138 @@
+fiveFifthsId: "keisha-lance-bottoms"
+name: "Keisha Lance Bottoms"
+state: "GA"
+race: "Governor — Democratic Primary 2026"
+party: "Democratic"
+primary: "Democratic Primary 2026"
+office_sought: "Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "KB"
+ballot_order: 1
+issues:
+  issues_addressed: 11
+  issues_total: 13
+  clarity: "Specific — detailed CARE plan and issues page"
+  sources_count: 3
+  sources_list:
+    - "Atlanta Press Club debate transcript (primary)"
+    - "keishaforgovernor.com issues page"
+    - "Keisha CARE Plan PDF"
+  last_updated: "2026-05-01"
+  callout: "Bottoms has the most detailed issues platform of the Democratic field. Former Atlanta mayor with executive record she cites throughout the debate. Key pillars are Medicaid expansion, housing affordability, small business, and reproductive freedom. Her CARE Plan is a detailed healthcare document."
+  links:
+    - label: "Campaign website"
+      url: "https://www.keishaforgovernor.com/"
+    - label: "Issues page"
+      url: "https://www.keishaforgovernor.com/issues"
+    - label: "Ballotpedia"
+      url: "https://ballotpedia.org/Keisha_Lance_Bottoms"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Prices, wages, groceries, energy"
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: "both"
+      - topic: "Taxation"
+        note: "No explicit tax rate position; general affordability and infrastructure investment emphasis"
+        coverage: 1
+        position_tag: "Mixed approach"
+        position_type: "mixed"
+        source: "debate"
+      - topic: "Small business & farming"
+        note: "Restructure Dept of Economic Development; Office of Small Business; expand loans and grants; support farmers harmed by Trump tariffs"
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: "both"
+      - topic: "Workers & wages"
+        note: "Minimum wage, labor protections"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Invest in prevention, diversion, reentry (Prison to Work); increase GBI support; universal background checks and red flag law"
+        coverage: 3
+        position_tag: "Invest in prevention"
+        position_type: "pos"
+        source: "website"
+      - topic: "Reproductive policy"
+        note: "Restore woman's right to choose; protect reproductive freedom"
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: "both"
+      - topic: "Voting & elections"
+        note: "Expand early voting, protect absentee, rein in State Election Board, protect election officials from interference"
+        coverage: 3
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: "website"
+      - topic: "Gun policy"
+        note: "Universal background checks; red flag law"
+        coverage: 2
+        position_tag: "Increase gun regulations"
+        position_type: "pos"
+        source: "website"
+      - topic: "LGBTQ+ policy"
+        note: "Protections, discrimination, parental rights"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Expand Medicaid day one; end Georgia Pathways; Rural Care First Initiative; maternal health; mental health investment; Georgia Rx Savings Board"
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: "both"
+      - topic: "Education"
+        note: "Fully fund QBE; universal childcare; mandatory kindergarten; free technical/community college; eliminate teacher income tax; literacy focus"
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: "both"
+      - topic: "Broadband & infrastructure"
+        note: "Invest in rural infrastructure; streamline building permits in rural counties"
+        coverage: 2
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: "debate"
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Climate, clean water, energy production"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Enforcement, pathways, local policy"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Georgia Housing Fast Track; affordable housing trust fund; down payment assistance; renter assistance; crack down on corporate landlords"
+        coverage: 3
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: "both"

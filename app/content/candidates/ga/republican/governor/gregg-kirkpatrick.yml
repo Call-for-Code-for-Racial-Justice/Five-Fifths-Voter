@@ -1,0 +1,132 @@
+fiveFifthsId: "gregg-kirkpatrick"
+name: "Gregg Kirkpatrick"
+state: "GA"
+race: "Governor — Republican Primary 2026"
+party: "Republican"
+primary: "Republican Primary 2026"
+office_sought: "Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "GK"
+ballot_order: 5
+issues:
+  issues_addressed: 5
+  issues_total: 13
+  clarity: "Partial — limited debate time"
+  sources_count: 2
+  sources_list:
+    - "Atlanta Press Club debate transcript (primary)"
+    - "ballotpedia.org/Gregg_Kirkpatrick"
+  last_updated: "2026-05-01"
+  links:
+    - label: "Ballotpedia"
+      url: "https://ballotpedia.org/Gregg_Kirkpatrick"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Proposes eliminating state income tax within 2 years"
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Taxation"
+        note: "Eliminate state income tax; zero property tax for seniors, veterans, disabled"
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Small business & farming"
+        note: "Support, capital access, regulation"
+        coverage: 2
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Workers & wages"
+        note: "Minimum wage, labor protections"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Policing, sentencing, incarceration"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "Abortion, contraception, medical decisions"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "Proposes grand jury investigation of election fraud; anti-QR codes"
+        coverage: 3
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Gun policy"
+        note: "Ownership rights, regulations, safety"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Protections, discrimination, parental rights"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Proposes reducing medical device costs; market-based approach"
+        coverage: 3
+        position_tag: "Reduce government role"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Education"
+        note: "Public schools, choice, funding, HBCUs"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "Rural connectivity, roads, utilities"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Climate, clean water, energy production"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Enforcement, pathways, local policy"
+        coverage: 1
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Housing"
+        note: "Affordability, development, tenant policy"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

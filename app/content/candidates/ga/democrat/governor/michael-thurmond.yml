@@ -1,0 +1,138 @@
+fiveFifthsId: "michael-thurmond"
+name: "Michael Thurmond"
+state: "GA"
+race: "Governor — Democratic Primary 2026"
+party: "Democratic"
+primary: "Democratic Primary 2026"
+office_sought: "Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "MT"
+ballot_order: 7
+issues:
+  issues_addressed: 12
+  issues_total: 13
+  clarity: "Specific — detailed Affordability Agenda published on website"
+  sources_count: 3
+  sources_list:
+    - "Atlanta Press Club debate transcript (primary)"
+    - "mikethurmond.com Affordability Agenda page"
+    - "News coverage"
+  last_updated: "2026-05-01"
+  callout: "Thurmond is the most experienced candidate in the Democratic field — former Georgia Labor Commissioner, school superintendent, state legislator, and DeKalb County CEO. His Affordability Agenda is the most detailed economic document of any candidate in either primary. He proposes cutting the state sales tax by 50%, eliminating the tampon tax, raising minimum wage to $20/hour by 2030, and a Georgia Earned Income Tax Credit. He is the only candidate who has served as a school superintendent."
+  links:
+    - label: "Campaign website"
+      url: "https://www.mikethurmond.com/"
+    - label: "Affordability Agenda"
+      url: "https://www.mikethurmond.com/AffordabilityAgenda"
+    - label: "Ballotpedia"
+      url: "https://ballotpedia.org/Michael_Thurmond"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Day one declare Affordability Crisis; cut state sales tax 50%; Georgia EITC; eliminate tampon tax; double income tax deduction on overtime and tips; universal free school meals"
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: "both"
+      - topic: "Taxation"
+        note: "Cut state sales tax by half; Georgia EITC; eliminate tampon tax; double deduction on overtime/tips; described sales tax as most regressive tax"
+        coverage: 3
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: "both"
+      - topic: "Small business & farming"
+        note: "Georgia First for Small Business; help GA businesses compete for state contracts; Feeding the 5000 model partnering with local farmers; Hire Local requirement for state incentive recipients"
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: "both"
+      - topic: "Workers & wages"
+        note: "Raise minimum wage to $20/hour by 2030; strengthen equal pay enforcement; reward work not tax it"
+        coverage: 3
+        position_tag: "Raise minimum wage"
+        position_type: "pos"
+        source: "both"
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Rebuild workforce pathways; expand job training and transitional employment for reentry; implied through workforce agenda"
+        coverage: 2
+        position_tag: "Invest in prevention"
+        position_type: "pos"
+        source: "website"
+      - topic: "Reproductive policy"
+        note: "Protect mothers and babies; fully fund 12 months postpartum Medicaid; expand midwife access; address maternal health disparities"
+        coverage: 2
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: "website"
+      - topic: "Voting & elections"
+        note: "ID laws, ballot access, integrity"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "Ownership rights, regulations, safety"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Protections, discrimination, parental rights"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Close coverage gap using existing state resources; micro-hospitals and emergency care clinics in underserved communities; ban credit scores in auto insurance rates; 500,000 Georgians lost insurance this week cited"
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: "both"
+      - topic: "Education"
+        note: "Fully fund QBE with poverty weight; 50 career academies; freeze in-state tuition; free AI certification; Oglethorpe internship program; universal free school meals; first former school superintendent candidate"
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: "both"
+      - topic: "Broadband & infrastructure"
+        note: "Advance passenger rail Atlanta to Savannah; protect Georgia water supply; encourage renewable energy to reduce utility costs; require data centers to pay grid upgrade costs"
+        coverage: 3
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: "website"
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Require data centers to pay grid upgrade costs (not passed to families); encourage renewable energy; protect Georgia water supply; EV economy leadership"
+        coverage: 3
+        position_tag: "Balance both"
+        position_type: "mixed"
+        source: "website"
+      - topic: "Immigration"
+        note: "Enforcement, pathways, local policy"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Expand Georgia Dream program via Shared Equity Fund; permanent emergency rental assistance; expand homeownership access and generational wealth building"
+        coverage: 3
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: "website"

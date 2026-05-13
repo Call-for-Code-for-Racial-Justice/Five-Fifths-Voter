@@ -1,0 +1,135 @@
+fiveFifthsId: "amanda-duffy"
+name: "Amanda Duffy"
+state: "GA"
+race: "Governor — Democratic Primary 2026"
+party: "Democratic"
+primary: "Democratic Primary 2026"
+office_sought: "Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "AD"
+ballot_order: 3
+issues:
+  issues_addressed: 6
+  issues_total: 13
+  clarity: "Specific on tax and education; limited on other topics"
+  sources_count: 2
+  sources_list:
+    - "Atlanta Press Club debate transcript (primary)"
+    - "duffyforgeorgia.com issues page"
+  last_updated: "2026-05-01"
+  callout: "Duffy is a self-described non-traditional candidate and working-class accountant from Augusta. Her platform is narrowly focused on tax reform (graduated income tax), education curriculum reform, infrastructure bidding reform, and healthcare access. She explicitly acknowledged she cannot affect grocery or gas prices. She declined to take her full governor's salary if elected."
+  links:
+    - label: "Campaign website"
+      url: "https://www.duffyforgeorgia.com/"
+    - label: "Issues page"
+      url: "https://www.duffyforgeorgia.com/issues"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Explicitly stated she cannot affect grocery or gas prices; focuses on tax structure as the lever for working-class relief"
+        coverage: 2
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Taxation"
+        note: "Switch from flat rate back to graduated/progressive income tax system; update brackets to reflect modern income ranges; child tax credit expansion; teacher and first responder tax credits"
+        coverage: 3
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: "both"
+      - topic: "Small business & farming"
+        note: "Lower threshold for public works bidding to support local Georgia contractors; simplify bidding process"
+        coverage: 2
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: "website"
+      - topic: "Workers & wages"
+        note: "Raise state minimum wage to an amount closer to a living wage; bipartisan approach"
+        coverage: 2
+        position_tag: "Raise minimum wage"
+        position_type: "pos"
+        source: "website"
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Policing, sentencing, incarceration"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "Abortion, contraception, medical decisions"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "ID laws, ballot access, integrity"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "Ownership rights, regulations, safety"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Protections, discrimination, parental rights"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Support full ACA Medicaid expansion; assess ending Georgia Pathways program; support prescription drug import from Canada (SB314); cap PBM markups"
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: "website"
+      - topic: "Education"
+        note: "Update QBE formula short-term; social-emotional learning curriculum; customized learning paths; expand pre-K with stable funding beyond lottery"
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: "both"
+      - topic: "Broadband & infrastructure"
+        note: "Work with local authorities on infrastructure project coordination; lower bidding threshold for local contractors"
+        coverage: 2
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: "website"
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Statewide moratorium on new data center construction; reassess regulations so Georgians don't pay data center costs in utility bills"
+        coverage: 2
+        position_tag: "Prioritize regulation"
+        position_type: "pos"
+        source: "website"
+      - topic: "Immigration"
+        note: "Enforcement, pathways, local policy"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Affordability, development, tenant policy"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

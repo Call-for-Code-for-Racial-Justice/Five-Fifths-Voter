@@ -1,11 +1,9 @@
-<script setup>
+<script setup lang="ts">
 import titleLogoUrl from "assets/images/five-fifths-voter.svg";
-import facesUrl from "assets/images/mask-group.svg";
 import { computed, ref, watch } from "vue";
 import { useDebounceFn, useMediaQuery, useScroll } from "@vueuse/core";
 import { Menu } from "lucide-vue-next";
 import { GitHubIcon, InstagramIcon } from "vue3-simple-icons";
-import { useRoute } from "vue-router";
 
 // Constants
 const route = useRoute();
@@ -73,18 +71,18 @@ watch(targetHeight, (h) => {
 
 const isHome = computed(() => route.name === "index");
 watch(() => route.name, () => {
-  document.activeElement.blur(); // close nav menu
+  (document.activeElement as HTMLElement)?.blur(); // close nav menu
 });
 
-function scrollToId(id) {
-  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
-  document.activeElement.blur();
+function scrollToId(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  (document.activeElement as HTMLElement)?.blur();
 }
 </script>
 
 <template>
   <nav
-      class="navbar fixed top-0 left-0 pb-0 z-20 w-full bg-ff-purple-01 text-neutral-content transition-all duration-300 ease-out items-start"
+      class="navbar fixed top-0 left-0 pb-0 z-20 w-full bg-(--mask-color5) text-neutral-content transition-all duration-300 ease-out items-start"
       :style="{ height: headerHeight + 'px' }"
   >
     <!-- LEFT: hamburger + Five Fifths Voter text -->
@@ -169,16 +167,15 @@ function scrollToId(id) {
         <GitHubIcon/>
       </a>
       <LanguagePanel class="self-start md:self-end lg:self-start z-10"/>
+      <ThemeToggle />
 
-      <img
-          :src="facesUrl"
-          alt=""
-          class="ml-2 transition-all duration-300 ease-out object-contain"
-          :style="{
+      <MaskGroup
+          class="transition-all w-fit duration-300 ease-out object-contain"
+                 :style="{
           height: headerHeight + 'px',
           bottom: '0px',
         }"
-      >
+      />
     </div>
   </nav>
 </template>

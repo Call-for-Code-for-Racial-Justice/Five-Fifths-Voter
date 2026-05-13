@@ -35,5 +35,5 @@ export const contentProcedureSchema = z.object({
   }),
 });
 
-// @ts-expect-error using z from @nuxt/content
+// @ts-expect-error z namespace is defined in @nuxt/content
 export type ContentProcedure = z.infer<typeof contentProcedureSchema>;

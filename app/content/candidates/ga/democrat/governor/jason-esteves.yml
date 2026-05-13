@@ -1,0 +1,138 @@
+fiveFifthsId: "jason-esteves"
+name: "Jason Esteves"
+state: "GA"
+race: "Governor — Democratic Primary 2026"
+party: "Democratic"
+primary: "Democratic Primary 2026"
+office_sought: "Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "JE"
+ballot_order: 5
+issues:
+  issues_addressed: 10
+  issues_total: 13
+  clarity: "Specific — detailed priorities page with multiple policy plans"
+  sources_count: 3
+  sources_list:
+    - "Atlanta Press Club debate transcript (primary)"
+    - "jasonesteves.com priorities page"
+    - "Published policy plans (healthcare, education, childcare, maternal health)"
+  last_updated: "2026-05-01"
+  callout: "Esteves is a former state senator, Atlanta school board chair, teacher, and small business owner. He has the most extensive set of published policy plans in the Democratic field. He voted yes on SB 82 (school choice/vouchers), which drew criticism from Derrick Jackson in the debate. He proposes ending data center tax breaks ($2.5B) and redirecting funds to taxpayers."
+  links:
+    - label: "Campaign website"
+      url: "https://www.jasonesteves.com/"
+    - label: "Priorities page"
+      url: "https://www.jasonesteves.com/priorities/"
+    - label: "Ballotpedia"
+      url: "https://ballotpedia.org/Jason_Esteves"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "End $2.5B data center tax breaks; redirect $500+ per taxpayer; cut property taxes; stop private equity buying single family homes; build affordable housing"
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: "both"
+      - topic: "Taxation"
+        note: "Redirect data center tax handouts to taxpayers; cut property taxes for seniors; make commercial properties pay fair share"
+        coverage: 3
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Small business & farming"
+        note: "Small business owner himself; prioritize local small businesses; capital access; state contract access for small businesses"
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: "both"
+      - topic: "Workers & wages"
+        note: "Raise minimum wage to at least $15/hour (stated in debate); invest in state employee pay raises"
+        coverage: 3
+        position_tag: "Raise minimum wage"
+        position_type: "pos"
+        source: "debate"
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Policing, sentencing, incarceration"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "Overturn Georgia's restrictive abortion ban; restore woman's right to make healthcare decisions with doctor and family; detailed maternal health plan"
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: "both"
+      - topic: "Voting & elections"
+        note: "Fight for democracy; opposed Trump election claims"
+        coverage: 2
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: "debate"
+      - topic: "Gun policy"
+        note: "Ownership rights, regulations, safety"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Protections, discrimination, parental rights"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Expand Medicaid; lower insurance premiums; lower prescription drug costs; expand rural hospitals; senior care resources"
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: "both"
+      - topic: "Education"
+        note: "Fully fund public schools; no vouchers (stop SB 82-style siphoning); universal childcare for 3–4 year olds; modernize QBE; increase teacher pay; Black Men's Agenda"
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: "both"
+      - topic: "Broadband & infrastructure"
+        note: "Rural connectivity, roads, utilities"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Climate, clean water, energy production"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Enforcement, pathways, local policy"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Stop private equity from buying single family homes; increase housing supply; protect renters from predatory landlords; affordable childcare tied to housing affordability"
+        coverage: 3
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: "both"
