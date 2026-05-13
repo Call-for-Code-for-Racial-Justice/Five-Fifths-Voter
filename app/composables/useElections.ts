@@ -1,4 +1,4 @@
-import type { ContentElections } from "~/types/election";
+import type { ContentElection } from "~/types/election";
 import type { CivicElectionsResponse } from "~/types/civic";
 
 export interface UnifiedElection {
@@ -7,7 +7,7 @@ export interface UnifiedElection {
   date: string
   ocdId: string
   source: "content" | "api"
-  originalData: ContentElections | CivicElectionsResponse
+  originalData: ContentElection | CivicElectionsResponse
 }
 
 export const useElections = async () => {
@@ -34,7 +34,7 @@ export const useElections = async () => {
 
       // Add elections from five fiths content
       if (Array.isArray(contentData)) {
-        contentData.forEach((e: ContentElections) => {
+        contentData.forEach((e: ContentElection) => {
           unified.push({
             id: e.fiveFifthsId || e.meta.fiveFifthsId || e.id || e.stem,
             name: e.title || e.description,

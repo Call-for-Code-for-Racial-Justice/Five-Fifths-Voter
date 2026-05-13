@@ -20,7 +20,7 @@ export const contentCandidateSchema = z.object({
     clarity: z.string(),
     sources_count: z.number(),
     sources_list: z.array(z.string()),
-    last_updated: z.string(), // or z.date() if Nuxt Content auto-parses it, but string is safer for YAML dates if not sure
+    last_updated: z.date(),
     callout: z.string(),
     data_note: z.string().optional(),
     links: z.array(z.object({
