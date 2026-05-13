@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { AlertCircle } from "lucide-vue-next";
-import maskGroupUrl from "~/assets/images/mask-group.svg";
 
 const route = useRoute();
 const electionId = route.params.electionId as string;
@@ -19,13 +18,13 @@ const { data: candidate, status } = await useAsyncData(
   { watch: [candidateId] },
 );
 
-const { origin } = useRequestURL();
 useSeoMeta({
   title: () => candidate.value?.name ? `five/fifths voter | ${candidate.value.name} — Candidate Scorecard` : "five/fifths voter | Candidate Scorecard",
   ogTitle: () => candidate.value?.name ? `five/fifths voter | ${candidate.value.name} — Candidate Scorecard` : "five/fifths voter | Candidate Scorecard",
+  twitterTitle: () => candidate.value?.name ? `five/fifths voter | ${candidate.value.name} — Candidate Scorecard` : "five/fifths voter | Candidate Scorecard",
   description: () => candidate.value?.issues?.callout ?? "Candidate issue scorecard from five/fifths voter",
+  twitterDescription: () => candidate.value?.issues?.callout ?? "Candidate issue scorecard from five/fifths voter",
   ogDescription: () => candidate.value?.issues?.callout ?? "Candidate issue scorecard from five/fifths voter",
-  ogImage: `${origin}${maskGroupUrl}`,
   twitterCard: "summary_large_image",
 });
 </script>

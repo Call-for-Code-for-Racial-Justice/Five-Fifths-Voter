@@ -23,11 +23,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
         with:
-          node-version-file: "./app/.nvmrc"
+          node-version-file: .nvmrc
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
 
       - name: Install IBM Cloud CLI
         run: curl -fsSL https://clis.cloud.ibm.com/install/linux | sh

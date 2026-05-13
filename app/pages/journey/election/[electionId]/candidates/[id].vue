@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { AlertTriangle } from "lucide-vue-next";
-import maskGroupUrl from "~/assets/images/mask-group.svg";
 
 const state = "GA";
 const route = useRoute();
@@ -10,13 +9,12 @@ const race = route.params.id as string;
 const { elections } = await useElections();
 const election = computed(() => elections.value?.find(e => e.id === electionId));
 
-const { origin } = useRequestURL();
 useSeoMeta({
   title: `five/fifths voter | Candidates — ${race}`,
   ogTitle: `five/fifths voter | Candidates — ${race}`,
   description: () => election.value ? `Candidates running for ${race} in ${election.value.name}` : `Candidates running for ${race}`,
   ogDescription: () => election.value ? `Candidates running for ${race} in ${election.value.name}` : `Candidates running for ${race}`,
-  ogImage: `${origin}${maskGroupUrl}`,
+  twitterDescription: () => election.value ? `Candidates running for ${race} in ${election.value.name}` : `Candidates running for ${race}`,
   twitterCard: "summary_large_image",
 });
 
