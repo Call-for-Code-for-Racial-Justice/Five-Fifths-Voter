@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import CoverageDots from "./CoverageDots.vue";
+
 const coverageItems = [
   { filled: 3, label: "Specifically addressed" },
   { filled: 2, label: "Generally mentioned" },
@@ -12,14 +14,7 @@ const coverageItems = [
     <!-- Coverage -->
     <div class="flex items-center gap-1.5 font-medium">Coverage:</div>
     <div v-for="item in coverageItems" :key="item.label" class="flex items-center gap-1.5">
-      <div class="flex gap-0.5">
-        <span
-          v-for="n in 3"
-          :key="n"
-          class="w-2 h-2 rounded-full"
-          :class="n <= item.filled ? 'bg-success' : 'bg-base-300'"
-        />
-      </div>
+      <CoverageDots :value="item.filled" :size="8" />
       <span>{{ item.label }}</span>
     </div>
 
