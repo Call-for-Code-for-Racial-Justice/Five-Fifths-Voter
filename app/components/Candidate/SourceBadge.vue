@@ -1,61 +1,27 @@
 <template>
-  <span class="source-badge" :class="sourceClass">
-    {{ sourceText }}
-  </span>
+  <div class="flex justify-center">
+    <span v-if="item.source === 'debate'" class="badge badge-xs badge-success badge-outline">Debate</span>
+    <span v-else-if="item.source === 'website'" class="badge badge-xs badge-ghost">Website</span>
+    <span v-else-if="item.source === 'both'" class="badge badge-xs badge-secondary badge-outline">Both</span>
+    <span v-else class="text-base-content/30">—</span>
+  </div>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { defineProps } from 'vue';
 
-const props = defineProps({
-  source: {
-    type: String,
+interface SourceBadgeItem {
+  source: string;
+}
+
+const props = defineProps<SourceBadgeItem>({
+  item: {
+    type: Object,
     required: true,
   },
-});
-
-const sourceText = computed(() => {
-  switch (props.source) {
-    case 'content':
-      return 'Content';
-    case 'api':
-      return 'API';
-    default:
-      return 'Unknown';
-  }
-});
-
-const sourceClass = computed(() => {
-  switch (props.source) {
-    case 'content':
-      return 'source-badge-content';
-    case 'api':
-      return 'source-badge-api';
-    default:
-      return 'source-badge-unknown';
-  }
 });
 </script>
 
 <style scoped>
-.source-badge {
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-}
-
-.source-badge-content {
-  background-color: #6200ea;
-  color: white;
-}
-
-.source-badge-api {
-  background-color: #007bff;
-  color: white;
-}
-
-.source-badge-unknown {
-  background-color: #ccc;
-  color: black;
-}
+/* Existing styles can be added here if needed */
 </style>
