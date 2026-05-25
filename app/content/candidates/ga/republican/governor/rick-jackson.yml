@@ -1,7 +1,7 @@
 fiveFifthsId: "rick-jackson"
 name: "Rick Jackson"
 state: "GA"
-race: "Governor — Republican Primary 2026"
+race: "Governor Republican Primary Runoff 2026"
 party: "Republican"
 primary: "Republican Primary 2026"
 office_sought: "Governor"
@@ -12,8 +12,8 @@ debate_participant: true
 avatar_initials: "RJ"
 ballot_order: 3
 issues:
-  issues_addressed: 10
-  issues_total: 13
+  issues_addressed: 13
+  issues_total: 15
   clarity: "Specific on key economic topics"
   sources_count: 3
   sources_list:
@@ -26,6 +26,8 @@ issues:
       url: "https://rickjackson.com/"
     - label: "Ballotpedia"
       url: "https://ballotpedia.org/Rick_Jackson_(Georgia)"
+    - label: "Atlanta Press Club Debate"
+      url: "https://www.youtube.com/live/9jZvNdcZgxo?si=D4JhJyezg-byOsJS"
 
 sections:
   - id: "economic-security"

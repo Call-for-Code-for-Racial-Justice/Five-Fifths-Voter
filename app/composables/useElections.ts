@@ -1,5 +1,6 @@
 import type { ContentElection } from "~/types/election";
 import type { CivicElectionsResponse } from "~/types/civic";
+import { DateTime } from "luxon";
 
 export interface UnifiedElection {
   id: string
@@ -18,9 +19,8 @@ export const useElections = async () => {
     `elections-combined-${usaState.value}`,
     async () => {
       if (!usaState.value) return [];
-      const sevenDaysAgo = new Date();
-      sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-      const sevenDaysAgoIso = sevenDaysAgo.toISOString().split("T")[0];
+      const sevenDaysAgo = DateTime.now().minus({ days: 7 });
+      const sevenDaysAgoIso = sevenDaysAgo.toSQLDate();
 
       const [contentData, apiData] = await Promise.all([
         queryCollection("elections")
@@ -50,6 +50,10 @@ export const useElections = async () => {
       if (apiData?.elections) {
         apiData.elections.forEach((e) => {
           if (!config.public.civicDebug && String(e.id) === "2000") return; // debug election
+          if (!e.electionDay) return;
+          const electionDay = DateTime.fromISO(e.electionDay);
+          if (electionDay < sevenDaysAgo) return; // too old
+
           unified.push({
             id: e.id,
             name: e.name,

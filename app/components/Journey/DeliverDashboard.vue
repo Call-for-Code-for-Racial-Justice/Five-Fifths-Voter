@@ -12,6 +12,7 @@ import {
 } from "lucide-vue-next";
 import JourneyFAQ from "~/components/Journey/JourneyFAQ.vue";
 import type { FAQ } from "~/types/faq";
+import type { ContentProcedure } from "~/types/procedure";
 
 const deliveredBallot = useLocalStorage(LOCAL_STORAGE_KEYS.VOTER_DELIVERED_BALLOT, false);
 const usaState = useLocalStorage(LOCAL_STORAGE_KEYS.USA_STATE, "");
