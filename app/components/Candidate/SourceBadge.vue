@@ -1,3 +1,13 @@
+<script setup lang="ts">
+interface SourceBadgeItem {
+  source: string
+}
+
+const { item } = defineProps<{
+  item: SourceBadgeItem
+}>();
+</script>
+
 <template>
   <div class="flex justify-center">
     <span v-if="item.source === 'debate'" class="badge badge-xs badge-success badge-outline">Debate</span>
@@ -6,21 +16,6 @@
     <span v-else class="text-base-content/30">—</span>
   </div>
 </template>
-
-<script setup lang="ts">
-import { defineProps } from 'vue';
-
-interface SourceBadgeItem {
-  source: string;
-}
-
-const props = defineProps<SourceBadgeItem>({
-  item: {
-    type: Object,
-    required: true,
-  },
-});
-</script>
 
 <style scoped>
 /* Existing styles can be added here if needed */
