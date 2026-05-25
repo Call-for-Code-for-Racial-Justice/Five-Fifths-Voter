@@ -12,12 +12,6 @@ const clarityLabel = computed(() => {
   if (pct >= 0.5) return "Moderate";
   return "Low";
 });
-
-const sourcesSummary = computed(() => {
-  const sources_list = props.candidate.issues?.sources_list || [];
-  return sources_list.map((s: string) => s.split(" ")[0]?.replace(/[()]/g, "") ?? "")
-    .join(" · ");
-});
 </script>
 
 <template>
@@ -91,7 +85,6 @@ const sourcesSummary = computed(() => {
       <div class="stat bg-base-100 shadow-sm rounded-box p-3">
         <div class="stat-title text-xs">Sources reviewed</div>
         <div class="stat-value text-lg">{{ candidate.issues.sources_count }}</div>
-        <div class="stat-desc text-xs">{{ sourcesSummary }}</div>
       </div>
     </div>
 

@@ -48,8 +48,8 @@ const sectionDotClass = computed(() => {
             <template v-for="item in section.items" :key="item.topic">
               <CandidatePositionTag
                 class="badge-sm"
-                :position_type="item.position_type"
-                :position_tag="item.position_tag"
+                :position-type="item.position_type"
+                :position-tag="item.position_tag"
                 :topic="item.topic"
               />
             </template>

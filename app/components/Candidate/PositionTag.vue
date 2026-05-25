@@ -2,23 +2,23 @@
 import taxonomy from "~/assets/data/position-taxonomy.json";
 
 const props = defineProps<{
-  position_type: "pos" | "neg" | "mixed" | "none"
-  position_tag: string | null
+  positionType: "pos" | "neg" | "mixed" | "none"
+  positionTag: string | null
   topic?: string
 }>();
 
 const lean = computed(() => {
-  if (!props.position_tag) return null;
+  if (!props.positionTag) return null;
   for (const entry of taxonomy) {
-    const tag = entry.tags.find(t => t.label === props.position_tag);
+    const tag = entry.tags.find(t => t.label === props.positionTag);
     if (tag) return tag.lean;
   }
   return null;
 });
 
 const badgeClass = computed(() => {
-  if (props.position_type === "mixed") return "badge-warning";
-  if (props.position_type === "pos") {
+  if (props.positionType === "mixed") return "badge-warning";
+  if (props.positionType === "pos") {
     if (lean.value === "left") return "badge-left";
     if (lean.value === "right") return "badge-right";
     return "badge-neutral badge-outline";
@@ -27,8 +27,8 @@ const badgeClass = computed(() => {
 });
 
 const label = computed(() => {
-  if (props.position_type === "pos" || props.position_type === "mixed") {
-    return props.position_tag ?? "";
+  if (props.positionType === "pos" || props.positionType === "mixed") {
+    return props.positionTag ?? "";
   }
   return props.topic ? `${props.topic}: no position found` : "No position found";
 });

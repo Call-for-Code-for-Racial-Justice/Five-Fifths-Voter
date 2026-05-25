@@ -1,0 +1,149 @@
+fiveFifthsId: "mike-collins"
+name: "Mike Collins"
+state: "GA"
+race: "US Senate Republican Primary Runoff 2026"
+party: "Republican"
+primary: "Georgia Republican Primary 2026"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "MC"
+issues:
+  issues_addressed: 8
+  issues_total: 15
+  clarity: "Frequently specific on immigration and fiscal issues; vague or absent on social services, environment, and LGBTQ+ policy"
+  sources_count: 3
+  sources_list:
+    - "Campaign website — mikecollinsga.com (homepage and About page)"
+    - "Atlanta Press Club Loudermilk-Young Debate Series, Republican US Senate primary debate, Georgia Public Broadcasting, 2026 (transcript uploaded; video at https://youtu.be/w1yaXTEBaWc?si=2LHGhZtFvOo5Iv0Z)"
+    - "Wikipedia — Mike Collins (politician), including congressional voting record and legislative history"
+  last_updated: "2026-05-23"
+  callout: "Mike Collins is a two-term U.S. Representative from Georgia's 10th Congressional District and a trucking business owner who is challenging Democratic incumbent Jon Ossoff. His campaign centers on fiscal conservatism, immigration enforcement, and alignment with President Trump's America First agenda; he authored the Laken Riley Act, which was the first bill signed by Trump in his second term. Collins is currently under review by the House Ethics Committee related to a complaint about his chief of staff."
+  data_note: "The campaign website does not include a dedicated issues or platform page; policy positions are drawn from the About page biography and debate transcript. Wikipedia supplemented with congressional voting record data."
+  links:
+    - label: "Campaign website"
+      url: "https://mikecollinsga.com/"
+    - label: "Debate video (Atlanta Press Club, GPB)"
+      url: "https://youtu.be/w1yaXTEBaWc?si=2LHGhZtFvOo5Iv0Z"
+    - label: "Wikipedia"
+      url: "https://en.wikipedia.org/wiki/Mike_Collins_(politician)"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Collins cited affordability as a central reason for his Senate run, stating in the debate that 'the affordability issues out there are a huge issue, especially for our younger people' and calling for continued regulation cuts and permitting reform to reduce costs. He tied relief to cutting government red tape and extending Trump-era tax policies, and in his closing statement said he wants to 'just make life more affordable.' His website echoes this through his trucking-industry framing of government overreach. Positions are thematic with some policy specifics (permitting, regulations) but stop short of named legislation on cost of living directly."
+        coverage: 2
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Taxation"
+        note: "Collins referenced tax cuts in the debate, saying he understood 'what those tax policies did for me, but for my company, my community, and this country' during Trump's first term, and supported the Working Families Tax Cut Act passed in the current Congress. He did not call for any tax increases. Wikipedia notes he voted against the Fiscal Responsibility Act of 2023. His overall posture is consistent with tax reduction."
+        coverage: 2
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: "debate"
+
+      - topic: "Small business & farming"
+        note: "Collins mentioned farmers in his debate opening, criticizing his opponent for voting 'against farmers who toil to clothe and feed us.' In his ethics exchange response, he pivoted to affirm his focus on 'our farmers who need help with a level playing field.' His website biography highlights his background as a small business owner and trucking company founder. No specific legislation targeting small business or farming was cited in the Senate race sources."
+        coverage: 2
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Workers & wages"
+        note: "Collins spoke broadly about 'getting the government off the backs of the hardworking American men and women out there' and framed deregulation as the path to economic relief for workers. No position on minimum wage or specific worker protection legislation was stated in any reviewed source. His overall orientation is toward reducing government regulation of labor rather than expanding worker protections or raising the minimum wage."
+        coverage: 1
+        position_tag: "Reduce labor regulation"
+        position_type: "pos"
+        source: "debate"
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources on criminal justice reform, incarceration rates, or prevention programs. Collins's debate remarks on law enforcement were limited to immigration enforcement contexts (ICE, the Laken Riley Act). His Wikipedia page documents a congressional voting record and social media posts on law enforcement in protest contexts, but no direct statement on the criminal justice system as a policy arena for this Senate race."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Reproductive policy"
+        note: "Collins stated clearly in the debate, 'I'm pro-life and I don't apologize for that,' applauding Georgia's heartbeat bill and the Supreme Court's Dobbs decision returning abortion regulation to states. He added, 'if it were up to me, we wouldn't have abortion.' Wikipedia confirms he co-sponsored the Life at Conception Act in January 2025, which recognizes personhood at conception."
+        coverage: 3
+        position_tag: "Pro-life"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Voting & elections"
+        note: "No direct position found in reviewed sources on voting access or voter verification as a Senate campaign issue. Wikipedia notes Collins falsely claimed the 2020 election was stolen during his 2022 congressional campaign, and he posted on social media characterizing January 6 participants as 'peaceful protesters.' These are documented historical statements but no on-record Senate campaign position on specific voting legislation was stated in the debate or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Gun policy"
+        note: "No direct position statement on gun policy was made by Collins in the debate or on his campaign website for this Senate race. Wikipedia notes a 2022 campaign ad in which Collins shot a voting machine, and that the ad was cited in gun policy discussions after the 2024 Apalachee High School shooting in his district. In the debate, Collins accused opponent Buddy Carter of having 'voted for gun confiscation,' implying Collins opposes gun restrictions, but he did not state his own gun policy position directly."
+        coverage: 1
+        position_tag: "Expand gun rights"
+        position_type: "pos"
+        source: "debate"
+
+      - topic: "LGBTQ+ policy"
+        note: "No direct position found in reviewed sources on LGBTQ+ policy as a Senate campaign issue. Wikipedia documents Collins called for the deportation of an Episcopal bishop who asked Trump to show mercy to 'LGBTQ children,' but this is a historical social media post, not a stated Senate campaign policy position. No position was articulated in the debate or on the campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Collins did not address healthcare policy directly in the debate; when asked a question he pivoted to social media conduct. His debate question to McCullum was about VA healthcare access, expressing support for improving VA efficiency and mobile clinics for veterans. The campaign website makes no mention of healthcare policy. No broader healthcare position for the general public was stated in reviewed sources."
+        coverage: 1
+        position_tag: "Expand private options"
+        position_type: "pos"
+        source: "debate"
+
+      - topic: "Education"
+        note: "No position found in reviewed sources on education policy, school funding, or school choice for this Senate race."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Broadband & infrastructure"
+        note: "Collins addressed data center infrastructure in the debate when asked about federal versus state regulation. He stated federal financing should be available for data centers given the AI race with China, but that local communities should retain the right to reject them, and that data center companies should pay for local infrastructure impacts. This reflects a mixed federal/local framing but is focused on a narrow technology infrastructure question, not broadband access broadly."
+        coverage: 1
+        position_tag: "Public-private partnership"
+        position_type: "pos"
+        source: "debate"
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "No direct position found in reviewed sources on environmental regulation or energy policy for this Senate race. Collins chairs the House Transportation and Infrastructure Subcommittee on Water Resources and Environment per his Wikipedia page, but no environment or energy policy statement was made in the debate or on the campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Immigration"
+        note: "Immigration is Collins's most extensively documented issue. He authored the Laken Riley Act (signed into law by President Trump as his first bill), which requires ICE to detain undocumented immigrants charged with theft. In the debate he repeatedly attacked his opponent for supporting 'criminal immigrants' and called for stricter enforcement. Wikipedia documents he also introduced the RAZOR Act to ban removal of Texas border barriers, and previously called for criminal charges against a migrant who was later cleared. His Senate campaign opening statement cited border enforcement as a core rationale for running."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Housing"
+        note: "No position found in reviewed sources on housing policy for this Senate race."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

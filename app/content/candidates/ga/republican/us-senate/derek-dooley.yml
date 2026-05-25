@@ -1,0 +1,152 @@
+fiveFifthsId: "derek-dooley"
+name: "Derek Dooley"
+state: "GA"
+race: "US Senate Republican Primary Runoff 2026"
+party: "Republican"
+primary: "Georgia Republican Primary 2026"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "DD"
+issues:
+  issues_addressed: 10
+  issues_total: 15
+  clarity: "Detailed and specific on cost of living, healthcare, and immigration; notably detailed on reproductive policy for a candidate deferring to states; sparse on criminal justice, gun policy, and LGBTQ+ policy"
+  sources_count: 3
+  sources_list:
+    - "Campaign website — dooleyforgeorgia.com (homepage, Priorities subpages, and The Georgia First Contract)"
+    - "Atlanta Press Club Loudermilk-Young Debate Series, Republican US Senate primary debate, Georgia Public Broadcasting, 2026 (transcript uploaded; video at https://youtu.be/w1yaXTEBaWc?si=2LHGhZtFvOo5Iv0Z)"
+    - "Marietta Daily Journal Q&A with Derek Dooley, by Isabelle Manders, May 8, 2026 (mdjonline.com)"
+  last_updated: "2026-05-23"
+  callout: "Derek Dooley is a former college and NFL football coach and political outsider running for U.S. Senate as a Republican, backed by Governor Brian Kemp. His campaign centers on congressional reform — including a self-imposed two-term limit, a pledge not to trade stocks, and a refusal to accept pay during government shutdowns — rather than a single policy agenda. He describes affordability and healthcare costs as top constituent concerns and consistently frames Congress's dysfunction as the root cause of policy failure."
+  links:
+    - label: "Campaign website"
+      url: "https://www.dooleyforgeorgia.com/"
+    - label: "Priorities"
+      url: "https://www.dooleyforgeorgia.com/priorities"
+    - label: "The Georgia First Contract"
+      url: "https://www.dooleyforgeorgia.com/the-georgia-first-contract"
+    - label: "Debate video (Atlanta Press Club, GPB)"
+      url: "https://youtu.be/w1yaXTEBaWc?si=2LHGhZtFvOo5Iv0Z"
+    - label: "Marietta Daily Journal Q&A, May 8, 2026"
+      url: "https://www.mdjonline.com/elections/q-a-with-derek-dooley-on-u-s-senate-run-iran-and-congressional-reforms/article_6f8e1304-6b54-4ecb-8a35-a434f7ed6561.html"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Dooley named cost of living as the top issue he has heard across the state in both the debate and the MDJ interview. He identified three drivers: government overspending ('we haven't balanced a budget in 25 years'), excessive regulation ('get the hell out of the way'), and a workforce skills gap from overemphasis on four-year college. His website's More Jobs, Higher Wages page echoes all three with policy framing: cut burdensome regulations, unleash American energy, and build skills through high schools, technical schools, and apprenticeships. He cited Georgia Governor Kemp as a national model on workforce development."
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Taxation"
+        note: "No direct position on tax rates, specific tax legislation, or tax structure was stated in the debate or MDJ interview. Dooley mentioned the deficit and overspending but framed it as a spending problem rather than a revenue or tax structure issue. No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Small business & farming"
+        note: "Dooley's More Jobs, Higher Wages website page states he will work to 'cut burdensome regulations, reduce unnecessary bureaucracy, and make it easier for our job creators to start, operate, and grow businesses.' In the MDJ interview he said eight out of ten job creators he spoke to said the government should 'get out of the way.' No agriculture-specific policy was cited, but his general pro-business, deregulation orientation is clearly stated."
+        coverage: 2
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Workers & wages"
+        note: "Dooley addressed workforce development at length — calling for investment in career training through high schools, technical colleges, and apprenticeships to address a skills gap — but did not address minimum wage, unions, or labor protections in any reviewed source. His orientation is toward expanding opportunity through skills-building rather than government wage mandates."
+        coverage: 2
+        position_tag: "Mixed approach"
+        position_type: "pos"
+        source: "both"
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources on criminal justice reform, incarceration, prevention programs, or law enforcement funding as a policy arena. Dooley's Safe Communities website page says he will 'back law enforcement' and support 'enforcing the law,' but this is a general statement tied to border enforcement context, not a criminal justice system position."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Reproductive policy"
+        note: "Dooley addressed abortion directly in both the debate and the MDJ interview. He stated he agrees with President Trump and the Supreme Court that it should be a state issue and that the federal government should not intervene. In the MDJ interview he added: 'I have a tremendous respect for life. I also think that women should have a reasonable amount of time to make a very tough and personal decision.' When asked whether he personally supports Georgia's six-week heartbeat bill, he said it has been the law of the land for six years and he would not intervene as a U.S. senator. He declined to give a personal directional position, consistently deferring to states rather than stating a pro-life or pro-choice view."
+        coverage: 3
+        position_tag: "Restrictions with exceptions"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Voting & elections"
+        note: "In the MDJ interview, Dooley cited Georgia's Election Integrity Act as a model and expressed confidence in the state's election system, noting high turnout and minority participation after the law passed. He said the lesson is that election security and turnout can coexist, and said he would 'stay vigilant.' He supports voter ID and proof of citizenship via the Save America Act, which he said could pass through reconciliation. Mentioned in debate as well."
+        coverage: 2
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources on gun policy. Not addressed in the debate, MDJ interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "LGBTQ+ policy"
+        note: "No direct position found in reviewed sources on LGBTQ+ policy. In the MDJ interview Dooley mentioned 'the woke stuff that he pushed on our kids, the men and women's sports' as one criticism of opponent Jon Ossoff, which implies opposition to transgender inclusion in women's sports, but he did not state a policy position on LGBTQ+ issues directly."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Healthcare is one of Dooley's most thoroughly developed positions. Across the debate, the MDJ interview, and his campaign website, he consistently calls for price transparency ('the only industry where you find out how much something costs after the service is delivered'), putting patients and doctors — not insurance companies or government — in charge of decisions, protecting rural hospitals and access (noting women in Rabun County drive an hour for prenatal care), and driving down costs through innovation and competition. On the ACA, he said he supports an important safety net for those who need it but opposes subsidizing people who make hundreds of thousands of dollars. He does not call for full ACA repeal. His campaign website's 'Putting Patients and Doctors First' page names transparency, patient/doctor choice, and rural access as the three pillars."
+        coverage: 3
+        position_tag: "Mixed approach"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Education"
+        note: "Dooley repeatedly addressed the college-vs.-skills gap — calling for expanded career training through high schools, technical colleges, and apprenticeships — in the debate, MDJ interview, and his campaign website. He praised Gov. Kemp's workforce development initiatives in Georgia as a national model. He did not address K-12 school choice, public school funding levels, or vouchers in any reviewed source."
+        coverage: 2
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Broadband & infrastructure"
+        note: "No direct position found in reviewed sources on broadband access or infrastructure investment. Not addressed in the debate, MDJ interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Dooley's More Jobs, Higher Wages website page calls for unleashing American energy, stating 'America has the resources to lead the world in energy production' and supporting policies that 'drive down costs for businesses and families.' No mention of environmental regulation, climate policy, or renewable energy in any reviewed source."
+        coverage: 2
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: "website"
+
+      - topic: "Immigration"
+        note: "Dooley addressed immigration at length in both the MDJ interview and on his campaign website's Safe Communities page. He supports keeping the border closed as Trump has done, deporting criminal illegal immigrants, and codifying executive orders through legislation so policy does not change every four years. He criticized the prior administration's 'open borders' policy and said Congress has repeatedly failed to act. He also expressed support for a long-term legislative solution rather than relying on executive orders, and acknowledged a pathway that addresses the issue sustainably."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Housing"
+        note: "No position found in reviewed sources on housing policy, affordability programs, or development regulation. Not addressed in the debate, MDJ interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

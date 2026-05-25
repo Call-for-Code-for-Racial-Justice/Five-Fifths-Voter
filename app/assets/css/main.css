@@ -94,61 +94,62 @@ cal green #24502A
   --noise: 0;
 }
 
-@plugin "daisyui/theme" {
-  name: "ffv-dark";
-  default: false;
-  prefersdark: true;
-  color-scheme: "dark";
+/* todo: leve this out for now as it is not an approved theme from the team. Consider adding it as a user preference */
+/*@plugin "daisyui/theme" {*/
+/*  name: "ffv-dark";*/
+/*  default: false;*/
+/*  prefersdark: true;*/
+/*  color-scheme: "dark";*/
 
-  /* base */
-  --color-base-100: var(--color-ff-purple-01); /* #210d34 */
-  --color-base-200: #1a0a2a;
-  --color-base-300: #140821;
-  --color-base-content: var(--color-ff-white-01); /* #ffebd9 */
-  --mask-color5: var(--color-base-300);
+/*  !* base *!*/
+/*  --color-base-100: var(--color-ff-purple-01); !* #210d34 *!*/
+/*  --color-base-200: #1a0a2a;*/
+/*  --color-base-300: #140821;*/
+/*  --color-base-content: var(--color-ff-white-01); !* #ffebd9 *!*/
+/*  --mask-color5: var(--color-base-300);*/
 
-  /* brand (slightly brighter primary for dark for contrast) */
-  --color-primary: var(--color-ff-pink-02); /* #d35492 */
-  --color-primary-content: var(--color-ff-purple-01); /* #210d34 */
-  --color-secondary: var(--color-ff-yellow-01); /* #e8b933 */
-  --color-secondary-content: var(--color-ff-purple-01); /* #210d34 */
-  --color-accent: var(--color-ff-blue-02); /* #366ae2 */
-  --color-accent-content: #ffffff;
+/*  !* brand (slightly brighter primary for dark for contrast) *!*/
+/*  --color-primary: var(--color-ff-pink-02); !* #d35492 *!*/
+/*  --color-primary-content: var(--color-ff-purple-01); !* #210d34 *!*/
+/*  --color-secondary: var(--color-ff-yellow-01); !* #e8b933 *!*/
+/*  --color-secondary-content: var(--color-ff-purple-01); !* #210d34 *!*/
+/*  --color-accent: var(--color-ff-blue-02); !* #366ae2 *!*/
+/*  --color-accent-content: #ffffff;*/
 
-  /* neutral */
-  --color-neutral: #241230;
-  --color-neutral-content: var(--color-ff-white-01);
+/*  !* neutral *!*/
+/*  --color-neutral: #241230;*/
+/*  --color-neutral-content: var(--color-ff-white-01);*/
 
-  /* state */
-  --color-info: var(--color-ff-blue-01); /* #56b5b5 */
-  --color-info-content: #ffffff;
-  --color-success: var(--color-ff-green-01); /* #397f42 */
-  --color-success-content: #ffffff;
-  --color-warning: var(--color-ff-yellow-01); /* #e8b933 */
-  --color-warning-content: var(--color-ff-purple-01); /* #210d34 */
-  --color-error: var(--color-ff-red-01); /* #e02e38 */
-  --color-error-content: #ffffff;
+/*  !* state *!*/
+/*  --color-info: var(--color-ff-blue-01); !* #56b5b5 *!*/
+/*  --color-info-content: #ffffff;*/
+/*  --color-success: var(--color-ff-green-01); !* #397f42 *!*/
+/*  --color-success-content: #ffffff;*/
+/*  --color-warning: var(--color-ff-yellow-01); !* #e8b933 *!*/
+/*  --color-warning-content: var(--color-ff-purple-01); !* #210d34 *!*/
+/*  --color-error: var(--color-ff-red-01); !* #e02e38 *!*/
+/*  --color-error-content: #ffffff;*/
 
-  /* radius, sizes, and surface details */
-  --radius-selector: 0.25rem;
-  --radius-field: 0.25rem;
-  --radius-box: 0.5rem;
-  --size-selector: 0.25rem;
-  --size-field: 0.25rem;
-  --border: 1px;
-  --depth: 0;
-  --noise: 0;
-}
+/*  !* radius, sizes, and surface details *!*/
+/*  --radius-selector: 0.25rem;*/
+/*  --radius-field: 0.25rem;*/
+/*  --radius-box: 0.5rem;*/
+/*  --size-selector: 0.25rem;*/
+/*  --size-field: 0.25rem;*/
+/*  --border: 1px;*/
+/*  --depth: 0;*/
+/*  --noise: 0;*/
+/*}*/
 
 /* Custom badge variants — unlayered so they outrank DaisyUI's layered badge styles */
 .badge.badge-left {
-  background-color: var(--color-teal-600);
-  color: white;
-  border-color: var(--color-teal-800);
+  background-color: #56B5B5;
+  color: #1a1a1a;
+  border-color: var(--color-slate-200);
 }
 
 .badge.badge-right {
-  background-color: var(--color-lime-400);
-  color: var(--color-stone-900);
-  border-color: var(--color-lime-500);
+  background-color: #0d4f4f;
+  color: white;
+  border-color: var(--color-slate-200);
 }

@@ -1,10 +1,10 @@
 ocdId: "ocd-division/country:us/state:ga"
-date: "2026-05-19"
-description: "Primary election for Governor, US Senate, US House, and other offices."
+date: "2026-06-16"
+description: "General Primary Election/Nonpartisan Runoff"
 type: "general"
 website: "https://mvp.sos.ga.gov"
 guidancePhase: "final"
-fiveFifthsId: "ga-2026-midterms-primary"
+fiveFifthsId: "ga-2026-midterms-primary-runoff"
 
 voting:
   inPersonVotingAvailable: true
@@ -14,8 +14,8 @@ voting:
 
   early:
     url: "https://sos.ga.gov/how-to-guide/how-guide-voting#Early%20Voting"
-    startDate: "2026-04-27"
-    endDate: "2026-05-15"
+    startDate: "2026-06-08"
+    endDate: "2026-06-12"
     varies: true
 
   byMail:
@@ -25,10 +25,10 @@ voting:
     explainerUrl: "https://sos.ga.gov/how-to-guide/how-guide-voting#Absentee%20Voting"
     deadline:
       postmarkedOrReceived: "received"
-      date: "2026-05-19"
+      date: "2026-06-16"
       ballotRequest:
         postmarkedOrReceived: "received"
-        date: "2026-05-08"
+        date: "2026-06-05"
         description: "Your request must be made at least 11 days before the election. (Hospital patients have an extra day to apply.)"
 
   inPerson:
@@ -39,5 +39,7 @@ voting:
       closing: "7:00 PM. If you are in line by 7:00 PM, you are allowed to cast your ballot."
 
 races:
-  - "Governor — Republican Primary 2026"
-  - "Governor — Democratic Primary 2026"
+  - "US Senate Republican Primary Runoff 2026"
+  - "Governor Republican Primary Runoff 2026"
+  - "Lt Governor Democratic Primary Runoff 2026"
+  - "Lt Governor Republican Primary Runoff 2026"

@@ -48,8 +48,8 @@ const coverageLabel = computed(() => {
     <div class="flex justify-center">
       <CandidatePositionTag
         class="badge-sm"
-        :position_type="item.position_type"
-        :position_tag="item.position_tag"
+        :position-type="item.position_type"
+        :position-tag="item.position_tag"
       />
     </div>
 

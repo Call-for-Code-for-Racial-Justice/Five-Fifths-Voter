@@ -17,7 +17,7 @@ export default defineContentConfig({
     }),
     candidates: defineCollection({
       type: "data",
-      source: "candidates/**/*.yml",
+      source: "candidates/**/*.@(yml|yaml)",
       schema: contentCandidateSchema,
     }),
   },

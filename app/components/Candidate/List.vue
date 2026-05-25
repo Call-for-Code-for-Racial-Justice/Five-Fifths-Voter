@@ -85,7 +85,7 @@ const filtered = computed(() =>
           <div class="flex flex-wrap gap-1 mt-2">
             <template v-for="section in c.sections" :key="section.id">
               <template v-for="item in section.items.filter((i: { position_type: string; }) => i.position_type === 'pos').slice(0, 2)" :key="item.topic">
-                <CandidatePositionTag class="badge-xs" :position_type="item.position_type" :position_tag="item.position_tag" />
+                <CandidatePositionTag class="badge-xs" :position-type="item.position_type" :position-tag="item.position_tag" />
               </template>
             </template>
             <span class="badge badge-xs badge-ghost">View scorecard →</span>

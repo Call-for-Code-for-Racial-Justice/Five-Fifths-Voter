@@ -1,0 +1,150 @@
+fiveFifthsId: "john-f-kennedy"
+name: "John F. Kennedy"
+state: "GA"
+race: "Lt Governor Republican Primary Runoff 2026"
+party: "Republican"
+primary: "Republican Primary Runoff 2026"
+office_sought: "Lieutenant Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "JK"
+issues:
+  issues_addressed: 8
+  issues_total: 15
+  clarity: "Broad conservative themes with specific commitments on taxation and education; most social topics unaddressed"
+  sources_count: 3
+  sources_list:
+    - "Atlanta Press Club / GPB Republican LG Primary Debate transcript (uploaded, May 2026)"
+    - "Campaign website — jfkforgeorgia.com (homepage and Georgia's Future issues page)"
+    - "Trent Talks interview transcript (Augusta, GA, 2026)"
+  last_updated: "2026-05-23"
+  callout: "John F. Kennedy is a former Georgia State Senator (District 18, 2015–2025) and former President Pro Tempore of the Georgia Senate who resigned his seat in December 2025 to run for Lieutenant Governor. His platform centers on three themes—Keep Georgia Growing, Keep Georgia Learning, and Keep Georgia Safe—with an emphasis on property tax relief, school choice, rural economic development, and supporting law enforcement. He presents himself as a results-driven consensus builder based on his legislative record."
+  links:
+    - label: "Campaign Website"
+      url: "https://jfkforgeorgia.com/"
+    - label: "Georgia's Future (Issues Page)"
+      url: "https://jfkforgeorgia.com/georgias-future/"
+    - label: "Trent Talks Interview (Video)"
+      url: "https://youtu.be/9904pw3Ub2s?si=7RIBZxHRgRDug6N9"
+    - label: "Atlanta Press Club Debate (Video)"
+      url: "https://youtu.be/ycsykvTq7a0?si=u3wChJeGrX-H-9tp"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Kennedy repeatedly cited affordability as a top concern. In the debate he said 'Georgians are hurting right now in making ends meet. Costs continue to rise. Wages are stagnant' and committed to property tax relief as a primary driver of affordability. In his closing statement he said eliminating property taxes 'is going to be an absolute priority of mine as your next lieutenant governor.' The website frames the office around making Georgia a place where people can 'live, work, and raise a family.' Specific mechanism cited is property tax elimination; no reference to new government spending programs."
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Taxation"
+        note: "Kennedy referenced the ongoing income tax reductions passed during his Senate tenure ('we started reducing the state income tax in 2019') and expressed disappointment that more progress on property tax elimination was not made in the 2026 session. In his closing statement he stated eliminating property taxes is a priority he will deliver on. No support for tax increases was expressed in any source."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Small business & farming"
+        note: "Kennedy detailed his authorship of SB 68 and SB 69 (2025 tort reform) in the Trent Talks interview, framing it explicitly as protection for small and family-owned businesses from excessive lawsuit exposure. He cited the Chamber of Commerce's estimate of a $5,000-per-family annual 'hidden tort tax' and noted that insurance costs were causing businesses to question whether to stay in Georgia. The campaign website also commits to fighting for farm families, helping them find new markets, and making it easier to 'start, operate, and grow a family farm.'"
+        coverage: 3
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources. Kennedy mentioned 'wages are stagnant' as a general concern in the debate but made no statement on minimum wage policy or worker protections."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Kennedy addressed two threads in the Trent Talks interview. On enforcement, the campaign website calls for supporting law enforcement, recruiting and retaining officers, dismantling criminal gangs, and 'strengthening our laws.' On the other side, Kennedy called the state's handling of the mental health population a 'passion issue,' stating that people with mental illness are being incarcerated because there is nowhere else to place them and are 'not getting any mental health services' while incarcerated — which he called 'not right.' He advocated for dedicated mental health facilities and expressed that current budget commitments are 'not enough.' Both threads are drawn from sources, placing him in 'mixed approach' territory — enforcement emphasis plus stated concern about incarceration of the mentally ill."
+        coverage: 3
+        position_tag: "Mixed approach"
+        position_type: "mixed"
+        source: "both"
+
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources. The debate included no questions on reproductive policy and the campaign website contains no statement on the topic."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Voting & elections"
+        note: "In the debate, Kennedy served on the Senate's special investigative committee examining Fulton County DA Fani Willis and the 2020 election. He stated that 'anyone who defrauded money should get every single penny back' and called Willis's conduct 'shameful.' He did not express a specific position on ballot access expansion or voter verification measures in the debate. No voting/elections policy position found on the campaign website."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Gun policy"
+        note: "The campaign website homepage references 'standing up for our God-given rights' in a list of legislative priorities but does not name gun policy specifically. No position found in the debate transcript. Insufficient specificity to assign a tag."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources. Neither the debate transcript nor the campaign website contains a statement on LGBTQ+ policy."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "In the Trent Talks interview, Kennedy described the mental health crisis among Georgia's uninsured population as a 'passion issue,' citing inadequate state facilities since the closure of mental health institutions. He referenced HB 1013 (passed ~3 years prior) as a partial improvement and expressed support for budgeting a new mental health hospital, while stating current plans are 'not enough.' This is framed as a state investment in a public gap rather than expansion of insurance coverage or private options. Note: this position addresses a narrow slice of healthcare (uninsured mental health); no broader healthcare coverage position was found."
+        coverage: 2
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: "debate"
+
+      - topic: "Education"
+        note: "Kennedy cited school choice as a legislative priority in the debate and on the campaign website, which states he looks forward to continuing school choice progress as Lt. Governor. In the Trent Talks interview he named chronic absenteeism as his top passion issue, describing SB 123 — legislation he authored requiring local school systems to identify causes and craft remedies — as a named, signed bill. He also formed a statewide study committee on the issue. The website and debate both reference opposition to political indoctrination in classrooms and support for parental voice in education."
+        coverage: 3
+        position_tag: "Both public and choice"
+        position_type: "pos"
+        source: "both"
+
+      - topic: "Broadband & infrastructure"
+        note: "In the debate, Kennedy addressed infrastructure in the context of rural economic development, stating that rural Georgia lacks 'the infrastructure to attract business and industry' and that 'infrastructure development in the more rural areas of the state' requires 'the expenditure of funds to make sure that the rest of Georgia is ready.' This is framed as a state government investment priority. No mention on the campaign website."
+        coverage: 2
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: "debate"
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "No position found in reviewed sources. The debate included a question about data center energy costs; Kennedy stated that data centers should bear the cost of additional power infrastructure rather than ratepayers, but this does not constitute a position on energy regulation or environmental policy as defined in the taxonomy."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Immigration"
+        note: "No position found in reviewed sources. Immigration was discussed by other candidates in the debate but Kennedy made no statement on the topic in his answers or closing statement. No immigration position appears on the campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Housing"
+        note: "In the debate, Kennedy connected property tax relief directly to housing affordability for young Georgians, stating 'one of the largest aspects of the cost of a home is property taxes. We've got to get that reigned in' and expressing a desire to ensure 'home ownership is something that young people... think it's within their reach.' This is framed as a tax-reduction approach rather than a government housing program. No housing-specific policy beyond tax relief found on the website."
+        coverage: 2
+        position_tag: "Reduce development barriers"
+        position_type: "pos"
+        source: "debate"
