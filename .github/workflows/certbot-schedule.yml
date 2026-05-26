@@ -6,10 +6,11 @@ permissions:
 
 # Controls when the workflow will run
 on:
-  schedule:
+  # configuration moved to Cloudflare
+  # schedule:
     # Runs At 03:29 on day-of-month 12.
     # https://crontab.guru/#29_3_12_*_*
-    - cron: '29 3 12 * *'
+    # - cron: '29 3 12 * *'
 
   # Or manually trigger this
   workflow_dispatch:
