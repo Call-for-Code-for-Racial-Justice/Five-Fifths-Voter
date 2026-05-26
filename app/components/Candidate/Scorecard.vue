@@ -80,7 +80,6 @@ const clarityLabel = computed(() => {
       <div class="stat bg-base-100 shadow-sm rounded-box p-3">
         <div class="stat-title text-xs">Clarity</div>
         <div class="stat-value text-base leading-tight mt-1">{{ clarityLabel }}</div>
-        <div class="stat-desc text-xs truncate">{{ candidate.issues.clarity }}</div>
       </div>
       <div class="stat bg-base-100 shadow-sm rounded-box p-3">
         <div class="stat-title text-xs">Sources reviewed</div>
@@ -110,7 +109,6 @@ const clarityLabel = computed(() => {
 
     <!-- Footer -->
     <div class="text-xs text-base-content/40 px-1 space-y-1">
-      <div v-for="src in candidate.issues.sources_list" :key="src">{{ src }}</div>
       <div>Last updated: {{ candidate.issues.last_updated }}</div>
     </div>
   </div>
