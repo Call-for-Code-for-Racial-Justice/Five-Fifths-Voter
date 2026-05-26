@@ -22,6 +22,6 @@
     "puppeteer": "^22.11.0"
   },
   "dependencies": {
-    "nuxt": "^4.4.4"
+    "nuxt": "^4.4.6"
   }
 }
