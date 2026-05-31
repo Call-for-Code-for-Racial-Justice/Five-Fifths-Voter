@@ -10,9 +10,8 @@ region: "Statewide"
 incumbent: false
 debate_participant: true
 avatar_initials: "JK"
+ballot_order: 2
 issues:
-  issues_addressed: 8
-  issues_total: 15
   clarity: "Broad conservative themes with specific commitments on taxation and education; most social topics unaddressed"
   sources_count: 3
   sources_list:
@@ -22,12 +21,12 @@ issues:
   last_updated: "2026-05-23"
   callout: "John F. Kennedy is a former Georgia State Senator (District 18, 2015–2025) and former President Pro Tempore of the Georgia Senate who resigned his seat in December 2025 to run for Lieutenant Governor. His platform centers on three themes—Keep Georgia Growing, Keep Georgia Learning, and Keep Georgia Safe—with an emphasis on property tax relief, school choice, rural economic development, and supporting law enforcement. He presents himself as a results-driven consensus builder based on his legislative record."
   links:
-    - label: "Campaign Website"
-      url: "https://jfkforgeorgia.com/"
-    - label: "Trent Talks Interview (Video)"
-      url: "https://youtu.be/9904pw3Ub2s?si=7RIBZxHRgRDug6N9"
     - label: "Atlanta Press Club Debate (Video)"
       url: "https://youtu.be/ycsykvTq7a0?si=u3wChJeGrX-H-9tp"
+    - label: "Trent Talks Interview (Video)"
+      url: "https://youtu.be/9904pw3Ub2s?si=7RIBZxHRgRDug6N9"
+    - label: "Campaign Website"
+      url: "https://jfkforgeorgia.com/"
 
 sections:
   - id: "economic-security"
@@ -38,21 +37,21 @@ sections:
         coverage: 3
         position_tag: "Market-driven solutions"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Taxation"
         note: "Kennedy referenced the ongoing income tax reductions passed during his Senate tenure ('we started reducing the state income tax in 2019') and expressed disappointment that more progress on property tax elimination was not made in the 2026 session. In his closing statement he stated eliminating property taxes is a priority he will deliver on. No support for tax increases was expressed in any source."
         coverage: 3
         position_tag: "Reduce taxes"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Small business & farming"
         note: "Kennedy detailed his authorship of SB 68 and SB 69 (2025 tort reform) in the Trent Talks interview, framing it explicitly as protection for small and family-owned businesses from excessive lawsuit exposure. He cited the Chamber of Commerce's estimate of a $5,000-per-family annual 'hidden tort tax' and noted that insurance costs were causing businesses to question whether to stay in Georgia. The campaign website also commits to fighting for farm families, helping them find new markets, and making it easier to 'start, operate, and grow a family farm.'"
         coverage: 3
         position_tag: "Reduce regulation"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Workers & wages"
         note: "No position found in reviewed sources. Kennedy mentioned 'wages are stagnant' as a general concern in the debate but made no statement on minimum wage policy or worker protections."
@@ -69,7 +68,7 @@ sections:
         coverage: 3
         position_tag: "Mixed approach"
         position_type: "mixed"
-        source: "both"
+        source: [1,2]
 
       - topic: "Reproductive policy"
         note: "No position found in reviewed sources. The debate included no questions on reproductive policy and the campaign website contains no statement on the topic."
@@ -107,21 +106,21 @@ sections:
         coverage: 2
         position_tag: "Expand public coverage"
         position_type: "pos"
-        source: "debate"
+        source: [1]
 
       - topic: "Education"
         note: "Kennedy cited school choice as a legislative priority in the debate and on the campaign website, which states he looks forward to continuing school choice progress as Lt. Governor. In the Trent Talks interview he named chronic absenteeism as his top passion issue, describing SB 123 — legislation he authored requiring local school systems to identify causes and craft remedies — as a named, signed bill. He also formed a statewide study committee on the issue. The website and debate both reference opposition to political indoctrination in classrooms and support for parental voice in education."
         coverage: 3
         position_tag: "Both public and choice"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Broadband & infrastructure"
         note: "In the debate, Kennedy addressed infrastructure in the context of rural economic development, stating that rural Georgia lacks 'the infrastructure to attract business and industry' and that 'infrastructure development in the more rural areas of the state' requires 'the expenditure of funds to make sure that the rest of Georgia is ready.' This is framed as a state government investment priority. No mention on the campaign website."
         coverage: 2
         position_tag: "Increase public investment"
         position_type: "pos"
-        source: "debate"
+        source: [0]
 
   - id: "community-environment"
     title: "Community & environment"
@@ -145,4 +144,4 @@ sections:
         coverage: 2
         position_tag: "Reduce development barriers"
         position_type: "pos"
-        source: "debate"
+        source: [0]

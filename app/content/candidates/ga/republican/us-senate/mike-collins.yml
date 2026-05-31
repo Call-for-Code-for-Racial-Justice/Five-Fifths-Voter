@@ -10,8 +10,9 @@ region: "Statewide"
 incumbent: false
 debate_participant: true
 avatar_initials: "MC"
+ballot_order: 1
 issues:
-  issues_addressed: 8
+  issues_addressed: 9
   issues_total: 15
   clarity: "Frequently specific on immigration and fiscal issues; vague or absent on social services, environment, and LGBTQ+ policy"
   sources_count: 3
@@ -39,28 +40,28 @@ sections:
         coverage: 2
         position_tag: "Market-driven solutions"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Taxation"
         note: "Collins referenced tax cuts in the debate, saying he understood 'what those tax policies did for me, but for my company, my community, and this country' during Trump's first term, and supported the Working Families Tax Cut Act passed in the current Congress. He did not call for any tax increases. Wikipedia notes he voted against the Fiscal Responsibility Act of 2023. His overall posture is consistent with tax reduction."
         coverage: 2
         position_tag: "Reduce taxes"
         position_type: "pos"
-        source: "debate"
+        source: [0]
 
       - topic: "Small business & farming"
         note: "Collins mentioned farmers in his debate opening, criticizing his opponent for voting 'against farmers who toil to clothe and feed us.' In his ethics exchange response, he pivoted to affirm his focus on 'our farmers who need help with a level playing field.' His website biography highlights his background as a small business owner and trucking company founder. No specific legislation targeting small business or farming was cited in the Senate race sources."
         coverage: 2
         position_tag: "Reduce regulation"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Workers & wages"
         note: "Collins spoke broadly about 'getting the government off the backs of the hardworking American men and women out there' and framed deregulation as the path to economic relief for workers. No position on minimum wage or specific worker protection legislation was stated in any reviewed source. His overall orientation is toward reducing government regulation of labor rather than expanding worker protections or raising the minimum wage."
         coverage: 1
         position_tag: "Reduce labor regulation"
         position_type: "pos"
-        source: "debate"
+        source: [0]
 
   - id: "civil-rights-justice"
     title: "Civil rights & justice"
@@ -77,7 +78,7 @@ sections:
         coverage: 3
         position_tag: "Pro-life"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Voting & elections"
         note: "No direct position found in reviewed sources on voting access or voter verification as a Senate campaign issue. Wikipedia notes Collins falsely claimed the 2020 election was stolen during his 2022 congressional campaign, and he posted on social media characterizing January 6 participants as 'peaceful protesters.' These are documented historical statements but no on-record Senate campaign position on specific voting legislation was stated in the debate or campaign website."
@@ -91,7 +92,7 @@ sections:
         coverage: 1
         position_tag: "Expand gun rights"
         position_type: "pos"
-        source: "debate"
+        source: [0]
 
       - topic: "LGBTQ+ policy"
         note: "No direct position found in reviewed sources on LGBTQ+ policy as a Senate campaign issue. Wikipedia documents Collins called for the deportation of an Episcopal bishop who asked Trump to show mercy to 'LGBTQ children,' but this is a historical social media post, not a stated Senate campaign policy position. No position was articulated in the debate or on the campaign website."
@@ -108,7 +109,7 @@ sections:
         coverage: 1
         position_tag: "Expand private options"
         position_type: "pos"
-        source: "debate"
+        source: [0]
 
       - topic: "Education"
         note: "No position found in reviewed sources on education policy, school funding, or school choice for this Senate race."
@@ -122,7 +123,7 @@ sections:
         coverage: 1
         position_tag: "Public-private partnership"
         position_type: "pos"
-        source: "debate"
+        source: [0]
 
   - id: "community-environment"
     title: "Community & environment"
@@ -139,7 +140,7 @@ sections:
         coverage: 3
         position_tag: "Stricter enforcement"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Housing"
         note: "No position found in reviewed sources on housing policy for this Senate race."

@@ -1,5 +1,20 @@
 import { z } from "@nuxt/content";
 
+export const contentSectionItemSchema = z.object({
+  topic: z.string(),
+  note: z.string().optional(),
+  coverage: z.number(),
+  position_tag: z.string().nullable(),
+  position_type: z.enum(["pos", "neg", "mixed", "none"]),
+  source: z.union([z.string(), z.array(z.number())]).nullable(),
+});
+
+export const contentSectionSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  items: z.array(contentSectionItemSchema),
+});
+
 export const contentCandidateSchema = z.object({
   fiveFifthsId: z.string(),
   name: z.string(),
@@ -15,8 +30,6 @@ export const contentCandidateSchema = z.object({
   avatar_initials: z.string(),
   ballot_order: z.number(),
   issues: z.object({
-    issues_addressed: z.number(),
-    issues_total: z.number(),
     clarity: z.string(),
     sources_count: z.number(),
     sources_list: z.array(z.string()),
@@ -28,18 +41,7 @@ export const contentCandidateSchema = z.object({
       url: z.string().url(),
     })),
   }),
-  sections: z.array(z.object({
-    id: z.string(),
-    title: z.string(),
-    items: z.array(z.object({
-      topic: z.string(),
-      note: z.string(),
-      coverage: z.number(),
-      position_tag: z.string().nullable(),
-      position_type: z.enum(["pos", "neg", "mixed", "none"]),
-      source: z.string().nullable(),
-    })),
-  })),
+  sections: z.array(contentSectionSchema),
 });
 
 // @ts-expect-error z namespace is defined in @nuxt/content

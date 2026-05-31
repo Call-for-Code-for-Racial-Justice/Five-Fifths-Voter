@@ -1,0 +1,137 @@
+fiveFifthsId: "penny-brown-reynolds"
+name: "Penny Brown Reynolds"
+state: "GA"
+race: "SOS Democratic Primary Runoff 2026"
+party: "Democrat"
+primary: "Georgia Democratic Primary 2026"
+office_sought: "Secretary of State"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "PR"
+ballot_order: 2
+issues:
+  clarity: "Specific platform commitments on elections and licensing; minimal coverage of broader policy topics"
+  sources_count: 3
+  sources_list:
+    - "One-on-one TV interview with 11 Alive News (transcript attached, YouTube: youtu.be/ofhy9wg1hgs)"
+    - "Atlanta Press Club Loudermilk-Young Debate Series, Democratic primary debate for Georgia Secretary of State (YouTube, transcript attached)"
+    - "Campaign website priorities page: pennyforgeorgia.com/priorities"
+  last_updated: "2026-05-31"
+  callout: "Penny Brown Reynolds is a former judge, attorney, licensed mediator/arbitrator, and ordained pastor running for Georgia Secretary of State. She served as the first Black attorney to a Georgia governor (Roy Barnes) and as a presidential appointee leading the civil rights division at USDA, where she managed over 100,000 employees. Her campaign centers on election integrity, modernizing professional licensing, empowering small businesses, and protecting seniors from fraud, with a governing philosophy she describes as nonpartisan and rooted in constitutional fidelity."
+  data_note: "The Krimson PAC endorsement page (krimsonpac.org) was reviewed as a third source but is a third-party endorsement document, not an independent news source or voting record. Its platform summary was treated as corroborating the candidate's own website and is not cited as an independent source in the links array. The campaign website priorities page is used as the primary website source."
+  links:
+    - label: "One-on-one TV interview with 11 Alive News (2026)"
+      url: "https://youtu.be/ofhy9wg1hgs"
+    - label: "Atlanta Press Club Democratic SoS Debate (2026)"
+      url: "https://www.youtube.com/watch?v=9Z-BJl-D9_k"
+    - label: "Campaign website priorities page — pennyforgeorgia.com/priorities"
+      url: "https://www.pennyforgeorgia.com/priorities"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Reynolds referenced affordability pressures — gas prices, grocery costs, hospital closures in rural counties — as context for why election integrity matters, stating in the interview that 'gas prices don't care if you vote red or blue.' She did not propose any cost-of-living policies; these were framing remarks about the stakes of the race, not policy commitments."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Taxation"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Small business & farming"
+        note: "Reynolds made small business support a named priority across all three sources. In the interview she described the SoS office as the entry point for business formation and said it has 'not been helping businesses' or offering education, committing to change that. Her campaign website calls for streamlining business formation, launching a 'Business Access Georgia' digital dashboard with live support, expanding outreach via mobile business fairs in counties, and explicitly prioritizing Georgia's farmers and agricultural enterprises as small business stakeholders. She framed her approach as shifting the office from 'gatekeeper' to 'partner.'"
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [2]
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "This is Reynolds's central campaign issue. In the interview she strongly opposed the federal SAVE Act, calling its proof-of-citizenship documentation requirement tantamount to a poll tax and stating that Georgia's existing voter ID system — driver's license, military ID, state ID, or passport — is adequate and working. She said the onus of citizenship verification should not fall on voters. She opposed the mass cancellation of 478,000 voter registrations, arguing that for every voter removed, the SoS has an obligation to run outreach to help eligible Georgians re-register. In the debate she supported printable, verifiable ballots and audits to restore public confidence, opposed the removal of the Secretary of State from the state election board, and backed expanding early voting sites and drop boxes statewide. Her campaign website commits to expanding early voting sites and accessible voting centers, strengthening absentee ballot access, rebuilding public trust through voter education, and protecting election workers from threats and political pressure."
+        coverage: 3
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: [0]
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Reynolds mentioned hospital closures in rural counties as one of the everyday challenges facing Georgians in the interview, and noted that licensing backlogs can cost lives — citing that a single nurse license delayed means 'one hospital bed that is full.' These were contextual remarks supporting her licensing modernization argument; she proposed no healthcare policy."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

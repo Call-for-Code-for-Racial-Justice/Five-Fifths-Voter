@@ -10,6 +10,7 @@ region: "Statewide"
 incumbent: false
 debate_participant: true
 avatar_initials: "GD"
+ballot_order: 1
 issues:
   issues_addressed: 11
   issues_total: 15
@@ -22,12 +23,12 @@ issues:
   last_updated: "2026-05-23"
   callout: "Greg Dolezal is a Forsyth County Republican state senator elected in 2018 who chairs the Senate Transportation Committee and has authored several high-profile conservative bills including Georgia's school choice law (Georgia Promise Scholarship Act), the Riley Gaines Act, and DEI mandate bans. His campaign emphasizes an anti-establishment posture — opposing corporate tax carveouts, data center subsidies, and institutional home buyers — while pursuing aggressive tax reduction and strict immigration enforcement."
   links:
-    - label: "Campaign Website"
-      url: "https://gregdolezal.com/"
     - label: "Atlanta Press Club Debate (Video)"
       url: "https://youtu.be/ycsykvTq7a0?si=u3wChJeGrX-H-9tp"
     - label: "11Alive Interview (Video)"
       url: "https://youtu.be/wyLSA1NFLMc?si=rEgUJkZi7rlY4gEV"
+    - label: "Campaign Website"
+      url: "https://gregdolezal.com/"
 
 sections:
   - id: "economic-security"
@@ -38,21 +39,21 @@ sections:
         coverage: 3
         position_tag: "Market-driven solutions"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Taxation"
         note: "Dolezal's most detailed policy area. The website calls for moving toward zero income tax by 'cutting waste and eliminating corporate handouts' and frames Georgia's income tax as the highest in the Southeast. In the debate he attacked 'crony capitalist corporate carveouts' and opposed special interest tax breaks. In the interview he advocated freezing property tax assessments at purchase price and eliminating school taxes for seniors over 65. He explicitly opposes using surplus revenues for targeted incentives, preferring across-the-board reductions."
         coverage: 3
         position_tag: "Reduce taxes"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Small business & farming"
         note: "The website states the best way to grow Georgia's economy is to 'lower taxes for everyone—not have politicians play investment banker and pick winners and losers' and calls for eliminating 'corporate handouts.' In the debate Dolezal opposed 'crony capitalist corporate carveouts' that he said disadvantage ordinary businesses. No specific farm policy found in any source. Position is framed around reducing favoritism and regulation rather than targeted government support."
         coverage: 2
         position_tag: "Reduce regulation"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Workers & wages"
         note: "No position found in reviewed sources. No statement on minimum wage, worker protections, or labor regulation appeared in the debate, interview, or campaign website."
@@ -69,35 +70,35 @@ sections:
         coverage: 2
         position_tag: "Increase enforcement"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Reproductive policy"
         note: "The campaign website states 'Life begins at conception and must be protected' and notes Dolezal 'proudly supported Georgia's heartbeat bill.' In the debate introduction he described himself as 'unapologetically pro-life.' In his closing statement he referenced the Riley Gaines Act as a signature achievement. Position is explicit and consistent across all three sources."
         coverage: 3
         position_tag: "Pro-life"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Voting & elections"
         note: "Highly detailed across all sources. In the interview Dolezal called for moving to hand-marked paper ballots, cleaning voter rolls, and eliminating Dominion machines, describing election integrity as a boat with constant leaks requiring constant patching. He cited specific anomalies in Fulton County voter rolls. The website states he co-sponsored more paper ballot legislation than any member of the General Assembly. In the debate he raised these same positions and referenced QR code elimination. Position consistently emphasizes tightening verification and rolling back electronic systems."
         coverage: 3
         position_tag: "Strengthen voter verification"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Gun policy"
         note: "The campaign website states 'Shall not be infringed is clear,' describes Dolezal as a 'strong defender of the right to self-defense and gun ownership,' and notes an A+ NRA rating. No gun policy statement found in the debate transcript or interview, but website position is explicit and specific."
         coverage: 3
         position_tag: "Expand gun rights"
         position_type: "pos"
-        source: "website"
+        source: [2]
 
       - topic: "LGBTQ+ policy"
         note: "Dolezal authored and passed the Riley Gaines Act, cited on the campaign website as keeping 'men out of women's sports and out of our daughters' locker rooms.' In the debate he described himself as having 'banned DEI mandates' and referenced the Riley Gaines Act as a signature achievement in his closing statement. The Riley Gaines Act restricts transgender athlete participation in women's sports. No position on other LGBTQ+ policy areas found."
         coverage: 2
         position_tag: "Limit or oppose expansions"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
   - id: "access-services"
     title: "Access & services"
@@ -114,14 +115,14 @@ sections:
         coverage: 3
         position_tag: "Support school choice"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Broadband & infrastructure"
         note: "The campaign website mentions investing in infrastructure as part of the jobs and economy platform, stating 'we must invest in infrastructure to support long-term growth.' This is a single passing reference without named policy or specific commitment. No infrastructure position found in the debate or interview beyond data center energy cost arguments, which are framed as a fiscal/crony capitalism issue rather than an infrastructure investment position."
         coverage: 1
         position_tag: null
         position_type: "none"
-        source: "website"
+        source: [2]
 
   - id: "community-environment"
     title: "Community & environment"
@@ -138,11 +139,11 @@ sections:
         coverage: 3
         position_tag: "Stricter enforcement"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Housing"
         note: "Dolezal addressed housing through two distinct mechanisms. First, he authored a bill banning hedge funds and foreign investors from purchasing single-family homes in Georgia, detailed in both the interview and website, and referenced in the debate. Second, he supports eliminating property taxes to reduce the cost of homeownership. The first mechanism is a government prohibition (a regulatory intervention); the second reduces government's fiscal burden on owners. Both threads are directly evidenced in sources, meeting the standard for 'mixed approach.'"
         coverage: 3
         position_tag: "Mixed approach"
         position_type: "mixed"
-        source: "both"
+        source: [0,1]

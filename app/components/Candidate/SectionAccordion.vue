@@ -1,33 +1,11 @@
 <script setup lang="ts">
-interface SectionItem {
-  topic: string
-  note?: string
-  coverage: number
-  position_tag: string | null
-  position_type: "pos" | "neg" | "mixed" | "none"
-  source: string | null
-}
+import type { ContentSection } from "~/types/section";
 
-interface Section {
-  id: string
-  title: string
-  items: SectionItem[]
-}
-
-const props = defineProps<{
-  section: Section
+defineProps<{
+  section: ContentSection
+  links?: { label: string, url: string }[]
 }>();
 
-// Assign a distinct neutral dot color per section based on id
-const sectionDotClass = computed(() => {
-  const map: Record<string, string> = {
-    "economic-security": "bg-success",
-    "civil-rights-justice": "bg-secondary",
-    "access-services": "bg-accent",
-    "community-environment": "bg-primary",
-  };
-  return map[props.section.id] ?? "bg-neutral";
-});
 </script>
 
 <template>
@@ -37,10 +15,6 @@ const sectionDotClass = computed(() => {
     <!-- Collapsed header -->
     <div class="collapse-title py-3 px-4 min-h-0">
       <div class="flex items-start gap-2">
-        <span
-          class="w-2 h-2 rounded-full shrink-0 mt-1.5"
-          :class="sectionDotClass"
-        />
         <div class="flex-1 min-w-0">
           <div class="text-sm font-medium text-base-content">{{ section.title }}</div>
           <!-- Position tag summary in collapsed state -->
@@ -74,6 +48,7 @@ const sectionDotClass = computed(() => {
           v-for="item in section.items"
           :key="item.topic"
           :item="item"
+          :links="links"
         />
       </div>
     </div>

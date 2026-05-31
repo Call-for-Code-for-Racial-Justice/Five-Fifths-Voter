@@ -10,10 +10,8 @@ region: "Statewide"
 incumbent: false
 debate_participant: true
 avatar_initials: "BJ"
-ballot_order: 4
+ballot_order: 2
 issues:
-  issues_addressed: 13
-  issues_total: 15
   clarity: "Specific — incumbent record cited"
   sources_count: 3
   sources_list:
@@ -23,12 +21,12 @@ issues:
   last_updated: "2026-05-01"
   callout: "Jones has the most detailed public record of any candidate, with an incumbent legislative history. Website confirms or adds positions on LGBTQ+ (Riley Gaines Act), fentanyl/criminal justice, rural healthcare, farm support, and workforce development. Most positions are confirmed by both debate statements and website."
   links:
-    - label: "Campaign website"
-      url: "https://burtjonesforga.com/"
-    - label: "Ballotpedia"
-      url: "https://ballotpedia.org/Burt_Jones"
     - label: "Atlanta Press Club Debate"
       url: "https://www.youtube.com/live/9jZvNdcZgxo?si=D4JhJyezg-byOsJS"
+    - label: "Ballotpedia"
+      url: "https://ballotpedia.org/Burt_Jones"
+    - label: "Campaign website"
+      url: "https://burtjonesforga.com/"
 
 sections:
   - id: "economic-security"
@@ -39,25 +37,25 @@ sections:
         coverage: 3
         position_tag: "Market-driven solutions"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Taxation"
         note: "Annual income tax rate cuts; moving toward 4.99% terminal rate by 2027"
         coverage: 3
         position_tag: "Reduce taxes"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Small business & farming"
         note: "Defend Georgia farmland; farm support; reduce permitting and licensing"
         coverage: 3
         position_tag: "Reduce regulation"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Workers & wages"
         note: "Cut fees and burdensome regulations; vocational funding"
         coverage: 2
         position_tag: "Reduce labor regulation"
         position_type: "pos"
-        source: "website"
+        source: [2]
 
   - id: "civil-rights-justice"
     title: "Civil rights & justice"
@@ -67,31 +65,31 @@ sections:
         coverage: 3
         position_tag: "Increase enforcement"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Reproductive policy"
         note: "Voted for heartbeat bill 2019; supports exceptions for rape, incest, mother's health"
         coverage: 3
         position_tag: "Pro-life"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Voting & elections"
         note: "SB 202, QR code removal, anti-sanctuary cities for elections"
         coverage: 3
         position_tag: "Strengthen voter verification"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Gun policy"
         note: "Ownership rights, regulations, safety"
         coverage: 2
         position_tag: "Expand gun rights"
         position_type: "pos"
-        source: "website"
+        source: [2]
       - topic: "LGBTQ+ policy"
         note: "Riley Gaines Act; bans biological males in female sports; separate facilities"
         coverage: 3
         position_tag: "Limit or oppose expansions"
         position_type: "pos"
-        source: "website"
+        source: [2]
 
   - id: "access-services"
     title: "Access & services"
@@ -101,19 +99,19 @@ sections:
         coverage: 3
         position_tag: "Mixed approach"
         position_type: "mixed"
-        source: "both"
+        source: [0,1]
       - topic: "Education"
         note: "Georgia Promise Scholarship; ban CRT; vocational investment"
         coverage: 3
         position_tag: "Support school choice"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Broadband & infrastructure"
         note: "Rural connectivity, roads, utilities"
         coverage: 2
         position_tag: "Public-private partnership"
         position_type: "pos"
-        source: "website"
+        source: [2]
 
   - id: "community-environment"
     title: "Community & environment"
@@ -129,10 +127,10 @@ sections:
         coverage: 3
         position_tag: "Stricter enforcement"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Housing"
         note: "Affordability mentioned; rural farmland preservation"
         coverage: 2
         position_tag: "Increase government support"
         position_type: "pos"
-        source: "website"
+        source: [2]
