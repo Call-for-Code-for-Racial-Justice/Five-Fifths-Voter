@@ -1,0 +1,147 @@
+fiveFifthsId: "vernon-jones"
+name: "Vernon Jones"
+state: "GA"
+race: "SOS Republican Primary Runoff 2026"
+party: "Republican"
+primary: "Georgia SOS Republican Primary Runoff 2026"
+office_sought: "Secretary of State"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "VJ"
+ballot_order: 2
+issues:
+  clarity: "Focused and specific on elections and licensing; no policy positions on most taxonomy topics"
+  sources_count: 3
+  sources_list:
+    - "Atlanta Press Club Loudermilk-Young Debate Series — Georgia SOS Republican Runoff debate (transcript, 2026)"
+    - "1-on-1 interview — https://youtu.be/VJaQDvCdpOo"
+    - "Official campaign website — vernonjonesforga.com (platform page reviewed)"
+  last_updated: "2026-05-31"
+  callout: "Vernon Jones is a former Democratic state legislator and DeKalb County CEO who switched parties and became a prominent supporter of Donald Trump following the 2020 election. He is running for Georgia Secretary of State on a platform centered on election integrity, voter roll cleanup, restricting absentee ballots, returning to paper ballots, and streamlining professional licensing. The race is narrowly scoped to the SOS office's administrative functions, and Jones addressed virtually no positions on the broader policy topics in the Five Fifths taxonomy."
+  links:
+    - label: "Atlanta Press Club SOS Republican Runoff Debate (transcript)"
+      url: "https://www.youtube.com/live/Bq0lRYbj9dM?si=r5pGWBDXOUOUYAin"
+    - label: "1-on-1 Interview"
+      url: "https://youtu.be/VJaQDvCdpOo?si=nDYjPxIJcPfZozz-"
+    - label: "Campaign website — Platform"
+      url: "https://vernonjonesforga.com/platform"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "No position found in reviewed sources. Jones did not address cost of living in the debate or on his campaign platform page."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Taxation"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Small business & farming"
+        note: "Jones's campaign platform commits to cutting red tape in business and professional licensing, streamlining the Secretary of State's licensing functions, and modernizing systems for faster approvals. In the debate he said he would make the SOS office 'an engine for economic growth' and remove bureaucratic obstacles. This is scoped to the SOS's licensing role, not broader small business or agricultural policy."
+        coverage: 2
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: [0, 2]
+
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Voting & elections"
+        note: "Jones made election integrity the centerpiece of his campaign. In the debate he called for cleaning voter rolls, returning to paper ballots, restricting absentee voting to military, disabled, and elderly voters, and eliminating QR codes from ballots. On his platform page he commits to stricter voter photo ID requirements, cross-checking registration data to remove non-citizens, and limiting absentee/mail ballots. He stated: 'We want to make it easy to vote and hard to cheat.' He also alleged fraud in Georgia's 2020 election and cited irregularities as justification for tighter rules."
+        coverage: 3
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: [0, 2]
+
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Immigration"
+        note: "No position found in reviewed sources. Jones referenced concerns about non-citizens on voter rolls in the debate, but this was in the context of election integrity, not a stated immigration policy position."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Housing"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
