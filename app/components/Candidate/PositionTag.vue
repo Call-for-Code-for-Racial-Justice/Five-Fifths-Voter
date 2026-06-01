@@ -21,7 +21,7 @@ const badgeClass = computed(() => {
   if (props.positionType === "pos") {
     if (lean.value === "left") return "badge-left";
     if (lean.value === "right") return "badge-right";
-    return "badge-neutral badge-outline";
+    return "badge-middle";
   }
   return "badge-ghost text-base-content/40 italic";
 });
@@ -30,7 +30,7 @@ const label = computed(() => {
   if (props.positionType === "pos" || props.positionType === "mixed") {
     return props.positionTag ?? "";
   }
-  return props.topic ? `${props.topic}: no position found` : "No position found";
+  return props.topic ? `${props.topic}` : "No position found";
 });
 </script>
 

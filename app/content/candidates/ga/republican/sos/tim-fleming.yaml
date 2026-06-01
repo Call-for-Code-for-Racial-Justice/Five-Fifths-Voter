@@ -1,0 +1,147 @@
+fiveFifthsId: "tim-fleming"
+name: "Tim Fleming"
+state: "GA"
+race: "SOS Republican Primary Runoff 2026"
+party: "Republican"
+primary: "Georgia Republican Secretary of State Runoff 2026"
+office_sought: "Secretary of State"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "TF"
+ballot_order: 1
+issues:
+  clarity: "Specific on elections and licensing; silent on most social and economic topics"
+  sources_count: 3
+  sources_list:
+    - "Atlanta Press Club Loudermilk-Young Debate Series — Republican SOS Runoff 2026 (transcript)"
+    - "Bettis Musgrove Show podcast interview with Tim Fleming (transcript)"
+    - "Tim Fleming campaign website — flemingforga.com"
+  last_updated: "2026-05-31"
+  callout: "Tim Fleming is a Covington, Georgia native, small business owner, and four-term state House member who served as Deputy Secretary of State and Chief of Staff under then-Secretary Brian Kemp. His platform centers on elections integrity, a transition to hand-marked paper ballots, and cutting red tape in professional licensing. He emphasizes executive experience in the SOS office as his primary qualification."
+  links:
+    - label: "Atlanta Press Club Republican SOS Runoff Debate 2026 (transcript)"
+      url: "https://www.youtube.com/live/Bq0lRYbj9dM?si=J8uUY5SyNT7wlnw1"
+    - label: "Bettis Musgrove Show podcast interview (transcript)"
+      url: "https://youtu.be/8wCcKQIto7E?si=59gy35tFmV33_F9x"
+    - label: "Tim Fleming campaign website"
+      url: "https://www.flemingforga.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "No position found in reviewed sources. Fleming did not address cost of living as a policy topic in the debate, interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Taxation"
+        note: "No position found in reviewed sources. Taxation was not addressed in the debate, interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Small business & farming"
+        note: "Fleming repeatedly cited his identity as a small business owner and stressed that the Secretary of State's office should not be a roadblock for small businesses. In the interview he said it is his belief that government agencies should be there to help taxpayers and citizens, not put up roadblocks, specifically referencing LLC and corporation filing processes. His campaign website lists cutting red tape holding small businesses back as a top priority."
+        coverage: 2
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: [1, 2]
+
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources. Fleming did not address minimum wage, worker protections, or labor regulation in the debate, interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources. Criminal justice was not addressed in the debate, interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources. Reproductive policy was not addressed in the debate, interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Voting & elections"
+        note: "Fleming addressed this topic extensively across all three sources. In the debate he said he supports moving to hand-marked paper ballots, citing that over 70% of the United States votes that way and calling Florida the gold standard. He sponsored legislation to clean up DMV-linked voter roll errors and chaired the House Blue Ribbon Committee on Elections Reform. He stated he voted against Senate Bill 214 because it delayed removal of QR codes from ballots, and expressed intent to fix that in a June 17 special session. He supports the President's Safe America Act for national election standards. He said he opposes mailing absentee ballots broadly, stating the only way to get one should be if you're elderly, disabled, or a military service member serving overseas. In the interview he expressed support for giving local governments more control over early voting schedules. On the campaign website he lists championing voter ID and election transparency and making it impossible for the Left to cheat as priorities."
+        coverage: 3
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: [0, 1, 2]
+
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources. Gun policy was not addressed in the debate, interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources. LGBTQ+ policy was not addressed in the debate, interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "No position found in reviewed sources. Healthcare was not addressed in the debate, interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Education"
+        note: "No position found in reviewed sources. Education policy was not addressed in the debate, interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources. Broadband and infrastructure were not addressed in the debate, interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "No position found in reviewed sources. Environment and energy were not addressed in the debate, interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Immigration"
+        note: "Fleming's campaign website lists deporting any illegals attempting to vote in Georgia as a stated priority. In the debate he sponsored legislation targeting DMV-linked voter roll issues, framing non-citizen registration as a threat to election integrity. The references are specifically tied to election security rather than immigration policy broadly."
+        coverage: 1
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [2, 0]
+
+      - topic: "Housing"
+        note: "No position found in reviewed sources. Housing policy was not addressed in the debate, interview, or campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

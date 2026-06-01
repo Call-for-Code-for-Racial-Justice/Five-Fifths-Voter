@@ -143,13 +143,18 @@ cal green #24502A
 
 /* Custom badge variants — unlayered so they outrank DaisyUI's layered badge styles */
 .badge.badge-left {
-  background-color: #56B5B5;
-  color: #1a1a1a;
+  background-color: var(--color-ff-blue-02);
+  color: white;
   border-color: var(--color-slate-200);
 }
 
 .badge.badge-right {
-  background-color: #0d4f4f;
+  background-color: var(--color-ff-red-01);
+  color: white;
+  border-color: var(--color-slate-200);
+}
+.badge.badge-middle {
+  background-color: var(--color-ff-purple-02);
   color: white;
   border-color: var(--color-slate-200);
 }

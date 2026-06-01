@@ -1,0 +1,137 @@
+fiveFifthsId: "dana-barrett"
+name: "Dana Barrett"
+state: "GA"
+race: "SOS Democratic Primary Runoff 2026"
+party: "Democrat"
+primary: "Georgia Democratic Primary 2026"
+office_sought: "Secretary of State"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "DB"
+ballot_order: 1
+issues:
+  clarity: "Focused on election integrity; limited policy specifics outside SoS core functions"
+  sources_count: 3
+  sources_list:
+    - "One-on-one interview with The Georgia Vote (YouTube, transcript attached)"
+    - "Atlanta Press Club Loudermilk-Young Debate Series, Democratic primary debate for Georgia Secretary of State (YouTube, transcript attached)"
+    - "Official campaign website: electdanabarrett.com"
+  last_updated: "2026-05-31"
+  callout: "Dana Barrett is a Fulton County Commissioner, former tech executive, and small business owner running to be Georgia's first Democratic Secretary of State in roughly two decades. Her campaign centers on protecting election integrity against what she characterizes as MAGA-led threats, modernizing the Secretary of State's business licensing and registration systems, and cracking down on securities fraud. She highlights her willingness to contest the appointment of election-denier nominees to the Fulton County Board of Elections — including a threat of jail — as evidence of her commitment to defending free, fair, and secure elections."
+  data_note: "The campaign website has no dedicated issues or platform page; all website evidence is drawn from homepage text. Policy positions across most taxonomy topics are therefore sourced exclusively from interview and debate transcripts. Topics outside the Secretary of State's direct statutory purview (e.g., healthcare, environment, immigration) were not addressed in any reviewed source."
+  links:
+    - label: "The Georgia Vote interview (2026)"
+      url: "https://www.youtube.com/watch?v=B_sAFpSA9q0"
+    - label: "Atlanta Press Club Democratic SoS Debate (2026)"
+      url: "https://www.youtube.com/watch?v=9Z-BJl-D9_k"
+    - label: "Campaign website — electdanabarrett.com"
+      url: "https://electdanabarrett.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Barrett repeatedly cited affordability — gas, rent, childcare, and healthcare — as the motivating crisis behind her candidacy, stating in both the interview and debate that fixing the affordability crisis requires free, fair, and secure elections first. She described these as the problems she wants to solve but did not propose specific cost-of-living policies; the Secretary of State office is not her vehicle for addressing them directly."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Taxation"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Small business & farming"
+        note: "Barrett cited her small business background and highlighted that the Secretary of State's office is responsible for business registrations and professional licensing. In the interview she described the office's systems as 'antiquated' and gave a specific example of a contractor unable to pull subcontractor licenses on a non-mobile-friendly state website, calling this an unacceptable barrier for small business owners. In the debate she referenced passing small business legislation with a unanimous vote on the Fulton County Commission. Her stated goal is to modernize the SoS office's systems to better serve small businesses."
+        coverage: 2
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [0]
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "This is Barrett's central campaign issue. In the interview she stated that every eligible Georgia voter who wants to vote should be able to do so easily across all 159 counties 'without fear of intimidation' and 'without fear that their private data is going to be stolen.' She supports current Georgia voter ID requirements but opposes the federal SAVE Act's proof-of-citizenship requirement, arguing the burden of verifying citizenship should fall on the government, not voters. She called for making Election Day a state holiday and said she would push back on federal overreach in elections, including through litigation with the Attorney General's office if necessary. In the debate she supported reinstating the Secretary of State as chair and voting member of the state election board, and backed rank-choice voting expansion at the state and local level. She proposed a hybrid paper-and-machine voting system to rebuild public confidence."
+        coverage: 3
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: [0]
+      - topic: "Gun policy"
+        note: "Barrett mentioned 'common sense gun laws' as one of the issues Georgians care about in her closing interview statement, but did not elaborate on any specific position or policy. This is a passing reference only."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Barrett mentioned that Georgians 'cannot afford healthcare' as part of her framing of the affordability crisis, and referenced her own experience as a breast cancer survivor. She did not propose any healthcare policy or take a position on coverage expansion or the role of government in healthcare."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "Barrett mentioned education as one of the issues Georgians care about in her closing interview statement but offered no policy position on funding, school choice, or related topics."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Barrett noted in the debate that she passed affordable housing legislation on the Fulton County Commission with a unanimous vote, but offered no statewide housing policy position and did not describe her approach or direction on housing in the context of the Secretary of State race."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: [1]

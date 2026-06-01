@@ -23,12 +23,12 @@ issues:
   last_updated: "2026-05-23"
   callout: "Josh McLaurin is a Georgia native, attorney, and four-term state legislator (House 2018–2022, Senate 2022–present) from Sandy Springs representing District 14. His platform centers on Medicaid expansion, affordable housing, workers' rights, and defending Black voting power, and he emphasizes his record of bipartisan legislative wins alongside outspoken opposition to MAGA policy. He advanced to the June 16, 2026 Democratic primary runoff against former state Sen. Nabilah Parkes after no candidate cleared 50% on May 19."
   links:
-    - label: "Campaign website"
-      url: "https://www.joshmclaurin.com"
     - label: "Atlanta Press Club debate"
       url: "https://youtu.be/AH_96yLFhd4?si=J4eW_qxc-rkVKrdn"
     - label: "11Alive extended interview"
       url: "https://youtu.be/pzxcx3toHKY?si=b2Q1E7fCnO_Imm3f"
+    - label: "Campaign website"
+      url: "https://www.joshmclaurin.com"
 
 sections:
   - id: "economic-security"
@@ -39,28 +39,28 @@ sections:
         coverage: 3
         position_tag: "Government programs"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Taxation"
         note: "In the interview, McLaurin proposed funding healthcare premium subsidies by 'taxing insurance company profits,' describing it as 'pretty popular.' He also criticized Republican income and property tax cut plans as fiscally unworkable. Website frames the contrast as redirecting revenues away from corporate tax breaks. No explicit call to raise or restructure the broad tax system beyond these targeted proposals."
         coverage: 2
         position_tag: "Restructure tax system"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Small business & farming"
         note: "In the debate, McLaurin criticized top-down rural development that 'attract[s] the big corporation, give[s] billions in tax credits or tax breaks' without hiring local union workers or investing in local infrastructure. He proposed a 'rural task force' to support small towns. No direct small business regulatory position stated in reviewed sources."
         coverage: 1
         position_tag: "Mixed approach"
         position_type: "mixed"
-        source: "debate"
+        source: [0]
 
       - topic: "Workers & wages"
         note: "In the debate, McLaurin stated 'we can afford a living wage of at least $15 an hour' and noted Georgia's minimum wage is below the federal floor. Website states he will 'stand with labor to protect the right to organize' and calls Georgia's right-to-work laws an obstacle to fair wages and worker organizing. AFL-CIO endorsement cited in both sources."
         coverage: 3
         position_tag: "Raise minimum wage"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
   - id: "civil-rights-justice"
     title: "Civil rights & justice"
@@ -70,21 +70,21 @@ sections:
         coverage: 2
         position_tag: "Invest in prevention"
         position_type: "pos"
-        source: "debate"
+        source: [0]
 
       - topic: "Reproductive policy"
         note: "Website states Georgia's six-week abortion ban is 'one of the most extreme in the country,' that McLaurin 'voted against it in 2019,' and that he will 'work to overturn the ban.' In the debate closing statement, McLaurin cited the endorsement of Georgia Equality and referenced standing against 'attacks on vulnerable groups.' Interview does not address directly."
         coverage: 3
         position_tag: "Pro-choice"
         position_type: "pos"
-        source: "website"
+        source: [2]
 
       - topic: "Voting & elections"
         note: "In the interview, McLaurin extensively addressed the impact of the Supreme Court's LAllen v. Milligan ruling on Section 2 of the Voting Rights Act, arguing it opens the door to eliminating Black voting power through redistricting. He called it 'a generational civil rights moment.' Website states he is committed to ensuring 'minority voting power is protected.' In the debate, he referenced using procedural authority to force votes on issues blocked by the current lieutenant governor."
         coverage: 3
         position_tag: "Expand ballot access"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Gun policy"
         note: "No position found in reviewed sources."
@@ -98,7 +98,7 @@ sections:
         coverage: 2
         position_tag: "Expand protections"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
   - id: "access-services"
     title: "Access & services"
@@ -108,7 +108,7 @@ sections:
         coverage: 3
         position_tag: "Expand public coverage"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Education"
         note: "In the interview, McLaurin listed child care funding as part of the Democratic affordability agenda. In the debate closing he cited the endorsement of Young Democrats who want him to 'address climate change and other generational challenges.' No specific K-12 or higher education funding position found in reviewed sources."
@@ -139,11 +139,11 @@ sections:
         coverage: 2
         position_tag: "Mixed approach"
         position_type: "mixed"
-        source: "both"
+        source: [0,1]
 
       - topic: "Housing"
         note: "In the interview, McLaurin proposed: restricting corporate/hedge fund ownership of single-family housing, zoning reform to allow smaller lot sizes and more units, and funding the state housing trust fund through budget surplus or revenue sources. Website: 'Georgia has the highest percentage of private equity ownership of multifamily units in the country... Josh will fight to restore the American Dream by making homes affordable and accessible to individual Georgians.'"
         coverage: 3
         position_tag: "Increase government programs"
         position_type: "pos"
-        source: "both"
+        source: [0,1]

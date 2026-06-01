@@ -23,12 +23,12 @@ issues:
   last_updated: "2026-05-23"
   callout: "Nabilah Parkes is a former two-term Georgia state senator representing Gwinnett County (District 7), the youngest woman ever elected to the Georgia Senate and the first Muslim and South Asian woman to serve in that body. Her platform centers on Medicaid expansion, housing affordability, repealing the six-week abortion ban, expanding voting rights, and raising the minimum wage. She advanced to the June 16, 2026 Democratic primary runoff against state Sen. Josh McLaurin after no candidate cleared 50% on May 19."
   links:
-    - label: "Campaign website"
-      url: "https://nabilahparkes.com"
     - label: "Atlanta Press Club debate"
       url: "https://youtu.be/AH_96yLFhd4?si=J4eW_qxc-rkVKrdn"
     - label: "11Alive extended interview"
       url: "https://youtu.be/vNs6tHmUB0U?si=yiUhvZXdoSS_p1Vt"
+    - label: "Campaign website"
+      url: "https://nabilahparkes.com"
 
 sections:
   - id: "economic-security"
@@ -39,14 +39,14 @@ sections:
         coverage: 3
         position_tag: "Government programs"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Taxation"
         note: "In the interview, Parkes described introducing legislation to repeal billions of dollars in subsidies to data centers and insurance companies. Website calls for cutting sales taxes on essential family items. In the debate she cited eliminating sales taxes on menstrual products, diapers, and strollers. These are targeted tax restructuring proposals rather than a broad raise or cut stance."
         coverage: 2
         position_tag: "Restructure tax system"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Small business & farming"
         note: "No position found in reviewed sources."
@@ -60,7 +60,7 @@ sections:
         coverage: 3
         position_tag: "Raise minimum wage"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
   - id: "civil-rights-justice"
     title: "Civil rights & justice"
@@ -77,28 +77,28 @@ sections:
         coverage: 3
         position_tag: "Pro-choice"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Voting & elections"
         note: "Website calls for 'simplifying the process for lawful voters to cast their ballots, expanding early voting,' and cites Senate legislation to let voters permanently opt in for mail-in ballots. In the interview she stated 'the ability to vote is our constitutional right — we should make it easier and not harder,' and criticized redistricting efforts as erasing Black and minority representation. In the debate closing she named protecting voting rights as a core priority."
         coverage: 3
         position_tag: "Expand ballot access"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Gun policy"
         note: "Website calls for 'common-sense gun safety measures like background checks, red flag laws and safe storage for firearms' and states she introduced legislation to ban firearm sales near schools, hospitals, and mental health institutions."
         coverage: 3
         position_tag: "Increase gun regulations"
         position_type: "pos"
-        source: "website"
+        source: [2]
 
       - topic: "LGBTQ+ policy"
         note: "Website states she 'helped block harmful Republican-led legislation that would legalize discrimination against Georgians based on who they love or what they believe' and is committed to passing civil rights legislation protecting Georgians from discrimination in housing, public accommodations, and employment. Endorsement from Moms Demand Action visible on homepage."
         coverage: 2
         position_tag: "Expand protections"
         position_type: "pos"
-        source: "website"
+        source: [2]
 
   - id: "access-services"
     title: "Access & services"
@@ -108,14 +108,14 @@ sections:
         coverage: 3
         position_tag: "Expand public coverage"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Education"
         note: "Website calls for increasing public school funding, updating the school funding formula, ensuring free breakfast and lunch for students in poverty, opposing private school voucher legislation, and fighting for teacher pay and healthcare. States she 'fought against the passage of a private school voucher bill that defunds public schools.' No education position stated in the debate or interview."
         coverage: 3
         position_tag: "Increase public school funding"
         position_type: "pos"
-        source: "website"
+        source: [2]
 
       - topic: "Broadband & infrastructure"
         note: "No position found in reviewed sources."
@@ -132,18 +132,18 @@ sections:
         coverage: 2
         position_tag: "Prioritize regulation"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
 
       - topic: "Immigration"
         note: "In the interview she criticized ICE enforcement, describing 'masked ICE agents in our communities ripping away people from their homes.' In the debate she referenced introducing a bill requiring ICE to obtain a judge-signed warrant before entering schools, hospitals, domestic violence shelters, and libraries. No position on legal immigration pathways found in reviewed sources."
         coverage: 2
         position_tag: "Mixed approach"
         position_type: "mixed"
-        source: "both"
+        source: [0,1]
 
       - topic: "Housing"
         note: "In the interview Parkes called for identifying and capping Wall Street investors buying up Georgia homes, requiring disclosure of LLC ownership, and pushing investors back to lower housing costs. In the debate she stated rent is 'too dang high' and called for 'capping Wall Street investors who are coming into our neighborhoods.' Website references commitment to affordability broadly but does not have a standalone housing section; the affordable Georgia section addresses cost-of-living without specific housing program detail beyond what appears in the interview."
         coverage: 3
         position_tag: "Increase government programs"
         position_type: "pos"
-        source: "both"
+        source: [0,1]

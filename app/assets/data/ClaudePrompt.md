@@ -37,8 +37,8 @@ replacement before proceeding.
 
 Weight sources in this priority order:
 1. **Debate transcript or interview** — highest weight; candidate's own spoken words
-2. **Campaign website / issues pages** — high weight; official stated positions
-3. **Ballotpedia / news / voting record** — supplementary; use to fill gaps or confirm
+2. **Ballotpedia / news / voting record** — supplementary; use to fill gaps or confirm
+3. **Campaign website / issues pages** — high weight; official stated positions
 
 Never invent positions. If a position is not found in any reviewed source, mark it
 as not found. Do not infer a position from party affiliation, endorsements, or
@@ -90,11 +90,12 @@ No paraphrasing. Copy labels exactly as written.
 | 1 | Briefly mentioned — single passing reference |
 | 0 | Not found in reviewed sources |
 
+### Links field values
+- These should be the exact URLs provided by the user.
+- They should be in priority order! The same order as you use in [SOURCE WEIGHTING](#source-weighting)
+
 ### Source field values
-- `"debate"` — position sourced from debate or interview transcript only
-- `"website"` — position sourced from campaign website only
-- `"both"` — position confirmed in both transcript and website
-- `null` — no position found
+- Must be an array of indexes like from 0-n like `[2]` or `[0,1]` etc — index positions of an entry in the Links array
 
 ### Position type field values
 - `"pos"` — a clear stated position from the allowed tag list
@@ -143,8 +144,6 @@ incumbent: <true or false>
 debate_participant: <true or false>
 avatar_initials: "<2 initials>"
 issues:
-  issues_addressed: <integer>
-  issues_total: 15
   clarity: "<One phrase description of overall specificity>"
   sources_count: <integer>
   sources_list:
@@ -167,25 +166,25 @@ sections:
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
       - topic: "Taxation"
         note: "..."
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
       - topic: "Small business & farming"
         note: "..."
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
       - topic: "Workers & wages"
         note: "..."
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
 
   - id: "civil-rights-justice"
     title: "Civil rights & justice"
@@ -195,31 +194,31 @@ sections:
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
       - topic: "Reproductive policy"
         note: "..."
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
       - topic: "Voting & elections"
         note: "..."
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
       - topic: "Gun policy"
         note: "..."
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
       - topic: "LGBTQ+ policy"
         note: "..."
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
 
   - id: "access-services"
     title: "Access & services"
@@ -229,19 +228,19 @@ sections:
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
       - topic: "Education"
         note: "..."
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
       - topic: "Broadband & infrastructure"
         note: "..."
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
 
   - id: "community-environment"
     title: "Community & environment"
@@ -251,19 +250,19 @@ sections:
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
       - topic: "Immigration"
         note: "..."
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
       - topic: "Housing"
         note: "..."
         coverage: <0-3>
         position_tag: <"Tag label" or null>
         position_type: <"pos" or "mixed" or "none">
-        source: <"debate" or "website" or "both" or null>
+        source: <index into links array i.e. 0,1,2 or null>
 ```
 
 ---
@@ -297,9 +296,9 @@ Incumbent: <yes/no>
 Debate participant: <yes/no>
 
 Sources:
-1. <Campaign website URL>
-2. <Debate transcript URL or uploaded file>
-3. <Ballotpedia URL or news article URL>
+1. <Debate transcript URL or uploaded file>
+2. <News interview with the candiate (podcast transacript etc), news article URL, or Ballotpedia URL>
+3. <Campaign website URL>
 ```
 
 **Step 3 — Claude will fetch or read all sources, then generate the YAML.**
@@ -315,7 +314,7 @@ evidence before accepting it.
 - [ ] All 15 topics are present
 - [ ] No position tags outside the taxonomy
 - [ ] No topic has more than one position tag
-- [ ] `issues_addressed` count matches actual non-zero coverage rows
+- [ ] The "links" array is in priority order! Priority: debate, 1-1 interview, news article, ballotpedia, wikipedia, campaign website
 - [ ] `mixed` is only used when the candidate explicitly addressed both sides
 - [ ] `data_note` removed if no data quality issue exists
 - [ ] `fiveFifthsId` follows the convention

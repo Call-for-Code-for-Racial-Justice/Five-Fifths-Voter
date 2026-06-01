@@ -23,12 +23,12 @@ issues:
   last_updated: "2026-05-01"
   callout: "Bottoms has the most detailed issues platform of the Democratic field. Former Atlanta mayor with executive record she cites throughout the debate. Key pillars are Medicaid expansion, housing affordability, small business, and reproductive freedom. Her CARE Plan is a detailed healthcare document."
   links:
-    - label: "Campaign website"
-      url: "https://www.keishaforgovernor.com/"
-    - label: "Issues page"
-      url: "https://www.keishaforgovernor.com/issues"
+    - label: "Atlanta Press Club debate"
+      url: "https://youtu.be/TwC0uwC-K5s?si=NLQy9RChMtsuABQu"
     - label: "Ballotpedia"
       url: "https://ballotpedia.org/Keisha_Lance_Bottoms"
+    - label: "Campaign website"
+      url: "https://www.keishaforgovernor.com/"
 
 sections:
   - id: "economic-security"
@@ -39,19 +39,19 @@ sections:
         coverage: 3
         position_tag: "Government programs"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Taxation"
         note: "No explicit tax rate position; general affordability and infrastructure investment emphasis"
         coverage: 1
         position_tag: "Mixed approach"
         position_type: "mixed"
-        source: "debate"
+        source: [0]
       - topic: "Small business & farming"
         note: "Restructure Dept of Economic Development; Office of Small Business; expand loans and grants; support farmers harmed by Trump tariffs"
         coverage: 3
         position_tag: "Increase government support"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Workers & wages"
         note: "Minimum wage, labor protections"
         coverage: 0
@@ -67,25 +67,25 @@ sections:
         coverage: 3
         position_tag: "Invest in prevention"
         position_type: "pos"
-        source: "website"
+        source: [2]
       - topic: "Reproductive policy"
         note: "Restore woman's right to choose; protect reproductive freedom"
         coverage: 3
         position_tag: "Pro-choice"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Voting & elections"
         note: "Expand early voting, protect absentee, rein in State Election Board, protect election officials from interference"
         coverage: 3
         position_tag: "Expand ballot access"
         position_type: "pos"
-        source: "website"
+        source: [2]
       - topic: "Gun policy"
         note: "Universal background checks; red flag law"
         coverage: 2
         position_tag: "Increase gun regulations"
         position_type: "pos"
-        source: "website"
+        source: [2]
       - topic: "LGBTQ+ policy"
         note: "Protections, discrimination, parental rights"
         coverage: 0
@@ -101,19 +101,19 @@ sections:
         coverage: 3
         position_tag: "Expand public coverage"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Education"
         note: "Fully fund QBE; universal childcare; mandatory kindergarten; free technical/community college; eliminate teacher income tax; literacy focus"
         coverage: 3
         position_tag: "Increase public school funding"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
       - topic: "Broadband & infrastructure"
         note: "Invest in rural infrastructure; streamline building permits in rural counties"
         coverage: 2
         position_tag: "Increase public investment"
         position_type: "pos"
-        source: "debate"
+        source: [0]
 
   - id: "community-environment"
     title: "Community & environment"
@@ -135,4 +135,4 @@ sections:
         coverage: 3
         position_tag: "Increase government programs"
         position_type: "pos"
-        source: "both"
+        source: [0,1]
