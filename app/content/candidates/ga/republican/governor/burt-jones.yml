@@ -12,6 +12,8 @@ debate_participant: true
 avatar_initials: "BJ"
 ballot_order: 2
 issues:
+  issues_addressed: 12
+  issues_total: 15
   clarity: "Specific — incumbent record cited"
   sources_count: 3
   sources_list:
@@ -95,10 +97,10 @@ sections:
     title: "Access & services"
     items:
       - topic: "Healthcare"
-        note: "Expanded rural access; easier healthcare facility permitting regardless of zip code"
+        note: "Expanded rural access and easier healthcare facility permitting regardless of zip code. Both elements point toward broadening access to providers via reduced permitting barriers, rather than describing two opposing mechanisms — this is a single, standalone access-and-permitting framing that does not map cleanly to 'Expand public coverage' or 'Expand private options.'"
         coverage: 3
-        position_tag: "Mixed approach"
-        position_type: "mixed"
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
         source: [0,1]
       - topic: "Education"
         note: "Georgia Promise Scholarship; ban CRT; vocational investment"
@@ -129,8 +131,8 @@ sections:
         position_type: "pos"
         source: [0,1]
       - topic: "Housing"
-        note: "Affordability mentioned; rural farmland preservation"
+        note: "Affordability mentioned generally; rural farmland preservation cited. Theme is broad support for affordability and preservation rather than a specific program — mapped to the general government-support direction on the housing taxonomy."
         coverage: 2
-        position_tag: "Increase government support"
+        position_tag: "Increase government programs"
         position_type: "pos"
         source: [2]

@@ -12,7 +12,7 @@ debate_participant: true
 avatar_initials: "JM"
 ballot_order: 1
 issues:
-  issues_addressed: 10
+  issues_addressed: 8
   issues_total: 15
   clarity: "Specific on healthcare, housing, labor, voting rights, and reproductive policy; silent on several taxonomy topics"
   sources_count: 3
@@ -49,11 +49,11 @@ sections:
         source: [0,1]
 
       - topic: "Small business & farming"
-        note: "In the debate, McLaurin criticized top-down rural development that 'attract[s] the big corporation, give[s] billions in tax credits or tax breaks' without hiring local union workers or investing in local infrastructure. He proposed a 'rural task force' to support small towns. No direct small business regulatory position stated in reviewed sources."
+        note: "In the debate, McLaurin criticized top-down rural development that 'attract[s] the big corporation, give[s] billions in tax credits or tax breaks' without hiring local union workers or investing in local infrastructure. He proposed a 'rural task force' to support small towns. This critiques a specific incentive practice rather than staking out a position on the level of small business regulation or support as defined by the taxonomy. No direct small business regulatory position stated in reviewed sources."
         coverage: 1
-        position_tag: "Mixed approach"
-        position_type: "mixed"
-        source: [0]
+        position_tag: null
+        position_type: "none"
+        source: null
 
       - topic: "Workers & wages"
         note: "In the debate, McLaurin stated 'we can afford a living wage of at least $15 an hour' and noted Georgia's minimum wage is below the federal floor. Website states he will 'stand with labor to protect the right to organize' and calls Georgia's right-to-work laws an obstacle to fair wages and worker organizing. AFL-CIO endorsement cited in both sources."
@@ -135,11 +135,11 @@ sections:
         source: null
 
       - topic: "Immigration"
-        note: "In the interview, McLaurin criticized the 'ICE and CBP' deployments in communities and called the $70 billion ICE expansion a result of 'race baiting and fear of immigrants.' In the debate, Parks accused him of refusing to co-sign her bill requiring warrants before ICE entered sensitive locations; McLaurin said he did not recall this and disputed her characterization. His stated position is opposition to current ICE enforcement practices but no explicit pathway position found."
+        note: "In the interview, McLaurin criticized the 'ICE and CBP' deployments in communities and called the $70 billion ICE expansion a result of 'race baiting and fear of immigrants.' In the debate, Parks accused him of refusing to co-sign her bill requiring warrants before ICE entered sensitive locations; McLaurin said he did not recall this and disputed her characterization. His stated position is opposition to current ICE enforcement practices, but this addresses enforcement conduct rather than staking out a position on enforcement levels vs. legal pathways as defined by the taxonomy. No explicit pathway position found."
         coverage: 2
-        position_tag: "Mixed approach"
-        position_type: "mixed"
-        source: [0,1]
+        position_tag: null
+        position_type: "none"
+        source: null
 
       - topic: "Housing"
         note: "In the interview, McLaurin proposed: restricting corporate/hedge fund ownership of single-family housing, zoning reform to allow smaller lot sizes and more units, and funding the state housing trust fund through budget surplus or revenue sources. Website: 'Georgia has the highest percentage of private equity ownership of multifamily units in the country... Josh will fight to restore the American Dream by making homes affordable and accessible to individual Georgians.'"

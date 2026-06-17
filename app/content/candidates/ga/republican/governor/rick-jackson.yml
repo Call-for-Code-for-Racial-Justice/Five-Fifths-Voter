@@ -12,13 +12,16 @@ debate_participant: true
 avatar_initials: "RJ"
 ballot_order: 1
 issues:
-  clarity: "Specific on key economic topics"
-  sources_count: 3
+  issues_addressed: 13
+  issues_total: 15
+  clarity: "Specific on economic and operational topics; strengthened by radio interview detail on broadband, criminal justice (mental health), healthcare fraud, and election integrity"
+  sources_count: 4
   sources_list:
     - "Atlanta Press Club debate transcript (primary)"
     - "rickjackson.com action plan"
     - "News coverage"
-  last_updated: "2026-05-01"
+    - "Extra 106.3 'Tug & Lo Morning Extra' radio interview transcript (2026)"
+  last_updated: "2026-05-23"
   links:
     - label: "Atlanta Press Club Debate"
       url: "https://www.youtube.com/live/9jZvNdcZgxo?si=D4JhJyezg-byOsJS"
@@ -26,6 +29,8 @@ issues:
       url: "https://ballotpedia.org/Rick_Jackson_(Georgia)"
     - label: "Campaign website"
       url: "https://rickjackson.com/"
+    - label: "Extra 106.3 radio interview"
+      url: "https://www.youtube.com/watch?v=ioY5cqdc5Kg"
 
 sections:
   - id: "economic-security"
@@ -38,45 +43,45 @@ sections:
         position_type: "pos"
         source: [0,1]
       - topic: "Taxation"
-        note: "Cut income tax in half within 4 years; freeze property taxes"
+        note: "Cut income tax in half within 4 years; freeze property taxes. In the radio interview he reinforced this, citing Gov. Kemp's 'reduction of taxes through evolution versus revolution' as a model to build on, and described efficiency-driven savings (e.g. foster care reform saving an estimated $300 million/year) as a way to fund tax reduction without cutting services."
         coverage: 3
         position_tag: "Reduce taxes"
         position_type: "pos"
-        source: [0,1]
+        source: [0,1,3]
       - topic: "Small business & farming"
-        note: "Support, capital access, regulation"
-        coverage: 2
-        position_tag: "Reduce regulation"
+        note: "Support, capital access, regulation. In the radio interview he gave extensive new detail: investing up to 5% of state pension funds directly into Georgia businesses and agriculture infrastructure (e.g. a state-guaranteed cold storage/processing facility for fruit and vegetable farmers, and a cattle processing facility), framing this as 'investing, not spending' to grow farm revenue. He emphasized farmers '[have] a business problem, not a political problem.'"
+        coverage: 3
+        position_tag: "Increase government support"
         position_type: "pos"
-        source: [0,1]
+        source: [0,1,3]
       - topic: "Workers & wages"
-        note: "Minimum wage, labor protections"
-        coverage: 1
+        note: "Minimum wage, labor protections. In the radio interview, Jackson criticized a universal basic income pilot program, saying recipients 'regressed' while those given opportunities instead 'improved their situations,' framing his approach as opportunity- and job-creation-based rather than direct wage mandates or income support. He emphasized job creation (e.g. $80,000/year tech jobs in rural areas) and re-skilling workers via technical college pathways as his primary lever for worker outcomes. No minimum wage or labor protection position stated."
+        coverage: 2
         position_tag: "Reduce labor regulation"
         position_type: "pos"
-        source: [2]
+        source: [2,3]
 
   - id: "civil-rights-justice"
     title: "Civil rights & justice"
     items:
       - topic: "Criminal justice system"
-        note: "Policing, sentencing, incarceration"
-        coverage: 2
-        position_tag: "Increase enforcement"
-        position_type: "pos"
-        source: [0,1]
+        note: "Policing, sentencing, incarceration. In the radio interview, Jackson described Georgia sheriffs as forced to act as de facto mental health facilities — citing a Perry, GA sheriff with 200 people waiting nine months for a mental evaluation — and called for 'expanding mental health on many fronts' as a root cause of homelessness and drug problems. This is a prevention/capacity-investment framing layered onto his existing enforcement emphasis from the debate and website, representing two distinct, evidenced mechanisms: increased enforcement (debate/website) and expanded mental health investment to reduce strain on the justice system (radio interview)."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [0,1,3]
       - topic: "Reproductive policy"
-        note: "Denied Planned Parenthood ties; no explicit policy stance found"
+        note: "Denied Planned Parenthood ties; no explicit policy stance found. Radio interview did not address reproductive policy."
         coverage: 1
         position_tag: null
         position_type: "none"
         source: [0]
       - topic: "Voting & elections"
-        note: "ID laws, ballot access, integrity"
-        coverage: 1
+        note: "ID laws, ballot access, integrity. The radio interview substantially expanded this position: Jackson praised Gov. Kemp's 2021 election law as having made it 'easy to vote and hard to cheat,' called for continuous independent audits ('CQI — continuing quality improvement'), and stated that as governor he would have anyone caught committing election fraud arrested, framing this as a deterrent. He explicitly referenced concerns about California-style election processes (37 days of voting, mail ballots) as something to guard against in Georgia."
+        coverage: 3
         position_tag: "Strengthen voter verification"
         position_type: "pos"
-        source: [0]
+        source: [0,3]
       - topic: "Gun policy"
         note: "Ownership rights, regulations, safety"
         coverage: 2
@@ -84,39 +89,39 @@ sections:
         position_type: "pos"
         source: [2]
       - topic: "LGBTQ+ policy"
-        note: "Bans boys in girls' sports/bathrooms; bans DEI programs"
+        note: "Bans boys in girls' sports/bathrooms; bans DEI programs. In the radio interview he reiterated opposition to 'woke ideology' being taught in schools, framing it as indoctrination rather than education, consistent with his existing position."
         coverage: 2
         position_tag: "Limit or oppose expansions"
         position_type: "pos"
-        source: [2]
+        source: [2,3]
 
   - id: "access-services"
     title: "Access & services"
     items:
       - topic: "Healthcare"
-        note: "Coverage, Medicaid, rural access"
-        coverage: 2
-        position_tag: "Expand private options"
+        note: "Coverage, Medicaid, rural access. In the radio interview, Jackson focused on reducing Medicaid and food stamp fraud through upgraded IT systems and eligibility verification (citing over $500 billion in pandemic-era unemployment fraud nationally as an example of the scale of the problem), arguing better systems would let benefits 'automatically' update when someone's eligibility changes. He framed the broader goal as reducing Medicaid dependency through better jobs and private insurance rather than expanding the program itself, stating 'the best way to solve the Medicaid problem is to not have to be on Medicaid.'"
+        coverage: 3
+        position_tag: "Reduce government role"
         position_type: "pos"
-        source: [0]
+        source: [0,3]
       - topic: "Education"
-        note: "School choice; Parents' Bill of Rights; ban ideological indoctrination"
+        note: "School choice; Parents' Bill of Rights; ban ideological indoctrination. Radio interview reinforced this with strong support for Georgia's literacy bill (modeled on Mississippi's reading reform), stating two-thirds of Georgia third graders cannot read at grade level and pledging to make literacy a 'public goal and objective.' Also discussed redirecting students away from four-year degrees that go unused (49% of graduates, per Jackson) toward technical college pathways with guaranteed job placement."
         coverage: 3
         position_tag: "Support school choice"
         position_type: "pos"
-        source: [2]
+        source: [2,3]
       - topic: "Broadband & infrastructure"
-        note: "Rural connectivity, roads, utilities"
-        coverage: 0
-        position_tag: null
-        position_type: "none"
-        source: null
+        note: "Rural connectivity, roads, utilities. The radio interview introduced a substantial new position: creating 'micro tech centers all over rural areas' that require only fiber connectivity, paired with technical college training in technology and AI/software development, explicitly aimed at bringing $80,000/year tech jobs to rural communities like Blakely, GA. This represents a direct public-investment-oriented infrastructure and workforce development proposal not present in prior sources."
+        coverage: 3
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: [3]
 
   - id: "community-environment"
     title: "Community & environment"
     items:
       - topic: "Environment & energy"
-        note: "Climate, clean water, energy production"
+        note: "Climate, clean water, energy production. Not addressed in the radio interview. No position found in reviewed sources."
         coverage: 0
         position_tag: null
         position_type: "none"
@@ -128,7 +133,7 @@ sections:
         position_type: "pos"
         source: [0,1]
       - topic: "Housing"
-        note: "Affordability, development, tenant policy"
+        note: "Affordability, development, tenant policy. Not directly addressed in the radio interview. No position found in reviewed sources."
         coverage: 0
         position_tag: null
         position_type: "none"

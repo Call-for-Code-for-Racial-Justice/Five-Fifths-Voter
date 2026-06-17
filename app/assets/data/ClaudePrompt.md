@@ -54,24 +54,24 @@ No paraphrasing. Copy labels exactly as written.
 ### Economic security
 | Topic | Allowed position tags |
 |---|---|
-| Cost of living | Government programs · Market-driven solutions · Mixed approach |
+| Cost of living | Government programs · Market-driven solutions · Addresses both directions · Centrist or alternative approach |
 | Taxation | Increase taxes · Reduce taxes · Restructure tax system |
-| Small business & farming | Increase government support · Reduce regulation · Mixed approach |
-| Workers & wages | Raise minimum wage · Expand worker protections · Reduce labor regulation · Mixed approach |
+| Small business & farming | Increase government support · Reduce regulation · Addresses both directions · Centrist or alternative approach |
+| Workers & wages | Raise minimum wage · Expand worker protections · Reduce labor regulation · Addresses both directions · Centrist or alternative approach |
 
 ### Civil rights & justice
 | Topic | Allowed position tags |
 |---|---|
-| Criminal justice system | Reduce incarceration · Invest in prevention · Increase enforcement · Mixed approach |
+| Criminal justice system | Reduce incarceration · Invest in prevention · Increase enforcement · Addresses both directions · Centrist or alternative approach |
 | Reproductive policy | Pro-choice · Restrictions with exceptions · Pro-life |
-| Voting & elections | Expand ballot access · Strengthen voter verification · Mixed approach |
+| Voting & elections | Expand ballot access · Strengthen voter verification · Addresses both directions · Centrist or alternative approach |
 | Gun policy | Increase gun regulations · Maintain current laws · Expand gun rights |
 | LGBTQ+ policy | Expand protections · Defer to existing law · Limit or oppose expansions |
 
 ### Access & services
 | Topic | Allowed position tags |
 |---|---|
-| Healthcare | Expand public coverage · Mixed approach · Expand private options · Reduce government role |
+| Healthcare | Expand public coverage · Expand private options · Reduce government role · Addresses both directions · Centrist or alternative approach |
 | Education | Increase public school funding · Both public and choice · Support school choice |
 | Broadband & infrastructure | Increase public investment · Public-private partnership · Private sector led |
 
@@ -79,8 +79,8 @@ No paraphrasing. Copy labels exactly as written.
 | Topic | Allowed position tags |
 |---|---|
 | Environment & energy | Prioritize regulation · Balance both · Prioritize energy production |
-| Immigration | Expand legal pathways · Mixed approach · Stricter enforcement |
-| Housing | Increase government programs · Mixed approach · Reduce development barriers |
+| Immigration | Expand legal pathways · Stricter enforcement · Addresses both directions · Centrist or alternative approach |
+| Housing | Increase government programs · Reduce development barriers · Addresses both directions · Centrist or alternative approach |
 
 ### Coverage scale (coverage field)
 | Value | Meaning |
@@ -99,8 +99,10 @@ No paraphrasing. Copy labels exactly as written.
 
 ### Position type field values
 - `"pos"` — a clear stated position from the allowed tag list
-- `"mixed"` — candidate explicitly addressed both sides; only use when evidence shows
-  this, not as a default for vague statements
+- `"mixed"` — candidate explicitly addresses both directions of a topic with
+  separate, evidenced mechanisms (use with the "Addresses both directions" tag).
+  Only use when evidence shows two distinct, opposite-leaning positions — not as
+  a default for vague statements.
 - `"none"` — no position found in reviewed sources
 
 ---
@@ -108,8 +110,10 @@ No paraphrasing. Copy labels exactly as written.
 ## RULES
 
 1. **Only apply a tag when a source directly supports it.** Do not infer.
-2. **"Mixed approach" requires evidence the candidate addressed both sides** of a
-   topic. Vague or general statements → coverage 1 or 2, position_type "none".
+2. **"Addresses both directions" (position_type "mixed") requires two distinct,
+   separately-evidenced mechanisms that pull in opposite directions** — e.g. a
+   regulatory ban paired with a tax cut. Vague or general statements → coverage
+   1 or 2, position_type "none".
 3. **Never apply more than one tag per topic.**
 4. **All tags must be copied exactly** from the taxonomy above.
 5. **Reproductive policy direction matters.** A pro-life position on a pro-choice
@@ -122,6 +126,14 @@ No paraphrasing. Copy labels exactly as written.
    in the callout field but do not create new rows.
 8. **The `data_note` field is optional.** Use it only when there is a meaningful
    data quality issue (e.g. website inaccessible, link swap, source conflict).
+9. **"Centrist or alternative approach" (position_type "pos") is for a single,
+   coherent position that doesn't map to either pole** — not "both sides," but a
+   genuine third way (e.g. transparency/competition-focused healthcare reform that
+   is neither "expand public coverage" nor "expand private options"). If the
+   candidate only commented on one narrow angle of a topic without staking out a
+   real position on the topic as defined, use position_type "none" instead — do
+   not stretch "Centrist or alternative approach" to cover partial or tangential
+   coverage.
 
 ---
 
@@ -315,7 +327,11 @@ evidence before accepting it.
 - [ ] No position tags outside the taxonomy
 - [ ] No topic has more than one position tag
 - [ ] The "links" array is in priority order! Priority: debate, 1-1 interview, news article, ballotpedia, wikipedia, campaign website
-- [ ] `mixed` is only used when the candidate explicitly addressed both sides
+- [ ] `mixed` ("Addresses both directions") is only used when the candidate
+      explicitly provides two distinct, opposite-leaning, evidenced mechanisms
+- [ ] "Centrist or alternative approach" is only used for a genuine standalone
+      third-way position, not for partial/tangential coverage (those should be
+      `position_type: "none"`)
 - [ ] `data_note` removed if no data quality issue exists
 - [ ] `fiveFifthsId` follows the convention
 - [ ] `source` is null wherever `position_type` is "none"
