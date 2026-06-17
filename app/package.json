@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.8",
-    "@nuxt/content": "^3.8.0",
+    "@nuxt/content": "^3.14.0",
     "@nuxt/eslint": "^1.4.1",
     "@nuxt/kit": "^3.17.4",
     "@nuxtjs/i18n": "^10.2.1",
