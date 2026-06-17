@@ -19,9 +19,9 @@
     "husky": "^9.1.7",
     "js-yaml": "^4.1.1",
     "lint-staged": "^16.2.7",
-    "puppeteer": "^22.11.0"
+    "puppeteer": "^25.1.0"
   },
   "dependencies": {
-    "nuxt": "^4.4.4"
+    "nuxt": "^4.4.8"
   }
 }
