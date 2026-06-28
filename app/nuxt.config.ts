@@ -11,6 +11,15 @@ export default defineNuxtConfig({
   vite: {
     cacheDir: ".nuxt/.vite",
     plugins: [tailwindcss()],
+    optimizeDeps: {
+      include: [
+        "@vue/devtools-core",
+        "@vue/devtools-kit",
+        "lucide-vue-next",
+        "luxon",
+        "vue3-simple-icons",
+      ],
+    },
   },
   auth: {
     // Override with AUTH_ORIGIN environment variable in production

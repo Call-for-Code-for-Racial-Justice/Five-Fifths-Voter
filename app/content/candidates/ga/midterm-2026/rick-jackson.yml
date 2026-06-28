@@ -1,10 +1,9 @@
 fiveFifthsId: "rick-jackson"
 name: "Rick Jackson"
 state: "GA"
-race: "Governor Republican Primary Runoff 2026"
-race_id: "Governor Republican Primary Runoff 2026"
+race: "Governor 2026"
+race_id: ga-governor-2026
 party: "Republican"
-primary: "Republican Primary 2026"
 office_sought: "Governor"
 district: null
 region: "Statewide"

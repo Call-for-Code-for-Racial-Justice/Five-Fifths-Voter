@@ -1,0 +1,147 @@
+fiveFifthsId: "jon-ossoff"
+name: "Jon Ossoff"
+state: "GA"
+race: "US Senate 2026"
+race_id: "ga-senate-2026"
+party: "Democratic"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: true
+debate_participant: false
+avatar_initials: "JO"
+ballot_order: 1
+issues:
+  clarity: "Detailed on healthcare, housing, and agriculture; limited specifics on taxation and immigration"
+  sources_count: 3
+  sources_list:
+    - "YouTube interview with Heather Cox Richardson on investigative oversight and Senate work"
+    - "CNN interview on campaign, economy, healthcare, and political accountability"
+    - "ossoff.senate.gov About page and Five-Year Report (2025)"
+  last_updated: "2026-06-28"
+  callout: "Jon Ossoff is Georgia's incumbent Democratic U.S. Senator and former investigative journalist, running for reelection in a state Donald Trump won in 2024. His platform centers on bipartisan constituent service, congressional oversight of executive branch corruption, and defending healthcare access and housing affordability for Georgians. He has built a legislative record emphasizing rural infrastructure, agricultural support, and anti-corruption investigations."
+  links:
+    - label: "YouTube – Heather Cox Richardson interview"
+      url: "https://www.youtube.com/watch?v=VSKKjD3H6Ho"
+    - label: "CNN interview"
+      url: "https://www.youtube.com/watch?v=iRp9by34uVw"
+    - label: "ossoff.senate.gov"
+      url: "https://www.ossoff.senate.gov/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "In the CNN interview, Ossoff stated that Trump's tariffs have driven up grocery prices and that Americans faced record high prices for groceries, healthcare, and housing. He also opposed the OBBB's Medicaid cuts and fought ACA tax credit expiration that he said doubled health insurance premiums for more than a million Georgians. His Five-Year Report notes he urged the administration to repeal tariffs and opposed the budget law's elimination of clean energy manufacturing incentives. Criticism of tariff-driven price increases is framed as government policy failure; his response is legislative and regulatory, not a named market or government program."
+        coverage: 2
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [1, 2]
+
+      - topic: "Taxation"
+        note: "The Five-Year Report notes Ossoff introduced the bipartisan Support Small Business Growth Act of 2025 to create a new tax deduction for qualifying small businesses with fewer than 15 employees. He also introduced an amendment to ban Congressional stock trading, blocked by Republicans. No broader income or corporate tax position was found in the reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Small business & farming"
+        note: "Ossoff's Five-Year Report details extensive agricultural support: secured $21 billion in Hurricane Helene disaster relief for Georgia farmers, fought for Vidalia onion, pecan, peanut, and cotton funding in appropriations, introduced the Support Small Business Growth Act with a small business tax deduction, the Simplifying Subcontracting Act, and delivered over $6 million in apprenticeship funding to the Technical College System. He explicitly opposed Trump's tariffs as harmful to small businesses and Georgia's agricultural sector."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [1, 2]
+
+      - topic: "Workers & wages"
+        note: "The Five-Year Report references Ossoff introducing the Skilled Workforce Act to incentivize companies to invest in equipment at high schools and technical colleges for workforce training, and delivering over $6 million in apprenticeship funding. No position on minimum wage or union protections was found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "The Five-Year Report documents that Ossoff led bipartisan investigations into corruption and civil rights abuses in the federal prison system, passed the Prison Staff Safety Enhancement Act, introduced the Stopping Prison Contraband Act, and passed the Justice for Murder Victims Act. His HCR interview references prior investigations into 'civil rights abuses and corruption in our federal prison system' and abuse of detainees. His focus is on both accountability/oversight of abuses and strengthening enforcement, but the sources do not distinguish incarceration-reduction vs. prevention vs. enforcement at a policy-direction level with separately evidenced mechanisms."
+        coverage: 2
+        position_tag: "Invest in prevention"
+        position_type: "pos"
+        source: [0, 2]
+
+      - topic: "Reproductive policy"
+        note: "The Five-Year Report states Ossoff 'continued his ongoing investigation into the impacts of Georgia's 6-week abortion ban,' released reports finding the ban causes doctors to delay life-saving care and threatens Georgia's OBGYN shortage, and held an oversight session where Georgia women described life-threatening consequences of the ban. His investigative and legislative activity is consistently critical of abortion restrictions and focused on their harms to patient care."
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: [2]
+
+      - topic: "Voting & elections"
+        note: "In the HCR interview, Ossoff referenced Citizens United as 'the most destructive court decision in modern American history' for opening 'the floodgates for secret corporate money, secret billionaire money to corrupt our politics.' He also introduced an amendment to ban Congressional stock trading. No direct position on ballot access or voter verification mechanisms was found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Gun policy"
+        note: "No position on gun policy was found in any of the reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "LGBTQ+ policy"
+        note: "No position on LGBTQ+ policy was found in any of the reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "In the CNN interview, Ossoff said Trump's policies 'doubled health insurance premiums for more than a million Georgians' and that 'cancer patients face down the prospect of losing health coverage.' The Five-Year Report documents he fought to protect ACA tax credits, opposed $1 trillion in Medicaid cuts in the OBBB, opposed RFK Jr.'s confirmation, fought CDC firings, and championed maternal health data systems. He explicitly backed expanding public coverage mechanisms (ACA, Medicaid) and opposed their reduction."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: [1, 2]
+
+      - topic: "Education"
+        note: "The Five-Year Report notes Ossoff fought to restore HBCU scholarship funding after the Trump Administration cancelled it, introduced the Skilled Workforce Act for workforce training at public high schools and technical colleges, cosponsored the JOBS Act for short-term job training, and pushed to expand Pell Grants. His focus is on increasing public education investment; no school choice position was found."
+        coverage: 2
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [2]
+
+      - topic: "Broadband & infrastructure"
+        note: "The About page states Ossoff championed 'the historic bipartisan infrastructure law' and is 'delivering an unprecedented expansion of broadband internet access; upgrading ports, airports, roads, bridges, and water infrastructure statewide.' The Five-Year Report also references his American Energy Security Act to authorize Federal grants for natural gas infrastructure and his efforts to protect EPA infrastructure grants. This is explicitly framed as public federal investment."
+        coverage: 3
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: [2]
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "The Five-Year Report states Ossoff worked to protect the Okefenokee Swamp, expanded its federal acquisition boundary, passed an amendment encouraging greater federal protection, and opposed the titanium mine proposal. He also raised concerns that the GOP budget law eliminating clean energy manufacturing incentives could cost Georgia 43,000 jobs. No explicit fossil fuel regulation or emissions standard position was found, but his consistent support for the bipartisan infrastructure law and clean energy manufacturing frames his position as balancing environmental protection with economic development."
+        coverage: 2
+        position_tag: "Balance both"
+        position_type: "pos"
+        source: [2]
+
+      - topic: "Immigration"
+        note: "The Five-Year Report documents Ossoff launched a formal investigation into human rights abuses in U.S. immigration detention, releasing two reports documenting over 510 credible reports of abuse, deaths in custody, and medical neglect in DHS, BOP, and HHS facilities. In the HCR interview, he referenced investigators documenting 'more than a thousand credible reports of serious human rights abuses in ICE detention facilities.' His focus is on oversight and civil rights enforcement within the detention system; no position on legal pathways or enforcement priorities as policy directions was found."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Housing"
+        note: "The Five-Year Report documents Ossoff launched an investigation into large out-of-state corporations buying up Georgia single-family homes and driving up prices, passed a bipartisan amendment requiring a federal watchdog investigation of the housing affordability crisis, and held oversight hearings on renters facing dangerous conditions. He won bipartisan support for a GAO investigation into rental housing conditions. His approach centers on government oversight and federal investigation rather than a named regulatory or development program."
+        coverage: 2
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: [2]

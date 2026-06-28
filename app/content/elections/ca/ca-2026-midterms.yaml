@@ -1,0 +1,58 @@
+ocdId: "ocd-division/country:us/state:ca"
+date: "2026-11-03"
+description: "General election for Governor, US Senate, US House, State Legislature, and other statewide offices."
+type: "general"
+website: "https://www.sos.ca.gov/elections"
+guidancePhase: "final"
+fiveFifthsId: "ca-2026-midterms"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: true
+  ballotpediaUrl: https://ballotpedia.org/California_elections,_2026
+  early:
+    url: "https://caearlyvoting.sos.ca.gov/"
+    startDate: "2026-10-05"
+    endDate: "2026-11-02"
+    varies: true
+    notes: >
+      Ballot drop-off locations open October 6. Voter's Choice Act county vote centers open
+      October 24. In-person early voting is available statewide. Hours and locations vary by
+      county; use the early voting locator to find sites near you.
+  byMail:
+    explainerUrl: "https://www.sos.ca.gov/elections/voter-registration/vote-mail"
+    notes: >
+      All active registered California voters are automatically mailed a ballot beginning
+      October 5, 2026. No application or request is needed. You may return your ballot by
+      mail (postmarked by Election Day), drop it at an official drop box, or bring it to
+      any vote center or polling place in your county by 8:00 p.m. on November 3.
+    deadline:
+      postmarkedOrReceived: "postmarked"
+      date: "2026-11-03"
+      receivedBy: "2026-11-10"
+      description: >
+        Vote-by-mail ballots must be postmarked no later than November 3, 2026, and
+        received by your county elections office by November 10, 2026. If mailing on
+        Election Day, obtain a hand-stamped postmark from a postal employee inside a
+        United States Post Office.
+      ballotRequest:
+        postmarkedOrReceived: "NA"
+        date: null
+        description: null
+  inPerson:
+    idRequiredAllVoters: false
+    idInstructions: >
+      California does not generally require voters to show identification at the polls.
+      You may be asked for ID only if you are voting for the first time in a federal
+      election and did not provide your driver license number, California ID number, or
+      last four digits of your Social Security number when you registered. You will be
+      notified in advance if this applies to you. Acceptable forms include a utility bill,
+      government document, passport, driver license, state ID card, or student ID showing
+      your name and photo. If you cannot provide ID, you may still cast a provisional
+      ballot. See: https://www.sos.ca.gov/elections/voting-resources/voting-california/what-bring
+    electionDay:
+      opening: "7:00 AM"
+      closing: "8:00 PM. If you are in line by 8:00 PM, you are allowed to cast your ballot."
+
+races:
+  - name: "Governor 2026"
+    id: "ca-governor-2026"

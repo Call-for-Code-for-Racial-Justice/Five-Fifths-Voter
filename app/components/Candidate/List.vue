@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { CheckCircle } from "lucide-vue-next";
 import type { ContentCandidate } from "~/types/candidate";
+import type { ContentElectionRace } from "~/types/election";
 
 const props = defineProps<{
   candidates: ContentCandidate[]
   state?: string
-  race?: string
+  race: ContentElectionRace
   electionId?: string
 }>();
 
@@ -24,7 +25,7 @@ const filtered = computed(() =>
     <!-- Race header -->
     <div class="flex items-center justify-between flex-wrap gap-2">
       <div>
-        <h2 class="text-lg font-semibold text-base-content">{{ race }}</h2>
+        <h2 class="text-lg font-semibold text-base-content">{{ race?.name }}</h2>
         <p class="text-sm text-base-content/50">{{ candidates.length }} candidates · {{ state }}</p>
       </div>
       <!-- Filter by party if mixed -->
@@ -46,7 +47,7 @@ const filtered = computed(() =>
       <NuxtLink
         v-for="c in filtered"
         :key="c.fiveFifthsId"
-        :to="`/journey/election/${electionId}/candidates/score/${c.fiveFifthsId}`"
+        :to="`/journey/election/${electionId}/candidates/${race.id}/score/${c.fiveFifthsId}`"
         class="card bg-base-100 shadow-sm dark:border dark:border-accent hover:shadow-md transition-shadow cursor-pointer"
       >
         <div class="card-body py-3 px-4">

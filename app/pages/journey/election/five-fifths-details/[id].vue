@@ -14,7 +14,7 @@ const { t } = useI18n();
 const election = computed(() => {
   return elections.value?.find(e => e.source === "content" && e.id === id);
 });
-const races = computed(() => election.value?.originalData?.meta?.races || []);
+const races = computed(() => election.value?.originalData?.races || []);
 const voting = computed(() => election.value?.originalData?.voting || {});
 
 useSeoMeta({
@@ -131,10 +131,10 @@ function yesNoMaybe(val: string | boolean | undefined) {
             <div v-else class="flex flex-col gap-2 items-start">
               <NuxtLink
                   v-for="r in races"
-                  :key="r"
+                  :key="r.id"
                   class="btn btn-link"
-                  :to="`/journey/election/${id}/candidates/${r}`">
-                {{ r }}
+                  :to="`/journey/election/${id}/candidates/${r.id}`">
+                {{ r.name }}
               </NuxtLink>
               </div>
           </div>

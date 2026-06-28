@@ -1,5 +1,10 @@
 import { z } from "@nuxt/content";
 
+export const contentElectionRace = z.object({
+  id: z.string(),
+  name: z.string(),
+});
+
 export const contentElectionSchema = z.object({
   region_code: z.string(),
   ocdId: z.string(),
@@ -39,9 +44,11 @@ export const contentElectionSchema = z.object({
         closing: z.string().nullable(),
       }),
     }),
-    races: z.array(z.string()),
   }),
+  races: z.array(contentElectionRace),
 });
 
 // @ts-expect-error z namespace is defined in @nuxt/content
 export type ContentElection = z.infer<typeof contentElectionSchema>;
+// @ts-expect-error z namespace is defined in @nuxt/content
+export type ContentElectionRace = z.infer<typeof contentElectionRace>;

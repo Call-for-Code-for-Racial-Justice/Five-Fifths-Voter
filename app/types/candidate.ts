@@ -19,7 +19,8 @@ export const contentCandidateSchema = z.object({
   fiveFifthsId: z.string(),
   name: z.string(),
   state: z.string(),
-  race: z.string(),
+  race: z.string(), // display name
+  race_id: z.string(), // slug
   party: z.string(),
   primary: z.string(),
   office_sought: z.string(),
