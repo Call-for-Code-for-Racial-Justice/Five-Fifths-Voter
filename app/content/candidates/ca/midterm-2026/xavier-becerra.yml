@@ -1,0 +1,146 @@
+fiveFifthsId: "xavier-becerra"
+name: "Xavier Becerra"
+state: "CA"
+race: "Governor 2026"
+race_id: "ca-governor-2026"
+party: "Democratic"
+office_sought: "Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "XB"
+issues:
+  clarity: "Highly detailed on healthcare and housing; general on economy, energy, and immigration; silent on several taxonomy topics"
+  sources_count: 3
+  sources_list:
+    - "CNN/Fox News interview with Xavier Becerra on the 2026 California governor's race"
+    - "KTLA 5 interview with Xavier Becerra on homelessness, affordability, and his HHS record"
+    - "xavierbecerra2026.com priorities pages: Health Care, Housing, Economy & Affordability, Energy & Utilities"
+  last_updated: "2026-06-28"
+  callout: "Xavier Becerra is a former U.S. HHS Secretary and California Attorney General running for governor as a Democrat. His platform centers on healthcare affordability and universal coverage, a major housing production push to address California's shortage, and positioning himself as the most experienced candidate to resist the Trump administration. He emphasizes executive experience and a record of litigation against federal overreach."
+  links:
+    - label: "CNN/Fox News interview"
+      url: "https://www.youtube.com/watch?v=VJgaS6H0PrI"
+    - label: "KTLA 5 interview"
+      url: "https://www.youtube.com/watch?v=zOsS1gTidJY"
+    - label: "xavierbecerra2026.com"
+      url: "https://www.xavierbecerra2026.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "In the CNN interview, Becerra said the state needs to 'make it more affordable' and that too many families aren't seeing prosperity reach them, framing the solution as keeping the economic engine going 'for everyone.' His Economy & Affordability page commits to 'standing up to price gouging and unjustified rate hikes, expanding help with childcare and essential costs, and using the power of the state to lower prices where the market has failed.' His approach centers on government intervention against market failure, not market-driven solutions."
+        coverage: 2
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [0, 2]
+
+      - topic: "Taxation"
+        note: "No position on taxation was found in any of the reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Small business & farming"
+        note: "No position on small business support or farming was found in any of the reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Workers & wages"
+        note: "The campaign website's housing page explicitly states that building at scale must include 'wage and labor standards that working families deserve' and references a history of peak union construction jobs. The Economy & Affordability page references fighting wage theft as attorney general. These are passing references within other issue areas, not a standalone workers and wages position."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position on the criminal justice system was found in any of the reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Reproductive policy"
+        note: "The campaign website homepage states that Becerra voted against the Defense of Marriage Act in 1996, ensured Planned Parenthood funding reached clinics as HHS Secretary, and will 'ensure that California continues to lead when it comes to protecting access to abortion.' His healthcare priority page pledges on Day One to 'protect access to essential, medically appropriate health services from federal restrictions, including reproductive care,' and to ensure 'uninterrupted, equitable access to contraception, abortion, and maternal health support.'"
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: [2]
+
+      - topic: "Voting & elections"
+        note: "The campaign website homepage states Becerra will protect 'access to the ballot' and that voting rights are 'rights that are more important than ever to defend and expand.' No specific mechanism — ballot access expansion or voter verification — was named."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Gun policy"
+        note: "No position on gun policy was found in any of the reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "LGBTQ+ policy"
+        note: "The campaign website homepage states Becerra voted against the Defense of Marriage Act in 1996 and will ensure Californians can 'live and love without restraint,' pledging to 'defend and expand' these rights as governor."
+        coverage: 2
+        position_tag: "Expand protections"
+        position_type: "pos"
+        source: [2]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Becerra's healthcare priority page commits to building 'toward Medicare for All,' strengthening Medi-Cal, protecting ACA coverage, negotiating drug prices using state purchasing power, expanding CalRx for insulin and other essential medications, and guaranteeing access regardless of immigration status. In the CNN interview he said he would not 'kick people off their health care' and defended coverage for undocumented workers. This is an extensive, specifically detailed expansion of public coverage."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: [0, 2]
+
+      - topic: "Education"
+        note: "The campaign website homepage references expanding early childhood education as HHS Secretary. No K-12 or higher education funding position was found in the reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Broadband & infrastructure"
+        note: "No position on broadband or infrastructure was found in any of the reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "The Energy & Utilities page states California's 'clean-energy transition is necessary and urgent' and commits to treating 'clean energy and grid resilience as public investments.' However, it also frames bill affordability as central and calls for reviewing gas refinery operations to maintain gasoline supply — in the KTLA interview Becerra said he wanted to 'look at' refineries 'so they can continue to provide' gasoline. This combination of strong climate investment commitment with explicit attention to fossil fuel supply continuity and household cost impact constitutes two distinct, evidenced mechanisms pulling in opposite directions."
+        coverage: 2
+        position_tag: "Balance both"
+        position_type: "pos"
+        source: [1, 2]
+
+      - topic: "Immigration"
+        note: "In the CNN interview, Becerra explicitly defended healthcare access for undocumented immigrants, saying 'I want you to have health care' and describing undocumented people as 'hard workers' who contribute to the California economy. He also noted as Attorney General he sued Trump to stop 'ICE overreach' and protect Dreamers. His campaign homepage lists 'stopping ICE overreach' as a past achievement. His framing consistently favors expanded legal pathways and protections over enforcement."
+        coverage: 2
+        position_tag: "Expand legal pathways"
+        position_type: "pos"
+        source: [0, 2]
+
+      - topic: "Housing"
+        note: "In the CNN interview, Becerra said the solution is 'we build more' housing to reduce demand-driven prices. His housing priority page is extensively detailed: declares a housing emergency on Day One, targets the 40,000 approved but unfunded affordable units, reforms zoning to end exclusionary single-family zones, streamlines permitting, expands down payment assistance, protects renters via the Tenant Protection Act, and restricts bulk institutional investor purchases. This combines both government programs (subsidies, affordable mandates) and reducing development barriers (zoning reform, permitting streamlining, fee reduction)."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [0, 2]

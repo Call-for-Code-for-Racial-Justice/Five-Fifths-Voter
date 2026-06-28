@@ -17,7 +17,7 @@ const lean = computed(() => {
 });
 
 const badgeClass = computed(() => {
-  if (props.positionType === "mixed") return "badge-warning";
+  if (props.positionType === "mixed") return "badge-middle";
   if (props.positionType === "pos") {
     if (lean.value === "left") return "badge-left";
     if (lean.value === "right") return "badge-right";

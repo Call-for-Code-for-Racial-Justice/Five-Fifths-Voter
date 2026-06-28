@@ -1,0 +1,146 @@
+fiveFifthsId: "steve-hilton"
+name: "Steve Hilton"
+state: "CA"
+race: "Governor 2026"
+race_id: "ca-governor-2026"
+party: "Republican"
+office_sought: "Governor"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "SH"
+issues:
+  clarity: "Highly specific on taxes, energy, and housing; detailed on education and immigration; general on healthcare and homelessness mechanisms"
+  sources_count: 3
+  sources_list:
+    - "KCRA 3 interview with Steve Hilton on affordability, energy, immigration, and homelessness"
+    - "KQED/PBS Political Breakdown interview on budget, housing, education, immigration, and reproductive policy"
+    - "stevehiltonforgovernor.com policies page (Great Jobs, Great Homes, Great Kids)"
+  last_updated: "2026-06-28"
+  callout: "Steve Hilton is a Republican candidate for California governor, former Fox News host, and ex-senior adviser to UK Prime Minister David Cameron. His platform centers on ending Democratic one-party rule through large tax cuts, expanding fossil fuel production to lower gas and electricity prices, building single-family homes by reducing regulation, and overhauling public schools with accountability measures and school choice. He frames his campaign as pragmatic rather than ideological, though his policy positions are consistently market- and deregulation-oriented."
+  links:
+    - label: "KCRA 3 interview"
+      url: "https://www.youtube.com/watch?v=NDgYvDQbEk0"
+    - label: "KQED/PBS Political Breakdown interview"
+      url: "https://www.pbs.org/video/steve-hilton-faces-the-hard-questions-sxfbsx/"
+    - label: "stevehiltonforgovernor.com"
+      url: "https://stevehiltonforgovernor.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "In the KCRA interview, Hilton named '$3 gas' and cutting electric bills in half as his top affordability goals, to be achieved by expanding California oil and gas production and rolling back climate energy mandates. His campaign website frames cost of living as driven by high taxes, regulation, and energy policy, and his solution is deregulation and tax reduction. His approach is explicitly market- and private sector-led, opposing government spending as the driver of high costs."
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: [0, 2]
+
+      - topic: "Taxation"
+        note: "In the KCRA interview, Hilton proposed no state income tax on the first $100,000 of earnings and a flat 7.5% rate above that, funded by returning state spending to pre-pandemic levels. The campaign website repeats this plan verbatim and frames it as protecting Prop. 13 on property taxes. He explicitly said he would cut spending rather than raise taxes to address the budget shortfall."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 2]
+
+      - topic: "Small business & farming"
+        note: "The campaign website dedicates a section to ending what it calls a 'bureaucratic war on business,' proposing to sunset the regulatory code, introduce regulatory budgets requiring agencies to remove existing rules before adding new ones, and require permit fee refunds for delayed approvals. It also cites California agriculture as being crushed by water rights restrictions, forced electrification, and labor regulations. In the KQED interview, Hilton said regulation is the biggest nightmare for smaller businesses and pledged to reduce the state's administrative code."
+        coverage: 3
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: [1, 2]
+
+      - topic: "Workers & wages"
+        note: "No position on minimum wage or worker protections as defined in the taxonomy was found in any of the reviewed sources. Hilton discusses jobs broadly in terms of business climate and tax cuts, but does not stake out a position on labor regulation, minimum wage, or worker protections as distinct policy directions."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "The campaign website states that violent crime is up 23% and arrest rates are down under Democratic rule, and praises Proposition 36 (which restored felony penalties for some theft and drug crimes). Hilton pledges to ensure law enforcement is 'fully supported in enforcing the law.' In the KCRA interview he discussed mandatory drug and alcohol treatment as a condition of homeless shelter. His framing is consistently toward increased enforcement and law-and-order, not incarceration reduction or prevention investment."
+        coverage: 2
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: [0, 2]
+
+      - topic: "Reproductive policy"
+        note: "In the KQED interview, Hilton said he believes abortion policy is correctly decided at the state level post-Dobbs. When pressed repeatedly, he said as governor he would extradite a California doctor to Louisiana to face charges for sending abortion pills there, because 'you can't start undermining the democratic will expressed by other states.' He did not stake out a personal position on abortion access in California itself, but his stated willingness to extradite a physician and his deference to other states' restrictions indicates a position that does not align with pro-choice. His overall framing — that each state's vote must be respected — does not constitute a named personal policy position on the topic as defined in the taxonomy beyond a general deference to restriction."
+        coverage: 2
+        position_tag: "Restrictions with exceptions"
+        position_type: "pos"
+        source: [1]
+
+      - topic: "Voting & elections"
+        note: "No position on ballot access or voter verification was found in any of the reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "Gun policy"
+        note: "No position on gun policy was found in any of the reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+      - topic: "LGBTQ+ policy"
+        note: "The campaign website's 'Great Kids' section states that 'biological boys (or men) should not be competing in girls' (or women's) sports' and frames parental rights around 'issues of sex, gender and identity' as a priority. No broader LGBTQ+ policy position was found beyond this passage."
+        coverage: 1
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: [2]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "In the KCRA interview, Hilton said he would reverse all of Newsom's expansions of full-scope Medi-Cal to undocumented immigrants, and would move to a 'limited scope' Medi-Cal model as used in other states. He also cited Medi-Cal fraud as a major budget problem. His campaign website frames the budget solution as cutting spending including in healthcare, and explicitly lists cutting healthcare for undocumented people as part of his affordability plan. His direction is consistently toward reducing government's healthcare role."
+        coverage: 2
+        position_tag: "Reduce government role"
+        position_type: "pos"
+        source: [0, 2]
+
+      - topic: "Education"
+        note: "In both interviews and on his website, Hilton outlined a detailed education platform: assign letter grades to every school and teacher, restore and expand parent trigger laws allowing parents to force school reforms or charter conversion, mandate phonics instruction statewide, support school choice and charter schools over time, and ensure 100% of students meet state math and English standards. He explicitly said he supports school choice. His overall direction is toward accountability, parental choice, and expanding charter and private options."
+        coverage: 3
+        position_tag: "Support school choice"
+        position_type: "pos"
+        source: [0, 1, 2]
+
+      - topic: "Broadband & infrastructure"
+        note: "No position on broadband or infrastructure investment was found in any of the reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "In the KCRA interview, Hilton said he would 'get rid of' California's extreme climate goals, reopen oil and gas production to target $3 gas, keep refineries open, expand the Sable offshore oil reserve, roll back the Cap and Invest program and low carbon fuel standard, and shift electricity generation back toward natural gas from wind and solar. He described wind energy as 'totally insane' and blamed climate mandates for high energy costs. His campaign website calls for ending 'climate extremism on fossil fuels' and 'abundant, affordable energy.' His direction is unambiguously toward prioritizing energy production over regulation."
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: [0, 2]
+
+      - topic: "Immigration"
+        note: "In the KCRA interview, Hilton said he would cut full-scope Medi-Cal for undocumented immigrants and described undocumented presence as 'mass law breaking' that is 'corrosive' to society's values. In the KQED interview, he said he would work cooperatively with ICE rather than maintain sanctuary state posture, and framed the sanctuary approach as responsible for confrontational enforcement operations. He praised current border numbers under the Trump administration as a positive development. His position is consistently toward stricter enforcement, not expanded legal pathways."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [0, 1]
+
+      - topic: "Housing"
+        note: "In both interviews and on his website, Hilton proposed ending exclusionary zoning to allow single-family home expansion ('end the war on single family homes'), reducing impact fees (which he calls a 'hidden housing tax'), sunsetting anti-housing regulations, reforming CEQA to stop lawsuit abuse, and expanding development into currently undeveloped land rather than focusing on infill. He explicitly supports sprawl over infill, citing that only 5% of California's land is developed. He opposes density mandates and favors deregulation-led supply growth."
+        coverage: 3
+        position_tag: "Reduce development barriers"
+        position_type: "pos"
+        source: [0, 1, 2]

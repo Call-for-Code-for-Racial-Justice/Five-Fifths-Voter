@@ -37,3 +37,9 @@ voting:
     electionDay:
       opening: "7:00 AM"
       closing: "7:00 PM. If you are in line by 7:00 PM, you are allowed to cast your ballot."
+
+races:
+  - name: "Georgia Governor 2026"
+    id: "ga-governor-2026"
+  - name: "US Senate 2026"
+    id: "ga-senate-2026"

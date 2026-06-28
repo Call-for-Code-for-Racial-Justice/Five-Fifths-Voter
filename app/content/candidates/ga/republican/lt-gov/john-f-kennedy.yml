@@ -2,6 +2,7 @@ fiveFifthsId: "john-f-kennedy"
 name: "John F. Kennedy"
 state: "GA"
 race: "Lt Governor Republican Primary Runoff 2026"
+race_id: "Lt Governor Republican Primary Runoff 2026"
 party: "Republican"
 primary: "Republican Primary Runoff 2026"
 office_sought: "Lieutenant Governor"
@@ -64,9 +65,9 @@ sections:
     title: "Civil rights & justice"
     items:
       - topic: "Criminal justice system"
-        note: "Kennedy addressed two threads in the Trent Talks interview. On enforcement, the campaign website calls for supporting law enforcement, recruiting and retaining officers, dismantling criminal gangs, and 'strengthening our laws.' On the other side, Kennedy called the state's handling of the mental health population a 'passion issue,' stating that people with mental illness are being incarcerated because there is nowhere else to place them and are 'not getting any mental health services' while incarcerated — which he called 'not right.' He advocated for dedicated mental health facilities and expressed that current budget commitments are 'not enough.' Both threads are drawn from sources, placing him in 'mixed approach' territory — enforcement emphasis plus stated concern about incarceration of the mentally ill."
+        note: "Kennedy addressed two threads in the Trent Talks interview. On enforcement, the campaign website calls for supporting law enforcement, recruiting and retaining officers, dismantling criminal gangs, and 'strengthening our laws.' On the other side, Kennedy called the state's handling of the mental health population a 'passion issue,' stating that people with mental illness are being incarcerated because there is nowhere else to place them and are 'not getting any mental health services' while incarcerated — which he called 'not right.' He advocated for dedicated mental health facilities and expressed that current budget commitments are 'not enough.' Both threads are drawn from sources and represent two distinct, opposite-leaning mechanisms — enforcement emphasis plus stated concern about incarceration of the mentally ill, with a prevention-oriented remedy."
         coverage: 3
-        position_tag: "Mixed approach"
+        position_tag: "Addresses both directions"
         position_type: "mixed"
         source: [1,2]
 

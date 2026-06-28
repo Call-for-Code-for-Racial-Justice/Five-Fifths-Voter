@@ -1,17 +1,16 @@
 fiveFifthsId: "mike-collins"
 name: "Mike Collins"
 state: "GA"
-race: "US Senate Republican Primary Runoff 2026"
-race_id: "US Senate Republican Primary Runoff 2026"
+race: "US Senate 2026"
+race_id: "ga-senate-2026"
 party: "Republican"
-primary: "Georgia Republican Primary 2026"
 office_sought: "US Senate"
 district: null
 region: "Statewide"
 incumbent: false
-debate_participant: true
+debate_participant: false
 avatar_initials: "MC"
-ballot_order: 1
+ballot_order: 2
 issues:
   issues_addressed: 9
   issues_total: 15

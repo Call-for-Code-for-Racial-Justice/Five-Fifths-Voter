@@ -2,6 +2,7 @@ fiveFifthsId: "derek-dooley"
 name: "Derek Dooley"
 state: "GA"
 race: "US Senate Republican Primary Runoff 2026"
+race_id: "US Senate Republican Primary Runoff 2026"
 party: "Republican"
 primary: "Georgia Republican Primary 2026"
 office_sought: "US Senate"
@@ -56,9 +57,9 @@ sections:
         source: [0,1]
 
       - topic: "Workers & wages"
-        note: "Dooley addressed workforce development at length — calling for investment in career training through high schools, technical colleges, and apprenticeships to address a skills gap — but did not address minimum wage, unions, or labor protections in any reviewed source. His orientation is toward expanding opportunity through skills-building rather than government wage mandates."
+        note: "Dooley addressed workforce development at length — calling for investment in career training through high schools, technical colleges, and apprenticeships to address a skills gap — but did not address minimum wage, unions, or labor protections in any reviewed source. His stated approach is a standalone skills-and-opportunity framing rather than a wage-mandate or deregulation position."
         coverage: 2
-        position_tag: "Mixed approach"
+        position_tag: "Centrist or alternative approach"
         position_type: "pos"
         source: [0,1]
 
@@ -104,9 +105,9 @@ sections:
     title: "Access & services"
     items:
       - topic: "Healthcare"
-        note: "Healthcare is one of Dooley's most thoroughly developed positions. Across the debate, the MDJ interview, and his campaign website, he consistently calls for price transparency ('the only industry where you find out how much something costs after the service is delivered'), putting patients and doctors — not insurance companies or government — in charge of decisions, protecting rural hospitals and access (noting women in Rabun County drive an hour for prenatal care), and driving down costs through innovation and competition. On the ACA, he said he supports an important safety net for those who need it but opposes subsidizing people who make hundreds of thousands of dollars. He does not call for full ACA repeal. His campaign website's 'Putting Patients and Doctors First' page names transparency, patient/doctor choice, and rural access as the three pillars."
+        note: "Healthcare is one of Dooley's most thoroughly developed positions. Across the debate, the MDJ interview, and his campaign website, he consistently calls for price transparency ('the only industry where you find out how much something costs after the service is delivered'), putting patients and doctors — not insurance companies or government — in charge of decisions, protecting rural hospitals and access (noting women in Rabun County drive an hour for prenatal care), and driving down costs through innovation and competition. On the ACA, he said he supports an important safety net for those who need it but opposes subsidizing people who make hundreds of thousands of dollars. He does not call for full ACA repeal. This transparency-and-competition framing is a standalone position that does not map cleanly to expanding public coverage or expanding private options. His campaign website's 'Putting Patients and Doctors First' page names transparency, patient/doctor choice, and rural access as the three pillars."
         coverage: 3
-        position_tag: "Mixed approach"
+        position_tag: "Centrist or alternative approach"
         position_type: "pos"
         source: [0,1]
 

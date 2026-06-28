@@ -4,7 +4,8 @@
     "tags": [
       { "label": "Government programs", "lean": "left" },
       { "label": "Market-driven solutions", "lean": "right" },
-      { "label": "Mixed approach", "lean": "center" }
+      { "label": "Addresses both directions", "lean": "center" },
+      { "label": "Centrist or alternative approach", "lean": "center" }
     ]
   },
   {
@@ -20,7 +21,8 @@
     "tags": [
       { "label": "Increase government support", "lean": "left" },
       { "label": "Reduce regulation", "lean": "right" },
-      { "label": "Mixed approach", "lean": "center" }
+      { "label": "Addresses both directions", "lean": "center" },
+      { "label": "Centrist or alternative approach", "lean": "center" }
     ]
   },
   {
@@ -29,7 +31,8 @@
       { "label": "Raise minimum wage", "lean": "left" },
       { "label": "Expand worker protections", "lean": "left" },
       { "label": "Reduce labor regulation", "lean": "right" },
-      { "label": "Mixed approach", "lean": "center" }
+      { "label": "Addresses both directions", "lean": "center" },
+      { "label": "Centrist or alternative approach", "lean": "center" }
     ]
   },
   {
@@ -38,7 +41,8 @@
       { "label": "Reduce incarceration", "lean": "left" },
       { "label": "Invest in prevention", "lean": "left" },
       { "label": "Increase enforcement", "lean": "right" },
-      { "label": "Mixed approach", "lean": "center" }
+      { "label": "Addresses both directions", "lean": "center" },
+      { "label": "Centrist or alternative approach", "lean": "center" }
     ]
   },
   {
@@ -53,8 +57,9 @@
     "topic": "Voting & elections",
     "tags": [
       { "label": "Expand ballot access", "lean": "left" },
-      { "label": "Mixed approach", "lean": "center" },
-      { "label": "Strengthen voter verification", "lean": "right" }
+      { "label": "Strengthen voter verification", "lean": "right" },
+      { "label": "Addresses both directions", "lean": "center" },
+      { "label": "Centrist or alternative approach", "lean": "center" }
     ]
   },
   {
@@ -77,9 +82,10 @@
     "topic": "Healthcare",
     "tags": [
       { "label": "Expand public coverage", "lean": "left" },
-      { "label": "Mixed approach", "lean": "center" },
       { "label": "Expand private options", "lean": "right" },
-      { "label": "Reduce government role", "lean": "right" }
+      { "label": "Reduce government role", "lean": "right" },
+      { "label": "Addresses both directions", "lean": "center" },
+      { "label": "Centrist or alternative approach", "lean": "center" }
     ]
   },
   {
@@ -110,16 +116,18 @@
     "topic": "Immigration",
     "tags": [
       { "label": "Expand legal pathways", "lean": "left" },
-      { "label": "Mixed approach", "lean": "center" },
-      { "label": "Stricter enforcement", "lean": "right" }
+      { "label": "Stricter enforcement", "lean": "right" },
+      { "label": "Addresses both directions", "lean": "center" },
+      { "label": "Centrist or alternative approach", "lean": "center" }
     ]
   },
   {
     "topic": "Housing",
     "tags": [
       { "label": "Increase government programs", "lean": "left" },
-      { "label": "Mixed approach", "lean": "center" },
-      { "label": "Reduce development barriers", "lean": "right" }
+      { "label": "Reduce development barriers", "lean": "right" },
+      { "label": "Addresses both directions", "lean": "center" },
+      { "label": "Centrist or alternative approach", "lean": "center" }
     ]
   }
 ]

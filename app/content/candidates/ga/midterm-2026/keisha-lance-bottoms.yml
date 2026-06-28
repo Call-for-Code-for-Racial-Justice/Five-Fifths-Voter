@@ -1,10 +1,9 @@
 fiveFifthsId: "keisha-lance-bottoms"
 name: "Keisha Lance Bottoms"
 state: "GA"
-race: "Governor — Democratic Primary 2026"
-race_id: "Governor — Democratic Primary 2026"
+race: "Governor 2026"
+race_id: ga-governor-2026
 party: "Democratic"
-primary: "Democratic Primary 2026"
 office_sought: "Governor"
 district: null
 region: "Statewide"

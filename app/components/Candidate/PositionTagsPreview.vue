@@ -8,13 +8,13 @@ const props = defineProps<{
 
 const allPosItems = computed(() => {
   return props.candidate.sections.flatMap((section: ContentSection) =>
-    section.items.filter((item: ContentSectionItem) => item.position_type === "pos"),
+    section.items.filter((item: ContentSectionItem) => item.position_type !== "none"),
   );
 });
 
 const displayedItemsCount = computed(() => {
   return props.candidate.sections.reduce((acc: number, section: ContentSection) => {
-    const posItems = section.items.filter((item: ContentSectionItem) => item.position_type === "pos");
+    const posItems = section.items.filter((item: ContentSectionItem) => item.position_type !== "none");
     return acc + Math.min(posItems.length, 2);
   }, 0);
 });
@@ -28,7 +28,7 @@ const remainingCount = computed(() => {
   <div class="flex flex-wrap gap-1 mt-2">
     <template v-for="section in candidate.sections" :key="section.id">
       <template
-        v-for="item in (section.items as ContentSectionItem[]).filter(i => i.position_type === 'pos').slice(0, 2)"
+        v-for="item in (section.items as ContentSectionItem[]).filter(i => i.position_type !== 'none').slice(0, 2)"
         :key="item.topic"
       >
         <CandidatePositionTag

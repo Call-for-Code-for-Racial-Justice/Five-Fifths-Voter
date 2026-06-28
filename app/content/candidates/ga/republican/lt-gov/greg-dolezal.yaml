@@ -2,6 +2,7 @@ fiveFifthsId: "greg-dolezal"
 name: "Greg Dolezal"
 state: "GA"
 race: "Lt Governor Republican Primary Runoff 2026"
+race_id: "Lt Governor Republican Primary Runoff 2026"
 party: "Republican"
 primary: "Republican Primary Runoff 2026"
 office_sought: "Lieutenant Governor"
@@ -142,8 +143,8 @@ sections:
         source: [0,1]
 
       - topic: "Housing"
-        note: "Dolezal addressed housing through two distinct mechanisms. First, he authored a bill banning hedge funds and foreign investors from purchasing single-family homes in Georgia, detailed in both the interview and website, and referenced in the debate. Second, he supports eliminating property taxes to reduce the cost of homeownership. The first mechanism is a government prohibition (a regulatory intervention); the second reduces government's fiscal burden on owners. Both threads are directly evidenced in sources, meeting the standard for 'mixed approach.'"
+        note: "Dolezal addressed housing through two distinct mechanisms. First, he authored a bill banning hedge funds and foreign investors from purchasing single-family homes in Georgia, detailed in both the interview and website, and referenced in the debate. Second, he supports eliminating property taxes to reduce the cost of homeownership. The first mechanism is a government prohibition (a regulatory intervention); the second reduces government's fiscal burden on owners. Both threads are directly evidenced in sources, meeting the standard for two distinct, opposite-leaning mechanisms."
         coverage: 3
-        position_tag: "Mixed approach"
+        position_tag: "Addresses both directions"
         position_type: "mixed"
         source: [0,1]

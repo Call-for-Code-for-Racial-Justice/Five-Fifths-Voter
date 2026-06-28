@@ -2,6 +2,7 @@ fiveFifthsId: "nabilah-parkes"
 name: "Nabilah Parkes"
 state: "GA"
 race: "Lt Governor Democratic Primary Runoff 2026"
+race_id: "Lt Governor Democratic Primary Runoff 2026"
 party: "Democratic"
 primary: "Georgia Democratic Lieutenant Governor Primary Runoff 2026"
 office_sought: "Lieutenant Governor"
@@ -12,7 +13,7 @@ debate_participant: true
 avatar_initials: "NP"
 ballot_order: 2
 issues:
-  issues_addressed: 11
+  issues_addressed: 10
   issues_total: 15
   clarity: "Highly specific on healthcare, housing, reproductive policy, education, gun policy, and workers' wages; silent on a few taxonomy topics"
   sources_count: 3
@@ -135,11 +136,11 @@ sections:
         source: [0,1]
 
       - topic: "Immigration"
-        note: "In the interview she criticized ICE enforcement, describing 'masked ICE agents in our communities ripping away people from their homes.' In the debate she referenced introducing a bill requiring ICE to obtain a judge-signed warrant before entering schools, hospitals, domestic violence shelters, and libraries. No position on legal immigration pathways found in reviewed sources."
+        note: "In the interview she criticized ICE enforcement, describing 'masked ICE agents in our communities ripping away people from their homes.' In the debate she referenced introducing a bill requiring ICE to obtain a judge-signed warrant before entering schools, hospitals, domestic violence shelters, and libraries. These statements address enforcement conduct rather than staking out a position on immigration enforcement vs. legal pathways as defined by the taxonomy. No position on legal immigration pathways found in reviewed sources."
         coverage: 2
-        position_tag: "Mixed approach"
-        position_type: "mixed"
-        source: [0,1]
+        position_tag: null
+        position_type: "none"
+        source: null
 
       - topic: "Housing"
         note: "In the interview Parkes called for identifying and capping Wall Street investors buying up Georgia homes, requiring disclosure of LLC ownership, and pushing investors back to lower housing costs. In the debate she stated rent is 'too dang high' and called for 'capping Wall Street investors who are coming into our neighborhoods.' Website references commitment to affordability broadly but does not have a standalone housing section; the affordable Georgia section addresses cost-of-living without specific housing program detail beyond what appears in the interview."
