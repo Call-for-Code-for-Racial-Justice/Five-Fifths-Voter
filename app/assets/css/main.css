@@ -36,8 +36,7 @@ cal green #24502A
   --color-ff-blue-03: #1140a7;
   --color-ff-green-01: #397f42;
   --color-ff-green-02: #24502a;
-
-
+  --mask-color5: var(--color-ff-purple-01);
 
   --font-sans:
     IBM Plex Sans, ui-sans-serif, system-ui, Helvetica Neue, Arial, sans-serif,
@@ -59,7 +58,6 @@ cal green #24502A
   --color-base-200: #f6ddc6;
   --color-base-300: #edd2b9;
   --color-base-content: var(--color-ff-purple-01); /* #210d34 */
-  --mask-color5: var(--color-ff-purple-01);
 
   /* brand */
   --color-primary: var(--color-ff-purple-02); /* #85276e */
@@ -94,52 +92,41 @@ cal green #24502A
   --noise: 0;
 }
 
-/* todo: leve this out for now as it is not an approved theme from the team. Consider adding it as a user preference */
-/*@plugin "daisyui/theme" {*/
-/*  name: "ffv-dark";*/
-/*  default: false;*/
-/*  prefersdark: true;*/
-/*  color-scheme: "dark";*/
-
-/*  !* base *!*/
-/*  --color-base-100: var(--color-ff-purple-01); !* #210d34 *!*/
-/*  --color-base-200: #1a0a2a;*/
-/*  --color-base-300: #140821;*/
-/*  --color-base-content: var(--color-ff-white-01); !* #ffebd9 *!*/
-/*  --mask-color5: var(--color-base-300);*/
-
-/*  !* brand (slightly brighter primary for dark for contrast) *!*/
-/*  --color-primary: var(--color-ff-pink-02); !* #d35492 *!*/
-/*  --color-primary-content: var(--color-ff-purple-01); !* #210d34 *!*/
-/*  --color-secondary: var(--color-ff-yellow-01); !* #e8b933 *!*/
-/*  --color-secondary-content: var(--color-ff-purple-01); !* #210d34 *!*/
-/*  --color-accent: var(--color-ff-blue-02); !* #366ae2 *!*/
-/*  --color-accent-content: #ffffff;*/
-
-/*  !* neutral *!*/
-/*  --color-neutral: #241230;*/
-/*  --color-neutral-content: var(--color-ff-white-01);*/
-
-/*  !* state *!*/
-/*  --color-info: var(--color-ff-blue-01); !* #56b5b5 *!*/
-/*  --color-info-content: #ffffff;*/
-/*  --color-success: var(--color-ff-green-01); !* #397f42 *!*/
-/*  --color-success-content: #ffffff;*/
-/*  --color-warning: var(--color-ff-yellow-01); !* #e8b933 *!*/
-/*  --color-warning-content: var(--color-ff-purple-01); !* #210d34 *!*/
-/*  --color-error: var(--color-ff-red-01); !* #e02e38 *!*/
-/*  --color-error-content: #ffffff;*/
-
-/*  !* radius, sizes, and surface details *!*/
-/*  --radius-selector: 0.25rem;*/
-/*  --radius-field: 0.25rem;*/
-/*  --radius-box: 0.5rem;*/
-/*  --size-selector: 0.25rem;*/
-/*  --size-field: 0.25rem;*/
-/*  --border: 1px;*/
-/*  --depth: 0;*/
-/*  --noise: 0;*/
-/*}*/
+/* todo: Get this theme approved by the team. Consider adding it as a user preference */
+@plugin "daisyui/theme" {
+  name: "ffv-dark";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: oklch(25.33% 0.016 252.42);
+  --color-base-200: oklch(23.26% 0.014 253.1);
+  --color-base-300: oklch(21.15% 0.012 254.09);
+  --color-base-content: oklch(97.807% 0.029 256.847);
+  --color-primary: #85276e;
+  --color-primary-content: oklch(96% 0.018 272.314);
+  --color-secondary: #e8b933;
+  --color-secondary-content: #210d34;
+  --color-accent: #ec9899;
+  --color-accent-content: #210d34;
+  --color-neutral: oklch(14% 0.005 285.823);
+  --color-neutral-content: oklch(92% 0.004 286.32);
+  --color-info: #1140a7;
+  --color-info-content: oklch(96% 0.018 272.314);
+  --color-success: #397f42;
+  --color-success-content: #000000;
+  --color-warning: #e66c31;
+  --color-warning-content: #210d34;
+  --color-error: #e02e38;
+  --color-error-content: #210d34;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
 
 /* Custom badge variants — unlayered so they outrank DaisyUI's layered badge styles */
 .badge.badge-left {
