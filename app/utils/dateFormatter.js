@@ -29,10 +29,11 @@ export const daysLeft = (dateStr) => {
 
 /**
  * Get a string with a format like "in 60 days"
- * @param dateStr {string} Like '2022-11-09T00:00:00.000Z'
+ * @param dateStr {string|undefined} Like '2022-11-09T00:00:00.000Z'
  * @returns {string}
  */
 export const daysLeftIso = (dateStr) => {
+  if (!dateStr) return "";
   const { locale } = useI18n();
   try {
     const dt = DateTime.fromISO(dateStr, { zone: "utc" });
@@ -69,10 +70,11 @@ export const niceDate = (dateStr) => {
 
 /**
  * Get a string with a format like "Oct 28, 2022"
- * @param dateStr {string} Like '2022-11-09T00:00:00.000Z'
+ * @param dateStr {string|undefined} Like '2022-11-09T00:00:00.000Z'
  * @returns {string}
  */
 export const niceIsoDate = (dateStr) => {
+  if (!dateStr) return "";
   const { locale } = useI18n();
   try {
     const dt = DateTime.fromISO(dateStr, { zone: "utc" });
@@ -87,7 +89,7 @@ export const niceIsoDate = (dateStr) => {
 };
 
 /**
- * Is date in the past?
+ * Is the date in the past?
  * @param dateStr {string} Like 'MM/dd/yy'
  * @returns {boolean}
  */
@@ -102,7 +104,7 @@ export const tooLate = (dateStr) => {
 };
 
 /**
- * Is date in the past?
+ * Is the date in the past?
  * @param dateStr {string} Like '2022-11-09T00:00:00.000Z'
  * @returns {boolean}
  */

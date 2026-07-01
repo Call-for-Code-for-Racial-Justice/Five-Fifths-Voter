@@ -29,7 +29,7 @@ const clarityLabel = computed(() => {
               <span v-if="candidate.incumbent" class="badge badge-accent badge-sm">Incumbent</span>
             </div>
             <p class="text-sm text-base-content/60 mt-0.5">
-              {{ candidate.office_sought }} · {{ candidate.primary }}
+              {{ candidate.office_sought }} <span v-if="candidate.primary">·</span> {{ candidate.primary }}
             </p>
             <div class="flex flex-wrap gap-2 mt-2">
               <span class="badge badge-outline badge-sm">{{ candidate.party }}</span>
