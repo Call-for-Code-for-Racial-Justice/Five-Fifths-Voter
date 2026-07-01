@@ -21,7 +21,7 @@ voting:
   byMail:
     idInstructions: > 
       You must include the number for your driver’s license or free state ID or a copy of a document listed on the back
-      of the absentee application."
+      of the absentee application.
     explainerUrl: "https://sos.ga.gov/how-to-guide/how-guide-voting#Absentee%20Voting"
     deadline:
       postmarkedOrReceived: "received"
