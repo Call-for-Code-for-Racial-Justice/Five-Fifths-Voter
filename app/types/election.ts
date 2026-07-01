@@ -17,6 +17,7 @@ export const contentElectionSchema = z.object({
   voting: z.object({
     inPersonVotingAvailable: z.boolean(),
     mailBallotsSentAutomatically: z.boolean(),
+    idUrl: z.string().url().nullable(),
     early: z.object({
       url: z.string().url(),
       startDate: z.date(),
