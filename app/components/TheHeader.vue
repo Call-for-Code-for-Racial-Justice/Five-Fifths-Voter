@@ -1,15 +1,19 @@
 <script setup lang="ts">
 import titleLogoUrl from "assets/images/five-fifths-voter.svg";
-import { computed, ref, watch } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 import { useDebounceFn, useMediaQuery, useScroll } from "@vueuse/core";
 import { Menu } from "lucide-vue-next";
 import { GitHubIcon, InstagramIcon } from "vue3-simple-icons";
 
-// Constants
+const isMounted = ref(false);
 const route = useRoute();
 const minHeight = 64;
 const isSmallScreen = useMediaQuery("(max-width: 640px)");
-const maxHeight = computed(() => ((isSmallScreen.value || !route.meta.shrinkingBanner) ? 64 : 320));
+const maxHeight = computed(() => {
+  // reference isMounted so the computed re-evaluates after mount
+  if (!isMounted.value) return 320;
+  return (isSmallScreen.value || !route.meta.shrinkingBanner) ? 64 : 320;
+});
 const bounceExtra = 40; // max zoom-out amount
 const bounceDecayMs = 250; // how quickly it settles back
 
@@ -18,6 +22,17 @@ const { y: scrollY, directions } = useScroll(window);
 
 // The core reactive header height
 const headerHeight = ref(maxHeight.value);
+/*
+  useMediaQuery has no reliable read of the viewport during SSR, so the
+  server (and the very first client render, before hydration settles) can
+  disagree with the device's actual width. Force a resync once we're
+  definitely running client-side and window.innerWidth/matchMedia are
+  trustworthy, so a mobile visitor never gets stuck with the desktop-sized
+  header the server guessed at.
+*/
+onMounted(() => {
+  isMounted.value = true;
+});
 
 // Track if the header is fully collapsed
 const snapped = ref(false);
@@ -82,7 +97,7 @@ function scrollToId(id: string) {
 
 <template>
   <nav
-      class="navbar fixed top-0 left-0 pb-0 z-20 w-full bg-(--mask-color5) text-neutral-content transition-all duration-300 ease-out items-start"
+      class="navbar fixed top-0 left-0 pb-0 z-20 w-full bg-(--mask-color5) text-neutral-content transition-all duration-300 ease-out items-start max-h-16 md:max-h-80"
       :style="{ height: headerHeight + 'px' }"
   >
     <!-- LEFT: hamburger + Five Fifths Voter text -->
@@ -133,7 +148,7 @@ function scrollToId(id: string) {
         <img
             :src="titleLogoUrl"
             alt="Five Fifths Voter"
-            class="object-contain transition-all duration-300 ease-out"
+            class="object-contain transition-all duration-300 ease-out max-h-[25.6px] md:max-h-none"
             :style="{
           height: headerHeight * 0.4 + 'px',
         }"
@@ -170,7 +185,7 @@ function scrollToId(id: string) {
       <ThemeToggle />
 
       <MaskGroup
-          class="transition-all w-fit duration-300 ease-out object-contain"
+          class="transition-all w-fit duration-300 ease-out object-contain max-h-16 md:max-h-80"
                  :style="{
           height: headerHeight + 'px',
           bottom: '0px',

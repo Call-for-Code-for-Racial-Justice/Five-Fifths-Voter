@@ -46,6 +46,9 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "nuxt-eslint-globals",
   ],
+  vueuse: {
+    ssrWidth: 390,
+  },
   runtimeConfig: {
     authSecret: process.env.NUXT_AUTH_SECRET,
     public: {
