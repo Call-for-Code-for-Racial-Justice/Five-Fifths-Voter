@@ -15,9 +15,9 @@
     "app"
   ],
   "devDependencies": {
-    "cypress": "^14.4.0",
+    "cypress": "^15.18.0",
     "husky": "^9.1.7",
-    "js-yaml": "^4.1.1",
+    "js-yaml": "^4.3.0",
     "lint-staged": "^16.2.7",
     "puppeteer": "^25.1.0"
   },
