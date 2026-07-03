@@ -15,7 +15,7 @@
     "@nuxt/content": "^3.14.0",
     "@nuxt/eslint": "^1.4.1",
     "@nuxt/kit": "^4.4.8",
-    "@nuxtjs/i18n": "^10.2.1",
+    "@nuxtjs/i18n": "^10.4.0",
     "@pinia/nuxt": "^0.11.2",
     "@sidebase/nuxt-auth": "^1.1.0",
     "@tailwindcss/vite": "^4.1.17",
