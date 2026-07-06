@@ -47,7 +47,7 @@ const filtered = computed(() =>
       <NuxtLink
         v-for="c in filtered"
         :key="c.fiveFifthsId"
-        :to="`/journey/election/${electionId}/candidates/${race.id}/score/${c.fiveFifthsId}`"
+        :to="`/journey/election/five-fifths-details/${electionId}/${race.id}/${c.fiveFifthsId}`"
         class="card bg-base-100 shadow-sm dark:border dark:border-accent hover:shadow-md transition-shadow cursor-pointer"
       >
         <div class="card-body py-3 px-4">

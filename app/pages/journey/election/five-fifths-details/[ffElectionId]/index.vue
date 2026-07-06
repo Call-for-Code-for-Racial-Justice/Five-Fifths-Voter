@@ -7,16 +7,10 @@ definePageMeta({
 });
 
 const route = useRoute();
-const id = route.params.id as string;
+const id = route.params.ffElectionId as string;
 const { t } = useI18n();
 
-const { data: election, status: electionStatus } = await useAsyncData(
-  `election-${id}`,
-  () =>
-    queryCollection("elections")
-      .where("fiveFifthsId", "=", id)
-      .first(),
-);
+const { election, electionStatus } = await useElectionByFfId(id);
 const races = computed(() => election?.value?.races ?? []);
 const voting = computed(() => election?.value?.voting);
 
@@ -136,7 +130,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
                   v-for="r in races"
                   :key="r.id"
                   class="btn btn-link"
-                  :to="`/journey/election/${id}/candidates/${r.id}`">
+                  :to="`/journey/election/five-fifths-details/${id}/${r.id}`">
                 {{ r.name }}
               </NuxtLink>
               </div>
