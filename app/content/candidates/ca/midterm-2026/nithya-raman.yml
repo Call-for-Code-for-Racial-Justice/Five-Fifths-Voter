@@ -10,6 +10,7 @@ region: "Statewide"
 incumbent: false
 debate_participant: true
 avatar_initials: "NR"
+ballot_order: 2
 issues:
   clarity: "Highly specific across most topics; detailed campaign platform with concrete metrics and named policy mechanisms"
   sources_count: 3

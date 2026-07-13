@@ -10,6 +10,7 @@ region: "Los Angeles"
 incumbent: true
 debate_participant: true
 avatar_initials: "KB"
+ballot_order: 1
 issues:
   clarity: "Detailed on homelessness, housing, and infrastructure; thin on economic and civil rights topics"
   sources_count: 3
