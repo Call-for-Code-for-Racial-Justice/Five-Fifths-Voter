@@ -1,10 +1,14 @@
-export const useElectionByFfId = async (id: string) => {
+import type { MaybeRef } from "vue";
+import { toValue } from "vue";
+
+export const useElectionByFfId = async (id: MaybeRef<string>) => {
   const { data: election, status: electionStatus } = await useAsyncData(
-    `election-${id}`,
+    () => `election-${toValue(id)}`,
     () =>
       queryCollection("elections")
-        .where("fiveFifthsId", "=", id)
+        .where("fiveFifthsId", "=", toValue(id))
         .first(),
+    { watch: [() => toValue(id)] },
   );
 
   return { election, electionStatus };

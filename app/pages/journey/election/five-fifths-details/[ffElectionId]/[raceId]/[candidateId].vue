@@ -2,25 +2,25 @@
 import { AlertCircle } from "lucide-vue-next";
 
 const route = useRoute();
-const ffElectionId = route.params.ffElectionId as string;
-const raceId = route.params.raceId as string;
-const candidateId = route.params.candidateId as string;
+const ffElectionId = computed(() => route.params.ffElectionId as string);
+const raceId = computed(() => route.params.raceId as string);
+const candidateId = computed(() => route.params.candidateId as string);
 
 const { election, electionStatus } = await useElectionByFfId(ffElectionId);
 
 const { data: candidate, status } = await useAsyncData(
-  `candidate-${candidateId}-${raceId}`,
+  () => `candidate-${candidateId.value}-${raceId.value}`,
   () => {
     let query = queryCollection("candidates")
-      .where("fiveFifthsId", "=", candidateId);
+      .where("fiveFifthsId", "=", candidateId.value);
 
-    if (raceId !== "r") {
-      query = query.where("race_id", "=", raceId);
+    if (raceId.value !== "r") {
+      query = query.where("race_id", "=", raceId.value);
     }
 
     return query.first();
   },
-  { watch: [() => candidateId, () => raceId] },
+  { watch: [candidateId, raceId] },
 );
 
 useSeoMeta({

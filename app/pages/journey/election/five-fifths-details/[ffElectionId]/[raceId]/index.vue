@@ -2,31 +2,32 @@
 import { AlertTriangle } from "lucide-vue-next";
 
 const route = useRoute();
-const ffElectionId = route.params.ffElectionId as string;
-const raceId = route.params.raceId as string;
+const ffElectionId = computed(() => route.params.ffElectionId as string);
+const raceId = computed(() => route.params.raceId as string);
 
 const { election, electionStatus } = await useElectionByFfId(ffElectionId);
 
 const races = computed(() => election.value?.races || []);
-const race = computed(() => races.value?.find((r: { id: string }) => r.id === raceId));
+const race = computed(() => races.value?.find((r: { id: string }) => r.id === raceId.value));
 const state = computed(() => election.value?.region_code);
 
 useSeoMeta({
-  title: `five/fifths voter | Candidates — ${raceId}`,
-  ogTitle: `five/fifths voter | Candidates — ${raceId}`,
-  description: () => election.value ? `Candidates running for ${raceId} in ${election.value.description}` : `Candidates running for ${raceId}`,
-  ogDescription: () => election.value ? `Candidates running for ${raceId} in ${election.value.description}` : `Candidates running for ${raceId}`,
-  twitterDescription: () => election.value ? `Candidates running for ${raceId} in ${election.value.description}` : `Candidates running for ${raceId}`,
+  title: () => `five/fifths voter | Candidates — ${raceId.value}`,
+  ogTitle: () => `five/fifths voter | Candidates — ${raceId.value}`,
+  description: () => election.value ? `Candidates running for ${raceId.value} in ${election.value.description}` : `Candidates running for ${raceId.value}`,
+  ogDescription: () => election.value ? `Candidates running for ${raceId.value} in ${election.value.description}` : `Candidates running for ${raceId.value}`,
+  twitterDescription: () => election.value ? `Candidates running for ${raceId.value} in ${election.value.description}` : `Candidates running for ${raceId.value}`,
   twitterCard: "summary_large_image",
 });
 
 const { data: candidates, status } = await useAsyncData(
-  `candidates-${raceId}`,
+  () => `candidates-${raceId.value}`,
   () =>
     queryCollection("candidates")
-      .where("race_id", "=", raceId)
+      .where("race_id", "=", raceId.value)
       .order("ballot_order", "ASC")
       .all(),
+  { watch: [raceId] },
 );
 </script>
 
