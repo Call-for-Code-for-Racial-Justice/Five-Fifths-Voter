@@ -18,11 +18,11 @@ const coverageLabel = computed(() => {
 </script>
 
 <template>
-  <div class="grid grid-cols-[1fr_80px_1fr_72px] gap-2 px-4 py-2.5 border-t border-base-200 items-center text-sm">
+  <div class="grid grid-cols-[1fr_80px_1fr_72px] gap-2 px-4 py-2.5 border-t border-base-200 items-center text-sm lg:text-base">
     <!-- Topic + note -->
     <div>
-      <div class="font-medium text-base-content text-xs leading-snug">{{ item.topic }}</div>
-      <div v-if="item.note" class="text-xs text-base-content/50 mt-0.5 leading-tight">{{ item.note }}</div>
+      <div class="font-medium text-base-content text-xs lg:text-base leading-snug">{{ item.topic }}</div>
+      <div v-if="item.note" class="text-xs lg:text-base text-base-content/50 mt-0.5 leading-tight">{{ item.note }}</div>
     </div>
 
     <CandidateCoverageDot :coverage="item.coverage" :label="coverageLabel" />
@@ -30,7 +30,7 @@ const coverageLabel = computed(() => {
     <!-- Position tag -->
     <div class="flex justify-center">
       <CandidatePositionTag
-        class="badge-sm"
+        class="badge-sm lg:badge-lg"
         :position-type="item.position_type"
         :position-tag="item.position_tag"
       />

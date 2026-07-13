@@ -25,16 +25,16 @@ const clarityLabel = computed(() => {
           <!-- Name + meta -->
           <div class="flex-1 min-w-0">
             <div class="flex flex-wrap items-center gap-2">
-              <h2 class="text-xl font-semibold text-base-content">{{ candidate.name }}</h2>
-              <span v-if="candidate.incumbent" class="badge badge-accent badge-sm">Incumbent</span>
+              <h2 class="text-xl lg:text-2xl font-semibold text-base-content">{{ candidate.name }}</h2>
+              <span v-if="candidate.incumbent" class="badge badge-accent badge-sm lg:badge-lg">Incumbent</span>
             </div>
-            <p class="text-sm text-base-content/60 mt-0.5">
+            <p class="text-sm lg:text-lg text-base-content/60 mt-0.5">
               {{ candidate.office_sought }} <span v-if="candidate.primary">·</span> {{ candidate.primary }}
             </p>
             <div class="flex flex-wrap gap-2 mt-2">
-              <span class="badge badge-outline badge-sm">{{ candidate.party }}</span>
-              <span class="badge badge-outline badge-sm">{{ candidate.region }}</span>
-              <span v-if="candidate.debate_participant" class="badge badge-success badge-sm gap-1">
+              <span class="badge badge-outline badge-sm lg:badge-lg">{{ candidate.party }}</span>
+              <span class="badge badge-outline badge-sm lg:badge-lg">{{ candidate.region }}</span>
+              <span v-if="candidate.debate_participant" class="badge badge-success badge-sm lg:badge-lg gap-1">
                 <CheckCircle :size="11"/>
                 Participated in debate
               </span>
@@ -51,7 +51,7 @@ const clarityLabel = computed(() => {
                     :href="link.url"
                     target="_blank"
                     rel="noreferrer"
-                    class="btn btn-ghost btn-xs gap-1 text-base-content/60 max-w-72"
+                    class="btn btn-ghost btn-xs lg:btn-md gap-1 text-base-content/60 max-w-72"
                 >
                   <ExternalLink :size="11" class="shrink-0"/>
                   <span class="truncate">{{ link.label }}</span>
@@ -66,15 +66,15 @@ const clarityLabel = computed(() => {
     <!-- Callout -->
     <div
 v-if="candidate.issues?.callout" role="alert"
-         class="alert bg-base-200 border-l-4 border-base-content/20 rounded-none text-sm text-base-content/70">
-      <Info :size="16" class="shrink-0 text-base-content/40"/>
+         class="alert bg-base-200 border-l-4 border-base-content/20 rounded-none text-sm lg:text-lg text-base-content/90">
+      <Info  class="size-4 lg:size-6 shrink-0 text-base-content/80"/>
       <span>{{ candidate.issues.callout }}</span>
     </div>
 
     <!-- Summary stats -->
     <div class="grid grid-cols-3 gap-3">
       <div class="stat bg-base-100 shadow-sm rounded-box p-3">
-        <div class="stat-title text-xs">Issues addressed</div>
+        <div class="stat-title text-xs lg:text-base">Issues addressed</div>
         <div class="stat-value text-lg">{{ getAddressedIssuesCount(candidate) }} / {{
             getTotalIssuesCount(candidate)
           }}
@@ -82,11 +82,11 @@ v-if="candidate.issues?.callout" role="alert"
         <div class="stat-desc text-xs">of tracked topics</div>
       </div>
       <div class="stat bg-base-100 shadow-sm rounded-box p-3">
-        <div class="stat-title text-xs">Clarity</div>
+        <div class="stat-title text-xs lg:text-base">Clarity</div>
         <div class="stat-value text-base leading-tight mt-1">{{ clarityLabel }}</div>
       </div>
       <div class="stat bg-base-100 shadow-sm rounded-box p-3">
-        <div class="stat-title text-xs">Sources reviewed</div>
+        <div class="stat-title text-xs lg:text-base">Sources reviewed</div>
         <div class="stat-value text-lg">{{ candidate.issues.sources_count }}</div>
       </div>
     </div>

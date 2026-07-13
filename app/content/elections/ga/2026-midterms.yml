@@ -5,6 +5,7 @@ type: "general"
 website: "https://mvp.sos.ga.gov"
 guidancePhase: "final"
 fiveFifthsId: "ga-2026-midterms"
+region_code: "GA"
 
 voting:
   inPersonVotingAvailable: true

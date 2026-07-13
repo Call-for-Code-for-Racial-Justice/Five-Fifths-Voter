@@ -35,7 +35,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="max-w-2xl mx-auto px-4 py-6 mt-16">
+  <div class="max-w-2xl lg:max-w-5xl mx-auto px-4 py-6 mt-16">
     <ElectionsBreadcrumbs
       :items="[
       { label: election?.description ?? '', to: `/journey/election/five-fifths-details/${ffElectionId}` },

@@ -5,6 +5,7 @@ type: "general"
 website: "https://www.sos.ca.gov/elections"
 guidancePhase: "final"
 fiveFifthsId: "ca-2026-midterms"
+region_code: "CA"
 voting:
   inPersonVotingAvailable: true
   mailBallotsSentAutomatically: true

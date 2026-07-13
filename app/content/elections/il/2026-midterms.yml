@@ -5,6 +5,7 @@ type: "general"
 website: "https://www.elections.il.gov/"
 guidancePhase: "final"
 fiveFifthsId: "il-2026-midterms"
+region_code: "IL"
 
 voting:
   inPersonVotingAvailable: true

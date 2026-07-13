@@ -26,7 +26,9 @@ const filtered = computed(() =>
     <div class="flex items-center justify-between flex-wrap gap-2">
       <div>
         <h2 class="text-lg font-semibold text-base-content">{{ race?.name }}</h2>
-        <p class="text-sm text-base-content/50">{{ candidates.length }} candidates · {{ state }}</p>
+        <p class="text-sm lg:text-base text-base-content/50">{{ candidates.length }} candidates
+          <span v-if="state"> · {{ state }}</span>
+        </p>
       </div>
       <!-- Filter by party if mixed -->
       <div v-if="hasMultipleParties" class="join">
@@ -58,12 +60,12 @@ const filtered = computed(() =>
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 flex-wrap">
                 <span class="font-medium text-sm text-base-content">{{ c.name }}</span>
-                <span v-if="c.incumbent" class="badge badge-accent badge-xs">Incumbent</span>
+                <span v-if="c.incumbent" class="badge badge-accent badge-xs lg:badge-md">Incumbent</span>
               </div>
               <div class="flex items-center gap-2 mt-1 flex-wrap">
-                <span class="badge badge-outline badge-xs">{{ c.party }}</span>
+                <span class="badge badge-outline badge-xs lg:badge-md">{{ c.party }}</span>
                 <span v-if="c.debate_participant" class="text-xs text-success flex items-center gap-0.5">
-                  <CheckCircle :size="11" />
+                  <CheckCircle class="size-2.5 lg:size-5" />
                   Debated
                 </span>
               </div>
@@ -74,7 +76,7 @@ const filtered = computed(() =>
               <div class="text-base font-semibold text-base-content">
                 {{ getAddressedIssuesCount(c) }}/{{ getTotalIssuesCount(c) }}
               </div>
-              <div class="text-xs text-base-content/40">topics</div>
+              <div class="text-xs lg:text-base text-base-content/40">topics</div>
             </div>
           </div>
 

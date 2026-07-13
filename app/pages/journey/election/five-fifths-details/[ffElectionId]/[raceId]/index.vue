@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { AlertTriangle } from "lucide-vue-next";
 
-const state = "GA";
 const route = useRoute();
 const ffElectionId = route.params.ffElectionId as string;
 const raceId = route.params.raceId as string;
@@ -10,6 +9,7 @@ const { election, electionStatus } = await useElectionByFfId(ffElectionId);
 
 const races = computed(() => election.value?.races || []);
 const race = computed(() => races.value?.find((r: { id: string }) => r.id === raceId));
+const state = computed(() => election.value?.region_code);
 
 useSeoMeta({
   title: `five/fifths voter | Candidates — ${raceId}`,
@@ -31,7 +31,7 @@ const { data: candidates, status } = await useAsyncData(
 </script>
 
 <template>
-  <div class="max-w-3xl mx-auto px-4 py-6 mt-8">
+  <div class="max-w-3xl lg:max-w-5xl mx-auto px-4 py-6 mt-8">
     <ElectionsBreadcrumbs
 :items="[
       { label: election?.description ?? '', to: `/journey/election/five-fifths-details/${ffElectionId}` },
@@ -56,5 +56,6 @@ const { data: candidates, status } = await useAsyncData(
       :race="race"
       :election-id="ffElectionId"
     />
+
   </div>
 </template>

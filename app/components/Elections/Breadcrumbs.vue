@@ -12,7 +12,7 @@ const visibleItems = computed(() => props.items.filter(item => item.label));
 </script>
 
 <template>
-  <nav class="breadcrumbs text-sm" role="navigation" aria-label="Breadcrumb">
+  <nav class="breadcrumbs text-sm lg:text-base" role="navigation" aria-label="Breadcrumb">
     <ol>
       <li><NuxtLink to="/journey/getInformed">Dashboard</NuxtLink></li>
       <li v-for="item in visibleItems" :key="item.label">

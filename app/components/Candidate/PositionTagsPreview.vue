@@ -32,13 +32,13 @@ const remainingCount = computed(() => {
         :key="item.topic"
       >
         <CandidatePositionTag
-          class="badge-xs"
+          class="badge-xs lg:badge-md"
           :position-type="item.position_type"
           :position-tag="item.position_tag"
         />
       </template>
     </template>
     <span v-if="remainingCount > 0" class="badge badge-xs badge-outline">+{{ remainingCount }} more</span>
-    <span class="badge badge-xs badge-ghost">View scorecard →</span>
+    <span class="badge badge-xs lg:badge-md badge-ghost">View scorecard →</span>
   </div>
 </template>

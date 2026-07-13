@@ -4,7 +4,7 @@ description: "Pennsylvania Municipal Election"
 type: "general"
 website: "https://www.pa.gov/agencies/vote/elections"
 guidancePhase: "final"
-
+region_code: "PA"
 voting:
   inPersonVotingAvailable: true
   mailBallotsSentAutomatically: false
