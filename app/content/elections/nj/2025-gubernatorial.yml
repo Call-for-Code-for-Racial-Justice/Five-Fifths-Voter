@@ -4,6 +4,7 @@ description: "New Jersey Gubernatorial and General Assembly General Election"
 type: "general"
 website: "https://www.nj.gov/state/elections/vote.shtml"
 guidancePhase: "final"
+region_code: "NJ"
 
 voting:
   inPersonVotingAvailable: true

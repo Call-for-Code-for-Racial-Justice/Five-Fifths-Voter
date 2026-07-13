@@ -7,7 +7,7 @@ definePageMeta({
 });
 
 const route = useRoute();
-const id = route.params.id as string;
+const id = route.params.civicId as string;
 const { elections, status } = await useElections();
 const { stateNameOf } = useStateName();
 const config = useRuntimeConfig();

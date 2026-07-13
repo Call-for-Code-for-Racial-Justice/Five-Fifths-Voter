@@ -22,7 +22,7 @@ export const contentCandidateSchema = z.object({
   race: z.string(), // display name
   race_id: z.string(), // slug
   party: z.string(),
-  primary: z.string(),
+  primary: z.string().nullable(),
   office_sought: z.string(),
   district: z.string().nullable(),
   region: z.string(),

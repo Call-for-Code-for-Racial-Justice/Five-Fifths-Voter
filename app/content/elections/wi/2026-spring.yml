@@ -5,7 +5,7 @@ type: "spring"
 website: "https://myvote.wi.gov"
 guidancePhase: "preliminary"
 fiveFifthsId: "wi-2026-spring"
-
+region_code: "WI"
 voting:
   inPersonVotingAvailable: true
   mailBallotsSentAutomatically: false

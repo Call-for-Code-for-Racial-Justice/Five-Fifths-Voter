@@ -16,12 +16,12 @@ defineProps<{
     <div class="collapse-title py-3 px-4 min-h-0">
       <div class="flex items-start gap-2">
         <div class="flex-1 min-w-0">
-          <div class="text-sm font-medium text-base-content">{{ section.title }}</div>
+          <div class="text-sm lg:text-base font-medium text-base-content">{{ section.title }}</div>
           <!-- Position tag summary in collapsed state -->
           <div class="flex flex-wrap gap-1.5 mt-1.5">
             <template v-for="item in section.items" :key="item.topic">
               <CandidatePositionTag
-                class="badge-sm"
+                class="badge-sm lg:badge-lg"
                 :position-type="item.position_type"
                 :position-tag="item.position_tag"
                 :topic="item.topic"
@@ -36,7 +36,7 @@ defineProps<{
     <div class="collapse-content px-0 pb-0">
       <div class="border-t border-base-200">
         <!-- Column headers -->
-        <div class="grid grid-cols-[1fr_80px_1fr_72px] gap-2 px-4 py-1.5 bg-base-200 text-xs text-base-content/50">
+        <div class="grid grid-cols-[1fr_80px_1fr_72px] gap-2 px-4 py-1.5 bg-base-200 text-xs lg:text-sm text-base-content/50">
           <div>Topic</div>
           <div class="text-center">Coverage</div>
           <div class="text-center">Stated position</div>

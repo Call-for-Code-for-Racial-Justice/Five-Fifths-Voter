@@ -16,11 +16,11 @@ defineProps<Props>();
         <span
             v-for="n in 3"
             :key="n"
-            class="w-2.5 h-2.5 rounded-full"
+            class="size-2.5 lg:size-4 rounded-full"
             :class="n <= coverage ? 'bg-success' : 'bg-base-300'"
         />
     </div>
-    <span class="text-xs text-base-content/40 leading-none mt-0.5">{{ label }}</span>
+    <span class="text-xs lg:text-base text-base-content/40 leading-none mt-0.5">{{ label }}</span>
   </div>
 </template>
 
