@@ -56,3 +56,5 @@ voting:
 races:
   - name: "Governor 2026"
     id: "ca-governor-2026"
+  - name: "Mayor of Los Angeles"
+    id: "ca-la-mayor-2026"

@@ -1,0 +1,128 @@
+fiveFifthsId: "nithya-raman"
+name: "Nithya Raman"
+state: "CA"
+race: "Mayor of Los Angeles"
+race_id: "ca-la-mayor-2026"
+party: "Nonpartisan"
+office_sought: "Mayor of Los Angeles"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "NR"
+issues:
+  clarity: "Highly specific across most topics; detailed campaign platform with concrete metrics and named policy mechanisms"
+  sources_count: 3
+  sources_list:
+    - "One-on-one interview with CNN"
+    - "NBC4/Telemundo 52 Los Angeles mayoral primary debate (with Karen Bass, Spencer Pratt)"
+    - "Official campaign website, nithyaforthecity.com (full issues platform)"
+  last_updated: "2026-07-12"
+  callout: "Raman, a Los Angeles City Council member representing District 4, is running as a progressive challenger to incumbent Mayor Karen Bass, centering her campaign on housing affordability, renter protections, and accountability in homelessness spending. She points to a 54% reduction in encampments in her council district and the passage of the city's strongest renter protections in decades as evidence for a citywide approach built on urgency and oversight."
+  links:
+    - label: "Interview (CNN)"
+      url: "https://www.youtube.com/watch?v=Yh3t6IsK2R4"
+    - label: "Mayoral Primary Debate (NBC4/Telemundo 52)"
+      url: "https://www.youtube.com/watch?v=-83WHHCKZDY"
+    - label: "Nithya Raman campaign website"
+      url: "https://www.nithyaforthecity.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Names housing affordability as 'the biggest issue' she hears from voters and centers her campaign on making LA affordable; addresses this primarily through housing supply and renter protection mechanisms detailed in other topic rows."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 2
+      - topic: "Taxation"
+        note: "States she supported Measure ULA (the 'mansion tax') but has since said publicly it 'needs reform' because it is 'stopping the production of new housing,' calling for the policy to be changed despite criticism from allies."
+        coverage: 2
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: 0
+      - topic: "Small business & farming"
+        note: "Campaign site describes a plan to make City Hall 'a partner instead of an obstacle' via simplified permitting, single points of contact, hard deadlines, revitalizing commercial corridors, raising the tax exemption for small businesses, and fighting predatory ADA lawsuits and landlord harassment."
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: 2
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources specific to minimum wage or general worker protections outside of tenant/renter-specific policy."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+      - topic: "Voting & elections"
+        note: "Cites having 'established independent redistricting in LA to end gerrymandering' as a completed accomplishment, though this is about redistricting process rather than ballot access or voter verification specifically."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: 2
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+      - topic: "Broadband & infrastructure"
+        note: "In debate and interview, criticizes the city for tens of thousands of broken streetlights and potholes with long repair timelines, and campaign site commits to fixing potholes, paving roads, and turning on streetlights, but does not lay out a specific infrastructure funding/investment mechanism comparable to Bass's Comprehensive Infrastructure Plan."
+        coverage: 2
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: 0
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Campaign site notes LA's prior commitment to 100% renewable energy and a Green New Deal, but frames her platform around 'accountability infrastructure' to implement existing goals (air quality, parks/shade, disaster resilience) rather than staking new regulatory or production positions."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: 2
+      - topic: "Immigration"
+        note: "States she 'wrote the city's Sanctuary City ordinance to protect immigrants from ICE' and campaign site commits to LA being 'the strongest sanctuary city in the country,' protecting residents from federal immigration enforcement — a clear, specifically-evidenced enforcement-limiting position, though it doesn't map directly onto the 'expand legal pathways' vs 'stricter enforcement' framing."
+        coverage: 3
+        position_tag: null
+        position_type: "none"
+        source: 2
+      - topic: "Housing"
+        note: "Platform combines increased government-led investment (over $1 billion via Measure ULA/LACAHSA for affordable housing, eviction defense, strongest renter protections in the city's history, rent caps) with reducing development barriers (cutting permitting timelines, red tape, deadlines for department approval) — two distinct, separately-evidenced mechanisms pulling toward both more regulation/investment and faster private building."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 2

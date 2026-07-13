@@ -1,0 +1,129 @@
+fiveFifthsId: "karen-bass"
+name: "Karen Bass"
+state: "CA"
+race: "Mayor of Los Angeles"
+race_id: "ca-la-mayor-2026"
+party: "Nonpartisan"
+office_sought: "Mayor of Los Angeles"
+district: null
+region: "Los Angeles"
+incumbent: true
+debate_participant: true
+avatar_initials: "KB"
+issues:
+  clarity: "Detailed on homelessness, housing, and infrastructure; thin on economic and civil rights topics"
+  sources_count: 3
+  sources_list:
+    - "NBC4/Telemundo 52 Los Angeles mayoral primary debate (with Nithya Raman, Spencer Pratt), moderated by Colleen Williams, Conan Nolan, and Enrique Cerna"
+    - "One-on-one interview with CNN"
+    - "Official campaign website, karenbass.com ('Why I'm Running' and 'How We Changed LA' pages)"
+  last_updated: "2026-07-12"
+  callout: "Bass, the incumbent mayor and former Congresswoman, centers her re-election campaign on reported declines in street homelessness and crime, an accelerated housing pipeline, and the city's first comprehensive infrastructure plan. She frames her federal and state government experience as an asset for navigating Sacramento and Washington, and has publicly opposed federal ICE enforcement actions in Los Angeles."
+  links:
+    - label: "Mayoral Primary Debate (NBC4/Telemundo 52)"
+      url: "https://www.youtube.com/watch?v=-83WHHCKZDY"
+    - label: "Interview (CNN)"
+      url: "https://www.youtube.com/watch?v=F2R_KA2Sczs"
+    - label: "Karen Bass campaign website"
+      url: "https://www.karenbass.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "States affordability is the city's 'number one issue' and that housing is 'one of the main drivers' of it; cites expedited housing production, rent stabilization, and eviction prevention efforts as her response."
+        coverage: 2
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: 0
+      - topic: "Taxation"
+        note: "Campaign materials cite that she 'successfully urged an expanded film & TV tax credit' and cut city filming fees; no broader tax policy position found."
+        coverage: 1
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: 2
+      - topic: "Small business & farming"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+      - topic: "Workers & wages"
+        note: "In debate, defended paying police and 'all of our city employees' a 'living wage' amid budget criticism, but this is framed around city labor contracts rather than a broader wage/worker-protection policy."
+        coverage: 1
+        position_tag: "Expand worker protections"
+        position_type: "pos"
+        source: 0
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "In interview, argued against incarcerating homeless individuals who refuse shelter, noting jails are 'already overpopulated' and it 'costs far more money to incarcerate somebody than it does to take care of them'; supports involuntary hospitalization only for the severely mentally ill, not incarceration."
+        coverage: 2
+        position_tag: "Invest in prevention"
+        position_type: "pos"
+        source: 1
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+      - topic: "Voting & elections"
+        note: "Asked in debate whether non-citizens (e.g. green card holders) should vote in local elections, she did not take a clear position, saying 'it depends' and that she would need to see the specific proposal. No position found."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: 0
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Discussed converting a vacant hospital into a facility focused on 'substance abuse and mental illness,' funded by voter-approved Proposition 1, and supports involuntary hospitalization for the severely mentally ill given a lack of existing facilities."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: 1
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+      - topic: "Broadband & infrastructure"
+        note: "Cites launching 'LA's first-ever infrastructure plan' via executive action to address sidewalks, streets, and streetlights neglected for decades; referenced in debate as an ongoing comprehensive infrastructure plan."
+        coverage: 3
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: 2
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "No position found in reviewed sources. Discussion of wildfire rebuilding focused on permitting speed and construction materials (home hardening) rather than energy or environmental regulation policy."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+      - topic: "Immigration"
+        note: "Campaign materials state she has 'been in ICE's face on the streets' and organized local and national mayors 'to stand against ICE and troop deployments.' This reflects a clear stance opposing federal immigration enforcement actions in LA, but does not map cleanly onto the taxonomy's enforcement/pathways tags as written."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: 2
+      - topic: "Housing"
+        note: "Cites accelerating nearly 40,000 units through zoning changes, adaptive reuse of office buildings, and expedited permitting (supply-side/deregulatory), alongside signing the first Rent Stabilization Ordinance improvements in 40 years to limit rent increases and protect tenants (demand-side protection) — two distinct, separately-evidenced mechanisms."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 2
