@@ -16,7 +16,7 @@ watchEffect(() => {
   <section
       id="top"
       ref="section"
-      class="ml-3 min-h-dvh [@media(max-height:640px)]:min-h-0 pt-24 md:pt-84"
+      class="ml-3 min-h-dvh [@media(max-height:640px)]:min-h-0 pt-24 md:pt-84 snap-start"
   >
     <div class="mb-16 w-full px-2 pt-0">
       <div

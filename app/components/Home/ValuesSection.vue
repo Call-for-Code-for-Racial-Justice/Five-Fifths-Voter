@@ -18,7 +18,7 @@ watchEffect(() => {
   <section
       id="values"
       ref="section"
-      class="ml-3 min-h-dvh [@media(max-height:640px)]:min-h-0 pt-24 3xl:pt-56"
+      class="ml-3 min-h-dvh [@media(max-height:640px)]:min-h-0 pt-24 3xl:pt-56 snap-start"
   >
     <h1 class="mb-4 px-2 text-5xl sm:text-6xl 2xl:text-8xl">
       {{ $t("appHeaderOurValues") }}

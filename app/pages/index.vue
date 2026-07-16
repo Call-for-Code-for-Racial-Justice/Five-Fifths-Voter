@@ -3,6 +3,11 @@ definePageMeta({
   shrinkingBanner: true,
 });
 
+useHead({
+  htmlAttrs: {
+    class: "snap-y snap-mandatory scroll-smooth",
+  },
+});
 </script>
 
 <template>
