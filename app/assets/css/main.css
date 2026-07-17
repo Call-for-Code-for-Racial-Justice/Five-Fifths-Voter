@@ -21,6 +21,9 @@ fern green #397F42
 cal green #24502A
 */
 
+@custom-variant tall (@media (max-height: 900px));
+@custom-variant short (@media (max-height: 675px));
+
 @theme {
   --color-ff-purple-01: #210d34;
   --color-ff-purple-02: #85276e;
@@ -44,6 +47,9 @@ cal green #24502A
   --font-mono:
     IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     Liberation Mono, Courier New, monospace;
+
+  --breakpoint-xs:20rem; /* 320px */;
+  --breakpoint-3xl: 120rem; /* 1920px */
 }
 
 /* Five-Fifths Voter DaisyUI themes (Tailwind v4 + DaisyUI v5) */
