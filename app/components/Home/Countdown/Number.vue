@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div class="bg-neutral rounded-box text-neutral-content flex flex-col p-2">
-    <div class="countdown font-mono grid place-items-center text-sm md:text-5xl lg:text-7xl">
+    <div class="countdown font-mono grid place-items-center text-sm md:text-4xl lg:text-7xl 3xl:text-9xl short:text-sm">
       <div :style="`--value:${value}`" aria-live="polite" :aria-label="`${value}`">{{ value }}</div>
     </div>
     <span class="block md:hidden text-xs">{{ mobileLabel }}</span>

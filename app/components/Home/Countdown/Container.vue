@@ -102,8 +102,12 @@ onBeforeUnmount(() => clearInterval(intervalID));
 
 <template>
   <footer
-      class="sticky [@media(max-height:568px)]:static left-0 -mx-1 bottom-0 z-20 h-20 bg-error md:h-28 xl:h-32 3xl:h-64 p-2 flex items-center justify-center overflow-hidden">
-    <div class="text-error-content p-2 font-semibold text-lg [@media(max-width:320px)]:text-xs md:text-3xl lg:text-4xl flex-1 max-w-lg">
+      class="sticky
+      short:static
+      left-0 -mx-1 bottom-0 z-20 bg-error
+      h-20 lg:h-32 3xl:h-64 short:h-20 flex
+      items-center justify-center overflow-hidden">
+    <div class="text-error-content p-2 font-semibold text-lg xs:text-xs md:text-3xl lg:text-4xl short:text-base flex-1 max-w-lg">
       {{ $t("countdownHeader", "Days until the 2026 US Midterm Election") }}
     </div>
     <div class="grid auto-cols-max grid-flow-col gap-1 md:gap-5 text-center">

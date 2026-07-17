@@ -18,14 +18,14 @@ watchEffect(() => {
   <section
       id="values"
       ref="section"
-      class="ml-3 h-dvh [@media(max-height:568px)]:h-auto pt-24 3xl:pt-56"
+      class="ml-3 min-h-dvh short:min-h-0 pt-24 3xl:pt-56 snap-start short:snap-none short:mb-4"
   >
     <h1 class="mb-4 px-2 text-5xl sm:text-6xl 2xl:text-8xl">
       {{ $t("appHeaderOurValues") }}
     </h1>
     <div class="space-y-3">
       <div class="collapse collapse-arrow bg-base-200 border border-base-300">
-        <input type="radio" name="values-accordion" checked="checked" >
+        <input type="radio" name="values-accordion" :checked="true" >
         <div class="collapse-title sm:text-lg font-semibold" aria-controls=item-education>
           {{ $t('landingPageEdu') }}
         </div>
