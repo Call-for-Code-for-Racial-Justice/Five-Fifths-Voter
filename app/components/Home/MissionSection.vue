@@ -17,7 +17,7 @@ watchEffect(() => {
       class="ml-3 min-h-dvh short:min-h-0 pt-24 3xl:pt-56 snap-start short:snap-none"
   >
     <h1
-        class="mb-4 px-2 text-5xl sm:text-6xl 2xl:text-8xl"
+        class="mb-4 px-2 text-5xl font-bold"
     >
       {{ $t("landingPageMain") }}
     </h1>

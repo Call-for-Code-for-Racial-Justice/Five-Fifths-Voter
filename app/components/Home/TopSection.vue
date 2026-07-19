@@ -20,7 +20,7 @@ watchEffect(() => {
   >
     <div class="mb-16 w-full px-2 pt-0">
       <div
-          class="whitespace-break-spaces text-5xl sm:text-6xl 2xl:text-8xl"
+          class="whitespace-break-spaces text-5xl font-bold"
       >
         {{ $t('landingTopTagline') }}
       </div>

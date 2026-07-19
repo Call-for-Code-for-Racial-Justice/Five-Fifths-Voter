@@ -20,7 +20,7 @@ watchEffect(() => {
       ref="section"
       class="ml-3 min-h-dvh short:min-h-0 pt-24 3xl:pt-56 snap-start short:snap-none short:mb-4"
   >
-    <h1 class="mb-4 px-2 text-5xl sm:text-6xl 2xl:text-8xl">
+    <h1 class="mb-4 px-2 text-5xl font-bold">
       {{ $t("appHeaderOurValues") }}
     </h1>
     <div class="space-y-3">
