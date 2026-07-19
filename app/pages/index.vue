@@ -5,7 +5,7 @@ definePageMeta({
 
 useHead({
   htmlAttrs: {
-    class: "snap-y snap-mandatory scroll-smooth short:snap-none",
+    class: "snap-y scroll-smooth",
   },
 });
 </script>
