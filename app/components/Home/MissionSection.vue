@@ -14,7 +14,7 @@ watchEffect(() => {
 <template>
   <section
       id="mission"
-      class="ml-3 pt-24 3xl:pt-33"
+      class="ml-3 pt-32"
   >
     <h1
         class="mb-4 px-2 text-5xl font-bold"
