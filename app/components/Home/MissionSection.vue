@@ -14,7 +14,7 @@ watchEffect(() => {
 <template>
   <section
       id="mission"
-      class="ml-3 min-h-dvh short:min-h-0 pt-24 3xl:pt-56 snap-start short:snap-none"
+      class="ml-3 pt-32"
   >
     <h1
         class="mb-4 px-2 text-5xl font-bold"
@@ -23,12 +23,12 @@ watchEffect(() => {
     </h1>
     <div
         ref="section"
-        class="mb-8 whitespace-break-spaces px-2 leading-5 sm:text-lg 2xl:text-2xl">
+        class="whitespace-break-spaces px-2 leading-5 sm:text-lg 2xl:text-2xl">
       {{ $t("landingPageMission") }}
     </div>
     <button
         id="mission-journey-button"
-        class="btn btn-primary lg:btn-xl"
+        class="btn btn-primary lg:btn-xl mt-16"
         @click="navigateTo('/journey')"
     >
       <span class="md:text-lg">{{ $t("appHeaderVoterJourney") }}</span>

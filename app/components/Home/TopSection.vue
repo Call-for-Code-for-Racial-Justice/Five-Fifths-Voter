@@ -16,9 +16,9 @@ watchEffect(() => {
   <section
       id="top"
       ref="section"
-      class="ml-3 min-h-dvh short:min-h-0 pt-24 md:pt-84 snap-start short:snap-none"
+      class="ml-3 pt-24 md:pt-84"
   >
-    <div class="mb-16 w-full px-2 pt-0">
+    <div class="w-full px-2 pt-0">
       <div
           class="whitespace-break-spaces text-5xl font-bold"
       >
@@ -32,7 +32,7 @@ watchEffect(() => {
     </div>
     <button
         id="top-journey-button"
-        class="btn btn-primary lg:btn-xl"
+        class="btn btn-primary lg:btn-xl mt-16"
         @click="navigateTo('/journey')"
     >
       <span class="md:text-lg">{{ $t("appHeaderVoterJourney") }}</span>
