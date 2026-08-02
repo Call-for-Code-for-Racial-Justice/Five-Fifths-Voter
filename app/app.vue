@@ -1,7 +1,7 @@
 <script setup>
 const title = "five/fifths voter";
 const description = "5/5 equals a whole. A whole person, a whole community, a whole nation. Our platform provides a personalized experience with useful tools to help marginalized voters overcome voting process roadblocks.";
-const imageUrl = "/images/five-fifths-voter.jpg";
+const imageUrl = "/images/five-fifths-voter.png";
 useSeoMeta({
   title: title,
   ogTitle: title,
