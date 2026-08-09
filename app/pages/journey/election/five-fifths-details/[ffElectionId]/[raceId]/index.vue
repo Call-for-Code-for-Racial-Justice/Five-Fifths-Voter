@@ -10,13 +10,14 @@ const { election, electionStatus } = await useElectionByFfId(ffElectionId);
 const races = computed(() => election.value?.races || []);
 const race = computed(() => races.value?.find((r: { id: string }) => r.id === raceId.value));
 const state = computed(() => election.value?.region_code);
+const raceName = computed(() => race.value?.name ?? raceId.value);
 
 useSeoMeta({
-  title: () => `five/fifths voter | Candidates — ${raceId.value}`,
-  ogTitle: () => `five/fifths voter | Candidates — ${raceId.value}`,
-  description: () => election.value ? `Candidates running for ${raceId.value} in ${election.value.description}` : `Candidates running for ${raceId.value}`,
-  ogDescription: () => election.value ? `Candidates running for ${raceId.value} in ${election.value.description}` : `Candidates running for ${raceId.value}`,
-  twitterDescription: () => election.value ? `Candidates running for ${raceId.value} in ${election.value.description}` : `Candidates running for ${raceId.value}`,
+  title: () => `five/fifths voter | ${state.value} Candidates — ${raceName.value}`,
+  ogTitle: () => `five/fifths voter | ${state.value} Candidates — ${raceName.value}`,
+  description: () => election.value ? `${state.value} Candidates running for ${raceName.value} in ${election.value.description}` : `Candidates running for ${raceId.value}`,
+  ogDescription: () => election.value ? `${state.value} Candidates running for ${raceName.value} in ${election.value.description}` : `Candidates running for ${raceId.value}`,
+  twitterDescription: () => election.value ? `${state.value} Candidates running for ${raceName.value} in ${election.value.description}` : `Candidates running for ${raceId.value}`,
   twitterCard: "summary_large_image",
 });
 
