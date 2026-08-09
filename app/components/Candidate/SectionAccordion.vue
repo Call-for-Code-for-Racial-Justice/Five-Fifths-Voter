@@ -36,7 +36,7 @@ defineProps<{
     <div class="collapse-content px-0 pb-0">
       <div class="border-t border-base-200">
         <!-- Column headers -->
-        <div class="grid grid-cols-[1fr_80px_1fr_72px] gap-2 px-4 py-1.5 bg-base-200 text-xs lg:text-sm text-base-content/50">
+        <div class="hidden lg:grid grid-cols-[1fr_80px_1fr_72px] gap-2 px-4 py-1.5 bg-base-200 text-xs lg:text-sm text-base-content/50">
           <div>Topic</div>
           <div class="text-center">Coverage</div>
           <div class="text-center">Stated position</div>

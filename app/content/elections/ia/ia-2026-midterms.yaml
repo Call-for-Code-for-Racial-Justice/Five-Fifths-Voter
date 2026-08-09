@@ -1,0 +1,66 @@
+ocdId: "ocd-division/country:us/state:ia"
+date: "2026-11-03"
+description: "General election for Governor, US Senate, US House, State Legislature, and other statewide offices."
+type: "general"
+website: "https://sos.iowa.gov/elections-voting"
+guidancePhase: "final"
+fiveFifthsId: "ia-2026-midterms"
+region_code: "IA"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  ballotpediaUrl: https://ballotpedia.org/Iowa_elections,_2026
+  early:
+    url: "https://sos.iowa.gov/voters/absentee-voting"
+    startDate: "2026-10-14"
+    endDate: "2026-11-02"
+    varies: true
+    notes: >
+      In-person absentee (early) voting begins October 14 at your county auditor's office.
+      Additional satellite early voting locations may be available depending on your
+      county; hours and locations vary. Early voting runs through November 2, the day
+      before Election Day. Contact your county auditor's office for local hours and sites.
+  byMail:
+    explainerUrl: "https://sos.iowa.gov/voters/absentee-voting"
+    notes: >
+      Iowa does not automatically mail ballots to voters. Any registered voter may request
+      an absentee ballot; no excuse is required. Absentee ballot requests may be submitted
+      starting August 25, 2026. County auditors can begin mailing ballots to voters who
+      requested them starting October 14, 2026. Only the voter, an immediate family
+      member, household member, or caregiver may return a completed ballot on the voter's
+      behalf.
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2026-11-03"
+      receivedBy: "2026-11-03"
+      description: >
+        Completed absentee ballots must be received by your county auditor's office by
+        the time polls close on Election Day, 8:00 p.m. on November 3, 2026. Iowa no
+        longer counts ballots based on postmark; they must physically arrive by the
+        Election Day deadline, so mail your ballot back well in advance or return it
+        in person to your county auditor's office.
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-10-19"
+        description: >
+          Requests for absentee ballots must be received by your county auditor's office
+          by 5:00 p.m. on October 19, 2026. Request forms are available on the Iowa
+          Secretary of State's website and must be submitted to your county auditor.
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: >
+      Iowa requires voters to show identification at the polls. Acceptable forms include
+      an Iowa driver's license, Iowa non-operator's ID, U.S. passport, U.S. military or
+      veteran ID, Iowa Voter ID PIN card, or Tribal ID card/document. If you don't have
+      one of these forms of ID, another registered voter in your precinct may attest to
+      your identity, or you may prove identity and residence using Election Day
+      registration documents. If you still cannot provide acceptable ID, you may cast a
+      provisional ballot; to have it counted, you must provide ID to your county auditor's
+      office by noon on the Monday following the election. See:
+      https://voterready.iowa.gov/voter-id-information/
+    electionDay:
+      opening: "7:00 AM"
+      closing: "8:00 PM. If you are in line by 8:00 PM, you are allowed to cast your ballot."
+races:
+  - name: "US Senate 2026"
+    id: "ia-senate-2026"
