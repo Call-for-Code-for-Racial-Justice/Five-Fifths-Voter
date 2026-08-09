@@ -1,0 +1,140 @@
+fiveFifthsId: "thomas-laehn"
+name: "Thomas Laehn"
+state: "IA"
+race: "US Senate 2026"
+race_id: "ia-senate-2026"
+party: "Libertarian"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "TL"
+ballot_order: 3
+issues:
+  clarity: "Very specific and clearly stated on constitutional/structural issues, reproductive policy, and the federal role in healthcare, education, and welfare; still no coverage found on several taxonomy topics"
+  sources_count: 5
+  sources_list:
+    - "Local 5 News (ABC affiliate) interview with Thomas Laehn"
+    - "Second interview with Thomas Laehn (petition-filing day)"
+    - "Laehn for Iowa campaign website — Issues page"
+  last_updated: "2026-08-09"
+  callout: "Thomas Laehn is the Libertarian nominee for Iowa's open U.S. Senate seat and the sitting Greene County Attorney, the first Libertarian elected to partisan office in Iowa. His campaign centers on opposing the two-party system, ending eminent domain abuse (particularly tied to the Summit Carbon Solutions CO2 pipeline), restoring congressional war powers, reducing the national debt, and campaign finance reform (eliminating PAC/super PAC influence), several of which fall outside the taxonomy topics below. He describes himself as personally 'radically' pro-life while holding that abortion regulation is constitutionally a state matter, and says he opposes the federal social safety net in principle but would preserve Social Security, Medicare, and Medicaid as settled parts of American life. He has also criticized Congress for ceding authority to the president via emergency powers, opposed recent tariffs as executive overreach, and supports eliminating the U.S. Department of Education."
+  links:
+    - label: "Local 5 News interview with Thomas Laehn"
+      url: "https://www.youtube.com/watch?v=6M0iJ6M9uS4"
+    - label: "Second interview with Thomas Laehn (petition-filing day)"
+      url: "https://www.youtube.com/watch?v=MJVNk9X_oco"
+    - label: "Laehn for Iowa — Issues page"
+      url: "https://laehn4iowa.org/issues"
+    - label: "The Iowa Mercury — 'No spoiler here, says Libertarian U.S. Senate candidate'"
+      url: "https://theiowamercury.substack.com/p/no-spoiler-here-says-libertarian"
+    - label: "The Gazette — Greene County attorney enters crowded Iowa U.S. Senate race as Libertarian"
+      url: "https://www.thegazette.com/news/elections/greene-county-attorney-enters-crowded-iowa-u-s-senate-race-as-libertarian/article_0b6849bd-897b-5a1e-bd0d-d80444bcfac6.html"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "No position found in reviewed sources. His comments on healthcare costs relate to opposing cuts in a specific federal bill rather than a stated general cost-of-living policy."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Taxation"
+        note: "No general taxation position found in reviewed sources. He calls for eliminating specific federal tax credits (IRS sections 45Q/45Z) that subsidize carbon capture pipelines, but this is framed as ending a narrow corporate subsidy tied to the eminent domain issue, not a general position on tax rates or structure."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Small business & farming"
+        note: "No position found in reviewed sources framed in terms of business or farm regulation/support. His central eminent domain platform would prevent private pipeline companies from seizing farmland, which is highly relevant to farmers but is presented as a constitutional property-rights issue rather than a small-business or agricultural policy position, so it is not scored here."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "As a county prosecutor, states 'our nation's drug laws do more harm than good' and that the cost to taxpayers to investigate, prosecute, and incarcerate people for marijuana use outweighs the benefits; says decriminalizing marijuana possession and use will be the very first bill he introduces in the Senate."
+        coverage: 3
+        position_tag: "Reduce incarceration"
+        position_type: "pos"
+        source: 2
+      - topic: "Reproductive policy"
+        note: "In a detailed interview, describes himself as personally 'pretty radically pro-life' and says that if abortion policy were his call at the state level, 'I would ban all abortion,' allowing he might vote for exceptions 'to limit abortions in an incremental fashion.' As a matter of federal constitutional principle, he holds that Congress has 'zero authority' to regulate abortion and would leave the issue to state legislators rather than act on his personal view at the federal level — but that jurisdictional position sits on top of a clearly stated substantive pro-life view, so the direction is scored accordingly."
+        coverage: 3
+        position_tag: "Pro-life"
+        position_type: "pos"
+        source: 3
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources. His 'restoring political power to the people' platform concerns campaign finance (eliminating PAC/super PAC influence) and term limits rather than ballot access or voter verification."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "States he 'would have voted against the big beautiful bill and all these changes,' arguing it is causing Iowans to lose healthcare coverage and will force rural hospital closures. Separately, says he opposes the core of the federal social safety net 'in principle' but would vote to maintain Social Security, Medicare, and Medicaid because they are 'a settled part of the fabric of American life.' These are two distinct, separately stated positions pulling in different directions — ideological opposition to government involvement in healthcare alongside a practical commitment to preserving existing public programs and opposing cuts to them."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 3
+      - topic: "Education"
+        note: "Per The Gazette's coverage of his campaign launch, he 'wants to reduce federal involvement in education, social welfare and foreign conflicts' and 'supports eliminating the U.S. Department of Education.' This is a specific, stated position, but it concerns federal-versus-state jurisdiction over education policy rather than the public-funding-versus-school-choice spectrum this taxonomy's tags describe, so it is not stretched into a directional tag."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: 4
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "No independent environmental or energy-production position found in reviewed sources. He cites environmentalist groups' opposition to the CO2 pipeline as one reason the project is a 'boondoggle,' but his own stated objections center on eminent domain abuse and wasteful tax credits rather than an environmental or energy-production policy of his own."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "States he will 'fight for a secure border' while also fighting 'to raise or to eliminate artificial caps on the number of people who can legally immigrate to remove the pressure on our nation's borders' — two distinct, separately stated mechanisms (border security enforcement and expanded legal immigration pathways) presented as compatible rather than in tension."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 2
+      - topic: "Housing"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

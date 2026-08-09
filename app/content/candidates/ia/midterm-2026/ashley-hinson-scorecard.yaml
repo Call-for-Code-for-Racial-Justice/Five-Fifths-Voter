@@ -1,0 +1,153 @@
+fiveFifthsId: "ashley-hinson"
+name: "Ashley Hinson"
+state: "IA"
+race: "US Senate 2026"
+race_id: "ia-senate-2026"
+party: "Republican"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "AH"
+ballot_order: 1
+issues:
+  clarity: "Substantive across nearly all topics; well-documented voting/cosponsorship record on reproductive policy, voting/elections, guns, LGBTQ+ policy, criminal justice, and labor"
+  sources_count: 10
+  sources_list:
+    - "Local 5 News (ABC affiliate) interview with Ashley Hinson"
+    - "KTIV interview with Ashley Hinson on the Healthcare Transparency for Patients Act"
+    - "Ashley Hinson for Iowa campaign website — Issues page"
+    - "U.S. House Clerk official roll call vote record"
+    - "Congress.gov official bill cosponsor record"
+    - "Rep. Hinson official press releases (hinson.house.gov)"
+  last_updated: "2026-08-09"
+  callout: "Ashley Hinson is the Republican U.S. Representative for Iowa's 2nd District running for Iowa's open U.S. Senate seat. Her platform emphasizes tax cuts, healthcare price transparency, border enforcement, stricter voter ID requirements, expanded gun rights, and support for Iowa agriculture and biofuels, generally favoring reduced regulation and government spending. She has a long record opposing abortion access, including repeated cosponsorship of the Life at Conception Act, while stating she would not support legislation lacking exceptions for rape, incest, or life of the mother. She also discusses child care access (After Hours Child Care Act), veterans' healthcare, and a ban on members of Congress trading individual stocks, none of which map to taxonomy topics."
+  links:
+    - label: "Local 5 News interview with Ashley Hinson"
+      url: "https://www.youtube.com/watch?v=08mAe5pvkRs"
+    - label: "KTIV interview: Healthcare Transparency for Patients Act"
+      url: "https://www.ktiv.com/2026/08/05/iowa-rep-ashley-hinson-insurance-companies-using-denials-protect-their-bottom-line/"
+    - label: "Ashley Hinson for Iowa — Issues page"
+      url: "https://ashleyhinson.com/issues/"
+    - label: "U.S. House Clerk Roll Call 385 (117th Congress) — Right to Contraception Act"
+      url: "https://clerk.house.gov/Votes/2022385"
+    - label: "Congress.gov — H.R.722 (119th Congress) Life at Conception Act, cosponsors"
+      url: "https://www.congress.gov/bill/119th-congress/house-bill/722/cosponsors"
+    - label: "Hinson press release — SAVE Act"
+      url: "https://hinson.house.gov/media/press-releases/hinson-illegal-immigrants-should-never-vote-us-elections-0"
+    - label: "Hinson press release — Pro-worker/pro-family bills (Flexibility for Workers Education Act, child/elder care)"
+      url: "https://hinson.house.gov/media/press-releases/hinson-pro-family-pro-worker-bills-pass-house-education-and-workforce"
+    - label: "Hinson press release — Concealed Carry Reciprocity Act"
+      url: "https://hinson.house.gov/media/press-releases/hinson-supports-bill-extending-concealed-carry-beyond-state-borders"
+    - label: "U.S. House Clerk Roll Call 373 (117th Congress) — Respect for Marriage Act, and Hinson's own statement"
+      url: "https://clerk.house.gov/Votes/2022373"
+    - label: "Hinson press release — Gang Activity Reporting Act"
+      url: "https://hinson.house.gov/media/press-releases/hinson-reintroduces-bipartisan-legislation-combat-gang-related-crime"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Hinson repeatedly frames her candidacy around lowering costs through tax relief rather than new government programs, citing 'no tax on tips, no tax on overtime, no tax on Social Security' and the working families tax cut bill as the mechanism for relief on groceries, energy, health premiums, and prescription drugs."
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: 0
+      - topic: "Taxation"
+        note: "States plainly 'it's Iowans' money, it's not the government's money,' and cites concrete tax cuts already delivered (child tax credit, no tax on tips/overtime/Social Security) as a continuing priority."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: 0
+      - topic: "Small business & farming"
+        note: "Campaign site states farmers 'don't need Washington telling them how to run their operations and handing down regulations' and commits to pushing back on burdensome regulations and fighting rules like California's Proposition 12."
+        coverage: 3
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: 2
+      - topic: "Workers & wages"
+        note: "Opposed the PRO Act as a 'radical gift to union bosses' that would overturn Iowa's right-to-work law; introduced the Flexibility for Workers Education Act to exclude voluntary employer-provided training from FLSA compensable-hours rules; co-led the Empowering Employer Child and Elder Care Solutions Act, which her office describes as removing regulatory burdens on employers offering dependent-care benefits."
+        coverage: 3
+        position_tag: "Reduce labor regulation"
+        position_type: "pos"
+        source: 7
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Reintroduced the bipartisan Gang Activity Reporting Act with Rep. Marcy Kaptur to require annual federal reporting on gang activity and strengthen information-sharing between the FBI, DHS, and local law enforcement; helped introduce the bipartisan Child Exploitation and Artificial Intelligence Expert Commission Act to build a legal framework for prosecuting AI-generated child sexual abuse material."
+        coverage: 3
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: 9
+      - topic: "Reproductive policy"
+        note: "Has cosponsored the Life at Conception Act in multiple Congresses, including the current 119th Congress (cosponsored 5/19/2025 per Congress.gov's official record), which defines life as beginning at fertilization and does not itself contain exceptions for rape, incest, or life of the mother. Voted against the 2022 Right to Contraception Act (confirmed via official House Clerk roll call). In a 2024 debate she stated 'no piece of legislation would get my support without those exceptions,' and has emphasized reducing maternal health care deserts as her focus."
+        coverage: 3
+        position_tag: "Pro-life"
+        position_type: "pos"
+        source: 4
+      - topic: "Voting & elections"
+        note: "Cosponsored and voted for the SAVE Act (Safeguard American Voter Eligibility Act), which requires documentary proof of citizenship to register to vote in federal elections; her office states the bill directs states to establish alternate documentation processes for people with discrepancies such as a legal name change."
+        coverage: 3
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: 5
+      - topic: "Gun policy"
+        note: "Cosponsored the RIFLE Act to repeal the $200 federal transfer tax on firearms regulated under the National Firearms Act, is an original cosponsor of the Constitutional Concealed Carry Reciprocity Act for nationwide concealed-carry reciprocity, and opposed 2021 Democratic gun-control bills (H.R. 1446, H.R. 8) on the House floor."
+        coverage: 3
+        position_tag: "Expand gun rights"
+        position_type: "pos"
+        source: 8
+      - topic: "LGBTQ+ policy"
+        note: "Voted for the Respect for Marriage Act in 2022 (confirmed via official House Clerk roll call), which she described as legislation that 'respects and maintains settled law' rather than an expansion. Separately, in 2025 she called for a federal Department of Education investigation into her son's school district over LGBTQ+-related morning announcement content, calling it 'indoctrination,' and has criticized the district's transgender/nonbinary student accommodation policy as undermining parental rights. (Note: an initially proposed source claiming she championed the 'Stop the Sexualization of Children Act' was not supported on review — that bill was introduced by Rep. Mary Miller of Illinois, and official congressional records do not list Hinson as a cosponsor.)"
+        coverage: 3
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: 9
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Championing the Healthcare Transparency for Patients Act, requiring insurers to publicly disclose claim denial rates and reasons, plus prior PBM transparency legislation on drug rebates — a transparency/accountability approach to the existing private insurance market rather than expanding public coverage or private options."
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: 1
+      - topic: "Education"
+        note: "Mentions expanding career and technical education and increasing 'transparency in schools' for parents, but does not stake out a position on school funding levels or school choice as defined by the taxonomy."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources. The Gray/Hinson/Panetta/Finstad release actually concerns the PRECISE Act (precision agriculture technology funding), not broadband, and a general article on the House's April 2026 broadband bill package does not mention Hinson as a sponsor or supporter of any of the bills it describes."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Campaign site commits to keeping Iowa 'at the forefront of American energy' by championing year-round E15, strengthening biofuels, and investing in homegrown energy production."
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: 2
+      - topic: "Immigration"
+        note: "Campaign site calls for securing the southern border by 'enforcing America's immigration laws and deporting dangerous criminal illegal immigrants'; interview credits the Trump administration with a 'secure border.'"
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: 2
+      - topic: "Housing"
+        note: "Campaign site proposes the First Home Savings Opportunity Act (tax-free down payment savings for first-time buyers) combined with barring large institutional investors from buying up single-family homes — a savings-incentive plus anti-institutional-buyer approach that doesn't map to a straightforward government-program or deregulation position."
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: 2

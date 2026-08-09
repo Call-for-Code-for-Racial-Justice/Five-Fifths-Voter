@@ -1,0 +1,138 @@
+fiveFifthsId: "josh-turek"
+name: "Josh Turek"
+state: "IA"
+race: "US Senate 2026"
+race_id: "ia-senate-2026"
+party: "Democratic"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "JT"
+ballot_order: 2
+issues:
+  clarity: "Very substantive across nearly all topics, with specific named Iowa legislation cited for most positions"
+  sources_count: 4
+  sources_list:
+    - "Heather Cox Richardson interview with Josh Turek"
+    - "KCCI Channel 8 (CBS affiliate) interview with Josh Turek"
+    - "Josh Turek for Iowa campaign website — Platform page"
+  last_updated: "2026-08-09"
+  callout: "Josh Turek is a Democratic Iowa state representative and two-time Paralympic gold medalist running for Iowa's open U.S. Senate seat. He describes himself as a 'prairie populist' focused on affordability, workers' rights, health care access, and campaign finance/ethics reform, citing a record of bipartisan legislating in a Republican-leaning Iowa House district. He also discusses disability rights (he is the first permanently disabled member of the Iowa legislature), veterans' issues, and cancer/water-quality policy tied to his sister's cancer diagnosis, some of which fall outside the taxonomy topics below."
+  links:
+    - label: "Heather Cox Richardson interview with Josh Turek"
+      url: "https://www.youtube.com/watch?v=1sJ-JDb4tjY"
+    - label: "KCCI Channel 8 interview with Josh Turek"
+      url: "https://www.youtube.com/watch?v=g8YeHgXSkS4"
+    - label: "Josh Turek for Iowa — Platform page"
+      url: "https://turek4iowa.com/platform"
+    - label: "The Gazette — Josh Turek slams Senate Democrats over stalled Farm Bill"
+      url: "https://www.thegazette.com/news/agriculture/democrat-josh-turek-slams-senate-democrats-over-stalled-farm-bill/article_b23a90d5-dcf6-479c-ba93-010192fc388f.html"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Calls for a federal ban on price gouging on food, a minimum wage raise tied to inflation, and closing tax loopholes for billionaires and corporations; platform frames these as active government interventions to lower costs rather than deregulation or market-based approaches."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: 2
+      - topic: "Taxation"
+        note: "Says 'we gotta tax billionaires and large corporations' and describes current tax burden as unfairly shifted onto the middle class and poor via regressive taxes; platform calls for cutting taxes for the middle class and working families while closing loopholes for billionaires and big corporations — a restructuring of who bears the tax burden rather than a uniform increase or cut."
+        coverage: 3
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: 1
+      - topic: "Small business & farming"
+        note: "Sponsored Iowa legislation to break up monopolies driving up agricultural input costs (HF2727), pass Right to Repair (HF2442), and require Mandatory Country of Origin Labeling (HF2443); platform calls for cracking down on monopolies and agribusiness/meatpacking consolidation to protect small farmers and ranchers, alongside ending tariffs he says have hurt farmers. Notably, when the Senate Agriculture Committee's 2026 Farm Bill stalled after Senate Democrats blocked it in a dispute over SNAP cost-sharing provisions, Turek publicly broke with his own party, saying he 'would have voted in support of this Farm Bill' and criticizing Democrats for 'letting perfect be the enemy of the good' — illustrating the bipartisan approach central to his 'prairie populist' framing."
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: 3
+      - topic: "Workers & wages"
+        note: "Says the first bill he would sponsor in the Senate is a 'Dignity at Work' bill to raise the minimum wage, eliminate 14(c) subminimum-wage certificates for disabled workers, and restore collective bargaining rights; sponsored Iowa minimum-wage legislation (HF349) and a right-to-organize bill (HF281), and platform supports passing the federal PRO Act."
+        coverage: 3
+        position_tag: "Raise minimum wage"
+        position_type: "pos"
+        source: 0
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "Wrote and sponsored Iowa legislation (HF2455) to repeal the state's near-total abortion ban; platform states he wants to 'make Roe v. Wade the law of the land again' and protect access to contraception and IVF."
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: 2
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources. His campaign-finance-reform advocacy (DISCLOSE Act, overturning Citizens United, banning corporate PAC money) concerns money in politics rather than ballot access or voter verification, so it is not scored under this taxonomy topic."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Platform states he 'spoke out against legislation removing antidiscrimination protections for gender identity from Iowa's civil rights code' and will 'defend the right for Americans to marry who they love.'"
+        coverage: 3
+        position_tag: "Expand protections"
+        position_type: "pos"
+        source: 2
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "States directly that he believes 'we should arrive ultimately at a public option' while allowing people to keep private doctors and hospitals if they choose; platform also calls for protecting and expanding the ACA, restoring Medicaid funding, and letting Medicare negotiate drug prices — an expansion of public coverage options alongside the existing private system."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: 0
+      - topic: "Education"
+        note: "Sponsored Iowa legislation to repeal school vouchers (HF199) and require transparency around nonpublic school accreditation (HF251); platform calls for ending school vouchers, restoring Department of Education funding, and increasing public school funding, framed as keeping public dollars in public schools."
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: 2
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Platform calls for 'cracking down on chemical companies that pollute our water supply' and funding water quality sensors, framed as part of addressing Iowa's cancer crisis; this is a regulatory approach to water pollution specifically, with no broader stated position on energy production (oil, gas, wind, solar)."
+        coverage: 2
+        position_tag: "Prioritize regulation"
+        position_type: "pos"
+        source: 2
+      - topic: "Immigration"
+        note: "Says three things can be true at once: ICE needs reforms (body cams, use-of-force standards, protections for sensitive locations like churches and schools), the country needs 'safe and secure borders,' and there needs to be 'a far easier pathway to citizenship' — citing the bipartisan Dignity Act. Also supports deporting those who commit violent crimes and stopping fentanyl trafficking. These are two distinct, separately evidenced mechanisms — expanded/simplified citizenship pathways and border/interior enforcement — rather than a single-direction position."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 1
+      - topic: "Housing"
+        note: "Sponsored Iowa legislation to ban Wall Street private equity firms from buying up single-family homes and farmland (HF745) alongside tax cuts for first-time homebuyers (HF697); platform also calls for simplifying permitting so affordable housing can be built faster. This combines restricting institutional buyers (an intervention) with streamlining permitting to build more supply (reducing a barrier) — two distinct, separately evidenced mechanisms pulling in different directions."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 2
