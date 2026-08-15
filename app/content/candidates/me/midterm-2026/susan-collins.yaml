@@ -1,0 +1,148 @@
+fiveFifthsId: "susan-collins"
+name: "Susan Collins"
+state: "ME"
+race: "US Senate 2026"
+race_id: "me-senate-2026"
+party: "Republican"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: true
+debate_participant: false
+avatar_initials: "SC"
+ballot_order: 1
+issues:
+  clarity: "Moderate policy coverage; strongest on healthcare and cost of living, most other topics not addressed in reviewed sources"
+  sources_count: 7
+  sources_list:
+    - "Fox News interview clips (via reaction/commentary video), June 23, 2026"
+    - "Senate floor remarks urging support for the INSULIN Act, April 29, 2026"
+    - "Senate floor remarks on continuing resolution to reopen government, November 9, 2025"
+    - "Senate floor remarks on FY2026 appropriations package (CJS/Energy/Interior), delivered on the Senate floor"
+    - "Senate floor remarks introducing the We Can't Wait Act (SSDI reform), February 25, 2026"
+    - "Keynote address at Maine Manufacturers Association annual summit, May 8, 2026"
+    - "Official campaign website, susancollins.com"
+  last_updated: "2026-08-15"
+  callout: "Collins is the incumbent Republican senator seeking a sixth term, facing Democratic nominee Troy Jackson after Graham Platner's withdrawal. In reviewed sources she emphasized her support for Israel and criticized Platner's record, and defended her past vote to confirm Justice Kavanaugh while stating she disagreed with the Supreme Court's decision overturning Roe v. Wade. She also introduced the bipartisan We Can't Wait Act, which would let SSDI claimants opt to receive benefits immediately after approval rather than waiting five months, in exchange for a modest reduction in monthly benefits; this is a disability-insurance policy that does not map to the taxonomy. Israel/foreign policy is likewise outside the taxonomy and is noted here rather than scored."
+  links:
+    - label: "Fox News interview clips (via reaction video transcript)"
+      url: "https://www.youtube.com/watch?v=keCtNhddl2c"
+    - label: "Senate floor remarks urging support for the INSULIN Act"
+      url: "https://www.collins.senate.gov/newsroom/senator-collins-delivers-floor-remarks-urging-support-for-her-insulin-act"
+    - label: "Senate floor remarks on reopening government (continuing resolution)"
+      url: "https://www.collins.senate.gov/newsroom/senator-collins-champions-deal-to-reopen-government"
+    - label: "Senate floor remarks on FY2026 appropriations package (CJS/Energy/Interior)"
+      url: "https://www.collins.senate.gov/newsroom/senator-collins-delivers-floor-remarks-ahead-of-successful-cloture-vote-on-bipartisan-three-bill-funding-package"
+    - label: "Senate floor remarks introducing the We Can't Wait Act"
+      url: "https://www.collins.senate.gov/newsroom/from-the-senate-floor-senator-collins-introduces-the-we-cant-wait-act"
+    - label: "Keynote address at Maine Manufacturers Association summit"
+      url: "https://www.collins.senate.gov/newsroom/senator-collins-delivers-keynote-address-at-maine-manufacturers-annual-summit"
+    - label: "Campaign website"
+      url: "https://susancollins.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "In floor remarks on reopening the government, Collins championed a continuing resolution restoring full-year funding for SNAP and WIC, which she said were 'in jeopardy for our most vulnerable families, including 170,000 Mainers who rely on the SNAP program,' and noted the deal also restored Head Start and low-income heating assistance (LIHEAP) funding."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: 2
+      - topic: "Taxation"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Small business & farming"
+        note: "In floor remarks, Collins highlighted appropriations supporting Maine's fishing and lobster industry and 'working waterfronts,' including funding tied to oceans and fisheries programs, citing a recent Portland wharf fire and the community/business response. This is a brief, program-specific mention rather than a general small-business platform."
+        coverage: 1
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: 3
+      - topic: "Workers & wages"
+        note: "At the Maine Manufacturers Association summit, Collins discussed securing over $46 million in Congressionally Directed Spending for community college trade programs (welding, plumbing, electrical, logging) and $285 million for the Department of Labor's Apprenticeship Grant Program. This is workforce-training investment, not a stated position on minimum wage, worker protections, or labor regulation as defined by this topic, so no position tag applies."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: 5
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Floor remarks briefly mentioned the Byrne formula program, which 'supports a range of law enforcement activities, from prosecution to crime prevention,' as part of the Commerce, Justice, and Science appropriations bill. A single passing reference, not a detailed policy stance."
+        coverage: 1
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: 3
+      - topic: "Reproductive policy"
+        note: "Collins stated in the interview: 'I disagreed with the Supreme Court's decision overturning Roe v. Wade,' while also noting Roe would have been overturned regardless of how she voted on Kavanaugh given the court's split. Older clips replayed in the same video show her defending her Kavanaugh vote by citing his statements that Roe was 'settled law' and that she would not support a nominee 'hostile' to Roe. Taken together, her own words in this source describe a pro-choice position, though the note reflects an incumbent explaining a contested past vote rather than a forward-looking policy commitment."
+        coverage: 2
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: 0
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Collins introduced the bipartisan INSULIN Act with Sens. Shaheen, Kennedy, and Warnock, which would cap insulin costs at $35/month for Americans on private and employer-sponsored insurance and create a pilot program offering insulin at the same cost to uninsured Americans. In floor remarks she described a Maine constituent who nearly died rationing insulin she couldn't afford, and framed the bill as fixing 'fundamental flaws in the insulin market and the FDA approval process.' This is a specific market-affordability regulation paired with a targeted access program for the uninsured — a distinct approach that doesn't map to 'expand public coverage' or 'expand private options' as defined."
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: 1
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Floor remarks described the Interior appropriations bill as providing 'resources for the management and conservation of public lands while fostering economic development through critical energy programs,' also citing clean air/water/soil protections and wildfire suppression funding alongside energy investment. This pairs conservation-oriented and energy-production-oriented funding in the same bill."
+        coverage: 2
+        position_tag: "Balance both"
+        position_type: "pos"
+        source: 3
+      - topic: "Immigration"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
