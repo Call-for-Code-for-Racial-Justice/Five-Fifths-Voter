@@ -1,0 +1,80 @@
+ocdId: "ocd-division/country:us/state:me"
+date: "2026-11-03"
+description: "General election for Governor, US Senate, US House, and State Legislature."
+type: "general"
+website: "https://www.maine.gov/sos/elections-voting"
+guidancePhase: "final"
+fiveFifthsId: "me-2026-midterms"
+region_code: "ME"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  ballotpediaUrl: https://ballotpedia.org/Maine_elections,_2026
+  early:
+    url: "https://www.maine.gov/sos/elections-voting/absentee-voting"
+    startDate: "2026-10-05"
+    endDate: "2026-10-29"
+    varies: true
+    notes: >
+      Maine's early voting is conducted as in-person absentee voting at your municipal
+      clerk's office. Clerks begin issuing ballots 30 days before Election Day, so
+      in-person early voting starts October 5 and runs through October 29, the Thursday
+      before Election Day. Maine has no statewide county-level early voting sites;
+      every town and city administers its own, and clerk's office hours vary widely,
+      especially in small municipalities. Contact your town or city clerk for local
+      hours and location. No excuse is required.
+  byMail:
+    explainerUrl: "https://www.maine.gov/sos/elections-voting/absentee-voting"
+    notes: >
+      Maine does not automatically mail ballots to voters. Any registered voter may
+      request an absentee ballot; no excuse is required. Requests for the November 3
+      general election opened August 3, 2026, three months before Election Day, and may
+      be submitted online through the Secretary of State's absentee ballot request
+      portal, by mail, by email, by phone, or in person at your municipal clerk's
+      office. An immediate family member may also request a ballot on your behalf.
+      Municipal clerks begin mailing ballots on October 5, 2026. Beginning in 2026,
+      voters may also enroll in Ongoing Absentee Ballot Status to automatically receive
+      a ballot for all future elections; the application must be printed and returned
+      to your municipal clerk. Return envelopes carry prepaid postage, and completed
+      ballots may also be returned in person or to a municipal drop box. Voters can
+      track the status of a request and ballot on the Secretary of State's website.
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2026-11-03"
+      receivedBy: "2026-11-03"
+      description: >
+        Completed absentee ballots must be received by your municipal clerk by the time
+        polls close on Election Day, 8:00 p.m. on November 3, 2026. Maine does not count
+        ballots based on postmark; they must physically arrive by the Election Day
+        deadline. State election officials recommend mailing your ballot back at least
+        seven days in advance, or returning it in person or to a municipal drop box.
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-10-29"
+        description: >
+          Requests for absentee ballots must be received by your municipal clerk by
+          5:00 p.m. on Thursday, October 29, 2026. After that deadline, you may still
+          request a ballot using a Special Circumstances Absentee Ballot Application if
+          you qualify — unexpected absence from the municipality during all polling
+          hours, a physical disability, incapacity or illness preventing you from
+          leaving home or a treatment facility, or residence in a coastal island ward or
+          precinct that prevents travel to the polls.
+  inPerson:
+    idRequiredAllVoters: false
+    idInstructions: >
+      Maine does not require voters to show identification at the polls. You state your
+      name and address to the election clerk, who verifies it against the voter list.
+      Voters rejected a photo ID requirement in November 2025 when Question 1 failed,
+      so no ID requirement takes effect for the 2026 general election. Two exceptions
+      apply: if you registered by mail and are voting for the first time in Maine, you
+      may be asked for photo ID or a document showing your name and current address;
+      and if you register on Election Day, you must show proof of identity and proof of
+      residency. Maine allows same-day voter registration at your polling place through
+      the close of polls. See:
+      https://www.maine.gov/sos/elections-voting/voter-information
+    electionDay:
+      opening: "Varies by municipality. Polls open between 6:00 AM and 10:00 AM; towns with more than 500 residents must open by 8:00 AM. Check with your town or city clerk."
+      closing: "8:00 PM. If you are in line by 8:00 PM, you are allowed to cast your ballot."
+races:
+  - name: "US Senate 2026"
+    id: "me-senate-2026"

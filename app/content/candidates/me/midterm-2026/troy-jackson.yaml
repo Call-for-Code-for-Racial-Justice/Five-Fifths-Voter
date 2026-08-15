@@ -1,0 +1,142 @@
+fiveFifthsId: "troy-jackson"
+name: "Troy Dale Jackson"
+state: "ME"
+race: "US Senate 2026"
+race_id: "me-senate-2026"
+party: "Democratic"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "TJ"
+ballot_order: 2
+issues:
+  clarity: "Broad policy coverage; specific and well-documented on healthcare, taxation, reproductive policy, immigration, and LGBTQ+ policy"
+  sources_count: 5
+  sources_list:
+    - "MS Now interview as newly nominated Senate candidate (first one-on-one interview since securing the nomination)"
+    - "Local TV interview from Jackson's earlier 2026 gubernatorial campaign"
+    - "NPR, 'Democrats in Maine formally nominate Troy Jackson as their new U.S. Senate candidate,' July 25, 2026"
+    - "CNN, reporting on Jackson's past anti-abortion questionnaire responses and current platform, July 23, 2026"
+    - "Official campaign website, jacksonformaine.com"
+  last_updated: "2026-08-15"
+  callout: "Jackson is a former Maine Senate President and longtime state legislator from Allagash, and a fifth-generation logger, who became the Democratic Senate nominee after Graham Platner withdrew, winning 566 of 571 delegate votes at a special nominating convention. He runs on an economic populist platform emphasizing affordability, Medicare for All, and higher taxes on the ultra-wealthy and large corporations. He also supports ending U.S. military aid to Israel, a foreign policy position outside this taxonomy. Reporting notes he has reversed earlier conservative positions on abortion and LGBTQ+ rights held during his early years in public office."
+  links:
+    - label: "MS Now interview as Senate nominee"
+      url: "https://youtu.be/KYLMmP8JKBc?si=ZbiXjM2yaQPRcruJ"
+    - label: "Local TV interview (2026 gubernatorial campaign)"
+      url: "https://youtu.be/B8J_oSYcHHU?si=QXne56a4dsze4QtB"
+    - label: "NPR — Maine Democrats nominate Troy Jackson for U.S. Senate"
+      url: "https://www.npr.org/2026/07/25/nx-s1-5902982/democrats-maine-senate-race"
+    - label: "CNN — Jackson's past anti-abortion questionnaires and current platform"
+      url: "https://www.cnn.com/2026/07/23/politics/troy-jackson-maine-senate-former-hardline-anti-abortion-views"
+    - label: "Campaign website"
+      url: "https://www.jacksonformaine.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "In the gubernatorial-era interview, Jackson discussed rising electricity costs and proposed selling Maine's clean energy surplus to neighboring states (Massachusetts, Rhode Island, Connecticut) rather than ceding ownership, as a way to lower in-state energy costs; he also favored tax incentives for clean energy over placing costs directly on ratepayers, and named property tax reform as a major affordability issue. NPR reports his Senate platform centers on affordability concerns."
+        coverage: 2
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: 1
+      - topic: "Taxation"
+        note: "In the MS Now interview, Jackson stated plainly: 'I don't believe in income tax cuts for wealthy people,' contrasting himself with Collins and Trump. NPR reports his platform backs raising taxes on the ultra-wealthy and large corporations."
+        coverage: 3
+        position_tag: "Increase taxes"
+        position_type: "pos"
+        source: 2
+      - topic: "Small business & farming"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "Jackson repeatedly emphasized his labor background and record, saying in the MS Now interview 'I'm a big labor person. I believe that workers need to have somebody in their corner,' and in the earlier interview described fighting 'for workers in the legislature' and walking picket lines. No specific mechanism (minimum wage level, specific protection, or deregulation) was named in either source."
+        coverage: 2
+        position_tag: "Expand worker protections"
+        position_type: "pos"
+        source: 0
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "NPR reports Jackson advocates for Congress to federalize the right to an abortion. CNN reports he currently supports establishing a federal right to abortion, co-sponsored a 2023 Maine law allowing abortions after fetal viability when a doctor determines it is medically necessary, and received a 100% rating from Planned Parenthood's Maine chapter in 2023. CNN also documents that he held sweeping anti-abortion positions in candidate questionnaires in 2004 and 2010, including answering that abortion should never be legal; his stated position has since reversed."
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: 3
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "NPR reports Jackson is advocating for Congress to pass civil rights legislation protecting LGBTQ Americans, and notes this is an area where he changed his views after taking more conservative stances early in his public career."
+        coverage: 2
+        position_tag: "Expand protections"
+        position_type: "pos"
+        source: 2
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Jackson said in the MS Now interview he has been 'fighting for universal health care, prescription drug coverage.' In the earlier interview he elaborated at length: he supports Medicare for All and a public option, sponsored bipartisan prescription drug pricing bills (vetoed by Gov. Mills) that he said cut roughly 50% of drug costs, said healthcare 'is not... a for profit industry,' and said he would 'go after private equity in our hospitals in our nursing homes.' NPR confirms Medicare for All is part of his Senate platform."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: 1
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "In the gubernatorial-era interview, Jackson said pursuing clean energy made 'here in Maine' is smart, citing volatility from relying on other countries/regions for fuel, and discussed a transmission line project to sell Maine's clean energy to other states rather than cede ownership to them. He favored tax incentives for clean energy adoption over shifting costs onto ratepayers. This combines a pro-clean-energy stance with a market/ownership framing rather than emphasizing regulation alone."
+        coverage: 2
+        position_tag: "Prioritize regulation"
+        position_type: "pos"
+        source: 1
+      - topic: "Immigration"
+        note: "NPR reports Jackson is pushing for the abolishment of Immigration and Customs Enforcement (ICE), aligning him with other progressive candidates on the left. No broader position on legal immigration pathways was stated in reviewed sources."
+        coverage: 2
+        position_tag: "Expand legal pathways"
+        position_type: "pos"
+        source: 2
+      - topic: "Housing"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
