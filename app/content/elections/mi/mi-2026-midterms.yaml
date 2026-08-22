@@ -1,0 +1,93 @@
+ocdId: "ocd-division/country:us/state:mi"
+date: "2026-11-03"
+description: "General election for Governor, US Senate, US House, and State Legislature."
+type: "general"
+website: "https://www.michigan.gov/sos/elections"
+guidancePhase: "final"
+fiveFifthsId: "mi-2026-midterms"
+region_code: "MI"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  ballotpediaUrl: https://ballotpedia.org/Michigan_elections,_2026
+  early:
+    url: "https://www.michigan.gov/sos/elections/voting/early-in-person-voting"
+    startDate: "2026-10-24"
+    endDate: "2026-11-01"
+    varies: true
+    notes: >
+      Michigan's constitutionally mandated statewide in-person early voting period runs
+      Saturday, October 24 through Sunday, November 1, 2026; every municipality must
+      offer at least one early voting site during this window. Some communities choose
+      to open early voting sooner, as early as October 5, and some may offer an
+      additional day of early voting on Monday, November 2 until 4:00 p.m. Hours,
+      exact sites, and whether a community extends early voting vary by clerk, so
+      confirm locally at mi.gov/vote. Voters may also bring an already-completed
+      absentee ballot to an early voting site and insert it directly into the
+      tabulator (not available for Detroit-registered voters).
+  byMail:
+    explainerUrl: "https://www.michigan.gov/sos/elections/voting/absentee-voting"
+    notes: >
+      Any registered Michigan voter may request an absentee ballot; no excuse is
+      required. Absentee voting opens 40 days before Election Day, so ballots become
+      available starting September 24, 2026, and clerks begin mailing them the same
+      day requests are processed. Requests can be submitted online, by mail, or in
+      person at your city or township clerk's office. Voters wanting to vote from home
+      are encouraged to request a ballot no later than October 13 to allow enough time
+      to receive, complete, and return it by the deadline. Michigan also offers a
+      Permanent Absentee Voter List that automatically mails a ballot for all future
+      elections once enrolled. Completed ballots may be returned by mail, dropped in
+      an official drop box, delivered to the clerk's office, or inserted directly into
+      a tabulator at an early voting site or (outside Detroit) at your Election Day
+      polling place. Only the voter, an immediate family or household member, a mail
+      carrier, or an election official may deliver a signed absentee ballot.
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2026-11-03"
+      receivedBy: "2026-11-03"
+      description: >
+        Completed absentee ballots must be received by your local clerk's office or
+        inserted into an official drop box by 8:00 p.m. on Election Day, November 3,
+        2026, to be counted; Michigan does not count absentee ballots based on
+        postmark alone. Military and overseas voters are the exception: their ballots
+        must be postmarked on or before Election Day and received within six days
+        after the election, by Monday, November 9, 2026.
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-10-30"
+        description: >
+          Requests for an absentee ballot by mail or online must be received by your
+          clerk by 5:00 p.m. on Friday, October 30, 2026; there is no guarantee a
+          ballot requested near this deadline will arrive in time to be returned by
+          mail. After that, voters may still request and vote an absentee ballot
+          in person at their city or township clerk's office through 4:00 p.m. on
+          Monday, November 2, 2026. Military and overseas voters have a separate
+          deadline of 2:00 p.m. on Saturday, October 31, 2026 to submit a ballot
+          application.
+  inPerson:
+    idRequiredAllVoters: false
+    idInstructions: >
+      Michigan asks voters to show photo identification at the polls, but a photo ID
+      is not required to vote. Accepted forms include a Michigan or out-of-state
+      driver's license or state ID card, a U.S. passport, a military photo ID, a
+      tribal photo ID, a student ID from an educational institution, a concealed
+      pistol license, or a photo ID issued by a federal, state, county, or local
+      government. Voters who do not have an acceptable photo ID, or who forget to
+      bring it, can still vote after signing an Affidavit of Voter Not in Possession
+      of Picture Identification, and their ballot is counted like any other. Michigan
+      allows same-day voter registration: eligible voters who are not yet registered,
+      or need to update their address, can register in person with proof of
+      residency and vote an absentee ballot at their city or township clerk's office
+      any time through 8:00 p.m. on Election Day. The last day to register online or
+      by mail is October 19, 2026; after that, registration must be done in person at
+      the clerk's office. See: https://www.michigan.gov/sos/elections/voting
+    electionDay:
+      opening: "7:00 AM local time statewide."
+      closing: >
+        8:00 PM local time, except in Gogebic, Iron, and Ontonagon counties in the
+        western Upper Peninsula (Central time zone), where polls close at 9:00 PM
+        Eastern time. If you are in line by closing time, you are allowed to cast
+        your ballot.
+races:
+  - name: "US Senate 2026"
+    id: "mi-senate-2026"
