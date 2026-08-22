@@ -1,0 +1,90 @@
+ocdId: "ocd-division/country:us/state:mt"
+date: "2026-11-03"
+description: "General election for US Senate, US House, Public Service Commission, and State Legislature."
+type: "general"
+website: "https://votemt.gov"
+guidancePhase: "final"
+fiveFifthsId: "mt-2026-midterms"
+region_code: "MT"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  ballotpediaUrl: https://ballotpedia.org/Montana_elections,_2026
+  early:
+    url: "https://votemt.gov/voter-calendar/"
+    startDate: "2026-10-04"
+    endDate: "2026-11-02"
+    varies: true
+    notes: >
+      Montana's in-person early (absentee) voting begins as soon as ballots are
+      available, no later than 30 days before Election Day — by October 4, 2026 —
+      though some counties open sooner. There is no single statewide early voting
+      site: voters cast an early ballot in person at their county election office,
+      and hours vary by county, so confirm locally with your county election
+      administrator. Early in-person voting continues through noon the day before
+      Election Day, Monday, November 2, 2026, which is also the deadline to request
+      an absentee ballot. No excuse is required.
+  byMail:
+    explainerUrl: "https://votemt.gov/absentee-ballot/"
+    notes: >
+      Any registered Montana voter may request an absentee ballot; no excuse is
+      required. Voters can join the state's permanent absentee list, in which case
+      ballots are mailed automatically 25 days before each election (around
+      October 9, 2026 for this election); otherwise, a one-time application must be
+      submitted to the county election office, by mail, in person, or by downloading
+      the form from the Secretary of State's or a county's website. Montana does not
+      have a photo ID requirement specifically for absentee/mail voting, but voters
+      must provide an ID number (driver's license or last four digits of SSN) or a
+      copy of ID with their application unless they've previously voted in Montana,
+      registered in person, or already provided ID at registration. Ballots may be
+      returned by mail or dropped off in person at the county election office.
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2026-11-03"
+      receivedBy: "2026-11-03"
+      description: >
+        Completed absentee ballots must be received by the county election office
+        by 8:00 p.m. on Election Day, November 3, 2026, to be counted; Montana does
+        not count ballots based on postmark. If an absentee ballot is returned
+        unsigned or with a mismatched signature, the voter has the right to instead
+        cast a provisional ballot. Military and overseas voters using a Federal
+        Write-In Absentee Ballot have until 3:00 p.m. on Monday, November 9, 2026
+        for their ballot to be received.
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-11-02"
+        description: >
+          Absentee ballot applications must be received by the county election
+          office by noon on Monday, November 2, 2026, the day before Election Day.
+          Voters with a qualifying illness or health emergency arising between
+          5:00 p.m. the Friday before the election and the close of polls on
+          Election Day may still request an emergency absentee ballot; contact your
+          county election office for details.
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: >
+      Montana requires photo identification to vote in person. Accepted forms
+      include a Montana driver's license or REAL ID, a Montana state ID card, a
+      military ID card, a tribal photo ID card, a U.S. passport, a Montana
+      concealed carry permit, or a student photo ID issued by a Montana University
+      System school or an NCAA member school. Alternatively, a voter can present
+      any other photo ID showing their name along with a current utility bill, bank
+      statement, paycheck, government check, or other government document showing
+      their name and current address. Voters who cannot produce an accepted ID may
+      still cast a provisional ballot, but must submit valid ID or other proof of
+      eligibility by 5:00 p.m. the day after the election for that ballot to count.
+      Regular voter registration closes 30 days before Election Day (October 5,
+      2026); after that, voters can still register in person at their county
+      election office or a designated late-registration location through the close
+      of business the Friday before the election, and up until noon on Election Day
+      itself if the county administrator can verify registration information in
+      time. See: https://votemt.gov/voter-identification/
+    electionDay:
+      opening: "7:00 AM local time."
+      closing: >
+        8:00 PM local time. Absentee ballots may also be dropped off in person at
+        the county election office through 8:00 PM. If you are in line by closing
+        time, you are allowed to cast your ballot.
+races:
+  - name: "US Senate 2026"
+    id: "mt-senate-2026"
