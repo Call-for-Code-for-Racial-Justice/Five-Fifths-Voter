@@ -1,0 +1,136 @@
+fiveFifthsId: "lydia-christensen"
+name: "Lydia Christensen"
+state: "MI"
+race: "US Senate 2026"
+race_id: "mi-senate-2026"
+party: "Libertarian"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "LC"
+ballot_order: 3
+issues:
+  clarity: "Detailed on digital privacy/surveillance, immigration, gun policy, and workers' rights; largely unaddressed on taxation, education, housing, environment/energy specifics, small business/farming, and reproductive or voting policy"
+  sources_count: 3
+  sources_list:
+    - "One-on-one podcast interview: background, digital rights, surveillance policy, immigration, campaign strategy ('Long Live Alternative Parties')"
+    - "News article on policy positions and intra-party controversy, including direct quotes from Christensen on Social Security, healthcare, and gun policy (Independent Political Report)"
+    - "Official campaign website (lydialynnchristensen.com)"
+  last_updated: "2026-08-22"
+  callout: "Lydia Christensen is the Libertarian Party of Michigan's nominee for U.S. Senate, campaigning as a self-described 'civil liberties libertarian' and 'participatory economic populist' under the banner 'Unchain Michigan.' A computer scientist who grew up in the foster care system, she has built her platform heavily around ending mass government surveillance — including a proposed 'Bill of Digital Rights,' ending FISA Section 702 authority, repealing remaining Patriot Act provisions, and banning license-plate-reader and facial-recognition dragnets — alongside ending qualified immunity for police. Her platform combines traditional libertarian positions (Second Amendment support, opposition to warrantless searches) with planks less typical for the party, including an opt-in 'Medicaid for All' public option and expanded worker protections, which has drawn public criticism from some national Libertarian Party committee members. Reviewed sources did not address her positions on taxation, education, housing, small business/farming, or reproductive policy."
+  links:
+    - label: "Podcast interview: background, digital rights, surveillance, immigration ('Long Live Alternative Parties')"
+      url: "https://open.spotify.com/episode/5u3VhPx6z4UOeT7KEwl3hm"
+    - label: "News article: policy positions and LNC controversy (Independent Political Report)"
+      url: "https://independentpoliticalreport.com/2026/07/michigan-libertarian-senate-candidate-faces-criticism-from-lnc-members-over-policy-views/"
+    - label: "Campaign website (lydialynnchristensen.com)"
+      url: "https://www.lydialynnchristensen.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Christensen's campaign tagline references 'economic opportunity,' but reviewed sources do not include specific cost-of-living mechanisms (e.g., housing, groceries, energy prices)."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: 2
+      - topic: "Taxation"
+        note: "No position found in reviewed sources. She cites 'no taxation without representation' as a rationale for running (representation for transgender Americans in the Senate), but this is not a tax policy position."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Small business & farming"
+        note: "No position found in reviewed sources. Her campaign describes touring county fairs and rural areas to reach farmers as an outreach strategy, but no farming or small-business policy is stated."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "Per a news report quoting her campaign website, Christensen supports raising the federal minimum wage to $15/hour adjusted for inflation, and legal protections for workers participating in general strikes and collective action against eviction, foreclosure, or financial ruin."
+        coverage: 3
+        position_tag: "Expand worker protections"
+        position_type: "pos"
+        source: 1
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Christensen supports ending qualified immunity for police, calling it a judge-invented doctrine never passed by Congress, so that 'every American has the ability to hold police to a standard that matters.' This is a police-accountability position rather than a stated stance on incarceration levels or enforcement intensity, so no taxonomy tag is applied."
+        coverage: 3
+        position_tag: null
+        position_type: "none"
+        source: 0
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "Christensen discusses her own campaign's struggle for ballot access and debate-stage inclusion as a third-party candidate, but reviewed sources do not include a stated position on voting or election administration policy generally."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: 0
+      - topic: "Gun policy"
+        note: "Christensen's campaign website removed earlier language supporting federal legislation to strengthen background checks; she has since stated she 'fully supports the Second Amendment,' while supporting 'responsible gun ownership and safety education' and opposing firearm confiscation. See data_note on this shift."
+        coverage: 3
+        position_tag: "Maintain current laws"
+        position_type: "pos"
+        source: 1
+      - topic: "LGBTQ+ policy"
+        note: "Christensen, a transgender candidate, frames her candidacy partly around filling a representation gap ('we do not have a transgender American in the Senate') amid what she calls 'an absolute erosion of our civil rights,' but reviewed sources do not include a specific policy proposal on LGBTQ+ protections."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: 0
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Christensen supports a 'Medicaid for All' option with comprehensive care plans, structured as a voluntary public option rather than a mandate: 'A Michigan family choosing between a public plan and a private insurance oligopoly has more freedom than a family with no choice at all.' She has acknowledged this breaks from the national Libertarian Party platform."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: 1
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Christensen's campaign describes 'fighting for clean water' as a priority, but reviewed sources do not include specific energy or environmental regulation policy."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: 2
+      - topic: "Immigration"
+        note: "Christensen's plan combines two distinct mechanisms: expanding legal pathways (abolishing ICE, ending detention facilities, guaranteeing due process, and a permanent pathway to citizenship for 'Dreamers') alongside explicit support for 'reasonable' border security that screens and excludes those with violent criminal histories or trafficking involvement. She explicitly rejects open borders: 'I wouldn't say that I would go as far as saying open borders... we need to have border security that is reasonable.'"
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 0
+      - topic: "Housing"
+        note: "No position found in reviewed sources. Her supported worker protections against eviction and foreclosure (see Workers & wages) relate to labor action rather than a housing supply or affordability policy."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

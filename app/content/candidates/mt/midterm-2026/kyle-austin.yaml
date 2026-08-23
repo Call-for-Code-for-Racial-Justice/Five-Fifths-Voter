@@ -1,0 +1,137 @@
+fiveFifthsId: "kyle-austin"
+name: "Kyle Austin"
+state: "MT"
+race: "US Senate 2026"
+race_id: "mt-senate-2026"
+party: "Libertarian"
+primary: "Libertarian Primary, June 2026"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "KA"
+ballot_order: 3
+issues:
+  clarity: "Detailed on healthcare reform, small government/fiscal policy, farm support, housing supply, and voter ID verification; silent on criminal justice, reproductive policy, gun policy, LGBTQ+ policy, education, broadband/infrastructure, environment/energy, and immigration"
+  sources_count: 3
+  sources_list:
+    - "Q&A interview: healthcare reform, voter ID, small government (Montana Public Radio, Austin Amestoy)"
+    - "Written candidate questionnaire covering war powers, rural healthcare, farm/small-business issues, and housing/cost of living (Montana Free Press 2026 Election Guide)"
+    - "In-depth news feature on his 'Healthcare 2.0' plan, deregulation views, and campaign strategy (Bozeman Daily Chronicle)"
+  last_updated: "2026-08-22"
+  callout: "Kyle Austin is a Billings pharmacist and small-business owner (Pharm406) who switched from the Republican to the Libertarian ballot for this race, saying he remains 'conservative and Republican in practice' and would caucus with both parties 'when necessary.' His signature proposal, 'Healthcare 2.0,' would consolidate Medicare, Medicaid, TRICARE, and VA coverage into a competitive government-run health plan modeled on the U.S. Postal Service, paired with national licensing reform to ease provider shortages; he says this preserves 'a sprinkling of socialism' rather than pursuing full Medicare for All or full privatization. His broader platform centers on cutting federal spending and regulation ('we need to DOGE the government'), farm-support measures like 0% USDA financing, and construction deregulation to address housing costs. Reviewed sources did not address his positions on criminal justice, reproductive policy, gun policy, LGBTQ+ policy, education, broadband/infrastructure, environmental or energy policy, or immigration."
+  links:
+    - label: "Q&A interview (Montana Public Radio)"
+      url: "https://www.mtpr.org/montana-news/2026-05-06/q-a-kyle-austin-libertarian-u-s-senate-candidate"
+    - label: "Written candidate questionnaire (Montana Free Press 2026 Election Guide)"
+      url: "https://projects.montanafreepress.org/election-guide-2026/candidates/kyle-austin/"
+    - label: "In-depth news feature on 'Healthcare 2.0' and campaign strategy (Bozeman Daily Chronicle)"
+      url: "https://www.fairfieldsuntimes.com/news/state/libertarian-in-name-republican-in-practice-austin-bets-crowded-race-can-land-him-in-the/article_a3248d8d-5fb8-5bda-a91e-b8139a1bec52.html"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Austin says the cost of living is 'out of control... because our government has gotten so big,' and calls to 'DOGE the government' at the federal and state level to cut spending, lower taxes, and reduce costs; on housing specifically he calls for lower interest rates, fewer construction barriers, and zero tariffs on building supplies."
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: 0
+      - topic: "Taxation"
+        note: "Austin says Montana has 'overtaxed small businesses' and pledges to 'cut the fat, deregulate businesses and lower taxes for everyone,' consistent with his broader call to cut government spending so taxes can come down."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: 1
+      - topic: "Small business & farming"
+        note: "Austin's plan combines two distinct mechanisms: increased targeted government support for farmers and ranchers (overhauling and strengthening the USDA, keeping farmers out of trade wars, redirecting spending into 0% USDA financing, and assisting domestic fertilizer production) alongside deregulation for small business generally (citing his own pharmacy business, he argues licensure and reporting requirements to HHS and the Board of Pharmacy drive up costs and calls for cutting 'red tape')."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 1
+      - topic: "Workers & wages"
+        note: "Austin argues extended licensing and degree requirements (e.g., pharmacy programs growing from four to six years) have caused workforce shortages and driven up costs, and proposes shorter degree paths and workplace-based credentialing (e.g., physician assistants building toward higher credentials on the job) instead of additional schooling."
+        coverage: 2
+        position_tag: "Reduce labor regulation"
+        position_type: "pos"
+        source: 2
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "Austin supports requiring ID to vote (referencing REAL ID), saying 'why should we allow people that are non-citizens of the United States to influence our politics or our government in any which way' and comparing it to needing a license to drive."
+        coverage: 3
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: 0
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Austin's 'Healthcare 2.0' plan would consolidate Medicare, Medicaid, TRICARE, and VA coverage into a new government-run health plan modeled structurally on the U.S. Postal Service (a taxpayer corporation competing with private insurers), paired with national provider licensing reform. He explicitly says 'it's not Medicare for all' and not privatization either: 'there's enough money already in our government healthcare system... a sprinkling of socialism... is what I want to keep.'"
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: 2
+      - topic: "Education"
+        note: "No position found in reviewed sources on K-12 or general education policy."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Austin proposes lowering interest rates, reducing construction barriers/regulations that drive up building costs, promoting zero tariffs on construction supplies, and supporting domestic logging and lumber mills to increase the supply of building materials."
+        coverage: 3
+        position_tag: "Reduce development barriers"
+        position_type: "pos"
+        source: 1

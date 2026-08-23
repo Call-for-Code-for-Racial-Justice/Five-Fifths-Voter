@@ -1,0 +1,142 @@
+fiveFifthsId: "mike-rogers"
+name: "Mike Rogers"
+state: "MI"
+race: "US Senate 2026"
+party: "Republican"
+race_id: "mi-senate-2026"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "MR"
+ballot_order: 1
+issues:
+  clarity: "Detailed and specific across economic, energy, healthcare, housing, and education/school-choice themes, including named conditions for AI data center approval; silent on civil rights, immigration, criminal justice, and general tax policy"
+  sources_count: 5
+  sources_list:
+    - "One-on-one interview: Mike Rogers discusses education, manufacturing, and the Iran conflict (Mackinac Island policy conference)"
+    - "One-on-one interview: Mike Rogers on his U.S. Senate campaign (WXYZ/7 News Detroit)"
+    - "One-on-one interview: Mike Rogers discusses education, healthcare, housing, data centers, and Iran/Israel policy (local TV interview, Broadcast House)"
+    - "One-on-one interview: Mike Rogers on the Republican primary, Iran war authorization, and data center policy (local TV interview)"
+    - "Official campaign website (rogersforsenate.com), including the dedicated Housing Plan and biography/issues pages"
+  last_updated: "2026-08-22"
+  callout: "Mike Rogers is a former U.S. Representative and House Intelligence Committee chairman running for Michigan's open U.S. Senate seat on a platform centered on domestic energy production, deregulation, and lowering costs for families. His campaign emphasizes reversing Michigan's manufacturing and defense-industrial job losses, a detailed housing affordability plan built around tax incentives and reduced regulation, a literacy- and school-choice-focused education platform, and opposition to Medicare for All. He has also laid out detailed conditions for supporting AI data center projects (local control, closed-loop water use, no community energy-cost pass-through, and property-tax relief funded by data center tax revenue). Reviewed sources did not address his positions on criminal justice, reproductive policy, voting and elections, gun policy, LGBTQ+ policy, immigration, or general federal tax policy."
+  links:
+    - label: "One-on-one interview: education, manufacturing, Iran conflict (Mackinac Island)"
+      url: "https://www.youtube.com/watch?v=k0XsTPxvh1Y"
+    - label: "One-on-one interview: campaign for U.S. Senate (7 News Detroit)"
+      url: "https://www.youtube.com/watch?v=Bx4xW6TGwag"
+    - label: "One-on-one interview: education, healthcare, housing, data centers, Iran/Israel"
+      url: "https://www.youtube.com/watch?v=bEoG7jWA4hk"
+    - label: "One-on-one interview: primary election day, Iran war authorization, data centers"
+      url: "https://www.youtube.com/watch?v=AyrH1ivaVak"
+    - label: "Campaign website (rogersforsenate.com)"
+      url: "https://rogersforsenate.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Rogers ties affordability directly to energy policy, citing Michigan's highest Midwest electricity rates and highest auto insurance in the country, and argues deregulating oil and gas production and 'unleashing American energy' will lower gas, grocery, and prescription drug prices; he also warns that failing to secure the Strait of Hormuz could push gas to $8/gallon."
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: 0
+      - topic: "Taxation"
+        note: "No general position on federal taxation (increase/reduce/restructure) found. Rogers discusses narrow tax-advantaged savings tools (529 plan expansion, tax-free new-construction zones) tied to housing, a plan to use AI data center tax revenue to offset residents' property taxes, and criticizes Michigan Democrats for 'the largest tax increase in state history' — but this is framed as criticism of opponents, not a stated federal tax platform."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Small business & farming"
+        note: "Website biography notes that as a Michigan State Senator, Rogers 'reduced burdensome regulations on small businesses,' and that after leaving Congress he 'championed American innovation and small businesses.' Described as a past record rather than a detailed current platform."
+        coverage: 2
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: 4
+      - topic: "Workers & wages"
+        note: "Rogers repeatedly cites manufacturing job losses (cited as 30,000 in one interview, 200,000 over 32 years in another) and flat-to-declining median wages as core problems, and ties reviving Michigan's defense industrial base to job creation, but does not stake out a specific position on minimum wage, worker protections, or labor regulation."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources. Rogers' FBI background (organized crime, human trafficking cases) is discussed as biography, not as a stated criminal justice policy position."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources. The campaign website criticizes opponent Abdul El-Sayed's position on gender-related medical care for minors, but this does not establish Rogers' own stated position."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Rogers opposes 'Medicare for All'/free healthcare, arguing 'if you think health care is expensive now, wait till it's free,' and says he doesn't want the U.S. to adopt a fully government-run system, preferring to 'mend' the current system by removing 'artificial costs.' He cites rising ACA-era claim denial rates and opposes proposals he says would shift UAW-negotiated healthcare benefits into a government-run plan."
+        coverage: 3
+        position_tag: "Reduce government role"
+        position_type: "pos"
+        source: 2
+      - topic: "Education"
+        note: "Rogers describes a detailed literacy plan (3rd/4th grade reading assessments, a federally-supported 'reading reclamation' program through 12th grade, redirecting Title I funds toward struggling readers, and returning shop classes to high schools). He separately criticizes Governor Whitmer for not making school-choice options available to parents, contrasting Michigan with states that do, and calls for schools and government to 'get engaged' in expanding choice."
+        coverage: 3
+        position_tag: "Support school choice"
+        position_type: "pos"
+        source: 2
+      - topic: "Broadband & infrastructure"
+        note: "No direct position on broadband or general infrastructure investment found. Rogers laid out detailed conditions for supporting AI/data center projects in Michigan communities — local control, closed-loop water systems, prohibiting energy-cost pass-through to the broader community, and directing 100% of resulting tax revenue to lower residents' property taxes — a related but distinct topic outside this taxonomy; see callout."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Rogers consistently calls to 'unleash American energy,' criticizes Michigan for ranking 13th nationally in oil and gas production and having the highest electricity rates in the Midwest, and frames added energy costs and regulation as costs passed to consumers. He also contrasts himself with Democratic opponents, saying both 'support EV mandates.' Website biography cites his House Energy and Commerce Committee record promoting energy independence and reducing regulations."
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: 0
+      - topic: "Immigration"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Rogers' dedicated Housing Plan centers on 'ending excessive Democrat regulations,' rolling back overregulation with states, and creating tax-free residential construction zones to incentivize homebuilding, alongside 529 savings expansion for down payments; in interviews he frames this as helping people 'get into a house younger' with added tools and resources. The plan is primarily supply-side deregulation rather than new government spending programs."
+        coverage: 3
+        position_tag: "Reduce development barriers"
+        position_type: "pos"
+        source: 4

@@ -1,0 +1,142 @@
+fiveFifthsId: "abdul-el-sayed"
+name: "Abdul El-Sayed"
+state: "MI"
+race: "US Senate 2026"
+race_id: "mi-senate-2026"
+party: "Democratic"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "AE"
+ballot_order: 2
+issues:
+  clarity: "Extremely detailed and specific across nearly all economic, social, and civil rights topics, with dedicated policy pages on money in politics, jobs and wages, taxation, AI, data centers, housing, education, farming, and Medicare for All; largely silent only on gun policy and general criminal justice/incarceration policy"
+  sources_count: 5
+  sources_list:
+    - "One-on-one interview: police funding record, Gaza/Israel policy, AI regulation, AIPAC spending (CBS News, Major Garrett)"
+    - "One-on-one interview: Islamophobic attacks, healthcare, opioid epidemic criticism of Mike Rogers, taxing billionaires (MSNBC All In)"
+    - "One-on-one interview: Medicare for All funding mechanism, Israel military aid conditions, capitalism vs. socialism (NBC Meet the Press)"
+    - "One-on-one interview: Trump accountability agenda, Medicare for All detail, tariff refunds, prescription drug middlemen (CNN, Jake Tapper)"
+    - "Official campaign website (abdulforsenate.com), including the Money Out of Politics, Money in Your Pocket, and Medicare for All priority pages"
+  last_updated: "2026-08-22"
+  callout: "Abdul El-Sayed is a physician and former Wayne County and Detroit Health Department director running for Michigan's open U.S. Senate seat on a platform built around getting money out of politics, taxing billionaire wealth, and passing Medicare for All. His campaign has published detailed policy plans covering economic regulation, housing, education, farming, environmental protection, and immigration (including abolishing ICE while supporting a secure, humane border process), plus a proposed 'Terms of Engagement' framework for AI data centers. He has also drawn national attention for describing Israel's conduct in Gaza as a genocide, opposing unconditional U.S. military aid to Israel, and proposing aggressive federal AI regulation, including partial public ownership requirements and a wealth-tax-funded sovereign fund. Reviewed sources did not address a general position on the criminal justice/incarceration system or on gun policy."
+  links:
+    - label: "One-on-one interview: police funding, Gaza, AI regulation, AIPAC (CBS/Major Garrett)"
+      url: "https://www.youtube.com/watch?v=2FofXOB5T2s"
+    - label: "One-on-one interview: Islamophobic attacks, healthcare, taxing billionaires (MSNBC All In)"
+      url: "https://www.youtube.com/watch?v=ZxcOGYPE16w"
+    - label: "One-on-one interview: Medicare for All funding, Israel aid conditions, capitalism (NBC Meet the Press)"
+      url: "https://www.youtube.com/watch?v=wacRksAPl4s"
+    - label: "One-on-one interview: Trump accountability, Medicare for All, prescription drug middlemen (CNN/Jake Tapper)"
+      url: "https://www.youtube.com/watch?v=gORu9ZoRVTU"
+    - label: "Campaign website (abdulforsenate.com)"
+      url: "https://abdulforsenate.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "El-Sayed's core message is to 'get money out of politics, put money in your pocket, and pass Medicare for All.' His website ties affordability to direct government intervention: taxing billionaires, banning corporate rent price-fixing software, capping housing dislocation fees on Airbnb/VRBO, and eliminating medical debt (as he did for 300,000+ Wayne County residents)."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: 4
+      - topic: "Taxation"
+        note: "El-Sayed supports taxing capital gains over $1 million at ordinary income rates, closing the stepped-up basis loophole, taxing large inheritances as ordinary income, a progressive wealth tax on trusts, raising the marginal rate on earnings over $1 million, a billionaire wealth tax over $1 billion, closing the Social Security payroll tax cap, and a cost-of-living exemption on federal taxes up to $50,000. In interviews he also acknowledges that funding Medicare for All would mean paying somewhat more into FICA in exchange for eliminating private insurance premiums."
+        coverage: 3
+        position_tag: "Increase taxes"
+        position_type: "pos"
+        source: 4
+      - topic: "Small business & farming"
+        note: "El-Sayed proposes redirecting federal farm subsidies away from corporate agribusiness toward family farmers, capping individual subsidies at $250,000/year, investing in specialty crops and regenerative farming, targeted tariff protections for Michigan farmers, H-2A visa reform, and a federal right-to-repair law for farm equipment. He also supports small-business revolving loan funds to offset AI-driven job loss."
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: 4
+      - topic: "Workers & wages"
+        note: "El-Sayed says 'every worker deserves the right to join a union and to earn a fair wage' and 'one good job should pay enough to raise a family.' His platform includes union representation in economic decision-making, protecting workers from Wall Street speculation, raising the minimum teacher salary to $60,000/year, and exploring wage insurance and basic income to offset AI-driven job losses."
+        coverage: 3
+        position_tag: "Expand worker protections"
+        position_type: "pos"
+        source: 4
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "El-Sayed pushed back on '2020 defund the police' allegations by pointing to his record as Wayne County health director, where he declared a public health emergency over a juvenile detention facility's conditions and raised staff wages 35% to keep it safely staffed. This addresses a specific staffing episode rather than a general position on incarceration, prevention, or enforcement policy, so no taxonomy tag is applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: 0
+      - topic: "Reproductive policy"
+        note: "El-Sayed's website states he will 'fight to codify the rights once protected by Roe v. Wade into federal law' and opposes criminalizing reproductive medications or using lawfare/funding cuts against providers."
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: 4
+      - topic: "Voting & elections"
+        note: "El-Sayed supports automatic voter registration at 18 with automatic re-registration when moving, making election day a holiday, no-reason absentee and early in-person voting, and opposes mandatory Voter ID laws like the 'SAVE Act.' He also supports ending partisan gerrymandering via a nonpartisan federal redistricting committee."
+        coverage: 3
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: 4
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "El-Sayed's website commits to protecting Americans 'regardless of...their sexual orientation, gender identity' and includes a dedicated 'Healthcare Freedom for Women and LGBTQ+ Americans' section protecting access to gender-affirming care as a decision between patient and doctor, opposing criminalization of related medications and lawfare against providers."
+        coverage: 3
+        position_tag: "Expand protections"
+        position_type: "pos"
+        source: 4
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "El-Sayed has 'literally written the book on Medicare for All' and proposes expanding Medicare to cover every American from cradle to grave with no premiums, copays, or deductibles, including vision, dental, and hearing; abolishing medical debt nationally; opposing Medicaid/ACA subsidy cuts and Medicare privatization; breaking up hospital/insurer consolidation; and banning pharmacy benefit managers. In interviews he clarifies this would not necessarily end private/union-negotiated insurance, though it aims to make it 'redundant.'"
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: 4
+      - topic: "Education"
+        note: "El-Sayed supports universal childcare and pre-K, full public K-12 funding independent of local property taxes, raising minimum teacher salary to $60,000, fully funding IDEA for students with disabilities, debt-free/tuition-free college and trade school pathways, and expanded HBCU/community college funding. He explicitly 'opposes efforts to privatize public education through vouchers and other programs intended to move public money into private pockets.'"
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: 4
+      - topic: "Broadband & infrastructure"
+        note: "No position specifically on broadband found. El-Sayed does support accelerating federal infrastructure funding to remove lead pipes from Michigan's water systems by 2030 and references fixing 'roads and bridges' in interviews, consistent with a general preference for increased federal infrastructure investment, though this evidence is about water/roads infrastructure rather than broadband specifically."
+        coverage: 2
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: 4
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "El-Sayed supports a pathway to 100% renewable energy anchored in solar, wind, battery storage, and a modernized grid with union jobs; codifying the EPA's Endangerment Finding into law; strengthening air quality standards and NEPA community input; shutting down Line 5; and holding corporate polluters accountable for PFAS and other contamination."
+        coverage: 3
+        position_tag: "Prioritize regulation"
+        position_type: "pos"
+        source: 4
+      - topic: "Immigration"
+        note: "El-Sayed supports abolishing ICE, which he says has become 'a tool for autocracy' that 'cannot be reformed or retrained,' while stating he supports a 'safe, secure border' and immigration enforcement 'under a new organizational structure.' He proposes repurposing ICE funding to build legal infrastructure (courts, case processing) to create a clear pathway to citizenship for those in immigration limbo."
+        coverage: 3
+        position_tag: "Expand legal pathways"
+        position_type: "pos"
+        source: 4
+      - topic: "Housing"
+        note: "El-Sayed's housing plan combines two distinct mechanisms: supply-side deregulation ('streamline local regulations that are making it way too hard to build') to spur a building boom, and stronger tenant/regulatory protections (banning large corporate speculators from owning homes, banning algorithmic rent-fixing software, taxing Airbnb/VRBO housing stock, a federal renter bill of rights, and stopping unfair evictions)."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 4

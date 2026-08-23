@@ -1,0 +1,137 @@
+fiveFifthsId: "kurt-alme"
+name: "Kurt Alme"
+state: "MT"
+race: "US Senate 2026"
+race_id: "mt-senate-2026"
+party: "Republican"
+primary: "Republican Primary, June 2026"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "KA"
+ballot_order: 1
+issues:
+  clarity: "Detailed and specific on fiscal policy, healthcare, crime/drug enforcement, energy, immigration enforcement, and housing supply; silent on reproductive policy, voting/elections, gun policy, LGBTQ+ policy, education, broadband, and worker/wage policy"
+  sources_count: 3
+  sources_list:
+    - "One-on-one interview: background, affordability, crime, tariffs, Iran (interview with Bradley Warren)"
+    - "Written candidate questionnaire covering war powers, rural healthcare, top Montana issues, and housing/cost of living (Montana Free Press 2026 Election Guide)"
+    - "Official campaign website (almeforsenate.com), 'Meet Kurt' biography page"
+  last_updated: "2026-08-22"
+  callout: "Kurt Alme is a former Montana budget director, state revenue director, and twice-confirmed U.S. Attorney for Montana who was recruited into the race by retiring Sen. Steve Daines just before the March 2026 filing deadline, and has since secured endorsements from President Trump, Daines, and Gov. Greg Gianforte. His platform centers on fiscal restraint (citing his record cutting state income taxes and balancing budgets), reducing regulation to spur housing construction, tough-on-crime prosecution paired with drug treatment and prevention investment (the HEART Fund), and energy independence. He supports the Trump administration's approach to Iran and continued tariff use as a negotiating tool, while acknowledging tariffs, fertilizer, and oil costs have created a 'one-two punch' for Montana ranchers and producers. Reviewed sources did not address his positions on reproductive policy, gun policy, LGBTQ+ policy, voting and elections, education, broadband/infrastructure, or worker wage and labor policy."
+  links:
+    - label: "One-on-one interview with Bradley Warren"
+      url: "https://www.youtube.com/watch?v=Yf8UqFfNkjY"
+    - label: "Written candidate questionnaire (Montana Free Press 2026 Election Guide)"
+      url: "https://projects.montanafreepress.org/election-guide-2026/candidates/kurt-alme/"
+    - label: "Campaign website, 'Meet Kurt' biography (almeforsenate.com)"
+      url: "https://almeforsenate.com/meet-kurt"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Alme says the best way to permanently lower costs is to 'rein in deficit spending' and restore fiscal responsibility, citing his record balancing Montana's budget and cutting wasteful spending. On housing specifically, he says increasing supply requires 'cutting red tape that ties up construction' so government gets 'out of the way.'"
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: 1
+      - topic: "Taxation"
+        note: "As Montana's Revenue Director, Alme says he 'spearheaded' the largest state income tax rate cut in history (cutting the top rate by almost 40%), and as Budget Director delivered $60 million in annual tax reductions while making the state debt-free."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: 0
+      - topic: "Small business & farming"
+        note: "Alme supports 'unleashing small businesses, contractors, and communities' by cutting regulatory red tape that limits housing construction. On farming, he discusses tariffs' impact on ranchers and producers and says he hopes the president continues to use tariffs 'selectively' as a negotiating tool to open foreign markets for Montana crops and cattle, rather than opposing tariffs generally."
+        coverage: 3
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: 1
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources on minimum wage, worker protections, or labor regulation."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Alme's plan combines two distinct mechanisms: enforcement (as U.S. Attorney, he says criminal prosecutions of violent criminals and drug traffickers reached a 20-year high, and he supports pursuing drug trafficking organizations 'all the way up to the cartels') and prevention/treatment investment (as Montana's Budget Director he helped create the HEART Fund, using marijuana tax revenue to expand mental health and substance use treatment and recovery services, which he says he will bring 'a renewed focus' to as Senator)."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 1
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources. Alme's campaign website lists an NRA endorsement, but this is a third-party endorsement rather than a stated policy position from Alme himself."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Alme opposes 'subsidizing health insurance companies with taxpayer dollars while their stock prices soar' and instead favors investing directly in Montana providers (citing the $233 million Rural Health Transformation Program), price transparency so patients can 'shop' for care, expanded telehealth, and increased competition and patient choice rather than expanded public coverage."
+        coverage: 3
+        position_tag: "Reduce government role"
+        position_type: "pos"
+        source: 1
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Alme says instability in the Strait of Hormuz 'demonstrates the need for energy independence and in fact energy dominance,' and calls to 'continue to develop energy in the United States so that we aren't subject to the whims of dictators and to turmoil in the Middle East.'"
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: 0
+      - topic: "Immigration"
+        note: "Alme says he will 'continue to support the president in securing the border,' support law enforcement, and prioritize violent crime and drug trafficking prosecutions, including pursuing cartels; MTFP questionnaire response similarly emphasizes keeping 'the border secure.'"
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: 1
+      - topic: "Housing"
+        note: "To increase homeownership, Alme says Montana needs more housing supply, which requires 'unleashing small businesses, contractors, and communities by cutting red tape that ties up construction.' He states 'government spending and overregulation created these issues' and 'we must get government out of the way.'"
+        coverage: 3
+        position_tag: "Reduce development barriers"
+        position_type: "pos"
+        source: 1

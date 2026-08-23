@@ -1,0 +1,143 @@
+fiveFifthsId: "alani-bankhead"
+name: "Alani Bankhead"
+state: "MT"
+race: "US Senate 2026"
+race_id: "mt-senate-2026"
+party: "Democratic"
+primary: "Democratic Primary, June 2026"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "AB"
+ballot_order: 2
+issues:
+  clarity: "Extensive and specific on war powers, healthcare, housing, immigration, gun policy, and reproductive rights; thin or absent on small business/farming, general criminal justice policy, voting and elections, education, broadband/infrastructure, and LGBTQ+ policy"
+  sources_count: 5
+  sources_list:
+    - "Montana Democratic U.S. Senate primary debate (Helena, April 12, 2026), full transcript"
+    - "One-on-one interview: background, policy rapid-fire on Social Security, deficit, foreign policy, guns, abortion (interview with Bradley Warren)"
+    - "One-on-one extended interview: military service background, campaign priorities, housing and healthcare"
+    - "Q&A interview: healthcare, immigration, Iran war (Montana Public Radio, Shaylee Ragar)"
+    - "Written candidate questionnaire covering war powers, rural healthcare, and housing/cost of living (Montana Free Press 2026 Election Guide)"
+  last_updated: "2026-08-22"
+  callout: "Alani Bankhead is a retired U.S. Air Force lieutenant colonel and special agent who spent over two decades investigating child exploitation, trafficking, and counterintelligence cases before entering politics for the first time, winning Montana's crowded 2026 Democratic Senate primary. Her platform centers on military-budget accountability (proposing to redirect unspent, 'use-or-lose' Pentagon funds toward healthcare and housing), opposition to the Trump administration's war in Iran as unauthorized by Congress, and a Medicaid-for-All-style expansion of public healthcare. She has faced sustained pressure from national and state Democratic Party figures to withdraw from the race in favor of independent candidate Seth Bodnar, which she has repeatedly refused, and has publicly objected to unsolicited super PAC ad spending on her behalf as money she neither sought nor controls. Reviewed sources did not address her positions on small business or farming policy generally, general criminal justice/incarceration policy, voting and elections, education, broadband/infrastructure, or LGBTQ+ policy."
+  links:
+    - label: "Democratic primary debate, full transcript (Helena, April 12, 2026)"
+      url: "https://www.youtube.com/watch?v=GP64h8cw7xM"
+    - label: "One-on-one interview with Bradley Warren"
+      url: "https://www.youtube.com/watch?v=YYQUfGysg44"
+    - label: "One-on-one extended interview on service background and priorities"
+      url: "https://www.youtube.com/watch?v=llO1m0WszQI"
+    - label: "Q&A interview (Montana Public Radio)"
+      url: "https://www.mtpr.org/montana-news/2026-05-04/q-a-alani-bankhead-democratic-u-s-senate-candidate"
+    - label: "Written candidate questionnaire (Montana Free Press 2026 Election Guide)"
+      url: "https://projects.montanafreepress.org/election-guide-2026/candidates/alani-bankhead/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Bankhead frames affordability as a top priority, proposing to redirect unspent 'use-or-lose' Pentagon year-end funds toward domestic needs, calling for Medicaid for All funded partly this way, and saying in the debate that 'everybody should pay their fair share of taxes' to bring resources 'down to the Main Street.'"
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: 0
+      - topic: "Taxation"
+        note: "Bankhead supports removing the Social Security payroll tax cap so higher earners 'pay their fair share,' and in the debate said 'everybody should pay their fair share of taxes' in the context of addressing wealth inequality."
+        coverage: 3
+        position_tag: "Increase taxes"
+        position_type: "pos"
+        source: 1
+      - topic: "Small business & farming"
+        note: "Bankhead makes only a brief, general reference to 'taking care of our agriculture community' as one of several 'common sense' Montana Democrat values, without a specific farming or small-business policy proposal in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: 1
+      - topic: "Workers & wages"
+        note: "Bankhead states 'I'm very pro-union' while discussing a proposed data center moratorium, though she does not detail a specific worker-protection or minimum-wage policy beyond this."
+        coverage: 2
+        position_tag: "Expand worker protections"
+        position_type: "pos"
+        source: 1
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Bankhead's career centers on prosecuting child predators, traffickers, and corrupt officials, and she emphasizes 'accountability' broadly, but reviewed sources do not include a general position on incarceration levels, sentencing, or crime-prevention policy beyond her specific law-enforcement background."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: 1
+      - topic: "Reproductive policy"
+        note: "Bankhead supports codifying Roe v. Wade, saying 'I absolutely think we should codify the right to sovereignty over our body,' and states she personally would not get an abortion but 'would never stop somebody else from doing the same thing.'"
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: 1
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "Bankhead's plan combines two distinct mechanisms: she says she is 'pro Second Amendment' and is 'not opposed to people buying weapons' including AR-15s, while separately opposing 3D-printed 'ghost guns' specifically because 'there's no way to regulate that and keep track of those weapons.'"
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 1
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Bankhead says she supports a Medicaid for All-style system, proposing to fund it by clawing back unspent 'use-lose' Pentagon expenses ('about 2/3 of the way towards Medicaid for all') combined with savings from ending the Iran war, and separately calls for removing venture capital's profit-first influence over the healthcare system."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: 0
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Bankhead says she supports a moratorium on new data centers, citing concerns raised at the state party convention, stating 'I do' support a two-year moratorium against them."
+        coverage: 2
+        position_tag: "Prioritize regulation"
+        position_type: "pos"
+        source: 1
+      - topic: "Immigration"
+        note: "Bankhead says she opposes current immigration policy and enforcement funding levels, calling to 'rein back' DHS/ICE funding to prior levels and restore prior training standards, while cutting the bureaucratic delays that make legal immigration take years; she maintains that unlawful entry should still 'be done legal and above board.'"
+        coverage: 3
+        position_tag: "Expand legal pathways"
+        position_type: "pos"
+        source: 0
+      - topic: "Housing"
+        note: "Bankhead proposes raising the capital gains exemption on home sales from $250,000 to $500,000 to increase housing inventory, offering tax breaks to construction companies whose portfolios are at least 30% affordable housing, and 'taking corporate entities out of housing' by restricting large-scale corporate and investor ownership."
+        coverage: 3
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: 0
