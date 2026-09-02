@@ -1,0 +1,83 @@
+ocdId: "ocd-division/country:us/state:ne"
+date: "2026-11-03"
+description: "General election for Governor, US Senate, US House, and State Legislature."
+type: "general"
+website: "https://sos.nebraska.gov/elections"
+guidancePhase: "final"
+fiveFifthsId: "ne-2026-midterms"
+region_code: "NE"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  ballotpediaUrl: https://ballotpedia.org/Nebraska_elections,_2026
+  early:
+    url: "https://sos.nebraska.gov/elections/early-voting"
+    startDate: "2026-10-05"
+    endDate: "2026-11-02"
+    varies: true
+    notes: >
+      Nebraska calls this "early voting" (formerly "absentee voting") and it covers
+      both in-person and by-mail options administered by each county's election
+      commissioner or county clerk. In-person early voting opens 30 days before the
+      general election, so it begins October 5 and continues through the day before
+      Election Day, November 2. Hours and exact office locations vary by county;
+      contact your county election office for local hours. No excuse is required to
+      vote early, whether in person or by mail.
+  byMail:
+    explainerUrl: "https://sos.nebraska.gov/elections/early-voting"
+    notes: >
+      Nebraska does not automatically mail ballots to voters. Any registered voter may
+      request an early (absentee) ballot by mail; no excuse is required. County
+      election offices accept early voting applications beginning 120 days before a
+      statewide election, and regular early ballots are mailed out starting 35 days
+      before Election Day. Requests may be submitted by mail, fax, email, or in person
+      at your county election office; Nebraska does not offer an online ballot request
+      option. When requesting a mailed ballot, voters must provide their driver's
+      license or state ID number, a photocopy of an acceptable photo ID, or a
+      reasonable-impediment certification, and must repeat one of those steps when
+      returning the ballot. Voters can track the status of their ballot on the
+      Secretary of State's website.
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2026-11-03"
+      receivedBy: "2026-11-03"
+      description: >
+        Completed early/absentee ballots must be received by your county election
+        office by the time polls close on Election Day — 8:00 p.m. Central Time or
+        7:00 p.m. Mountain Time (for the handful of Nebraska Panhandle counties on
+        Mountain Time) on November 3, 2026. Nebraska does not count ballots based on
+        postmark; they must physically arrive by the deadline. Ballots may be returned
+        by mail or in person to the county election office.
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-10-23"
+        description: >
+          Requests for an early/absentee ballot must be received by your county
+          election office by 6:00 p.m. on the second Friday before the election —
+          October 23, 2026. Requests may be made in person, by mail, by fax, or by
+          email; Nebraska does not accept online ballot requests. There is no separate
+          late-request accommodation comparable to some other states, so voters who
+          miss this deadline should plan to vote in person, either early or on
+          Election Day.
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: >
+      Nebraska has required photo ID at the polls since voters approved a 2022
+      constitutional amendment and the legislature implemented it through LB 514,
+      first applied in the May 2024 primary. Acceptable forms include a Nebraska
+      driver's license or state ID card, a U.S. passport, military ID, tribal ID, a
+      student ID from a Nebraska college or university, ID issued by a Nebraska
+      government agency, or a hospital, nursing home, or assisted-living facility
+      record. The ID does not need to show a current address and may be expired.
+      Voters who lack an acceptable ID may sign a reasonable-impediment certification
+      (for example, citing a disability, illness, lack of documentation, or religious
+      objection to being photographed) or may cast a provisional ballot. Free
+      state ID cards for voting purposes are available at the Nebraska DMV. Nebraska
+      does not offer same-day voter registration. See:
+      https://sos.nebraska.gov/voter-id
+    electionDay:
+      opening: "8:00 AM Central Time / 7:00 AM Mountain Time (most of the Nebraska Panhandle observes Mountain Time). Check with your county election office for your polling place's exact hours."
+      closing: "8:00 PM Central Time / 7:00 PM Mountain Time. If you are in line by closing time, you are allowed to cast your ballot."
+races:
+  - name: "US Senate 2026"
+    id: "ne-senate-2026"

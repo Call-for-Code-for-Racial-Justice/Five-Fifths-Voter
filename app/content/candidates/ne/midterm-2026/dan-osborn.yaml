@@ -1,0 +1,144 @@
+fiveFifthsId: "dan-osborn"
+name: "Dan Osborn"
+state: "NE"
+race: "US Senate 2026"
+race_id: "ne-senate-2026"
+party: "Nonpartisan"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "DO"
+ballot_order: 2
+issues:
+  clarity: "Highly detailed and specific on economic, healthcare, and anti-corruption policy, often citing named bills; largely undocumented in reviewed sources on criminal justice, education, broadband, gun policy, LGBTQ+ policy, reproductive policy, and environment/energy"
+  sources_count: 5
+  sources_list:
+    - "Nebraska State Fair U.S. Senate debate (Nebraska Examiner, Sept. 1, 2026)"
+    - "Campaign website: 'Nebraska Fairness Plan' six-pillar platform (osbornforsenate.com/fairnessplan)"
+    - "Campaign website: 'Protect Our Paychecks, Social Security, and Healthcare' detailed policy page (osbornforsenate.com)"
+    - "News coverage of platform rollout events (Chadron Radio; Summerland Advocate, 2026)"
+    - "Ballotpedia candidate page"
+  last_updated: "2026-09-02"
+  callout: "Dan Osborn is a Nonpartisan/independent candidate for U.S. Senate in Nebraska, a former industrial mechanic and union leader (BCTGM Local 50G) who led the 2021 Kellogg's strike in Omaha and previously served in the U.S. Navy and Nebraska Army National Guard. He narrowly lost a 2024 Senate bid to Sen. Deb Fischer and is now challenging incumbent Republican Pete Ricketts. His platform centers on anti-corruption reform, protecting Social Security and worker pay, and breaking up corporate consolidation in healthcare and agriculture."
+  links:
+    - label: "Nebraska State Fair debate coverage (Nebraska Examiner, Sept. 1, 2026)"
+      url: "https://nebraskaexaminer.com/2026/09/01/ricketts-osborn-talk-tariffs-iran-war-during-nebraska-state-fair-debate/"
+    - label: "Osborn touts rural priorities during Clearwater campaign stop (Summerland Advocate, 2026)"
+      url: "https://www.summerlandadvocate.com/story/2026/07/15/news/osborn-touts-rural-priorities-during-clearwater-campaign-stop/9603.html"
+    - label: "Dan Osborn Unveils New Six-Point Agenda: Osborn's Nebraska Fairness Plan (Chadron Radio)"
+      url: "https://chadronradio.com/dan-osborn-unveils-new-six-point-agenda-osborns-nebraska-fairness-plan/"
+    - label: "Ballotpedia: Dan Osborn"
+      url: "https://ballotpedia.org/Dan_Osborn"
+    - label: "Campaign website: Nebraska Fairness Plan (six pillars, full text)"
+      url: "https://www.osbornforsenate.com/fairnessplan"
+    - label: "Campaign website: Protect Our Paychecks, Social Security, and Healthcare (detailed policy page)"
+      url: "https://www.osbornforsenate.com/nfp-protect-our-paychecks-social-security-and-healthcare"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Osborn's platform proposes multiple government-regulatory interventions to lower everyday costs: the bipartisan Credit Card Competition Act to break up the Visa-Mastercard duopoly on swipe fees, the Shrinkflation Prevention Act requiring companies to disclose package-size reductions, the Unsubscribe Act requiring one-click cancellation, a ban on 'surveillance pricing' using personal data to charge different customers different prices, and a 'smart, targeted' (not blanket) tariff policy."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: 5
+      - topic: "Taxation"
+        note: "Supports a 'real middle class tax cut' lowering rates on wage income and expanding credits, paired with closing loopholes that let top earners and corporations pay little or no federal income tax -- explicitly combining tax relief at the bottom/middle with increased taxation at the top rather than an across-the-board cut."
+        coverage: 3
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: 5
+      - topic: "Small business & farming"
+        note: "At a Clearwater campaign stop and in his 'Protect Family Farms, Ranchers and Small Businesses' platform pillar, Osborn pledged to fight corporate monopolies and private equity 'carving up' Nebraska, enforce the Packers and Stockyards Act, and pass right-to-repair laws for farm equipment -- a regulatory/enforcement approach aimed at supporting small producers against consolidation."
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: 1
+      - topic: "Workers & wages"
+        note: "Platform supports banning non-compete agreements for ordinary workers (citing the FTC's proposed 2024 rule), opposes wage-suppressing corporate practices, and supports targeted (not blanket) tariffs specifically to protect American manufacturing jobs."
+        coverage: 3
+        position_tag: "Expand worker protections"
+        position_type: "pos"
+        source: 5
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources. A platform passage stating government should stay out of 'the most personal healthcare decisions' between patient and doctor appears in the context of medical marijuana access and general healthcare privacy, and does not explicitly name abortion, so it is not scored here."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "Platform's 'Drain the Swamp' pillar proposes requiring every state to establish independent, citizen-run redistricting commissions (not politicians or lobbyists) with maps requiring approval across party lines and full public transparency -- a structural electoral-fairness reform that is a standalone third way, distinct from either expanding ballot access or tightening voter verification."
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: 4
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Osborn's platform centers on the bipartisan Break Up Big Medicine Act, a 'Glass-Steagall approach to healthcare' requiring insurers, providers, and pharmacies to be separately owned to eliminate vertical-integration conflicts of interest; he also supports giving Medicaid authority to negotiate drug prices directly (as the VA already does) and protecting independent doctors and pharmacies. This is a competition/antitrust-focused approach that is neither an expansion of public coverage nor of private options."
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: 5
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources. Platform criticism of AI data centers driving up residential electricity rates touches on power infrastructure costs but does not address broadband access or investment specifically."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "No position found in reviewed sources on energy production or environmental regulation. Platform criticism of AI data centers' electricity demand is framed as a consumer-cost and utility-fairness issue, not an energy-production or environmental-regulation position."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "At the Sept. 2026 debate, Osborn said he agreed with the 'basic mission' of ICE -- keeping communities safe -- and said Biden had failed on border security, but called the increased ICE budget 'wasteful spending' and said he would support increased training and accountability measures such as requiring body cameras for ICE officers, saying 'we should never get used to troops in our streets.' This combines support for enforcement's core mission with a distinct accountability-reform agenda, rather than a blanket stricter-enforcement or expanded-pathways position."
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: 0
+      - topic: "Housing"
+        note: "Platform's 'Good Jobs and Affordable Housing' pillar pledges to 'fight private equity tooth-and-nail' to prevent large investors from buying up Nebraska housing stock, framed as a government-intervention approach to affordability; no detailed legislative mechanism specified beyond this general commitment."
+        coverage: 2
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: 4
