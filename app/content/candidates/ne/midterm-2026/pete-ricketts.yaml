@@ -1,0 +1,154 @@
+fiveFifthsId: "pete-ricketts"
+name: "Pete Ricketts"
+state: "NE"
+race: "US Senate 2026"
+race_id: "ne-senate-2026"
+party: "Republican"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: true
+debate_participant: true
+avatar_initials: "PR"
+ballot_order: 1
+issues:
+  clarity: "Detailed and specific on taxation, immigration/border security, agriculture, and law enforcement; largely undocumented in reviewed sources on education, broadband, and voting/elections"
+  sources_count: 5
+  sources_list:
+    - "Nebraska State Fair U.S. Senate debate (Nebraska Examiner, Sept. 1, 2026)"
+    - "U.S. Senate floor speeches and press-call transcripts published by Sen. Ricketts's office (ricketts.senate.gov, Jan. 2025 - June 2026)"
+    - "Kearney town hall (Nebraska Public Media, April 24, 2025)"
+    - "Nebraska Examiner candidate profile (Nov. 12, 2025)"
+    - "Campaign website 'Delivering for Nebraska' issues pages (petericketts.com)"
+  last_updated: "2026-09-02"
+  callout: "Pete Ricketts is the Republican incumbent U.S. Senator from Nebraska, having served two terms as governor (2015-2023) before his 2023 Senate appointment and 2024 special-election win. His platform emphasizes tax cuts, immigration enforcement, deregulation, and support for law enforcement and the military, closely aligned with the Trump administration's agenda. He faces independent challenger Dan Osborn in the November 2026 general election."
+  links:
+    - label: "Nebraska State Fair debate coverage (Nebraska Examiner, Sept. 1, 2026)"
+      url: "https://nebraskaexaminer.com/2026/09/01/ricketts-osborn-talk-tariffs-iran-war-during-nebraska-state-fair-debate/"
+    - label: "Senate Floor Speech: Fund DHS and Keep Nebraskans Safe (Feb. 11, 2026)"
+      url: "https://www.ricketts.senate.gov/news/press-releases/ricketts-on-the-senate-floor-fund-dhs-and-keep-nebraskans-safe/"
+    - label: "Senate Floor Speech: Ricketts Highlights ROAD to Housing Act (Feb. 5, 2026)"
+      url: "https://www.ricketts.senate.gov/news/press-releases/ricketts-highlights-road-to-housing-act/"
+    - label: "Senate Floor Speech: Ricketts Fights to Make American Dream More Attainable / Working Families Tax Cuts (June 26, 2026)"
+      url: "https://www.ricketts.senate.gov/news/press-releases/video-ricketts-fights-to-make-american-dream-good-life-more-attainable-for-nebraska-families/"
+    - label: "Press Call Transcript: Ricketts Highlights 2025 Senate Priorities (Jan. 8, 2025)"
+      url: "https://www.ricketts.senate.gov/news/press-releases/ricketts-highlights-2025-senate-priorities/"
+    - label: "Kearney town hall coverage (Nebraska Public Media, April 24, 2025)"
+      url: "https://nebraskapublicmedia.org/es/news/news-articles/nebraskans-confront-us-sen-pete-ricketts-at-contentious-town-hall/"
+    - label: "Candidate profile (Nebraska Examiner, Nov. 12, 2025)"
+      url: "https://nebraskaexaminer.com/2025/11/12/u-s-sen-pete-ricketts-hopes-record-of-results-help-him-quash-midterm-populism/"
+    - label: "Campaign website: Cutting Taxes"
+      url: "https://petericketts.com/delivering-for-nebraska/cutting-taxes/"
+    - label: "Campaign website: Keeping Nebraskans Safe"
+      url: "https://petericketts.com/delivering-for-nebraska/keeping-nebraskans-safe/"
+    - label: "Campaign website: Defending Our Values"
+      url: "https://petericketts.com/delivering-for-nebraska/defending-our-values/"
+    - label: "Campaign website: Delivering Proven Nebraska Solutions"
+      url: "https://petericketts.com/delivering-for-nebraska/delivering-proven-nebraska-solutions/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "At the Sept. 2026 debate, Ricketts defended Trump-era tariffs as leveling the playing field for U.S. producers and said he wants to keep using tariffs to protect Nebraska agriculture -- a government trade-intervention mechanism. Separately, in floor remarks and campaign materials he credits the Working Families Tax Cuts (2025 reconciliation bill) with putting more money in Nebraskans' pockets and preventing a $2,400 tax increase, a market-driven/reduced-taxation mechanism. These are two distinct, separately evidenced approaches pulling from different directions (trade protection vs. tax relief)."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 0
+      - topic: "Taxation"
+        note: "Extensive record of supporting tax reduction: as governor, phased out state taxes on Social Security and military retirement and cut income taxes; in the Senate, backed the Working Families Tax Cuts (no tax on tips/overtime, expanded child tax credit, permanent small-business and estate-tax relief for ag producers, and eliminating federal Social Security taxes for 88% of seniors)."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: 7
+      - topic: "Small business & farming"
+        note: "At the Sept. 2026 debate, Ricketts said expanding U.S. cattle herd size -- not short-term tariff waivers on imported beef -- is the real solution to lower beef prices, and cited his continued use of tariffs to protect Nebraska agriculture from foreign competition; he noted his endorsement by the Nebraska Farm Bureau. This reflects a government-support/protectionist approach to agricultural markets rather than deregulation."
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: 0
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources on minimum wage or general worker-protection legislation. Worker-directed provisions mentioned (no tax on tips/overtime, expanded child tax credit) are tax-policy measures, addressed under Taxation, not a standalone wages/protections position."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Campaign site states Ricketts has 'always stood with law enforcement and against soft-on-crime policies,' opposed calls to defund police, invested in law enforcement training and crime lab upgrades as governor, and in the Senate backs the Back the Blue Act and Thin Blue Line Act (harsher penalties for targeting officers) and funding to combat fentanyl."
+        coverage: 3
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: 8
+      - topic: "Reproductive policy"
+        note: "Per Nebraska Examiner reporting, Ricketts helped fund the successful 2024 ballot measure banning abortion after the first trimester and has sponsored a bill making it a federal crime to transport a minor across state lines for an abortion without parental consent."
+        coverage: 3
+        position_tag: "Pro-life"
+        position_type: "pos"
+        source: 6
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "Campaign website states Ricketts 'fought back against the Biden administration's efforts to infringe on our 2nd Amendment rights,' framed as defending existing gun rights rather than a specific expansion proposal; no detailed legislative specifics found."
+        coverage: 2
+        position_tag: "Maintain current laws"
+        position_type: "pos"
+        source: 9
+      - topic: "LGBTQ+ policy"
+        note: "Campaign website states Ricketts 'worked to protect our commonsense Nebraska values by voting to ban men from competing in women's sports,' a specific, named policy position limiting transgender inclusion."
+        coverage: 3
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: 9
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "In Nov. 2025, Ricketts told the Nebraska Examiner that Democrats were holding the government shutdown hostage over 'pandemic-era subsidies' (enhanced ACA marketplace tax credits) and that Republicans were willing to discuss the issue after reopening government, but he 'didn't answer a direct question of whether he would support or oppose efforts to extend the tax credits.' No clear position found."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "In Senate floor remarks outlining his 2025 priorities, Ricketts said Senate Republicans need to 'unleash American energy and lower prices for consumers,' criticized the prior administration's environmental rulemaking (citing over 5,000 new rules including an EV mandate he called 'delusional'), and said he would work to reverse these as a member of the Environment and Public Works Committee."
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: 4
+      - topic: "Immigration"
+        note: "In a Senate floor speech urging DHS funding, Ricketts defended continued ICE and Border Patrol operations, opposed Democrats' proposed rollback of administrative warrants (calling it 'a non-starter'), defended agents' use of masks, and credited the administration with a 95% drop in daily illegal border crossings. Campaign materials cite votes for $46.5 billion in border security funding and hiring 16,000 additional Border Patrol agents."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: 1
+      - topic: "Housing"
+        note: "In a floor speech on the ROAD to Housing Act, Ricketts framed housing costs as driven largely by 'red tape and regulations' (up to 40% of the cost of an apartment development) and pushed deregulation and streamlining of HUD/USDA rural housing rules -- while also touting the same bill's permanent increase to the Low-Income Housing Tax Credit as a government-support mechanism to fund affordable housing construction. These are two distinct, separately evidenced mechanisms (deregulation and an expanded tax-credit program)."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: 2
