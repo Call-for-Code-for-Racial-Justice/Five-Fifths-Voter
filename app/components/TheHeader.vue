@@ -165,7 +165,7 @@ function scrollToId(id: string) {
     <div class="navbar-end relative h-full flex items-end gap-1">
       <a
           class="btn btn-ghost btn-square self-start md:self-end lg:self-start btn-xs md:btn-md z-10"
-          href="https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D"
+          href="https://www.instagram.com/fivefifthsvoter/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Five Fifths Voter on instagram - link opens in a new window"
