@@ -3,7 +3,7 @@ describe("journey test", () => {
   it("should have basic content", () => {
     cy.visit("/journey");
     cy.get(
-      "[href=\"https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D\"]",
+      "[href=\"https://www.instagram.com/fivefifthsvoter/\"]",
     );
     cy.get(
       "[href=\"https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter\"]",
