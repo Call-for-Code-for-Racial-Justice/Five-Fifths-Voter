@@ -25,7 +25,7 @@ describe("journey test", () => {
     cy.url().should("contain", "/whyVote");
     cy.get("[href=\"/\"]");
     cy.get(
-      "[href=\"https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D\"]",
+      "[href=\"https://www.instagram.com/fivefifthsvoter/\"]",
     );
     cy.get(
       "[href=\"https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter\"]",
@@ -49,7 +49,7 @@ describe("journey test", () => {
     cy.url().should("contain", "/whyVote");
     cy.get("[href=\"/\"]");
     cy.get(
-      "[href=\"https://www.instagram.com/fivefifthsvoter/?igshid=Zjc2ZTc4Nzk%3D\"]",
+      "[href=\"https://www.instagram.com/fivefifthsvoter/\"]",
     );
     cy.get(
       "[href=\"https://github.com/Call-for-Code-for-Racial-Justice/Five-Fifths-Voter\"]",
