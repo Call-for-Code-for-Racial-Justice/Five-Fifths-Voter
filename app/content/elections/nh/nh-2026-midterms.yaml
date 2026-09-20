@@ -1,0 +1,107 @@
+ocdId: "ocd-division/country:us/state:nh"
+date: "2026-11-03"
+description: "New Hampshire 2026 midterm election"
+type: "general"
+website: "https://www.sos.nh.gov/elections"
+guidancePhase: "final"
+fiveFifthsId: "nh-2026-midterms"
+region_code: "NH"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  ballotpediaUrl: https://ballotpedia.org/New_Hampshire_elections,_2026
+  idUrl: "https://www.sos.nh.gov/election-day-voting"
+  early:
+    url: "https://www.sos.nh.gov/elections/absentee-ballots"
+    startDate: null
+    endDate: null
+    varies: false
+    notes: >
+      New Hampshire does not offer in-person early voting. There is no period before
+      Election Day when a voter can walk into a polling place and cast a regular
+      ballot. The only alternative to voting in person on November 3 is an absentee
+      ballot, which requires a qualifying excuse. Some voters can complete the entire
+      absentee process at their town or city clerk's office, requesting, marking, and
+      returning the ballot in one visit, which functions like early voting in practice
+      but is legally absentee voting and still requires an excuse. Clerk office hours
+      vary widely by municipality, so contact your local clerk before going.
+  byMail:
+    explainerUrl: "https://www.sos.nh.gov/elections/absentee-ballots"
+    notes: >
+      New Hampshire does not automatically mail ballots to voters, and it is one of the
+      few states that still requires an excuse to vote absentee. Qualifying reasons are
+      set by the state constitution and RSA 657: being away from your town or city on
+      Election Day, a physical disability or illness, a religious observance, an
+      employment commitment or caregiving duty that covers the entire time polls are
+      open, confinement in a penal institution for a misdemeanor or while awaiting
+      trial, participation in the Attorney General's Address Confidentiality Program or
+      protection by a domestic violence protective order, or a National Weather Service
+      winter storm, blizzard, or ice storm warning for your town or ward on Election
+      Day. Requests go to your town or city clerk rather than a county office, and New
+      Hampshire does not offer an online ballot request option. Applications may be
+      submitted starting six months before the election, so May 3, 2026 for this
+      general election. Under SB 287, effective September 30, 2025, every absentee
+      voter must verify their identity when applying: appear at the clerk's office with
+      photo ID, mail a photocopy of an acceptable photo ID with the application, or
+      have the application signature notarized. The prior option of attesting to your
+      identity by affidavit is gone. Voters registering to vote by absentee must also
+      file the appropriate absentee voter registration affidavit. Ballot status can be
+      tracked through the Secretary of State's Voter Information Lookup.
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2026-11-03"
+      receivedBy: "2026-11-03"
+      description: >
+        Completed absentee ballots returned by mail must be received by your town or
+        city clerk no later than 5:00 p.m. Eastern Time on Election Day, November 3,
+        2026. New Hampshire does not count ballots based on postmark, so they must
+        physically arrive by the deadline. The Postal Service recommends mailing a
+        completed ballot at least one week ahead. A voter returning a ballot in person
+        to the clerk must do so by 5:00 p.m. on the day before the election, November
+        2; most clerks will not accept hand-delivered ballots at the office on Election
+        Day. A voter who is unable to deliver the ballot personally may use a delivery
+        agent, limited to a spouse, parent, sibling, or child, who must complete a form
+        and present identification; confirm the local procedure with your clerk.
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-11-02"
+        description: >
+          Absentee ballot requests must reach your town or city clerk by 12:00 p.m. on
+          the day before the election, November 2, 2026, if submitted by mail, or by
+          5:00 p.m. that same day if submitted in person. Because the request must be
+          received, processed, mailed to you, and then returned by 5:00 p.m. on
+          Election Day, the Secretary of State's Office recommends that anyone relying
+          on the mail in both directions request a ballot at least two weeks before
+          Election Day rather than waiting for the formal deadline. Voters who miss the
+          window should plan to vote in person on November 3, where Election Day
+          registration is available.
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: >
+      New Hampshire has required photo ID to vote since 2012, and the requirement is
+      now strict. HB 1569, enacted in 2024, removed the challenged voter affidavit,
+      so a voter without acceptable ID can no longer sign a statement under penalty of
+      perjury and receive a ballot. HB 323, signed April 3, 2026 and effective June 2,
+      2026, then eliminated student IDs, including IDs from public New Hampshire
+      colleges and universities. As of the September 2026 primary the accepted forms
+      are: a driver's license issued by any state or the federal government, a
+      non-driver identification card issued by any state, a United States armed
+      services identification card, and a United States passport or passport card. The
+      ID must be current or expired by no more than five years, and must show your name
+      and photograph. A voter who arrives without acceptable ID will need to retrieve
+      it and return before the polls close. Free non-driver ID cards for voting purposes
+      are available from the New Hampshire DMV, but the voucher must first be obtained
+      from your town or city clerk, so allow time. New Hampshire does offer Election Day
+      registration at the polling place; registrants must prove identity, age,
+      citizenship, and domicile. On May 28, 2026, a federal court struck down HB 1569's
+      elimination of the qualified voter affidavit for proving citizenship at
+      registration, restoring that affidavit option; the state appealed to the First
+      Circuit and its request for a stay was denied on July 24, 2026, so the affidavit
+      remains available while the appeal is pending. Verify this item close to the
+      election. See: https://www.sos.nh.gov/elections/register-vote
+    electionDay:
+      opening: "Varies by municipality. State law (RSA 659:4) requires polls to open no later than 11:00 AM Eastern Time; most towns and cities open earlier, commonly between 6:00 and 8:00 AM. Check with your town or city clerk for your polling place's exact hours."
+      closing: "Varies by municipality. State law requires polls to stay open until at least 7:00 PM Eastern Time; a number of towns and cities, including Nashua, close at 8:00 PM. If you are in line by closing time, you are allowed to cast your ballot."
+races:
+  - name: "US Senate"
+    id: "nh-senate-2026"

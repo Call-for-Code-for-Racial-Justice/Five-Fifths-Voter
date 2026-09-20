@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { daysLeftIso, niceIsoDate } from "~/utils/dateFormatter";
-import { Info } from "lucide-vue-next";
+import { Info, ArrowBigRight, Flag, MapPinIcon, BuildingIcon } from "lucide-vue-next";
 
 definePageMeta({
   subnavigation: "journey",
@@ -13,6 +13,10 @@ const { t } = useI18n();
 const { election, electionStatus } = await useElectionByFfId(id);
 const races = computed(() => election?.value?.races ?? []);
 const voting = computed(() => election?.value?.voting);
+function isDateOk(theDate: null | string) {
+  if (theDate === null) return false;
+  return true;
+}
 
 useSeoMeta({
   title: () => election.value ? `five/fifths voter | ${election?.value?.description}` : "five/fifths voter",
@@ -42,7 +46,6 @@ function yesNoMaybe(val: string | boolean | undefined) {
       <div class="border-b border-base-300 pb-4">
         <div>
           <h1 class="text-3xl font-bold text-primary">{{ election.description }}</h1>
-          <p class="text-lg opacity-70">Information from five/fifths voter</p>
         </div>
       </div>
 
@@ -50,8 +53,10 @@ function yesNoMaybe(val: string | boolean | undefined) {
         <!-- Date and Website -->
         <div class="card bg-base-200 shadow-sm">
           <div class="card-body">
-            <h2 class="card-title">General Info</h2>
-            <JourneyInfoField label="Date" :prefix="`${niceIsoDate(election.date)} ⟶`" :value="daysLeftIso(election.date)" />
+            <h2 class="card-title">Election Details</h2>
+            <JourneyInfoField label="Election Day" :prefix="`${niceIsoDate(election.date)} ⟶`" :value="daysLeftIso(election.date)" />
+            <JourneyInfoField v-if="election?.voting?.early.startDate" label="Early Voting" :prefix="`${niceIsoDate(election?.voting?.early.startDate)} ⟶`" :value="daysLeftIso(election?.voting?.early.startDate)" />
+
             <div class="mt-4">
               <a :href="election.website" target="_blank" class="btn btn-outline btn-primary btn-block">
                 Official Website
@@ -78,16 +83,53 @@ function yesNoMaybe(val: string | boolean | undefined) {
           </div>
         </div>
 
+        <!-- Candidates-->
+        <div class="card bg-base-200 shadow-sm md:col-span-2">
+          <div class="card-body">
+            <h2 class="card-title">Explore Races</h2>
+            <p v-if="races.length === 0">
+              No candidates available for this election.
+            </p>
+
+            <div v-if="races.length > 0" class="flex flex-col gap-2 items-start">
+              <ul class="list bg-base-100 rounded-box shadow-md w-full">
+
+                <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Open each race to compare candidates and view their issue scorecards</li>
+
+                <li v-for="r in races" :key="r.id" class="list-row">
+                  <div>
+                    <div v-if="r.name.includes('Senate')" class="badge badge-primary p-2"><Flag/></div>
+                    <div v-else-if="r.name.includes('Governor')" class="badge badge-primary p-2"><MapPinIcon/></div>
+                    <div v-else class="badge badge-primary p-2"><BuildingIcon/></div>
+                  </div>
+                  <div>
+                    <div>{{ r.name }}</div>
+                    <div class="text-xs uppercase font-semibold opacity-60">
+                      {{ election.description }}
+                    </div>
+                  </div>
+                    <NuxtLink
+                        class="btn btn-square btn-ghost"
+                        :to="`/journey/election/five-fifths-details/${id}/${r.id}`">
+                      <ArrowBigRight/>
+                    </NuxtLink>
+                </li>
+
+              </ul>
+              </div>
+          </div>
+        </div>
+
         <!-- Early Voting -->
         <div class="card bg-base-200 shadow-sm md:col-span-2">
           <div class="card-body">
             <h2 class="card-title">Early Voting</h2>
             <div class="grid grid-cols-1 gap-4">
               <ul class="list bg-base-100 rounded-box shadow-md">
+                <li v-if="isDateOk(election?.voting?.early.startDate)" class="p-4 pb-2 text-xs opacity-60 tracking-wide">Mark your calendar</li>
+                <li v-else class="p-4 pb-2 text-lg opacity-60 tracking-wide">Early In-Person Voting is not available </li>
 
-                <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Mark your calendar</li>
-
-                <li class="list-row">
+                <li v-if="isDateOk(election?.voting?.early.startDate)" class="list-row">
                   <div><span class="badge badge-success">Start</span></div>
                   <div>
                     <div>
@@ -101,7 +143,7 @@ function yesNoMaybe(val: string | boolean | undefined) {
                   </a>
                 </li>
 
-                <li class="list-row">
+                <li v-if="isDateOk(election?.voting?.early.endDate)" class="list-row">
                   <div><span class="badge badge-error">End</span></div>
                   <div>
                     <div>{{niceIsoDate(election?.voting?.early.endDate)}}
@@ -115,25 +157,6 @@ function yesNoMaybe(val: string | boolean | undefined) {
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-
-        <!-- Candidates-->
-        <div class="card bg-base-200 shadow-sm md:col-span-2">
-          <div class="card-body">
-            <h2 class="card-title">Candidates</h2>
-            <div v-if="races.length === 0">
-              No candidates available for this election.
-            </div>
-            <div v-else class="flex flex-col gap-2 items-start">
-              <NuxtLink
-                  v-for="r in races"
-                  :key="r.id"
-                  class="btn btn-link"
-                  :to="`/journey/election/five-fifths-details/${id}/${r.id}`">
-                {{ r.name }}
-              </NuxtLink>
-              </div>
           </div>
         </div>
 
@@ -237,7 +260,10 @@ function yesNoMaybe(val: string | boolean | undefined) {
                 <span class="text-sm font-bold opacity-70 uppercase">ID Instructions</span>
                 <p class="text-sm mt-1">{{ voting?.inPerson.idInstructions }}</p>
               </div>
-              <a v-if="election?.voting?.idUrl" :href="election?.voting?.idUrl" target="_blank" class="btn btn-sm btn-link p-0 h-auto">More information about IDs</a>
+              <a v-if="election?.voting?.idUrl" :href="election?.voting?.idUrl" target="_blank" class="btn btn-md btn-link p-0 h-auto">
+                More information about IDs
+                <Info title="More information"/>
+              </a>
               <div class="bg-base-300 p-3 rounded-lg mt-2">
                 <span class="text-xs font-bold opacity-70 uppercase block mb-1">Election Day Hours</span>
                 <span class="text-sm">
