@@ -1,22 +1,13 @@
 <script setup lang="ts">
-import { daysLeftIso, niceIsoDate } from "~/utils/dateFormatter";
-import { Info, ArrowBigRight, Flag, MapPinIcon, BuildingIcon } from "lucide-vue-next";
-
 definePageMeta({
   subnavigation: "journey",
 });
 
 const route = useRoute();
 const id = route.params.ffElectionId as string;
-const { t } = useI18n();
 
 const { election, electionStatus } = await useElectionByFfId(id);
 const races = computed(() => election?.value?.races ?? []);
-const voting = computed(() => election?.value?.voting);
-function isDateOk(theDate: null | string) {
-  if (theDate === null) return false;
-  return true;
-}
 
 useSeoMeta({
   title: () => election.value ? `five/fifths voter | ${election?.value?.description}` : "five/fifths voter",
@@ -27,12 +18,6 @@ useSeoMeta({
   twitterDescription: () => election.value ? `Voting dates, candidates, and registration information for ${election?.value?.description}` : "Election information from five/fifths voter",
   twitterCard: "summary_large_image",
 });
-
-function yesNoMaybe(val: string | boolean | undefined) {
-  if (val === true) return t("yes");
-  if (val === false) return t("no");
-  return t("maybe");
-}
 </script>
 
 <template>
@@ -50,229 +35,12 @@ function yesNoMaybe(val: string | boolean | undefined) {
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Date and Website -->
-        <div class="card bg-base-200 shadow-sm">
-          <div class="card-body">
-            <h2 class="card-title">Election Details</h2>
-            <JourneyInfoField label="Election Day" :prefix="`${niceIsoDate(election.date)} ⟶`" :value="daysLeftIso(election.date)" />
-            <JourneyInfoField v-if="election?.voting?.early.startDate" label="Early Voting" :prefix="`${niceIsoDate(election?.voting?.early.startDate)} ⟶`" :value="daysLeftIso(election?.voting?.early.startDate)" />
-
-            <div class="mt-4">
-              <a :href="election.website" target="_blank" class="btn btn-outline btn-primary btn-block">
-                Official Website
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Voting Options -->
-        <div class="card bg-base-200 shadow-sm">
-          <div class="card-body">
-            <h2 class="card-title">Voting Options</h2>
-            <div class="space-y-2">
-              <JourneyInfoField
-                  label="Early Voting Available"
-                  :value="yesNoMaybe(election?.voting?.early.startDate ? true : undefined)" />
-              <JourneyInfoField
-                label="In-Person Voting Available"
-                :value="yesNoMaybe(election?.voting?.inPersonVotingAvailable)" />
-              <JourneyInfoField
-                label="Mail Ballots Sent Automatically"
-                :value="yesNoMaybe(election?.voting?.mailBallotsSentAutomatically)" />
-            </div>
-          </div>
-        </div>
-
-        <!-- Candidates-->
-        <div class="card bg-base-200 shadow-sm md:col-span-2">
-          <div class="card-body">
-            <h2 class="card-title">Explore Races</h2>
-            <p v-if="races.length === 0">
-              No candidates available for this election.
-            </p>
-
-            <div v-if="races.length > 0" class="flex flex-col gap-2 items-start">
-              <ul class="list bg-base-100 rounded-box shadow-md w-full">
-
-                <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Open each race to compare candidates and view their issue scorecards</li>
-
-                <li v-for="r in races" :key="r.id" class="list-row">
-                  <div>
-                    <div v-if="r.name.includes('Senate')" class="badge badge-primary p-2"><Flag/></div>
-                    <div v-else-if="r.name.includes('Governor')" class="badge badge-primary p-2"><MapPinIcon/></div>
-                    <div v-else class="badge badge-primary p-2"><BuildingIcon/></div>
-                  </div>
-                  <div>
-                    <div>{{ r.name }}</div>
-                    <div class="text-xs uppercase font-semibold opacity-60">
-                      {{ election.description }}
-                    </div>
-                  </div>
-                    <NuxtLink
-                        class="btn btn-square btn-ghost"
-                        :to="`/journey/election/five-fifths-details/${id}/${r.id}`">
-                      <ArrowBigRight/>
-                    </NuxtLink>
-                </li>
-
-              </ul>
-              </div>
-          </div>
-        </div>
-
-        <!-- Early Voting -->
-        <div class="card bg-base-200 shadow-sm md:col-span-2">
-          <div class="card-body">
-            <h2 class="card-title">Early Voting</h2>
-            <div class="grid grid-cols-1 gap-4">
-              <ul class="list bg-base-100 rounded-box shadow-md">
-                <li v-if="isDateOk(election?.voting?.early.startDate)" class="p-4 pb-2 text-xs opacity-60 tracking-wide">Mark your calendar</li>
-                <li v-else class="p-4 pb-2 text-lg opacity-60 tracking-wide">Early In-Person Voting is not available </li>
-
-                <li v-if="isDateOk(election?.voting?.early.startDate)" class="list-row">
-                  <div><span class="badge badge-success">Start</span></div>
-                  <div>
-                    <div>
-                      {{niceIsoDate(election?.voting?.early.startDate)}}
-                      ⟶
-                      <span class="badge badge-secondary badge-md">{{ daysLeftIso(election?.voting?.early.startDate) }}</span>
-                    </div>
-                  </div>
-                  <a  :href="election?.voting?.early.url" target="_blank" class="btn btn-sm btn-ghost btn-primary">
-                    <Info title="More information"/>
-                  </a>
-                </li>
-
-                <li v-if="isDateOk(election?.voting?.early.endDate)" class="list-row">
-                  <div><span class="badge badge-error">End</span></div>
-                  <div>
-                    <div>{{niceIsoDate(election?.voting?.early.endDate)}}
-                      ⟶
-                      <span class="badge badge-secondary badge-md">{{ daysLeftIso(election?.voting?.early.endDate) }}</span>
-                    </div>
-                  </div>
-                  <a  :href="election?.voting?.early.url" target="_blank" class="btn btn-sm btn-ghost btn-primary">
-                    <Info title="More information"/>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Voting by Mail -->
-        <div class="card bg-base-200 shadow-sm md:col-span-2">
-          <div class="card-body">
-            <h2 class="card-title">Voting by Mail</h2>
-            <ul class="list bg-base-100 rounded-box shadow-md">
-
-              <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Get organized</li>
-
-              <li class="list-row">
-                <div><span class="badge">ID Instructions</span></div>
-                <div>
-                  <div>{{ election?.voting?.byMail.idInstructions }}</div>
-                </div>
-                <a  :href="election?.voting?.byMail.explainerUrl" target="_blank" class="btn btn-sm btn-ghost btn-primary">
-                  <Info title="Id instructions"/>
-                </a>
-              </li>
-
-              <li class="list-row">
-                <div><span class="badge">Ballot request deadline</span></div>
-                <div>
-                  <div>
-                    {{ niceIsoDate(election?.voting?.byMail.deadline.ballotRequest.date) }}
-                    ⟶
-                    <span class="badge badge-secondary badge-md">{{ daysLeftIso(election?.voting?.byMail.deadline.ballotRequest.date) }}</span>
-                  </div>
-                </div>
-                <a  :href="voting?.byMail.explainerUrl" target="_blank" class="btn btn-sm btn-ghost btn-primary">
-                  <Info title="More information"/>
-                </a>
-              </li>
-              <li class="list-row">
-                <div><span class="badge">Postmarked or Received</span></div>
-                <div>
-                  <div>{{
-                      voting?.byMail.deadline.ballotRequest.postmarkedOrReceived || 'N/A'
-                    }}</div>
-                </div>
-                <a  :href="voting?.early.url" target="_blank" class="btn btn-sm btn-ghost btn-primary">
-                  <Info title="More information"/>
-                </a>
-              </li>
-              <li class="list-row">
-                <div><span class="badge">Ballot delivery deadline</span></div>
-                <div>
-                  <div>
-                    {{ niceIsoDate(election?.voting?.byMail.deadline.date) }}
-                    ⟶
-                    <span class="badge badge-secondary badge-md">{{ daysLeftIso(election?.voting?.byMail.deadline.date) }}</span>
-                  </div>
-                </div>
-                <a  :href="voting?.early.url" target="_blank" class="btn btn-sm btn-ghost btn-primary">
-                  <Info title="More information"/>
-                </a>
-              </li>
-              <li class="list-row">
-                <div><span class="badge">Reminder</span></div>
-                <div>
-                  <div>
-                    {{ voting?.byMail.deadline.ballotRequest.description }}
-                  </div>
-                </div>
-                <a  :href="voting?.byMail.explainerUrl" target="_blank" class="btn btn-sm btn-ghost btn-primary">
-                  <Info title="More information"/>
-                </a>
-              </li>
-            </ul>
-
-            <div v-if="false" class="space-y-3">
-              <div>
-                <span class="text-sm font-bold opacity-70 uppercase">ID Instructions</span>
-                <p class="text-sm mt-1">{{ voting?.byMail.idInstructions }}</p>
-              </div>
-              <a :href="voting?.byMail.explainerUrl" target="_blank" class="btn btn-sm btn-link p-0 h-auto">View Explainer</a>
-              <JourneyInfoField
-                label="Ballot request deadline"
-                :value="`${niceIsoDate(election?.voting?.byMail.deadline.ballotRequest.date)} ⟶ ${daysLeftIso(voting?.byMail.deadline.ballotRequest.date)}`"/>
-              <JourneyInfoField
-                label="(Postmarked or Received)"
-                :value="voting?.byMail.deadline.ballotRequest.postmarkedOrReceived || 'N/A'"/>
-              <JourneyInfoField
-                label="Ballot delivery deadline"
-                :value="`${niceIsoDate(election?.voting?.byMail.deadline.date)} ⟶ ${daysLeftIso(voting?.byMail.deadline.date)}`"/>
-              <p class="text-xs opacity-60 italic">{{ voting?.byMail.deadline.ballotRequest.description }}</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- In-Person Voting -->
-        <div class="card bg-base-200 shadow-sm md:col-span-2">
-          <div class="card-body">
-            <h2 class="card-title">In-Person Voting</h2>
-            <div class="space-y-3">
-              <JourneyInfoField
-                label="ID Required for All Voters"
-                :value="yesNoMaybe(voting?.inPerson.idRequiredAllVoters)"/>
-              <div v-if="voting?.inPerson.idInstructions">
-                <span class="text-sm font-bold opacity-70 uppercase">ID Instructions</span>
-                <p class="text-sm mt-1">{{ voting?.inPerson.idInstructions }}</p>
-              </div>
-              <a v-if="election?.voting?.idUrl" :href="election?.voting?.idUrl" target="_blank" class="btn btn-md btn-link p-0 h-auto">
-                More information about IDs
-                <Info title="More information"/>
-              </a>
-              <div class="bg-base-300 p-3 rounded-lg mt-2">
-                <span class="text-xs font-bold opacity-70 uppercase block mb-1">Election Day Hours</span>
-                <span class="text-sm">
-                  {{ voting?.inPerson.electionDay.opening || 'N/A' }} - {{ voting?.inPerson.electionDay.closing || 'N/A' }}
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <JourneyElectionDetailsCard :election="election" />
+        <JourneyElectionVotingOptionsCard :election="election" />
+        <JourneyElectionRacesCard :races="races" :election-description="election.description" :election-id="id" />
+        <JourneyElectionEarlyVotingCard :election="election" />
+        <JourneyElectionVotingByMailCard :election="election" />
+        <JourneyElectionInPersonVotingCard :election="election" />
       </div>
     </div>
 
