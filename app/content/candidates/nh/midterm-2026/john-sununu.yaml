@@ -1,0 +1,139 @@
+fiveFifthsId: "john-sununu"
+name: "John E. Sununu"
+state: "NH"
+race: "New Hampshire US Senate 2026"
+race_id: "nh-senate-2026"
+party: "Republican"
+office_sought: "New Hampshire US Senate 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+avatar_initials: "JS"
+ballot_order: 1
+issues:
+  clarity: "Specific on affordability, energy, and voter ID; silent on guns, education, and criminal justice"
+  sources_count: 4
+  sources_list:
+    - "Hampton Republican Senate primary debate, Sununu vs. Scott Brown (June 24, 2026, transcript)"
+    - "NHPR Morning Edition one-on-one interview with Rick Ganley (Aug 28, 2026, published transcript)"
+    - "The Dartmouth 'A Sit-Down with The Dartmouth' interview with Isabel Menna (interviewed May 8, published May 11, 2026)"
+    - "John Sununu for U.S. Senate campaign About page (reviewed Sep 20, 2026)"
+  last_updated: "2026-09-20"
+  callout: "John E. Sununu is a former three-term U.S. Representative and one-term U.S. Senator from New Hampshire and the Republican nominee, returning to politics after nearly two decades in business, teaching, and nonprofit board service. His campaign centers on affordability, with a focus on housing, health care, and energy costs, lower taxes, and being an effective voice for New Hampshire. Positions outside the scoring taxonomy include support for Congress reclaiming tariff and spending powers from the executive branch, opposition to U.S. ground troops in Iran while backing goals of preventing an Iranian nuclear weapon and reopening the Strait of Hormuz, and a record on surveillance and civil liberties reform."
+  links:
+    - label: "Hampton Republican Senate primary debate (June 24, 2026)"
+      url: "https://www.c-span.org/event/campaign-2026/senate-candidates-john-sununu-r-nh-and-scott-brown-r-nh-debate-in-hampton-nh/444463"
+    - label: "NHPR interview with John E. Sununu (Aug 28, 2026)"
+      url: "https://www.nhpr.org/politics/2026-08-28/senate-primary-conversations-john-sununu-nh-newhampshire-midterms-elections-2026"
+    - label: "The Dartmouth interview with John E. Sununu (May 2026)"
+      url: "https://www.thedartmouth.com/article/2026/05/menna-im-new-hampshire-john-sununu-pitches-experience-independence-in-bid-to-return-to-senate"
+    - label: "John Sununu for U.S. Senate: About"
+      url: "https://www.sununusenator.com/about"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Debate: proposes health care competition and health savings accounts, ending tariffs on building materials, cutting federal housing regulations, and more energy production and permitting reform. NHPR and Dartmouth: names housing, health care, and energy as his three focus areas and says wages must outpace inflation after price increases under the Biden administration. About: says he will focus on reducing inflation and lowering housing, health care, and energy costs."
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: [0, 1, 2, 3]
+      - topic: "Taxation"
+        note: "Debate: says he would have voted for the Big Beautiful Bill, describes it as keeping taxes low with no tax on overtime, tips, and a Social Security deduction, and calls a vote against it a vote for a tax increase. About: opposes all middle-class tax hikes and wrote the law banning internet access taxes. NHPR: cites a past balanced budget agreement that cut taxes and spending."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 1, 3]
+      - topic: "Small business & farming"
+        note: "Debate: says he ran a manufacturing operation and wants to avoid saddling New Hampshire small businesses with new taxes and regulations, and to scale back federal regulations. Farming not addressed."
+        coverage: 2
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: [0]
+      - topic: "Workers & wages"
+        note: "NHPR and Debate: says wages should grow faster than inflation and that job growth matters, especially for younger workers, but proposes no labor or wage policy. No position on minimum wage or labor regulation found."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "Debate: supports the SAVE Act and photo ID to vote, wants a straight up or down Senate vote on it, and would attach it to must-pass legislation such as defense and farm bills. Dartmouth: cites his opponent's opposition to the SAVE Act voter ID requirement as a key contrast."
+        coverage: 3
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: [0, 2]
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Debate: says boys should not compete in girls' sports, frames it as women's safety and Title IX, and calls for action at both the national and state level. No other LGBTQ+ policy addressed and no specific federal bill named."
+        coverage: 2
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: [0]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "NHPR: wants providers to compete across state lines, a health savings account for everyone who wants one, and less federal regulatory burden on doctors and nurses. Debate: backs Medicaid work requirements and excluding illegal immigrants from Medicaid, and fighting Medicare fraud. Dartmouth: adds price transparency."
+        coverage: 3
+        position_tag: "Expand private options"
+        position_type: "pos"
+        source: [0, 1, 2]
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "Debate and Dartmouth: calls for permitting reform and more electric transmission and gas pipeline capacity, and says he would push for investment in critical infrastructure, but takes no position on public versus private funding. Broadband not mentioned."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Debate: wants more domestic oil and gas production, permitting reform for electric transmission and gas pipelines, and an end to mandates that force utilities to buy at above-market rates. Dartmouth: calls for more production, transmission infrastructure, and pipeline capacity. No environmental regulation position found."
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: [0, 2]
+      - topic: "Immigration"
+        note: "Debate: favors ending birthright citizenship, through the courts or Congress if needed, and lists keeping the border secure as a campaign goal. NHPR and Debate: supports barring Medicaid for people in the country illegally. No legal pathway proposals found."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [0, 1]
+      - topic: "Housing"
+        note: "Debate and Dartmouth: wants to end tariffs on building materials, cut federal regulations on multifamily and workforce housing, and pursue permitting reform. NHPR: wants fewer federal requirements on HOME, Low-Income Housing Tax Credit, and Community Development Block Grant funds so they work better for local developers."
+        coverage: 3
+        position_tag: "Reduce development barriers"
+        position_type: "pos"
+        source: [0, 1, 2]

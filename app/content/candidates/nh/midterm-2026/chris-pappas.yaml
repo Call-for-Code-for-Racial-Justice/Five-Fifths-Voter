@@ -1,0 +1,139 @@
+fiveFifthsId: "chris-pappas"
+name: "Chris Pappas"
+state: "NH"
+race: "New Hampshire US Senate 2026"
+race_id: "nh-senate-2026"
+party: "Democratic"
+office_sought: "New Hampshire US Senate 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "CP"
+ballot_order: 1
+issues:
+  clarity: "Detailed on affordability, health care, and housing; silent on gun policy"
+  sources_count: 4
+  sources_list:
+    - "NHPR All Things Considered one-on-one interview with Julia Barnett (Aug 31, 2026, published transcript)"
+    - "Andy Beshear Podcast 'Primed for 2026' interview (early Jan 2026, transcript)"
+    - "MS NOW Way Too Early one-on-one TV interview (Feb 4, 2026, transcript)"
+    - "Chris Pappas for Senate Priorities page and its issue subpages (reviewed Sep 20, 2026)"
+  last_updated: "2026-09-20"
+  callout: "Chris Pappas is a four-term U.S. Representative for New Hampshire's 1st District and the Democratic nominee, with earlier service on the Executive Council and in his family's Manchester restaurant business. His platform centers on lowering costs for health care, housing, child care, and energy, and on opposing federal tariffs. Positions outside the scoring taxonomy include an anti-corruption agenda (DISCLOSE Act, overturning Citizens United, a congressional stock trading ban), support for war powers resolutions on the Iran conflict, and stated views on U.S. aid to Israel."
+  links:
+    - label: "NHPR interview with Chris Pappas (Aug 31, 2026)"
+      url: "https://www.nhpr.org/politics/2026-08-31/primary-conversations-pappas-says-democratic-party-needs-to-focus-on-kitchen-table-issues"
+    - label: "Andy Beshear Podcast interview (Primed for 2026)"
+      url: "https://youtu.be/t6HT5lJ7bWU?si=qvhyQ9yVZJiMIXwL"
+    - label: "MS NOW Way Too Early interview with Chris Pappas (Feb 4, 2026)"
+      url: "https://www.youtube.com/watch?v=rTtSQYj3ae4&t=2s"
+    - label: "Chris Pappas for Senate: Priorities"
+      url: "https://chrispappas.org/priorities/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "NHPR: proposes cutting taxes for working people and investing in affordable housing, health care, and child care, including capping child care costs for families. Beshear: describes an affordability agenda covering housing construction, first-time buyer down payments, ACA subsidies, energy costs, and child care. Way Too Early: names cost of living, housing, health care, and child care as core campaign themes and criticizes tariffs for raising costs. Priorities: cites the $35 insulin cap, Medicare drug price negotiation, restoring the expanded Child Tax Credit, cutting energy taxes, protecting LIHEAP, rolling back tariffs on food and essentials, and cracking down on price gouging."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [0, 1, 2, 3]
+      - topic: "Taxation"
+        note: "NHPR: says the party should put forward proposals that cut taxes for working people. Priorities (Tax Cuts and Lower Costs Blueprint): supports cutting energy taxes, strengthening the Child Tax Credit, tax cuts for first-time home buyers and small businesses, and eliminating the federal excise tax on new trucks and trailers. No proposal to raise taxes found in reviewed sources."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 3]
+      - topic: "Small business & farming"
+        note: "Beshear: as a small business owner (family restaurant, about 230 employees), names workforce development, sensible tax policy, supply chain strength, and access to capital as priorities, and criticizes tariff costs for importers and NH tourism. Priorities: has led efforts on rural entrepreneurs, access to capital, and small business tax cuts, and has bipartisan legislation to repeal tariffs for small businesses and refund what they paid. Farming not addressed."
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [1, 3]
+      - topic: "Workers & wages"
+        note: "Priorities (Labor): helped introduce and pass the PRO Act in the House to protect collective bargaining, introduced bipartisan legislation to restore union rights for federal workers, and backs job training and apprenticeships. Beshear: mentions a House discharge petition on collective bargaining rights for federal workers. Cites higher wages as a goal but no minimum wage proposal found."
+        coverage: 3
+        position_tag: "Expand worker protections"
+        position_type: "pos"
+        source: [1, 3]
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Priorities (Public Safety, Law Enforcement): led the bipartisan bill to permanently classify fentanyl-related substances as Schedule I and backs stepped-up enforcement on dark web fentanyl sales and precursor chemicals, while also securing funding for addiction treatment and mental health care and for local police hiring, training, and equipment. No position on sentencing or incarceration found."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [3]
+      - topic: "Reproductive policy"
+        note: "Priorities (Reproductive Freedom): fights to restore and codify the rights established under Roe; helped pass the Women's Health Protection Act in the House, introduced legislation on the right to travel for abortion care and on IVF access, and introduced legislation to protect Title X funding."
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: [3]
+      - topic: "Voting & elections"
+        note: "NHPR: says he has fought to make it easier, not harder, to vote and to shore up democracy, as a brief statement without named legislation. Campaign finance positions (DISCLOSE Act, overturning Citizens United) are outside the taxonomy and noted in the callout."
+        coverage: 1
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: [0]
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Priorities (Equal Rights and LGBTQ+): as Co-Chair of the Congressional Equality Caucus, introduced legislation to guarantee equality in employment, housing, and public accommodations; helped pass the Respect for Marriage Act (2022); introduced the SERVE Act for LGBTQ+ veterans; and is working to restore the LGBTQ+ line of the 988 hotline."
+        coverage: 3
+        position_tag: "Expand protections"
+        position_type: "pos"
+        source: [3]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "NHPR: wants to undo the Republican and Trump health care cuts to Medicaid and restore ACA premium subsidies. Beshear: leading a bipartisan House group of 35 members to extend ACA subsidies for a year, with minor modifications. Way Too Early: lists health care among core campaign issues and criticizes Medicaid cuts. Priorities: protect and strengthen the ACA, defend Medicare and Medicaid, expand telehealth, and continue the insulin cap and Medicare drug price negotiation. No public option or single-payer position found."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: [0, 1, 2, 3]
+      - topic: "Education"
+        note: "Priorities (Education): invest in public schools and teachers; led the effort to restore $27 million in federal education funds withheld by the Trump Administration; supports more Pell grants, affordable community college, and debt forgiveness for students entering high-demand careers such as nursing. No school choice position found."
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [3]
+      - topic: "Broadband & infrastructure"
+        note: "Priorities (Energy and Environment, Law Enforcement): cites climate resilience funding in the Bipartisan Infrastructure Law, lead pipe replacement, EV charging infrastructure, and a bill to upgrade police, EMS, and fire facilities. Broadband not mentioned in reviewed sources."
+        coverage: 2
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: [3]
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Priorities (Energy and Environment): supports an all-of-the-above energy strategy alongside clean energy funding, the Inflation Reduction Act, and PFAS legislation with stronger national safety standards. Beshear: wants to bring more energy production online, including clean energy projects."
+        coverage: 3
+        position_tag: "Balance both"
+        position_type: "pos"
+        source: [1, 3]
+      - topic: "Immigration"
+        note: "Way Too Early: supports going after criminals and 'the worst of the worst' while calling for ICE guardrails, including judicial warrants, de-escalation training, and officer identification. Priorities (Immigration): supports comprehensive immigration reform for immigrants who follow the rules and helped pass protections for DREAMers, while also supporting enforcement against those who cross illegally and commit serious crimes and funding for 22,000 border patrol agents. Also introduced legislation to redirect ICE funding to local law enforcement and to preserve local control over new detention facilities."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [2, 3]
+      - topic: "Housing"
+        note: "NHPR: wants more homes built by investing in communities, making building easier, and taking on Wall Street, with more federal support. Beshear: backs federal construction of affordable housing, expanded federal programs, and help for first-time buyers with down payments. Priorities: cutting red tape for communities to build, financing affordable housing development, and tax cuts for first-time buyers."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [0, 1, 3]
