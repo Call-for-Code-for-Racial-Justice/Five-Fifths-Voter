@@ -1,6 +1,6 @@
 ocdId: "ocd-division/country:us/state:ne"
 date: "2026-11-03"
-description: "General election for Governor, US Senate, US House, and State Legislature."
+description: "Nebraska 2026 midterm election"
 type: "general"
 website: "https://sos.nebraska.gov/elections"
 guidancePhase: "final"
@@ -79,5 +79,5 @@ voting:
       opening: "8:00 AM Central Time / 7:00 AM Mountain Time (most of the Nebraska Panhandle observes Mountain Time). Check with your county election office for your polling place's exact hours."
       closing: "8:00 PM Central Time / 7:00 PM Mountain Time. If you are in line by closing time, you are allowed to cast your ballot."
 races:
-  - name: "US Senate 2026"
+  - name: "Nebraska US Senate 2026"
     id: "ne-senate-2026"

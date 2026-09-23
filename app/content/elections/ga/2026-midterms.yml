@@ -1,6 +1,6 @@
 ocdId: "ocd-division/country:us/state:ga"
 date: "2026-11-03"
-description: "General election for Governor, US Senate, US House, and other offices."
+description: "Georgia 2026 midterm election"
 type: "general"
 website: "https://mvp.sos.ga.gov"
 guidancePhase: "final"
@@ -42,5 +42,5 @@ voting:
 races:
   - name: "Georgia Governor 2026"
     id: "ga-governor-2026"
-  - name: "US Senate 2026"
+  - name: "Georgia US Senate 2026"
     id: "ga-senate-2026"

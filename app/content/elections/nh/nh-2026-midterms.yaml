@@ -103,5 +103,5 @@ voting:
       opening: "Varies by municipality. State law (RSA 659:4) requires polls to open no later than 11:00 AM Eastern Time; most towns and cities open earlier, commonly between 6:00 and 8:00 AM. Check with your town or city clerk for your polling place's exact hours."
       closing: "Varies by municipality. State law requires polls to stay open until at least 7:00 PM Eastern Time; a number of towns and cities, including Nashua, close at 8:00 PM. If you are in line by closing time, you are allowed to cast your ballot."
 races:
-  - name: "US Senate"
+  - name: "New Hampshire US Senate 2026"
     id: "nh-senate-2026"

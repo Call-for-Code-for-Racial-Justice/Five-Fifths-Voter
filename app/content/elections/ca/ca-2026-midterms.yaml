@@ -1,6 +1,6 @@
 ocdId: "ocd-division/country:us/state:ca"
 date: "2026-11-03"
-description: "General election for Governor, US Senate, US House, State Legislature, and other statewide offices."
+description: "California 2026 midterm election"
 type: "general"
 website: "https://www.sos.ca.gov/elections"
 guidancePhase: "final"
@@ -57,5 +57,5 @@ voting:
 races:
   - name: "Governor 2026"
     id: "ca-governor-2026"
-  - name: "Mayor of Los Angeles"
+  - name: "Mayor of Los Angeles 2026"
     id: "ca-la-mayor-2026"

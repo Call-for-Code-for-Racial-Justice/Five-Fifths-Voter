@@ -1,6 +1,6 @@
 ocdId: "ocd-division/country:us/state:me"
 date: "2026-11-03"
-description: "General election for Governor, US Senate, US House, and State Legislature."
+description: "Maine 2026 midterm election"
 type: "general"
 website: "https://www.maine.gov/sos/elections-voting"
 guidancePhase: "final"
@@ -76,5 +76,5 @@ voting:
       opening: "Varies by municipality. Polls open between 6:00 AM and 10:00 AM; towns with more than 500 residents must open by 8:00 AM. Check with your town or city clerk."
       closing: "8:00 PM. If you are in line by 8:00 PM, you are allowed to cast your ballot."
 races:
-  - name: "US Senate 2026"
+  - name: "Maine US Senate 2026"
     id: "me-senate-2026"

@@ -1,6 +1,6 @@
 ocdId: "ocd-division/country:us/state:ia"
 date: "2026-11-03"
-description: "General election for Governor, US Senate, US House, State Legislature, and other statewide offices."
+description: "Iowa 2026 midterm election"
 type: "general"
 website: "https://sos.iowa.gov/elections-voting"
 guidancePhase: "final"
@@ -62,5 +62,5 @@ voting:
       opening: "7:00 AM"
       closing: "8:00 PM. If you are in line by 8:00 PM, you are allowed to cast your ballot."
 races:
-  - name: "US Senate 2026"
+  - name: "Iowa US Senate 2026"
     id: "ia-senate-2026"
