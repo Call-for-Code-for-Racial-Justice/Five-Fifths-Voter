@@ -1,6 +1,6 @@
 ocdId: "ocd-division/country:us/state:mt"
 date: "2026-11-03"
-description: "General election for US Senate, US House, Public Service Commission, and State Legislature."
+description: "Montana 2026 midterm election"
 type: "general"
 website: "https://votemt.gov"
 guidancePhase: "final"
@@ -86,5 +86,5 @@ voting:
         the county election office through 8:00 PM. If you are in line by closing
         time, you are allowed to cast your ballot.
 races:
-  - name: "US Senate 2026"
+  - name: "Montana US Senate 2026"
     id: "mt-senate-2026"

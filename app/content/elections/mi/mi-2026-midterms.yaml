@@ -1,6 +1,6 @@
 ocdId: "ocd-division/country:us/state:mi"
 date: "2026-11-03"
-description: "General election for Governor, US Senate, US House, and State Legislature."
+description: "Michigan 2026 midterm election"
 type: "general"
 website: "https://www.michigan.gov/sos/elections"
 guidancePhase: "final"
@@ -89,5 +89,5 @@ voting:
         Eastern time. If you are in line by closing time, you are allowed to cast
         your ballot.
 races:
-  - name: "US Senate 2026"
+  - name: "Michigan US Senate 2026"
     id: "mi-senate-2026"
