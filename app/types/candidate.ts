@@ -29,6 +29,7 @@ export const contentCandidateSchema = z.object({
   incumbent: z.boolean(),
   debate_participant: z.boolean(),
   avatar_initials: z.string(),
+  avatar_url: z.string().nullable(),
   ballot_order: z.number(),
   issues: z.object({
     clarity: z.string(),

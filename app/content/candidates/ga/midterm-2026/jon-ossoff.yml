@@ -10,6 +10,7 @@ region: "Statewide"
 incumbent: true
 debate_participant: false
 avatar_initials: "JO"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Jon_Ossoff_Senate_Portrait_2021.jpg/120px-Jon_Ossoff_Senate_Portrait_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
 ballot_order: 1
 issues:
   clarity: "Detailed on healthcare, housing, and agriculture; limited specifics on taxation and immigration"
