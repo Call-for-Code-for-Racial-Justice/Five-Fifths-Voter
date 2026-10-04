@@ -1,0 +1,140 @@
+fiveFifthsId: "jon-husted"
+name: "Jon Husted"
+state: "OH"
+race: "Ohio US Senate 2026"
+race_id: "oh-senate-2026"
+party: "Republican"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: true
+debate_participant: false
+avatar_initials: "JH"
+ballot_order: 1
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Sen._Jon_Husted_official_portrait%2C_119th_Congress.jpg/120px-Sen._Jon_Husted_official_portrait%2C_119th_Congress.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Specific on taxes, energy and immigration; general or silent on most other topics"
+  sources_count: 4
+  sources_list:
+    - "C-SPAN coverage: Sen. Husted tours a manufacturing facility and receives a campaign endorsement, prepared remarks and press Q&A (transcript from the C-SPAN page, undated)"
+    - "Local 12 News 'Beyond the Podium' (Sept 27, 2026), broadcast segment with excerpts from a one-on-one interview with Sen. Husted"
+    - "Guy Benson Show (Fox News Radio) interview transcript, Sept 25, 2026"
+    - "Jon Husted for Senate campaign website (home, bio, press releases and endorsements pages), reviewed Oct 4, 2026"
+  last_updated: "2026-10-04"
+  callout: "Jon Husted is the incumbent Republican U.S. senator from Ohio, appointed in 2025 after JD Vance became vice president, and previously served as lieutenant governor, secretary of state and Ohio House speaker. In the reviewed sources he emphasizes jobs and business competitiveness, tax cuts for working families, domestic energy production, immigration enforcement and his Ratepayer Protection Act, which would require data centers to pay for their own electricity infrastructure. Positions outside the taxonomy include the Iran war, where he says it should end on terms acceptable to the United States and that Iran should not have a nuclear weapon or control the Strait of Hormuz, and his TEAM USA Act, which would cap non-American athletes at 20 percent of college rosters."
+  links:
+    - label: "C-SPAN: Sen. Jon Husted tours manufacturing facility and receives campaign endorsement"
+      url: "https://www.c-span.org/program/campaign-2026/sen-jon-husted-r-oh-tours-manufacturing-facility-receives-campaign-endorsement/685770"
+    - label: "Local 12 News: Beyond the Podium (Sept 27, 2026)"
+      url: "https://www.youtube.com/watch?v=-lm_mDw0Cto"
+    - label: "Guy Benson Show interview (Fox News Radio, Sept 25, 2026)"
+      url: "https://radio.foxnews.com/2026/09/25/senator-jon-husted-rips-schumer-over-data-center-bill-the-fraud-here-is-what-chuck-is-trying-to-perpetuate/"
+    - label: "Jon Husted for Senate campaign website"
+      url: "https://www.jonhustedforsenate.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Says the working family tax cut plan lets people keep more of their pay, citing no tax on tips or overtime, lower taxes on Social Security and a $2,200 per child tax credit, and says he would also lower prices for groceries, housing and fuel (C-SPAN, Local 12). Backs more domestic oil and gas supply to meet demand (C-SPAN, Guy Benson Show). Also says his Ratepayer Protection Act would require data centers to pay for their own electricity infrastructure and generation so costs are not passed to ratepayers (C-SPAN, Guy Benson Show). Market-oriented tax and supply measures are paired with a federal requirement on data centers."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [0, 1, 2]
+      - topic: "Taxation"
+        note: "Cites the working family tax cut plan: no tax on tips or overtime, lower taxes on Social Security, a $2,200 per child tax credit and tax credits so families can afford child care (C-SPAN, Local 12). Says good tax policy should also encourage businesses to invest in machinery and equipment (C-SPAN). Campaign site cites his record as Ohio House Speaker, passing what it calls the largest income tax cut in Ohio history at the time."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 1, 3]
+      - topic: "Small business & farming"
+        note: "Speaks about business competitiveness generally: cites past workers' comp, tort and tax reform, says tax and energy policy should help businesses invest and compete, and says the Ohio economy has grown (C-SPAN). Campaign site cites his record as Secretary of State making Ohio the least costly Midwest state to start and maintain a business, and lists NFIB and Ohio Cattlemen's Association endorsements. No stated position on government support or regulation specific to small business or farming found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "Emphasizes job creation, job skills training and keeping more of workers' pay through no tax on tips or overtime (C-SPAN, Local 12). The campaign site cites TechCred and Industry Sector Partnerships and lists several labor union endorsements. No position found on minimum wage, worker protections or labor regulation in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Campaign site calls him a proud supporter of police who worked to secure millions in funding for law enforcement agencies, and lists endorsements from the Fraternal Order of Police of Ohio and 75 Ohio sheriffs. No stated position on incarceration, sentencing or prevention programs found in reviewed sources."
+        coverage: 2
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: [3]
+      - topic: "Reproductive policy"
+        note: "Campaign site calls him a champion for life and ties this to his own adoption out of foster care. No specific legislation or position on exceptions found in reviewed sources."
+        coverage: 1
+        position_tag: "Pro-life"
+        position_type: "pos"
+        source: [3]
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "Campaign site announces an endorsement from the Buckeye Firearms Association, described as Ohio's leading Second Amendment advocate, which gave him an A rating. No stated position on gun laws found in reviewed sources. An endorsement or rating is not treated as a position."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Names higher healthcare costs as a problem he attributes to his opponent's policies (Guy Benson Show). No proposal or position on coverage or the government's role found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "Discusses the electric grid rather than broadband or public infrastructure investment. Says data centers should pay for their own infrastructure, including generation and transmission lines, that the multi-state grid means a federal law is needed, and that the federal government should not decide where data centers are built because siting is up to local communities (C-SPAN, Guy Benson Show). Also describes a bill to withhold highway funding from states that issue driver's licenses to people in the country illegally (Guy Benson Show). No position found on broadband or public infrastructure investment in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Says Republicans are the party of 'drill baby drill' and more supply to meet demand, including pipelines and coal- and gas-fired power plants, and says the country needs enough energy to meet demand (C-SPAN, Guy Benson Show). Faults Democrats for opposing the Keystone pipeline and his opponent for a 2012 vote he says allowed 23 Ohio power plants to be shut down (C-SPAN, Guy Benson Show). Says domestic fuel supply is keeping prices lower (Local 12). Sponsors the Ratepayer Protection Act on data center electricity costs."
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: [0, 1, 2]
+      - topic: "Immigration"
+        note: "Says entering the country illegally is a crime and that Democrats have created incentives to come illegally (Local 12). Has legislation to bar highway funding to states that issue driver's licenses to people in the country illegally, and criticizes sanctuary states (Guy Benson Show)."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [1, 2]
+      - topic: "Housing"
+        note: "Mentions lowering the price of housing, alongside groceries and fuel, in a single passing reference (Local 12). No housing policy position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null

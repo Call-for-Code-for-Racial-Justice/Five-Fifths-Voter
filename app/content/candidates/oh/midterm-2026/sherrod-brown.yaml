@@ -1,0 +1,137 @@
+fiveFifthsId: "sherrod-brown"
+name: "Sherrod Brown"
+state: "OH"
+race: "Ohio US Senate 2026"
+race_id: "oh-senate-2026"
+party: "Democratic"
+office_sought: "US Senate"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+avatar_initials: "SB"
+ballot_order: 2
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Sen._Sherrod_Brown_%28D-OH%29%2C_Official_Portrait%2C_117th_Congress_%28cropped%29.jpg/120px-Sen._Sherrod_Brown_%28D-OH%29%2C_Official_Portrait%2C_117th_Congress_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Specific on health care costs, utilities and data centers; general on most other topics"
+  sources_count: 3
+  sources_list:
+    - "WSAZ Decision 2026 full interview with Sherrod Brown (YouTube transcript)"
+    - "Brian Tyler Cohen interview with Sherrod Brown (YouTube transcript)"
+    - "Sherrod Brown for Senate campaign issues page (Our Fight)"
+  last_updated: "2026-10-04"
+  callout: "Brown is a former U.S. Senator from Ohio who lost his 2024 re-election bid and is now running in the 2026 special election against Republican Sen. Jon Husted. His campaign emphasizes workers, health care and drug costs, utility rates, and making data centers pay their own way. Positions outside the taxonomy include opposition to the current U.S. war in Iran, support for restoring the child tax credit, and a ban on stock trading by members of Congress and their spouses and on lobbying after leaving office."
+  links:
+    - label: "WSAZ Decision 2026: Full interview with Sherrod Brown"
+      url: "https://www.youtube.com/watch?v=dDuDtwYHhAs"
+    - label: "Brian Tyler Cohen interview: Sherrod Brown takes the lead in Ohio Senate polling"
+      url: "https://www.youtube.com/watch?v=mWWv5LgszCY"
+    - label: "Sherrod Brown campaign: Our Fight (issues page)"
+      url: "https://www.sherrodbrown.com/our-fight/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Campaign page opens with 'Life is too expensive' and lists capping utility rate increases, making it illegal for drug companies to charge Americans more than other countries, and fining insurers that deny care. In the Cohen interview he supports capping health insurance premiums and restoring the child tax credit. Mechanisms named are price caps, regulation and a tax credit program."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [1, 2]
+      - topic: "Taxation"
+        note: "Opposes tax cuts for billionaires and large corporations and criticizes tax breaks for data center developers (WSAZ, Cohen, campaign page). Supports restoring the child tax credit (Cohen). No reviewed source states a position to increase taxes or restructure the tax system, so no tag applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Small business & farming"
+        note: "Says Husted has done nothing for farmers and that a small business owner lost insurance when premiums doubled (WSAZ). In the Cohen interview he cites higher diesel and fertilizer costs and lost markets for farmers, criticizes tariffs, and says family farm conditions affect the whole rural economy. No stated policy on government support or regulation, so no tag applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "Centers his campaign on workers having a voice, citing his Dignity of Work Institute and saying workers earning $15 to $18 an hour struggle despite higher productivity (WSAZ, Cohen). No reviewed source states a position on minimum wage, worker protections or labor regulation, so no tag applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "Mentions volunteers staffing polls to make sure elections are fair and neighborhood gatherings to register voters (Cohen). These are campaign volunteer activities rather than a stated policy position, so no tag applied."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Campaign page calls for banning insurers from denying care a doctor says is needed, fining insurers that try, and making it illegal for drug companies to charge Americans more than other countries. In WSAZ he opposes Medicaid cuts and says rural hospital closures hurt communities. In Cohen he says Husted voted nine times against capping premiums and that the VA is underfunded. His approach centers on regulating insurers and drug prices and protecting existing coverage. No proposal to expand coverage eligibility was found."
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: [0, 1, 2]
+      - topic: "Education"
+        note: "Says Ohio should fund public education better and that community colleges need enough funding for people to learn a trade and stay in their communities. Criticizes state education spending cuts and says war spending underfunds education (WSAZ, Cohen). No specifics on school choice."
+        coverage: 2
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [0, 1]
+      - topic: "Broadband & infrastructure"
+        note: "Single passing reference that the country is underfunding highways because of war and tax cut spending (Cohen). No stated position on broadband or on public versus private infrastructure investment, so no tag applied."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Campaign page says he would require data centers to pay the full cost of their utilities, cap utility rate increases, and let Ohioans decide whether data centers are built locally. In WSAZ he raises water, jobs and electric rates as data center concerns and wants developers to be more responsible to local communities. In Cohen he calls for restoring cancelled clean energy projects and says the EPA is underfunded."
+        coverage: 3
+        position_tag: "Prioritize regulation"
+        position_type: "pos"
+        source: [0, 1, 2]
+      - topic: "Immigration"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Says young people increasingly do not believe they will ever own a home and cannot save a down payment, and says communities, local businesses and young people should partner on making homeownership easier (WSAZ). No specific program or regulatory change is named, so no tag applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null

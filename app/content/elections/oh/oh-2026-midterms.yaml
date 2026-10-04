@@ -1,0 +1,85 @@
+ocdId: "ocd-division/country:us/state:oh"
+date: "2026-11-03"
+description: "Ohio 2026 midterm election"
+type: "general"
+website: "https://www.ohiosos.gov/elections"
+guidancePhase: "final"
+fiveFifthsId: "oh-2026-midterms"
+region_code: "OH"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  ballotpediaUrl: https://ballotpedia.org/Ohio_elections,_2026
+  early:
+    url: "https://www.ohiosos.gov/elections/voters/"
+    startDate: "2026-10-06"
+    endDate: "2026-11-01"
+    varies: true
+    notes: >
+      Ohio calls this "early in-person voting" and it is also referred to as in-person
+      absentee voting. It is administered by each county's board of elections, and
+      voters cast their ballot at the board of elections office (or other site the
+      board designates). Early in-person voting opens the day after voter registration
+      closes, so it begins October 6 and ends on Sunday, November 1. There is no early
+      in-person voting on Monday, November 2, the day before Election Day. Hours vary
+      by county and generally include weekdays plus the two Saturdays and the Sunday
+      before Election Day, so contact your county board of elections for local hours
+      and locations. No excuse is required to vote early. Voters must show an
+      acceptable photo ID to vote early in person.
+  byMail:
+    explainerUrl: "https://www.ohiosos.gov/elections/voters/"
+    notes: >
+      Ohio does not automatically mail ballots to voters. Any registered voter may
+      request an absentee (vote-by-mail) ballot; no excuse is required. Applications
+      are submitted to your county board of elections, and domestic absentee ballots
+      begin to be mailed on October 6, 2026, the day after voter registration closes.
+      When requesting a mailed ballot, voters must provide their Ohio driver's license
+      or state ID number, the last four digits of their Social Security number, or a
+      copy of an acceptable photo ID. Ohio's voter registration deadline is October 5,
+      2026, and Ohio does not offer same-day voter registration, so you must be
+      registered before you can request a ballot. Voters can check the status of their
+      ballot through the Secretary of State's voter lookup tool or by contacting their
+      county board of elections.
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2026-11-03"
+      receivedBy: "2026-11-03"
+      description: >
+        Under Senate Bill 293, completed absentee ballots from most voters must be
+        received by your county board of elections by the time polls close at
+        7:30 p.m. Eastern Time on November 3, 2026. Ohio no longer counts mailed ballots
+        based on postmark, and the former four-day grace period after Election Day no
+        longer applies to most voters. Ballots may be returned by mail or delivered in
+        person to the county board of elections. The exception is military and overseas
+        (UOCAVA) voters, whose ballots mailed from outside the United States may arrive
+        up to four days after Election Day (by November 7, 2026) and still be counted.
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-10-27"
+        description: >
+          Applications for an absentee ballot must be received by your county board of
+          elections by 8:30 p.m. on the Tuesday before Election Day, October 27, 2026.
+          Voters who miss this deadline should plan to vote in person, either early
+          (through Sunday, November 1) or on Election Day. Because mail delivery can be
+          slow and ballots must now be received by Election Day, election officials
+          encourage voters to request and return their ballots as early as possible.
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: >
+      Ohio requires voters to show an acceptable, unexpired photo ID when voting in
+      person, including during early in-person voting, under House Bill 458 (2023).
+      Acceptable forms include an Ohio driver's license or state ID card, an interim ID
+      form issued by the Ohio BMV, a U.S. passport or passport card, a U.S. military ID,
+      Ohio National Guard ID, or U.S. Department of Veterans Affairs ID that includes
+      the voter's name and photograph. The ID must include the voter's name and a
+      photo. Voters who do not have an acceptable photo ID may cast a provisional
+      ballot and must provide an acceptable photo ID to their county board of elections
+      within four days after Election Day for the ballot to count. Free state ID cards
+      for voting purposes are available at the Ohio BMV. Ohio does not offer same-day
+      voter registration. See: https://www.ohiosos.gov/elections/voters/
+    electionDay:
+      opening: "6:30 AM Eastern Time. Check with your county board of elections for your polling place location."
+      closing: "7:30 PM Eastern Time. If you are in line by closing time, you are allowed to cast your ballot."
+races:
+  - name: "Ohio US Senate 2026"
+    id: "oh-senate-2026"
