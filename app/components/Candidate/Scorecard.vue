@@ -140,8 +140,6 @@ const moreLinksCount = computed(() => {
         :links="candidate.issues.links"
     />
 
-    <CandidateLegend/>
-
     <!-- Footer -->
     <div class="text-xs text-base-content/40 px-1 space-y-1">
       <div>Last updated: {{ candidate.issues.last_updated }}</div>
