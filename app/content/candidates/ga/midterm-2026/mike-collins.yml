@@ -10,6 +10,7 @@ region: "Statewide"
 incumbent: false
 debate_participant: false
 avatar_initials: "MC"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Rep._Mike_Collins_official_photo%2C_118th_Congress.jpg/120px-Rep._Mike_Collins_official_photo%2C_118th_Congress.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
 ballot_order: 2
 issues:
   issues_addressed: 9

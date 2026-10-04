@@ -10,6 +10,7 @@ region: "Statewide"
 incumbent: false
 debate_participant: true
 avatar_initials: "RJ"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Rick_Jackson_%284x3%29.png/120px-Rick_Jackson_%284x3%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
 ballot_order: 1
 issues:
   issues_addressed: 13

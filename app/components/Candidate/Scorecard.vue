@@ -35,7 +35,10 @@ const moreLinksCount = computed(() => {
     <div class="card bg-base-100 shadow-sm">
       <div class="card-body py-4 px-5">
         <div class="flex items-start gap-4">
-          <CandidateAvatar :initials="candidate.avatar_initials"/>
+          <CandidateAvatar
+              :initials="candidate.avatar_initials"
+              :name="candidate.name"
+              :wikimedia="candidate.avatar_url"/>
 
           <!-- Name + meta -->
           <div class="flex-1 min-w-0">
@@ -58,46 +61,49 @@ const moreLinksCount = computed(() => {
 
           <!-- Links -->
           <div v-if="candidate.issues?.links?.length" class="hidden sm:flex flex-col gap-1 shrink-0">
-          <TransitionGroup name="list" tag="ol">
-            <li v-for="link in displayedLinks" :key="link.url">
-              <a
-                  :href="link.url"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="btn btn-ghost btn-xs lg:btn-md gap-1 text-base-content/60 max-w-72"
-              >
-                <ExternalLink :size="11" class="shrink-0"/>
-                <span class="truncate">{{ link.label }}</span>
-              </a>
-            </li>
-          </TransitionGroup>
-          <button
-              v-if="moreLinksCount > 0 && !showAllLinks"
-              class="btn btn-ghost btn-xs lg:btn-md gap-1 text-base-content/60 self-start mt-1"
-              @click="showAllLinks = true"
-          >
-            Show {{ moreLinksCount }} more
-          </button>
-          <button
-              v-else-if="moreLinksCount > 0"
-              class="btn btn-ghost btn-xs lg:btn-md gap-1 text-base-content/60 self-start mt-1"
-              @click="showAllLinks = false"
-          >
-            <ChevronUp :size="11" class="shrink-0"/>
-          </button>
+            <TransitionGroup name="list" tag="ol">
+              <li v-for="link in displayedLinks" :key="link.url">
+                <a
+                    :href="link.url"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="btn btn-ghost btn-xs lg:btn-md gap-1 text-base-content/60 max-w-72"
+                >
+                  <ExternalLink :size="11" class="shrink-0"/>
+                  <span class="truncate">{{ link.label }}</span>
+                </a>
+              </li>
+            </TransitionGroup>
+            <button
+                v-if="moreLinksCount > 0 && !showAllLinks"
+                class="btn btn-ghost btn-xs lg:btn-md gap-1 text-base-content/60 self-start mt-1"
+                @click="showAllLinks = true"
+            >
+              Show {{ moreLinksCount }} more
+            </button>
+            <button
+                v-else-if="moreLinksCount > 0"
+                class="btn btn-ghost btn-xs lg:btn-md gap-1 text-base-content/60 self-start mt-1"
+                @click="showAllLinks = false"
+            >
+              <ChevronUp :size="11" class="shrink-0"/>
+            </button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Callout -->
-    <div  v-if="candidate.issues?.callout"  tabindex="0" class="collapse bg-base-200 border-base-content/20 rounded-none border-l-4">
+    <div
+        v-if="candidate.issues?.callout" tabindex="0"
+        class="collapse bg-base-200 border-base-content/20 rounded-none border-l-4">
       <div class="collapse-title flex gap-2">
         <Info class="size-4 lg:size-6 shrink-0 text-base-content/80"/>
         <div class="truncate">{{ candidate.issues.callout }}</div>
       </div>
       <div class="collapse-content text-sm">
-        {{ candidate.issues.callout }}</div>
+        {{ candidate.issues.callout }}
+      </div>
     </div>
 
     <!-- Summary stats -->
@@ -144,10 +150,13 @@ const moreLinksCount = computed(() => {
 </template>
 
 <style>
+/* noinspection CssUnusedSymbol */
 .list-enter-active,
 .list-leave-active {
   transition: all 0.5s ease;
 }
+
+/* noinspection CssUnusedSymbol */
 .list-enter-from,
 .list-leave-to {
   opacity: 0;
