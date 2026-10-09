@@ -1,0 +1,164 @@
+fiveFifthsId: "james-talarico"
+name: "James Talarico"
+state: "TX"
+race_id: "tx-senate-2026"
+race: "Texas US Senate 2026"
+party: "Democratic"
+primary: null
+office_sought: "Texas US Senate 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+ballot_order: 2
+avatar_initials: "JT"
+issues:
+  clarity: "Detailed written platform; spoken interview focused on corruption and billionaire influence"
+  sources_count: 12
+  sources_list:
+    - "Jimmy Kimmel Live YouTube interview with James Talarico (2026)"
+    - "Texas Tribune, Sept. 22, 2026: Talarico's changes on trans and climate policy"
+    - "Talarico campaign website: Taxes & Cost of Living page"
+    - "Talarico campaign website: Health Care page"
+    - "Talarico campaign website: Immigration & Border Security page"
+    - "Talarico campaign website: Labor & Business page"
+    - "Talarico campaign website: Public Safety & Justice page"
+    - "Talarico campaign website: Freedom, Family & Faith page"
+    - "Talarico campaign website: Public Education page"
+    - "Talarico campaign website: Rural Investment page"
+    - "Talarico campaign website: Corruption & Democracy page"
+    - "Talarico campaign website: Energy & Environment page"
+  last_updated: "2026-10-07"
+  callout: "James Talarico is a Texas state representative from the Austin area, a former middle school teacher and a Presbyterian seminarian. His campaign centers on taking on corruption and billionaire influence, with a platform of higher taxes on corporations and the wealthy, a $15 federal minimum wage, a public health insurance option, and codifying Roe v. Wade. His site also lists positions outside the scorecard topics, including legalizing regulated adult marijuana use and policies on social media, AI and foreign policy."
+  links:
+    - label: "Jimmy Kimmel interview with James Talarico (YouTube)"
+      url: "https://www.youtube.com/watch?v=WLDE9LrGpNk"
+    - label: "Texas Tribune: Talarico policy changes"
+      url: "https://www.texastribune.org/2026/09/22/james-talarico-trans-climate-policy-changes-election-2026/"
+    - label: "Campaign: Taxes & Cost of Living"
+      url: "https://jamestalarico.com/issue/taxes-cost-of-living/"
+    - label: "Campaign: Health Care"
+      url: "https://jamestalarico.com/issue/health-care/"
+    - label: "Campaign: Immigration & Border Security"
+      url: "https://jamestalarico.com/issue/immigration-border-security/"
+    - label: "Campaign: Labor & Business"
+      url: "https://jamestalarico.com/issue/labor-business/"
+    - label: "Campaign: Public Safety & Justice"
+      url: "https://jamestalarico.com/issue/public-safety-justice/"
+    - label: "Campaign: Freedom, Family & Faith"
+      url: "https://jamestalarico.com/issue/freedom-family-faith/"
+    - label: "Campaign: Public Education"
+      url: "https://jamestalarico.com/issue/public-education/"
+    - label: "Campaign: Rural Investment"
+      url: "https://jamestalarico.com/issue/rural-investment/"
+    - label: "Campaign: Corruption & Democracy"
+      url: "https://jamestalarico.com/issue/corruption-democracy/"
+    - label: "Campaign: Energy & Environment"
+      url: "https://jamestalarico.com/issue/energy-environment/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Campaign page proposes repealing Trump tariffs, challenging corporate price-gouging, expanding the Child Tax Credit and Earned Income Tax Credit, and capping insulin copays. In the interview he says nicknames 'don't lower the price of groceries' [00:10:16] and blames billionaire influence for costs."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [2]
+      - topic: "Taxation"
+        note: "Campaign page: make corporations and the wealthiest 'pay their fair share', tax billionaire income and capital gains, end 'buy, borrow, die' loopholes, raise the corporate rate, tax stock buybacks. In the interview he calls non-taxpaying corporations the 'biggest welfare queens' [00:07:17]."
+        coverage: 3
+        position_tag: "Increase taxes"
+        position_type: "pos"
+        source: [2]
+      - topic: "Small business & farming"
+        note: "Campaign Labor & Business page proposes tax credits for small businesses, expanding Community Development Financial Institutions, broadening SBA loan programs, and equity investment for entrepreneurs. The Rural Investment page adds removing tariffs on farm inputs like equipment and fertilizer and expanding agriculture grant programs."
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [5, 9]
+      - topic: "Workers & wages"
+        note: "Campaign page supports a $15 federal minimum wage, the PRO Act, paid family leave, expanded overtime eligibility, and a special tax on firms paying executives over 250 times the median worker."
+        coverage: 3
+        position_tag: "Raise minimum wage"
+        position_type: "pos"
+        source: [5]
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Campaign page prioritizes 'well-funded schools, youth programs, mental health care, and substance abuse treatment' to prevent crime, plus job training, housing and treatment for reentry. It also backs resources for law enforcement alongside training, oversight and accountability."
+        coverage: 3
+        position_tag: "Invest in prevention"
+        position_type: "pos"
+        source: [6]
+      - topic: "Reproductive policy"
+        note: "Campaign page: 'Restore reproductive freedom with federal legislation to codify Roe v. Wade and protect access to contraception and IVF.'"
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: [7]
+      - topic: "Voting & elections"
+        note: "Campaign page: 'Texas is one of the hardest places to vote in the entire country. That is by design.' He backs passing the John Lewis Voting Rights Advancement Act 'to remove unnecessary barriers to registering to vote and casting a ballot' and banning partisan gerrymandering nationwide. In the interview he opposes closing 92 Tarrant County polling locations, calling it 'the most un-American thing' [00:19:43]."
+        coverage: 3
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: [10, 0]
+      - topic: "Gun policy"
+        note: "Campaign page supports universal background checks, prosecuting firearms traffickers, required secure storage around children, and raised age limits for purchasing semi-automatic rifles with military-style features."
+        coverage: 3
+        position_tag: "Increase gun regulations"
+        position_type: "pos"
+        source: [6]
+      - topic: "LGBTQ+ policy"
+        note: "Campaign page commits to 'protect the legality of gay marriage and defend our LGBTQ+ neighbors from government overreach.' The Texas Tribune reports that in Sept. 2026 he said he opposes trans athletes in girls' sports 'if it endangers safety', a shift from his 2021 position."
+        coverage: 3
+        position_tag: "Expand protections"
+        position_type: "pos"
+        source: [7, 1]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Campaign page: expand Medicare eligibility to all Americans regardless of age to compete with private insurers, a federal public option, strengthen the ACA, cap out-of-pocket drug costs and regulate pharmacy benefit managers. In the interview he criticizes 'kicking the sick off their healthcare to give tax cuts to billionaires' [00:12:11]."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: [3]
+      - topic: "Education"
+        note: "Campaign page opposes private school vouchers as 'taking tax dollars out of our public schools to subsidize private education' and cites his role in investing over $6.5 billion in public schools for teacher pay raises and literacy and math initiatives. He also backs universal Pre-K for every 3- and 4-year-old."
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [8]
+      - topic: "Broadband & infrastructure"
+        note: "Campaign page supports increasing funding for high-speed internet access across Texas to meet the federal government's original $3.3 billion commitment to the state, and cites his creation of the Texas Broadband Infrastructure Fund. It also calls for easier access to low-interest loans and grants for rural water systems."
+        coverage: 3
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: [9]
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Campaign page supports expanding 'oil, gas, wind, solar, and battery jobs,' reinstating federal clean energy tax credits, streamlining energy permitting 'without compromising environmental protections,' and strengthening the Clean Air Act and Clean Water Act. The Texas Tribune reports his 2026 campaign emphasizes an 'all-of-the-above' energy strategy."
+        coverage: 3
+        position_tag: "Balance both"
+        position_type: "pos"
+        source: [11, 1]
+      - topic: "Immigration"
+        note: "Campaign page: 'Our border should be like a front porch — it should have a welcome mat out front and a lock on the door.' It pairs citizenship routes for long-term residents and DREAMers with X-ray screening at ports of entry, asylum reform and a ban on masked ICE agents. In the interview he criticizes deportations of families [00:04:56]."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [4]
+      - topic: "Housing"
+        note: "Campaign page pairs government programs (expanding the Low-Income Housing Tax Credit, banning Wall Street purchases of residential housing, a modular home task force) with removing 'outdated regulations hindering housing construction.'"
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [2]

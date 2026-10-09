@@ -1,0 +1,143 @@
+fiveFifthsId: "ken-paxton"
+name: "Ken Paxton"
+state: "TX"
+race_id: "tx-senate-2026"
+race: "Texas US Senate 2026"
+party: "Republican"
+primary: null
+office_sought: "Texas US Senate 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+ballot_order: 1
+avatar_initials: "KP"
+issues:
+  clarity: "Detailed tax proposals; other issues stated only as brief campaign-site slogans"
+  sources_count: 5
+  sources_list:
+    - "National Report interview with Ken Paxton (YouTube, Aug. 2026)"
+    - "CBS News Texas, Aug. 4, 2026: Paxton tax plan, rally, polls and debate"
+    - "Ken Paxton speech at the Republican midterm convention (YouTube, Sept. 2026)"
+    - "Paxton campaign website: Issues page"
+    - "Paxton campaign website: About page"
+  last_updated: "2026-10-07"
+  callout: "Ken Paxton is the Texas Attorney General, a former Texas House and Senate member, and the Republican nominee after defeating Sen. John Cornyn in the May 2026 primary runoff. His campaign emphasizes the Protecting the Texas Promise tax plan (medical, home down payment and healthy-living deductions, a doubled child tax credit and permanent Trump Accounts), border security and deportations, and support for President Trump's agenda. His site also lists positions outside the scorecard topics, including making America the crypto capital of the world, an America First foreign policy and action against Big Tech."
+  links:
+    - label: "National Report interview with Ken Paxton (YouTube)"
+      url: "https://www.youtube.com/watch?v=4lzJZY4umLc"
+    - label: "CBS News Texas: Paxton tax plan, rally, polls, debate"
+      url: "https://www.cbsnews.com/texas/news/ken-paxton-texas-senate-tax-plan-allen-rally-polls-debate/"
+    - label: "Paxton speech at Republican midterm convention (YouTube)"
+      url: "https://www.youtube.com/watch?v=O3ndxPvc1_k"
+    - label: "Campaign: Issues"
+      url: "https://www.kenpaxton.com/issues"
+    - label: "Campaign: About"
+      url: "https://www.kenpaxton.com/about"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "At the convention he said he wants every Texan to be able to buy a home, raise a family and live a healthy life, and that his Protecting the Texas Promise plan would 'put thousands of dollars back into your pockets' [00:02:14-00:03:05]. The mechanisms are tax deductions and credits, covered under Taxation. No stand-alone position on cost of living beyond the tax plan was found."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Taxation"
+        note: "Campaign site: 'fight to cut taxes and stop the wasteful spending.' His Protecting the Texas Promise plan includes a $25,000 medical expense deduction, a $50,000 first-time homebuyer deduction, a $5,000 healthy-living deduction, a doubled child tax credit ($4,400 per child under 17) and permanent Trump Accounts (CBS News, Aug. 4, 2026; convention speech [00:02:36-00:03:30]). He told CBS: 'I've never believed that tax cuts necessarily mean you have less in the treasury.'"
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [1, 2, 3]
+      - topic: "Small business & farming"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources on policing, sentencing or incarceration. His statements about deporting 'criminal illegal aliens' are scored under Immigration."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "Campaign site lists a commitment to 'defend the unborn.' No details on exceptions or specific legislation were found in reviewed sources."
+        coverage: 2
+        position_tag: "Pro-life"
+        position_type: "pos"
+        source: [3]
+      - topic: "Voting & elections"
+        note: "In the interview he said Texas has 'done a great job protecting our elections with photo ID,' that 'we don't let non-citizens vote,' and that 'we could do some reform on mail in ballots to make it a little more tight' because mail ballots are 'the greatest risk of cheating' [00:03:18-00:03:32]. He said the SAVE America Act 'needs to be passed' to protect elections nationwide [00:03:36]."
+        coverage: 3
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: [0]
+      - topic: "Gun policy"
+        note: "Campaign site: 'protect our gun rights,' and the About page says he defended against 'attacks on the Second Amendment.' No specific legislation was named, and the sources do not say whether he would keep current laws or loosen them, so no tag is applied."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Campaign site: 'defeat the radical transgender movement.' At the convention he criticized his opponent over gender-related statements [00:05:12-00:05:33]. No specific legislation was named."
+        coverage: 2
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: [3, 2]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Campaign site: 'taking on Big Pharma and Big Food, increasing transparency in our food and healthcare systems.' His tax plan adds a $25,000 deduction for out-of-pocket medical expenses 'because no family should go bankrupt just for getting sick' [00:02:46-00:02:55]. The focus is transparency and tax relief rather than expanding public coverage or private options."
+        coverage: 2
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: [3, 2]
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Campaign site: 'remove harmful regulations designed to hurt our energy companies.' At the convention he criticized his opponent for wanting to 'transition Texas off of oil and gas' [00:05:33]. No specific energy legislation was named."
+        coverage: 2
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: [3, 2]
+      - topic: "Immigration"
+        note: "Campaign site: 'help President Trump finish the border wall and protect our national sovereignty' and 'deport the criminal illegal aliens Joe Biden invited into the country,' plus championing Trump's priorities including 'securing the border and deporting illegal aliens.' No legal pathway proposals were found."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [3]
+      - topic: "Housing"
+        note: "His tax plan includes a $50,000 down payment deduction for first-time buyers and for people moving to a new primary residence (CBS News, Aug. 4, 2026; convention speech [00:02:39-00:02:45]). No broader housing policy on programs or development barriers was found."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null

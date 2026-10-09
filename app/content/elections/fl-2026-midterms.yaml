@@ -1,0 +1,90 @@
+ocdId: "ocd-division/country:us/state:fl"
+date: "2026-11-03"
+description: "Florida 2026 midterm election"
+type: "general"
+website: "https://dos.fl.gov/elections/"
+guidancePhase: "final"
+fiveFifthsId: "fl-2026-midterms"
+region_code: "FL"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  ballotpediaUrl: https://ballotpedia.org/Florida_elections,_2026
+  early:
+    url: "https://dos.fl.gov/elections/for-voters/voting/early-voting-and-secure-ballot-intake-stations/"
+    startDate: "2026-10-24"
+    endDate: "2026-10-31"
+    varies: true
+    notes: >
+      Florida requires every county to offer early voting from the 10th day before
+      the election through the 3rd day before the election, which is October 24
+      through October 31. County supervisors of elections may offer additional days
+      starting as early as the 15th day before the election (October 19) and ending
+      as late as the 2nd day before the election (November 1). Each early voting
+      site must be open at least 8 and no more than 12 hours per day. Any registered
+      voter may vote early without an excuse, at any early voting site in their
+      county of registration. Dates, hours, and locations vary by county, so check
+      with your county Supervisor of Elections.
+  byMail:
+    explainerUrl: "https://dos.fl.gov/elections/for-voters/voting/vote-by-mail/"
+    notes: >
+      Florida does not automatically mail ballots to voters. Any registered voter may
+      request a vote-by-mail ballot with no excuse needed, but voters must make a
+      new request; a request now covers all elections through the end of the
+      calendar year of the next regularly scheduled general election, and voters
+      who requested a ballot for earlier elections need to request again. Requests go
+      to your county Supervisor of Elections by signed written request using the
+      statewide form (DS-DE 160), in person, or by phone, and many counties offer an
+      online request form. The request must include your name, date of birth, and
+      address, along with your Florida driver license number, Florida ID card
+      number, or the last four digits of your Social Security number. Ballots are
+      mailed to voters beginning about 40 days before Election Day. You can return a
+      voted ballot by mail, in person to your Supervisor of Elections office, or at
+      a secure drop box at the Supervisor's offices or early voting sites during
+      their hours. Voters can track their ballot through their county Supervisor of
+      Elections website.
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2026-11-03"
+      receivedBy: "2026-11-03"
+      description: >
+        Voted vote-by-mail ballots must be received by your county Supervisor of
+        Elections by 7:00 p.m. local time on Election Day, November 3, 2026,
+        regardless of postmark. Late ballots are not counted, so the U.S. Postal
+        Service recommends mailing your ballot at least a week before Election Day.
+        Ballots may be returned in person or at secure drop boxes until 7:00 p.m.
+        If your signature is missing or does not match, you can fix the problem by
+        submitting a cure affidavit and a copy of ID by 5:00 p.m. on the second day
+        after the election.
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-10-22"
+        description: >
+          Requests to have a vote-by-mail ballot mailed to you must be received by
+          your county Supervisor of Elections by 5:00 p.m. on October 22, 2026, the
+          12th day before the election. After that deadline you can still pick up a
+          ballot in person, but in the final days before the election a special
+          emergency affidavit is required. Voters can also vote in person during
+          early voting or on Election Day.
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: >
+      Florida requires voters to show a current and valid photo ID with a signature
+      when voting in person, whether during early voting or on Election Day.
+      Acceptable forms include a Florida driver's license or ID card issued by the
+      state, a U.S. passport, a debit or credit card, a military ID, a student ID,
+      a retirement center ID, a neighborhood association ID, a public assistance ID,
+      a veteran health ID card, a concealed weapons license, or an employee badge
+      issued by a government entity. If your photo ID does not have a signature,
+      you must show a second ID that does. Voters who cannot provide acceptable ID
+      can cast a provisional ballot and have until 5:00 p.m. on the second day
+      after the election to provide ID to the Supervisor of Elections. Florida does
+      not offer same-day voter registration; the registration deadline for this
+      election was October 5. You must vote at your assigned precinct on Election
+      Day. See: https://dos.fl.gov/elections/for-voters/voting/election-day-voting/
+    electionDay:
+      opening: "7:00 AM local time (Eastern Time for most of the state, Central Time in the western Panhandle). Check with your county Supervisor of Elections for your assigned precinct."
+      closing: "7:00 PM local time. If you are in line by closing time, you are allowed to cast your ballot."
+races:
+  - name: "Florida US Senate 2026"
+    id: "fl-senate-2026"

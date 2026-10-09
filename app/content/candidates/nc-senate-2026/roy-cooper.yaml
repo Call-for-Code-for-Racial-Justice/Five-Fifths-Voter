@@ -1,0 +1,167 @@
+fiveFifthsId: "roy-cooper"
+name: "Roy Cooper"
+state: "NC"
+race_id: "nc-senate-2026"
+race: "North Carolina US Senate 2026"
+party: "Democratic"
+primary: null
+office_sought: "North Carolina US Senate 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+ballot_order: 1
+avatar_initials: "RC"
+issues:
+  clarity: "Specific on costs, health care, housing, guns and immigration; general on taxes, education and energy; silent on voting"
+  sources_count: 13
+  sources_list:
+    - "WRAL one-on-one exit interview with Gov. Roy Cooper (December 2024)"
+    - "CBS Face the Nation interview with Margaret Brennan (September 8, 2024)"
+    - "Cooper campaign rally speech in Vance County (YouTube, 2026)"
+    - "WRAL: Cooper, Whatley on immigration: A fight over how to focus enforcement (August 2026)"
+    - "ABC11: Cooper, Whatley meet with voters, discuss affordability, public safety"
+    - "WLOS: North Carolina governor vetoes abortion limits, launches override showdown (May 2023)"
+    - "Daily Tar Heel: A decade after 'bathroom bill,' Cooper's next campaign walks the line (October 2025)"
+    - "Roy Cooper for Senate campaign website: about page"
+    - "Roy Cooper for Senate campaign website: groceries page"
+    - "Roy Cooper for Senate campaign website: health care page"
+    - "Roy Cooper for Senate campaign website: energy and utilities page"
+    - "Roy Cooper for Senate campaign website: housing page"
+    - "Roy Cooper for Senate campaign website: child care page"
+  last_updated: "2026-10-07"
+  callout: "Roy Cooper is a former two-term North Carolina governor (2017 to 2025) and a four-term state attorney general. His campaign centers on affordability under a 'Make Stuff Cost Less' theme covering groceries, health care, energy, child care and housing, along with Medicaid expansion and tariffs. He has also spoken about protecting Social Security and keeping communities safe."
+  links:
+    - label: "WRAL one-on-one exit interview with Gov. Cooper"
+      url: "https://www.wral.com/news/state/roy-cooper-nc-governor-exit-interview-december-2024/"
+    - label: "CBS Face the Nation transcript, September 8, 2024"
+      url: "https://cbsnews.com/news/roy-cooper-north-carolina-governor-face-the-nation-transcript-09-08-2024"
+    - label: "Cooper campaign rally in Vance County (YouTube)"
+      url: "https://www.youtube.com/watch?v=bUI5JK6kZdI"
+    - label: "WRAL: Cooper, Whatley on immigration"
+      url: "https://www.wral.com/news/nccapitol/roy-cooper-michael-whatley-us-senate-2026-immigration-policy-trump-border-august-2026/"
+    - label: "ABC11: Cooper, Whatley meet with voters, discuss affordability, public safety"
+      url: "https://abc11.com/post/cooper-whatley-meet-voters-discuss-affordability-public-safety/19679596/"
+    - label: "WLOS: Governor vetoes abortion limits"
+      url: "https://wlos.com/news/local/north-carolina-governor-roy-gooper-vetoes-abortion-limits-launches-override-showdown-sb20"
+    - label: "Daily Tar Heel: Cooper's campaign and transgender rights"
+      url: "https://dailytarheel.com/article/city-roy-cooper-transgender-rights-senate-campaign-20251001"
+    - label: "Campaign website: About"
+      url: "https://www.roycooper.com/about/"
+    - label: "Campaign website: Groceries"
+      url: "https://www.roycooper.com/costless/groceries/"
+    - label: "Campaign website: Health care"
+      url: "https://www.roycooper.com/costless/health-care/"
+    - label: "Campaign website: Energy & utilities"
+      url: "https://www.roycooper.com/costless/energy/"
+    - label: "Campaign website: Housing"
+      url: "https://www.roycooper.com/costless/housing/"
+    - label: "Campaign website: Child care"
+      url: "https://www.roycooper.com/costless/child-care/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "The campaign's 'Make Stuff Cost Less' pages propose government action: end tariffs, strengthen antitrust enforcement against grocery and food-processing mergers, and make it illegal to set grocery prices by customer or to coordinate prices by algorithm (groceries page). Other pages propose reinstating ACA tax credits, expanding the Child and Dependent Care Tax Credit, and banning algorithm-driven rent setting."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [8, 9, 12]
+      - topic: "Taxation"
+        note: "At the rally he said 'The wealthy have to pay their fair share' in the context of Social Security [00:12:22], and on Face the Nation he said 'billionaires and corporations pay their fair share' while describing Harris's plan. He also supports expanding the child care tax credit and employer child care tax credits. No stated tax system change or rate proposal of his own was found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Small business & farming"
+        note: "He says tariffs are 'wreaking havoc on farmers' and cites a farmer, Pender, who is 'getting killed with the tariffs' [00:03:44]. His site also says tariffs hurt small businesses. No distinct policy for small business or farm support found beyond ending tariffs."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "The child care page proposes apprenticeships for child care workers and 'paying better wages' for that workforce, and he cites extended paid parental leave and 640,000 new jobs as governor [00:08:04]. No position found on minimum wage, worker protections or labor regulation in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "At the rally he cited signing laws to 'make it tougher to get bail' and supporting law enforcement: 'It is critical that we work to keep communities safe' [00:09:30]. ABC11 quotes him: 'I'm the only one in this race who's actually prosecuted violent criminals and worked to keep them behind bars,' and notes he signed tougher bail and gang laws."
+        coverage: 2
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: [2, 4]
+      - topic: "Reproductive policy"
+        note: "As governor he vetoed a bill banning nearly all abortions after 12 weeks, saying 'If just one Republican in either the House or the Senate keeps a campaign promise to protect women's reproductive health, we can stop this ban' (WLOS, May 2023). He argued it would restrict access for rural and working women. This is from his record as governor; no 2026 campaign statement was found in reviewed sources."
+        coverage: 2
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: [5]
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "On Face the Nation he said 'we support stronger background checks, red flag laws and banning these military style assault weapons,' and called an AR-15 as a 14-year-old's birthday present 'a problem' (September 8, 2024)."
+        coverage: 3
+        position_tag: "Increase gun regulations"
+        position_type: "pos"
+        source: [1]
+      - topic: "LGBTQ+ policy"
+        note: "The Daily Tar Heel reports he vetoed bills banning gender-affirming care for minors and restricting transgender girls in girls' sports. The article has no direct quote from Cooper on his views, and no 2026 campaign statement was found in reviewed sources, so no position tag is applied."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "His health care page says to 'Reinstate the ACA tax credits and reverse Medicaid cuts,' broaden Medicare drug price negotiations, cap annual prescription out-of-pocket costs and crack down on pharmacy benefit managers. At the rally he cited 735,000 people covered through Medicaid expansion and said 'Everybody ought to have access to quality affordable health care' [00:08:43]."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: [2, 9]
+      - topic: "Education"
+        note: "In the WRAL interview he said he wants to keep working on 'early childhood education, supporting our public schools,' and his about page says he worked to raise teacher pay. No specific funding proposal or school choice position found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "In the WRAL interview he named high-speed internet access as an area he wants to keep working on. No policy detail or funding approach found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "The energy page proposes that data centers 'pay the full cost of all the power they use,' a ban on utility disconnections during dangerous heat and cold, and grid modernization. In the WRAL interview he referred to clean energy legislation 'to get us to carbon zero in our power sector by 2050.' No overall position on regulation versus production is stated in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "WRAL quotes him: 'Border Patrol and ICE should do their jobs to make sure our borders are secure and violent criminals here illegally are deported.' It reports he backed a 2024 bipartisan Senate bill that would increase border security funding and also create legal status pathways and expedite asylum processing. He also vetoed bills requiring sheriffs to cooperate with ICE."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [3]
+      - topic: "Housing"
+        note: "His housing page pairs 'incentives for multi-family and modular construction' and 'Streamline rules, speed reviews and convert commercial buildings to housing' with restricting corporate and foreign purchases of single-family homes and banning algorithm-driven rent setting."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [11]

@@ -1,0 +1,155 @@
+fiveFifthsId: "roger-marshall"
+name: "Roger Marshall"
+state: "KS"
+race_id: "ks-senate-2026"
+race: "Kansas US Senate 2026"
+party: "Republican"
+primary: null
+office_sought: "Kansas US Senate 2026"
+district: null
+region: "Statewide"
+incumbent: true
+debate_participant: true
+ballot_order: 1
+avatar_initials: "RM"
+issues:
+  clarity: "Detailed on health care, farm policy, energy, and voter ID; silent on guns, abortion, LGBTQ+ policy, and education"
+  sources_count: 9
+  sources_list:
+    - "HPPR / Kansas News Service coverage of the Sept. 12, 2026 Kansas State Fair Senate debate (Marshall vs. Hamilton)"
+    - "NBC Meet the Press full 1-1 interview with Sen. Roger Marshall (June 28, 2026), YouTube transcript"
+    - "13th and Park 1-1 interview with Sen. Roger Marshall (2026), YouTube transcript"
+    - "Full 1-1 interview with Sen. Roger Marshall on rural hospital funding and the 2025 reconciliation bill, YouTube transcript"
+    - "Marshall campaign website: Cost of living page"
+    - "Marshall campaign website: Rural healthcare page"
+    - "Marshall campaign website: Border & security page"
+    - "Marshall campaign website: Energy page"
+    - "Marshall campaign website: Agriculture page"
+  last_updated: "2026-10-09"
+  callout: "Roger Marshall is the Republican incumbent U.S. Senator from Kansas, a former OB-GYN from Great Bend who served in the U.S. House from 2017 to 2021 and has been in the Senate since January 2021. His platform emphasizes rural health care funding and price transparency, farm and ethanol policy, all-of-the-above energy, border enforcement, and voter ID through the SAVE America Act. He supports President Trump's agenda, including the 2025 tax and Medicaid law and tariffs. Not covered in the reviewed sources: gun policy, abortion, LGBTQ+ policy, and education."
+  links:
+    - label: "Kansas Senate candidates tangle over Trump, agriculture and immigration in fair debate (HPPR)"
+      url: "https://www.hppr.org/2026-09-13/kansas-senate-candidates-tangle-over-trump-agriculture-and-immigration-in-fair-debate"
+    - label: "Meet the Press: Sen. Marshall full interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=larJ_kzd9Qc"
+    - label: "13th and Park: Sen. Roger Marshall interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=xJj0sMt99zI"
+    - label: "Full interview: Sen. Roger Marshall on rural hospital funding (YouTube)"
+      url: "https://www.youtube.com/watch?v=S1NiQc5Ni20"
+    - label: "Marshall campaign: Cost of living"
+      url: "https://kansansformarshall.com/record/cost-of-living"
+    - label: "Marshall campaign: Rural healthcare"
+      url: "https://kansansformarshall.com/record/rural-healthcare"
+    - label: "Marshall campaign: Border & security"
+      url: "https://kansansformarshall.com/record/border-security"
+    - label: "Marshall campaign: Energy"
+      url: "https://kansansformarshall.com/record/energy"
+    - label: "Marshall campaign: Agriculture"
+      url: "https://kansansformarshall.com/record/agriculture"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Meet the Press: 'I understand the cost of living is the defining issue right now' [00:04:16]; goal of lowering gas and grocery costs [00:01:27]. Campaign page cites S. 4418 to remove Morocco phosphate duties (claimed 20%+ fertilizer cost cut), year-round E15, voiding the EPA methane-fee rule, and votes against stopgap spending bills."
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: [1, 4]
+      - topic: "Taxation"
+        note: "Campaign page says he voted yes on the Working Families Tax Cuts making the 2017 tax cuts permanent (small business deduction, full expensing, R&D expensing, expanded child tax credit). In the rural hospital interview he describes the law as 'the largest tax cut in history' and cites a doubled estate tax exemption, the 199A pass-through deduction, and bonus depreciation [00:03:04, 00:10:16]."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [3, 4]
+      - topic: "Small business & farming"
+        note: "Support side: campaign page backs Title I and crop insurance funding as 'the safety net Kansas growers cannot operate without' and the 45Z clean fuel credit; rural hospital interview credits crop insurance and reference prices in the 2025 law [00:09:51]. Regulation side: backs the DIRECT Act (S. 3099) to allow interstate sale of state-inspected beef, and lists 'rolling back regulations' as a priority [00:14:44]."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [3, 8]
+      - topic: "Workers & wages"
+        note: "Only a passing reference: on Meet the Press he said real wages are up since Trump took office and called the current dip a 'blip' [00:04:00]. The host disputed this on air. No wage, minimum wage, or labor policy position found in reviewed sources. Medicaid work requirements are covered under Healthcare."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources. Campaign page cites the Laken Riley Act (immigration detention), covered under Immigration."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "Calls the SAVE America Act the bill he would pass if he could pass only one, and said 'we can have both' voter ID and the housing bill. Argued people should show voter ID and proof of citizenship, comparing it to showing ID to board a plane [00:04:11, 00:08:10-00:08:25]. Said 'I don't think that fraud will ever end our democracy' but that voters need to trust elections [00:05:19]."
+        coverage: 3
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: [1]
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Rural hospital interview: says he 'came here to fix the cost of healthcare' through more price transparency and more health savings accounts to 'turn patients back into good consumers' [00:15:01-00:15:09]. Campaign page lists his Patients Deserve Price Tags Act (S. 2355) and Medicare Advantage prior-authorization deadlines (S. 1816). Supports work requirements of 20 hours a week for healthy Medicaid adults and a $50 billion rural health fund administered through CMS [00:08:54, 00:06:58]."
+        coverage: 3
+        position_tag: "Expand private options"
+        position_type: "pos"
+        source: [3, 5]
+      - topic: "Education"
+        note: "No position found in reviewed sources. Campaign page mentions the Whole Milk for Healthy Kids Act (school lunch), which is a nutrition measure."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "Brief passing reference: said long-term rural hospital survival depends on rural economies having 'high-speed internet' and healthy water [00:07:22]. No specific broadband or infrastructure position found."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Campaign page: 'All-of-the-above is the Kansas energy answer.' Cosponsored the resolution voiding the EPA methane-fee rule, cosponsors the Natural Gas Tax Repeal Act (S. 143), voted for a permitting-reform package, and backs year-round E15 and the 45Z credit."
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: [7]
+      - topic: "Immigration"
+        note: "Enforcement side: 'no amnesty. Full stop,' prioritizing violent offenders, doubling ICE removal agents, 2,000 miles of border barrier [00:11:55-00:13:44]; campaign page lists the Laken Riley Act, Build the Wall Act, and 287(g) expansion. Pathway side: described a 2018 proposal under which employed workers vouched for by an employer who pass a background check could be processed to re-enter legally, and campaign page cites H-2A agricultural labor reform [00:12:59-00:13:20]."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [3, 6]
+      - topic: "Housing"
+        note: "Called housing a 'top three issue' in Kansas and favors community-led solutions with 'loose guardrails,' citing Salina's grant work as a model [00:08:10-00:09:28]. Took credit for a housing law signed after being a major part of it [00:11:00]. On Meet the Press he said holding the bipartisan housing bill was 'classic Donald Trump negotiation style' [00:03:30]. No specific housing policy tag fits."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
