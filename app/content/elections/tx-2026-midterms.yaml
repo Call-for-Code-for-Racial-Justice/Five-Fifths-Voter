@@ -1,0 +1,88 @@
+ocdId: "ocd-division/country:us/state:tx"
+date: "2026-11-03"
+description: "Texas 2026 midterm election"
+type: "general"
+website: "https://www.votetexas.gov"
+guidancePhase: "final"
+fiveFifthsId: "tx-2026-midterms"
+region_code: "TX"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  ballotpediaUrl: https://ballotpedia.org/Texas_elections,_2026
+  early:
+    url: "https://www.votetexas.gov/voting/early-voting.html"
+    startDate: "2026-10-19"
+    endDate: "2026-10-30"
+    varies: true
+    notes: >
+      Texas calls this "early voting" and it is open to every registered voter with no
+      excuse required. In-person early voting runs from Monday, October 19 through
+      Friday, October 30. Hours and locations vary by county, and many counties
+      extend hours or open additional days, so check your county election office for
+      the schedule. In many counties you can vote at any early voting location in
+      your county. Early voting ends the Friday before Election Day, and there is no
+      early voting on the weekend before November 3.
+  byMail:
+    explainerUrl: "https://www.votetexas.gov/voting-by-mail/index.html"
+    notes: >
+      Texas does not automatically mail ballots to voters, and voting by mail is
+      limited to voters who qualify: those who are 65 or older, have a disability or
+      illness, will be absent from their county of residence during the entire early
+      voting period and on Election Day, are expecting the birth of a child, or are
+      confined in jail but otherwise eligible. Voters apply to their county's early
+      voting clerk using an Application for a Ballot by Mail (ABBM), which can be
+      sent starting January 1 of the election year. Applications can be submitted by
+      mail, email, fax, common or contract carrier, or in person; Texas does not
+      offer an online request option. Voters 65 or older or with a disability can
+      use a single annual application for all elections that year. You must provide
+      your Texas driver's license, Texas personal ID, or Election Identification
+      Certificate number, or if you do not have one, the last four digits of your
+      Social Security number. The same number must appear on the carrier envelope
+      when you return your ballot, and it must match what is on your voter record.
+      Voters can track the status of their ballot at the Texas Secretary of State's
+      ballot tracker.
+    deadline:
+      postmarkedOrReceived: "postmarked"
+      date: "2026-11-03"
+      receivedBy: "2026-11-04"
+      description: >
+        A mailed ballot must reach the county early voting clerk by 7:00 p.m. on
+        Election Day, November 3, 2026, or by 5:00 p.m. on November 4 if the carrier
+        envelope was postmarked by 7:00 p.m. on Election Day. Ballots may also be
+        delivered in person to the early voting clerk's office by the voter by 7:00
+        p.m. on Election Day, with the voter showing acceptable ID. Mail early,
+        because ballots with a late postmark are rejected.
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-10-23"
+        description: >
+          Applications for a ballot by mail must be received by your county early
+          voting clerk by the close of business on October 23, 2026, the 11th day
+          before Election Day. A postmark is not enough; the application must be
+          received by that date. Voters who miss this deadline can still vote in
+          person during early voting or on Election Day.
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: >
+      Texas requires photo ID to vote in person. Acceptable forms are a Texas driver
+      license, Texas Election Identification Certificate, or Texas personal ID card
+      (all issued by DPS), a Texas handgun license, a U.S. military ID with photo, a
+      U.S. citizenship certificate with photo, or a U.S. passport (book or card).
+      For voters ages 18 to 69, the ID may be expired for no more than four years;
+      voters 70 and older may use an ID that has been expired for any length of time.
+      The free Election Identification Certificate is available at DPS driver license
+      offices. Voters who do not have one of these IDs and cannot reasonably get one
+      may sign a Reasonable Impediment Declaration and show a supporting document
+      such as a utility bill, bank statement, government check, paycheck, or a
+      government document with their name and address. Voters who have an acceptable
+      ID but did not bring it can cast a provisional ballot and must show ID to the
+      county voter registrar within six days. Texas does not offer same-day voter
+      registration; the registration deadline for this election was October 5. See:
+      https://www.votetexas.gov/voting/need-id.html
+    electionDay:
+      opening: "7:00 AM Central Time (7:00 AM Mountain Time in El Paso and Hudspeth counties). Check with your county election office for your polling place."
+      closing: "7:00 PM Central Time (7:00 PM Mountain Time in El Paso and Hudspeth counties). If you are in line by closing time, you are allowed to cast your ballot."
+races:
+  - name: "Texas US Senate 2026"
+    id: "tx-senate-2026"

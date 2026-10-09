@@ -1,0 +1,159 @@
+fiveFifthsId: "daniel-s-sullivan"
+name: "Daniel S. Sullivan"
+state: "AK"
+race_id: "ak-senate-2026"
+race: "Alaska US Senate 2026"
+party: "Republican"
+primary: null
+office_sought: "Alaska US Senate 2026"
+district: null
+region: "Statewide"
+incumbent: true
+debate_participant: true
+ballot_order: 1
+avatar_initials: "DS"
+issues:
+  clarity: "Specific on energy, taxes, immigration enforcement, infrastructure and fisheries; silent on most social issues"
+  sources_count: 10
+  sources_list:
+    - "Ruthless Podcast 1-1 interview with Sen. Dan Sullivan (YouTube, 2026)"
+    - "WSJ Opinion 'All Things with Kim Strassel' 1-1 interview with Sen. Dan Sullivan (YouTube, 2026)"
+    - "Anchorage Daily News: Sullivan, Peltola trade barbs over high fuel costs and bycatch at Kodiak fisheries debate (Sept. 14, 2026)"
+    - "Alaska Journal of Commerce: Sullivan, Peltola debate energy issues in closely watched US Senate race (Sept. 9, 2026)"
+    - "Alaska Public Media: Sullivan and Peltola trade barbs at Alaska Oil and Gas Association forum (Aug. 27, 2026)"
+    - "Alaska's News Source: Sullivan praises Trump administration immigration enforcement, acknowledges heart-wrenching deportation cases (Feb. 2026)"
+    - "Alaska's News Source: Sullivan touts 'Alaska comeback' in first interview since Peltola challenge (Jan. 14, 2026)"
+    - "Wikipedia: 2026 United States Senate election in Alaska"
+    - "Dan Sullivan for Alaska campaign website: home page"
+    - "Dan Sullivan for Alaska campaign website: Meet Dan page"
+  last_updated: "2026-10-09"
+  callout: "Two-term Republican incumbent seeking a third term, former Alaska attorney general and natural resources commissioner, and Marine Corps Reserve colonel. His campaign centers on an 'Alaska comeback' built on oil, gas and mineral development, the Working Families Tax Cuts Act, federal permitting and litigation reform, and military and Coast Guard investment in Alaska. He also emphasizes fisheries (salmon bycatch, USDA access for fishermen) and a dispute over a second candidate named Daniel Sullivan (Daniel J. Sullivan) on the ballot."
+  data_note: "Every source was checked to confirm it refers to the incumbent, Daniel S. Sullivan, and not Daniel J. Sullivan, who is also on the ballot."
+  links:
+    - label: "Ruthless Podcast interview with Sen. Dan Sullivan (YouTube)"
+      url: "https://www.youtube.com/watch?v=kzvqpFDB2F8"
+    - label: "WSJ Opinion: Sen. Dan Sullivan on 'Decoy Dan' and Alaska's Battleground Senate Race (YouTube)"
+      url: "https://www.youtube.com/watch?v=P-U8sQNPXR8"
+    - label: "ADN: Kodiak fisheries debate"
+      url: "https://adn.com/politics/2026/09/14/sullivan-peltola-trade-barbs-over-high-fuel-costs-and-wasteful-bycatch-at-kodiak-fisheries-debate"
+    - label: "Alaska Journal of Commerce: Sullivan, Peltola debate energy issues"
+      url: "https://www.adn.com/alaska-journal/news/2026/09/09/sullivan-peltola-debate-energy-issues-in-closely-watched-us-senate-race/"
+    - label: "Alaska Public Media: Sullivan and Peltola trade barbs at industry forum"
+      url: "https://alaskapublic.org/news/politics/2026-08-27/sullivan-and-peltola-lead-candidates-in-alaska-u-s-senate-race-trade-barbs-at-industry-forum"
+    - label: "Alaska's News Source: Sullivan on immigration enforcement"
+      url: "https://www.alaskasnewssource.com/2026/02/26/sotu-sullivan-acknowledges-some-heart-wrenching-deportation-cases-praises-trump-admins-immigration-enforcement-efforts"
+    - label: "Alaska's News Source: Sullivan touts 'Alaska comeback'"
+      url: "https://www.alaskasnewssource.com/2026/01/14/sullivan-touts-alaska-comeback-first-interview-since-peltola-challenge"
+    - label: "Wikipedia: 2026 US Senate election in Alaska"
+      url: "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Alaska"
+    - label: "Campaign website: Home"
+      url: "https://dansullivanforalaska.com/"
+    - label: "Campaign website: Meet Dan"
+      url: "https://dansullivanforalaska.com/meet-dan/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Ties lower costs to energy production: 'getting good jobs through those jobs, lowering costs when we're able to produce our own energy' (WSJ interview [00:16:14]). At the Kodiak debate he said Alaska's high diesel costs 'have to be resolved by producing Alaska energy for Alaskans' (ADN). He also cited added LIHEAP heating-assistance funding as a past accomplishment."
+        coverage: 2
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: [1, 2]
+      - topic: "Taxation"
+        note: "Runs on the Working Families Tax Cuts Act (the 2025 budget law), saying 'no state did better than Alaska in that bill' (Ruthless [00:14:05]; WSJ [00:14:41]) and citing 'tax cuts for working families [and] tax cuts for seniors' (Alaska's News Source, Jan. 2026). His campaign website calls it 'the biggest tax cut in American history.'"
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 1, 6, 8]
+      - topic: "Small business & farming"
+        note: "At the Kodiak debate he said that 'for over 100 years, farmers had policy programs... our fishermen never got access,' and cited his push for a new USDA Office of Seafood, a salmon research task force, and banning Russian and Chinese seafood imports (ADN). He says he has a bycatch bill pending in the Commerce Committee (WSJ [00:24:57])."
+        coverage: 2
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [1, 2]
+      - topic: "Workers & wages"
+        note: "Talks about jobs from resource development and military construction (e.g. about 4,000 jobs from $2.6 billion in Alaska military construction, WSJ [00:18:54]), but no position on wages, minimum wage, or labor rules was found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Campaign website describes him as a 'leading voice on combatting our nation's scourge of domestic violence and sexual assault' and credits his POWER Act with giving survivors access to legal services. No broader position on policing, sentencing, or incarceration was found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources from the 2026 campaign. (Positions from his 2014 campaign were found but excluded as out of cycle.)"
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "Opposes Alaska's ranked choice voting and top-four primary, calling it a 'terrible, goofy' system 'prone to manipulation' (WSJ interview [00:11:08]-[00:12:18]). He argues the candidacy of a second Daniel Sullivan is a ballot-confusion tactic and that candidates should be required to run in good faith (Ruthless [00:03:55]-[00:07:25]; WSJ). This does not map to ballot access or voter verification, so no tag is applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Criticized his opponent for opposing a defense bill after Republicans 'gutted the Biden woke policies' that focused 'on issues like transgender surgeries for our troops as opposed to lethality' (WSJ interview [00:17:42]). A single reference limited to the military."
+        coverage: 1
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: [1]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Says the Working Families Tax Cuts Act had provisions 'for our health care system' (WSJ [00:15:00]), and his campaign website says he is 'strengthening Alaska's healthcare system.' Alaska's News Source notes Democratic criticism that the 2025 law harms Medicaid and SNAP recipients, which he did not address. No specific position on coverage, Medicaid, or insurance was found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "Champions the King Cove road through the Izembek refuge, saying 'we got all the permits. It's ready to go' (Ruthless [00:26:59]-[00:31:00]). Calls for federal permitting (NEPA) reform so that 'a road, a bridge, a gold mine' can be built faster (WSJ [00:25:27]), and cites Coast Guard investment ($25 billion, four icebreakers homeported in Alaska) and military construction funding (Ruthless [00:15:12]-[00:16:20]). His focus is on removing permitting barriers rather than on public versus private funding, so no tag is applied."
+        coverage: 3
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Central campaign theme: 'We want to unleash Alaska's energy resources, critical minerals, oil and gas' (Ruthless). Cites opening ANWR and NPR-A and mandatory federal oil and gas lease sales in Alaska for 10 years in the 2025 law (Ruthless [00:12:45]-[00:13:04]), NEPA permitting reform (WSJ [00:25:27]), and the Alaska gas line (Alaska's News Source). At the AOGA forum he backed permitting timelines (Rebuild America Now Act) and litigation reform (SPEED Act), said the Endangered Species Act has 'a good goal' but has been used to block development (Alaska Journal of Commerce), and said Peltola's election would empower those who 'want to shut us down' (Alaska Public Media). His campaign website calls for an 'all-of-the-above energy strategy.'"
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: [0, 1, 3, 4, 6, 9]
+      - topic: "Immigration"
+        note: "Praised Trump administration enforcement: 'Americans don't have any question about what the president just did, which was to secure the border,' and cited nearly $100 billion for detention facilities, immigration judges, and deportation. He acknowledged some deportation cases 'can be heart wrenching' (Alaska's News Source, Feb. 2026)."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [5]
+      - topic: "Housing"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

@@ -1,0 +1,152 @@
+fiveFifthsId: "adam-hamilton"
+name: "Adam Hamilton"
+state: "KS"
+race_id: "ks-senate-2026"
+race: "Kansas US Senate 2026"
+party: "Democratic"
+primary: null
+office_sought: "Kansas US Senate 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+ballot_order: 2
+avatar_initials: "AH"
+issues:
+  clarity: "Specific on healthcare, housing, energy, agriculture, labor and abortion; silent on guns, education and criminal justice"
+  sources_count: 8
+  sources_list:
+    - "Kansas Senate candidates tangle over Trump, agriculture and immigration in State Fair debate (KCUR/HPPR, 2026-09-13)"
+    - "Adam Hamilton Post Q&A: Why the JoCo Democrat thinks he can win (Johnson County Post, 2026-09-21)"
+    - "Adam Hamilton interview with Jen Rubin (The Contrarian, 2026-09-09)"
+    - "The pastor of the nation's largest Methodist church is running for the US Senate in Kansas (AP via WTOP, 2026-04-30)"
+    - "No Democrat has won a Kansas Senate seat in a century. Can a megachurch pastor change that? (PBS NewsHour, 2026-09-02)"
+    - "Megachurch Pastor Adam Hamilton releases campaign platform: Pro-choice, anti-tariff (Christian Post)"
+    - "Adam Hamilton for Kansas: Issues page (campaign website)"
+    - "Adam Hamilton for Kansas Announcement (campaign YouTube video)"
+  last_updated: "2026-10-09"
+  callout: "Adam Hamilton is the Democratic nominee for U.S. Senate in Kansas and the founding pastor of Church of the Resurrection, the nation's largest United Methodist church. A first-time candidate who describes himself as a centrist, his platform centers on affordability (energy, health care, housing and food costs), opposition to tariffs and the war in Iran, support for Kansas agriculture, and stronger labor protections. He also proposes congressional ethics reforms including a ban on stock and crypto trading by members, term and age limits for Congress and the Supreme Court, a lifetime lobbying ban, and limits on presidential pardon power."
+  links:
+    - label: "KCUR: Kansas Senate candidates tangle over Trump, agriculture and immigration in fair debate"
+      url: "https://www.kcur.org/2026-09-13/kansas-senate-candidates-tangle-over-trump-agriculture-and-immigration-in-fair-debate"
+    - label: "Johnson County Post: Adam Hamilton Post Q&A"
+      url: "https://johnsoncountypost.com/2026/09/21/adam-hamilton-senate-interview-296637/"
+    - label: "The Contrarian: Adam Hamilton interview with Jen Rubin"
+      url: "https://www.contrariannews.org/p/adam-hamilton-interview-kansas-senate-democrat-jen-rubin"
+    - label: "AP via WTOP: Pastor of the nation's largest Methodist church running for US Senate"
+      url: "https://wtop.com/national/2026/04/the-pastor-of-the-nations-largest-methodist-church-is-running-for-the-us-senate-in-kansas/"
+    - label: "PBS NewsHour: Can a megachurch pastor change Kansas Senate politics?"
+      url: "https://pbs.org/newshour/politics/no-democrat-has-won-a-kansas-senate-seat-in-a-century-can-a-megachurch-pastor-change-that"
+    - label: "Christian Post: Adam Hamilton releases pro-choice, anti-tariff platform"
+      url: "https://www.christianpost.com/books/adam-hamilton-releases-pro-choice-anti-tariff-platform.html"
+    - label: "Adam Hamilton for Kansas: Issues"
+      url: "https://hamiltonforkansas.com/issues"
+    - label: "Adam Hamilton for Kansas: Announcement video"
+      url: "https://www.youtube.com/watch?v=xjGXTIVWHAw"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "The campaign's Affordability Agenda focuses on competition and consumer protection: ending tariffs and requiring congressional approval for new ones, binding rules so data centers pay their own electricity costs, competitive bidding for transmission projects, banning algorithmic price-fixing at grocery stores, banning junk fees, restoring overdraft fee protections, and investigating private equity consolidation. Says people are \"living paycheck to paycheck, struggling harder now\" (Johnson County Post)."
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: [6, 1]
+      - topic: "Taxation"
+        note: "Calls tariffs a hidden tax (Johnson County Post, campaign Issues page) and proposes targeted tax credits for first-time home buyers, firefighters, police officers and teachers, plus restoring energy production tax credits. No position on income, corporate or overall tax levels found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Small business & farming"
+        note: "The campaign Issues page proposes doubling funding for USDA export promotion programs, fully funding the animal disease vaccine bank and preparedness programs, passing the Rural Veterinary Workforce Act, passing a full five-year farm bill, expanding USDA's Fertilizer Production Expansion Program, and year-round E15. At the State Fair debate he proposed making the H-2A agricultural visa program year-round."
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [6, 0]
+      - topic: "Workers & wages"
+        note: "The campaign Issues page supports strengthening the right to organize, starting with the bipartisan Faster Labor Contracts Act; fully funding the NLRB, OSHA and NIOSH; harsher penalties and stronger Department of Labor enforcement against wage theft; and the No Robot Bosses Act requiring human review of AI hiring and firing decisions. No minimum wage position found."
+        coverage: 3
+        position_tag: "Expand worker protections"
+        position_type: "pos"
+        source: [6]
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Only narrow references: the campaign Issues page proposes strengthening the Department of Justice's Elder Justice Initiative against elder fraud and limiting presidential pardon power. No position on incarceration, policing or prevention found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "Says \"I don't believe that the Kansas Legislature should be making that decision for women in our state. Neither should the United States Senate or House\" (Johnson County Post), while acknowledging moral tension. AP reports he voted against the 2022 Kansas abortion amendment. The campaign Issues page pledges to protect a woman's right to choose, codify access to contraception, and require insurers to cover over-the-counter birth control."
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: [1, 3, 5, 6]
+      - topic: "Voting & elections"
+        note: "The campaign Issues page proposes ending dark money in elections, term and age limits for Congress, and stronger congressional residency requirements. No position on ballot access or voter verification found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "PBS NewsHour reports he supports same-sex marriage and the ordination of LGBTQ+ clergy. When Marshall called him \"too woke,\" he said he is \"caring, compassionate and concerned for people, especially vulnerable people\" (Johnson County Post). No federal legislative position found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "The campaign Issues page proposes reversing federal Medicaid cuts, restoring enhanced ACA subsidies, expanding Medicare to cover vision and dental, expanding Medicare drug price negotiation and extending negotiated prices to private plans, investing in rural hospitals, reforming prior authorization, and capping interest on medical debt. In The Contrarian interview he says people need \"a basic level of access to healthcare, no matter what.\""
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: [6, 1, 2]
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "Only a narrow reference: the campaign Issues page calls for competitive bidding on electric transmission projects. No broadband or broader infrastructure position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "The campaign Issues page calls for an \"all of the above\" energy strategy to increase energy independence, restoring repealed energy production tax credits, ending opposition to domestic energy projects, and year-round E15 ethanol. Ties fuel costs to the war in Iran (Johnson County Post, The Contrarian). No environmental regulation or climate position found in reviewed sources."
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: [6, 1, 2]
+      - topic: "Immigration"
+        note: "The campaign Issues page proposes reforming the H-2A program with year-round visas, lower compliance costs, and a path to legal status for existing agricultural workers; he also proposed year-round H-2A visas at the State Fair debate. In The Contrarian interview he supports \"safe and secure borders\" but says militarized ICE operations are \"not okay.\" No specific enforcement mechanism found."
+        coverage: 3
+        position_tag: "Expand legal pathways"
+        position_type: "pos"
+        source: [6, 0, 2]
+      - topic: "Housing"
+        note: "The campaign Issues page combines reducing building barriers (ending tariffs on building materials, modernizing modular home regulations) with government intervention (banning investors from buying single-family homes, new tax credits for first-time buyers and public servants, and stopping algorithmic rent price collusion)."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [6]

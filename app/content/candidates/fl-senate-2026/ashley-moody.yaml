@@ -1,0 +1,149 @@
+fiveFifthsId: "ashley-moody"
+name: "Ashley B. Moody"
+state: "FL"
+race_id: "fl-senate-2026"
+race: "Florida US Senate 2026"
+party: "Republican"
+primary: null
+office_sought: "Florida US Senate 2026"
+district: null
+region: "Statewide"
+incumbent: true
+debate_participant: false
+ballot_order: 1
+avatar_initials: "AM"
+issues:
+  clarity: "Broad themes with few policy specifics outside crime, taxes and agriculture"
+  sources_count: 7
+  sources_list:
+    - "Spectrum News Florida one-on-one interview with Sen. Ashley Moody (YouTube transcript)"
+    - "FOX 35 Orlando one-on-one interview after the 2026 Republican primary (YouTube transcript)"
+    - "Gulf Coast News one-on-one interview with Sen. Ashley Moody before the primary (YouTube transcript, partial)"
+    - "OnTheIssues.org compilation of Moody's dated statements, bill cosponsorships and votes"
+    - "Wikipedia: Ashley Moody (Senate tenure and votes)"
+    - "Ashley Moody campaign website: About page"
+    - "Ashley Moody campaign website: homepage"
+  last_updated: "2026-10-07"
+  callout: "Moody, a former federal prosecutor, judge and two-term Florida Attorney General, was appointed to the U.S. Senate by Gov. Ron DeSantis in January 2025 and is seeking a full term. Her interviews emphasize law enforcement, tax cuts, deregulation and online safety for children. Her campaign site states few detailed issue positions. Other notable positions outside the scorecard taxonomy include opposition to recreational marijuana legalization and support for Trump administration foreign policy, including the 2026 Iran strikes."
+  links:
+    - label: "Spectrum News interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=PrR9YWxysiA"
+    - label: "FOX 35 interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=fyG44L33SUQ"
+    - label: "Gulf Coast News interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=kw8JVI-CkAQ"
+    - label: "OnTheIssues: Ashley Moody"
+      url: "https://ontheissues.org/SENATE/Ashley_Moody.htm"
+    - label: "Wikipedia: Ashley Moody"
+      url: "https://en.wikipedia.org/wiki/Ashley_Moody"
+    - label: "Campaign website: About"
+      url: "https://www.ashleymoody.com/about"
+    - label: "Campaign website: Home"
+      url: "https://www.ashleymoody.com"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Asked about Florida homeowners' insurance costs, she said she would 'work hand-in-hand' with the next governor on the pressures Floridians feel (Gulf Coast News interview, [00:02:06]). No specific policy stated. No position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Taxation"
+        note: "Cited 'historic tax cuts, no tax on tips, no tax on social security, no tax on overtime, childhood investment accounts' as accomplishments (FOX 35 interview, [00:08:21]). OnTheIssues records her support for the July 2025 tax reduction legislation."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [1, 3]
+      - topic: "Small business & farming"
+        note: "Described pushing a rollback of an 'overburdensome' federal regulation harming Florida citrus growers, which resulted in a proposed rule change (Spectrum News interview, [00:04:00]-[00:05:30]). Also cites Florida's lead in entrepreneurship and new business formation (FOX 35, [00:09:59])."
+        coverage: 3
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: [0, 1]
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources on minimum wage, worker protections or labor regulation. Her 'no tax on overtime' remark is a tax item, scored under Taxation."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Says she is 'all about supporting law and order and law enforcement' (FOX 35, [00:03:57]). Describes human trafficking strike teams, anonymous tip lines, and going after organized and violent crime (Spectrum News, [00:06:50]-[00:12:00]). OnTheIssues lists her support for stronger penalties under the Thin Blue Line Act. Campaign About page: 'crack down on violent crime.'"
+        coverage: 3
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: [0, 1, 3, 5]
+      - topic: "Reproductive policy"
+        note: "Campaign About page calls her 'a national leader in protecting religious freedom and the sanctity of life.' OnTheIssues records that she cosponsored the Born-Alive Abortion Survivors Protection Act (Oct 2025) and, as Attorney General, fought to keep an abortion access question off the state ballot. She said she is a proponent of 'protecting life' (FOX 35, [00:05:05]). No specific exceptions were stated in reviewed sources."
+        coverage: 2
+        position_tag: "Pro-life"
+        position_type: "pos"
+        source: [1, 3, 5]
+      - topic: "Voting & elections"
+        note: "OnTheIssues notes she supported a legal brief allowing voter roll purges (Oct 2024) and joined a lawsuit challenging 2020 election results. No stated position on ballot access or voter verification in the interviews or campaign site. No position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "OnTheIssues records that she cosponsored the Constitutional Concealed Carry Reciprocity Act (Oct 2025). Not discussed in the interviews or on the campaign site."
+        coverage: 2
+        position_tag: "Expand gun rights"
+        position_type: "pos"
+        source: [3]
+      - topic: "LGBTQ+ policy"
+        note: "OnTheIssues records a 2023 comment comparing a children's book depicting gay penguins to propaganda, and support for religious exemptions for campus groups (Mar 2026). No stated position on legislation or protections. No position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Wikipedia records that she voted against extending Affordable Care Act subsidies in December 2025 and, as Attorney General, kept Florida in a lawsuit seeking to overturn the ACA. She did not state a healthcare policy in the interviews or on the campaign site. No stated position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "OnTheIssues describes her as a long-standing supporter of school voucher programs (Aug 2025). In interviews she cites Florida's lowest tuition and highest graduation rate (FOX 35, [00:09:55])."
+        coverage: 2
+        position_tag: "Support school choice"
+        position_type: "pos"
+        source: [3, 1]
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "OnTheIssues records that she sued the federal government over CO2 reduction requirements (Mar 2023) and criticized 'radical energy policies' on appliances (Jul 2024). These oppose specific federal regulations but do not state an overall energy or environment position. No position found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Said she 'fought Biden's open border and all his lawless policies on behalf of Florida and we won in court' (FOX 35, [00:04:06]). OnTheIssues records that she supports Trump's immigration policies. Sits on the Judiciary Border Security and Immigration subcommittee (Wikipedia). No legal pathway proposals found."
+        coverage: 2
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [1, 3, 4]
+      - topic: "Housing"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

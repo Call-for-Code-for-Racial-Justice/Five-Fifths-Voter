@@ -1,0 +1,149 @@
+fiveFifthsId: "angie-nixon"
+name: "Angie Nixon"
+state: "FL"
+race_id: "fl-senate-2026"
+race: "Florida US Senate 2026"
+party: "Democratic"
+primary: null
+office_sought: "Florida US Senate 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+ballot_order: 2
+avatar_initials: "AN"
+issues:
+  clarity: "Detailed written platform on most topics; interviews focus on healthcare, taxes, housing and her DSA membership"
+  sources_count: 7
+  sources_list:
+    - "Meet the Press NOW one-on-one interview with Angie Nixon after the 2026 Democratic primary (YouTube transcript)"
+    - "CBS News Miami Facing South Florida one-on-one interview with Jim DeFede (YouTube transcript)"
+    - "The Contrarian livestream interview with Angie Nixon, Aug. 31, 2026 (YouTube transcript)"
+    - "CBS News Miami: 1-on-1 with Angie Nixon after her Florida primary win (article)"
+    - "WUSF: How U.S. Senate candidate Angie Nixon plans to reach Florida voters (article)"
+    - "Angie Nixon campaign website: Priorities page"
+    - "Angie Nixon campaign website: homepage"
+  last_updated: "2026-10-07"
+  callout: "Nixon is a Florida state representative from Jacksonville and a former community and SEIU union organizer who won the 2026 Democratic primary over Alex Vindman. Her platform emphasizes Medicare for All, universal childcare, a wealth tax, rent stabilization and union rights. She is a member of the Democratic Socialists of America but says she does not consider herself a socialist and rejects abolishing the Senate, abolishing prisons, or writing a new constitution. Her platform also includes positions outside the scorecard taxonomy, such as overturning Citizens United, limits on surveillance data, and guardrails on AI and data centers."
+  links:
+    - label: "Meet the Press NOW interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=anEi9cNtGQw"
+    - label: "CBS Miami Facing South Florida interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=jsF2NIvbl0Y"
+    - label: "The Contrarian livestream interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=QEbWkIKc0yA"
+    - label: "CBS Miami: 1-on-1 with Angie Nixon"
+      url: "https://www.cbsnews.com/miami/news/angie-nixon-facing-south-florida-interview-8-23-2026/"
+    - label: "WUSF: How Angie Nixon plans to reach Florida voters"
+      url: "https://www.wusf.org/politics-issues/2026-09-07/how-us-senate-candidate-angie-nixon-plans-to-reach-florida-voters"
+    - label: "Angie Nixon campaign: Priorities"
+      url: "https://angienixon.com/priorities"
+    - label: "Angie Nixon campaign: Home"
+      url: "https://angienixon.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Campaign priorities page says families face costs that outpace paychecks and proposes universal childcare and pre-K with costs capped at a share of income, plus a national rent stabilization standard. In the Meet the Press interview she calls for universal child care and Medicare, funded by repealing the 2025 federal tax and spending law and taxing billionaires [00:06:25]. Homepage states she is running 'to lower costs, raise wages.'"
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [5, 0]
+      - topic: "Taxation"
+        note: "Priorities page supports 'A 5% annual wealth tax on billionaires,' taxing capital gains the same as wages, and closing the stepped-up basis loophole. In Meet the Press she says 'we make these billionaires pay what they owe. We also close these corporate tax loopholes' [00:06:35]."
+        coverage: 3
+        position_tag: "Increase taxes"
+        position_type: "pos"
+        source: [5, 0]
+      - topic: "Small business & farming"
+        note: "She describes herself as a small business owner and 'a capitalist who believes that we need some strong regulation' (Meet the Press [00:10:54]-[00:11:04]), but no small business or farming policy was found in reviewed sources. No position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "Priorities page proposes a federal minimum wage 'indexed to inflation,' passing the PRO Act, ending 'right to work' laws, and extending protections to farmworkers and domestic workers. In the Contrarian livestream she cites her past work as SEIU statewide field director on Florida's $15 minimum wage ballot measure [00:01:45]."
+        coverage: 3
+        position_tag: "Raise minimum wage"
+        position_type: "pos"
+        source: [5, 2]
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Priorities page calls for ending mass incarceration, including federal decriminalization of marijuana, treatment over incarceration for substance use, and demilitarizing policing with investment in community-based public safety. In the CBS Miami interview she says she does not want to abolish prisons [00:05:37], and the CBS Miami article quotes her: 'I don't believe in abolishing prisons. I believe in abolishing for-profit prisons.'"
+        coverage: 3
+        position_tag: "Reduce incarceration"
+        position_type: "pos"
+        source: [5, 3]
+      - topic: "Reproductive policy"
+        note: "Priorities page: 'Protecting reproductive freedom, including the right to abortion, contraception, and IVF, free from political interference.' Not addressed in the interviews reviewed."
+        coverage: 2
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: [5]
+      - topic: "Voting & elections"
+        note: "Priorities page proposes restoring and expanding the Voting Rights Act with automatic voter registration for every American over 18, making Election Day a national holiday, and re-enfranchising Americans with felony convictions. She also cites organizing for Amendment 4 rights restoration (Contrarian [00:01:49])."
+        coverage: 3
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: [5, 2]
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Priorities page only mentions combating 'transphobia, and all forms of hate' in general terms; no LGBTQ+ policy was found. She noted stocking books banned in Florida schools at her bookstore (CBS Miami [00:06:55]). No position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Priorities page: 'Medicare for All that covers every person in America — free at the point of service, with no premiums, no deductibles, no copays,' plus canceling medical debt. In Meet the Press she says 'we are fully funding Medicare and providing universal health care' [00:06:14] and cites access to universal health care as the main DSA policy she agrees with [00:08:52]. WUSF also reports universal Medicare as a priority."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: [0, 5, 4]
+      - topic: "Education"
+        note: "Priorities page calls for fully funding public K-12 schools, increased teacher wages, and tuition-free public college and trade school with student debt cancellation. In Meet the Press she says 'we need to make sure we're fully funding public education' [00:06:12]."
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [5, 0]
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources. The priorities page mentions disaster resilience funding for hurricane-hardened homes and data center rules, but nothing on broadband or general infrastructure."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Priorities page calls for a 'bold, union-built transition to renewable energy,' ending taxpayer subsidies for fossil fuel corporations, making tech companies pay for the energy and water they use, and no new data center construction before federal guardrails."
+        coverage: 3
+        position_tag: "Prioritize regulation"
+        position_type: "pos"
+        source: [5]
+      - topic: "Immigration"
+        note: "Priorities page proposes 'a swift path to citizenship for Dreamers and undocumented residents,' a moratorium on deportations pending an audit of enforcement, and abolishing ICE and rebuilding immigration enforcement. In CBS Miami she criticizes Trump as 'deport in chief' [00:07:43]."
+        coverage: 3
+        position_tag: "Expand legal pathways"
+        position_type: "pos"
+        source: [5, 1]
+      - topic: "Housing"
+        note: "Priorities page: 'A national rent stabilization standard, just-cause eviction protections,' cracking down on corporate landlords and speculators buying single-family homes, and building millions of permanently affordable units. The CBS Miami article quotes her: 'Single families should own single-family homes.' In the CBS Miami interview she credits a federal housing program for her own first home [00:21:43]."
+        coverage: 3
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: [5, 3, 1]

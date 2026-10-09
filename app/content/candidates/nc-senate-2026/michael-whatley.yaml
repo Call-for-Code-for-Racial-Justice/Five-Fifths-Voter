@@ -1,0 +1,143 @@
+fiveFifthsId: "michael-whatley"
+name: "Michael Whatley"
+state: "NC"
+race_id: "nc-senate-2026"
+race: "North Carolina US Senate 2026"
+party: "Republican"
+primary: null
+office_sought: "North Carolina US Senate 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+ballot_order: 2
+avatar_initials: "MW"
+issues:
+  clarity: "Specific on crime, immigration and energy; general on costs and taxes; silent on most other topics"
+  sources_count: 5
+  sources_list:
+    - "The National News Desk interview with Michael Whatley (YouTube, September 2026)"
+    - "ABC11: Cooper, Whatley meet with voters, discuss affordability, public safety"
+    - "Michael Whatley for Senate campaign website: home page"
+    - "Michael Whatley for Senate campaign website: issues page"
+    - "Michael Whatley for Senate campaign website: about page"
+  last_updated: "2026-10-07"
+  callout: "Michael Whatley is a former chair of the Republican National Committee and of the North Carolina Republican Party, and he was a chief of staff to Senator Elizabeth Dole. This is his first run for elected office, and President Trump has endorsed him. His campaign centers on crime and public safety, border security and deportation, energy production and lower taxes. No debate with his opponent has been held as of this review."
+  links:
+    - label: "The National News Desk interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=Wz-3aXVKgnI"
+    - label: "ABC11: Cooper, Whatley meet with voters, discuss affordability, public safety"
+      url: "https://abc11.com/post/cooper-whatley-meet-voters-discuss-affordability-public-safety/19679596/"
+    - label: "Campaign website: Home"
+      url: "https://michaelwhatley.com/"
+    - label: "Campaign website: Issues"
+      url: "https://michaelwhatley.com/issues/"
+    - label: "Campaign website: About"
+      url: "https://michaelwhatley.com/about/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Told ABC11 he would work for more and better jobs, higher take-home pay, and 'lower interest rates... lower inflation... lower costs'. No specific policy mechanism was given, so no position tag is applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Taxation"
+        note: "Told ABC11 'we're going to have lower taxes'. In the interview he said he will fight 'to make sure people make more and keep more' [00:01:01]. No specific tax legislation was named in the sources reviewed."
+        coverage: 2
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 1]
+      - topic: "Small business & farming"
+        note: "The issues page has no section on this. The about page mentions his past work on the Trump transition Farm and Energy plans and a 'booming agricultural and rural economy', but no current platform position. No position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "The issues page lists 'empowering workers' and creating jobs as goals of an America First economy, and ABC11 quotes him on higher take-home pay. No specific wage or labor policy was stated."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Campaign: 'restore law and order, roll-back weak Democrat policies like cashless bail' and 'back the blue'. Interview: criticized Cooper's release of about 4,200 prisoners and said 'I will back the blue' [00:02:45]-[00:03:30]. ABC11: 'I don't think we need to reimagine law enforcement. I think we need to enforce the law.'"
+        coverage: 3
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: [0, 1, 3]
+      - topic: "Reproductive policy"
+        note: "The issues page lists 'protecting life' alongside defending the Second Amendment and supporting law enforcement. It does not mention abortion or name a policy, so no position tag is applied."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "The issues page says he will defend 'Second Amendment rights'. No specific legislation was named. The tag reflects defending existing rights and is not an explicit call to expand them."
+        coverage: 1
+        position_tag: "Maintain current laws"
+        position_type: "pos"
+        source: [3]
+      - topic: "LGBTQ+ policy"
+        note: "In the interview he said Cooper will 'fight for men who want to play in women's sports and go in girls' bathrooms' [00:01:52]. This is a single passing reference, and the issues page also mentions keeping 'radical woke ideology' out of schools."
+        coverage: 1
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: [0]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "The issues page only says he wants to keep 'radical woke ideology' out of schools. No position on school funding or school choice was found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "ABC11: 'a balanced energy portfolio' with natural gas, 'unlike the pipeline that Roy Cooper killed', and new nuclear for 'affordable, reliable electricity'. The issues page calls for 'unleashing American energy' and energy independence. No environmental regulation position was stated."
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: [1, 3]
+      - topic: "Immigration"
+        note: "Issues page: '100% support President Trump securing the border and deporting' criminal illegal aliens, and he criticizes Cooper's veto of ICE cooperation legislation. In the interview he said Cooper 'is going to fight for illegal aliens' [00:01:51]."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [0, 3]
+      - topic: "Housing"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

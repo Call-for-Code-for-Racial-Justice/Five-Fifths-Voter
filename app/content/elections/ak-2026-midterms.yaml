@@ -1,0 +1,90 @@
+ocdId: "ocd-division/country:us/state:ak"
+date: "2026-11-03"
+description: "Alaska 2026 midterm election"
+type: "general"
+website: "https://www.elections.alaska.gov/"
+guidancePhase: "final"
+fiveFifthsId: "ak-2026-midterms"
+region_code: "AK"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  ballotpediaUrl: https://ballotpedia.org/Alaska_elections,_2026
+  early:
+    url: "https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/"
+    startDate: "2026-10-19"
+    endDate: "2026-11-03"
+    varies: true
+    notes: >
+      Alaska offers "early voting" and "absentee in-person" voting beginning 15 days
+      before Election Day, so voting starts October 19 and continues through Election
+      Day, November 3. No excuse is required. Early voting locations use tablets that
+      verify your registration at the time you vote, and your ballot is scanned on
+      site. Absentee in-person locations are not connected to the voter registration
+      database, so you seal your voted ballot in an envelope and it is reviewed later
+      by the Absentee Review Board. Hours and locations vary by community. Use the
+      Division of Elections location search at https://www.elections.alaska.gov/avo/
+      to find locations near you.
+  byMail:
+    explainerUrl: "https://www.elections.alaska.gov/voter-information/absentee-and-early-voting/"
+    notes: >
+      Alaska does not automatically mail ballots to voters. Alaska is a no-excuse
+      state, so any registered voter may apply to vote absentee by mail, fax, or
+      online delivery. Applications open every January 1, and you can choose to
+      receive ballots for all elections in the calendar year. You can apply online at
+      https://absenteeballotapplication.alaska.gov/ (a valid Alaska driver's license
+      or state ID is required for the online option), or by mailing, emailing, or
+      faxing the paper application to the Absentee and Petition Office; the paper
+      form needs a handwritten signature. Ballots are mailed to voters about 25 days
+      before Election Day. You must sign the return envelope in front of a witness
+      who is at least 18 years old and who also signs, and you must provide at least
+      one voter identifier. Online-delivery and fax ballots become available
+      October 19, and the application for those must be received by 5:00 p.m. Alaska
+      Time on November 2. Online-delivery and fax ballots can be returned by mail or
+      fax but not by email. Voters can check application and ballot status at
+      https://myvoterportal.alaska.gov/.
+    deadline:
+      postmarkedOrReceived: "postmarked"
+      date: "2026-11-03"
+      receivedBy: "2026-11-13"
+      description: >
+        Mailed absentee ballots must be postmarked on or before Election Day,
+        November 3, 2026. For ballots mailed from within the United States, the
+        Division of Elections must receive them within 10 days after Election Day,
+        which is November 13; overseas ballots have a longer window. The Division
+        recommends asking a USPS clerk to hand-cancel your envelope at the counter
+        to make sure it is postmarked in time. If you return your ballot in person to
+        any voting location, it must be there by 8:00 p.m. Alaska Time on Election
+        Day. Ballots returned by fax must be received by 8:00 p.m. Alaska Time on
+        Election Day.
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-10-24"
+        description: >
+          Applications for a by-mail absentee ballot must be received by the Division
+          of Elections by October 24, 2026, which is 10 days before Election Day.
+          Requests for an online-delivery or fax ballot are accepted until 5:00 p.m.
+          Alaska Time on November 2. If you miss the deadline, you can still vote in
+          person at an early voting or absentee in-person location, or at your
+          polling place on Election Day. If you requested a mail ballot but decide to
+          vote in person, destroy the mailed ballot.
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: >
+      Alaska requires voters to show identification at the polls, but a photo ID is
+      not required. Acceptable identification includes an Alaska voter ID card, an
+      Alaska driver's license or state ID, a U.S. passport, military ID, or other
+      current photo ID. If you do not have photo ID, you may show a birth
+      certificate, hunting or fishing license, utility bill, bank statement,
+      paycheck, government check, or another government document that shows your
+      name and address. Voters who are known to the election official may be
+      identified by that official. A voter who cannot show acceptable identification
+      may cast a questioned ballot. Alaska offers online voter registration but does
+      not offer same-day registration; the registration deadline for this election
+      was October 4. See: https://www.elections.alaska.gov/voter-information/
+    electionDay:
+      opening: "7:00 AM Alaska Time. Check the Division of Elections polling place lookup for your precinct's exact location."
+      closing: "8:00 PM Alaska Time. If you are in line by closing time, you are allowed to cast your ballot."
+races:
+  - name: "Alaska US Senate 2026"
+    id: "ak-senate-2026"

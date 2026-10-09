@@ -1,0 +1,90 @@
+ocdId: "ocd-division/country:us/state:ks"
+date: "2026-11-03"
+description: "Kansas 2026 midterm election"
+type: "general"
+website: "https://sos.ks.gov/elections/elections.html"
+guidancePhase: "final"
+fiveFifthsId: "ks-2026-midterms"
+region_code: "KS"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  ballotpediaUrl: https://ballotpedia.org/Kansas_elections,_2026
+  early:
+    url: "https://sos.ks.gov/elections/advance-voting-information.html"
+    startDate: "2026-10-14"
+    endDate: "2026-11-02"
+    varies: true
+    notes: >
+      Kansas calls this "advance voting" and it covers both in-person and by-mail
+      options administered by each county election office. Advance voting can begin
+      up to 20 days before the election, which is October 14, and in-person advance
+      voting ends at noon on Monday, November 2. Start dates, hours, and satellite
+      locations vary a great deal by county; some county offices begin in-person
+      advance voting later than October 14. Contact your county election office to
+      confirm local dates, hours, and locations. No excuse is required to vote in
+      advance, and voters must show photo ID to vote in person in advance.
+  byMail:
+    explainerUrl: "https://sos.ks.gov/elections/advance-voting-information.html"
+    notes: >
+      Kansas does not automatically mail ballots to voters. Any registered voter may
+      request an advance ballot by mail; no excuse is required. Voters must submit an
+      Application for an Advance Voting Ballot (Form AV1) to their county election
+      office, and the application must include a Kansas driver's license number or a
+      copy of a photo ID. Kansas does not offer an online ballot request option for
+      general voters. Voters who are ill or have a disability can apply for
+      permanent advance voting status, which sends a mail ballot for every election
+      and is the only exemption from the photo ID requirement. Mail voters can
+      return their advance ballot by mail, to any polling place in their county
+      before polls close, or to a county drop box, which is locked at the close of
+      polls on Election Day. Voters can track their ballot at kansasvoterinfo.gov.
+    deadline:
+      postmarkedOrReceived: "postmarked"
+      date: "2026-11-03"
+      receivedBy: "2026-11-06"
+      description: >
+        Under Kansas statute, advance mail ballots are due by the close of polls at
+        7:00 p.m. on Election Day, November 3, 2026, and the Secretary of State has
+        told voters mail ballots must be received by then. However, a Douglas County
+        district court injunction requires counties to count ballots postmarked by
+        Election Day if they arrive by the last postal delivery on the Friday after
+        the election, November 6, and the Secretary of State reports that its request
+        to pause that injunction for the general election was denied. Because this
+        legal dispute may change, voters who want to be safe should return their
+        ballot to a drop box or polling place in their county by 7:00 p.m. on
+        November 3 rather than relying on the mail. Confirm the current rule with
+        your county election office.
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-10-27"
+        description: >
+          Applications for an advance ballot by mail must be received by your county
+          election office by October 27, 2026, the Tuesday before Election Day.
+          Counties begin mailing advance ballots around October 14. Voters who miss
+          this deadline can still vote in person during advance voting or on Election
+          Day. Contact your county election office for local options.
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: >
+      Kansas requires voters to show photo ID when voting in person, including during
+      advance voting. Acceptable forms include a driver's license or ID card issued
+      by Kansas or another state, a U.S. passport, a U.S. military ID, a tribal ID
+      card, a government employee badge or ID, a student ID from an accredited
+      Kansas postsecondary institution, a concealed carry license from Kansas or
+      another state, or a public assistance ID card issued by a government office.
+      If the ID has an expiration date it must not have expired, except that voters
+      age 65 or older may use an expired photo ID. Exemptions exist for permanent
+      advance voters, military and overseas voters and their families, and voters
+      who sign a Declaration of Religious Objection (Form DRO). Registered voters who
+      lack an approved ID can get a free nondriver ID card from the Kansas Division
+      of Motor Vehicles using the fee waiver form (DE-VID1). Voters who do not show
+      ID can cast a provisional ballot and must provide ID to the county election
+      office before the county canvass. Kansas does not offer same-day voter
+      registration; the registration deadline for this election was October 13. See:
+      https://sos.ks.gov/elections/photo-id.html
+    electionDay:
+      opening: "7:00 AM Central Time (7:00 AM Mountain Time in the few western Kansas counties on Mountain Time). Check with your county election office for your polling place."
+      closing: "7:00 PM Central Time (7:00 PM Mountain Time in those counties). If you are in line by closing time, you are allowed to cast your ballot."
+races:
+  - name: "Kansas US Senate 2026"
+    id: "ks-senate-2026"

@@ -1,0 +1,158 @@
+fiveFifthsId: "mary-peltola"
+name: "Mary S. Peltola"
+state: "AK"
+race_id: "ak-senate-2026"
+race: "Alaska US Senate 2026"
+party: "Democratic"
+primary: null
+office_sought: "Alaska US Senate 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+ballot_order: 2
+avatar_initials: "MP"
+issues:
+  clarity: "Detailed on affordability, taxes, energy, fisheries and veterans, thin or absent on most social topics"
+  sources_count: 10
+  sources_list:
+    - "Dragging Alaska podcast interview with Mary Peltola (YouTube, 2026)"
+    - "MS NOW interview with Lawrence O'Donnell (YouTube, 2026)"
+    - "Alaska Public Media: Sullivan and Peltola trade barbs at industry forum (Aug. 27, 2026)"
+    - "Alaska Journal of Commerce: Sullivan, Peltola debate energy issues at AOGA forum (Sept. 9, 2026)"
+    - "Mary Peltola for Senate campaign press release announcing affordability plan (May 11, 2026)"
+    - "Mary Peltola for Senate campaign website (full affordability plan page)"
+    - "Mary Peltola for Senate campaign website (energy plan page)"
+    - "Mary Peltola for Senate campaign website (fixing the rigged system plan page)"
+    - "Mary Peltola for Senate campaign website (fisheries plan page)"
+    - "Mary Peltola for Senate campaign website (veterans and servicemembers plan page)"
+  last_updated: "2026-10-09"
+  callout: "Mary Peltola is a Democrat and former U.S. Representative for Alaska, a former state legislator from the Kuskokwim region who worked for the Kuskokwim River Inter-Tribal Fish Commission. Her campaign site lays out five priority plans: affordability, energy, fisheries (including a ban on factory trawling), veterans and servicemembers, and government ethics reform with 12-year congressional term limits, a congressional stock trading ban and a constitutional amendment overturning Citizens United. In the reviewed sources she also supports Alaska oil and gas projects such as Willow and describes strong personal support for Second Amendment rights."
+  links:
+    - label: "Dragging Alaska podcast interview with Mary Peltola (YouTube)"
+      url: "https://www.youtube.com/watch?v=76cHzYU7NrY"
+    - label: "MS NOW interview with Lawrence O'Donnell (YouTube)"
+      url: "https://www.youtube.com/watch?v=my-PePv3N6A"
+    - label: "Alaska Public Media: Sullivan and Peltola trade barbs at industry forum"
+      url: "https://alaskapublic.org/news/politics/2026-08-27/sullivan-and-peltola-lead-candidates-in-alaska-u-s-senate-race-trade-barbs-at-industry-forum"
+    - label: "Alaska Journal of Commerce: Sullivan, Peltola debate energy issues"
+      url: "https://www.adn.com/alaska-journal/news/2026/09/09/sullivan-peltola-debate-energy-issues-in-closely-watched-us-senate-race/"
+    - label: "Mary Peltola for Senate: affordability plan press release"
+      url: "https://marypeltola.com/mary-peltola-announces-policy-plan-to-take-action-on-alaskas-affordability-crisis/"
+    - label: "Mary Peltola for Senate: Taking Action on Affordability for Alaskans"
+      url: "https://marypeltola.com/priorities/affordability/"
+    - label: "Mary Peltola for Senate: Making Energy Affordable for Alaskans"
+      url: "https://marypeltola.com/priorities/energy/"
+    - label: "Mary Peltola for Senate: Fixing the Rigged System"
+      url: "https://marypeltola.com/priorities/fixing-the-rigged-system/"
+    - label: "Mary Peltola for Senate: Fighting for Alaska Fisheries"
+      url: "https://marypeltola.com/priorities/fisheries/"
+    - label: "Mary Peltola for Senate: Keeping Our Promise to Alaska Veterans and Servicemembers"
+      url: "https://marypeltola.com/priorities/veterans/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Affordability is her central theme. On MS NOW she cited gas at over $5 in Anchorage and $26.82 a gallon in Shungnak and said families choose 'between heat and food' [00:01:27]-[00:05:49]. In the podcast she opposed grocery mergers, saying Alaska needs 'at least two competitors' [01:14:11]. Her campaign plan pairs government measures (an Expanded Child Tax Credit of $3,600 per child under six and $3,000 for ages 6-17, a ban on price gouging, blocking anti-competitive grocery mergers, restored Bypass Mail funding and a new Essential Freight Service, expanded LIHEAP heating aid) with supply-side and market-oriented measures (permitting reform and targeted tax credits for in-state refining, cutting red tape to open childcare businesses, tax incentives for companies that pay fair wages)."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [0, 1, 5, 6]
+      - topic: "Taxation"
+        note: "Campaign plan: cut taxes for more than half of Alaskans and eliminate federal income tax for working and middle-class Alaskans earning under $92,000 a year, paid for by raising taxes on millionaires and billionaires. It also proposes ending taxes on Social Security benefits, an Expanded Child Tax Credit, refundable tax credits for renters, and additional taxes on non-resident foreign purchases of residential real estate. The package lowers taxes for lower and middle earners while raising them on top earners and foreign buyers."
+        coverage: 3
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: [4, 5]
+      - topic: "Small business & farming"
+        note: "The campaign plan proposes cutting red tape and expanding grants, forgivable loans and tax credits to make it easier to open childcare businesses, plus federal grants to build a fish by-product industry and federal funding to grow mariculture (farming kelp and shellfish). In the podcast she mentioned incentivizing 'the mom and pops' to get bycatch-reducing equipment such as rollers, cameras and lights [00:11:35]. These are sector-specific proposals that rely on federal financial support. No general small business or farming platform found in reviewed sources."
+        coverage: 2
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [0, 5, 8]
+      - topic: "Workers & wages"
+        note: "The campaign plan says she will push for real wage increases by creating tax incentives for companies that pay fair wages and by holding large corporations accountable for prioritizing executive bonuses over worker pay. No minimum wage, worker protection or labor deregulation proposal found in reviewed sources. The tax incentive and corporate accountability approach does not fit the other tags."
+        coverage: 2
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: [4, 5]
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "No position found on ballot access or voter verification in reviewed sources. She mentioned ranked choice voting only in recounting her 2022 path to the ballot [00:04:59]. Her campaign's government ethics plan covers campaign finance and Congress (the DISCLOSE Act, a constitutional amendment overturning Citizens United, 12-year congressional term limits and a ban on congressional stock trading), which falls outside the ballot access and voter verification tags."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "In the podcast she said she was endorsed by the NRA and got an A, and called Second Amendment rights 'a very personal feeling', adding 'I go to fish camp with a bear gun' [00:17:24]-[00:17:45]. She did not describe any specific legislation or whether she would change current laws. The campaign priorities pages do not address gun policy."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "On MS NOW she said Alaskans pay 'the highest price for health care' in the U.S. and are worried about paying for it [00:06:01]. In the podcast she cited 'massive spikes in our health insurance' and asked 'where are our advocates there?' [01:14:02]. The campaign's veterans plan commits to restoring the VA clinical workforce, modernizing VA infrastructure and electronic health records, holding the VA accountable for timely care and expanding mental healthcare for veterans. No general healthcare coverage or insurance policy found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "The campaign energy plan calls for targeted federal investment to modernize aging energy grids statewide, including the Railbelt, and federal funding for village micro-grids and rural energy distribution. Her affordability plan would restore funding for Bypass Mail, and she supports building the King Cove road through the Izembek refuge, which she called a 'measly 11-mile gravel road' (ADN). No position on broadband found in reviewed sources."
+        coverage: 2
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: [3, 5, 6]
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "The campaign energy plan supports oil and gas development, including the Alaska LNG pipeline, more in-state refining and permitting reform, alongside restoring federal tax credits for solar, wind and hydropower and expanding investment in geothermal, biomass and small modular reactors. Her fisheries plan includes banning factory trawling and keeping mid-water trawlers off the ocean bottom. At the AOGA forum she supported Willow and NPR-A lease sales (Alaska Public Media), backed codifying the 2025 Supreme Court NEPA ruling, and said 'we have to make sure that we continue to balance conservation and development' (ADN). She opposed an ESA listing for Alaska king salmon and voted against the 2024 Alaska's Right to Produce Act to protect the Northern Bering Sea Climate Resilience Area (ADN)."
+        coverage: 3
+        position_tag: "Balance both"
+        position_type: "pos"
+        source: [2, 3, 6, 8]
+      - topic: "Immigration"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "The campaign plan proposes refundable federal tax credits for renters paying more than 30% of income in rent, expanding Indian Housing Block Grants to build homes in high-need villages, cracking down on out-of-state corporations and hedge funds buying homes, and additional taxes on non-resident foreign purchases of residential real estate. The veterans plan adds support for permanent supportive housing, VA home loans and more federal funding for veteran housing. In the podcast she said municipalities 'can't solve homelessness alone' while federal and state programs are cut [01:13:38]-[01:13:57]."
+        coverage: 3
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: [0, 5, 9]

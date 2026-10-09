@@ -1,0 +1,91 @@
+ocdId: "ocd-division/country:us/state:nc"
+date: "2026-11-03"
+description: "North Carolina 2026 midterm election"
+type: "general"
+website: "https://www.ncsbe.gov"
+guidancePhase: "final"
+fiveFifthsId: "nc-2026-midterms"
+region_code: "NC"
+voting:
+  inPersonVotingAvailable: true
+  mailBallotsSentAutomatically: false
+  ballotpediaUrl: https://ballotpedia.org/North_Carolina_elections,_2026
+  early:
+    url: "https://www.ncsbe.gov/voting/vote-early-person"
+    startDate: "2026-10-15"
+    endDate: "2026-10-31"
+    varies: true
+    notes: >
+      North Carolina calls this "one-stop early voting." It begins Thursday, October
+      15 and ends at 3:00 p.m. on Saturday, October 31, the Saturday before Election
+      Day. Any registered voter may vote early with no excuse, at any early voting
+      site in their county. Same-day registration is available during early voting
+      only, so voters who missed the October 9 registration deadline can register and
+      vote at the same visit. Hours and site locations vary by county, so use the
+      State Board of Elections early voting site search or contact your county board
+      of elections. Voters registering at an early voting site must show proof of
+      residence.
+  byMail:
+    explainerUrl: "https://www.ncsbe.gov/voting/vote-mail"
+    notes: >
+      North Carolina does not automatically mail ballots to voters. Any registered
+      voter may request an absentee ballot by mail with no excuse needed. The
+      easiest way to request one is the NC Absentee Ballot Portal at
+      votebymail.ncsbe.gov; voters can also submit a paper request form to their
+      county board of elections. North Carolina began sending absentee ballots on
+      September 4. Voters must have a witness sign the return envelope, and must
+      include a photocopy of an acceptable photo ID or complete a Photo ID Exception
+      Form with their ballot. Ballots can be returned by mail, or in person to the
+      county board of elections or to any early voting site in the voter's county
+      during early voting. Voters can track their ballot through BallotTrax. If you
+      requested a mail ballot but do not return it, you can still vote in person
+      during early voting or on Election Day.
+    deadline:
+      postmarkedOrReceived: "received"
+      date: "2026-11-03"
+      receivedBy: "2026-11-03"
+      description: >
+        Completed absentee ballots must be received by your county board of elections
+        by 7:30 p.m. on Election Day, November 3, 2026. North Carolina does not count
+        mailed ballots that arrive after that time, even if postmarked on time. Voters
+        can also drop off an absentee ballot at any early voting site in their county
+        during early voting, with early voting site drop-off ending by 5:00 p.m. on
+        the last day of early voting, or deliver it to their county board of
+        elections office by the Election Day deadline.
+      ballotRequest:
+        postmarkedOrReceived: "received"
+        date: "2026-10-20"
+        description: >
+          Requests for an absentee ballot must be received by your county board of
+          elections by 5:00 p.m. on Tuesday, October 20, 2026. Voters are encouraged
+          to request as early as possible to leave time for mailing. Voters who miss
+          this deadline can still vote in person during early voting or on Election
+          Day. Different deadlines apply to military and overseas voters.
+  inPerson:
+    idRequiredAllVoters: true
+    idInstructions: >
+      North Carolina asks voters to show photo ID when checking in to vote, during
+      early voting and on Election Day. Acceptable IDs include a North Carolina
+      driver's license, an NCDMV state ID, a U.S. passport or passport card, a North
+      Carolina voter photo ID card issued by a county board of elections, an
+      approved college or university student ID, an approved state or local
+      government or charter school employee ID, a military or veterans ID, a tribal
+      enrollment card with photo, and a driver's license from another state for
+      voters who registered in North Carolina within 90 days of the election. Most
+      IDs may be unexpired or expired for one year or less, and voters 65 or older
+      may use an expired ID that was unexpired on their 65th birthday. The address
+      on the ID does not have to match your registration. All voters are allowed to
+      vote with or without photo ID: a voter without ID can fill out an ID Exception
+      Form, citing a reasonable impediment, a religious objection to being
+      photographed, or a natural disaster, and cast a provisional ballot. A voter who
+      has ID but did not bring it can vote provisionally and bring ID to the county
+      board of elections by noon on the fifth business day after the election. Free
+      voter photo ID cards are available from any county board of elections. Same-day
+      registration is available only during early voting, not on Election Day. See:
+      https://www.ncsbe.gov/voting/voter-id
+    electionDay:
+      opening: "6:30 AM Eastern Time. You must vote at your assigned polling place on Election Day."
+      closing: "7:30 PM Eastern Time. If you are in line by closing time, you are allowed to cast your ballot."
+races:
+  - name: "North Carolina US Senate 2026"
+    id: "nc-senate-2026"
