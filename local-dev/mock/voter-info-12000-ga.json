@@ -1,0 +1,785 @@
+{
+  "election": {
+    "id": "12000",
+    "name": "2026 General Midterm Election",
+    "electionDay": "2026-11-03",
+    "ocdDivisionId": "ocd-division/country:us"
+  },
+  "normalizedInput": {
+    "line1": "123 Example Street",
+    "addressLine": [
+      "123 Example Street"
+    ],
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30303"
+  },
+  "earlyVoteSites": [
+    {
+      "address": {
+        "locationName": "MILTON LIBRARY",
+        "line1": "855 MAYFIELD ROAD",
+        "addressLine": [
+          "855 MAYFIELD ROAD"
+        ],
+        "city": "MILTON",
+        "state": "GA",
+        "zip": "30009"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.09015952233289,
+      "longitude": -84.33637358581666,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "ROSWELL BRANCH LIBRARY",
+        "line1": "115 NORCROSS STREET",
+        "addressLine": [
+          "115 NORCROSS STREET"
+        ],
+        "city": "ROSWELL",
+        "state": "GA",
+        "zip": "30075"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.025093191400416,
+      "longitude": -84.35803799186631,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "ALPHARETTA BRANCH LIBRARY",
+        "line1": "10 PARK PLAZA",
+        "addressLine": [
+          "10 PARK PLAZA"
+        ],
+        "city": "ALPHARETTA",
+        "state": "GA",
+        "zip": "30009"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.07388255906233,
+      "longitude": -84.29226842136538,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "FULTON COUNTY HEALTH AND HUMAN SERVICES-NORTH",
+        "line1": "4700 NORTH POINT PARKWAY",
+        "addressLine": [
+          "4700 NORTH POINT PARKWAY"
+        ],
+        "city": "ALPHARETTA",
+        "state": "GA",
+        "zip": "30005"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.05591480650556,
+      "longitude": -84.26859470635328,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "NORTH FULTON SERVICE CENTER",
+        "line1": "7741 ROSWELL ROAD",
+        "addressLine": [
+          "7741 ROSWELL ROAD"
+        ],
+        "city": "SANDY SPRINGS",
+        "state": "GA",
+        "zip": "30350"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.96581844097307,
+      "longitude": -84.36281822863907,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "EAST ROSWELL LIBRARY",
+        "line1": "2301 HOLCOMB BRIDGE ROAD",
+        "addressLine": [
+          "2301 HOLCOMB BRIDGE ROAD"
+        ],
+        "city": "ROSWELL",
+        "state": "GA",
+        "zip": "30076"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.00290150540583,
+      "longitude": -84.29433863733566,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "ROBERT E. FULTON OCEE LIBRARY",
+        "line1": "5090 ABBOTTS BRIDGE ROAD",
+        "addressLine": [
+          "5090 ABBOTTS BRIDGE ROAD"
+        ],
+        "city": "JOHNS CREEK",
+        "state": "GA",
+        "zip": "30005"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.064622761447175,
+      "longitude": -84.20960676000465,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "SANDY SPRINGS BRANCH LIBRARY",
+        "line1": "395 MOUNT VERNON HIGHWAY NE",
+        "addressLine": [
+          "395 MOUNT VERNON HIGHWAY NE"
+        ],
+        "city": "SANDY SPRINGS",
+        "state": "GA",
+        "zip": "30328"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.92400968149862,
+      "longitude": -84.37442819151852,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "NORTHEAST SPRUILL OAKS LIBRARY",
+        "line1": "9560 SPRUILL ROAD",
+        "addressLine": [
+          "9560 SPRUILL ROAD"
+        ],
+        "city": "JOHNS CREEK",
+        "state": "GA",
+        "zip": "30022"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 34.01416998978464,
+      "longitude": -84.22421547382524,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "JOHNS CREEK ENVIROMNMENTAL CAMPUS",
+        "line1": "8100 HOLCOMB BRIDGE ROAD",
+        "addressLine": [
+          "8100 HOLCOMB BRIDGE ROAD"
+        ],
+        "city": "ROSWELL",
+        "state": "GA",
+        "zip": "30022"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.97664605671236,
+      "longitude": -84.26586456879323,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "NORTH FULTON TRAINING CENTER",
+        "line1": "5025 ROSWELL RD",
+        "addressLine": [
+          "5025 ROSWELL RD"
+        ],
+        "city": "SANDY SPRINGS",
+        "state": "GA",
+        "zip": "30342"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.892255933841746,
+      "longitude": -84.38078926398138,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "BUCKHEAD LIBRARY",
+        "line1": "269 BUCKHEAD AVENUE NE",
+        "addressLine": [
+          "269 BUCKHEAD AVENUE NE"
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30305"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.83784332770048,
+      "longitude": -84.37925698172724,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "NORTHSIDE LIBRARY",
+        "line1": "3295 NORTHSIDE PARKWAY NW",
+        "addressLine": [
+          "3295 NORTHSIDE PARKWAY NW"
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30327"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.84515590697061,
+      "longitude": -84.42541869093108,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "JOAN P. GARNER LIBRARY AT PONCE DE LEON",
+        "line1": "980 PONCE DE LEON AVENUE NE",
+        "addressLine": [
+          "980 PONCE DE LEON AVENUE NE"
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30306"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.77407236624293,
+      "longitude": -84.35519082824563,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "HIGH MUSEUM OF ARTS",
+        "line1": "1280 PEACHTREE STREET NE",
+        "addressLine": [
+          "1280 PEACHTREE STREET NE"
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30309"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.790063202143294,
+      "longitude": -84.38555201989539,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "GEORGIA INSTITUTE OF TECHNOLOGY JOHN LEWIS STUDENT CENTER.",
+        "line1": "351 FERST DR NW",
+        "addressLine": [
+          "351 FERST DR NW"
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30332"
+      },
+      "pollingHours": "Wed, Oct 14: 9 am - 5 pm\nThu, Oct 15: 9 am - 5 pm",
+      "latitude": 33.77403621512332,
+      "longitude": -84.39901681153395,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "BEULAH HEIGHTS UNIVERSITY",
+        "line1": "892 BERNE ST SE",
+        "addressLine": [
+          "892 BERNE ST SE"
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30316"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.73689826527946,
+      "longitude": -84.35780943120736,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "GEORGIA STATE UNIVERSITY AT DAHLBERG HALL",
+        "line1": "30 COURTLAND STREET SE",
+        "addressLine": [
+          "30 COURTLAND STREET SE"
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30303"
+      },
+      "pollingHours": "Tue, Oct 20: 9 am - 5 pm\nWed, Oct 21: 9 am - 5 pm",
+      "latitude": 33.75383380338483,
+      "longitude": -84.38456707125253,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "FRIENDSHIP BAPTIST CHURCH",
+        "line1": "80 WALNUT ST",
+        "addressLine": [
+          "80 WALNUT ST"
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30314"
+      },
+      "pollingHours": "Tue, Oct 27: 9 am - 5 pm\nWed, Oct 28: 9 am - 5 pm",
+      "latitude": 33.75261401177776,
+      "longitude": -84.40582500527856,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "NORTHWEST BRANCH LIBRARY AT SCOTTS CROSSING",
+        "line1": "2489 PERRY BOULEVARD",
+        "addressLine": [
+          "2489 PERRY BOULEVARD"
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30318"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.80535461585247,
+      "longitude": -84.47010036825088,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "MECHANICSVILLE LIBRARY",
+        "line1": "400 FORMWALT STREET SW",
+        "addressLine": [
+          "400 FORMWALT STREET SW"
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30312"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.74348483893197,
+      "longitude": -84.39534271458044,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "METROPOLITAN LIBRARY",
+        "line1": "1332 METROPOLITAN PARKWAY",
+        "addressLine": [
+          "1332 METROPOLITAN PARKWAY"
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30310"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.718757657577605,
+      "longitude": -84.40738457094265,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "C.T. MARTIN NATATORIUM AND RECREATION CENTER",
+        "line1": "3201 MARTIN LUTHER KING JR. DR., S.W.",
+        "addressLine": [
+          "3201 MARTIN LUTHER KING JR. DR., S.W."
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30311"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.75433389255677,
+      "longitude": -84.49186352640268,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "ADAMS PARK LIBRARY",
+        "line1": "2231 CAMPBELLTON ROAD SW",
+        "addressLine": [
+          "2231 CAMPBELLTON ROAD SW"
+        ],
+        "city": "ATLANTA",
+        "state": "GA",
+        "zip": "30311"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.70570511481729,
+      "longitude": -84.46169758611532,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "EAST POINT LIBRARY",
+        "line1": "2757 MAIN STREET",
+        "addressLine": [
+          "2757 MAIN STREET"
+        ],
+        "city": "EAST POINT",
+        "state": "GA",
+        "zip": "30344"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.68035070116892,
+      "longitude": -84.44069468601191,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "EVELYN G. LOWERY LIBRARY AT CASCADE",
+        "line1": "3665 CASCADE ROAD",
+        "addressLine": [
+          "3665 CASCADE ROAD"
+        ],
+        "city": "SOUTH FULTON",
+        "state": "GA",
+        "zip": "30331"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.724604883921415,
+      "longitude": -84.50653586662372,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "HUGH C. CONLEY RECREATION CENTER",
+        "line1": "3636 COLLEGE STREET",
+        "addressLine": [
+          "3636 COLLEGE STREET"
+        ],
+        "city": "COLLEGE PARK",
+        "state": "GA",
+        "zip": "30337"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.65592732238978,
+      "longitude": -84.45105266107262,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "SOUTHWEST ARTS CENTER",
+        "line1": "915 NEW HOPE ROAD, SW",
+        "addressLine": [
+          "915 NEW HOPE ROAD, SW"
+        ],
+        "city": "SOUTH FULTON",
+        "state": "GA",
+        "zip": "30331"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.72972221245299,
+      "longitude": -84.54166673029358,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "WELCOME ALL RECREATION CENTER",
+        "line1": "4255 WILL LEE ROAD",
+        "addressLine": [
+          "4255 WILL LEE ROAD"
+        ],
+        "city": "SOUTH FULTON",
+        "state": "GA",
+        "zip": "30349"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.632024872406696,
+      "longitude": -84.52630640500257,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "WOLF CREEK LIBRARY",
+        "line1": "3100 ENON ROAD",
+        "addressLine": [
+          "3100 ENON ROAD"
+        ],
+        "city": "SOUTH FULTON",
+        "state": "GA",
+        "zip": "30331"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.67253072210325,
+      "longitude": -84.57419361855744,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "CREEL PARK",
+        "line1": "2775 CREEL RD",
+        "addressLine": [
+          "2775 CREEL RD"
+        ],
+        "city": "SOUTH FULTON",
+        "state": "GA",
+        "zip": "30349"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.56695959726076,
+      "longitude": -84.48317800046958,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "GLADYS S. DENNARD LIBRARY AT SOUTH FULTON",
+        "line1": "4055 FLAT SHOALS ROAD",
+        "addressLine": [
+          "4055 FLAT SHOALS ROAD"
+        ],
+        "city": "SOUTH FULTON",
+        "state": "GA",
+        "zip": "30291"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.58779856982332,
+      "longitude": -84.51952269471687,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "SOUTH FULTON SERVICE CENTER",
+        "line1": "5600 STONEWALL TELL ROAD",
+        "addressLine": [
+          "5600 STONEWALL TELL ROAD"
+        ],
+        "city": "SOUTH FULTON",
+        "state": "GA",
+        "zip": "30349"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.60142232009563,
+      "longitude": -84.5498795228299,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "FULTON COUNTY ELECTIONS HUB",
+        "line1": "5600 CAMPBELLTON FAIRBURN ROAD",
+        "addressLine": [
+          "5600 CAMPBELLTON FAIRBURN ROAD"
+        ],
+        "city": "UNION CITY",
+        "state": "GA",
+        "zip": "30213"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.60142232361227,
+      "longitude": -84.54987960279223,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "PALMETTO LIBRARY",
+        "line1": "9111 CASCADE PALMETTO HWY.",
+        "addressLine": [
+          "9111 CASCADE PALMETTO HWY."
+        ],
+        "city": "PALMETTO",
+        "state": "GA",
+        "zip": "30268"
+      },
+      "pollingHours": "Tue, Oct 13: 7 am - 7 pm\nWed, Oct 14: 7 am - 7 pm\nThu, Oct 15: 7 am - 7 pm\nFri, Oct 16: 7 am - 7 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 12 pm - 5 pm\nMon, Oct 19: 7 am - 7 pm\nTue, Oct 20: 7 am - 7 pm\nWed, Oct 21: 7 am - 7 pm\nThu, Oct 22: 7 am - 7 pm\nFri, Oct 23: 7 am - 7 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 12 pm - 5 pm\nMon, Oct 26: 7 am - 7 pm\nTue, Oct 27: 7 am - 7 pm\nWed, Oct 28: 7 am - 7 pm\nThu, Oct 29: 7 am - 7 pm\nFri, Oct 30: 7 am - 7 pm",
+      "latitude": 33.53063963827269,
+      "longitude": -84.66440201976467,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": false
+        }
+      ]
+    }
+  ],
+  "state": [
+    {
+      "name": "Georgia",
+      "electionAdministrationBody": {
+        "name": "Secretary of State, Elections Division",
+        "electionInfoUrl": "http://sos.ga.gov/index.php/elections",
+        "electionRegistrationUrl": "https://mvp.sos.ga.gov/s/voter-registration?IsRegisterNow=true",
+        "electionRegistrationConfirmationUrl": "https://mvp.sos.ga.gov/s/",
+        "absenteeVotingInfoUrl": "https://securemyabsenteeballot.sos.ga.gov/s/",
+        "votingLocationFinderUrl": "https://mvp.sos.ga.gov/s/",
+        "ballotInfoUrl": "https://mvp.sos.ga.gov/s/",
+        "electionRulesUrl": "https://sos.ga.gov/how-to-guide/how-guide-voting#Absentee%20Voting",
+        "correspondenceAddress": {
+          "line1": "2 MLK Jr. Drive, Suite 802, Floyd West Tower",
+          "addressLine": [
+            "2 MLK Jr. Drive, Suite 802, Floyd West Tower"
+          ],
+          "city": "Atlanta",
+          "state": "",
+          "zip": "30334"
+        }
+      },
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    }
+  ],
+  "kind": "civicinfo#voterInfoResponse"
+}

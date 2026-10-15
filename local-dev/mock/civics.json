@@ -16,59 +16,19 @@
       "endpoint": "civicinfo/v2/elections",
       "responses": [
         {
-          "uuid": "5af96bf7-58a0-499e-b3b6-4f43a426b9e0",
-          "body": "{\n  \"elections\": [\n    {\n      \"id\": \"8112\",\n      \"name\": \"Washington Special Election\",\n      \"electionDay\": \"2024-02-13\",\n      \"ocdDivisionId\": \"ocd-division/country:us/state:wa\"\n    },\n    {\n      \"id\": \"8113\",\n      \"name\": \"Wisconsin Spring Primary Election\",\n      \"electionDay\": \"2024-02-20\",\n      \"ocdDivisionId\": \"ocd-division/country:us/state:wi\"\n    },\n    {\n      \"id\": \"8121\",\n      \"name\": \"Virginia Democratic Presidential Primary Election\",\n      \"electionDay\": \"2024-03-05\",\n      \"ocdDivisionId\": \"ocd-division/country:us/state:va\"\n    },\n    {\n      \"id\": \"8122\",\n      \"name\": \"Virginia Republican Presidential Primary Election\",\n      \"electionDay\": \"2024-03-05\",\n      \"ocdDivisionId\": \"ocd-division/country:us/state:va\"\n    },\n    {\n      \"electionDay\": \"2025-06-06\",\n      \"id\": \"2000\",\n      \"name\": \"VIP Test Election\",\n      \"ocdDivisionId\": \"ocd-division/country:us\"\n    }\n  ],\n  \"kind\": \"civicinfo#electionsQueryResponse\"\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "private"
-            },
-            {
-              "key": "Server",
-              "value": "ESF"
-            },
-            {
-              "key": "Vary",
-              "value": "Origin, X-Origin, Referer"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
-          ],
-          "bodyType": "FILE",
-          "filePath": "./elections.json",
-          "databucketID": "",
-          "sendFileAsBody": true,
-          "rules": [],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": true,
-          "crudKey": "id",
-          "callbacks": []
-        },
-        {
-          "uuid": "fb12f755-7454-4f12-99a7-59647861371d",
-          "body": "",
+          "uuid": "fe0ea0d1-f5e3-4951-9fe9-ba309b26d00a",
+          "body": "{}",
           "latency": 0,
           "statusCode": 403,
-          "label": "",
+          "label": "Missing apikey",
           "headers": [
-            {
-              "key": "Content-Encoding",
-              "value": "gzip"
-            },
             {
               "key": "Content-Type",
               "value": "application/json"
             }
           ],
           "bodyType": "FILE",
-          "filePath": "./missing-apikey.json.gz",
+          "filePath": "./missing-apikey.json",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -80,7 +40,7 @@
               "operator": "null"
             }
           ],
-          "rulesOperator": "OR",
+          "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": false,
@@ -88,23 +48,19 @@
           "callbacks": []
         },
         {
-          "uuid": "66cf7f8b-1c63-48a7-a646-f503622da39c",
-          "body": "",
+          "uuid": "985eb3d5-925e-4415-809a-89da57511e76",
+          "body": "{}",
           "latency": 0,
           "statusCode": 400,
-          "label": "",
+          "label": "Invalid apikey",
           "headers": [
-            {
-              "key": "Content-Encoding",
-              "value": "gzip"
-            },
             {
               "key": "Content-Type",
               "value": "application/json"
             }
           ],
           "bodyType": "FILE",
-          "filePath": "./invalid-apikey.json.gz",
+          "filePath": "./invalid-apikey.json",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -116,10 +72,38 @@
               "operator": "equals"
             }
           ],
-          "rulesOperator": "OR",
+          "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "f12f8cca-424b-4918-a76e-6d0a09aa06ca",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Elections",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "private"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "./elections.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
           "crudKey": "id",
           "callbacks": []
         }
@@ -134,183 +118,19 @@
       "endpoint": "civicinfo/v2/voterinfo",
       "responses": [
         {
-          "uuid": "1bba078b-3979-47a6-bd66-cf67407fd883",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Washington Special Election",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "private"
-            },
-            {
-              "key": "Content-Encoding",
-              "value": "gzip"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
-          ],
-          "bodyType": "FILE",
-          "filePath": "./voter-info-8112.json.gz",
-          "databucketID": "",
-          "sendFileAsBody": true,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "id",
-              "value": "8112",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "crudKey": "id",
-          "callbacks": []
-        },
-        {
-          "uuid": "6fe08b3f-182c-4c88-b3cd-962eafe2843c",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Wisconsin Spring Primary Election",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "private"
-            },
-            {
-              "key": "Content-Encoding",
-              "value": "gzip"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
-          ],
-          "bodyType": "FILE",
-          "filePath": "./voter-info-8113.json.gz",
-          "databucketID": "",
-          "sendFileAsBody": true,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "id",
-              "value": "8113",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "crudKey": "id",
-          "callbacks": []
-        },
-        {
-          "uuid": "73f72e8d-7cf6-4ca1-8469-0c4db62be99a",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Virginia Democratic Presidential Primary Election",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "private"
-            },
-            {
-              "key": "Content-Encoding",
-              "value": "gzip"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
-          ],
-          "bodyType": "FILE",
-          "filePath": "./voter-info-8121.json.gz",
-          "databucketID": "",
-          "sendFileAsBody": true,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "id",
-              "value": "8121",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "crudKey": "id",
-          "callbacks": []
-        },
-        {
-          "uuid": "d27f1129-43c4-4fdc-a7ab-930e90af9a85",
-          "body": "{}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "Virginia Republican Presidential Primary Election",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "private"
-            },
-            {
-              "key": "Content-Encoding",
-              "value": "gzip"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json"
-            }
-          ],
-          "bodyType": "FILE",
-          "filePath": "./voter-info-8122.json.gz",
-          "databucketID": "",
-          "sendFileAsBody": true,
-          "rules": [
-            {
-              "target": "query",
-              "modifier": "id",
-              "value": "8122",
-              "invert": false,
-              "operator": "equals"
-            }
-          ],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false,
-          "default": false,
-          "crudKey": "id",
-          "callbacks": []
-        },
-        {
-          "uuid": "dac6a8bd-8e15-469c-bc76-ecdf65c8be07",
+          "uuid": "856746e5-0063-4ee6-8127-c21b0af99a75",
           "body": "{}",
           "latency": 0,
           "statusCode": 403,
-          "label": "Missing key",
+          "label": "Missing apikey",
           "headers": [
-            {
-              "key": "Content-Encoding",
-              "value": "gzip"
-            },
             {
               "key": "Content-Type",
               "value": "application/json"
             }
           ],
           "bodyType": "FILE",
-          "filePath": "./missing-apikey.json.gz",
+          "filePath": "./missing-apikey.json",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -322,7 +142,7 @@
               "operator": "null"
             }
           ],
-          "rulesOperator": "OR",
+          "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": false,
@@ -330,27 +150,31 @@
           "callbacks": []
         },
         {
-          "uuid": "1f096b13-478d-46b6-9206-434df46afaec",
+          "uuid": "95b447bb-7651-4266-97d4-19d978687e05",
           "body": "{}",
           "latency": 0,
           "statusCode": 400,
           "label": "Invalid apikey",
           "headers": [
             {
-              "key": "Content-Encoding",
-              "value": "gzip"
-            },
-            {
               "key": "Content-Type",
               "value": "application/json"
             }
           ],
           "bodyType": "FILE",
-          "filePath": "./invalid-apikey.json.gz",
+          "filePath": "./invalid-apikey.json",
           "databucketID": "",
           "sendFileAsBody": true,
-          "rules": [],
-          "rulesOperator": "OR",
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "key",
+              "value": "local-dev",
+              "invert": true,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": false,
@@ -358,23 +182,19 @@
           "callbacks": []
         },
         {
-          "uuid": "1d349b32-d0ef-4907-8563-f2d0badda0d6",
+          "uuid": "c6c614db-55a9-445c-a264-7bb59a8aad7b",
           "body": "{}",
           "latency": 0,
           "statusCode": 400,
           "label": "Missing address",
           "headers": [
             {
-              "key": "Content-Encoding",
-              "value": "gzip"
-            },
-            {
               "key": "Content-Type",
               "value": "application/json"
             }
           ],
           "bodyType": "FILE",
-          "filePath": "./missing.address.json.gz",
+          "filePath": "./missing-address.json",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
@@ -386,7 +206,7 @@
               "operator": "null"
             }
           ],
-          "rulesOperator": "OR",
+          "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": false,
@@ -394,35 +214,42 @@
           "callbacks": []
         },
         {
-          "uuid": "20e03eed-430d-461a-b293-0ed6154e74c7",
+          "uuid": "6c06038b-2206-4492-b544-dcda8959782b",
           "body": "{}",
           "latency": 0,
           "statusCode": 200,
-          "label": "Virginia multiple elections",
+          "label": "Google Test Election (Future) - Georgia",
           "headers": [
-            {
-              "key": "Content-Encoding",
-              "value": "gzip"
-            },
             {
               "key": "Content-Type",
               "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "private"
             }
           ],
           "bodyType": "FILE",
-          "filePath": "./voter-info-va.json.gz",
+          "filePath": "./voter-info-1001-ga.json",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [
             {
               "target": "query",
+              "modifier": "electionId",
+              "value": "1001",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
               "modifier": "address",
-              "value": "\\sVA(\\s|$)",
+              "value": "\\sga(\\s|,|$)",
               "invert": false,
               "operator": "regex_i"
             }
           ],
-          "rulesOperator": "OR",
+          "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": false,
@@ -430,27 +257,274 @@
           "callbacks": []
         },
         {
-          "uuid": "eb5fc401-0cb0-4b8d-8794-bc7a145fc214",
+          "uuid": "201e7b9b-1cea-42bf-b0bc-b1e383506520",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Google Test Election (Future) - Illinois",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "private"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "./voter-info-1001-il.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "electionId",
+              "value": "1001",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "address",
+              "value": "\\sil(\\s|,|$)",
+              "invert": false,
+              "operator": "regex_i"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "675c95a3-153d-410f-a55b-56ab69521f3c",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "VIP Test Election - Georgia",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "private"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "./voter-info-2000-ga.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "electionId",
+              "value": "2000",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "address",
+              "value": "\\sga(\\s|,|$)",
+              "invert": false,
+              "operator": "regex_i"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "b448c9c7-63c0-46ab-b9db-dab1f90ef134",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "VIP Test Election - Illinois",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "private"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "./voter-info-2000-il.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "electionId",
+              "value": "2000",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "address",
+              "value": "\\sil(\\s|,|$)",
+              "invert": false,
+              "operator": "regex_i"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "1a540ee1-b5bd-42d4-b8d5-027813515c5b",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "2026 General Midterm Election - Georgia",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "private"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "./voter-info-12000-ga.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "electionId",
+              "value": "12000",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "address",
+              "value": "\\sga(\\s|,|$)",
+              "invert": false,
+              "operator": "regex_i"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "10c2f19c-e231-495c-9fa7-b562c3b6ac2d",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "2026 General Midterm Election - Illinois",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "private"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "./voter-info-12000-il.json",
+          "databucketID": "",
+          "sendFileAsBody": true,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "electionId",
+              "value": "12000",
+              "invert": false,
+              "operator": "equals"
+            },
+            {
+              "target": "query",
+              "modifier": "address",
+              "value": "\\sil(\\s|,|$)",
+              "invert": false,
+              "operator": "regex_i"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "5754d5d6-4fde-43e2-a190-dad7d8f5a0f3",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Generated (other states)",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "private"
+            }
+          ],
+          "bodyType": "FILE",
+          "filePath": "./voter-info-generated.json.hbs",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "electionId",
+              "value": "^(1001|2000|12000)$",
+              "invert": false,
+              "operator": "regex"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "2720c6de-b3e5-446b-a809-b394b488f637",
           "body": "{}",
           "latency": 0,
           "statusCode": 400,
-          "label": "Default for unknown address / ids",
+          "label": "Unknown election",
           "headers": [
-            {
-              "key": "Content-Encoding",
-              "value": "gzip"
-            },
             {
               "key": "Content-Type",
               "value": "application/json"
             }
           ],
           "bodyType": "FILE",
-          "filePath": "./voter-info-unknown.json.gz",
+          "filePath": "./voter-info-unknown.json",
           "databucketID": "",
           "sendFileAsBody": true,
           "rules": [],
-          "rulesOperator": "OR",
+          "rulesOperator": "AND",
           "disableTemplating": false,
           "fallbackTo404": false,
           "default": true,
@@ -503,5 +577,6 @@
     }
   ],
   "data": [],
-  "callbacks": []
+  "callbacks": [],
+  "fakerSeed": 42
 }

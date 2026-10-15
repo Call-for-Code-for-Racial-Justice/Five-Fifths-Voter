@@ -1,0 +1,48 @@
+{
+  "election": {
+    "id": "2000",
+    "name": "VIP Test Election",
+    "electionDay": "2031-12-06",
+    "ocdDivisionId": "ocd-division/country:us"
+  },
+  "normalizedInput": {
+    "line1": "123 Example Street",
+    "addressLine": [
+      "123 Example Street"
+    ],
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30303"
+  },
+  "state": [
+    {
+      "name": "Georgia",
+      "electionAdministrationBody": {
+        "name": "Secretary of State, Elections Division",
+        "electionInfoUrl": "http://sos.ga.gov/index.php/elections",
+        "electionRegistrationUrl": "https://mvp.sos.ga.gov/s/voter-registration?IsRegisterNow=true",
+        "electionRegistrationConfirmationUrl": "https://mvp.sos.ga.gov/s/",
+        "absenteeVotingInfoUrl": "https://securemyabsenteeballot.sos.ga.gov/s/",
+        "votingLocationFinderUrl": "https://mvp.sos.ga.gov/s/",
+        "ballotInfoUrl": "https://mvp.sos.ga.gov/s/",
+        "electionRulesUrl": "https://sos.ga.gov/how-to-guide/how-guide-voting#Absentee%20Voting",
+        "correspondenceAddress": {
+          "line1": "2 MLK Jr. Drive, Suite 802, Floyd West Tower",
+          "addressLine": [
+            "2 MLK Jr. Drive, Suite 802, Floyd West Tower"
+          ],
+          "city": "Atlanta",
+          "state": "",
+          "zip": "30334"
+        }
+      },
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    }
+  ],
+  "kind": "civicinfo#voterInfoResponse"
+}

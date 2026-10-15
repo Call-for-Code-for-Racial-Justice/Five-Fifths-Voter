@@ -1,0 +1,13 @@
+{
+  "error": {
+    "code": 400,
+    "message": "Election unknown",
+    "errors": [
+      {
+        "message": "Election unknown",
+        "domain": "global",
+        "reason": "invalid"
+      }
+    ]
+  }
+}

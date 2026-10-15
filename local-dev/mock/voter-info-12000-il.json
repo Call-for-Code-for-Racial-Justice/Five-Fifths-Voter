@@ -1,0 +1,2310 @@
+{
+  "election": {
+    "id": "12000",
+    "name": "2026 General Midterm Election",
+    "electionDay": "2026-11-03",
+    "ocdDivisionId": "ocd-division/country:us"
+  },
+  "normalizedInput": {
+    "line1": "123 Example Street",
+    "addressLine": [
+      "123 Example Street"
+    ],
+    "city": "Springfield",
+    "state": "IL",
+    "zip": "62701"
+  },
+  "pollingLocations": [
+    {
+      "address": {
+        "locationName": "ASSUMPTION CHURCH",
+        "line1": "323 W Illinois St",
+        "addressLine": [
+          "323 W Illinois St"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60654"
+      },
+      "notes": "No tactile markings next to numbers on elevator panel",
+      "pollingHours": "Tue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.89062020464266,
+      "longitude": -87.63636330910904,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "earlyVoteSites": [
+    {
+      "address": {
+        "locationName": "Historic Lawson House",
+        "line1": "803 N Dearborn St # 42",
+        "addressLine": [
+          "803 N Dearborn St # 42"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60610"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.896868536576505,
+      "longitude": -87.62959737791388,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Chicago Board of Elections",
+        "line1": "69 W Washington  ST 6th Floor  Chicago  IL",
+        "addressLine": [
+          "69 W Washington  ST 6th Floor  Chicago  IL"
+        ]
+      },
+      "pollingHours": "Thu, Oct 1: 9 am - 6 pm\nFri, Oct 2: 9 am - 6 pm\nSat, Oct 3: 9 am - 5 pm\nSun, Oct 4: 10 am - 4 pm\nMon, Oct 5: 9 am - 6 pm\nTue, Oct 6: 9 am - 6 pm\nWed, Oct 7: 9 am - 6 pm\nThu, Oct 8: 9 am - 6 pm\nFri, Oct 9: 9 am - 6 pm\nSat, Oct 10: 9 am - 5 pm\nSun, Oct 11: 10 am - 4 pm\nMon, Oct 12: 9 am - 6 pm\nTue, Oct 13: 9 am - 6 pm\nWed, Oct 14: 9 am - 6 pm\nThu, Oct 15: 9 am - 6 pm\nFri, Oct 16: 9 am - 6 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 10 am - 4 pm\nMon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 7 pm\nTue, Oct 27: 9 am - 7 pm\nWed, Oct 28: 9 am - 7 pm\nThu, Oct 29: 9 am - 7 pm\nFri, Oct 30: 9 am - 7 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 7 pm",
+      "latitude": 41.88293943657297,
+      "longitude": -87.62990018738351,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Chicago Election Board Annex",
+        "line1": "137 S State St",
+        "addressLine": [
+          "137 S State St"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60603"
+      },
+      "pollingHours": "Thu, Oct 1: 9 am - 6 pm\nFri, Oct 2: 9 am - 6 pm\nSat, Oct 3: 9 am - 5 pm\nSun, Oct 4: 10 am - 4 pm\nMon, Oct 5: 9 am - 6 pm\nTue, Oct 6: 9 am - 6 pm\nWed, Oct 7: 9 am - 6 pm\nThu, Oct 8: 9 am - 6 pm\nFri, Oct 9: 9 am - 6 pm\nSat, Oct 10: 9 am - 5 pm\nSun, Oct 11: 10 am - 4 pm\nMon, Oct 12: 9 am - 6 pm\nTue, Oct 13: 9 am - 6 pm\nWed, Oct 14: 9 am - 6 pm\nThu, Oct 15: 9 am - 6 pm\nFri, Oct 16: 9 am - 6 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 10 am - 4 pm\nMon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 7 pm\nTue, Oct 27: 9 am - 7 pm\nWed, Oct 28: 9 am - 7 pm\nThu, Oct 29: 9 am - 7 pm\nFri, Oct 30: 9 am - 7 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 7 pm",
+      "latitude": 41.87973600709713,
+      "longitude": -87.6272985661348,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Near North Library",
+        "line1": "310 W Division St # 2",
+        "addressLine": [
+          "310 W Division St # 2"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60610"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.90413189371628,
+      "longitude": -87.63657466478183,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Goldblatts Building",
+        "line1": "1615 W Chicago Ave # 1",
+        "addressLine": [
+          "1615 W Chicago Ave # 1"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60622"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.895884974546185,
+      "longitude": -87.66808161051185,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "UIC Student Center East",
+        "line1": "750 S Halsted St # 34",
+        "addressLine": [
+          "750 S Halsted St # 34"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60607"
+      },
+      "pollingHours": "October 19, 2026 \u0096 November 2, 2026: Monday thru Friday 9:00 AM to 6:00 PM; October 24, 2026 and October 31, 2026: Saturday 9:00 AM to 5:00 PM; October 25, 2026 and November 1, 2026: Sunday 10:00 AM to 4:00 PM",
+      "latitude": 41.8719123002715,
+      "longitude": -87.64794810255728,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Union Park",
+        "line1": "1501 W Randolph St # 27",
+        "addressLine": [
+          "1501 W Randolph St # 27"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60607"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.88394516317557,
+      "longitude": -87.6655370961667,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lincoln Park Library",
+        "line1": "1150 W Fullerton Ave # 43",
+        "addressLine": [
+          "1150 W Fullerton Ave # 43"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60614"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.9254174340343,
+      "longitude": -87.65827207811222,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Bucktown-Wicker Park Library",
+        "line1": "1701 N Milwaukee Ave # 32",
+        "addressLine": [
+          "1701 N Milwaukee Ave # 32"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60647"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.91244789015828,
+      "longitude": -87.6803519154691,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Rudy Lozano Library",
+        "line1": "1805 S Loomis St # 25",
+        "addressLine": [
+          "1805 S Loomis St # 25"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60608"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.85762290592584,
+      "longitude": -87.66093296702283,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Merlo Library",
+        "line1": "644 W Belmont Ave # 44",
+        "addressLine": [
+          "644 W Belmont Ave # 44"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60657"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.940282813511715,
+      "longitude": -87.64621090218247,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "McGuane Park",
+        "line1": "2901 S Poplar Ave # 11",
+        "addressLine": [
+          "2901 S Poplar Ave # 11"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60608"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.84073671284036,
+      "longitude": -87.6476488755044,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Dawson Technical Institute",
+        "line1": "3901 S State St # 3",
+        "addressLine": [
+          "3901 S State St # 3"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60609"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.82265072652562,
+      "longitude": -87.62609922203673,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Humboldt Park Library",
+        "line1": "1605 N Troy St # 26",
+        "addressLine": [
+          "1605 N Troy St # 26"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60647"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.91033727893002,
+      "longitude": -87.70549526605708,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "St. Agatha Catholic Parish",
+        "line1": "3151 W Douglas Blvd # 24",
+        "addressLine": [
+          "3151 W Douglas Blvd # 24"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60623"
+      },
+      "pollingHours": "October 19, 2026 \u0096 November 2, 2026: Monday thru Friday 9:00 AM to 6:00 PM; October 24, 2026 and October 31, 2026: Saturday 9:00 AM to 5:00 PM; October 25, 2026 and November 1, 2026: Sunday 10:00 AM to 4:00 PM",
+      "latitude": 41.862294587606556,
+      "longitude": -87.70494199891958,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "West Chicago Library",
+        "line1": "4856 W Chicago Ave # 37",
+        "addressLine": [
+          "4856 W Chicago Ave # 37"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60651"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.8953171640276,
+      "longitude": -87.747998178583,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Dr. Martin Luther King Center",
+        "line1": "4314 S Cottage Grove Ave # 4",
+        "addressLine": [
+          "4314 S Cottage Grove Ave # 4"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60653"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.81641180192046,
+      "longitude": -87.60719061599046,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Truman College",
+        "line1": "1145 W Wilson Ave # 46",
+        "addressLine": [
+          "1145 W Wilson Ave # 46"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60640"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.96453343753452,
+      "longitude": -87.65900871669184,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Malcolm X College - West Campus",
+        "line1": "4624 W Madison St # 28",
+        "addressLine": [
+          "4624 W Madison St # 28"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60644"
+      },
+      "pollingHours": "October 19, 2026 \u0096 November 2, 2026: Monday thru Friday 9:00 AM to 6:00 PM; October 24, 2026 and October 31, 2026: Saturday 9:00 AM to 5:00 PM; October 25, 2026 and November 1, 2026: Sunday 10:00 AM to 4:00 PM",
+      "latitude": 41.88122631463496,
+      "longitude": -87.74112540457845,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "McKinley Park Library",
+        "line1": "1915 W 35th St # 12",
+        "addressLine": [
+          "1915 W 35th St # 12"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60609"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.83014201170999,
+      "longitude": -87.67343797479933,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Welles Park",
+        "line1": "2333 W Sunnyside Ave # 47",
+        "addressLine": [
+          "2333 W Sunnyside Ave # 47"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60625"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.96239599675702,
+      "longitude": -87.68630170539139,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Northeastern Illinois University-El Centro",
+        "line1": "3390 N Avondale Ave # 35",
+        "addressLine": [
+          "3390 N Avondale Ave # 35"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60618"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.94265189002095,
+      "longitude": -87.71420959377957,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Broadway Armory",
+        "line1": "5917 N Broadway St # 48",
+        "addressLine": [
+          "5917 N Broadway St # 48"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60660"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.98956853112286,
+      "longitude": -87.66004531890837,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Toman Library",
+        "line1": "2708 S Pulaski Rd # 22",
+        "addressLine": [
+          "2708 S Pulaski Rd # 22"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60623"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.8420766251579,
+      "longitude": -87.72483966429145,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "University of Chicago-Reynolds Club",
+        "line1": "5706 S University Ave Fl 1",
+        "addressLine": [
+          "5706 S University Ave Fl 1"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60637"
+      },
+      "pollingHours": "Wed, Oct 28: 10 am - 5 pm\nThu, Oct 29: 10 am - 5 pm\nFri, Oct 30: 10 am - 5 pm",
+      "latitude": 41.791300396999404,
+      "longitude": -87.59843569201604,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Brighton Park Community Campus (Park No. 596)",
+        "line1": "4830 S Western Ave # 15",
+        "addressLine": [
+          "4830 S Western Ave # 15"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60609"
+      },
+      "pollingHours": "October 19, 2026 \u0096 November 2, 2026: Monday thru Friday 9:00 AM to 6:00 PM; October 24, 2026 and October 31, 2026: Saturday 9:00 AM to 5:00 PM; October 25, 2026 and November 1, 2026: Sunday 10:00 AM to 4:00 PM",
+      "latitude": 41.805525994081016,
+      "longitude": -87.68528202229348,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Bessie Coleman Library",
+        "line1": "731 E 63rd St # 20",
+        "addressLine": [
+          "731 E 63rd St # 20"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60637"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.78012427776712,
+      "longitude": -87.60686979944276,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Amundsen Park",
+        "line1": "6200 W Bloomingdale Ave # 29",
+        "addressLine": [
+          "6200 W Bloomingdale Ave # 29"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60639"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.91371657115105,
+      "longitude": -87.77908088783957,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Kilbourn Park",
+        "line1": "3501 N Kilbourn Ave # 30",
+        "addressLine": [
+          "3501 N Kilbourn Ave # 30"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60641"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.9433295292991,
+      "longitude": -87.73851601036505,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Portage Cragin Library",
+        "line1": "5108 W Belmont Ave # 31",
+        "addressLine": [
+          "5108 W Belmont Ave # 31"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60641"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.93892940927714,
+      "longitude": -87.75504218908934,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "American Indian Center",
+        "line1": "3401 W Ainslie St # 33",
+        "addressLine": [
+          "3401 W Ainslie St # 33"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60625"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.96997699778585,
+      "longitude": -87.7137592630569,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Budlong Woods Library",
+        "line1": "5630 N Lincoln Ave # 40",
+        "addressLine": [
+          "5630 N Lincoln Ave # 40"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60659"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.98335686962888,
+      "longitude": -87.69633530524878,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lindblom Park",
+        "line1": "6054 S Damen Ave # 16",
+        "addressLine": [
+          "6054 S Damen Ave # 16"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60636"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.7842469355652,
+      "longitude": -87.67495859766997,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "South Side YMCA",
+        "line1": "6330 S Stony Island Ave # 5",
+        "addressLine": [
+          "6330 S Stony Island Ave # 5"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60637"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.779681028811034,
+      "longitude": -87.58734910603283,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Whitney Young Library",
+        "line1": "415 E 79th St # 6",
+        "addressLine": [
+          "415 E 79th St # 6"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60619"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.75101249155891,
+      "longitude": -87.61433441749327,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Thurgood Marshall Library",
+        "line1": "7506 S Racine Ave # 17",
+        "addressLine": [
+          "7506 S Racine Ave # 17"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60620"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.75738808209279,
+      "longitude": -87.65438481054485,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Northeastern University",
+        "line1": "5500 N Saint Louis Ave # 22",
+        "addressLine": [
+          "5500 N Saint Louis Ave # 22"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60625"
+      },
+      "pollingHours": "Wed, Oct 28: 10 am - 5 pm\nThu, Oct 29: 10 am - 5 pm\nFri, Oct 30: 10 am - 5 pm",
+      "latitude": 41.979478918574884,
+      "longitude": -87.718852678289,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Northtown Library",
+        "line1": "6800 N Western Ave # 50",
+        "addressLine": [
+          "6800 N Western Ave # 50"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60645"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 42.00530080103861,
+      "longitude": -87.69038269109764,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Willye B White Park",
+        "line1": "1610 W Howard St # 49",
+        "addressLine": [
+          "1610 W Howard St # 49"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60626"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 42.01976788450042,
+      "longitude": -87.6708443274687,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "West Belmont Library",
+        "line1": "3104 N Narragansett Ave # 36",
+        "addressLine": [
+          "3104 N Narragansett Ave # 36"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60634"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.9367292687172,
+      "longitude": -87.78616313651416,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Archer Heights Library",
+        "line1": "5055 S Archer Ave # 14",
+        "addressLine": [
+          "5055 S Archer Ave # 14"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60632"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.80088653508101,
+      "longitude": -87.72662962436006,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "North Park Village Admin Building",
+        "line1": "5801N N Pulaski Rd # 39",
+        "addressLine": [
+          "5801N N Pulaski Rd # 39"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60646"
+      },
+      "pollingHours": "October 19, 2026 \u0096 November 2, 2026: Monday thru Friday 9:00 AM to 6:00 PM; October 24, 2026 and October 31, 2026: Saturday 9:00 AM to 5:00 PM; October 25, 2026 and November 1, 2026: Sunday 10:00 AM to 4:00 PM",
+      "latitude": 41.986031369429064,
+      "longitude": -87.72558063621847,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Chicago State University",
+        "line1": "9501 S M L King Jr. DR Jones Convocation Center- Foyer Chicago IL",
+        "addressLine": [
+          "9501 S M L King Jr. DR Jones Convocation Center- Foyer Chicago IL"
+        ]
+      },
+      "pollingHours": "Wed, Oct 28: 10 am - 5 pm\nThu, Oct 29: 10 am - 5 pm\nFri, Oct 30: 10 am - 5 pm",
+      "latitude": 41.717974305178835,
+      "longitude": -87.60944832333995,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hiawatha Park",
+        "line1": "8029 W Forest Preserve Ave # 38",
+        "addressLine": [
+          "8029 W Forest Preserve Ave # 38"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60634"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.94407711574918,
+      "longitude": -87.82580790747865,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Kolping Society of Chicago",
+        "line1": "5826 N Elston Ave # 45",
+        "addressLine": [
+          "5826 N Elston Ave # 45"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60646"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.987194018506244,
+      "longitude": -87.773094087601,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Ward Hall-St Faustina Kowalska Parish",
+        "line1": "5157 S McVicker Ave # 23",
+        "addressLine": [
+          "5157 S McVicker Ave # 23"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60638"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.798215710002715,
+      "longitude": -87.77303072859375,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Wrightwood Ashburn Library",
+        "line1": "8530 S Kedzie Ave # 18",
+        "addressLine": [
+          "8530 S Kedzie Ave # 18"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60652"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.73757118167383,
+      "longitude": -87.70230029792995,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Palmer Park",
+        "line1": "201 E 111th St # 9",
+        "addressLine": [
+          "201 E 111th St # 9"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60628"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.69082890121853,
+      "longitude": -87.61583697281245,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Olive Harvey College",
+        "line1": "10001 S Woodlawn Ave # 8",
+        "addressLine": [
+          "10001 S Woodlawn Ave # 8"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60628"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.70990696557541,
+      "longitude": -87.58931602138081,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Roden Library",
+        "line1": "6083 N Northwest Hwy # 41",
+        "addressLine": [
+          "6083 N Northwest Hwy # 41"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60631"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.9921347059679,
+      "longitude": -87.79797169400248,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "West Pullman Library",
+        "line1": "830 W 119th St # 21",
+        "addressLine": [
+          "830 W 119th St # 21"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60643"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.67805233152756,
+      "longitude": -87.64308412118484,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Clearing Library",
+        "line1": "6423 W 63rd Pl # 13",
+        "addressLine": [
+          "6423 W 63rd Pl # 13"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60638"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.77646990520909,
+      "longitude": -87.78222789042601,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Trumbull Park",
+        "line1": "2400 E 105th St # 7",
+        "addressLine": [
+          "2400 E 105th St # 7"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60617"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.706257490672336,
+      "longitude": -87.56443207702497,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Vodak - East Side Library",
+        "line1": "3710 E 106th St # 10",
+        "addressLine": [
+          "3710 E 106th St # 10"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60617"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm",
+      "latitude": 41.70286072330115,
+      "longitude": -87.5334004712485,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Mt. Greenwood Park",
+        "line1": "3721 W 111th St # 19",
+        "addressLine": [
+          "3721 W 111th St # 19"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60655"
+      },
+      "pollingHours": "October 19, 2026 \u0096 November 2, 2026: Monday thru Friday 9:00 AM to 6:00 PM; October 24, 2026 and October 31, 2026: Saturday 9:00 AM to 5:00 PM; October 25, 2026 and November 1, 2026: Sunday 10:00 AM to 4:00 PM",
+      "latitude": 41.689558384761355,
+      "longitude": -87.71365132132877,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "dropOffLocations": [
+    {
+      "address": {
+        "locationName": "Historic Lawson House",
+        "line1": "803 N Dearborn St # 42",
+        "addressLine": [
+          "803 N Dearborn St # 42"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60610"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.896868536576505,
+      "longitude": -87.62959737791388,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Chicago Board of Elections",
+        "line1": "69 W Washington  ST 6th Floor  Chicago  IL",
+        "addressLine": [
+          "69 W Washington  ST 6th Floor  Chicago  IL"
+        ]
+      },
+      "pollingHours": "Thu, Oct 1: 9 am - 6 pm\nFri, Oct 2: 9 am - 6 pm\nSat, Oct 3: 9 am - 5 pm\nSun, Oct 4: 10 am - 4 pm\nMon, Oct 5: 9 am - 6 pm\nTue, Oct 6: 9 am - 6 pm\nWed, Oct 7: 9 am - 6 pm\nThu, Oct 8: 9 am - 6 pm\nFri, Oct 9: 9 am - 6 pm\nSat, Oct 10: 9 am - 5 pm\nSun, Oct 11: 10 am - 4 pm\nMon, Oct 12: 9 am - 6 pm\nTue, Oct 13: 9 am - 6 pm\nWed, Oct 14: 9 am - 6 pm\nThu, Oct 15: 9 am - 6 pm\nFri, Oct 16: 9 am - 6 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 10 am - 4 pm\nMon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 7 pm\nTue, Oct 27: 9 am - 7 pm\nWed, Oct 28: 9 am - 7 pm\nThu, Oct 29: 9 am - 7 pm\nFri, Oct 30: 9 am - 7 pm\nSat, Oct 31: 9 am - 7 pm\nSun, Nov 1: 9 am - 7 pm\nMon, Nov 2: 9 am - 7 pm",
+      "latitude": 41.88293943657297,
+      "longitude": -87.62990018738351,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Chicago Election Board Annex",
+        "line1": "137 S State St",
+        "addressLine": [
+          "137 S State St"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60603"
+      },
+      "pollingHours": "Thu, Oct 1: 9 am - 6 pm\nFri, Oct 2: 9 am - 6 pm\nSat, Oct 3: 9 am - 5 pm\nSun, Oct 4: 10 am - 4 pm\nMon, Oct 5: 9 am - 6 pm\nTue, Oct 6: 9 am - 6 pm\nWed, Oct 7: 9 am - 6 pm\nThu, Oct 8: 9 am - 6 pm\nFri, Oct 9: 9 am - 6 pm\nSat, Oct 10: 9 am - 5 pm\nSun, Oct 11: 10 am - 4 pm\nMon, Oct 12: 9 am - 6 pm\nTue, Oct 13: 9 am - 6 pm\nWed, Oct 14: 9 am - 6 pm\nThu, Oct 15: 9 am - 6 pm\nFri, Oct 16: 9 am - 6 pm\nSat, Oct 17: 9 am - 5 pm\nSun, Oct 18: 10 am - 4 pm\nMon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 7 pm\nTue, Oct 27: 9 am - 7 pm\nWed, Oct 28: 9 am - 7 pm\nThu, Oct 29: 9 am - 7 pm\nFri, Oct 30: 9 am - 7 pm\nSat, Oct 31: 9 am - 7 pm\nSun, Nov 1: 9 am - 7 pm\nMon, Nov 2: 9 am - 7 pm",
+      "latitude": 41.87973600709713,
+      "longitude": -87.6272985661348,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Near North Library",
+        "line1": "310 W Division St # 2",
+        "addressLine": [
+          "310 W Division St # 2"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60610"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.90413189371628,
+      "longitude": -87.63657466478183,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Goldblatts Building",
+        "line1": "1615 W Chicago Ave # 1",
+        "addressLine": [
+          "1615 W Chicago Ave # 1"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60622"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.895884974546185,
+      "longitude": -87.66808161051185,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "UIC Student Center East",
+        "line1": "750 S Halsted St # 34",
+        "addressLine": [
+          "750 S Halsted St # 34"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60607"
+      },
+      "pollingHours": "October 19, 2026 - November 3, 2026: Weekdays: 9:00 am - 6:00 pm Saturday: 9:00 am - 5:00 pm Sunday: 10:00 am - 4:00 pm Election Day: 6:00 am - 7:00 pm (November 3, 2026)",
+      "latitude": 41.8719123002715,
+      "longitude": -87.64794810255728,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Union Park",
+        "line1": "1501 W Randolph St # 27",
+        "addressLine": [
+          "1501 W Randolph St # 27"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60607"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.88394516317557,
+      "longitude": -87.6655370961667,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lincoln Park Library",
+        "line1": "1150 W Fullerton Ave # 43",
+        "addressLine": [
+          "1150 W Fullerton Ave # 43"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60614"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.9254174340343,
+      "longitude": -87.65827207811222,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Bucktown-Wicker Park Library",
+        "line1": "1701 N Milwaukee Ave # 32",
+        "addressLine": [
+          "1701 N Milwaukee Ave # 32"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60647"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.91244789015828,
+      "longitude": -87.6803519154691,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Rudy Lozano Library",
+        "line1": "1805 S Loomis St # 25",
+        "addressLine": [
+          "1805 S Loomis St # 25"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60608"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.85762290592584,
+      "longitude": -87.66093296702283,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Merlo Library",
+        "line1": "644 W Belmont Ave # 44",
+        "addressLine": [
+          "644 W Belmont Ave # 44"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60657"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.940282813511715,
+      "longitude": -87.64621090218247,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "McGuane Park",
+        "line1": "2901 S Poplar Ave # 11",
+        "addressLine": [
+          "2901 S Poplar Ave # 11"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60608"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.84073671284036,
+      "longitude": -87.6476488755044,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Dawson Technical Institute",
+        "line1": "3901 S State St # 3",
+        "addressLine": [
+          "3901 S State St # 3"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60609"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.82265072652562,
+      "longitude": -87.62609922203673,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Humboldt Park Library",
+        "line1": "1605 N Troy St # 26",
+        "addressLine": [
+          "1605 N Troy St # 26"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60647"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.91033727893002,
+      "longitude": -87.70549526605708,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "St. Agatha Catholic Parish",
+        "line1": "3151 W Douglas Blvd # 24",
+        "addressLine": [
+          "3151 W Douglas Blvd # 24"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60623"
+      },
+      "pollingHours": "October 19, 2026 - November 3, 2026: Weekdays: 9:00 am - 6:00 pm Saturday: 9:00 am - 5:00 pm Sunday: 10:00 am - 4:00 pm Election Day: 6:00 am - 7:00 pm (November 3, 2026)",
+      "latitude": 41.862294587606556,
+      "longitude": -87.70494199891958,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "West Chicago Library",
+        "line1": "4856 W Chicago Ave # 37",
+        "addressLine": [
+          "4856 W Chicago Ave # 37"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60651"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.8953171640276,
+      "longitude": -87.747998178583,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Dr. Martin Luther King Center",
+        "line1": "4314 S Cottage Grove Ave # 4",
+        "addressLine": [
+          "4314 S Cottage Grove Ave # 4"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60653"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.81641180192046,
+      "longitude": -87.60719061599046,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Truman College",
+        "line1": "1145 W Wilson Ave # 46",
+        "addressLine": [
+          "1145 W Wilson Ave # 46"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60640"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.96453343753452,
+      "longitude": -87.65900871669184,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Malcolm X College - West Campus",
+        "line1": "4624 W Madison St # 28",
+        "addressLine": [
+          "4624 W Madison St # 28"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60644"
+      },
+      "pollingHours": "October 19, 2026 - November 3, 2026: Weekdays: 9:00 am - 6:00 pm Saturday: 9:00 am - 5:00 pm Sunday: 10:00 am - 4:00 pm Election Day: 6:00 am - 7:00 pm (November 3, 2026)",
+      "latitude": 41.88122631463496,
+      "longitude": -87.74112540457845,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "McKinley Park Library",
+        "line1": "1915 W 35th St # 12",
+        "addressLine": [
+          "1915 W 35th St # 12"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60609"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.83014201170999,
+      "longitude": -87.67343797479933,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Welles Park",
+        "line1": "2333 W Sunnyside Ave # 47",
+        "addressLine": [
+          "2333 W Sunnyside Ave # 47"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60625"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.96239599675702,
+      "longitude": -87.68630170539139,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Northeastern Illinois University-El Centro",
+        "line1": "3390 N Avondale Ave # 35",
+        "addressLine": [
+          "3390 N Avondale Ave # 35"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60618"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.94265189002095,
+      "longitude": -87.71420959377957,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Broadway Armory",
+        "line1": "5917 N Broadway St # 48",
+        "addressLine": [
+          "5917 N Broadway St # 48"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60660"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.98956853112286,
+      "longitude": -87.66004531890837,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Toman Library",
+        "line1": "2708 S Pulaski Rd # 22",
+        "addressLine": [
+          "2708 S Pulaski Rd # 22"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60623"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.8420766251579,
+      "longitude": -87.72483966429145,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Brighton Park Community Campus (Park No. 596)",
+        "line1": "4830 S Western Ave # 15",
+        "addressLine": [
+          "4830 S Western Ave # 15"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60609"
+      },
+      "pollingHours": "October 19, 2026 - November 3, 2026: Weekdays: 9:00 am - 6:00 pm Saturday: 9:00 am - 5:00 pm Sunday: 10:00 am - 4:00 pm Election Day: 6:00 am - 7:00 pm (November 3, 2026)",
+      "latitude": 41.805525994081016,
+      "longitude": -87.68528202229348,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Bessie Coleman Library",
+        "line1": "731 E 63rd St # 20",
+        "addressLine": [
+          "731 E 63rd St # 20"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60637"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.78012427776712,
+      "longitude": -87.60686979944276,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Amundsen Park",
+        "line1": "6200 W Bloomingdale Ave # 29",
+        "addressLine": [
+          "6200 W Bloomingdale Ave # 29"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60639"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.91371657115105,
+      "longitude": -87.77908088783957,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Kilbourn Park",
+        "line1": "3501 N Kilbourn Ave # 30",
+        "addressLine": [
+          "3501 N Kilbourn Ave # 30"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60641"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.9433295292991,
+      "longitude": -87.73851601036505,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Portage Cragin Library",
+        "line1": "5108 W Belmont Ave # 31",
+        "addressLine": [
+          "5108 W Belmont Ave # 31"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60641"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.93892940927714,
+      "longitude": -87.75504218908934,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "American Indian Center",
+        "line1": "3401 W Ainslie St # 33",
+        "addressLine": [
+          "3401 W Ainslie St # 33"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60625"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.96997699778585,
+      "longitude": -87.7137592630569,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Budlong Woods Library",
+        "line1": "5630 N Lincoln Ave # 40",
+        "addressLine": [
+          "5630 N Lincoln Ave # 40"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60659"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.98335686962888,
+      "longitude": -87.69633530524878,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Lindblom Park",
+        "line1": "6054 S Damen Ave # 16",
+        "addressLine": [
+          "6054 S Damen Ave # 16"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60636"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.7842469355652,
+      "longitude": -87.67495859766997,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "South Side YMCA",
+        "line1": "6330 S Stony Island Ave # 5",
+        "addressLine": [
+          "6330 S Stony Island Ave # 5"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60637"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.779681028811034,
+      "longitude": -87.58734910603283,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Whitney Young Library",
+        "line1": "415 E 79th St # 6",
+        "addressLine": [
+          "415 E 79th St # 6"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60619"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.75101249155891,
+      "longitude": -87.61433441749327,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Thurgood Marshall Library",
+        "line1": "7506 S Racine Ave # 17",
+        "addressLine": [
+          "7506 S Racine Ave # 17"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60620"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.75738808209279,
+      "longitude": -87.65438481054485,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Northtown Library",
+        "line1": "6800 N Western Ave # 50",
+        "addressLine": [
+          "6800 N Western Ave # 50"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60645"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 42.00530080103861,
+      "longitude": -87.69038269109764,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Willye B White Park",
+        "line1": "1610 W Howard St # 49",
+        "addressLine": [
+          "1610 W Howard St # 49"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60626"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 42.01976788450042,
+      "longitude": -87.6708443274687,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "West Belmont Library",
+        "line1": "3104 N Narragansett Ave # 36",
+        "addressLine": [
+          "3104 N Narragansett Ave # 36"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60634"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.9367292687172,
+      "longitude": -87.78616313651416,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Archer Heights Library",
+        "line1": "5055 S Archer Ave # 14",
+        "addressLine": [
+          "5055 S Archer Ave # 14"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60632"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.80088653508101,
+      "longitude": -87.72662962436006,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "North Park Village Admin Building",
+        "line1": "5801N N Pulaski Rd # 39",
+        "addressLine": [
+          "5801N N Pulaski Rd # 39"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60646"
+      },
+      "pollingHours": "October 19, 2026 - November 3, 2026: Weekdays: 9:00 am - 6:00 pm Saturday: 9:00 am - 5:00 pm Sunday: 10:00 am - 4:00 pm Election Day: 6:00 am - 7:00 pm (November 3, 2026)",
+      "latitude": 41.986031369429064,
+      "longitude": -87.72558063621847,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Hiawatha Park",
+        "line1": "8029 W Forest Preserve Ave # 38",
+        "addressLine": [
+          "8029 W Forest Preserve Ave # 38"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60634"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.94407711574918,
+      "longitude": -87.82580790747865,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Kolping Society of Chicago",
+        "line1": "5826 N Elston Ave # 45",
+        "addressLine": [
+          "5826 N Elston Ave # 45"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60646"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.987194018506244,
+      "longitude": -87.773094087601,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Ward Hall-St Faustina Kowalska Parish",
+        "line1": "5157 S McVicker Ave # 23",
+        "addressLine": [
+          "5157 S McVicker Ave # 23"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60638"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.798215710002715,
+      "longitude": -87.77303072859375,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Wrightwood Ashburn Library",
+        "line1": "8530 S Kedzie Ave # 18",
+        "addressLine": [
+          "8530 S Kedzie Ave # 18"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60652"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.73757118167383,
+      "longitude": -87.70230029792995,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Palmer Park",
+        "line1": "201 E 111th St # 9",
+        "addressLine": [
+          "201 E 111th St # 9"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60628"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.69082890121853,
+      "longitude": -87.61583697281245,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Olive Harvey College",
+        "line1": "10001 S Woodlawn Ave # 8",
+        "addressLine": [
+          "10001 S Woodlawn Ave # 8"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60628"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.70990696557541,
+      "longitude": -87.58931602138081,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Roden Library",
+        "line1": "6083 N Northwest Hwy # 41",
+        "addressLine": [
+          "6083 N Northwest Hwy # 41"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60631"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.9921347059679,
+      "longitude": -87.79797169400248,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "West Pullman Library",
+        "line1": "830 W 119th St # 21",
+        "addressLine": [
+          "830 W 119th St # 21"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60643"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.67805233152756,
+      "longitude": -87.64308412118484,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Clearing Library",
+        "line1": "6423 W 63rd Pl # 13",
+        "addressLine": [
+          "6423 W 63rd Pl # 13"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60638"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.77646990520909,
+      "longitude": -87.78222789042601,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Trumbull Park",
+        "line1": "2400 E 105th St # 7",
+        "addressLine": [
+          "2400 E 105th St # 7"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60617"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.706257490672336,
+      "longitude": -87.56443207702497,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Vodak - East Side Library",
+        "line1": "3710 E 106th St # 10",
+        "addressLine": [
+          "3710 E 106th St # 10"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60617"
+      },
+      "pollingHours": "Mon, Oct 19: 9 am - 6 pm\nTue, Oct 20: 9 am - 6 pm\nWed, Oct 21: 9 am - 6 pm\nThu, Oct 22: 9 am - 6 pm\nFri, Oct 23: 9 am - 6 pm\nSat, Oct 24: 9 am - 5 pm\nSun, Oct 25: 10 am - 4 pm\nMon, Oct 26: 9 am - 6 pm\nTue, Oct 27: 9 am - 6 pm\nWed, Oct 28: 9 am - 6 pm\nThu, Oct 29: 9 am - 6 pm\nFri, Oct 30: 9 am - 6 pm\nSat, Oct 31: 9 am - 5 pm\nSun, Nov 1: 10 am - 4 pm\nMon, Nov 2: 9 am - 6 pm\nTue, Nov 3: 6 am - 7 pm",
+      "latitude": 41.70286072330115,
+      "longitude": -87.5334004712485,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    },
+    {
+      "address": {
+        "locationName": "Mt. Greenwood Park",
+        "line1": "3721 W 111th St # 19",
+        "addressLine": [
+          "3721 W 111th St # 19"
+        ],
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60655"
+      },
+      "pollingHours": "October 19, 2026 - November 3, 2026: Weekdays: 9:00 am - 6:00 pm Saturday: 9:00 am - 5:00 pm Sunday: 10:00 am - 4:00 pm Election Day: 6:00 am - 7:00 pm (November 3, 2026)",
+      "latitude": 41.689558384761355,
+      "longitude": -87.71365132132877,
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "state": [
+    {
+      "name": "Illinois",
+      "electionAdministrationBody": {
+        "electionInfoUrl": "http://www.elections.il.gov/"
+      },
+      "local_jurisdiction": {
+        "name": "City of Chicago",
+        "electionAdministrationBody": {
+          "electionInfoUrl": "http://www.elections.il.gov/"
+        },
+        "sources": [
+          {
+            "name": "Voting Information Project",
+            "official": true
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "Voting Information Project",
+          "official": true
+        }
+      ]
+    }
+  ],
+  "kind": "civicinfo#voterInfoResponse"
+}

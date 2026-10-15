@@ -1,0 +1,44 @@
+{{setVar 'm' (join (slice (filter (split (replaceAll (uppercase (queryParam 'address')) ',' ' ') ' ') 'AL' 'AK' 'AZ' 'AR' 'CA' 'CO' 'CT' 'DE' 'DC' 'FL' 'GA' 'HI' 'ID' 'IL' 'IN' 'IA' 'KS' 'KY' 'LA' 'ME' 'MD' 'MA' 'MI' 'MN' 'MS' 'MO' 'MT' 'NE' 'NV' 'NH' 'NJ' 'NM' 'NY' 'NC' 'ND' 'OH' 'OK' 'OR' 'PA' 'RI' 'SC' 'SD' 'TN' 'TX' 'UT' 'VT' 'VA' 'WA' 'WV' 'WI' 'WY') -1) '')}}{{#if (getVar 'm')}}{{setVar 'st' (getVar 'm')}}{{else}}{{setVar 'st' 'US'}}{{/if}}
+{
+  "election": {
+    "id": "{{queryParam 'electionId'}}",
+    "name": "{{#switch (queryParam 'electionId')}}{{#case '1001'}}Google Test Election (Future){{/case}}{{#case '2000'}}VIP Test Election{{/case}}{{#case '12000'}}2026 General Midterm Election{{/case}}{{/switch}}",
+    "electionDay": "{{#switch (queryParam 'electionId')}}{{#case '1001'}}2033-06-06{{/case}}{{#case '2000'}}2031-12-06{{/case}}{{#case '12000'}}2026-11-03{{/case}}{{/switch}}",
+    "ocdDivisionId": "ocd-division/country:us"
+  },
+  "normalizedInput": {
+    "line1": "123 Example Street",
+    "addressLine": ["123 Example Street"],
+    "city": "{{faker 'location.city'}}",
+    "state": "{{getVar 'st'}}",
+    "zip": "{{faker 'location.zipCode'}}"
+  },
+  "pollingLocations": [
+    {{#repeat 2 comma=true}}
+    {
+      "address": {
+        "locationName": "{{faker 'location.street'}} {{oneOf (array 'Elementary School' 'Library' 'Community Center' 'Church')}}",
+        "line1": "{{faker 'location.streetAddress'}}",
+        "city": "{{faker 'location.city'}}",
+        "state": "{{getVar 'st'}}",
+        "zip": "{{faker 'location.zipCode'}}"
+      },
+      "pollingHours": "Tue, Nov 3: 6 am - 7 pm",
+      "latitude": {{faker 'location.latitude'}},
+      "longitude": {{faker 'location.longitude'}},
+      "sources": [{ "name": "Voting Information Project", "official": true }]
+    }
+    {{/repeat}}
+  ],
+  "state": [
+    {
+      "name": "{{getVar 'st'}}",
+      "electionAdministrationBody": { "electionInfoUrl": "https://example.com/{{lowercase (getVar 'st')}}/elections" },
+      "local_jurisdiction": {
+        "name": "{{faker 'location.county'}}",
+        "electionAdministrationBody": { "electionInfoUrl": "https://example.com/{{lowercase (getVar 'st')}}/elections" }
+      }
+    }
+  ],
+  "kind": "civicinfo#voterInfoResponse"
+}
