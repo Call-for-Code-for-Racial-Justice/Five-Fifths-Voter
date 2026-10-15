@@ -1,0 +1,75 @@
+{
+  "election": {
+    "id": "1001",
+    "name": "Google Test Election (Future)",
+    "electionDay": "2033-06-06",
+    "ocdDivisionId": "ocd-division/country:us"
+  },
+  "normalizedInput": {
+    "line1": "123 Example Street",
+    "addressLine": [
+      "123 Example Street"
+    ],
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30303"
+  },
+  "state": [
+    {
+      "name": "Georgia",
+      "electionAdministrationBody": {
+        "name": "Secretary of State, Elections Division",
+        "electionInfoUrl": "http://sos.ga.gov/index.php/elections",
+        "electionRegistrationUrl": "https://mvp.sos.ga.gov/s/voter-registration?IsRegisterNow=true",
+        "electionRegistrationConfirmationUrl": "https://mvp.sos.ga.gov/s/",
+        "absenteeVotingInfoUrl": "https://securemyabsenteeballot.sos.ga.gov/s/",
+        "votingLocationFinderUrl": "https://mvp.sos.ga.gov/s/",
+        "ballotInfoUrl": "https://mvp.sos.ga.gov/s/",
+        "electionRulesUrl": "https://sos.ga.gov/how-to-guide/how-guide-voting#Absentee%20Voting",
+        "correspondenceAddress": {
+          "line1": "2 MLK Jr. Drive, Suite 802, Floyd West Tower",
+          "addressLine": [
+            "2 MLK Jr. Drive, Suite 802, Floyd West Tower"
+          ],
+          "city": "Atlanta",
+          "state": "",
+          "zip": "30334"
+        }
+      },
+      "local_jurisdiction": {
+        "name": "Fulton County GA",
+        "electionAdministrationBody": {
+          "electionInfoUrl": "https://www.fultoncountyga.gov/inside-fulton-county/fulton-county-departments/registration-and-elections",
+          "physicalAddress": {
+            "line1": "5600 CAMPBELLTON FAIRBURN RD",
+            "addressLine": [
+              "5600 CAMPBELLTON FAIRBURN RD"
+            ],
+            "city": "FAIRBURN",
+            "state": "GA",
+            "zip": "30213"
+          },
+          "electionOfficials": [
+            {
+              "officePhoneNumber": "(404) 612-7020",
+              "emailAddress": "elections.voterregistration@fultoncountyga.gov"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "name": "DemocracyWorks",
+            "official": false
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    }
+  ],
+  "kind": "civicinfo#voterInfoResponse"
+}

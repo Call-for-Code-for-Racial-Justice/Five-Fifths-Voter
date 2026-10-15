@@ -50,6 +50,7 @@ export const useElections = async () => {
       if (apiData?.elections) {
         apiData.elections.forEach((e) => {
           if (!config.public.civicDebug && String(e.id) === "2000") return; // debug election
+          if (!config.public.civicDebug && (String(e.id) === "1001" || /test/i.test(e.name ?? ""))) return; // test elections
           if (!e.electionDay) return;
           const electionDay = DateTime.fromISO(e.electionDay);
           if (electionDay < sevenDaysAgo) return; // too old

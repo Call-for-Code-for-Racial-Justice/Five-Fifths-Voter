@@ -1,0 +1,74 @@
+{
+  "election": {
+    "id": "1001",
+    "name": "Google Test Election (Future)",
+    "electionDay": "2033-06-06",
+    "ocdDivisionId": "ocd-division/country:us"
+  },
+  "normalizedInput": {
+    "line1": "123 Example Street",
+    "addressLine": [
+      "123 Example Street"
+    ],
+    "city": "Springfield",
+    "state": "IL",
+    "zip": "62701"
+  },
+  "state": [
+    {
+      "name": "Illinois",
+      "electionAdministrationBody": {
+        "name": "State Board of Elections",
+        "electionInfoUrl": "https://www.elections.il.gov/",
+        "electionRegistrationUrl": "https://ova.elections.il.gov/",
+        "electionRegistrationConfirmationUrl": "https://ova.elections.il.gov/RegistrationLookup.aspx",
+        "absenteeVotingInfoUrl": "https://www.elections.il.gov/ElectionOperations/VotingByMailAgreement.aspx",
+        "votingLocationFinderUrl": "https://ova.elections.il.gov/PollingPlaceLookup.aspx",
+        "electionRulesUrl": "https://www.elections.il.gov/ElectionOperations/VotingByMail.aspx",
+        "correspondenceAddress": {
+          "line1": "2329 S. MacArthur Blvd",
+          "addressLine": [
+            "2329 S. MacArthur Blvd"
+          ],
+          "city": "Springfield",
+          "state": "",
+          "zip": "62704"
+        }
+      },
+      "local_jurisdiction": {
+        "name": "Chicago City IL",
+        "electionAdministrationBody": {
+          "electionInfoUrl": "https://www.chicagoelections.gov/",
+          "physicalAddress": {
+            "line1": "69 W WASHINGTON ST STE 600",
+            "addressLine": [
+              "69 W WASHINGTON ST STE 600"
+            ],
+            "city": "CHICAGO",
+            "state": "IL",
+            "zip": "60602"
+          },
+          "electionOfficials": [
+            {
+              "officePhoneNumber": "(312) 269-7900",
+              "emailAddress": "cboe@chicagoelections.gov"
+            }
+          ]
+        },
+        "sources": [
+          {
+            "name": "DemocracyWorks",
+            "official": false
+          }
+        ]
+      },
+      "sources": [
+        {
+          "name": "DemocracyWorks",
+          "official": false
+        }
+      ]
+    }
+  ],
+  "kind": "civicinfo#voterInfoResponse"
+}

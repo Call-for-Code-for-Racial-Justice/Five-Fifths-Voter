@@ -1,33 +1,21 @@
 {
   "elections": [
     {
-      "id": "8112",
-      "name": "Washington Special Election",
-      "electionDay": "2024-02-13",
-      "ocdDivisionId": "ocd-division/country:us/state:wa"
+      "id": "1001",
+      "name": "Google Test Election (Future)",
+      "electionDay": "2033-06-06",
+      "ocdDivisionId": "ocd-division/country:us"
     },
     {
-      "id": "8113",
-      "name": "Wisconsin Spring Primary Election",
-      "electionDay": "2024-02-20",
-      "ocdDivisionId": "ocd-division/country:us/state:wi"
-    },
-    {
-      "id": "8121",
-      "name": "Virginia Democratic Presidential Primary Election",
-      "electionDay": "2024-03-05",
-      "ocdDivisionId": "ocd-division/country:us/state:va"
-    },
-    {
-      "id": "8122",
-      "name": "Virginia Republican Presidential Primary Election",
-      "electionDay": "2024-03-05",
-      "ocdDivisionId": "ocd-division/country:us/state:va"
-    },
-    {
-      "electionDay": "2025-06-06",
       "id": "2000",
       "name": "VIP Test Election",
+      "electionDay": "2031-12-06",
+      "ocdDivisionId": "ocd-division/country:us"
+    },
+    {
+      "id": "12000",
+      "name": "2026 General Midterm Election",
+      "electionDay": "2026-11-03",
       "ocdDivisionId": "ocd-division/country:us"
     }
   ],

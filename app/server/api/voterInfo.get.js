@@ -25,7 +25,7 @@ export default defineCachedEventHandler(
 
     logger.log("info", "getting voter data from civics API");
     return $fetch(`${event.context.civics.url}civicinfo/v2/voterinfo`, {
-      query: { ...event.context.civics.query, address, id: electionId },
+      query: { ...event.context.civics.query, address, electionId },
     });
   },
   { maxAge: 60 * 60 * 2 },
