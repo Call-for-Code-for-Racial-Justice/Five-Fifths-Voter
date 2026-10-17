@@ -17,12 +17,12 @@
   "devDependencies": {
     "cypress": "^15.18.1",
     "husky": "^9.1.7",
-    "js-yaml": "^4.1.1",
+    "js-yaml": "^4.3.2",
     "lint-staged": "^16.2.7",
     "puppeteer": "^25.1.0"
   },
   "dependencies": {
-    "nuxt": "^4.4.8"
+    "nuxt": "^4.5.2"
   },
   "overrides": {
     "vue-router": "^5.0.3"
