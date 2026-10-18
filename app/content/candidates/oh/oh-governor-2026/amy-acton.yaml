@@ -1,0 +1,153 @@
+fiveFifthsId: "amy-acton"
+name: "Amy Acton"
+state: "OH"
+race_id: "oh-governor-2026"
+race: "Ohio Governor 2026"
+party: "Democratic"
+primary: null
+office_sought: "Ohio Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+ballot_order: 1
+avatar_initials: "AA"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Amy_Acton_2025_%28cropped%29.jpg/120px-Amy_Acton_2025_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Detailed on affordability, taxes, health costs, labor and voting access; general or unstated on guns, immigration and housing supply"
+  sources_count: 8
+  sources_list:
+    - "Signal Statewide Q&A interview with Amy Acton (Jan. 16, 2025)"
+    - "Statehouse News Bureau (WYSU): Acton remarks on qualified immunity, police tech and ICE cooperation (Aug. 25, 2026)"
+    - "WOSU/WYSU: Acton on All Sides with Amy Juravich (Aug. 18, 2025)"
+    - "Statehouse News Bureau (statenews.org): Acton affordability agenda coverage (Apr. 6, 2026)"
+    - "13abc: Acton rallies voters in Toledo, outlines platform (Aug. 5, 2026)"
+    - "Yahoo News: Acton makes pitch for addressing health care costs"
+    - "Smarter.vote: Amy Acton candidate profile (aggregates campaign pages and cleveland.com reporting)"
+    - "Acton for Governor campaign website: issue pages and ActOn Lowering Costs agenda"
+  last_updated: "2026-10-18"
+  callout: "Amy Acton is a physician and public health expert who served as Ohio Department of Health director under Gov. Mike DeWine during the early COVID-19 pandemic. Her campaign centers on lowering costs for working families, with a Working Families Tax Cut, property tax relief, an Ohio Rx drug pricing platform, medical debt relief and energy bill proposals. Outside the scorecard topics, she promises day-one anti-corruption executive orders on appointments and dark money disclosure, and says data centers must pay their full energy costs and be built with union labor."
+  links:
+    - label: "Signal Statewide interview (Jan. 2025)"
+      url: "https://signalcleveland.org/ohios-former-health-director-amy-acton-said-states-covid-19-response-deserves-study/"
+    - label: "WYSU/Statehouse News Bureau: qualified immunity, police tech (Aug. 2026)"
+      url: "https://wysu.org/ohio-news/2026-08-25/democratic-candidate-for-ohio-governor-speaks-out-on-qualified-immunity-police-tech-and-more"
+    - label: "WYSU: Acton on All Sides (Aug. 2025)"
+      url: "https://wysu.org/ohio-news/2025-08-18/democrat-amy-acton-confident-in-her-campaign-for-ohio-governor-as-2026-race-takes-shape"
+    - label: "Statehouse News Bureau: affordability agenda (Apr. 2026)"
+      url: "https://www.statenews.org/government-politics/2026-04-06/ohio-governor-race-acton-releases-lots-of-affordability-ideas-but-few-specifics-on-funding-them"
+    - label: "13abc: Toledo rally and platform (Aug. 2026)"
+      url: "https://www.13abc.com/2026/08/05/acton-rallies-voters-toledo-outlines-platform-governors-race/"
+    - label: "Yahoo News: health care costs"
+      url: "https://www.yahoo.com/news/articles/ohio-democratic-governor-candidate-amy-095527582.html"
+    - label: "Smarter.vote candidate profile"
+      url: "https://smarter.vote/races/oh-governor-2026/amy-acton/"
+    - label: "Campaign website: On the Issues"
+      url: "https://actonforgovernor.com/issues/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Statehouse News Bureau (Apr. 2026): \"As governor, my number one priority will be lowering costs for working families.\" Her campaign's ActOn Lowering Costs agenda includes a Working Families Tax Cut, an Ohio Rx drug pricing platform, medical debt relief, expanded utility assistance programs, a day-one executive order speeding wage theft cases, a price gouging hotline, and bans on hidden ticket fees. She has given few specifics on funding, saying \"it's what you choose, just like you do in your household budget.\""
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [3, 7]
+      - topic: "Taxation"
+        note: "Campaign Working Families Tax Cut: an Earned Income Credit for up to 775,000 families and a child tax credit of $1,000 (ages 0-6) and $500 (ages 7-18) for families earning up to $85,000. Property tax plan: raise the Homestead Exemption income cap for seniors to $50,000 and a rebate of up to $1,000 when a qualifying homeowner's bill rises more than 4% in a year. Also pledges to rein in long-term tax incentives with clawbacks. In Aug. 2025 she criticized tax breaks for people who \"weren't even asking for them\" and opposed Ramaswamy's plan to eliminate property taxes."
+        coverage: 3
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: [3, 2, 7]
+      - topic: "Small business & farming"
+        note: "Campaign pages pledge a top-to-bottom review of JobsOhio, a focus on supporting small businesses, help for small businesses covering employees' health insurance, and stronger minority business programs with access to capital. For farmers: protect agricultural tax incentives, credits and relief programs, invest in FFA, 4-H and Extension, strengthen protections against eminent domain, and prioritize brownfield redevelopment over farmland."
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [7]
+      - topic: "Workers & wages"
+        note: "Campaign: pledges Ohio will never become a right-to-work state, to fight SB 5-style attacks on collective bargaining, and to use the Commerce Department to enforce bargaining laws and crack down on wage theft and worker misclassification, including a day-one executive order on wage theft cases. Says data centers must be built and operated by union workers. No proposal to raise the minimum wage found in reviewed sources."
+        coverage: 3
+        position_tag: "Expand worker protections"
+        position_type: "pos"
+        source: [3, 7]
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Campaign: pledges to \"fully fund the police and public safety\" and rebuild state and local law enforcement partnerships to address officer shortages, and separately to invest in addiction treatment, mental health services and community programming. Aug. 2025: said police lack needed resources. Aug. 2026: promised a comprehensive review of public safety and emergency response. The PBA's legal director said she promised not to support a ballot issue ending qualified immunity (her own words not quoted)."
+        coverage: 2
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [7, 2]
+      - topic: "Reproductive policy"
+        note: "Campaign: says every woman should be able to access safe, legal abortion care, contraception, fertility treatments and miscarriage care, and pledges to fight attempts to undermine Ohio Issue 1 and expand access to reproductive care."
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: [7]
+      - topic: "Voting & elections"
+        note: "Campaign: will work with the Secretary of State to protect early voting and create an Election Protection Liaison in the governor's office to expand voter registration, prevent unjust voter purges, and ensure ID requirements never become a financial barrier. Smarter.vote separately reports she supports Issue 3 writing photo ID into the constitution; that position does not appear on the campaign site."
+        coverage: 3
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: [7]
+      - topic: "Gun policy"
+        note: "Per Smarter.vote citing cleveland.com, she supports stronger background checks and a red-flag law, plus funding for school safety and mental health, and her campaign says this does not require sacrificing Second Amendment rights. Secondhand; not addressed on her campaign issue pages."
+        coverage: 2
+        position_tag: "Increase gun regulations"
+        position_type: "pos"
+        source: [6]
+      - topic: "LGBTQ+ policy"
+        note: "Campaign: will push for anti-discrimination laws so Ohioans are not fired or denied housing, public accommodations or equal pay because of race, gender, sexual orientation or religion. 13abc (Aug. 2026): \"I do not support boys playing in girls sports,\" calling it settled Ohio law she would enforce."
+        coverage: 3
+        position_tag: "Expand protections"
+        position_type: "pos"
+        source: [7, 4]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Campaign: help Ohioans enroll and stay on Medicaid by cutting red tape and approval wait times; launch Ohio Rx using the state Medicaid single pharmacy benefit manager's purchasing power; count out-of-pocket drug costs toward deductibles; insurance and hospital price transparency; surprise billing crackdown; day-one medical debt relief; funding for rural hospitals and telehealth. Told Yahoo News progress must be \"in partnership with our federal government.\""
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: [3, 5, 7]
+      - topic: "Education"
+        note: "Campaign: restore public school funding to a constitutional level, fully implement the Fair School Funding Plan, reform the voucher system (\"Public money should be for public schools\"), and provide free school breakfast and lunch. 13abc: \"We're going to fully fund their public schools.\" Jan. 2025 Signal interview: \"Public school saved my life as a kid.\""
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [7, 4, 2, 0]
+      - topic: "Broadband & infrastructure"
+        note: "Campaign: will continue investing in rural roads, bridges and broadband, and work with local governments, small farms and telecom companies to bring high-speed internet to every rural and underserved community. Jobs page lists modern infrastructure \"from broadband to transportation\" as a priority. Limited specifics."
+        coverage: 2
+        position_tag: "Public-private partnership"
+        position_type: "pos"
+        source: [7]
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Campaign: an all-of-the-above strategy that enhances production and uses the lowest-cost and cleanest sources; reinstate energy efficiency, demand response and Renewable Portfolio Standards gutted under HB 6; expand HEAP, PIPP and weatherization programs; continued support for H2Ohio and science-based regulation; data centers to pay their full energy costs under state environmental guardrails."
+        coverage: 3
+        position_tag: "Balance both"
+        position_type: "pos"
+        source: [3, 7]
+      - topic: "Immigration"
+        note: "Aug. 2026 (Statehouse News Bureau): \"We always work with the federal law enforcement, and we will do so.\" She said she would not direct local police to stop helping federal immigration agents. Not addressed on her campaign issue pages. No broader immigration policy found, so no tag applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Campaign housing-related proposals are limited to keeping people in their homes: property tax relief for seniors and homeowners, a crackdown on tax lien certificate sales, support for aging in place, and anti-discrimination protections in housing. No position on housing supply, rent or development found in reviewed sources, so no tag applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null

@@ -1,0 +1,156 @@
+fiveFifthsId: "vivek-ramaswamy"
+name: "Vivek Ramaswamy"
+state: "OH"
+race_id: "oh-governor-2026"
+race: "Ohio Governor 2026"
+party: "Republican"
+primary: null
+office_sought: "Ohio Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+ballot_order: 2
+avatar_initials: "VR"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Vivek_Ramaswamy_%2855241367373%29_%28cropped%29.jpg/120px-Vivek_Ramaswamy_%2855241367373%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Detailed on taxes, education, energy and public safety; silent or thin on guns, voting, LGBTQ+, immigration, housing and workers"
+  sources_count: 9
+  sources_list:
+    - "WCPO 9 full conversation with Vivek Ramaswamy, Ohio gubernatorial candidate (YouTube, transcript)"
+    - "Full Interview: Vivek Ramaswamy on Ohio Governor Race 2026 (YouTube, transcript)"
+    - "WTOL 11 / Vivek for Ohio: In-Depth Interview with Republican Governor Candidate Vivek Ramaswamy (YouTube, transcript)"
+    - "Statehouse News Bureau: Republican candidate for Ohio governor expands on property tax rollback, data centers plans (interview with Karen Kasler, Sept. 4, 2026)"
+    - "News 5 Cleveland: Vivek Ramaswamy talks race for governor and his vision for Ohio"
+    - "Vivek for Ohio campaign website: The Plan"
+    - "Vivek for Ohio campaign website: Ohioans-First Data Center Pledge"
+    - "Vivek for Ohio campaign website: Plan to crush Medicaid waste, fraud and abuse"
+    - "Vivek for Ohio campaign website: Plan for historic property tax rollbacks"
+  last_updated: "2026-10-18"
+  callout: "Vivek Ramaswamy is a businessman and author who founded Roivant Sciences and ran for the 2024 Republican presidential nomination; he is the Republican nominee for Ohio governor with Rob McColley as his running mate. His campaign centers on eliminating the state income tax over time, a property tax rollback to pre-pandemic levels, school standards and teacher merit pay, energy permitting, and public safety. He has also proposed conditions on data centers, a plan to cut Medicaid fraud, a 90-day gas tax suspension, and supports the death penalty in the most heinous cases."
+  links:
+    - label: "WCPO 9 full conversation (YouTube)"
+      url: "https://www.youtube.com/watch?v=ZHMOlnFZ2yQ"
+    - label: "Full Interview: Ohio Governor Race 2026 (YouTube)"
+      url: "https://www.youtube.com/watch?v=xO1AGKFwePg"
+    - label: "WTOL 11 in-depth interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=hgt6QXQFyS4"
+    - label: "Statehouse News Bureau: property tax rollback, data centers (Sept. 4, 2026)"
+      url: "https://www.statenews.org/government-politics/2026-09-04/republican-candidate-for-ohio-governor-expands-on-property-tax-rollback-data-centers-plans"
+    - label: "News 5 Cleveland: Ramaswamy on his vision for Ohio"
+      url: "https://www.news5cleveland.com/news/politics/ohio-politics/vivek-ramaswamy-talks-race-for-governor-and-his-vision-for-ohio-in-conversation-with-news-5"
+    - label: "Vivek for Ohio: The Plan"
+      url: "https://vivekforohio.com/the-plan/"
+    - label: "Vivek for Ohio: Data Center Pledge"
+      url: "https://vivekforohio.com/viveks-ohioans-first-data-center-pledge/"
+    - label: "Vivek for Ohio: Medicaid plan"
+      url: "https://vivekforohio.com/vivek-ramaswamy-announces-plan-to-crush-medicaid-waste-fraud-and-abuse/"
+    - label: "Vivek for Ohio: Property tax rollbacks"
+      url: "https://vivekforohio.com/viveks-plan-for-historic-property-tax-rollbacks/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Campaign site: 'Vivek wants Ohio to be the most affordable state in America' by cutting government bloat and red tape. In the WTOL interview he rejects 'government entitlements and greater dependence on the government' as a 'band-aid' and says growth from more people and companies is the answer [00:06:01-00:06:12]. In the WCPO interview he ties affordability to tax cuts and energy production [00:03:14]."
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: [2, 5]
+      - topic: "Taxation"
+        note: "Wants to phase out the state income tax, starting with eliminating capital gains tax, and to roll property taxes back 'in aggregate' to pre-pandemic levels and cap future growth (Statehouse News Bureau, Sept. 4, 2026; campaign property tax page). In the first interview: 'bring down the tax burden, including the income tax eventually down to zero' [00:00:25]."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [1, 3, 5, 8]
+      - topic: "Small business & farming"
+        note: "Campaign site: 'Slash red tape that drives up costs and stalls business growth.' In interview he says a natural gas pipeline permit takes 18 to 36 months and 'should be and can be 6 months' [00:13:47]. Property tax page promises relief for farmers and rural communities; data center pledge protects farmland."
+        coverage: 3
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: [1, 5, 8]
+      - topic: "Workers & wages"
+        note: "Mentions union endorsements and says policy will keep high-paying jobs in Ohio, but no wage, minimum wage, or labor-regulation position was found in reviewed sources. No position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Calls for 'law and order,' stricter bail and sentencing for repeat violent offenders, and to 'back the blue' [WCPO 00:21:57-00:22:14]. Campaign site: 'Enforce stricter bail and sentencing for repeat violent offenders' and empower local police and sheriffs. Supports the death penalty for 'only the most heinous' cases [WCPO 00:09:04]."
+        coverage: 3
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: [0, 5]
+      - topic: "Reproductive policy"
+        note: "'I'm pro-life. I believe strongly in my pro-life views,' and says that after the 2023 ballot loss he would focus on family formation and supporting parents rather than new restrictions [Full Interview 00:05:28]. In the News 5 interview he again declined to discuss specific bills. No exceptions or specific legislation were stated."
+        coverage: 2
+        position_tag: "Pro-life"
+        position_type: "pos"
+        source: [1, 4]
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Campaign Medicaid plan targets waste, fraud and abuse: seek a federal CMS demonstration project so Ohio keeps at least $0.65 per $1 saved, simplify agencies, and prioritize fraud prosecution, with savings aimed at lowering healthcare costs. This addresses one angle (Medicaid fraud) and no broader coverage or insurance position was found."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "Supports school choice for public, charter or homeschool, while also making public schools 'equipped to compete with the best of the alternatives' through merit-based teacher pay [WTOL 00:02:55-00:03:30]. Also third-grade literacy requirements, civics standards and a long-run statewide funding component to reduce reliance on local property taxes (Sept. 4, 2026 interview)."
+        coverage: 3
+        position_tag: "Both public and choice"
+        position_type: "pos"
+        source: [0, 1, 2, 3]
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources. He discussed a Columbus-to-Toledo transportation corridor and Toledo's airport in general terms [WTOL 00:05:46, 00:09:17], with no investment model stated."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Wants faster permitting and 'all of the above' energy including natural gas, coal and nuclear, plus small modular reactors [WTOL 00:13:54; Full Interview 00:14:16]. Opposes federal subsidies for electric vehicles [WTOL 00:13:46]. His data center pledge also sets strict air and water standards and farmland protection, and a day-one executive order would require new data centers to generate their own power (Sept. 4, 2026)."
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: [1, 2, 3, 6]
+      - topic: "Immigration"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Campaign site says 'Create more paths to homeownership and entrepreneurship by lowering the cost of living' and that property tax cuts keep families from being priced out. No housing-specific policy was found."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null

@@ -1,0 +1,144 @@
+fiveFifthsId: "ty-masterson"
+name: "Ty Masterson"
+state: "KS"
+race_id: "ks-governor-2026"
+race: "Kansas Governor 2026"
+party: "Republican"
+primary: null
+office_sought: "Kansas Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+ballot_order: 2
+avatar_initials: "TM"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/TY_mASTERSON_%28cropped%29.jpg/120px-TY_mASTERSON_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Detailed on taxes and education; thin or silent on most civil-rights and services topics"
+  sources_count: 5
+  sources_list:
+    - "KMBC 9 full interview with Ty Masterson, Republican candidate for Kansas Governor (YouTube, transcript, pre-primary)"
+    - "Wichita Liberty / Voice for Liberty: Masterson vs. Holscher head-to-head, summary of Masterson's Aug. 24, 2026 one-on-one KIOGA forum interview (Wichita)"
+    - "KCUR / Kansas News Service: In race for Kansas governor, Masterson and Holscher focus on taxes and education funding (Oct. 13, 2026)"
+    - "KCUR: Kansas governor 2026: A guide to the candidates (Oct. 14, 2026)"
+    - "Ty Masterson for Governor campaign website: homepage"
+  last_updated: "2026-10-17"
+  callout: "Ty Masterson is the Republican nominee for Kansas governor, a state senator since 2009 and Senate President since 2021, and a former homebuilder. His campaign centers on property tax relief, including a proposed constitutional cap on assessed-value growth, further tax cuts, and a focus on education outcomes and literacy. Reviewed sources contain little from him on abortion, guns, voting, immigration or broadband."
+  links:
+    - label: "KMBC 9: Full interview with Ty Masterson (YouTube)"
+      url: "https://www.youtube.com/watch?v=1hMjcACet-c"
+    - label: "Wichita Liberty: Masterson vs. Holscher head-to-head"
+      url: "https://www.wichitaliberty.org/?p=41073"
+    - label: "KCUR: In race for Kansas governor, Masterson and Holscher focus on taxes and education funding"
+      url: "https://www.kcur.org/2026-10-13/in-race-for-kansas-governor-masterson-and-holscher-focus-on-taxes-and-education-funding"
+    - label: "KCUR: Kansas governor 2026: A guide to the candidates"
+      url: "https://www.kcur.org/politics-elections-and-government/2026-10-14/kansas-governor-race-2026-election-candidates-masterson-holscher"
+    - label: "Ty Masterson for Governor: homepage"
+      url: "https://www.mastersonforgovernor.com/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Per the Wichita Liberty summary of his Aug. 24, 2026 interview, he is committed to 'putting more money in your pockets' through lower taxes and reduced regulation. In the KMBC interview he says 'more money in the pockets of the people is always better than more money in the pockets of government' [00:00:27]."
+        coverage: 2
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: [1]
+      - topic: "Taxation"
+        note: "KMBC interview: 'I have always supported tax cuts' [00:00:27]. Wants property tax growth limited via constitutional amendment plus revenue limits on local government [00:02:06]-[00:02:22]. KCUR (Oct. 13) reports a 3%-or-less cap on assessed value growth ('Homeowners Bill of Rights'). Wichita Liberty reports he wants further cuts to severance, capital gains and property taxes and a Colorado-style cap on tax growth. Campaign site cites $2 billion in tax cuts as Senate President."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 1, 2]
+      - topic: "Small business & farming"
+        note: "Wichita Liberty reports he promotes ethanol to open new markets for Kansas farmers and wants lower energy input costs, including severance taxes, for producers. This is a narrow angle that does not map to a tag. No broader position found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "Wichita Liberty reports he says the state's job is to focus on jobs and that workforce training follows once jobs exist. No position on wages or worker protections found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Wichita Liberty reports he pledges to keep streets safer by backing law enforcement over 'protesters and criminals.' Limited specifics in reviewed sources."
+        coverage: 2
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: [1]
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources. In the KMBC interview he lists Kansans for Life among his endorsements [00:06:45], but states no position."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "Wichita Liberty reports he called the Democratic Party 'the party of open borders and mail-in elections and fraud.' This is a partisan characterization, not a stated election policy. No policy position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "In the KMBC interview he names the NRA among his endorsements [00:06:45] and 'Second Amendment' as an issue on which voters can check his record [00:08:31], but states no position. No position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "The KCUR candidate guide reports, in the reporter's words, that he voted to ban transgender girls from girls' sports and to block state universities from running diversity and inclusion programs. No direct quote from him found."
+        coverage: 2
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: [3]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Wichita Liberty reports he rejects Medicaid expansion as a solution for rural hospitals, saying it has not been shown to save them, and prefers provider tax assessments and reimbursement rate changes. The reported stance does not map cleanly to a tag, so no tag is applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "KMBC interview: schools are fully funded after Gannon and 'you'd have to bolster public' funding [00:06:12], with a focus on outcomes and literacy [00:05:09]; school choice targeted to low-income kids 'trapped by their zip code' [00:06:15]. KCUR (Oct. 13) reports he supports tax-credit scholarships and wants results for spending."
+        coverage: 3
+        position_tag: "Both public and choice"
+        position_type: "pos"
+        source: [0, 2]
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources. In the KMBC interview he notes southwest Kansans raise transportation and four-lane highways [00:02:42], but states no position."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Wichita Liberty reports he says wind and solar should pay comparable taxes because policy 'shouldn't be picking winners and losers,' and wants marginal wells kept producing via severance tax policy. In the KMBC interview he says data centers need guardrails so they pay full power costs and do not unduly use water or land, with local decisions [00:04:12]-[00:04:38]. Combined evidence does not map to a single tag."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Wichita Liberty reports he mentions 'open borders' only as a characterization of Democrats. No immigration policy found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Wichita Liberty reports he argues high property taxes squeeze elderly homeowners and price younger Kansans out of the market. His property tax proposals are covered under Taxation. No housing-specific policy found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null

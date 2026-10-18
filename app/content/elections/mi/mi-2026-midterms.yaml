@@ -91,3 +91,5 @@ voting:
 races:
   - name: "Michigan US Senate 2026"
     id: "mi-senate-2026"
+  - name: "Michigan Governor 2026"
+    id: "mi-governor-2026"

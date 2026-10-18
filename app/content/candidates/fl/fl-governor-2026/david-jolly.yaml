@@ -1,0 +1,156 @@
+fiveFifthsId: "david-jolly"
+name: "David Jolly"
+state: "FL"
+race_id: "fl-governor-2026"
+race: "Florida Governor 2026"
+party: "Democratic"
+primary: null
+office_sought: "Florida Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+ballot_order: 2
+avatar_initials: "DJ"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/David_Jolly_%283x4%29.jpg/120px-David_Jolly_%283x4%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Specific on insurance, health care, education and data centers; thinner on taxes, wages and voting"
+  sources_count: 9
+  sources_list:
+    - "One-on-one broadcast interview with David Jolly as the Democratic nominee for governor (YouTube transcript)"
+    - "CBS News Miami: Facing South Florida interview write-up (abortion, Alligator Alcatraz, affordability)"
+    - "The Floridian: interview with David Jolly on the 2026 governor's race (June 2025)"
+    - "David Jolly campaign website: Where David Stands"
+    - "David Jolly campaign website: Issues overview"
+    - "David Jolly campaign website: Immigration"
+    - "David Jolly campaign website: Economy"
+    - "David Jolly campaign website: Equality"
+    - "David Jolly campaign website: Tampa town hall recap"
+  last_updated: "2026-10-17"
+  callout: "Jolly represented Florida's 13th District as a Republican from 2014 to 2017, left the party, and is now the Democratic nominee for governor with Gwen Graham as his running mate. His platform centers on housing, health care, public education and a state catastrophic fund to cut homeowners insurance. Other notable positions outside the scorecard taxonomy include a day-one moratorium on hyperscale data centers, campaign finance and ethics reform, home rule and an office of civil rights."
+  links:
+    - label: "Governor candidate interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=k2OHc-V92IM"
+    - label: "CBS News Miami: Jolly on abortion and Alligator Alcatraz"
+      url: "https://www.cbsnews.com/miami/news/democratic-candidate-governor-david-jolly-abortion-rights-alligator-alcatraz"
+    - label: "The Floridian: David Jolly Talks 2026 Governor's Race"
+      url: "https://floridianpress.com/2025/06/theyre-playing-checkers-im-playing-chess-david-jolly-talks-2026-governors-race/"
+    - label: "Campaign website: Where David Stands"
+      url: "https://davidjolly.com/where-david-stands/"
+    - label: "Campaign website: Issues"
+      url: "https://davidjolly.com/issues/"
+    - label: "Campaign website: Immigration"
+      url: "https://davidjolly.com/issues/immigration/"
+    - label: "Campaign website: Economy"
+      url: "https://davidjolly.com/issues/economy/"
+    - label: "Campaign website: Equality"
+      url: "https://davidjolly.com/issues/equality/"
+    - label: "Campaign website: Tampa town hall recap"
+      url: "https://davidjolly.com/heres-what-david-jolly-told-tampa-voters-in-his-bid-for-florida-governor/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Proposes a state catastrophic fund that takes hurricane coverage out of the private market and cuts insurance 60 to 70% (interview [00:05:01]-[00:05:14]), plus a historic investment in workforce and affordable housing and scaled-up primary care ([00:18:56]-[00:19:08]). Campaign Issues page adds no-interest state-backed condo repair loans, and the Tampa recap cites a cap on investor-owned utility profits."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [0, 4, 8]
+      - topic: "Taxation"
+        note: "Says he supports repealing the existing 'hurricane tax' ([00:03:34]), would tax insurance company profits, and floated a ballot question on a $250-$500 real estate transaction tax and rethinking use of tourist taxes ([00:06:00]-[00:08:26]). Also proposes property tax relief for first-time homebuyers (Floridian; Tampa recap). Together these reshape how revenue is raised and relieved rather than a clear across-the-board increase or cut."
+        coverage: 2
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: [0, 2, 8]
+      - topic: "Small business & farming"
+        note: "Economy page says it supports farmers and workers, wants sustainable practices and treats agriculture as critical infrastructure, and cites small business's share of Florida jobs. In the interview he criticizes the opponent for shutting down programs that fund minority-owned businesses ([00:17:58]). No named small business program found."
+        coverage: 2
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [6, 0]
+      - topic: "Workers & wages"
+        note: "Economy page notes wages are not keeping pace with living costs, and in the interview he says workers can't live in the community where they work ([00:12:13]). No minimum wage, labor regulation or worker protection proposal found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Where David Stands says he would hold lawbreakers accountable while reducing disparities affecting communities of color and immigrant communities, and expand local control of community policing. He also criticizes his opponent's prison industry donations in the interview ([00:17:54]). Details are summary-level."
+        coverage: 2
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: [3]
+      - topic: "Reproductive policy"
+        note: "Campaign site says he would codify the Roe/Casey framework in Florida law absent federal action. CBS Miami reports he now supports a woman's right to an abortion, having said as a Republican about 10 years ago that life began at conception."
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: [4, 1]
+      - topic: "Voting & elections"
+        note: "Equality page says he will defend voting rights against restrictions that burden working people and communities of color, and wants every eligible voter to cast a ballot easily. Issues page also proposes making it easier to place constitutional amendments on the ballot. No voter ID or verification position found."
+        coverage: 2
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: [7, 4]
+      - topic: "Gun policy"
+        note: "Issues page: ban assault weapon sales, require universal background checks, explore licensing, and keep and expand red flag laws."
+        coverage: 3
+        position_tag: "Increase gun regulations"
+        position_type: "pos"
+        source: [4]
+      - topic: "LGBTQ+ policy"
+        note: "Equality page says everyone deserves equal respect and protection under the law regardless of who they love, and wants safe schools and workplaces. Names no specific bill or law."
+        coverage: 2
+        position_tag: "Expand protections"
+        position_type: "pos"
+        source: [7]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Campaign Issues page: expand Medicaid and work toward coverage for all Floridians. In the interview he proposes scaling up direct delivery of primary care in more counties to cover rural health care deserts ([00:10:21]-[00:10:36]) and primary care regardless of ability to pay ([00:19:03]). The Tampa recap also says expand Medicaid."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: [4, 0, 8]
+      - topic: "Education"
+        note: "Proposes a 10-year renaissance in public education ([00:19:08]), sharply higher public school funding and better teacher pay, and a 30% teacher raise funded by tourism taxes (Tampa recap). Would require voucher-receiving private schools to meet public standards, not charge extra tuition, and limit vouchers to families with financial need (Issues page)."
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [0, 4, 8]
+      - topic: "Broadband & infrastructure"
+        note: "Mentions investing in infrastructure and transportation as part of a statewide smart growth plan ([00:22:52]-[00:22:59]). No broadband position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Calls for an immediate moratorium on hyperscale data center construction until environmental impacts are studied (interview [00:22:27]-[00:23:32]; Issues page). Also accepts climate science, protects beaches and parks, invests in resiliency, and wants to expand renewable energy (Issues page)."
+        coverage: 3
+        position_tag: "Prioritize regulation"
+        position_type: "pos"
+        source: [4, 0]
+      - topic: "Immigration"
+        note: "Says people here without so much as a property crime or speeding ticket 'should be on a pathway to legal status and work status' and that he does not support separating families ([00:20:56]-[00:21:44]). Would undo state ICE mandates on local jurisdictions and require judicial warrants and ID. Campaign page opposes mandated E-Verify and supports border security alongside a lawful path."
+        coverage: 3
+        position_tag: "Expand legal pathways"
+        position_type: "pos"
+        source: [0, 5]
+      - topic: "Housing"
+        note: "Proposes a historic investment in workforce and affordable housing ([00:18:56]-[00:19:03]), property tax relief for first-time homebuyers (Floridian; Tampa recap), and no-interest state-backed loans for condo repairs (Issues page)."
+        coverage: 3
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: [0, 4, 2]

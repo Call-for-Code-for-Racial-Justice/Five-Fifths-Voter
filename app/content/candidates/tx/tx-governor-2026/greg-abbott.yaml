@@ -1,0 +1,147 @@
+fiveFifthsId: "greg-abbott"
+name: "Greg Abbott"
+state: "TX"
+race_id: "tx-governor-2026"
+race: "Texas Governor 2026"
+party: "Republican"
+primary: null
+office_sought: "Texas Governor 2026"
+district: null
+region: "Statewide"
+incumbent: true
+debate_participant: false
+ballot_order: 1
+avatar_initials: "GA"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Greg_Abbott_at_NASA_2024_%28cropped%29.jpg/120px-Greg_Abbott_at_NASA_2024_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Specific on property taxes, housing, public safety, education and data centers; silent on abortion, guns, voting, LGBTQ+ policy and broadband in reviewed sources"
+  sources_count: 6
+  sources_list:
+    - "ABC News 'This Week' interview with Jonathan Karl, transcript, Aug. 23, 2026"
+    - "KBTX exclusive interview with Gov. Abbott, Oct. 8, 2026"
+    - "KCBD full interview with Gov. Abbott in Levelland, Apr. 15, 2026"
+    - "ABC News: Gov. Abbott dismisses GOP worries about Texas"
+    - "Greg Abbott campaign website: Policy page"
+    - "Greg Abbott campaign website: Accomplishments page"
+  last_updated: "2026-10-17"
+  callout: "Abbott is the incumbent Republican governor seeking a fourth term against Democrat Gina Hinojosa. His platform centers on cutting property taxes in half and ending school district property taxes on homesteads, lowering housing, insurance and health care costs, expanding the repeat offender task force, and setting conditions on data center growth. Other notable positions outside the scorecard taxonomy include regulating THC products, pausing state funding for Flock license plate cameras over privacy concerns, and not participating in debates with his opponent."
+  links:
+    - label: "ABC News 'This Week' transcript, Aug. 23, 2026"
+      url: "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+    - label: "KBTX exclusive interview, Oct. 8, 2026"
+      url: "https://www.kbtx.com/2026/10/08/gov-abbott-speaks-exclusively-with-kbtxs-lillian-kosh-discuss-local-issues-during-campaign-stop-aggieland/"
+    - label: "KCBD full interview in Levelland, Apr. 15, 2026"
+      url: "https://www.kcbd.com/2026/04/15/full-interview-governor-abbott-discusses-texas-workforce-more-levelland/"
+    - label: "ABC News: Abbott dismisses GOP worries about Texas"
+      url: "https://abcnews.com/Politics/gov-abbott-dismisses-gop-worries-texas-voters-rushing/story?id=135872747"
+    - label: "Greg Abbott campaign website: Policy"
+      url: "https://www.gregabbott.com/policy/"
+    - label: "Greg Abbott campaign website: Accomplishments"
+      url: "https://www.gregabbott.com/accomplishments/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Campaign policy page pairs a market mechanism, opening city-run electric monopolies to retail competition, with a state program, a $400 million roof fortification program offering up to $10,000 per homeowner. Also lets auto insurers consider good driving habits. In the ABC interview he promised 'lowering housing costs, lowering health care costs, lowering auto insurance costs.'"
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [4, 0]
+      - topic: "Taxation"
+        note: "Proposes cutting property taxes in half; would let voters end school district property taxes on homesteads, cap homestead appraisal increases at 3%, and require two-thirds voter approval for local tax increases. KBTX: 'It starts with slashing property taxes in half.' ABC: his platform would cut taxes."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [4, 1, 0]
+      - topic: "Small business & farming"
+        note: "Campaign accomplishments page cites a Small Business Freedom Council and efforts to cut regulations, and describes Texas as a leading state for small business job growth. No farming-specific position found."
+        coverage: 2
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: [5]
+      - topic: "Workers & wages"
+        note: "Campaign page cites $850 million for career workforce training and faster occupational licensing for military members and veterans; KCBD interview covers workforce pathways and the Texas Jobs Council. No position found on minimum wage, worker protections or labor regulation."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Would expand the DPS repeat offender task force, create a statewide prosecutor who can step in when local DAs refuse to prosecute violent criminals, allow impeachment of DAs who fail their oath, and deny bail to illegal immigrants arrested for violent felonies. KBTX: 'Most violent crime is committed by repeat offenders.'"
+        coverage: 3
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: [4, 1]
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Campaign policy page would cap monthly co-pays at $25 for inhalers and epinephrine and authorize a more affordable 'Essential Benefits Health Insurance Plan' for employers, with premiums that 'could fall by nearly 20%.'"
+        coverage: 2
+        position_tag: "Expand private options"
+        position_type: "pos"
+        source: [4]
+      - topic: "Education"
+        note: "Accomplishments page says he 'created the first universal school choice program in Texas' with $1 billion for Education Freedom Accounts. Policy page also proposes Student Success Academies in public schools, 70% of funding dedicated to the classroom, school district audits, and limits on classroom screen time."
+        coverage: 3
+        position_tag: "Both public and choice"
+        position_type: "pos"
+        source: [5, 4]
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Accomplishments page says Texas produces 25% of domestically produced US energy and cites a $10 billion Texas Energy Fund. He also paused new data center approvals; ABC interview: 'I have pressed pause on any new data center being able to join the operations in the state of Texas,' requiring them to disclose water use, supply their own power and lower electricity costs."
+        coverage: 3
+        position_tag: "Balance both"
+        position_type: "pos"
+        source: [5, 0, 2]
+      - topic: "Immigration"
+        note: "Accomplishments page says he launched Operation Lone Star in March 2021, with over $11.1 billion spent on border security, and claims it reduced illegal crossings into Texas by 85% during the Biden Administration. Policy page would deny bail to illegal immigrants arrested for violent felonies."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [5, 4]
+      - topic: "Housing"
+        note: "Campaign policy page would allow third-party inspections, require an occupancy determination within 10 days, pre-approve home designs once at least three cities approve them, allow property additions by right, and withhold local sales tax from cities that undermine state housing reforms."
+        coverage: 3
+        position_tag: "Reduce development barriers"
+        position_type: "pos"
+        source: [4]

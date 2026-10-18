@@ -1,0 +1,165 @@
+fiveFifthsId: "cindy-holscher"
+name: "Cindy Holscher"
+state: "KS"
+race_id: "ks-governor-2026"
+race: "Kansas Governor 2026"
+party: "Democratic"
+primary: null
+office_sought: "Kansas Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+ballot_order: 1
+avatar_initials: "CH"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Cindy_2_cropped.jpg/120px-Cindy_2_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Detailed on taxes, education, healthcare and wages; silent on several civil-rights topics"
+  sources_count: 12
+  sources_list:
+    - "Full video interview with Sen. Cindy Holscher, candidate for Kansas Governor (YouTube, transcript)"
+    - "Democracy Now! interview with Cindy Holscher (Aug. 7, 2026)"
+    - "Wichita Liberty summary of Holscher's Aug. 24, 2026 KIOGA forum interview (Wichita)"
+    - "Kansas Reflector / HPPR: Democrat Cindy Holscher's campaign for Kansas governor highlights distinctions from GOP rival (Oct. 5, 2026)"
+    - "KCUR / Kansas News Service: In race for Kansas governor, Masterson and Holscher focus on taxes and education funding (Oct. 13, 2026)"
+    - "Wikipedia: Cindy Holscher"
+    - "Cindy for Kansas campaign website: issues overview"
+    - "Cindy for Kansas campaign website: lowering costs"
+    - "Cindy for Kansas campaign website: supporting working families"
+    - "Cindy for Kansas campaign website: cutting property taxes"
+    - "Cindy for Kansas campaign website: healthcare"
+    - "Cindy for Kansas campaign website: agriculture"
+  last_updated: "2026-10-17"
+  callout: "Cindy Holscher is the Democratic state senator for Kansas Senate District 8 (Overland Park), served in the Kansas House from 2017 to 2020, and is the Democratic nominee for governor. Her campaign centers on affordability, fully funding public schools including special education, property tax relief, Medicaid expansion, and curbs on corporate tax breaks. Her platform also includes legalizing cannabis, a moratorium on new data centers until guardrails are in place, and a $16 minimum wage."
+  links:
+    - label: "Full interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=fIURzMlJjDM"
+    - label: "Democracy Now! interview"
+      url: "https://www.democracynow.org/2026/8/7/cindy_holscher"
+    - label: "Wichita Liberty forum summary"
+      url: "https://www.wichitaliberty.org/politics/masterson-holscher-kansas-governor-forum/"
+    - label: "HPPR / Kansas Reflector, Oct. 5, 2026"
+      url: "https://www.hppr.org/hppr-news/2026-10-05/democrat-cindy-holschers-campaign-for-kansas-governor-highlights-distinctions-from-gop-rival"
+    - label: "KCUR, Oct. 13, 2026"
+      url: "https://www.kcur.org/2026-10-13/in-race-for-kansas-governor-masterson-and-holscher-focus-on-taxes-and-education-funding"
+    - label: "Wikipedia"
+      url: "https://en.wikipedia.org/wiki/Cindy_Holscher"
+    - label: "Campaign: Issues"
+      url: "https://www.cindyforkansas.com/issues"
+    - label: "Campaign: Lowering costs"
+      url: "https://www.cindyforkansas.com/issues/lowering-costs"
+    - label: "Campaign: Supporting working families"
+      url: "https://www.cindyforkansas.com/issues/supporting-working-families-not-the-wealthiest-few"
+    - label: "Campaign: Cutting property taxes"
+      url: "https://www.cindyforkansas.com/issues/cutting-property-taxes"
+    - label: "Campaign: Healthcare"
+      url: "https://www.cindyforkansas.com/issues/making-healthcare-accessible-and-affordable"
+    - label: "Campaign: Agriculture"
+      url: "https://www.cindyforkansas.com/issues/protecting-kansas-agriculture"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Calls affordability her focus: 'it really boils down to affordability issues for working Kansans' [00:00:29]. Her campaign page says she will 'focus on keeping costs down on the basics' (housing, healthcare, childcare, groceries, gas) but lists no specific mechanism. Blames tariffs and war for rising costs (HPPR)."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Taxation"
+        note: "Campaign page: lower residential assessment rates and add exemptions so seniors and disabled veterans are not pushed from their homes. KCUR: supports cutting the residential assessment rate by 2.5% rather than a hard cap. In the interview she says the Legislature's property tax bills are 'gimmicks and band-aids' and that Kansas 'can't keep doing these billionaire giveaways and tax exemptions for the rich and corporations' [00:03:14-00:04:08]. Wichita forum summary: wants to stop tax breaks for the wealthiest Kansans."
+        coverage: 3
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: [9, 4, 0]
+      - topic: "Small business & farming"
+        note: "Campaign agriculture page: lower fuel and fertilizer costs, protect access to fair markets, fully fund and carry out the Kansas Water Plan, safeguard the Ogallala Aquifer and rebuild reservoirs. No detailed budget or timeline given. At the Wichita forum she said large incentive packages leave little for small businesses (summary)."
+        coverage: 2
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [11, 2]
+      - topic: "Workers & wages"
+        note: "Campaign page: fight to raise the statewide minimum wage to $16, with higher rates in high-cost areas, and ensure workers do not lose pay when sick. In the interview she contrasts the $7.25 Kansas minimum wage with $15+ in Missouri and calls raising the minimum wage a mainstream issue [00:05:47-00:06:00, 00:07:00-00:07:14]."
+        coverage: 3
+        position_tag: "Raise minimum wage"
+        position_type: "pos"
+        source: [8, 0, 2]
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "HPPR/Kansas Reflector: supports abortion rights, opposed the 2022 constitutional amendment, and warned that 'reproductive healthcare in Kansas will be eliminated' if her opponent is elected. In Democracy Now! she describes the 2022 vote as being about 'access to reproductive healthcare'. The campaign issues overview does not list the topic."
+        coverage: 2
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: [3, 1]
+      - topic: "Voting & elections"
+        note: "Democracy Now!: opposed the 2026 ballot measure to elect Kansas Supreme Court justices, saying it would 'make it into an election system, where Elon Musk or whoever else can come help buy these positions'. HPPR notes she did not state a position on specific voting policy such as ballot access or voter verification. No position on the taxonomy topic found."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "In Democracy Now! she criticizes the Legislature for passing 'a bathroom bill' among other measures, but states no policy position of her own. No position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Campaign healthcare page: expand Medicaid as governor (estimated to lower costs for 152,000 Kansans), protect rural hospitals, ban insurer denials of prescribed care and speed up insurance approvals. Interview: Medicaid expansion is a top priority and she helped pass it in 2017 [00:00:10, 00:01:00-00:01:22]. Wichita forum summary: says Kansas has forfeited more than $7 billion by not expanding."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: [10, 0, 2]
+      - topic: "Education"
+        note: "Interview: 'fully funding education, general ed has been adequately funded, but special ed has not since 2011' [00:00:15-00:00:25]; the state must 'fulfill our obligation on funding education' [00:04:03]. Campaign site lists fully funding public schools and says she helped secure $500 million in new school funding. HPPR: backs fully funding K-12 special education."
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [0, 6, 3]
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Supports a moratorium on new data centers until guardrails on water and electricity use are in place [00:08:31-00:08:46]; Democracy Now!: data centers 'suck up the resources in terms of water'. Wichita forum summary: calls oil and gas a lasting part of the Kansas economy that needs to be safeguarded from rising electricity costs. No overall position on regulation versus production found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Democracy Now!: criticizes Trump and ICE ('they are overstepping their boundaries') and says she will 'pull every lever as governor to protect our neighbors'. No position on legal pathways or enforcement stated."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Names 'really focusing on affordable housing' as a priority [00:00:06] and lists housing among the costs to lower. Wichita forum summary: commits to making housing more affordable. No specific housing policy found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null

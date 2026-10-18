@@ -83,3 +83,5 @@ voting:
 races:
   - name: "Ohio US Senate 2026"
     id: "oh-senate-2026"
+  - name: "Ohio Governor 2026"
+    id: "oh-governor-2026"

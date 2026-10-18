@@ -1,0 +1,150 @@
+fiveFifthsId: "rob-sand"
+name: "Rob Sand"
+state: "IA"
+race_id: "ia-governor-2026"
+race: "Iowa Governor 2026"
+party: "Democratic"
+primary: null
+office_sought: "Iowa Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+ballot_order: 2
+avatar_initials: "RS"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Rob_Sand_campaign_headshot_%28cropped_1%29.jpg/120px-Rob_Sand_campaign_headshot_%28cropped_1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Detailed written plans on most topics; no stated position found on guns or immigration"
+  sources_count: 7
+  sources_list:
+    - "KWQC TV6 Iowa gubernatorial debate, Rob Sand vs. Zach Lahn, Davenport, Oct. 6, 2026 (YouTube transcript)"
+    - "On Iowa Politics podcast, Cedar Rapids Gazette 1-1 interview with Rob Sand, Sept. 2026 (YouTube transcript)"
+    - "1-1 video interview: Rob Sand on his campaign for governor (YouTube transcript)"
+    - "Rob Sand campaign website: Making Life More Affordable"
+    - "Rob Sand campaign website: A Healthier Iowa for All"
+    - "Rob Sand campaign website: Opportunities for All"
+    - "Rob Sand campaign website: Accountability for All"
+  last_updated: "2026-10-17"
+  callout: "Rob Sand is Iowa's two-term State Auditor and a former assistant attorney general who prosecuted public corruption cases. His campaign emphasizes bipartisan governing, government accountability (term limits, a stock-trading ban, mandatory town halls, a single open primary with approval voting), ending Medicaid privatization, public school funding with voucher oversight, and water quality. He also supports legalizing and taxing cannabis, which is outside the scorecard taxonomy."
+  links:
+    - label: "KWQC Iowa Governor Debate (Sand vs. Lahn), YouTube"
+      url: "https://www.youtube.com/watch?v=E67-tqQNaA8"
+    - label: "On Iowa Politics podcast interview with Rob Sand, YouTube"
+      url: "https://www.youtube.com/watch?v=g-sXk3MjDf0"
+    - label: "Full interview: Rob Sand on his campaign for governor, YouTube"
+      url: "https://www.youtube.com/watch?v=GT2_9Q_q5bk"
+    - label: "Rob Sand campaign: Making Life More Affordable"
+      url: "https://robsand.com/issues/making-life-more-affordable"
+    - label: "Rob Sand campaign: A Healthier Iowa for All"
+      url: "https://robsand.com/issues/healthier-iowa"
+    - label: "Rob Sand campaign: Opportunities for All"
+      url: "https://robsand.com/issues/opportunities-for-all"
+    - label: "Rob Sand campaign: Accountability for All"
+      url: "https://robsand.com/issues/accountability-for-all"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "In the debate he said day-one steps include capping utility fees [00:11:14] and ending Medicaid privatization [00:11:56], plus a prescription drug review board, capping insulin prices and importing drugs from Canada [00:14:07]. The campaign affordability page adds universal school meals and universal pre-K."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [0, 3]
+      - topic: "Taxation"
+        note: "In the debate he said he does not want to raise taxes [00:16:14] and asked how tax cuts would be paid for without cutting services [00:16:33]. In the 1-1 interview he said recent tax cuts mostly go to wealthy Iowans [00:07:19] and that he had not read the proposed flat-tax and supermajority amendments, so he had no position on them [00:08:29]. The campaign site mentions higher taxes on out-of-state landowners and a legalized, taxed cannabis market. No single overall tax position found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Small business & farming"
+        note: "Campaign site: expand a streamlined-application program for women-, veteran- and disabled-owned businesses, extend state micro-business program eligibility to firms with 10 or fewer employees, and create an Office of Rural Prosperity. In the debate he backed local and regional food contracts with school districts for young farmers [00:37:27] and opposed the tariffs hurting Iowa agriculture [00:36:31]."
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [0, 5]
+      - topic: "Workers & wages"
+        note: "In the debate he said he supports raising the minimum wage and thinks Iowa should do it [00:13:56]. Campaign site: raise Iowa's minimum wage from $7.25 to $12 per hour and expand the Statewide Work, Statewide Jobs remote-work program to more state jobs."
+        coverage: 3
+        position_tag: "Raise minimum wage"
+        position_type: "pos"
+        source: [0, 5]
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Campaign site proposes mandatory prison for anyone convicted of stealing more than $10,000 in taxpayer money and bars convicted fraudsters from state business. This covers public-corruption penalties only. No position found in reviewed sources on policing, sentencing or incarceration generally."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "In the 1-1 interview he called the earlier halt of state payments for emergency contraception for rape victims a wrong decision [00:20:36]. Campaign site says he would veto culture-war bills threatening contraception, IVF and surrogacy but states no position on abortion. No position on abortion found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "In the 1-1 interview he called requiring party registration to vote in a primary 'wrong and un-American' and favors a single open public primary and approval voting [00:05:00 to 00:06:00]. Campaign site: one public primary open to all candidates with up to four advancing, then approval voting in the general election."
+        coverage: 3
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: [1, 6]
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources. The campaign's Accountability for All page states no position on guns."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "In the 1-1 interview the host said Sand holds the position that transgender women should not compete in women's sports; Sand's answer did not restate or define a position [00:35:31]. In the debate Lahn accused him of refusing to take on culture-war bills; Sand did not address it on the issue. Campaign site says he would veto culture-war bills. No clear stated position in his own words found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "In the debate he said he would start ending Medicaid privatization on day one by executive order and move to a nonprofit managed care program, citing an audit finding that illegal care denials rose 500% [00:11:56]. Campaign site adds a Prescription Drugs Review Board, a $2,000 caregiver tax credit, expanded surprise-bill protection and medical debt relief partnerships."
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: [0, 3, 4]
+      - topic: "Education"
+        note: "In the debate he called for a 5% increase in public school funding in his first year [00:20:51], and voucher oversight: audits, an income limit, and no rejecting students while taking public money [00:21:09]. Campaign site adds universal all-day pre-K and universal school meals."
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [0, 3]
+      - topic: "Broadband & infrastructure"
+        note: "Campaign site: ensure every part of Iowa has high-speed access using whatever technology works best (fiber, satellite or wireless), and help rural residents pay for satellite internet rather than expanding fiber. Limited detail on funding."
+        coverage: 2
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: [4, 5]
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "In the 1-1 interview he proposed the largest wetlands and grazing land restoration in Iowa history using a no-eminent-domain reverse auction, and expanded conservation cost-share programs [00:28:56 to 00:29:50]. Campaign site: grow renewable energy without reducing agricultural output, keep clean energy incentives, and require data centers to pay their own way. In the debate he supported funding the state's natural resources trust fund [00:45:28]."
+        coverage: 3
+        position_tag: "Balance both"
+        position_type: "pos"
+        source: [1, 3, 4, 5]
+      - topic: "Immigration"
+        note: "No position found in reviewed sources. The campaign's Accountability for All page states no position on immigration."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "In the debate he cited the Iowa Finance Authority's four separate inspection points as slowing and raising the cost of housing projects [00:14:37]. Campaign site pairs permitting and zoning reform (duplexes, quadplexes, ADUs) with interest-free down payment assistance and a Rural Iowa Housing Task Force, and a target of 21,000 more homes by 2030."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [0, 3, 5]

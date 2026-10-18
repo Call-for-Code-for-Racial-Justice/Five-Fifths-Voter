@@ -1,0 +1,159 @@
+fiveFifthsId: "hannah-pingree"
+name: "Hannah Pingree"
+state: "ME"
+race_id: "me-governor-2026"
+race: "Maine Governor 2026"
+party: "Democratic"
+primary: null
+office_sought: "Maine Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+ballot_order: 1
+avatar_initials: "HP"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Headshot_of_Hannah_Pingree_in_February_2026_%28cropped%29.jpg/120px-Headshot_of_Hannah_Pingree_in_February_2026_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Detailed written plans on most topics; thinner on guns, immigration, and criminal justice"
+  sources_count: 10
+  sources_list:
+    - "CBS13/Fox23 Maine gubernatorial debate (Oct 2026), YouTube transcript"
+    - "NEWS CENTER Maine '207' interview with Hannah Pingree, YouTube transcript"
+    - "Maine Public 'Your Vote 2026' candidate profile (Apr 17, 2026)"
+    - "Yahoo News: If elected, Hannah Pingree pledges $100M annual investment in plan to address housing crisis"
+    - "Hannah Pingree campaign website: Affordability page"
+    - "Hannah Pingree campaign website: Health Care page"
+    - "Hannah Pingree campaign website: Education page"
+    - "Hannah Pingree campaign website: Economic Opportunity page"
+    - "Hannah Pingree campaign website: Climate & Energy page"
+    - "Hannah Pingree campaign website: Meet the Candidate page"
+  last_updated: "2026-10-17"
+  callout: "Hannah Pingree is the Democratic nominee and a former Maine House Speaker who served as director of Gov. Janet Mills' Office of Policy Innovation and the Future and co-chaired the Maine Climate Council. Her platform centers on housing ($100 million a year and a 90-day permit shot clock), a state-backed public health insurance option, property tax relief, and clean energy with utility accountability. She also supports a data center moratorium, which falls outside the scorecard taxonomy."
+  links:
+    - label: "CBS13/Fox23 Maine gubernatorial debate"
+      url: "https://www.youtube.com/watch?v=4F3x8f9u7ps"
+    - label: "NEWS CENTER Maine 207 interview"
+      url: "https://www.youtube.com/watch?v=2-N7Oy-lyl4"
+    - label: "Maine Public Your Vote 2026 profile"
+      url: "https://www.mainepublic.org/politics/2026-04-17/your-vote-2026-profile-hannah-pingree-democrat-for-governor"
+    - label: "Yahoo News: $100M housing pledge"
+      url: "https://www.yahoo.com/news/articles/elected-hannah-pingree-pledges-100m-201657010.html"
+    - label: "Campaign site: Affordability"
+      url: "https://hannahforgovernor.com/affordability/"
+    - label: "Campaign site: Health Care"
+      url: "https://hannahforgovernor.com/health-care/"
+    - label: "Campaign site: Education"
+      url: "https://hannahforgovernor.com/education/"
+    - label: "Campaign site: Economic Opportunity"
+      url: "https://hannahforgovernor.com/economic-development/"
+    - label: "Campaign site: Climate & Energy"
+      url: "https://hannahforgovernor.com/climate/"
+    - label: "Campaign site: Meet the Candidate"
+      url: "https://hannahforgovernor.com/meet-the-candidates-hannah-pingree/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Campaign Affordability page proposes state-funded child care (eliminate the Child Care Affordability waitlist), free school meals for 115,000+ students, utility profit accountability via the PUC, and a public insurance option. In the 207 interview [00:03:39] she said she has 'not proposed any significant new state spending' and is building on existing programs."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [4, 1]
+      - topic: "Taxation"
+        note: "Campaign page: double the homestead exemption, expand the Property Tax Fairness Credit, let towns tax non-resident second homes at higher rates, and shift burden to visitors. In the debate [00:18:30] she said middle and low income people 'are already paying too much of their income in taxes' and wants to shift the burden to tourists. In the 207 interview [00:05:19] she backs opening the Constitution to tax out-of-state second homes and floated a seasonal lodging tax."
+        coverage: 3
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: [4, 1, 0]
+      - topic: "Small business & farming"
+        note: "Economic Opportunity page: one-stop shop for permits, licensing, financing and technical assistance; added lendable funds at the Finance Authority of Maine; a 'Maine Feeds the Nation' initiative; and succession and employee-ownership support."
+        coverage: 3
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [7]
+      - topic: "Workers & wages"
+        note: "Campaign pages commit to protecting the right to organize and collectively bargain, improving enforcement of labor standards, and a Workers Council on AI. No minimum wage position found in reviewed sources."
+        coverage: 3
+        position_tag: "Expand worker protections"
+        position_type: "pos"
+        source: [4, 7]
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "In the debate [00:49:49] she said the state should be a better partner to cities on public safety, and cited disinvestment in schools, lack of affordable housing, and youth access to illegal guns as drivers of youth crime. She also cited expanded treatment beds and prevention services for every kid [00:50:10]. Maine Public lightning round: supports parole. No detailed sentencing or policing platform found."
+        coverage: 2
+        position_tag: "Invest in prevention"
+        position_type: "pos"
+        source: [0, 2]
+      - topic: "Reproductive policy"
+        note: "Maine Public lightning round: supports abortion rights and says she will protect them as governor. Health Care page: 'Ensure all Maine people can access and afford the full range of reproductive health care.' In the debate [00:04:33] she named reproductive rights as an area where governors are on the front line."
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: [2, 5, 0]
+      - topic: "Voting & elections"
+        note: "Maine Public profile: 'Nothing is more fundamental to our democracy than the right to vote, and I will fight fiercely to protect it.' She pledges to veto bills that weaken voting rights, opposes the SAVE Act, and answered 'No' to requiring photo ID to vote."
+        coverage: 2
+        position_tag: "Expand ballot access"
+        position_type: "pos"
+        source: [2]
+      - topic: "Gun policy"
+        note: "Only a passing reference in the debate [00:49:06] to keeping youth from getting access to illegal guns. No position on gun regulations found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Maine Public profile: she stood up for marriage equality as Speaker in 2009, opposes a ban on transgender athletes in girls' and women's sports, and opposes dismantling Maine Human Rights Act protections. In the debate [00:04:33] she listed LGBT rights among the rights governors must defend."
+        coverage: 2
+        position_tag: "Expand protections"
+        position_type: "pos"
+        source: [2, 0]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Health Care page proposes 'a State-backed plan that puts patients before profits' as a public option alongside existing coverage, prescription drug purchasing and price limits, and rural primary care investment. In the debate [00:36:07] she agreed 'we need universal health care in this country' and said she proposed a public insurance option."
+        coverage: 3
+        position_tag: "Expand public coverage"
+        position_type: "pos"
+        source: [5, 0]
+      - topic: "Education"
+        note: "Education page: universal free full-day Pre-K, a $50,000 minimum teacher salary, a $100 million school construction loan fund, and permanent free community college. In the debate [00:44:53] she said she believes deeply in public education and criticized diverting money from public schools to private schools."
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [6, 0]
+      - topic: "Broadband & infrastructure"
+        note: "Economic Opportunity page ('No Dead Zones'): partner with private companies to build wireless infrastructure using state land, fiber and towers, and complete federal and state broadband investments. It also proposes a State Resilience Bank for infrastructure financing."
+        coverage: 3
+        position_tag: "Public-private partnership"
+        position_type: "pos"
+        source: [7]
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Climate & Energy page: 100% clean energy by 2040, a data center moratorium, a Maine Climate Superfund Act, and PFAS disclosure and cleanup responsibility for manufacturers. In the 207 interview [00:06:24] she said she would support a data center moratorium until the state has the strongest laws in the country."
+        coverage: 3
+        position_tag: "Prioritize regulation"
+        position_type: "pos"
+        source: [8, 1]
+      - topic: "Immigration"
+        note: "Campaign Meet the Candidate page: agrees with limiting local law enforcement work with federal immigration agencies ('I do not think collaborating with the federal government and this ICE makes any sense'). Maine Public lightning round: agrees an immigrant workforce is essential to Maine's economy. No position found that maps to the taxonomy tags."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Proposes $100 million a year for housing production and preservation and limits on private equity buying affordable housing, alongside a 90-day state permit shot clock to cut red tape. In the debate [00:08:09] she said 'I propose investing $100 million a year in new housing production' and 'I want a 90 day shot clock at the state level.'"
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [0, 3]

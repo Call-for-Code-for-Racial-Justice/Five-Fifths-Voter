@@ -1,0 +1,159 @@
+fiveFifthsId: "byron-donalds"
+name: "Byron Donalds"
+state: "FL"
+race_id: "fl-governor-2026"
+race: "Florida Governor 2026"
+party: "Republican"
+primary: null
+office_sought: "Florida Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+ballot_order: 1
+avatar_initials: "BD"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Rep._Byron_Donalds_official_photo%2C_117th_Congress.jpg/120px-Rep._Byron_Donalds_official_photo%2C_117th_Congress.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Specific on insurance, property taxes, health care pricing, education and immigration; silent on abortion, guns, voting and broadband"
+  sources_count: 10
+  sources_list:
+    - "Fox 35 News Plus one-on-one interview with Byron Donalds (YouTube transcript)"
+    - "CBS News Miami: full one-on-one interview with Jim DeFede (March 2026)"
+    - "WUSF / WJCT First Coast Connect interview (August 2026)"
+    - "CBS News: Face the Nation transcript, Aug. 23, 2026"
+    - "ABC News 4 / The National News Desk interview write-up"
+    - "Byron Donalds campaign website: Affordability"
+    - "Byron Donalds campaign website: Healthcare"
+    - "Byron Donalds campaign website: Economy"
+    - "Byron Donalds campaign website: Education"
+    - "Byron Donalds campaign website: Law and Order"
+  last_updated: "2026-10-17"
+  callout: "Donalds is a Republican congressman who previously served in the Florida House and is running for governor with an endorsement from President Trump. His platform centers on property insurance and homestead property tax relief, permitting reform, health care price transparency, school choice and workforce pathways, and cooperation with federal immigration enforcement. Other notable positions outside the scorecard taxonomy include opposing Medicaid expansion, loosening state vaccine mandates toward informed consent, and supporting small modular nuclear reactors and on-site power for data centers."
+  links:
+    - label: "Fox 35 News Plus interview with Byron Donalds (YouTube)"
+      url: "https://www.youtube.com/watch?v=9QYOXe6iqLs"
+    - label: "CBS News Miami full interview with Jim DeFede"
+      url: "https://www.cbsnews.com/miami/news/full-interview-cbs-news-miami-jim-defede-byron-donalds/"
+    - label: "WUSF: Donalds on campaign finance, data centers and the environment"
+      url: "https://www.wusf.org/politics-issues/2026-08-04/rep-byron-donalds-discusses-campaign-finance-data-centers-the-environment-and-more"
+    - label: "Face the Nation transcript, Aug. 23, 2026"
+      url: "https://www.cbsnews.com/news/byron-donalds-florida-governor-candidate-face-the-nation-transcript-08-23-2026/"
+    - label: "ABC News 4: Donalds outlines Florida vision"
+      url: "https://abcnews4.com/news/nation-world/byron-donalds-outlines-florida-vision-as-governors-race-begins-to-take-shape-president-trump-endorsement-gubernatorial-bid-ron-desantis-republican-democrat-affordability-housing-taxes-education-immigration-sunshine-state-birthright-citizenship"
+    - label: "Donalds campaign: Affordability"
+      url: "https://byrondonalds.com/issues/affordability/"
+    - label: "Donalds campaign: Healthcare"
+      url: "https://byrondonalds.com/issues/healthcare/"
+    - label: "Donalds campaign: Economy"
+      url: "https://byrondonalds.com/issues/economy/"
+    - label: "Donalds campaign: Education"
+      url: "https://byrondonalds.com/issues/education/"
+    - label: "Donalds campaign: Law and Order"
+      url: "https://byrondonalds.com/issues/law-and-order/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Fox 35 interview [00:04:59]-[00:06:24]: names homestead property tax elimination, insurance tort reform and re-examining insurance regulation to bring in new carriers and competition, and faster housing permitting. Campaign Affordability page adds an online insurer scorecard, a smaller Citizens Insurance, and keeping data centers from shifting utility costs to households."
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: [0, 5]
+      - topic: "Taxation"
+        note: "Fox 35 interview [00:05:00]-[00:05:13]: fully supports the governor's plan to eliminate homestead property taxes. CBS Miami interview: 'we need to repeal Homestead property taxes.' Campaign Economy page: keep personal income tax at zero, balance the budget annually, and cut taxes whenever possible."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 1, 7]
+      - topic: "Small business & farming"
+        note: "Campaign Economy page: 'Bureaucratic delays shouldn't stop honest people from opening a business.' Proposes a public permit shot clock, a single digital hub for major development permits, and specialized business courts. No farming-specific proposals found in reviewed sources."
+        coverage: 3
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: [7]
+      - topic: "Workers & wages"
+        note: "Only a passing reference: the Law and Order page says E-Verify would let legal workers 'keep the jobs and wages they've earned.' No position on minimum wage or worker protections found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Campaign Law and Order page: heavy penalties and joint task forces against drug cartels, taking fentanyl off the streets, and coordinating state and local police with federal authorities to deport noncitizens who commit crimes. CBS Miami interview: defends the D.C. Crimes Act, saying DC was 'treating 24-year-olds as if they were juveniles.'"
+        coverage: 3
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: [1, 9]
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "ABC News 4 interview write-up: praised the Supreme Court's decision upholding Tennessee's restrictions on gender-transition treatment for minors, saying the Court is 'based on common sense and logic.' A single reference; no state-level proposal found."
+        coverage: 1
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: [4]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Fox 35 interview [00:19:42]-[00:21:48]: 'we're not going to expand Medicaid in our state'; wants the Affordable Care Act reformed so people 'have more options to get lower-cost policies'; opposes subsidies to insurers. Campaign Healthcare page ('Your Doctor, Your Price'): posted cash prices for the 50 most common procedures, best-price guarantee, three-day insurer approvals."
+        coverage: 3
+        position_tag: "Expand private options"
+        position_type: "pos"
+        source: [0, 6]
+      - topic: "Education"
+        note: "Fox 35 interview [00:15:05]-[00:15:43]: 'the money follows the child' whether to public, private, charter or homeschool. CBS Miami interview: 'a school choice champion and advocate my entire time in politics.' Campaign Education page: Read to Succeed literacy plan, LaunchPad Florida apprenticeships, and letting education money follow the student."
+        coverage: 3
+        position_tag: "Support school choice"
+        position_type: "pos"
+        source: [0, 1, 8]
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "CBS Miami interview: will finish Central Everglades restoration 'once and for all'; backs small modular nuclear reactors and says 'Solar plants and wind farms do not address baseload power'; wants data centers to generate their own power on site. WUSF interview: 'if you don't have fresh water, you have nothing'; opposes developing conservation-area state parks; opposes data center moratoriums and bans but supports keeping the state data center law."
+        coverage: 3
+        position_tag: "Balance both"
+        position_type: "pos"
+        source: [1, 2]
+      - topic: "Immigration"
+        note: "Fox 35 interview [00:09:46]-[00:10:44]: Florida will continue cooperating with the Trump administration to remove 'criminal illegal aliens'; [00:13:22]-[00:13:30] opposes sanctuary jurisdictions. Campaign Law and Order page: require E-Verify for all Florida businesses and cut state funds that encourage illegal immigration. Face the Nation: wants 'legal immigration with assimilation.' ABC News 4: supports ending the current interpretation of birthright citizenship."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [0, 3, 4, 9]
+      - topic: "Housing"
+        note: "Fox 35 interview [00:05:46]-[00:06:24]: wants to be 'efficient with people's time' and not have builders 'bogged down in red tape'; 'If you can build housing more quickly, it actually decreases the cost of housing.' ABC News 4: says permitting costs drive up home prices. Also supports regional growth planning [00:06:33]-[00:07:03]."
+        coverage: 3
+        position_tag: "Reduce development barriers"
+        position_type: "pos"
+        source: [0, 4]

@@ -88,3 +88,5 @@ voting:
 races:
   - name: "Florida US Senate 2026"
     id: "fl-senate-2026"
+  - name: "Florida Governor 2026"
+    id: "fl-governor-2026"
