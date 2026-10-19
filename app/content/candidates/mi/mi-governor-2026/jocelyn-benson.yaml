@@ -1,0 +1,159 @@
+fiveFifthsId: "jocelyn-benson"
+name: "Jocelyn Benson"
+state: "MI"
+race_id: "mi-governor-2026"
+race: "Michigan Governor 2026"
+party: "Democratic"
+primary: null
+office_sought: "Michigan Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+ballot_order: 1
+avatar_initials: "JB"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/SOS_Jocelyn_Benson_web_%28cropped%29.jpg/120px-SOS_Jocelyn_Benson_web_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Detailed on health care, education and housing; general on most other topics"
+  sources_count: 10
+  sources_list:
+    - "ClickOnDetroit (WDIV) coverage of the first Benson-James general election debate, Oct. 2026"
+    - "Local 4 (WDIV) one-on-one interview with Jocelyn Benson, YouTube"
+    - "Traverse City-area conversation with Jocelyn Benson, YouTube"
+    - "Candidate interview with Jocelyn Benson (partial captions), YouTube"
+    - "Michigan Public Morning Edition interview profile, July 2026"
+    - "Benson campaign website: affordability and lowering costs release"
+    - "Benson campaign website: environment page"
+    - "Benson campaign website: housing page"
+    - "Benson campaign website: Roe anniversary statement"
+    - "Benson campaign website: gun violence prevention forum release"
+  last_updated: "2026-10-17"
+  callout: "Jocelyn Benson is Michigan's Secretary of State and the Democratic nominee for governor. Her campaign centers on 'costs down, wages up, rights protected,' with detailed plans on health care affordability, education and housing. She has also released a data center guardrail plan and called for a pause on new data center projects until protections are in place."
+  links:
+    - label: "ClickOnDetroit: Benson, James offer contrasting visions in first governor debate"
+      url: "https://www.clickondetroit.com/news/local/2026/10/07/benson-james-offer-contrasting-visions-in-first-michigan-governor-debate/"
+    - label: "YouTube: One-on-one interview with Jocelyn Benson (Local 4)"
+      url: "https://www.youtube.com/watch?v=3U1u-neezDM"
+    - label: "YouTube: A Conversation with Jocelyn Benson"
+      url: "https://www.youtube.com/watch?v=zaKgpxCQCv0"
+    - label: "YouTube: Full Interview: Jocelyn Benson on her run for Michigan governor"
+      url: "https://www.youtube.com/watch?v=Gk5p-u4PdHA"
+    - label: "Michigan Public: Meet candidate Jocelyn Benson"
+      url: "https://www.michiganpublic.org/politics-government/2026-07-17/michigans-race-for-governor-meet-candidate-jocelyn-benson"
+    - label: "Benson campaign: Affordability and lowering costs"
+      url: "https://www.jocelynbenson.com/news/benson-affordability-and-lowering-costs"
+    - label: "Benson campaign: Environment"
+      url: "https://www.jocelynbenson.com/issues/environment"
+    - label: "Benson campaign: Housing"
+      url: "https://www.jocelynbenson.com/issues/Housing"
+    - label: "Benson campaign: Anniversary of the overturn of Roe v. Wade"
+      url: "https://www.jocelynbenson.com/news/jocelyn-benson-on-anniversary-of-the-overturn-of-roe-v-wade"
+    - label: "Benson campaign: Gun violence prevention forum"
+      url: "https://www.jocelynbenson.com/news/at-gun-violence-prevention-forum-jocelyn-benson-lays-out-vision"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Proposes a prescription drug affordability board, streamlining state benefits access, and holding health care bad actors accountable; also an auto insurance reform and a push to lower housing, energy and child care costs (Local 4 interview [00:04:39]-[00:06:53]; Traverse City interview [00:02:23]-[00:03:48])."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [1, 2]
+      - topic: "Taxation"
+        note: "Says 'I have no intention or plans to raise taxes on the middle class' and calls for a 'soup-to-nuts review' of revenue, closing antiquated loopholes and replacing a piecemeal tax code with a more equitable one (Local 4 interview [00:03:50], [00:06:08]-[00:06:40])."
+        coverage: 2
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: [1]
+      - topic: "Small business & farming"
+        note: "Says the state should invest in small business growth and make it easier to start and scale a business through streamlined government (Traverse City interview [00:10:00]-[00:10:12]; Michigan Public interview). Few named programs."
+        coverage: 2
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [2, 4]
+      - topic: "Workers & wages"
+        note: "Frames her campaign as 'costs down, wages up' and says she will 'build our economy to grow wages,' and has called for a $60,000 starting salary for teachers (Traverse City interview [00:03:38], [00:04:47]). No position found in reviewed sources on minimum wage or labor law."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Only mentions public safety in the context of gun violence, saying law enforcement and community partners should be equipped to reduce it (Local 4 interview [00:08:16]-[00:08:52]). No position found in reviewed sources on incarceration, sentencing or policing policy."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "Campaign statement says 'rights are only as strong as the leaders responsible for upholding them.' Cites helping add a right to reproductive care to the state constitution and working with Democrats to repeal the 1931 abortion ban, and pledges to keep reproductive care accessible and affordable."
+        coverage: 3
+        position_tag: "Pro-choice"
+        position_type: "pos"
+        source: [8]
+      - topic: "Voting & elections"
+        note: "Cites her record as Secretary of State of 'improving the safety and security of how we vote' (Traverse City interview [00:01:34]-[00:01:43]) and describes a firewall around her role overseeing the election (Michigan Public interview). No specific ballot access or verification policy found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "Says as governor she 'will support commonsense laws that keep Michigan communities safe,' cites banning guns at polling locations as Secretary of State, and has been endorsed by Everytown, Moms Demand Action and Giffords (campaign gun violence forum release). No specific bills named."
+        coverage: 2
+        position_tag: "Increase gun regulations"
+        position_type: "pos"
+        source: [9]
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Plan creates a health care affordability board (12 other states have one), reforms the Department of Health and Human Services to streamline benefits, funds mobile clinics in health care deserts, and holds insurers accountable for wrongful denials (Traverse City interview [00:07:17]-[00:08:10]; Local 4 interview [00:05:08]). Does not frame it as expanding public or private coverage."
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: [1, 2]
+      - topic: "Education"
+        note: "Five-point plan includes a $60,000 starting teacher salary, replacing the 'one-size-fits-all' funding model with a weighted equitable model, ending raids on the school aid fund, and expanding early childhood education and Rx Kids (Traverse City interview [00:04:47]-[00:05:15]; Local 4 interview [00:00:12]-[00:03:30]). Goal is a top 10 public education state."
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [1, 2]
+      - topic: "Broadband & infrastructure"
+        note: "Says Michigan needs to modernize roads and the pipes beneath them, and invest in local and public transit, including a proposal for high-speed rail (partial captions in the interview, so paraphrased); also calls for transit investment in rural areas (Traverse City interview [00:12:03]-[00:12:19]). Broadband is not mentioned."
+        coverage: 2
+        position_tag: "Increase public investment"
+        position_type: "pos"
+        source: [3, 2]
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Campaign page calls clean energy 'the cheapest form of energy' and stresses holding polluters accountable and protecting Great Lakes water. Supports enforceable guardrails on data centers, community benefit agreements, and moratoriums for violators (Traverse City interview [00:09:00]-[00:09:50]; debate coverage)."
+        coverage: 3
+        position_tag: "Prioritize regulation"
+        position_type: "pos"
+        source: [6, 2, 0]
+      - topic: "Immigration"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Three-pillar plan: supply (streamline how homes are built and increase affordable homes), support (for first-time and workforce homebuyers) and accountability (for out-of-state landlords and investors, with local residents getting first opportunity to buy) (Traverse City interview [00:05:52]-[00:07:00]; campaign housing page)."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [2, 7]

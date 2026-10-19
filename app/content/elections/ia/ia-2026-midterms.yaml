@@ -64,3 +64,5 @@ voting:
 races:
   - name: "Iowa US Senate 2026"
     id: "ia-senate-2026"
+  - name: "Iowa Governor 2026"
+    id: "ia-governor-2026"

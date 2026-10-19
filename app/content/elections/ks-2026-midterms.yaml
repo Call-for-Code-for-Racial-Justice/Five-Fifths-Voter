@@ -88,3 +88,5 @@ voting:
 races:
   - name: "Kansas US Senate 2026"
     id: "ks-senate-2026"
+  - name: "Kansas Governor 2026"
+    id: "ks-governor-2026"

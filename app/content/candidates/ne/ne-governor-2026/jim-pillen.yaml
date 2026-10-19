@@ -1,0 +1,151 @@
+fiveFifthsId: "jim-pillen"
+name: "Jim Pillen"
+state: "NE"
+race_id: "ne-governor-2026"
+race: "Nebraska Governor 2026"
+party: "Republican"
+primary: null
+office_sought: "Nebraska Governor 2026"
+district: null
+region: "Statewide"
+incumbent: true
+debate_participant: false
+ballot_order: 1
+avatar_initials: "JP"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Jim_Pillen_2023_%28cropped%29.jpg/120px-Jim_Pillen_2023_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Detailed on property tax and sales tax; brief bullet-level goals on most other topics"
+  sources_count: 7
+  sources_list:
+    - "NTV (Steve White) 1-1 interview with Gov. Pillen on the property tax special session (YouTube, 2024)"
+    - "WOWT First Alert 6: Election 2026 sit-down interview excerpts on the no-bid contract probe and debates (Oct. 8, 2026)"
+    - "KNOP News 2: Pillen unveils '2.0 playbook' in Hastings (Sept. 10, 2026)"
+    - "Catholic World Report: interview with Gov. Pillen on faith, life, and immigration (Feb. 23, 2026)"
+    - "Campaign website: Pillen Playbook 2.0 (PDF)"
+    - "Campaign website: About page"
+    - "Campaign website: Home page letter"
+  last_updated: "2026-10-17"
+  callout: "Jim Pillen is the incumbent Republican governor, sworn in January 2023. He is a veterinarian and founder of Pillen Family Farms who served on the University of Nebraska Board of Regents from 2013 to 2023. His 2026 platform, the Pillen Playbook 2.0, centers on property tax reform, ending data center tax incentives, K-12 funding reform, and what he calls defending Nebraska values. He has said he does not debate opponents."
+  data_note: "The only long-form 1-1 interview with a usable transcript is from 2024 and covers mainly the property tax special session; later positions rely on 2026 news excerpts and campaign materials. The Central Nebraska Today Playbook interview could not be accessed (HTTP 403)."
+  links:
+    - label: "NTV interview with Gov. Pillen on property tax (YouTube)"
+      url: "https://www.youtube.com/watch?v=r4xNR7W3fuc"
+    - label: "WOWT: Jim Pillen talks about no-bid contract probe and why he doesn't debate"
+      url: "https://www.wowt.com/2026/10/08/election-2026-jim-pillen-talks-about-no-bid-contract-probe-why-he-doesnt-debate/"
+    - label: "KNOP: Pillen unveils '2.0 playbook,' asks Hastings voters for second term"
+      url: "https://www.knopnews2.com/2026/09/10/pillen-unveils-20-playbook-asks-hastings-voters-second-term/"
+    - label: "Catholic World Report: Gov. Pillen on faith"
+      url: "https://www.catholicworldreport.com/2026/02/23/gov-pillen-of-nebraska-theres-no-way-i-could-possibly-be-governor-without-my-faith/"
+    - label: "Campaign: Pillen Playbook 2.0"
+      url: "https://www.jimpillen.com/wp-content/uploads/2026/09/JimPillenPlaybook2026.pdf"
+    - label: "Campaign: About"
+      url: "https://www.jimpillen.com/about/"
+    - label: "Campaign: Home"
+      url: "https://www.jimpillen.com"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Playbook 2.0 lists 'Increasing affordability' goals: eliminate tax incentives for Big Tech data centers, lower property insurance rates, cut government spending, and stop hedge funds from buying up homes. These are a list of goals without a stated overall approach, so no single tag is applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Taxation"
+        note: "In the NTV interview he calls property taxes a crisis and backs hard caps on local spending at zero or CPI growth, with overrides by a vote of the people [00:03:20]. He proposes broadening the sales tax, including a sales tax on new farm equipment in exchange for no personal property tax on it [00:04:52]. He rules out sales tax on food, medicine, and nonprofits [00:10:24]. In 2026 he calls 'transformative property tax reform' a Playbook goal and told WOWT major property tax relief is a second-term priority."
+        coverage: 3
+        position_tag: "Restructure tax system"
+        position_type: "pos"
+        source: [0, 1, 4]
+      - topic: "Small business & farming"
+        note: "Playbook 2.0 says 'Defend our farmers and ag lands' and 'Expand trade opportunities for agricultural products.' The home page letter mentions standing up for farmers and ranchers and eliminating red tape, with few specifics. No single tag from the taxonomy is directly supported."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "Playbook 2.0 lists 'Continue to strengthen our Community Colleges' and 'Expand availability of workforce housing.' No position found in reviewed sources on minimum wage, worker protections, or labor regulation."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "Told Catholic World Report 'Pro-life is everything.' He credited faith-based groups for the 2024 ballot measure protecting unborn children at 12 weeks and said the state will go lower in 2027. Playbook 2.0 lists 'Protect life.'"
+        coverage: 3
+        position_tag: "Pro-life"
+        position_type: "pos"
+        source: [3, 4]
+      - topic: "Voting & elections"
+        note: "Playbook 2.0 lists 'Protect the integrity of our elections and reform the broken ballot petition process.' The home page letter supports bringing back 'Winner Take All' legislation for Nebraska's electoral votes. No specific voter ID or ballot access policy was found, so no tag is applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "Playbook 2.0 lists 'Protect the 2nd Amendment' with no specific policy detail."
+        coverage: 1
+        position_tag: "Maintain current laws"
+        position_type: "pos"
+        source: [4]
+      - topic: "LGBTQ+ policy"
+        note: "Told KNOP he supports a constitutional amendment requiring athletes to compete according to the gender assigned at birth. Playbook 2.0 lists 'Keep boys out of girls' sports.' WOWT reports he supports protecting girls' sports and opposes surgeries for minors, and quotes him: 'I love a transgender adult just like any other Nebraskan.'"
+        coverage: 3
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: [1, 2, 4]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Playbook 2.0 includes 'Making Nebraska Healthy Again' with 'Eliminate toxins in our food' and 'Eliminate toxins in our water.' No position found in reviewed sources on coverage, insurance, or the government's role in healthcare."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "In the NTV interview he says the state must 'step up and provide the funding for K12 education' so costs come off property taxpayers [00:02:48], and that the state should 'quit quitting on kids' [00:02:38]. Playbook 2.0 says to 'Reform K-12 Funding... to strengthen public schools and give them the resources they need,' and to ensure every 3rd grader can read on grade level."
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [0, 4]
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Playbook 2.0 lists 'Protect the health of our aquifer' and 'Protect Nebraska's public power ratepayers.' Pillen told KNOP data centers must build their own power infrastructure and cannot affect water, and said past over-watering and fertilizer caused water quality problems. He told WOWT 'We did not need to give the topsoil away' on data center tax incentives. No single regulation-versus-production tag is directly supported."
+        coverage: 3
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Told Catholic World Report he supports Trump's border security and deportation of immigrants who commit serious crimes, and defended converting a McCook prison into an immigration detention facility: 'we had every right to do what we did.' Playbook 2.0 lists eliminating 'state taxpayer benefits for illegals.'"
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [3, 4]
+      - topic: "Housing"
+        note: "In the NTV interview he ties high property taxes to housing costs, saying young people have 'lost the hope of the American dream of owning their own home' [00:00:35] and that rents rise because of property taxes [00:00:49]. Playbook 2.0 lists 'Expand availability of workforce housing' and 'Stop hedge funds from buying up our homes.' No single taxonomy tag is directly supported."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null

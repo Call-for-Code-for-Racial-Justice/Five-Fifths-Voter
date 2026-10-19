@@ -1,0 +1,162 @@
+fiveFifthsId: "john-james"
+name: "John James"
+state: "MI"
+race_id: "mi-governor-2026"
+race: "Michigan Governor 2026"
+party: "Republican"
+primary: null
+office_sought: "Michigan Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+ballot_order: 2
+avatar_initials: "JJ"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Rep._John_James_official_photo%2C_118th_Congress.jpg/120px-Rep._John_James_official_photo%2C_118th_Congress.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Detailed on taxes, education, public safety and government accountability; no 2026 positions found on guns, immigration or abortion"
+  sources_count: 11
+  sources_list:
+    - "ClickOnDetroit (WDIV) coverage of the second Benson-James general election debate, Oct. 2026"
+    - "Bridge Michigan fact check of the first Benson-James debate, Oct. 2026"
+    - "Michigan Public coverage of the first Benson-James debate, Oct. 7, 2026"
+    - "Local 4 (WDIV) one-on-one interview with John James by Ty Steele, YouTube"
+    - "Spectrum News: John James on key issues at a Clarkston campaign stop, June 2026"
+    - "Michigan Public: Benson and James on housing affordability, Sept. 14, 2026"
+    - "James campaign website: Lower Everyday Costs pillar"
+    - "James campaign website: Excellent Schools pillar"
+    - "James campaign website: Safe Neighborhoods pillar"
+    - "James campaign website: Lansing Answers to You pillar"
+    - "James campaign website: The Flight Plan overview"
+  last_updated: "2026-10-18"
+  callout: "John James is the U.S. Representative for Michigan's 10th District, an Army combat veteran and a Detroit-area business owner, and is the Republican nominee for governor. His campaign centers on eliminating the state income tax, school accountability and parental choice, tougher enforcement on violent crime, and an ethics and transparency agenda for Lansing. He also proposes repealing or sharply reducing Michigan's 24% wholesale cannabis tax, tightening rules on unlicensed hemp-derived products, and leaving data center decisions to local communities."
+  links:
+    - label: "ClickOnDetroit: Benson and James clash in final governor debate"
+      url: "https://www.clickondetroit.com/news/local/2026/10/16/benson-and-james-clash-over-health-care-trump-and-lansing-record-in-final-michigan-governor-debate/"
+    - label: "Bridge Michigan: Fact check of the first Benson-James debate"
+      url: "https://www.bridgemi.com/michigan-government/fact-check-john-james-jocelyn-benson-debate-data-centers-tariffs-more/"
+    - label: "Michigan Public: James distances himself from Trump in gubernatorial debate"
+      url: "https://www.michiganpublic.org/politics-government/2026-10-07/james-distances-himself-from-trump-as-benson-tries-to-connect-them-in-gubernatorial-debate"
+    - label: "Local 4 one-on-one interview with John James (YouTube)"
+      url: "https://www.youtube.com/watch?v=A5U3V8_4SnA"
+    - label: "Spectrum News: Gov. candidate John James on key issues"
+      url: "https://spectrumlocalnews.com/mi/michigan/news/2026/06/09/gov-candidate-johnjames-keyissues"
+    - label: "Michigan Public: Gubernatorial candidates on housing affordability"
+      url: "https://www.michiganpublic.org/politics-government/2026-09-14/leading-gubernatorial-candidates-both-pursuing-housing-affordability-suggest-different-routes"
+    - label: "Campaign website: Lower Everyday Costs"
+      url: "https://johnjamesmi.com/pillar-affordability/"
+    - label: "Campaign website: Excellent Schools"
+      url: "https://johnjamesmi.com/pillar-education/"
+    - label: "Campaign website: Safe Neighborhoods"
+      url: "https://johnjamesmi.com/pillar-safety/"
+    - label: "Campaign website: Lansing Answers to You"
+      url: "https://johnjamesmi.com/pillar-accountability/"
+    - label: "Campaign website: The Flight Plan"
+      url: "https://johnjamesmi.com/flight-plan/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "In the Local 4 interview, James said making Michigan affordable means 'lowering the tax burden, lowering the regulatory burden' [00:06:09]. His campaign's affordability plan would keep regulated residential energy bill growth 'at or below inflation,' raise the electric choice cap from 10% to 30%, and pursue an all-of-the-above energy strategy."
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: [3, 6]
+      - topic: "Taxation"
+        note: "His campaign site says 'We are eliminating the state income tax.' In the Local 4 interview he said cutting up to $3.5 billion in 'fraud, waste, and abuse' would allow a cut of 'up to 25% in personal income taxes' in year one, followed by property tax reform [00:03:33]. In the final debate he said he would cut the income tax rate 'into the threes' to match Indiana and Ohio."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 3, 6]
+      - topic: "Small business & farming"
+        note: "In the Local 4 interview, James called for 'regulatory reform and tort reform' [00:04:07] and a 'concierge approach to compliance' plus access to capital and contracts for businesses 'from the big businesses to the barber shops' [00:09:17]. Spectrum News reported he said 'The MEDC needs to be taken down to the studs and reformed,' shifting it from corporate incentives toward retaining existing businesses. He also said data centers should prioritize 'brownfields over productive farmland.'"
+        coverage: 3
+        position_tag: "Reduce regulation"
+        position_type: "pos"
+        source: [3, 4]
+      - topic: "Workers & wages"
+        note: "His campaign affordability plan proposes a 'Retention and Relocation Worker Tax Credit' for workers in shortage occupations and a 100% tax credit for businesses that fund skilled-trades scholarships. No position on minimum wage or labor regulation was found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "In the Local 4 interview, James said 'I'm going to enforce the law. I'm going to make sure that violent repeat offenders go to jail and stay there' [00:06:30], and said he would appoint 'rule of law judges' [00:07:52]. His campaign's Safe Neighborhoods page pledges to 'FULLY FUND law enforcement, Back The Blue' and to 'get activist prosecutors and judges out of the way of public safety.'"
+        coverage: 3
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: [3, 8]
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources. No 2026 statement by James on abortion was found in accessible coverage of this race."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "His campaign accountability page pledges to 'Conduct a comprehensive independent audit of Michigan's voter rolls' to remove noncitizens. Spectrum News quoted him: 'As governor, I'm going to work with the Trump administration to make sure that we are running secure elections.' In the Local 4 interview he cited cases of noncitizens voting and criticized Secretary of State Benson for not cooperating with local and federal officials [00:13:33]."
+        coverage: 3
+        position_tag: "Strengthen voter verification"
+        position_type: "pos"
+        source: [3, 4, 9]
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "His campaign education plan would reverse the state board of education's 2025 standards on gender identity, gender expression and sexual orientation, and states that biological males would compete only with and against biological males, with girls' sports, restrooms and locker rooms protected. His Flight Plan overview pledges to protect 'fair play in girls' sports.'"
+        coverage: 3
+        position_tag: "Limit or oppose expansions"
+        position_type: "pos"
+        source: [7, 10]
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "His campaign plan would lower costs through 'price transparency, direct primary care, telehealth, rural provider recruitment, and fraud reduction.' In the final debate he pointed to his work leading the Patients Deserve Price Tags Act. In the first debate he said 'Medicaid is vital' and 'Medicaid will not be taken away from people who are working at least 80 hours.'"
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: [0, 1, 6]
+      - topic: "Education"
+        note: "In the Local 4 interview, James said 'I want public schools to be successful, private, charter, home schools' and 'when you give parents a choice, you give children a chance' [00:00:17]. He pledged to opt into the federal education tax credit 'day one' [00:02:13] and to restore third-grade reading accountability standards [00:00:31]. His campaign plan also calls for expanding charter school options."
+        coverage: 3
+        position_tag: "Support school choice"
+        position_type: "pos"
+        source: [3, 7]
+      - topic: "Broadband & infrastructure"
+        note: "In the Local 4 interview, James cited bringing federal money back to fix 'underground infrastructure and our roads' [00:10:34]. His campaign affordability plan would 'repair, harden, or bury failing lines' in the worst-performing electric circuits and tie utility profits to reliability. No position on the public or private role in funding infrastructure or broadband was found in reviewed sources."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "His campaign plan calls for repealing PA 235, Michigan's 2023 clean energy law, and pursuing an all-of-the-above energy strategy. In the first debate he said 'yes, renewables, yes, natural gas, yes, nuclear,' and that energy policy must be 'economical as well as environmental.' On data centers he said 'As a conservative, I don't like bans or mandates' and that decisions should be 'led by the locals and not by Lansing.'"
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: [1, 2, 6]
+      - topic: "Immigration"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Michigan Public reported that, asked how to make new homes cheaper, James leaned into deregulation, saying 'We have to return control back to the locals,' and that he would be a 'facilitator, not a dictator' focused on removing barriers to affordability. No specific housing plan was found in reviewed sources."
+        coverage: 2
+        position_tag: "Reduce development barriers"
+        position_type: "pos"
+        source: [5]

@@ -1,0 +1,144 @@
+fiveFifthsId: "zach-lahn"
+name: "Zach Lahn"
+state: "IA"
+race_id: "ia-governor-2026"
+race: "Iowa Governor 2026"
+party: "Republican"
+primary: null
+office_sought: "Iowa Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+ballot_order: 1
+avatar_initials: "ZL"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Zach_Lahn_IA_State_Fair_2026.jog_%28cropped%29.jpg/120px-Zach_Lahn_IA_State_Fair_2026.jog_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Detailed on cancer, water quality, farming, education and taxes; no stated position found on voting, broadband or criminal justice; guns, immigration and LGBTQ+ only briefly touched"
+  sources_count: 5
+  sources_list:
+    - "KWQC TV6 Iowa gubernatorial debate, Zach Lahn vs. Rob Sand, St. Ambrose University, Davenport, Oct. 6, 2026 (YouTube transcript)"
+    - "KCCI 1-1 interview with Republican gubernatorial candidate Zach Lahn on cancer, water quality, vaccines and young Iowans (YouTube transcript)"
+    - "KCCI 1-1 interview with Republican nominee Zach Lahn after the June primary (YouTube transcript)"
+    - "CBS News transcript: Zach Lahn on Face the Nation with Margaret Brennan, Oct. 4, 2026"
+    - "Zach Lahn campaign website: Issues page"
+  last_updated: "2026-10-17"
+  callout: "Zach Lahn is a first-time candidate and the Republican nominee for governor. He is a sixth-generation Iowan who has worked in business, education and his family farm, and he won the June primary over Rep. Randy Feenstra. His campaign centers on Iowa's cancer rate and water quality, saving family farms through antitrust enforcement, education reform with support for education savings accounts, keeping young Iowans in the state, and property tax cuts. He also supports ending the school vaccine requirement and eliminating tax breaks for data centers, which are outside the scorecard taxonomy."
+  links:
+    - label: "KWQC Iowa Governor Debate (Sand vs. Lahn), YouTube"
+      url: "https://www.youtube.com/watch?v=E67-tqQNaA8"
+    - label: "KCCI full interview with Zach Lahn, YouTube"
+      url: "https://www.youtube.com/watch?v=ZsyStYJbulI"
+    - label: "KCCI full interview with GOP gubernatorial nominee Zach Lahn, YouTube"
+      url: "https://www.youtube.com/watch?v=3zBItHKXl-8"
+    - label: "CBS News: Zach Lahn on Face the Nation, Oct. 4, 2026"
+      url: "https://www.cbsnews.com/news/zach-lahn-iowa-gop-nominee-governor-face-the-nation-transcript-10-04-2026/"
+    - label: "Zach Lahn campaign: Issues"
+      url: "https://zachlahn.com/issues"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Debate: says consolidation in seed, healthcare and groceries is the foundational cause of high prices, and proposes to \"increase the budget for the attorney general's office, specifically earmarked for anti-competition lawsuits\" to \"lower prices and give Iowans more choice\" [00:09:48]-[00:11:07]. Also cited a push for red-dye diesel use on roads to cut farmer fuel costs [00:07:48]. CBS: \"A monopoly is a failure of the free market.\""
+        coverage: 3
+        position_tag: "Centrist or alternative approach"
+        position_type: "pos"
+        source: [0, 3]
+      - topic: "Taxation"
+        note: "Debate: \"I'm here to cut taxes. We need to do it fiscally responsibly\" [00:15:53]; long-term goal for Iowa to be \"the very first state in the country to fully eliminate property taxes on primary residential homes\" [00:52:17]; would end all data center tax breaks [00:09:08]. Campaign site: lower the tax burden on Iowa families, raise it on out-of-state institutional investors, and tax rebates for young Iowans who buy a home."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 4]
+      - topic: "Small business & farming"
+        note: "Debate: two distinct mechanisms. Government support: a program through the Iowa Economic Development Authority to help farmers transition into cattle, funding to the attorney general for antitrust suits, and a goal of 80% Iowa-grown food in schools [00:38:49]. Deregulation: \"We need to start to deregulate some of these things for small processors\" [00:40:14]. Campaign site: low-interest financing and mentorship for young farmers, a goal of 10,000 new family farms in four years."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [0, 4]
+      - topic: "Workers & wages"
+        note: "Asked in the debate whether he would consider raising the minimum wage, he answered about market consolidation and did not state a position on the minimum wage [00:09:46]. Campaign site lists putting Iowans first for state government and public university jobs and farmers' right to repair. No stated position on wages, minimum wage or worker protections found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "Campaign site: \"Protect life before birth and work to improve the health of Iowa families after birth.\" KCCI nominee interview: says Republicans have done \"a good job of protecting life\" [00:06:14]. No specifics on exceptions or legislation found."
+        coverage: 2
+        position_tag: "Pro-life"
+        position_type: "pos"
+        source: [2, 4]
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources. The campaign site links only to a polling place finder."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "Campaign site lists only \"Defend Second Amendment rights\" with no detail on specific laws. No further position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Debate: criticized Rob Sand for not committing to ban books on transgenderism from elementary classrooms, saying \"Iowa parents are not wanting this\" [00:28:22]. This is a narrow angle on school materials, and no stated position on LGBTQ+ legal protections found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "KCCI interview: focuses on cancer prevention, independent safety testing of farm chemicals, state contract pricing for early cancer detection tests, and supports ending school vaccine requirements, saying it is \"a decision between parents and doctors\" [00:07:36]. CBS: \"food is medicine.\" Medicaid, insurance and coverage were not addressed in reviewed sources, so no position on how Iowans access care."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "Debate: \"I truly believe [education savings accounts] are foundational. Parents deserve to have more say over where their kids go to school\" [00:24:30], while also proposing innovation zones within public schools and reduced red tape, and calling the public school system in need of overhaul [00:22:48]. Said \"the issue is not just funding\" [00:22:42] and did not commit to a funding level. Campaign site: strengthen public schools, reduce standardized testing, mastery-based learning."
+        coverage: 3
+        position_tag: "Both public and choice"
+        position_type: "pos"
+        source: [0, 4]
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "KCCI interview: wants to fund the IWILL program, incentives for farmers to adopt saturated buffers and other practices, more water quality monitoring, and independent testing of agricultural chemicals; has said paraquat should come off the market [00:00:58]-[00:05:49]. Campaign site: clean water and conservation. These address water quality and do not state a position on energy production or regulation of energy, so no tag is applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Campaign site lists only \"End state benefits for illegal immigrants.\" In the debate he criticized Rob Sand for supporting \"amnesty for illegal immigrants\" [00:33:22] without describing his own policy. No further position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Campaign site: ban Wall Street hedge funds from buying Iowa single-family homes and expand paths to homeownership. KCCI interview: proposes an income tax exemption for young Iowans whose funds go into an account for a first home down payment [00:09:31]."
+        coverage: 2
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: [1, 4]

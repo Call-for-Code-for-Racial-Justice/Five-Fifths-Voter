@@ -86,3 +86,5 @@ voting:
 races:
   - name: "Texas US Senate 2026"
     id: "tx-senate-2026"
+  - name: "Texas Governor 2026"
+    id: "tx-governor-2026"

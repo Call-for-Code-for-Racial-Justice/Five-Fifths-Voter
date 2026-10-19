@@ -105,3 +105,5 @@ voting:
 races:
   - name: "New Hampshire US Senate 2026"
     id: "nh-senate-2026"
+  - name: "New Hampshire Governor 2026"
+    id: "nh-governor-2026"

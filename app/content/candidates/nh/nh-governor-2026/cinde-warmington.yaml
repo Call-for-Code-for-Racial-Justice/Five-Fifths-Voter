@@ -1,0 +1,146 @@
+fiveFifthsId: "cinde-warmington"
+name: "Cinde Warmington"
+state: "NH"
+race_id: "nh-governor-2026"
+race: "New Hampshire Governor 2026"
+party: "Democratic"
+primary: null
+office_sought: "New Hampshire Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+ballot_order: 2
+avatar_initials: "CW"
+issues:
+  clarity: "Specific on education vouchers and housing; headline-level or silent on most other topics"
+  sources_count: 6
+  sources_list:
+    - "WMUR News 9 one-on-one interview with Cinde Warmington (political director Adam Sexton) on YouTube, campaign launch, February 2026"
+    - "The Dartmouth 'A Sit-Down with The Dartmouth' Q&A with Warmington, May 4, 2026"
+    - "Valley News report on Warmington's Dartmouth Rockefeller Center event, October 14, 2026"
+    - "Concord Monitor profile of Warmington by Charlotte Matherly, June 12, 2026"
+    - "Cinde Warmington campaign website, home page"
+    - "Cinde Warmington campaign website, Priorities page"
+  last_updated: "2026-10-17"
+  callout: "Cinde Warmington is a former health care lawyer and Executive Councilor (2021-2025) who won the September 8, 2026 Democratic primary and faces Republican Gov. Kelly Ayotte. Her campaign centers on affordability: ending the school voucher program (Education Freedom Accounts), housing supply, energy costs and standing up to the Trump administration. Her campaign site also lists legalizing cannabis, a data center moratorium (Concord Monitor), and opposing the ICE facility in Merrimack; her past lobbying for Purdue Pharma has been a point of attack, and she says she regrets that work."
+  links:
+    - label: "WMUR News 9 exclusive interview (YouTube)"
+      url: "https://www.youtube.com/watch?v=AXhAK6g1hus"
+    - label: "The Dartmouth Q&A"
+      url: "https://www.thedartmouth.com/article/2026/05/cinde-warmington-centers-affordability-in-bid-for-n-h-governor"
+    - label: "Valley News: Dartmouth event"
+      url: "https://vnews.com/2026/10/14/warmington-dartmouth-governor-election/"
+    - label: "Concord Monitor profile"
+      url: "https://www.concordmonitor.com/2026/06/12/new-hampshire-democrats-governor-cinde-warmington/"
+    - label: "Campaign website"
+      url: "https://www.cindewarmington.com"
+    - label: "Campaign website: Priorities"
+      url: "https://www.cindewarmington.com/priorities"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Affordability is the campaign's central theme. In the WMUR interview she says NH 'cannot take two more years of Kelly Ayotte driving up the cost of everything' [00:00:17]; the campaign site names groceries, housing, electricity and property taxes. Specific proposals appear under other topics; no single overall approach is stated."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Taxation"
+        note: "Campaign site says she will work to ensure NH has no sales or income tax, and its Priorities page carries the headline 'Suspend the gas tax' with no further detail. Dartmouth Q&A: 'Property taxes are through the roof.' Tag rests on the gas tax headline only."
+        coverage: 2
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [4, 5]
+      - topic: "Small business & farming"
+        note: "Campaign site says only that she will work for small businesses; Dartmouth Q&A says families and small businesses are squeezed by rising costs. No policy stated."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "Priorities page says nurses, teachers and other workers cannot afford to live in NH and that wages have stalled. No minimum wage or worker protection policy found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Dartmouth Q&A describes a 'four-legged stool' on opioids (prevention, harm reduction, treatment, enforcement). That covers addiction policy only, not the criminal justice system broadly. No other position found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources. Her 2024 campaign material was not used because it belongs to a different cycle."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Says 'health care premiums are doubling in some cases' (Dartmouth Q&A) and blames Ayotte and Trump premium increases [WMUR 00:00:31]; campaign site pledges to stand up to Trump on health care costs. No specific coverage policy stated."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "Wants to repeal Education Freedom Accounts, calling the program a 'voucher scheme' that 'should be seen as pickpocketing' and raises property taxes (Valley News), and supports more state aid to municipalities for school construction (Concord Monitor). Campaign site: 'End the property tax-hiking voucher scheme.'"
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [2, 3, 5]
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Dartmouth Q&A: Ayotte's 'obsession with fossil fuels and refusal to embrace renewable energy and energy efficiency' is wrong. Valley News: favors renewables over nuclear, which she calls 'a decade away,' and would invest in renewables right away. Concord Monitor: wants a moratorium on data centers. Mix of investment and regulation does not map to one tag without inference."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Opposes the planned federal ICE detention facility in Merrimack and says Ayotte must say whether she supports it [WMUR 00:00:41-00:00:53]; campaign site says she will say no to ICE's 'human warehouse.' No broader immigration policy found."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Housing"
+        note: "Calls housing supply a 'red-alert issue' and wants to invest in the affordable housing fund to draw federal matching dollars and restore Housing Champions funding (Dartmouth Q&A); would 'put some guardrails on private equity' buying NH properties and criticizes HB 60 on no-cause evictions (Valley News)."
+        coverage: 3
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: [1, 2]

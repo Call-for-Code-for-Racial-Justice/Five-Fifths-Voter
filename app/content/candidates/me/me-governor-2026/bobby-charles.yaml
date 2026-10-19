@@ -1,0 +1,147 @@
+fiveFifthsId: "bobby-charles"
+name: "Bobby Charles"
+state: "ME"
+race_id: "me-governor-2026"
+race: "Maine Governor 2026"
+party: "Republican"
+primary: null
+office_sought: "Maine Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: true
+ballot_order: 2
+avatar_initials: "BC"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Robert_Charles.jpg/120px-Robert_Charles.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Specific on taxes, crime, immigration, and energy; thin or silent on social issues, guns, workers, and broadband"
+  sources_count: 6
+  sources_list:
+    - "Maine Policy Institute 'Pine Tree Pulse' podcast interview with Bobby Charles (2026), YouTube transcript"
+    - "Bangor Daily News: Maine gubernatorial debate takeaways (Oct 9, 2026)"
+    - "Spectrum News: GOP candidate Charles vows to dismantle DHHS during Lewiston town hall (Sep 24, 2026)"
+    - "Spectrum News: GOP candidates for governor align on energy, housing, and against Bobby Charles (May 14, 2026)"
+    - "Bobby Charles campaign website: Home page"
+    - "Bobby Charles campaign website: Issues page"
+  last_updated: "2026-10-17"
+  callout: "Bobby Charles is the Republican nominee for governor. He describes a career as a federal investigator and litigator, Navy intelligence officer, congressional and Reagan White House staffer, and small-business owner. His campaign centers on cutting property and income taxes (he pledges to eliminate the state income tax), cutting crime and drug trafficking, stricter immigration enforcement, lowering energy costs, and rooting out fraud, including a pledge to dismantle DHHS. He has also said he differs with President Trump on Canada tariffs. Notable positions outside the taxonomy include a pledge to cut about $4 billion from the state budget."
+  links:
+    - label: "Pine Tree Pulse interview with Bobby Charles"
+      url: "https://youtu.be/FFMOEHlF4tc"
+    - label: "Bangor Daily News: gubernatorial debate takeaways"
+      url: "https://www.bangordailynews.com/2026/10/09/politics/maine-gubernatorial-debate-takeaways/"
+    - label: "Spectrum News: Lewiston town hall"
+      url: "https://spectrumlocalnews.com/me/maine/politics/2026/09/24/gop-candidate-charles-vows-to-dismantle-dhhs-during-lewiston-town-hall"
+    - label: "Spectrum News: GOP candidates align on energy, housing"
+      url: "https://spectrumlocalnews.com/me/maine/politics/2026/05/14/gop-candidates-for-governor-align-on-energy--housing---and-against-bobby-charles"
+    - label: "Campaign site: Home"
+      url: "https://bobbyformaine.com"
+    - label: "Campaign site: Issues"
+      url: "https://bobbyformaine.com/issues"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "In the interview he ties affordability to property taxes, income taxes, and energy costs, and to rolling back unfunded mandates [00:03:44]-[00:05:34]. He also said he would seek a White House waiver on Canada tariffs because 'it's costing us 20%' [00:24:08]. The solutions he names are tax cuts, mandate rollbacks, and lower energy costs rather than new programs."
+        coverage: 2
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: [0, 5]
+      - topic: "Taxation"
+        note: "Campaign Issues page: he 'pledges to abolish the state income tax.' Spectrum (May 2026): he would eliminate the income tax over a four-year term. In the interview he says he can cut 'a billion dollars out of this budget in the first year' and wants to cut property taxes by removing unfunded mandates [00:04:36]. He also criticizes the 2% surcharge [00:20:34]. A campaign news release cited on the home page describes a $100,000 homestead exemption reimbursed by the state."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 3, 5]
+      - topic: "Small business & farming"
+        note: "In the interview he says Maine should 'get the regulations down, get the taxes down, incentivize these new sectors' such as cross-laminated timber, lobster processing, and aviation at the former Loring base [00:25:57]-[00:26:12]. That pairs regulation and tax cuts with targeted incentives. He also names lobstering, agriculture, and logging as legacy industries [00:48:03]."
+        coverage: 2
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [0]
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources. He says the 2% income tax surcharge may cost 8,000 to 16,000 jobs [00:20:34], and the Spectrum May article says he supports investing in trade programs in schools, but neither is a stated position on wages or worker protections."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Campaign Issues page: dismantle cartel networks, strengthen and rebuild law enforcement, and enforce strict public safety policies, alongside more addiction recovery and mental health support. In the interview he wants to 'get rule of law back on the streets,' get the drug traffickers out [00:07:25], pursue federal HIDTA status for Maine counties [00:17:56], and criticizes needle distribution [00:22:52]. The emphasis is on enforcement."
+        coverage: 3
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: [0, 5]
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources on voting rules or ballot access. Spectrum (May 2026) reports only that, asked whether Joe Biden won the 2020 election, he answered: 'I'm a constitutionalist. There's no going back in history. Joe Biden.'"
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Spectrum (May 2026): he supports work requirements for MaineCare and named MaineCare among budget cut targets. Spectrum (Sep 2026): 'I am going to completely dismantle DHHS, from top to bottom.' The BDN debate recap reports he blamed Mills-administration officials for MaineCare fraud and cost overruns. No broader coverage plan was found."
+        coverage: 2
+        position_tag: "Reduce government role"
+        position_type: "pos"
+        source: [3, 2]
+      - topic: "Education"
+        note: "Campaign Issues page: refocus on reading, math, and science, remove 'woke' content, support teachers and educational freedom, and require curriculum transparency. Interview: Maine schools fell from best in 1992 to near the bottom, 'We have disempowered teachers... disempowered parents in favor of the bureaucracy in Augusta' [00:21:35], and he wants a return to basics and the trades. Spectrum (Sep): 'We need to empower teachers and disempower the bureaucracy.' No stated position on school funding levels or school choice programs."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Interview: criticizes state renewable subsidies and large solar and wind projects ('horizon to horizon solar cells and blowing the tops of mountains off') [00:31:07], and net energy billing costs [00:26:05]. Campaign Issues page: 'restore reliable, affordable power' with energy experts in charge. Spectrum (May): 'wood and biomass have an extraordinary future in this state.' The BDN recap notes he disagrees with Trump administration efforts to roll back power plant emission standards."
+        coverage: 3
+        position_tag: "Prioritize energy production"
+        position_type: "pos"
+        source: [0, 1, 3, 5]
+      - topic: "Immigration"
+        note: "Interview: 'Get the illegal aliens out of here' [00:07:25] and criticism of the state law limiting local cooperation with federal immigration authorities [00:29:34]. Spectrum (Sep) and BDN (debate): he blamed that law for poor outcomes, saying 'State and local and federal law enforcement should always be talking to each other.' Campaign Issues page lists strict immigration policies. Spectrum (May): he would end state housing funding for people not legally in the country."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [0, 1, 2, 3, 5]
+      - topic: "Housing"
+        note: "Spectrum (May 2026): his housing approach is to cut property and income taxes and end state funding for housing for people not legally in the country. In the interview he cites young workers' income falling below median rent [00:27:48] but does not lay out a housing program. Neither a government-programs position nor a development-barriers position is stated."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null

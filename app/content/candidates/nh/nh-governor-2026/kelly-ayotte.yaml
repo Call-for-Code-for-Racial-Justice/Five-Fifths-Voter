@@ -1,0 +1,153 @@
+fiveFifthsId: "kelly-ayotte"
+name: "Kelly Ayotte"
+state: "NH"
+race_id: "nh-governor-2026"
+race: "New Hampshire Governor 2026"
+party: "Republican"
+primary: null
+office_sought: "New Hampshire Governor 2026"
+district: null
+region: "Statewide"
+incumbent: true
+debate_participant: false
+ballot_order: 1
+avatar_initials: "KA"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/NH_Governor_Kelly_Ayotte_%28December_11%2C_2025%29.jpg/120px-NH_Governor_Kelly_Ayotte_%28December_11%2C_2025%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Specific on housing, energy, public safety and immigration; limited on social and voting issues"
+  sources_count: 8
+  sources_list:
+    - "WMUR Close Up one-on-one interview with Gov. Kelly Ayotte (host Adam Sexton), 2026 legislative session"
+    - "WMUR Close Up video of Ayotte's bi-weekly press availability on her 2026 agenda"
+    - "Granite Post: What to know about the candidates for governor in New Hampshire (Sept. 14, 2026)"
+    - "NHPR: Ayotte's 2026 State of the State address coverage (Feb. 5, 2026)"
+    - "NHPR: Housing costs are a top issue for NH voters. Here's what the candidates for governor say (Oct. 15, 2026)"
+    - "Ayotte campaign website (kellyfornh.com): About Kelly page"
+    - "Ayotte campaign website (kellyfornh.com): Accomplishments page"
+    - "Ayotte campaign website (kellyfornh.com): NFIB endorsement release (Oct. 8, 2026)"
+  last_updated: "2026-10-17"
+  callout: "Kelly Ayotte is the incumbent Republican governor of New Hampshire, a former state attorney general and U.S. senator, seeking a second two-year term. Her platform emphasizes public safety, no new broad-based taxes, housing construction, child care, and lower energy costs. Outside the 15 topics, she has said she opposes Canadian tariffs, wants a multiyear data center moratorium, and opposed raising tolls on out-of-state vehicles."
+  links:
+    - label: "WMUR Close Up interview with Gov. Kelly Ayotte"
+      url: "https://www.youtube.com/watch?v=1K2YMnAQ62k"
+    - label: "WMUR Close Up: Ayotte identifies top issues on her agenda for 2026"
+      url: "https://www.youtube.com/watch?v=lfDo7C8wekc"
+    - label: "Granite Post: What to know about the candidates for governor"
+      url: "https://granitepostnews.com/news/politics/ayotte-warmington-voterhub/"
+    - label: "NHPR: Ayotte State of the State coverage"
+      url: "https://www.nhpr.org/nh-news/2026-02-05/ayotte-state-of-the-state-nuclear-power-housing-child-care-priorities-nh"
+    - label: "NHPR: Housing costs and the candidates for governor"
+      url: "https://www.nhpr.org/business/2026-10-15/housing-costs-governor-candidates-position-newhampshire-nh-election-ayotte-warmington"
+    - label: "Ayotte campaign: About Kelly"
+      url: "https://kellyfornh.com/about-kelly/"
+    - label: "Ayotte campaign: Accomplishments"
+      url: "https://kellyfornh.com/accomplishments/"
+    - label: "Ayotte campaign: NFIB endorsement release"
+      url: "https://kellyfornh.com/2026/10/08/nfib-new-hampshire-endorses-governor-ayotte/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "In the Close Up interview she cited replacing the PUC chairman to focus on affordability, pushing ISO New England on transmission costs, expanding energy including new nuclear, holding the line on taxes, expanding housing, and a child care tax credit [00:00:57-00:01:47]. These are several separate levers that do not map to one tag, so no single position tag is applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Taxation"
+        note: "Campaign site: 'no income tax, no sales tax, EVER!' and a balanced budget with no new taxes. In the interview she said 'we have the lowest taxes in the region' and 'we're not going to pass on more costs to people' [00:01:22-00:01:29], and rejected higher out-of-state tolls [00:06:28-00:06:49]. Opposes new taxes but no source describes cutting or restructuring taxes, so no tag is applied."
+        coverage: 3
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Small business & farming"
+        note: "A campaign press release on the NFIB NH PAC endorsement cites small business tax relief, workforce development and career and technical education, lower energy costs, and opposition to Canadian tariffs. No specific regulatory or support mechanism is described, so no tag is applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "Campaign materials mention workforce development and career and technical education. No position found in reviewed sources on minimum wage, worker protections, or labor regulation."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Backed tighter bail laws and wants to raise the penalty for refusing a breath alcohol test from six months to one year (NHPR State of the State coverage). Campaign site says she overhauled the bail system, strengthened drug trafficking efforts, and closed a DUI test refusal loophole. Close Up press availability: strengthening penalties for refusal of drunk driving tests [00:01:40-00:01:48]."
+        coverage: 3
+        position_tag: "Increase enforcement"
+        position_type: "pos"
+        source: [1, 3, 5, 6]
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "Asked about the campus carry bill, she said the House bill had issues, supported a Senate study committee, and said before any change 'we want to make sure we're focused on public safety' and that police concerns are 'legitimate issues' [00:03:20-00:04:10]. She did not state a broader gun policy position in reviewed sources, so no tag is applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "In the interview she backed legislation requiring private insurers such as Anthem to cover children's mental health treatment, calling the assessment on plans 'an insurance coverage issue' and 'not a tax' [00:04:31-00:06:07]. Campaign site cites funded mental health and substance use treatment, protected Medicaid, and a large federal health care award. These do not map clearly to one tag, so no tag is applied."
+        coverage: 3
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "Her budget opened education freedom accounts to any public school student by removing the income cap, and she supports continuing their expansion (Granite Post; NHPR State of the State). Campaign site also cites increased per-student funding, special education support, and a classroom cell phone ban. Reported as killing a school open-enrollment bill (June 2026)."
+        coverage: 3
+        position_tag: "Both public and choice"
+        position_type: "pos"
+        source: [2, 3, 5]
+      - topic: "Broadband & infrastructure"
+        note: "In the interview she discussed road projects such as Exit 6 on I-293, saying 'we will push hard to get those done' [00:07:22-00:07:41]. No position found in reviewed sources on broadband or on how infrastructure is funded beyond opposing higher out-of-state tolls."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Supports new nuclear power and directed her energy department to 'build pathways to foster the next generation of nuclear power' (NHPR); signed HB 672 creating off-grid electricity providers (Granite Post). Also backed local say over landfill siting, saying 'I'm always going to be focused on protecting our environment' [00:09:47-00:09:59], and plans to ask for a multiyear data center moratorium (Granite Post, Sept. 2, 2026)."
+        coverage: 3
+        position_tag: "Balance both"
+        position_type: "pos"
+        source: [0, 2, 3]
+      - topic: "Immigration"
+        note: "Granite Post: 'I support and encourage New Hampshire law enforcement agencies to cooperate with ICE'; signed a ban on sanctuary policies and backed the State Police 287(g) agreement with ICE. Campaign site says she got a planned DHS facility in Merrimack canceled after local objections."
+        coverage: 3
+        position_tag: "Stricter enforcement"
+        position_type: "pos"
+        source: [2, 5]
+      - topic: "Housing"
+        note: "NHPR: signed laws loosening zoning, including apartments and condos in some commercial zones and accessory dwelling units, and a budget requiring state departments to process housing permits within 60 days. She calls for more work on housing implementation and local partnership [Close Up, 00:00:20-00:00:54]. NHPR notes the Housing Champions program got no state funding in the budget; she told WMUR she wants to revisit it."
+        coverage: 3
+        position_tag: "Reduce development barriers"
+        position_type: "pos"
+        source: [1, 3, 4]

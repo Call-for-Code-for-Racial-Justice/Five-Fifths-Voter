@@ -1,0 +1,170 @@
+fiveFifthsId: "pat-dixon"
+name: "Pat Dixon"
+state: "TX"
+race_id: "tx-governor-2026"
+race: "Texas Governor 2026"
+party: "Libertarian"
+primary: null
+office_sought: "Texas Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+ballot_order: 3
+avatar_initials: "PD"
+issues:
+  clarity: "Specific on taxes, spending, school choice, data centers and immigration; personal views but no policy stance on abortion, guns and LGBTQ+; silent on wages, healthcare, broadband and housing"
+  sources_count: 14
+  sources_list:
+    - "KLTV interview with Pat Dixon, YouTube video and transcript, Oct. 6, 2026"
+    - "KTRE/KLTV article: Libertarian gubernatorial nominee Pat Dixon makes case for choice, limited government, Oct. 6, 2026"
+    - "Community Impact candidate Q&A, Texas governor candidates, Aug. 27, 2026"
+    - "Pat Dixon campaign website: Guns page"
+    - "Pat Dixon campaign website: The Border page"
+    - "Pat Dixon campaign website: School Choice page"
+    - "Pat Dixon campaign website: Property Tax page"
+    - "Pat Dixon campaign website: How to Return Taxes page"
+    - "Pat Dixon campaign website: Election Integrity page"
+    - "Pat Dixon campaign website: Approval Voting page"
+    - "Pat Dixon campaign website: Abortion page"
+    - "Pat Dixon campaign website: Death Penalty page"
+    - "Pat Dixon campaign website: Free Market Sustainability page"
+    - "Pat Dixon campaign website: Biblical Principles questionnaire page"
+  last_updated: "2026-10-17"
+  callout: "Pat Dixon is the Libertarian nominee for governor, a professional engineer, former two-term Lago Vista city councilmember and former Libertarian Party of Texas chair. His platform centers on what he calls free market sustainability, meaning growth should pay for its own costs rather than rely on taxpayer-funded incentives, along with lower taxes tied to lower spending, school choice and limits on eminent domain. Notable positions outside the taxonomy include ending the war on drugs, supporting hemp and THC access for adults, opposing the death penalty, seeking a pardon review for Robert Roberson, opposing the 765 kV transmission buildout's use of eminent domain, and a proposed digital bill of rights limiting Flock-style surveillance cameras."
+  links:
+    - label: "KLTV interview with Pat Dixon (YouTube)"
+      url: "https://www.youtube.com/watch?v=uKmfC-cUNVM"
+    - label: "KTRE: Libertarian nominee Pat Dixon makes case for choice, limited government"
+      url: "https://www.ktre.com/2026/10/06/libertarian-gubernatorial-nominee-pat-dixon-makes-case-choice-limited-government/"
+    - label: "Community Impact: Q&A with Texas governor candidates"
+      url: "https://communityimpact.com/central-austin/election/q-a-meet-the-3-candidates-running-for-texas-governor/"
+    - label: "Pat Dixon campaign website: Guns"
+      url: "https://patdixon.org/guns/"
+    - label: "Pat Dixon campaign website: The Border"
+      url: "https://patdixon.org/the-border/"
+    - label: "Pat Dixon campaign website: School Choice"
+      url: "https://patdixon.org/school-choice/"
+    - label: "Pat Dixon campaign website: Property Tax"
+      url: "https://patdixon.org/property-tax/"
+    - label: "Pat Dixon campaign website: How to Return Taxes"
+      url: "https://patdixon.org/how-to-return-taxes/"
+    - label: "Pat Dixon campaign website: Election Integrity"
+      url: "https://patdixon.org/election-integrity/"
+    - label: "Pat Dixon campaign website: Approval Voting"
+      url: "https://patdixon.org/approval-voting/"
+    - label: "Pat Dixon campaign website: Abortion"
+      url: "https://patdixon.org/abortion/"
+    - label: "Pat Dixon campaign website: Death Penalty"
+      url: "https://patdixon.org/death-penalty/"
+    - label: "Pat Dixon campaign website: Free Market Sustainability"
+      url: "https://patdixon.org/free-market-sustainability/"
+    - label: "Pat Dixon campaign website: Biblical Principles"
+      url: "https://patdixon.org/biblical-principles/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Community Impact: taxes and costs are high because residents are paying for growth; 'Growth needs to pay for itself.' Campaign page: 'Free market sustainability means growth pays for itself,' with developers and large users covering their own impact. Interview [00:12:42]-[00:14:04]: 'taxpayers should not pay for growth.'"
+        coverage: 3
+        position_tag: "Market-driven solutions"
+        position_type: "pos"
+        source: [0, 2, 12]
+      - topic: "Taxation"
+        note: "Interview [00:10:03]: 'I'm in favor of lower taxes as long as it's lower spending.' Property tax page: would start by identifying spending cuts, opposes replacing property tax with sales tax, supports simpler appraisal. How to Return Taxes page: would lower the state retail tax. Criticizes Abbott's property tax plan as unworkable for a governor."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 1, 6, 7]
+      - topic: "Small business & farming"
+        note: "No position found in reviewed sources. Interview [00:11:18] mentions cutting Department of Agriculture barbecue scale inspections as wasteful spending, but this is not a stated small business or farming policy."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Workers & wages"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Death Penalty page: 'I oppose the death penalty because government should not have the power to make an irreversible mistake'; would support repeal. Says he would seek exoneration of Robert Roberson. Interview [00:30:47]: supports ending the war on drugs and modeling drug policy on alcohol. Interview [00:17:27]: 'I am not soft on crime' and supports police; wants warrants for surveillance data. No single stated position on incarceration or enforcement overall."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "Abortion page: personally pro-life and Catholic but will not use office to impose his religious beliefs; does not want politicians in medical decisions; unsure of the best policy on rape and incest. Interview [00:26:09]: would encourage the legislature to revisit clarity so doctors are not afraid to act. No statement of what restrictions or exceptions he would support."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "Election Integrity page: wants assurance that registered voters meet residency and legal status requirements, suggests photos or biometrics on voter registration cards, is skeptical of strict ID requirements, and says Texas election results are legitimate. Approval Voting page: 'I would support the ability for cities to use better voting systems,' favoring approval voting and also ranked choice."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [7, 8]
+      - topic: "Gun policy"
+        note: "Guns page: affirms 'a constitutional right to keep and bear arms,' says he would defer to the Legislature, wants clear command structures and active-shooter training, wants due process in any red flag law and opposes broad mental health screening of gun owners. He does not state a position on specific bills or on changing current laws."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "Biblical Principles questionnaire: said the governor has no role in a marriage definition and 'I also do not object to homosexual couples adopting or caring for a child.' Single passing reference; no stated position on protections or limits."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "No position found in reviewed sources. Interview [00:10:49] only notes Medicaid is a large part of the state budget that is hard to cut."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "Interview [00:19:32]: 'That's why I support school choice.' [00:20:36] supports and wants to expand the voucher program while fixing problems. School Choice page: 'I support parents being empowered to choose what is best for their kids,' ideal of a statewide scholarship so equal funding follows every child, and removing state mandated tests."
+        coverage: 3
+        position_tag: "Support school choice"
+        position_type: "pos"
+        source: [0, 5]
+      - topic: "Broadband & infrastructure"
+        note: "No position found in reviewed sources on broadband. Interview [00:32:59] on roads: wants the state fuel tax dedicated to roads, not diverted, and growth to pay for its road impact. Not a stated position on public investment versus private delivery."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Interview [00:14:52]: concern about 765 kV transmission lines is eminent domain abuse; says growth will bring energy demand and transmission lines. Opposes tax incentives for AI data centers that strain water and power, while accepting projects that pay for their impact. No stated position on environmental regulation versus energy production."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Immigration"
+        note: "Border page: 'if you are peaceful and productive, welcome' as his federal-level policy, and notes the paperwork barrier to legal entry. Interview [00:36:18]: 'There needs to be border enforcement,' and as governor he would cooperate with the federal government, but 'we should not be shooting people and rounding up innocent people.'"
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [0, 4]
+      - topic: "Housing"
+        note: "No position found in reviewed sources."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null

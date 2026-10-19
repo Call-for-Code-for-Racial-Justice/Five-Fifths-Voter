@@ -78,3 +78,5 @@ voting:
 races:
   - name: "Maine US Senate 2026"
     id: "me-senate-2026"
+  - name: "Maine Governor 2026"
+    id: "me-governor-2026"

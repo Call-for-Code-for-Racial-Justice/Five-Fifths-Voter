@@ -1,0 +1,153 @@
+fiveFifthsId: "gina-hinojosa"
+name: "Gina Hinojosa"
+state: "TX"
+race_id: "tx-governor-2026"
+race: "Texas Governor 2026"
+party: "Democratic"
+primary: null
+office_sought: "Texas Governor 2026"
+district: null
+region: "Statewide"
+incumbent: false
+debate_participant: false
+ballot_order: 2
+avatar_initials: "GH"
+avatar_url: "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Gina_Hinojosa_at_LBJ_Library_Forum_%283x4_cropped%29.jpg/120px-Gina_Hinojosa_at_LBJ_Library_Forum_%283x4_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+issues:
+  clarity: "Specific on education, taxes, data centers/energy and housing; general on health care and immigration; silent on abortion, guns, voting, LGBTQ+ policy and wages in reviewed sources"
+  sources_count: 8
+  sources_list:
+    - "PBS Austin InSight 'Meet Rep. Gina Hinojosa' interview, caption transcript (2026)"
+    - "CBS Austin interview on school budget crises and immigration, Apr. 21, 2026"
+    - "CBS Austin / KEYE report on campaign stops covering water, schools and data centers, Apr. 27, 2026"
+    - "San Antonio Current on Oct. 15, 2026 Governor's Mansion event after Abbott skipped debate invitations"
+    - "Lubbock Avalanche-Journal (via Yahoo News) candidate questionnaire answers, Feb. 15, 2026"
+    - "Texas Tribune campaign launch coverage, Oct. 15, 2025"
+    - "KCBD / AP report on Democratic nomination, Mar. 4, 2026"
+    - "Gina for Texas campaign website: priority pages on public schools, affordability and data centers"
+  last_updated: "2026-10-19"
+  callout: "Gina Hinojosa is a state representative from Austin, a former civil rights and union lawyer and Austin ISD school board member, and won the Democratic nomination in March 2026. Her campaign centers on public schools, opposition to school vouchers, $1,500 household refund checks and other cost relief, and what she calls Abbott's corruption tax. Abbott's campaign declined debate invitations, so no debate has occurred. Outside the taxonomy, she calls for a ban on surveillance pricing of groceries and a state AI policy."
+  links:
+    - label: "PBS Austin InSight: Meet Rep. Gina Hinojosa (transcript)"
+      url: "https://www.pbs.org/video/meet-rep-gina-hinojosa-fcv0zd"
+    - label: "CBS Austin: Hinojosa on school budget crises and immigration"
+      url: "https://cbsaustin.com/news/texas-politics/dem-nominee-for-governor-gina-hinojosa-weighs-in-on-school-budget-crises-and-immigration"
+    - label: "CBS Austin: Hinojosa targets water access, schools"
+      url: "https://cbsaustin.com/news/local/gina-hinojosa-launches-campaign-for-texas-governor-targets-water-access-schools"
+    - label: "San Antonio Current: Hinojosa at the Governor's Mansion"
+      url: "https://www.sacurrent.com/news/greg-abbott-mia-as-gina-hinojosa-shows-up-to-governors-mansion-ready-to-debate/"
+    - label: "Lubbock Avalanche-Journal: Hinojosa candidate questionnaire"
+      url: "https://www.yahoo.com/news/articles/read-gina-hinojosas-democratic-platforms-210716547.html"
+    - label: "Texas Tribune: Hinojosa joins race to challenge Abbott"
+      url: "https://www.texastribune.org/2025/10/15/gina-hinojosa-texas-governor-campaign-launch-2026-greg-abbott/"
+    - label: "KCBD / AP: Hinojosa is Democratic nominee"
+      url: "https://www.kcbd.com/2026/03/04/gina-hinojosa-is-texas-democrats-nominee-governor/"
+    - label: "Campaign website: Priorities"
+      url: "https://ginafortexas.com/priorities/"
+
+sections:
+  - id: "economic-security"
+    title: "Economic security"
+    items:
+      - topic: "Cost of living"
+        note: "Campaign: one-time $1,500 refund checks to every Texas household from the Rainy Day Fund surplus, a ban on surveillance pricing of groceries, and a Public Utility Commission freeze on residential electric rates until data centers and other high-load users pay their own infrastructure costs. PBS interview: says electric bills are 'eating up more and more of our income as Texas families' and proposes cash-back for renters. Apr. 27 CBS Austin: asked Abbott to waive the state gas tax."
+        coverage: 3
+        position_tag: "Government programs"
+        position_type: "pos"
+        source: [0, 2, 4, 7]
+      - topic: "Taxation"
+        note: "Campaign: end corporate subsidies and use the savings to cut property taxes, with a long-term goal of eliminating residential property taxes; repeal data center tax incentives; $1,500 household refunds from the Rainy Day Fund. PBS interview: 'renters pay property taxes too, but never get the benefit of the property tax cuts', wants to 'cut the sales tax for our small business owners instead.' Apr. 21 CBS Austin: says schools should be funded by prioritizing existing money rather than raising taxes."
+        coverage: 3
+        position_tag: "Reduce taxes"
+        position_type: "pos"
+        source: [0, 1, 4, 7]
+      - topic: "Small business & farming"
+        note: "PBS interview: notes Texas small businesses 'make less in profits than the national average' and proposes a sales tax cut for them. Questionnaire lists tax cuts for small businesses and expanded job and technical training. Not addressed on the campaign website. Farming not addressed."
+        coverage: 2
+        position_tag: "Increase government support"
+        position_type: "pos"
+        source: [0, 4]
+      - topic: "Workers & wages"
+        note: "Questionnaire: 'Texans are working more but getting less' and proposes expanded job and technical training. Campaign website pledges to make teachers among the highest paid in the nation (scored under Education). No position on minimum wage, worker protections or labor regulation found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "civil-rights-justice"
+    title: "Civil rights & justice"
+    items:
+      - topic: "Criminal justice system"
+        note: "Apr. 21 CBS Austin: wants law enforcement focused on criminals, with concern about communities being targeted. No position on incarceration, prevention or enforcement policy found in reviewed sources."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Reproductive policy"
+        note: "No position found in reviewed sources, including the campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Voting & elections"
+        note: "No position found in reviewed sources, including the campaign website. KCBD/AP notes she helped lead a 2021 Democratic walkout over voting restrictions, but states no current policy position."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Gun policy"
+        note: "No position found in reviewed sources, including the campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "LGBTQ+ policy"
+        note: "No position found in reviewed sources, including the campaign website."
+        coverage: 0
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "access-services"
+    title: "Access & services"
+    items:
+      - topic: "Healthcare"
+        note: "Campaign: ban bad-faith insurance denials and strengthen rural hospitals. PBS interview: says 'Texans are the most uninsured of any people in the nation' but offers no specific policy. Questionnaire: lower health care costs through action against insurers and drug companies. Texas Tribune: says Republicans are 'cheating Texans out of basic health care.' No coverage expansion or private-options position stated, so no tag applied."
+        coverage: 2
+        position_tag: null
+        position_type: "none"
+        source: null
+      - topic: "Education"
+        note: "Campaign: end the voucher program and direct the money to neighborhood schools; end STAAR and similar high-stakes tests and pause A-F ratings; return state-taken-over districts to local control; replace the TEA commissioner on day one; end vendor contracts she calls corrupt and use the savings to make teachers among the highest paid in the nation. PBS interview: 'I believe we can undo vouchers.' Oct. 15 SA Current: wants to increase state spending on public education."
+        coverage: 3
+        position_tag: "Increase public school funding"
+        position_type: "pos"
+        source: [0, 1, 2, 3, 7]
+      - topic: "Broadband & infrastructure"
+        note: "Questionnaire: would 'invest in the infrastructure we need' and cut wasteful vendor contracts, with emphasis on the power grid and border ports of entry. Campaign website calls for notice-and-comment processes on new transmission lines. Broadband not addressed."
+        coverage: 1
+        position_tag: null
+        position_type: "none"
+        source: null
+
+  - id: "community-environment"
+    title: "Community & environment"
+    items:
+      - topic: "Environment & energy"
+        note: "Campaign: an immediate executive-order moratorium on new data centers, a special session to repeal data center tax incentives, binding laws giving communities a say in data center siting, and a residential rate freeze until high-load users pay their own infrastructure costs. PBS interview: on data centers, 'When I'm governor, they will pay for themselves.' Questionnaire: enforceable reliability standards for utilities. Apr. 27 CBS Austin: guarantee household water before industry."
+        coverage: 3
+        position_tag: "Prioritize regulation"
+        position_type: "pos"
+        source: [0, 2, 3, 4, 7]
+      - topic: "Immigration"
+        note: "PBS interview: 'we should not be having this indiscriminate targeting of our American families and our communities,' calls for a humane approach while insisting on border security. Apr. 21 CBS Austin: calls Abbott's threat to withhold grants from cities 'unacceptable.' Apr. 27 CBS Austin: opposes taxpayer money for private detention centers. Questionnaire: ports of entry infrastructure, local law enforcement support and coordination with federal partners. Not addressed on the campaign website."
+        coverage: 3
+        position_tag: "Addresses both directions"
+        position_type: "mixed"
+        source: [0, 1, 2, 4]
+      - topic: "Housing"
+        note: "Campaign: stop private equity and institutional investors from buying up homes, citing her 2025 bill to limit institutional investors to 10 single-family homes. PBS interview: 'Home ownership should be for the people of Texas,' proposes cash-back for renters."
+        coverage: 3
+        position_tag: "Increase government programs"
+        position_type: "pos"
+        source: [0, 7]
